@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<zone vnum="325" lifespan="60" top="32599" mode="2" lock="no">
+  <name>Newbie Zone</name>
+  <resetcmds numberof="10">
+    <cmd command="ReadMobile" ifflag="no">
+      <args arg1="29905" arg2="1" arg3="32500"/>
+      <line lineno="7"/>
+    </cmd>
+    <cmd command="ReadObject" ifflag="no">
+      <args arg1="32583" arg2="1" arg3="32513"/>
+      <line lineno="11"/>
+    </cmd>
+    <cmd command="Obj2Obj" ifflag="yes">
+      <args arg1="32580" arg2="999" arg3="32583"/>
+      <line lineno="15"/>
+    </cmd>
+    <cmd command="ReadMobile" ifflag="no">
+      <args arg1="32590" arg2="1" arg3="32511"/>
+      <line lineno="19"/>
+    </cmd>
+    <cmd command="Obj2Mob" ifflag="yes">
+      <args arg1="32580" arg2="999" arg3="0"/>
+      <line lineno="23"/>
+    </cmd>
+    <cmd command="Obj2Mob" ifflag="yes">
+      <args arg1="32581" arg2="999" arg3="0"/>
+      <line lineno="27"/>
+    </cmd>
+    <cmd command="Obj2Mob" ifflag="yes">
+      <args arg1="32582" arg2="999" arg3="0"/>
+      <line lineno="31"/>
+    </cmd>
+    <cmd command="Obj2Mob" ifflag="yes">
+      <args arg1="32591" arg2="999" arg3="0"/>
+      <line lineno="35"/>
+    </cmd>
+    <cmd command="ReadObject" ifflag="no">
+      <args arg1="32500" arg2="25" arg3="32502"/>
+      <line lineno="39"/>
+    </cmd>
+    <cmd command="STOP"/>
+  </resetcmds>
+</zone>

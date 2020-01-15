@@ -1,0 +1,538 @@
+#1000
+old warder~
+an old warder~
+An old warder stands here, ready to offer instruction to anyone who wants it.
+~
+He has short hair, close to his head, so that no one could grab a hold of it
+during a fight.  Jutting over his shoulder is a sword, sheathed firmly in it's
+scabbard.  He wears simple green trousers, not too tight or baggy, and a dark
+gray, common-looking woolen shirt.
+~
+1654872 67371024 0 E
+100 -50 -20 916 30d900+5500 5d10+25
+25 50
+8 8 1 970
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Dirtkick: 100
+Kick: 100
+P
+OnActionTo "slap"
+Stop
+Emote "$n smirks and effortlessly catches your hand."
+End
+OnActionTo "bonk"
+Stop
+Emote "$n laughs quietly at you and sidesteps the attack."
+End
+OnActionTo "spit"
+Stop
+Emote "$n chuckles mirthlessly and steps to the side, easily avoiding your childish gesture."
+End
+OnActionTo "woolhead"
+ActionTo "woolhead"
+End
+OnActionTo "backhand"
+Stop
+Emote "$n laughs loudly, catching your hand in midair, and then he spits on your chest."
+End
+OnActionTo "thump"
+Stop
+Emote "$n grabs the stick you were to thump him with and then twirls you around, kicking your rear so hard you fall flat on your face."
+End
+OnAttack & ! Guild "tower warders"
+ActionTo "smirk"
+SayTo "Foolish child..."
+End
+Q
+E
+#1001
+veteran soldier~
+a veteran soldier~
+A veteran of the aiel war is here, ready to spar with any of the students.
+~
+He wears the armor of a soldier of Tar Valon with pride, and a small badge on
+his shoulder signifies that he is a veteran of the Aiel War, and received
+honors after the battle at the Shining Walls.
+~
+1327130 0 0 E
+65 -20 -15 916 28d500+900 6d10+9
+10 80
+8 8 1 970
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Bash: 100
+Kick: 100
+E
+#1002
+old woman mother~
+an old woman~
+An old woman is here, staring sadly at one of the names inscribed into the wall.
+~
+She has thin gray hair, pulled back from her face in a bun.  This old woman
+is wearing the simple woolen clothing of a farmwife, and not a very well to
+do farmwife, either.  Judging by the torn shawl she wears, holes gracing it
+in several places, she must be very poor.  Perhaps she is the mother of one
+of the warders with their name on the wall.  She is most likely here to 
+grieve the death of a son.
+~
+1065098 0 0 E
+5 19 10 916 1d100+10 2d5+1
+1 50
+8 8 2 970
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Kick: 100
+P
+OnRandom 15
+Emote "$n lifts her hand and wipes away a tear which suddenly formed in her right eye.  She continues staring at a name inscribed in the wall, a sad expression on her face."
+End
+Q
+E
+#1003
+tpostmaster~
+the postmaster~
+The postmaster of the Tower Warders stands here, ready to deliver your mail.
+~
+It's a postmaster.. it's just a being made up of pure thought which delivers
+mail for you.  What more needs be said?
+~
+1032219 327728 0 E
+199 -30 -10 916 30d900+2000 20d30+50
+0 1
+8 8 1 970
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Bash: 100
+Trip: 100
+Dirtkick: 100
+Kick: 100
+Disarm: 100
+Stun: 100
+P
+OnAttack
+Stop
+ActionTo "slap"
+End
+OnAction "scan" & ! Guild "tower warders"
+Stop
+SayTo "Not on my watch.."
+End
+Q
+E
+#1004
+sarm shopkeeper~
+Sarm~
+Sarm the shopkeeper stands here, polishing a slender sword as he waits for a customer.
+~
+He is a balding man with hair only on the sides of his head.  
+He has very thick, muscular arms, and wears a simple wool shirt and
+equally simple leggings.
+~
+1040410 262160 0 E
+1 -30 -20 916 30d900+3000 30d100+50
+5000 1
+8 8 1 970
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Dirtkick: 100
+Kick: 100
+Disarm: 100
+E
+#1005
+group warders~
+a group of warders~
+A group of warders is here, all of them idly chatting with each other.
+~
+There are three warders in this group, all of them fairly tall, very muscular
+men.  They have strong looking arms, and an aura of danger.
+~
+999450 67895328 0 E
+50 0 0 916 20d200+500 3d10+5
+20 50
+8 8 0 970
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Bash: 100
+Dirtkick: 100
+Kick: 100
+Disarm: 100
+P
+OnAction "north" & ! Guild "tower warders" & ! Guild "tower aes sedai"
+Stop
+Emote "$n frowns, all in unison, and they casually block your path, appearing to not even notice that they are doing so."
+End
+OnAction "east" & ! Guild "tower warders" & ! Guild "tower aes sedai"
+Stop
+Emote "$n casually blocks your path, appearing to not notice what it is they are doing."
+End
+OnActionTo "steal"
+Stop
+Shout
+End
+Q
+E
+#1006
+cook~
+the cook~
+The cook stands here, waiting to dish out food to hungry warders.
+~
+It looks, err, unfinished.
+~
+16394 48 0 E
+1 -30 -20 916 30d900+3000 20d100+50
+10000 1
+8 8 1 970
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+E
+#1007
+aes sedai green~
+a Green Aes Sedai~
+An Aes Sedai of the Green Ajah is standing here, looking sadly at the wall.
+~
+Her smooth face is framed by long, raven
+hair with a few streaks of gray in it.
+Her blue eyes stare sadly at one of the 
+names in the list of deceased warders on
+the wall.
+~
+16394 0 0 E
+100 -30 -10 916 30d500+5000 10d10+10
+50 100
+8 8 2 970
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnRandom 30
+Emote "$n lightly touches a name on the wall, and a single tear trickles down her cheek."
+End
+OnAttack
+Stop
+Emote "You wouldn't want to attack a grieving sedai in the middle of Tar Valon, now would you?"
+End
+OnRandom 5
+Emote "$n stares sadly at a name on the wall for a few moments, then the tears begin to come trickling down her cheeks.  Finally she begins to openly weep, and so runs away from the memorial."
+PurgeMob
+End
+OnRandom 25
+Action "sayto woman My Garinth was a good warder, the best I could have asked for.. I wish things had happened different than they di-..."
+Emote "$n brushes at her eyes with a hand, wiping away a stray tear."
+Emote "The old woman pats the sedai on her shoulder, and says, "
+End
+Q
+E
+#1008
+banker Yorran~
+Yorran the banker~
+Yorran the banker is here, waiting to take or give you your money.
+~
+It looks, err, unfinished.
+He's thin, and bald.  There, he has a desc.
+~
+8 0 0 E
+1 11 10 916 1d100+1 1d1+1
+999999 1
+8 8 1 970
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+E
+#1009
+blacksmith~
+a blacksmith~
+A blacksmith is here, appraising his work.
+~
+He has long black hair and light blue eyes.  His shoulders are
+thick enough for any three men, and he holds a long blacksmith's
+hammer.
+~
+20634 67371056 0 E
+199 -130 -20 916 25d999+1 30d100+50
+1 1
+8 8 1 970
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Dirtkick: 100
+Kick: 100
+Disarm: 100
+P
+OnEntry
+Pause 1
+Emote "$n glares suspiciously at you."
+End
+Q
+E
+#1010
+short man~
+a short man~
+A short man is here, cleaning the shelves.
+~
+This man is very short, and he has sandy brown, short hair.  His narrow,
+suspicious eyes quickly dart about the room every now and then, carefully
+scanning for any signs of instrusive dust motes.  Oddly enough, a large
+sword is strapped to this cleaners back.
+~
+313370 67436560 0 E
+160 -175 -20 916 15d100+30000 7d10+30
+5 50
+8 8 1 970
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Trip: 100
+Dirtkick: 100
+Kick: 100
+Disarm: 100
+E
+#1011
+jase tall man~
+Jase~
+A tall man named Jase is here.
+~
+He has a long sword hanging on his right hip, and on his left hip is a simple
+short sword.   Holding his shoulder-length hair from his face is a brown leather
+strip.
+~
+1196170 524288 0 E
+50 -30 -5 916 15d100+3500 5d12+10
+5 50
+8 8 1 970
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Bash: 100
+Kick: 100
+E
+#1012
+warder half-naked~
+a half-naked warder~
+A half-naked warder is here, leaning against the wall and waiting for a good spot in the water.
+~
+He has a large towel wrapped around him but is not
+wearing anything else.  He stands next to the wall, waiting
+for a favorable spot to open up in the water.
+~
+18570 67633152 0 E
+50 0 -5 916 10d100+500 5d10+10
+5 100
+8 8 1 970
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnEntry & Sex "female" & ! Guild "tower aes sedai" & ! Guild "tower warders"
+Emote "$n 's eyebrows draw down in a menacing frown as he sees an unfamiliar face in the bathhouse."
+ActionTo "frown"
+Force "east"
+Action "close door east"
+End
+Q
+E
+#1013
+librarian woman~
+the librarian~
+The librarian, a woman of fairly old age, stands here.
+~
+She carries a stout wooden switch in one hand, and keeps
+the other firmly planted on her hip.  She has had to use
+that switch on more than one warder who thought he could
+take one of her books away from the library.
+~
+1065098 0 0 E
+5 -180 10 916 10d100+0 1d10+5
+5 1
+8 8 2 970
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnLeave & Carrying 1033
+Stop
+ActionTo "snap"
+SayTo "You put that book back where you got it, or you will feel my switch on your backside!"
+End
+OnLeave & Guild "tower aes sedai"
+ActionTo "curtsey"
+SayTo "It was a pleasure to have you visit, m'Lady."
+End
+OnAction "grasp" & ! Guild "tower aes sedai"
+Stop
+ActionTo "frown"
+End
+OnAction "put book coat"
+Stop
+ActionTo "snap"
+End
+Q
+E
+#1014
+eager trainee etrainee~
+an eager trainee~
+An eager trainee stands here wondering which way to go.
+~
+It looks, err, unfinished.
+~
+10 0 0 E
+1 19 10 916 1d100+0 1d1+1
+0 0
+8 8 1 970
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+E
+#1015
+board mob guardian~
+the Board Guardian~
+The Board Guardian is here, keeping people who have no business reading this board from doing so.
+~
+It looks, err, unfinished.
+~
+2091098 67634 0 E
+199 -180 -20 916 1d100+20000 30d127+50
+0 0
+8 8 1 0
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Bash: 100
+Trip: 100
+Dirtkick: 100
+Kick: 100
+Disarm: 100
+Stun: 100
+P
+OnAction "read board" & ! Guild "tower warders" & ! Guild "tower aes sedai"
+Stop
+End
+OnAction "write" & ! Guild "tower warders" & ! Guild "tower aes sedai"
+Stop
+End
+OnAction "look board" & ! Guild "tower warders" & ! Guild "tower aes sedai"
+Stop
+End
+Q
+E
+#1016
+alerter~
+an alert Gaidin~
+A hidden but alert guard watches silently from the shadows.
+~
+It looks, err, unfinished.
+~
+10 2 0 E
+0 20 10 916 1d100+0 1d1+0
+0 0
+8 8 1 0
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnAction "north" & Guild "rebel warders" & Guild "rebel aes "
+Action "echo The crowds filter in and out around the new arrival, women in various colored and designed dresses, men wearing uniforms or Fancloth, all striding around the  shining halls of the White Tower."
+Pause 2
+Action "shout We have a visitor to the tower but there is something that sets them apart. Investigation will be necessary."
+End
+Q
+E
+#1090
+ginger spice~
+ginger spice~
+Ginger spice is here, gaily prancing about.
+~
+It's ginger spice.  You MUST know what she looks like by now.
+~
+1760280 67960848 0 E
+170 -30 -20 916 30d900+5500 10d10+20
+250 90
+8 8 0 970
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Dirtkick: 100
+Kick: 100
+Disarm: 100
+Stun: 100
+E
+#1091
+scary spice scaryspice~
+scary spice~
+Scary spice is here, scaring the urine outta you when you're not ready.
+~
+She's... well.. very frightening. :P
+~
+3267736 67960848 0 E
+190 -30 -20 916 30d999+2000 10d10+40
+250 50
+8 8 0 970
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+E
+$

@@ -1,0 +1,1113 @@
+* Note: all lines between records which start with '*' are comments and
+* are ignored.  Comments can only be between records, not within them.
+*
+* This file is where the messages go for spells.
+*
+* All records must start with 'M' in the first column (for 'Message').
+* The next line must contain the spell number (defined in spells.h),
+* then the messages (one per line):
+*
+* Death-message  (caster, victim tp_user,victim not_tpuser,ionlookers (tpuser/nottpuser)
+* Miss-message  (caster,  -----------------------------||-------------------------------
+* Hit-message   (caster, ------------------------------||-------------------------------
+*
+* All messages must be contained in one line.  They will be sent through
+* act(), meaning that all standard act() codes apply, and each message will
+* automatically be wrapped to 79 columns when they are printed.  '#' can
+* be substituted for a message if none should be printed.  Note however
+* that, unlike the socials file, all twelve lines must be present for each
+* record, regardless of any '#' fields which may be contained in it.
+*
+****************************************************************************
+***** 				Creative Spell			      ******
+****************************************************************************
+
+* Armor *
+M
+ 1
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+You fail!
+!TARGET
+!TARGET
+$n is trying something for sure, but what?
+$n weaves flows of darkness, but doesn't really manage to do anything with 'em. 
+Weaving flows of darkness, you create additional protection around you.
+!TARGET
+!TARGET
+$n's body seems to glimmer a little...oh well...
+You see $n weave flows of darkness to add to $s protection.
+
+
+
+* air-sword *
+
+M
+ 2 
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+You try to use the True Power to create a sword of Air, but fails!
+!TARGET
+!TARGET
+You see $n weave flows of pure darkness into, well, nothing!
+$n frowns and looks slightly irritated.
+You create a sword carved out of Air.
+!TARGET
+!TARGET
+You see $n weave flows of pure darkness and creates a sword of Air.
+Suddenly a sword appears in $ns hands.
+
+M
+ 3
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+You try to create a Gate, but fails. 
+!TARGET
+!TARGET
+$n throws down his Travellingtrunk and stalks off in anger. 
+You see $n weave flows of darkness, but nothing seems to happen. 
+Weaving flows of darkness you rip a Hole trough the Pattern.
+!TARGET
+!TARGET
+With a loud crash a Gateway turns into existance!
+You see $n weave flows of darkness as $e rips a hole through the Pattern!
+
+M
+ 5
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+You try to render yourself invisible, but fails!
+!TARGET
+!TARGET
+$n looks disgruntled, wonder why?
+$n weave flows of darkness, wonder why?
+Weaving flows of darkness, you render yourself invisible.
+!TARGET
+!TARGET
+$n suddenly vanishes!
+You see $n weave flows of darkness around $mself to make $mself invisible.
+
+* fire-sword *
+
+M
+ 7 
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+You try to create a sword of Fire, but aren't strong enough.
+!TARGET
+!TARGET
+$n weave flows of pure darkness into nothing.
+$n looks irritated.
+You weave flows of darkness and creates a flaming sword. 
+!TARGET
+!TARGET
+You see $n weave flows of darkness to create a sword of Fire.
+Suddenly a sword appears in $ns hands. 
+
+* Gag! *
+
+M
+ 9
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+You try to gag $N with flows of Air but you fail!
+$n looks at you in a strange way. 
+You see $n weaving flows of Air against you.
+$n looks at $N in a strange way. 
+$n weave flows of Air against $N. Wonder why?
+You weave flows of Air and Gags $N
+Suddenly you feel the Air thicken in your mouth. You're Gagged!
+You see $n weave flows of darkness aginst you and Gags you!
+$n looks at $N whos eyes suddenly bulges with shock!
+You see $n weave flows of darkness against $N and gags $M. 
+
+* Gentle *
+
+M
+ 12
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+You weave flows of Spirit and fails to cut $N off from the One Power
+You manage to avoid beeing cut off from the One Power.
+You see $n weave flows of Spirit, and manages to avoid them!
+Suddenly $N draws a sigh of relief.
+You see $n weave flows of Spirit but $N manages to avoid them.
+You weave flows of Spirit and cut $N off from the One Power
+You suddenly feel yourself cut off from the One Power!
+You see $n weave flows of Spirit, and suddenly you are cut off from One Power.
+Suddenly $N sags to the floor.
+You see $n weave flows of Spirit and cuts $N off from One Power.
+
+* Create Water*
+M
+ 13
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+You fail.
+!TARGET!
+!TARGET!
+$n looks disgruntled.
+You see $n draw forth flows of darkness, but nothing happens.
+You create a small well at your feet.
+!TARGET!
+!TARGET!
+A small well appears at $n's feet.
+$n weaves flows of darkness to create a small temporary well at $s feet.
+
+* Create Food*
+M
+ 45
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+You fail.
+!TARGET!
+!TARGET!
+$n looks disgruntled.
+You see $n draw forth flows of Air, Earth and Water, but nothing happens.
+You create some HUGE mushrooms at your feet.
+!TARGET!
+!TARGET!
+A few HUGE mushrooms appears at $n's feet.
+$n weaves flows of Air, Earth and Water to create a few HUGE mushrooms at $s feet.
+
+* Heal *
+M
+ 14
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+You grasp $N's head to Heal $M, but fails utterly. 
+$n grasps your head, and then stalks off in anger. 
+You see $n weave flows of all Five Powers to Heal you, but $e fails. 
+$n grabs $Ns head, then stalks off in gnashing $s teath. 
+You see $n weave flows of all Five Powers against $N, but why?
+You weave flows of all Five Powers, as you Heals $N
+$n grabs your head, and you gasp out loud as you you feel your wounds Heal up. 
+You see $n weave flows of all Five Powers, and your wounds are Healed. 
+$n grabs $Ns head, and $N gasps loudly as the wounds on his body almost dissappears.
+You see $n weave flows of all Five Powers against $N, whose wounds disappears. 
+
+
+* Heal Gentling*
+M
+  15
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+You try to un-gentle $N but fails. 
+$n looks at you, then shakes his head and leaves.
+$n weaves flows of Spirit, Earth and Fire towards you, but nothing happens.
+$n looks concentrated for a while, then quite disgruntled. 
+You see $n weave flows of all the Five Powers, wonder why. 
+Congratulations!(?) You have just un-gentled $N!
+$n looks at you, and suddenly you realise you can touch the One Power again!
+$n weaves flows of Fire,Spirit and Earth against you, and you ar un-gentled!
+Suddenly $N looks very VERY happy!
+$n weave flows of all Five Powers and un-gentles $N!
+
+* Airshield *
+M
+ 16
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+You try to create a shield of Air, but aren't strong enough.
+!TARGET
+!TARGET
+$n looks concentrated for a while, then irritated.
+You see $n weave flows of darkness, but nothing happens.
+You create a shield out of Air.
+!TARGET
+!TARGET
+Suddenly a shield appears in $ns hands.
+You see $n weave flows of pure darkness and $e creates a shield with them.
+
+* Airblow *
+M
+ 18
+Your airblow beats the life out of $N, who dies!
+Suddenly you're hit by something hard that crushes your brain, and you die!
+$n weaves a flow of Air and whacks your brains out with it!
+$N suddenly jolts, as if struck by something, and falls down, dead.
+$N is killed outright by $n's flow of Air that $e weaves.
+Hm..Something went wrong with your flows, and you fail.
+!TARGET
+!TARGET
+!TARGET
+!TARGET
+You weave a solid flow of Air and bash $N with it.
+Aow! Suddenly something hits you hard in the head!
+$n, that little weasel, weaves flows of Air and bash you with them.
+$N suddenly flinches as if struck by something. Odd fellow.
+$n weaves flows of darkness and whacks $N in the head with them.
+
+* Earthquake *
+
+M
+ 23
+You weave flows of Earth to make it shake, and $N falls to the ground and instantly breaks $Es neck!
+The earth starts shaking, and your fall and break your bloody neck!
+You see $n weave flows of Earth, but don't worry. You break your neck from the fall in $ns Earthquake. 
+You see $N falling to the ground and instantly breaks his neck.
+You see $n weave flows of Earth, and $N falls to the ground and breaks $Es neck. 
+You try to make the earth shake, but all you can manage is to disturb a few maggots
+You feel the earth shift slightly under your feet, muddy here?
+You see $n weave flows of Earth, but $e only disturbs a few maggots. 
+You feel the earth shift slightly under your feet. Muddy here or?
+You see $n weave flows of Earth, but why is $m doing that?
+You weave flows of Earth and the earth riples beneath your enemies feet!
+Suddenly the earth heaves under your feet, and you are tossed to the ground. 
+$n weave flows of Earth, and you are tossed to the ground as the earth begins to heave. 
+Suddenly the earth heaves under $N feet, and $E are tossed to the ground
+$n weaves flow of Earth to throw $N to the ground!
+
+* Light *
+M
+ 22
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+You fail to bring light into this area. 
+!TARGET
+!TARGET
+$n mutters something about this room beeing way to dark. 
+You see $n weave flows of Air, but why?
+You bring the Light forward onto this area. 
+!TARGET
+!TARGET
+Suddenly the room is lit up by unatural light!
+$n weave flows of Air and suddenly the room is lit up. 
+
+* Lightning *
+
+M
+ 25
+You zap $N to death!!
+You're hit by -something-. You never find out what and die.
+You see $n weave flows to create a lightning bolt, then you die.
+$N is struck by lightning and dies!
+$n weaves flows and kills $N with a bolt of lightning!
+You fail to hit $N with lightning.
+!TARGET!
+!TARGET!
+!TARGET!
+!TARGET!
+Yes! You zap the bugger $n with lightning.
+Yikes!! You're hit by lightning! You're lucky who survived..that hurt!
+$n, that little weasel, weaves flows and strikes you with lightning!
+$N is suddenly hit by lightning!
+$n weaves flows of darkness to create a lightning bolt and hits $N.
+
+* Fireball *
+
+M
+ 26
+Your fireball instantly burns $N to ashes!
+Suddenly a fireball leaps from $n and hit's you right in the face. Your toast!
+You see $n weave flows of Air and Fire into a fireball that kills you instantly. 
+A fireball leaps from $n and fries $N instantly. 
+You see $n weave flows of Air and Fire and use 'em to toast $N. 
+You try to make a fireball, but could hardly boil an egg with those flows. 
+Wonder why $n stares at you that way. Better leave now. 
+$n weave flows of Air and Fire against you. Strange, it isn't very cold here. 
+Wonder why $n stares at $N that way. Better leave before the fight starts. 
+$n weave flows of Air and Fire against $N. Wonder why?
+You weave flows of Air and Fire into a fireball that hits $N right in the face!
+A fireball leaps from $n and hits you right in the face. Revenge!
+$n weave flows of Air and Fire and hit you right in the face with a fireball. Revenge!
+A fireball leaps from the arms of $n and hits $N straight in the face. Bullseye!
+You see $n weave flows of Air and Fire to create a fireball that hits $N in the face. 
+
+* Darkness *
+M
+ 27
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+You fail to darken the area. 
+!TARGET
+!TARGET
+$n mutters somwthing about this room being to light for his eyes. 
+You see $n weave flows of Air. Wonder why. 
+You weave flows of Air to totaly darken the area. 
+!TARGET
+!TARGET
+Suddenly the room turns dark. 
+$n weave flows of darkness and suddenly the area turns dark!
+
+* Burn *
+M
+ 17
+You burn $N to death!
+You're burned to death!
+$n burns you to death!
+$N suddenly burns to death!
+$n burns $N to death!
+You fail to burn $N
+!TARGET!
+!TARGET!
+!TARGET!
+!TARGET!
+You draw forth flows of Fire and burn $N
+You're suddenly burned by something!
+$n draws forth flows of darkness and burns you!
+$N suddenly screams in agony as smoke evaporates from him.
+$n draws forth flows of darkness and burns $N!
+
+* Ice Arrows *
+M
+ 19
+You create so many ice arrows that you impale the now dead $N.
+You're hit by a veritable storm of ice arrows and die.
+$n weaves a multitude of ice arrows that kill you!
+$N is struck by a dozen arrows of ice that come from nowhere and kill $m!
+$n weaves flows of Air and Water, and kills $N with ice arrows.
+You fail to create the right amounts of flows to make any ice arrows.
+!TARGET!
+$n fiddles with the True Power.
+!TARGET!
+$n tries to do something with the True Power...
+You create a dozen ice arrows and hurl them at $N, damaging $m.
+You're suddenly hit by a dozen arrows made of....ice??
+$n weaves flows of darkness, creating ice arrows and hitting you!
+$N is suddenly hit by....ice arrows?
+$n weaves flows of darkness and strikes $N with ice arrows.
+
+* Meteor *
+M
+ 21
+You zap the little moron $N out of existence!
+You're suddenly hit by a meteor that VAPORIZES you! Rest in Peace.
+$n weaves flows, creates a meteor and zaps you out of existence!
+$N is struck by a meteor coming from nowhere, VAPORIZING $N!
+$n contemptuously creates a meteor and spreads $N's bones over the area.
+Darn. It failed.
+!TARGET!
+Someone uses the True Power, but fails...Wonder who?
+!TARGET!
+Someone uses the True Power, but fails...Wonder who?
+You strike $N squarely with your meteor.
+You're suddenly hit by a meteor coming from nowhere!
+$n weaves flows to create a meteor that right after hits you squarely!
+What the?? A meteor comes without warning, hitting $N!
+$n draws forth flows, creates a meteor and then strikes $N with it.
+
+
+* Blindness *
+
+M
+ 28
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+You try to blind $n but fail.
+You feel something gently touching your eyes for a moment.
+You see $n weave flows of Air against you, gently touching your eyes. 
+$n frowns at $N, wonder why.
+You see $n weave flows of Air against $N. wonder why?
+Weaving flows of Air, you make $N blind.
+You can't see! What happened!?
+You see $n weave flows of darknessr around you, then everything goes black.
+Suddenly $N starts yelling "I'm blind" and $n looks quite satisfied. 
+You see $n weave flows of darkness against $N who starts yelling "I'm blind!".
+
+* Sleep *
+M
+ 34
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+Hmm..you fail to sleep $N.
+!TARGET!
+$n tries a really complex weave, but fails.
+!TARGET!
+$N yawns.
+You successfully renders $N comatose with your weave.
+You suddenly feel very, very sleepy...That muddy ground looks soft...zzzzzzz
+$n weaves flows on you and you're suddenly very very tired....
+$N suddenly decides to take a nap where $e is.
+$n weaves flows on $N, making him fall asleep. Very good job.
+
+* Infravision *
+
+M
+ 36
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+You try to enhance your vision, but fails.
+!TARGET
+!TARGET
+Hmmm...Wonder what $n is up to, frowning like that. 
+You see $n weave flows of Air and Fire, but to what use?
+Weaving flows of Air an Fire, you enhance your vision.
+!TARGET
+!TARGET
+$n's eyes seems to glimmer a little...oh well...
+You see $n weave flows of darkness to enhance $s vision.
+
+* Earthshield *
+M
+ 38
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+You try to create a shield of Earth, but aren't strong enough.
+!TARGET
+!TARGET
+$n looks concentrated for a while, then irritated.
+You see $n weave flows of Earth, but nothing happens.
+You create a shield out of Earth.
+!TARGET
+!TARGET
+Suddenly a shield appears in $ns hands.
+You see $n weave flows of pure darkness as $e creates a shield with them.
+
+* Minor Healing *
+M
+ 49
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+You try to tend to $N's wounds, but don't seem to get it right.
+$n looks at you, and you shiver from a brief chilling feeling.
+Looking at you intently $n draws forth flows, but doesn't get it right.
+$n looks intently at $N but looks unconcentrated for a second.
+Looking at $N, $n draws forth all five flows, but lets go after a little while.
+Drawing forth all five flows, you tend to $N's wounds as good as you can.
+$n looks at you at puts a hand on you, and you shiver to the bone briefly, then feel better.
+Drawing forth all five flows in a weak pattern, $n uses the True Power to heal you.
+$n looks at $N and puts a hand om $M, who all of a sudden shivers uncomfortably.
+You see $n draw forth flows to heal $N, who shivers from the intimate touch.
+
+* Dome of Air *
+M
+ 50
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+You try to draw forth a Dome of Air, but fail.
+!TARGET
+!TARGET
+$n looks around in the area and the air shimmers, then $e looks irritated.
+$n makes the air shimmer with flows of Air, then $e frowns and lets go.
+You create a large dome of Air, denying anything or anyone access to here.
+!TARGET
+!TARGET
+The air shimmers all around you ever so slightly...Wonder why?
+$n draws forth flows of darkness to create a large dome if it around the area.
+
+* Ball of Light *
+M
+ 51
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+You try to draw forth a Ball of Light, but somehow it didn't work.
+!TARGET
+!TARGET
+$n looks around in the area and the air shimmers beside $m, then $e looks irritated.
+$n draws forth some flows of Air and Spirit, but nothing happens.
+You create a a small Ball of Light, and put it in your inventory.
+!TARGET
+!TARGET
+A shining ball suddenly appears in $n's hand!
+$n creates a small ball of light, using flows of Spirit and Air.
+
+* Open Lock *
+M
+ 54
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+Hm...You failed.
+!TARGET
+!TARGET
+$n looks around the room, then looks at one particular exit...but nothing happens.
+$n draws forth flows of Air and Earth against a door, but nothing happens.
+*Click* the exit is now unlocked.
+!TARGET
+!TARGET
+You hear a distinct sound of a door unlocking.
+$n draws forth flows of Air and Earth and unlocks a door.
+
+* Dome of Fire *
+M
+ 57
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+You failed to draw enough of the One Power to create the ward.
+!TARGET
+!TARGET
+$n looks at the room...hasn't it become slightly warmer here?
+$n begins to draw forth huge flows of Fire, Air and Spirit, but stops halfway.
+Deftly using Fire, Spirit and Air, you create a powerful Dome of Fire ward around the room.
+!TARGET
+!TARGET
+The air all around the room shimmers briefly in fiery red and yellow. Strange.
+Drawing forth huge amounts of Fire, Spirit and Air, $n creates a flame ward around the room.
+
+* Invigorate *
+M
+ 62
+!KILL!
+!KILL!
+!KILL!
+!KILL!
+!KILL!
+You fail to make the proper weaves to invigorate $N.
+!TARGET
+$n fails at making some kind of healing weave.
+!TARGET
+$n fails at making some kind of healing weave.
+Using all five flows, you invigorate $N.
+You feel much better! Maybe it's time to move on...?
+$n weaves a healing weave on you, and you feel refreshed.
+!TARGET
+You see $n weave some kind of healing weave into $N, who looks better.
+
+
+****************************************************************************
+***** 				Aggressive Spell		      ******
+****************************************************************************
+
+
+* Call Lightning *
+
+M
+ 6
+You fry $N to cinders with your huge lightningbolts!
+You are suddenly hit by lightning, and dies instantly.
+$n weave flows of Darkness to create a killing lightning bolt. Killing you!
+Suddely a HUGE lightingbolt kills $N!
+$n weave flows of darkness, killing $N with a HUGE lightningbolt! 
+Nice try, but no cigar. 
+A small static discharge makes your fingers itch.
+$n weave flows of Air and Water, but manages only to create a small static discharge. 
+You hear a slight rumbling noice, like a far-away thunderstorm.
+You see $n weave flows of Air and Water, but nothing happens. 
+You weave flows of Air and Water and calls down the Lightning at all your enimies. 
+Suddenly lightning begins to strike everywhere, including your head.
+You see $N weave flows of Air and Water, and a big flaming lightningbolt starts to strike at you. 
+$N is hit by a L-A-R-G-E lightning bolt!
+You see $n weave flows of Air and Water, and suddenly lightning stabs at $N. 
+
+* Wrap *
+
+M
+ 8
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+Nice try. 
+Strange...your clothes move for a little while.
+$n weaves flows of Air, making your clothes move a little.
+$N's clothes move a bit strangely for a second.
+$n weaves flows of Air around $N, but only makes $N's clothes move a bit.
+You easily wrap up $N securely in flows of Air.
+All of a sudden an invisible giant hand holds you securely!
+$n weaves flows of Air around you, wrapping you up tight.
+$N suddenly looks very tense, standing very rigidly.
+$n weaves flows of Air around $N wrapping $m tight.
+
+* Rolling ring *
+
+M
+ 24
+You weave flows of Earth and Fire and you crush your enemies to death.
+The earth moves in circles beneath your feet and crushes you utterly.
+You see $n weave flows of Earth and Fire to make the earth crush you!
+Suddenly the earht moves under $Ns feet. $N is dead
+$n weaves flows of Earth to makwe the earth swallow $N. $N is dead!
+You hardly make the flies notice you. 
+Something ripples the ground, like some small worm is digging there. 
+You see $n weave flows of Earth and Fire, but nothing more.
+$n makes some leaves shift beneath $Ns feet.
+$n (tries) to weave flows of Earth. Wonder why?
+Your Rolling Ring hits $N with full impact!
+Suddenly the earth moves in circles trying to kill you. Ouch!
+$n weaves flows of Earth and Fire and makes the earth move to crush you!
+Circles moves in the earth and hit's $N with full impact!
+You see $n weave flows of Earth and make quite an impression on $N.
+
+* Chill *
+
+M
+ 37
+Your weave freezes $N to death, and $E falls down as an ice statue.
+Suddenly you go all numb from cold, and your conscience slips away...you die!
+$n, that cold bastard, weaves Air and Water and chills you to death!
+$N suddenly freezes, literally, and falls down as an ice statue, stone dead!
+$n weaves a nasty weave of Air and Water and freezes poor $N to death!
+You fail to create a chilly weave, hope $N didn't notice your attempt...
+!TARGET
+$n plays with some weaves of Air and Water..they look nasty...?
+!TARGET
+$n seems to have trouble keeping $s weaves in control. What's $e up to?
+You expertly weave a chilling weave around $N, who shivers with cold.
+C-c-c-c-cold!!! Why did it get so cold all of a sudden?
+$n weaves flows of Air and Water and chills you to the bone! Revenge!
+$N shivers violently as if cold...but it's warm here...?
+$n weaves flows of Air and Water and chills $N, who shivers violently.
+
+
+* Sliceweave *
+
+M
+ 46
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+You try to draw forth the One Power to remove all weaves around you, but fail.
+$n stares at you oddly, concentrated on something.
+$n tries to draw forth flows of mostly Fire and Spirit and direct them at you.
+!TARGET
+$n tries to do something on $N with flows of mostly Fire and Spirit, but fails.
+Using mostly Fire and Spirit, you cut right through all existing flows around $N.
+Something changes around you, and $n smiles contentedly.
+$n draws on flows of Fire and Spirit and cuts right through the weaves around you!
+!TARGET
+$n uses cutting flows of mostly Fire and Spirit to cut through all flows surrounding $N.
+
+* Disintegrate *
+
+M
+ 52
+You watch with satisfaction as $N's body totally disintegrates.
+Suddenly you feel yourself fall apart..your body disintegrates totally!
+$n, with flows of Earth, Fire and Spirit and totally DISINTEGRATES you!! R.I.P.
+$N suddenly just falls apart!! Yuck! He disinterates into nothingness!
+$n weaves violent flows of Earth, Fire and Spirit and DISINTEGRATES $N!! Yuck.
+Somehow your flows don't combine they should, and you abort the weaving.
+$n swears and looks irritated. Somehow you have a feeling that was lucky for you...
+$n prepares some flows of Earth, Fire and Spirit, but fails halfway..Who was target for that?
+$n's face is crossed by a look of miscalculation and irritation.
+$n draws forth violent flows of Earth, Fire and Spirit, but drops them halfway.
+$N's body is hit by a staggering amount of Earth, Fire, Spirit and $e begins to fall apart!
+Argh!! A searing pain goes through your body as it begins to disintegrate!
+$n draws forth flows of Earth, Fire and Spirit and directs them at you, slowly disintegrating you!!
+$N's body seems to just begin to fall apart on him, and $E screams in agony!
+$n draws forth huge amounts of Earth, Fire and Spirit at $N and begins to disintegrate $M!
+
+* Ball of Air *
+
+M
+ 53
+Your Ball of Air beats the life out if $N who falls down, dead.
+You get hit by something hard, straight in the face, and know no more...
+$n weaves flows of Air and Spirit and whacks the life out of you with them.
+$N is struck by something invisible so hard that $e flies backward 10 feet and dies.
+$n weaves flows of Air and Spirit and strikes $N with them so hard that $E dies!
+You fail to form the flows in a proper manner.
+$n looks at you and concentrates, but nothing happens. *whew*
+$n draws forth flows of Air and Spirit, only to let them go. They were heading your direction...
+$n looks at $N angrily and seems to concentrate, but nothing happens.
+$n tries to draw forth flows of Spirit and something else, but fails.
+Swiftly, you draw forth flows of Air and Spirit and strike $N with them.
+Something hits you straight in the face, hard!
+$n draws forth flows of Air and Spirit and strikes you in the head with them!
+Suddenly $N recoils as if hit in the face, hard.
+$N's head gets struck by flows of Air and Spirit, woven by $n.
+
+* Call Fire *
+M
+ 55
+The searing fire burns your enemies to ashes!
+Your body is suddenly burned to ashes, and you die a painful death.
+You see $n draw forth flows of Air, Fire and Spirit and you die.
+$N dies as $e's immersed in a huge fire that comes from nowhere!
+$n draws forth flows and creates a huge fire that kills $N!
+You fail to draw forth the flows properly.
+Something make you feel nervous as $n looks irritated.
+You see $n try to draw forth large flows of something and fail.
+$n mutters something as he looks irritated.
+You see $n try to draw forth large flows of something and fail.
+You create a great fire and hit $N with it.
+You're suddely hit by a huge fire coming from nowhere!
+$n draws forth flows, creates a huge fire and hits YOU with it!
+$N is suddenly hit by a large fire and screams in pain!
+$n draws forth flows of Air, Spirit and Fire and hits $N mercilessly!
+
+* Shaft of Fire *
+
+M
+ 56
+The fire burns $N to cinders! $N is no more. Gotcha >:)
+You feel a searing pain as your body burns to ashes all of a sudden. R.I.P.
+You see $n draw forth flows of Fire and Spirit, then you see no more....
+$N is suddenly struck by a shaft of fire that burns $m to cinders!
+You see $n draw forth flows of Fire and Spirit and burn $N to ashes!
+Hm...no...that one didn't work out quite right.
+$n looks at you with a burning hatred.
+As $n looks at you, you see $m try to draw forth some flows.
+$n looks at $N with a burning hatred in $s eyes, but nothing happens.
+Hm....$n prepares some weaves, but just before drawing them $e stops...
+A thick shaft of Fire and Spirit slams dead onto $N's body.
+Suddenly you're hit by a shaft of fire! Oh, the burns! 
+You see $n draw forth flows of Spirit and Fire just before a shaft of fire hits you!
+$N is suddenly struck by a strange shaft of fire, and is badly burned!
+$n draws forth flows of Fire and Spirit, directing both at $N who gets burned!
+
+* Destroy Weapon *
+
+M
+ 59
+You grin as the pieces of the exploding weapon kills $N outright.
+Suddenly your weapon explodes and rips you to pieces!
+$n weaves flows that makes your weapon explode, and the shards kill you!
+All of a sudden, $Ns weapon just explodes, the shards killing him!
+$n weaves flows that makes $Ns weapon explode and kill him!
+Darn! You made a mistake.
+!TARGET
+$n looks at your weapon in a peculiar manner.
+!TARGET
+$n fiddles with some weaves, but nothing comes forth.
+You almost laugh at $N's expression as $S weapon explodes in $S hands.
+Suddenly your weapon explodes in shower of sparks and shards!
+$n weaves flows of Fire and Earth at your weapon which explodes!
+All of a sudden, $Ns weapon explodes in a shower of sparks and shards!
+$n weaves flows of Fire and Earth at $Ns weapon which explodes!
+
+* Drown *
+M
+ 60
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+You fail to slowly drown $N. Maybe it's for the better.
+!TARGET
+$n tries to do something with Water....
+!TARGET
+$n tries to do something with Water....
+You create a continuous flow of water into $N's lungs. Happy now, sadist?
+Blub, cough, blub, argh!!! Where did the water in your lungs come from!?
+$n weaves water into your lungs! You're slowly drowning! Revenge!
+$N begins to cough up unreasonable amounts of water! Where did it come from?
+$n that sneaky little weasel weaves continous flows of water into $Ns lungs!
+
+* Poison *
+M
+ 61
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+You fail to poison $N. 
+!TARGET
+$n plays with a complex weave while looking at you.
+!TARGET
+$n plays with a complex weave while looking at $N.
+Using all the five weaves, you infuse a vicious poison into $Ns blood.
+You feel very ill all of a sudden, it's like fire in your veins!
+$n makes a highly complex weave and directs them at you! Your blood feels like it's boiling!
+$N gets a green hue on $s face...is $e ill?
+$n weaves a very complex weave of all five flows and sets a poison in $N's blood.
+
+* Explosion *
+M
+ 71
+Wowie! You tear $N apart with your explosion.
+Suddenly the earth errupts under you feet, tearing you apart! RIP!
+You see $n weave flows to make the earth errupt under your feet, killing you! RIP!
+Suddenly the earth errupts under $Ns feet, tearing $E apart! RIP!
+You see $n weave flows to make the earth errupt, killing $N instantly!
+Pathetic! You couldn`t make a firecracker explode with a flamethrower!
+The earth shifts slightly beneath your feet. 
+You see $n weave flows against you, making the earth shift slightly.
+The earth shifts slightly beneath your feet. 
+You see $n weave flows against $N, making the earth shift slightly.
+You make the earth explode beneath $N.
+Suddenly the earth errupts under you feet.
+You see $n weave flows against you, causing the grount to errupt under your feet.
+Suddenly the earth explode under $Ns feet!
+You see $n weave flows against $N, causing the earth to explode beneath $Es feet!
+
+* Dome of Frost *
+M
+ 72
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+You failed to draw enough of the One Power to create the ward.
+!TARGET
+!TARGET
+$n looks at the room...hasn't it become slightly colder here?
+$n begins to draw forth huge flows of Water, Air and Spirit, but stops halfway.
+Deftly using Water, Spirit and Air, you create a powerful Dome of Frost ward around the room.
+!TARGET
+!TARGET
+The air all around the room shimmers briefly in coldish blue and white. Strange.
+Drawing forth huge amounts of Water, Spirit and Air, $n creates a frost ward around the room.
+
+* Fist of Air *
+M
+ 73
+You crush $Ns head with your powerful Fist of Air. Yuk!
+You feel a gigantic fist cluthcing your head before everything goes black. RIP!
+$n weave flows of Air, creating a huge fist crushing your head to pieces. RIP!
+Suddenly $N clutches $Es head that simply implodes! Yuk!
+$n weave flows of Air and simply crushes $Ns head with it!
+Nice weave. Trying to give $N a new haircut?
+You feel a slight preassure against your head, but it vanishes instantly.
+You see $n weave flows of Air against you, briefly pressing against your head. 
+$N grimaces briefly.
+You see $n weave flows of Air against $N who grimaces briefly
+You give $Ns head a good squeeze. Way to go!
+Suddenly you feel something trying to crush your head.
+You see $n weave flows of Air aginst you, crushing your head HARD! Revenge!
+$N clutches $Es head in pain.
+You see $n weave flows of Air aginst $N who clutches $Es head in pain.
+
+* FireStorm *
+M 
+ 74
+$N turns to ashes in your cruel Firestorm!
+Suddenly the very air turns to fire, incinerating you! RIP!
+$n weave HUGE flows, turning the air to Fire, instantly killing YOU! RIP!
+As the air turns fire, $N is turned to ashes!
+$n weave HUGE flows, turning the air to Fire, instantly killing $N!
+You couldn't make a fly uncomfortable with your weave!
+The air seems to shimmer slightly. Is it hotter, or...?
+$n weave HUGE flows making the air grow slightly hotter. 
+The air seems to shimmer slightly. Is it hotter, or...?
+$n weave HUGE flows making the air grow slightly hotter. 
+You turn the air to a fiery storm with your weave. Time for a bar-b-q?
+Suddenly the air turns to fire, scorching you beyond imagination.
+$n weave thick flows, turning the air to fire, scorhing you badly!
+Suddenly the air turns to fire, scorching $N beyond imagination.
+$n weave thick flows, turning the air to fire, scorhing $N badly!
+
+* Refresh *
+M
+ 75
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+Sorry, but I think $N just have to be tired a bit longer.
+You get a sudden feeling of refreshion, but it vanishes instantly.
+$n weave some flows against you, but nothing happens.
+$N suddenly looks releaved, then goes back to his old tired expression.
+$n weave flows against $N, but nothing happens.
+You refresh $N. Nice weaving!
+Suddenly you feel like you could walk another 100 leagues. 
+$n weave some flows against you, removing some of your fatigue.
+$N suddenly looks VERY refreshed.
+$n weave flows againt $N who suddenly looks very refreshed. 
+
+* earth armor *
+M
+ 76
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+You fail to create an Earth Armor.
+You have a slight feeling of being protected. Nah, prolly just your imagination.
+$n weave thick flows against you, then just releases them.
+Looks like the earth itself is trying to protect $N for a brief moment. then everything is normal again.
+$n weave thick flows against $N, then just releases them.
+You create a nice Earth Armor. 
+Suddenly you feel like you could fight anything without coming to harm!
+$n weave thick flows to create an Earth Armor for you!
+Suddenly $N looks very confident. 
+$n weave thick flows to create GOOD protection for $N!
+
+* wind armor *
+M 
+ 67
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+You fail to create an Winh Armor.
+You have a slight feeling of being protected. Nah, prolly just your imagination.
+$n weave thick flows against you, then just releases them.
+Looks like the air itself is trying to protect $N for a brief moment. then everything is normal again.
+$n weave thick flows against $N, then just releases them.
+You create a nice Wind Armor. 
+Suddenly you feel like you could fight anything without coming to harm!
+$n weave thick flows to create an Wind Armor for you!
+Suddenly $N looks very confident. 
+$n weave thick flows to create GOOD protection for $N!
+
+* Destroy Armor *
+M
+ 77
+You grin as the pieces of the exploding armor kills $N outright.
+Suddenly a piece of your explodes and rips you to pieces!
+$n weaves flows that makes a pice of your armor explode, and the shards kill you!
+All of a sudden, a piece of $Ns armor just explodes, the shards killing him!
+$n weaves flows that makes a piece of $Ns armor explode and kill him!
+Darn! You made a mistake.
+!TARGET
+$n looks at your armor in a peculiar manner.
+!TARGET
+$n fiddles with some weaves, but nothing comes forth.
+You almost laugh at $N's expression as a piece of $S armor explodes in $S hands.
+Suddenly a piece of your armor explodes in shower of sparks and shards!
+$n weaves flows of Fire and Earth at a piece of your armor which explodes!
+All of a sudden, a piece of $Ns armor explodes in a shower of sparks and shards!
+$n weaves flows of Fire and Earth at a piece of $Ns armor which explodes!
+
+* Fire Arrows *
+M
+ 78
+You create so many fire arrows that you impale the now dead $N.
+You're hit by a whole wall of fire arrows and die!
+$n weaves a multitude of fire arrows that kill you!
+$N is struck by a dozen arrows of fire that come from nowhere and kill $m!
+$n weaves flows of Air and Fire, and kills $N with fire arrows.
+You fail to create the right amounts of flows to make any fire arrows.
+!TARGET!
+$n fiddles with the One Power.
+!TARGET!
+$n tries to do something with the True Power...
+You create a dozen fire arrows and hurl them at $N, damaging $m.
+You're suddenly hit by a dozen arrows made of....fire??
+$n weaves flows of Air and Fire, creating fire arrows and hitting you!
+$N is suddenly hit by....fire arrows?
+$n weaves flows of Air and Fire and strikes $N with fire arrows.
+
+* Earth Missile *
+M
+ 79
+Your Earth Missile is so powerful so it kills $N instantly.
+You're instantly killed by a GIGANTIC missile of...Earth? RIP!
+$n creates a HUGE Earth Missile, tearing you apart with it`s hit. RIP!
+$N is suddenly killed by a gigantic missile made of....Earth?
+$n makes a missile out of Earth, and squarely kills $N with it.
+You fail to make an Earth Missile.
+!TARGET!
+$n fiddles with the One Power.
+!TARGET!
+$n tries to do something with the True Power...
+Your Earth Missile sends $N staggering with it`s impact!
+You almost loose your balance as a missile made of Earth hits you!
+$N staggers under the impact of a HUGE earth missile.
+$n creates a missile of Earth, and hurls straight into $Ns face. Bullseye!
+
+* PortalStones, when listing possible destinations 
+M
+ 800
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+!FAIL
+!FAIL
+!FAIL
+!FAIL
+!FAIL
+You weave flows of all five Powers, and find the following destinations:
+!TARGET
+!TARGET
+$n looks intently at the Portal Stone. 
+You see $n weave flows of all five Powers into a Portal Stone. 
+
+* Portal Stones, transfering gorup members, and also failures. 
+M
+ 801
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+You feel a surge of the True Power through you into the Portal Stone. Panic!
+!TARGET
+!TARGET
+$n frowns deeply at a Portal Stone, then looks shocked.
+You see $n weave flows of all Five Powers into a Portal Stone, then suddenly looks shocked.
+You weave flows of all five Powers into a Portal Stone to transfer $N to your destination.
+Suddenly the room starts to flicker and fade, and suddenly you're at a new room!
+You see $n weave flows of all five Powers into a Portal Stone, and suddenly you're at a new location.
+Suddenly $N starts to flicker and fade, and suddenly $E is gone!
+You see $n weave flows of all five Powers into a Portal Stones as $N suddenly vanishes.
+
+* PortalStones, when transfering self.  
+M
+ 802
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+!FAIL
+!FAIL
+!FAIL
+!FAIL
+!FAIL
+You weave flows of all five Powers, and transfer yourself to your chosen destination.
+!TARGET
+!TARGER
+$n looks intently at the Portal Stone, then begins to fade, until $e is gone completely. 
+You see $n weave flows of all five Powers into a Portal Stone and fades out out of existance.

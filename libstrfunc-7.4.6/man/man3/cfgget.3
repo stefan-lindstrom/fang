@@ -1,0 +1,108 @@
+.Dd October 1, 2000
+.Dt sf_cfg 3
+.Os
+.Sh NAME
+.Nm cfgread ,
+.Nm cfgget ,
+.Nm cfgget2
+.Nd functions to read and parse configuration files
+.Sh SYNOPSIS
+.Fd #include <strfunc.h>
+.Ft int
+.Fn cfgread "char *filename"
+.Ft char *
+.Fn cfgget "char *key"
+.Ft svect *
+.Fn cfgget2 "char *key"
+.Sh DESCRIPTION
+These routines give the user an easy way of creating nice configuration files.
+The basic idea of configuration files is the attribute=value scheme.
+Attribute may be writtten as the ordinary english literal word, or placed into
+the quotes, like a value. Value may also be quoted or be an ordinary english
+word or combination of alphanumeric characters. Attributes and values may be
+quoted using the double or single quotes. When quotes are used, escaping
+can be made much like as in Bourne shell or in the C code. Once read, file
+is closed, but attribute and values stored internally and may be used
+multiple times.
+.Pp
+There are two general forms of defining an attribute=value pairs. Two forms
+are defined using the following BNF:
+.Bd -literal
+	<simple_word>	:=	1*<A-Z0-9>
+
+	<quoted_string>	:=	<QUOTE> *<any character except 0> <QUOTE>
+
+	<attr>		:= <simple_word> | <quoted_string>
+
+	<value>		:= <quoted_string> | <simple_word>
+
+	<generic_form>	:= <attribute> = <value> [ ; ]
+
+	<multiple>	:= <attribute> { <value> *<[ , <value> ]> }  [ ; ]
+
+.Ed
+.Pp
+.Fn cfgread
+function used to read and parse the configuration file.
+.Pp
+.Fn cfgget
+returns an appropriate value for the specified key, or NULL if key is not found.
+.Pp
+.Fn cfgget2
+may be required if multiple values are expected. It allocates the 
+.Em svect *
+structure that must be freed by caller with
+.Fn sfree .
+It will return NULL if svect allocation failed. If no key values found,
+it will return valid, but empty string vector.
+.Sh EXAMPLE
+.Bd -literal
+void cfgparse() {
+	char *value1;
+	svect *values2;
+	svect *values3;
+	int r;
+
+	if((r=cfgread("/path/to/config.file")) != 0) {
+		if(r > 0) {
+			printf("Wrong file format.\n");
+		} else {
+			printf("File access failed.\n");
+		};
+		return;
+	};
+
+	value1	= cfgget("key1");
+	values2	= cfgget2("key2");
+	values3	= cfgget2("key3");
+
+	/* Free allocated structures */
+	sfree(values2);
+	sfree(values3);
+
+};
+.Ed
+.Sh CONFIGURATION FILE EXAMPLE
+.Bd -literal
+
+key1 = "value";
+
+key2 = "this multiline
+		value will be
+		\\"passed\\" to values2.";
+
+key3 = {
+	"value1",
+	"value2",
+	"value3"
+};
+
+
+key2 = "Hello again!";
+
+.Ed
+.Sh SEE ALSO
+.Xr strfunc 3 ,
+.Xr sf_svect 3 .
+.Sh AUTHORS
+.An Lev Walkin <vlm@spelio.net.ru>

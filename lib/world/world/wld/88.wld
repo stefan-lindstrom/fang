@@ -1,0 +1,1903 @@
+<?xml version="1.0"?>
+<rooms>
+  <room>
+    <roombasic title="First Room" vnum="8800" zone="88">
+      <roomdescription>This zone is the new Black Tower. It is the Asha&apos;man guild zone. It consists
+of the training area, the Black Tower, the barn and surroundings, the field
+and a large loop around the farm to which I will attach the Asha&apos;man 
+residences. At present the farm looks like this:
+.
+.
+     |\|
+                    #-#
+     /|            /   \
+      |           #     #
+    --+--        /       \
+      |       #-#         #
+      |      /            |
+        #-#-#             #
+       /                   \
+      #                     #
+     /                      |
+    #                       #
+   /                        |
+  #                 #-#-#   #
+  |                 |X|X|   |
+  #           #-O-# #-#-#   #
+  |             |   |X|X|  /
+  #           # # # #-#-# #
+   \          | | |   |  /|
+    #-#       #-#-#   #-# #
+       \        |     |
+        #   # # #     # S
+         \  | | |     | |
+          #-T-#-#-W-#-@-#
+            |   |     | |
+            P A-H     M
+                |     |
+                #     G
+                |
+                # #
+                | |
+                #-#-#
+                  |
+                  #-#
+.
+.
+@ = You are here
+O = M&apos;Hael&apos;s Office
+A = Saeric (One handed Aiel)
+G = Gate room (keyword browned)
+H = Henre Haslan
+M = Mail
+P = The rubble pile
+S = Shop
+T = Training Hill
+W = Cooking Wife
+*map courtesy of Mortis*
+
+My plans for the immediate future of the farm are 1) attach the Asha&apos;man 
+residences, 2) add in some tents for the lower rank quarters and 3) perhaps
+expand if ideas for suitable expansion occur to me. Also I am looking into
+more mobs (non-leveling) to inhabit the farm.
+
+The vnums for the guild eq is as follows:
+  1. [ 8806] a high collared black coat
+  2. [ 8807] a ball of brilliant white light
+  3. [ 8808] a silver pin shaped like a sword
+  4. [ 8809] a golden pin shaped like a dragon
+  5. [ 8810] a thick brown leather belt
+  6. [ 8811] a pair of brown leather boots
+The black coat, ball of light, brown belt and leather boots are to be given
+a recruit upon guilding. Upon reaching the rank of dedicated the silver pin
+will be given. One of the two &quot;spare&quot; pieces of eq (in this case the belt)
+has an objprog which will destroy said object as soon as a person wearing the
+silver pin moves south. Upon attaining the rank of Asha&apos;man the golden pin
+will be given. The other piece of &quot;spare&quot; eq has an objprog that will destroy
+that object when a person wearing the golden pin moves south. 
+-Mazrim/Nat
+</roomdescription>
+      <flags>66</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+  </room>
+  <room>
+    <roombasic title="A twisting path" vnum="8801" zone="88">
+      <roomdescription>A twisting cart path leads up into the hills. The scenery is drab and boring.
+There&apos;s nothing to see here. Mile after mile of brown and dying grass are
+broken up only by the occasional rock. Further ahead a dark forest stands
+and the path seems to be leading toward it. Perhaps now would be a good time
+to turn back.
+</roomdescription>
+      <flags>4</flags>
+      <sector>Hills</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="8802">
+      <description/>
+    </exit>
+    <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="8938">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Approaching the black woods" vnum="8802" zone="88">
+      <roomdescription>The trail leads on into the woods. The silence seems to be almost oppresive
+in these dark and foreboding woods. Despite the feeling of dread it is 
+impossible to isolate anything peculiar about the woods. Perhaps it is
+nothing.
+</roomdescription>
+      <flags>196</flags>
+      <sector>Forest</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="" exitinfo="0" keynum="0" toroom="8939">
+      <description/>
+    </exit>
+    <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="8801">
+      <description/>
+    </exit>
+    <exit direction="west" keyword="" exitinfo="0" keynum="0" toroom="8804">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Craftsman&apos;s Shop" vnum="8803" zone="88">
+      <roomdescription>This small shack belongs to a middle aged shopkeeper. It is sturdy and well
+built despite it&apos;s ramschakle appearance. Miscellaneous objects hang from pegs
+on the wall and even more sit on a large counter which seems to take up most
+of the middle of the room.
+</roomdescription>
+      <flags>210</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="8802">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Entrance to the Farm" vnum="8804" zone="88">
+      <roomdescription>This is the entrance to a large farmyard. It is bustling with activity as
+black-coated men run hither and yon. To the north lies a large field while
+a \c03browned\c00 clearing can be seen a ways to the south. Far to the west is the
+training area, though slightly closer can be found a large farmhouse which
+the denizens of this farm euphemistically call the \c23Black Tower\c00.
+</roomdescription>
+      <flags>70</flags>
+      <sector>Field</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="8807">
+      <description/>
+    </exit>
+    <exit direction="east" keyword="" exitinfo="0" keynum="0" toroom="8802">
+      <description/>
+    </exit>
+    <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="8805">
+      <description/>
+    </exit>
+    <exit direction="west" keyword="" exitinfo="0" keynum="0" toroom="8809">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="A hitching post" vnum="8805" zone="88">
+      <roomdescription>The hitching post is the de facto post office of the farm as this is where
+the courier ties his horse when he arrives at the farm. Several black-coated
+men and their families wait here for the courier to deliver their mail. 
+</roomdescription>
+      <flags>82</flags>
+      <sector>Field</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="8804">
+      <description/>
+    </exit>
+    <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="8806">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="A \c03browned\c00 clearing" vnum="8806" zone="88">
+      <roomdescription>The clearing is seared and \c03brown\c00. Only the slightest hint of green can be
+found, and then only if you are looking carefully for it. It is far enough
+from the rest of the farm that there is little traffic here and it is for
+this reason that it is used by the Asha&apos;man to gate to. Every so often a
+\c14bright line\c00 will appear from no where and twist into a gateway. A
+black-coated man or two will step through before it snaps shut and stride off
+toward the farm.
+</roomdescription>
+      <flags>86</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="8805">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Path to the Field" vnum="8807" zone="88">
+      <roomdescription>The well beaten path is lined with rough-hewn \c23\c23rocks\c00.\c00 It leads towards a large,
+\c02green\c00 field which seems largely empty at the moment. Various trees grow up
+beside the path, basking it in \c23s\c00\c07h\c00\c23a\c00\c07d\c00\c23o\c00\c07w\c00\c23s\c00. To the south lies the 
+entrance to the farm.
+</roomdescription>
+      <flags>70</flags>
+      <sector>Field</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="8808">
+      <description/>
+    </exit>
+    <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="8804">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Path to the Field" vnum="8808" zone="88">
+      <roomdescription>Large, rough-hewn \c23rocks\c00 line the path as it stretches from the entrance to the
+farm to the wide, open field that lies directly to the north. Not far from
+where you stand a small gate in a wooden fence straddles the path. To the 
+east you notice what seems to be the begining of a path that leads off through
+the forest. It looks dark and shaded.
+</roomdescription>
+      <flags>70</flags>
+      <sector>Field</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="8811">
+      <description/>
+    </exit>
+    <exit direction="east" keyword="" exitinfo="0" keynum="0" toroom="8847">
+      <description/>
+    </exit>
+    <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="8807">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The path along the farm" vnum="8809" zone="88">
+      <roomdescription>This appears to be the main path through the farm. Scores of black-coated men
+along with the occasional woman or child hurry along the path to various
+destinations. To the east lies the enterance to the farm. Further to the west
+is the training area.
+</roomdescription>
+      <flags>70</flags>
+      <sector>Field</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="" exitinfo="0" keynum="0" toroom="8804">
+      <description/>
+    </exit>
+    <exit direction="west" keyword="" exitinfo="0" keynum="0" toroom="8810">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="A small farmhouse" vnum="8810" zone="88">
+      <roomdescription>A small, ill-repaired farmhouse stands here. It serves as the mess hall for 
+the Asha&apos;man. The wives of a few of the men tend to the cooking and other 
+small chores associated with the kitchen. It, like the rest of the farm, is
+bustling with activity. 
+</roomdescription>
+      <flags>210</flags>
+      <sector>Field</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="" exitinfo="0" keynum="0" toroom="8809">
+      <description/>
+    </exit>
+    <exit direction="west" keyword="" exitinfo="0" keynum="0" toroom="8820">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="South end of a field" vnum="8811" zone="88">
+      <roomdescription>This is the entrance to a large field. The grass is very \c02g\c00\c09r\c00\c02e\c00\c09e\c00\c02n\c00 and \c12wild\c10flo\c00\c12wers\c00
+abound. The field is bounded by a \c03wooden fence\c00, though there is apparently
+nothing for the fence to keep in or, for that matter, out. 
+</roomdescription>
+      <flags>2</flags>
+      <sector>Field</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="8814">
+      <description/>
+    </exit>
+    <exit direction="east" keyword="" exitinfo="0" keynum="0" toroom="8813">
+      <description/>
+    </exit>
+    <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="8808">
+      <description/>
+    </exit>
+    <exit direction="west" keyword="" exitinfo="0" keynum="0" toroom="8812">
+      <description/>
+    </exit>
+    <exit direction="northeast" keyword="" exitinfo="0" keynum="0" toroom="8816">
+      <description/>
+    </exit>
+    <exit direction="northwest" keyword="" exitinfo="0" keynum="0" toroom="8815">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Southwest corner of a field" vnum="8812" zone="88">
+      <roomdescription>A large patch of \c02c\c00\c09l\c00\c02o\c00\c09v\c00\c02e\c00\c09r\c00 covers most of the southwestern corner of the field.
+The \c03wooden fence\c00 can be seen nearby and a couple \c23squirrels\c00 sit happily on top
+of it. At the slightest sound--a footstep, a birdcall or a particularly loud
+explosion from the training area far to the west--the \c23squirrels\c00 will dart off
+their perch and disappear, but they soon reappear after a suitable period of
+relative silence.
+</roomdescription>
+      <flags>2</flags>
+      <sector>Field</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="8815">
+      <description/>
+    </exit>
+    <exit direction="east" keyword="" exitinfo="0" keynum="0" toroom="8811">
+      <description/>
+    </exit>
+    <exit direction="northeast" keyword="" exitinfo="0" keynum="0" toroom="8814">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Southeast corner of a field" vnum="8813" zone="88">
+      <roomdescription>The southeast corner of the field is cool and quiet. The only sounds that can
+be heard are the soft whisper of a breeze through the nearby forest and the
+quiet babbling of a stream to the east. Unfortunately the \c03wooden fence\c00 bars
+your path in that direction.
+</roomdescription>
+      <flags>2</flags>
+      <sector>Field</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="8816">
+      <description/>
+    </exit>
+    <exit direction="west" keyword="" exitinfo="0" keynum="0" toroom="8811">
+      <description/>
+    </exit>
+    <exit direction="northwest" keyword="" exitinfo="0" keynum="0" toroom="8814">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The center of a field" vnum="8814" zone="88">
+      <roomdescription>Wildflowers quilt the landscape in the center of the field. Flowers of every 
+concievable color can be found here. \c10Yellow\c00, \c14white\c00, \c08red\c00 and \c11blue\c00; all can be 
+found here underneath the \c10g\c00\c03o\c00\c10l\c00\c03d\c00\c10e\c00\c03n\c00 \c10s\c00\c03u\c00\c10n\c00. The \c02g\c00\c09r\c00\c02e\c00\c09e\c00\c02n\c00 \c02g\c00\c09r\c00\c02a\c00\c09s\c00\c02s\c00 proves a pleasant 
+backdrop for the riot of colors and a cool breeze completes the scene.
+</roomdescription>
+      <flags>2</flags>
+      <sector>Field</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="8817">
+      <description/>
+    </exit>
+    <exit direction="east" keyword="" exitinfo="0" keynum="0" toroom="8816">
+      <description/>
+    </exit>
+    <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="8811">
+      <description/>
+    </exit>
+    <exit direction="west" keyword="" exitinfo="0" keynum="0" toroom="8815">
+      <description/>
+    </exit>
+    <exit direction="northeast" keyword="" exitinfo="0" keynum="0" toroom="8819">
+      <description/>
+    </exit>
+    <exit direction="southeast" keyword="" exitinfo="0" keynum="0" toroom="8813">
+      <description/>
+    </exit>
+    <exit direction="southwest" keyword="" exitinfo="0" keynum="0" toroom="8812">
+      <description/>
+    </exit>
+    <exit direction="northwest" keyword="" exitinfo="0" keynum="0" toroom="8818">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="West end of a field" vnum="8815" zone="88">
+      <roomdescription>The western end of the field is dryer and browner than the rest. The sun beats
+down on it harshly and the \c02g\c00\c09r\c00\c02e\c00\c09e\c00\c02n\c00 grass is shot through with \c03brown\c00. The fence
+runs along the field, seperating the wide open space from the rest of the 
+farm.
+</roomdescription>
+      <flags>2</flags>
+      <sector>Field</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="8818">
+      <description/>
+    </exit>
+    <exit direction="east" keyword="" exitinfo="0" keynum="0" toroom="8814">
+      <description/>
+    </exit>
+    <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="8812">
+      <description/>
+    </exit>
+    <exit direction="northeast" keyword="" exitinfo="0" keynum="0" toroom="8817">
+      <description/>
+    </exit>
+    <exit direction="southeast" keyword="" exitinfo="0" keynum="0" toroom="8811">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="East end of a field" vnum="8816" zone="88">
+      <roomdescription>The grass is \c02g\c00\c09r\c00\c02e\c00\c09e\c00\c02n\c00 and lush on the eastern end of the field. The well-built
+wooden fence borders the field to the east and on the other side, not a half
+dozen paces from the fence, stands a large forest. Birds can be heard 
+chirping happily in the distance and the bright \c10s\c00\c03u\c00\c10n\c00 looks down upon the
+scene, lending it a warmth and lazy comfort.
+</roomdescription>
+      <flags>2</flags>
+      <sector>Field</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="8819">
+      <description/>
+    </exit>
+    <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="8813">
+      <description/>
+    </exit>
+    <exit direction="west" keyword="" exitinfo="0" keynum="0" toroom="8814">
+      <description/>
+    </exit>
+    <exit direction="southwest" keyword="" exitinfo="0" keynum="0" toroom="8811">
+      <description/>
+    </exit>
+    <exit direction="northwest" keyword="" exitinfo="0" keynum="0" toroom="8817">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="North end of a field" vnum="8817" zone="88">
+      <roomdescription>The \c03wooden fence\c00 continues to run without break along the northern end of the
+field. Apparently there is but one entrance and that lies to the south. The
+grass is \c02g\c00\c09r\c00\c02e\c00\c09e\c00\c02n\c00 and several large bumble bees flit amongst a rather large 
+patch of \c02c\c00\c09l\c00\c02o\c00\c09v\c00\c02e\c00\c09r\c00. Aside from that there is nary a sound to be heard.
+</roomdescription>
+      <flags>2</flags>
+      <sector>Field</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="" exitinfo="0" keynum="0" toroom="8819">
+      <description/>
+    </exit>
+    <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="8814">
+      <description/>
+    </exit>
+    <exit direction="west" keyword="" exitinfo="0" keynum="0" toroom="8818">
+      <description/>
+    </exit>
+    <exit direction="southeast" keyword="" exitinfo="0" keynum="0" toroom="8816">
+      <description/>
+    </exit>
+    <exit direction="southwest" keyword="" exitinfo="0" keynum="0" toroom="8815">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Northwest corner of a field" vnum="8818" zone="88">
+      <roomdescription>The northwestern corner of the field is bounded by a \c03wooden fence\c00. The \c10s\c00\c03u\c00\c10n\c00
+shines down on the \c02g\c00\c09r\c00\c02e\c00\c09e\c00\c02n\c00 grass and multicolored wildflowers. It seems very
+quiet; the silence is only broken by the occasional explosion from the far off
+training area.
+</roomdescription>
+      <flags>2</flags>
+      <sector>Field</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="" exitinfo="0" keynum="0" toroom="8817">
+      <description/>
+    </exit>
+    <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="8815">
+      <description/>
+    </exit>
+    <exit direction="southeast" keyword="" exitinfo="0" keynum="0" toroom="8814">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Northeast corner of a field" vnum="8819" zone="88">
+      <roomdescription>\c02C\c00\c09l\c00\c02o\c00\c09v\c00\c02e\c00\c09r\c00 carpets the northeastern the field. A young deer pokes its
+head in between the rails of the \c03wooden fence\c00 to nibble at the juicy foliage.
+The forest stands not far beyond the fence and cheerful birdsong can be heard
+nearby. The bright \c10s\c00\c03u\c00\c10n\c00 shining down and the low drown of \c10h\c00\c23o\c00\c10n\c00\c23e\c00\c10y\c00\c23b\c00\c10e\c00\c23e\c00\c10s\c00 going about
+their business lend the scene a rather lazy air.
+</roomdescription>
+      <flags>2</flags>
+      <sector>Field</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="8816">
+      <description/>
+    </exit>
+    <exit direction="west" keyword="" exitinfo="0" keynum="0" toroom="8817">
+      <description/>
+    </exit>
+    <exit direction="southwest" keyword="" exitinfo="0" keynum="0" toroom="8814">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Center of the Farm" vnum="8820" zone="88">
+      <roomdescription>This is the center of the farm. Knots of black-coated men stand around talking
+and weaving things with the One Power. Women scurry quickly through on errands
+of one sort or another and the occasional child peeks curiously at the goings
+on, though most choose to stay away from here. To the north stands a large and
+imposing farmhouse--though it IS only a farmhouse--and to the south stands a
+large barn that seems to have been newly built. Off to the east is the 
+entrance to the farm and nearby to the west is the training area.
+</roomdescription>
+      <flags>6</flags>
+      <sector>Field</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="8821">
+      <description/>
+    </exit>
+    <exit direction="east" keyword="" exitinfo="0" keynum="0" toroom="8810">
+      <description/>
+    </exit>
+    <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="8831">
+      <description/>
+    </exit>
+    <exit direction="west" keyword="" exitinfo="0" keynum="0" toroom="8833">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The porch of the Black Tower" vnum="8821" zone="88">
+      <roomdescription>This is the front porch of the building the men of this farm euphemistically
+call the Black Tower. There is nothing on the porch and it is swept clean
+every morning by a nervous looking wife of one of the Asha&apos;man. The planks
+of the deck are sturdy and look new. The door to the Black Tower stands wide
+open, though only a fool would go in without permission. The building itself 
+is slightly larger than a normal farmhouse and it looks in better repair than
+the other buildings in the vicinity.
+</roomdescription>
+      <flags>6</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="8822">
+      <description/>
+    </exit>
+    <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="8820">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Asha&apos;man Meeting Hall" vnum="8822" zone="88">
+      <roomdescription>This is a large hall meant to be a place for the Asha&apos;man to gather together.
+A large table sits in the center of the room, a huge, well-built wooden chair
+sitting at it&apos;s head. Other chairs run up and down the table and more line
+the walls. The room is big enough to comfortably accomodate every Asha&apos;man on
+the farm and it looks as if it has done that a time or two before.
+</roomdescription>
+      <flags>6</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="8823">
+      <description/>
+    </exit>
+    <exit direction="east" keyword="" exitinfo="0" keynum="0" toroom="8828">
+      <description/>
+    </exit>
+    <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="8821">
+      <description/>
+    </exit>
+    <exit direction="west" keyword="" exitinfo="0" keynum="0" toroom="8827">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Antechamber to the M&apos;hael&apos;s office" vnum="8823" zone="88">
+      <roomdescription>You stand before a large, iron-bound oaken door. The mere sight of the door
+makes all thoughts of your other surroundings flee from your mind. It is 
+this door that leads to the office of the M&apos;hael. The M&apos;hael holds the power
+of life and death in his hands. Will you be one who lives or dies? Only time
+will tell, but one thing is for certain: The M&apos;hael is waiting.
+</roomdescription>
+      <flags>7</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="" exitinfo="3" keynum="0" toroom="8824">
+      <description/>
+    </exit>
+    <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="8822">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The M&apos;hael&apos;s office" vnum="8824" zone="88">
+      <roomdescription>In the center of the room sits a large, wooden desk. That is all the furniture
+in the room. There is no chair for you to sit in; there was not meant to be.
+You will stand before the M&apos;hael. The walls are plain and barren of any 
+decorations. You must stand without distraction and wait upon the pleasure,
+or displeasure as the case may be, of the M&apos;hael.
+</roomdescription>
+      <flags>14</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="" exitinfo="11" keynum="0" toroom="8825">
+      <description/>
+    </exit>
+    <exit direction="south" keyword="" exitinfo="3" keynum="0" toroom="8823">
+      <description/>
+    </exit>
+    <exit direction="west" keyword="" exitinfo="0" keynum="0" toroom="8826">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The M&apos;hael&apos;s bedroom" vnum="8825" zone="88">
+      <roomdescription>This is the M&apos;hael&apos;s bedroom. A comfortable looking bed lies in one corner
+while a dresser stands across from it. Other than those two items of furniture
+the room seems rather barran. Odd for one so powerful to live so plainly.
+</roomdescription>
+      <flags>7</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="west" keyword="" exitinfo="11" keynum="0" toroom="8824">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The M&apos;hael&apos;s Study" vnum="8826" zone="88">
+      <roomdescription>This is the M&apos;hael&apos;s private study. In it stands a single, comfortable chair
+and a single, sturdy table. On the table lie a pair of books, which the
+M&apos;hael is currently reading for reasons known only to himself. A few 
+tapestries hang on the wall, breaking up the drab monotony of the walls. 
+There is nothing truly remarkable about anything in this room.
+</roomdescription>
+      <flags>7</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="" exitinfo="0" keynum="0" toroom="8824">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="A short hallway" vnum="8827" zone="88">
+      <roomdescription>This is a short, non-descript hallway leading to a private meeting room. 
+When the room is in use it is a good bet that the people inside do not wish
+to be disturbed so silence is probably the best policy.
+</roomdescription>
+      <flags>7</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="" exitinfo="3" keynum="0" toroom="8829">
+      <description/>
+    </exit>
+    <exit direction="east" keyword="" exitinfo="0" keynum="0" toroom="8822">
+      <description/>
+    </exit>
+    <exit direction="west" keyword="door" exitinfo="3" keynum="0" toroom="8884">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="A short hallway" vnum="8828" zone="88">
+      <roomdescription>This is a short, non-descript hallway leading to the library of the Black
+Tower. It is dark and quiet, not the sort of place to linger. The floorboards
+creak softly as the farmhouse settles and various \c23c\c00\c07o\c00\c23b\c00\c07w\c00\c23e\c00\c07b\c00\c23s\c00 in the corners 
+give the hall a rather eerie look.
+</roomdescription>
+      <flags>7</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="8830">
+      <description/>
+    </exit>
+    <exit direction="west" keyword="" exitinfo="0" keynum="0" toroom="8822">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="A small private meeting room" vnum="8829" zone="88">
+      <roomdescription>This is a private meeting hall. It is a place for some of the Asha&apos;man to go
+to discuss topics of a more . . . private nature. The furnishings are quite
+comfortable and relaxing. Several chairs dot the room and two large couches
+sit against the side walls. A few small tables can be found at various places
+throughout the room, for those who need a solid surface. 
+</roomdescription>
+      <flags>7</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="south" keyword="" exitinfo="3" keynum="0" toroom="8827">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The library of the Black Tower" vnum="8830" zone="88">
+      <roomdescription>This is the library of the Black Tower. Shelves full of books line the walls
+and various books lie scattered across one of the library&apos;s several tables.
+Stiff-backed wooden chairs stand next to the tables and a stepladder stands
+ready to help those who have not mastered the One Power to reach the books
+on the higher shelves. The books themselves cover topics as diverse as the
+men who live here, as most have been brought by one or the other of them.
+Most of the books are fairly common, but the occasional rare one can be found
+as well. Some books are tattered and worn while others remain in good care.
+Some seem oft visited and well read while others seem to be accumulating dust.
+</roomdescription>
+      <flags>7</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="8828">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="A small field serving as a practice yard" vnum="8831" zone="88">
+      <roomdescription>The small, open field is in use at the moment. A line of bare-chested men
+stand here, practice swords at the ready, drilling under the watchful eye of
+A balding man who is sweating profusely. He walks among the students, nodding
+to a job well done and sharply correcting mistakes.
+</roomdescription>
+      <flags>22</flags>
+      <sector>Field</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="8820">
+      <description/>
+    </exit>
+    <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="8839">
+      <description/>
+    </exit>
+    <exit direction="west" keyword="" exitinfo="0" keynum="0" toroom="8832">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Another small field" vnum="8832" zone="88">
+      <roomdescription>Two lines of bare-chested men stand here under the watchful eye of a one-armed
+Aielman. The men are practicing unarmed combat. The first line of men kicks
+high then pivots and kicks again with the other leg. The second line punch
+the empty air in front of them as fast as they possibly can. 
+</roomdescription>
+      <flags>84</flags>
+      <sector>Field</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="" exitinfo="0" keynum="0" toroom="8831">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Path toward the Asha&apos;man training area" vnum="8833" zone="88">
+      <roomdescription>The path leads on towards the Asha&apos;man training area. Loud explosions can be
+heard as men in black coats practice their arts. The path itself is well worn 
+and bustling with black-coated traffic. No women and children dare to come
+this close to a place where Saidin is used so openly.
+</roomdescription>
+      <flags>70</flags>
+      <sector>Field</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="8836">
+      <description/>
+    </exit>
+    <exit direction="east" keyword="" exitinfo="0" keynum="0" toroom="8820">
+      <description/>
+    </exit>
+    <exit direction="west" keyword="" exitinfo="0" keynum="0" toroom="8834">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Training Hill" vnum="8834" zone="88">
+      <roomdescription>A large, rocky hill stands here, cleared off all trees. The only plant life
+around are several tenacious, though scorched, bushes which seem to be
+thriving despite the harsh treatment. The reason for this treatment is the
+fact that this is the training ground of the Asha&apos;man. Black-coated men stand
+in groups, large and small, and practice wielding the One Power as a weapon.
+</roomdescription>
+      <flags>66</flags>
+      <sector>Field</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="8838">
+      <description/>
+    </exit>
+    <exit direction="east" keyword="" exitinfo="0" keynum="0" toroom="8833">
+      <description/>
+    </exit>
+    <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="8835">
+      <description/>
+    </exit>
+    <exit direction="west" keyword="" exitinfo="0" keynum="0" toroom="8837">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="A pile of rubble" vnum="8835" zone="88">
+      <roomdescription>Many large rocks stand here, many of them blackened, scorched, chipped or
+otherwise marred by the use to which they have been put. Myriad smaller 
+stones lie scattered about the base of their larger brethren and many of them
+are also scarred by what can only be the use of the One Power.
+</roomdescription>
+      <flags>66</flags>
+      <sector>Field</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="8834">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Asha&apos;man sparring area" vnum="8836" zone="88">
+      <roomdescription>This large open yard is dedicated to swordplay. Several men in black coats 
+face off against one another in spars and others observe or practice by 
+themselves. A rack of practice swords stands off to one side, waiting for
+more Asha&apos;man to come and practice.
+</roomdescription>
+      <flags>66</flags>
+      <sector>Field</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="8833">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Training Area" vnum="8837" zone="88">
+      <roomdescription>The ground here is broken, cracked and scorched. It is rough and uneven. It
+looks like it has been rent and broken so many times that not even the tiniest
+pebble is in the same position as it was before the Asha&apos;man came to this
+farm. This is part of the Asha&apos;man training area and large groups of 
+black-coated men can be seen practicing. Rolling Rings of Earth and Fire
+churn the already marred ground and earthquakes set it all to rumbling.
+Perhaps this isn&apos;t the best place to be if you are not training yourself.
+</roomdescription>
+      <flags>64</flags>
+      <sector>Field</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="" exitinfo="0" keynum="0" toroom="8834">
+      <description/>
+    </exit>
+    <exit direction="northwest" keyword="" exitinfo="0" keynum="0" toroom="8872">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Triage" vnum="8838" zone="88">
+      <roomdescription>This tent is set up to care for those Asha&apos;man who are hurt while training 
+as well as to give the lower ranked Asha&apos;man practice in healing. Around the
+tent lie several black-coated men waiting to be attended to. 
+</roomdescription>
+      <flags>66</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="8834">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Path towards the barn" vnum="8839" zone="88">
+      <roomdescription>This path leads south towards the barn and the \c14tents\c00 that the lower ranking 
+Asha&apos;man call home. Women walk along the \c03dusty\c00 path on their way to or from
+various chores and small children scamper along as they find something or
+other to play. The scenery along the trail is monotonous, with not even the
+slightest splash of \c02green\c00 to lighten things up.
+</roomdescription>
+      <flags>70</flags>
+      <sector>Field</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="8831">
+      <description/>
+    </exit>
+    <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="8840">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Path towards the barn" vnum="8840" zone="88">
+      <roomdescription>The \c03dusty\c00 trail leads eventually to the barn. If you look closely you can see
+the very top of it behind a screen of trees. Small children scamper along the
+trail, always seeming to be in the way of one of the women who are going
+about various chores.
+</roomdescription>
+      <flags>70</flags>
+      <sector>Field</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="8839">
+      <description/>
+    </exit>
+    <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="8841">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Path to the barn" vnum="8841" zone="88">
+      <roomdescription>You are much nearer the barn now. You can clearly make it out through the 
+screen of trees that hid it from view before. Nearby are two rows of neat,
+\c14white tents\c00 which house the lower ranking Asha&apos;man. 
+</roomdescription>
+      <flags>70</flags>
+      <sector>Field</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="8840">
+      <description/>
+    </exit>
+    <exit direction="east" keyword="" exitinfo="0" keynum="0" toroom="8842">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Outside the barn" vnum="8842" zone="88">
+      <roomdescription>You stand amongst a line of surprisingly \c02green\c00 trees looking towards the barn.
+The building before you is large and looks newly built. It&apos;s \c08red-painted\c00 bulk
+totally dominates the landscape. To the north is the corral where the few
+horses that belong to the Asha&apos;man are kept. To the south are the two rows of
+\c14white tents\c00 which house the lower ranking Asha&apos;man.
+</roomdescription>
+      <flags>70</flags>
+      <sector>Field</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="8844">
+      <description/>
+    </exit>
+    <exit direction="east" keyword="" exitinfo="0" keynum="0" toroom="8846">
+      <description/>
+    </exit>
+    <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="8843">
+      <description/>
+    </exit>
+    <exit direction="west" keyword="" exitinfo="0" keynum="0" toroom="8841">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="\c14Tents\c00" vnum="8843" zone="88">
+      <roomdescription>As you stand in the field and look around the first thing you notice is the
+row of half a dozen \c14white tents\c00. The tents are large and clean and can 
+comfortably hold several people. To the east stands another row of Tents and
+the large, newly-built barn is nearby. Off to the north is the corral and
+if you travel even further in that direction you will come to the Black Tower.
+</roomdescription>
+      <flags>70</flags>
+      <sector>Field</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="8842">
+      <description/>
+    </exit>
+    <exit direction="east" keyword="" exitinfo="0" keynum="0" toroom="8845">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The corral" vnum="8844" zone="88">
+      <roomdescription>A small herd of horses trot restlessly around the corral, churning up large
+volumes of dust. A rail fence encloses the horses and a single gate bars 
+the path. Several young children sit on the fence, laughing and pointing
+happily at the large mounts. Occasionally one trots over to the rail to be
+petted by the kids.
+</roomdescription>
+      <flags>70</flags>
+      <sector>Field</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="8842">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="More \c14tents\c00" vnum="8845" zone="88">
+      <roomdescription>The second row of \c14tents\c00 is just as straight and clean as the first. It too 
+contains half a dozen \c14tents\c00 and they all look as if they are occupied. 
+You can not help but notice the large barn that stands nearby. It looks 
+sturdy and newly built.
+</roomdescription>
+      <flags>70</flags>
+      <sector>Field</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="west" keyword="" exitinfo="0" keynum="0" toroom="8843">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Barn" vnum="8846" zone="88">
+      <roomdescription>The inside of the barn is \c23dark\c00 and secluded. A single shaft of  \c03g\c00\c10o\c00\c03l\c00\c10d\c00\c03e\c00\c10n\c00 \c03s\c00\c10u\c00\c03n\c00\c10l\c00\c03i\c00\c10g\c00\c03h\c00\c10t\c00
+spills in through a window set high in the side of the barn. Motes of dust
+dance through the sunbeam as it illuminates a large, warm-looking pile of \c10hay\c00.
+A long wooden ladder leads up to a loft which seems to be filled with even
+more \c10hay\c00. The barn seems to be a lazy, comfortable spot.
+</roomdescription>
+      <flags>70</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="west" keyword="" exitinfo="0" keynum="0" toroom="8842">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="A meandering path" vnum="8847" zone="88">
+      <roomdescription>The path meanders beneath large birch trees. The \c02g\c00\c09r\c00\c02e\c00\c09e\c00\c02n\c00 \c09b\c00\c02o\c00\c09u\c00\c02g\c00\c09h\c00\c02s\c00 drape the path
+in \c23s\c00\c01h\c00\c23a\c00\c01d\c00\c23o\c00\c01w\c00\c23s\c00 and the soft chirping of crickets can be heard in the background.
+Out of the corner of your eye you can catch the occasional flitting of some
+small animal as it scampers from place to place.
+</roomdescription>
+      <flags>70</flags>
+      <sector>Forest</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="west" keyword="" exitinfo="0" keynum="0" toroom="8808">
+      <description/>
+    </exit>
+    <exit direction="northeast" keyword="" exitinfo="0" keynum="0" toroom="8848">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The path along a stream" vnum="8848" zone="88">
+      <roomdescription>The path meanders down through the trees alongside a quickly flowing \c04s\c00\c11t\c00\c06re\c00\c13a\c00\c14m\c00.
+Large birch trees drape the path in cool \c23s\c00\c07h\c00\c23a\c00\c07d\c00\c23o\c00\c07w\c00\c23s\c00. Ferns, reeds and soft 
+\c02green moss\c00 carpet the banks. The water of the stream looks cool, clear and
+very refreshing.
+</roomdescription>
+      <flags>6</flags>
+      <sector>Forest</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="8849">
+      <description/>
+    </exit>
+    <exit direction="northeast" keyword="" exitinfo="0" keynum="0" toroom="8850">
+      <description/>
+    </exit>
+    <exit direction="southwest" keyword="" exitinfo="0" keynum="0" toroom="8847">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="A secluded pool" vnum="8849" zone="88">
+      <roomdescription>The stream collects into a large \c04p\c00\c11o\c00\c04o\c00\c11l\c00 here. It is wide, deep, cool and clear:
+perfect for a leisurely swim. The many tall birches cloak the pool in cool 
+shade. Along the shores of the pool the grass is a deep \c02g\c00\c09r\c00\c02e\c00\c09e\c00\c02n\c00, unusual in such 
+a fierce heat. Beneath one of the taller birches sits a sturdy wooden bench, 
+worn with use, but still in good repair. A light breeze sends \c23r\c00\c07i\c00\c23p\c00\c07p\c00\c23l\c00\c07e\c00\c23s\c00 
+the surface of the pool. It is a very relaxing scene.
+</roomdescription>
+      <flags>70</flags>
+      <sector>Forest</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="8848">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The path along a stream" vnum="8850" zone="88">
+      <roomdescription>The \c04s\c00\c11t\c00\c06re\c00\c13a\c00\c14m\c00 flows gently through the forest, followed faithfully by the 
+meandering path. The entire scene is draped in cool shades of \c02g\c00\c09r\c00\c02e\c00\c09e\c00\c02n\c00 as 
+\c10s\c00\c14u\c00\c10n\c00\c14l\c00\c10i\c00\c14g\c00\c10h\c00\c14t\c00 filters through the canopy of birch boughs. A cool breeze 
+rustles the leaves.
+</roomdescription>
+      <flags>70</flags>
+      <sector>Forest</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="8851">
+      <description/>
+    </exit>
+    <exit direction="south" keyword="door cabin" exitinfo="3" keynum="8878" toroom="8878">
+      <description/>
+    </exit>
+    <exit direction="southwest" keyword="" exitinfo="0" keynum="0" toroom="8848">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="A path beside a waterfall" vnum="8851" zone="88">
+      <roomdescription>The path continues to follow the stream through the forest. Eventually the 
+path comes to a small \c04w\c00\c11a\c00\c06t\c00\c13er\c13\c14f\c00\c07a\c00\c14l\c00\c07l\c00. The water tumbles down over glistening
+rocks as it flows along, \c14w\c00\c07h\c00\c14i\c00\c07t\c00\c14e\c00 \c14f\c00\c07o\c00\c14a\c00\c07m\c00 momentarily breaking up its crystal
+clarity. \c02G\c00\c09r\c00\c02e\c00\c09e\c00\c02n\c00 moss and reeds grow near the bank of the stream and the large
+birch trees provide plenty of \c23shade\c00.
+</roomdescription>
+      <flags>70</flags>
+      <sector>Forest</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="8852">
+      <description/>
+    </exit>
+    <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="8850">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The path along a stream" vnum="8852" zone="88">
+      <roomdescription>The path continues to follow the \c04s\c00\c11t\c00\c06re\c00\c13a\c00\c14m\c00, which flows merrily through the
+forest, bounded on either side by cool \c02g\c00\c09r\c00\c02e\c00\c09e\c00\c02n\c00 grass. The birch trees bask the
+path in cool \c23s\c00\c07h\c00\c23a\c00\c07d\c00\c23o\c00\c07w\c00\c23s\c00 and the soft chirp of crickets can be heard nearby.
+Not far to the north it is possible to see the spring from whence the stream
+flows and a ways to the south can be seen a \c04w\c00\c11a\c00\c06t\c00\c13er\c13\c14f\c00\c07a\c00\c14l\c00\c07l\c00.
+</roomdescription>
+      <flags>70</flags>
+      <sector>Forest</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="8853">
+      <description/>
+    </exit>
+    <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="8851">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The path near a spring" vnum="8853" zone="88">
+      <roomdescription>The \c04s\c00\c11t\c00\c06re\c00\c13a\c00\c14m\c00 leads back eventually to this place, its source, and so the path
+which followed it leads here as well. A small spring \c11b\c00\c14u\c00\c13bbl\c00\c14e\c00\c11s\c00 up from a cleft
+in a large \c23rock\c00. The water from the spring rushes down, quickly carving 
+itself a path southward.
+</roomdescription>
+      <flags>70</flags>
+      <sector>Forest</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="8852">
+      <description/>
+    </exit>
+    <exit direction="northwest" keyword="" exitinfo="0" keynum="0" toroom="8854">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="A meandering path" vnum="8854" zone="88">
+      <roomdescription>The path continues to wind its way through the forest in an apparently aimless
+fashion. To the southeast is heard the bubbling of a spring. To the north the
+path dissappears into the forest.
+</roomdescription>
+      <flags>4166</flags>
+      <sector>Forest</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="8855">
+      <description/>
+    </exit>
+    <exit direction="west" keyword="" exitinfo="7" keynum="8883" toroom="8883">
+      <description/>
+    </exit>
+    <exit direction="southeast" keyword="" exitinfo="0" keynum="0" toroom="8853">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Along a meandering path" vnum="8855" zone="88">
+      <roomdescription>The forest continues and so does the \c03dusty\c00 path. Large trees shade the path
+and a cool breeze rustles through the leaves. Off to the south the forest
+continues on unbroken while to the northwest it seems to be thinning. There 
+seem to be fewer trees in that direction.
+</roomdescription>
+      <flags>70</flags>
+      <sector>Forest</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="8854">
+      <description/>
+    </exit>
+    <exit direction="northwest" keyword="" exitinfo="0" keynum="0" toroom="8856">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Further along the meandering path" vnum="8856" zone="88">
+      <roomdescription>The forest is definitely thinner here than it is further in. The reason for 
+this is the fact that to the northwest lies a large open meadow. The \c10s\c00\c03u\c00\c10n\c00 can
+be seen peeking through the branches here and the bright clearing can be seen
+quite clearly.
+</roomdescription>
+      <flags>70</flags>
+      <sector>Forest</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="southeast" keyword="" exitinfo="0" keynum="0" toroom="8855">
+      <description/>
+    </exit>
+    <exit direction="northwest" keyword="" exitinfo="0" keynum="0" toroom="8857">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The path through a meadow" vnum="8857" zone="88">
+      <roomdescription>The path leads through an open meadow. The \c10sun\c00 shines brightly down on the
+\c02green grass\c00 and multicolored \c12wild\c10flo\c00\c12wers\c00. It seems quiet this far from the 
+main area of the farm; only the singing of birds and the soft drone of 
+\c10h\c00\c23o\c00\c10n\c00\c23e\c00\c10y\c00\c23b\c00\c10e\c00\c23e\c00\c10s\c00 as they flit from flower to flower break the silence.
+</roomdescription>
+      <flags>4166</flags>
+      <sector>Field</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="door" exitinfo="7" keynum="8873" toroom="8873">
+      <description/>
+    </exit>
+    <exit direction="west" keyword="" exitinfo="0" keynum="0" toroom="8858">
+      <description/>
+    </exit>
+    <exit direction="southeast" keyword="" exitinfo="0" keynum="0" toroom="8856">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The path from the meadow" vnum="8858" zone="88">
+      <roomdescription>The meadow is intersperesed here with young trees, mostly birch and maple. 
+\c13Wild\c00\c10flo\c00\c13wers\c00 grow abundantly here and the grass is soft and \c02g\c00\c09r\c00\c02e\c00\c09e\c00\c02n\c00. The path
+wanders through the lush meadow. To the east the meadow is more open while
+the path runs into a forest as it heads southwest.
+</roomdescription>
+      <flags>70</flags>
+      <sector>Field</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="" exitinfo="0" keynum="0" toroom="8857">
+      <description/>
+    </exit>
+    <exit direction="southwest" keyword="" exitinfo="0" keynum="0" toroom="8859">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The meandering path continues" vnum="8859" zone="88">
+      <roomdescription>The forest is definitely thinner here than elsewhere. The trees are spaced 
+further apart and the \c03dusty\c00 path does not have to wander quite so much to 
+avoid them. To the northeast it is possible to make out a large meadow.
+</roomdescription>
+      <flags>70</flags>
+      <sector>Forest</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="northeast" keyword="" exitinfo="0" keynum="0" toroom="8858">
+      <description/>
+    </exit>
+    <exit direction="southwest" keyword="" exitinfo="0" keynum="0" toroom="8860">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The meandering path turns" vnum="8860" zone="88">
+      <roomdescription>The path turns sharply northward as it meanders through the forest. Several
+large \c23rocks\c00 sit beside the path. How they got there is a mystery, though they
+seem quite new.
+</roomdescription>
+      <flags>4166</flags>
+      <sector>Forest</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="south" keyword="door" exitinfo="7" keynum="8877" toroom="8877">
+      <description/>
+    </exit>
+    <exit direction="west" keyword="" exitinfo="0" keynum="0" toroom="8861">
+      <description/>
+    </exit>
+    <exit direction="northeast" keyword="" exitinfo="0" keynum="0" toroom="8859">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The meandering path" vnum="8861" zone="88">
+      <roomdescription>The \c03dusty\c00 path continues to wind it&apos;s way through the woods. The large trees
+cast deep \c23s\c00\c07h\c00\c23a\c00\c07d\c00\c23o\c00\c07w\c00\c23s\c00 across the path and a cool breeze rustles through the
+branches. To the southwest lies a large clearing.
+</roomdescription>
+      <flags>70</flags>
+      <sector>Forest</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="" exitinfo="0" keynum="0" toroom="8860">
+      <description/>
+    </exit>
+    <exit direction="southwest" keyword="" exitinfo="0" keynum="0" toroom="8862">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The meandering path through a clearing" vnum="8862" zone="88">
+      <roomdescription>A broad large clearing opens up before the path. \c02G\c00\c09r\c00\c02e\c00\c09e\c00\c02n\c00 grass lines either side
+of the path and bright \c10s\c00\c03u\c00\c10n\c00\c03l\c00\c10i\c00\c03g\c00\c10h\c00\c03t\c00 shines the \c06a\c00\c13z\c00\c06u\c00\c13r\c00\c06e\c00 sky, giving a much
+needed break to the \c23s\c00\c07h\c00\c23a\c00\c07d\c00\c23o\c00\c07w\c00\c23s\c00. Birds can be heard singing cheerfully nearby and
+a soft breezes cools the air.
+</roomdescription>
+      <flags>70</flags>
+      <sector>Forest</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="west" keyword="" exitinfo="0" keynum="0" toroom="8863">
+      <description/>
+    </exit>
+    <exit direction="northeast" keyword="" exitinfo="0" keynum="0" toroom="8861">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The meandering path beneath a large tree" vnum="8863" zone="88">
+      <roomdescription>The path is forced to wander around an oak tree of enormous proportions. The
+tree must be incredibly old as it towers above all of the other nearby trees.
+Its huge boughs cast cool, \c02g\c00\c09r\c00\c02e\c00\c09e\c00\c02n\c00 \c23s\c00\c07h\c00\c23a\c00\c07d\c00\c23o\c00\c07w\c00\c23s\c00 on the path below. Thick branches
+make it perfect for climbing, though the children who scurry about the farm
+seem not to have found it . . . yet.
+</roomdescription>
+      <flags>65606</flags>
+      <sector>Forest</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="" exitinfo="0" keynum="0" toroom="8862">
+      <description/>
+    </exit>
+    <exit direction="west" keyword="" exitinfo="0" keynum="0" toroom="8864">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The meandering path continues" vnum="8864" zone="88">
+      <roomdescription>The meandering path continues on through the forest. The \c03dusty\c00 path is shaded
+by the large trees through which it threads. To the east a large oak tree can
+be seen, towering over the surrounding trees.
+</roomdescription>
+      <flags>70</flags>
+      <sector>Forest</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="" exitinfo="0" keynum="0" toroom="8863">
+      <description/>
+    </exit>
+    <exit direction="southwest" keyword="" exitinfo="0" keynum="0" toroom="8865">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The meandering path over a hill" vnum="8865" zone="88">
+      <roomdescription>The path crests a large hill. A smattering of trees stand around the base of 
+the hill and to the northeast the forest thickens. The path leads down from
+the hill into the heart of the forest. From the top of the hill it is 
+possible to see the farm a ways to the south.
+</roomdescription>
+      <flags>70</flags>
+      <sector>Hills</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="northeast" keyword="" exitinfo="0" keynum="0" toroom="8864">
+      <description/>
+    </exit>
+    <exit direction="southwest" keyword="" exitinfo="0" keynum="0" toroom="8866">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The meandering path through an open field" vnum="8866" zone="88">
+      <roomdescription>The path meanders through a wide open field. All the grass is slightly \c03browned\c00
+as it is beaten down by the harsh \c10s\c00\c03u\c00\c10n\c00 above. It is incredibly hot and not the
+slightest breeze can be felt to alleviate the heat.
+</roomdescription>
+      <flags>70</flags>
+      <sector>Field</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="door" exitinfo="15" keynum="8885" toroom="8885">
+      <description>None
+</description>
+    </exit>
+    <exit direction="northeast" keyword="" exitinfo="0" keynum="0" toroom="8865">
+      <description/>
+    </exit>
+    <exit direction="southwest" keyword="" exitinfo="0" keynum="0" toroom="8867">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The meandering path" vnum="8867" zone="88">
+      <roomdescription>The path continues to meander through the \c23rocks\c00 and \c03dust\c00. It is very quiet
+here, except for the occasional explosion from the training area to the south.
+The path is very monotonous and boring, though a a ways to the northeast a 
+forest breaks up the horizon. The path leads toward it.
+</roomdescription>
+      <flags>70</flags>
+      <sector>Field</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="8868">
+      <description/>
+    </exit>
+    <exit direction="northeast" keyword="" exitinfo="0" keynum="0" toroom="8866">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The meandering path broadens" vnum="8868" zone="88">
+      <roomdescription>The ground is very rocky and the wind kicks up lots of \c03dust\c00 as the path wends
+its way through the field. Apparently this is a more well traveled section of
+the path as it is much broader then the others.
+</roomdescription>
+      <flags>4166</flags>
+      <sector>Field</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="8867">
+      <description/>
+    </exit>
+    <exit direction="east" keyword="door" exitinfo="7" keynum="8879" toroom="8879">
+      <description/>
+    </exit>
+    <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="8869">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The meandering path" vnum="8869" zone="88">
+      <roomdescription>The \c03dusty\c00 path wanders aimlessly. To the north is a large, open field. It 
+looks rather dry and \c03brown\c00 here, the only plants that seem to be thriving are
+the weeds. Large \c23rocks\c00 lie scattered about and the path winds it&apos;s way through
+them.
+</roomdescription>
+      <flags>70</flags>
+      <sector>Field</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="8868">
+      <description/>
+    </exit>
+    <exit direction="southeast" keyword="" exitinfo="0" keynum="0" toroom="8870">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Another foundation" vnum="8870" zone="88">
+      <roomdescription>There is not as much bustle about this foundation as there is about its sister
+to the east. Fewer Asha&apos;man surround it and they seem to be taking their time.
+Never the less it appears that some day the foundation will grow into a
+giant of a building.
+</roomdescription>
+      <flags>70</flags>
+      <sector>Field</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="" exitinfo="0" keynum="0" toroom="8871">
+      <description/>
+    </exit>
+    <exit direction="northwest" keyword="" exitinfo="0" keynum="0" toroom="8869">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The foundation of a building" vnum="8871" zone="88">
+      <roomdescription>The path runs near the foundations of what will one day be a very large
+building. Black-coated men can be seen at various places around the site.
+Large \c23stones\c00 and \c03boards\c00 float almost lazily through the air as the building
+puts itself together under the watchful eyes of the Asha&apos;man.
+</roomdescription>
+      <flags>70</flags>
+      <sector>Field</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="west" keyword="" exitinfo="0" keynum="0" toroom="8870">
+      <description/>
+    </exit>
+    <exit direction="southeast" keyword="" exitinfo="0" keynum="0" toroom="8872">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="A broad path" vnum="8872" zone="88">
+      <roomdescription>A broad path leads off from the training area where loud explosions can 
+still be heard. The path is \c03dusty\c00, though it looks well trodden and it 
+leads off into the distance, taking a rather meandering route. Not much
+further ahead it is possible to make out what appear to be the foundations
+of several new buildings.
+</roomdescription>
+      <flags>70</flags>
+      <sector>Field</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="southeast" keyword="" exitinfo="0" keynum="0" toroom="8837">
+      <description/>
+    </exit>
+    <exit direction="northwest" keyword="" exitinfo="0" keynum="0" toroom="8871">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="High Asha&apos;man Mortis&apos; Cabin" vnum="8873" zone="88">
+      <roomdescription>You find yourself standing in a small, sparsely decorated room. There is
+a small desk one corner, a low flat bed in another , and a small wardrobe in
+another. On top of the desk are several sets of maps, some precise while others
+seem only half finished. There is a small \c23black banner\c00 with a \c10g\c00\c03o\c00\c10l\c00\c03d\c00\c10e\c00\c03n\c00 image of
+the Lord Dragon, over a pair of crossed \c23s\c00\c07i\c00\c23l\c00\c07v\c00\c23e\c00\c07r\c00 swords. Most of the decorations
+seem untouched, except for a polished wooden stool set near the bed, as
+as well as a large trunk in the far corner of the room. A vase of fresh
+\c12wild\c00\c10flo\c00\c12wers\c00 sits atop the desk, adding a slight bit of color to the room. 
+On the wall above the desk is a \c23charcoal-drawn\c00 portrait of a man, the bottom 
+reading, &apos;Mortis&apos;. The room shows signs of recent use.
+</roomdescription>
+      <flags>512</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="south" keyword="door" exitinfo="7" keynum="8873" toroom="8857">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Nathaniel and Allesande&apos;s Cabin" vnum="8874" zone="88">
+      <roomdescription>The main living room of the cabin is large and spacious. A \c08f\c00\c10ir\c00\c08e\c00 burns merrily
+upon the hearth of the large, \c23stone\c00 fireplace set in the eastern wall. A 
+large, comfortable looking couch with several warm-looking, \c10m\c00\c09u\c00\c08l\c00\c14t\c00\c11i\c00-\c10c\c00\c14o\c00\c08l\c00\c11o\c00\c09r\c00\c13e\c00\c10d\c00
+quilts thrown over the back sits before the fireplace, basking in its warmth.
+A large window looks out to the west and in front of it stands a small, oaken
+table set for two. Delicious aromas waft through the door leading north, 
+obviously to the kitchen and a set of narrow stairs leads up to the loft where
+Nathaniel and Allesande sleep.
+</roomdescription>
+      <flags>522</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="8875">
+      <description/>
+    </exit>
+    <exit direction="up" keyword="door" exitinfo="3" keynum="0" toroom="8876">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Kitchen" vnum="8875" zone="88">
+      <roomdescription>The kitchen is warm and full of delicious aromas. A large woodstove stands 
+against the back wall, a pleasant warmth radiating from it. A large, wooden
+counter runs across another wall, a set of \c23cast iron pots and pans\c00 hanging
+above it, ready for the next meal. Strings of onions, garlic and other 
+vegetables hang along the thick, oaken beams that run across the ceiling and
+a small door opens to a pantry, revealing more vegetables--\c08tomatos\c00, carrots,
+celery, \c09p\c00\c08e\c00\c10p\c00\c09p\c00\c08e\c00\c10r\c00\c09s\c00 and more--as well as several sacks of fine, \c14white flour\c00.
+</roomdescription>
+      <flags>10</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="8874">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Nathaniel and Allesande&apos;s Bedroom" vnum="8876" zone="88">
+      <roomdescription>A large, four-poster featherbed sits in the back corner of the bedroom, piled 
+high with warm quilts. Two fluffy, \c14white pillows\c00 sit at the head of the bed.
+Near the bed stands a small, \c03wooden\c00 table. A lamp sits upon the table, shining
+brightly. Across the room from the bed a large, oaken dresser stands, an oak
+wardrobe beside it.
+</roomdescription>
+      <flags>522</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="down" keyword="door" exitinfo="3" keynum="0" toroom="8874">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Asha&apos;man Trev&apos;s Room" vnum="8877" zone="88">
+      <roomdescription>Before you is a plain soldiers room with everything well-made but nothing 
+really extravagant except for three \c23s\c00\c07i\c00\c23l\c00\c07v\c00\c23e\c00\c07r\c00 \c23s\c00\c07t\c00\c23a\c00\c07t\c00\c23u\c00\c07e\c00\c23s\c00 placed precisely on top
+of a small table.  Each statue shows a great deal of detail the largest of 
+which is of an attractive woman cradling an infant in her arms. Beside the 
+woman stand smaller statues of a small boy and girl that both share some of 
+the woman&apos;s features. A small comfortable looking bed rests in one corner with 
+a \c23steel\c00 worked wardrobe at its base.  Next to the bed there is a nightstand on 
+top of which rests a small lantern and a \c03leather bound\c00 book.  Along side the 
+other wall opposite of the bed is a desk cluttered with papers pertaining to 
+the status of his students.
+</roomdescription>
+      <flags>512</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="door" exitinfo="7" keynum="8877" toroom="8860">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Asha&apos;man Kilmor&apos;s House" vnum="8878" zone="88">
+      <roomdescription>The &apos;study&apos; of Kilmor consists of one, quite large, room. In one corner
+stands an unmade bed, littered with papers, parchments, and old books. 
+Above the head of the bed, secured to the wall, hangs a Shienaran
+two-handed sword and a large shield with the sigil of House Shiowa. 
+
+A large desk resides in the middle of the room, this also littered
+with old papers, and book as well as writing material, and a black 
+coat is carelessly tossed over the back of the chair. 
+
+At the other wall, oposite from the bed, stands a large distiller. It 
+seems to &apos;perform it duties&apos; without a fire nor any water for the cooling. 
+Hmm..Sometimes it pays off to be a male channeler. :)
+
+If you&apos;re planning on entering, tread carefully, not only because of the
+extremely littered floor, but also because of the sign hanging above
+the entrance. 
+</roomdescription>
+      <flags>65546</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exdesc keyword="chair coat">
+      <description>A quite ordinary chair, with a slightly smelly black coat 
+sloppily tossed over it. The coat seems to have been used without
+washing for an Age or two. 
+</description>
+    </exdesc>
+    <exdesc keyword="sign door plaque">
+      <description>The sign says:
+
+\c01Abandon hope all Ye who enter here.\c00
+
+</description>
+    </exdesc>
+    <exdesc keyword="distiller booze liquor sprit">
+      <description>Two big copper bowls, openings sealed together somehow, creating
+something that looks like a barrel, but a barrel where the top and
+the bottom are narrower than the middle. From the top of the contraption
+a pipe extends, pointing downwards into a barrel. There seems to be 
+something dripping out of the pipe, into the barrels. 
+\c01Male Channie info\c00
+Flows of Fire have been wowen around the kettle, and flows of Air and
+Water has been woven around the pipe (for cooling).
+
+
+</description>
+    </exdesc>
+    <exdesc keyword="parchments papers books notes">
+      <description>The papers and books seems to touch a lot of subjects, but mostly
+about tales from the Age of Legends, anathomy, diseases, etc..
+The notes seems to be a lot of weird theories on how different weaves
+could be used in different ways to inflict more harm than normally, as
+well as some theories on how is -should- be possible to Heal anything
+but death with the One Power, including Gentling, whether done on purpose
+or by accident. 
+</description>
+    </exdesc>
+    <exdesc keyword="shield sword armour">
+      <description>Both the sword and the shield are masterly crafted, with no or little
+ornaments. The shield wears the sigil of House Shiowa, a running wolf
+on a checkered field of green and blue, lined with silver. 
+
+</description>
+    </exdesc>
+    <exdesc keyword="bed ">
+      <description>A quite ordinary but well crafted bed, seems it been unmade for
+a very long time. Books and papers litter the bed, as everywhere 
+else
+</description>
+    </exdesc>
+    <exdesc keyword="desk">
+      <description>A well crafted desk, as with everything else in this room, this
+desk is also littered with books and papers. 
+</description>
+    </exdesc>
+    <exdesc keyword="wall">
+      <description>An ordinary wall, in a perfectly normal cottage. What did you
+expect? On the wall, however, a shield and a sword is fastened somehow. 
+</description>
+    </exdesc>
+  </room>
+  <room>
+    <roombasic title="Asha&apos;man Danath&apos;s Quarters" vnum="8879" zone="88">
+      <roomdescription>You stand in a spartanly furnished room, there is a bed pushed against the far 
+wall, a small night stand is next to it, it has several books upon it, a 
+sitting chair is in front of the flickering fireplace, looking well used, as 
+if it is often used there is a table, in front of the sitting chair, on it is 
+a half melted candle, and another book, it&apos;s title reads the Adventures of 
+Jain Farstrider.
+</roomdescription>
+      <flags>520</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="west" keyword="door" exitinfo="7" keynum="8879" toroom="8868">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Inside the oak tree" vnum="8880" zone="88">
+      <roomdescription>Entering into a surprisingly spacious room, your eyes pick up on the fact that 
+the \c03room\c00 seems alive... upon closer look you realize that everything is
+formed out of the tree, nothing carved as the tree grew in this shape. Upon 
+the floor is a exquisitely crafted Tairen \c04rug \c00 A water basin grows out of 
+the side of the wall, filled with cool, pure \c11water\c00 at all times. On the
+opposite side of you a \c03table\c00 extends from the wall and floor taking up 
+half the space. Surrounding the table are several comfortably crafted chairs 
+of Andoran make it seems. As your eyes complete their scan, you notice a 
+living stair extending from the side of the wall and wrapping up out of sight.
+</roomdescription>
+      <flags>65546</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="up" keyword="" exitinfo="0" keynum="0" toroom="8881">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Asha&apos;man Daer&apos;s study" vnum="8881" zone="88">
+      <roomdescription>Ascending the stairs, you are greated with the warm feeling a study 
+provides... On the far side of the wall a \c03bookcase\c00 extends from the wall, 
+it&apos;s shelves filled. A comfortable \c07seat\c00 filled with cushions stands next to
+it. Scanning the shelves you recognize famous works, and historical records. 
+Ranging from the Travels of Jain Farstrider, histories of kingdoms even as far 
+back as Artur Hawkwing, all the way to legends from before and after the 
+Breaking of the World, some in the \c10old tongue\c00. An elegantly carved
+\c03lampstand\c00 stands near the bookshelves and chair, oddly bearing no fuel and
+it&apos;s top ending in a bowl shape. Nearby the stairs continue their ascension, 
+again extending out of sight.
+</roomdescription>
+      <flags>26</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="up" keyword="" exitinfo="3" keynum="0" toroom="8882">
+      <description/>
+    </exit>
+    <exit direction="down" keyword="" exitinfo="0" keynum="0" toroom="8880">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Asha&apos;man Daer&apos;s Bedroom" vnum="8882" zone="88">
+      <roomdescription>Coming to the height of the stairs, you enter a solem looking room a large 
+\c07oaken bed\c00 protrudes into the center of the room, formed in the same way out of 
+the heart of the tree. From the ceiling hangs a large black banner, a \c10battle
+dragon\c00 spread across it. Beneath it on the bed is a \c11bedspread\c00 with a
+\c08Hawk\c00 in flight emblazoned on it.  The wall above the headboard of the bed 
+bears a broken lance in two parts, the tip&apos;s end crusted with old \c01blood\c00, 
+while a battered kite shield bearing the same markings of the bedspread, a 
+chipped sword hangs beside it. Upon closer look your eyes notice the handle 
+bears a heron mark, yet oddly is covered in dried \c01blood\c00 as well. Out the 
+only window in this unique house stands an odd contraption, a long \c07tube\c00 with 
+lens on either end occupies an impressive view of the surrounding area.
+</roomdescription>
+      <flags>8</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="down" keyword="" exitinfo="3" keynum="0" toroom="8881">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Storm Leader Justen&apos;s House" vnum="8883" zone="88">
+      <roomdescription>You stand in a moderatly big room. The two windows, carved into the wall
+at your back, allow for a small amount of daylight or moonlight, depending 
+on the time of day, to enter the room. The wall to your left is dominated 
+by a huge shelf. It is stacked with as many books that can be shoved into 
+it, and seems to be constantly added to. On the opposite wall from the door 
+you entered through is a fireplace, built into the wall. Above it lies a 
+huge \c09t\c11a\c09p\c11e\c09s\c11t\c09r\c11y\c00, sewn into it is a map of the known world, from the 
+\c11Aryth Ocean\c00 to the far distant lands of Shara. A plain looking bed spreads
+out from the middle of the wall to your right, the sheets folded neatly. 
+To the bed&apos;s left, in the corner, lies a \c03small oaken table\c00, three 
+chairs surrounding it. On the table lies a book with a dusty cover, its 
+title completely faded  away over time. The book is open, remaining on a 
+certain page, marking Magus&apos;s progress, apparently forgotten for now. To
+the bed&apos;s right, propped against the wall, is a simple wooden closet, all 
+of his clothes inside. Spreading out over the floor of the room lies a rug, 
+in shades of \c06pale blue\c00. A sense of \c07peace\c00 and \c07tranquility\c00
+lingers about the room, as if it is oddly untouched from the worries and
+troubles of the outside world...
+</roomdescription>
+      <flags>65546</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+  </room>
+  <room>
+    <roombasic title="The Watcher&apos;s Study" vnum="8884" zone="88">
+      <roomdescription>The room is stark and plain, with a simple oak desk planted solidly at
+one end.  A large, well-crafted wooden chair, all square angles and
+straight lines, looms behind the desktop, an ominous symbol of authority.
+Another considerably smaller chair, the only other piece of furniture
+in the spartan room, crouches near the center, forlorn and abandoned.
+Anyone who might be sitting there would find himself at the center of a
+strictly symmetrical layout.  Nothing adorns the plain walls or the
+bare floor, nothing but a thin coat of varnish.  Everything about the
+area smells new, as if no one has used the room since its construction.
+</roomdescription>
+      <flags>94</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="door" exitinfo="3" keynum="0" toroom="8827">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Asha&apos;man Shane&apos;s House" vnum="8885" zone="88">
+      <roomdescription>The room glows a soft \c10amber\c00, though there is no visible source of \c14light\c00.
+An expansive bed, fluffed up with a feather mattress, claims one half of
+the room.  The headboard is perfectly centered against the wall; images
+of scantily clad women frolic over the wood, carved in frozen eternity.
+Plain \c14white sheets\c00 of the finest cotton are carefully folded and draped
+over the bed, unruffled and waiting for a body, or two, to snuggle
+beneath the covers.  The opposite end of the chambers is largely bare,
+save for a large mirror hanging from the wall, also centered like the
+bed.  The \c14silvered surface\c00 stands taller than a man, and spans a generous
+shoulder&apos;s breadth.  \c23Ebony wood\c00 frames the reflections flickering over
+the mirror&apos;s face, in remembrance of images lost to time, forbidden
+pictures of passion shared.
+</roomdescription>
+      <flags>65546</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+  </room>
+  <room>
+    <roombasic title="Asha&apos;man Verrick&apos;s House" vnum="8886" zone="88">
+      <roomdescription>  The entire place seems to speak of neatness, in that the entire
+place seems to be organized with a great care.  The large bookcase
+against one of the walls contains several books, all placed neatly upon
+its several shelves.  On all but one of the walls are tapestries that
+are woven in both the Andoran and Illianer fashions.  The rug on the
+floor mirrors the color of each of the wall hangings, blue, but instead
+is inlaid with a gold and silver-threaded Tairen maze.  On the far 
+corner from the entrance is a neatly made, blue covered bed, the
+coverlet made of blue velvet while the sheets are also exquisitely fine 
+in their weaving of white.  Near the bed is a desk which contains pots
+of ink as well as an assortment of quills and there is even a seal as
+well.  An organized stack of books rests upon its otherwise bare
+surface.  There isn&apos;t a speck of dust in the room, as the light from
+the glass window so says.
+</roomdescription>
+      <flags>65546</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+  </room>
+  <room>
+    <roombasic title="Asha&apos;man Yoral&apos;s House" vnum="8887" zone="88">
+      <roomdescription>A simple house with little furnishing.  There is a bed
+in one corner, next to a standing oaken dresser. There
+is a black cloak tossed on the bed. There is a hatrack
+next to the door with a big, woven white straw hat on one
+of the pegs. There is a plain, well made sword leaned against
+the dresser, in a dark scabbard. There is one window, and it
+is open to let the fresh air in. The only other noticable
+thing about this cabin is that it seems to be cooler than
+the outside air. There is a small saucer filled with crystal
+clear water in a corner, and a thick layer of fur on a 
+pillow in the same corner.
+</roomdescription>
+      <flags>65546</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+  </room>
+  <room>
+    <roombasic title="Inside the Dedicated tent" vnum="8898" zone="88">
+      <roomdescription>The Dedicated tent is much more well furnished than the tents which house the
+lower ranking Asha&apos;man. There are real beds here, as opposed to the cots the
+lower ranks must make do with. Only the sturdy, \c03wooden\c00 table standing exactly
+in the center is the same.
+</roomdescription>
+      <flags>65538</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+  </room>
+  <room>
+    <roombasic title="\c00Inside the \c14white\c00 tent" vnum="8899" zone="88">
+      <roomdescription>The inside of the tent is rather plain. Several cots stand against the \c14white\c00,
+cloth wall of the tent. At the foot of each cot sits a small, \c03wooden\c00 chest in
+which the lower ranked Asha&apos;man keep all of their belongings. A large, sturdy 
+table stands exactly in the center of the tent.
+</roomdescription>
+      <flags>65538</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+  </room>
+</rooms>

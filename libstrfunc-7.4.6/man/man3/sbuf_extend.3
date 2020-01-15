@@ -1,0 +1,231 @@
+.Dd December 4, 2000
+.Dt sf_sbuf 3
+.Os
+.Sh NAME
+.Nm sbuf_init ,
+.Nm sbuf_free ,
+.Nm sbuf_clear ,
+.Nm sbuf_zero ,
+.Nm sbuf_add ,
+.Nm sbuf_add2 ,
+.Nm sbuf_detach ,
+.Nm sbuf_extend ,
+.Nm sbuf_sprintf ,
+.Nm sbuf_fetch ,
+.Nm sbuf_fgets
+.Nd smart buffers manipulation functions
+.Sh SYNOPSIS
+.Fd #include <strfunc.h>
+.Pp
+Create, and destroy the buffer
+.Ft sbuf *
+.Fn sbuf_init "void"
+.Ft void
+.Fn sbuf_free "sbuf *sb"
+.Pp
+Clean and truncate the buffer
+.Ft int
+.Fn sbuf_clear "sbuf *sb"
+.Pp
+Just clean the buffer
+.Ft int
+.Fn sbuf_zero "sbuf *sb"
+.Pp
+Add values to the end of the buffer
+.Ft ssize_t
+.Fn sbuf_add "sbuf *sb" "char *string"
+.Ft ssize_t
+.Fn sbuf_add2 "sbuf *sb" "void *data" "size_t nbytes"
+.Pp
+Detach the buffer contents
+.Ft char *
+.Fn sbuf_detach "sbuf *sb" "size_t *optLength" "size_t *optSize"
+.Pp
+Extend the buffer
+.Ft ssize_t
+.Fn sbuf_extend "sbuf *" "size_t upto"
+.Pp
+Add the formatted string
+.Ft ssize_t
+.Fn sbuf_sprintf "sbuf *" "char *fmt" "..."
+.Pp
+Get a first len characters or token
+.Ft char *
+.Fn sbuf_fetch "sbuf *" "size_t optLen" "char *optDelimiter" "size_t *optRetLen" "int flags"
+.Pp
+Get a line from the stream
+.Ft char *
+.Fn sbuf_fgets "sbuf *" "FILE *stream"
+.Pp
+.Sh DESCRIPTION
+These routines give the user a method of manipulating smart buffers. Smart
+buffers are used to omit headache of checking the buffer boundaries every
+time you're trying to add something.
+.Pp
+Buffers may be used to handle any types of data. Internally, the buffer
+always contain the terminating NULL and thus significiantly simplifies
+the string handling.
+.Pp
+Here is the sbuf structure:
+.Bd -literal
+typefed struct {
+	char *buf;	/* The buffer data */
+	size_t len;	/* The meaningful bytes count */
+	size_t size;	/* Allocated memory */
+	size_t off;	/* Data offset */
+} sbuf;
+.Ed
+.Pp
+To create a buffer, you must invoke
+.Fn sbuf_init
+first. After all the necessary operations, the
+.Em sbuf *
+structure must be disposed with
+.Fn sbuf_free .
+.Pp
+After the buffer creation, you might want to add a data to the buffer. It can be
+done using
+.Fn sbuf_add "sbuf *sb" "char *string"
+and
+.Fn sbuf_add2 "sbuf *sb" "char *data" "size_t nbytes"
+functions. The second function does not rely on ASCIIZ idea and places the
+.Em nbytes
+of the
+.Em data
+into the smart buffer. Both functions automatically extend buffer to fit
+all the characters provided. In case of error, the functions will return -1
+and the buffer will be left intact.
+Upon successful completion
+.Fn sbuf_add
+returns with the number of written bytes and
+.Fn sbuf_add2
+returns with the adjusted
+.Nm len
+field of the passed
+.Nm sbuf *
+structure. Otherwise a -1 is returned by both functions.
+.Pp
+.Fn sbuf_detach
+used to detach the buffer from the smart buffer descriptor, and return
+a pointer to that detached memory. If
+the optional
+.Em optLength
+or
+.Em optSize
+are given,
+.Fn sbuf_detach
+will fill them with the actual values of the buffer length (number of
+meaningful bytes) and buffer size (allocated memory) appropriately.
+Upon detach, the smart buffer descriptor will be re-initialized
+to contain new, empty buffer. After detaching, the buffer descriptor
+.Em ( sbuf )
+will be reinitialized (read "empty").
+.Pp
+To pre-extend the buffer up to the specified size, use
+.Fn sbuf_extend .
+This function will also clear the buffer from the current position
+.Em ( sb->count )
+to the end of the allocated memory.
+.Pp
+.Fn sbuf_sprintf
+function used to add the formatted string to the end of the buffer.
+This function returns the number of bytes actually writen. Buffer
+will be automatically extended to fit the string. In case of error,
+the function will return -1 and buffer will be left intact. See the
+manual page on
+.Xr sprintf 3
+to know more.
+.Pp
+.Fn sbuf_fetch
+used to fetch the substring or token from the start of the buffer.
+If
+.Em optLen
+argument is zero
+.Em optDdelimiter
+must contain the set of delimiting characters, overwise ignored.
+The
+.Em flags
+argument controls the behavior of splitting routinge most like
+in
+.Xr splitf 3
+function, with exception that the buffer can't be split by regular expression.
+.Em optRetLen
+will contain the length of returned string.
+.Ed
+.Pp
+.Fn sbuf_fgets
+is analogous to plain
+.Xr fgets 3 ,
+but has the significant feature. It adds the whole line from the given
+stream to the buffer and returns the pointer. The buffer is reallocated
+to suffice the memory requirements by this line.
+.Pp
+.Sh RETURN VALUES
+All functions returning 
+.Ft ssize_t
+may fail with -1 and the set errno to the appropriate value.
+.Pp
+All functions returning pointer values
+.Ft ( sbuf * ,
+.Ft char * )
+may fail with NULL and the set errno to the appropriate value.
+.Pp
+By default, functions may not fail with ENOMEM unless the library
+memory control behavior was changed, see
+.Xr sf_mem 3 .
+.Sh EXAMPLE
+Here is an example of creating and filling the smart buffer.
+.Bd -literal
+void main() {
+	sbuf *sb;	/* Declare a buffer pointer */
+
+	sb=sbuf_init();	/* Create and initialize buffer */
+
+	/* Add some data */
+	sbuf_add(sb, "one\en");
+	sbuf_add2(sb, "two\en", sizeof("two\en") - 1);
+
+	/* This will print:
+	 * "one\entwo\en"
+	 */
+	printf("%s", sb->buf);
+
+	/* Add the formatted string */
+	sbuf_sprintf(sb, "one: %d\en", 1);
+
+	/* This will print:
+	 * "one\entwo\enone: 1\en"
+	 */
+	printf("%s", sb->buf);
+
+	/* Destroy the buffer */
+	sbuf_free(sb);
+};
+.Ed
+.Pp
+Here is an example of reading the stream line-by-line.
+.Bd -literal
+void readfile(FILE *stream) {
+	sbuf *sb;
+	char *p;
+
+	sb = sbuf_init();
+
+	while((p = sbuf_fgets(sb, stream) != NULL) {
+		printf("Read line: %s", p);
+
+		/* Rewind buffer */
+		sbuf_zero(sb);
+	};
+
+	sbuf_free(sb);
+};
+.Ed
+.Pp
+.Sh SEE ALSO
+.Xr strfunc 3 ,
+.Xr splitf 3 ,
+.Xr sprintf 3 ,
+.Xr fgets 3 .
+.Sh AUTHORS
+.An Lev Walkin <vlm@spelio.net.ru>

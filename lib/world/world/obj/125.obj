@@ -1,0 +1,853 @@
+<?xml version="1.0"?>
+<objects>
+  <object vnum="12500" name="sack" special="NONE">
+    <description>Someone's sack lies here.</description>
+    <shortdesc>Dreq's sack</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="STR" modifier="30"/>
+    <objaffect location="DEX" modifier="30"/>
+    <objaffect location="INT" modifier="30"/>
+    <objaffect location="WIS" modifier="30"/>
+    <objaffect location="CON" modifier="30"/>
+    <objaffect location="CHA" modifier="30"/>
+    <objflags>
+      <values value1="100000000" value2="3" value3="-1" value4="0"/>
+      <flags type="15" wear="2049" extra="69769"/>
+      <data weight="10" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <objprog main="OnSayRoom" argtype="STRING" argument="Hi">
+      <action number="Force" argtype="STRING" argument="slap me"/>
+    </objprog>
+  </object>
+  <object vnum="12501" name="trail" special="NONE">
+    <description>invisible trail</description>
+    <shortdesc>invisible trail</shortdesc>
+    <actiondesc>You search the area carefully and you see a nearly invisible trail
+leading to the east. Where does it go?
+</actiondesc>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="-1" value4="0"/>
+      <flags type="14" wear="0" extra="2048"/>
+      <data weight="100000" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="12502" name="bandit shield" special="NONE">
+    <description>A strange-looking shield lies on the ground.</description>
+    <shortdesc>a strange-looking shield</shortdesc>
+    <actiondesc> </actiondesc>
+    <affectflag>0</affectflag>
+    <objaffect location="ARMOR" modifier="-40"/>
+    <objaffect location="DAMROLL" modifier="10"/>
+    <objaffect location="ABS" modifier="100"/>
+    <objaffect location="HITROLL" modifier="10"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="9" wear="513" extra="0"/>
+      <data weight="20" cost="70000" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <exdesc keyword="bandit shield strange">
+      <description>This odd-looking shield is ment to be worn along the forearm.  It is about
+a foot and a half wide and two and a half feet long, with a section of
+metal cut off at the end so that two prongs of sharp steel is made.  The
+shield is not curved at all; rather it is bent at two places so that it
+wraps around the forearm slightly.  Other than that, the metal is kept
+straight.  This odd-looking shield is ment to be worn along the forearm.
+It is about two and a half feet wide at its widest point and nearly two at
+its narrowest, three feet long, and half an inch thick.  It is bent in two
+places, half a foot from either edge, and a half-foot long section of
+steel has been cut from one end near where the hand would be near, leaving
+two sharp prongs that can be used to cut.  This is one odd, although nasty
+shield.    
+</description>
+    </exdesc>
+  </object>
+  <object vnum="12503" name="bandit mantle" special="NONE">
+    <description>A furry mantle lies on the ground in a large heap.</description>
+    <shortdesc>a thick &amp;Yb&amp;yea&amp;Yrs&amp;yki&amp;Yn&amp;n mantle</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="HITROLL" modifier="10"/>
+    <objaffect location="DAMROLL" modifier="10"/>
+    <objaffect location="ARMOR" modifier="-40"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="11" wear="5" extra="0"/>
+      <data weight="10" cost="75000" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <exdesc keyword="bandit mantle furry">
+      <description>This is a thick mantle made of bearskin.  It is ment to sit on the
+shoulders, atop a cloak, to provide warmth and some protection.    
+</description>
+    </exdesc>
+  </object>
+  <object vnum="12504" name="bandit long spear master" special="NONE">
+    <description>A long spear lies on the ground. Why not pick it up?</description>
+    <shortdesc>&amp;na long &amp;Yw&amp;yooden&amp;n spear with a &amp;Wgleaming&amp;n &amp;Ks&amp;kt&amp;we&amp;ke&amp;Kl&amp;n point</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="HITROLL" modifier="35"/>
+    <objaffect location="DAMROLL" modifier="35"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="7" value3="10" value4="11"/>
+      <flags type="5" wear="32769" extra="4296"/>
+      <data weight="20" cost="5000000" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <exdesc keyword="bandit long spear master">
+      <description>This spear is five and a half feet long, with one foot taken up by the
+highly-polished, extremely sharp steel point.  The shaft is made from a
+dark, hard wood, sanded until it is nearly as smooth as glass.  Long red
+tassels are attached onto the steel point near its base, adding a bit of
+flair to the otherwise sombre weapon.    
+</description>
+    </exdesc>
+  </object>
+  <object vnum="12505" name="bandit boots brown leather" special="NONE">
+    <description>A nice pair of brown leather boots lies here on the ground.</description>
+    <shortdesc>a pair of second-hand, &amp;ybrown&amp;n leather boots</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="ARMOR" modifier="-40"/>
+    <objaffect location="DAMROLL" modifier="10"/>
+    <objaffect location="HITROLL" modifier="10"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="9" wear="65" extra="0"/>
+      <data weight="5" cost="65000" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <exdesc keyword="bandit's boots brown leather">
+      <description>This pair of worn leather boots are made of a thick, semi-good quality
+leather. With frayed laces, scuffed leather, and a generally dusty and
+used look, it may be second hand. Or third. Or fourth.
+</description>
+    </exdesc>
+  </object>
+  <object vnum="12506" name="bandit torch" special="NONE">
+    <description>A stick with some blackened rags wrapped around it lies on the ground.</description>
+    <shortdesc>a torch made from a stick and tar-soaked rags</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="HITROLL" modifier="5"/>
+    <objaffect location="DAMROLL" modifier="5"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="-1" value4="0"/>
+      <flags type="1" wear="16385" extra="0"/>
+      <data weight="10" cost="17900" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <exdesc keyword="bandit torch">
+      <description>It looks like a regular torch.
+</description>
+    </exdesc>
+  </object>
+  <object vnum="12507" name="bandit parrying dagger" special="NONE">
+    <description>A long dagger lies here, rusting away.</description>
+    <shortdesc>a long parrying dagger</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="ARMOR" modifier="-40"/>
+    <objaffect location="MAXHIT" modifier="250"/>
+    <objaffect location="DAMROLL" modifier="10"/>
+    <objaffect location="HITROLL" modifier="10"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="5" wear="16385" extra="0"/>
+      <data weight="5" cost="75000" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <exdesc keyword="bandit parrying dagger">
+      <description>This dagger is used primarily for parrying attacks. The blade is
+long, straight and double-edged, and the hilt is a hand's-breadth
+wide. It seems to be of a moderately good make.
+</description>
+    </exdesc>
+  </object>
+  <object vnum="12508" name="rusty iron ring" special="NONE">
+    <description>What seems to be a piece of rusty iron lies on the ground.</description>
+    <shortdesc>a rusty iron ring</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="MAXMANA" modifier="500"/>
+    <objaffect location="INT" modifier="2"/>
+    <objaffect location="WIS" modifier="2"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="11" wear="3" extra="72"/>
+      <data weight="10" cost="60000" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <exdesc keyword="rusty iron ring">
+      <description>This rusty iron ring is rather heavy, weighing about ten pounds.  The rust
+does not seem to want to come off, no matter how much it is rubbed or
+scraped or polished, and it is rough on the skin, feeling like sandpaper.
+Quite an odd item, this is.    
+</description>
+    </exdesc>
+  </object>
+  <object vnum="12509" name="wood hunting bow" special="NONE">
+    <description>An unstrung bow lies on the ground.</description>
+    <shortdesc>a wooden &amp;Gh&amp;gu&amp;Gn&amp;gt&amp;Gi&amp;gn&amp;Gg&amp;n bow</shortdesc>
+    <actiondesc>This bow is about four feet in length, and is made up of several layers of
+wood that have been glued together and shaped into a recurve bow.  It has
+a sight, consisting of a pin stuck into the side of the bow, on the left
+side, and a piece of cotton cloth wrapped around the middle serves as a
+grip.  All in all, a decent quality bow.    
+</actiondesc>
+    <affectflag>0</affectflag>
+    <objaffect location="HITROLL" modifier="15"/>
+    <objaffect location="DAMROLL" modifier="15"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="3" value3="8" value4="0"/>
+      <flags type="6" wear="32769" extra="200"/>
+      <data weight="15" cost="65000" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <exdesc keyword="wood hunting bow">
+      <description>This bow is about four feet in length, and is made up of several layers of
+wood that have been glued together and shaped into a recurve bow.  It has
+a sight, consisting of a pin stuck into the side of the bow, on the left
+side, and a piece of cotton cloth wrapped around the middle serves as a
+grip.  All in all, a decent quality bow.    
+</description>
+    </exdesc>
+  </object>
+  <object vnum="12510" name="plain wooden arrow" special="NONE">
+    <description>An arrow has been discarded here.</description>
+    <shortdesc>a plain wooden arrow with &amp;ybrown&amp;n feathers</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="HITROLL" modifier="15"/>
+    <objaffect location="DAMROLL" modifier="15"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="3" value3="8" value4="0"/>
+      <flags type="7" wear="1" extra="72"/>
+      <data weight="1" cost="100" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="12520" name="healing herb package" special="NONE">
+    <description>A package of a foul-smelling substance lies on the ground.</description>
+    <shortdesc>a package of &amp;gh&amp;ye&amp;ga&amp;yl&amp;gi&amp;yn&amp;gg&amp;n herbs </shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="2000" value4="0"/>
+      <flags type="4" wear="1" extra="64"/>
+      <data weight="3" cost="5000" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="12521" name="bag fatigue-reducing herbs" special="NONE">
+    <description>A bag of sweet-smelling herbs lie on the ground.</description>
+    <shortdesc>a bag of &amp;Bf&amp;ca&amp;Bt&amp;ci&amp;Bg&amp;cu&amp;Be&amp;n-&amp;rr&amp;Re&amp;rd&amp;Ru&amp;rc&amp;Ri&amp;rn&amp;Rg&amp;n herbs</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="2" value2="0" value3="750" value4="0"/>
+      <flags type="4" wear="1" extra="64"/>
+      <data weight="3" cost="5000" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="12522" name="container revitalizing herb" special="NONE">
+    <description>A container smelling of herbs lies on the ground.</description>
+    <shortdesc>a container full of &amp;Yr&amp;We&amp;Yv&amp;Wi&amp;Yt&amp;Wa&amp;Yl&amp;Wi&amp;Yz&amp;Wi&amp;Yn&amp;Wg&amp;n herbs</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="1" value2="0" value3="2000" value4="0"/>
+      <flags type="4" wear="1" extra="64"/>
+      <data weight="3" cost="5000" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="12532" name="trail" special="NONE">
+    <description>A wide and barely distinguishable trail lies here in between two rock faces.</description>
+    <shortdesc>the trail</shortdesc>
+    <actiondesc>This wide trail is cut through a hill, leaving two jagged rock faces.  
+The forest is reclaiming it, as it is overgrown with trees, bushes, and
+other assorted plants.    
+</actiondesc>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="-1" value4="0"/>
+      <flags type="14" wear="0" extra="2080"/>
+      <data weight="0" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="12533" name="storage room key" special="NONE">
+    <description>An ordinary brass key lies here.</description>
+    <shortdesc>a mundane brass key</shortdesc>
+    <actiondesc>This key looks like it will unlock something...
+</actiondesc>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="18" wear="1" extra="0"/>
+      <data weight="1" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <exdesc keyword="key">
+      <description>There is an image of a lion carved into the key, as in the Lion of Andor.
+</description>
+    </exdesc>
+  </object>
+  <object vnum="12534" name="trail" special="NONE">
+    <description>A well disguised trail leads to the east.</description>
+    <shortdesc>the trail</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="14" wear="0" extra="32"/>
+      <data weight="0" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="12539" name="trail" special="NONE">
+    <description>A hard to see path leads uphill.</description>
+    <shortdesc>the trail</shortdesc>
+    <actiondesc>This barely defined path leads uphill to the west.
+</actiondesc>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="-1" value4="0"/>
+      <flags type="14" wear="0" extra="2080"/>
+      <data weight="0" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="12543" name="trail" special="NONE">
+    <description>A trail (wagon obj)</description>
+    <shortdesc>the trail</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="14" wear="0" extra="2080"/>
+      <data weight="10000" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <exdesc keyword="trail">
+      <description>There is a trail here!  To the northwest, it is very well concealed.  
+Apparently, whoever uses it does not want others on it...    
+</description>
+    </exdesc>
+  </object>
+  <object vnum="12550" name="roasted rabbit platter" special="NONE">
+    <description>A yummy platter of some sort of furry animal, roasted to perfection, lies here.</description>
+    <shortdesc>a platter of &amp;Yr&amp;yo&amp;Ya&amp;ys&amp;Yt&amp;ye&amp;Yd&amp;n &amp;Br&amp;ca&amp;Bb&amp;cb&amp;Bi&amp;ct&amp;n</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="15" value2="0" value3="0" value4="0"/>
+      <flags type="19" wear="1" extra="64"/>
+      <data weight="1" cost="150" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="12551" name="plate mashed potatoes gravy" special="NONE">
+    <description>A plate of delicious mashed potatoes has been discarded on the ground!</description>
+    <shortdesc>&amp;na plate of mashed &amp;Wp&amp;wo&amp;Wt&amp;wa&amp;Wt&amp;wo&amp;We&amp;ws&amp;n with &amp;ygravy&amp;n on the side</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="10" value2="0" value3="0" value4="0"/>
+      <flags type="19" wear="1" extra="64"/>
+      <data weight="1" cost="100" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <exdesc keyword="plate mashed potatoes gravy">
+      <description>Yum!
+</description>
+    </exdesc>
+  </object>
+  <object vnum="12552" name="chunk cheese" special="NONE">
+    <description>A chunk of cheese lies on the ground. Pick it up!</description>
+    <shortdesc>a large chunk of &amp;Ycheese&amp;n</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="10" value2="0" value3="0" value4="0"/>
+      <flags type="19" wear="1" extra="64"/>
+      <data weight="1" cost="100" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="12553" name="cup dark tea" special="NONE">
+    <description>A steaming cup of tea was placed on the ground. What luck!</description>
+    <shortdesc>a cup of &amp;Kdark&amp;n &amp;Gt&amp;ge&amp;Ga&amp;n</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="25" value2="25" value3="12" value4="0"/>
+      <flags type="17" wear="1" extra="64"/>
+      <data weight="1" cost="100" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="12554" name="glass milk" special="NONE">
+    <description>A tall glass full of a white liquid lies on the ground.</description>
+    <shortdesc>&amp;na tall, &amp;Wf&amp;cr&amp;Wo&amp;cs&amp;Wt&amp;cy&amp;n glass of &amp;Wmilk&amp;n</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="25" value2="25" value3="11" value4="0"/>
+      <flags type="17" wear="1" extra="64"/>
+      <data weight="1" cost="125" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="12555" name="sausage CMOAT Dibbler" special="NONE">
+    <description>A large sausage lies on the ground, smelling heavenly. Why not pick it up?</description>
+    <shortdesc>a delicious-looking &amp;Rs&amp;ra&amp;Ru&amp;rs&amp;Ra&amp;rg&amp;Re&amp;n</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="15" value2="0" value3="0" value4="1"/>
+      <flags type="19" wear="1" extra="64"/>
+      <data weight="1" cost="125" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <exdesc keyword="sausage CMOAT Dibbler">
+      <description>This is a large sausage made from various unidentifiable animals.  The
+smell of frying onions is mouthwatering...  If placed on a bun with
+various condiments, it will make a hearty meal.    
+</description>
+    </exdesc>
+  </object>
+  <object vnum="12567" name="sign" special="NONE">
+    <description>&amp;gA somewhat friendly &amp;WOoC&amp;g sign is here.</description>
+    <shortdesc>the bandit's shop sign</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="13" wear="0" extra="0"/>
+      <data weight="0" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <exdesc keyword="sign">
+      <description>\c00&amp;ya strange-looking shield&amp;n ** -40AC +10 DAMROLL +10 HITROLL **
+
+&amp;ya thick &amp;Yb&amp;yea&amp;Yrs&amp;yki&amp;Yn&amp;y mantle&amp;n ** -40 AC +10 HITROLL +10 DAMROLL **
+
+&amp;ya pair of second-hand, brown leather boots&amp;n ** -40AC +10 DAMROLL +10 HITROLL **
+
+&amp;ya torch made from a stick and tar-soaked rags&amp;n ** INFINITE LIGHT +5 HITROLL +5 DAMROLL **
+
+&amp;ya long &amp;Yw&amp;yooden spear with a &amp;Wgleaming&amp;K s&amp;kt&amp;we&amp;ke&amp;Kl&amp;y point&amp;n ** +35 HITROLL +35 DAMROLL 7d10 DAMDICE **
+</description>
+    </exdesc>
+  </object>
+  <object vnum="12570" name="bandit cook apron" special="NONE">
+    <description>An apron with many stains on it lies on the ground.</description>
+    <shortdesc>a food-stained apron</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="ARMOR" modifier="-35"/>
+    <objaffect location="HITROLL" modifier="5"/>
+    <objaffect location="DAMROLL" modifier="5"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="11" wear="1025" extra="65600"/>
+      <data weight="4" cost="1000" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="12571" name="table" special="NONE">
+    <description>The bandits' dinner table lies here in the centre of the room.</description>
+    <shortdesc>the dinner table</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="2" value3="5" value4="0"/>
+      <flags type="24" wear="0" extra="0"/>
+      <data weight="0" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <exdesc keyword="table">
+      <description>This table consists of several roughly dressed planks of wood that have
+been fastened together and nailed to two crates that rest underneath the
+planks at opposite ends.  Bits of rotting food and many stains decorate
+it.    
+</description>
+    </exdesc>
+  </object>
+  <object vnum="12572" name="cook's spatula bandit" special="NONE">
+    <description>An plank of wood resembling a spatula lies here.</description>
+    <shortdesc>a -very- large spatula</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="HITROLL" modifier="5"/>
+    <objaffect location="DAMROLL" modifier="5"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="5" value2="5" value3="5" value4="5"/>
+      <flags type="5" wear="8193" extra="65600"/>
+      <data weight="10" cost="500" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="12574" name="note" special="NONE">
+    <description>A note to self</description>
+    <shortdesc>a note</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="0" wear="1" extra="0"/>
+      <data weight="0" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <exdesc keyword="note">
+      <description>When I have ability to write scripts, write a script that makes a rabid something (perhaps a wolverine, or badger, or something of the like) that pops out and attacks the player when he/she/it looks at the pile of wood.
+
+This has been a message to you, future-Dreq, from past-Dreq.
+</description>
+    </exdesc>
+  </object>
+  <object vnum="12576" name="bandit key" special="NONE">
+    <description>A small key lies in the dirt. Ooo!</description>
+    <shortdesc>a small &amp;ybrass&amp;n key</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="18" wear="1" extra="65600"/>
+      <data weight="3" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <exdesc keyword="bandit key">
+      <description>This is a small brass key. It's nothing special.
+
+On closer inspection, though, there is some writing engraved on
+it. It says, &quot;&amp;cKey to the TREASURE room.&amp;n&quot;
+</description>
+    </exdesc>
+  </object>
+  <object vnum="12577" name="latrines" special="NONE">
+    <description>The latrines are here, smelling atrocious.</description>
+    <shortdesc>the latrines</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="14" wear="0" extra="32"/>
+      <data weight="100000" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <exdesc keyword="latrines">
+      <description>This communal toilet is just a pit with some wooden boards laid over it.
+A hole near the centre of the boards is where the excrement goes.  
+Apparently, a person can enter pit, but for what reason?    
+</description>
+    </exdesc>
+  </object>
+  <object vnum="12578" name="well" special="NONE">
+    <description>A well lies here in the centre of the abandoned town.</description>
+    <shortdesc>well</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="14" wear="0" extra="0"/>
+      <data weight="10000" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <exdesc keyword="well">
+      <description>The stones that make up this well are crumbling, and many of them are
+missing, possibly at the bottom of the well.  The well is shoulder-width
+apart, wide enough for most grown men to enter and moving water can be
+heard from a long distance down.    
+</description>
+    </exdesc>
+  </object>
+  <object vnum="12583" name="passage" special="NONE">
+    <description>A tiny passage is here.</description>
+    <shortdesc>passage</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="14" wear="0" extra="32"/>
+      <data weight="100000" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <exdesc keyword="passage">
+      <description>This is a small, shoulder-width crack in the underwater tunnel.
+</description>
+    </exdesc>
+  </object>
+  <object vnum="12590" name="passage" special="NONE">
+    <description>A passage is here.</description>
+    <shortdesc>passage</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="14" wear="0" extra="32"/>
+      <data weight="10000" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <exdesc keyword="passage">
+      <description>A shoulder-width crack is here in the flooded tunnel.
+</description>
+    </exdesc>
+  </object>
+  <object vnum="12599" name="trail" special="NONE">
+    <description>Invisible trail (wagon obj)</description>
+    <shortdesc>the trail</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="-1" value4="0"/>
+      <flags type="14" wear="0" extra="2080"/>
+      <data weight="10000" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="12600" name="weed marjiuana" special="NONE">
+    <description>Some weed lies here on the ground</description>
+    <shortdesc>a bowl of &amp;gweed&amp;n</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="1" value2="0" value3="10000" value4="0"/>
+      <flags type="4" wear="1" extra="0"/>
+      <data weight="0" cost="1000000000" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="12601" name="campfire fire" special="NONE">
+    <description>A campfire burns away on the ground here.</description>
+    <shortdesc>a campfire</shortdesc>
+    <actiondesc>A circle of large, fist-sized rocks enclose a shallow pit dug into the
+sandy soil.  Some burning logs are within the circle, giving off heat and
+light.    
+</actiondesc>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="-1" value4="0"/>
+      <flags type="1" wear="0" extra="0"/>
+      <data weight="100000000" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="12602" name="well water" special="NONE">
+    <description>A small, stone well is off to the side of the road.</description>
+    <shortdesc>a small stone well</shortdesc>
+    <actiondesc>This small well looks to be in good shape, and water is readily available
+by dipping the bucket that is conveniently located nearby down into the
+well.    
+</actiondesc>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="100000" value2="100000" value3="0" value4="0"/>
+      <flags type="23" wear="0" extra="0"/>
+      <data weight="1000000" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="12603" name="ooc sign board" special="NONE">
+    <description>&amp;gAn&amp;n &amp;ROOC&amp;g sign is hung up on a tree limb here.&amp;n</description>
+    <shortdesc>the OOC sign</shortdesc>
+    <actiondesc>You can &amp;rRECALL&amp;n from here. Enjoy!
+</actiondesc>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="16" wear="0" extra="0"/>
+      <data weight="1000000" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="12699" name="massive broadsword" special="NONE">
+    <description>ALKJSDFHSDUHIEUH | || </description>
+    <shortdesc>a massive &amp;Ks&amp;wt&amp;Ke&amp;we&amp;Kl&amp;n broadsword</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="XATTACKS" modifier="9999"/>
+    <objaffect location="HITROLL" modifier="1000"/>
+    <objaffect location="DAMROLL" modifier="1000"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="1000" value2="1000" value3="50" value4="10"/>
+      <flags type="5" wear="8193" extra="16584"/>
+      <data weight="20" cost="0" questcost="10000" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+</objects>

@@ -1,0 +1,126 @@
+.Dd May 15, 2001
+.Dt sf_mem 3
+.Os
+.Sh NAME
+.Nm sf_malloc ,
+.Nm sf_calloc ,
+.Nm sf_realloc ,
+.Nm sf_strdup ,
+.Nm strndup ,
+.Nm strfunc_ctl
+.Nd string duplication and safe memory allocation.
+.Pp
+.Sh SYNOPSIS
+.Fd #include <strfunc.h>
+.Pp
+Safe
+.Xr malloc 3
+analog:
+.Ft void *
+.Fn sf_malloc "size_t size"
+.Pp
+Safe
+.Xr calloc 3
+analog:
+.Ft void *
+.Fn sf_calloc "size_t number" "size_t size"
+.Pp
+Safe
+.Xr realloc 3
+analog:
+.Ft void *
+.Fn sf_realloc "void *ptr" "size_t size"
+.Pp
+Duplicate a specified number of characters from the string:
+.Ft char *
+.Fn strndup "const char *a" "size_t num"
+.Pp
+Safe
+.Xr strdup 3
+analog:
+.Ft char *
+.Fn sf_strdup "const char *a"
+.Pp
+.Ft int
+.Fn strfunc_ctl "int request" "int *optArg"
+.Pp
+.Sh DESCRIPTION
+Those functions are used internally by virtually all
+.Nm libstrfunc
+functions to manipulate memory. They are wrappers around the native
+library calls
+.Xr malloc 3 ,
+.Xr calloc 3 ,
+.Xr realloc 3
+and provide additional flexibility in those cases when system is low in memory.
+.Pp
+.Fn strndup
+used to copy the specified number of characters to a newly-created buffer.
+.Pp
+.Fn sf_strdup ,
+.Fn sf_malloc
+and
+.Fn sf_realloc
+are used instead of
+.Xr strdup 3 ,
+.Xr malloc 3
+and
+.Xr realloc 3
+analogs to achieve more control and safety when computer becomes low in memory.
+.Pp
+All functions are defaulted to call
+.Xr abort 3
+upon the unsatisfied memory request. This default behavior can be easily
+changed by using
+.Fn strfunc_ctl 
+call with SF_SET_MEMORY_FAILURE_BEHAVIOR.
+.Pp
+.Ft int
+.Fn strfunc_ctl "int request" "int *optArg"
+used to change default behaviour of the previously described functions in
+cases of resource shortage.
+.Pp
+The
+.Em request
+argument can be the following constant:
+.Bd -literal
+	SF_GET_MEMORY_FAILURE_BEHAVIOR
+	SF_SET_MEMORY_FAILURE_BEHAVIOR
+	SF_GET_MEMORY_FAILURE_TRIES
+	SF_SET_MEMORY_FAILURE_TRIES
+.Ed
+.Pp
+to get or set the memory allocation behaviour appropriately.
+While the third and fourth values are used to get or specify the number
+of tries of allocating resources before falling into a failure case,
+the first two values can be used to switch the default behaviour to
+call
+.Xr abort 3
+in case of failure.
+.Em SF_GET_MEMORY_FAILURE_BEHAVIOR
+returns with and
+.Em SF_SET_MEMORY_FAILURE_BEHAVIOR
+accept the following values:
+.Bd -literal
+	SF_ARG_MFB_ABORT      /* call abort(3) on failure, the default */
+	SF_ARG_MFB_ENOMEM     /* return NULL with errno set to ENOMEM */
+	SF_ARG_MFB_TRY_ABORT  /* try N times before calling abort(3) */
+	SF_ARG_MFB_TRY_ENOMEM /* do the same before returning an error */
+	SF_ARG_MFB_TRY_NOFAIL /* loop indefinitely */
+.Ed
+.Pp
+Again, virually all functions defined in
+.Nm libstrfunc
+are aware of this memory control technique, so, for example, you may respect
+that some strfunc library function will not return NULL when you've earlier
+executed something like
+.Bd -literal
+  int memory_control_type = SF_ARG_MFB_TRY_NOFAIL;
+  strfunc_ctl(SF_SET_MEMORY_FAILURE_BEHAVIOR, &memory_control_type);
+.Ed
+.Pp
+.Sh SEE ALSO
+.Xr strfunc 3 ,
+.Xr malloc 3 .
+.Sh AUTHORS
+.An Lev Walkin <vlm@spelio.net.ru>

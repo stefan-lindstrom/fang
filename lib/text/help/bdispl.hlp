@@ -1,0 +1,40 @@
+
+BTELL BDISPLAY BSHOW BDELETE BREPLY
+
+Tells are a good thing, but sometimes they are lost. When the receiver is 
+fighting, or mailing/writing for instance. To deal with this problem, tells
+received in these situations are buffered. Up to 20 tells can be buffered
+at one time. If you have tells in your buffer a (B) will occur at your 
+prompt. Use bdisplay to see how many tells you have, and from whom. 
+
+Ex: 
+ > (B) bdispl
+Tell [ 0]: from Atriau
+Tell [ 1]: from Sorilea
+
+etc...
+
+To read a certain buffered tell, use bshow. 
+
+Usage: bshow <number>
+Ex: 
+> (B) bshow 1
+Sorilea told you: Hi, wassup?
+
+To reply to a buffered tell, use breply. 
+
+Usage: breply <number> <your reply>
+
+Ex:
+> (B) breply 1 Nothing much, and you?
+You tell Sorilea 'Nothing much, and you?'
+
+Last, to delete a buffered tell, use bdelete:
+
+Usage: bdelete <number>
+
+Ex: 
+> (B) bdelete 1
+
+See also:
+#

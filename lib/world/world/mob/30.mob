@@ -1,0 +1,219 @@
+#3000
+cerre roan mare red horse~
+Cerre~
+A roan mare prances about here.
+~
+It looks, err, unfinished.
+~
+10 0 0 E
+100 -10 10 918 30d100+0 25d100+30
+0 120
+8 8 2 728
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+E
+#3001
+thoreau bear teddy~
+Thoreau, a cuddly bear of not so many years~
+Thoreau, a cuddly bear of not so many years
+~
+You know exactly what he looks like.
+Except he's one of those newer models, not like the ragged
+one to the north. See, Jae hasn't spent the last 20 years sleeping
+with this one.
+~
+10 0 0 E
+100 20 10 918 1d100+0 1d1+0
+0 0
+8 8 1 728
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnActionTo "smooch" & Wearing 3102
+ActionTo "smooch"
+End
+OnActionTo "spank" & Wearing 3102
+ActionTo "moan"
+End
+OnActionTo "smooch" & ! Wearing 3102
+ActionTo "slap"
+End
+OnActionTo "eyelash" & Wearing 3102
+ActionTo "whistle"
+End
+OnActionTo "eyelash" & ! Wearing 3102
+ActionTo "yawn"
+End
+OnActionTo "wink" & Wearing 3102
+ActionTo "nudge"
+ActionTo "nudge"
+End
+OnActionTo "wink" & ! Wearing 3102
+SayTo "Say no more! Eh eh?"
+End
+OnActionTo "lap" & Wearing 3102
+ActionTo "pinch"
+End
+OnActionTo "spank" & ! Wearing 3102
+ActionTo "tsk"
+End
+OnActionTo "undress" & Wearing 3102
+Action "blush"
+ActionTo "wink"
+End
+OnActionTo "rub" & Wearing 3102
+ActionTo "pant"
+ActionTo "purr"
+End
+OnActionTo "kiss" & Wearing 3102
+ActionTo "kiss"
+End
+OnActionTo "french" & Wearing 3102
+ActionTo "french"
+End
+OnActionTo "pinch" & Wearing 3102
+ActionTo "gasp"
+ActionTo "blush"
+Emote "Emerson covers his behind, shame shame."
+End
+OnActionTo "tickle" & Wearing 3102
+Emote "Emerson acks and hits you with a pillow."
+End
+OnActionTo "nibble" & Wearing 3102
+ActionTo "moan"
+ActionTo "blush"
+End
+OnActionTo "massage" & Wearing 3102
+ActionTo "moan"
+End
+OnActionTo "snuggle" & Wearing 3102
+ActionTo "snuggle"
+End
+Q
+E
+#3002
+lady old tsera~
+Tsera~
+A wrinkled old lady is here, sitting in a rocking chair.
+~
+Tsera looks to be very old, perhaps in her nineties. She sits in 
+a wicker rocking chair, which slowly creaks back and forth. Her
+face is wrinkled by the passage of many years, but her eyes
+sparkle with a green fire as she looks up at you. She has a black
+shawl around her shoulders, and has some knitting bundled in her
+lap. She looks at you expectantly as she pats a large leather bag by 
+her side.
+~
+10 0 0 E
+200 -30 -20 918 1d100+0 1d1+50
+0 0
+8 8 2 728
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnActionTo "hug"
+Emote "the bunny hops into your lap and hugs you."
+End
+Q
+E
+#3003
+pookie teddy bear~
+Pookie, a cute and quite lifeless bear~
+Pookie, a cute and quite lifeless bear
+~
+He's yellow, stuffed, teddy bearlike, with big black button
+eyes that stare, well kind of lifelessly ahead. He looks kind
+of new, but well hugged, with some cathair floating around his
+shoulders and some lasagna stains on his arms. 
+~
+10 0 0 E
+100 20 10 918 1d100+0 1d1+0
+0 0
+8 8 1 728
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+E
+#3025
+Tia~
+Tia the dress maker~
+Tia the dress maker is standing here waiting to serve you
+~
+Tia 'is a large woman.  She stands above most of her patrons, but her
+concillatory nature prevents any from feeling intimidated.  Her hands are
+calloused from her occupation, but her touch is gentle as she fits a dress or
+other well made piece of clothing.  Her eyes measure everyone, and she never
+has to use a tape to know your size.    
+~
+1089546 16 0 E
+0 20 10 918 1d100+0 1d1+0
+0 0
+8 8 2 10
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+E
+#3100
+doorknob golden wonderland~
+a golden doorknob~
+\c02A large well polished \c10golden\c00\c02 doorknob is here, attached to the little \c01red \c00\c02wooden door.
+~
+The doorknob is smooth, and seems to be turnable. As you peer
+closely at it, you faintly see a mouth beginning to form on the
+doorknob. Suddenly you jump away, wondering where you are.
+~
+10 0 0 E
+200 -180 -20 918 30d1000+0 30d127+50
+0 0
+8 8 0 728
+BareHandAttack: 4
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnAttack
+Say "Quit turning my nose! Don't you know this is an IMM area?"
+Stop
+End
+Q
+E
+#3198
+Seaile~
+Seaile the Wise Woman~
+Seaile the Wise Woman is here looking over some herbs
+~
+It looks, err, unfinished.
+~
+1048586 0 0 E
+0 20 10 918 1d100+0 1d1+0
+0 0
+8 8 2 0
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+E
+$

@@ -1,0 +1,173 @@
+<?xml version="1.0"?>
+<board>
+  <vnum>13000</vnum>
+  <read>203</read>
+  <write>203</write>
+  <remove>203</remove>
+  <flags>0</flags>
+  <guild>23</guild>
+  <key>code</key>
+  <title>The &amp;MWeaver&amp;n Noteboard</title>
+  <messages>
+    <message>
+      <heading>Sun Feb 24 (Drathus)    :: &amp;WThis silly thing...&amp;n</heading>
+      <slot>1</slot>
+      <level>203</level>
+      <author>0</author>
+      <date>0</date>
+      <text>Since the coders no longer have a board in the IMM complex (and I'm
+too lazy to zedit this one there) this is a portable board which we can
+use to post information about what's being worked on, and any ideas/
+suggestions for things which have or have not been implemented.
+
+Just carry this with you, and you can drop it, read it, and get it
+again, or load it to a room, or whatever. =P
+
+- Drath
+</text>
+    </message>
+    <message>
+      <heading>Tue Feb 26 (Drathus)    :: &amp;WMe.&amp;n</heading>
+      <slot>2</slot>
+      <level>203</level>
+      <author>0</author>
+      <date>0</date>
+      <text>If needed during work hous (8a-4:45p US CST):
+
+AIM: Drathus
+Email: gbuxton@amfam.com
+
+Please note, the email is my work address, and should only be
+used for emergencies during those hours. =P
+</text>
+    </message>
+    <message>
+      <heading>Thu Sep  5 (Fischer)    :: Wolfcall Issue</heading>
+      <slot>3</slot>
+      <level>203</level>
+      <author>0</author>
+      <date>0</date>
+      <text>There was a small issue.. someone used wolfcall and it summoned mob 
+502.  This is the guardian mob for the wolfkin's board and basicly 
+
+caused !look in the oval.  It shouldn't be an issue any longer but if
+there was a reason we wanted to be able to call that mob, we'll have
+to change it back.
+</text>
+    </message>
+    <message>
+      <heading>Thu Sep  5 (Fischer)    :: Toggle Output - Sing/Song</heading>
+      <slot>4</slot>
+      <level>203</level>
+      <author>0</author>
+      <date>0</date>
+      <text>I change the title of the channel in the toggle output from song to 
+sing to match the toggle command..
+</text>
+    </message>
+    <message>
+      <heading>Fri Sep  6 (Fischer)    :: Bugged Socials part 2</heading>
+      <slot>5</slot>
+      <level>203</level>
+      <author>0</author>
+      <date>0</date>
+      <text>Ok, found a few bugs in the act.social code that cleaned up many of
+these.  now the list stands at:
+ 
+
+Fixed:
+accuse
+admire
+nibble
+noogie
+nudge
+nuzzle
+pat
+pinch
+poke
+pounce
+ruffle
+slap
+snuggle
+squeeze
+stroke
+tender
+thank
+tickle
+
+Still to be repaired: (problem likely misformated entry in the social file)
+nestle
+despair
+bite
+eyebrow
+eyes
+flip
+flop
+handraise
+holdhands
+mgrin
+nestle
+pace
+sa'sara
+scorn
+scratch
+scream
+smirk
+sob
+squeal
+sympathy
+tip
+wheeze
+women
+yawn
+</text>
+    </message>
+    <message>
+      <heading>Sun Sep  8 (Fischer)    :: AEDIT</heading>
+      <slot>6</slot>
+      <level>203</level>
+      <author>0</author>
+      <date>0</date>
+      <text>Ok, the AEDIT patch has been incorporated into the mud source.  If you
+
+are the first one to compile the new source, the new socials file will
+have to be installed for this to work.  Just the first warning..
+
+Once the new binary is started, we will lose about half the socials.
+This is because we're installing the stock &quot;socials&quot; file that came
+with the aedit patch.  However, it will be fairly easy for the people
+in the CG_AEDIT to fix everything.
+</text>
+    </message>
+    <message>
+      <heading>Thu Sep 12 (Fischer)    :: XLOG &amp; Retainers</heading>
+      <slot>7</slot>
+      <level>203</level>
+      <author>0</author>
+      <date>0</date>
+      <text>
+Added an XLOG catagory &quot;RETAINERS&quot; and added log entries to for name
+and title changes.
+</text>
+    </message>
+    <message>
+      <heading>Fri Sep 13 (Fischer)    :: xlog DEBUG catagory</heading>
+      <slot>8</slot>
+      <level>203</level>
+      <author>0</author>
+      <date>0</date>
+      <text>Warning!!
+I'll use this catagory a lot so it can be very spammy at times...
+If you use it, too, it'll be even spammier and I encourage you to use
+it.  My goals in adding it was to give us a place that will allow us
+to set debug messages when we are tracking a problem that we know
+exsists but can't reproduce in our test ports (like the guildie-&gt;ch)
+ 
+Use it, but then remove the xlog calls as soon as you don't need them
+anymore to help keep the spam to a minimum.  If it's a message that
+you probably want up all the time, it should be put into one of the
+existing xlog catagories... or a new xlog catagory.
+</text>
+    </message>
+  </messages>
+</board>

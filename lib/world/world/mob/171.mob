@@ -1,0 +1,1125 @@
+<?xml version="1.0"?>
+<mobiles>
+  <mobile vnum="17100" name="elmo" special="NONE">
+    <description>A silver backed badger is here.
+</description>
+    <shortdesc>badger</shortdesc>
+    <longdesc>A silver backed badger is here.
+</longdesc>
+    <title/>
+    <chardata gender="NEUTRAL" class="Adventurer" level="1" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="0"/>
+      <move ndize="1" dsize="0" bonus="0"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="10"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="17101" name="tree blue" special="NONE">
+    <description>It looks, err, unfinished.
+</description>
+    <shortdesc>a blue leaved tree</shortdesc>
+    <longdesc>\c02A large\c13 blue leaved\c00\c09 tree\c00\c02 provides shade for everyone.
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="200" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="30" dsize="100" bonus="0"/>
+      <move ndize="1" dsize="0" bonus="0"/>
+      <ac>-200</ac>
+      <gold>300</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>50</hitroll>
+      <damroll>50</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="10"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="30" sides="100" add="50"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="17102" name="guard" special="NONE">
+    <description>This guard eyes you as you approach.
+</description>
+    <shortdesc>a guard</shortdesc>
+    <longdesc>a Guard for the Children of the Light
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="200" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="30" dsize="1000" bonus="0"/>
+      <move ndize="1" dsize="0" bonus="0"/>
+      <ac>-200</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>200</hitroll>
+      <damroll>50</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="10"/>
+    <affected one="48" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="30" sides="127" add="200"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnEntry" argtype="VOID" argument="NONE">
+      <sideterm number="Guild" not="FALSE" argtype="STRING" argument="children of the light"/>
+      <action number="Say" argtype="STRING" argument="get outta here."/>
+      <action number="Force" argtype="STRING" argument="s"/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="17110" name="hotl Inqisitor light dream" special="NONE">
+    <description>Dark and intent eyes scan around him. The Inquisitor can
+almost feel the Shadows taint on those around him
+and is committed to the death to save the world from
+it. The brillant white cloak seems to dazzle as 
+brilliant golden knots of rank disappear and then 
+reappear on it. Perhaps it is just a corpral dreaming
+of future glory.
+</description>
+    <shortdesc>a dream Inquisitor</shortdesc>
+    <longdesc>\c07An \c00\c08Inquisitor\c00 \c07stands here in a halo of light.\c00
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="60" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="1200"/>
+      <move ndize="1" dsize="1200" bonus="1200"/>
+      <ac>40</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>150</exp>
+      <hitroll>25</hitroll>
+      <damroll>25</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="4136"/>
+    <affected one="720896" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="10" sides="20" add="25"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="17111" name="bystander citizen woman lady" special="NONE">
+    <description>A quite common woman of mid thirties, wearing a maids blouse and dress.
+Right now she looks pretty worked up, tho, with flashing eyes 
+and an aggressive stance.
+</description>
+    <shortdesc>a bystander </shortdesc>
+    <longdesc>A woman stands at the side of the road, looking agitated.
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="10" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="4" dsize="100" bonus="0"/>
+      <move ndize="1" dsize="0" bonus="0"/>
+      <ac>100</ac>
+      <gold>10</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="138"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="4" sides="2" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnEntry" argtype="VOID" argument="NONE">
+      <sideterm number="AutoQuested" not="FALSE" argtype="INT" argument="3"/>
+      <sideterm number="Carrying" not="TRUE" argtype="INT" argument="17313"/>
+      <action number="Emote" argtype="STRING" argument="$n says loudly, &apos;I saw him! That weasely little Grad and his henchmen.&apos;"/>
+      <action number="Pause" argtype="INT" argument="5"/>
+      <action number="Say" argtype="STRING" argument="Up to no good again, of course!"/>
+    </mobprog>
+    <mobprog main="OnSayTo" argtype="STRING" argument="who grad ">
+      <sideterm number="AutoQuested" not="FALSE" argtype="INT" argument="3"/>
+      <sideterm number="Mode" not="FALSE" argtype="INT" argument="2"/>
+      <sideterm number="Carrying" not="TRUE" argtype="INT" argument="17313"/>
+      <action number="Say" argtype="STRING" argument="Why, Grad, of course! Wonder what he was doing with that fine Lady."/>
+      <action number="ActionTo" argtype="STRING" argument="peer"/>
+      <action number="Pause" argtype="INT" argument="5"/>
+      <action number="Say" argtype="STRING" argument="I don&apos;t want to know what he and his band was doing, ya hear, but I hear things."/>
+      <action number="Pause" argtype="INT" argument="3"/>
+      <action number="Say" argtype="STRING" argument="He and his &apos;friend&apos; Streak sitting at that tavern, trading things they have stolen from honest people, dontcha know!"/>
+      <action number="Pause" argtype="INT" argument="3"/>
+      <action number="Action" argtype="STRING" argument="mutter"/>
+      <action number="Mode" argtype="INT" argument="2"/>
+    </mobprog>
+    <mobprog main="OnSayTo" argtype="STRING" argument="tavern inn">
+      <sideterm number="AutoQuested" not="FALSE" argtype="INT" argument="3"/>
+      <sideterm number="Mode" not="TRUE" argtype="INT" argument="2"/>
+      <sideterm number="Carrying" not="TRUE" argtype="INT" argument="17313"/>
+      <action number="Say" argtype="STRING" argument="The tavern? The Oak and Thorn."/>
+      <action number="Pause" argtype="INT" argument="4"/>
+      <action number="Say" argtype="STRING" argument="But I warn you, those people are up to no good! "/>
+      <action number="Pause" argtype="INT" argument="3"/>
+      <action number="Action" argtype="STRING" argument="shake"/>
+      <action number="Mode" argtype="INT" argument="1"/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="17112" name="biff guard bodyguard" special="NONE">
+    <description>He looks as if he&apos;s spent his entire life training; muscles
+bulging everywhere, and an experienced eye watching for
+trouble. He&apos;s dressed in light armor and has a sword at the
+ready in his belt.
+</description>
+    <shortdesc>Biff, Streaks &apos;personal assistant&apos;</shortdesc>
+    <longdesc>A huge man stands here, looking alert for any kind of trouble.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="50" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="10" dsize="100" bonus="1000"/>
+      <move ndize="1" dsize="1000" bonus="1000"/>
+      <ac>100</ac>
+      <gold>13</gold>
+      <bankgold>0</bankgold>
+      <exp>125</exp>
+      <hitroll>10</hitroll>
+      <damroll>5</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1051674"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="3"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="5" sides="5" add="10"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnEntry" argtype="STRING" argument="tavern inn">
+      <action number="Emote" argtype="STRING" argument="$n looks you over carefully, and then resumes his guardlike stance."/>
+    </mobprog>
+    <mobprog main="OnSay" argtype="STRING" argument="money gold sell grad">
+      <sideterm number="AutoQuested" not="FALSE" argtype="INT" argument="3"/>
+      <sideterm number="Carrying" not="TRUE" argtype="INT" argument="17313"/>
+      <sideterm number="Mode" not="FALSE" argtype="INT" argument="2"/>
+      <action number="Emote" argtype="STRING" argument="Streaks eyes betray a glimmer of interest, and he says, &apos;Biff, leave us, please.&apos;"/>
+      <action number="Pause" argtype="INT" argument="4"/>
+      <action number="Action" argtype="STRING" argument="nod"/>
+      <action number="Action" argtype="STRING" argument="open door north"/>
+      <action number="Pause" argtype="INT" argument="1"/>
+      <action number="Action" argtype="STRING" argument="north"/>
+      <action number="Pause" argtype="INT" argument="4"/>
+      <action number="Action" argtype="STRING" argument="close door south"/>
+      <action number="Mode" argtype="INT" argument="2"/>
+    </mobprog>
+    <mobprog main="OnTime" argtype="INT" argument="10">
+      <sideterm number="Mode" not="TRUE" argtype="INT" argument="2"/>
+      <action number="Action" argtype="STRING" argument="open door south"/>
+      <action number="Pause" argtype="INT" argument="2"/>
+      <action number="Action" argtype="STRING" argument="south"/>
+      <action number="Pause" argtype="INT" argument="3"/>
+      <action number="Action" argtype="STRING" argument="close door north"/>
+      <action number="Mode" argtype="INT" argument="1"/>
+    </mobprog>
+    <mobprog main="OnAction" argtype="STRING" argument="south">
+      <sideterm number="Mode" not="TRUE" argtype="INT" argument="2"/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="Emote" argtype="STRING" argument="$n stops you."/>
+      <action number="Pause" argtype="INT" argument="3"/>
+      <action number="Say" argtype="STRING" argument="Hey...can&apos;t go in there. Mister Streak is busy."/>
+    </mobprog>
+    <mobprog main="OnAction" argtype="STRING" argument="sayto">
+      <sideterm number="Mode" not="FALSE" argtype="INT" argument="2"/>
+      <sideterm number="Carrying" not="TRUE" argtype="INT" argument="17313"/>
+      <sideterm number="AutoQuested" not="FALSE" argtype="INT" argument="3"/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="Emote" argtype="STRING" argument="$n rumbles, &apos;The boss doesn&apos;t want to be disturbed.&apos;"/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="17113" name="streak fence " special="NONE">
+    <description>He looks like a man worn hard and cold by the hardships of a 
+criminal life. He also looks rich enough to not have to
+do anything himself.
+</description>
+    <shortdesc>Streak</shortdesc>
+    <longdesc>Streak, a man of disputable reputation sits here.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="50" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="10" dsize="100" bonus="1000"/>
+      <move ndize="1" dsize="1000" bonus="1000"/>
+      <ac>60</ac>
+      <gold>175</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>5</hitroll>
+      <damroll>5</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1054730"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Sitting" other="Sitting"/>
+    <damage num="5" sides="4" add="5"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnSay" argtype="STRING" argument="money grad sell gold coin">
+      <sideterm number="Mode" not="FALSE" argtype="INT" argument="2"/>
+      <action number="Mode" argtype="INT" argument="2"/>
+      <action number="ActionTo" argtype="STRING" argument="eye"/>
+    </mobprog>
+    <mobprog main="OnTime" argtype="INT" argument="12">
+      <sideterm number="Mode" not="TRUE" argtype="INT" argument="2"/>
+      <action number="Mode" argtype="INT" argument="1"/>
+    </mobprog>
+    <mobprog main="OnSayTo" argtype="STRING" argument="grad">
+      <sideterm number="Mode" not="TRUE" argtype="INT" argument="2"/>
+      <sideterm number="Carrying" not="TRUE" argtype="INT" argument="17313"/>
+      <sideterm number="AutoQuested" not="FALSE" argtype="INT" argument="3"/>
+      <sideterm number="Mode" not="FALSE" argtype="INT" argument="3"/>
+      <action number="Action" argtype="STRING" argument="eye"/>
+      <action number="Pause" argtype="INT" argument="3"/>
+      <action number="Say" argtype="STRING" argument="Yes...what about Grad? I hardly know the fellow. We meet from time to time, that&apos;s all."/>
+      <action number="Mode" argtype="INT" argument="3"/>
+    </mobprog>
+    <mobprog main="OnSayTo" argtype="STRING" argument="abduct kidnap steal kill attack galden">
+      <sideterm number="Mode" not="TRUE" argtype="INT" argument="3"/>
+      <sideterm number="Mode" not="FALSE" argtype="INT" argument="4"/>
+      <sideterm number="Carrying" not="TRUE" argtype="INT" argument="17313"/>
+      <sideterm number="AutoQuested" not="FALSE" argtype="INT" argument="3"/>
+      <action number="Say" argtype="STRING" argument="So...the dear little fellow has gotten himself in trouble again, has he?"/>
+      <action number="Say" argtype="STRING" argument="I&apos;ve heard rumors about his plans of abducting the dear Lady and the gold she had with her."/>
+      <action number="Pause" argtype="INT" argument="4"/>
+      <action number="Say" argtype="STRING" argument="He seems to have carried out his plans, then."/>
+      <action number="Pause" argtype="INT" argument="3"/>
+      <action number="Action" argtype="STRING" argument="ponder"/>
+      <action number="Say" argtype="STRING" argument="Well, well...I guess that he is presently hiding somewhere, light knows where."/>
+      <action number="Pause" argtype="INT" argument="3"/>
+      <action number="Say" argtype="STRING" argument="He will -probably- send lord galden a finger tomorrow or something like that."/>
+      <action number="Pause" argtype="INT" argument="3"/>
+      <action number="Emote" argtype="STRING" argument="$n smiles shrewdly, &apos;That&apos;s what they usually do, you see.&apos;"/>
+      <action number="Pause" argtype="INT" argument="3"/>
+      <action number="Say" argtype="STRING" argument="Not that I know anything, of course."/>
+      <action number="Pause" argtype="INT" argument="3"/>
+      <action number="Emote" argtype="STRING" argument="$n sips some brandy."/>
+      <action number="Mode" argtype="INT" argument="4"/>
+    </mobprog>
+    <mobprog main="OnSayTo" argtype="STRING" argument="where grad">
+      <sideterm number="Carrying" not="TRUE" argtype="INT" argument="17313"/>
+      <sideterm number="Mode" not="TRUE" argtype="INT" argument="4"/>
+      <sideterm number="Mode" not="FALSE" argtype="INT" argument="5"/>
+      <sideterm number="AutoQuested" not="FALSE" argtype="INT" argument="3"/>
+      <action number="Say" argtype="STRING" argument="Where he is? Oh, I have no clue whatsoever, of course."/>
+      <action number="Pause" argtype="INT" argument="3"/>
+      <action number="Say" argtype="STRING" argument="That would be harboring a fugitive from justice, wouldn&apos;t it?"/>
+      <action number="Pause" argtype="INT" argument="4"/>
+      <action number="Say" argtype="STRING" argument="But I think I&apos;ve heard a rumor somewhere...if I only could remember.."/>
+      <action number="Pause" argtype="INT" argument="3"/>
+      <action number="Action" argtype="STRING" argument="grin"/>
+      <action number="Pause" argtype="INT" argument="4"/>
+      <action number="Say" argtype="STRING" argument="I think I am in dire need of medication...Golden medication, to be precise."/>
+      <action number="Pause" argtype="INT" argument="3"/>
+      <action number="Say" argtype="STRING" argument="I&apos;ve heard that the golden bracelet with silver scrolls can do wonders to one health."/>
+      <action number="Pause" argtype="INT" argument="2"/>
+      <action number="Say" argtype="STRING" argument="And if I&apos;m not misinformed, the jeweler at Alfare Lane sells them. What luck!"/>
+      <action number="Pause" argtype="INT" argument="4"/>
+      <action number="Say" argtype="STRING" argument="Please bring me one of those, will you?"/>
+      <action number="Mode" argtype="INT" argument="1"/>
+    </mobprog>
+    <mobprog main="OnGive" argtype="INT" argument="17032">
+      <sideterm number="Carrying" not="TRUE" argtype="INT" argument="17313"/>
+      <sideterm number="AutoQuested" not="FALSE" argtype="INT" argument="3"/>
+      <action number="Action" argtype="STRING" argument="smile"/>
+      <action number="Give" argtype="INT" argument="17312"/>
+      <action number="Pause" argtype="INT" argument="4"/>
+      <action number="Say" argtype="STRING" argument="Thank you, my friend. "/>
+      <action number="Pause" argtype="INT" argument="4"/>
+      <action number="Say" argtype="STRING" argument="Now I seem to remember...A rumor said that our mutual friend is hiding in a lair on Fairview Road."/>
+      <action number="Pause" argtype="INT" argument="6"/>
+      <action number="Say" argtype="STRING" argument="You&apos;ll need that ring to get in, otherwise you may get...difficulties."/>
+      <action number="Pause" argtype="INT" argument="4"/>
+      <action number="Say" argtype="STRING" argument="Happy hunting."/>
+      <action number="Mode" argtype="INT" argument="1"/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="17114" name="thief guard" special="NONE">
+    <description>He looks common...too common. 
+</description>
+    <shortdesc>a guard to the entrance</shortdesc>
+    <longdesc>A man stands here idly, looking a bit bored.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="35" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="10" dsize="100" bonus="500"/>
+      <move ndize="1" dsize="500" bonus="500"/>
+      <ac>50</ac>
+      <gold>14</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>10</hitroll>
+      <damroll>2</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1054746"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="10" add="10"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnAction" argtype="STRING" argument="east">
+      <sideterm number="Wearing" not="FALSE" argtype="INT" argument="17312"/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="ActionTo" argtype="STRING" argument="smile"/>
+      <action number="Say" argtype="STRING" argument="Sorry, friend, but you don&apos;t seem to be one of us. "/>
+      <action number="ActionTo" argtype="STRING" argument="hit"/>
+      <action number="Pause" argtype="INT" argument="2"/>
+      <action number="Say" argtype="STRING" argument="Nothing personal, you see."/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="17115" name="grad thief" special="NONE">
+    <description>Grad is...Grad. Enough said.
+</description>
+    <shortdesc>Grad the Quick</shortdesc>
+    <longdesc>Grad, a commontype little criminal, sits here with his friends.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="40" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="3" dsize="100" bonus="1000"/>
+      <move ndize="1" dsize="1000" bonus="1000"/>
+      <ac>100</ac>
+      <gold>24</gold>
+      <bankgold>0</bankgold>
+      <exp>120</exp>
+      <hitroll>5</hitroll>
+      <damroll>5</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1511450"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="2" sides="15" add="5"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnSayTo" argtype="STRING" argument="a b c d e f g h i j k l m n o p r s t u v w x y z">
+      <sideterm number="Mode" not="FALSE" argtype="INT" argument="2"/>
+      <action number="SayTo" argtype="STRING" argument="Get lost. I&apos;ve got nothing to say to you."/>
+    </mobprog>
+    <mobprog main="OnSayTo" argtype="STRING" argument="streak">
+      <sideterm number="Mode" not="FALSE" argtype="INT" argument="2"/>
+      <sideterm number="Wearing" not="TRUE" argtype="INT" argument="17312"/>
+      <sideterm number="Carrying" not="TRUE" argtype="INT" argument="17313"/>
+      <sideterm number="AutoQuested" not="FALSE" argtype="INT" argument="3"/>
+      <action number="Action" argtype="STRING" argument="blink"/>
+      <action number="Pause" argtype="INT" argument="3"/>
+      <action number="Say" argtype="STRING" argument="Well...Streak, eh? That sneaky li&apos;l bugger has still not payed me for the last job. What about that greedy slaver?"/>
+      <action number="Mode" argtype="INT" argument="2"/>
+    </mobprog>
+    <mobprog main="OnSayTo" argtype="STRING" argument="galden lady">
+      <sideterm number="AutoQuested" not="FALSE" argtype="INT" argument="3"/>
+      <sideterm number="Carrying" not="TRUE" argtype="INT" argument="17313"/>
+      <sideterm number="Wearing" not="TRUE" argtype="INT" argument="17312"/>
+      <sideterm number="Mode" not="TRUE" argtype="INT" argument="2"/>
+      <sideterm number="Mode" not="FALSE" argtype="INT" argument="3"/>
+      <action number="Say" argtype="STRING" argument="Shhhhh!"/>
+      <action number="Pause" argtype="INT" argument="3"/>
+      <action number="Emote" argtype="STRING" argument="$n looks around worriedly."/>
+      <action number="Pause" argtype="INT" argument="3"/>
+      <action number="Say" argtype="STRING" argument="You idiot. Talk silently."/>
+      <action number="Pause" argtype="INT" argument="5"/>
+      <action number="Action" argtype="STRING" argument="smile"/>
+      <action number="Pause" argtype="INT" argument="1"/>
+      <action number="Say" argtype="STRING" argument="I&apos;ve got the &apos;merchandise&apos; stowed away safely. Don&apos;t you worry. Tell Streak that."/>
+      <action number="Mode" argtype="INT" argument="3"/>
+    </mobprog>
+    <mobprog main="OnSayTo" argtype="STRING" argument="where">
+      <sideterm number="Carrying" not="TRUE" argtype="INT" argument="17313"/>
+      <sideterm number="Wearing" not="TRUE" argtype="INT" argument="17312"/>
+      <sideterm number="Mode" not="TRUE" argtype="INT" argument="3"/>
+      <sideterm number="Mode" not="FALSE" argtype="INT" argument="4"/>
+      <sideterm number="AutoQuested" not="FALSE" argtype="INT" argument="3"/>
+      <action number="Emote" argtype="STRING" argument="$n looks at you strangely."/>
+      <action number="Pause" argtype="INT" argument="2"/>
+      <action number="Say" argtype="STRING" argument="Where? Where it&apos;s always been, of course...The hideout on Taemes Street,"/>
+      <action number="Pause" argtype="INT" argument="3"/>
+      <action number="Say" argtype="STRING" argument="Don&apos;t worry. We&apos;ve got it heavily guarded."/>
+      <action number="Pause" argtype="INT" argument="2"/>
+      <action number="Action" argtype="STRING" argument="chuckle"/>
+      <action number="Pause" argtype="INT" argument="6"/>
+      <action number="Mode" argtype="INT" argument="10"/>
+    </mobprog>
+    <mobprog main="OnLeave" argtype="STRING" argument="where">
+      <sideterm number="Mode" not="TRUE" argtype="INT" argument="10"/>
+      <sideterm number="Carrying" not="TRUE" argtype="INT" argument="17313"/>
+      <sideterm number="Wearing" not="TRUE" argtype="INT" argument="17312"/>
+      <sideterm number="AutoQuested" not="FALSE" argtype="INT" argument="3"/>
+      <action number="SayTo" argtype="STRING" argument="My...you sure were in a hurry....spy."/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="Action" argtype="STRING" argument="close door w"/>
+      <action number="ActionTo" argtype="STRING" argument="hit"/>
+      <action number="Pause" argtype="INT" argument="2"/>
+      <action number="Say" argtype="STRING" argument="Die!"/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="17116" name="thief criminal" special="NONE">
+    <description>He looks common...Too common.
+</description>
+    <shortdesc>a thief</shortdesc>
+    <longdesc>A thief sits here at a table, waiting for something.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="19" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="2" dsize="100" bonus="400"/>
+      <move ndize="1" dsize="400" bonus="400"/>
+      <ac>100</ac>
+      <gold>34</gold>
+      <bankgold>0</bankgold>
+      <exp>103</exp>
+      <hitroll>4</hitroll>
+      <damroll>2</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1054746"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="2" sides="8" add="4"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="17117" name="lady galden woman" special="NONE">
+    <description>She looks rather rich, and also pretty beaten up.
+Her clothes are torn in tatters and she has bruises here and there.
+</description>
+    <shortdesc>Lady Galden</shortdesc>
+    <longdesc>An elderly woman sits here idly.
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="10" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="0"/>
+      <move ndize="1" dsize="0" bonus="0"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>1</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="10"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Resting" other="Resting"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnEntry" argtype="STRING" argument="where">
+      <sideterm number="AutoQuested" not="FALSE" argtype="INT" argument="3"/>
+      <sideterm number="Carrying" not="TRUE" argtype="INT" argument="17311"/>
+      <action number="Force" argtype="STRING" argument="junk key"/>
+      <action number="Action" argtype="STRING" argument="gasp"/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="17118" name="guard" special="NONE">
+    <description>About 25 years old, rather bored and having nothing to do.
+</description>
+    <shortdesc>a guard</shortdesc>
+    <longdesc>A guard stands here idly.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="30" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="900"/>
+      <move ndize="1" dsize="900" bonus="900"/>
+      <ac>100</ac>
+      <gold>15</gold>
+      <bankgold>0</bankgold>
+      <exp>103</exp>
+      <hitroll>5</hitroll>
+      <damroll>5</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1052714"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="3" sides="6" add="5"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnEntry" argtype="STRING" argument="where">
+      <action number="SayTo" argtype="STRING" argument="Hey, what are -you- doing here!?"/>
+      <action number="ActionTo" argtype="STRING" argument="hit"/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="17119" name="wounded driver" special="NONE">
+    <description>He is dressed in a common servants livery, with the mark of the Lord
+Galden. Right now the clothes are torn and he&apos;s got a nasty, but
+not fatal cut in his right thigh that just has been taken care of.
+He looks scared and confused, probably from the blood loss.
+</description>
+    <shortdesc>a wounded driver</shortdesc>
+    <longdesc>The wounder driver of the wagon rests here against one of the wheels.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="25" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="10" dsize="100" bonus="0"/>
+      <move ndize="1" dsize="0" bonus="0"/>
+      <ac>100</ac>
+      <gold>20</gold>
+      <bankgold>0</bankgold>
+      <exp>10</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1050762"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Resting" other="Resting"/>
+    <damage num="4" sides="4" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="17120" name="Jeanie" special="NONE">
+    <description>In the clothes of a harem girl, Jeanie the Lady
+of the Stallions stable of women licks her lips
+awaiting the signal from her masters that her
+unique talents are again required.
+</description>
+    <shortdesc>\c06Jeanie\c00 the pleasure \c12slave\c00</shortdesc>
+    <longdesc>The seductive, \c06Jeanie\c00 lounges here awaiting your \c14pleasure\c00.
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="200" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="0"/>
+      <move ndize="1" dsize="0" bonus="0"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="10"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnSayTo" argtype="STRING" argument="Amuse">
+      <action number="Emote" argtype="STRING" argument="Jeanie removes her flimsy clothes, &apos; Of course Master &apos;"/>
+    </mobprog>
+    <mobprog main="OnActionTo" argtype="STRING" argument="fondle">
+      <action number="Emote" argtype="STRING" argument="Jeanie arches her back slightly and moans softly, trembling."/>
+    </mobprog>
+    <mobprog main="OnActionTo" argtype="STRING" argument="glare">
+      <action number="Emote" argtype="STRING" argument="Jeanie&apos;s face becomes pitiful as she nearly bursts into tears. Her only desire is to serve"/>
+    </mobprog>
+    <mobprog main="OnSayTo" argtype="STRING" argument="drink liquor refreshments">
+      <action number="Emote" argtype="STRING" argument="Jeanie sways over carrying a selection of your favourite liquors."/>
+    </mobprog>
+    <mobprog main="OnSayTo" argtype="STRING" argument="bath">
+      <action number="Emote" argtype="STRING" argument="jeanie tries not to squeal with delight, &apos; Right away Master&apos; "/>
+      <action number="Emote" argtype="STRING" argument="Jeanie goes behind the large curatins."/>
+      <action number="Pause" argtype="INT" argument="10"/>
+      <action number="Emote" argtype="STRING" argument="Jeanie returns with towels and hot oils, slipping off her clothes before you."/>
+      <action number="Emote" argtype="STRING" argument="Jeanie smiles softly, motioning eagerly westward, &apos; Your bath is ready Master.&apos;"/>
+    </mobprog>
+    <mobprog main="OnGive" argtype="INT" argument="17416">
+      <action number="Emote" argtype="STRING" argument="Jeanie takes the Crook and begins to lovingly clean it."/>
+      <action number="Emote" argtype="STRING" argument="When is is finally clean Jeanie craddles it in her arms, waiting for her Master"/>
+    </mobprog>
+    <mobprog main="OnAction" argtype="STRING" argument="scream">
+      <action number="Emote" argtype="STRING" argument="Jeanie walks over behind you and using her array of hot oils begins to massage."/>
+    </mobprog>
+    <mobprog main="OnAttack" argtype="STRING" argument="scream">
+      <action number="Emote" argtype="STRING" argument="Jeanie screams out in pain, realising this isnt a sex game, &apos; Master please! &apos;"/>
+    </mobprog>
+    <mobprog main="OnSayTo" argtype="STRING" argument="crook weapon">
+      <action number="Give" argtype="INT" argument="17416"/>
+      <action number="Emote" argtype="STRING" argument="Jeanie&apos;s face blooms when she sees her Master is pleased."/>
+    </mobprog>
+    <mobprog main="OnEntry" argtype="STRING" argument="crook weapon">
+      <action number="Emote" argtype="STRING" argument="Jeanie rushes to kneel at your feet, &apos; How my I serve Master ? &apos;"/>
+    </mobprog>
+    <mobprog main="OnSayTo" argtype="STRING" argument="guest company">
+      <action number="Emote" argtype="STRING" argument="Jeanie smiles at the guest, eyes smoldering."/>
+      <action number="Say" argtype="STRING" argument="Of course Master, I will see to it now."/>
+      <action number="Emote" argtype="STRING" argument="Jeanie claps her hands once and two more pleasure women enter."/>
+      <action number="Say" argtype="STRING" argument="My twin sisters Master, they shall serve you with whatever extra you may need."/>
+      <action number="Emote" argtype="STRING" argument="The two sisters wink suggestively at you, their faces identical to Jeanies."/>
+      <action number="Pause" argtype="INT" argument="3"/>
+      <action number="Emote" argtype="STRING" argument="Jeanie smiles as she sees you are pleased."/>
+    </mobprog>
+    <mobprog main="OnActionTo" argtype="STRING" argument="nod">
+      <action number="Emote" argtype="STRING" argument="Jeanie squels with delight and runs behind the curtain."/>
+      <action number="Pause" argtype="INT" argument="5"/>
+      <action number="Emote" argtype="STRING" argument="Jeanie returns accompanied by seven of her sisters and they stand before you."/>
+      <action number="Pause" argtype="INT" argument="3"/>
+      <action number="Say" argtype="STRING" argument="Who do you wish to amuse you this evening Master?"/>
+      <action number="Emote" argtype="STRING" argument="Jeanie smiles almost coyly."/>
+    </mobprog>
+    <mobprog main="OnSayTo" argtype="STRING" argument="all">
+      <action number="Emote" argtype="STRING" argument="Jeanie&apos;s face blooms with pleasure, &apos; Of course Master &apos;"/>
+      <action number="Pause" argtype="INT" argument="3"/>
+      <action number="Emote" argtype="STRING" argument="Jeanie motions for you to follow her to the bedchamber, her sisters helping her"/>
+    </mobprog>
+    <mobprog main="OnSayTo" argtype="STRING" argument="clean">
+      <action number="Pause" argtype="INT" argument="4"/>
+      <action number="Emote" argtype="STRING" argument="Jeanie immedietly fetches a broom and begins to sweep the room."/>
+    </mobprog>
+    <mobprog main="OnTell" argtype="STRING" argument="emergency">
+      <action number="Action" argtype="STRING" argument="kneel"/>
+      <action number="Pause" argtype="INT" argument="3"/>
+      <action number="Emote" argtype="STRING" argument="Jeanie smiles softly, &apos;How may I serve you Master? &apos;"/>
+    </mobprog>
+    <mobprog main="OnRandom" argtype="INT" argument="20">
+      <action number="Emote" argtype="STRING" argument="Jeanie sees her Master is busy, so she begins to clean the silverware."/>
+    </mobprog>
+    <mobprog main="OnSayTo" argtype="STRING" argument="leave stop">
+      <action number="Pause" argtype="INT" argument="2"/>
+      <action number="Emote" argtype="STRING" argument="A single tear rolls down Jeanies check as she releaises she must leave you."/>
+      <action number="Pause" argtype="INT" argument="2"/>
+      <action number="Action" argtype="STRING" argument="curtsy"/>
+      <action number="Pause" argtype="INT" argument="2"/>
+      <action number="Say" argtype="STRING" argument="Yes Master, I hear and I obey"/>
+      <action number="Pause" argtype="INT" argument="1"/>
+      <action number="Emote" argtype="STRING" argument="Jeanies curtsies once more, her well rounded chest heaving."/>
+      <action number="Pause" argtype="INT" argument="1"/>
+      <action number="Move" argtype="STRING" argument="west"/>
+    </mobprog>
+    <mobprog main="OnTell" argtype="STRING" argument="come">
+      <action number="Move" argtype="STRING" argument="east"/>
+      <action number="Pause" argtype="INT" argument="2"/>
+      <action number="Action" argtype="STRING" argument="kneel"/>
+      <action number="Say" argtype="STRING" argument="How may I serve you Master?"/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="17121" name="dirk love god" special="NONE">
+    <description>A tall, lean, macho example of a man is here, muscles gleaming with 
+copious amounts of oil.  Belted at his waist is a broad, heavy longsword
+that curves slightly upward at the tip.  His face is set in an eager
+expression as he awaits his student in the arts of love.
+</description>
+    <shortdesc>&amp;MDirk the Love God&amp;n</shortdesc>
+    <longdesc>&amp;MDirk the Love God stands here, sword up at attention.&amp;n
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="199" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="0"/>
+      <move ndize="1" dsize="0" bonus="0"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="2097162"/>
+    <affected one="48" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnAction" argtype="STRING" argument="purge ooc gdt dt goto kill slay">
+      <sideterm number="Level" not="FALSE" argtype="STRING" argument="200 212"/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="Emote" argtype="STRING" argument="$n takes $N in a passionate embrace, $s sword throbbing at attention."/>
+    </mobprog>
+    <mobprog main="OnActionTo" argtype="STRING" argument="w n s e d u nw ne sw se push drag east west north southeast southwest northwest northeast down up south">
+      <sideterm number="Level" not="FALSE" argtype="STRING" argument="200 212"/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="Force" argtype="STRING" argument="french dirk"/>
+      <action number="Emote" argtype="STRING" argument="&amp;M$n takes $N in a passionate embrace $s lips pressing sloppily to $S and his sword throbbing against $S in anticipation.&amp;n"/>
+    </mobprog>
+    <mobprog main="OnEntry" argtype="VOID" argument="NONE">
+      <sideterm number="Level" not="FALSE" argtype="STRING" argument="200 212"/>
+      <action number="Emote" argtype="STRING" argument="$n smiles at $N and says in a pleasant voice, &quot;&amp;MHello $N, how are you? I see you have come for me....&amp;n&quot;, $s voice trails off as $s sword throbs at attention."/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="17122" name="Test mob colins" special="NONE">
+    <description>It looks, err, unfinished.
+The man sitting before you is an extremely fat man.
+</description>
+    <shortdesc>Colin the lazy shop keeper</shortdesc>
+    <longdesc>A lazy man is sitting here on a stool.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="189" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="0" dsize="0" bonus="11000"/>
+      <move ndize="1" dsize="11000" bonus="11000"/>
+      <ac>-200</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="8"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="17123" name="eliza" special="NONE">
+    <description>It looks, err, unfinished.
+</description>
+    <shortdesc>Test mob</shortdesc>
+    <longdesc>A test mob is standing here.
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="1" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="0" dsize="0" bonus="10000"/>
+      <move ndize="1" dsize="10000" bonus="10000"/>
+      <ac>0</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="26"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="4"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="0" sides="0" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="17200" name="the small helper animal" special="NONE">
+    <description>small, brown, with small antlers on it&apos;s head,
+this critter looks like nothing you&apos;ve ever seen
+before.
+</description>
+    <shortdesc>the Small Helper Animal</shortdesc>
+    <longdesc>This small creature looks at you worriedly, as it scurries around the cooler.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="155" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="30" dsize="100" bonus="0"/>
+      <move ndize="1" dsize="0" bonus="0"/>
+      <ac>-100</ac>
+      <gold>60</gold>
+      <bankgold>0</bankgold>
+      <exp>110</exp>
+      <hitroll>90</hitroll>
+      <damroll>50</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1048590"/>
+    <affected one="2096" two="0" three="0" four="0"/>
+    <attack type="14"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="30" sides="90" add="90"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnEntry" argtype="STRING" argument="w n s e d u nw ne sw se push drag ">
+      <sideterm number="Sex" not="TRUE" argtype="STRING" argument="female"/>
+      <action number="ActionTo" argtype="STRING" argument="whistle"/>
+    </mobprog>
+    <mobprog main="OnSay" argtype="STRING" argument="thirsty">
+      <action number="Action" argtype="STRING" argument="get pepper cooler"/>
+      <action number="Give" argtype="INT" argument="17203"/>
+    </mobprog>
+    <mobprog main="OnSay" argtype="STRING" argument="hungry">
+      <action number="Action" argtype="STRING" argument="get pizza cooler"/>
+      <action number="Give" argtype="INT" argument="17202"/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="17300" name="baker amador goofy" special="NONE">
+    <description>A chef with a huge floppy white hat, lots of red hair, no eyes and a goofy grin
+stands before you, widly tossing his dough and salad in the air. He speaks in odd
+half sentences, with some accent that sounds eerily familiar and completely forgein
+at the same time.
+</description>
+    <shortdesc>a baker for Amador</shortdesc>
+    <longdesc>A goofy chef with huge floppy white hat and funny accent wildly tosses his dough in the air.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="200" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="0"/>
+      <move ndize="1" dsize="0" bonus="0"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="9232394"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="17400" name="Reul " special="NONE">
+    <description>A small man that almost seems to cringe everytime you
+look at him, Reul is a seller of black market
+goods here in the Whitecloak controlled areas.
+It is rumoured that he even has the unoffical backing
+of the High Inquisitor himself but such claims
+have always been denied.
+</description>
+    <shortdesc>Reul the black marketer</shortdesc>
+    <longdesc>A cringing man by the name of Reul stands here.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="200" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="0"/>
+      <move ndize="10" dsize="100" bonus="0"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="9232395"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+</mobiles>

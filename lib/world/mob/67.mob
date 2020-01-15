@@ -1,0 +1,1247 @@
+#6700
+man old trainer taskmaster~
+the old man~
+An old man stands here waiting to instruct you.
+~
+This man looks to be in his latter years,
+and he looks like a cruel taskmaster.
+~
+254042 2096 -1000 E
+100 -30 -20 894 30d80+45 30d30+50
+0 0
+8 8 1 879
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+E
+#6701
+old man taskmaster~
+the old man~
+An old man is here, muttering about fools.
+~
+This old man has many knife scars along his face,
+and walks with a slight limp, yet he radiates
+a aura of power, better stand clear of him.
+~
+254042 2096 -1000 E
+100 -30 -20 894 30d100+500 30d30+50
+0 0
+8 8 1 879
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+E
+#6702
+huira woman darkfriend~
+Huira de'Vaeran~
+A woman stands here cloaked in the shadows that surround her.
+~
+Her shadow cast form reveals little beyond a pale face seemingly untouched
+the ravages of time. Deep dark eyes like twin pools of infinite wisdom look
+down at you coldly calculating. You feel compelled to look away from that 
+merciless stare and to the floor. Without a word she has dominated your very
+soul.
+~
+5218330 2096 0 E
+200 -30 -5 894 30d0+1 30d100+50
+0 0
+8 8 2 879
+BareHandAttack: 4
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Bash: 100
+Trip: 100
+Dirtkick: 100
+Kick: 100
+Disarm: 100
+P
+OnEntry & Guild "forsaken"
+Emote "The shadow cast women nods slightly to the new arrival but remains strangly quiet."
+End
+OnEntry & ! Guild "forsaken"
+Emote "A contemptuous sneer twists the face of the shadow cast woman at the sight of the new arrival. "
+End
+Q
+E
+#6703
+servent pale DF~
+the pale servant~
+A male servant, pale of skin and with clear empty eyes is here.
+~
+The servant looks to be the most handsome man you
+have ever seen, but his face seems to be in a perpetual
+smile, and his eyes seem devoid of life.
+~
+2099292 2096 0 E
+75 -10 6 894 25d300+450 15d30+30
+0 0
+8 8 1 879
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnEntry & Wearing 6615 & Sex "female"
+ActionTo "worship"
+SayTo "great mistress your presence honors me."
+End
+OnActionTo "look" & Darkfriend
+SayTo "may i help you?"
+End
+OnSayTo "come follow" & Darkfriend & Sex "female"
+ActionTo "bow"
+SayTo "as you wish, mistress."
+ActionTo "follow"
+End
+OnEntry & Darkfriend
+ActionTo "bow"
+End
+OnSayTo "stop stay" & Darkfriend
+ActionTo "follow self"
+SayTo "as you command, i shall stay here."
+ActionTo "bow"
+End
+OnEntry & ! Darkfriend
+SayTo "how did you get in here? you don't belong here!"
+ActionTo "kill"
+End
+OnRandom 25
+Emote "the pale servant moves about the room cleaning things."
+End
+OnEntry & Wearing 6615 & Sex "male"
+ActionTo "worship"
+SayTo "great master, your presence honors me."
+End
+OnActionTo "slap"
+ActionTo "grovel"
+SayTo "i am sorry i have displeased you."
+End
+Q
+E
+#6704
+Ground~
+the Ground~
+The Ground
+~
+The ground looks very hard
+~
+42 48 0 E
+180 -30 -10 894 30d250+5000 30d50+50
+0 0
+8 8 0 879
+BareHandAttack: 7
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Dirtkick: 100
+Disarm: 100
+Stun: 100
+P
+OnEntry & ! Guild "darkfriends"
+ActionTo "kill"
+Force "flee"
+End
+OnRandom 100
+Action "kill servant"
+End
+Q
+E
+#6705
+Librarian servant~
+the Librarian~
+The Librarian looks about for books
+~
+The Librarian moves about the house looking for books and putting
+them back in place. He is rather vacant eyed, yet somehow you get
+the idea he is not quite harmless.
+~
+2136152 2096 0 E
+100 -30 -5 894 30d200+2000 30d80+50
+150 0
+8 8 1 879
+BareHandAttack: 8
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Bash: 100
+Disarm: 100
+Stun: 100
+P
+OnEntry & Carrying 6731
+SayTo "thief!!! give me my book!"
+ActionTo "stun"
+End
+OnEntry & Wearing 6731
+SayTo "what are you doing with that book! die fool!!"
+ActionTo "stun"
+End
+OnRandom 25
+Emote "the librarian puts a book back in its place."
+Action "drop book"
+End
+OnRandom 90
+Emote "the librarian spies a misplaced book."
+Action "take book"
+End
+Q
+E
+#6706
+DF butler~
+the Butler~
+A vacant eyed butler standing at the door.
+~
+The vacant eyed man is dressed entirely in black, from head to toe.
+His pasty white skin seems almost corpse like, so much so you wonder
+if he is still breathing, and on checking you fail to notice any sign
+that he is.
+~
+2267230 16 0 E
+120 -40 -4 894 20d100+2000 30d50+50
+0 0
+8 8 1 879
+BareHandAttack: 5
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Stun: 100
+P
+OnEntry & ! Darkfriend & Level "1 50"
+SayTo "you do not live here, get out!"
+Action "open door s"
+Emote "the butler rudely shoves you out the door!"
+Force "south"
+Action "close door s"
+End
+OnLeave
+Action "close door s"
+End
+OnEntry & Sex "male" & Guild "forsaken"
+SayTo "greetings great master"
+ActionTo "bow"
+End
+OnEntry & Sex "female" & Guild "forsaken"
+SayTo "greetings great mistress"
+ActionTo "bow"
+End
+Q
+E
+#6707
+Guard DF house~
+a shady looking Guard~
+A shady looking Guard stands in front of the Mansion.
+~
+The Guard looks very scruffy, you wonder what type of rich Lord would
+hire such repulsive men to guard his estate. The Guard does not appear
+to notice you or really seem to care what is going on.
+~
+1054746 512 0 E
+40 0 1 894 3d100+1300 9d20+20
+50 0
+8 8 1 879
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Disarm: 100
+P
+OnAction "north" & ! Darkfriend
+SayTo "you'll have to go thru me first!"
+Stop
+End
+OnActionTo "push"
+Stop
+SayTo "hey! what do you think you're doing?"
+Emote "the guard backhands you across the face with such force you nearly fall down."
+End
+OnActionTo "drag"
+Stop
+SayTo "what's your problem?"
+Emote "the guard shoves you away from him like the wimp you are."
+End
+OnAction "slap" & ! Guild "forsaken"
+ActionTo "slap"
+ActionTo "laugh"
+End
+OnEntry & Sex "female" & ! Guild "forsaken"
+ActionTo "whistle"
+SayTo "hey, maybe you can come back when i get off?"
+ActionTo "wink"
+End
+OnEntry & Sex "male" & ! Guild "forsaken"
+ActionTo "point"
+Action "snicker"
+End
+OnEntry & Guild "forsaken"
+ActionTo "bow"
+End
+OnRandom 25
+Emote "the guard makes a rude gesture to the old lady."
+End
+OnAction "dirtkick" & ! Darkfriend
+ActionTo "kill"
+End
+Q
+E
+#6708
+Begger lady DF~
+an Old Lady~
+An Old Lady who just seems to be sweeping the front porch.
+~
+The old Lady looks incredibly old and frail, she must be on her last
+days, why in the world would anyone make her sweep all day, how cruel!
+~
+5244958 48 0 E
+1 20 0 894 1d0+2000 1d1+0
+0 0
+8 8 2 879
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnAction "grasp" & Sex "female" & ! Guild "forsaken"
+Stop
+Emote "the old lady slams an incredibly strong shield of saidar around you!"
+ActionTo "point"
+Say "be careful! that girl is trying to channel!"
+End
+OnActionTo "push"
+Stop
+Emote "the old lady smiles and whacks you upside the head with her broom!"
+End
+OnActionTo "drag"
+Stop
+Emote "the old lady gives you a warning look, then smacks you with her broom!"
+End
+OnAttack
+Emote "the old lady screams, "
+End
+OnMobDie
+Emote "with her last breath the old lady curses you in the name of the great lord of the grave."
+End
+OnEntry & Sex "female" & Grasping & ! Guild "forsaken"
+ActionTo "point"
+Say "watch that girl she is trying to channel!"
+Emote "the old lady slams a shield around you so fast it hurts!"
+Force "release"
+End
+OnAction "flee"
+Stop
+Force "emote tries to flee but is blocked by a wall of air."
+Action "snicker"
+End
+OnAction "who where whe"
+Stop
+Emote "Shai'tan requests you not do that here."
+Force "emote agrees with Shai'tan."
+End
+Q
+E
+#6709
+Gardener DF~
+an Old Man~
+An Old Man is working on the plants in front of the house.
+~
+The poor old man is stooped over digging at weeds when he should be 
+relaxing in his old age. The Lord who owns this house must just be
+the most cruel person alive.
+~
+5244958 48 0 E
+1 20 10 894 1d0+4000 1d1+0
+0 0
+8 8 1 879
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnAttack
+Say "oh help! help me! someone help me please! i'm just an old man!"
+End
+OnMobDie
+Emote "the old man smiles as you release him from the bond of the dark one."
+End
+OnEntry & Sex "male" & Grasping & ! Guild "forsaken"
+ActionTo "point"
+Say "watch out boys! that young fellow is trying to channel!"
+Emote "the old man slams a shield of saidin around you!"
+Force "release"
+End
+OnAction "grasp" & Sex "male" & ! Guild "forsaken"
+Stop
+Emote "the old man crashes a shield of saidin around you!"
+ActionTo "point"
+Say "watch him boys! he's trying to channel."
+End
+OnActionTo "push"
+Stop
+Emote "the old man resists being pushed somehow, maybe he is using the one power?"
+End
+OnActionTo "drag"
+Stop
+Emote "the old man sends you reeling with a quick jab from his trowl."
+ActionTo "laugh"
+End
+Q
+E
+#6710
+Myrddraal black~
+a black robed Myrddraal~
+A black robed Myrddraal is on guard duty.
+~
+The black robed Myrddraal has a nasty sneer on its face, probably because it
+does not enjoy its job of guard duty. However, you decide it might be in your
+best interest not to taunt the creature.
+~
+2232330 0 0 E
+150 -180 -10 894 30d500+3000 30d40+50
+500 0
+8 8 0 879
+BareHandAttack: 3
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Bash: 100
+Trip: 100
+Dirtkick: 100
+Kick: 100
+Disarm: 100
+Stun: 100
+P
+OnEntry & Guild "forsaken" & Sex "male"
+ActionTo "kneel"
+SayTo "how may i serve master?"
+End
+OnEntry & Guild "forsaken" & Sex "female"
+ActionTo "kneel"
+SayTo "how may i serve mistress?"
+End
+OnEntry & ! Darkfriend
+Emote "with a nearly silent hiss a myrddraal draws its black blade."
+ActionTo "kill"
+End
+OnMobAttack
+Emote "with deadly speed the jet black blade from thakan'dar slices you!"
+End
+Q
+E
+#6711
+Greyman man DF house guard greyassassin~
+an Ordinary Man~
+An Ordinary Man with poisoned daggers.
+~
+The Greyman is extremely hard to see, when you look at him you have
+to force yourself to keep noticing him as he tends to fade into the
+background.  His soulless face stares at you wihtout emotion as he
+prepares to stab you in the back.
+~
+2137288 271386674 0 E
+199 -180 -20 894 30d200+4000 30d50+50
+0 0
+8 8 1 879
+BareHandAttack: 14
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Stun: 100
+P
+OnEntry & Darkfriend & ! Guild "forsaken"
+Emote "you see something out of the corner of you eye."
+End
+OnEntry & Guild "forsaken" & Sex "male"
+ActionTo "bow"
+SayTo "My soul is yours Master!"
+End
+OnEntry & Sex "female" & Guild "forsaken"
+ActionTo "bow"
+SayTo "My soul is yours Mistress!"
+End
+OnAction "look say east west north south scan" & ! Darkfriend & ! Guild "forsaken"
+Stop
+Emote "$N staggers as a dagger slams into $S back!"
+Cast "pain"
+ActionTo "backstab"
+Action "flee"
+End
+OnAction "grasp cast weave powertrap target" & ! Darkfriend & ! Guild "forsaken"
+Stop
+Emote "Just as $N attempts to reach for the true source a dagger slams into $S back!"
+Cast "pain"
+ActionTo "backstab"
+Action "flee"
+End
+Q
+E
+#6712
+guard DF lazy fat man~
+a Lazy guard~
+A fat, lazy guard sits here doing nothing.
+~
+The guard is rather fat, probably from sitting here all day. He twirls
+a key around his fat fingers endlessly making this annoying little
+ringing noise. You wish he would stop at least for a second but he
+seems quite intent on his twirling.
+~
+6222 0 0 E
+40 15 4 894 1d100+3500 5d10+5
+0 0
+6 6 1 879
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Dirtkick: 100
+P
+OnEntry & Guild "forsaken"
+Action "stand"
+ActionTo "bow"
+SayTo "how may i serve?"
+End
+OnSayTo "give" & Darkfriend
+Action "stand"
+Give 6712
+SayTo "just give it back when your done."
+Action "sit"
+End
+OnLeave & Carrying 6712
+Stop
+SayTo "hey! give me my key back!"
+End
+OnLeave
+Action "sit"
+End
+OnTick
+Action "close door e"
+Action "lock door e"
+Action "close door southeast"
+Action "lock door southeast"
+Action "close door south"
+Action "lock door south"
+Action "close door southwest"
+Action "lock door southwest"
+Action "close door west"
+Action "lock door west"
+End
+OnActionTo "push drag"
+Stop
+ActionTo "slap"
+SayTo "what are you trying to do you twit?"
+End
+Q
+E
+#6713
+Myrddraal DF house~
+a Black Robed Myrddraal~
+A Black Robed Myrddraal lurks unseen in the shadows.
+~
+The pasty white flesh of the Myrddraal belies its incredible battle
+prowess. This myrddraal is itching for a fight, and is not amused 
+that it was set on guard duty.
+~
+2103386 18 0 E
+170 -150 -15 894 30d200+5000 30d50+50
+50 0
+8 8 1 879
+BareHandAttack: 3
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnAction "cast weave" & ! Guild "forsaken"
+Stop
+Emote "$N looks pained as $S weave fails."
+ActionTo "kill"
+End
+OnEntry & Grasping
+Force "release"
+End
+OnAction "grasp" & ! Guild "forsaken"
+Stop
+Force "emote attempts to grasp the source but is blocked somehow."
+End
+OnAction "target"
+Stop
+Force "emote screams in terrible pain as their weave is twisted by the Dark One!"
+Cast "pain"
+End
+Q
+E
+#6714
+black ajah sister sedai woman df~
+a Sister of the Black Ajah~
+A Sister of the Black Ajah does not look pleased to see you.
+~
+This Aes Sedai's ageless face is twisted into a near rage, someone
+has severly annoyed her and she is just itching to abuse someone with
+the one power.  You think it might be a good idea to steer clear of
+this one.
+~
+4194318 16 0 E
+140 0 0 894 10d0+5000 20d40+30
+150 0
+8 8 2 879
+BareHandAttack: 12
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Dirtkick: 100
+P
+OnEntry & Darkfriend & Guild "tower aes sedai"
+SayTo "\c05greetings sister.\c00"
+End
+OnEntry & Darkfriend & Guild "rebel aes sedai"
+SayTo "\c05greetings sister.\c00"
+End
+OnAction "cast weave" & ! Guild "forsaken"
+Stop
+Force "emote tries to weave something but is prevented by the black sister."
+SayTo "\c05do not weave in my presence unless i tell you to!\c00"
+ActionTo "slap"
+Force "emote loses hold of the source as a massive \c13shield of spirit\c00 is woven around them."
+Force "release"
+Mode 2
+SayTo "\c05perhaps you need a lesson in manners.\c00"
+End
+OnActionTo "slap" & ! Guild "forsaken" & ! Mode 2
+Emote "the black sister gasps in utter shock!"
+SayTo "\c05how dare you!?\c00"
+Mode 2
+Force "emote screams in pain as the black sister weaves \c13spirit\c00 and \c08fire\c00."
+SayTo "\c05perhaps you need a lesson in manners...\c00"
+End
+OnLeave & ! Guild "forsaken" & Mode 2
+Stop
+SayTo "\c05you're not going anywhere!\c00"
+Force "emote groans in pain as a massive \c14fist of air\c00 slams into their side."
+End
+OnActionTo "kill hit punch stun bash backstab dirt kick" & ! Guild "forsaken" & Mode 2
+Stop
+Force "emote tries to hit the black sister, but instead hits a wall of solid \c14air\c00."
+Emote "the black sister chuckles slightly."
+SayTo "\c05oh my, aren't you the stupid one?\c00"
+Force "emote gasps for breath as a weave of \c11water\c00 fills their lungs."
+End
+OnTick & Mode 2
+Say "\c05grovel before me worm!\c00"
+Emote "the black sister savagly beats you with a weave of \c03earth\c00 and \c13spirit\c00."
+End
+OnActionTo "grovel" & Mode 2 & ! Mode 3
+Emote "the black sister smiles coldly."
+SayTo "\c05i see you can learn wisdom, perhaps you have learned your lesson.\c00"
+Force "emote groans as the black sister lands a swift kick in their side."
+SayTo "\c05however, one lesson for the road never hurts.\c00"
+Mode 1
+End
+OnAction "say sayto '" & ! Guild "forsaken" & Mode 2
+Stop
+Force "emote tries to speak but the \c14gag of air\c00 in their mouth prevents them."
+SayTo "\c05you moron, grovel before me!\c00"
+ActionTo "slap"
+End
+OnActionTo "hit kill punch kick backstab stun dirtkick bash" & ! Mode 2 & ! Guild "forsaken"
+Stop
+Force "emote almost lands a blow on the black sister, but is prevented by her \c14shield of air\c00."
+Emote "the black sister gasps in outrage."
+SayTo "\c05do you know who i am? you stupid worm! i will make you grovel before me!\c00"
+Mode 2
+ActionTo "slap"
+ActionTo "\c05how dare you!?\c00"
+ActionTo "slap"
+End
+OnAction "flee" & Mode 2
+Stop
+Force "emote slams into a solid \c14wall of air\c00."
+SayTo "\c05i am not done with you yet.\c00"
+End
+OnActionTo "spit" & ! Guild "forsaken"
+Emote "emote turns bright red in utter outrage as she wipes the spit from her cheek."
+SayTo "\c05die!\c00"
+ActionTo "kill"
+End
+OnActionTo "push drag" & ! Guild "forsaken"
+Stop
+Mode 2
+Force "emote tries to push the black sister around."
+SayTo "\c05how dare you touch me, you filth!\c00"
+Force "emote flies back as if struck my a massive bolt of \c13lightning\c00."
+End
+OnActionTo "slap" & ! Guild "forsaken" & Mode 2
+Stop
+Force "emote tries to slap the black sister."
+Emote "the black sister weaves a massive flow of \c13spirit\c00 into a \c13compulsion\c00 weave."
+Force "slap me"
+SayTo "\c05how does that feel? do it again you worm!\c00"
+Force "slap me"
+End
+OnEntry & Guild "forsaken"
+ActionTo "curtsey"
+SayTo "\c05greetings great one.\c00"
+End
+OnSay "enough" & Guild "forsaken"
+SayTo "\c05as you command, great one.\c00"
+Emote "the black sister releases all her weaves."
+Mode 1
+End
+OnAction "grasp" & Sex "female" & ! Guild "forsaken" & Mode 2
+Stop
+Force "emote tries to embrace the source, but cannot break the black sister's \c13shield\c00."
+ActionTo "slap"
+SayTo "\c05silly girl you must learn to respect me.\c00"
+End
+OnSayTo "hold" & Guild "forsaken"
+SayTo "\c05as you command, great one.\c00"
+Action "follow self"
+Mode 3
+End
+OnSayTo "follow" & Guild "forsaken"
+ActionTo "follow"
+SayTo "\c05as you command, great one.\c00"
+End
+OnActionTo "trip" & ! Guild "forsaken"
+Stop
+Emote "the black sister weaves flows of \c03earth\c00 and you fall down."
+Force "sit"
+SayTo "\c05foolish child!\c00"
+Mode 2
+End
+OnActionTo "grovel" & Mode 3
+SayTo "\c05while that is gratifing, i have orders...\c00"
+Force "emote screams in pain as the black sister weaves \c08fire\c00 and \c13spirit\c00 into them."
+End
+Q
+E
+#6715
+DF bubble evil~
+\c05A bubble of Evil\c00~
+\c05A bubble of evil twists the pattern around you!\c00
+~
+\c05The bubble of evil exits without a definite form, but it sure
+does have some nasty sharp edges when it slashes you!\c00
+~
+3084330 0 0 E
+1 -10 0 894 5d100+25000 4d40+50
+0 0
+8 8 0 879
+BareHandAttack: 3
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnAction "leave" & ! Darkfriend
+Stop
+Emote "\c05a cold inhuman laughter fills your ears....\c00"
+End
+OnMobAttack
+Emote "\c05the great lord of the grave speaks, \c08'your soul is mine!'\c00"
+End
+Q
+E
+#6716
+guild gate guard~
+an invisible mob that works the deathtrap~
+An invisible mob that works the deathtrap
+~
+An invisible mob that works the deathtrap
+~
+10 50 0 E
+0 20 10 894 1d100+0 1d1+0
+0 0
+8 8 0 879
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnAction "grasp north weave cast scan" & ! Darkfriend
+Stop
+Force "enter bubble"
+End
+Q
+E
+#6717
+gholam man male~
+a plain looking man~
+A plain looking man moves about with exceptional grace.
+~
+This man look extremely ordinary, if well built. His sinwey muscles remind
+you of a dancers body, hard and tight, but not bulky. His face is plain, if
+not total unremarkable, neither hard nor soft, eyes neither piercing nor
+vacant. The man regards you for a moment, and seems to dismiss your presence.
+~
+3144792 0 0 E
+190 -30 -15 894 1d500+14000 30d50+50
+0 0
+8 8 1 879
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Trip: 100
+Disarm: 100
+P
+OnActionTo "cast weave" & Sex "male"
+Stop
+Force "emote watches as his weaves bounce right off the gholam!"
+Emote "the gholam takes no notice of the weaves as he moves in for the kill."
+ActionTo "kill"
+End
+OnActionTo "cast weave" & Sex "female"
+Stop
+Force "emote watches as her weaves bounce harmlessly off the gholam."
+Emote "the gholam takes no notice of the harmless weaves as he moves in for the kill."
+ActionTo "kill"
+End
+OnActionTo "slap"
+Emote "the gholam is unamused but working."
+End
+OnAction "cast weave"
+Stop
+Emote "the gholam seems unaffected by your weaves."
+End
+Q
+E
+#6718
+man small beady mailman scribe~
+a small beady-eyed man~
+A small beady-eyed man stands here, quill and parchment in hand.
+~
+A small beady eyed man stands before you with quill and parchment in hand. He
+has the look of someone that knows his best years are in the past and only a 
+and tortured future remains. 
+~
+1064970 48 0 E
+200 20 10 894 1d100+25000 30d127+0
+0 0
+8 8 1 0
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+E
+#6720
+Liandrin sedai DF~
+Liandrin Sedai~
+Liandrin Sedai does not look pleased.
+~
+It looks, err, unfinished.
+~
+8 0 0 E
+0 20 10 894 1d100+0 1d1+0
+0 0
+8 8 0 879
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnActionTo "slap" & ! Guild "forsaken"
+Action "emote gasps in shock that you would even dare!"
+Mode 1
+SayTo "\c08i'll teach you, you little twit!\c00"
+Action "emote gently embraces the source."
+Force "emote screams in pain as if stuck with \c08tiny hot needles!\c00"
+End
+OnAction "grasp" & Mode 1
+Stop
+Force "emote tries to embrace the source but is cut off by liandrin."
+Say "\c08now that was rather foolish wasn't it?\c00"
+Force "emote flies back from the vicious backhand delieved by liandrin."
+End
+OnAction "weave cast" & Mode 1
+Force "emote tries to weave something, but liandrin slices her flows!"
+Force "emote is punched square in the jaw by liandrin."
+SayTo "\c08you stupid wench\c00"
+End
+OnLeave & Mode 1
+Stop
+Force "emote tries to free herself from liandrin but fails."
+SayTo "\c08going somewhere?\c00"
+ActionTo "slap"
+End
+OnAction "say rofl laugh tickle giggle slap pinch poke puke roll" & Mode 1
+SayTo "\c08you learn slowly i see.\c00"
+Force "emote screams in agony as liandrin weaves something made of fire and air."
+End
+OnRandom 10 & Mode 1
+Say "\c08i hope you have learned your lesson!\c00"
+Mode -1
+Emote "liandrin sedai snorts and pushes you to the ground!"
+End
+OnActionTo "kill hit punch bash dirt kick bash backstab"
+Stop
+Mode 1
+SayTo "\c08how dare you!!\c00"
+ActionTo "slap"
+ActionTo "slap"
+End
+OnActionTo "grovel" & Mode 1
+Action "smile"
+SayTo "\c08ahhh so you do know your place.\c00"
+Mode -1
+Force "emote groans as liandrin kicks them in the face."
+End
+Q
+E
+#6721
+ward darkward~
+an invisible ward~
+an invisible ward
+~
+\c00~
+10 50 0 E
+0 20 10 894 1d100+0 1d1+0
+0 0
+8 8 0 0
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnAction "grasp weave cast powertrap"
+Stop
+End
+Q
+E
+#6722
+blightguard~
+the Blight Guard~
+The Blight Guard is here, keeping the door to the Blight shut up tight.
+~
+It looks, err, unfinished.
+~
+6283354 268765232 0 E
+199 -180 -20 894 1d0+30000 30d127+50
+0 0
+8 8 1 0
+BareHandAttack: 14
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Bash: 100
+Trip: 100
+Dirtkick: 100
+Kick: 100
+Disarm: 100
+Stun: 100
+P
+OnTell "dreadlords pass here" & Darkfriend
+Action "unlock door south"
+Action "open door south"
+Say "In you go."
+End
+Q
+E
+#6723
+dreadlord servile man doorman~
+the Doorman~
+The Doorman to the Blight is here.
+~
+It looks, err, unfinished.
+~
+6283354 329776 0 E
+199 -180 -20 894 1d0+30000 30d127+50
+0 0
+8 8 1 0
+BareHandAttack: 14
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Bash: 100
+Trip: 100
+Dirtkick: 100
+Kick: 100
+Disarm: 100
+Stun: 100
+P
+OnTell "close up" & Darkfriend
+Action "close door s"
+Action "lock door s"
+End
+Q
+E
+#6740
+DF wall mover invisible~
+the invisible wall mover~
+The invisible wall mover
+~
+It looks, err, unfinished.
+~
+10 3145730 0 E
+0 20 10 894 1d100+0 1d1+0
+0 0
+8 8 0 879
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnRandom 99 & Mode -1 & ! Mode 1
+Emote "the walls move and shift around you!"
+Mode 1
+End
+OnRandom 99 & Mode 1 & ! Mode 2
+Action "close wall northwest"
+Action "lock wall northwest"
+Action "unlock wall north"
+Action "open wall north"
+Mode 2
+End
+OnRandom 99 & Mode 2 & ! Mode 3
+Action "close wall north"
+Action "lock wall north"
+Action "unlock wall northeast"
+Action "open wall northeast"
+Mode 3
+End
+OnRandom 99 & Mode 3 & ! Mode 4
+Action "close wall northeast"
+Action "lock wall northeast"
+Action "unlock wall east"
+Action "open wall east"
+Mode 4
+End
+OnRandom 99 & Mode 4
+Action "close wall east"
+Action "lock wall east"
+Action "unlock wall southeast"
+Action "open wall southeast"
+Mode 1
+End
+OnAttack
+Stop
+End
+OnEntry & Mode 1 & ! Mode 2
+Action "close wall northwest"
+Action "lock wall northwest"
+Action "unlock wall north"
+Action "open wall north"
+Mode 2
+End
+OnEntry & Mode 2 & ! Mode 3
+Action "close wall north"
+Action "lock wall north"
+Action "unlock wall northeast"
+Action "open wall northeast"
+Mode 3
+End
+OnEntry & Mode 3 & ! Mode 4
+Action "close wall northeast"
+Action "lock wall northeast"
+Action "unlock wall east"
+Action "open wall east"
+Mode 4
+End
+OnEntry & Mode 4
+Action "close wall east"
+Action "lock wall east"
+Action "unlock wall southeast"
+Action "open wall southeast"
+Mode 1
+End
+Q
+E
+#6741
+test mob~
+test mob~
+test mob
+~
+It looks, err, unfinished.
+~
+10 3145730 0 E
+0 20 10 894 1d100+0 1d1+0
+0 0
+8 8 0 879
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnRandom 99
+Say "99"
+End
+OnRandom 99 & Mode -1 & ! Mode 1
+Mode 1
+Say "active"
+End
+OnRandom 99 & Mode 1 & ! Mode 2
+Say "mode 1 to mode 2"
+Mode 2
+End
+OnRandom 99 & Mode 2 & ! Mode 3
+Say "mode 2 to mode 3"
+Mode 3
+End
+OnRandom 99 & Mode 3 & ! Mode 4
+Say "mode 3 to mode 4"
+Mode 4
+End
+OnRandom 99 & Mode 4
+Say "mode 4 to mode 1"
+Mode 1
+End
+Q
+E
+#6761
+DFward fallenward deathward~
+\c23A deadly ward\c00~
+\c23A deadly ward\c00
+~
+\c23A deadly ward woven with the True Power\c00
+~
+1040394 50 0 E
+199 20 10 894 1d100+0 1d1+0
+0 0
+8 8 0 879
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnAction "powertrap cast weave" & ! Guild "forsaken"
+Stop
+Cast "pain"
+Cast "shield"
+Cast "shield"
+Cast "shield"
+Cast "shield"
+Cast "shield"
+Cast "wrap"
+Cast "wrap"
+Cast "wrap"
+Cast "wrap"
+Cast "wrap"
+Cast "drown"
+Cast "drown"
+Cast "drown"
+Cast "poison"
+Cast "poison"
+Cast "poison"
+End
+Q
+E
+#6798
+status mob~
+a Status Mob~
+\c23A status mob of the Darkfriend GL's is here.\c00
+~
+Status Mob, he knows where it's at.
+~
+10 0 0 E
+0 20 10 894 1d100+0 1d1+0
+0 0
+8 8 0 0
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnSay "status"
+Shout
+Action "shout test1"
+End
+OnActionTo "slap"
+Shout
+Action "shout test 1"
+End
+OnAction "nod"
+Action "shout test 1"
+Shout
+End
+Q
+E
+#6799
+shaitan bug~
+\c14/\\c08o\c00\c23O\c00\c08o\c14/\\c00~
+\c14/\\c08o\c00\c23O\c00\c08o\c14/\\c00
+~
+You see a bug.... moron.
+~
+434200 2096 0 E
+1 20 0 894 1d100+25000 0d0+0
+0 0
+8 8 1 879
+BareHandAttack: 9
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnMobDie
+Emote "squish!"
+End
+OnAttack
+Action "emote tries to corrupt your file!"
+End
+Q
+E
+$

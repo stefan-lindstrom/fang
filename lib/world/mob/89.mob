@@ -1,0 +1,158 @@
+#8900
+man shopkeeper craftsman AM~
+a middle aged man~
+A talented craftsman stands here.
+~
+The craftsman is big and burly. He looks like he could thump your head
+in with little or no effort should he feel like it. In short, you don't
+want to mess with him.
+~
+1064970 0 0 E
+0 20 10 785 30d1000+10000 1d1+0
+0 0
+8 8 1 986
+BareHandAttack: 10
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+E
+#8901
+squirrel~
+a \c22grey\c00 squirrel~
+An angry looking squirrel stands here, staring at you with beady little eyes.
+~
+The squirrel is grey with a large, bushy tail. It stares at you
+with a look full of such malevolence that it makes you quite
+uncomfortable. It's beady little eyes are red and tinged with
+madness. The sharp, pointy teeth, set in its mouth are
+surrounded by white foam as it chitters maliciously at you.
+This is not a rodent to be crossed lightly.
+~
+72 0 0 E
+25 0 -5 785 5d200+10 4d1+20
+0 200
+8 8 1 986
+BareHandAttack: 4
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Trip: 100
+Kick: 100
+E
+#8902
+badger~
+a badger~
+An annoyed badger stands here growling at you.
+~
+A large, male badger stands here, eyeing you suspiciously. It
+seems rather annoyed by your presence and growls menacingly. 
+Two broad, white stripes run down the brownish grey fur of
+his back.
+~
+72 0 0 E
+30 0 -6 785 5d270+30 5d10+20
+0 300
+8 8 1 986
+BareHandAttack: 10
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Trip: 100
+Kick: 100
+E
+#8903
+porcupine~
+a prickly porcupine~
+A prickly porcupine stands here, staring at you curiously.
+~
+A female porcupine waddles along, quills rattling noisily in
+the otherwise quiet forest. She munches happily on the
+undergrowth and peers with tiny little eyes at anything
+unexpected which crosses her path. She seems utterly unconcerned
+about the predators which may cross her path, knowing that
+if they try to make a snack of here they will end up with a
+mouthful of sharp, barbed quills.
+~
+72 0 0 E
+30 5 -20 785 12d100+0 2d4+15
+0 200
+8 8 2 986
+BareHandAttack: 11
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+E
+#8904
+skunk~
+a skunk~
+A grumpy looking skunk stands here.
+~
+The female skunk stands here. Her beady eyes fixed on you as
+her tail quivers in a most menacing manner, showing off the
+two bright white stripes against the shimmering black fur.
+A peculiar smell wafts through the air, curling the nosehairs
+of all but the most hearty of creatures. Several small birds
+fall dead from the branches above and a large warthog breaks
+cover and runs off, squealing in terror.
+~
+72 0 0 E
+23 -130 -7 785 4d200+0 4d10+15
+0 250
+8 8 2 986
+BareHandAttack: 8
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnMobEntry
+Emote "A strong, fragrant scent wafts into the room. Perhaps it is time to leave."
+End
+Q
+E
+#8905
+hermit man~
+A crazy hermit~
+A crazy hermit stands here, picking berries.
+~
+The crazy old hermit is dressed in rags. He is missing several
+teeth and he squints constantly. He looks hungry, which is
+probably why he is picking berries at the moment. It is also,
+most likely, why his mouth is stuffed with them, making him
+look something like a deranged chipmunk.
+~
+1624090 268501040 0 E
+199 -180 -20 785 25d1000+10000 15d20+25
+1000 100
+8 8 1 986
+BareHandAttack: 5
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Kick: 100
+P
+OnAttack & Level "1 120"
+Stop
+SayTo "Ha! You're too puny to bother me!"
+SayTo "Now go away before you get yourself hurt."
+End
+Q
+E
+$

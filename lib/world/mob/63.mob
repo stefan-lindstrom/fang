@@ -1,0 +1,39 @@
+#6399
+waygnol~
+a Waygnol~
+The Waygnol keeps the Ways closed and locked
+~
+It looks, err, unfinished.
+~
+10 2098 0 E
+0 20 10 198 1d100+0 1d1+0
+0 0
+8 8 0
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnEntry
+Action "take leaf"
+Action "close waygate"
+Action "lock waygate"
+Action "drop leaf"
+End
+OnLeave
+Action "take leaf"
+Action "close waygate"
+Action "lock waygate"
+Action "drop leaf"
+End
+OnTick
+Action "take leaf"
+Action "close waygate"
+Action "lock waygate"
+Action "drop leaf"
+End
+Q
+E
+$

@@ -1,0 +1,408 @@
+#100
+doorway red stone twisted~
+a red stone doorway~
+A doorframe made of some red stone that seems to twist the eye is here.~
+~
+13 65548 0
+0 0 0 0
+0 0 0
+#102
+arch door archway~
+&na &bmu&n&ylt&n&Yi-&n&rco&n&wlo&n&Kre&n&gd&n arch~
+&nA &bmu&n&ylt&n&Yi-&n&rco&n&wlo&n&Kre&n&gd&n arch opening onto nothingness stands here.~
+~
+14 0 1
+0 0 -1 0
+100000 0 0
+#103
+blue door bluedoor doorh~
+&na &Bblue&n door~
+&nA &Bblue&n door stands here.~
+~
+14 0 1
+0 0 0 0
+100000 0 0
+E
+blue~
+The door is a deep &Bblue&n. It stands open and through it
+you can see nothing. Absolutely nothing.
+~
+#104
+brown door browndoor2 doorh~
+&na &ybrown&n door~
+&nA &ybrown&n door stands here.~
+~
+14 0 1
+0 0 0 0
+100000 0 0
+E
+brown~
+The door is &ybrown&n and stands open. Through it you can
+see nothing. Absolutely nothing.
+~
+#105
+yellow door yellowdoor2 doorh~
+&na &Yyellow&n door~
+&nA &Yyellow&n door stands here.~
+~
+14 0 1
+0 0 0 0
+100000 0 0
+E
+yellow~
+The door is a bright &Yyellow&n. Through it you can see
+nothing. Absolutely nothing.
+~
+#106
+red door reddoor2 doorh~
+&na &Rred&n door~
+&nA &Rred&n door stands here.~
+~
+14 0 1
+0 0 0 0
+0 0 0
+E
+red~
+The door is a deep &Rred&n color. It stands open
+before you and through it you can see nothing.
+Absolutely nothing.
+~
+#107
+white door whitedoor2 doorh~
+&na &Wwhite&n door~
+&nA &Wwhite&n door stands here.~
+~
+14 0 1
+0 0 0 0
+100000 0 0
+E
+white~
+The door is bright &Wwhite&n in color. It stands open and
+through it you can see nothing. Absolutely nothing.
+~
+#108
+grey door greydoor2 doorh~
+&na &Kgrey&n door~
+&nA &Kgrey&n door stands here.~
+~
+14 0 1
+0 0 0 0
+100000 0 0
+E
+grey~
+The door is a smokey &Kgrey&n color. It stands open and
+through it you can see nothing. Absolutely nothing.
+~
+#109
+green door greendoor2 doorh~
+&na &Ggreen&n door~
+&nA &Ggreen&n door stands here.~
+~
+14 0 1
+0 0 0 0
+100000 0 0
+E
+green~
+The door is a rich &Ggreen&n color. It stands open and
+through it you can see nothing. Absolutely nothing.
+~
+#110
+questeq~
+~
+An unfinished object is lying here.~
+~
+11 0 3
+0 0 0 0
+0 0 0
+A
+6 40
+#170
+rose crystal crystaline~
+&na &Cc&n&Wr&n&Cy&n&Ws&n&Ct&n&Wa&n&Cl&n&Wi&n&Cn&n&We&n rose~
+&nA &Cc&n&Wr&n&Cy&n&Ws&n&Ct&n&Wa&n&Cl&n rose sits in a vase here.~
+~
+1 72 16385
+0 0 -1 0
+1 0 0
+E
+rose~
+Each of the roses is made out of what seems to be spun
+&Cc&n&Wr&n&Cy&n&Ws&n&Ct&n&Wa&n&Cl&n. Each one is perfect in every detail, right down to
+the &Cc&n&Wr&n&Cy&n&Ws&n&Ct&n&Wa&n&Cl&n thorns. At the end of each stem, the rosebud
+seems to &Yg&n&Wl&n&Yo&n&Ww&n faintly with an inner light.
+~
+#171
+key crystal~
+&na &Cc&n&Wr&n&Cy&n&Ws&n&Ct&n&Wa&n&Cl&n key~
+&nA &Cc&n&Wr&n&Cy&n&Ws&n&Ct&n&Wa&n&Cl&n key engraved with a rose lies here.~
+~
+18 0 1
+0 0 0 0
+1 0 0
+#172
+fountain~
+&na fountain of &ybrown&n stone~
+&nA &ybrown&n stone fountain.~
+~
+23 0 1
+100000 100000 0 0
+100000 0 0
+P
+OnAction "get"
+Emote "You suddenly realize that you are ravenous. You need to eat soon."
+Force "eat waybread"
+End
+Q
+#173
+bread waybread~
+&na fresh loaf of bread~
+&nA fresh loaf of bread lies here.~
+~
+19 0 1
+500 0 0 0
+10 0 0
+#174
+herb health~
+&nan herb that radiates an aura of health and vitality&n~
+&nAn herb that radiates an aura of health and vitality lies here.~
+~
+3 0 1
+2 500 1 0
+1 0 0
+E
+herb~
+The herb seems to radiate an aura of health and well
+being. It is a fairly safe bet that it would make you well.
+~
+#175
+chest~
+&na small, oaken chest~
+&nA small, oaken chest with a rose on the lid sits here.~
+~
+15 0 1
+1000 9 171 0
+100000 0 0
+#176
+ring quest crystalringkey~
+&na &Cc&n&Wr&n&Cy&n&Ws&n&Ct&n&Wa&n&Cl&n ring~
+&nA &Cc&n&Wr&n&Cy&n&Ws&n&Ct&n&Wa&n&Cl&n ring lies here.~
+~
+18 0 3
+0 0 0 0
+1 0 0
+A
+17 -200
+A
+19 10
+A
+18 10
+P
+OnActionCarry "north"
+Stop
+Destroy
+End
+OnActionWear "north"
+Stop
+Destroy
+End
+OnActionWear "north"
+Stop
+Destroy
+End
+Q
+#177
+key iron~
+&na small &Kiron&n key~
+&nA small &Kiron&n key lies here.~
+~
+18 0 1
+0 0 0 0
+0 0 0
+#178
+book~
+a small, battered tome.~
+A small book lies here.~
+On The Doorway Ter'angreal in Caemlyn
+By: Yvonne Heschel, Aes Sedai of the Brown Ajah
+799 NE
+Table of Contents:
+1. History of the Ter'angreal
+2. Before Entering
+3. Inside the Ter'angreal
+4. The Results
+~
+16 8 16385
+0 0 0 0
+1 0 0
+E
+1 history~
+1. History of the Ter'angreal
+
+Upon the discovery of a previously unknown ter'angreal in Caemlyn, I, 
+Yvonne Heschel, Aes Sedai of the Brown Ajah, left the tower immediately to 
+study it. Accompanying me were Alein Mosava and Reanne Estar, Aes Sedai of 
+the Red and Green Ajahs respectively. From what I have been able to tell, 
+the ter'angreal was created by Aes Sedai who visited Caemlyn during its 
+construction. The noble for whom it was built remained silent about it, 
+however, as it gave him some small advantages that he did not wish to give 
+up.
+Aparently the ter'angreal allows the user to find the truthful answer to
+one question and one question only. Unfortunately the user must first pass
+through a series of puzzles. Those who can not solve the ter'angreal's
+riddles are forever lost. This happened to one nobleman several hundred
+years ago. His son, in anger, chose to conceal the ter'angreal and forget
+of its existence. Turning the room in which the ter'angreal is found into
+a closet. It has remained forgotten until recently.
+~
+E
+2 before entering~
+2. Before Entering the Ter'angreal
+
+Before you step into the ter'angreal it is important to remember to
+look at everything closely. Clues to solving the riddles of the ter'angreal
+can be found anywhere and one must never neglect to find the clues.
+The ter'angreal itself is a simple arch made of seven, large stones.
+The stones themselves are of various colors. Facing the arch, the colors are,
+from left to right: green, grey, white, red, yellow, brown and blue.
+The red stone is the cap stone, a fact which made Alein Sedai rather
+smug. Whether there is some significance to this or if it is merely 
+coincidence is unclear.
+Upon the capstone is a brass plaque upon which are written the words,
+From the rising of the sun, to the going down of the same. Reanne Sedai
+speculates that this could mean that the ter'angreal was a gift from
+Cairhien, but this, too, is uncomfirmed.
+~
+E
+3 inside~
+3. Inside the Ter'angreal
+
+I have been made to promise not to tell the secrets of the ter'angreal, 
+but despite this there are still some things that I can pass on to the 
+reader. The most important of these is the necessity of light. If you can
+not see then you can not solve the riddles.
+Everything you need in order to solve the problems is there in that 
+ter'angreal. Look closely at everything, especially in the Hall of Colors
+and you may leave the ter'angreal with more than just your answer.
+~
+E
+4 results~
+4. The Results
+
+All three of us Aes Sedai entered the ter'angreal and came out again.
+All of us were met by the same strange being and each asked and received
+the answer to our questions. We were also sworn never to speak to another
+about the secrets of the ter'angreal.
+Alein Sedai seems quite pleased by the answer she received, though
+she refuses to tell us what she asked or what she was told. Reanne Sedai
+was so traumatized by her answer that she has not spoken a word since leaving
+the ter'angreal. I can only speculate as to what caused this reaction.
+As for myself, my answer is my own and I will not share it. Suffice it
+to say that it is a true answer.
+~
+#179
+bookshelf shelf~
+&na large, oak bookshelf~
+&nA large, oak bookshelf stands here, lined with books.~
+~
+15 0 1
+1000 0 -1 0
+100000 0 0
+E
+shelf bookshelf~
+Many books line the shelf, but one book in particular
+catches the eye. Perhaps it is the fact that it shows signs
+of recent use. Perhaps it is the title:
+&YOn The Doorway Ter'angreal in Caemlyn&n
+~
+#190
+brown door brownd1 doorh~
+&na &ybrown&n door~
+&nA &ybrown&n door stands here.~
+~
+14 0 1
+0 0 0 0
+100000 0 0
+E
+brown~
+The door is &ybrown&n and stands open. Through it you can
+see nothing. Absolutely nothing.
+~
+#191
+yellow door yellowd1 doorh~
+&na &Yyellow&n door~
+&nA &Yyellow&n door stands here.~
+~
+14 0 1
+0 0 0 0
+100000 0 0
+E
+yellow~
+The door is a bright &Yyellow&n. Through it you can see
+nothing. Absolutely nothing.
+~
+#192
+red door redd1 doorh~
+&na &Rred&n door~
+&nA &Rred&n door stands here.~
+~
+14 0 1
+0 0 0 0
+100000 0 0
+E
+red~
+The door is a deep &rred&n color. It stands open
+before you and through it you can see nothing.
+Absolutely nothing.
+~
+#193
+white door whited1 doorh~
+&na &Wwhite&n door~
+&nA &Wwhite&n door stands here.~
+~
+14 0 1
+0 0 0 0
+100000 0 0
+E
+white~
+The door is bright &Wwhite&n in color. It stands open and
+through it you can see nothing. Absolutely nothing.
+~
+#194
+grey door greyd1 doorh~
+&na &Kgrey&n door~
+&nA &Kgrey&n door stands here.~
+~
+14 0 1
+0 0 0 0
+100000 0 0
+E
+grey~
+The door is a smokey &Kgrey&n color. It stands open and
+through it you can see nothing. Absolutely nothing.
+~
+#195
+green door greend1 doorh~
+&na &Ggreen&n door~
+&nA &Ggreen&n door stands here.~
+~
+14 0 1
+0 0 0 0
+100000 0 0
+E
+green~
+The door is a rich &ggreen&n color. It stands open and
+through it you can see nothing. Absolutely nothing.
+~
+#196
+mail coat~
+&nA coat of &Ks&n&Wi&n&Kl&n&Wv&n&Ke&n&Wr&n&Ky&n metal mail hangs on a stand here.~
+&nA coat of &Ks&n&Wi&n&Kl&n&Wv&n&Ke&n&Wr&n&Ky&n metal mail hangs on a stand here.~
+~
+9 4168 9
+0 0 0 0
+0 0 0
+A
+17 -80
+A
+13 100
+$~

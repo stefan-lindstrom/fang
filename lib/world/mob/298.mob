@@ -1,0 +1,93 @@
+#29800
+Blacksmith ~
+\c00a large \c10burly\c22 blacksmith\c00 is standing here~
+\c00a large \c10burly\c22 blacksmith\c00 stands here
+~
+a \c10thickly\c00 muscled \c22blacksmith\c00 is standing here,
+his \c23dark\c00 eyes watching for \c06customers\c00 intently as he wipes his 
+hands on a \c08b\c22l\c23acken\c22e\c08d\c00 apron.
+~
+8 67371008 2 E
+35 -130 -20 628 30d100+0 15d12+50
+0 0
+8 8 1
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Bash: 100
+Stun: 100
+E
+#29801
+guard spy burly~
+a large \c10burly\c00 man is standing infront of the door~
+A large \c10burly\c00 man is standing infront of the door
+~
+A large \c10burly\c00 man is standing infront of the door,
+He is dressed as a common street bum, but has the appearance
+of someone much more dangerous, a thin rapier is sheathed at his
+side. His \c22dark\c00 eyes watch you as you look at him.
+~
+10 67371008 4 E
+199 -180 -20 628 30d250+0 30d127+50
+0 0
+8 8 1
+BareHandAttack: 11
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Bash: 100
+Trip: 100
+Dirtkick: 100
+Stun: 100
+P
+OnActionTo "north" & Guild "caemlyn"
+Force "south"
+End
+Q
+E
+#29890
+maiden spear~
+the unfinished mob~
+Two groups of Maidens of the Spear are standing here, veils lowered over their faces and with fingers tightly wrapped around short spears.
+~
+It looks, err, unfinished.
+~
+10 0 0 E
+0 20 10 628 1d100+0 1d1+0
+0 0
+8 8 2
+E
+#29899
+Guardsman Caemlyn ~
+\c00A member of the \c03Queen's\c00 Guards of \c01C\c03a\c01e\c03m\c01l\c03y\c01n\c00~
+\c00A \c01C\c03a\c01e\c03m\c01l\c03y\c01n \c00Guardsman stands here, ready to follow orders.
+~
+\c00A \c01C\c03a\c01e\c03m\c01l\c03y\c01n \c00Guardsman stands here, ready to assist.
+~
+1052680 786944 0 E
+25 -10 10 628 30d12+500 12d30+30
+0 0
+8 8 1
+BareHandAttack: 11
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Bash: 100
+Trip: 100
+Disarm: 100
+P
+OnAction "attack" & ! Guild "caemlyn"
+Action "assist"
+End
+Q
+E
+$

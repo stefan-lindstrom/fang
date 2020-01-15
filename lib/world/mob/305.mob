@@ -1,0 +1,24 @@
+#30508
+mob unfinished~
+the unfinished mob~
+An unfinished mob stands here.
+~
+It looks, err, unfinished.
+~
+8 0 0 E
+0 20 10 115 1d100+0 1d1+0
+0 0
+8 8 0
+P
+OnAttack
+SayTo "Oh, how nice.. \c14Somebody\c00 wants to die, and who am I to argue, eh?"
+End
+OnMobDie
+Say "Oh, how sad.. can I loot the little fool's corpse, you think?"
+End
+OnEntry
+ActionTo "look"
+End
+Q
+E
+$

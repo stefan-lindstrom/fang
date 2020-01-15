@@ -1,0 +1,256 @@
+#16500
+gholam woman~
+a stunning woman~
+a striking woman stands here, exuding a frightening presence
+~
+It looks, err, unfinished.
+~
+3123226 48 -1000 E
+200 -180 -20 676 30d1000+15000 6d15+40
+0 0
+8 8 2
+BareHandAttack: 9
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Dirtkick: 100
+Disarm: 100
+Stun: 100
+P
+OnAttack
+SayTo "thus ends your life mortal!"
+ActionTo "stun"
+End
+OnMobDie
+Emote "\c14your \c08heart \c14leaps as the light triumphs over \c00\c01darkness\c14!!\c00"
+Emote "congratulations brave adventurers!"
+End
+OnDie
+Action "cackle"
+Emote "\c05you hear the gruesome snapping of \c14bones \c00\c05as the \c01legendary gholam \c05mauls yet another victim."
+End
+OnAction "weave"
+Stop
+Force "gasp"
+SayTo "\c06your puny powers will not aid you against my kind little one.\c00"
+Action "cackle"
+End
+OnAction "cast"
+Stop
+Force "gasp"
+SayTo "\c06your puny powers will not aid you against my kind little one\c00"
+Action "cackle"
+End
+Q
+E
+#16501
+midora tiganza dancer girl~
+Midora~
+Midori, another lovely young Tuatha'an girl sways to the soft music at Tara's side.
+~
+Midora's \c10rich blond curls \c00contrast beautifully with the \c03coppery locks\c00 of her
+lovely friend Tara.  They sway in synch, Midora's curvy hips moving gracefully
+as the tempo rises and falls.  Your heart races as her silken dress slides over
+her body almost as if on it's own.  She always has a friendly smile that seem to
+be just for you.
+~
+1048602 0 0 E
+0 20 10 676 1d100+0 1d1+0
+0 0
+8 8 2
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnRandom 20
+Emote "Midori takes both of Tara's hands and smiles at her, lifting one leg as she leans back, her slim neck stretching gracefully."
+Emote "Tara smiles back, her \c09emerald eyes \c00sparkling as she twirls around Midora, chest heaving."
+End
+Q
+E
+#16502
+trolloc ~
+a slavering Trolloc~
+a slavering Trolloc lunges for your throat
+~
+A massive beast with glistening fangs and a head shaped like a goat. 
+~
+2099258 48 -1000 E
+60 -80 -3 676 30d100+3000 6d15+20
+0 0
+8 8 0
+BareHandAttack: 8
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Dirtkick: 100
+Stun: 100
+P
+OnRandom 30
+Emote "A slavering Trolloc grunts and sniffs at the air."
+End
+Q
+E
+#16503
+woman old elderly grandmother~
+an old woman~
+\c03An elderly woman is walking along the side of the streets, leaning slightly on her cane.
+~
+She has grey hair, which trails down around her face in wisps, and is
+altogether quite thin. Her eyes were probably once a clear blue, but
+now they are somewhat shrouded by wrinkles and half-squinting lids.
+
+She may have something for you to do, if you ask her.
+
+Go on, say hello to her.
+~
+10 0 0 E
+1 -10 10 676 30d100+10000 30d50+30
+0 0
+8 8 2
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnEntry & ! AutoQuested 6
+ActionTo "nod"
+End
+OnSayTo "hi hello greetings" & ! Mode 1
+Pause 3
+Emote "The old woman gives you a wrinkled, half-hearted smile. 'Hello.'"
+Pause 4
+Say "Can you help me?"
+Mode 1
+End
+OnSayTo "yes sure certainly course" & Mode 1 & ! Mode 2
+Pause 3
+Say "Thank you."
+Pause 4
+Emote "The woman says OOCly, 'If you aren't running this autoquest, sayto me boo and then go away.'"
+Pause 2
+Emote "She says again OOCly, 'If you are, make sure you've read the helpfile on it, help AQring, before going on.'"
+Pause 4
+Emote "The old woman says, 'I will explain what I need, if you wish.'"
+Pause 3
+Emote "\c23.\c00        (ooc) nod at her to continue."
+Mode 2
+End
+OnActionTo "nod" & Mode 2 & ! Mode 3
+Pause 3
+Emote "The woman shifts more weight onto her cane before beginning."
+Pause 4
+Say "My daughter is getting married soon."
+Pause 4
+Emote "She says, 'The ring she wishes to use has been in our family for years.'"
+Pause 5
+Emote "The woman continues. 'It is made of green stone, and set with an opal.'"
+Pause 4
+Say "When she asked permission to marry, I looked and looked for the ring, but could not find it."
+Pause 4
+Say "I have been thinking on it for some time, and I may know where it has gone to."
+Pause 4
+Emote "The old woman pauses, assessing you with her blue-grey eyes."
+Pause 3
+Say "It will not be easy to find, if I am right. Are you still willing to help?"
+Mode 3
+End
+OnSayTo "yes course certainly sure" & Mode 3 & ! Mode 4 & Guild "children of the light"
+Pause 3
+Emote "The woman nods briefly and flashes you a grateful smile."
+Pause 3
+Say "Thank you, from myself and my daughter. It will not be easy, but you will be rewarded."
+Pause 4
+Emote "The woman says, 'Several weeks ago, our home was searched by Children of the Light.'"
+Pause 5
+Say "They were searching the inner city for a ..a darkfriend."
+Pause 3
+Say "I had cleaned the ring about a week before that."
+Pause 4
+Emote "She says, 'Between those times I had no visitors but family.'"
+Pause 4
+Say "I believe one of the soldiers may have taken the ring as a gift for a loved one."
+Pause 5
+Emote "The woman pauses, and looks up at you meekly."
+Pause 4
+Say "That is understandable, as it is beautiful."
+Pause 3
+Emote "She continues. 'I serve the Light. I only wish my daughter to be happy.'"
+Pause 4
+Say "The ring is but a piece for whomever has it now."
+Pause 3
+Say "To our family, it tells a great story of our grandfathers and grandmothers."
+Pause 5
+Emote "She looks up at you and asks, 'Could you ask for it back?'"
+Pause 4
+Say "I think they would listen to you."
+Mode 4
+End
+OnSayTo "yes course certainly sure" & Mode 3 & ! Mode 4 & ! Guild "Children of the Light"
+Pause 3
+Emote "The woman nods briefly and flashes you a grateful smile."
+Pause 3
+Say "Thank you, from myself and my daughter. It will not be easy, but you will be rewarded."
+Pause 4
+Emote "The woman says, 'Several weeks ago, our home was searched by Whitecloaks.'"
+Pause 5
+Say "They were searching the inner city for someone."
+Pause 3
+Say "I had cleaned the ring about a week before that."
+Pause 4
+Emote "She says, 'Between those times I had no visitors but family.'"
+Pause 4
+Say "I believe one of the soldiers stole it from our home."
+Pause 4
+Emote "The woman now wears an angry frown."
+Pause 3
+Say "You understand, I could not very well march into their garrison and ask for it back."
+Pause 5
+Emote "She says, 'I am old, and they would but laugh me off.'"
+Pause 4
+Say "You look trustworthy enough. Could you perhaps get it back for me?"
+Pause 4
+Emote "She gestures. 'I believe they have a garrison outside the west gates.'"
+Pause 4
+Emote "She pauses, waiting for your answer."
+Mode 4
+End
+Q
+E
+#16504
+trainee whitecloak childofthelight~
+a trainee Child of the Light~
+\c03A young man in a Whitecloak's uniform is here, from his knots obviously of a very low rank.
+~
+He looks eager to please. Maybe he can help you. No one else
+from the garrison seems to be here.
+~
+10 2048 0 E
+25 -30 0 676 30d500+1500 30d25+30
+150 100
+8 8 1
+E
+#16505
+Mezer Bireln Lieutenant Whitecloak Light~
+the unfinished mob~
+An unfinished mob stands here.
+~
+It looks, err, unfinished.
+~
+8 0 0 E
+0 20 10 676 1d100+0 1d1+0
+0 0
+8 8 1
+E
+$

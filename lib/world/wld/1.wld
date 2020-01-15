@@ -1,0 +1,951 @@
+<?xml version="1.0"?>
+<rooms>
+  <room>
+    <roombasic title="The Begining" vnum="100" zone="1">
+      <roomdescription>I intend this zone to eventually be a huge ter&apos;angreal.
+The entrance to this ter&apos;angreal will be a stone doorway
+and, once entered, the player will encounter a series
+of Myst-like puzzles. I don&apos;t know what the reward will
+be quite yet, but I&apos;ll deal with that as soon as I finish
+it.
+-Nat
+</roomdescription>
+      <flags>2</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+  </room>
+  <room>
+    <roombasic title="The Empty Room" vnum="101" zone="1">
+      <roomdescription>No windows grace the dour, grey stone walls. Two to</roomdescription>
+      <flags>8334</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="arch door archway doorway" exitinfo="0" keynum="0" toroom="102">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exit direction="south" keyword="door" exitinfo="15" keynum="177" toroom="123">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exdesc keyword="arch archway doorway">
+      <description>The archway is made of seven rough-hewn rocks of varying colors.
+A large, green stone comprises the base of the left-hand side of
+the arch. Stacked on top of it are a grey and a white stone,
+equally large. A blood red keystone caps off the arch, a brass
+plaque set into it. Running down the right side of the arch are
+a yellow and a brown stone, while a large, blue rock makes the
+base of the right-hand side of the arch.
+</description>
+    </exdesc>
+    <exdesc keyword="brass plaque">
+      <description>The plaque is made of simple brass and is set into the
+blood red keystone in such a way as to seem almost a part
+of the rock. Engraved upon the plaque are the following words:
+
+From the rising of the Sun to the going down of the same.
+</description>
+    </exdesc>
+  </room>
+  <room>
+    <roombasic title="Room of C" vnum="102" zone="1">
+      <roomdescription>A riot of c</roomdescription>
+      <flags>8366</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exdesc keyword="parchment note message">
+      <description>The parchment is very old and seems very brittle. Written
+upon it in a neat, precise hand are the following words:
+
+To light your path. To open your way.
+</description>
+    </exdesc>
+    <exdesc keyword="key">
+      <description>The key is made out of fine c</description>
+    </exdesc>
+    <exdesc keyword="rose roses">
+      <description>Each of the roses is made out of what seems to be spun
+c</description>
+    </exdesc>
+    <exdesc keyword="vase">
+      <description>The vase is a made of simple, blue porcelain and is filled
+with myriad c</description>
+    </exdesc>
+    <exdesc keyword="table">
+      <description>The table is a simple, wooden affair that seems almost out of
+place in this room. Upon it sits a vase full of flowers
+made of c</description>
+    </exdesc>
+    <exdesc keyword="window">
+      <description>The landscape that one can see from the windows is pristine and pure. The
+g</description>
+    </exdesc>
+  </room>
+  <room>
+    <roombasic title="The Blue Room" vnum="103" zone="1">
+      <roomdescription>Every shade and hue of b</roomdescription>
+      <flags>73903</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="down" keyword="trapdoor trap" exitinfo="19" keynum="0" toroom="196">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exdesc keyword="table">
+      <description>The table is quite ornate, covered in almost every pattern
+imaginable to its creator. The table top is covered with
+swirls and lines that fork and fork again like a fractal.
+Compared to the top, the legs look quite dull, carved with
+deep, straight lines that terminate in a series of
+arrowheads that encircle the base of the leg.
+</description>
+    </exdesc>
+    <exdesc keyword="leg">
+      <description>The leg is carved deeply with arrows pointing downward. If
+one looks closely in the direction the arrows point, one
+can see a trap door, cleverly hidden under the table.
+</description>
+    </exdesc>
+    <exdesc keyword="trapdoor trap">
+      <description>The trap door is closed, though it can be opened easily
+with a ring that has been cleverly set into it so as not
+to draw the attention of those not careful enough to
+look. There seem to be words etched into the ring.
+</description>
+    </exdesc>
+    <exdesc keyword="ring">
+      <description>The ring is made of cuendillar, so the fact that words have
+apparently been etched into it seems strange. Upon close
+inspection one can make out the writing. It reads:
+
+The Armory: Ask and it shall be given.
+</description>
+    </exdesc>
+    <exdesc keyword="note parchment paper">
+      <description>The jagged top of the parchment witnesses to the fact
+that once upon a time this was the second half of a longer
+note. All that remains, however are the following two lines:
+
+That door is </description>
+    </exdesc>
+    <exdesc keyword="drapes">
+      <description>The drapes are pulled a deep blue and have been pulled
+back from the windows, revealing a landscape that, from
+each window, is exactly identical.
+</description>
+    </exdesc>
+    <exdesc keyword="window">
+      <description>The landscape that one can see from the windows is pristine and pure. The
+g</description>
+    </exdesc>
+  </room>
+  <room>
+    <roombasic title="The Brown Room" vnum="104" zone="1">
+      <roomdescription>Every shade of brown colors the room. Everything from the drapes that are
+pulled back from the windows to the carpet that covers the floor is some
+shade of brown. In the very center of the room stands a brown, stone 
+fountain. Next to the fountain stands a low table upon which sits a single
+loaf of bread. Six multi-colored doorways are set in the north wall.
+</roomdescription>
+      <flags>73899</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exdesc keyword="bread">
+      <description>The loaf of bread is warm and looks to be freshly
+baked. There is no sign of how it came to be sitting
+on the table, but it looks quite normal and appetizing.
+</description>
+    </exdesc>
+    <exdesc keyword="table">
+      <description>The table is set low to the ground and is quite plain.
+upon it sits a single loaf of bread.
+</description>
+    </exdesc>
+    <exdesc keyword="window">
+      <description>The landscape that one can see from the windows is pristine and pure. The
+g</description>
+    </exdesc>
+    <exdesc keyword="fountain">
+      <description>The fountain is made from smooth, brown stone. It is
+quite shallow and the bottom can easily be seen. 
+Cool water fills it to the brim and around the rim
+of the fountain are carved the following words:
+
+An unseen danger bars the way.
+Walk through the fire and you shall be healed.
+</description>
+    </exdesc>
+  </room>
+  <room>
+    <roombasic title="The Yellow Room" vnum="105" zone="1">
+      <roomdescription>A soft yellow carpet spreads across the floor from wall to wall. Yellow drapes
+are pulled away from the windows, exposing an eerie landscape. Everything in 
+the room is yellow, even the table upon which is an old sheet of yellowed
+parchment. the only things in the room which are not yellow are the six
+multi-colored doors that are set into the northern wall.
+</roomdescription>
+      <flags>73915</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exdesc keyword="parchment note">
+      <description>The parchment is old and yellowed. It seems brittle with
+age. Upon it in fading ink is written the following words:
+
+Seek Freedom and you shall find truth.
+</description>
+    </exdesc>
+    <exdesc keyword="table">
+      <description>The table is painted yellow. It is quite simple and upon
+it sits a battered sheet of parchment.
+</description>
+    </exdesc>
+    <exdesc keyword="window">
+      <description>The landscape that one can see from the windows is pristine and pure. The
+g</description>
+    </exdesc>
+  </room>
+  <room>
+    <roombasic title="The Red Room" vnum="106" zone="1">
+      <roomdescription>Every hue of red colors the room. Reds the color of blood, of wine, of roses,
+of the sunset. Reds the color or wildflowers or fine silk. Every color of red
+imaginable can be found. The drapes are a fine, red silk and are pulled back
+from windows which open onto an eerily familiar landscape. Lush, wine-red
+carpet pads the floors. In the center of the room sits a table upon which
+rests a oaken chest. 
+</roomdescription>
+      <flags>73915</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="down" keyword="trapdoor" exitinfo="19" keynum="0" toroom="102">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exdesc keyword="patch carpet lighter">
+      <description>The patch of carpet is lighter than the rest. It seems
+to conceal a trap door underneath.
+</description>
+    </exdesc>
+    <exdesc keyword="window">
+      <description>The landscape that one can see from the windows is pristine and pure. The
+g</description>
+    </exdesc>
+    <exdesc keyword="table">
+      <description>The table is sturdy and well made. There is nothing
+significant about it. Upon it rests a small, oaken chest.
+Underneath it is a slightly lighter patch of carpet.
+</description>
+    </exdesc>
+    <exdesc keyword="chest">
+      <description>The chest is made of sturdy oak and is locked securely.
+In the exact center of the lid is a red, enamel rose.
+</description>
+    </exdesc>
+  </room>
+  <room>
+    <roombasic title="The White Room" vnum="107" zone="1">
+      <roomdescription>The walls of the room are white, as if bleached of all color. The drapes and
+carpet as well are the same colorless white. Even the table in the center of
+the room is white, as if the wood had been left beneath the sun for years and
+years to leach all color. Upon the table sits a sheet of paper, as white as
+the rest of the room. Set into the north wall are a series of multi-colored 
+doors which open onto nothing.
+</roomdescription>
+      <flags>73915</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exdesc keyword="paper note">
+      <description>The paper is thin, white and quite fine. Upon it
+is written the following:
+
+Two doors lead true, but only one leads forward.
+
+If and only if the red door leads forward
+does the green door lead true.
+
+If and only if the yellow door leads forward
+does the brown door lead true.
+
+The blue door leads true, but not forward.
+
+</description>
+    </exdesc>
+    <exdesc keyword="table">
+      <description>The table is bleached white, but other than that there is nothing
+special about it. Upon it sits a piece of paper.
+</description>
+    </exdesc>
+    <exdesc keyword="window">
+      <description>The landscape that one can see from the windows is pristine and pure. The
+g</description>
+    </exdesc>
+  </room>
+  <room>
+    <roombasic title="The Grey Room" vnum="108" zone="1">
+      <roomdescription>The room is filled with smokey greys, making the room seem to almost shimmer.
+Pale grey satin curtains are pulled back from the windows, revealing
+landscapes that are eerily familiar. Dark grey carpets cover the floor,
+muffling the sounds of footfalls. There is no table or any other decoration
+at all. In the north wall of the room are set six, multi-colored doorways.
+</roomdescription>
+      <flags>73915</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exdesc keyword="window">
+      <description>The landscape that one can see from the windows is pristine and pure. The
+g</description>
+    </exdesc>
+  </room>
+  <room>
+    <roombasic title="The Green Room" vnum="109" zone="1">
+      <roomdescription>Greens of every conceivable shade fill the room. Tall plants stand in each
+corner, reaching from floor to ceiling. Their lush green leaves spread away
+from the central stalk like spokes from a wheel. G</roomdescription>
+      <flags>73915</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="door" exitinfo="15" keynum="176" toroom="110">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exdesc keyword="plant plants">
+      <description>The plants are lush and green. A single stalk from
+each reaches from the ground to the ceiling and seven
+broad, green leaves radiate from it at regular
+intervals.
+</description>
+    </exdesc>
+    <exdesc keyword="window">
+      <description>The landscape that one can see from the windows is pristine and pure. The
+g</description>
+    </exdesc>
+    <exdesc keyword="bell">
+      <description>The bell is cast from some s</description>
+    </exdesc>
+    <exdesc keyword="door">
+      <description>The door in the northern wall is made of solid oak. Strips
+of iron band the surface and knocks on it yield a low, dull
+thud which bespeaks thickness. A large lock is set into the
+door and from the looks of it no amount of picking will ever
+open it. The way forward is barred.
+</description>
+    </exdesc>
+  </room>
+  <room>
+    <roombasic title="The Endless Hallway" vnum="110" zone="1">
+      <roomdescription>An exquisite mosaic tiles the floor, an arabesque of every c</roomdescription>
+      <flags>8379</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="111">
+      <description>None
+</description>
+    </exit>
+    <exit direction="south" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="115">
+      <description>None
+</description>
+    </exit>
+    <exdesc keyword="tile white">
+      <description>The tile is a bright, eye-searing white. Other
+than that there is nothing special about it.
+</description>
+    </exdesc>
+    <exdesc keyword="window">
+      <description>The landscape that one can see from the windows is pristine and pure. The
+g</description>
+    </exdesc>
+  </room>
+  <room>
+    <roombasic title="The Endless Hallway" vnum="111" zone="1">
+      <roomdescription>An exquisite mosaic tiles the floor, an arabesque of every c</roomdescription>
+      <flags>8379</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="112">
+      <description>None
+</description>
+    </exit>
+    <exit direction="south" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="110">
+      <description>None
+</description>
+    </exit>
+    <exdesc keyword="tile white">
+      <description>The tile is a bright, eye-searing white. Other
+than that there is nothing special about it.
+</description>
+    </exdesc>
+    <exdesc keyword="window">
+      <description>The landscape that one can see from the windows is pristine and pure. The
+g</description>
+    </exdesc>
+  </room>
+  <room>
+    <roombasic title="The Endless Hallway" vnum="112" zone="1">
+      <roomdescription>An exquisite mosaic tiles the floor, an arabesque of every c</roomdescription>
+      <flags>8379</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="113">
+      <description>None
+</description>
+    </exit>
+    <exit direction="south" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="111">
+      <description>None
+</description>
+    </exit>
+    <exdesc keyword="tile white">
+      <description>The tile is a bright, eye-searing white. Other
+than that there is nothing special about it.
+</description>
+    </exdesc>
+    <exdesc keyword="window">
+      <description>The landscape that one can see from the windows is pristine and pure. The
+g</description>
+    </exdesc>
+  </room>
+  <room>
+    <roombasic title="The Endless Hallway" vnum="113" zone="1">
+      <roomdescription>An exquisite mosaic tiles the floor, an arabesque of every c</roomdescription>
+      <flags>8379</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="114">
+      <description>None
+</description>
+    </exit>
+    <exit direction="south" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="112">
+      <description>None
+</description>
+    </exit>
+    <exit direction="down" keyword="trap trapdoor" exitinfo="19" keynum="0" toroom="116">
+      <description>\c00</description>
+    </exit>
+    <exdesc keyword="tile white">
+      <description>The tile is a clear, bright, white. The only break from
+it is the single word, written upon it in black:
+
+Cour
+
+The tile seems to hide a trap door.
+</description>
+    </exdesc>
+    <exdesc keyword="window">
+      <description>The landscape that one can see from the windows is pristine and pure. The
+g</description>
+    </exdesc>
+  </room>
+  <room>
+    <roombasic title="The Endless Hallway" vnum="114" zone="1">
+      <roomdescription>An exquisite mosaic tiles the floor, an arabesque of every c</roomdescription>
+      <flags>8379</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="115">
+      <description>None
+</description>
+    </exit>
+    <exit direction="south" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="113">
+      <description>None
+</description>
+    </exit>
+    <exdesc keyword="window">
+      <description>The landscape that one can see from the windows is pristine and pure. The
+g</description>
+    </exdesc>
+    <exdesc keyword="tile white">
+      <description>The tile is a bright, eye-searing white. Other
+than that there is nothing special about it.
+</description>
+    </exdesc>
+  </room>
+  <room>
+    <roombasic title="The Endless Hallway" vnum="115" zone="1">
+      <roomdescription>An exquisite mosaic tiles the floor, an arabesque of every c</roomdescription>
+      <flags>8379</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="110">
+      <description>None
+</description>
+    </exit>
+    <exit direction="south" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="114">
+      <description>None
+</description>
+    </exit>
+    <exit direction="down" keyword="trap trapdoor" exitinfo="19" keynum="0" toroom="117">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exdesc keyword="window">
+      <description>The landscape that one can see from the windows is pristine and pure. The
+g</description>
+    </exdesc>
+    <exdesc keyword="tile white">
+      <description>The tile is a brigh white color. Written upon it in onyx
+is the single word:
+
+Ayende
+
+The tile seems to conceal a trap door.
+</description>
+    </exdesc>
+  </room>
+  <room>
+    <roombasic title="The Room of Many Doors" vnum="116" zone="1">
+      <roomdescription>The room is empty of everything except for the six doors that line the
+northern wall. Every door is a different color and no two are the same.
+Through the doors it is impossible to see anything, but there is nowhere else
+to go.
+</roomdescription>
+      <flags>8379</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+  </room>
+  <room>
+    <roombasic title="The C" vnum="117" zone="1">
+      <roomdescription>The room is a large oval with no entrance and no exit. The walls are made of
+what appears to be c</roomdescription>
+      <flags>8379</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exdesc keyword="crystal pedestal">
+      <description>The pedestal is made out of fine c</description>
+    </exdesc>
+  </room>
+  <room>
+    <roombasic title="The Entry Hall of a Manor" vnum="120" zone="1">
+      <roomdescription>The entrance hall of the manor is clean and neat. There are several pegs
+along the wall for hanging coats and hats, though none of them appear to be
+in use at the moment. Apparently the manor was once one of the finest in
+Caemlyn, though lately its owner seems to have fallen on harder times.
+An open door leads westward to the main hall of the manor.
+</roomdescription>
+      <flags>12</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="door" exitinfo="3" keynum="0" toroom="30609">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exit direction="west" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="121">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Main Hall" vnum="121" zone="1">
+      <roomdescription>The roof of the main hall is vaulted giving the room an airy, spacious feel.
+A warm fire crackles in a fireplace set into the western wall and a large
+oaken table stands in the center of the room. Everything seems quite
+comfortable, if not luxurious. The owner seems to care more about a homey,
+relaxed atmosphere than having the best of everything.
+</roomdescription>
+      <flags>12</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="123">
+      <description>None
+</description>
+    </exit>
+    <exit direction="east" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="120">
+      <description>None
+</description>
+    </exit>
+    <exit direction="south" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="122">
+      <description>None
+</description>
+    </exit>
+    <exdesc keyword="fireplace fire">
+      <description>The fire crackles merrily in the fireplace, giving off
+warmth. Redish-orange flames dance along the wood, seeming
+almost alive.
+</description>
+    </exdesc>
+    <exdesc keyword="table">
+      <description>The table is sturdy and well-made of polished wood.
+</description>
+    </exdesc>
+  </room>
+  <room>
+    <roombasic title="The Library" vnum="122" zone="1">
+      <roomdescription>Each wall of the library is covered by a hug shelf. Books of every size and
+description stand on the shelves, covering every topic from agriculture to
+warfare. A few of the books even touch on the topic of the One Power. Most
+of the books are incredibly dusty, but a few show signs of current use.
+</roomdescription>
+      <flags>12</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="121">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Bedroom" vnum="123" zone="1">
+      <roomdescription>A large, four-poster bed stands in one corner of the bedroom, piled high with
+quilts and blankets. A table beside the bed is littered with books as is the
+top of a dresser. An oaken door stands in the northern wall, locked.
+The lock seems new.
+</roomdescription>
+      <flags>140</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="door" exitinfo="15" keynum="177" toroom="101">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exit direction="south" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="121">
+      <description>None
+</description>
+    </exit>
+    <exdesc keyword="door lock">
+      <description>The door is sturdy oak. The lock seems to be quite well made
+though also quite new. Aparently the room beyond was used
+as a closet once, but now something of great worth is kept
+inside.
+</description>
+    </exdesc>
+    <exdesc keyword="book table dresser">
+      <description>Both the table and the dresser are piled with books. Most
+of them seem to have something to do with agriculture, though
+some are geneologies and others are treatises on warfare.
+</description>
+    </exdesc>
+    <exdesc keyword="quilt blanket bed">
+      <description>The bed looks large and comfortable. It looks soft and fluffy
+and must be filled with goose down. The blankets and quilts
+seem well-made, if a bit old. They look like they could keep
+a person or two warm on a cold, winter night.
+</description>
+    </exdesc>
+  </room>
+  <room>
+    <roombasic title="The Brown Room" vnum="190" zone="1">
+      <roomdescription>The room is decorated in every shade of </roomdescription>
+      <flags>73899</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exdesc keyword="vase">
+      <description>The vase is made of fine brown porcelain. A dozen brown
+roses are arranged neatly inside and, tucked among the roses
+is what appears to be half a note.
+</description>
+    </exdesc>
+    <exdesc keyword="roses rose">
+      <description>A dozen brown roses sit inside a vase. Quite an
+unusual color for roses, but other than the color they
+all seem quite normal. What appears to be half of a
+note is tucked among the stems.
+</description>
+    </exdesc>
+    <exdesc keyword="note">
+      <description>The note reads:
+
+Many doors of every hue
+Yet only one of them leads true
+. . .
+The note ends there, apparently torn in half.
+</description>
+    </exdesc>
+    <exdesc keyword="window">
+      <description>The landscape that one can see from the windows is pristine and pure. The
+g</description>
+    </exdesc>
+    <exdesc keyword="table">
+      <description>It is a simple table.
+</description>
+    </exdesc>
+  </room>
+  <room>
+    <roombasic title="The Yellow Room" vnum="191" zone="1">
+      <roomdescription>The room is decorated in every shade of yellow imaginable. The drapery, the
+carpet, everything is yellow. In the center of the room sits a simple table, 
+upon which sits an ornate yellow vase in which a dozen yellow roses. Along the 
+north wall there stand six doorways of various colors, opening onto 
+nothingness.
+</roomdescription>
+      <flags>73899</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exdesc keyword="vase">
+      <description>The vase is made of exquisite yellow porcelain. Inside
+the vase are set a dozen yellow roses, wafting a delicate
+fragrance throughout the room. Tucked amongst the flowers
+is what appears to be half of a note.
+</description>
+    </exdesc>
+    <exdesc keyword="roses rose">
+      <description>A dozen yellow roses sit here, their delicate scent
+perfuming the room. Among the stems there appears to be
+a note of some sort.
+</description>
+    </exdesc>
+    <exdesc keyword="note">
+      <description>The note reads:
+
+Many doors of every hue
+Yet only one of them leads true
+. . .
+The note stops there, apparently torn in two.
+</description>
+    </exdesc>
+    <exdesc keyword="window">
+      <description>The landscape that one can see from the windows is pristine and pure. The
+g</description>
+    </exdesc>
+    <exdesc keyword="table">
+      <description>It is a simple table.
+</description>
+    </exdesc>
+  </room>
+  <room>
+    <roombasic title="The Red Room" vnum="192" zone="1">
+      <roomdescription>The room is decorated in every shade of red imaginable. The drapery, the
+carpet, everything is red. In the center of the room sits a simple table, 
+upon which sits an ornate red vase in which a dozen red roses. Along the 
+north wall there stand six doorways of various colors, opening onto 
+nothingness.
+</roomdescription>
+      <flags>73899</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exdesc keyword="vase">
+      <description>The vase is made from fine red porcelain. In it sit
+a dozen wine red roses. Amongst the flowers there
+is tucked what appears to be half a note.
+</description>
+    </exdesc>
+    <exdesc keyword="rose roses">
+      <description>A dozen roses of the deepest red are carefully arranged
+in the vase. Tucked neatly among the stems is what appears
+to be half a note.
+</description>
+    </exdesc>
+    <exdesc keyword="note">
+      <description>The note reads:
+
+Many doors of every hue
+Yet only one of them leads true
+. . .
+The note ends there, apparently ripped in two.
+</description>
+    </exdesc>
+    <exdesc keyword="window">
+      <description>The landscape that one can see from the windows is pristine and pure. The
+g</description>
+    </exdesc>
+    <exdesc keyword="table">
+      <description>It is a simple table.
+</description>
+    </exdesc>
+  </room>
+  <room>
+    <roombasic title="The White Room" vnum="193" zone="1">
+      <roomdescription>The room is decorated in every shade of white imaginable. The drapery, the
+carpet, everything is white. In the center of the room sits a simple table, 
+upon which sits an ornate white vase in which a dozen white roses. Along the 
+north wall there stand six doorways of various colors, opening onto 
+nothingness.
+</roomdescription>
+      <flags>73899</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exdesc keyword="window">
+      <description>The landscape that one can see from the windows is pristine and pure. The
+g</description>
+    </exdesc>
+    <exdesc keyword="note">
+      <description>The note reads:
+
+Many doors of every hue
+Yet only one of them leads true
+. . .
+The note ends there, apparently torn in two.
+</description>
+    </exdesc>
+    <exdesc keyword="rose roses">
+      <description>A dozen white roses are carefully arranged inside the
+vase. Upon closer examination one can discern a note tucked
+carefully amongst the flowers.
+</description>
+    </exdesc>
+    <exdesc keyword="vase">
+      <description>The vase is made out of fine, white porcelain and in it
+sit twelve white roses. Among the stems is placed what
+appears to be half of a note.
+</description>
+    </exdesc>
+    <exdesc keyword="table">
+      <description>It is a simple table.
+</description>
+    </exdesc>
+  </room>
+  <room>
+    <roombasic title="The Grey Room" vnum="194" zone="1">
+      <roomdescription>The room is decorated in every shade of grey imaginable. The drapery, the
+carpet, everything is grey. In the center of the room sits a simple table, 
+upon which sits an ornate grey vase in which a dozen grey roses. Along the 
+north wall there stand six doorways of various colors, opening onto 
+nothingness.
+</roomdescription>
+      <flags>73899</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exdesc keyword="window">
+      <description>The landscape that one can see from the windows is pristine and pure. The
+g</description>
+    </exdesc>
+    <exdesc keyword="table">
+      <description>It is a simple table.
+</description>
+    </exdesc>
+    <exdesc keyword="vase">
+      <description>The vase is made of fine grey porcelain. A dozen
+roses, as grey as smoke are arranged carefully
+inside it. Among the stems is placed what appears
+to be half a note.
+</description>
+    </exdesc>
+    <exdesc keyword="rose roses">
+      <description>The petals of the roses are a deep grey that seems
+to almost shimmer. The ashen buds are arranged carefully
+and among the stems is placed a note.
+</description>
+    </exdesc>
+    <exdesc keyword="note">
+      <description>The note reads:
+
+Many doors of every hue
+Yet only one of them leads true
+. . .
+The note ends there. It seems to have been torn in half.
+</description>
+    </exdesc>
+  </room>
+  <room>
+    <roombasic title="The Green Room" vnum="195" zone="1">
+      <roomdescription>The room is decorated in every shade of green imaginable. The drapery, the
+carpet, everything is green. In the center of the room sits a simple table, 
+upon which sits an ornate green vase in which a dozen green roses. Along the 
+north wall there stand six doorways of various colors, opening onto 
+nothingness.
+</roomdescription>
+      <flags>73899</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exdesc keyword="window">
+      <description>The landscape that one can see from the windows is pristine and pure. The
+g</description>
+    </exdesc>
+    <exdesc keyword="table">
+      <description>It is a simple table.
+</description>
+    </exdesc>
+    <exdesc keyword="vase">
+      <description>The vase is made from porcelain, glazed a deep green
+In the vase are placed a dozen roses with petals as
+green as the vase. Amongst the stems is placed what
+appears to be half a note.
+</description>
+    </exdesc>
+    <exdesc keyword="rose roses">
+      <description>A dozen deep green roses are carefully arranged
+in a vase of the same hue. Among the stems one can
+spy a note.
+</description>
+    </exdesc>
+    <exdesc keyword="note">
+      <description>The note reads:
+
+Many doors of every hue
+Yet only one of them leads true
+. . .
+The note ends there, apparently torn in half.
+</description>
+    </exdesc>
+  </room>
+  <room>
+    <roombasic title="The Armory" vnum="196" zone="1">
+      <roomdescription>Hundereds of mail coats line grey, stone walls. The s</roomdescription>
+      <flags>8378</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="104">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exdesc keyword="note">
+      <description>The note is old and scribbled on a piece of
+greasy parchment. The message reads:
+
+Please can I have some mail?
+
+Can I have what you guard, please?
+
+I would like some chainmail.
+
+May I have what you guard?
+
+Could I have some mail, please?
+
+</description>
+    </exdesc>
+    <exdesc keyword="guard halberd">
+      <description>The halberd each guard carries is quite ornate, the long
+pole carved with what appear to be leaves of avendesora.
+The blade as well is etched with the leaves and the edge
+looks incredibly sharp. The guards themselves are
+inscrutable. Their helmets are fashioned in such a way
+as to hide their faces from view and armor covers every
+inch of their body.
+</description>
+    </exdesc>
+    <exdesc keyword="door">
+      <description>It is impossible to see anything past the guards. Perhaps
+the doorway leads to another room or perhaps it leads
+into nothingness.
+</description>
+    </exdesc>
+    <exdesc keyword="mail coat">
+      <description>The coats of mail are made out of some s</description>
+    </exdesc>
+  </room>
+</rooms>

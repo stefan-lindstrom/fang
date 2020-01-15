@@ -1,0 +1,491 @@
+<?xml version="1.0"?>
+<mobiles>
+  <mobile vnum="25300" name="Sebastian golden lion " special="NONE">
+    <description>Sebastian is huge, with a soft, shaggy mane, and looks very dangerous, yet lovable. 
+He blinks regally at you, regarding you with \c03golden\c00 eyes. 
+
+</description>
+    <shortdesc>a large \c03golden lion\c00</shortdesc>
+    <longdesc>\c07a large\c00 \c03golden lion\c00 stalks regally about the room. 
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="101" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="20" dsize="300" bonus="1000"/>
+      <move ndize="10" dsize="100" bonus="1000"/>
+      <ac>-100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>75</hitroll>
+      <damroll>50</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="499722"/>
+    <affected one="2096" two="0" three="0" four="0"/>
+    <attack type="4"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="10" sides="10" add="75"/>
+    <timer amount="0"/>
+    <skills vector="16"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnActionTo" argtype="STRING" argument="hug">
+      <action number="Emote" argtype="STRING" argument="sebastian starts to purr, a deep low noise, and nuzzles you gently. "/>
+    </mobprog>
+    <mobprog main="OnActionTo" argtype="STRING" argument="nuzzle">
+      <action number="Emote" argtype="STRING" argument="sebastian shakes his \c03golden mane\c00 and tickles you with it. "/>
+    </mobprog>
+    <mobprog main="OnActionTo" argtype="STRING" argument="kiss">
+      <action number="Emote" argtype="STRING" argument="sebastian calmly accepts your show of affection, then returns the kiss with his warm \c05pink\c00 tongue."/>
+    </mobprog>
+    <mobprog main="OnActionTo" argtype="STRING" argument="pet">
+      <action number="Emote" argtype="STRING" argument="sebastian lays his ears flat against his head and growls softly. "/>
+    </mobprog>
+    <mobprog main="OnActionTo" argtype="STRING" argument="pat">
+      <action number="Emote" argtype="STRING" argument="sebastian stares at you like you are insane and ignores you. "/>
+    </mobprog>
+    <mobprog main="OnAction" argtype="STRING" argument="yawn">
+      <action number="Emote" argtype="STRING" argument="sebastian yawns lazily, also, and blinks his \c03golden eyes\c00."/>
+    </mobprog>
+    <mobprog main="OnActionTo" argtype="STRING" argument="cuddle">
+      <action number="Emote" argtype="STRING" argument="sebastian rests his \c03golden\c00 head in your lap and closes his eyes happily. "/>
+    </mobprog>
+    <mobprog main="OnAction" argtype="STRING" argument="curl">
+      <action number="Emote" argtype="STRING" argument="sebastian snuggles up to you and puts one \c03golden\c00 paw on you protectively. "/>
+    </mobprog>
+    <mobprog main="OnActionTo" argtype="STRING" argument="tickle">
+      <action number="Emote" argtype="STRING" argument="sebastian licks you with his wet \c05pink\c00 tongue until you stop your foolishness. "/>
+    </mobprog>
+    <mobprog main="OnActionTo" argtype="STRING" argument="snuggle">
+      <action number="Emote" argtype="STRING" argument="sebastian returns your snuggle with a \c03lion-sized\c00 one of his own."/>
+    </mobprog>
+    <mobprog main="OnActionTo" argtype="STRING" argument="lick">
+      <action number="Emote" argtype="STRING" argument="sebastian gives you a regal tongue bath in response, then proceeds to look amused at your antics."/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="25301" name="Cherilyndria jeweller woman shopkeeper" special="NONE">
+    <description>She is small, with dark brown hair hanging in waves to her shoulders. 
+She smiles sweetly as you enter. 
+</description>
+    <shortdesc>Cherilyndria the Royal Jeweller </shortdesc>
+    <longdesc>Cherilyndria, smiling, waits to outfit you in gold and jewels. 
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="75" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="20" dsize="100" bonus="500"/>
+      <move ndize="10" dsize="100" bonus="500"/>
+      <ac>-100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>40</hitroll>
+      <damroll>40</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="10280970"/>
+    <affected one="2096" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="8" sides="20" add="40"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="25302" name="Yekaterina royal florist woman" special="NONE">
+    <description>Yekaterina is small, with bright \c06b\c00\c03l\c00o\c05s\c00\c03s\c00o\c06m\c00\c05s\c00 in her honey-colored hair. 
+She busies herself, critically arranging flowers into bouquets and in vases. 
+She is excellent at her work.
+
+</description>
+    <shortdesc>Yekaterina, the Royal Florist</shortdesc>
+    <longdesc>Yekaterina, busy arranging flowers, glances up from her work to smile at you.
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="100" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="20" dsize="500" bonus="1000"/>
+      <move ndize="10" dsize="100" bonus="1000"/>
+      <ac>-90</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>75</hitroll>
+      <damroll>50</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="10412042"/>
+    <affected one="48" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="8" sides="10" add="75"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="25303" name="queen tylin woman" special="NONE">
+    <description>The Queen of Altara is diminutive, but imposing--her \c23black hair\c00 touched
+with grey at the temples, and her dark eagle&apos;s eyes looking at you 
+majestically. Her \c06blue silk\c00 gown is drawn up to her knees and pinned 
+there, showing layered white petticoats, and the oval cut-out at the 
+bosom of her dress frames an ornate, j\c01e\c00w\c02e\c00l\c01l\c00e\c02d\c00 marriage knife. She looks
+as though she, with her very presence, could make an Aes Sedai step back.
+</description>
+    <shortdesc>Queen Tylin</shortdesc>
+    <longdesc>Tylin, of House Mitsobar, Queen of Ebou Dar, stands here regarding you imperially.
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="150" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="30" dsize="550" bonus="1500"/>
+      <move ndize="10" dsize="100" bonus="1500"/>
+      <ac>-100</ac>
+      <gold>200</gold>
+      <bankgold>0</bankgold>
+      <exp>120</exp>
+      <hitroll>95</hitroll>
+      <damroll>50</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1204234"/>
+    <affected one="48" two="0" three="0" four="0"/>
+    <attack type="3"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="10" sides="15" add="95"/>
+    <timer amount="0"/>
+    <skills vector="18"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnActionTo" argtype="STRING" argument="push">
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="Emote" argtype="STRING" argument="Queen Tylin looks outraged and astonished."/>
+      <action number="Say" argtype="STRING" argument="How dare you attempt to lay hands on my person? Guards!"/>
+      <action number="Emote" argtype="STRING" argument="Queen Tylin draws her long, slim belt knife. It glitters in her hand as she looks you over haughtily."/>
+      <action number="Say" argtype="STRING" argument="You had better be skilled at using that . . . my guards will be here shortly. "/>
+    </mobprog>
+    <mobprog main="OnActionTo" argtype="STRING" argument="slap">
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="Emote" argtype="STRING" argument="Queen Tylin sidesteps quickly, her silk skirts barely rustling, and your arm passes through the air where she used to stand."/>
+      <action number="Emote" argtype="STRING" argument="Queen Tylin smiles coldly."/>
+      <action number="Say" argtype="STRING" argument="Did you really think you would succeed in doing that? I think not. Guards!"/>
+    </mobprog>
+    <mobprog main="OnActionTo" argtype="STRING" argument="drag">
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="Emote" argtype="STRING" argument="Queen Tylin steps away from you, drawing her belt knife. "/>
+      <action number="Say" argtype="STRING" argument="You should know better than to try a silly thing like that. Guards!"/>
+    </mobprog>
+    <mobprog main="OnEntry" argtype="STRING" argument="drag">
+      <sideterm number="Wearing" not="FALSE" argtype="INT" argument="3740"/>
+      <action number="Say" argtype="STRING" argument="Ah, an Aes Sedai come to pay me a visit? "/>
+      <action number="Emote" argtype="STRING" argument="Queen Tylin looks you over, scrutinizing with her dark eagle&apos;s eyes."/>
+      <action number="Say" argtype="STRING" argument="You do not look like any Aes Sedai that I have seen. Who are you, and why are you here?"/>
+    </mobprog>
+    <mobprog main="OnEntry" argtype="STRING" argument="drag">
+      <sideterm number="Wearing" not="FALSE" argtype="INT" argument="3741"/>
+      <action number="Say" argtype="STRING" argument="Ah, an Aes Sedai come to pay me a visit? "/>
+      <action number="Emote" argtype="STRING" argument="Queen Tylin looks you over, scrutinizing with her dark eagle&apos;s eyes."/>
+      <action number="Say" argtype="STRING" argument="You do not look like any Aes Sedai that I have seen. Who are you, and why are you here?"/>
+    </mobprog>
+    <mobprog main="OnEntry" argtype="STRING" argument="drag">
+      <sideterm number="Wearing" not="FALSE" argtype="INT" argument="3742"/>
+      <action number="Say" argtype="STRING" argument="Ah, an Aes Sedai come to pay me a visit? "/>
+      <action number="Emote" argtype="STRING" argument="Queen Tylin looks you over, scrutinizing with her dark eagle&apos;s eyes."/>
+      <action number="Say" argtype="STRING" argument="You do not look like any Aes Sedai that I have seen. Who are you, and why are you here?"/>
+    </mobprog>
+    <mobprog main="OnEntry" argtype="STRING" argument="drag">
+      <sideterm number="Wearing" not="FALSE" argtype="INT" argument="3743"/>
+      <action number="Say" argtype="STRING" argument="Ah, an Aes Sedai come to pay me a visit? "/>
+      <action number="Emote" argtype="STRING" argument="Queen Tylin looks you over, scrutinizing with her dark eagle&apos;s eyes."/>
+      <action number="Say" argtype="STRING" argument="You do not look like any Aes Sedai that I have seen. Who are you, and why are you here?"/>
+    </mobprog>
+    <mobprog main="OnEntry" argtype="STRING" argument="drag">
+      <sideterm number="Wearing" not="FALSE" argtype="INT" argument="3744"/>
+      <action number="Say" argtype="STRING" argument="Ah, an Aes Sedai come to pay me a visit? "/>
+      <action number="Emote" argtype="STRING" argument="Queen Tylin looks you over, scrutinizing with her dark eagle&apos;s eyes."/>
+      <action number="Say" argtype="STRING" argument="You do not look like any Aes Sedai that I have seen. Who are you, and why are you here?"/>
+    </mobprog>
+    <mobprog main="OnEntry" argtype="STRING" argument="drag">
+      <sideterm number="Wearing" not="FALSE" argtype="INT" argument="3745"/>
+      <action number="Say" argtype="STRING" argument="Ah, an Aes Sedai come to pay me a visit? "/>
+      <action number="Emote" argtype="STRING" argument="Queen Tylin looks you over, scrutinizing with her dark eagle&apos;s eyes."/>
+      <action number="Say" argtype="STRING" argument="You do not look like any Aes Sedai that I have seen. Who are you, and why are you here?"/>
+    </mobprog>
+    <mobprog main="OnActionTo" argtype="STRING" argument="spit">
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="Emote" argtype="STRING" argument="Queen Tylin steps back, a look of outrage and disgust on her face, and you miss her."/>
+      <action number="Say" argtype="STRING" argument="How dare you? Get out of my Palace, you filthy peasant! Guards!"/>
+      <action number="Action" argtype="STRING" argument="open door east"/>
+      <action number="ActionTo" argtype="STRING" argument="push"/>
+      <action number="Force" argtype="STRING" argument="east"/>
+      <action number="Action" argtype="STRING" argument="close door east"/>
+    </mobprog>
+    <mobprog main="OnAction" argtype="STRING" argument="steal">
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="Say" argtype="STRING" argument="How dare you! Leave this place!"/>
+      <action number="SayTo" argtype="STRING" argument="Thief! Your life is forfeit!"/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="25304" name="snake green striped zith" special="NONE">
+    <description>small, and \c09bright green\c00 with a single \c01scarlet\c00 stripe running down her 
+back, she moves about slowly, her bright \c05pink\c00 tongue \c14thpping\c00 as she 
+tests her surroundings carefully. 
+
+
+</description>
+    <shortdesc>a tiny \c02green\c00 snake</shortdesc>
+    <longdesc>\c07a\c00 tiny \c02green\c00 snake with a bright \c01scarlet\c00 stripe quietly slithers about in the gardens here.
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="85" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="20" dsize="300" bonus="850"/>
+      <move ndize="10" dsize="100" bonus="850"/>
+      <ac>-20</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>90</exp>
+      <hitroll>50</hitroll>
+      <damroll>50</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="958600"/>
+    <affected one="591920" two="0" three="0" four="0"/>
+    <attack type="4"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="10" sides="15" add="50"/>
+    <timer amount="0"/>
+    <skills vector="32"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnEntry" argtype="STRING" argument="steal">
+      <action number="Emote" argtype="STRING" argument="the little snake hisses softly and moves away to hide herself deeper into the vegetation."/>
+    </mobprog>
+    <mobprog main="OnRandom" argtype="INT" argument="40">
+      <action number="Emote" argtype="STRING" argument="the little snake flickers her tongue with an inaudible \c14thp\c00."/>
+    </mobprog>
+    <mobprog main="OnActionTo" argtype="STRING" argument="kiss">
+      <action number="Emote" argtype="STRING" argument="the little \c09green\c00 snake lightly touches the end of your nose with her cute little forked tongue. "/>
+    </mobprog>
+    <mobprog main="OnActionTo" argtype="STRING" argument="pat">
+      <action number="Emote" argtype="STRING" argument="the little \c09green\c00 snake moves her head to the side in a characteristially sinuous and serpentine motion."/>
+      <action number="Emote" argtype="STRING" argument="the little snake \c14thps\c00 at you pointedly."/>
+    </mobprog>
+    <mobprog main="OnActionTo" argtype="STRING" argument="look">
+      <action number="Emote" argtype="STRING" argument="the little snake \c14thps\c00 absently in your direction."/>
+    </mobprog>
+    <dgscript vnum="11905"/>
+    <dgscript vnum="11906"/>
+  </mobile>
+  <mobile vnum="25305" name="Terina royal cook" special="NONE">
+    <description>Tall and slim, Terina busies herself making a tray of food to send upstairs to one of the palace guests. 
+</description>
+    <shortdesc>Terina the Royal Cook</shortdesc>
+    <longdesc>Terina, one of the many cooks at the palace, is preparing a large tray of food here.
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="90" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="20" dsize="200" bonus="900"/>
+      <move ndize="10" dsize="100" bonus="900"/>
+      <ac>0</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>50</hitroll>
+      <damroll>50</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="10477578"/>
+    <affected one="16" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="6" sides="10" add="50"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnEntry" argtype="STRING" argument="look">
+      <action number="Emote" argtype="STRING" argument="terina looks up from her work and smiles wryly at you."/>
+      <action number="SayTo" argtype="STRING" argument="i suppose you will be wanting something to eat. well, tell me quick because i need to finish this right away."/>
+      <action number="SayTo" argtype="STRING" argument="the roast looks very good today . . . i know because i cooked it myself!"/>
+    </mobprog>
+    <mobprog main="OnRandom" argtype="INT" argument="20">
+      <action number="Emote" argtype="STRING" argument="the \c03f\c00\c01i\c00\c03r\c00\c01e\c00 flares up briefly, sending a blast of warm air circulating through the room."/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="25306" name="a short female servant" special="NONE">
+    <description>she is short, and slightly plump, her pale green skirts sewn up on 
+one side to expose her layered white petticoats underneath, the 
+crest of the royal family on her left shoulder. she hurries about, 
+busy as usual. 
+
+
+</description>
+    <shortdesc>a short female servant</shortdesc>
+    <longdesc>a short female servant hurries quietly about her duties in the palace here.
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="85" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="17" dsize="255" bonus="850"/>
+      <move ndize="10" dsize="100" bonus="850"/>
+      <ac>-10</ac>
+      <gold>75</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>85</hitroll>
+      <damroll>40</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1051656"/>
+    <affected one="524288" two="0" three="0" four="0"/>
+    <attack type="14"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="15" sides="15" add="85"/>
+    <timer amount="0"/>
+    <skills vector="10"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="25307" name="guard palace liveried livery tarasin quiet" special="NONE">
+    <description>tall and slim, the guard is wearing an immaculately neat \c02dark green\c00 
+uniform with the crest of the royal family on his right shoulder. he walks 
+about quietly, observing without a word, his left hand resting comfortably 
+on his sword hilt. he looks at you briefly, then passes by.
+
+
+</description>
+    <shortdesc>a liveried Palace Guard</shortdesc>
+    <longdesc>a liveried palace guard patrols quietly and unobtrusively here.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="100" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="20" dsize="280" bonus="1000"/>
+      <move ndize="10" dsize="100" bonus="1000"/>
+      <ac>-10</ac>
+      <gold>90</gold>
+      <bankgold>0</bankgold>
+      <exp>110</exp>
+      <hitroll>110</hitroll>
+      <damroll>50</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1051656"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="3"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="18" sides="18" add="110"/>
+    <timer amount="0"/>
+    <skills vector="26"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="25308" name="servant female tall tarasin" special="NONE">
+    <description>tall and brown-haired, she looks at you briefly and nods as she rushes by, 
+obviously on the way to a bedroom to tidy up. her long, pale green skirts 
+are sewn up on one side to show her white petticoats, and the crest on her 
+left shoulder marks her as a personal servant of the royal family.
+</description>
+    <shortdesc>a tall female servant</shortdesc>
+    <longdesc>a tall, slender female servant hurries past you here with an armful of bedding.
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="87" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="17" dsize="256" bonus="870"/>
+      <move ndize="10" dsize="100" bonus="870"/>
+      <ac>-10</ac>
+      <gold>90</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>174</hitroll>
+      <damroll>47</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1051656"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="18" sides="18" add="174"/>
+    <timer amount="0"/>
+    <skills vector="10"/>
+    <teaches numberof="0"/>
+  </mobile>
+</mobiles>

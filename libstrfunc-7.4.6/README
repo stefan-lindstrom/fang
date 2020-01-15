@@ -1,0 +1,58 @@
+
+Handy library for manipulating strings, string arrays, buffers, CGI forms,
+configuration files, textual templates, regular expressions, date/time parsing,
+et cetera.
+
+Handles base64, quoted-printable, url_encode, mime-words and other encoded data.
+
+Please have a look at strfunc(3) and other manual pages.
+
+
+KNOWN ISSUES:
+
+While the library has showed itself as stable and useful piece of code,
+there are couple of moments that I consider to be a minor to severe
+design flaws. See TODO file also.
+
+
+* "Too much stuff inside"
+
+	Yep. However, the library is less than 64k when stripped,
+	so who cares? Key word here is "legacy": the library must
+	support existing codebase.
+
+* Name space pollution
+
+	Libstrfunc is optimized for quick implementation of fast
+	string and text-related utilities, where Perl is not suitable
+	for efficiency or other reasons. Therefore, the library functions
+	are named accordingly to provide readability: eq(), param(),
+	format(), etc. This means that if your program is relatively large,
+	these names might conflict with functions in your own source code.
+	I don't really think of it as of an issue, however, you probably want
+	to play safely, as always ;)
+
+* Configuration reader issues
+
+	The way configuration reader is implemented has huge lack of elegance.
+	The biggest problem is that configuration reader uses static variables
+	to hold the configuration after parsing. This design effectively
+	restricts an ability to handle multiple configuration files.
+	It cannot be fixed quickly because there is a certain codebase
+	exists which depend on legacy behavior. I am planning to roll the
+	library major version sometime, and will make this change, if
+	it still would be the concern.
+
+* Date/time parsing implementation is cryptic
+
+	Hint: this is the fastest implementation I am aware of.
+
+* Documentation (the set of man pages) does not cover all topics well
+
+	Yeah, commercial support is also available ;)
+
+
+-- 
+Lev Walkin, LMW28
+vlm@spelio.net.ru
+www.spelio.net.ru

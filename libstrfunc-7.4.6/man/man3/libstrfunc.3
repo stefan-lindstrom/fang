@@ -1,0 +1,46 @@
+.Dd October 1, 2000
+.Dt STRFUNC 3
+.Os
+.Sh NAME
+.Nm strfunc
+.Nd advanced string manipulation library
+.Sh SYNOPSIS
+.nf
+.ft B
+#include <strfunc.h>
+.ft
+.fi
+.Pp
+.Nm cc
+.Fl I/usr/local/include
+.Op Ar flags
+.Ar files
+.Fl L/usr/local/lib
+.Fl lstrfunc
+.Sh DESCRIPTION
+These routines give the user a method of manipulating string lists, CGI forms,
+MIME data, configuration files and other handy functions.
+Please note that the library is constantly developed, so some changes may not
+be reflected in the manual pages.
+Please refer to the well commented strfunc.h to get the actual things.
+.Pp
+In order to obtain the version of the library, there is a function
+.Ft int
+.Fn strfunc_version
+exists. It may be useful to check some features or bugfixes in run time.
+.Sh INDEX
+.Bl -column "sf_svect(3)   "
+.It sf_svect(3)	strings and string vectors handling functions
+.It sf_sbuf(3)	smart buffers handling
+.It sf_cfg(3)	configuration files parsing
+.It sf_cgi(3)	CGI form parsing and recoding
+.It sf_mime(3)	MIME handling
+.It sf_time(3)	Date and time conversions
+.It sf_fmt(3)	template formatting functions
+.It sf_sed(3)	string editor functions
+.It sf_file(3)	file position indicators
+.It sf_mem(3)	memory control functions
+.It sf_misc(3)	other functions
+.El
+.Sh AUTHORS
+.An Lev Walkin <vlm@spelio.net.ru>

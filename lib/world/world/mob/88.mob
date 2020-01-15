@@ -1,0 +1,347 @@
+#8800
+craftsman asha'man~
+the craftsman~
+A skilled craftsman stands here behind the counter.
+~
+The craftsman looks strong and healthy. His hands are nimble and his eyes are
+quick. Don't try fooling this man.
+~
+1064968 268435456 0 E
+0 20 10 955 1d100+0 1d1+0
+0 0
+8 8 1
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+E
+#8801
+cooking wife asha'man woman~
+a woman in a clean white apron~
+The Asha'man Cooking Wife stands here ready to serve.
+~
+The cooking wife looks rather stern and not to be trifled with. 
+~
+1064968 268435456 0 E
+0 20 10 955 5d1000+1 1d1+0
+10 0
+8 8 2
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnEntry & Guild "Asha'man"
+SayTo "What can I do for you?"
+End
+Q
+E
+#8802
+large rock~
+A large rock~
+A large rock stands here.
+~
+The rock is large and friendly looking. Who would want to harm such a cute
+and harmless bit of granite? Why, I bet he would make a great pet.
+~
+74 268500992 0 E
+0 20 10 955 2d1000+0 1d1+0
+0 0
+8 8 0
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+E
+#8803
+messenger man courier ~
+a courier~
+A black-coated man stands here beside his tethered horse.
+~
+The man looks tired and weary. He has ridden all day from Caemlyn to return
+to the farm with missives for various of the Asha'man.
+~
+1048587 0 0 E
+200 20 10 955 1d100+0 1d1+0
+0 0
+8 8 1
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+E
+#8804
+A trainer~
+A trainer~
+A trainer stands here, sweating profusely.
+~
+A trainer stands here, a sword in his right hand, ready to train you into a weapon.
+~
+11 0 0 E
+200 20 10 955 1d100+0 1d1+0
+0 0
+8 8 1
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+E
+#8805
+Saeric~
+a one handed Aielman~
+Saeric, the one-handed Aiel stands here, glaring stonily at you.
+~
+Saeric is a gray-haired old Aiel of the Red Water Goshien. He is missing his
+right hand, but that does not stop him from training the Asha'man in unarmed
+combat. His stoney eyes keep careful watch over the two rows of shirtless men
+in his care.
+~
+11 0 0 E
+200 20 10 955 1d100+0 1d1+0
+0 0
+8 8 1
+BareHandAttack: 11
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+E
+#8806
+Herb door closer man~
+a middle aged man~
+An invisible middle-aged man stands here, closing and locking the door happily.
+~
+The middle-aged man looks bored. The entire purpose of his life is to close
+and lock the door, a job he does exceedingly well. Most people can't see him
+because he is invisible, not even the owner of this house. They go blissfully
+on their way, never imagining how boring the life of a middle-aged door closer
+is. But the man knows how it feels. He is one. Inside he is bitter and cynical.
+~
+10 65538 0 E
+200 20 10 955 1d100+0 1d1+0
+0 0
+8 8 1
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnRandom 75
+Action "close door"
+Action "lock door"
+End
+OnMobDie
+Action "junk key"
+End
+Q
+E
+#8807
+shopkeeper keeper man craftsman~
+a middle-aged shopkeeper~
+A middle-aged craftsman stands here, minding the shop.
+~
+The man looks strong and keen of eye. Don't mess with him.
+~
+1048586 0 0 E
+0 20 10 955 1d100+0 1d1+0
+0 0
+8 8 1
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+E
+#8808
+Asha'man black-coated man~
+\c00a \c22black-coated\c00 man~
+\c03A man dressed in a tight-fitting \c22black coat\c03 stands here, sneering at you.\c00
+~
+The man looks very lethal. He wears a tight-fitting \c23black coat\c00 with a pair
+of pins upon the collar. One is \c23s\c00\c07i\c00\c23l\c00\c07v\c00\c23e\c00\c07r\c00 and is shaped like a sword while the
+other is \c10g\c00\c03o\c00\c10l\c00\c03d\c00\c10e\c00\c03n\c00 and shaped like a dragon.
+~
+6275098 2096 0 E
+199 -180 -20 955 1d0+29500 30d127+50
+0 1
+8 8 1
+BareHandAttack: 12
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Bash: 100
+Trip: 100
+Dirtkick: 100
+Kick: 100
+Stun: 100
+P
+OnAction "east" & ! Guild "asha"
+Stop
+Cast "firestorm"
+End
+OnAction "northwest nw" & ! Guild "asha'man"
+Stop
+Cast "disintegrate"
+Cast "disintegrate"
+Cast "disintegrate"
+Cast "disintegrate"
+Cast "disintegrate"
+Cast "disintegrate"
+Cast "disintegrate"
+Cast "disintegrate"
+Cast "disintegrate"
+Cast "disintegrate"
+Cast "disintegrate"
+Cast "disintegrate"
+Cast "disintegrate"
+Cast "disintegrate"
+Cast "disintegrate"
+Cast "pain"
+End
+OnAction "flee" & ! Guild "asha'man"
+Stop
+Cast "disintegrate"
+Cast "disintegrate"
+Cast "disintegrate"
+Cast "disintegrate"
+Cast "disintegrate"
+Cast "disintegrate"
+Cast "disintegrate"
+Cast "disintegrate"
+Cast "disintegrate"
+Cast "disintegrate"
+Cast "disintegrate"
+Cast "disintegrate"
+Cast "disintegrate"
+Cast "disintegrate"
+Cast "disintegrate"
+Cast "pain"
+End
+OnAction "weave" & ! Guild "asha'man"
+Stop
+Cast "disintegrate"
+Cast "disintegrate"
+Cast "disintegrate"
+Cast "disintegrate"
+Cast "disintegrate"
+Cast "disintegrate"
+Cast "disintegrate"
+Cast "disintegrate"
+Cast "disintegrate"
+Cast "disintegrate"
+Cast "disintegrate"
+Cast "disintegrate"
+Cast "disintegrate"
+Cast "disintegrate"
+Cast "disintegrate"
+Cast "pain"
+End
+OnAction "cast" & ! Guild "asha'man"
+Stop
+Cast "disintegrate"
+Cast "disintegrate"
+Cast "disintegrate"
+Cast "disintegrate"
+Cast "disintegrate"
+Cast "disintegrate"
+Cast "disintegrate"
+Cast "disintegrate"
+Cast "disintegrate"
+Cast "disintegrate"
+Cast "disintegrate"
+Cast "disintegrate"
+Cast "disintegrate"
+Cast "disintegrate"
+Cast "disintegrate"
+Cast "pain"
+End
+OnAttack
+Stop
+Cast "disintegrate"
+Cast "disintegrate"
+Cast "disintegrate"
+Cast "disintegrate"
+Cast "disintegrate"
+Cast "disintegrate"
+Cast "disintegrate"
+Cast "disintegrate"
+Cast "disintegrate"
+Cast "disintegrate"
+Cast "disintegrate"
+Cast "disintegrate"
+End
+OnActionTo "target"
+Stop
+Cast "disintegrate"
+Cast "disintegrate"
+Cast "disintegrate"
+Cast "disintegrate"
+Cast "disintegrate"
+Cast "disintegrate"
+Cast "disintegrate"
+Cast "disintegrate"
+Cast "disintegrate"
+Cast "disintegrate"
+End
+OnAction "push"
+Stop
+End
+OnAction "pull"
+Stop
+End
+OnAction "drag"
+Stop
+End
+OnAction "tieweave"
+Stop
+End
+Q
+E
+#8880
+songbird bird~
+a beautiful songbird~
+A beautiful songbird is perched upon one of the higher branches of the oak tree.
+~
+The songbird sits high in the top of the tree, singing it's heart out. The beautiful trilling
+fills the forest.
+~
+8 0 0 E
+0 20 10 955 1d100+0 1d1+0
+0 0
+8 8 1
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnAttack
+Stop
+Action "junk all.key"
+End
+OnRandom 75
+Action "close door"
+Action "lock door"
+End
+Q
+E
+$

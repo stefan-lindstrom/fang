@@ -1,0 +1,1471 @@
+<?xml version="1.0"?>
+<mobiles>
+  <mobile vnum="6200" name="wrath Great Lord" special="NONE">
+    <description>You cannot see wrath you moron!
+</description>
+    <shortdesc>&amp;rThe wrath of The Great Lord of the Dark&amp;n</shortdesc>
+    <longdesc>&amp;rThe wrath of the Great Lord of the Dark&amp;n
+</longdesc>
+    <title/>
+    <chardata gender="NEUTRAL" class="Adventurer" level="199" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="0" bonus="25000"/>
+      <move ndize="10" dsize="100" bonus="25000"/>
+      <ac>-200</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>200</hitroll>
+      <damroll>50</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="7331866"/>
+    <affected one="268765234" two="0" three="0" four="0"/>
+    <attack type="12"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="30" sides="127" add="200"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnEntry" argtype="STRING" argument="grasp">
+      <sideterm number="Mode" not="FALSE" argtype="INT" argument="2"/>
+      <action number="Cast" argtype="STRING" argument="disintegrate"/>
+      <action number="Cast" argtype="STRING" argument="disintegrate"/>
+      <action number="Cast" argtype="STRING" argument="disintegrate"/>
+      <action number="Cast" argtype="STRING" argument="disintegrate"/>
+      <action number="Cast" argtype="STRING" argument="disintegrate"/>
+      <action number="Cast" argtype="STRING" argument="disintegrate"/>
+      <action number="Cast" argtype="STRING" argument="disintegrate"/>
+      <action number="Cast" argtype="STRING" argument="disintegrate"/>
+      <action number="Cast" argtype="STRING" argument="disintegrate"/>
+      <action number="Cast" argtype="STRING" argument="disintegrate"/>
+      <action number="Cast" argtype="STRING" argument="disintegrate"/>
+      <action number="Cast" argtype="STRING" argument="disintegrate"/>
+      <action number="Cast" argtype="STRING" argument="disintegrate"/>
+      <action number="Cast" argtype="STRING" argument="disintegrate"/>
+      <action number="Cast" argtype="STRING" argument="disintegrate"/>
+      <action number="Cast" argtype="STRING" argument="disintegrate"/>
+      <action number="Cast" argtype="STRING" argument="disintegrate"/>
+      <action number="Cast" argtype="STRING" argument="disintegrate"/>
+      <action number="Cast" argtype="STRING" argument="disintegrate"/>
+      <action number="Cast" argtype="STRING" argument="disintegrate"/>
+    </mobprog>
+    <mobprog main="OnEntry" argtype="STRING" argument="grasp">
+      <action number="Mode" argtype="INT" argument="2"/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="6201" name="thepitmob" special="NONE">
+    <description>thepitmob
+</description>
+    <shortdesc>thepitmob</shortdesc>
+    <longdesc>thepitmob
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="200" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="0"/>
+      <move ndize="10" dsize="100" bonus="0"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="26"/>
+    <affected one="2098" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnAction" argtype="STRING" argument="kneel grovel">
+      <action number="Action" argtype="STRING" argument="tell shai'tan Someone awaits you in the pit"/>
+      <action number="Action" argtype="STRING" argument="tell ierelle Someone awaits you in the pit"/>
+    </mobprog>
+    <mobprog main="OnEntry" argtype="STRING" argument="kneel grovel">
+      <action number="Action" argtype="STRING" argument="tell shai'tan Someone has entered the pit"/>
+      <action number="Action" argtype="STRING" argument="tell ierelle Someone has entered the pit."/>
+    </mobprog>
+    <mobprog main="OnAction" argtype="STRING" argument="tell users who multi">
+      <sideterm number="Level" not="FALSE" argtype="STRING" argument="204 211"/>
+      <action number="Action" argtype="STRING" argument="tell shai'tan Someone you don't know about is here."/>
+      <action number="Action" argtype="STRING" argument="tell ierelle Someone invis above your level is in this room."/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="6203" name="nightmare dream Dark One aura" special="NONE">
+    <description>What are you looking at it for, run twit!
+</description>
+    <shortdesc>the aura of Shai'tan</shortdesc>
+    <longdesc>The aura of Shai'tan
+</longdesc>
+    <title/>
+    <chardata gender="NEUTRAL" class="Adventurer" level="199" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="0" bonus="29500"/>
+      <move ndize="10" dsize="100" bonus="29500"/>
+      <ac>-200</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>200</hitroll>
+      <damroll>50</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="6307898"/>
+    <affected one="2558002" two="0" three="0" four="0"/>
+    <attack type="12"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="30" sides="127" add="200"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnEntry" argtype="STRING" argument="tell users who multi">
+      <action number="ActionTo" argtype="STRING" argument="kill"/>
+    </mobprog>
+    <mobprog main="OnAction" argtype="STRING" argument="jump wake dream">
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="Emote" argtype="STRING" argument="You can't!"/>
+      <action number="ActionTo" argtype="STRING" argument="kill"/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="6204" name="fade man myrddraal eyeless mounted" special="NONE">
+    <description>The very night seems to bend and shroud the figure before you, its dead black
+cloth and armor only adding to its darkness. A pale, fishbelly white face adds 
+the only colour. Its eyeless gaze surveying you with an icy contempt that even
+the bravest feel.
+</description>
+    <shortdesc>a mounted myrddraal</shortdesc>
+    <longdesc>The shadowy form of a Myrddraal sits atop his mount here.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="140" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="10" dsize="100" bonus="7000"/>
+      <move ndize="10" dsize="100" bonus="7000"/>
+      <ac>0</ac>
+      <gold>750</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>25</hitroll>
+      <damroll>25</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="2492506"/>
+    <affected one="786464" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="20" sides="20" add="25"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnRandom" argtype="INT" argument="99">
+      <action number="Action" argtype="STRING" argument="stand"/>
+      <action number="Action" argtype="STRING" argument="follow mount"/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="6205" name="horse fade mount" special="NONE">
+    <description>A horse so dark its black coat seems almost unnatural watches you
+through firery red eyes. No sound or movement seems to phase it, but
+rather waits and obeys its masters command without hessitation. Sharp
+white teeth glint from within its mouth.
+</description>
+    <shortdesc>the myrddraals mount</shortdesc>
+    <longdesc>A magnificent black horse stands here, its eyes a fiery red.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="100" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="5000"/>
+      <move ndize="10" dsize="100" bonus="5000"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="2103320"/>
+    <affected one="128" two="0" three="0" four="0"/>
+    <attack type="4"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="10" sides="10" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnRandom" argtype="INT" argument="30">
+      <action number="Action" argtype="STRING" argument="stand"/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="6206" name="human man breeder" special="NONE">
+    <description>A dirty, unshaven and unwashed man sits in the corner, his eyes
+darting wildly around him. He seems to want to look in all directions
+at once, judging from where the next threat will come. Around his
+neck is clamped steel, its chain allowing him some movment but not
+much. There seems to be a red brand on the middle of his forehead,
+marking him as a breeding male: allowed life so he may impregnate
+female captives.
+</description>
+    <shortdesc>a breeding human</shortdesc>
+    <longdesc>A man sits in the corner, his eyes darting wildly around him.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="10" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="0"/>
+      <move ndize="10" dsize="100" bonus="0"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="10"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="6207" name="female woman victim captive" special="NONE">
+    <description>The woman lays in a corner, her clothes all but ripped from
+her wretched form, only blood and stratches cover most of
+her naked flesh. Her eyes seem to stare of into the distance as
+if in deep shock unable to cope with the memories of her past.
+A brand seems to show through on her forehead, seemingly 
+some of the breeding males has marked her out as producer.
+The iron shackle on her feet holds her firmly to the ground,
+her future as an object of their ravishings all but set in stone.
+</description>
+    <shortdesc>a female victim</shortdesc>
+    <longdesc>A woman lies in a heap in the corner, her clothes ripped and torn.
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="10" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="0"/>
+      <move ndize="10" dsize="100" bonus="0"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="8"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="6208" name="child victim food boy" special="NONE">
+    <description>A small boy huddles up against a pile of cloth and bone, his eyes
+shut permanently. Blood and dirt marr his clothes and although
+young, he seems reasonably well fed compared to some of his 
+peers. The great gashes across both his cheeks mark him out
+as a child born of the pit. His mother a breeding producer, his
+father possibly one of many who ravished her. He seems to be
+the tallest child in the pit and no doubt soon he will leave this
+place: the Myrddraal like their fodder sweet and young.
+</description>
+    <shortdesc>a small boy</shortdesc>
+    <longdesc>A small boy huddles against some bones here.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="5" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="0"/>
+      <move ndize="10" dsize="100" bonus="0"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="8"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="4"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="6209" name="trolloc guard" special="NONE">
+    <description>Standing head and shoulders taller than even the tallest of men
+the trolloc stands guard with vigilence. His mismatched armor
+and long wickedly curved sword seemingly unnecessary besides his
+physical strength to keep the fodder inline. Occassionally he grunts
+with satisfaction as one of the breeding males tries to seize a 
+passing female and licks his lips as if contemplating doing the 
+same.
+</description>
+    <shortdesc>a trolloc guard</shortdesc>
+    <longdesc>A goat-faced trolloc stands here watching over the human fodder.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="40" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="2000"/>
+      <move ndize="10" dsize="100" bonus="2000"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="10"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="15" sides="15" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="6210" name="female victim fodder food" special="NONE">
+    <description>The female seems to be young but her figure seems older, her 
+eyes are dark and vacant as if seen too many horrors for one lifetime.
+She goes about her duties without conscious thought, dropping basket
+loads of maggot infested rice into the pit below. The hands of the
+breeding males reach out for her constantly, more than ready to
+add her to their harems below.
+</description>
+    <shortdesc>a female feeder</shortdesc>
+    <longdesc>A female clad in only her scars and dried blood stands here, basket in hand.
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="10" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="0"/>
+      <move ndize="10" dsize="100" bonus="0"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="10"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="4"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="6211" name="fade eyeless myrddraal ravish" special="NONE">
+    <description>As if poured from the same mold as his kin the Myrddraal stands
+here arrogantly, his body garbed in black as dark as any shadow.
+His cloak does not seem to even move with his sinous grace, it is
+as if even the elements dare not disturb him.
+</description>
+    <shortdesc>a watching Eyeless</shortdesc>
+    <longdesc>A Myrddraal stands here seemingly clad in the darkness that surrounds him.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="180" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="4000"/>
+      <move ndize="10" dsize="100" bonus="4000"/>
+      <ac>-200</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>200</exp>
+      <hitroll>20</hitroll>
+      <damroll>20</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="2099210"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="15" sides="35" add="20"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="6212" name="trolloc ravish boar" special="NONE">
+    <description>The trollocs face seems a mad hybrid of boar and human characteristics. His
+mouth is almost hidden under a broad snout with two twisted tusks rising from
+each side. His face is made more revolting as it is drawn back into an 
+animalish grin of pleasure. Somehow he gives the impression of being aware
+of the presence of the Myrddraal in the room for he darts furtive glances
+in its direction as he savagly ravishes the woman below him.
+</description>
+    <shortdesc>a boar-faced trolloc</shortdesc>
+    <longdesc>A boar-faced trolloc stands over a young screaming woman.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="40" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="2000"/>
+      <move ndize="10" dsize="100" bonus="2000"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="10"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="5" sides="5" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="6213" name="woman female victim ravish" special="NONE">
+    <description>The woman appears to be not twenty years of age but her eyes seem filled
+with the horrors of genrations. She screams almost continuously for help
+she knows will not come, the Light long ago abondoning this place. Weakly
+she tries to claw the huge form off her but she seems to sense that her 
+resistance will only bring more trollocs eager to break the woman under
+the Myrddraals stare. The trollocs must be allowed some pleasures after all
+</description>
+    <shortdesc>a female victim </shortdesc>
+    <longdesc>A female lies here beneath the looming form of a trolloc, her face covered with blood.
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="10" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="0"/>
+      <move ndize="10" dsize="100" bonus="0"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="10"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="6214" name="man old victim " special="NONE">
+    <description>The old man seems clothed in only rags and mud, his weak and feeble
+form rocking back and forth continually. He seem to stare out of vacant eyes
+looking through and beyond the prison walls to some far off peaceful place. 
+A huge bloodied gash runs down his left side, most likely from a fight
+with another trolloc dinner.
+</description>
+    <shortdesc>an elderly victim</shortdesc>
+    <longdesc>An old man sits here rocking back and forth, his eyes staring vacantly.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="10" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="0"/>
+      <move ndize="10" dsize="100" bonus="0"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="10"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="6215" name="darkfriend healer man" special="NONE">
+    <description>Dressed marginally better than the rest of the human slaves of the camp 
+the healer is still covered with blood and dirt. His unshaven face holds
+a look of helplessness and resignation. What appears to be a metallic instrument
+of some kind is held in his right hand and he uses it to force his patients
+mouth wider.
+</description>
+    <shortdesc>the darkfriend healer</shortdesc>
+    <longdesc>A small dirty man stands here examining the mouth of one of his patients.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="10" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="0"/>
+      <move ndize="10" dsize="100" bonus="0"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="10"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="6216" name="victim man patient bound" special="NONE">
+    <description>The patient seems to be a man in his middle years, grey streaking through
+his dark hair. Somewhat cleaner than the rest of the occupants of the camp
+he still has dirt and blood covering his boots. His mouth jammed wide by the 
+healer and securely bound to the chair the man seems to know there is no 
+escape. His eyes roll back in his head occassionally as the work progresses
+knowing that things will only get worse.
+</description>
+    <shortdesc>a patient</shortdesc>
+    <longdesc>A patient sits here bound to a chair by iron shackles and rope.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="10" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="0"/>
+      <move ndize="10" dsize="100" bonus="0"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="10"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="6217" name="disabled man patient" special="NONE">
+    <description>Unsually clean like many other occupants of the infirmary this man
+sits up against the wall, his head hanging to one side. A small trail
+of drool leads from his mouth and makes a small puddle on what is
+left of his clothes. Although he stares with vacant eyes he occassionally
+manages to groan, the newly stiched humps that were once his arm and
+leg causing him some pain. Like many of the victims of biological experiments
+his days are sure to end in further pain and humilation. 
+</description>
+    <shortdesc>the disabled patient</shortdesc>
+    <longdesc>A man with missing an arm and a leg sits up against the wall, his head rolled to one side.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="10" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="0"/>
+      <move ndize="10" dsize="100" bonus="0"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="10"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="6218" name="trolloc bear" special="NONE">
+    <description>A hideous mixture of bear and human traits the trolloc sits and munches
+at his evening meal greedily. Eyes with a shread of human intelligence
+dart around at his kin while doing so, obviously fearing they will try and
+steal his choice cut of meat. Blood and juice from the meat stain his
+fur and mis-matched armor, the paws that serve as hands apparently
+well adept at shredding meat.
+</description>
+    <shortdesc>a bear-faced trolloc</shortdesc>
+    <longdesc>A bear-faced trolloc sits by the entrance, munching greedily on a human torso.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="40" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="1000"/>
+      <move ndize="10" dsize="100" bonus="1000"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="2099338"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="8"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="5" sides="5" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="6219" name="troloc child female" special="NONE">
+    <description>The small trolloc appears to be female, its face a hybrid combination
+of goat and human stock. Darting from place to place around the room 
+searching for scraps the child hisses and chants in a gutteral tongue.
+Clothed in only a single peice of leather you notice the child has
+some scars along its torso. It as if the older trollocs sometimes use
+her for fun. It is well in the crude trolloc society that females enjoy
+little else but being pregnant.
+</description>
+    <shortdesc>a female trolloc child</shortdesc>
+    <longdesc>A small female trolloc darts about the room, searching for scraps of meat.
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="20" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="200"/>
+      <move ndize="10" dsize="100" bonus="200"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="2097162"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="6220" name="man victim clothes" special="NONE">
+    <description>The man seems to be a dominante male for the pit, he seems much better
+fed than those around and him and still have vestiges of the maggot infested
+rice around his mouth. Unlike the others of the pit he is clothed, a whole
+variety of torn wool and silk, some obviously meant for a child. The wild, savage
+gleam of his eyes suggest that they were the clothes of other victims,
+removed once they had been slayed for food.
+</description>
+    <shortdesc>a clothed man</shortdesc>
+    <longdesc>A man crouches underneath a small shadowy ledge in the wall.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="10" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="0"/>
+      <move ndize="10" dsize="100" bonus="0"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="10"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="6221" name="trolloc guard Ahf'frait " special="NONE">
+    <description>The trolloc seems to be a gruesome hybrid of human and wolf stock, its face
+half grey fur and half coarse skin. He sniffs the air hunting by scent and the 
+large wickedly curved axe seems to gleam in the shadowy light. Barking in
+a harsh gutteral language he seems to alight with animalistic glee, 
+the prey has been sighted.
+</description>
+    <shortdesc>a wolf-faced trolloc guardian</shortdesc>
+    <longdesc>A large trollocs stands here sniffing the air for scent.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="100" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="4000"/>
+      <move ndize="10" dsize="100" bonus="4000"/>
+      <ac>0</ac>
+      <gold>500</gold>
+      <bankgold>0</bankgold>
+      <exp>5</exp>
+      <hitroll>30</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="2759880"/>
+    <affected one="524416" two="0" three="0" four="0"/>
+    <attack type="6"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="20" sides="15" add="30"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="6234" name="lightning bolt" special="NONE">
+    <description>Its bright and glowing and about to smack you!
+</description>
+    <shortdesc>\c13A Lightning Bolt!\c00</shortdesc>
+    <longdesc>\c13A Lightning Bolt!\c00
+</longdesc>
+    <title/>
+    <chardata gender="NEUTRAL" class="Adventurer" level="199" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="0" bonus="0"/>
+      <move ndize="10" dsize="100" bonus="0"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="4194312"/>
+    <affected one="271122434" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnEntry" argtype="VOID" argument="NONE">
+      <action number="Cast" argtype="STRING" argument="call lightning"/>
+      <action number="PurgeMob" argtype="VOID" argument="NONE"/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="6235" name="dfokay trolloc" special="NONE">
+    <description>The trolloc has the head of a falcon and the body of a very large
+man. You notice also its has talons and not feet. this does not
+look like something you want to play with.
+</description>
+    <shortdesc>a beady eyed Trolloc</shortdesc>
+    <longdesc>A beady eyed Trolloc
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="190" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="30" dsize="800" bonus="2000"/>
+      <move ndize="10" dsize="100" bonus="2000"/>
+      <ac>-150</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>120</exp>
+      <hitroll>190</hitroll>
+      <damroll>50</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="3143706"/>
+    <affected one="2096" two="0" three="0" four="0"/>
+    <attack type="8"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="15" sides="15" add="190"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnEntry" argtype="VOID" argument="NONE">
+      <sideterm number="Darkfriend" not="TRUE" argtype="VOID" argument="NONE"/>
+      <action number="ActionTo" argtype="STRING" argument="kill"/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="6236" name="dfokay myrrdraal" special="NONE">
+    <description>The Myrrdraal looks ready for battle, you get the sense that it does
+not like being way up here in the blight away from people it can
+kill and torture. The myrrdraal wants blood and it wants it now.
+</description>
+    <shortdesc>a deadly looking Myrrdraal</shortdesc>
+    <longdesc>A deadly looking Myrrdraal
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="195" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="30" dsize="1000" bonus="2500"/>
+      <move ndize="10" dsize="100" bonus="2500"/>
+      <ac>-200</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>150</exp>
+      <hitroll>200</hitroll>
+      <damroll>50</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="3143706"/>
+    <affected one="67632" two="0" three="0" four="0"/>
+    <attack type="3"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="30" sides="20" add="200"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnEntry" argtype="VOID" argument="NONE">
+      <sideterm number="Guild" not="FALSE" argtype="STRING" argument="forsaken"/>
+      <action number="ActionTo" argtype="STRING" argument="kneel"/>
+    </mobprog>
+    <mobprog main="OnEntry" argtype="VOID" argument="NONE">
+      <sideterm number="Darkfriend" not="TRUE" argtype="VOID" argument="NONE"/>
+      <action number="ActionTo" argtype="STRING" argument="kill"/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="6237" name="dreadlord darkfriend man lord df" special="NONE">
+    <description>The dreadlord is dressed in some sort of black uniform, with an odd
+cape that seems to hang motionless in the wind, much like that of
+a Fades. He looks to be in his mid-30s but then you notice his eyes,
+and you think he must be much older than that. He walks with an air
+of power and knowledge borne of a certainty that one day the Great
+Lord will Return.
+</description>
+    <shortdesc>\c23A dreadlord\c00\c03</shortdesc>
+    <longdesc>\c23A dreadlord watches over the camp here.\c00\c03
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="199" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="30" dsize="0" bonus="2000"/>
+      <move ndize="10" dsize="100" bonus="2000"/>
+      <ac>-150</ac>
+      <gold>150</gold>
+      <bankgold>0</bankgold>
+      <exp>150</exp>
+      <hitroll>200</hitroll>
+      <damroll>50</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="5246990"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="12"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="10" sides="20" add="200"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="6252" name="pitmob aura warning" special="NONE">
+    <description>It looks evil smartass.
+</description>
+    <shortdesc>\c23An evil aura\c00</shortdesc>
+    <longdesc>\c23An evil aura\c00
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="199" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="1" bonus="29000"/>
+      <move ndize="10" dsize="100" bonus="29000"/>
+      <ac>-200</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>200</hitroll>
+      <damroll>50</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="2088986"/>
+    <affected one="264240" two="0" three="0" four="0"/>
+    <attack type="12"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="30" sides="127" add="200"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="6253" name="forger thakan'dar" special="NONE">
+    <description>The forger looks as if it has been hacked from the very mountain.
+It is not alive in a true sense, but rather is a mindless slave with
+but one purpose, to make swords for the Myrrdraal.
+</description>
+    <shortdesc>\c23A forger\c00</shortdesc>
+    <longdesc>\c23A slow moving forger\c00
+</longdesc>
+    <title/>
+    <chardata gender="NEUTRAL" class="Adventurer" level="199" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="1" bonus="25000"/>
+      <move ndize="10" dsize="100" bonus="25000"/>
+      <ac>-200</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>200</hitroll>
+      <damroll>50</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="3137562"/>
+    <affected one="264240" two="0" three="0" four="0"/>
+    <attack type="7"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="30" sides="127" add="200"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnRandom" argtype="INT" argument="25">
+      <action number="Action" argtype="STRING" argument="leave"/>
+      <action number="Emote" argtype="STRING" argument="The forger grabs the next victim in line and drags them inside the forge."/>
+      <action number="Action" argtype="STRING" argument="enter forge"/>
+    </mobprog>
+    <mobprog main="OnAction" argtype="STRING" argument="take">
+      <action number="ActionTo" argtype="STRING" argument="kill"/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="6254" name="forger thakan'dar" special="NONE">
+    <description>The forger looks as if it has been hacked from the mountains. It is
+not alive in any true sense, but rather is a mindless slave made for
+one purpose, to forge Myrrdraal blades.
+</description>
+    <shortdesc>\c23A forger\c00</shortdesc>
+    <longdesc>\c23A slow moving forger\c00
+</longdesc>
+    <title/>
+    <chardata gender="NEUTRAL" class="Adventurer" level="199" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="1" bonus="25000"/>
+      <move ndize="10" dsize="100" bonus="25000"/>
+      <ac>-200</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>200</hitroll>
+      <damroll>50</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="3137562"/>
+    <affected one="264240" two="0" three="0" four="0"/>
+    <attack type="7"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="30" sides="127" add="200"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnRandom" argtype="INT" argument="99">
+      <action number="Action" argtype="STRING" argument="enter forge"/>
+    </mobprog>
+    <mobprog main="OnRandom" argtype="INT" argument="25">
+      <action number="Action" argtype="STRING" argument="leave"/>
+      <action number="Pause" argtype="INT" argument="2"/>
+      <action number="Emote" argtype="STRING" argument="The forger carries a new sword to the river, to quench it in the tainted water."/>
+      <action number="Pause" argtype="INT" argument="2"/>
+      <action number="Action" argtype="STRING" argument="enter forge"/>
+    </mobprog>
+    <mobprog main="OnAction" argtype="STRING" argument="take">
+      <action number="ActionTo" argtype="STRING" argument="kill"/>
+    </mobprog>
+    <mobprog main="OnEntry" argtype="STRING" argument="take">
+      <sideterm number="Darkfriend" not="TRUE" argtype="VOID" argument="NONE"/>
+      <action number="ActionTo" argtype="STRING" argument="kill"/>
+      <action number="Shout" argtype="VOID" argument="NONE"/>
+    </mobprog>
+    <mobprog main="OnLeave" argtype="STRING" argument="take">
+      <sideterm number="Darkfriend" not="TRUE" argtype="VOID" argument="NONE"/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="ActionTo" argtype="STRING" argument="kill"/>
+      <action number="Shout" argtype="VOID" argument="NONE"/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="6255" name="forge victim woman" special="NONE">
+    <description>The woman has a knowing look in her eyes, that is somewhat haunting
+as if hse knows what horror she is about to face. It looks as if
+she has perhaps been here a while and not been fed, but then its
+not her body the Forgers are going to be using.
+</description>
+    <shortdesc>a forge victim</shortdesc>
+    <longdesc>A poor tired starving woman awaits death here.
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="5" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="50" bonus="5"/>
+      <move ndize="10" dsize="100" bonus="5"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>20</exp>
+      <hitroll>2</hitroll>
+      <damroll>2</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1048714"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Sitting" other="Sitting"/>
+    <damage num="1" sides="6" add="2"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnRandom" argtype="INT" argument="25">
+      <action number="Emote" argtype="STRING" argument="A forger emerges from the Forge."/>
+      <action number="Pause" argtype="INT" argument="2"/>
+      <action number="Action" argtype="STRING" argument="scream"/>
+      <action number="Emote" argtype="STRING" argument="The forger drags to woman inside the forge."/>
+      <action number="Emote" argtype="STRING" argument="\c23A forger\c00 enters \c23The Forge\c00"/>
+      <action number="PurgeMob" argtype="VOID" argument="NONE"/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="6256" name="forge victim wounded man" special="NONE">
+    <description>The poor man is bleeding from all manner of massive wounds, he seems
+to be fighting against his fate, foolish when you notice the brand
+on his chest marking him a Darkfriend. Some darkfriends just don't
+seem to understand the depths of their oaths it seems.
+</description>
+    <shortdesc>a forge victim</shortdesc>
+    <longdesc>A wounded man lies here dying.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="15" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="2" dsize="0" bonus="150"/>
+      <move ndize="10" dsize="100" bonus="150"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>20</exp>
+      <hitroll>10</hitroll>
+      <damroll>10</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="4194314"/>
+    <affected one="8388608" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Incapacitated" other="Incapacitated"/>
+    <damage num="2" sides="8" add="10"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnRandom" argtype="INT" argument="15">
+      <action number="Emote" argtype="STRING" argument="\c23A forger\c00 comes out of \c23The Forge\c00"/>
+      <action number="Pause" argtype="INT" argument="1"/>
+      <action number="Emote" argtype="STRING" argument="\c23The forger\c00 drags a wounded man inside the forge."/>
+      <action number="Pause" argtype="INT" argument="1"/>
+      <action number="Emote" argtype="STRING" argument="\c23A forger\c00 enters \c23The Forge\c00."/>
+      <action number="PurgeMob" argtype="VOID" argument="NONE"/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="6260" name="trolloc fog shrouded" special="NONE">
+    <description>Only a vague shadow in the fog is the tall form of the snarling
+trolloc. The red glow of the lava rivers diffusing through the
+fog reflects off his chain armour and his large curved sword.
+</description>
+    <shortdesc>\c00a \c13fog\c00 shrouded Trolloc</shortdesc>
+    <longdesc>The shadowy form of a trolloc is partially hidden in the thick fog.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="100" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="6" dsize="500" bonus="600"/>
+      <move ndize="10" dsize="100" bonus="600"/>
+      <ac>-80</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>120</exp>
+      <hitroll>50</hitroll>
+      <damroll>50</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="2097160"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="12" sides="15" add="50"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="6261" name="myrddraal fog shrouded" special="NONE">
+    <description>Only a vague shadow in the fog, the thin and tall form of the
+Myrddraal is humanlike. A flowing black cloak follows his flowing
+movements and before long the swirling fog has swallowed his form
+once more.
+</description>
+    <shortdesc>\c00a \c13fog \c00shrouded Myrddraal</shortdesc>
+    <longdesc>A dark from of a Myrddraal is shrouded by the thick fog.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="180" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="6" dsize="800" bonus="400"/>
+      <move ndize="10" dsize="100" bonus="400"/>
+      <ac>-200</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>120</exp>
+      <hitroll>50</hitroll>
+      <damroll>50</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="2097160"/>
+    <affected one="32" two="0" three="0" four="0"/>
+    <attack type="3"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="15" sides="35" add="50"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="6299" name="lava" special="NONE">
+    <description>\c08L\c10a\c08v\c10a\c00
+</description>
+    <shortdesc>\c08L\c10a\c08v\c10a\c00</shortdesc>
+    <longdesc>\c08L\c10a\c08v\c10a\c00
+</longdesc>
+    <title/>
+    <chardata gender="NEUTRAL" class="Adventurer" level="199" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="1" bonus="29500"/>
+      <move ndize="10" dsize="100" bonus="29500"/>
+      <ac>-200</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>200</hitroll>
+      <damroll>50</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="16392"/>
+    <affected one="2096" two="0" three="0" four="0"/>
+    <attack type="12"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="30" sides="127" add="200"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnMobAttack" argtype="VOID" argument="NONE">
+      <action number="Cast" argtype="STRING" argument="burn"/>
+      <action number="Cast" argtype="STRING" argument="burn"/>
+      <action number="Cast" argtype="STRING" argument="burn"/>
+      <action number="Cast" argtype="STRING" argument="burn"/>
+      <action number="Cast" argtype="STRING" argument="burn"/>
+      <action number="Cast" argtype="STRING" argument="burn"/>
+      <action number="Cast" argtype="STRING" argument="burn"/>
+      <action number="Cast" argtype="STRING" argument="burn"/>
+      <action number="Cast" argtype="STRING" argument="burn"/>
+      <action number="Cast" argtype="STRING" argument="burn"/>
+      <action number="Cast" argtype="STRING" argument="burn"/>
+    </mobprog>
+    <mobprog main="OnAction" argtype="STRING" argument="leave grasp weave tgrasp cast">
+      <action number="ActionTo" argtype="STRING" argument="kill"/>
+    </mobprog>
+  </mobile>
+</mobiles>

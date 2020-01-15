@@ -1,0 +1,1970 @@
+#16000
+postmaster Jonah Tuatha'an~
+Jonah the Tuatha'an postmaster~
+Jonah, the Tuatha'an Postmaster, would be happy to deliver your message.
+~
+Jonah's wagon is cluttered with many sorted stacks of letters,
+of all shapes and sizes. Every now and then Jonah's helpers
+scurry in and deliver a stack of mail or pick up a stack to
+be taken to a destination somewhere outside of Talain forest.
+~
+1048586 0 0 E
+0 20 10 838 1d100+0 1d1+0
+0 0
+8 8 1 969
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnEntry & ! Invisible & ! Sneaking & Guild "tuatha'an"
+SayTo "good day, friend. something i can do for you?"
+End
+Q
+E
+#16001
+Alben~
+Alben the Tuatha'an merchant~
+Alben stands up from his rocking chair as you enter, smiling a broad smile. "You are welcome here, friend."
+~
+A very old follower of the leaf, Alben has given up his tooling
+days and now sits in his wagon selling the various things he
+has gathered along the way.  As you enter his wagon he smiles
+brightly and greets you with, \c04"Have you Found the Song?"\c00
+~
+1048586 0 0 E
+0 20 10 838 1d100+0 1d1+0
+0 0
+8 8 1 969
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnSay "hello"
+Say "greetings, friend. can i interest you in an item?"
+End
+Q
+E
+#16002
+Florria the Tuatha'an baker~
+Florria the Tuatha'an baker~
+Noticing your entrance, Florria pauses in her task of icing a large chocolate cake, wipes her hands on her apron, and walks over to greet you. "Welcome, friend. Care to try something?"
+~
+A plump and jovial woman looks up as you enter her
+wagon. She brushes the flour off her hand smooths
+back an unruly strand of hair.  Her cheeks are rosey 
+and her smile radiant.  \c05"Welcome my friend,
+have you found the Song?"\c00 she inquires as
+you enter.
+~
+1048586 0 0 E
+0 20 10 838 1d100+0 1d1+0
+0 0
+8 8 2 969
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnRandom 100
+Say "helo"
+End
+Q
+E
+#16003
+Reis tinker tuatha'an~
+Reis, the Tuatha'an cook~
+Reis stands next to the fire, stirring the simmering stew with a large metal ladle. It looks almost ready.
+~
+Reis tastes the stew carefully and mutters something about a
+burned tongue.
+He is a somewhat large man with dark brown hair and brown
+eyes. The way he expertly adds spices to the cookpot over 
+the fire, it is obvious that cooking for the Tuatha'an is 
+his primary duty, aside from searching for the song. He is 
+dressed in the usual tinker \c01c\c03o\c02l\c04o\c05r\c06s\c00 --
+anything goes.
+~
+1048586 0 0 E
+200 20 10 838 1d100+0 1d1+0
+0 0
+8 8 1 969
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnRandom 5
+Emote "reis takes his ladle out of the cookpot, blows on it, and tastes the stew. he leans back and smiles, satisfied."
+End
+OnEntry
+Say "greetings, friend.  all are welcome here."
+End
+OnSayTo "cooking"
+Say "i am making my famous vegetable herb stew. best get a bowl."
+End
+OnSayTo "hungry" & Guild "tuatha"
+SayTo "you`re hungry, are you? well, let me fix that."
+Emote "reis ladles several spoonfuls of the simmering stew into a large ceramic bowl."
+Give 16104
+End
+Q
+E
+#16004
+kitten calico patch~
+Patch, a tiny calico kitten~
+A tiny calico kitten is playing here.
+~
+As you pick up Patch to look at her more carefully,
+you notice that she is not much bigger than your hands.
+She has brown, black, and white fur that is patterned
+in such a way as to make her, well, calico. Her
+little pink nose twitches from the exitement of discovering
+new things.
+~
+10 0 0 E
+1 -180 -10 838 1d100+15000 30d30+50
+0 0
+8 8 2 969
+BareHandAttack: 9
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnMobEntry
+Emote "patch looks up and, startled, runs behind a tree trunk. she slowly peeks her head out to see what all the commotion was."
+End
+OnRandom 10
+Emote "patch begins climbing up the trunk of the nearest tree, then stops three feet up when she realizes she doesn't know her way down."
+End
+OnRandom 10
+Emote "patch bounds past you, chasing a floating dogwood petal."
+End
+Q
+E
+#16005
+boy child tinker tuatha'an~
+a Tuatha'an boy~
+A small Tuatha'an boy is playing happily here.
+~
+This small boy is dressed in brightly colored clothing and looks
+as if he has not a care in the world.
+~
+72 0 0 E
+1 20 10 838 1d100+0 1d1+0
+0 0
+8 8 1 969
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+E
+#16006
+girl tuatha'an tinker~
+a small Tuatha'an girl~
+a small Tuatha'an girl runs by you holding a doll.
+~
+Before you stands a small girl in \c14Bright\c00 clothing and holding a doll.
+~
+72 0 0 E
+1 20 10 838 1d100+0 1d1+0
+0 0
+8 8 2 969
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+E
+#16007
+deer doe~
+a young doe~
+A young, innocent-looking doe stands here, nibbling at something on the ground.
+~
+The deer is light brown with a few white spots and a tufted tail.
+She picks her head up and sniffs at the air.
+~
+262152 0 0 E
+20 14 8 838 2d20+500 3d8+6
+0 95
+8 8 2 969
+BareHandAttack: 6
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Bash: 100
+Kick: 100
+E
+#16008
+mastiff~
+a Mastiff~
+a Mastiff stands here guarding the entrance to the Tinker Guild Board.
+~
+A huge \c23black\c00 dog stands here, eyeing you. She seems
+perfectly calm, although she looks ready to attack at any
+moment.
+~
+10 0 0 E
+200 -20 -20 838 30d100+30000 30d100+40
+0 0
+8 8 2 969
+BareHandAttack: 8
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnAction "east" & ! Guild "tuatha'an"
+Stop
+SayTo "only tinkers are allowed in there!"
+ActionTo "growl"
+End
+OnEntry & Guild "tuatha'an"
+Action "emote notices your \c01c\c00\c02o\c00\c03l\c00\c04o\c00\c05r\c00\c06f\c00\c07u\c00\c01l\c00 clothing and smiles."
+SayTo "welcome to the camp tuatha'an!  the guild board lies to the east."
+End
+Q
+E
+#16009
+jeris peddler~
+Jeris, the Peddler~
+Jeris stands here with a \c01c\c00\c02o\c00\c03l\c00\c04o\c00\c05r\c00\c06f\c00\c07u\c00\c01l\c00 cart of objects
+~
+A wiry \c23Gray\c00 Haired man stands here selling items of countless
+value.
+~
+10 0 0 E
+200 20 10 838 1d100+0 1d1+0
+0 0
+8 8 1 969
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+E
+#16010
+socrates dog~
+Socrates~
+a Large dog stands here guarding the Tinkers Personal Room.
+~
+A huge black dog stands here, eyeing you. He seems perfectly calm
+alothough obviously ready to attack.
+~
+10 0 0 E
+200 20 10 838 1d100+0 1d1+0
+0 0
+8 8 0 969
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnEntry & ! Guild "tuatha'an"
+Action "unlock down"
+Action "open down"
+Force "down"
+Action "close down"
+Action "lock down"
+End
+OnSayTo "allow" & Carrying 16451
+Action "unlock down"
+Action "open down"
+Action "down"
+End
+OnSayTo "guard" & Carrying 16451
+Action "unlock up"
+Action "open up"
+Action "up"
+End
+Q
+E
+#16012
+Seldan~
+Seldan, keeper of the stables~
+Seldan stands here, whistling a little tune as he brushes one of his horses. He looks up and says, "Welcome, friend. Are you looking for a horse?"
+~
+Seldan is short and fairly wide, though his size is all muscle, not fat. He wears a \c08red\c00
+shirt underneath a pair of \c11dark blue\c00 overalls, and has a piece of straw hanging from
+his mouth. He looks jovial, though a bit rough around the edges.
+~
+8 0 0 E
+0 20 10 838 1d100+0 1d1+0
+0 0
+8 8 1 969
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+E
+#16013
+horse Liast draft~
+a large draft horse~
+A tall draft horse stands here.
+~
+A large draft horse, most likely of a northland breed, stands here
+occasionally bowing its head.  Looking curiously at everyone through
+large, black eyes, he appears to be a very friendly animal. Mainly
+brown in color, he does have white stars above his hoofs and a small
+white diamond above his eyes.
+~
+138 0 0 E
+50 10 0 838 3d100+1000 6d6+10
+0 50
+8 8 0 969
+BareHandAttack: 6
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnTell "pull wagon" & Guild "tuatha"
+Action "pull wagon"
+End
+OnTell "dontpull" & Guild "tuatha"
+Action "dontpull"
+End
+OnTell "north" & Guild "tuatha"
+Move "north"
+End
+OnTell "east" & Guild "tuatha"
+Move "east"
+End
+OnTell "west" & Guild "tuatha"
+Move "west"
+End
+OnTell "up" & Guild "tuatha"
+Move "up"
+End
+OnTell "down" & Guild "tuatha"
+Move "down"
+End
+OnTell "northeast" & Guild "tuatha"
+Move "northeast"
+End
+OnTell "southeast" & Guild "tuatha"
+Move "southeast"
+End
+OnTell "southwest" & Guild "tuatha"
+Move "southwest"
+End
+OnTell "northwest" & Guild "tuatha"
+Move "northwest"
+End
+OnTell "paw" & Guild "tuatha"
+Emote "a tall draft horse lifts up his leg and paws the ground."
+End
+OnTell "snort" & Guild "tuatha"
+Emote "a tall draft horse's nostrils flare as he snorts loudly."
+End
+OnTell "whinny" & Guild "tuatha"
+Emote "a tall draft horse whinnies loudly as he sees something that startles him."
+End
+OnTell "eat" & Guild "tuatha"
+Emote "a tall draft horse whinnies loudly, informing liast that it's feeding time."
+End
+Q
+E
+#16014
+mare black gemini horse~
+a black mare with a brown tail~
+A beautiful black mare stands here, switching its tail nervously.
+~
+You see a black mare with a big bushy brown tail. She swishes her tail often,
+trying to chase away the flies that are bothering her. What catches your eye
+is the rider of the horse. His pants appear to be very comfortable, and his
+shirt is quite baggy. As you turn away you see the \c01c\c02o\c03l\c04o\c05r\c06f\c07u\c01l\c00 beaded
+tassels hanging on the side of the saddle.
+~
+394 0 0 E
+50 10 10 838 3d100+1000 6d6+10
+0 50
+8 8 2 969
+BareHandAttack: 6
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnTell "pull wagon" & Guild "tuatha"
+Action "pull wagon"
+End
+OnTell "dontpull" & Guild "tuatha"
+Action "dontpull"
+End
+OnTell "north" & Guild "tuatha"
+Move "north"
+End
+OnTell "east" & Guild "tuatha"
+Move "east"
+End
+OnTell "south" & Guild "tuatha"
+Move "south"
+End
+OnTell "west" & Guild "tuatha"
+Move "west"
+End
+OnTell "up" & Guild "tuatha"
+Move "up"
+End
+OnTell "down" & Guild "tuatha"
+Move "down"
+End
+OnTell "northeast" & Guild "tuatha"
+Move "northeast"
+End
+OnTell "southeast" & Guild "tuatha"
+Move "southeast"
+End
+OnTell "southwest" & Guild "tuatha"
+Move "southwest"
+End
+OnTell "northwest" & Guild "tuatha"
+Move "northwest"
+End
+OnTell "leave"
+Action "leave"
+End
+Q
+E
+#16015
+Ivon~
+Ivon~
+Ivon, Wanderer of the Tuatha'an, is standing here.
+~
+Ivon is a lean, agile man with thick black hair that clings to his sweaty forehead.
+~
+8 0 0 E
+200 -20 10 838 8d100+10000 8d100+40
+0 150
+8 8 1 969
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnAttack
+Stop
+Action "gasp"
+SayTo "my friend, there is no need for that! go eat some leaves and i'm sure you'll feel better."
+End
+OnMobEntry
+Say "greetings! my friend kirshai and i are travelling merchants. please, step into our wagon and consider our goods."
+End
+OnMobLeave
+Action "pull eqwagon"
+End
+OnAction "pull wagon"
+Stop
+SayTo "hey, \c07friend\c00, this is my wagon. pull something else, okay?"
+End
+OnAction "pull shop"
+Stop
+SayTo "hey, \c07friend\c00, this is my wagon. pull something else, okay?"
+End
+OnEntry & Grasping
+Force "release"
+Force "release"
+Force "release"
+Force "release"
+End
+OnAction "grasp gras gra gr"
+Stop
+End
+OnActionTo "weawve cast weav cas wea ca c"
+Stop
+End
+Q
+E
+#16016
+Kirshai~
+Kirshai~
+Kirshai stands here, a travelling Tinker ready to sell all that he has made and collected.
+~
+Kirshai is a jovial man, of middle age, and somewhat bald. He wears colorful
+clothing and seems ready to smile at any moment, if he is not already.
+~
+8 0 0 E
+0 20 10 838 1d100+0 1d1+0
+0 0
+8 8 1 969
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+E
+#16017
+Kaerie~
+Kaerie~
+Kaerie wipes her hands on her apron and looks up at your entrance.
+~
+Kaerie is a thin, wiry woman of middle age. Streaks of gray in her braided
+black hair make her appear polished somehow, though the clothes she wears
+are the usual Tuatha'an clothing: very colorful and free-flowing. Her hair
+falls down almost to her waist, standing out in contrast to the bright \c13blue\c00
+blouse she wears, which itself clashes with her \c08red\c00 and \c10yellow\c00 skirt.
+~
+8 0 0 E
+1 20 10 838 1d100+0 1d1+0
+0 0
+8 8 2 969
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnEntry
+Emote "kaerie pauses in her work long enough to stand up and walk to the counter at your entrance."
+SayTo "greetings, friend. care for a scoop of refreshing ice cream?"
+End
+OnRandom 5
+Emote "kaerie picks up a small knife and begins to cut shavings from a large chunk of smooth milk chocolate."
+End
+OnRandom 5
+Emote "one of kaerie's daughters brings in a bucket of freshly-picked strawberries and begins washing and slicing them."
+End
+OnRandom 5
+Emote "kaerie takes a handful of mint leaves and begins to extract the flavor using a large polished rock and grinding stone."
+End
+OnRandom 5
+Emote "kaerie motions to one of her daughters, who brings a pitcher of cream to the large bucket kaerie is standing at and pours it in."
+Emote "kaerie adds a bowl of juicy-looking berries, some sugar, ice, and a pinch of salt."
+Emote "kaerie's daughter places the top on the bucket and starts to turn the lever slowly with a purposeful look on her face."
+End
+Q
+E
+#16018
+Tayn~
+Tayn~
+Tayn, Wanderer of the Tuatha'an, stands here.
+~
+Tayn has thick, curly black hair and a square jaw. He wears the colorful
+clothing of a Tuatha'an Wanderer. Sweat runs down his forehead from the
+effort of pulling his wagon.
+~
+8 0 0 E
+10 20 10 838 1d100+0 1d1+0
+0 0
+8 8 1 969
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnAttack
+Stop
+ActionTo "peer"
+SayTo "hmmmm....if i didn't know any better, i would think you were trying to attack me. nice try."
+End
+OnMobLeave
+Action "pull icecreamwagon"
+End
+OnMobEntry
+Say "greetings! my sister and i are but simple travelling people."
+Say "this weather is so hot. would you care to enter our wagon and share some of my sister's wonderful ice cream?"
+End
+OnAction "pull wagon"
+Stop
+SayTo "pardon me, but this is our wagon. not to be rude, but get your own."
+End
+OnAction "pull shop"
+Stop
+SayTo "pardon me, but this is our wagon. not to be rude, but get your own."
+End
+OnEntry & Grasping
+Force "release"
+End
+OnAction "grasp gras gra gr"
+Stop
+ActionTo "frown"
+End
+OnActionTo "weave cast weav cas wea ca c"
+Stop
+ActionTo "frown"
+End
+Q
+E
+#16019
+tara tiganza dancer girl tuatha'an~
+Tara the slim Tuatha'an girl~
+Tara, a young Tuatha'an dancer, sways seductively in the motions of the Tiganza, sending your pulse racing.
+~
+Tara is a lithe, slim young Tuatha'an girl with \c03copper curls\c00 flowing over her 
+shoulders and a sultry smile just for you.  Her \c09emerald \c00eyes \c01smolder\c00, fastened 
+completely on you as her entire form sways seductively in the motions of the 
+Tiganza.  Her hips move ever so slowly, in perfect rhythm with the soft crooning
+music in the background.  Your pulse races as she approaches you, her arms 
+reaching towards you invitingly, an unheard whisper escaping her parted lips.
+
+~
+1048794 0 500 E
+20 20 10 838 1d100+0 1d1+0
+0 0
+8 8 2 969
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnRandom 25
+Emote "tara's jewel-like \c09emerald eyes \c00catch your gaze as she beckons you, \c08ruby\c00 lips curving into an inviting smile."
+End
+OnRandom 20
+Emote "tara's hips move as if possessed, her lithe form coming closer as her gaze darts your way, smoldering with desire."
+End
+OnAction "pinch"
+Emote "tara gasps and \c01blushes \c00slightly, lowering her eyes.  however, judging by her hidden smile she is not displeased."
+End
+OnAction "smile tara"
+Emote "tara returns your smile, her \c08ruby lips\c00 curving enticingly as she wets them with her tongue, breathing deeply."
+End
+OnActionTo "goose"
+Emote "tara frowns and pushes you away, her eyes flaring angrily as she eyes another, one with some class."
+End
+OnActionTo "kiss"
+Emote "tara \c01blushes crimson\c00 as your lips touch hers, pulling away shyly, the smell of her silken hair lingering."
+End
+OnActionTo "french"
+Emote "tara holds you back deftly with a graceful finger, her lips curving into a wickedly playful smile."
+Stop
+End
+OnActionTo "cuddle"
+Emote "tara's body entwines about your own, her hips still moving rhythmically as her deep breaths caress your neck."
+End
+OnAttack
+Stop
+ActionTo "gasp"
+SayTo "certainly there is no need for that? just let me dance, and i will calm you."
+Emote "tara's \c09emerald eyes\c00 sparkle as though she knows the tiganza does little to calm \c07anything\c00."
+End
+OnActionTo "slap"
+Emote "tara gasps in astonishment! her \c09emerald eyes\c00 glisten with tears as she sobs softly, her expression hurt."
+End
+OnActionTo "dance"
+Stop
+Force "emote attempts to match tara's seductive motions, smiling uncertainly."
+Emote "tara smiles encouragingly, her fingers sliding gracefully around your neck as she leads you in the complex movements. "
+End
+OnAction "whistle"
+Emote "tara stifles a giggle behind a pleased smile, turning to you and stroking your cheek playfully."
+End
+OnActionTo "wink"
+Emote "tara smiles, her \c08ruby lips \c00parting slowly as she blows a kiss in your direction and winks back at you."
+End
+OnActionTo "stare"
+Emote "tara smiles as she notices you watching, twirling gracefully, her ample bosom quivering slightly."
+End
+OnActionTo "flirt"
+Emote "tara wets her \c08ruby lips\c00 with her tongue and takes your hand, pulling you gently towards the light."
+SayTo "\c06dance with me pretty one.\c00"
+End
+OnActionTo "grope"
+Stop
+Force "emote attempts to grope the graceful form of tara as she sways through the seductive forms of the tiganza."
+Emote "tara twirls skillfully out of the way, never missing a step, stepping lightly out of your reach."
+Force "remove 1"
+End
+OnActionTo "fondle"
+Emote "tara gasps, her face flushing \c01deep crimson \c00as pushes your eager hands away."
+ActionTo "slap"
+Doing "is rubbing his/her cheek in an attempt to hide the \c08glaring red handprint\c00."
+End
+OnActionTo "hug"
+Emote "tara beams with pleasure and throws her arms around you, pressing her \c08ruby lips \c00softly to yours and kissing you fully."
+SayTo "\c06you are so sweet pretty one, i do hope you will stay with us.\c00"
+Emote "tara's \c09emerald stare \c00holds your for a moment, the taste of her \c08lips\c00 still lingering on your own."
+End
+Q
+E
+#16020
+Jored tuathaan tinker~
+Jored the \c02T\c03u\c01a\c04t\c05h\c06a\c07'\c02a\c03n\c00 performer~
+\c03Jored is balancing lightly on his feet here, brightly colored \c02T\c03u\c01a\c04t\c05h\c06a\c07'\c02a\c03n\c00 \c03clothing naming him as one of those entertaining people at the festival.
+~
+Jored is a man of medium height and build, with reddish hair and dark,
+dark green eyes. His natural standing posture is such that he looks
+as if he could jump into a flip and begin dancing or singing at any
+time. He wears the brightly colored clothing of the \c02T\c03u\c01a\c04t\c05h\c06a\c07'\c02a\c03n\c00.
+For a list of tricks he would be happy to perform for you, sayto him, 'list'.
+~
+10 0 0 E
+5 20 10 838 1d100+0 1d1+0
+0 0
+8 8 1 969
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnAttack
+Stop
+Force "emote tries to lunge at jored, but jored's quick feet jump him out of the way."
+Force "emote goes sprawling in the dirt where jored once stood."
+Emote "jored looks shocked and hurt."
+SayTo "what did i do? i was only trying to perform for everyone. come, friend, let me perform a trick for you."
+Force "emote stands up with jored's assistance."
+End
+OnSayTo "list"
+Emote "acrobatics"
+Emote "juggling"
+Emote "playing with fire"
+Emote "magic trick 1"
+Emote "magic trick 2"
+End
+OnMobEntry
+Say "greetings all! i hope you are enjoying our festival."
+Emote "jored bows with a flourish of his orange cloak."
+Say "i am a performer. i may not be as proficient as a gleeman at some things, but i can still perform various tricks."
+Say "say 'list' to me if you want to know what they are."
+End
+OnSayTo "acrobatics"
+SayTo "of course!' he grins. 'are you ready?"
+Pause 5
+Emote "suddenly jored \c14leaps\c00 up into the air and, tucking his body into a tight ball, he flips several times."
+Pause 2
+Emote "he lands on the ground, at exactly the same place from which he leapt."
+Pause 6
+Emote "jored sweeps a wide-mouthed grin at everyone as he trots off a few paces..."
+Pause 10
+Emote "...and then bounds past you, in a full run, and launches himself into a somersault, with three back-handsprings in a row!"
+Pause 8
+Emote "ending the run with a triple-twisting flip, he lands to face you and flashes you a smile, then seems to dive toward the ground."
+Pause 6
+Emote "landing on his hands, jored walks into the center of the crowd that has formed, completely inverted and in perfect balance."
+Pause 12
+Emote "jored remains balanced as he twists himself around on his hands like a corkscrew..."
+Pause 8
+Emote "...and then vaults himself into a twisting half-flip, landing perfectly on his feet, all smiles."
+Pause 5
+Action "bow"
+End
+OnSayTo "juggling"
+ActionTo "nod"
+Action "think"
+Pause 4
+Action "snap"
+Say "i think i will start with my old favorite."
+Pause 5
+Emote "jored produces five fist-sized balls of different colors from his \c01o\c03r\c01a\c03n\c01g\c03e\c00 cloak."
+Pause 4
+Emote "he first tosses the \c09green\c00 ball into the air with his right hand...then the \c12pink\c00..."
+Pause 2
+Emote "and then in quick succession, the \c08red\c00, \c10gold\c00, and \c13blue\c00 balls are flying through the air."
+Pause 3
+Emote "jored flicks his wrist slightly, and suddenly the balls are flying through the air in a double loop."
+Pause 2
+Emote "\c09c\c12o\c08l\c10o\c13r\c00 blends with color as the balls start looping faster and faster in the air."
+Pause 6
+Emote "suddenly, jored whisks his left hand behind his back and is juggling all five balls with one hand!"
+Pause 2
+Emote "jored makes a motion behind his back, and there in his left hand you see four weighted handkerchiefs..."
+Emote "...of different \c09c\c12o\c08l\c10o\c13r\c11s\c00, of course."
+Pause 2
+Emote "jored tosses the handkerchiefs one-by-one several paces into the air, in a gigantic loop."
+Pause 2
+Emote "each handkerchief spins and whirls around its weight as it flies through the air in the loop."
+Pause 3
+Emote "jored maintains the double loop of the balls with one hand, and the spinning kerchiefs with the other."
+Emote "the sight is dazzling, with \c09c\c12o\c08l\c10o\c13r\c11s\c00 blending and separating, amazing to behold."
+Pause 7
+Emote "jored expertly begins to combine the two loops, catching balls and kerchiefs and sending them flying in a frenzy."
+Pause 4
+Emote "the handkerchiefs and colored balls are now flying in a single circle peaking at least two paces above jored's head."
+Pause 5
+Emote "after playing with various loops and turns, jored plucks each kerchief one-by-one out of the loop..."
+Pause 2
+Emote "...and tosses each one to a young boy or girl in the crowd that has gathered to watch."
+Pause 4
+Emote "the crowd awaits breathlessly to see jored's next move."
+Pause 5
+Emote "suddenly jored snatches four of the five balls from the air while tossing the last one high into the air."
+Pause 3
+Emote "the last ball flies higher and higher, then seems to stop in midair before beginning to plummet towards the ground."
+Pause 3
+Emote "it bounces once at jored's feet, and lands delicately in his outstretched hand."
+Pause 1
+Emote "the other balls have vanished, and jored is left holding the one ball he started with - a \c09bright green\c00 sphere."
+Pause 2
+Say "keep the kerchiefs, my friend, as a token of peace and the celebration of our festival!"
+Pause 1
+Action "bow"
+End
+OnActionTo "clap"
+Emote "jored bows deeply, flourishing his bright \c08o\c10r\c08a\c10n\c08g\c10e\c00 cloak."
+SayTo "thank you, my friend, i am glad you were entertained."
+End
+OnActionTo "applaud"
+Pause 2
+Emote "jored smiles brightly and whirls around in a full turn, hands thrown up, \c07silver\c00-fibered cloak flashing in the light."
+Say "thank you! perhaps i can perform again for you?"
+End
+OnSayTo "playing with fire"
+ActionTo "grin"
+SayTo "so danger thrills you, does it? then let me begin!"
+Pause 2
+Emote "jored's hands come out from his cloak grasping several sticks wrapped at the end in some kind of cloth."
+Pause 1
+Emote "he places the sticks on the ground and stands up holding a jar of a viscous liquid, and pieces of flint."
+Pause 3
+Emote "jored dips the end of one of the sticks in cloth, and strikes at the flint to create a spark...."
+Pause 4
+Emote "\c08*\c10*\c08*\c10p\c08o\c10o\c08f\c10*\c08*\c10*\c00"
+Pause 1
+Emote "the soaked cloth lights on \c01f\c03i\c01r\c03e\c00, and jored holds it above his head, the flames dancing on the stick."
+Pause 4
+Emote "jored picks up another stick, soaks each end in the liquid, and lights both ends on fire casually..."
+Pause 4
+Emote "...and begins to twirl the flaming stick in his left hand, creating a circle of fire trailing around his hand."
+Pause 3
+Emote "jored bends his left arm just slightly, the fire coming even closer to his face."
+Pause 5
+Emote "he delicately balances the second flaming stick in the crook of his arm, all the while twirling the other stick."
+Pause 3
+Emote "the growing crowd emits a unified gasp."
+Pause 7
+Emote "jored reaches with his free right hand into his cloak and withdraws a tiny jar of \c13b\c00\c06l\c13u\c00\c06e\c00 liquid."
+Pause 5
+Emote "he deftly opens the jar and takes a tiny sip of the liquid, moving it around in his mouth but not swallowing."
+Pause 4
+Emote "placing the jar and cover on the ground, still twirling the flaming stick, he takes the other stick into his right hand."
+Pause 2
+Emote "jored tilts his head back and opens his mouth."
+Pause 4
+Emote "jored, still twirling the double-flamed stick, reaches up towards the sky with the other flaming stick."
+Emote "he slowly draws the \c08f\c10i\c08r\c10e\c00 towards his mouth as the crowd looks on, wide-eyed."
+Pause 9
+Emote "jored's mouth slowly closes around the fiery cloth, his face calm and intent, the circle of fire twirling faster and faster."
+Pause 3
+Emote "flames wisp around jored's mouth. he seems not to notice."
+Pause 6
+Emote "jored withdraws the fire from his mouth and tosses the stick spinning up into the air."
+Pause 5
+Emote "the stick dances, the end still aflame, into jored's hands, while the other stick twirls the circle of fire."
+Pause 3
+Emote "he smiles at you, teeth slightly \c06blue\c00."
+Pause 6
+Emote "the crowd gasps, half of them applauding, half of them intently watching to see what will happen next."
+Pause 5
+Emote "placing the flaming stick in the crook of his left arm again, jored takes a \c07silvery\c00 jar from his cloak."
+Pause 6
+Emote "he sets the jar on the ground for a moment, takes a small drink of water, and then again takes the jar into his hand."
+Pause 5
+Emote "jored inhales deeply and takes a sip of the unknown liquid from the \c07silvery\c00 jar, again not swallowing."
+Pause 7
+Emote "jored sets the jar on the ground and removes the second stick from the crook of his arm."
+Pause 4
+Emote "the \c01f\c03l\c01a\c03m\c01i\c03n\c01g \c03c\c01i\c03r\c01c\c03l\c01e\c00 still whirls."
+Pause 4
+Emote "jored brings the flame in his right hand to the level of his mouth, and exhales suddenly, forcefully."
+Pause 8
+Emote "\c08\c10\c08\c10*\c08*\c00"
+Emote "\c10\c08\c10\c08\c10\c08\c10\c08\c10\c08\c10\c08\c10*\c08*\c10*\c00"
+Emote "\c08\c10\c08\c10\c08\c10\c08\c10\c08\c10\c08\c10\c08\c10\c08\c10\c08\c10\c08\c10\c08\c10\c08*\c00"
+Emote "\c10\c08\c10\c08\c10\c08\c10\c08\c10\c08\c10\c08\c10*\c08*\c10*\c00"
+Emote "\c08\c10\c08\c10*\c08*\c00"
+Pause 3
+Emote "a trail of fire streaks outward from jored's mouth!"
+Pause 4
+Emote "the crowd jumps back, startled, and applauds."
+Pause 5
+Emote "jored suddenly throws both flaming sticks high into the air and grins at his audience."
+Pause 5
+Pause 1
+Emote "he catches both sticks gracefully, and flourishes, fire streaking all around him."
+Pause 3
+Emote "the crowd breaks into loud applause."
+Pause 1
+Action "bow"
+End
+OnSayTo "1"
+Emote "jored nods, a gleam in his eyes."
+Emote "he calls out to the crowd and passersby, 'i need a volunteer for my magic trick! a volunteer!'"
+Pause 4
+Emote "a small boy meekly raises his hand, half hiding behind his mother's skirt."
+Pause 4
+Emote "jored smiles reassuringly and bends down to beckon the boy."
+Say "come here, child. this will not hurt you. might i borrow a copper?"
+Pause 5
+Emote "the boy nods and shyly walks toward jored."
+Pause 3
+Emote "the boy digs in his pockets and produces a copper, which he looks at as though it is his life savings."
+Pause 5
+Emote "jored takes the copper and pats the boy on the shoulder. 'you will get it back, i promise!'"
+Pause 4
+Emote "jored stands up and turns around in a circle, showing all in the audience the copper in his hand."
+Pause 5
+Emote "jored announces, 'now, i will make this copper seem to disappear right before your eyes!'"
+Pause 3
+Emote "jored takes three small cups from his cloak and places them on the ground, upside-down."
+Pause 2
+Emote "he gives the copper to the boy and motions for him to put it under one of the cups."
+Pause 7
+Emote "the boy takes a moment to decide, and chooses the central cup."
+Pause 4
+Emote "jored begins to move the cups around on the ground rapidly, confusingly."
+Pause 5
+Emote "after a moment, jored says to the boy, 'now, which cup do you think the copper is under?'"
+Emote "then he says to the crowd, 'which cup do \c14you\c00 think it is under?'"
+Pause 8
+Emote "the boy points to the cup on the right."
+Pause 5
+Emote "jored picks up the cup - empty!"
+Pause 4
+Emote "the boy picks up the other two cups, and finds them also empty."
+Pause 5
+Emote "jored smiles reassuringly at the boy, and then speaks up to the audience."
+Pause 3
+Say "now, i know that many people think of us tuatha'an as thieves."
+Pause 2
+Say "but that, my good crowd, is not the case. for in this case...."
+Pause 5
+Emote "jored kneels beside the boy, puts a hand to his ear..."
+Pause 2
+Emote "...and magically, in his hand are \c07two\c00 coppers!"
+Pause 3
+Say "in this case, it is just the opposite!"
+Pause 3
+Emote "the crowd laughs, and the boy gasps in delight as jored presses both coppers into his hand."
+Pause 4
+Emote "jored stands up, and the boy runs back to his mother, gleefully holding his two coppers."
+Pause 3
+Say "thank you, my boy, and enjoy the festival!"
+Pause 2
+Action "bow"
+End
+OnSayTo "2"
+ActionTo "nod"
+SayTo "of course!"
+Pause 1
+Emote "jored flourishes his \c08o\c10r\c08a\c10n\c08g\c10e\c00 cloak."
+Pause 4
+Emote "jored draws two \c06h\c05a\c06n\c05d\c06k\c05e\c06r\c05c\c06h\c05i\c06e\c05f\c06s\c00 from either sleeve."
+Pause 5
+Emote "jored grabs both handkerchiefs in one hand and in his other appears a large light brown egg."
+Pause 3
+Action "grin"
+Pause 3
+Emote "with a sudden flick of his wrist, jored sends the egg flying into the air, dozens of paces above him."
+Pause 2
+Emote "the crowd gasps."
+Pause 4
+Emote "the egg now beginning to fall, jored looks at you mischeviously."
+Say "you aren't worried, are you?"
+Pause 3
+Emote "at the last second, jored grabs the other side of the handkerchief and catches the egg in them, softly."
+Pause 5
+Emote "as jored holds up the unbroken egg, the crowd exhales a little."
+Pause 4
+Say "but that, my friends, is just tossing eggs."
+Pause 3
+Emote "laughter scatters throughout the crowd."
+Pause 4
+Say "the real trick..."
+Pause 1
+Emote "jored suddenly whirls around in a full turn, orange cloak flashing..."
+Pause 3
+Emote "jored opens his hands and a graceful \c14white bird\c00 flies out from them!"
+Pause 1
+Say "...is making the egg come alive."
+Pause 3
+Say "thank you, my friends, and enjoy the festival!"
+Pause 1
+Action "bow"
+End
+Q
+E
+#16021
+morgaine sedai brown aes retired~
+Morgaine Sedai~
+Morgaine Sedai, formerly of the \c03brown ajah \c00has come out of contemplation for some unknown reason
+~
+Morgaine Sedai is the perfect picture of Aes Sedai serenity and composure.  Her
+high cheekbones give her an air of nobility despite the steely grey hue of her
+shoulder-length hair.  Wrapped around her shoulders is the embroidered brown
+formal shawl of her former ajah.  The golden serpent ring once again adorns her
+wrinked hand.  She has returned from years of retirement and contemplation on
+some urgent mission.
+
+~
+5218458 48 0 E
+100 20 10 838 1d0+0 1d1+0
+0 0
+8 8 2 969
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+E
+#16022
+Jolene tinker tuathaan merchant~
+Jolene, a Tuatha'an merchant~
+Jolene moves about her wagon laughing with customers and assuring them of the quality of her merchandise.
+~
+Joline is a petite woman with black hair with gray streaks in it. She
+wears the usual bright Tuatha'an clothing and greets every customer
+with a welcoming smile.
+~
+10 0 0 E
+5 20 10 838 1d100+0 1d1+0
+0 0
+8 8 2 969
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+E
+#16023
+deer buck~
+a strong-looking buck~
+A large deer, antlers showing him to be of prime age, is standing here.
+~
+The deer has dark brown fur and brown antlers nearing an
+arm's length.
+~
+589832 0 0 E
+40 7 6 838 2d50+1200 5d10+13
+0 125
+8 8 1 969
+BareHandAttack: 11
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Bash: 100
+Kick: 100
+Disarm: 100
+E
+#16024
+bear~
+A large black bear~
+A bear is rummaging around here, not having noticed you yet.
+~
+The bear is rather large as black bears go, its coat glossy
+and its claws looking rather large.
+~
+131080 0 0 E
+60 -2 5 838 2d100+1900 6d12+22
+0 110
+8 8 1 969
+BareHandAttack: 9
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Bash: 100
+Dirtkick: 100
+Stun: 100
+E
+#16025
+cat black ferocious~
+A ferocious black cat~
+A large black mountain cat is here, claws extended and watching you.
+~
+The cat is almost as tall as your waist and looks
+extremely ferocious.
+~
+524296 0 0 E
+120 -5 6 838 2d75+1000 7d12+25
+0 115
+8 8 2 969
+BareHandAttack: 9
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Bash: 100
+Dirtkick: 100
+Disarm: 100
+Stun: 100
+E
+#16026
+horse stallion equestrius~
+a black stallion~
+\c22Equestrius\c00\c03, Jalaani's steed, stands here.
+~
+ÿÿÿÿOJ%ÿÿ~
+65546 0 0 E
+100 -155 -15 838 1d100+3000 25d110+50
+0 0
+8 8 1 969
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnTell "pull wagon"
+Action "pull wagon"
+End
+OnTell "dontpull"
+Action "dontpull"
+End
+OnTell "north"
+Action "north"
+End
+OnTell "east"
+Action "east"
+End
+OnTell "south"
+Action "south"
+End
+OnTell "west"
+Action "west"
+End
+OnTell "northeast"
+Action "northeast"
+End
+OnTell "southeast"
+Action "southeast"
+End
+OnTell "southwest"
+Action "southwest"
+End
+OnTell "northwest"
+Action "northwest"
+End
+OnTell "up"
+Action "up"
+End
+OnTell "down"
+Action "down"
+End
+OnRandom 5
+Emote "Equestrius sneaks up behind Jalaani and softly nuzzles his noze between her shoulder blades."
+End
+OnTell "neigh"
+Emote "Equestrius tosses his head impatiently, tail swishing."
+End
+OnTell "prance"
+Emote "Equestrius prances about a bit nervously once in a circle, tossing his head."
+End
+Q
+E
+#16027
+horse unfinished~
+an unfinished horse, reserved for some Tinker somewhere~
+An unfinished mob stands here.
+~
+It looks, err, unfinished.
+~
+65546 0 0 E
+90 -130 10 838 1d100+3000 25d120+25
+0 0
+8 8 0 969
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnTell "pull wagon"
+Action "pull wagon"
+End
+OnTell "dontpull"
+Action "dontpull"
+End
+OnTell "north"
+Action "north"
+End
+OnTell "east"
+Action "east"
+End
+OnTell "south"
+Action "south"
+End
+OnTell "west"
+Action "west"
+End
+OnTell "southeast"
+Action "southeast"
+End
+OnTell "southwest"
+Action "southwest"
+End
+OnTell "northwest"
+Action "northwest"
+End
+OnTell "up"
+Action "up"
+End
+OnTell "down"
+Action "down"
+End
+Q
+E
+#16028
+horse unfinished~
+an unfinished horse, wheeee~
+An unfinished mob stands here.
+~
+It looks, err, unfinished.
+~
+65546 0 0 E
+90 -150 10 838 1d100+3000 25d120+45
+0 0
+8 8 0 969
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnTell "pull wagon"
+Action "pull wagon"
+End
+OnTell "dontpull"
+Action "dontpull"
+End
+OnTell "north"
+Action "north"
+End
+OnTell "east"
+Action "east"
+End
+OnTell "south"
+Action "south"
+End
+OnTell "west"
+Action "west"
+End
+OnTell "southeast"
+Action "southeast"
+End
+OnTell "southwest"
+Action "southwest"
+End
+OnTell "northwest"
+Action "northwest"
+End
+OnTell "up"
+Action "up"
+End
+OnTell "down"
+Action "down"
+End
+Q
+E
+#16029
+horse unfinished~
+yet another unfinished horse~
+An unfinished mob stands here.
+~
+It looks, err, unfinished.
+~
+65546 0 0 E
+90 -130 10 838 1d100+3200 30d110+50
+0 0
+8 8 0 969
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnTell "pull wagon"
+Action "pull wagon"
+End
+OnTell "dontpull"
+Action "dontpull"
+End
+OnTell "north"
+Action "north"
+End
+OnTell "east"
+Action "east"
+End
+OnTell "south"
+Action "south"
+End
+OnTell "west"
+Action "west"
+End
+OnTell "southeast"
+Action "southeast"
+End
+OnTell "southwest"
+Action "southwest"
+End
+OnTell "northwest"
+Action "northwest"
+End
+OnTell "up"
+Action "up"
+End
+OnTell "down"
+Action "down"
+End
+Q
+E
+#16030
+horse unfinished~
+an unfinished horse~
+An unfinished mob stands here.
+~
+It looks, err, unfinished.
+~
+65546 0 0 E
+95 -180 -10 838 1d100+3000 25d100+30
+0 0
+8 8 0 969
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnTell "pull wagon"
+Action "pull wagon"
+End
+OnTell "dontpull"
+Action "dontpull"
+End
+OnTell "north"
+Action "north"
+End
+OnTell "east"
+Action "east"
+End
+OnTell "south"
+Action "south"
+End
+OnTell "west"
+Action "west"
+End
+OnTell "southeast"
+Action "southeast"
+End
+OnTell "southwest"
+Action "southwest"
+End
+OnTell "northwest"
+Action "northwest"
+End
+OnTell "up"
+Action "up"
+End
+OnTell "down"
+Action "down"
+End
+Q
+E
+#16031
+Ellane herbmistress tinker~
+Ellane, a tinker herbmistress~
+\c03Ellane is busy chopping some fresh herb here, preparing to mix it with a powdered root.
+~
+Ellane is an old, slighty plump woman, though quite tall. Her
+hair is curly and almost white-blonde.
+~
+26 0 0 E
+200 -180 -20 838 30d1000+8000 30d127+50
+0 0
+8 8 2 969
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+E
+#16032
+Tinkerhorse~
+a large draft horse~
+A large horse is standing here, harnessed to a wagon.
+~
+He looks extremely strong, his coat brown and his mane white.
+~
+1040408 0 0 E
+50 -180 -20 838 30d1000+8000 30d127+50
+0 0
+8 8 1 969
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Bash: 100
+Trip: 100
+Dirtkick: 100
+Kick: 100
+Disarm: 100
+Stun: 100
+P
+OnMobLeave
+Action "pull herbshop"
+End
+OnActionTo "backstab charge"
+Stop
+ActionTo "frown"
+End
+OnAttack & Sex "male"
+Stop
+Emote "The horse neighs and you get the distinct impression that it has just rolled its eyes."
+Emote "The horse mumbles, 'Men.'"
+End
+OnAttack & Sex "female"
+Stop
+ActionTo "tickle"
+End
+OnActionTo "weave cast weav wea cas ca c"
+Stop
+ActionTo "look"
+End
+OnAttack
+Stop
+End
+OnEntry & Grasping
+Force "release"
+End
+OnAction "grasp gras gra gr"
+Stop
+Emote "The horse neighs and looks at you oddly."
+End
+OnMobEntry
+Emote "The horse neighs and tosses his head towards the entrance to the wagon, as though inviting you in."
+End
+Q
+E
+#16033
+Ersena tinker herbmistress~
+Ersena, a Tuatha'an healer~
+\c03An older woman is standing here, obviously lost in thought as she mixes something in a mortar and pestle.
+~
+She is an older woman, though in her hair there is not a strand of
+grey. The age is apparent in her face, wrinkled with years of experience.
+Among the Tuatha'an she travels with, she is reputed as a healer,
+and is rarely seen without her pouch of herbs and her mortar and
+pestle.
+~
+138 2048 0 E
+1 20 10 838 1d100+0 1d1+0
+0 0
+8 8 2 969
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+E
+#16034
+Arnold pusher sly man~
+Arnold the sly looking drug pusher~
+Arnold, a man with a sly look on his face, stands here.
+~
+ Arnold is a tall wiry looking man, with his coat pockets bulging
+from whatever it is he's trying to sell. He looks well dressed, and you
+wonder where he got all the money for his clothing.
+  He appears to be drunk, based on the fact that he is staggering around
+the room.
+~
+40970 0 0 E
+199 -180 -20 838 0d100+5000 20d20+50
+500 1
+8 8 1 969
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Bash: 100
+Trip: 100
+Dirtkick: 100
+Kick: 100
+Disarm: 100
+Stun: 100
+P
+OnSayTo "thirsty"
+SayTo "You're thirsty? let me get you something..."
+Give 30046
+End
+OnSayTo "little stronger"
+SayTo "A little stronger eh? here ya go."
+Give 17208
+End
+OnSayTo "lot stronger"
+SayTo "A lot stronger huh?! You better not be driving tonight!"
+Give 17079
+End
+OnActionTo "wink"
+ActionTo "smile"
+Give 3088
+End
+Q
+E
+#16035
+girl teenage tuatha'an guard tinker~
+a teenage tuatha'an girl~
+A teenage tuatha'an girl is here, dancing with herself.
+~
+This girl has long golden hair, which is quite disheviled.
+Her clothing consists of a bright \c08red\c00 shirt and 
+her skirt is the colour of the \c10sun\c00. Her appearance is
+quite unique.
+~
+10 0 0 E
+200 19 10 838 1d100+100 1d1+1
+10 1
+8 8 2 969
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnEntry
+Emote "A teenage girl flutters her eyelids then says 'Are you here to see our Mahdi? He should be here shortly.'"
+Action "tell raen Someone is here to see you Mahdi."
+End
+Q
+E
+#16036
+xander pinscher dog doberman~
+Xander, the pinscher~
+a sad looking, red haired doberman pinscher is standing here.
+~
+You see before you a tall muscular dog, its hair
+is a \c01dark red\c00 with \c03tan\c00 markings.  His face has a
+sad, pitiful look to it(makes you want to feed
+and play with him).  His eyes are a deep brown
+and seem to say, "I love you."
+~
+16472 0 0 E
+30 20 10 838 30d100+0 5d5+0
+0 0
+8 8 1 969
+BareHandAttack: 4
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+E
+#16300
+Arein tabac merchant~
+Arin, a stocky middle aged man~
+Arein, a stocky middle aged man, twirls his moustache as he extols the wonders of his tabacs and pipes
+~
+Arin is a stocky middle-aged man with hair still black as it
+was in his youth. There is a sparkle in his eye as he twirls his
+moustache and praises in a loud voice his tabac from Tear and
+of course Two Rivers and the fine pipes that he has to offer also.
+His garb is of the typical bright clashing loudness favored
+by the Tuatha'an.
+~
+10 0 0 E
+200 20 10 838 1d100+0 1d1+0
+0 0
+8 8 1 969
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnAttack
+Stop
+Emote "the merchant twirls his moustache and sighs sadly."
+SayTo "really, sir, there is no need for such action with me. i am an honest merchant."
+End
+Q
+E
+#16301
+Ayla cooking type~
+Ayla, a slim young girl~
+Ayla, a slim young girl with masses of bright orange hair waves her spoon about in the air
+~
+Ayla is a a young slim girl, a rather odd sight in the world
+of cooks has masses and masses of bright orange hair and
+twinkling green eyes. Her apron is still clean at the moment,
+but as the masses wander into her booth, it will become
+stained and dirty. Her spoon flies from pot to pot as she hawks
+her wares to her customers.
+~
+10 0 0 E
+200 20 10 838 1d100+0 1d1+0
+0 0
+8 8 2 969
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnAttack
+Stop
+Emote "ayla sighs as she waves her wooden spoon around, splattering gravy everywhere."
+End
+Q
+E
+#16302
+Taelyn pots and pans~
+Taelyn, the pots and pans peddler~
+Taelyn, the pots and pans peddler flourishes his \c03c\c02l\c04o\c01a\c07k\c00 as he praises his sturdy pots and pans
+~
+Taelyn is a dashing young man with glossy black hair
+and fiery black eyes that flash whenever he talks of his pots
+and twinkle whenever he is talking to a pretty maid. Even his
+brightly colored attire seems almost tasteful, or at least it
+enhances his good looks and charm. Can you help but buy a pot
+from him?
+~
+10 0 0 E
+200 20 10 838 1d100+0 1d1+0
+0 0
+8 8 1 969
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnAttack
+Stop
+Emote "taelyn sighs and shakes his head sadly."
+SayTo "and i was going to sing you a song if you had bought a pot from me."
+End
+Q
+E
+#16303
+girl serving tuatha'an~
+a young Tuatha'an serving girl~
+A slender young girl in bright clothing weaves through the seats, offering food and drink to all.
+~
+This girl has light reddish-brown hair and a slim figure, and almost
+looks as though she is old enough to be learning the Tiganza. She
+seems to dance, indeed, as she moves her way through the array
+of tables and chairs and people, brightly colored Tuatha'an clothing
+making it difficult to ignore her.
+~
+10 0 0 E
+5 -80 -20 838 30d100+0 30d100+50
+0 0
+8 8 2 969
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnAttack
+Stop
+Force "emote tries to attack the young tuatha'an serving girl, who nearly drops her food-laden tray trying to get out of the way."
+SayTo "what did i do?"
+ActionTo "frown"
+End
+Q
+E
+#16304
+Thyna~
+Thyna, the jewels seller~
+Thyna, the seller of jewels smiles as you gaze at her glittering wares
+~
+Thyna is a pretty middle-aged woman with kind eyes.
+She has the look of a mother about her, but knows her
+jewels well and is in fact wearing some of them upon
+her neck, arms and fingers. They naturally clash with
+her outfit, enhancing the blinding effect.
+~
+10 0 0 E
+200 20 10 838 1d100+0 1d1+0
+0 0
+8 8 2 969
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnAttack
+Stop
+Emote "thyna snaps her bejewelled fingers in disdain as she sniffs and loudly evicts you from her booth."
+End
+Q
+E
+#16305
+girl serving tuatha'an~
+a young Tuatha'an serving girl~
+A slender young girl in bright clothing weaves through the seats, offering food and drink to all.
+~
+This girl has light reddish-brown hair and a slim figure, and almost
+looks as though she is old enough to be learning the Tiganza. She
+seems to dance, indeed, as she moves her way through the array
+of tables and chairs and people, brightly colored Tuatha'an clothing
+making it difficult to ignore her.
+~
+10 0 0 E
+5 -30 -20 838 30d100+0 30d100+50
+0 0
+8 8 2 969
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnAttack
+Stop
+ActionTo "frown"
+End
+Q
+E
+#16306
+Kerel tuathaan tinker shopkeeper~
+Kerel the Tuatha'an shopkeeper~
+Kerel stands here overseeing the testing of his merchandise.
+~
+Kerel is a stocky man, with graying hair and beard, and a jovial
+look on his face. He wears the usual brightly colored Tuatha'an
+clothing.
+~
+10 0 0 E
+5 -30 -20 838 30d100+30000 30d100+50
+0 0
+8 8 1 969
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnAttack
+Stop
+ActionTo "frown"
+SayTo "didn't ila tell you that wasn't allowed? i'll have to write your name down for that."
+End
+Q
+E
+#16307
+Dhavid stablekeeper tuatha'an~
+Dhavid, a Tuatha'an stablekeeper~
+Dhavid wanders about his stables and petting zoo with a happy smile on his face and only a slight manure smell.
+~
+Dhavid is a tall, lean man with baggy \c08red\c00 trousers and a \c09bright
+green\c00 shirt. These mark him as Tuatha'an, as much as the
+happy smile on his face.
+~
+10 0 0 E
+5 -30 -20 838 30d100+30000 30d100+50
+0 0
+8 8 1 969
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnAttack
+Stop
+ActionTo "peer"
+SayTo "this is to be a peaceful festival, understand?"
+End
+OnEntry
+SayTo "greetings! i do hope you enjoy the festival! care to take a look at one of these fine animals?"
+End
+Q
+E
+#16308
+Nedis music tuatha'an~
+Nedis the Tuatha'an musician~
+Nedis stands here next to his booth, inviting you in to look at his musical instruments.
+~
+Nedis is a tall man with bright red hair, hair almost as bright as
+the Tuatha'an clothing he wears. Almost.
+~
+10 0 0 E
+5 -30 -20 838 30d100+30000 30d100+50
+0 0
+8 8 1 969
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnAttack
+Stop
+SayTo "wouldn't you rather have a look at my instruments?"
+End
+OnEntry
+SayTo "i hope you are enjoying the festival, my friend. come in, have a look at my fine musical instruments?"
+End
+Q
+E
+#16309
+Keyler tuatha'an~
+Keyler~
+Keyler welcomes all who enter his wagon, inviting them to stay a while and have something to eat.
+~
+\c00Keyler is a fatherly-looking man, dressed in \c14b\c08r\c10i\c09g\c13h\c12t\c00 Tuatha'an clothing.
+~
+10 0 0 E
+5 -30 -20 838 30d100+30000 30d100+50
+0 0
+8 8 1 969
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnAttack
+Stop
+ActionTo "frown"
+End
+OnEntry
+Say "greetings all! won't you stay a while and join us for some food and drink? my wife is an excellent cook."
+End
+OnRandom 5
+Emote "keyler smiles with approval as one of his daughters brings out a tray of scrumptious-looking food for a customer."
+End
+Q
+E
+#16310
+Katalina trinket shopkeeper tinker~
+Katalina, Tuatha'an wanderer~
+Katalina smiles pleasantly and invites you to look at her wide variety of goods.
+~
+Katalina has stark black hair which stands in sharp contrast to her
+bright Tuatha'an clothing.
+~
+10 0 0 E
+5 -30 -20 838 30d100+30000 30d100+50
+0 0
+8 8 0 969
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnAttack
+Stop
+SayTo "out! out! i'll have no violence in here."
+Force "flee"
+End
+OnEntry
+Say "greetings! i have collected these items from all over the world. care to have a look?"
+End
+Q
+E
+#16311
+Delia gypsy Tuatha'an~
+Delia, a young Tuatha'an gypsy~
+Delia sits at the table inside her tent, seeming intent on her crystal ball.
+~
+Delia is a young Tuatha'an woman dressed in baggy, bright
+Tuatha'an colors. Her reddish-brown hair is pulled up to
+reveal large earrings dangling from her ears, and her large
+pouty red lips have no doubt told the fortunes of many a
+man and woman.
+~
+10 0 0 E
+5 -30 -20 838 30d100+30000 30d100+50
+0 0
+8 8 2 969
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnAttack
+Stop
+ActionTo "laugh"
+SayTo "you did not like your fortune?"
+End
+OnEntry
+Say "greetings! i do hope you are enjoying the festival. care for me to look into your future?"
+End
+OnRandom 5
+Say "your life will be mostly happy, my friend, thank the light. some sadness, but otherwise uneventful."
+End
+OnRandom 5
+Say "you will see some adventure in your lifetime, though it is nothing that will change the world."
+End
+OnRandom 5
+Say "if you choose the right path, you will be a hero to a fairly small group of people."
+Say "if you choose the wrong path, you will destroy them."
+End
+OnRandom 5
+Action "gasp"
+Emote "delia pauses dramatically."
+Pause 3
+Say "you.... i see it! you have it born in you to be a great hero, my friend. it is only a matter of choosing the right path."
+End
+Q
+E
+$

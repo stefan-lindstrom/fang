@@ -1,0 +1,316 @@
+<?xml version="1.0"?>
+<guildfile>
+  <guildbasic name="Coders&apos; Club" guildfile="Coders" gossip_name="" type="15" id="23" gltitle="NONE" guildietitles="NONE" gflags="1536" guildwalk_room="0" gold="0">
+    <desc>No description yet.
+</desc>
+    <reqs>No requirements set yet.
+</reqs>
+    <gossip>No gossip yet.
+</gossip>
+    <gchan gchan_color="G" gchan_type="1">coders</gchan>
+  </guildbasic>
+  <rank name="&amp;CF&amp;Br&amp;Ce&amp;Bs&amp;Ch &amp;BC&amp;Co&amp;Bd&amp;Ce&amp;Br&amp;n" num="1"/>
+  <rank name="&amp;KC&amp;wo&amp;Wd&amp;we&amp;Kr&amp;n" num="2"/>
+  <rank name="Web Master" num="3"/>
+  <rank name="Senior Coder" num="4"/>
+  <rank name="Master Coder" num="5"/>
+  <rank name="&amp;WH&amp;we&amp;Wa&amp;wd &amp;WC&amp;wo&amp;Wd&amp;we&amp;Wr&amp;n" num="6"/>
+  <rank name="&amp;RCreatoress&amp;n" num="7"/>
+  <guildie idnum="24806" name="Chris" rank_num="5" subrank="&amp;WNewest Catch&amp;n" perm="0" status="52" deposited="0" withdrew="0"/>
+  <guildie idnum="11270" name="Deran" rank_num="5" subrank="&amp;CNot the Boss&amp;n" perm="63" status="60" deposited="0" withdrew="0"/>
+  <guildie idnum="25210" name="Hazel" rank_num="2" subrank="Nut" perm="63" status="60" deposited="0" withdrew="0"/>
+  <guildie idnum="24751" name="Chirion" rank_num="2" subrank="&amp;KI&amp;bl&amp;Kl&amp;ba&amp;Kr&amp;bi&amp;Ka&amp;b&apos;&amp;Ks &amp;bL&amp;Ka&amp;bc&amp;Kk&amp;be&amp;Ky&amp;n" perm="63" status="60" deposited="0" withdrew="0"/>
+  <guildie idnum="11351" name="Valtara" rank_num="7" subrank="&amp;BShe who inspires us to Code&amp;n" perm="63" status="60" deposited="0" withdrew="0"/>
+  <guildie idnum="21154" name="Thoril" rank_num="4" subrank="&amp;WHe &amp;wwho &amp;Wspanks &amp;wIllaria&amp;n" perm="63" status="60" deposited="0" withdrew="0"/>
+  <guildie idnum="16064" name="Illaria" rank_num="6" subrank="absent-minded" perm="63" status="60" deposited="0" withdrew="0"/>
+  <guildie idnum="326" name="Stefan" rank_num="5" subrank="&amp;REvil Code Monster&amp;n" perm="63" status="60" deposited="0" withdrew="0"/>
+  <guildie idnum="20123" name="Fredrik" rank_num="5" subrank="Freddo Frog" perm="63" status="60" deposited="0" withdrew="0"/>
+  <guildie idnum="15645" name="Icyis" rank_num="3" subrank="&amp;WC&amp;Co&amp;Wl&amp;Cd&amp;n" perm="63" status="60" deposited="0" withdrew="0"/>
+  <ghelp keyword="Bugs-SOP">
+    <entry>The following procedure is what a coder should use when resolving
+reported bugs. Bugs should be reported using the &amp;Wbug &lt;report&gt;&amp;n
+command. Bugs can be viewed using the &amp;Wshowbugs&amp;n command. If bugs
+are found by other means, add them using the &amp;Wbug &lt;report&gt;&amp;n command.
+
+1) Look at the list of bugs using &amp;Wshowbugs&amp;n command.
+
+2) Guildmail all coders to notify them which bug you are working on (&amp;RVERY IMPORTANT&amp;n)
+
+3) Test reported bug to see if it is indeed a bug, or a different
+    problem being reported. Sometimes players have a typo error in
+    what they are trying to do. Or the reported problem is an
+    intended feature of the game.
+
+4) If it is a bug, fix the bug. See Coding-SOP.
+
+5) Notify person who reported the bug of the results of your 
+   evaluation of the problem.
+
+6) Use &amp;Wtedit bugs&amp;n and remove the entry that has been resolved.
+
+7) Use the &amp;Wreload bugs&amp;n command to refresh the current &amp;Wshowbugs&amp;n
+    report.
+</entry>
+  </ghelp>
+  <ghelp keyword="Adding-Guilds">
+    <entry>Hello Coder,
+
+This short tutorial will walk you through adding new guilds/clubs into
+Fang. As an example, I&apos;ll use an imaginary club I want to add, called
+&quot;Gangbang&quot;.
+
+1) Go to the /public/lib/guilds directory (&quot;cd public/lib/guilds&quot;).
+
+2) Choose a filename for your new guild&apos;s file. Make sure you don&apos;t 
+overwrite on other files. In our example, we&apos;ll use the filename
+&quot;Gangbang&quot;. There is a prototype file for guilds which you can use,
+called &quot;protoguild&quot;. So, copy the prototype file into your new file,
+in our example &quot;cp protoguild Gangbang&quot;.
+
+3) Now you make some minor modifications in your newly created file 
+to make it work. Use an editor to get into your newly created guild 
+file (in our example you could use &quot;pico Gangbang&quot; or &quot;vim Gangbang&quot;).
+
+4) First of all, you need to change the guild&apos;s name. In protoguild
+you need to change the name from &quot;The Caravan&quot; to your guild&apos;s name.
+In our example, after this change, the 3rd line will look like this:
+&lt;guildbasic name=&quot;Gangbang&quot; .......
+
+5) Now you need to change the guildfile entry to the -exact- name
+of your newly created guild file. In our example, after the change
+you&apos;ll see the following 3rd line:
+&lt;guildbasic name=&quot;Gangbang&quot; guildfile=&quot;Gangbang&quot; .....
+
+6) Now you need to change the guild&apos;s/club&apos;s id number. Check the
+clubs&apos; list (type &quot;clubs&quot;) and the guilds&apos; list (&quot;allguilds&quot;) to
+find the highest guild ID that exists in the game and use one above
+it in the newly created guild file. 
+
+7) Close the guild file, which is now ready, and get into the index
+file in the same directory (public/lib/guilds) using a text editor.
+At the end of the index file, before the $ (dollar sign), add a line
+with the -exact- filename of the new guild file. Save and exit.
+
+8) Now you&apos;re ready for the transfer. You now need to hotboot from 
+within the MUD. Gecho to everyone that you&apos;re about to hotboot, force
+everyone to save (&quot;force all save&quot;), check that everyone&apos;s ready for 
+a hotboot (&quot;shutdown hotboot check&quot;) and then hotboot, using &quot;shutdown
+hotboot new.circle&quot; if there is a new binary waiting (try it first,
+and if nothing happens try the next option ...) or &quot;shutdown hotboot&quot;
+if there is no new binary and you&apos;re using the old one.
+</entry>
+  </ghelp>
+  <ghelp keyword="Coding-SOP">
+    <entry>Dear Coder,
+
+The list below is meant to remind you of the correct steps in putting in
+new code. Follow this Standard Operating Procedure to make sure you do not
+forget anything when putting in new code, bug fixes and improvements.
+
+1) Update your code in your CVS directory. Go to your src dir in your
+copy of the code and type &quot;cvs update&quot;. For example, id you&apos;re using
+Deran&apos;s CVS dir (mine :P), go to #/project/deranCVS/fang1/src by typing
+&quot;cd #/project/deranCVS/fang1/src&quot;, and type &quot;cvs update&quot;.
+
+2) Code away your changes.
+
+3) If it took you a long time to code these changes (if you were working
+on a big project, for example), don&apos;t forget to &quot;cvs update&quot; your code
+after finishing the project as in step 1.
+
+4) Fix merging errors due to the updating of the code, if there are any.
+
+5) Compile your code, fix all compilation errors and warnings due to
+your new code or the updating of the code. We reccomend using &quot;nohup
+make &amp;&quot; to compile your code, as it takes less time. Make sure you
+remove the old nuhup.out file before doing so, as the compilation
+results will appear in this file after and during compilation.
+
+6) After your code is done and the compilation goes smoothly, commit
+your changes. In your src directory, type &quot;cvs commit&quot; to commit your
+code changes to the main code repository. When you commit your changes,
+the CVS system will take you into the pico editor to write down 
+explanation for the code you commited. Enter such a description only
+if what you coded is not a trivial fix or a slight change, in order
+not to spam the files.
+
+7) Go to the #/fang1/src directory (&quot;cd #/fang1/src&quot;), and update it 
+using &quot;cvs update&quot;. This is our main repository. After updating the
+main repository, check for merging errors due to the updating and 
+fix them if needed. Then compile it, and fix warnings/errors if needed.
+
+8) Now the new code is ready for shipping :) From the #/fang1/src 
+directory, type &quot;copy&quot; to copy the executable file to the main copy
+of the MUD (located in &quot;#/public&quot;). If it gives you an error message
+about not being able to replace the &quot;new.circle&quot; file, type 
+&quot;rm #/public/bin/new.circle&quot; to remove this file and type &quot;copy&quot; 
+again to make the transfer.
+
+9) OK, now you&apos;re ready for getting in the new code into play. From
+inside the MUD, you need to hotboot. BUT, first of all, gecho to all
+the players that you&apos;re going to hotboot and type &quot;force all save&quot;
+to make sure noone will lose anything during the hotboot. Then type
+&quot;shutdown hotboot check&quot; to see if everyone&apos;s ready for the hotboot.
+When everyone&apos;s ready for it, type &quot;shutdown hotboot new.circle&quot;.
+
+10) After the new code is in, make sure you write help entries that
+relate to your new code, if needed. Also, post on the OOC board about
+the latest changes so everyone knows what a good coder you are :)
+In addition, edite the news file (tedit news) noting your changes.
+
+</entry>
+  </ghelp>
+  <ghelp keyword="Add/Remove_GLs">
+    <entry>To add or remove a GL from the webpages, here is what you have to do:
+
+1.  First, you must edit the wizlist file.  You can find that in
+&amp;n      &amp;R/public/lib/text/&amp;Ywizlist&amp;n
+    Make sure that you align the GLs name in the appropriate column, to
+    make it nice.
+
+2.  Next, &amp;Bcd&amp;n into the &amp;Rhtml-site/&amp;n directory.  From there, edit the file
+    &amp;Ywizlist.html&amp;n and add/remove the name only from the table entries.
+    Be careful when adding a name to make sure you get the correct syntax in the
+    table.  We don&apos;t want a sloppy table now do we?  Too much for your esteemed
+    &amp;cWeb Master&amp;n to clean up.
+
+3.  Next, &amp;Bcd&amp;n to the &amp;Rimm/&amp;n directory.  From here you will need to edit
+    two files.  The first file is &amp;Yimmlisting.html&amp;n.  This file contains the
+    listing of all of the immortals.  There are seperate sections for Weavers, 
+    Builders, Council, Guildleaders, etc.  Make sure you insert the new person
+    into the correct section.  
+ 
+    The next file is in the &amp;Rgl/&amp;n directory.  &amp;Bcd&amp;n there and edit &amp;Yindex.html&amp;n.
+    Again, this is a table of the guildleaders.  Make sure you link up the 
+    guild name to the appropriate web page, and also the new GL name to the 
+    appropriate stop in the &amp;R/html-site/imm/&amp;Yimmlisting.html&amp;n file.  
+
+Congratulations!  You have just added something to the website.  Don&apos;t forget
+to mudmail Brannock to let him know.
+</entry>
+  </ghelp>
+  <ghelp keyword="Policies">
+    <entry>This file is just to list current policies for Coders.
+
+* Any processess (except for the public and builder ports) more than
+  a week old can be killed at a Coders discretion.
+</entry>
+  </ghelp>
+  <ghelp keyword="Variables">
+    <entry>The following variables are commonly used in the code for socials,
+skills and weaves.
+
+$$ ::= $
+$n ::= actor&apos;s name            || $N ::= victim&apos;s name  
+( name | someone )
+$e ::= actor&apos;s pers.pro (subj) || $E ::= victim&apos;s pers.pro (subj)
+( he | she | it )
+$m ::= actor&apos;s pers.pro (obj)  || $M ::= victim&apos;s pers.pro (obj) 
+( him | her | it )
+$s ::= actor&apos;s poss.pro        || $S ::= victim&apos;s poss.pro      
+( his | her | its )
+$o ::= acting obj real name    || $O ::= victim obj real name
+( name | something )
+$p ::= acting obj short desc   || $P ::= victim obj short desc  
+( short_desc | something )
+$a ::= acting obj art          || $A ::= victim obj art         
+( a | an )
+                                  $T ::= victim obj ...?
+$F ::= victim obj ...?
+Not exactly sure what the T and F does, since they never was used
+among the socials, but the code (in comm.c) says the following:
+      case &apos;T&apos;:
+CHECK_NULL(vict_obj, (char *) vict_obj);
+break;
+case &apos;F&apos;:
+CHECK_NULL(vict_obj, fname((char *) vict_obj));
+break;
+</entry>
+  </ghelp>
+  <ghelp keyword="TAR-things">
+    <entry>Hey reader,
+
+As I finished tweaking a bit with TAR, I added some things and wanted
+to keep these changes documented for the future.
+
+First of all, there is now a whole new set of MACROs which function like
+the old CAN_SEE MACROs and the CAN_SEE MACRO, but include dreamers. 
+For example: CAN_SEE(sub, obj) returns true if &quot;sub&quot; can see &quot;obj&quot;, and
+it takes into consideration that dreamers can&apos;t see the wake people and
+vice-versa. Its new counterpart, CAN_SEE_INCLUDING_TAR(sub, obj), doesn&apos;t
+take this into consideration. For example, I use this in the who command
+(if I remember correctly), so people who are dreaming could see the full
+wholist and vice-versa. Remember, this new MACRO acts EXACTLY like its old
+counterpart, and only ignores the dreaming/awake differences.
+
+Here is a list of MACROs and their new counterparts:
+MORT_CAN_SEE(sub, obj) - MORT_CAN_SEE_INCLUDING_TAR(sub, obj)
+IMM_CAN_SEE(sub, obj) - IMM_CAN_SEE_INCLUDING_TAR(sub, obj)
+CAN_SEE(sub, obj) - CAN_SEE_INCLUDING_TAR(sub, obj)
+
+Also, I put in a new utility function you might wanna know about:
+
+struct char_data *get_char_vis_including_tar(struct char_data * ch, char *name)
+
+This utility works just like get_char_vis, but it doesn&apos;t ignore dreaming
+chars.
+
+Ders
+</entry>
+  </ghelp>
+  <ghelp keyword="Updating_Policies">
+    <entry>The following procedure is how to update the Policy files.
+
+1) cd to /home/mud/public/lib/text/policies.
+
+2) Edit the policies file to add the new policy item to the 
+   Policy screen. Do this only if adding an entire new policy
+   entry.
+
+3) Edit the policies_file.pol file to put the contents of the
+   policy into place, or edit existing policy. A &quot;#&quot; placed by
+   itself on a line separates the various entries. The keyword
+   for the entry goes on a line, by itself, on the line directly
+   below the line with the &quot;#&quot; on it. Double check the format of
+   the file to make sure you are putting the entry in correctly.
+
+4) To reload the policy screen use the &amp;wreload policy&amp;n command.
+
+5) To reload the policy entries use the &amp;wreload xpolicy&amp;n command.
+</entry>
+  </ghelp>
+  <ghelp keyword="Add_CVS_Dir">
+    <entry>Hello boys and girls,
+
+I just added a new CVS dir for myself, and thought I&apos;d write a ghelp
+entry on how to do it.
+
+1) Go to the directory you want your new CVS dir to be. For
+example, mine is #/project/deranCVS.
+
+2) Type &quot;cvs checkout fang1&quot;. This will create a fang1 dir 
+(#/project/deranCVS/fang1) with the necessary files.
+
+3) Go to your #/.../fang1/lua/lib directory and type
+&quot;cp #/fang1/lua/lib/* .&quot; to copy some necessary files that
+are missing.
+
+4) Go to your #/.../fang1/lib directory and type 
+&quot;cp -f -r #/public/lib/* .&quot; to get the most recent lib
+directory (world files, boards and so on ...).
+
+5) Edit your #/.../fang1/src/config.c file, and change the port
+to the port number of your choice:
+
+int DFLT_PORT = port number different than 4000 and 4080;
+
+6) Now you can go to your #/.../fang1/src directory and
+make your source. It should work :) 
+
+7) Check your new CVS directory. Go to the #/.../fang1 
+directory and type &quot;bin/circle&quot;. Wait for it to boot, and
+then try telneting to mud.kare.hik.se with your port 
+number.
+</entry>
+  </ghelp>
+</guildfile>

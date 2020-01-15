@@ -1,0 +1,184 @@
+#23500
+sting ray~
+\c06a huge \c23Black \c06and \c13S\c14il\c13v\c14e\c13r\c06 sting ray&n~
+\c06A huge \c23Black \c06and \c13S\c14il\c13v\c14e\c13r\c06 sting ray swims lazily by.&n
+~
+\c06Light seems to sparky off it's body while it glides effortlessly
+throught the currents.  Powerfull wing like appendages power it along at
+an extremly fast rate.  It's tail it slightly spiked and seems to wip a
+little from side to side.&n
+~
+900152 2096 0 E
+150 -180 -20 816 30d200+2000 30d127+50
+0 5000
+5 7 1 962
+BareHandAttack: 10
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Bash: 100
+Trip: 100
+Dirtkick: 100
+Kick: 100
+Disarm: 100
+Stun: 100
+E
+#23501
+wolf bitch~
+\c00a \c23grey\c00 female wolf~
+\c00A large \c23grey\c00 wolf with wet paws.&n
+~
+It looks, err, unfinished.
+~
+48154 329904 1000 E
+100 -80 -10 816 30d200+0 30d100+50
+0 2000
+8 7 2 0
+BareHandAttack: 4
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Bash: 100
+Trip: 100
+Kick: 100
+Stun: 100
+P
+OnTell "hello" & Wolfkin
+Action "rep \c06images of \c11w\c04at\c11er\c06 on \c03l\c23e\c07a\c03v\c00e\c03s\c06....\c11*De\c04w\c06D\c13r\c11o\c13p\c11*&n"
+End
+OnAttack & Wolfkin
+Stop
+Force "tell wolf \c23*anger*&n"
+Action "reply \c06*confusion*...*impatience*...image of a \c03cub\c06 being swatted away for playing while the pack hunts&n"
+End
+OnEntry & Wolfkin & Hurt
+Force "rest"
+Force "tell wolf *confusion*"
+Give 23507
+Action "rep \c06image of an injured wolf resting and eating some \c09be\c00r\c09r\c00ies&n"
+End
+Q
+E
+#23505
+old man~
+an old man~
+An elderly man sits in a wooden chair quietly smoking on his pipe.
+~
+Long grey hair merges with his lengthy beard creating a grey mane about
+his head.  Quietly his kind eyes look back, but only briefly as he appears
+to be searching around his person for something lost.
+~
+2076744 536873008 0 E
+150 -180 -20 816 30d2+1000 15d127+50
+500 200
+6 7 1 962
+BareHandAttack: 7
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Disarm: 100
+P
+OnGive 23512
+Give 23504
+Give 23504
+SayTo "\c06Please take them with my thanks....&n"
+End
+Q
+E
+#23525
+crazed insane man~
+a crazed man~
+A crazed man runs around the ledge screaming at the wind and cursing at someone.
+~
+Ragged clothes and a disheveled mat of hair tell pretty much everything
+there is about he man.  He is obviously alone in the world and from the
+spittle and froth flying from his mouth he is obviously insane.
+~
+4366426 2096 -500 E
+150 -80 -5 816 20d0+7000 30d10+50
+0 2000
+8 7 1 962
+BareHandAttack: 9
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Dirtkick: 100
+Kick: 100
+P
+OnMobDie
+Cast "earthquake"
+End
+Q
+E
+#23562
+gade myrddraal~
+a tall Myrddraal~
+An unfinished mob stands here.
+~
+It looks, err, unfinished.
+~
+2140250 333872 -1000 E
+170 -80 -20 816 30d200+7000 30d40+50
+2000 300
+8 7 1 0
+BareHandAttack: 14
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Trip: 100
+Kick: 100
+Disarm: 100
+Stun: 100
+E
+#23573
+trolloc crazed~
+a crazed Trolloc foaming at the snout.~
+A snouted Trolloc thrashes about completely crazed and insane, a dark foam falls from it mouth.
+~
+This trolloc is bleeding from several spots already and it's hands seem 
+premanently shaped into the claws.  It thrashes about clawing at the air
+and the walls creating deap gouges in the rock.  It's clawed hands drip
+blood however it's fingernails appear sharpened to jagged point.
+~
+3124282 536873008 -1000 E
+170 -180 -20 816 30d200+7000 30d60+50
+1000 0
+7 7 1 0
+BareHandAttack: 8
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Bash: 100
+Trip: 100
+Dirtkick: 100
+Kick: 100
+Disarm: 100
+Stun: 100
+P
+OnMobDie
+Action "junk stalactite"
+End
+OnEntry
+Action "bash"
+End
+Q
+E
+$

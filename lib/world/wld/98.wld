@@ -1,0 +1,606 @@
+<?xml version="1.0"?>
+<rooms>
+  <room>
+    <roombasic title="Outside the \c02East-Gates \c06of Seandar.\c07" vnum="9800" zone="98">
+      <roomdescription>You have come just outside the\c02 East-Gates\c07 of Seanchan&apos;s capital,
+\c01Seandar\c07.  To the west can bee seen the distant spirse of the
+\c04Castle \c14of the \c04Nine Moons\c00, more clearly you can see the forboding
+\c04Raven Tower\c07.  About even with the Tower, you see the flags of
+the main \c06Training Arena\c07, where most of the armies training is done.
+To the east is a small farming village and to the west is the
+city of \c01Seandar\c07.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Field</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="" exitinfo="0" keynum="0" toroom="9801">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Skarm Road" vnum="9801" zone="98">
+      <roomdescription>This road wanders between the \c02East-Gates\c07 of the Capital city of
+Seandar, and a small farming village known as Skarm.  This close to
+the city the houses are nearer the road and built closer together, 
+though by the looks of the houses there is no one around, nor in the
+fields today.
+The road goes west into Seandar and east further into farmland.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Field</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="" exitinfo="0" keynum="0" toroom="9802">
+      <description/>
+    </exit>
+    <exit direction="west" keyword="" exitinfo="0" keynum="0" toroom="9800">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Skarm Road" vnum="9802" zone="98">
+      <roomdescription>Travelling on the road through Skarm is a little easier here.
+The farm houses are back away from the main road, and you can 
+see a few \c01barns\c07.  The city of Seandar is west, and you can
+still here the music for the festival going on in the village to
+the east here.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Field</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="" exitinfo="0" keynum="0" toroom="9803">
+      <description/>
+    </exit>
+    <exit direction="west" keyword="" exitinfo="0" keynum="0" toroom="9801">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="A branching road." vnum="9803" zone="98">
+      <roomdescription>Here the road comes to a T intersection, a small \c03dirt\c07 road slopes
+off to the south and seems to lead to more farms.  The main road
+continues east and west.  You begin to hear music and the sounds
+of a crowd to the east.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Field</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="" exitinfo="0" keynum="0" toroom="9806">
+      <description/>
+    </exit>
+    <exit direction="south" keyword="" exitinfo="1" keynum="0" toroom="9804">
+      <description/>
+    </exit>
+    <exit direction="west" keyword="" exitinfo="0" keynum="0" toroom="9802">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="A Farm House." vnum="9804" zone="98">
+      <roomdescription>This house is indistinguishable from the others on this road, other than
+the doors were left wide open.  There are few furnishings, and the
+room basically looks like something a farmer would have.
+There is a door open to the south and \c03muddy\c07 footprints can be 
+seen coming from that direction.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="" exitinfo="1" keynum="0" toroom="9803">
+      <description/>
+    </exit>
+    <exit direction="south" keyword="" exitinfo="1" keynum="0" toroom="9805">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="A Large \c02Green \c06Field.\c07" vnum="9805" zone="98">
+      <roomdescription>All around are rows and rows of crops.  \c10Corn\c00, \c03Grains\c00, \c01Tomatoes\c00
+are all being grown here.  But today this field is deserted,
+except for the occasional \c12Scare-Crow\c00, there is no one tending 
+this field.  You risk getting lost in the fields if you continue
+on, so you head back to the farm house.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Field</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="" exitinfo="1" keynum="0" toroom="9804">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Skarm" vnum="9806" zone="98">
+      <roomdescription>The center of the village of Skarm can be seen from this small rise. 
+To the north is a large dark tent, and there are festivities happening
+all around it.  The spires of \c01Seandar\c07 can just be seen to the
+west.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Field</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="9807">
+      <description/>
+    </exit>
+    <exit direction="west" keyword="" exitinfo="0" keynum="0" toroom="9803">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="A line forms." vnum="9807" zone="98">
+      <roomdescription>Here the people of the village have set up a festival for the anual
+testing day.  When the Sul&apos;dam come from \c01Seandar\c07 and test
+all the girls that have come of age in the past year.  Music and
+laughter fill the air as a line forms before the tent to the north.
+Acrobats tumble here and a musician plays his flute.  
+</roomdescription>
+      <flags>0</flags>
+      <sector>Field</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="9808">
+      <description/>
+    </exit>
+    <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="9806">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The \c05Testing\c06.\c07" vnum="9808" zone="98">
+      <roomdescription>Slipping inside the tent you immediatly feel the tension rise.  Here are
+a few very anxious girls about to be tested with the \c14a&apos;dam\c00.  There
+are two women sitting in high backed chairs.  These women both wear a plain
+\c04Blue \c07dress with a \c05P\c10u\c00\c05rple P\c10a\c00\c05nel\c07 bearing a \c10F\c14o\c10rked L\c14i\c10ghtning B\c14o\c10lt\c00.
+The two sul&apos;dam wear the bracelet of the a&apos;dam and soldiers escort the
+young girls to the sul&apos;dam to be tested.  Some are set off, and a few
+of the girls are set off to the side, these girls look the anxious
+of the group.
+</roomdescription>
+      <flags>8</flags>
+      <sector>Field</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="9809">
+      <description/>
+    </exit>
+    <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="9807">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Just North of the Tent." vnum="9809" zone="98">
+      <roomdescription>Here the people of the village have set up a festival for the anual
+testing day.  When the Sul&apos;dam come from\c01 Seandar\c07 and test
+all the girls that have come of age in the past year.  Music and
+laughter fill the air as a line forms before the tent to the south.
+Acrobats tumble here and a musician plays his flute.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Field</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="" exitinfo="0" keynum="0" toroom="9810">
+      <description/>
+    </exit>
+    <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="9808">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="A Wandering path." vnum="9810" zone="98">
+      <roomdescription>This road is a bit away from the festivities, but you can still here
+music and laughter.  This section of the road is lined with trees and
+is very peacefull, though deserted, you can imaging this place having
+carts travelling on it through most of a normal day.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Field</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="" exitinfo="0" keynum="0" toroom="9811">
+      <description/>
+    </exit>
+    <exit direction="west" keyword="" exitinfo="0" keynum="0" toroom="9809">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Village of Skarm." vnum="9811" zone="98">
+      <roomdescription>This road travels through the main area of Skarm.  To the east is the
+main street, and to the north are more farms.  By the sound of it there
+are a few animals in a barn to the north.  Music from the festivities can
+be heard from the west.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Field</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="" exitinfo="1" keynum="0" toroom="9828">
+      <description/>
+    </exit>
+    <exit direction="east" keyword="" exitinfo="0" keynum="0" toroom="9812">
+      <description/>
+    </exit>
+    <exit direction="west" keyword="" exitinfo="0" keynum="0" toroom="9810">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Road Curves." vnum="9812" zone="98">
+      <roomdescription>The road turns west and south here.  To the south is Skarm&apos;s Main Street
+and shop signs can be seen protruding out into the street.  To the west is 
+more farmland, and you can barely see the top of the tent where the days
+festivities are being held.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Field</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="9813">
+      <description/>
+    </exit>
+    <exit direction="west" keyword="" exitinfo="0" keynum="0" toroom="9811">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Main Street." vnum="9813" zone="98">
+      <roomdescription>Travelling on Skarm&apos;s main street is normally harder, but since most of
+its inhabitants are at the festival enjoying themselves.  There are 
+a few shops along this road, though none can compete with the wares 
+found in \c01Seandar\c07.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Field</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="9812">
+      <description/>
+    </exit>
+    <exit direction="east" keyword="" exitinfo="0" keynum="0" toroom="9814">
+      <description/>
+    </exit>
+    <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="9826">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="A Well Used \c03Path\c06.\c07" vnum="9814" zone="98">
+      <roomdescription>Here is a well used path branching off from Skarm&apos;s main street.  Back to 
+the west is the deserted main street and its few shops.  To the east is
+the sound of running \c06water\c07.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Field</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="" exitinfo="0" keynum="0" toroom="9815">
+      <description/>
+    </exit>
+    <exit direction="west" keyword="" exitinfo="0" keynum="0" toroom="9813">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="A Small \c03Wooden \c06Bridge\c07" vnum="9815" zone="98">
+      <roomdescription>The small \c03wooden\c00 bridge crosses a \c06stream\c00 that waters
+local farm fields.  The \c11water\c00 seems pure, and is easily
+reachable from the side of the small bridge.  The road
+continues east and west.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Field</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="" exitinfo="0" keynum="0" toroom="9816">
+      <description/>
+    </exit>
+    <exit direction="west" keyword="" exitinfo="0" keynum="0" toroom="9814">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Before an \c07Abandoned \c06Farm.\c07" vnum="9816" zone="98">
+      <roomdescription>Traveling on the road in and out of the Capital of the Seanchan Empire.
+The road turns here north or west.  To the south is a small farm house
+that looks old and abandonded, and there is a strong stench coming
+from the direction of the farm house.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Field</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="9817">
+      <description/>
+    </exit>
+    <exit direction="south" keyword="door" exitinfo="3" keynum="0" toroom="9819">
+      <description>There is an old creaking door there.
+</description>
+    </exit>
+    <exit direction="west" keyword="" exitinfo="0" keynum="0" toroom="9815">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Foot of a Small Hill." vnum="9817" zone="98">
+      <roomdescription>A small \c02grassy\c07 hill slopes up slightly, east of here.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Field</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="" exitinfo="0" keynum="0" toroom="9818">
+      <description/>
+    </exit>
+    <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="9816">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Atop a \c02Grassy Hill\c06.\c07" vnum="9818" zone="98">
+      <roomdescription>This road travels just outside the small farming town of Skarm.  To the 
+west you can just barely make out the walled city of \c01Seandar\c00.  To
+the east is more farmland that is bordered by a thick \c02Forest\c00.  A
+large tent set up in a cleared field can be seen to the west, as can the
+center of the town of Skarm.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Field</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="west" keyword="" exitinfo="0" keynum="0" toroom="9817">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Front room of the Abandoned House." vnum="9819" zone="98">
+      <roomdescription>\c04 The door creaks as you open it and step inside, the \c03wooden\c04
+floor is covered with \c07dust\c04.  Suddenly a gust of wind closes the
+door and blows out your \c14\c03Light\c00\c04.  When you get your light relit
+you notice a door to the east.\c00
+</roomdescription>
+      <flags>73</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="door" exitinfo="3" keynum="0" toroom="9816">
+      <description>There is an old creaking door there.
+</description>
+    </exit>
+    <exit direction="east" keyword="" exitinfo="3" keynum="0" toroom="9820">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="An abandonned living room." vnum="9820" zone="98">
+      <roomdescription>\c04Upon entering this \c07dusty\c04 room, the \c02f\c03o\c02u\c03l \c02s\c03\c02e\c03n\c02c\c03h\c04 almost overwhelms
+you.  The smell is coming from a decomposing body in the corner of the
+room.  There is nothing else in this room.
+There are halls going north and south from here.
+</roomdescription>
+      <flags>8</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="" exitinfo="1" keynum="0" toroom="9821">
+      <description/>
+    </exit>
+    <exit direction="south" keyword="" exitinfo="1" keynum="0" toroom="9822">
+      <description/>
+    </exit>
+    <exit direction="west" keyword="" exitinfo="1" keynum="0" toroom="9819">
+      <description/>
+    </exit>
+    <exit direction="down" keyword="trap" exitinfo="3" keynum="0" toroom="9823">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="An abandonned bedroom." vnum="9821" zone="98">
+      <roomdescription>\c04This room looks abandoned, or it would be if not for the \c02rotting
+corpse\c04 lying on the bed.  This room has been turned upside down and
+seems as though whoever was here took anything of value.  A \c14\c06chill 
+\c00\c04wind sweeps through the window, and sends a chill down your spine.
+</roomdescription>
+      <flags>8</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="south" keyword="" exitinfo="1" keynum="0" toroom="9820">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The \c01Bloodstained \c06kicthen\c07." vnum="9822" zone="98">
+      <roomdescription>\c04This kitchen is a gorrish mess.  There are dried \c01bloodstains\c04 on 
+every wall, and every piece of furniture is destroyed, except for the table.
+It looks like the table was set for dinner, only all the diners have
+since abandoned the ghastly table.  
+</roomdescription>
+      <flags>8</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="" exitinfo="1" keynum="0" toroom="9820">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="A dark tunnel." vnum="9823" zone="98">
+      <roomdescription>\c04You are in a dark tunnel leading into mysterious
+blackness.  The walls, floor and ceiling is made of stone.
+If you touch the walls, you can guess the tunnel continue
+west.
+\c00
+</roomdescription>
+      <flags>9</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="west" keyword="" exitinfo="0" keynum="0" toroom="9824">
+      <description/>
+    </exit>
+    <exit direction="up" keyword="trap" exitinfo="3" keynum="0" toroom="9820">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="In a dark tunnel." vnum="9824" zone="98">
+      <roomdescription>\c04You continue to walk in the darkness of the tunnel.
+You hear some noises coming from the west, and
+also from behind you.  The room is cold.\c00
+</roomdescription>
+      <flags>9</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="" exitinfo="0" keynum="0" toroom="9823">
+      <description/>
+    </exit>
+    <exit direction="west" keyword="" exitinfo="0" keynum="0" toroom="9825">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="A meeting room." vnum="9825" zone="98">
+      <roomdescription>\c04You finally arrives in a room slightly illminated
+by a lantern.  It seems to be a meeting room of
+some secret organization.  There is a table in the
+middle of the room with many chairs all around it.
+The room is cold, and your senses tell you of danger.\c00
+</roomdescription>
+      <flags>8</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="" exitinfo="0" keynum="0" toroom="9824">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Main Street." vnum="9826" zone="98">
+      <roomdescription>Travelling on Skarm&apos;s main street is normally harder, but since most of
+its inhabitants are at the festival enjoying themselves.  There are
+a few shops along this road, though none can compete with the wares
+found in\c01 Seandar.\c00
+</roomdescription>
+      <flags>0</flags>
+      <sector>Field</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="9813">
+      <description/>
+    </exit>
+    <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="9827">
+      <description/>
+    </exit>
+    <exit direction="west" keyword="" exitinfo="0" keynum="0" toroom="9831">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The End of Main Street." vnum="9827" zone="98">
+      <roomdescription>This is the south end of the main street in Skarm.  To the south can be 
+seen more fertile farmlands, and a house here and there, but not much 
+else of interest.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Field</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="9826">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="A farmer&apos;s house." vnum="9828" zone="98">
+      <roomdescription>You have entered a small house of a farmer in the village.  The room 
+is very simple and sparsely furnished.  There is round table in the
+middle of the room, with chairs around it to for the family to sit 
+and eat meals.  There is a staircase in the back of the room leading 
+up, and a door to the north leads to the barn.
+</roomdescription>
+      <flags>8</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="" exitinfo="1" keynum="0" toroom="9830">
+      <description/>
+    </exit>
+    <exit direction="south" keyword="" exitinfo="1" keynum="0" toroom="9811">
+      <description/>
+    </exit>
+    <exit direction="up" keyword="" exitinfo="0" keynum="0" toroom="9829">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The farmers family bedroom." vnum="9829" zone="98">
+      <roomdescription>You have arrived in the bedroom of the farmer&apos;s family.  On the floor 
+there are some sleeping pallets, five in all.  Near each one is a small
+wooden chest for their meager belongings.  On the west wall there
+is a small \c01H\c14\c01e\c03ar\c01t\c00\c01h\c00 warming the room.
+There are some stairs leading down.
+</roomdescription>
+      <flags>8</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="down" keyword="" exitinfo="0" keynum="0" toroom="9828">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="A \c01Barn\c00" vnum="9830" zone="98">
+      <roomdescription>You have entered a small \c01barn\c00 connected to the 
+back of the house. There is \c14\c03Straw\c00 all over the floor
+here so the animals are easier to clean up after.
+</roomdescription>
+      <flags>8</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="south" keyword="" exitinfo="1" keynum="0" toroom="9828">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Rods Smithy" vnum="9831" zone="98">
+      <roomdescription>After walking through the swining door, the \c01heat\c00 hits you like
+Rod the blacksmith hitting the glowing iron at his anvil.  Against the 
+walls are propped tools in various repair.  A few items are marked for 
+sale.
+</roomdescription>
+      <flags>154</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="" exitinfo="0" keynum="0" toroom="9826">
+      <description>Main Street
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Patrol Room1" vnum="9832" zone="98">
+      <roomdescription>You are in an unfinished room.
+</roomdescription>
+      <flags>14339</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+  </room>
+  <room>
+    <roombasic title="Patrol Room2" vnum="9833" zone="98">
+      <roomdescription>You are in an unfinished room.
+</roomdescription>
+      <flags>14467</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+  </room>
+</rooms>

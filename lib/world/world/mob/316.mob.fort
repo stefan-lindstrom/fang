@@ -1,0 +1,138 @@
+#31600
+Healing Capture Flag Aes Sedai~
+\c01The Capture the Flag Aes Sedai\c00~
+\c01The Capture the Flag Aes Sedai\c00
+~
+The official Aes Sedai for the Capture the Flag Quest is here to heal your
+wounds, of course.  Now, what are you waiting for?  Get out there and get
+that flag!
+~
+6283290 2096 0 E
+199 -80 -20 701 10d0+0 30d127+50
+0 0
+8 8 2 0
+BareHandAttack: 4
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnEntry
+Cast "advanced healing"
+Cast "delve"
+Cast "delve"
+Cast "delve"
+Cast "delve"
+Cast "delve"
+Cast "delve"
+Cast "delve"
+Cast "delve"
+Cast "delve"
+Cast "delve"
+End
+Q
+E
+#31601
+invisible shouting mob~
+the invisible shouting mob~
+The shouting mob.
+~
+It's the shouting mob.
+~
+1040410 2 0 E
+0 20 10 701 1d100+0 1d1+0
+0 0
+8 8 0 0
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnLeave & Carrying 31604 & Carrying 31605
+Pause 3
+Shout
+End
+Q
+E
+#31620
+red flag mob~
+the Red Flag Mob~
+The Red Flag Mob is here.
+~
+It's an invisible red flag mob.  what more do you need?
+~
+1040410 18482 0 E
+200 -80 -20 701 30d1000+15000 30d100+50
+0 0
+8 8 0 0
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnLeave & Carrying 31603
+Force "qsay I have the Red Flag, come and get me!"
+Pause 3
+End
+Q
+E
+#31630
+blue flag mob~
+the Blue Flag Mob~
+The Blue Flag Mob is here.
+~
+It's the blue flag mob.  Go do something else now.
+~
+1044506 18482 0 E
+200 -180 -20 701 30d1000+15000 30d127+50
+0 0
+8 8 0 0
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnLeave & Carrying 31604
+Force "qsay I have the Blue Flag!  Come and get me!"
+Pause 3
+End
+Q
+E
+#31699
+frogspid frog spider frogspider~
+Frogspid~
+Frogspid.
+~
+It's a frogspider.
+~
+1028136 870448 0 E
+69 -180 -20 701 30d1000+15000 30d127+50
+0 0
+8 8 0 0
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Bash: 100
+Trip: 100
+Dirtkick: 100
+Kick: 100
+Disarm: 100
+Stun: 100
+P
+OnActionTo "poke"
+SayTo "testing"
+End
+Q
+E
+$

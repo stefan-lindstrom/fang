@@ -1,0 +1,138 @@
+#8000
+innkeeper duranda thorne woman~
+Duranda Thorne, innkeeper of the Good Night's Ride~
+Duranda stands by, watching over the goings on of her inn.
+~
+Duranda is dressed in a wide pleated dark blue skirt that reaches
+scandalously above her ankles. She wears her hair in golden 
+ringlets that hardly look to be her natural color; her hair is tied
+up with a dark blue satin sash. She wears a low cut bodice, and
+lace trims her neckline, sleeves and petticoats. She is in her
+middle years, but is still a stunning woman, who also commands
+the inn with an air of authority.
+~
+10 0 0 E
+200 -180 -20 491 30d1000+0 30d127+50
+0 0
+8 8 2
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnAttack
+SayTo "Get out of here before I call the city guards!"
+Stop
+End
+Q
+E
+#8001
+spot cat cute white~
+Spot, cat of the Good Night's Ride~
+Spot, the inn's cat, walks across the inn's rooms, weaving her way between many legs.
+~
+Spot has, of course, many calico spots on her, and there is a
+trademark white smudge on her nose, hence the name spot. 
+She is a small cat, and lean, unlike the fatter cats you have
+seen in noble's house, or even in other inns. She looks at you
+with wide green eyes and rubs against your leg.
+~
+152 0 0 E
+15 0 -8 491 7d300+150 10d15+20
+0 100
+5 8 2
+BareHandAttack: 8
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnRandom 7
+Emote "Spot yawns a bit and curls up near the fireplace."
+End
+OnMobEntry
+Emote "Spot hisses slightly."
+End
+Q
+E
+#8002
+pel man guest~
+Pel, a guest at the Good Night's Ride~
+Pel sits here, writing something on a piece of vellum paper.
+~
+Pel Haron is your typical average inn's guest - he has mudstained
+boots and dirty cloak, and his clothes seem to be darned too many
+times to count. Despite his appearance of poverty, Pel write on a
+piece of vellum paper, using a gilt feathered pen and has a signet
+ring on his right hand. Perhaps there is more here than you can
+outwardly tell.
+~
+10 0 0 E
+60 -30 10 491 20d250+600 8d10+25
+0 0
+8 8 1
+E
+#8003
+Susa woman maid~
+Susa, maid at the Good Night's Ride~
+Susa stands by with a wooden tray ladden with cheeses, meats and breads here.
+~
+Susa is dressed in a dress which of course dares to expose her 
+ankles, as is the fashion of this town. You have seen worse,
+however than ankle exposing in other inns. Dancing girls doing
+an odd assortment of things, for example, and this town is not 
+one where the locals are going to be shy. Despite this, Susa 
+looks down as she approaches you, holding her tray aloft.
+Perhaps she is new here..
+~
+8 0 0 E
+200 -180 -20 491 30d1000+0 30d127+50
+0 0
+8 8 2
+P
+OnAttack
+Action "scream"
+Emote "Susa hits you with her wooden tray and bounds away."
+Stop
+End
+OnRandom 10
+Emote "Susa hums a little tune under her breath, almost dropping her tray."
+End
+Q
+E
+#8004
+rhoedran king man~
+King Rhoedran~
+King Rhoedran is here - who else would sit on the throne?
+~
+King Rhoedran is dressed in fine robes trimmed with ermine,
+and a fine longcoat and pants. He has lace coming out of his
+sleeves as well as tunic. Despite his luxurious surroundings,
+he has a brooding look on his face, and has a pile of papers
+in front of him which he is shuffling through. 
+~
+10 0 0 E
+200 -180 -20 491 30d1000+0 30d127+50
+0 0
+8 8 0
+P
+OnRandom 5
+Emote "King Rhoedran mutters something about border disputes and encrouching threat of Illian and Andor.."
+End
+OnEntry
+Emote "King Rhoedran looks up at your interruption and goes back to shuffling through his papers."
+End
+OnEntry & Darkfriend
+Emote "King Rhoedran glares suspiciously at you, and mutters something about rude guests."
+End
+OnAttack
+SayTo "How dare you assault me in my very own chambers! Get out, you filthy fiend! Guards!"
+Stop
+End
+Q
+E
+$

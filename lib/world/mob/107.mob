@@ -1,0 +1,219 @@
+#10700
+girl serving~
+the serving girl~
+A serving girl dressed in a long skirt is here.
+~
+The serving girl looks as though she works hard,
+but the pay and conditions are not that hard, as
+she seems to enjoy her duties.
+~
+26 18432 0 E
+50 -30 -5 683 30d300+1000 30d30+50
+0 0
+8 8 2
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnEntry & Guild "chi"
+ActionTo "smile"
+SayTo "hello, how can i be of service?"
+End
+OnLeave & Guild "chi"
+ActionTo "smile"
+ActionTo "wave"
+SayTo "take care now!"
+End
+Q
+E
+#10701
+wizentan old man~
+old man Wizentan~
+Old man Wizentan is here selling his wares.
+~
+This old man has seen a lot over the years, and now
+he tries to make a living by selling strange items
+he has found over the years.
+~
+1048602 0 0 E
+100 -30 -5 683 30d300+100 30d30+50
+0 0
+8 8 1
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+E
+#10702
+flinch master~
+Master Flinch~
+Master Flinch stands here, filling the orders of his guests.
+~
+Master FLinch is a short man, who is a bit heavy for his weight.
+His thin grey hair is slowly falling out, and he often wipes
+sweat from his face with a towel.
+~
+10 16384 0 E
+100 -180 -10 683 30d300+500 30d30+50
+0 0
+8 8 1
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+E
+#10703
+dog dirty~
+the dirty dog~
+A dirty looking dog is here.
+~
+The dog barks at you, then runs off.
+~
+852104 128 0 E
+50 -30 -3 683 20d200+0 6d9+50
+0 0
+8 8 0
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Trip: 100
+Kick: 100
+E
+#10704
+whitecloak soldier~
+the whitecloak soldier~
+A child of the light is here.
+~
+This child of the light is wearing silver armor,
+and a snowy white cloak with the golden sunburst.
+~
+1054728 0 0 E
+70 -80 -9 683 30d300+1350 18d20+50
+50 100
+8 8 1
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Bash: 100
+Trip: 100
+Dirtkick: 100
+Kick: 100
+Disarm: 100
+Stun: 100
+P
+OnAttack
+Stop
+ActionTo "spit"
+SayTo "darkfriend scum!"
+ActionTo "dirt"
+ActionTo "bash"
+ActionTo "trip"
+ActionTo "kill"
+End
+Q
+E
+#10705
+whitecloak captain~
+the whitecloak captain~
+A child of the light with several knots of rank is here.
+~
+The child of the light seems to be an officer.
+~
+1055752 0 0 E
+80 -120 -12 683 30d300+1650 20d20+50
+100 100
+8 8 1
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Bash: 100
+Trip: 100
+Dirtkick: 100
+Kick: 100
+Disarm: 100
+Stun: 100
+P
+OnAttack
+Stop
+ActionTo "spit"
+SayTo "darkfriend scum!"
+ActionTo "kill"
+End
+Q
+E
+#10706
+whitecloak guard~
+a whitecloak guard~
+a guard for the Children of the Light stands here
+~
+This guard's face looks as if it's set in stone. He stands unmoving
+before the doorway and eyes you as you approach.
+~
+712730 2096 0 E
+200 -180 -20 683 30d1000+100 30d127+50
+0 0
+8 8 1
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnEntry & ! Guild "children of the light"
+Emote "the guard takes one look at you and shows you the door."
+Force "w"
+End
+Q
+E
+#10707
+assistant questmaster pkillzone~
+the Quest Master's assistant~
+The Quest Master's assistant stands here looking very helpful.
+~
+The Quest Master's assistant stands here with pen and parchment in hand
+looking as thought she is ready for anything. Her competent, calculating gaze 
+seems to take in every detail of those in the room. Most importantly
+however, like any good assistant, she is dressed not to outshine 
+the Quest Master.
+~
+6283274 48 0 E
+200 20 10 683 1d100+25000 1d1+0
+0 0
+8 8 2
+P
+OnRandom 10
+Say "If you wish to leave the Quest Zone you may do so at any time from this room by typing '\c13Leave\c00'"
+End
+OnAction "target"
+Stop
+Say "Hey! This is a peaceful room! Go \c06cool\c00 off!"
+Force "leave"
+End
+OnEntry & Hurt
+Say "Take strength from the \c13Quest Master!\c00"
+Cast "advanced heal"
+Cast "heal"
+Cast "heal"
+Cast "heal"
+Cast "invigorate"
+End
+Q
+E
+$

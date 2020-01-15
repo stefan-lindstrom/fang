@@ -1,0 +1,1157 @@
+<?xml version="1.0"?>
+<mobiles>
+  <mobile vnum="13000" name="soldier man" special="NONE">
+    <description>He seems to hardly notice you. His eyes have a far off look and you can&apos;t help
+but think that he has a rather large opinion of himself. The way he ignores everything is evidence enough of that.
+</description>
+    <shortdesc>a man in a black coat</shortdesc>
+    <longdesc>A man in a black coat strides confidently by.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="20" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="10" dsize="0" bonus="300"/>
+      <move ndize="1" dsize="300" bonus="300"/>
+      <ac>0</ac>
+      <gold>20</gold>
+      <bankgold>0</bankgold>
+      <exp>200</exp>
+      <hitroll>41</hitroll>
+      <damroll>41</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="5298266"/>
+    <affected one="512" two="0" three="0" four="0"/>
+    <attack type="3"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="5" sides="10" add="41"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="13001" name="man coat black guardian" special="NONE">
+    <description>He sneers at you and attacks wildly.
+</description>
+    <shortdesc>a guardian of the Black Tower</shortdesc>
+    <longdesc>a man in a black coat stands here.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="100" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="15" dsize="0" bonus="2000"/>
+      <move ndize="1" dsize="2000" bonus="2000"/>
+      <ac>-150</ac>
+      <gold>50</gold>
+      <bankgold>0</bankgold>
+      <exp>80</exp>
+      <hitroll>100</hitroll>
+      <damroll>50</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="5234776"/>
+    <affected one="524304" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="10" sides="40" add="100"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnEntry" argtype="STRING" argument="look">
+      <sideterm number="Guild" not="FALSE" argtype="VOID" argument="NONE"/>
+      <action number="Say" argtype="STRING" argument="pass in peace brother."/>
+    </mobprog>
+    <mobprog main="OnEntry" argtype="STRING" argument="look">
+      <sideterm number="Guild" not="FALSE" argtype="VOID" argument="NONE"/>
+      <sideterm number="Guild" not="FALSE" argtype="VOID" argument="NONE"/>
+      <sideterm number="Guild" not="FALSE" argtype="VOID" argument="NONE"/>
+      <sideterm number="Guild" not="FALSE" argtype="VOID" argument="NONE"/>
+      <sideterm number="Guild" not="FALSE" argtype="VOID" argument="NONE"/>
+      <sideterm number="Guild" not="FALSE" argtype="VOID" argument="NONE"/>
+      <sideterm number="Guild" not="FALSE" argtype="VOID" argument="NONE"/>
+      <sideterm number="Guild" not="FALSE" argtype="VOID" argument="NONE"/>
+      <sideterm number="Guild" not="FALSE" argtype="VOID" argument="NONE"/>
+      <action number="ActionTo" argtype="STRING" argument="kill"/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="13002" name="rat pack thief little" special="NONE">
+    <description>It looks, err, unfinished.
+</description>
+    <shortdesc>a little thieving packrat</shortdesc>
+    <longdesc>a little thieving packrat is here.
+</longdesc>
+    <title/>
+    <chardata gender="NEUTRAL" class="Adventurer" level="200" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="30" dsize="1000" bonus="0"/>
+      <move ndize="1" dsize="0" bonus="0"/>
+      <ac>-200</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>200</hitroll>
+      <damroll>50</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1040460"/>
+    <affected one="2621442" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="200"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="13003" name="woman wife cooking" special="NONE">
+    <description>It looks, err, unfinished.
+</description>
+    <shortdesc>the cooking wife</shortdesc>
+    <longdesc>an Asha&apos;man&apos;s wife is cooking here, and will serve you.
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="200" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="0"/>
+      <move ndize="1" dsize="0" bonus="0"/>
+      <ac>100</ac>
+      <gold>10</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="9232394"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="13004" name="A trainer" special="NONE">
+    <description>\c00</description>
+    <shortdesc>a trainer</shortdesc>
+    <longdesc>Henre Haslin stands here, sword in one hand, wine bottle in the other.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="100" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="20" dsize="1000" bonus="1500"/>
+      <move ndize="1" dsize="1500" bonus="1500"/>
+      <ac>0</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>85</exp>
+      <hitroll>100</hitroll>
+      <damroll>50</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="2088986"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="0" sides="15" add="100"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnEntry" argtype="STRING" argument="look">
+      <action number="SayTo" argtype="STRING" argument="care for a lesson boy?"/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="13005" name="rock large pile" special="NONE">
+    <description>it is smooth, and grey.
+</description>
+    <shortdesc>a large rock</shortdesc>
+    <longdesc>a large rock lies here.
+</longdesc>
+    <title/>
+    <chardata gender="NEUTRAL" class="Adventurer" level="5" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="0"/>
+      <move ndize="1" dsize="0" bonus="0"/>
+      <ac>0</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1040394"/>
+    <affected one="134479872" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnMobDie" argtype="STRING" argument="look">
+      <action number="Emote" argtype="STRING" argument="\c08with a shower of sparks, the rock explodes!\c00"/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="13006" name="aiel one handed man brown grey" special="NONE">
+    <description>He is deadly looking, and seems to float through the air.  You realize
+he might be able to kill you before you can even grasp the One Power.
+</description>
+    <shortdesc>the one handed Aiel</shortdesc>
+    <longdesc>A one handed Aiel, ready to train you in hand to hand combat.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="0" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="0"/>
+      <move ndize="1" dsize="0" bonus="0"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="2088970"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="13007" name="craftsman AM man" special="NONE">
+    <description>He is tall and burly.  Several other men standing around here convince
+you not to steal anything.
+</description>
+    <shortdesc>the Asha&apos;man craftsman</shortdesc>
+    <longdesc>A craftsman stands here, ready to sell you many objects.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="150" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="30" dsize="600" bonus="2500"/>
+      <move ndize="1" dsize="2500" bonus="2500"/>
+      <ac>100</ac>
+      <gold>1000</gold>
+      <bankgold>0</bankgold>
+      <exp>1</exp>
+      <hitroll>100</hitroll>
+      <damroll>50</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="10483722"/>
+    <affected one="262144" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="30" sides="100" add="100"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="13008" name="messenger postmaster asha&apos;man " special="NONE">
+    <description>\c00</description>
+    <shortdesc>Aiel Messenger</shortdesc>
+    <longdesc>An Aiel messenger stands here, bracing himself for a sprint if needed.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="200" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="30" dsize="1000" bonus="200"/>
+      <move ndize="1" dsize="200" bonus="200"/>
+      <ac>-200</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>200</hitroll>
+      <damroll>50</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1064986"/>
+    <affected one="32" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="30" sides="100" add="200"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnRandom" argtype="INT" argument="100">
+      <action number="Say" argtype="STRING" argument="\c06have you a message for me to deliver?\c00"/>
+    </mobprog>
+    <mobprog main="OnActionTo" argtype="STRING" argument="nod">
+      <action number="Say" argtype="STRING" argument="\c06type &apos;mail &lt;playername&gt;&apos; to enter the message edit system.\c00"/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="13009" name="Asha&apos;man Soldier" special="NONE">
+    <description>A stern faced young man, wearing the \c04Black Coat\c00 of the Asha&apos;man. He carries himself with some confidence, yet his eyes flash uncertainty as he practices several swings with his blade.
+</description>
+    <shortdesc>a man in a \c04black coat\c00, with neither pin on his collar</shortdesc>
+    <longdesc>A \c04black-coated\c00 Soldier of the Asha&apos;man stands here.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="30" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="0" bonus="0"/>
+      <move ndize="1" dsize="0" bonus="0"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="4194312"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnAttack" argtype="STRING" argument="nod">
+      <action number="SayTo" argtype="STRING" argument="So, you want to practice? Very well, let&apos;s do it!"/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="13010" name="guardian asha" special="NONE">
+    <description>It looks, err, unfinished.
+</description>
+    <shortdesc>the Asha guardian</shortdesc>
+    <longdesc>The Asha&apos;man guardian stands here, ever vigilant.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="0" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="0"/>
+      <move ndize="1" dsize="0" bonus="0"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="16394"/>
+    <affected one="2" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnEntry" argtype="STRING" argument="nod">
+      <sideterm number="Guild" not="TRUE" argtype="VOID" argument="NONE"/>
+      <action number="Force" argtype="STRING" argument="shout I am sneaking around the farm -OOCly-. Something I shouldn&apos;t be doing. Someone please come and punish me!"/>
+      <action number="Force" argtype="STRING" argument="west"/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="13011" name="asha guardian " special="NONE">
+    <description>It looks, err, unfinished.
+</description>
+    <shortdesc>a \c04black-coated\c00 man</shortdesc>
+    <longdesc>A \c04black-coated man\c00 watches the path carefully from atop the watch tower.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="199" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="0"/>
+      <move ndize="1" dsize="0" bonus="0"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="10"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnAction" argtype="STRING" argument="east west south north up down northwest southwest northeast southeast">
+      <sideterm number="Guild" not="TRUE" argtype="VOID" argument="NONE"/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="Emote" argtype="STRING" argument="sneers at you and your foolish action."/>
+      <action number="Shout" argtype="VOID" argument="NONE"/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="13012" name="mob unfinished" special="NONE">
+    <description>It looks, err, unfinished.
+</description>
+    <shortdesc>Mazrim&apos;s door-closer gholam</shortdesc>
+    <longdesc>Mazrim&apos;s door-closer gholam stands here.
+</longdesc>
+    <title/>
+    <chardata gender="NEUTRAL" class="Adventurer" level="0" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="0"/>
+      <move ndize="1" dsize="0" bonus="0"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="10"/>
+    <affected one="2" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="13056" name="Wolf" special="NONE">
+    <description>A large grey timber wolf with golden eyes that sparkle with intelligence sits contentedly on her haunches at the foot of Mazrim&apos;s simple desk, her tongue lolling about and nearly touching the floor.
+While she appears relaxed and at ease her eyes seem to be following your every move and her ears perk forward slightly as you approach the M&apos;Hael.
+</description>
+    <shortdesc>Qantaqa, the adorable wolf cub</shortdesc>
+    <longdesc>\c03Qantaqa, a sleek \c07grey \c03timber wolf with \c13glowing \c10golden eyes\c03
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="200" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="30" dsize="0" bonus="250"/>
+      <move ndize="1" dsize="250" bonus="250"/>
+      <ac>-200</ac>
+      <gold>2</gold>
+      <bankgold>0</bankgold>
+      <exp>150</exp>
+      <hitroll>100</hitroll>
+      <damroll>50</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="4647002"/>
+    <affected one="2096" two="0" three="0" four="0"/>
+    <attack type="4"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="30" sides="127" add="100"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnActionTo" argtype="STRING" argument="pet">
+      <action number="Emote" argtype="STRING" argument="qantaqa leans her shaggy head into your fingers contentedly as her left, rear paw begins rythmically beating on the floor."/>
+    </mobprog>
+    <mobprog main="OnRandom" argtype="INT" argument="25">
+      <action number="Emote" argtype="STRING" argument="qantaqa&apos;s head jerks up, her ears perking forward as if she hears something."/>
+      <action number="Emote" argtype="STRING" argument="the shaggy timber wolf pads silently over to you and flops down at your feet, resting her head on her paws."/>
+    </mobprog>
+    <mobprog main="OnAttack" argtype="INT" argument="25">
+      <action number="ActionTo" argtype="STRING" argument="laugh"/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+    </mobprog>
+    <mobprog main="OnSayTo" argtype="STRING" argument="sit">
+      <sideterm number="Sex" not="FALSE" argtype="VOID" argument="NONE"/>
+      <sideterm number="Guild" not="FALSE" argtype="VOID" argument="NONE"/>
+      <action number="Emote" argtype="STRING" argument="qantaqa plants her haunches on the floor obediently, her eyes seeking out mazrim&apos;s awaiting her next command."/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="13057" name="Airan cat feline" special="NONE">
+    <description>\c03Airan studies you through half-lidded \c02e\c09m\c00\c02e\c09r\c00\c02a\c09l\c00\c02d\c03 eyes, his tail casually dancing
+back and forth. He is of the long-haired variety of cat, and his fur is the
+color of \c04m\c05i\c00d\c04n\c00i\c05g\c04h\c00t\c03. He pads carefully about Narishma&apos;s office, not disturbing
+anything with his wanderings. He seems at home here, his cursory study of
+you showing that he knows this is his home, and you are the visitor here.\c00
+</description>
+    <shortdesc>Airan</shortdesc>
+    <longdesc>A diminuitive black cat can be seen occasionally as he prowls about Narishma&apos;s sanctuary.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="0" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="0"/>
+      <move ndize="1" dsize="0" bonus="0"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="10"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnActionTo" argtype="STRING" argument="look">
+      <sideterm number="Darkfriend" not="TRUE" argtype="VOID" argument="NONE"/>
+      <action number="Emote" argtype="STRING" argument="airan glances around the room, but otherwise seems to ignore any scrutiny."/>
+    </mobprog>
+    <mobprog main="OnActionTo" argtype="STRING" argument="look">
+      <sideterm number="Darkfriend" not="FALSE" argtype="VOID" argument="NONE"/>
+      <action number="ActionTo" argtype="STRING" argument="growl"/>
+    </mobprog>
+    <mobprog main="OnRandom" argtype="INT" argument="10">
+      <action number="Emote" argtype="STRING" argument="airan glances about the office with his \c02e\c09m\c00\c02e\c09r\c00\c02a\c09l\c00\c02d\c00 gaze."/>
+    </mobprog>
+    <mobprog main="OnActionTo" argtype="STRING" argument="pet">
+      <sideterm number="Darkfriend" not="TRUE" argtype="VOID" argument="NONE"/>
+      <action number="ActionTo" argtype="STRING" argument="purr"/>
+    </mobprog>
+    <mobprog main="OnActionTo" argtype="STRING" argument="pet">
+      <sideterm number="Darkfriend" not="FALSE" argtype="VOID" argument="NONE"/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="Force" argtype="STRING" argument="emote tries to pet airan."/>
+      <action number="Emote" argtype="STRING" argument="airan arches his back and hisses loudly before retreating to the safety of narishma&apos;s desk."/>
+    </mobprog>
+    <mobprog main="OnAttack" argtype="STRING" argument="pet">
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="Emote" argtype="STRING" argument="airan growls low in his throat and quickly retreats under the desk, vanishing almost instantly."/>
+      <action number="Pause" argtype="INT" argument="30"/>
+      <action number="Emote" argtype="STRING" argument="airan emerges from under the desk, his long tail twitching violently."/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="13060" name="mob casey zherza" special="NONE">
+    <description>It looks, err, unfinished.
+</description>
+    <shortdesc>Zherza</shortdesc>
+    <longdesc>Zherza
+</longdesc>
+    <title/>
+    <chardata gender="NEUTRAL" class="Adventurer" level="200" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="0"/>
+      <move ndize="1" dsize="0" bonus="0"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="8"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="13099" name="candy clerk" special="NONE">
+    <description>It looks, err, unfinished.
+</description>
+    <shortdesc>the candy store clerk</shortdesc>
+    <longdesc>The clerk stands here, wearing an apron smudged with chocolate.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="200" weight="200" height="198"/>
+    <abilities>
+      <str>11</str>
+      <int>11</int>
+      <wis>11</wis>
+      <dex>11</dex>
+      <con>11</con>
+      <cha>11</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="1" bonus="24999"/>
+      <move ndize="10" dsize="20" bonus="100"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="2088970"/>
+    <affected one="48" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="13120" name="Asha&apos;man Sentries" special="NONE">
+    <description>It looks, err, unfinished.
+</description>
+    <shortdesc>a group of Asha&apos;man sentries</shortdesc>
+    <longdesc>\c00A group of \c04black-coated\c00 \c14sentries\c00 are on guard here.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="0" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="0"/>
+      <move ndize="1" dsize="0" bonus="0"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="10"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnAction" argtype="STRING" argument="northwest nw">
+      <sideterm number="Wearing" not="TRUE" argtype="STRING" argument="13061"/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="Pause" argtype="INT" argument="1"/>
+      <action number="Emote" argtype="STRING" argument="One of the \c04black-coated\c00 men chuckles from the \c03watchtower\c00. He abruptly stops, \c01menace\c00 replacing laughter. In a voice filled with \c23no emotion\c00, the man addresses you, &apos;You do not belong here. Leave this place.&apos;"/>
+    </mobprog>
+    <mobprog main="OnEntry" argtype="STRING" argument="northwest nw">
+      <sideterm number="Guild" not="FALSE" argtype="VOID" argument="NONE"/>
+      <action number="Pause" argtype="INT" argument="1"/>
+      <action number="Emote" argtype="STRING" argument="One of the \c04black-coated\c00 men nods towards you, from the \c03watchtower&apos;s\c00 heights."/>
+    </mobprog>
+    <mobprog main="OnAction" argtype="STRING" argument="push">
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="13121" name="horses herd" special="NONE">
+    <description>It looks, err, unfinished.
+</description>
+    <shortdesc>a variety of horses</shortdesc>
+    <longdesc>\c00The horses pace about and munch on \c03hay\c00, within the pen here.
+</longdesc>
+    <title/>
+    <chardata gender="NEUTRAL" class="Adventurer" level="0" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="0"/>
+      <move ndize="1" dsize="0" bonus="0"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="10"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnEntry" argtype="STRING" argument="push">
+      <action number="Pause" argtype="INT" argument="1"/>
+      <action number="Emote" argtype="STRING" argument="One of the more skittery horses watches your approach suspiciously."/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="13122" name="woman child" special="NONE">
+    <description>It looks, err, unfinished.
+</description>
+    <shortdesc>a woman</shortdesc>
+    <longdesc>A woman sits on the ground here, a child in her lap.
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="0" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="0"/>
+      <move ndize="1" dsize="0" bonus="0"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="10"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnEntry" argtype="STRING" argument="push">
+      <action number="Pause" argtype="INT" argument="1"/>
+      <action number="Emote" argtype="STRING" argument="The woman \c06smiles\c00 up at you in greeting, briefly."/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="13123" name="serving wife woman" special="NONE">
+    <description>It looks, err, unfinished.
+</description>
+    <shortdesc>the serving wife</shortdesc>
+    <longdesc>A woman serves here, managing over the mess hall.
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="0" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="0"/>
+      <move ndize="1" dsize="0" bonus="0"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="9232394"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnEntry" argtype="STRING" argument="push">
+      <action number="Pause" argtype="INT" argument="1"/>
+      <action number="Emote" argtype="STRING" argument="The serving wife nods politely to you as you enter, saying softly, &apos;Is there something I can get for you?&apos;"/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="13124" name="btower asha " special="NONE">
+    <description>It looks, err, unfinished.
+</description>
+    <shortdesc>a black-coated man</shortdesc>
+    <longdesc>A \c04black-coated\c00 man stands here, just by the entrance.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="0" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="0"/>
+      <move ndize="1" dsize="0" bonus="0"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="10"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnEntry" argtype="STRING" argument="push">
+      <sideterm number="Wearing" not="FALSE" argtype="STRING" argument="13067"/>
+      <action number="Pause" argtype="INT" argument="1"/>
+      <action number="Emote" argtype="STRING" argument="The \c04black-coated\c00 nods respectfully towards you, conscious of the \c01D\c10r\c01a\c10g\c01o\c10n\c01 p\c10i\c01n\c00 on the collar of your \c04coat\c00."/>
+    </mobprog>
+    <mobprog main="OnAction" argtype="STRING" argument="east">
+      <sideterm number="Carrying" not="TRUE" argtype="INT" argument="13198"/>
+      <sideterm number="Wearing" not="TRUE" argtype="STRING" argument="13067"/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="Pause" argtype="INT" argument="1"/>
+      <action number="Emote" argtype="STRING" argument="The \c04black-coated\c00 man comes very close to a sneer, sizing you up with his eyes before saying, &apos;You are not Asha&apos;man. You may not enter unless you are following one.&apos;"/>
+    </mobprog>
+    <mobprog main="OnAction" argtype="STRING" argument="push">
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+    </mobprog>
+    <mobprog main="OnAction" argtype="STRING" argument="drag">
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+    </mobprog>
+    <mobprog main="OnEntry" argtype="STRING" argument="drag">
+      <sideterm number="Carrying" not="FALSE" argtype="INT" argument="13198"/>
+      <action number="Pause" argtype="INT" argument="1"/>
+      <action number="Emote" argtype="STRING" argument="The \c04black-coated man\c00 glances at you and nods distantly, allowing entrance."/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="13125" name="sora grady btower wife" special="PostMaster">
+    <description>It looks, err, unfinished.
+</description>
+    <shortdesc>Sora Grady</shortdesc>
+    <longdesc>Sora Grady stands behind the kitchen counter here.
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="0" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="0"/>
+      <move ndize="1" dsize="0" bonus="0"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="16394"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnEntry" argtype="STRING" argument="drag">
+      <action number="Pause" argtype="INT" argument="2"/>
+      <action number="Emote" argtype="STRING" argument="Sora Grady, wife of the Asha&apos;man, greets you with a scowl."/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="13126" name="mob unfinished" special="Trainer">
+    <description>It looks, err, unfinished.
+</description>
+    <shortdesc>Illaria rules! mob</shortdesc>
+    <longdesc>An unfinished mob stands here.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="0" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="0"/>
+      <move ndize="1" dsize="0" bonus="0"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="8"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="13127" name="mob unfinished" special="Guild">
+    <description>It looks, err, unfinished.
+</description>
+    <shortdesc>Illaria kicks ass! mob</shortdesc>
+    <longdesc>An unfinished mob stands here.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="0" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="0"/>
+      <move ndize="1" dsize="0" bonus="0"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="8"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="13180" name="The Lesson Information Board Guardian" special="NONE">
+    <description>It looks, err, unfinished.
+</description>
+    <shortdesc>the Lesson Information Board Guardian</shortdesc>
+    <longdesc>The guardian stands here.
+</longdesc>
+    <title/>
+    <chardata gender="NEUTRAL" class="Adventurer" level="0" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="0"/>
+      <move ndize="1" dsize="0" bonus="0"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="16394"/>
+    <affected one="2" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnAction" argtype="STRING" argument="read look board">
+      <sideterm number="Wearing" not="TRUE" argtype="STRING" argument="13061"/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="13181" name="board guardian " special="NONE">
+    <description>It looks, err, unfinished.
+</description>
+    <shortdesc>the Board Guardian</shortdesc>
+    <longdesc>The board guardian stands here.
+</longdesc>
+    <title/>
+    <chardata gender="NEUTRAL" class="Adventurer" level="0" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="0"/>
+      <move ndize="1" dsize="0" bonus="0"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="16394"/>
+    <affected one="2" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnAction" argtype="STRING" argument="read look board">
+      <sideterm number="Wearing" not="TRUE" argtype="STRING" argument="13061"/>
+      <sideterm number="Wearing" not="TRUE" argtype="STRING" argument="8830"/>
+      <sideterm number="Wearing" not="TRUE" argtype="STRING" argument="13071"/>
+      <sideterm number="Carrying" not="TRUE" argtype="STRING" argument="13198"/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+    </mobprog>
+  </mobile>
+</mobiles>

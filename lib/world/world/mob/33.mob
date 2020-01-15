@@ -1,0 +1,145 @@
+#3300
+rat brown large~
+a large brown rat~
+A large, brown and grey rat scurries among some sacks of grain.
+~
+The rat looks fat from all the grain that it has eaten.
+At the moment it is busy gnawing into a sack of grain 
+that does not look to be his.
+~
+6156 128 0 E
+6 14 9 418 3d100+0 3d8+6
+0 100
+8 8 1
+BareHandAttack: 4
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnRandom 30
+Emote "the rat bars his teeth and makes a grating sound, then quickly runs away."
+End
+Q
+E
+#3301
+wench woman~
+a street wench~
+A common street wench stands in front of an inn, looking bored with her job.
+~
+The woman is dressed in poor quality clothes, and looks as if 
+she hasn't slept in days. She stands in front of the inn where 
+she works at, emptying the garbage outside. 
+~
+1048714 0 0 E
+60 -5 4 418 20d100+0 6d100+30
+20 110
+8 8 2
+BareHandAttack: 13
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+E
+#3302
+trader man~
+a well dressed trader~
+A well dressed trader walks to and fro his shop, looking around suspiciously.
+~
+The trader is dressed in colorful brocaded silks, looking
+well-to-do. Lace covers his sleeves and a watch chain peeks 
+out of his jacket. He puffs himself up trying to look official.
+~
+1376264 0 0 E
+80 -60 2 418 30d170+0 5d50+40
+100 110
+8 8 1
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Kick: 100
+E
+#3303
+dragonfly~
+a dragonfly~
+\c03A \c01m\c03u\c02l\c04t\c01i\c07-\c03c\c02o\c04l\c01o\c03r\c02e\c04d \c03dragonfly buzzes around this area.\c03
+~
+The dragonfly is very large, almost spanning a hand in length.
+Its wings are shimmery and thin and glitter many hues in the
+sunlight.
+~
+8 0 0 E
+15 0 8 418 5d150+0 4d50+7
+0 120
+8 8 2
+BareHandAttack: 1
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+E
+#3304
+fox brown~
+a brown fox~
+A light brown fox sneaks past you, fading into the brush.
+~
+The fox is light brown in color, almost matching the yellowing 
+grasses surrounding it. Light tufts of fur mark pointed ears,
+and his eyes are a clear green in shade. His mouth is constantly
+open, as the weather is very hot in the area.
+~
+6156 0 0 E
+35 5 6 418 8d80+0 7d28+12
+0 120
+8 8 1
+BareHandAttack: 9
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnMobDie
+Emote "the small fox howls in anguish."
+End
+OnAttack
+Emote "the fox snarls at you and lunges."
+End
+Q
+E
+#3305
+fisherman old man~
+an old fisherman~
+An old man sits on an rickety stool, dangling a wooden fishing pole into the water.
+~
+The fisherman is dressed in a blue worker's uniform, tattered
+and torn - it seems as if he does not have anyone to mend his
+clothes for him and perhaps he lives alone. 
+~
+10 0 0 E
+200 -180 -20 418 30d1000+0 30d127+50
+0 0
+8 8 1
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnAttack
+Emote "the old man cries out,"
+End
+Q
+E
+$

@@ -1,0 +1,739 @@
+#17100
+elmo~
+badger~
+A silver backed badger is here.
+~
+A silver backed badger is here.
+~
+10 0 0 E
+1 20 10 958 1d100+0 1d1+0
+0 100
+8 8 0 970
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+E
+#17101
+tree blue~
+a blue leaved tree~
+\c02A large\c13 blue leaved\c00\c09 tree\c00\c02 provides shade for everyone.
+~
+It looks, err, unfinished.
+~
+10 0 0 E
+200 -30 -20 958 30d100+0 30d100+50
+300 100
+8 8 2 970
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+E
+#17102
+guard~
+a guard~
+a Guard for the Children of the Light
+~
+This guard eyes you as you approach.
+~
+10 48 0 E
+200 -180 -20 958 30d1000+0 30d127+50
+0 0
+8 8 1 970
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnEntry & ! Guild "children of the light"
+Say "get outta here."
+Force "s"
+End
+Q
+E
+#17110
+hotl Inqisitor light dream~
+a dream Inquisitor~
+\c07An \c00\c08Inquisitor\c00 \c07stands here in a halo of light.\c00
+~
+Dark and intent eyes scan around him. The Inquisitor can
+almost feel the Shadows taint on those around him
+and is committed to the death to save the world from
+it. The brillant white cloak seems to dazzle as 
+brilliant golden knots of rank disappear and then 
+reappear on it. Perhaps it is just a corpral dreaming
+of future glory.
+~
+4136 720896 0 E
+60 -5 4 958 1d100+1200 10d20+25
+0 150
+8 8 1 970
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+E
+#17111
+bystander citizen woman lady~
+a bystander ~
+A woman stands at the side of the road, looking agitated.
+~
+A quite common woman of mid thirties, wearing a maids blouse and dress.
+Right now she looks pretty worked up, tho, with flashing eyes 
+and an aggressive stance.
+~
+138 0 0 E
+10 20 10 958 4d100+0 4d2+0
+10 100
+8 8 2 970
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnEntry & ! AutoQuested 3 & Carrying 17313
+Emote "$n says loudly, 'I saw him! That weasely little Grad and his henchmen.'"
+Pause 5
+Say "Up to no good again, of course!"
+End
+OnSayTo "who grad " & ! AutoQuested 3 & ! Mode 2 & Carrying 17313
+Say "Why, Grad, of course! Wonder what he was doing with that fine Lady."
+ActionTo "peer"
+Pause 5
+Say "I don't want to know what he and his band was doing, ya hear, but I hear things."
+Pause 3
+Say "He and his 'friend' Streak sitting at that tavern, trading things they have stolen from honest people, dontcha know!"
+Pause 3
+Action "mutter"
+Mode 2
+End
+OnSayTo "tavern inn" & ! AutoQuested 3 & Mode 2 & Carrying 17313
+Say "The tavern? The Oak and Thorn."
+Pause 4
+Say "But I warn you, those people are up to no good! "
+Pause 3
+Action "shake"
+Mode 1
+End
+Q
+E
+#17112
+biff guard bodyguard~
+Biff, Streaks 'personal assistant'~
+A huge man stands here, looking alert for any kind of trouble.
+~
+He looks as if he's spent his entire life training; muscles
+bulging everywhere, and an experienced eye watching for
+trouble. He's dressed in light armor and has a sword at the
+ready in his belt.
+~
+1051674 0 0 E
+50 10 10 958 10d100+1000 5d5+5
+13 125
+8 8 1 970
+BareHandAttack: 3
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnEntry
+Emote "$n looks you over carefully, and then resumes his guardlike stance."
+End
+OnSay "money gold sell grad" & ! AutoQuested 3 & Carrying 17313 & ! Mode 2
+Emote "Streaks eyes betray a glimmer of interest, and he says, 'Biff, leave us, please.'"
+Pause 4
+Action "nod"
+Action "open door north"
+Pause 1
+Action "north"
+Pause 4
+Action "close door south"
+Mode 2
+End
+OnTime 10 & Mode 2
+Action "open door south"
+Pause 2
+Action "south"
+Pause 3
+Action "close door north"
+Mode 1
+End
+OnAction "south" & Mode 2
+Stop
+Emote "$n stops you."
+Pause 3
+Say "Hey...can't go in there. Mister Streak is busy."
+End
+OnAction "sayto" & ! Mode 2 & Carrying 17313 & ! AutoQuested 3
+Stop
+Emote "$n rumbles, 'The boss doesn't want to be disturbed.'"
+End
+Q
+E
+#17113
+streak fence ~
+Streak~
+Streak, a man of disputable reputation sits here.
+~
+He looks like a man worn hard and cold by the hardships of a 
+criminal life. He also looks rich enough to not have to
+do anything himself.
+~
+1054730 0 0 E
+50 15 6 958 10d100+1000 5d4+5
+175 100
+6 6 1 970
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnSay "money grad sell gold coin" & ! Mode 2
+Mode 2
+ActionTo "eye"
+End
+OnTime 12 & Mode 2
+Mode 1
+End
+OnSayTo "grad" & Mode 2 & Carrying 17313 & ! AutoQuested 3 & ! Mode 3
+Action "eye"
+Pause 3
+Say "Yes...what about Grad? I hardly know the fellow. We meet from time to time, that's all."
+Mode 3
+End
+OnSayTo "abduct kidnap steal kill attack galden" & Mode 3 & ! Mode 4 & Carrying 17313 & ! AutoQuested 3
+Say "So...the dear little fellow has gotten himself in trouble again, has he?"
+Say "I've heard rumors about his plans of abducting the dear Lady and the gold she had with her."
+Pause 4
+Say "He seems to have carried out his plans, then."
+Pause 3
+Action "ponder"
+Say "Well, well...I guess that he is presently hiding somewhere, light knows where."
+Pause 3
+Say "He will -probably- send lord galden a finger tomorrow or something like that."
+Pause 3
+Emote "$n smiles shrewdly, 'That's what they usually do, you see.'"
+Pause 3
+Say "Not that I know anything, of course."
+Pause 3
+Emote "$n sips some brandy."
+Mode 4
+End
+OnSayTo "where grad" & Carrying 17313 & Mode 4 & ! Mode 5 & ! AutoQuested 3
+Say "Where he is? Oh, I have no clue whatsoever, of course."
+Pause 3
+Say "That would be harboring a fugitive from justice, wouldn't it?"
+Pause 4
+Say "But I think I've heard a rumor somewhere...if I only could remember.."
+Pause 3
+Action "grin"
+Pause 4
+Say "I think I am in dire need of medication...Golden medication, to be precise."
+Pause 3
+Say "I've heard that the golden bracelet with silver scrolls can do wonders to one health."
+Pause 2
+Say "And if I'm not misinformed, the jeweler at Alfare Lane sells them. What luck!"
+Pause 4
+Say "Please bring me one of those, will you?"
+Mode 1
+End
+OnGive 17032 & Carrying 17313 & ! AutoQuested 3
+Action "smile"
+Give 17312
+Pause 4
+Say "Thank you, my friend. "
+Pause 4
+Say "Now I seem to remember...A rumor said that our mutual friend is hiding in a lair on Fairview Road."
+Pause 6
+Say "You'll need that ring to get in, otherwise you may get...difficulties."
+Pause 4
+Say "Happy hunting."
+Mode 1
+End
+Q
+E
+#17114
+thief guard~
+a guard to the entrance~
+A man stands here idly, looking a bit bored.
+~
+He looks common...too common. 
+~
+1054746 0 0 E
+35 10 5 958 10d100+500 1d10+2
+14 100
+8 8 1 970
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Kick: 100
+Disarm: 100
+P
+OnAction "east" & ! Wearing 17312
+Stop
+ActionTo "smile"
+Say "Sorry, friend, but you don't seem to be one of us. "
+ActionTo "hit"
+Pause 2
+Say "Nothing personal, you see."
+End
+Q
+E
+#17115
+grad thief~
+Grad the Quick~
+Grad, a commontype little criminal, sits here with his friends.
+~
+Grad is...Grad. Enough said.
+~
+1511450 0 0 E
+40 15 10 958 3d100+1000 2d15+5
+24 120
+8 8 1 970
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Trip: 100
+P
+OnSayTo "a b c d e f g h i j k l m n o p r s t u v w x y z" & ! Mode 2
+SayTo "Get lost. I've got nothing to say to you."
+End
+OnSayTo "streak" & ! Mode 2 & Wearing 17312 & Carrying 17313 & ! AutoQuested 3
+Action "blink"
+Pause 3
+Say "Well...Streak, eh? That sneaky li'l bugger has still not payed me for the last job. What about that greedy slaver?"
+Mode 2
+End
+OnSayTo "galden lady" & ! AutoQuested 3 & Carrying 17313 & Wearing 17312 & Mode 2 & ! Mode 3
+Say "Shhhhh!"
+Pause 3
+Emote "$n looks around worriedly."
+Pause 3
+Say "You idiot. Talk silently."
+Pause 5
+Action "smile"
+Pause 1
+Say "I've got the 'merchandise' stowed away safely. Don't you worry. Tell Streak that."
+Mode 3
+End
+OnSayTo "where" & Carrying 17313 & Wearing 17312 & Mode 3 & ! Mode 4 & ! AutoQuested 3
+Emote "$n looks at you strangely."
+Pause 2
+Say "Where? Where it's always been, of course...The hideout on Taemes Street,"
+Pause 3
+Say "Don't worry. We've got it heavily guarded."
+Pause 2
+Action "chuckle"
+Pause 6
+Mode 10
+End
+OnLeave & Mode 10 & Carrying 17313 & Wearing 17312 & ! AutoQuested 3
+SayTo "My...you sure were in a hurry....spy."
+Stop
+Action "close door w"
+ActionTo "hit"
+Pause 2
+Say "Die!"
+End
+Q
+E
+#17116
+thief criminal~
+a thief~
+A thief sits here at a table, waiting for something.
+~
+He looks common...Too common.
+~
+1054746 0 0 E
+19 16 10 958 2d100+400 2d8+2
+34 103
+8 8 1 970
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Bash: 100
+E
+#17117
+lady galden woman~
+Lady Galden~
+An elderly woman sits here idly.
+~
+She looks rather rich, and also pretty beaten up.
+Her clothes are torn in tatters and she has bruises here and there.
+~
+10 0 0 E
+10 20 10 958 1d100+0 1d1+0
+0 1
+5 5 2 970
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnEntry & ! AutoQuested 3 & Carrying 17311
+Force "junk key"
+Action "gasp"
+End
+Q
+E
+#17118
+guard~
+a guard~
+A guard stands here idly.
+~
+About 25 years old, rather bored and having nothing to do.
+~
+1052714 0 0 E
+30 15 10 958 1d100+900 3d6+5
+15 103
+8 8 1 970
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnEntry
+SayTo "Hey, what are -you- doing here!?"
+ActionTo "hit"
+End
+Q
+E
+#17119
+wounded driver~
+a wounded driver~
+The wounder driver of the wagon rests here against one of the wheels.
+~
+He is dressed in a common servants livery, with the mark of the Lord
+Galden. Right now the clothes are torn and he's got a nasty, but
+not fatal cut in his right thigh that just has been taken care of.
+He looks scared and confused, probably from the blood loss.
+~
+1050762 0 0 E
+25 20 10 958 10d100+0 4d4+0
+20 10
+5 5 1 970
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Dirtkick: 100
+E
+#17120
+Jeanie~
+\c06Jeanie\c00 the pleasure \c12slave\c00~
+The seductive, \c06Jeanie\c00 lounges here awaiting your \c14pleasure\c00.
+~
+In the clothes of a harem girl, Jeanie the Lady
+of the Stallions stable of women licks her lips
+awaiting the signal from her masters that her
+unique talents are again required.
+~
+10 0 0 E
+200 20 10 958 1d100+0 1d1+0
+0 0
+8 8 2 970
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnSayTo "Amuse"
+Emote "Jeanie removes her flimsy clothes, ' Of course Master '"
+End
+OnActionTo "fondle"
+Emote "Jeanie arches her back slightly and moans softly, trembling."
+End
+OnActionTo "glare"
+Emote "Jeanie's face becomes pitiful as she nearly bursts into tears. Her only desire is to serve"
+End
+OnSayTo "drink liquor refreshments"
+Emote "Jeanie sways over carrying a selection of your favourite liquors."
+End
+OnSayTo "bath"
+Emote "jeanie tries not to squeal with delight, ' Right away Master' "
+Emote "Jeanie goes behind the large curatins."
+Pause 10
+Emote "Jeanie returns with towels and hot oils, slipping off her clothes before you."
+Emote "Jeanie smiles softly, motioning eagerly westward, ' Your bath is ready Master.'"
+End
+OnGive 17416
+Emote "Jeanie takes the Crook and begins to lovingly clean it."
+Emote "When is is finally clean Jeanie craddles it in her arms, waiting for her Master"
+End
+OnAction "scream"
+Emote "Jeanie walks over behind you and using her array of hot oils begins to massage."
+End
+OnAttack
+Emote "Jeanie screams out in pain, realising this isnt a sex game, ' Master please! '"
+End
+OnSayTo "crook weapon"
+Give 17416
+Emote "Jeanie's face blooms when she sees her Master is pleased."
+End
+OnEntry
+Emote "Jeanie rushes to kneel at your feet, ' How my I serve Master ? '"
+End
+OnSayTo "guest company"
+Emote "Jeanie smiles at the guest, eyes smoldering."
+Say "Of course Master, I will see to it now."
+Emote "Jeanie claps her hands once and two more pleasure women enter."
+Say "My twin sisters Master, they shall serve you with whatever extra you may need."
+Emote "The two sisters wink suggestively at you, their faces identical to Jeanies."
+Pause 3
+Emote "Jeanie smiles as she sees you are pleased."
+End
+OnActionTo "nod"
+Emote "Jeanie squels with delight and runs behind the curtain."
+Pause 5
+Emote "Jeanie returns accompanied by seven of her sisters and they stand before you."
+Pause 3
+Say "Who do you wish to amuse you this evening Master?"
+Emote "Jeanie smiles almost coyly."
+End
+OnSayTo "all"
+Emote "Jeanie's face blooms with pleasure, ' Of course Master '"
+Pause 3
+Emote "Jeanie motions for you to follow her to the bedchamber, her sisters helping her"
+End
+OnSayTo "clean"
+Pause 4
+Emote "Jeanie immedietly fetches a broom and begins to sweep the room."
+End
+OnTell "emergency"
+Action "kneel"
+Pause 3
+Emote "Jeanie smiles softly, 'How may I serve you Master? '"
+End
+OnRandom 20
+Emote "Jeanie sees her Master is busy, so she begins to clean the silverware."
+End
+OnSayTo "leave stop"
+Pause 2
+Emote "A single tear rolls down Jeanies check as she releaises she must leave you."
+Pause 2
+Action "curtsy"
+Pause 2
+Say "Yes Master, I hear and I obey"
+Pause 1
+Emote "Jeanies curtsies once more, her well rounded chest heaving."
+Pause 1
+Move "west"
+End
+OnTell "come"
+Move "east"
+Pause 2
+Action "kneel"
+Say "How may I serve you Master?"
+End
+Q
+E
+#17121
+austin love god~
+&MAustin the Love God&n~
+&MAustin the Love God stands here waiting for Varese&n
+~
+Austin is buff toned and ready to his worst to people who annoyed
+the Great Lord, well basically just men who annoyed the Great Lord,
+but you get the idea.
+~
+2097162 48 0 E
+200 20 10 958 1d100+0 1d1+0
+0 0
+8 8 1 970
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnAction "wiz purge ooc gdt dt goto" & Level "202 204"
+Stop
+Action "emote smiles seductively."
+Say "Ready, honey bunch?"
+Action "throws Varese to the ground and makes mad passionate love to her!"
+End
+OnAction "west w down d push drag" & ! Guild "child" & Level "202 209"
+Stop
+Action "emote as $N tries to leave the room, Austin smiles."
+Action "emote says, "Let's shag, baby!""
+End
+Q
+E
+#17122
+Test mob colins~
+Colin the lazy shop keeper~
+A lazy man is sitting here on a stool.
+~
+It looks, err, unfinished.
+The man sitting before you is an extremely fat man.
+~
+8 0 0 E
+189 20 -20 958 0d0+11000 1d1+0
+0 0
+8 8 1 970
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+E
+#17123
+eliza~
+Test mob~
+A test mob is standing here.
+~
+It looks, err, unfinished.
+~
+26 0 0 E
+1 20 0 958 0d0+10000 0d0+0
+0 0
+8 8 2 970
+BareHandAttack: 4
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+E
+#17200
+the small helper animal~
+the Small Helper Animal~
+This small creature looks at you worriedly, as it scurries around the cooler.
+~
+small, brown, with small antlers on it's head,
+this critter looks like nothing you've ever seen
+before.
+~
+1048590 2096 0 E
+155 -70 -10 958 30d100+0 30d90+50
+60 110
+8 8 1 970
+BareHandAttack: 14
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Bash: 100
+Kick: 100
+P
+OnEntry & Sex "female"
+ActionTo "whistle"
+End
+OnSay "thirsty"
+Action "get pepper cooler"
+Give 17203
+End
+OnSay "hungry"
+Action "get pizza cooler"
+Give 17202
+End
+Q
+E
+#17300
+baker amador goofy~
+a baker for Amador~
+A goofy chef with huge floppy white hat and funny accent wildly tosses his dough in the air.
+~
+A chef with a huge floppy white hat, lots of red hair, no eyes and a goofy grin
+stands before you, widly tossing his dough and salad in the air. He speaks in odd
+half sentences, with some accent that sounds eerily familiar and completely forgein
+at the same time.
+~
+10 0 0 E
+200 20 10 958 1d100+0 1d1+0
+0 0
+8 8 1 970
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+E
+#17400
+Reul ~
+Reul the black marketer~
+A cringing man by the name of Reul stands here.
+~
+A small man that almost seems to cringe everytime you
+look at him, Reul is a seller of black market
+goods here in the Whitecloak controlled areas.
+It is rumoured that he even has the unoffical backing
+of the High Inquisitor himself but such claims
+have always been denied.
+~
+11 0 0 E
+200 20 10 958 1d100+0 1d1+0
+0 0
+8 8 1 970
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnEntry & Guild "children of the light"
+Emote "Ruel wipes his brow nervously at the sight of you."
+ActionTo "bow"
+SayTo "The Light shine on you Childe"
+End
+Q
+E
+#17401
+scribe gld triviaquest~
+the mailing Scribe~
+The Trivia Quest mail guy stands here awaiting your answers.
+~
+It looks, err, unfinished.
+~
+1040394 0 0 E
+200 20 10 958 30d500+10000 1d1+0
+0 0
+8 8 1 970
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+E
+$

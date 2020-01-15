@@ -1,0 +1,249 @@
+.Dd October 1, 2000
+.Dt sf_svect 3
+.Os
+.Sh NAME
+.Nm sinit ,
+.Nm sclear ,
+.Nm sfree ,
+.Nm sadd ,
+.Nm sadd2 ,
+.Nm sadd_attach ,
+.Nm saddp ,
+.Nm sdel ,
+.Nm sins ,
+.Nm sfind ,
+.Nm find ,
+.Nm scfind ,
+.Nm cfind ,
+.Nm sget2 ,
+.Nm scget2 ,
+.Nm sgetp ,
+.Nm scgetp ,
+.Nm simport ,
+.Nm scopy ,
+.Nm sarray ,
+.Nm mkarray ,
+.Nm charize ,
+.Nm free_values ,
+.Nm count_values ,
+.Nm copy_values
+.Nd string vector manipulation functions
+.Sh SYNOPSIS
+.Fd #include <strfunc.h>
+.Pp
+Create, clear and destroy the string vector
+.Ft svect *
+.Fn sinit "void"
+.Ft void
+.Fn sclear "svect *"
+.Ft void
+.Fn sfree "svect *"
+.Pp
+Add values to the end of the vector
+.Ft int
+.Fn sadd "svect *" "char *toadd"
+.Ft int
+.Fn sadd2 "svect *" "void *toadd" "size_t len"
+.Ft int
+.Fn sadd_attach "svect *" "void *toadd" "size_t len"
+.Ft int
+.Fn saddp "svectpait *" "char *key" "char *val" "int flags"
+.Pp
+Delete an element of the vector. Return value is -1 in case of an error,
+or the number of the remaining elements.
+.Ft int
+.Fn sdel "svect *" "size_t num"
+.Pp
+Insert data to the vector before num's element. Return value is -1 in case of an
+error, or the newly added element's index.
+.Ft ssize_t
+.Fn sins "svect *" "char *data" "size_t num"
+.Pp
+Find element within the vector
+.Ft ssize_t
+.Fn find "char **" "char *what"
+.Ft ssize_t
+.Fn sfind "svect *" "char *what"
+.Ft ssize_t
+.Fn cfind "char **" "char *what"
+.Ft ssize_t
+.Fn scfind "svect *" "char *what"
+.Pp
+Get an appropriate element from the vector
+.Em b
+when
+.Em tofind
+is found in vector
+.Em a
+.Ft char *
+.Fn sget2 "svect *a" "const char *tofind" "svect *b"
+.Ft char *
+.Fn scget2 "svect *a" "const char *tofind" "svect *b"
+.Ft char *
+.Fn sgetp "svectpair *" "const char *tofind"
+.Ft char *
+.Fn scgetp "svectpair *" "const char *tofind"
+.Pp
+Import values
+.Ft int
+.Fn simport "svect *" "char **values"
+.Pp
+Copy string vector
+.Ft svect *
+.Fn scopy "svect *src"
+.Pp
+Create the string array
+.Ft char **
+.Fn sarray "svect *" "size_t startidx"
+.Ft char **
+.Fn mkarray "svect *" "size_t startidx"
+.Pp
+Self-desriptive
+.Ft char **
+.Fn charize "const char *value"
+.Ft void
+.Fn free_values "char **values"
+.Ft size_t
+.Fn count_values "char **values"
+.Ft int
+.Fn copy_values "char **from" "char ***to"
+.Sh DESCRIPTION
+These routines give the user a method of manipulating string vectors (arrays).
+To create a string vector you must invoke
+.Fn sinit
+first. Then you will be able to do whatever you want using functions with
+.Em svect *
+parameter. After all the necessary operations, the
+.Em svect *
+structure must be freed with
+.Fn sfree .
+.Pp
+After the vector creation, you might want to add a values to it. It can be
+done using
+.Fn sadd* ,
+.Fn splitf ,
+.Fn sins ,
+or
+.Fn simport
+functions.
+.Pp
+.Fn sadd "svect *" "char *toadd"
+treats
+.Em toadd
+as a character string and makes a copy of it, attaching it to the given
+string vector.
+.Pp
+.Fn sadd2 "svect *" "void *toadd" "size_t len"
+takes additional length argument, and does not treat
+the
+.Em toadd
+specifically, allowing to store binary data in the vector.
+.Pp
+.Fn sadd_attach "svect *" "void *toadd" "size_t len"
+allows you to feed vector with an arbitrary data without copying
+it, thus allowing to eliminate memory allocation overhead. However,
+.Fn sadd_attach
+MAY reallocate it under certain circumstances, so you shouldn't assume the
+.Em toadd
+pointer will still be valid if
+.Fn sadd_attach
+returns without an error.
+.Pp
+.Fn scopy "svect *src"
+used to create a copy of existing
+.Em svect
+structure, or return NULL if
+.Em src
+is a NULL pointer.
+.Pp
+There is two functions to clear the vector,
+.Fn sdel
+and
+.Fn sclear .
+Those functions will do the one-by-one or full clearing, respectively.
+.Pp
+.Fn sarray
+and
+.Fn mkarray
+functions are used to obtain simple
+.Em char **
+array. The differense is:
+.Fn mkarray
+produces a copy of the vector, so it must be freed by
+.Fn free_values .
+.Fn sarray
+does not require such freeing because it returns a pointer to the internally
+managed structure.
+.Pp
+.Fn charize "char *value"
+produces a simple
+.Em char **
+array that must be freed after the use.
+.Pp
+.Fn free_values
+and
+.Fn count_values
+are too self descriptive, so I will stop here.
+.Pp
+.Fn copy_values "char **from" "char ***to"
+used to copy the simple NULL-terminated array to the newly allocated memory.
+Please note the second argument is the
+.Em char *** .
+.Sh EXAMPLES
+Here is an example of creating and filling the string vectors.
+.Bd -literal
+void main() {
+	svect *sl; /* Declare a pointer to a string vector */
+
+	sl = sinit();	/* Create and initialize */
+
+	/* Add some values using the different approaches */
+	sadd(sl, "one");
+	sadd2(sl, "two", 3);
+	sadd_attach(sl, sf_strdup("three"), 5);
+
+	/* Numbers are zero-based,
+	 * so it will delete the second element,
+	 * "two"
+	 */
+	sdel(sl, 1);
+
+	/* This will produce:
+	 * "one, three"
+	 */
+	printf("%s\en", sjoin(sl, ", "));
+
+	/* Destroy the vector */
+	sfree(sl);
+};
+.Ed
+.Pp
+And here is the usage example.
+.Bd -literal
+void test(svect *sl) {
+	int i;
+
+	/* We will show some hidden info.
+	 * Refer to strfunc.h for the definition
+	 * of the svect * structure
+	 */
+	printf("sl has %d elements\en", sl->count);
+
+	printf("the maximum element length is %d\en", sl->maxlen);
+
+	printf("elements are:\en");
+
+	for(i=0; i < sl->count; i++)
+		printf("element %d: [%s] with length %d\en",
+			i, sl->list[i], sl->lens[i]);
+
+	printf("join them together: [%s]\en", sjoin(sl, "|"));
+};
+.Ed
+.Pp
+.Sh SEE ALSO
+.Xr strfunc 3 ,
+.Xr sf_split 3 ,
+.Xr sf_misc 3 .
+.Sh AUTHORS
+.An Lev Walkin <vlm@spelio.net.ru>

@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+<zone vnum="284" lifespan="30" top="28799" mode="0" lock="no">
+  <name>Shol Arbela</name>
+  <resetcmds numberof="19">
+    <cmd command="SetStateOfDoor" ifflag="no">
+      <args arg1="28480" arg2="5" arg3="1"/>
+      <line lineno="7"/>
+    </cmd>
+    <cmd command="SetStateOfDoor" ifflag="no">
+      <args arg1="28476" arg2="4" arg3="1"/>
+      <line lineno="11"/>
+    </cmd>
+    <cmd command="SetStateOfDoor" ifflag="no">
+      <args arg1="28476" arg2="2" arg3="2"/>
+      <line lineno="15"/>
+    </cmd>
+    <cmd command="SetStateOfDoor" ifflag="no">
+      <args arg1="28476" arg2="1" arg3="2"/>
+      <line lineno="19"/>
+    </cmd>
+    <cmd command="SetStateOfDoor" ifflag="no">
+      <args arg1="28476" arg2="0" arg3="2"/>
+      <line lineno="23"/>
+    </cmd>
+    <cmd command="ReadMobile" ifflag="no">
+      <args arg1="28401" arg2="1" arg3="28475"/>
+      <line lineno="27"/>
+    </cmd>
+    <cmd command="Obj2Mob" ifflag="yes">
+      <args arg1="28408" arg2="1" arg3="0"/>
+      <line lineno="31"/>
+    </cmd>
+    <cmd command="Obj2Mob" ifflag="yes">
+      <args arg1="28407" arg2="1" arg3="0"/>
+      <line lineno="35"/>
+    </cmd>
+    <cmd command="Obj2Mob" ifflag="yes">
+      <args arg1="28406" arg2="1" arg3="0"/>
+      <line lineno="39"/>
+    </cmd>
+    <cmd command="SetStateOfDoor" ifflag="no">
+      <args arg1="28450" arg2="4" arg3="1"/>
+      <line lineno="43"/>
+    </cmd>
+    <cmd command="SetStateOfDoor" ifflag="no">
+      <args arg1="28450" arg2="1" arg3="1"/>
+      <line lineno="47"/>
+    </cmd>
+    <cmd command="SetStateOfDoor" ifflag="no">
+      <args arg1="28450" arg2="0" arg3="1"/>
+      <line lineno="51"/>
+    </cmd>
+    <cmd command="ReadMobile" ifflag="no">
+      <args arg1="28400" arg2="1" arg3="28446"/>
+      <line lineno="55"/>
+    </cmd>
+    <cmd command="EquipMobWithObj" ifflag="yes">
+      <args arg1="28404" arg2="1" arg3="18"/>
+      <line lineno="59"/>
+    </cmd>
+    <cmd command="ReadObject" ifflag="no">
+      <args arg1="28403" arg2="1" arg3="28446"/>
+      <line lineno="63"/>
+    </cmd>
+    <cmd command="SetStateOfDoor" ifflag="no">
+      <args arg1="28446" arg2="1" arg3="2"/>
+      <line lineno="67"/>
+    </cmd>
+    <cmd command="SetStateOfDoor" ifflag="no">
+      <args arg1="28446" arg2="2" arg3="1"/>
+      <line lineno="71"/>
+    </cmd>
+    <cmd command="SetStateOfDoor" ifflag="no">
+      <args arg1="28445" arg2="0" arg3="1"/>
+      <line lineno="75"/>
+    </cmd>
+    <cmd command="STOP"/>
+  </resetcmds>
+</zone>

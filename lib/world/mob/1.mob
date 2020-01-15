@@ -1,0 +1,147 @@
+#100
+guard~
+&nan armor clad guardsman~
+&nA well armored guardsman stands here.
+~
+\c00The halberd each guard carries is quite ornate, the long
+pole carved with what appear to be leaves of avendesora.
+The blade as well is etched with the leaves and the edge
+looks incredibly sharp. The guards themselves are
+inscrutable. Their helmets are fashioned in such a way
+as to hide their faces from view and armor covers every
+inch of their body.
+~
+26 65584 0 E
+1 20 -20 730 30d1000+30000 1d1+0
+0 0
+8 8 0 0
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnSay "May I have what you guard?"
+Say "You may have what I guard."
+Give 196
+Force "north"
+End
+OnAction "north" & ! Carrying 196
+Stop
+Say "Only warriors may pass. You may not pass."
+End
+OnAction "get"
+Stop
+Say "You may not take what we guard."
+End
+Q
+E
+#101
+assistant~
+&nan armor clad guard~
+&nA well armored guardsman stands here.
+~
+\c00~
+26 0 0 E
+0 20 10 730 1d100+0 1d1+0
+0 0
+8 8 0 0
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnAction "north" & ! Carrying 196
+Say "Warriors alone can pass. You are no warrior."
+End
+OnAction "get"
+Stop
+Say "You may not take what we guard."
+End
+Q
+E
+#102
+flame fire~
+&na consuming &Rf&n&Yir&n&Re&n~
+&nA consuming &Rf&n&Yir&n&Re&n burns here.
+~
+The &Rf&n&Yir&n&Re&n burns bright and hot, crackling angrily,
+hatefully. Burning, searing you. 
+~
+26 2 0 E
+200 20 10 730 30d100+10000 1d1+0
+0 0
+8 8 0 0
+BareHandAttack: 12
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnAction "get"
+Emote "You suddenly realize that you are ravenous and need to eat soon."
+Force "eat waybread"
+End
+OnAction "enter"
+Stop
+ActionTo "kill"
+End
+Q
+E
+#103
+Invisible ring thief~
+the invisible ring thief~
+An invisible ring thief stands here, just waiting for you . . sucker.
+~
+The thief is dressed suavely in a tux. He looks an awful lot
+like Pierce Brosnan. He holds a martini in one hand, sipping
+on it casually as he waits for his victim to enter the room.
+Oh he's suave. He's a hit with the ladies. They fall all over
+him, but he's got just one thing on his mind, and no it isn't
+sex. It's stealing YOUR ring.
+~
+4194330 2 0 E
+0 20 10 730 1d0+0 1d1+0
+0 0
+8 8 1 0
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnLeave & Carrying 176
+Stop
+Force "junk crystalringkey"
+End
+OnLeave & Wearing 176
+Stop
+Force "rem crystalringkey"
+Force "junk crystalringkey"
+End
+Q
+E
+#104
+mob unfinished~
+the unfinished mob~
+An unfinished mob stands here.
+~
+It looks, err, unfinished.
+~
+8 2 0 E
+0 20 10 730 1d100+0 1d1+0
+0 0
+8 8 0 0
+P
+OnRandom 100
+Action "lock chest"
+End
+Q
+E
+$

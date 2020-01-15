@@ -1,0 +1,467 @@
+<?xml version="1.0"?>
+<board>
+  <vnum>72</vnum>
+  <read>0</read>
+  <write>0</write>
+  <remove>203</remove>
+  <flags>4</flags>
+  <guild>25</guild>
+  <key>nht</key>
+  <title>The &amp;MNewbie Helper&amp;n Noteboard</title>
+  <messages>
+    <message>
+      <heading>Sat Jul 14 (Aidan)      :: &amp;RSome Useful (maybe) Information&amp;n</heading>
+      <slot>1</slot>
+      <level>199</level>
+      <author>0</author>
+      <date>0</date>
+      <text>
+Some levelling formulas:
+
+Practices:
+(int + wis - 32)/4 plus a random addition of 3 to 5
+
+Trains:
+Everyone gets 1 train each level unless they have 255 trains, in which
+case, they don't get any.
+Additionally, there is a 25% chance of getting a second train. This is
+not affected by stats.
+Soldier and Adventurer have a 30% chance of 2 extra practices.
+Thief, Craftsman, Wisdom have a 40% chance of 2 extra practices.
+(if they aren't sparked or teachable, that is)
+
+HP/Mana/Move for everyone (class bonus listed in next section):
+5 to 14  + (con - 13)/4 (HP)
+5 to 14  + (wis - 13)/4 (Mana)
+3 to 5 + (dex -13)/4 (move)
+
+Soldier and Adventurer:
++14 to hitpoints if sparked/teachable
+if not: +14 + 1/4 of the mana they would have gotten had they been
+sparked/teachable.
+
++3 to mana if sparked/teachable. None if not.
+
+Thief/Craftsman/Wisdom:
++10 to hitpoints if sparked/teachable
+if not: +10 + 1/4 of the mana they would have gotten had they been
+sparked/teachable.
+
++5 to mana if sparked/teachable. None if not.
+
+Channeler:
++4 to hitpoints.
++11 to mana.
+Wilder:
++4 to hitpoints.
++15 to mana.
+
+
+</text>
+    </message>
+    <message>
+      <heading>Sat Jul 14 (Aidan)      :: &amp;WSkills Cost Chart&amp;n</heading>
+      <slot>2</slot>
+      <level>199</level>
+      <author>0</author>
+      <date>0</date>
+      <text>
+Cost for weaves is unaffected by class.
+
+Cost for skills varies as follows:
+SKILL           So      Adv     Th      Cr      Ws      Wi      Ch
+Backstab        10      8       5       3       10      10      14
+Bash            3       2       3       3       5       3       3
+Dirtkick        5       5       5       3       5       8       8
+Disarm          3       3       2       3       5       3       5
+Dodge           3       2       3       3       5       3       3
+Duck            2       2       1       1       1       2       3
+Fourth attack   5       5       8       10      10      8       10
+Hide            5       5       3       3       3       7       10
+Locate          5       5       5       5       5       5       5
+Hide tracks     4       3       5       7       5       4       4
+Kick            3       1       2       3       3       2       2
+Parry           2       5       2       1       5       3       5
+Pick Lock       5       5       5       8       10      5       5
+Powertrap       NA      NA      NA      NA      NA      12      11
+Punch           2       2       2       3       3       4       5
+Rescue          2       1       1       1       1       1       2
+Second attack   3       5       3       3       5       4       4
+Shield block    2       3       2       1       3       2       3
+Sliceweave      NA      NA      NA      NA      NA      5       5
+Sneak           5       5       3       3       3       7       10
+Stun            5       5       10      8       10      5       8
+Third attack    5       5       5       8       8       5       6
+Track           2       2       3       3       2       7       7
+Trip            2       2       3       3       3       3       5
+Steal           NA      NA      3       NA      NA      NA      NA 
+Jump            2       2       3       5       5       4       4
+Herblore        NA      NA      NA      NA      1       NA      NA
+Craft           NA      NA      NA      3       NA      NA      NA
+Tool            NA      NA      NA      3       NA      NA      NA
+Appraise        NA      NA      NA      4       NA      NA      NA
+Enhance         NA      NA      NA      8       NA      NA      NA
+Repair          NA      NA      NA      3       NA      NA      NA
+
+If it has a NA next to it, that means it is not teachable or I could
+not find a cost listed for it in the code. I hope this all is
+helpful.
+</text>
+    </message>
+    <message>
+      <heading>Sun Jul 22 (Aidan)      :: Some More Stuff</heading>
+      <slot>3</slot>
+      <level>199</level>
+      <author>0</author>
+      <date>0</date>
+      <text>
+Dice results for Taveren are 4 to 6. Everyone else is 1 to 6.
+
+Practices add 30 plus a random number from 0 to your UNMODIFIED int plus a
+ random number from 0 to your UNMODIFIED wis. Then divide by 2. That's right
+ folks, stat eq does not affect practicing. It does affect how many pracs you
+ get when you gain a level, though. Oh, and if you are ta'veren, it adds a 
+random number from -25 to +25.
+
+(30 + random(0, unmodified int) +random(0, unmodified wis))/2
+or, anywhere from 15 at the minimum to 45 at the maximum.
+
+So, those who raise their stats all the way to 30 with trains average
+30 per practice and those like me who have natural stats at 4 and use
+just loads of stat eq average 17 or so per practice. Since everyone
+uses practices to get to 70% anyway, that means the difference is not
+that great. Max stats causes an average of 61% after 2 pracs. So they
+still have to spend a third to get to 70. Takes me 4 pracs to get to
+69 on average. Sometimes it takes it to 70. Either way, takes ten 
+skills to cost me an extra train and 46 or so trains to raise my stat
+to 30.. 92 to raise both int and wise to 30.. So, it would take around
+920 skills for it to average out.
+
+Oh, not counting the different skills that affect regen, Soldier and
+Adventurer regain hitpoints 30% faster and Wilders and Channelers
+regain mana 30% faster. Yes, a sparked wisdom is totally screwed.
+
+</text>
+    </message>
+    <message>
+      <heading>Thu Aug 23 (Kalenth)    :: &amp;rAbout me:&amp;n</heading>
+      <slot>4</slot>
+      <level>203</level>
+      <author>0</author>
+      <date>0</date>
+      <text>I'll try to make this as short as possible:
+
+I am now the newest Helpers GL.
+
+I'd like to thank Masema for doing a bang-up job and listening where it
+was needed and all that jazz. Any mudmails/emails (coming) can be directed to
+me about this now, instead of him. As always and my policy always shall be, bug
+me if you have concerns. Its why i'm here.
+
+Kal
+</text>
+    </message>
+    <message>
+      <heading>Fri Aug 31 (Aidan)      :: Correction on AC and Hitroll and such</heading>
+      <slot>5</slot>
+      <level>199</level>
+      <author>0</author>
+      <date>0</date>
+      <text>
+This is very important. AC is figured two different ways.. well,
+actually, that is not actually true. The chance to hit is figured two
+different ways. One of those ways limits AC, the other does not. If a
+PLAYER character is attacking, the most AC than can affect the attack
+is -200. So, if someone spells up to better their AC for PK, they are
+wasting their time. If a mob is swinging, there is no -technical- limit
+to the AC. The practical limit is -1100. If a mob has maximum hitroll
+(200) and there is no fog affecting the room, -1100 AC will reduce the
+mob's chance of hitting to 0. I haven't bothered to stat all the mobs,
+and I'm not going to, to see what the hitrolls on them are. Since
+people have reported -600 AC as protecting them from Tower Guards, I'm 
+guessing that those mobs have +75 hitroll. At that point or less, -600
+would negate their chance to hit. If you happen to know a mob's hr,
+something it is against policy for IMMs to hand out to you, you can
+figure up how much AC you need to protect yourself from them. Multiply
+their hitroll by four, add 75, that's how -negative- AC you need to
+render the mob incapable of hitting you. If the room is affected by
+fog, you can subract 5 from their hitroll.
+
+The most hitroll you need is around 200. You always have a 1% chance of
+missing, anyway. But with 200+ hitroll, you will never have greater
+than a 1% chance of missing. Certain skills, like leadership, lower
+how much hitroll you need. It's way too much trouble to figure out
+how much, though, since these are guild skills and affected by level.
+Also, it is not that hard to get hitroll to 200.
+
+
+Aidan
+</text>
+    </message>
+    <message>
+      <heading>Fri Sep  7 (Ellaine)    :: Baerlon EQ</heading>
+      <slot>6</slot>
+      <level>199</level>
+      <author>0</author>
+      <date>0</date>
+      <text>Okay, its been some notion that the HBL setup some sign saying that you'd
+have to buy the eq in baerlon to figure out stats. Thats bunk, and verily
+stupid. So I went out and bought everything and found out its stats. Here
+it is.
+Note: For EQ, i've stuck where its worn after the name, and some I didn't
+bother putting the whole name, since it was basically only one sold there.
+Not to mention that I doubt its hard to spot the only &quot;greaves&quot; in baerlon.
+For another thing, the first pieces of EQ are found -on- mobs. This is the
+cheapest stuff to buy...but not necessarily the best. However, the dress
+kicks ass.
+
+Mob EQ:
+
+cloak: about
+5hr/5dr, 35 abs
+
+boots: feet
+10hr/10dr, 10 abs, -35 AC
+
+conical helm: head
+-5 cha, -10AC, 5 abs
+
+leather jerkin: on body
+-25 AC, 5 abs
+
+long-handled club: s_wield
+2d10, -5 cha, 5hr/5dr
+
+dress: about
+10hr/10dr, -25 AC, 25 ABS
+
+sandals: feet
+10hr/10dr, 1 dex, 10 abs, -15 AC
+
+Armour:
+
+hauberk: on body
+25 abs, 15hr/15dr, -50 AC
+
+greaves: legs
+30 abs, 10hr/10dr, -50AC
+
+half-piece: on body
+15hr/15dr, 50 abs, -125 AC
+
+full-piece, on body
+18hr/18dr, 50 abs, -125 AC
+
+Weapons:
+
+a long thin metal sword: d_wield
+3d10, 15hr/15dr
+
+a long, thick bladed sword: d_wield
+3d9, 10hr/10dr
+
+sabre: s_wield
+15hr/15dr, 5d8
+
+axe: d_wield
+10hr/25dr, 9d4
+
+warhammer: d_wield
+20hr/20dr, 8d4
+
+stiletto: s_wield
+10d2, 20hr/10dr
+
+a small dagger: s_wield
+15hr/15dr, 3d4
+
+morning star: s_wield
+15hr/20dr, 7d5
+
+And thats it...hope you guys can put this to good use...I should have stuck
+costs in as well...but oh well.
+
+Ella
+</text>
+    </message>
+    <message>
+      <heading>Sun Oct 28 (Mic)        :: Bearlin EQ (Amendment)</heading>
+      <slot>7</slot>
+      <level>199</level>
+      <author>0</author>
+      <date>0</date>
+      <text>Please forgive any errors, its 5:15am here :)
+In addition to Kalenth's helpful post, the greaves add 500hitpoints,
+and the full-plate chest piece 1000hitpoints. These items, along with
+the razor-sharp sword (which costs 5.6million at 30 charisma) are
+extremely kick arse. The razor-sharp sword is 10d8, 30hit/dam, 
+piercing/stabbing (so can be used for backstabbing) and is duel_wield.
+Any errors on stats are on my part, and due to the fact that the sun 
+is pecking over my left shoulder :) See you guys. *SMOOCHIES*
+</text>
+    </message>
+    <message>
+      <heading>Thu Nov 22 (Asin)       :: Some nice qeq in Ebou Dar.</heading>
+      <slot>8</slot>
+      <level>199</level>
+      <author>0</author>
+      <date>0</date>
+      <text>It's at 'a small plaza', then one east.
+Its stats are 50 AC and 30 hit/dam
+</text>
+    </message>
+    <message>
+      <heading>Fri Dec 28 (Asin)       :: Useful RP-related helpfiles.</heading>
+      <slot>9</slot>
+      <level>199</level>
+      <author>0</author>
+      <date>0</date>
+      <text>help rphelp, rphelp2, help wot, help wot2, help wot3, help
+one power, help forsaken, help ta'varen, help rp, help roleplay
+</text>
+    </message>
+    <message>
+      <heading>Fri May 17 (Aidan)      :: re: cookies</heading>
+      <slot>10</slot>
+      <level>199</level>
+      <author>0</author>
+      <date>0</date>
+      <text>
+And you need to remember to tell the newbies you give them to.
+</text>
+    </message>
+    <message>
+      <header>Question</header>
+      <slot>11</slot>
+      <level>199</level>
+      <author>270247</author>
+      <date>1037852705</date>
+      <authorname>Pyralin</authorname>
+      <text>   I am wondering, I heard that Jephrey got fired and one of the reasons
+is because he was &quot;abusing&quot; newbiegoto by having it go to the oval...  
+Two questions.  Number 1: Should I change my &quot;oval&quot; alias, so as not to
+use newbiegoto?  I wasn't aware it was abuse.  And number 2: I can
+understand how newbiegoto could be abused in some cases, for instance if I
+was using it to go to places hard to arrive at...  But when its a simple
+matter of typing either &quot;alias oval newbiegoto 7&quot; as opposed to &quot;alias
+oval recall;u;n;w&quot; I don't see how the former would be abuse.  It seems to
+me that the former might be less demanding on the server, and have no real
+benefit over the latter...  But if I'm wrong, feel free to correct me, and
+also...  (reiterates his first question)...  Should I change mine?    
+</text>
+    </message>
+    <message>
+      <header>Answer to Pyralin</header>
+      <slot>12</slot>
+      <level>203</level>
+      <author>228402</author>
+      <date>1038380447</date>
+      <authorname>Kalenth</authorname>
+      <text>Its a rather simple question, and i'm sorry that I didn't see it
+sooner. I'm much used to this board never being used. Anyways,
+Jephrey wasn't soley fired because of his abuse of Newbiegoto, but that
+isn't here or there to discuss. Abuse of Newbiegoto, truly, was only
+made so that NGs in itself could help newbies out a little better. In
+direct help with newbies, Newbiegoto Oval would be acceptable. But in
+just a handy way to get to Balon or the Oval when nothing is happening?
+Pishaw. It isn't likely that i'll catch you using the Oval alias
+Pyralin, but in effect, it is abuse. I'd rather prefer that everyone
+only use Newbiegoto in such instances that one of you says &quot;Newbiegoto
+Donation&quot; and then you follow behind them. As for the question of the
+alias, thats an alias. Everyone has access to an alias, but for
+Newbiegoto? Not many, so thus, silly little rules.
+
+Kale
+</text>
+    </message>
+    <message>
+      <header>Newbiegoto</header>
+      <slot>13</slot>
+      <level>199</level>
+      <author>226184</author>
+      <date>1043209600</date>
+      <authorname>Ragnar</authorname>
+      <text>While typing random things in an attempt to amuse myself, I stumbled across the list of newbiegoto destinations, and discovered that a few of said destinations are not needed.  I realize that there are much more important things the staff could be doing than removing newbiegoto destinations, but I'm really bored.
+2) Entering Deven Ride - What the heck? How is this useful for newbies?
+3) Road to Lugard - See above
+4) The skilled blacksmith - chances are, one won't be repairing stuff any time between levels one and twenty
+5) Caemlyn Pigeon and Courier Service - We can mail from anywhere...no need for this room to even exist
+9) The questskill and questspell shop. - if you're old enough to buy fricking questskills, you're old enough to find the shop yourself
+10) The Central Square of Far Madding - Again, how is this useful for a newbie?
+
+
+I do not claim to know everything on this subject, these are just the thoughts of a bored insomniac.  As always, I welcome comments, questions, flames, pats on the back, and medals of honor.
+-Rags
+</text>
+    </message>
+    <message>
+      <header>About Devon Ride...</header>
+      <slot>14</slot>
+      <level>199</level>
+      <author>246935</author>
+      <date>1043261293</date>
+      <authorname>Pyralin</authorname>
+      <text>   Hey Ragnar, I suggested this one to Kalenth :), just because most of
+the newbies that I've helped I've took there, its also where I leveled up
+when I was at a low level, it just gives really good experience at a low
+level and is really useful in my opinion.    
+</text>
+    </message>
+    <message>
+      <header>Re: Pyralin</header>
+      <slot>15</slot>
+      <level>199</level>
+      <author>300532</author>
+      <date>1043354940</date>
+      <authorname>Ragnar</authorname>
+      <text>Withdrawn ;)
+</text>
+    </message>
+    <message>
+      <header>A while in coming</header>
+      <slot>16</slot>
+      <level>203</level>
+      <author>217366</author>
+      <date>1043616661</date>
+      <authorname>Kalenth</authorname>
+      <text>I've been away for a while, so to these postings there shall come a
+responce after a little time. To those that I looked at, most of them
+were, technically, just ones left over from when Newbiegoto couldn't
+be changed without the help of a Coder. But since I, or any Builder
+could add Newbiegoto flags, I changed those that were redundant.
+The Quest Skills and the Mailing place are now gone, however all the rest
+shall stay. There are many reasons for this, so I shall state them here.
+
+1) Lugard - If you had actually gone there you would note that its
+the Taxi Stop just outside of Caemlyn. Since newbies really can't afford
+to cart everywhere, they can learn the old fashioned way and use the Taxi
+system like everyone did once. Hopefully.
+
+2) Deven Ride is a great place that most newbies can run around and kill
+some small things for somewhat good gold and experience. As well, its a
+good replacement for Caemlyn when one gets tired of that.
+
+3) You might not see many newbies wanting to repair something, but they
+do like to repair things. Even if they never use it, it is always there
+-for- them if they ever need to.
+
+4) See Deven Ride, but its good for level 20+ newbies to play in.
+
+Kale
+</text>
+    </message>
+    <message>
+      <header>Next Available Testing</header>
+      <slot>17</slot>
+      <level>210</level>
+      <author>242300</author>
+      <date>1070259633</date>
+      <authorname>Kalenth</authorname>
+      <text>Dak/Daklanar has failed the Newbieguide test and is next available to
+take the test on Feburary 29th of 2004.
+
+Kale
+</text>
+    </message>
+  </messages>
+</board>

@@ -1,0 +1,48 @@
+#905
+Doorman~
+the unfinished mob~
+An unfinished mob stands here.
+~
+It looks, err, unfinished.
+~
+8 0 0 E
+0 20 10 847 1d100+0 1d1+0
+0 0
+8 8 0 0
+P
+OnAction "weave 'open lock'"
+Stop
+End
+Q
+E
+#910
+mob unfinished~
+the unfinished mob~
+An unfinished mob stands here.
+~
+It looks, err, unfinished.
+~
+8 0 0 E
+0 20 10 847 1d100+0 1d1+0
+0 0
+8 8 0 0
+P
+OnAction "knock west"
+Shout
+Pause 1
+End
+OnTell "Grant entrance" & Guild "Daes"
+Say "'One moment while I open the door for you, your request for entrance has been accepted."
+Action "get key pouch"
+Action "4"
+Action "unlock door w"
+Action "open door w"
+Say "Please enter"
+Pause 3
+Action "close door w"
+Action "lock door w"
+Action "put key pouch"
+End
+Q
+E
+$

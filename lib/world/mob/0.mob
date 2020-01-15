@@ -1,0 +1,259 @@
+#1
+puff dragon void fractal~
+Puff~
+Puff the Fractal Dragon is here, contemplating a higher reality.
+~
+Is that some type of differntial curve involving some strange, and
+unknown calculus that she seems to be made out of?
+~
+253961 0 1000 E
+26 1 -1 680 5d10+550 4d6+3
+10000 155000
+8 8 2
+BareHandAttack: 12
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+E
+#2
+sleeping dreaming form~
+the sleeping form of Elaida.~
+The sle
+~
+ here.~
+8 0 0 E
+100 20 -20 680 1d100+30000 1d1+0
+0 0
+4 4 0
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+E
+#3
+trap~
+a trap~
+a trap
+~
+a trap
+~
+4194314 0 0 E
+100 20 10 680 1d0+0 1d1+0
+0 0
+8 8 1
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+E
+#10
+clone~
+ida.~
+A boring old clone is standing here.
+~
+This clone is nothing to look at.  No, really, it is quite boring.
+~
+10 0 0 E
+1 0 0 680 1d1+1 1d1+1
+0 0
+8 8 0
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+E
+#11
+zombie undead humanoid~
+the zombie~
+A strange humanoid is here.  How odd, its flesh seems to be falling off!
+~
+This strange humanoid is moving rather slowly, and appears to be
+a corpse, a walking corpse!  It must be a zombie or something of
+the sort.
+~
+10 0 0 E
+1 0 0 680 1d1+1 1d1+1
+0 0
+8 8 0
+BareHandAttack: 7
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+E
+#12
+hour crier~
+the hour crier ~
+A man stands here, looking at a watch intently.
+~
+The typically hurried official person with nothing to do.
+~
+10 0 0 E
+1 20 10 680 1d100+0 1d1+0
+0 1
+8 8 1
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnRandom 15
+Say "wang a dang - new hour!"
+Action "smile"
+Move "north"
+End
+OnMobDie & Hurt
+ActionTo "sneer"
+SayTo "i die...but i at least nicked you..."
+End
+Q
+E
+#13
+mob unfinished~
+the unfinished mob~
+An unfinished mob stands here.
+~
+It looks, err, unfinished.
+~
+8 0 0 E
+0 20 10 680 1d100+0 1d1+0
+0 0
+8 8 0
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+E
+#19
+aerial servant shape~
+the aerial servant~
+An amorphous shape is floating in the air.
+~
+As you stare at this amorphous shape, it begins to appear to take
+the shape of a cloud-like humanoid.
+~
+10 0 0 E
+1 0 0 680 1d1+1 1d1+1
+0 0
+8 8 0
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+E
+#20
+elemental~
+the elemental~
+An elemental is standing patiently here.
+~
+This creature is the essence of the elements, and appears to be
+waiting patiently for something to occur.
+~
+10 0 0 E
+1 0 0 680 1d1+1 1d1+1
+0 0
+8 8 0
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+E
+#30
+mercenary soldier rough~
+the rough mercenary~
+A rough looking soldier, possibly a mercenary is here.
+~
+The soldier has fallen on hard times recently, and has
+taken to seeling his skills as a mercenary for hire.
+~
+10 0 0 E
+50 -20 0 680 22d310+300 9d13+40
+0 50
+8 8 1
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+E
+#33
+pirate buccaneer ~
+a rough-looking pirate~
+A gruesome, snarling pirate stands here waiting for someone to kill.
+~
+The very archetype of a pirate; heavy golden rings in the ears, an odd
+assortment of jewelry hung about the neck, a worn cutlass in hand and
+a very unnerving look in his eyes.
+Apparently one who has gotten too little love as a child.
+~
+6255 0 0 E
+20 -5 6 680 30d50+250 4d6+25
+27 100
+8 8 1
+BareHandAttack: 3
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+E
+#60
+mob unfinished~
+Healmob~
+An unfinished mob stands here.
+~
+It looks, err, unfinished.
+~
+8 0 0 E
+0 20 10 680 1d100+0 1d1+0
+0 0
+8 8 0
+P
+OnSay "heal me"
+Cast "advanced heal"
+End
+OnSay "leave"
+PurgeMob
+End
+Q
+E
+#99
+death reaper~
+Death~
+Death the Grim Reaper is observing you silently from empty eye sockets.
+~
+The dark-robed skeletal figure radiates an unendurable coldness.
+~
+256026 33960 0 E
+30 0 -10 680 1d1+665 10d15+20
+0 500000
+8 8 0
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+E
+$

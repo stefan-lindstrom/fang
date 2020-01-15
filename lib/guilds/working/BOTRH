@@ -1,0 +1,645 @@
+<?xml version="1.0"?>
+<guildfile>
+  <guildbasic name="Band of the Red Hand" guildfile="BOTRH" gossip_name="bandgoss" type="1" id="2" gltitle="&amp;KBotRH&amp;m/&amp;KTR GL&amp;n" guildietitles="" gflags="22" guildwalk_room="12047" gold="565100">
+    <desc>     The story of the Band of the Red Hand has lived on since the time
+of the Trolloc Wars. The legendary army was the last to fall in the final
+defense of Manetheren and King Eamon himself, their defeat signifying the
+collapse of that great nation.
+     The name has been taken on by a new army. This new Band was formed
+when Matrim Cauthon saved a group of soldiers who otherwise would have
+died in a battle against the Shaido Aiel in Cairhien. Mat is now known as
+one of the greatest tactical minds of this, or perhaps any other time, as
+his planning reflects a style not seen since the Trolloc Wars, and the
+Band has not suffered one defeat under his leadership.
+     Another thing the Band&apos;s success has been attributed to is Mat&apos;s
+incredible luck. He is ta&apos;veren, and has been known to win almost without
+fail at dice, or any game of chance.
+     The Band is made up of 6 divisions: Infantry (or Swordsmen),
+Pikemen, Cavalry, Crossbows, Medics and Scouts. The Band&apos;s main strength
+is teamwork, both in combat and out. Although the Band is based mainly in
+Salidar now, Mat has been known to call a move on a whim, and within a
+very short time the camp is packed up and ready to move.
+As the original basis of the Band was a number of soldiers from
+Cairhien and Tear, the Band now accepts recruits from all nationalities,
+as long as they are willing to fight amongst a group considered sworn to
+the Dragon.
+</desc>
+    <reqs>&amp;BRequirements for joining the &amp;RBand.&amp;n
+&amp;G1.&amp;n First, have to have a character description written and
+approved by the GL of the Band.
+&amp;G2.&amp;n Send in a background of your character, include details such as:
+Where you were born, are you ic&apos;ly seeking the band, or just ooc&apos;ly,
+what is your character like, what does he/she believe in, stance on the
+Lord Dragon, etc. What sort of training, if any, you have had.
+&amp;G3.&amp;n You have to be at least level 20 to be guilded, and any unusual rp
+aspects, such as whether your character is a darkfriend or Ogier
+need to also be included and approved with the background.
+
+Once authorized to seek the band, all you need is the recruiting roleplay
+with one member of the band authorized to sponsor, and the overall
+sponsorship of two members of the Band that are authorized to do so.
+
+See also: help BANDREQS -and- help BANDRP for more information.
+</reqs>
+    <gossip>&amp;w8-15-00&amp;n
+&amp;yRumors swirl around the Ball and Hoop, late last night the General
+was seen speaking to a man wearing a black cloak.  Shortly afterwards, the
+General was seen leaving accompanied by three members of his Redarm
+guards.  Some hours later Mat returned to the Ball and Hoop, spoke briefly
+to some of the officers then left again, this time for a night long
+drinking and dicing binge.&amp;n
+
+It&apos;s true!  The story that Captain Brenna has returned to Caemlyn must
+be true after all.  A young recruit was overheard reporting to the General
+that the Captain was seen in company of a Swordsman in the Ball and Hoop,
+though when Lord Mat went to see her, they were both gone.  Is it possible
+the recruit was seeing things?  Where could they have got to and why?
+
+The trees whisper, whisper that a prominent member of the Band has
+been arrested in Salidar for spying on an Aes Sedai, but why?  And on whom&apos;s
+orders...?
+
+Over drinks, bandie&apos;s gossiped - the Medic&apos;s Commander hadn&apos;t been seen
+at her usual spot by the beerkeg last night.  She&apos;d been seen returning with
+Commander Tidder, in a rather foul mood, this morning.  Well into his drink,
+a young recruit was finally bullied into revealing that he&apos;d carried a dispatch
+intended for the General that afternoon, and about the nicest words he
+could repeat were &quot;bloody fool Aes Sedai&quot; and &quot;nail his ears to the floor&quot;.
+Not surprisingly when Ash did turn up that night, nobody was brave or drunk
+enough to ask!
+</gossip>
+    <gchan gchan_color="r" gchan_type="1">bandtalk</gchan>
+  </guildbasic>
+  <rank name="General" num="1"/>
+  <rank name="&amp;rRedarm&amp;n Captain" num="2"/>
+  <rank name="&amp;wCommander&amp;n [Scout] " num="3"/>
+  <rank name="&amp;wCommander&amp;n [Swordsmen]" num="4"/>
+  <rank name="&amp;wCommander&amp;n [Pikemen]" num="5"/>
+  <rank name="&amp;wCommander&amp;n [Cavalry]" num="6"/>
+  <rank name="&amp;wCommander&amp;n [Bowmen]" num="7"/>
+  <rank name="&amp;yCaptain&amp;n [Scout]" num="8"/>
+  <rank name="&amp;yCaptain&amp;n [Swordsmen]" num="9"/>
+  <rank name="&amp;yCaptain&amp;n [Pikemen]" num="10"/>
+  <rank name="&amp;yCaptain&amp;n [Cavalry]" num="11"/>
+  <rank name="&amp;yCaptain&amp;n [Bowmen]" num="12"/>
+  <rank name="&amp;cBannerman&amp;n [Swordsmen]" num="13"/>
+  <rank name="&amp;cBannerman&amp;n [Pikemen]" num="14"/>
+  <rank name="&amp;cBannerman&amp;n [Cavalry]" num="15"/>
+  <rank name="&amp;cBannerman&amp;n [Bowmen]" num="16"/>
+  <rank name="&amp;BFileleader&amp;n [Swordsmen]" num="17"/>
+  <rank name="&amp;BFileleader&amp;n [Pikemen]" num="18"/>
+  <rank name="&amp;BFileleader&amp;n [Cavalry]" num="19"/>
+  <rank name="&amp;BFileleader&amp;n [Bowmen]" num="20"/>
+  <rank name="&amp;rVeteran&amp;n [Swordsmen]" num="21"/>
+  <rank name="&amp;rVeteran&amp;n [Pikemen]" num="22"/>
+  <rank name="&amp;rVeteran&amp;n [Cavalry]" num="23"/>
+  <rank name="&amp;rVeteran&amp;n [Bowmen]" num="24"/>
+  <rank name="&amp;mSwordsman&amp;n [Swordsmen]" num="25"/>
+  <rank name="&amp;mPikeman&amp;n [Pikemen]" num="26"/>
+  <rank name="&amp;mHorseman&amp;n [Cavalry]" num="27"/>
+  <rank name="&amp;mArcher&amp;n [Bowmen]" num="28"/>
+  <rank name="&amp;mCrossbowman&amp;n [Bowmen]" num="29"/>
+  <rank name="&amp;mScout&amp;n [Scout]" num="30"/>
+  <rank name="&amp;rTracker&amp;n [Scout]" num="31"/>
+  <rank name="&amp;BRanger&amp;n [Scout]" num="32"/>
+  <rank name="&amp;mMedic&amp;n [Medic]" num="33"/>
+  <rank name="&amp;rField Doctor&amp;n [Medic]" num="34"/>
+  <rank name="&amp;cChirirgeon&amp;n [Medic]" num="35"/>
+  <rank name="&amp;BMember&amp;n" num="36"/>
+  <rank name="&amp;RPrisoner&amp;n" num="37"/>
+  <rank name="&amp;rProbation&amp;n" num="38"/>
+  <rank name="&amp;GRecruit&amp;n" num="39"/>
+  <rank name="&amp;RGuild Leader&amp;n" num="40"/>
+  <rank name="&amp;wCommander&amp;n [Medic]" num="41"/>
+  <rank name="Temp GL" num="42"/>
+  <rank name="Coder-type" num="43"/>
+  <gskill skill="318" maximum_set="80"/>
+  <gskill skill="320" maximum_set="80"/>
+  <gskill skill="322" maximum_set="80"/>
+  <gskill skill="319" maximum_set="80"/>
+  <gskill skill="317" maximum_set="80"/>
+  <gskill skill="316" maximum_set="80"/>
+  <gzone zone="120"/>
+  <guildie idnum="23764" name="Talbain" rank_num="39" subrank="&amp;mSeeking Scouts&amp;n" perm="0" status="52" deposited="0" withdrew="0">
+    <sponsorer idnum="23863" name="Argenta"/>
+    <sponsorer idnum="16737" name="Ashinteara"/>
+  </guildie>
+  <guildie idnum="26384" name="Mat" rank_num="1" subrank="" perm="0" status="20" deposited="0" withdrew="0"/>
+  <guildie idnum="68" name="Rassmussen" rank_num="34" subrank="&amp;wAWOL&amp;n" perm="12" status="308" deposited="0" withdrew="0"/>
+  <guildie idnum="25210" name="Hazel" rank_num="43" subrank="&amp;mPurple&amp;n" perm="0" status="52" deposited="0" withdrew="0"/>
+  <guildie idnum="14266" name="Byzel" rank_num="9" subrank="" perm="14" status="20" deposited="0" withdrew="0"/>
+  <guildie idnum="12018" name="Masema" rank_num="42" subrank="&amp;cFake GL&amp;n" perm="63" status="60" deposited="0" withdrew="0"/>
+  <guildie idnum="24274" name="Varak" rank_num="39" subrank="&amp;mSeeks Swordsmen&amp;n" perm="0" status="52" deposited="0" withdrew="0">
+    <sponsorer idnum="25723" name="Brenna"/>
+    <sponsorer idnum="19037" name="Trelibor"/>
+  </guildie>
+  <guildie idnum="24251" name="Jorge" rank_num="0" subrank="" perm="0" status="3" deposited="0" withdrew="0"/>
+  <guildie idnum="16128" name="Janelle" rank_num="0" subrank="" perm="0" status="3" deposited="0" withdrew="0">
+    <sponsorer idnum="16737" name="Ashinteara"/>
+    <sponsorer idnum="20185" name="Isabeau"/>
+  </guildie>
+  <guildie idnum="22450" name="Itha" rank_num="0" subrank="" perm="0" status="3" deposited="0" withdrew="0">
+    <sponsorer idnum="23980" name="Jander"/>
+    <sponsorer idnum="23800" name="Vanieum"/>
+  </guildie>
+  <guildie idnum="22579" name="Elhaym" rank_num="39" subrank="" perm="0" status="20" deposited="0" withdrew="0"/>
+  <guildie idnum="21384" name="Issunboshi" rank_num="25" subrank="&amp;CEx-SC Infantry&amp;n" perm="12" status="52" deposited="0" withdrew="0"/>
+  <guildie idnum="21776" name="Dienekes" rank_num="26" subrank="&amp;rOld Timer&amp;n" perm="8" status="20" deposited="0" withdrew="0"/>
+  <guildie idnum="22220" name="Damrim" rank_num="25" subrank="&amp;rRed &amp;RArsed&amp;r Baboon&amp;n" perm="8" status="20" deposited="0" withdrew="0"/>
+  <guildie idnum="21737" name="Gabriela" rank_num="36" subrank="&amp;yChild&amp;n" perm="8" status="52" deposited="0" withdrew="0"/>
+  <guildie idnum="21958" name="Marilyn" rank_num="36" subrank="&amp;MTrel&apos;s Wife&amp;n" perm="8" status="36" deposited="0" withdrew="0"/>
+  <guildie idnum="22422" name="Atrius" rank_num="28" subrank="" perm="8" status="20" deposited="0" withdrew="0"/>
+  <guildie idnum="22587" name="Marilla" rank_num="30" subrank="&amp;wFaux Innocent&amp;n" perm="12" status="52" deposited="0" withdrew="0"/>
+  <guildie idnum="15551" name="Druvis" rank_num="26" subrank="" perm="8" status="20" deposited="0" withdrew="0"/>
+  <guildie idnum="13587" name="Burzmali" rank_num="27" subrank="" perm="8" status="20" deposited="0" withdrew="0"/>
+  <guildie idnum="10778" name="Beoir" rank_num="25" subrank="" perm="8" status="20" deposited="0" withdrew="0"/>
+  <guildie idnum="16908" name="Bradlen" rank_num="2" subrank="&amp;mPikeman&amp;n" perm="30" status="308" deposited="0" withdrew="0"/>
+  <guildie idnum="13967" name="Zerith" rank_num="25" subrank="" perm="8" status="20" deposited="0" withdrew="0"/>
+  <guildie idnum="5775" name="Gerin" rank_num="31" subrank="" perm="8" status="20" deposited="0" withdrew="0"/>
+  <guildie idnum="5577" name="Dunsan" rank_num="16" subrank="&amp;rRedarm&amp;n" perm="28" status="52" deposited="0" withdrew="0"/>
+  <guildie idnum="19037" name="Trelibor" rank_num="21" subrank="&amp;wAWOL&amp;n" perm="14" status="52" deposited="171666" withdrew="171666"/>
+  <guildie idnum="16737" name="Ashinteara" rank_num="41" subrank="&amp;rResponsible for the GL&apos;s STD&apos;s&amp;n" perm="12" status="276" deposited="0" withdrew="0"/>
+  <guildie idnum="13241" name="Eirik" rank_num="39" subrank="&amp;cThe&amp;n &amp;wP&amp;Ki&amp;wn&amp;Kc&amp;Wh&amp;Ke&amp;wr&amp;n" perm="12" status="20" deposited="0" withdrew="0"/>
+  <guildie idnum="20185" name="Isabeau" rank_num="36" subrank="&amp;rCook&amp;n" perm="8" status="52" deposited="0" withdrew="0"/>
+  <guildie idnum="7051" name="Baerond" rank_num="31" subrank="&amp;KBlacksmith&amp;n" perm="8" status="52" deposited="0" withdrew="0"/>
+  <guildie idnum="808" name="Tori" rank_num="19" subrank="" perm="8" status="20" deposited="0" withdrew="0"/>
+  <guildie idnum="184" name="Tidder" rank_num="3" subrank="&amp;wB&amp;ca&amp;wt&amp;ch&amp;wh&amp;co&amp;wu&amp;cs&amp;we&amp;n &amp;wI&amp;Bn&amp;wf&amp;Bo&amp;wr&amp;Bm&amp;wa&amp;Bn&amp;wt&amp;n" perm="12" status="52" deposited="0" withdrew="0"/>
+  <guildie idnum="7129" name="Cullyn" rank_num="38" subrank="" perm="8" status="20" deposited="0" withdrew="0"/>
+  <guildie idnum="22562" name="Ban" rank_num="39" subrank="" perm="0" status="20" deposited="0" withdrew="0"/>
+  <guildie idnum="22531" name="Myklob" rank_num="0" subrank="" perm="0" status="3" deposited="0" withdrew="0"/>
+  <guildie idnum="6844" name="Seraph" rank_num="39" subrank="&amp;wAWOL&amp;n" perm="28" status="52" deposited="0" withdrew="0"/>
+  <guildie idnum="22672" name="Roufin" rank_num="19" subrank="&amp;BTrainer&amp;n" perm="8" status="52" deposited="0" withdrew="0">
+    <sponsorer idnum="14266" name="Byzel"/>
+  </guildie>
+  <guildie idnum="21278" name="Jian" rank_num="39" subrank="" perm="0" status="20" deposited="0" withdrew="0"/>
+  <guildie idnum="23696" name="Melina" rank_num="0" subrank="" perm="0" status="1" deposited="0" withdrew="0"/>
+  <guildie idnum="23386" name="Mallon" rank_num="0" subrank="" perm="0" status="1" deposited="0" withdrew="0">
+    <sponsorer idnum="22672" name="Roufin"/>
+  </guildie>
+  <guildie idnum="23867" name="Blake" rank_num="36" subrank="&amp;MTailor&amp;n" perm="0" status="52" deposited="0" withdrew="0"/>
+  <guildie idnum="23676" name="Faylin" rank_num="36" subrank="&amp;yChild&amp;n" perm="0" status="52" deposited="0" withdrew="0"/>
+  <guildie idnum="23189" name="Mateo" rank_num="39" subrank="" perm="0" status="20" deposited="0" withdrew="0">
+    <sponsorer idnum="23980" name="Jander"/>
+    <sponsorer idnum="22672" name="Roufin"/>
+    <sponsorer idnum="16908" name="Bradlen"/>
+  </guildie>
+  <guildie idnum="23980" name="Jander" rank_num="25" subrank="&amp;mRecruiter&amp;n" perm="8" status="52" deposited="0" withdrew="0">
+    <sponsorer idnum="22672" name="Roufin"/>
+    <sponsorer idnum="19037" name="Trelibor"/>
+  </guildie>
+  <guildie idnum="23783" name="Hendel" rank_num="0" subrank="" perm="0" status="1" deposited="0" withdrew="0"/>
+  <guildie idnum="23800" name="Vanieum" rank_num="33" subrank="&amp;RC&amp;Wo&amp;Yr&amp;Rn&amp;Wi&amp;Ye&amp;R&apos;&amp;Ws &amp;RA&amp;Wn&amp;Yg&amp;Re&amp;Wl&amp;Ys&amp;n" perm="8" status="20" deposited="0" withdrew="0">
+    <sponsorer idnum="23980" name="Jander"/>
+    <sponsorer idnum="22672" name="Roufin"/>
+    <sponsorer idnum="22753" name="Cornelius"/>
+    <sponsorer idnum="22753" name="Cornelius"/>
+  </guildie>
+  <guildie idnum="24021" name="April" rank_num="39" subrank="&amp;mSeeks Cavalry&amp;n" perm="8" status="52" deposited="0" withdrew="0">
+    <sponsorer idnum="22672" name="Roufin"/>
+    <sponsorer idnum="22672" name="Roufin"/>
+    <sponsorer idnum="22672" name="Roufin"/>
+    <sponsorer idnum="23980" name="Jander"/>
+  </guildie>
+  <guildie idnum="23863" name="Argenta" rank_num="28" subrank="&amp;RC&amp;Wo&amp;Yr&amp;Rn&amp;Wi&amp;Ye&amp;R&apos;&amp;Ws &amp;RA&amp;Wn&amp;Yg&amp;Re&amp;Wl&amp;Ys&amp;n" perm="12" status="20" deposited="0" withdrew="0">
+    <sponsorer idnum="22672" name="Roufin"/>
+    <sponsorer idnum="23980" name="Jander"/>
+  </guildie>
+  <guildie idnum="24043" name="Starla" rank_num="39" subrank="&amp;mSeeks Cavalry&amp;n" perm="0" status="52" deposited="0" withdrew="0">
+    <sponsorer idnum="23980" name="Jander"/>
+    <sponsorer idnum="22672" name="Roufin"/>
+  </guildie>
+  <guildie idnum="24165" name="Kirian" rank_num="25" subrank="&amp;mSeeks Swordsmen&amp;n" perm="0" status="20" deposited="0" withdrew="0">
+    <sponsorer idnum="23980" name="Jander"/>
+    <sponsorer idnum="22672" name="Roufin"/>
+  </guildie>
+  <guildie idnum="24188" name="Galdail" rank_num="39" subrank="&amp;mSeeks Swordsmen&amp;n" perm="0" status="52" deposited="0" withdrew="0">
+    <sponsorer idnum="24021" name="April"/>
+    <sponsorer idnum="23980" name="Jander"/>
+    <sponsorer idnum="22672" name="Roufin"/>
+  </guildie>
+  <guildie idnum="24240" name="Xier" rank_num="39" subrank="&amp;mSeeks Swordsmen&amp;n" perm="0" status="52" deposited="0" withdrew="0">
+    <sponsorer idnum="22220" name="Damrim"/>
+    <sponsorer idnum="23980" name="Jander"/>
+    <sponsorer idnum="22672" name="Roufin"/>
+  </guildie>
+  <guildie idnum="24486" name="Caltus" rank_num="36" subrank="&amp;KB&amp;rl&amp;Ra&amp;Yc&amp;Wks&amp;Ym&amp;Ri&amp;rt&amp;Kh&amp;n" perm="0" status="52" deposited="0" withdrew="0">
+    <sponsorer idnum="23863" name="Argenta"/>
+    <sponsorer idnum="22753" name="Cornelius"/>
+  </guildie>
+  <guildie idnum="24908" name="Rylee" rank_num="39" subrank="&amp;mSeeking Bowmen&amp;n" perm="0" status="52" deposited="0" withdrew="0">
+    <sponsorer idnum="22672" name="Roufin"/>
+    <sponsorer idnum="23863" name="Argenta"/>
+  </guildie>
+  <guildie idnum="24733" name="Khaslin" rank_num="39" subrank="&amp;yFeel His Nuts&amp;n" perm="8" status="20" deposited="0" withdrew="0">
+    <sponsorer idnum="23863" name="Argenta"/>
+  </guildie>
+  <guildie idnum="25151" name="Galzar" rank_num="39" subrank="&amp;mSeeking Swordsmen&amp;n" perm="0" status="52" deposited="0" withdrew="0">
+    <sponsorer idnum="24733" name="Khaslin"/>
+    <sponsorer idnum="23863" name="Argenta"/>
+  </guildie>
+  <guildie idnum="24252" name="Salur" rank_num="39" subrank="&amp;mSeeking Bowmen&amp;n" perm="0" status="52" deposited="0" withdrew="0">
+    <sponsorer idnum="22672" name="Roufin"/>
+  </guildie>
+  <guildie idnum="24949" name="Jeindan" rank_num="39" subrank="&amp;mSeeking Scouts&amp;n" perm="16" status="52" deposited="0" withdrew="0">
+    <sponsorer idnum="19037" name="Trelibor"/>
+    <sponsorer idnum="20185" name="Isabeau"/>
+  </guildie>
+  <guildie idnum="25723" name="Brenna" rank_num="8" subrank="" perm="14" status="20" deposited="0" withdrew="0"/>
+  <guildie idnum="25620" name="Tsallomn" rank_num="39" subrank="&amp;mSeeking Bowmen&amp;n" perm="0" status="52" deposited="0" withdrew="0">
+    <sponsorer idnum="23863" name="Argenta"/>
+    <sponsorer idnum="22672" name="Roufin"/>
+  </guildie>
+  <guildie idnum="24806" name="Chris" rank_num="43" subrank="&amp;K*&amp;rexpletive deleted&amp;K*&amp;n" perm="0" status="52" deposited="0" withdrew="0"/>
+  <guildie idnum="26348" name="Olver" rank_num="36" subrank="&amp;wThe Kid&amp;n" perm="0" status="308" deposited="0" withdrew="0"/>
+  <gequip vnum="7115"/>
+  <gequip vnum="12190"/>
+  <gequip vnum="12191"/>
+  <gequip vnum="12192"/>
+  <gequip vnum="12193"/>
+  <gequip vnum="12194"/>
+  <gequip vnum="12195"/>
+  <ghelp keyword="Scouting_Basics">
+    <entry>&amp;ySCOUTING BASICS&amp;n
+
+ &amp;y-&amp;nPurpose: Obtain information, as well as track and locate individuals
+(or items) sought after by the Band of the Red Hand, for whatever 
+reason.
+ &amp;W*&amp;nTracking: Demonstrate ability to track in wilderness and urban
+settings.  Decipher different tracks, uncover hidden tracks, spot false
+trails and so on.  Also be prepared to demonstrate ability to hide your
+own tracks.
+ &amp;W*&amp;nTailing: Aside from tracking, tailing suspects (for whatever
+reason) is a necessary talent to have in your bag of tricks.  If you&apos;re
+not good at this, you&apos;ll probably wind up dead anyways.
+ &amp;W*&amp;nStealth: Demonstrate skills in blending into your surroundings,
+whether it be in a crowd or in the woods, a good scout can hide in
+plain sight if he/she wants to.  A good scout will use his/her backdrop
+to their advantage without fail.
+ &amp;W*&amp;nDisguise: Combined with stealth, invaluable.  Used while
+tailing someone, not only innovative, but wise.  Caution is something
+that should be second nature to a scout.
+ &amp;W*&amp;nInquisitive/attentive nature: Knowing how to question some-
+one without actually seeming as though you are doing so is a craft
+to be honed.  Listen to everyone and everything, do not dismiss
+any snippit of information irregardless of how insignifigant or downright
+ridiculous it seems.
+ &amp;W*&amp;nSelf defense/fighting ability: Necessary for obvious reasons.
+Better to undergo this training while still a recruit before becoming
+a full time scout for the Band.
+</entry>
+  </ghelp>
+  <ghelp keyword="GSKILLS">
+    <entry>&amp;yGUILD SKILLS FOR THE BAND&amp;n
+
+ &amp;RTactics:&amp;n
+&amp;y-&amp;nTactics is dependant upon being grouped (with other Bandies
+who also have Tactics as a guildskill preferably), but as long as you&apos;re
+grouped it works.  It decreases your AC by 5 and for each group
+member that also has Tactics, your AC gets another decrease of 5.
+Tactics caps at a MAX of -40 AC affection however.
+&amp;W*&amp;nAutomatic skill, once grouped.
+
+ &amp;RBrace:&amp;n
+&amp;y-&amp;nBrace decreases the damage you take by your_level/10, so if
+you&apos;re level 100, 100/10= 10 less damage.
+&amp;W*&amp;nAutomatic skill.
+
+ &amp;RFlank:&amp;n
+Usage: flank &lt;target&gt;
+&amp;y-&amp;nFlank is an extra attack, it cannot be used to initiate a fight, only
+during a codefight.  It does an additional 4-40(random) damage to
+your target, and also leaves the target sitting.
+&amp;W*&amp;nThe rate of success increases with your skill %.
+&amp;W*&amp;nCannot be used in rapid succession, in otherwords, there&apos;s
+a waiting period before you may use it again, just like with say, Trip
+or Stun.
+
+ &amp;RStrike:&amp;n
+&amp;y-&amp;nStrike gives you a 25% or 1 in 4 chance to do double damage to
+a target.  This skill doubles the damroll of the weapon wielded, so
+if you&apos;re wielding the guild sword (10d10), taking a random value
+from 10 to 100, there&apos;s potential for a 20 to 200 damage bonus.
+&amp;W*&amp;nAutomatic skill.
+
+ &amp;RAim:&amp;n
+Usage: aim &lt;target&gt;
+&amp;y-&amp;nAim multiplies damage to target by 3 if successful.  It&apos;s
+necessary to have a weapon wielded, as this skill multiplies your
+weapon&apos;s damage by 3.  So if you&apos;re using the two-handed guild
+sword (10d10), then it takes a random value from 10 to 100
+and triples it.  Potential for a 30 to 300 damage bonus.
+&amp;W*&amp;n If you&apos;re using the one handed guild sword, wield it
+in your left hand, as the skill goes to the left handed weapon
+first, then to the right handed one.  (Only affects one weapon)
+&amp;W*&amp;nRate of success is dependant on your skill %.
+
+ &amp;RBandmarch:&amp;n
+Usage: bandmarch &lt;room name/#&gt;
+&amp;y-&amp;nThis skill essentially acts just like cart does, although
+there&apos;s no charge to the guildie as they are merely &quot;marching&quot;
+codewise and not hiring a cart.  Also very similiar to seek, the
+main difference being, seek uses player/mob names, whereas,
+as stated above, this skill uses room names and numbers.
+Another bonus is it also works in !GATE flagged rooms and cart
+does not.
+</entry>
+  </ghelp>
+  <ghelp keyword="Band_Etiquette/Protocol">
+    <entry>&amp;yBAND ETIQUETTE AND PROTOCOL&amp;n
+
+&amp;y-&amp;n basic rank structure (excluding scouts)
+&amp;W*&amp;n Recruit
+&amp;W*&amp;n First Rank
+&amp;W*&amp;n Veteran (or Medic)
+&amp;W*&amp;n Bannerman (or Chirirgeon)
+&amp;W*&amp;n Fileleader (or Field Doctor)
+&amp;W*&amp;n Captain
+&amp;W*&amp;n Commander
+&amp;y-&amp;n dealing with lower and higher ranks: all must obey the orders
+of a higher ranks soldier, high-ranked soldiers are responsible
+  for the orders they give. Those who do not obey or those who
+  abuse this power will face strict punishment.
+&amp;y-&amp;n saluting: how to salute (no set way), demonstrate hand-to-
+forehead and fist-to-chest methods as suggestions.
+&amp;W*&amp;n Never salute or refer to another soldier by rank when outside
+the camp or other Band-specific areas or combat.
+&amp;W*&amp;n Always salute/use rank when dealing with those of higher
+  rank inside the camp, unless instructed otherwise. 
+&amp;W*&amp;n During battle show respect at all times, including salutes
+  where appropriate and use of ranks.
+&amp;y-&amp;n rules at different ranks: 
+&amp;W*&amp;n Recruits are not permitted to leave the camp/training area
+  unless under the full supervision of a soldier of higher rank. 
+&amp;W*&amp;n Once you have been promoted to First Rank, you are allowed
+  to leave the camp as you wish. Long trips, however, are 
+  expected to be cleared by a proper official (The General,
+  Captain of the Redarms, Commanders or others of sufficiently
+  high rank).
+&amp;W*&amp;n Recruits are to obey *all* orders given to them, no matter how
+  trivial, however, if the order is truly abusive of the chain of
+  command (ie polishing shoes or whatever) then it may be
+  reported. 
+&amp;W*&amp;n Chain of command must always be observed. The orders of a
+  Fileleader do not directly overwrite the orders of a Captain.
+&amp;W*&amp;n Redarms are the Band&apos;s policing unit, usually employed when
+the Band is travelling cross-country and through towns.
+  Everyone above first rank will be a redarm at some point, as it
+  rotates through all Band members (can explain the principle if
+you want to). They resolve all intra-Band conflicts, as well as
+settling problems with non-soldiers and paying for damages.
+&amp;W*&amp;nWhile on probation, a Band member loses all rights and
+  priviledges and must defer to the person of highest rank,
+  regardless of what they were before.
+
+See also: HELP BANDRP
+</entry>
+  </ghelp>
+  <ghelp keyword="Tactics_Fundamentals_Syllabus">
+    <entry>&amp;yTACTICS FUNDAMENTALS SYLLABUS&amp;n
+
+&amp;y-&amp;n basic working of each division.
+ &amp;mSwordsmen:&amp;n used in both attack and defense. Basic fighting
+  unit, skilled in one-on-one and group fighting tactics. Mobile
+  and effective up close.
+ &amp;mPikemen:&amp;n mostly used to defend against charging (using 
+  technique shown in pike lessons), disadvantaged in attack by
+  weapon size. Weapon can be used as either a staff or a spear
+  in attack/defense.
+ &amp;mCavalry:&amp;n best used in attack as a charge. Horseback gives
+  power advantage and height advantage, but at the cost of
+  mobility in close-quarters combat with footmen.
+ &amp;mCrossbowmen:&amp;n mostly used for distance attack, sometimes 
+  known to ride in with cavalry. Crossbow bolts not of much use 
+  in close-quarter combat.
+ &amp;mMedics:&amp;n dedicated to healing, from performing minor first aid on
+  the battlefield to major surgery in the camp. Would be a
+  liability if unable to hold their own in battle, so trained to use
+  their large knives in close-quarter combat.
+ &amp;mScouts:&amp;n used for gathering information and items of interest
+  outside of battle. Information can include battlefield lay-out,
+  surrounding areas, army movements nearby, etc. During
+  battle they are used for messaging and reporting on 
+  attack/defense progress and battlefield information.
+</entry>
+  </ghelp>
+  <ghelp keyword="Medic&apos;s_Basic_Syllabus">
+    <entry>&amp;yMEDIC&apos;S BASIC SYLLABUS&amp;n
+
+&amp;y-&amp;n first aid: 
+&amp;W*&amp;n positioning of injured: lay flat on back, support head with an
+item of clothing if possible.
+&amp;W*&amp;n checking for injuries: visual inspection for wounds or
+irregularities in the skin, then gentle feeling of visual
+irregularities or places where the injured complain of
+discomfort.
+&amp;W*&amp;n makeshift bandaging wounds: if wounds are bleeding too
+much to wait for a medic, rip strips of cloth from whatever you
+have handy and tie tightly around the wounded area, careful
+not to cut off circulation.
+</entry>
+  </ghelp>
+  <ghelp keyword="Cavalry_Basics_Syllabus">
+    <entry>&amp;yCAVALRY BASICS SYLLABUS&amp;n
+
+&amp;y-&amp;n basic horse care: Correct saddling of horse, grooming (how,
+  how often), feeding (correct feed).
+&amp;y-&amp;n mounting: calm horse first (pat nose, let it get used to you),
+  left foot in stirrup, hands on saddle-pommel, single fluid
+  motion of kick up and swing left over before gently lowering
+  yourself into the saddle.
+&amp;y-&amp;n dismounting: bring horse to a stand-still, calming them, before 
+  standing gently on the stirrups with your hands on the saddle-
+  pommel, then swinging your leg over and down to the ground 
+  in a fluid motion.
+&amp;y-&amp;n battle: slash/stab only at opponent&apos;s to the side of your horse, 
+  never slash over your horse&apos;s head. 
+&amp;W*&amp;n Underhanded swing to the right during a charge. 
+&amp;W*&amp;n Not much opportunity for heavy parries, as one hand must be 
+  used to guide the horse at first. Those who choose Cavalry  
+  will learn to control their animal with their knees, and will learn 
+  more advanced fighting techniques.
+</entry>
+  </ghelp>
+  <ghelp keyword="Weapons_Guidelines_Syllabus">
+    <entry>&amp;yWEAPONS GUIDELINES SYLLABUS&amp;n
+
+1) &amp;RSword&amp;n
+&amp;y-&amp;n stance: feet shoulder-width apart, left foot slightly forward,
+sword held with both hands at waist height and in line with 
+right hip.
+&amp;y-&amp;n parry: From stance.
+&amp;W*&amp;n parry left: blade held vertically, right hand pushing it out just 
+past your left shoulder.
+&amp;W*&amp;n parry right: blade held vertically, left hand pushing it out just 
+past your right shoulder.
+&amp;W*&amp;n parry up: hands rise vertically, tilting the blade until it is held
+horizontally, then rising the blade just above head&amp;y-&amp;nheight.
+&amp;y-&amp;n slash: from parry, moving the correct foot and slashing
+diagonally at opponent&apos;s chest.
+&amp;y-&amp;n stab: stepping forward with left foot in a direct stab at
+opponent&apos;s midsection.
+
+2) &amp;RPike&amp;n
+&amp;y-&amp;n stance: feet shoulder-width apart, left foot slightly forward,
+pike held across body at an angle, left hand under, right hand 
+over.
+&amp;y-&amp;n parry: right hand to steady the pike/add power, left hand to
+guide it, swinging it left or right.
+&amp;y-&amp;n slash: not very effective (blunt weapon). Excercises in
+swinging the weapon like a staff.
+&amp;y-&amp;n stab: Step forward with left foot, stabbing to opponent&apos;s
+midsection as thought with a spear.
+&amp;y-&amp;n charge defense: ground butt of pike, lean back, hold point up 
+at an angle and into oncoming charge.
+
+3) &amp;RCrossbow&amp;n
+&amp;y-&amp;n loading: The bowstring, held in a notch by a catch or
+trigger, is pulled back by a lever, which in the smaller bows
+was worked by hand or foot. The missile to be shot (bolt or
+quarrel) then laid in the groove on the top of the stock.
+&amp;y-&amp;n holding: left hand at front for aiming, right hand held with 
+thumb on latch. Never point at someone you don&apos;t intend to
+hurt, point to ground when not firing.
+&amp;y-&amp;n firing: target practice. Aim carefully along barrel, release latch
+only when you are confident your aim is correct.
+&amp;y-&amp;n demonstration of range/power: Instructor picks a far off target
+(preferably a tree) and fires at it, demonstrating the range,
+then showing how far it penetrates the wood.
+
+4) &amp;RBow&amp;n
+&amp;y-&amp;n  precautions: A bracer on your left forearm, and if wanted, finger gloves.  NEVER DRYFIRE, or draw back and release the bowstring without an arrow.  You can ruin the bow and hurt yourself.
+&amp;y-&amp;n  loading:  Reach over your shoulder into your quiver, grab an arrow, place its notched end into the bowstring, towards the center.  You should not place it too high or too low, or the arrow may misfire.  
+&amp;y-&amp;n  drawing:  Grasp the string with the notch of the arrow between your index and middle finger, and your ring and pinky.  Do not draw back fast, just a steady pull.  Try to bring the bowstring to your ear, with the arrow pointing straight ahead.
+&amp;y-&amp;n  aiming:  Sight along the arrow, and try to think of where the arrow will go.  If a target is far away, raise your bow to compensate.  Do not aim too high, or it will fall just as short as it would have been too low.
+&amp;y-&amp;n  firing:  once you have aimed, let go of the bowstring.  Try not to flinch, or your arrow may go awry.
+&amp;y-&amp;n  demonstration of range/power:  have an instructor fire a bow at a distant target.  Also, explain that the higher the pounds of pull, the farther and the more forceful the arrow.  For example, a bow with a 50 lb.  test will not be as powerful or as ranged as a 100 lb. test.
+</entry>
+  </ghelp>
+  <ghelp keyword="Email:">
+    <entry> Cornelius:
+&amp;gcedric@napanet.net&amp;n
+
+ Masema:
+&amp;gpseudobyte@hotmail.com&amp;n
+</entry>
+  </ghelp>
+  <ghelp keyword="GUILDEQ">
+    <entry>&amp;yGUILD EQ&amp;n
+
+&amp;WLight &amp;w-&amp;n &quot;Luck of the General&quot;
+        &quot;a lantern of &amp;Kb&amp;kl&amp;Ka&amp;kc&amp;Kk m&amp;we&amp;Kt&amp;wa&amp;Kl&amp;n&quot;
+        &amp;R1 extra attack, 30 hit, 30 dam&amp;n
+
+&amp;WWaist &amp;w-&amp;n &quot;a simple &amp;Kblack &amp;yl&amp;Ke&amp;ya&amp;Kt&amp;yh&amp;Ke&amp;yr&amp;n belt&quot;
+        &amp;R1 extra attack, 20 hit, 20 dam&amp;n
+
+&amp;WBody &amp;w-&amp;n &quot;a stiffened &amp;yl&amp;Ke&amp;ya&amp;Kt&amp;yh&amp;Ke&amp;yr&amp;n jerkin covered with &amp;Ws&amp;wt&amp;We&amp;we&amp;Wl&amp;n rings&quot;
+       &amp;R100 ac apply, 1 extra attack&amp;n
+
+&amp;WWeapon &amp;w-&amp;n &quot;a fine &amp;ws&amp;Kt&amp;we&amp;Ke&amp;wl&amp;n longsword, pommel wrapped in &amp;yl&amp;Ke&amp;ya&amp;Kt&amp;yh&amp;Ke&amp;yr&amp;n&quot;
+         &quot;a fine &amp;ws&amp;Kt&amp;we&amp;Ke&amp;wl&amp;n shortsword, pommel wrapped in &amp;yl&amp;Ke&amp;ya&amp;Kt&amp;yh&amp;Ke&amp;yr&amp;n&quot;
+         &amp;R10d10&amp;n
+
+
+&amp;WNotes&amp;w: &amp;CAll items are toolable except for the &quot;&amp;nLuck of the General&amp;C&quot;,
+       this is so Band members can be easily recognized.&amp;n
+       &amp;YThere is a toolable light for scout classes.&amp;n
+       &amp;CYou may tool all EQ that is toolable, but keep
+       &apos;bandeq&apos; as a keyword so as to keep track of them.&amp;n
+       &amp;YThe usual Guild EQ rules apply.&amp;n
+</entry>
+  </ghelp>
+  <ghelp keyword="Gossip_(Bandgoss)">
+    <entry>&amp;yGUILD GOSSIP - BANDGOSS&amp;n
+
+Band gossip command for posting IC information relating
+to the guild, whether what&apos;s posted is accurate or not, it&apos;s
+supposedly on the lips of most people within the guild and/or
+people who know of the guild.  (Word on the street?)
+
+ Usage:
+bandgoss write - opens a text buffer where the same rules
+to mailing and posting apply.
+
+bandgoss - displays current entries.
+
+ &amp;W*&amp;nNote: Do not use the /f command when writing guild
+gossip, it nulls all spacing and mixes the entries together.  If
+you want to format your entry, you&apos;ll have to eyeball it as
+best you can.
+</entry>
+  </ghelp>
+  <ghelp keyword="Ranks:">
+    <entry>&amp;yRANKS STRUCTURE FOR THE BAND&amp;n
+
+&amp;w-&amp;n Probation
+   This is reserved for those who for one reason or another are in poor
+   standing within the Band. Members receiving severe disciplinary action
+   will be placed in this rank until their punishment is completed, before
+   being restored to their previous rank. Whilst on probation, Band 
+   members lose all previous rights and responsibilties.
+&amp;w-&amp;n Recruit
+   This is the entry-level rank for all new guild members. Upon becoming a
+   Recruit, you will be handed a tabard bearing the symbol of the Band, so
+   that other guild members will be able to easily identify those who may
+   need training or guidance.
+   Recruits also receive the Band&apos;s Banner, and standard issue boots.
+&amp;w-&amp;n First Rank:
+   Each of the 6 divisions of the Band has the same number of ranks, and
+   many ranks share the same name across divisons. The First Rank of a
+   division is where Recruits will be promoted to once they have
+   completed their training and chosen their division.
+
+                DIVISION                FIRST RANK
+                ========                ==========
+                Cavalry                 Horseman
+                Swordsmen               Swordsman
+                Pikemen                 Pikeman
+                Crossbowmen             Crossbowman
+                Medics                  Healer
+
+   The Scouts are secretive about their rank structure, even within the
+   band. As the Band&apos;s scouts are the best you are likely to find, they
+   deserve your respect no matter their rank.
+
+&amp;w-&amp;n Further ranks.
+   The further promotional ranks for the divisions are mostly the same,   
+   except for a few differences within the Medics. The ranks follow 
+   this structure:
+
+                STANDARD RANK           MEDICS
+                =============           ======
+                Veteren                 Medic
+                Bannerman               Chirirgeon
+                Fileleader              Field Doctor
+                Captain                 Captain
+
+&amp;w-&amp;n Commander
+   There is only one Commander of each division.
+&amp;w-&amp;n General
+   This rank is highest within the guild, and is reserved for Matrim
+   Cauthon.
+
+       These are the main ranks you will encounter within the Band of the
+Red Hand guild. There are a number of other ranks, but it should not be
+difficult to see how these fit in.
+There is also a number of subranks for the Band, some of which are:
+
+&amp;w-&amp;n Redarm
+   The Redarms are the Band&apos;s internal police, and Redarm duty is
+   rotated through every member of the Band. This way, not many will make
+   things difficult for the Redarms, since sooner or later, the favour may
+   be returned.
+&amp;w-&amp;n Instructor
+   There will be Intructors within each division who&apos;s job it is to teach
+   new First Rankers the way of their chosen profession, as well as 
+   providing higher ranked soldeirs with ways of keeping in practice.
+&amp;w-&amp;n Master of Recruits
+   Essentially the Head Instructor for Recruits, it is their job to keep
+   tabs on new recruits and their progress through the lessons.
+
+      Again, you will encounter other subranks, but they should not be
+difficult to understand.
+</entry>
+  </ghelp>
+</guildfile>

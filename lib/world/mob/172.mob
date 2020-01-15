@@ -1,0 +1,37 @@
+#17200
+the small helper animal~
+the Small Helper Animal~
+This small creature looks at you worriedly, as it scurries around the cooler.
+~
+small, brown, with small antlers on it's head,
+this critter looks like nothing you've ever seen
+before.
+~
+1048590 2096 0 E
+155 -70 -10 175 30d100+0 30d90+50
+60 110
+8 8 1
+BareHandAttack: 14
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Bash: 100
+Kick: 100
+P
+OnEntry & Sex "female"
+ActionTo "whistle"
+End
+OnSay "thirsty"
+Action "get pepper cooler"
+Give 17203
+End
+OnSay "hungry"
+Action "get pizza cooler"
+Give 17202
+End
+Q
+E
+$

@@ -1,0 +1,450 @@
+<?xml version="1.0"?>
+<board>
+  <vnum>32640</vnum>
+  <read>0</read>
+  <write>0</write>
+  <remove>203</remove>
+  <flags>4</flags>
+  <guild>0</guild>
+  <key>suggest</key>
+  <title>The &amp;RFang Code&amp;n Ideasboard</title>
+  <messages>
+    <message>
+      <heading>Sat Aug 17 (Drathus)    :: Re: Dreq</heading>
+      <slot>1</slot>
+      <level>210</level>
+      <author>0</author>
+      <date>0</date>
+      <text>This method of doing things allows for two things to happen which up
+utnil this point haven't been:
+
+  A) Mortal input will be taken for the list of suggestions.
+
+This is the big point.  This is where you all get your feedback on if
+something is worthwhile or not.  The reason this is a good thing is
+because of the second thing this method of doing thing allows:
+
+  B) Allows the management of the IDEAs list to be kept on top of.
+
+As I said, *ALL* suggestions still will go through the IDEA command
+and the SHOWIDEAs list.  What will happen is every so often (say
+every week or so) I'll take the contents of the SHOWIDEAs list
+and post it here.  When that happens the SHOWIDEAs list will
+be cleared until the next posting.
+
+Once the list of ideas has been posted, then the mud's population
+at large can discuss the posted ideas and put in their input on
+which ideas should be implemented, and which shouldn't.
+
+- Drath
+</text>
+    </message>
+    <message>
+      <heading>Sun Oct  6 (Taval)      :: Re: Myself (An Idea...)</heading>
+      <slot>2</slot>
+      <level>199</level>
+      <author>0</author>
+      <date>0</date>
+      <text>Just to make it easier, here:
+
+*** act.comm.c.orig     Sun Oct  6 06:06:06 2002
+--- act.comm.c  Sun Oct  6 06:07:20 2002
+***************
+*** 1090,1095 ****
+--- 1090,1097 ----
+     if ((IS_IMMORTAL(ch) &amp;&amp;&amp;&amp; IS_IMMORTAL(vict)) || (!IS_IMMORTAL(ch))) {
+      act(&quot;$E can't hear you.&quot;, FALSE, ch, 0, vict, TO_CHAR | TO_SLEEP);
+      return;
++    } else {
++     send_to_char(&quot;&amp;&amp;rNotice: &amp;&amp;nThat player is currently flagged NOTELL.\r\n&quot;, ch);
+     }
+
+    if (ROOM_FLAGGED(vict-&gt;in_room, ROOM_SOUNDPROOF) &amp;&amp;&amp;&amp; GET_LEVEL(ch) &lt; LVL_IMMORT) {
+
+</text>
+    </message>
+    <message>
+      <header>Player owned Shops</header>
+      <slot>3</slot>
+      <level>25</level>
+      <author>218868</author>
+      <date>1034755271</date>
+      <authorname>Seth</authorname>
+      <text> Player owned shops would be great. The idea is to allow 
+the player to find/purchase or craft items to be sold 
+in the shop. Using a simple OLC interface for shop 
+owners, you could set prices, as well as what items 
+are available to sell.  
+
+With the idea of player owned shops, the code could also
+be made to allow for special request items using the craft 
+code and a new interface. Ie, say a player wants a specific
+item like a - &amp;WS&amp;wi&amp;Wl&amp;wv&amp;We&amp;wr&amp;n ring with two &amp;Cblue dolphins&amp;n 
+
+This would be something you could configure in a spin off craft 
+menu for the shop owners, which would simply create the craft item 
+under the specifications of the purchaser. 
+
+The payments would be made directly to the owner's account and 
+the owner would pay tax or perhaps be charged with keeping his supply 
+up to date.
+
+Seth
+</text>
+    </message>
+    <message>
+      <header>re: seth / killer gates</header>
+      <slot>4</slot>
+      <level>203</level>
+      <author>210034</author>
+      <date>1035849927</date>
+      <authorname>Fischer</authorname>
+      <text>This is my take on all those little annoyances that people keep asking to 
+be taken out of code...
+ 
+There are two classes of people... people that want the code to be used as
+a game.  To those people, play balance and realizim is important.  To
+others, if it isn't RP, it shouldn't happen.
+
+Yes, you can die when you use gate.  It's an annoyance.  It's also a risk 
+of using it.  Yes, there are cursed items but that' the risk of wielding
+them.  Besides, it's not like you can't get rid of them.  It's just an
+inconvience.  If we don't care about balance and realism, then we can take
+out the risk.  But then, why not just give a command like &quot;goto&quot; to the
+person, then?
+</text>
+    </message>
+    <message>
+      <header>Re: Ideas and Level 199 stuff</header>
+      <slot>5</slot>
+      <level>199</level>
+      <author>298775</author>
+      <date>1036627367</date>
+      <authorname>Cheron</authorname>
+      <text>Gold is actually fairly easy to get.  How about implementing perhaps an
+rpxp kinda deal?  You gain rpxp, which is different from level xp, and
+after aquiring so many, perhaps have a conversion command that you could
+change this rpxp into qp.  This could go for -any- level really.  But then
+perhaps for lvl 199, instead of the xp, we could gain trains or something.
+Or practices.  Or..  Something.    
+</text>
+    </message>
+    <message>
+      <header>Re: Cheron</header>
+      <slot>6</slot>
+      <level>203</level>
+      <author>281647</author>
+      <date>1036630137</date>
+      <authorname>Fischer</authorname>
+      <text>I would like the idea of some way of seperating RP leveling/exp/etc from
+mob'ing.. or other ways to reward RP.. but I *know*know* that any automated
+QP system is not an option.  So you'll have to come up with the...
+&quot;something&quot; be it pracices, trains, or just an RP Level, or gold, or....?
+</text>
+    </message>
+    <message>
+      <header>Re: Cheron</header>
+      <slot>7</slot>
+      <level>199</level>
+      <author>310265</author>
+      <date>1036636162</date>
+      <authorname>Kasim</authorname>
+      <text>Trains and practices would be a terrible idea.  We used to have the TRAIN command, but that ended in disaster.  Basically, there were a bunch of 199s with 15000 H/M/V and 30s in all stats.  Besides, why do people need to be rewarded for RP?  I mean, the XP for RP was put in for people who'd rather RP than mobkill.  But RP isn't supposed to be about some overall reward; it's about the joy of doing it. :p
+</text>
+    </message>
+    <message>
+      <header>re: gold, exp, level 199, etc</header>
+      <slot>8</slot>
+      <level>210</level>
+      <author>311839</author>
+      <date>1036638396</date>
+      <authorname>Tzeentch</authorname>
+      <text>
+Getting gold during rp at level 199 to replace that xp we aren't getting
+sounds a good idea at first glance. I haven't given it a lot of in depth
+thought, to see if there is some hidden balance issue, but it seems ok.
+Sure, gold is not hard to get, but then, if you are below 199, neither is
+exp. This would just allow people to get it without the tedium of mobbing.
+Another idea might be a toggle, to choose whether you gain gold or xp during
+RP. Again, this is just an idea, not something I've thoroughly explored.
+The gaining of trains or pracs at 199 .. I've seen that. I was here before
+the wipe where that was removed. It proved itself to be a bad idea.
+
+Enough babbling. *goes back to idling*
+</text>
+    </message>
+    <message>
+      <header>Quests</header>
+      <slot>9</slot>
+      <level>170</level>
+      <author>247603</author>
+      <date>1041894182</date>
+      <authorname>Eranid</authorname>
+      <text>Ok, now i know some of you may not like this idea, or else it has been brought up before.  I was wondering if it was possible to get a full time questmaster &quot;NPC&quot;.  I know it would take some coding and heck if thats the only big problem i will learn how to code and do it.
+Now how this could work from my past exp.  It could give out different types of quests like lets say a kill quest sending you out to kill the mob it names and it tells you its location maybe not exact but close enough to show it.  When you attack it it should have a flag on it like a target flag, but not untill you attack it and type look.
+For different type of quest, the Questmaster could randomly throw an item &quot;worthless item, so people dont keep em&quot; out in a area and give you a discription of the room for you to find.  Then return it back to the Questmaster. 
+Thats it for now i could think of more but i wanna know what you people think.
+</text>
+    </message>
+    <message>
+      <header>re: Eranid and AutoQuests.</header>
+      <slot>10</slot>
+      <level>6</level>
+      <author>250936</author>
+      <date>1042124226</date>
+      <authorname>Ondrax</authorname>
+      <text>Well, I hacked together autoquests a few years back here on Fang,
+but it was no hit, really, so they were dropped. I only made four or
+so of them of varying complexity, simplest being finding a few items
+for a decrepit old crone, and the more complex involving finding people
+through a chain of events to eventually save someone.
+The setup was sort of crude, relying on people saying keywords etc, 
+which may have been the turn-off for those trying it out.
+I guess it can be tried now with a little more intelligence (with DG
+scripts being in place nowadays), but a problem about cheating remains;
+as soon as anyone has completed a quest, the solution will be known to
+everyone the week after -&gt; challenge lost. Your point about randomization
+is important to counter that, and will probably require a bit of tinkering,
+but it sure can be done. 
+
+- Broom Wielding Ole Git
+</text>
+    </message>
+    <message>
+      <header>Re: Autoquests</header>
+      <slot>11</slot>
+      <level>199</level>
+      <author>291589</author>
+      <date>1042436600</date>
+      <authorname>Aemon</authorname>
+      <text>A note:  If you're going to implement significant rewards for completing
+these quests, they need to be complex.  &quot;Find Item A, Take it to Place B,
+Then Kill Mob C&quot;, etc.  Otherwise, considering how easy it is to travel
+around this Mud, and kill virtually any possible mob, there would be a
+significant balance problem.  Alternately, disabling certain commands on
+anyone who was &quot;questing&quot;, and/or flagging them with a serious penalty
+flag (-Xattacks, hr/dr, ac, etc) might make things a bit more challenging.
+A bit.
+
+Aside from that...  it's worth a shot.  Bored idlers would certainly use
+the system to advantage.  Which reminds me of another issue - the need to
+make absolutely certain that the system couldn't be run using triggers.
+
+-Me (Tancred, etc.)
+</text>
+    </message>
+    <message>
+      <header>Building Idea</header>
+      <slot>12</slot>
+      <level>194</level>
+      <author>318329</author>
+      <date>1044595502</date>
+      <authorname>Jace</authorname>
+      <text>Just a little idea, not sure what people will think about it, but here it is.
+What if we had a board where builders, who were set to building different zones, could post the kind of room descriptions they needed and stuff. Then people could read what is needed and submit room descriptions, and if they were any good they would be used.
+I can see a few flaws in this, but, hey, if anyone has some ideas that could improve on this general idea, write it down.
+Well that's it.
+</text>
+    </message>
+    <message>
+      <header>Suggestion on grasp and release for male channies</header>
+      <slot>13</slot>
+      <level>15</level>
+      <author>281299</author>
+      <date>1063225294</date>
+      <authorname>Gallion</authorname>
+      <text>when grapsingp it should be like: you form the void in your mind, you feel the richness of (saidin or whatver), and the sicknening taste of it, but yet it makes you feel powerfull.
+now for releasing: you release the void and stop using the true sorce, you taste the taint on the top of your tounge making you want to VOMIT.
+just a suggestion.
+</text>
+    </message>
+    <message>
+      <header>&amp;YFrom here&amp;n</header>
+      <slot>14</slot>
+      <level>211</level>
+      <author>279042</author>
+      <date>1069532622</date>
+      <authorname>Marra</authorname>
+      <text>I've cleaned this board. In fact, I removed nearly everything because it
+had been neglected somewhat.
+
+The stuff that has survived this cleaning still needs to be addressed.
+Those of you that have kept updated on this board will notice that teh
+long posts that were made have been deleted. The posts on economics as
+well as removing the IC/OOC flag in the wholist. Neither will be done so
+there wasn't much point of leaving the posts.
+
+I have compiled a list of everything that still needs to be addressed. I
+will be posting that here as well as putting the list on the ideas list.
+Feedback is important so if you see something you have an opinion on, do
+share with us.
+
+A few notes: We have a lot of channels. If there were suggestions about
+adding yet more channels, they were most likely deleted. As well, I removed
+most of the ideas for the funky messages. As I understand it, there will be
+ways to addredss that in the future. I still have it all on my harddrive if
+there was something specific that I removed that you wished I didn't. Let me
+know if there was.
+</text>
+    </message>
+    <message>
+      <header>Everything else</header>
+      <slot>15</slot>
+      <level>211</level>
+      <author>279042</author>
+      <date>1070785243</date>
+      <authorname>Marra</authorname>
+      <editname>Marra</editname>
+      <text>1) Remove the wolfset stuff on scoresheets.
+2) Remove COMPARE.
+3) Toggle for that &quot;You wish that your wounds would stop BLEEDING so
+much!&quot; message. It's spammy.
+4) A failed herblore makes you lose 1/2 your mana...but 9/10 wisdoms
+can't channel anyways.  How about more severe punishment with better 
+results? Like heal up to 3/4 of thier hp if successful and lose 1/2
+your moves and/or hp if you fail.
+5) Make it possible to find forkroot with findherb.
+6) Get rid of the delay on the herbident skill since there is a delay
+on the findherb skill.
+7) The ability to flip a coin for decision making.
+8) Arrest should work on mobs and set !QUIT flags like pkilling.
+9) !MOB rooms should include -all- mobs (summon ones included).
+10) Summoned mobs shouldn't cry all the time.
+11) Aggro mobs should only attack people of their own level or below.
+12) Remove the ability to summon mobs in the oval.
+13) Cap the number of mobs that can attack at once depending on mob
+type.  IE, five humans can't attack and lose against one human.
+14) Make Puff withdraw the gold from your bank account if you don't
+have the gold on you at the time of mailing.
+15) STOPMAIL. It lists the mail that is pending delivery and then you
+can choose if you still want the mail sent.
+17) Make the thief in Baerlon visible.
+19) Expand the retainer code so that you can buy improved retainers
+that come with personalized eq or with eq that can be personalized.
+20) Make it impossible for retainers to use osay and socials.
+21) Mount code again.
+22) Increase the effects of saying, &quot;Shai'tan&quot;.
+24) Guildwalk shouldn't reduce moves.
+25) Make &quot;who -g#&quot; available to seekers for ease of finding sponors.
+27) Increase hte buffer size for ghelp files.
+28) Guilds should have multiple recall points.
+29) Have rlist customizable so that it can sort by different options
+and make it so that it defaults to the rooms you know when there are
+multiple rooms by the same name.
+30) Rlist should work for the delay in having to know a room before
+searching for hidden things or hiding.
+32) Create a version of taxi that allows you to travel to different
+ports throughout the world.
+34) Time limit for being AFK and disconnecting the player after limit
+was reached.
+35) Add a command to track time that immortals stay online and/or afk.
+37) Deleted people should be automatically removed from notifylists and
+the notifylist should also tell you when a person logs off.
+39) Something like contactlist of showbg so that characters can list ic
+location and a brief history of current events related to the char.
+40) Player owned shops. They could pick and choose what was sold and
+advertise for creating custom made eq.  The payments would be credited
+to the owner of the shop with a tax or penalty charged for upkeep.
+42) Ability to set weight when crafting.
+43) Remove &quot;brand new&quot; from EQ and only show a tag when it's damaged.
+44) Make the QP band from Baerlon also show when sneakers leave the
+room.
+</text>
+    </message>
+    <message>
+      <header>Continued</header>
+      <slot>16</slot>
+      <level>211</level>
+      <author>279042</author>
+      <date>1070723490</date>
+      <authorname>Marra</authorname>
+      <editname>Marra</editname>
+      <text>45) Attach items to mail for an extra fee.
+46) Lockers or the original code for eq save player houses.
+47) Make it impossible to wear hand/wrist EQ with severed hands.
+48) Change &quot;wear all&quot; so that it searches for the first lantern and
+first weapon and lights/holds it.
+49) Practices should be returned with trains when forgetting skills.
+50) A command so that you can add to your title instead of having to
+re-type it.
+51) Have followers recall when the leader recalls.
+52) Change gain so that it gives weaves while not with the trainer.
+53) Give notification to an immortal when they send a tell to a person
+flagged notell.
+54) Remove titles from in-room doings.
+56) Have a newbie specific MOTD.
+57) Change time to reflect the actual WoT time.
+58) Make subdue a toggle.
+59) Remove the noquit command after player killing.
+60) OSAY should work like OOC for seeing the last so many osays in a
+room.
+61) Colorize the level message.
+62) An auto-quest system that is random using triggers.
+</text>
+    </message>
+    <message>
+      <header>Channeling</header>
+      <slot>17</slot>
+      <level>211</level>
+      <author>279042</author>
+      <date>1069537045</date>
+      <authorname>Marra</authorname>
+      <text>1) Have Powertrap check for !WEAVE rooms or unravel in !WEAVE rooms.
+ A. A !AREA WEAVES flag.
+ B. Give a message so that people know a mob or room is !MAGIC and do
+not charge mana when used on a !MAGIC room.
+2) Change the gate code so that it no longer has a chance of causing
+death.
+3) Something to toggle off bondsense and the bond channel.
+4) Manawimpy. A message or other command that is settable so that you
+either sleep or quit grasping the source.
+4) The limit for burnout should be dependent on maxmana.
+5) Make sliced weaves still deduct mana.
+6) Make some sort of skill to test the strength of a weave, and see how
+much damage they do (e.g. fireball and such)
+7) Remove or make a toggle for the messages about your magical shield
+protecting you.
+8) Now that SS and SoS only stop damage at a 2:1 ratio a Critical
+success of the weave should instead of only using 1/2 mana should have
+a 2x affect so that randomly you can have a stronger shield.
+9) Remove breakshield since it's useless.
+10) Linking code.
+</text>
+    </message>
+    <message>
+      <header>These Ideas</header>
+      <slot>18</slot>
+      <level>211</level>
+      <author>231641</author>
+      <date>1070723194</date>
+      <authorname>Marra</authorname>
+      <text>I've gotten little to no feedback so I'm going to start narrowing the
+list of ideas (as in what's rejected as is and stuff that's done).
+</text>
+    </message>
+    <message>
+      <header>Helpfiles</header>
+      <slot>19</slot>
+      <level>159</level>
+      <author>220088</author>
+      <date>1071624112</date>
+      <authorname>Ramone</authorname>
+      <text>The helpfiles need a round of work. There are typos, files missing
+and so on. Perhaps it would be possible to put out the files on the
+homepage? That would make it possible to list all the files and also
+search trough them without knowing what you're looking for like you
+have to do with the in-mud helpfiles.
+</text>
+    </message>
+    <message>
+      <header>Re: Helpfiles</header>
+      <slot>20</slot>
+      <level>199</level>
+      <author>269503</author>
+      <date>1071628535</date>
+      <authorname>Kasim</authorname>
+      <text>Typos found in helpfiles can be reported with the TYPO command.  The HLIST command provides a list of every helpfile in the database.  And a note:  this board is, to the best of my knowledge, reserved for the discussion of ideas.  New ideas should be presented using the IDEA command and then replied to here.
+</text>
+    </message>
+  </messages>
+</board>

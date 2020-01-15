@@ -1,0 +1,704 @@
+<?xml version="1.0"?>
+<rooms>
+  <room>
+    <roombasic title="The Pigeon Coops" vnum="29500" zone="295">
+      <roomdescription>You step up a few stairs to a small room.  A man is seated behind a desk
+sorting mail and messages.  Large pigeon cages have been
+mounted on an open deck that is attached to the room.  Pigeons fly
+in and out, bringing news from Caemlyn and other cities across
+the land.
+</roomdescription>
+      <flags>158</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="west" keyword="doorway" exitinfo="0" keynum="0" toroom="29501">
+      <description>doorway
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Upstairs Landing" vnum="29501" zone="295">
+      <roomdescription>Climbing the stairs brings you to a small landing above the Salle.
+Bales of hay are stacked against the wall, as well as saddles and
+tack.  Wooden barrels and boxes hold supplies.  A large board
+is mounted on the wall here, listing lesson times and messages
+from students and soldiers.
+</roomdescription>
+      <flags>142</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="doorway" exitinfo="0" keynum="0" toroom="29500">
+      <description>a doorway
+</description>
+    </exit>
+    <exit direction="down" keyword="stairs" exitinfo="0" keynum="0" toroom="29502">
+      <description>a set of newly built stairs
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="\c03The Salle\c00" vnum="29502" zone="295">
+      <roomdescription>Stepping through double doors to the east brings you to newly
+converted Salle.  The floor is smooth wood and the room is lit
+by a wall of windows in the day and several lanterns mounted
+on the walls at night.  There are wooden benches for resting 
+or watching lessons and a large barrel full of water in the corner
+with a table of metal cups for drinking.  A newly built set of
+wooden stairs leads up to the loft.  A door to the north leads to
+Yvan&apos;s Office.
+</roomdescription>
+      <flags>142</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="door" exitinfo="1" keynum="0" toroom="29503">
+      <description>a wooden door
+</description>
+    </exit>
+    <exit direction="east" keyword="door" exitinfo="0" keynum="0" toroom="29504">
+      <description>a wooden door
+</description>
+    </exit>
+    <exit direction="up" keyword="stairs" exitinfo="0" keynum="0" toroom="29501">
+      <description>a set of newly built wooden stairs
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Talin&apos;s office" vnum="29503" zone="295">
+      <roomdescription>You step through the wooden door into a small office.  A desk
+sits in the middle with a large padded chair behind it.  One
+side of the room is full of weapons and armor while the other 
+side holds a small bed and nightstand.  A row of hooks holds
+some clothing, including a cloak with Captain&apos;s stripes. A 
+small wooden bench underneath holds a pair of polished boots.
+A cut glass lamp sits on the desk and illuminates the room.
+</roomdescription>
+      <flags>158</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="south" keyword="door" exitinfo="1" keynum="0" toroom="29502">
+      <description>a wooden door
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Stalls for the Horses" vnum="29504" zone="295">
+      <roomdescription>You walk through double doors wide enough for a horse to pass
+into a small narrow room with several stalls against the east 
+wall.  A newly constructed wall divides the former barn with a 
+door to the west leading into the Salle.  Horses are still
+stabled here, with tack and saddles stored on the wooden stall
+supports.
+</roomdescription>
+      <flags>14</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="south" keyword="door stables" exitinfo="1" keynum="0" toroom="29505">
+      <description>a door to stables
+</description>
+    </exit>
+    <exit direction="west" keyword="door" exitinfo="0" keynum="0" toroom="29502">
+      <description>a small wooden door
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="\c03The Stables\c00" vnum="29505" zone="295">
+      <roomdescription>Walking up the path brings you to the stables.  They appear
+to have been been untouched by the fire that destroyed the
+manor house and grounds.   
+</roomdescription>
+      <flags>6</flags>
+      <sector>Field</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="doors stable" exitinfo="1" keynum="0" toroom="29504">
+      <description>Heavy wooden double doors
+</description>
+    </exit>
+    <exit direction="south" keyword="path" exitinfo="0" keynum="0" toroom="29506">
+      <description>pathway
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Outdoor Courtyard" vnum="29506" zone="295">
+      <roomdescription>You step from a wooden gate to the south into a small courtyard.
+To the north a dirt path leads to a large barn.  West a small path
+winds around toward some tables under an awning, while to the east
+a path leads to several tents.          
+</roomdescription>
+      <flags>6</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="path" exitinfo="0" keynum="0" toroom="29505">
+      <description>the path continues
+</description>
+    </exit>
+    <exit direction="east" keyword="path" exitinfo="0" keynum="0" toroom="29513">
+      <description>pathway
+</description>
+    </exit>
+    <exit direction="south" keyword="gate road path" exitinfo="1" keynum="0" toroom="29518">
+      <description>a wooden gate
+</description>
+    </exit>
+    <exit direction="west" keyword="path" exitinfo="0" keynum="0" toroom="29507">
+      <description>pathway continues
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Path to the Mess Hall" vnum="29507" zone="295">
+      <roomdescription>To the west you see several wooden tables under a bright awning
+and the faint smell of fresh bread wafts by on the breeze.  To
+the east stands a large barn.
+</roomdescription>
+      <flags>6</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="path" exitinfo="0" keynum="0" toroom="29506">
+      <description>the pathway to stables
+</description>
+    </exit>
+    <exit direction="west" keyword="path" exitinfo="0" keynum="0" toroom="29508">
+      <description>the pathway continues
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Mess Hall" vnum="29508" zone="295">
+      <roomdescription>Stepping under the awning finds you in the makeshift mess hall.
+Rough hewn tables and long benches have been set up for the
+soldiers to eat their meals.  Platters of steaming food and 
+tankards of ale are carried from the kitchen by the newest 
+recruits. 
+</roomdescription>
+      <flags>30</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="path" exitinfo="0" keynum="0" toroom="29510">
+      <description>pathway
+</description>
+    </exit>
+    <exit direction="east" keyword="path" exitinfo="0" keynum="0" toroom="29507">
+      <description>the pathway continues
+</description>
+    </exit>
+    <exit direction="south" keyword="door" exitinfo="1" keynum="0" toroom="29509">
+      <description>a wooden door
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Kitchen" vnum="29509" zone="295">
+      <roomdescription>The smells of baking bread and roasting meat waft over you as you
+come upon one of the few buildings to survive the fire.  A short
+and heavyset man is stirring a large iron pot, whistling a tune
+as he works.  Various pots and pans sit on an enormous cookstove
+bubbling and simmering for the next meal.
+</roomdescription>
+      <flags>158</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="door" exitinfo="1" keynum="0" toroom="29508">
+      <description>a wooden door
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Path to the Practice Yard" vnum="29510" zone="295">
+      <roomdescription>A small path stretches north from the mess hall.  To the
+west is a small open yard with a weapons rack and practice
+weapons set under a small awning.  To the east are several
+pieces of equipment to sharpen your fighting skills.
+</roomdescription>
+      <flags>6</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="path" exitinfo="0" keynum="0" toroom="29511">
+      <description>pathway
+</description>
+    </exit>
+    <exit direction="south" keyword="path" exitinfo="0" keynum="0" toroom="29508">
+      <description>path
+</description>
+    </exit>
+    <exit direction="west" keyword="path" exitinfo="0" keynum="0" toroom="29512">
+      <description>pathway
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Training Yard" vnum="29511" zone="295">
+      <roomdescription>A gentle climb up a few feet brings you to an enclosed yard.
+There are some mansized dummies set up for target practice,
+vital areas marked with red paint.  Two soldiers are attempting
+to spar while walking on a balance beam while another is just 
+trying to walk the beams without falling.
+</roomdescription>
+      <flags>6</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="west" keyword="path" exitinfo="0" keynum="0" toroom="29510">
+      <description>path
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Sparring Yard" vnum="29512" zone="295">
+      <roomdescription>You step down into a small yard.  A rack of wooden practice
+weapons has been placed under a small awning.  There is a
+barrel of water with a few towels draped over its top. Pairs
+of men and a few women are sparring, practising and honing
+their fighting and sword skills.
+</roomdescription>
+      <flags>6</flags>
+      <sector>Field</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="path" exitinfo="0" keynum="0" toroom="29510">
+      <description>pathway
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Path to the Tents" vnum="29513" zone="295">
+      <roomdescription>Ahead you hear voices and see several tents set up in a field
+next to the barn.  A few stone benches have been set up around
+the tents with men sitting on them cleaning armor, sharpening
+weapons, or sometimes just taking a moment to smoke a pipe.
+</roomdescription>
+      <flags>6</flags>
+      <sector>Field</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="5" exitinfo="0" keynum="0" toroom="29514">
+      <description>pathway
+</description>
+    </exit>
+    <exit direction="west" keyword="path" exitinfo="0" keynum="0" toroom="29506">
+      <description>pathway
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Tents, Tents, and even more Tents" vnum="29514" zone="295">
+      <roomdescription>You continue to walk and are in the middle of several tents.
+Clothing has been hung between them to dry as well as saddles
+and tack stacked between them.  One soldier is taking a nap
+leaning against his saddle.  Tents have been staked to all sides 
+and the path continues to the east.
+</roomdescription>
+      <flags>6</flags>
+      <sector>Field</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="door tent flap" exitinfo="1" keynum="0" toroom="29515">
+      <description>the tent flap
+</description>
+    </exit>
+    <exit direction="east" keyword="path road" exitinfo="0" keynum="0" toroom="29526">
+      <description>the path continues
+</description>
+    </exit>
+    <exit direction="south" keyword="door tent flap" exitinfo="1" keynum="0" toroom="29516">
+      <description>a tent flap
+</description>
+    </exit>
+    <exit direction="west" keyword="path" exitinfo="0" keynum="0" toroom="29513">
+      <description>pathway
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="A Soldiers&apos; Tent" vnum="29515" zone="295">
+      <roomdescription>You push through the flap and enter a large tent.  Four wooden
+cots have been set up in here and a small leather bound chest
+rests at the foot of each.  The tents are very plain and have
+just enough room for the men and their possessions.
+</roomdescription>
+      <flags>14</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="south" keyword="door tent flap" exitinfo="1" keynum="0" toroom="29514">
+      <description>a tent flap
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Another Tent" vnum="29516" zone="295">
+      <roomdescription>You push through the flap and enter a large tent.  Four wooden
+cots have been set up in here and a small leather bound chest
+rests at the foot of each.  The tents are very plain and have
+just enough room for the women and their possessions.
+</roomdescription>
+      <flags>6</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="door tent flap" exitinfo="1" keynum="0" toroom="29514">
+      <description>a tent flap
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Battle Training Field" vnum="29517" zone="295">
+      <roomdescription>Several men and a few women nod as you enter the large
+field used for training and archery practice.  A group of men is 
+are marching while others are practising battle tactics with horses and
+with archers.  It almost appears an army is being trained here.
+</roomdescription>
+      <flags>150</flags>
+      <sector>Field</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="west" keyword="path road train field" exitinfo="0" keynum="0" toroom="29518">
+      <description>the path to the training field
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Over a small Hill" vnum="29518" zone="295">
+      <roomdescription>Walking over a small hill brings you to another
+gate, this one made of wood.  To the North
+you see a large barn and several tents while
+to the east you see several men practising
+battle manuevers and also a few with bows
+honing their archery skills.
+</roomdescription>
+      <flags>6</flags>
+      <sector>Hills</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="road path gate wood" exitinfo="1" keynum="0" toroom="29506">
+      <description>a wooden gate
+</description>
+    </exit>
+    <exit direction="east" keyword="road train yard path" exitinfo="0" keynum="0" toroom="29517">
+      <description>the road continues
+</description>
+    </exit>
+    <exit direction="south" keyword="road path" exitinfo="0" keynum="0" toroom="29519">
+      <description>the road continues
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Remains of the Manor House" vnum="29519" zone="295">
+      <roomdescription>You come upon the burned ruins of what seems
+to have been a very large building, perhaps
+the Manor house itself.  Nothing much remains
+except for the blackened and scorched rock
+foundation. A few odd bones and one horned
+skull are visible in the debris.
+</roomdescription>
+      <flags>6</flags>
+      <sector>City</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="path road" exitinfo="0" keynum="0" toroom="29518">
+      <description>the road continues
+</description>
+    </exit>
+    <exit direction="south" keyword="road path" exitinfo="0" keynum="0" toroom="29520">
+      <description>the road continues
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Road to the Manor" vnum="29520" zone="295">
+      <roomdescription>The dirt road continues to the north. You climb
+gently rolling hills.  There are few green plants
+or grass left and most everything away from the
+lake has a dry and barren look from the heat
+and drought of the past months.
+</roomdescription>
+      <flags>6</flags>
+      <sector>Field</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="road path" exitinfo="0" keynum="0" toroom="29519">
+      <description>the road continues
+</description>
+    </exit>
+    <exit direction="south" keyword="gate path road" exitinfo="1" keynum="0" toroom="29521">
+      <description>through a gate
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="\c03Gates to a Nobles Manor\c00" vnum="29521" zone="295">
+      <roomdescription>Walking further north brings you to a stone
+archway supporting two heavy wrought iron gates.
+To the north you see a large barn and several 
+tents, to the south the lake and Caemlyn Road.
+</roomdescription>
+      <flags>4</flags>
+      <sector>Field</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="gate road path" exitinfo="1" keynum="0" toroom="29520">
+      <description>gates to a manor
+</description>
+    </exit>
+    <exit direction="south" keyword="road path" exitinfo="0" keynum="0" toroom="29522">
+      <description>a road continues
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="A Large Lake" vnum="29522" zone="295">
+      <roomdescription>Walking along a narrow packed earth road you come upon a 
+lake of cystal blue water.  Small trees grow by the banks
+and there are even a few flowers along the edges.  The road 
+winds on to the north where a barn is visible in the distance
+and it also leads back south to the Caemlyn Road.
+</roomdescription>
+      <flags>6</flags>
+      <sector>Field</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="road path" exitinfo="0" keynum="0" toroom="29521">
+      <description>the road continues
+</description>
+    </exit>
+    <exit direction="south" keyword="road dirt" exitinfo="0" keynum="0" toroom="28205">
+      <description>the road leads back to another
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="\c04Courtyard of The \c00\c11Lakeside \c00\c04Tavern\c00" vnum="29523" zone="295">
+      <roomdescription>You pass through an open gate into a small walled courtyard.  There is a
+wooden overhang to provide some shelter for horses and two massive
+wooden doors, carved with matching trout.  A wooden sign hangs on brass
+chains and reads \c13The Fin and Feather Lakeside Tavern\c00.  Small gravel
+has been scattered on the ground to prevent mud and it crunches under
+your feet as you walk to the doors.
+</roomdescription>
+      <flags>22</flags>
+      <sector>City</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="door carved wood" exitinfo="3" keynum="0" toroom="29524">
+      <description>carved wooden double doors lead into the tavern
+</description>
+    </exit>
+    <exit direction="east" keyword="path road" exitinfo="0" keynum="0" toroom="28205">
+      <description>a small packed earth path
+</description>
+    </exit>
+    <exit direction="west" keyword="door" exitinfo="3" keynum="0" toroom="29598">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="\c13Great Room of the Lakeside Tavern\c00" vnum="29524" zone="295">
+      <roomdescription>Passing through the double wooden doors to the south brings you into
+a massive room with mighty wooden beams supporting a soaring ceiling.
+A fireplace and hearth of natural \c23grey stone\c00 covers one entire wall
+of the room, with iron kettles full of stew and crispy \c03golden baked\c00
+game birds turning on a spit.  Fresh bread bakes in small alcoves
+set in the fireplace.  Large wooden tables and benches fill the 
+room and provide seating for customers hungry or weary from travel.
+A wooden bar carved with \c06fish\c00 and \c13birds\c00 in flight sits against the
+back wall and holds bottles and jugs of various beverages.  Next to
+the bar is a set of wooden stairs leading up to a loft.
+</roomdescription>
+      <flags>8</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="south" keyword="doors wood" exitinfo="3" keynum="0" toroom="29523">
+      <description>massive carved wooden doors leading to the courtyard
+</description>
+    </exit>
+    <exit direction="up" keyword="stairs path wood" exitinfo="0" keynum="0" toroom="29525">
+      <description>a set of wooden stairs leading up
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="\c13Sleeping Loft\c00" vnum="29525" zone="295">
+      <roomdescription>Coming up the stairs brings you to a loft that overlocks the greatroom
+below.  Several wooden cots are set up aound the room and a large
+wash stand with tow pitchers rest against the wall at the top of the
+stairs.  Wooden pegs and a narrow bench run across the back wall.
+</roomdescription>
+      <flags>158</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="down" keyword="stairs wood" exitinfo="0" keynum="0" toroom="29524">
+      <description>a set of wooden stairs leading down
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="In the Middle of the Camp" vnum="29526" zone="295">
+      <roomdescription>You continue along the path that winds through a field of tents.
+Soldiers walk about, some sparring, some just polishing weapons
+or armor. A very slight breeze stirs the tent flaps but does 
+little to relieve the unrelenting heat.
+</roomdescription>
+      <flags>22</flags>
+      <sector>Field</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="path" exitinfo="0" keynum="0" toroom="29527">
+      <description>a path between tents
+</description>
+    </exit>
+    <exit direction="east" keyword="path tent road" exitinfo="0" keynum="0" toroom="29529">
+      <description>the path continues
+</description>
+    </exit>
+    <exit direction="south" keyword="path" exitinfo="0" keynum="0" toroom="29528">
+      <description>a path between tents
+</description>
+    </exit>
+    <exit direction="west" keyword="path" exitinfo="0" keynum="0" toroom="29514">
+      <description>the path continues
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Between the Tents" vnum="29527" zone="295">
+      <roomdescription>In a small open area between some tents you see several soldiers 
+gathered.  A swordsman seems to be giving lessons to some of his 
+friends.  He moves swiftly around his student, almost as though he were
+dancing rather than fighting.  
+</roomdescription>
+      <flags>22</flags>
+      <sector>Field</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="south" keyword="path" exitinfo="0" keynum="0" toroom="29526">
+      <description>a path between tents
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="A Dice Game" vnum="29528" zone="295">
+      <roomdescription>Slipping between a couple of tents you find some scouts dicing
+in the shade.  Another scout is practising forms and nods to you
+as you pass.  Her sword seems almost alive as she thrusts and slashes,
+slicing imaginary opponents into very small bits.
+</roomdescription>
+      <flags>22</flags>
+      <sector>Field</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="path" exitinfo="0" keynum="0" toroom="29526">
+      <description>a path between tents
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Even More Tents" vnum="29529" zone="295">
+      <roomdescription>The path winds over a slight rise and you see even more tents staked
+out in the field.  A line with drying clothes has been tied between a 
+a couple of tents while a little ways off a soldier is sitting on a battered
+wooden bench whittling and smoking his pipe.
+</roomdescription>
+      <flags>22</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="path door flap tent" exitinfo="1" keynum="0" toroom="29530">
+      <description>a tent flap
+</description>
+    </exit>
+    <exit direction="south" keyword="path tent flap door" exitinfo="1" keynum="0" toroom="29531">
+      <description>a path to a tent flap
+</description>
+    </exit>
+    <exit direction="west" keyword="path" exitinfo="0" keynum="0" toroom="29526">
+      <description>the path continues
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="A Tent" vnum="29530" zone="295">
+      <roomdescription>You push through the flap and enter a large tent.  Four wooden
+cots have been set up in here and a small leather bound chest
+rests at the foot of each.  The tents are very plain and have
+just enough room for the men and their possessions.
+</roomdescription>
+      <flags>30</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="south" keyword="path flap door path" exitinfo="1" keynum="0" toroom="29529">
+      <description>a tent flap leads to the camp
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Another Tent in the Camp" vnum="29531" zone="295">
+      <roomdescription>You push through the flap and enter a large tent.  Four wooden
+cots have been set up in here and a small leather bound chest
+rests at the foot of each.  The tents are very plain and have
+just enough room for the women and their possessions.
+</roomdescription>
+      <flags>30</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="path tent flap" exitinfo="1" keynum="0" toroom="29529">
+      <description>path to an open tent flap
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="An Old Abandond Shack" vnum="29598" zone="295">
+      <roomdescription>This old building has seen better days.  Luckily, the walls seem to slump
+towards each other, so collapse appears to be unlikely.  The roof is in
+relatively good shape, though there are a few small holes.  Dust and cobwebs
+are everywhere, and at one point a bird made its nest in one of the corners of
+the ceiling.  It is a two room affair, having one large chamber, and another
+more private small one.  Out the door leads to a small, narrow, and uneven path
+which snakes its way to the main road.  Young trees and bushes hide the shack
+from view of the road and allows more privacy.  There is no furniture, although
+blankets and such are stacked neatly in one corner of the larger chamber.  
+Food and othe supplies are stored in the smaller room, acting like a cellar.  
+In the center of the large living space, there is a ring of stones on top of a
+larger flat rock perhaps three feet in diameter, serving as a firepit.  There
+is even a newly added hole in the roof above this to allow smoke out, though it
+appears as though it is seldom used.    
+</roomdescription>
+      <flags>12</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="door" exitinfo="3" keynum="0" toroom="29523">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Cecelia&apos;s Workroom" vnum="29599" zone="295">
+      <roomdescription>Like the title says, this is a workroom.  Notes, boards, mail, sketches and
+maps all fill the tables and walls.  This is where Cecelia keeps track of all
+the apples she is juggling.  
+</roomdescription>
+      <flags>158</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+  </room>
+</rooms>

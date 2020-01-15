@@ -1,0 +1,513 @@
+#6000
+postmaster old man darkfriend~
+the old Postmaster~
+An old man sorting through pieces of mail is here.
+~
+The old man seems to have lived a goof 70 years,
+his hair is gray and thinning, and he has withered
+over time to the frail man you see before you.
+~
+1048586 2096 0 E
+200 -130 -20 809 30d300+1000 30d30+50
+0 0
+8 8 1 628
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnEntry & Darkfriend
+ActionTo "nod"
+SayTo "hello"
+End
+OnLeave & Darkfriend
+ActionTo "wave"
+SayTo "take care!"
+End
+Q
+E
+#6001
+josan trainer young man~
+Master Josan~
+A young man stands here, waiting to train you.
+~
+Josan is in the prime of his life, heavily
+muceled, and covered with a thin sheen of
+sweat from the excersise he has been doing.
+~
+10 2096 0 E
+200 -130 -20 809 30d300+1000 30d30+50
+0 0
+8 8 1 628
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnEntry & Darkfriend
+Say "how may i be of assistance?"
+End
+Q
+E
+#6002
+hansen trainer old man~
+Master Hansen~
+An old man is here, ready to teach you new skills.
+~
+Master Hansen may not be young, but he is skilled.
+~
+10 2096 0 E
+200 -130 -20 809 30d300+1000 30d30+50
+0 0
+8 8 1 628
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnEntry & Darkfriend
+Say "ho boy, more customers."
+End
+Q
+E
+#6003
+serving girl~
+the pretty serving girl~
+A pretty serving girl is here, catering to the customers.
+~
+She is dressed in a black silk dress and bodice, and
+she has a briliant white cotton apron about her body.
+~
+10 2096 0 E
+200 -80 -20 809 30d300+1500 30d30+50
+0 0
+8 8 2 628
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnRandom 10
+Say "gee, it shure is hot!"
+Emote "wipes off her sweat, and goes back to work."
+End
+OnActionTo "smile"
+ActionTo "wink"
+End
+OnActionTo "pinch"
+ActionTo "slap"
+Say "how rude!"
+Action "snif"
+End
+OnLeave
+ActionTo "wave"
+SayTo "take care!"
+End
+Q
+E
+#6004
+vara'tor shopkeeper~
+Master Vara'tor~
+Master Vara'tor is here selling his wares.
+~
+Master Vara'tor is a large strong . . . man?
+~
+2097162 0 0 E
+150 -80 -10 809 30d300+1000 30d30+50
+0 0
+8 8 0 628
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+E
+#6005
+selia shopkeeper~
+Mistress Selia~
+Mistress Selia is here, tuning a harp.
+~
+She is dressed in fine blue silks, and is
+currently tuning what looks like her harp.
+~
+1048586 0 0 E
+100 -30 -10 809 30d300+500 30d30+50
+0 0
+8 8 2 628
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+E
+#6006
+dog mangy~
+the mangy dog~
+A dog is here, looking for food.
+~
+The dog is covered with black and brown spots,
+it's fur is messy and it looks hungry.
+~
+8 0 0 E
+5 10 7 809 10d85+0 2d9+10
+0 100
+8 8 0 628
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnRandom 35
+Emote "sniffs around for some food."
+End
+Q
+E
+#6007
+rat swarm~
+the swarm of rats~
+A swarm of rats is here, running about.
+~
+The rats are all moving together, as though
+they had a group mind.
+~
+2097160 128 0 E
+10 -5 5 809 15d100+130 5d8+25
+0 120
+8 8 0 628
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Kick: 100
+E
+#6008
+sailor drunk~
+the drunken sailor~
+A drunken sailor is here, staggering about.
+~
+The sailor looks like he has been drinking,
+and smells like it too.
+~
+136 0 0 E
+15 -15 4 809 15d150+280 5d15+40
+132 125
+8 8 1 628
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Bash: 100
+P
+OnRandom 75
+Action "burp"
+Emote "sings drunkenly."
+End
+Q
+E
+#6009
+sabban shopkeeper~
+Master Sabban~
+Master Sabban is here, selling his wares.
+~
+Master Sabban is standing here, showing off his fine
+assortment of equipment.
+~
+10 0 0 E
+100 -30 -10 809 30d300+1000 30d30+50
+0 0
+8 8 1 628
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+E
+#6010
+hemmen shopkeeper~
+Master Hemmen~
+Master Hemmen is here, sewing something.
+~
+Master Hemmen is sitting here beind a desk,
+and is working on a tear in a piece of cloth.
+~
+10 0 0 E
+100 -30 -15 809 30d300+100 30d30+50
+0 0
+8 8 1 628
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+E
+#6011
+garthan shopkeeper~
+Master Garthan~
+Garthan sits here, working on some jewelry.
+~
+Master Garthan is an old man, though still in good
+condition for his age. He spends his days peacefully,
+cutting gems, and making rings, necklaces, and other
+items which he also sells.
+~
+10 0 0 E
+100 -30 -15 809 30d300+300 20d20+50
+0 0
+8 8 1 628
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+E
+#6012
+disfigured man Darkfriend~
+a \c05disfigured\c00 man stands here~
+a suspicious looking \c05disfigured\c00 man stands here.
+~
+A hunch backed man with deformed limbs stands before you. His
+left side is seriously deformed. Stubed fingers on his left
+hand and an eye hanging loosely in it socket. He clothes smell
+of exrement. You have trouble looking at such a hideous site.
+~
+4194314 2096 0 E
+200 -180 -20 809 30d0+7000 30d1+50
+10000 0
+8 8 1 628
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Bash: 100
+Trip: 100
+Dirtkick: 100
+Kick: 100
+Disarm: 100
+Stun: 100
+E
+#6013
+Shrolk man darkfriend~
+Shrolk~
+A \c05dark hooded\c00 man stands here.
+~
+A dark hooded man is standing here guarding the gate.
+~
+7866378 262144 0 E
+160 -180 -20 809 15d0+5000 15d15+50
+75 113
+8 8 0 628
+BareHandAttack: 14
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Bash: 100
+Trip: 100
+Dirtkick: 100
+Kick: 100
+Disarm: 100
+Stun: 100
+P
+OnEntry & ! Guild "forsaken"
+Action "grin"
+SayTo "give me the password, or \c01die\c00"
+Mode 2
+End
+OnAction "grasp cast weave" & Mode 2 & ! Guild "forsaken"
+Stop
+Force "rel"
+Force "emote looks confused as a spirit shield appears out of nowhere!"
+Emote "small black flecks dance in the old man's eyes."
+End
+OnSayTo "iceblade iceblade"
+Give 6008
+Mode 1
+End
+OnEntry & Guild "forsaken"
+ActionTo "grovel"
+SayTo "you bless me with your divine presence great one!"
+End
+OnAction "east west south north" & ! Guild "forsaken" & Mode 2
+Stop
+Force "emote screams in agony as a weave of \c01fire\c00 and \c13spirit\c00 surrounds them."
+SayTo "the password or \c01die!\c00"
+End
+OnAction "flee northeast northwest southeast southwest" & ! Guild "forsaken" & Mode 2
+Stop
+Force "emote screams in agony as a weave of \c01fire\c00 and \c13spirit\c00 surrounds them!"
+End
+OnAction "say '" & ! Guild "forsaken" & Mode 2 & ! Mode 3
+ActionTo "slap"
+Force "draws his dagger and places it at your throat!"
+SayTo "if the next word out of your mouth is not the password, it will be the last word you utter!"
+Mode 3
+End
+OnAction "say '" & Mode 3 & ! Guild "forsaken" & Level "30 210"
+SayTo "you were warned fool!"
+ActionTo "kill"
+End
+OnActionTo "slap spit goose" & ! Guild "forsaken"
+Stop
+Force "emote shudders as a weave of \c04water\c00 and \c13spirit\c00 flows through them!"
+SayTo "i am not here for your amusement."
+End
+OnActionTo "kick punch dirt bash stun trip kill" & ! Guild "forsaken"
+Stop
+Action "emote blocks you with his dagger!"
+ActionTo "kill"
+End
+Q
+E
+#6014
+wagonbearer driver~
+the wagondriver~
+A wagondriver stands here.
+~
+It looks, err, unfinished.
+~
+154 48 0 E
+200 20 10 809 1d100+0 1d1+0
+0 0
+8 8 1 628
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnSayTo "hello"
+Action "nod"
+MoveTo 2538
+End
+Q
+E
+#6015
+trolloc bear guard~
+a bear-faced trolloc~
+A large bear-faced trolloc stands here guarding the bridge.
+~
+A trolloc guardian stands somewhat attentively at the bridge across the magma. Its 
+large dark eyes seem to almost present a level of human intelligence above the snout 
+and jaws of a great black bear. Unusually the trolloc also appears amoured in somewhat
+matching mail and steel, the large wicked looking axe hanging from its hide belt
+appearing well oiled and cared for.
+~
+2097162 0 0 E
+10 20 10 809 1d100+0 1d1+0
+0 0
+8 8 1 0
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+E
+#6016
+gha'narm rodent~
+an adult gha'narm~
+A small scaled gha'narm scratches at the ground here, searching for particles of food.
+~
+The Gha'narm hisses and scratches at the ground searching for food, its
+brown, scaley body moving in short sharp motions. With small, almost blind
+eyes it uses its sensitive short pointed nose to sniff out the particles of
+food in the rocky ground. Most dominating of all, a large single spike 
+protrudes from it's tail, dripping a clear liquid. Unknown to most that
+tail is an effective weapon, used readily in the defensive of the mother hive.
+~
+2097162 0 0 E
+25 20 10 809 1d100+0 30d127+0
+0 0
+8 8 1 0
+BareHandAttack: 1
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnEntry
+ActionTo "backstab"
+PurgeMob
+End
+Q
+E
+#6017
+serving woman beautiful scantily~
+a scantily clad serving girl~
+&nA woman of almost \c05unnatural&n beauty stands here attentively.&n
+~
+A woman of almost unnatural beauty stands here attentivly. Clad in
+barely more than film of exquisite &wwh&Wi&wte&n silk she waits, eyes filled
+with adulation and awe. By the way that she stands she seems ready to
+leap to obey any command, always ready to please her Mistress, whatever
+the cost.&n
+~
+10 0 0 E
+10 20 10 809 1d100+500 1d1+0
+0 0
+8 8 2 0
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+E
+#6018
+myrddraal fade eyeless lurk~
+&ka Myrddraal&n~
+&nA &kMyrddraal&n stands here seemingly made of the shadows itself.
+~
+The Fade seems shrouded in the very shadows themselves, they seem to
+almost cling to his very limbs. His pale face seems to be aware of
+everything around him, the oppressive darkness no match for his eyeless
+sight. A black sheathed blade hangs from his side, and as if poured
+from the same mold as all his kin, he wears it with serpentine grace.
+~
+2113546 0 0 E
+10 20 10 809 1d100+1000 20d20+0
+0 0
+8 8 1 0
+E
+#6019
+dreadlord man~
+\c06a dreadlord&n~
+&nA man clad in &Kblack&n and livid &Rr&re&Rd&n stands here, cloaked in darkness.
+~
+Wearing the livid red and darkest black of the Great Lords highest and
+most trusted Dreadlords this man stands here with all the arrogance his
+position allows. Face twisted into an almost icy sneer he waits and
+watches like a predetor.
+~
+5242890 0 0 E
+10 20 10 809 1d100+1000 20d20+0
+0 0
+8 8 1 0
+E
+$

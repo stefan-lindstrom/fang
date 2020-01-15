@@ -1,0 +1,391 @@
+#14400
+beetle insect bug~
+a small beetle~
+a small, black beetle slowly crawls on the ground
+~
+It has a shiny, black exoskeleton, and what almost
+looks like a black, curved tusk.
+The entire insect, from front to back, is only the
+size of a man's thumb, and could not prove any threat
+to anyone.
+~
+983128 589856 0 E
+1 19 10 655 1d100+0 1d1+1
+0 1
+8 8 1
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnRandom 30
+Emote "$n scurries under a rock as your shadow passes over it."
+End
+Q
+E
+#14401
+gardener man~
+a gardener~
+a gardener is here, going about his business
+~
+The gardener is a grizzled old man missing half of his
+teeth.  He wears the simple clothes of a farmer: stout
+wool and leather sandals.  In his eyes is the wisdom
+a long, hard has earned him.
+~
+138 0 0 E
+1 19 10 655 1d100+0 1d1+1
+1 1
+8 8 1
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnEntry
+Emote "the gardener looks up at you and smiles thinly, then continues doing his gardening"
+Pause 3
+Say "you know if you should be here or not.. if you belong here, do not forget to close and lock the doors after you are in.."
+End
+Q
+E
+#14402
+burly guard muscular~
+A heavily muscled guard~
+a man with enough muscles for three men stands here, guarding the entrance 
+~
+He has huge muscles and wields a thick cudgel in one
+hand, and the weapon, combined with his extraordinary
+strength, would be enough to kill most people with but
+one blow.
+~
+593930 67632 0 E
+20 -130 0 655 30d500+20000 10d3+1
+50 100
+8 8 1
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Kick: 100
+Disarm: 100
+P
+OnAction "open door south" & ! Guild "seanchan"
+ActionTo "murder"
+End
+OnAction "south" & ! Guild "seanchan"
+Stop
+Action "shake"
+End
+Q
+E
+#14403
+women sul'dam damane~
+One of the two women~
+A \c13Sul'dam\c00 and a \c06Damane\c00 are here.
+~
+The two women seem to be perfect opposites of one another.
+The one on the lowest step is beneath everyone else and 
+seems almost depressed, and sullen.  The woman who occupies
+the highest of the steps is above everyone else, and she
+wears a smug, satisfied grin on her face.
+~
+4198410 262192 0 E
+170 -130 -15 655 29d0+19000 2d5+1
+200 1
+8 8 2
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Dirtkick: 100
+Kick: 100
+Disarm: 100
+E
+#14404
+postmaster carrier man~
+a message carrier~
+a man who is paid to quickly deliver messages stands ready
+~
+The message carrier is a simple, ordinary looking man who
+wears simple, ordinary looking clothing.  This allows him
+to generally enter and leave most place unnoticed.
+~
+10 0 0 E
+1 -80 -1 655 10d1000+2000 20d100+50
+1 1
+8 8 1
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+E
+#14405
+soldier trainer eekie~
+the experienced soldier~
+An experienced soldier is here, ready to train you
+~
+He wears only boiled leather armor, and wields a 
+short sword, along with a dagger that usually
+remains sheathed at his side.
+~
+26 65584 0 E
+100 -80 0 655 30d500+20000 5d2+1
+150 1
+8 8 1
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Bash: 100
+Kick: 100
+P
+OnRandom 15
+Emote "the trainer flexes his muscles and makes a few practice swings with his sword."
+End
+Q
+E
+#14406
+soldier~
+A soldier of Empire's armies~
+A heavily armored soldier stands here, guarding the entranceway from the inside.
+~
+She wears heavy plate mail and carries a short spear in
+one hand, and wears a short sword at her hip.
+~
+154 48 0 E
+100 -80 -10 655 20d500+15000 10d5+5
+50 100
+8 8 2
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Dirtkick: 100
+Kick: 100
+Disarm: 100
+Stun: 100
+P
+OnAction "south" & ! Guild "seanchan"
+Stop
+Action "shake"
+End
+OnAction "open door east" & ! Guild "seanchan"
+Stop
+Action "shake"
+End
+OnAction "west" & ! Guild "seanchan"
+Stop
+Action "shake"
+End
+OnActionTo "push"
+Stop
+Emote "$n laughs quietly, mirth filling her eyes as she sees your weak attempts to push her out of the way."
+End
+OnEntry & Nobility & Sex "female" & Guild "seanchan"
+SayTo "are you prepared to leave the manor, m'lady?"
+End
+OnEntry & Guild "seanchan" & Sex "male" & Nobility
+SayTo "are you prepared to leave the manor, m'lord?"
+End
+OnActionTo "nod" & Guild "seanchan" & Nobility
+Action "open door north"
+Pause 7
+Action "close door north"
+End
+Q
+E
+#14407
+soldier grizzled aramael~
+Aramael~
+A grizzled old soldier stands ready to teach you how to fight
+~
+He wears no armor and carries only bundled lathes as 
+his weapons.  He is here to teach you how to fight,
+no more, no less.
+~
+10 0 0 E
+1 20 10 655 1d100+0 1d1+0
+0 0
+8 8 1
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnEntry & Wearing 14404
+Say "ah, hello there.  i take it you want to learn the forms?"
+End
+OnSayTo "yes" & Wearing 14404
+SayTo "well, there are many forms which i can teach you.  among them are heron wading in the rushes, river undercuts the bank, the bee stings,"
+Pause 1
+Say "and the bell rings, and cat on hot sand, parting the silk, and last but not least, kingfisher takes a silverback."
+End
+OnSayTo "heron wading rushes" & Wearing 14404
+Emote "the soldier lifts his right foot so that it touches his left thigh, and raises his sword so that it makes a square with his bent arm."
+Emote "$n then slashes with a quick, two-handed strike.  when his foot touches the ground the strike ends, and he returns to the starting position."
+End
+OnSayTo "cat hot sand" & Wearing 14404
+Emote "the soldier leaps away from the attack, parrying it just as he hits the ground."
+SayTo "when using this form you must never leap forward, as that can get you impaled."
+End
+OnSayTo "river undercuts bank" & Wearing 14404
+Emote "$n drops to one knee and delivers a fast, horizontal slash, sweeping at your knees."
+Emote "$n wipes some sweat from his brow.  'that form is designed to take advantage of a high defense,' he says."
+End
+OnSayTo "kingfisher takes silverback" & Wearing 14404
+Emote "$n delivers a short, quick slash to the outside of your knee, putting all the force of the attack behind his wrists."
+End
+OnSayTo "boar rushes down mountain" & Wearing 14405
+Emote "$n rushes ahead, his sword a whirlwind of slashes and stabs!"
+End
+OnSayTo "bell rings" & Wearing 14404
+Emote "$n strikes the blade of an imaginary opponent, putting all his strength into this one blow in an attempt at a disarm."
+End
+OnSayTo "bee stings" & Wearing 14404
+Emote "$n twines his sword with that of his opponents, sliding his blade down the other blade until his sword pricks his opponents hand."
+Emote "$n then follows up with a quick snap of his sword."
+End
+OnSayTo "parting silk" & Wearing 14404
+Emote "$n first attacks the neck with a fast, strong horizontal cut, then performs a downward diagonal slash from the shoulder to the opposite hip."
+End
+OnSayTo "cat dances wall" & Wearing 14405
+Emote "the soldier moves forwards and backwards along a straight line, parrying each blow lightly with only just enough force."
+End
+OnSayTo "flame before whirlwind" & Wearing 14405
+Emote "$n 's sword suddenly flies out of it's sheathe and thrusts forward, right at you!"
+End
+OnSayTo "bundling straw" & Wearing 14405
+Emote "$n lifts his sword so that it is pointed straight up, and he moves it horizontally across his body in a parry."
+Emote "$n then slashes downward at his attackers stomach and legs, moving in the opposite direction as before."
+End
+OnSayTo "sun rises" & Wearing 14405
+Emote "$n attacks with a long, upward slash."
+End
+OnSayTo "grapevine twines" & Wearing 14405
+Emote "$n feints a thrust, instead tapping his opponents blade, followed by leaning into his opponents sword arc."
+Emote "$n then twines his sword with that of his opponents before his opponent can recover from the tap, and snaps his wrist as hard as he can."
+End
+OnEntry & Guild "seanchan" & Wearing 14405
+Say "i teach boar rushes down the mountain, cat dances on the wall, the grapevine twines, the sun rises..."
+Say "bundling straw, and flame before the whirlwind."
+End
+Q
+E
+#14408
+guard arglebargle~
+a soldier, guarding the path~
+This man stands ready as he guards the path to the manor.
+~
+A man of middling height but with a powerful build, he 
+wields a long sword in one hand, and has a dagger at 
+each hip.
+~
+393226 0 0 E
+1 -80 -10 655 30d100+15000 10d5+5
+1 1
+8 8 1
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnEntry & Guild "seanchan"
+SayTo "very well, you may pass along."
+End
+OnEntry & ! Guild "seanchan"
+Say "i am sorry, but you cannot go any further without an invitation."
+End
+OnAction "south" & ! Guild "seanchan"
+Stop
+Pause 2
+Say "you will have to get through me first."
+End
+Q
+E
+#14409
+sul'dam woman~
+a sul'dam~
+A sul'dam stands here, waiting for an apprentice
+~
+This woman wears a blue dress with lightning bolts
+forked around the bodice in a more elaborate pattern
+than is usual.  She has a menacing expression on her
+face, and her eyes look completely pitiless.
+~
+4194330 262192 0 E
+1 20 0 655 1d0+1 1d1+0
+1 1
+8 8 2
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnEntry & Guild "seanchan" & Sex "female" & CanChannel
+SayTo "you look like someone who needs training.  would you like a lesson?"
+End
+Q
+E
+#14410
+garran shopkeeper~
+Garran~
+A short, wiry man named Garran stands here, ready to arm the soldiers of the Empire
+~
+Garran stands at a little less than five feet ten
+inches, making him a fairly short man.  He wears a 
+smithies apron and holds an old, well-used hammar
+in one hand.
+~
+983066 65568 0 E
+1 -180 -10 655 30d1000+5000 30d100+50
+500000 1
+8 8 1
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Dirtkick: 100
+Kick: 100
+Disarm: 100
+E
+#14411
+Adara~
+Adara~
+A pretty young woman stands here, ready to give healing herbs to those that need them
+~
+Adara has long black hair and smooth blue eyes.  She wears
+a simple blue silk dress, slashed with a cream color.
+~
+1015834 32 0 E
+1 -180 -20 655 30d1000+2000 30d127+50
+100000 1
+8 8 2
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha:

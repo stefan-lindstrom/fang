@@ -1,0 +1,759 @@
+#6600
+pouch leather belt black FS~
+a black leather belt pouch~
+A black leather belt pouch is here.~
+~
+15 65544 2049
+99999 0 -1 0
+0 0 0
+#6601
+bow long wood FS~
+a wooden longbow~
+A large bow made of fine wood is here.~
+~
+6 65672 8193
+0 45 15 0
+0 0 0
+A
+18 50
+A
+19 50
+#6602
+dagger black steel FS~
+a black steel dagger~
+A black steel dagger is here.~
+~
+5 65672 8193
+0 45 15 14
+0 0 0
+A
+18 50
+A
+19 50
+#6603
+whip black leather FS~
+a black leather whip~
+A black leather whip is here.~
+~
+5 65672 8193
+0 45 15 2
+0 0 0
+A
+18 50
+A
+19 50
+#6604
+sword two-handed black steel FS~
+a black steel two-handed sword~
+A black steel two-handed sword is here.~
+~
+5 65672 32769
+0 90 15 11
+0 0 0
+A
+18 100
+A
+19 100
+#6605
+sword black steel FS~
+a black steel sword~
+A sword made of black steel is here.~
+~
+5 65672 8193
+0 45 15 3
+0 0 0
+A
+18 50
+A
+19 50
+#6606
+lantern black steel FS~
+a black steel lantern~
+A lantern made of black steel is here.~
+~
+1 65672 16385
+0 0 -1 0
+0 0 0
+A
+18 100
+A
+19 100
+A
+20 5
+#6607
+shield black steel FS~
+a black steel shield~
+A shield made of black steel.~
+~
+9 65672 513
+35 90 0 0
+0 0 0
+#6608
+boots leather black FS~
+a pair of black leather boots~
+A pair of black leather boots are here.~
+~
+9 65672 65
+25 60 0 0
+0 0 0
+#6609
+breeches black silk FS~
+a pair of black silk breeches~
+A pair of black silk breeches are here.~
+~
+9 65672 33
+30 60 0 0
+0 0 0
+#6610
+shirt black silk FS~
+a black silk shirt~
+A black silk shirt is here.~
+~
+9 65672 9
+45 90 0 0
+0 0 0
+#6611
+cloak black FS~
+a black cloak~
+A black cloak is here.~
+~
+9 65672 1025
+35 50 0 0
+0 0 0
+#6612
+sleeves black silk FS~
+some black silk sleeves~
+A pair of black silk sleeves are here.~
+~
+9 65672 257
+25 40 0 0
+0 0 0
+A
+18 50
+A
+19 50
+#6613
+bracelet black steel FS~
+a black steel bracelet~
+A black steel bracelet is here.~
+~
+9 65672 4097
+25 30 0 0
+0 0 0
+A
+18 50
+A
+19 50
+#6614
+gloves black silk FS~
+a pair of black silk gloves~
+A pair of black silk gloves are here.~
+~
+9 65672 129
+20 40 0 0
+0 0 0
+A
+18 50
+A
+19 50
+A
+20 5
+#6615
+ring black steel FS~
+a black steel ring~
+A black steel ring is here.~
+~
+9 65672 3
+15 30 0 0
+0 0 0
+A
+18 50
+A
+19 50
+A
+20 1
+P
+OnWear & ! Guild "forsaken"
+Goto 6601
+End
+Q
+#6616
+collar black silk FS~
+a black silk collar~
+A black silk collar is here.~
+~
+9 65672 5
+35 30 0 0
+0 0 0
+A
+18 50
+A
+19 50
+#6617
+helmet black steel FS~
+a black steel helmet~
+A helm made of black steel is here.~
+~
+9 65672 17
+50 40 0 0
+0 0 0
+A
+18 50
+A
+19 50
+#6618
+staff black steel FS~
+a black steel staff~
+A staff made of blackened steel is here.~
+~
+21 65672 16385
+0 0 0 0
+0 0 0
+A
+20 5
+#6619
+black FS guild eq chest~
+a black chest~
+A black chest rests here emitting an evil aura~
+~
+15 0 0
+10000 5 -1 0
+10000 0 0
+#6620
+FS waist belt pouch~
+a belt that you need to tool~
+A belt that screams, "Tool me!"~
+~
+15 0 2049
+10000 0 -1 0
+0 0 0
+#6621
+Collar Chain (EVIL)~
+\c23A solid steel collar with a chain\c00~
+\c23A chain and collar\c00~
+~
+11 69704 5
+0 0 0 0
+15 0 0
+P
+OnTake
+Force "remo all"
+Force "wear (EVIL)"
+Emote "\c23The collar begins to \c08glow\c00"
+End
+OnAction "l grasp cast weave say '" & ! Guild "forsaken"
+Force "take collar"
+Force "remo all"
+Force "wear (EVIL)"
+End
+OnRemove & Carrying 6623
+Force "emote uses the key and unlocks the collar"
+End
+OnRemove & ! Carrying 6623
+Stop
+Force "emote attempts to removed the collar but does not have the key."
+End
+OnActionWear "murder backstab punch kick slap trip bash spit " & ! Guild "Forsaken"
+Stop
+Force "emote screams in pain as the collar begins to \c08glow\c00!"
+End
+Q
+#6622
+Box pain (EVIL)~
+\c23A box connected by a chain to the collar\c00~
+\c23A box connected by a chain to the collar\c00~
+~
+15 69704 1
+50 1 -1 0
+30 0 0
+P
+OnAction "remove slap spit hit kick kill punch" & Wearing 6621
+Stop
+Emote "\c23The collar flashes \c08bright red!\c00"
+Force "emote screams in horrible pain!"
+End
+OnAction "bash dirt stun west east north south up" & Wearing 6621
+Stop
+Emote "\c23The collar flashes \c08bright red!\c00"
+Force "emote screams in horrible pain!"
+End
+OnAction "take southwest southeast northwest northeast down weave cast" & Wearing 6621
+Stop
+Emote "\c23The collar flashes \c08bright red!\c00"
+Force "emote screams in horrible pain!"
+End
+OnJunk
+Stop
+Emote "What you are just going to throw it away?"
+End
+OnDonate
+Stop
+End
+Q
+#6623
+key steel (EVIL)~
+\c23A steel key\c00~
+\c23A steel key\c00~
+~
+11 69704 1
+0 0 0 0
+1 0 0
+#6624
+Padan Fain Dagger Shadar Logoth~
+\c03A \c10g\c00\c03l\c10e\c00\c03a\c10m\c00\c03i\c10n\c00\c03g \c10gold dagger\c00\c03 with a large \c01r\c08u\c00\c01b\c08y\c00\c03 in its hilt\c00~
+\c03A \c10g\c00\c03l\c10e\c00\c03a\c10m\c00\c03i\c10n\c00\c03g \c10gold dagger\c00\c03 with a large \c01r\c08u\c00\c01b\c08y\c00\c03 in its hilt lies here\c00~
+~
+5 69832 8193
+0 30 30 11
+5 0 0
+A
+20 5
+A
+9 100
+A
+17 -100
+A
+19 100
+A
+18 100
+A
+9 100
+P
+OnWear & ! Guild "forsaken"
+Stop
+Force "emote screams in horrible pain as they try to wield an illegal weapon."
+End
+OnActionToCarry "enhance"
+Stop
+EmoteTo "this object may not be enhanced"
+End
+Q
+#6625
+sheath dagger ruby padan~
+a \c10golden sheath\c00 encrusted with small \c11j\c04e\c11w\c04e\c11l\c04s\c00~
+A golden dagger sheath lies here in the dirt~
+~
+9 70344 18433
+100 100 0 0
+4 0 0
+A
+19 100
+A
+18 100
+A
+19 100
+A
+18 100
+A
+9 100
+#6626
+light lantern shuttered~
+a small \c23shuttered lantern\c00~
+A lantern lies here gathering dust~
+~
+1 70216 16385
+0 0 -1 0
+4 0 0
+A
+18 100
+A
+19 100
+A
+9 100
+#6627
+myrddraal mob sword for blight~
+\c23A black sword\c00~
+\c23The deadly black sword of a myrddraal lies here.\c00~
+~
+5 65600 32769
+20 20 20 11
+10 0 0
+P
+OnActionWear "east west south north"
+WearDown 10
+End
+Q
+#6628
+myrddraal mob scale armor~
+\c23Overlapping black scale armor\c00~
+\c23Some black plate armor lies here.\c00~
+~
+9 65600 9
+50 50 0 0
+15 0 0
+P
+OnActionWear "north south east west"
+WearDown 10
+End
+Q
+#6629
+blood writing dark scriptures man~
+dark scriptures written in blood~
+&nThe &Kbody&n of what appears to be a man lies up against the wall here, above it appears to be a message in his &Rb&rl&Ro&ro&Rd&n.~
+~
+13 0 1
+0 0 0 0
+99999 0 0
+E
+man body~
+&nThe body seems to have been ruthlessly torn and savaged in a manner difficult for 
+even a man of strength. His arms appear partially severed and it seems as if
+one of his limbs has been used in some dark fashion to write a message above him
+on the stone wall in a harsh and bold script. The \c07Light\c00 has surely abandoned this 
+creature.&n
+~
+E
+blood writing message~
+&rAnd the ti&Rm&re soon came when the &RHan&rd reached out across the w&Ro&rrld in His
+name. The &Rpe&rople, all people&R, di&rd f&Ral&rl down and &Rw&rorship his &Rev&rery image
+for &RH&re has c&Rome&r to break the Wheel a&Rnd&r remake the &Rwo&rrld fo&Rr&rev&Rer&r and ever.
+The gre&Ra&rt &Rcity &ro&Rf t&rhe island did tr&Rembl&re at His comm&Ri&rn&Rg f&ror the&Ry&r knew they 
+had stoo&Rd an&rd pro&Rsti&rtuted themse&Rlv&res t&Ro t&rhe Dragon an&Rd&r the Damned. With
+His H&Ran&rd s&Rhe&r was str&Rippe&rd o&Rf c&rlothes and &Rf&rlesh and &Rlef&rt naked, the flames 
+of &Re&rternal death &Ral&right &Rher&r walls. The city of the w&Rom&ran is and was and  
+will be cas&Rt do&rwn into the &RP&rit of fire and Death w&Ri&rth&Ro&rut end.&n
+~
+#6630
+dark scriptures blood body~
+dark scriptures written in blood II~
+&nThe \c23body\c00 of what appears to be a young child lies sprawled across the cobblestones here, above it is written a message in her \c08b\c01l\c08o\c01o\c08d\c00~
+~
+8 0 1
+0 0 0 0
+99999 0 0
+E
+blood message dark scripture~
+\c01And the voices of the Most High did boom, the thirteen who is and
+was and who will Judge, 'Come out of the great islant city for the
+Great Lord of the Dark and His Hand has condemned her and they
+have All power. She shall be made pay for the blood of the Faithful
+that adorns her and be dealt double price by the Eternal Lord. All
+the nations that have been intoxicated by her words, every ruler in 
+the lands who has been defiled by her touch and every merchant who
+has grown fat by her debauchery shall be cast down and with her die
+the Final Death.\c00
+~
+E
+body child girl~
+&nThe child's body lies spawling across the stone cobblestones, what
+little \c08b\c01l\c08o\c01o\c08d\c00 left in her forming dark scarlet pools where someone,
+or something, has torn at her \c01f\c03l\c01e\c03s\c01h\c00. By some savage means her right
+arm and leg are partially severed and they seem to have been used 
+to write a message in her \c08b\c01l\c08o\c01o\c08d\c00 on the roadway around her. Flies 
+seem to dominate the whole area.
+~
+#6645
+ring~
+a ring for Egwene~
+Egwene's ring is here.~
+~
+9 256 3
+0 0 0 0
+0 0 0
+#6650
+sword etched~
+a broadsword etched with silver markings~
+A broadsword is here.~
+~
+5 0 8193
+15 9 8 3
+25 0 0
+A
+18 15
+A
+19 15
+#6651
+lantern brass hooded~
+a hooded brass lantern~
+A hooded brass lantern lies here.~
+~
+1 4104 16385
+0 0 -1 0
+0 0 0
+#6666
+sword blade runeblade black red metal large~
+\c05a large black metal sword\c00 \c01with red glowing runes\c00 \c05and a dark aura\c00~
+\c05A large black\c00 \c01Runeblade\c00 \c05is here, floating in the air\c00~
+~
+5 65740 32769
+0 50 15 4
+15 0 0
+E
+sword blade runeblade~
+\c05This heavy black runesword seems to be posessed of a life\c00
+\c05all it's own. It has\c00 \c01red glowing runes\c00 \c05all along the blade\c00
+\c05and it surrounded by a dark aura\c00
+~
+A
+9 100
+A
+17 -50
+A
+18 100
+A
+19 100
+A
+20 5
+#6667
+power Shai'tan~
+\c05The \c01Dark One's\c05 Power!\c00~
+\c05The power of the \c01Dark One!\c00~
+~
+5 32 9217
+0 50 50 12
+0 0 0
+A
+20 10
+A
+20 10
+A
+18 500
+A
+19 500
+A
+17 -500
+A
+9 500
+#6684
+silver cup ALLUVIAN~
+a cup made entirely from silver~
+A silver cup is here.~
+~
+17 65672 1
+50 0 0 0
+0 0 0
+#6685
+staff wood ALLUVIAN~
+an old walking staff~
+An old walking staff is here.~
+~
+21 65672 16385
+0 0 0 0
+0 0 0
+A
+14 50
+A
+18 5
+A
+19 5
+#6686
+shield silver ALLUVIAN~
+a silver shield~
+A shield made of the finest silver is here.~
+~
+9 65672 513
+25 0 0 0
+9 0 0
+A
+13 50
+A
+18 5
+A
+19 5
+#6687
+lantern silver ALLUVIAN~
+a silver worked lantern~
+A lantern made of the finest silver.~
+~
+1 65672 16385
+0 0 -1 0
+6 0 0
+A
+17 -15
+A
+18 15
+A
+19 15
+#6688
+boots leather ALLUVIAN~
+a fine pair of leather boots~
+A set of leather boots are here.~
+~
+9 65672 65
+10 0 0 0
+0 0 0
+A
+14 50
+#6689
+wristuards silver ALLUVIAN~
+a silver wristguard~
+A silver wristguard is here.~
+~
+9 65672 4097
+10 0 0 0
+0 0 0
+A
+18 10
+A
+19 10
+#6690
+legguards silver ALLUVIAN~
+a set of silver legguards~
+A set of silver legguards are here.~
+~
+9 65672 33
+15 0 0 0
+0 0 0
+A
+14 50
+A
+13 25
+#6691
+grey silk pants RAND~
+a pair of grey silk pants~
+A pair of pants.~
+~
+9 65736 33
+20 40 0 0
+6 0 0
+A
+13 50
+A
+14 50
+#6692
+boots leather RAND~
+a pair of sturdy leather boots~
+A pair of boots are here.~
+~
+9 65736 65
+10 30 0 0
+4 0 0
+E
+bracelet compass~
+Instead of pointing north like it should, the comapss
+points directly twords you.
+~
+A
+1 1
+A
+2 1
+A
+13 35
+A
+14 35
+#6693
+shirt silk green RAND~
+a green silk shirt~
+A shirt is here.~
+~
+9 65736 9
+30 60 0 0
+10 6 0
+E
+bracelet hourglass~
+The sands in the hourglass are slowly trickling away.
+~
+A
+13 100
+A
+14 100
+#6694
+acorns eye~
+\c03Acorns\c00~
+\c00Some \c03acorns\c00 scattered on the ground.~
+~
+4 65608 16385
+2 1 25 0
+2 0 0
+E
+shroud black~
+This black cloth seems to be the death shroud of someone.
+~
+A
+12 100
+#6695
+berry ripe eye~
+\c11Blue berries\c00~
+\c00Some \c11berries\c00 growing on a bush\c00~
+~
+4 65608 1
+1 1 10 0
+2 0 0
+E
+doorway stone~
+The stone doorway seems to be supported by some
+unseen wire, as your efforts to topple it do
+naught but spin it around.
+~
+A
+13 45
+A
+14 45
+#6696
+mushroom heal~
+a nice plump mushroom~
+\c07A plump little m\c01u\c00sh\c01r\c00oo\c01m\c00 grows here.~
+~
+4 65608 1
+0 1 10 0
+2 0 0
+E
+seal heartstone~
+The heartstone seal seems to be brittle, and
+you feel as though you could shatter it with
+a rock.
+~
+A
+3 5
+A
+4 5
+A
+18 20
+A
+19 20
+#6697
+pool eye water clear~
+a clear pool of water~
+\c04A clear pool of clean water.\c00~
+~
+23 0 0
+1000 1000 0 0
+10000 0 0
+E
+statue woman small~
+The small statue of the woman seems poised for song.
+~
+A
+5 2
+A
+13 35
+A
+14 35
+A
+18 15
+A
+19 15
+#6698
+eye world safe sanctuary wagon green~
+\c09The Eye of the World\c00~
+\c02A green area, seemingly out of place here.\c00~
+~
+14 0 0
+0 0 -1 0
+10000 0 0
+E
+sanctuary eye world green wagon~
+\c02It appears to be the remnents of the Eye of the World\c00
+~
+A
+1 1
+A
+2 1
+A
+18 20
+A
+19 20
+#6699
+bottle Scotch~
+a vintage bottle of Scotch~
+A vintage bottle of Scotch sits here, waiting to be inbibed.~
+~
+17 65608 1
+10 10 6 0
+15 0 0
+E
+callandor sword glass~
+The sword seems to sparkle in the light,
+and almost seems to glow of it's own accord.
+~
+$~

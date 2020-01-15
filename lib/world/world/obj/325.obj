@@ -1,0 +1,360 @@
+<?xml version="1.0"?>
+<objects>
+  <object vnum="32500" name="replica sword callandor" special="NONE">
+    <description>A perfect replica of the sword Callandor is here, why not pick it up?</description>
+    <shortdesc>a replica of Callandor</shortdesc>
+    <actiondesc>A replica of Callandor
+</actiondesc>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="1" value3="1" value4="12"/>
+      <flags type="5" wear="8193" extra="522"/>
+      <data weight="10" cost="5" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <exdesc keyword="sword callandor replica">
+      <description>This is an exact replica of the sword Callandor, the sword that
+isn&apos;t a sword. This is a sword made out of a material looking like 
+glass, but it seems unbreakable. This original Callandor is a
+huge Sa&apos;angreal, one of the largest ever made, and is now kept
+safe in the Stone of Tear, where it awaits the Dragon Reborn. 
+It&apos;s guarded by strong traps, and it&apos;s one of the surest sign
+that the Dragon is reborn, when someone can take it out of it&apos;s
+safeguard. 
+
+</description>
+    </exdesc>
+  </object>
+  <object vnum="32501" name="blood patch fresh" special="NONE">
+    <description>A patch of fresh blood lies on the ground here!</description>
+    <shortdesc>a patch of fresh blood</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="12" wear="0" extra="0"/>
+      <data weight="0" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="32502" name="healing thingy" special="NONE">
+    <description>A healing thingy floats around here.</description>
+    <shortdesc>a healing thingy</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="1" value2="1" value3="75" value4="0"/>
+      <flags type="4" wear="1" extra="0"/>
+      <data weight="0" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <objprog main="OnTake" argtype="STRING" argument="enhance">
+      <action number="Emote" argtype="STRING" argument="$p giggles."/>
+    </objprog>
+  </object>
+  <object vnum="32503" name="teddy bear" special="NONE">
+    <description>A cute little teddy bear has been dropped by someone here.</description>
+    <shortdesc>a cute little teddy bear</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="12" wear="16385" extra="0"/>
+      <data weight="3" cost="10" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <objprog main="OnTime" argtype="INT" argument="8">
+      <action number="Emote" argtype="STRING" argument="$p junks itself to allow others to complete AutoQuest #1."/>
+      <action number="Destroy" argtype="VOID" argument="NONE"/>
+    </objprog>
+  </object>
+  <object vnum="32504" name="test guild sword" special="NONE">
+    <description>A test guild sword lies here, gleaming dangerously.</description>
+    <shortdesc>a test guild only sword</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="5" value2="5" value3="5" value4="0"/>
+      <flags type="5" wear="8193" extra="0"/>
+      <data weight="5" cost="1000" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <objprog main="OnWear" argtype="VOID" argument="NONE">
+      <action number="EmoteTo" argtype="STRING" argument="You&apos;re not allowed to wield this weapon; it&apos;s guild only."/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+    </objprog>
+  </object>
+  <object vnum="32505" name="chair rickety" special="NONE">
+    <description>A frail looking, rickety chair stands here.</description>
+    <shortdesc>a rickety chair</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="XATTACKS" modifier="5"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="1" value4="0"/>
+      <flags type="24" wear="1" extra="0"/>
+      <data weight="10" cost="10" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="32514" name="tooth" special="NONE">
+    <description>A tooth from a rat lies here on the ground.</description>
+    <shortdesc>a rats tooth</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="13" wear="1" extra="0"/>
+      <data weight="0" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <objprog main="OnDrop" argtype="VOID" argument="NONE">
+      <action number="Emote" argtype="STRING" argument="$p eeks."/>
+    </objprog>
+    <objprog main="OnTake" argtype="VOID" argument="NONE">
+      <action number="Emote" argtype="STRING" argument="$p hums happily."/>
+    </objprog>
+    <objprog main="OnJunk" argtype="VOID" argument="NONE">
+      <action number="Emote" argtype="STRING" argument="The gnu cries."/>
+    </objprog>
+  </object>
+  <object vnum="32580" name="mocha kerrin raspberry" special="NONE">
+    <description>An awe inspiring mug of \c05raspberry\c03 mocha\c00 lies here..must be your lucky day!</description>
+    <shortdesc>Kerrin&apos;s gift to all mortals, \c05Raspberry\c03 Mocha\c00</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="5" value2="5" value3="13" value4="0"/>
+      <flags type="17" wear="1" extra="0"/>
+      <data weight="10" cost="10" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="32581" name="whisky irish" special="NONE">
+    <description>A goblet of \c05Kerrin&apos;s\c02 St. Patricks day specialty\c00 lies here..better drink it quick!</description>
+    <shortdesc>some good ol&apos; \c02Irish \c03whisky\c00</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="5" value2="5" value3="6" value4="0"/>
+      <flags type="17" wear="1" extra="0"/>
+      <data weight="10" cost="10" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="32582" name="danish" special="NONE">
+    <description>A deliciously plump cheese danish</description>
+    <shortdesc>a deliciously plump \c03Cheese Danish\c00</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="24" value2="0" value3="0" value4="0"/>
+      <flags type="19" wear="1" extra="0"/>
+      <data weight="0" cost="10" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="32583" name="cabinet cadene munchies" special="NONE">
+    <description>\c03Cadene&apos;s cabinet is set next to a large sofa, and has the words &quot;\c05eat drink and be merry\c03&quot; inscribed upon it.</description>
+    <shortdesc>Cadene&apos;s cabinet </shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="4000" value2="1" value3="-1" value4="0"/>
+      <flags type="15" wear="1" extra="0"/>
+      <data weight="2000" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="32590" name="sign ooc" special="NONE">
+    <description>An \c05OoC\c00 sign you ought to read.</description>
+    <shortdesc>a sign</shortdesc>
+    <actiondesc>This is Cadene&apos;s &quot;\c05No more closed emotes\c00&quot; Workshop..please note the following.
+*\c06It is role playing..but have fun with it because it isn&apos;t IC :) We can all lounge around- and let our mun&apos;s be themselves a bit
+\c00*\c06please- only take one food object from my cabinet at a time- it has to sustain all of you- and i won&apos;t have yall runnin around with 30 of my ooc food items :P\c00
+QP&apos;s will be awared to creative rp- lack of closed emotes- and good role playership :)
+</actiondesc>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="16" wear="1" extra="2056"/>
+      <data weight="5000" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="32591" name="taco" special="NONE">
+    <description>A yummy looking taco lies here.</description>
+    <shortdesc>a yummy \c03Taco Su\c02pr\c01e\c03me\c00</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="24" value2="0" value3="0" value4="0"/>
+      <flags type="19" wear="1" extra="8192"/>
+      <data weight="0" cost="10" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="32592" name="sushi level" special="NONE">
+    <description>A \c02S\c00u\c02s\c00h\c02i\c01 roll\c00 made for leveling</description>
+    <shortdesc>a \c02S\c00u\c02s\c00h\c02i\c00 \c01roll\c00 for leveling</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="19" wear="1" extra="0"/>
+      <data weight="0" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="32593" name="emerald stone glow cadene" special="NONE">
+    <description>A fine stone lies here..\c02glowing lightly\c00, easily mistakeable for an emerald with its green shade.</description>
+    <shortdesc>an oddly glowing \c02emerald\c00</shortdesc>
+    <actiondesc>The stone appears to have something finely carved onto it&apos;s smooth, edgless surface.
+The writing is unintelligable..the letters foreign, consisting of harsh strokes and angular markings.
+</actiondesc>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="11" wear="16385" extra="4428"/>
+      <data weight="1" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <objprog main="OnEntry" argtype="VOID" argument="NONE">
+      <action number="Pause" argtype="STRING" argument="0"/>
+      <action number="Emote" argtype="STRING" argument="A well rounded stone catches the \c10sun&apos;s ref\c03lect\c10ion\c00 briefly, sending a multitude of light fragments skittering across the pavement. Its suspiciously smooth surface glows faintly."/>
+    </objprog>
+  </object>
+  <object vnum="32594" name="board kerrin cadene" special="NONE">
+    <description>\c05K\c04e\c02r\c06r\c03i\c05n\c04&apos;\c02s\c05 groovy\c00 message board.</description>
+    <shortdesc>\c05K\c04e\c02r\c06r\c03i\c05n\c04&apos;\c02s \c05groovy\c00 message board</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="16" wear="1" extra="0"/>
+      <data weight="0" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="32598" name="board Seafolk" special="NONE">
+    <description>&amp;bSeafolk&apos;s Guild Board is here.&amp;n</description>
+    <shortdesc>&amp;bSeafolk&apos;s Guild Board!&amp;n</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="13" wear="0" extra="0"/>
+      <data weight="0" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="32599" name="unfinished object" special="NONE">
+    <description>An unfinished object is lying here.</description>
+    <shortdesc>an unfinished object</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="0" wear="1" extra="0"/>
+      <data weight="0" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <objprog main="OnEntry" argtype="VOID" argument="NONE">
+      <action number="Emote" argtype="STRING" argument="$p hums slightly."/>
+    </objprog>
+    <objprog main="OnTake" argtype="VOID" argument="NONE">
+      <action number="Emote" argtype="STRING" argument="$p glitters suddenly."/>
+      <action number="Pause" argtype="STRING" argument="0"/>
+      <action number="Emote" argtype="STRING" argument="$p hums softly to itself."/>
+    </objprog>
+  </object>
+</objects>

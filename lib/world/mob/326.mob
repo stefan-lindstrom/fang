@@ -1,0 +1,905 @@
+#32600
+town crier~
+the town Crier~
+The Town Crier is here to help spread information throughout the lands.
+~
+Garbed in the clothes of a common citizen, this man clearly makes
+his living by spreading information of the nobility and various
+other events throughout the lands.
+To read what the man has to say, type look listings.
+
+~
+10 0 0 E
+0 20 10 775 1d100+0 1d1+0
+0 0
+8 8 1 0
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+E
+#32601
+spice girl ginger~
+\c08Ginger Spice\c00~
+\c08Ginger Spice\c00 strolls about singing note not found on any scale.
+~
+\c08Ginger Spice\c00, the former "nude model" has dyed red hair, a
+large (enhanced) chest, chucky thighs, and a nise thats says, "Plastic."
+She is dressed in a sequened leotard, beaded top hat, and huge platform 
+shoes giving her the appearance of a duck on acid.
+~
+6953096 0 0 E
+150 -30 10 775 1d0+15000 5d10+50
+0 1
+8 8 2 914
+BareHandAttack: 8
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Trip: 100
+P
+OnAttack
+Action "sing"
+End
+OnMobDie
+Say "oh no, where is my girl power?"
+End
+OnRandom 99
+Say "girl power! woo woo woo!"
+Say "follow me girls!"
+Pause 1
+Action "group all"
+End
+OnActionTo "slap"
+SayTo "girl power! girl power! girl power!"
+Say "who needs girl power!?"
+Emote "the spice girls chant in unison, '\c14everyone needs girl power!'\c00"
+End
+OnAction "push drag"
+Stop
+Action "sing"
+End
+OnMobEntry
+Action "say who has girl power?"
+End
+OnAction "steal"
+Stop
+SayTo "scream"
+ActionTo "kill"
+End
+Q
+E
+#32602
+scary spice girl~
+\c05Scary Spice\c00~
+\c05Scary Spice\c00 is just pain frightning.
+~
+\c05Scary Spice\c00 is dressed in a tight corset that shoves her
+chest almost up to her neck, and hot pants that seem ready to burst.
+To top off her outfit she has chosen a loepard print cape-like thing
+and some oh-so-trendy tinted glasses.  Her 'fro waves freely in the
+breeze created by all the hot air surrounding her.
+~
+7278730 0 0 E
+150 -30 10 775 1d0+15000 5d10+50
+0 1
+8 8 2 914
+BareHandAttack: 4
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Dirtkick: 100
+P
+OnAttack
+Emote "\c05scary spice\c00 attempts to dance out of your way (not)."
+End
+OnActionTo "slap"
+SayTo "do you wanna be my lover?"
+End
+OnRandom 99
+Emote "\c05scary spice\c00 sticks out her tongue and shows you her tongue ring!"
+Action "follow ginger"
+End
+OnMobDie
+Say "girl.... power....."
+End
+OnAction "push drag"
+Stop
+Action "sing"
+End
+OnMobEntry
+Say "i'm scary...."
+End
+OnAction "steal"
+Stop
+ActionTo "curse"
+ActionTo "kill"
+End
+Q
+E
+#32603
+posh spice girl~
+\c09Posh Spice\c00~
+\c09Posh Spice\c00 is pouting.
+~
+\c09Posh Spice\c00 is dressed in a rip off black Versace Gown.  She
+look about the room trying desperately to look like Brittish nobility
+but fails and instead looks like American White Trash.  She moves about
+attempting to look sexy and slinky, but really doesn't succeed at
+all.
+~
+6951050 0 0 E
+150 -30 10 775 1d0+15000 5d20+50
+0 1
+8 8 2 914
+BareHandAttack: 2
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Disarm: 100
+P
+OnActionTo "slap"
+Action "pout"
+End
+OnRandom 99
+Emote "\c09posh spice\c00 begins to sing, realizes she lacks the talent, but goes on anyway."
+Action "sing"
+Action "follow ginger"
+End
+OnAttack
+Emote "\c09posh spice\c00 tries to look sexy in hopes you will stop."
+End
+OnMobDie
+Say "i knew the girl power thing was a lie!"
+End
+OnAction "push drag"
+Stop
+Action "sing"
+End
+OnMobEntry
+Action "emote looks about the room and sulks."
+End
+OnSayTo "steal"
+Stop
+SayTo "spit"
+ActionTo "kill"
+End
+Q
+E
+#32604
+baby spice girl~
+\c13Baby Spice\c00~
+\c13Baby Spice\c00 is half mummy's girl, half crazy-sexy-bitch
+~
+\c13Baby Spice\c00 is dressed in that mix of girl and hooker that
+says, "I'm easy, do me." Her big vacant blue eyes look at you but
+don't really seem to be processing anything. You get the idea that
+she is not the brightest bulb on the SpiceGirl porch.
+~
+6426762 0 0 E
+150 -30 10 775 1d0+15000 5d20+50
+0 1
+8 8 2 914
+BareHandAttack: 13
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Bash: 100
+P
+OnActionTo "slap"
+ActionTo "look"
+SayTo "huh?"
+End
+OnRandom 99
+Emote "\c13baby spice\c00 looks about vacantly turning her head to side to side."
+Action "follow ginger"
+End
+OnAttack
+SayTo "don't hurt me! i'm cute, kill that ugly sod \c10sporty\c00!"
+End
+OnMobDie
+Say "could someone explain girl power again?"
+End
+OnAction "push drag"
+Stop
+Action "sing"
+End
+OnMobEntry
+Say "who am i?"
+End
+OnAction "steal"
+Stop
+ActionTo "spit"
+ActionTo "kill"
+End
+Q
+E
+#32605
+sporty spice girl~
+\c10Sporty Spice\c00~
+\c10Sporty Spice\c00 runs around the room in hyper mode, bad teeth and all
+~
+\c10Sporty Spice\c00 is dressed in sweats, her hair tied back in a
+horrid pony tail.  She smiles, and laughs with the most irritating
+of British accents, you know the one that makes her sound like the
+British equivalent of White Trash? As she smiles you notice that she
+has those lovely Britsh teeth at all angels and colors....
+~
+6754458 0 0 E
+150 -30 10 775 1d0+15000 5d20+50
+0 1
+8 8 2 914
+BareHandAttack: 9
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Kick: 100
+P
+OnActionTo "slap"
+SayTo "oh yeah? well i have girl power! watch!"
+Emote "\c10sporty spice\c00 proceeds to perform a back hand spring, perhaps she does have talent?"
+End
+OnRandom 99
+Emote "\c10sporty spice\c00 performs a bad imitation kung-fu kick."
+Action "follow ginger"
+End
+OnAttack
+SayTo "bloody hell! you broke my tooth!"
+End
+OnMobDie
+Say "dammit and i was going to go solo....."
+End
+OnAction "push drag"
+Stop
+Action "sing"
+End
+OnMobEntry
+Say "bloody hell!"
+End
+OnAction "steal"
+Stop
+SayTo "thief!"
+ActionTo "kill"
+End
+Q
+E
+#32607
+red dressed man~
+a man dressed all in red~
+A man in an impossibly red outfit stands here, watching the races.
+~
+Red, red, red...Does this man have no imagination?
+~
+10 0 0 E
+1 20 10 775 1d100+0 1d1+0
+0 1
+8 8 1 914
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnSayTo "shai'tan" & Questing
+ActionTo "eye"
+Pause 3
+Action "nod"
+Pause 4
+Say "i see. you're the questor..."
+Pause 2
+Say "ok...to get the next clue, you must first tell me the name the forsaken have given themselves."
+Emote "$n waits, with an expectant air."
+End
+OnSayTo "chosen" & Questing
+ActionTo "smile"
+Pause 1
+Say "correct!"
+Pause 3
+Say "ok...here's what you must do. travel to stedding shangtai and find the peaceful looking young woman."
+Pause 3
+Say "to her you will show your respect by bowing to her."
+Pause 3
+Say "you will receive further instructions from her."
+Emote "$n turns to the horse tracks again, indicating that the conversation is over."
+End
+Q
+E
+#32608
+peaceful young woman~
+a peaceful looking young woman~
+A young woman sits here among the trees, looking peaceful and content.
+~
+She seems...happy...That's the best way to describe it. Happy.
+~
+10 0 0 E
+1 20 10 775 1d100+0 1d1+0
+0 1
+8 8 2 914
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnActionTo "bow" & Questing
+ActionTo "smile"
+Pause 2
+Say "ah...greetings, seekers, and welcome."
+Pause 4
+Say "you have come for the next clue in the quest."
+Pause 1
+Emote "$n says it as a matter of fact, not a question."
+Pause 3
+Say "so, then...from here on it will be harder."
+Pause 4
+Say "we will no longer speak plainly but in riddles and vague hints."
+Pause 4
+Say "you must go to the city that is the heart of the lion."
+Pause 4
+Say "once there, you must seek a man that trades in the dealing of death."
+Pause 4
+Say "with him is a young man who seeks his wares, but is too poor."
+Pause 4
+Say "to him you must give a sword for beginners."
+Pause 4
+Say "in his gratitude, he will guide you further on your path."
+Pause 4
+Say "that is all."
+Pause 3
+Action "wave"
+End
+Q
+E
+#32609
+hopeful lad~
+a hopeful lad~
+A lad stands here, looking at Thor's wares longingly.
+~
+He looks poor, is about 16 years old and is totally absorbed
+with the items that Thor has for sale.
+~
+10 0 0 E
+1 20 10 775 1d100+0 1d1+0
+0 1
+8 8 1 914
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnGive 10 & Questing
+ActionTo "thank"
+Pause 3
+Emote "$n says happily, 'wow! now i can be a soldier just like dad! thanks!'"
+Pause 3
+Say "i guess you're the ones i was supposed to say this to..."
+Pause 2
+Action "think"
+Pause 4
+Say "lessee...you were to...umm..."
+Emote "$n looks a little embarrassed."
+Pause 3
+Say "you...eh..yeah! got it! go to a place in the city where enlightment can be bought."
+Pause 3
+Emote "$n looks relieved to have remembered."
+Pause 3
+Say "well...and there you're supposed to name the group that pres..presumably spreads the light for free."
+Pause 2
+Emote "$n adds quickly, 'to the person that's there, of course.'"
+Pause 3
+Say "that's it...thanks for the sword."
+Pause 2
+Action "wave"
+End
+Q
+E
+#32610
+bored pedestrian~
+a bored pedestrian~
+A bored pedestrian stands here, pretty disinterested in Charles' items.
+~
+Bored.....
+~
+10 0 0 E
+1 20 10 775 1d100+0 1d1+0
+0 1
+8 8 1 914
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnSayTo "cotl children whitecloak" & Questing
+SayTo "ah...it's you."
+Pause 3
+Say "well...congratulations. this is the last station."
+Pause 3
+Say "to get your reward, tell the following number to fredrik:"
+Pause 3
+Say "8163"
+Pause 3
+Say "congratulations on completing this quest test."
+End
+Q
+E
+#32611
+table creator law~
+a large thick round table~
+A large wooden table is here, its top surface smoothly finished and its edges and legs delicately carved with a maze of different patterns and scenes.
+~
+The table is fairly tall, made of wood almost a hand thick,
+and finished with a dark lacquer that matches the surrounding
+shelved walls and the high-backed chairs that sit equally
+spaced around it.
+~
+10 0 0 E
+200 -180 -20 775 30d100+15000 30d100+50
+0 0
+8 8 0 914
+BareHandAttack: 6
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnRandom 2
+Emote "a log in the fireplace shifts, causing a curtain of sparks to rise up into the chimney."
+End
+Q
+E
+#32612
+zach hanson~
+Zach~
+Zach Hanson is a small annoying little boy who is constantly moving.
+~
+Zach bounces about the room as if someone has let him have a few too
+many sugar pills.  His long blonde hair is not well groomed which is
+about the only way you would guess he is male and not female.
+~
+6462622 0 0 E
+150 10 -10 775 1d0+15000 10d10+10
+0 100
+8 8 1 914
+BareHandAttack: 4
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Trip: 100
+P
+OnRandom 99
+Action "cackle"
+Action "follow taylor"
+End
+OnActionTo "slap"
+Action "cry"
+End
+OnAttack
+Action "giggle"
+End
+OnMobDie
+Say "mmmmmmmmmmmmm..... bop."
+End
+OnMobEntry
+Action "kill spice"
+End
+OnActionTo "push drag"
+Stop
+Force "holler i love hanson!"
+End
+Q
+E
+#32613
+Taylor Hanson~
+Taylor~
+Taylor Hanson has that androgenous name, and look.
+~
+Taylor is cute and has a lovely voice for a girl, which is unfortunate
+as he is a boy.  However, nothing deters him from swishing his girlie
+butt all over the world singing the high notes all looking for all
+the world like a drag queens nightmare.
+~
+6462620 0 0 E
+150 10 -10 775 1d0+15000 10d10+10
+0 100
+8 8 1 914
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Kick: 100
+P
+OnRandom 99
+Action "sing"
+Pause 1
+Action "group all"
+End
+OnActionTo "slap"
+Say "ouch, don't you know your not supposed to hit girls?"
+End
+OnMobAttack
+Action "emote tries to look pretty and cute in hopes you will stop hitting him."
+End
+OnMobDie
+Say "but, but, i never even got laid yet!"
+End
+OnActionTo "push drag"
+Stop
+Force "ooc i love hanson!"
+End
+OnMobEntry
+Action "kill spice"
+End
+Q
+E
+#32614
+Isaac Hanson~
+Isaac~
+Isaac Hanson is incredibly ugly.
+~
+Isaac Hanson makes you wish you didn't eat recently, the word horse
+comes to mind as you happen to catch a glimpse of him.  He tries his
+hardest not to look femine like his brothers, unfortunately his idea
+of butch leaves much of the common meaning of the word out.  It is
+not hard to imagine him prancing about a field of flowers.
+~
+6462622 0 0 E
+150 10 -10 775 1d0+15000 10d10+10
+0 100
+8 8 1 914
+BareHandAttack: 13
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Bash: 100
+P
+OnRandom 99
+Action "emote attempts to hide behind his brothers."
+Action "follow taylor"
+End
+OnActionTo "slap"
+Action "emote wimpers softly about how unfair life is."
+End
+OnAttack
+Action "emote tries to find zach and use him as a shield."
+End
+OnMobDie
+Action "emote curses his parents for breeding!"
+End
+OnMobEntry
+Action "kill spice"
+End
+OnActionTo "push drag"
+Stop
+Force "gdt i love hanson"
+End
+Q
+E
+#32615
+Courier~
+Courier~
+A courier lackey stands here, ready to handle your mail.
+~
+Some bum Lerris picked off the streets and threw into service.
+~
+73 0 0 E
+190 -130 -15 775 30d0+28000 20d40+50
+250 250
+8 8 1 914
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnActionTo "l look"
+SayTo "what do you want?"
+ActionTo "slap"
+End
+OnRandom 99
+Action "emote sings, with actual talent, unlike the spicy ones."
+End
+OnActionTo "slap"
+Stop
+Force "emote tries to slap mariah."
+Action "emote blocks the slap."
+ActionTo "slap"
+SayTo "you want some of my honey? hmm?"
+ActionTo "bash"
+End
+OnAttack
+ActionTo "trip"
+ActionTo "bash"
+ActionTo "punch"
+ActionTo "kick"
+SayTo "its just like honey baby!"
+ActionTo "spit"
+End
+OnMobDie
+Say "oh, that sucked."
+End
+OnRandom 99
+Action "kill spice"
+Action "kill hanson"
+End
+OnActionTo "push drag"
+Stop
+SayTo "i'll give you a vision of love baby!"
+ActionTo "bash"
+End
+OnAction "cast weave" & Sex "female"
+Stop
+SayTo "i am sick of your tricks bitch."
+ActionTo "bash"
+End
+Q
+E
+#32617
+mob unfinished~
+Scribe~
+A Scribe with quill and parchment, is standing here.
+~
+\c00~
+8 0 0 E
+0 20 10 775 1d100+0 1d1+0
+0 0
+8 8 1 914
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+E
+#32619
+mob unfinished~
+the unfinished mob~
+An unfinished mob stands here.
+~
+It looks, err, unfinished.
+~
+8 0 0 E
+0 20 10 775 1d100+0 1d1+0
+0 0
+8 8 0 914
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnSay "hello greetings"
+SayTo "greetings yourself, sir, are you having a good time"
+End
+Q
+E
+#32620
+imm~
+the imm mob~
+Immy, the imm mob
+~
+What's to say, it's immy.
+~
+10 65536 0 E
+1 19 10 775 1d100+1 1d1+1
+0 0
+8 8 0 0
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+E
+#32622
+slave~
+Ark's Slave~
+An unfinished mob stands here.
+~
+It looks, err, unfinished.
+~
+4194312 0 0 E
+200 20 10 775 1d0+0 1d1+0
+0 0
+8 8 2 0
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnTell "send me" & Guild "daes" & Authorized
+MoveTo 301
+Say "I just sent you"
+ActionTo "trans"
+Say "I just transed"
+Give 715
+Force "give illian slave"
+End
+Q
+E
+#32624
+orr keeper underworld~
+Orr, the keeper of the Under World~
+Orr stands here.
+~
+It looks, err, unfinished.
+~
+6277128 264240 1000 E
+199 -180 -20 775 30d1000+10000 30d127+50
+0 0
+8 8 1 0
+BareHandAttack: 5
+Bash: 100
+Trip: 100
+Dirtkick: 100
+Kick: 100
+Disarm: 100
+Stun: 100
+P
+OnEntry
+Emote "bows and murmurs, "Welcome to the Star Gate.""
+End
+Q
+E
+#32666
+woman small candy menagerie quest~
+a small woman~
+Smelling of candy, a small, old woman offers her sweets to all.
+~
+Face wrinkling up with pleasure at the sight of the young
+ones running about with her sugary creations, this small
+old woman seems happy with her work, excepting that her
+fingers get sticky quite often.
+~
+1073162 0 0 E
+0 20 10 775 1d100+0 1d1+0
+200 1
+8 8 2 914
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+E
+#32667
+couple holding hands strolling young~
+a young couple~
+Hand in hand, a young couple is strolling between the tents.
+~
+Stars almost visible in their eyes, but not quite there, these
+two seem almost ready to marry. Snuggling whenever at
+all possible, they make quite a pair as they wander the
+menagerie along with the other tourists.
+~
+1048776 0 0 E
+1 20 10 775 1d100+0 3d1+0
+1 1
+8 8 0 914
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnRandom 30
+Emote "echo A young couple pauses to admire a tent or two and sneak a kiss before strolling on."
+End
+Q
+E
+#32668
+laborer janitor distraught~
+a distraught laborer~
+A muscled man, likely a laborer, seems worried, wringing his hands.
+~
+Frowning, this man perhaps is a janitor.. he holds a bag
+that seems to reek of trash previously stored within. Shifting
+his weight on his feet, he waits for someone to ask if anything
+is wrong so he can blurt it out. Otherwise, perhaps he will be
+this distraught the entire menagerie performance!
+~
+1048586 0 0 E
+1 20 10 775 1d100+3 1d1+0
+1 1
+8 8 1 914
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnSayTo "What wrong are okay you"
+SayTo "I.. am in an awful fix!"
+Pause 1
+Action "emote blurts it all out hurriedly, "
+PurgeMob
+Action "emote sighs, "
+End
+OnSayTo "will help yes"
+ActionTo "give bag"
+Pause 1
+Action "emote beams, "
+Pause 1
+Action "emote goes back to mucking out the travelling stables with a renewed fervor."
+End
+Q
+E
+#32699
+Librarian monkey ape ~
+the Librarian~
+The Librarian of the Unseen University of Ankh Morpork. 
+~
+This is the Librarian of the Unseen university of Ankh Mopork.
+Strangely enough, he is not human, but an oran-gutan. This make's 
+him look like 5 pounds of butter tossed into a 10 pound leather bag. 
+A pear-shaped leather-bag. One hint though, do not, I repeat NOT say
+the M-word!
+~
+1032266 2080 0 E
+150 -30 -20 775 30d100+300 20d40+50
+500 1500
+8 8 1 914
+BareHandAttack: 13
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Bash: 100
+Trip: 100
+Kick: 100
+Stun: 100
+P
+OnEntry
+Say "oook!"
+Give 32699
+End
+OnRandom 10
+Emote "$n upends a bowl of peanuts in his mouth."
+End
+OnSay "monkey"
+Say "Oook?"
+Emote "$n grabs $N by the feet, turns $M upside down and starts banging $S head in the ground."
+End
+Q
+E
+$

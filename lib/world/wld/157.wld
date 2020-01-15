@@ -1,0 +1,2186 @@
+<?xml version="1.0"?>
+<rooms>
+  <room>
+    <roombasic title="\c22H\c07e\c14r\c07o\c22n \c00Square" vnum="15700" zone="157">
+      <roomdescription>Passing through carved stone pillars brings you into a small fountain square.
+A low stone wall encloses several small buildings and a gleaming fountain. 
+Baskets of flowers and herbs line the walkways while bushes and shrubs help
+to screen out the dust from Freemarket Street. A lovely fountain forms the
+centerpiece of the square. Paved stone paths lead to shops and a small inn.
+</roomdescription>
+      <flags>150</flags>
+      <sector>City</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="path" exitinfo="0" keynum="0" toroom="15703">
+      <description>A short paved stone path leads to the fountain.
+</description>
+    </exit>
+    <exit direction="east" keyword="door" exitinfo="1" keynum="0" toroom="15702">
+      <description>A carved wooden door set in a stone frame.
+</description>
+    </exit>
+    <exit direction="west" keyword="door" exitinfo="1" keynum="0" toroom="15701">
+      <description>A carved wooden door set in a stone frame.
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="\c05 Olivea&apos;s Dress Shop\c00" vnum="15701" zone="157">
+      <roomdescription>You enter a sunny room with large windows on either side of the carved wooden
+door. Lace panels drape over brass rods and filter the light. Bolts of lace,
+satin and fabric line the shelves while ribbons, bows and beads hang from hooks
+on the wall. Brightly covered couches are provided for customers to rest, as
+well as tea and cookies sitting on a table against the wall, between the couches.
+</roomdescription>
+      <flags>158</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="door" exitinfo="1" keynum="0" toroom="15700">
+      <description>A carved wooden door, set in stone.
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="\c07Anton&apos;s Silver and Engraving\c00" vnum="15702" zone="157">
+      <roomdescription>You enter a small room with several long tables. A grey haired man is sitting
+behind one, polishing a piece of silver. Other silver items are displayed on
+dark blue velvet covers. Jewelry, goblets and other items glint in the light
+from the small windows. A carefully lettered sign lists prices and terms.
+</roomdescription>
+      <flags>158</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="west" keyword="door" exitinfo="1" keynum="0" toroom="15700">
+      <description>A carved wooden door set in a stone frame.
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="\c02An Open Dining Patio\c00" vnum="15703" zone="157">
+      <roomdescription>Following a stone path lined with flowering shrubs leads you to a wide paved
+patio in front of a low stone inn. Gleaming stone tables and benches are
+arranged for dining, with linen cloths and fresh flowers on every table.
+Bushes and baskets of flowers enclose the patio, providing fragrance and
+beauty for the diners. Behind the patio a small inn can be seen.
+</roomdescription>
+      <flags>150</flags>
+      <sector>City</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="door carved heron inn" exitinfo="1" keynum="0" toroom="15704">
+      <description>A pair of wooden doors, carved with a heron in flight open to the inn .
+</description>
+    </exit>
+    <exit direction="south" keyword="path" exitinfo="0" keynum="0" toroom="15700">
+      <description>A short paved stone path leads to the Inn.
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="\c07Great Room of the \c00\c14Flying Heron\c00 \c07Inn\c00" vnum="15704" zone="157">
+      <roomdescription>You enter a spacious room, filled with the smells of baking bread and of
+roasting meat. Long wooden tables with benches provide seating for the
+customers. Pretty serving maids hurry from table to table bringing platters
+of food and pitchers of cooled ale. A large stuffed heron, its wings 
+outstretched in mock flight is mounted over the massive stone fireplace.
+There are doors on the east and west walls and a large hallway next to the
+fireplace.
+</roomdescription>
+      <flags>158</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="doorway" exitinfo="0" keynum="0" toroom="15705">
+      <description>An open doorway.
+</description>
+    </exit>
+    <exit direction="east" keyword="door" exitinfo="3" keynum="0" toroom="15709">
+      <description>A door opens onto an outside landing.
+</description>
+    </exit>
+    <exit direction="south" keyword="door heron carved wood" exitinfo="3" keynum="0" toroom="15703">
+      <description>Two massive wooden doors, carved with a graceful heron in flight.
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="A Wide Hallway" vnum="15705" zone="157">
+      <roomdescription>Stepping from the great room brings you to a wide hallway. A open doorway
+to the west leads to a busy kitchen, while a door to the east brings the
+sounds of splashing and water. A set of painted wooded stairs leads up.
+</roomdescription>
+      <flags>14</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="south" keyword="doorway" exitinfo="0" keynum="0" toroom="15704">
+      <description>An open doorway.
+</description>
+    </exit>
+    <exit direction="up" keyword="stairs wood" exitinfo="0" keynum="0" toroom="15706">
+      <description>A painted wood stairway leads to the second floor.
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Second Floor Landing" vnum="15706" zone="157">
+      <roomdescription>Stairs from the first floor bring you to a small landing and a narrow
+hallway that continues to the north.  Plain wooden doors with small gilted
+number are on the east and west walls.
+</roomdescription>
+      <flags>14</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="hallway" exitinfo="0" keynum="0" toroom="15712">
+      <description>The hallway continues.
+</description>
+    </exit>
+    <exit direction="east" keyword="door #1 red inn heron" exitinfo="1" keynum="0" toroom="15707">
+      <description>A wooden door with the \c03#1\c00 on it.
+</description>
+    </exit>
+    <exit direction="west" keyword="door #2 green" exitinfo="1" keynum="0" toroom="15708">
+      <description>a wooden door with the \c03#2\c00 on it
+</description>
+    </exit>
+    <exit direction="down" keyword="stairs wooden down" exitinfo="0" keynum="0" toroom="15705">
+      <description>A set of painted wooden stairs leads down.
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="\c01Private Room \c03#1\c00" vnum="15707" zone="157">
+      <roomdescription>Unlocking and opening the door brings you into a small but clean
+room.  A bed with soft quilts in \c01red\c00 and \c14white\c00 \c01p\c00\c14a\c00\c01t\c00\c14c\c00\c01h\c00\c14w\c00\c01o\c00\c14r\c00\c01k\c00 rests 
+against one wall,  and a small wardrobe against another.  There is 
+a padded chair in one corner with a cut glass reading lamp on the 
+table beside it.  A slightly faded but soft rug covers the wooden 
+floor.  A wooden washstand with a bowl and pitcher sits next to the 
+bed.  A small window with white \c07l\c00\c14a\c00\c07c\c00\c14e\c00 curtains overlooks the city. 
+</roomdescription>
+      <flags>12</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="west" keyword="door #1 red room heron" exitinfo="1" keynum="0" toroom="15706">
+      <description>A small wooden door opens unto a narrow hall.
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="\c02Private Room \c03#2\c00" vnum="15708" zone="157">
+      <roomdescription> Unlocking and opening the door brings you into a small but clean
+room.  A bed with soft quilts in \c02green\c00 and \c14white\c00 \c02p\c00\c14a\c00\c02t\c00\c14c\c00\c02h\c00\c14w\c00\c02o\c00\c14r\c00\c02k\c00 rests 
+against one wall, and a small leather and wood trunk sits at the 
+foot. There is a padded chair in one corner with a cut glass reading 
+lamp on the table beside it.  A slightly faded but soft rug covers 
+the wooden floor.  A wooden washstand with a bowl and pitcher sits 
+next to the bed.  A small window with white \c07l\c00\c14a\c00\c07c\c00\c14e\c00 curtains overlooks 
+a small courtyard.
+</roomdescription>
+      <flags>12</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="door #3 green" exitinfo="1" keynum="0" toroom="15706">
+      <description>A wooden door leading out to a narrow hallway.
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Outside Landing" vnum="15709" zone="157">
+      <roomdescription>Stepping through the door brings you outside to a small landing. Wooden
+archways to the north and south open onto to small private patios. 
+</roomdescription>
+      <flags>6</flags>
+      <sector>City</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="archway" exitinfo="0" keynum="0" toroom="15711">
+      <description>An archway opens onto a private dining patio.
+</description>
+    </exit>
+    <exit direction="south" keyword="archway" exitinfo="0" keynum="0" toroom="15710">
+      <description>An archway opens onto a private dining patio.
+</description>
+    </exit>
+    <exit direction="west" keyword="door landing inn" exitinfo="1" keynum="0" toroom="15704">
+      <description>A wooden door opens into the Great Room.
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="\c02Private Patio\c00" vnum="15710" zone="157">
+      <roomdescription>You step through a wooden archway onto a small enclosed patio. Baskets of
+fresh flowers sit on the wrought iron tables. Iron candlesticks in the
+middle of the tables hold candles that a warm glow over the dining area in
+the evening. The smell of roses drifts by on a gentle breeze and you can
+hear the soothing splash of water in the fountain.
+</roomdescription>
+      <flags>22</flags>
+      <sector>City</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="archway inn" exitinfo="0" keynum="0" toroom="15709">
+      <description>An archway leads to a small landing.
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="\c05Private Patio\c00" vnum="15711" zone="157">
+      <roomdescription>You step through a wooden archway onto a small enclosed patio. Baskets of
+green plants hang from overhead wooden supports and provide a partial screen
+from the sights and sounds of the city. Colored glass lamps in the shape of
+flowers provide decoration in the day and cast a warm glow over the dining
+area in the evening. The smell of roses drifts by on a gentle breeze and you
+hear the soft murmer of voices as people pass by on the city street.
+</roomdescription>
+      <flags>22</flags>
+      <sector>City</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="south" keyword="archway inn" exitinfo="0" keynum="0" toroom="15709">
+      <description>An archway leads to a small landing.
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Hallway Continues" vnum="15712" zone="157">
+      <roomdescription>The narrow hallway continues north and south.  Plain wooden doors with small
+gilted numbers are on the east and west walls.  A copper candle sconce mounted
+on the wall provides light in the evening. Stairs along the back wall lead up
+to the third floor.
+</roomdescription>
+      <flags>14</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="door woode #3" exitinfo="1" keynum="0" toroom="15713">
+      <description>A wooden door with \c03#3\c00 opens to a cozy room.
+</description>
+    </exit>
+    <exit direction="south" keyword="hallway" exitinfo="0" keynum="0" toroom="15706">
+      <description>The hallway continues.
+</description>
+    </exit>
+    <exit direction="west" keyword="door wood #4" exitinfo="1" keynum="0" toroom="15714">
+      <description>A wooden door with \c#4\c00 opens to a cozy room.
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="\c07Private Room \c03#3\c00" vnum="15713" zone="157">
+      <roomdescription> Unlocking and opening the door brings you into a small but clean
+room.  A bed with soft quilts in \c07grey\c00 and \c05lavender \c07p\c05a\c07t\c05c\c07h\c05w\c07o\c05r\c07k\c00
+rests against one wall, and a small leather and wood trunk sits at the 
+foot. There is a padded chair in one corner with a cut glass reading 
+lamp on the table beside it.  A slightly faded but soft rug covers 
+the wooden floor.  A wooden washstand with a bowl and pitcher sits 
+next to the bed.  A small window with lavender \c07l\c05a\c07c\c05e\c00 curtains 
+overlooks the city.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="west" keyword="door wood #3" exitinfo="1" keynum="0" toroom="15712">
+      <description>A wooden door opens to a narrow hallway.
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="\c10Private Room \c03#4\c00" vnum="15714" zone="157">
+      <roomdescription>Unlocking and opening the door brings you into a small but clean
+room.  A bed with soft quilts in \c10yellow\c00 and \c14white \c10p\c14a\c10t\c14c\c10h\c14w\c10o\c14r\c10k\c00 rests 
+against one wall,  and a small wardrobe against another.  There is 
+a padded chair in one corner with a cut glass reading lamp on the 
+table beside it.  A slightly faded but soft rug covers the wooden 
+floor.  A wooden washstand with a bowl and pitcher sits next to the 
+bed.  A small window with white \c14lace\c00 curtains overlooks 
+a small courtyard.
+</roomdescription>
+      <flags>14</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="door wood #4" exitinfo="1" keynum="0" toroom="15712">
+      <description>A wooden door opens to a narrow hallway.
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Garn&apos;s Blacksmith Shoppe" vnum="15715" zone="157">
+      <roomdescription>The beams that support the roof of this building seem to be made of forged steel, the roof
+itself thinly beaten tin. Rough cut granite forms the back wall and chimney, against which
+lies the hearth. Red burning coals are sprinkled amongst the white hot, heated by the breeze
+of the bellows that a young man, perhaps an apprentice is working at. Along the left wall of
+oak lies a pile of scrapped metal items, a wood stove and several broken swords amongst
+them. The right wall bears pegs holding Garn&apos;s tools, hammers and spikes of varied sizes
+along with awls and tools for farrying horses. Nearby rests a large anvil, black from the heat
+of the items beaten into shape by the muscular, broad shouldered smith that owns this shop.
+A large tub filled with cool water sits towards the front of the shop, next to the anvil, for
+cooling items once they are beaten into shape. Horseshoes hang against the  front beam of
+the shop, near to the door.
+</roomdescription>
+      <flags>154</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+  </room>
+  <room>
+    <roombasic title="\c13Tar Valon Courier Services\c00" vnum="15716" zone="157">
+      <roomdescription>You enter a tall white stone building. Couriers run in and out the doorway
+as well as up and down a set of carved stone steps carrying various letters,
+packages and boxes. A large desk in polished oak holds brass baskets filled
+with parchments, notes and letters. Stone benches ring the walls and provide
+seating for those using the courier service.   
+</roomdescription>
+      <flags>158</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="west" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="5051">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="\c05Notices and Proclamations\c00" vnum="15717" zone="157">
+      <roomdescription>You step onto a white stone gazebo, exquisitely crafted by the stonemasons
+of the Ogier. Small sculptured benches seem to flow from the stone itself
+and give the structure the appearence of being carved form a single piece of
+stone. A Large wooden board has been erected in the center of the gazebo.
+Notices of new laws, requests for workers, and announcements from the White
+Tower can be found pinned or nailed to the sign.
+</roomdescription>
+      <flags>158</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+  </room>
+  <room>
+    <roombasic title="\c03Tar Valon Moneychanger\c00" vnum="15718" zone="157">
+      <roomdescription>This small white stone building is well guarded with guards both inside and
+out. Several iron chests are stacked about the room and behind a heavy carved
+wood desk. A young woman sits at the desk, making notations in a ledger.
+</roomdescription>
+      <flags>158</flags>
+      <sector>Inside</sector>
+      <special>Bank</special>
+    </roombasic>
+  </room>
+  <room>
+    <roombasic title="\c07Asher&apos;s Imported Armors\c00" vnum="15719" zone="157">
+      <roomdescription>You enter a small shop with pieces and sets of steel armors mounted on dummy
+frames. The polished metal gleams in the light from several cut glass lamps
+mounted on the walls and the craftsmanship of the items is very apparent,
+even to an untrained eye.           (\c07Type look sign for quest item stats\c00)
+</roomdescription>
+      <flags>158</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exdesc keyword="sign read look armor stats">
+      <description>\c07Lantern\c00 Infinite Light, !Drop
+\c03Leggings\c00  -50 AC, !drop, !break
+\c07Breastplate\c00  -75 AC, !drop, !break
+\c03Shield\c00  -50 AC, 30 dam, !drop, !break
+</description>
+    </exdesc>
+  </room>
+  <room>
+    <roombasic title="The \c01Heart\c00 of the \c14Candle\c00 Shop" vnum="15720" zone="157">
+      <roomdescription>A short desk is at the opposite end of the room from
+the entrance to the shop, and behind the desk is a 
+tall, comfortable looking chair.  Lining the walls
+are shelves holding candles of varying shapes and
+colors, as many different combinations as the owner
+can think of.  There are green, blue, red, yellow,
+pink, brown, purple, and other colored candles.  Some
+are made up of several colors, swirling to the tip
+of each candle.  The candles are tall and slim, short
+and thick, tall and square, and many other shapes.
+A door leads out of this room to somewhere else,
+perhaps into living quarters.
+</roomdescription>
+      <flags>26</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="west" keyword="door walnut" exitinfo="3" keynum="0" toroom="15721">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="In a Short Hallway" vnum="15721" zone="157">
+      <roomdescription>This is a very short hallway, with only two doors.
+Both doors have locks.  One door leads into the shop,
+where the owner conducts business and makes candles,
+and deals with customers.  The other door leads to some
+stairs, which in turn go up to the bedroom.  The floor
+is hardwood, and very well maintained.  It is smooth,
+yet still easy to walk on, and fairly shiny, as if
+cleaned and shined on a daily basis.
+</roomdescription>
+      <flags>8</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="door walnut" exitinfo="3" keynum="0" toroom="15720">
+      <description/>
+    </exit>
+    <exit direction="up" keyword="door walnut stairs" exitinfo="3" keynum="0" toroom="15722">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Candlemaker&apos;s Bedroom" vnum="15722" zone="157">
+      <roomdescription>The ceiling arches up at an angle in here.  It is the
+roof of the candle shop, and this bedroom takes up
+the entire second floor of the building.  The roof makes
+contact with the floor, and a small circular window 
+reveals the street outside of the room.  A fairly large
+bed is against the wall, on the opposite side of the room.
+</roomdescription>
+      <flags>526</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="down" keyword="door walnut stairs" exitinfo="3" keynum="0" toroom="15721">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="\c02The Ogier Grove\c00" vnum="15725" zone="157">
+      <roomdescription>Here at the northern tip of the grove, the shady forested area continues up
+to the city wall, carved by Ogier Stonemasons long ago, its walls over fifty
+feet high. The Ogier Grove in Tar Valon is one of the world&apos;s best-preserved,
+and though it has over the years become a bit less majestic than it once was,
+its tall lush trees and moist grass-covered ground are a reminder of a time
+when the atmosphere here was prevalent, or at least much less rare than it is
+today. Tall thick-trunked trees mesh their branches high above your head, the
+web of leaves and wood providing not only a filter for the hot, dry wind but
+also a covering of shade. Nebulous bits of light still strain through the
+leaves, creating an ever-changing pattern on the ground. Here and there along
+the ground, a few vines sprout from the moist soil, making their way to the
+trunk of one tree or another, and creeping up the base in a spiralling green
+line dotted with tiny white flowers.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Field</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="15726">
+      <description/>
+    </exit>
+    <exit direction="southeast" keyword="" exitinfo="0" keynum="0" toroom="15727">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="\c02The Ogier Grove\c00" vnum="15726" zone="157">
+      <roomdescription>The grove extends to all sides, huge, thick trees
+surrounding you in a natural display of breathtaking
+beauty.  The ground is covered with small, soft grass,
+perfectly even all throughout the grove.  There are
+no branches for some way up the trees, and they are
+separated from each by some distance, so it is easy
+to see in all directions.  Very little light is filtered
+through the leaves and needles far above, so the ogier
+grove is quite dark.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Field</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="15725">
+      <description/>
+    </exit>
+    <exit direction="east" keyword="" exitinfo="0" keynum="0" toroom="15727">
+      <description/>
+    </exit>
+    <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="15730">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="\c02The Ogier Grove\c00" vnum="15727" zone="157">
+      <roomdescription>Small imprints in the grass lead one to think that
+a horse, or perhaps a large dog, has come through
+here recently.  Colorful, slightly moist flowers
+surround the base of a tree, forming an enclosing
+circle which is very pleasant to look at.  Traveling
+up the tree are harmless fungi, some of them even
+beneficial to the health of tree, aiding it in fighting
+off disease and insects by spreading their fluids 
+throughout the tree&apos;s system, rendering it inedible to
+termites and the like.  There is no path to speak of,
+but the spaces between the tall, majestic trees are so
+wide that no path is needed.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Field</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="" exitinfo="0" keynum="0" toroom="15728">
+      <description/>
+    </exit>
+    <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="15731">
+      <description/>
+    </exit>
+    <exit direction="west" keyword="" exitinfo="0" keynum="0" toroom="15726">
+      <description/>
+    </exit>
+    <exit direction="northwest" keyword="" exitinfo="0" keynum="0" toroom="15725">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="\c02The Ogier Grove\c00" vnum="15728" zone="157">
+      <roomdescription>Huge, towering trees encapsulate this area.  Some of them
+are so incredibly thick that one could build a home inside
+them, if they were hollowed out.  Of course, such an act
+is unthinkable, as these trees have stood here longer any
+person can remember.  The creation of this grove extends
+far past human memory, and is now only an event in a history
+book, even to the most ancient of Ogier.  A few colorful
+flowers poke through the gentle carpet of grass, lending
+these lands a very peaceful feel.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Field</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="15732">
+      <description/>
+    </exit>
+    <exit direction="west" keyword="" exitinfo="0" keynum="0" toroom="15727">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="\c02The Ogier Grove\c00" vnum="15729" zone="157">
+      <roomdescription>A tall, spiked steel fence is here, tight against the
+edge of the Ogier Grove.  Through the fence you can see
+the city of Tar Valon.  Although not as peaceful and
+thoughtful a sight as the Ogier Grove, the city is
+nevertheless a very pleasant thing to look upon, with its
+tall, spired towers and gleaming white walls.  However,
+the peace of the grove tempts one to steal only a few more
+moments inside, just a few more minutes spent in the quiet
+platitude of the forest.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Field</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="" exitinfo="0" keynum="0" toroom="15730">
+      <description/>
+    </exit>
+    <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="15735">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="\c02The Ogier Grove\c00" vnum="15730" zone="157">
+      <roomdescription>There is a large open space here, where people can lay down
+in the soft, short grass and relax, escaping the horrors of
+every day life.  Well, perhaps life is not so horrible, but
+it certainly may seem so to someone who would spend their
+spare time in this place.  Because it is a large open space,
+during the day thin shafts of light manage to escape through
+the canopy of the forest, giving this place a very beautiful
+appearance.  At highsun, it especially shines, and sometimes
+hundreds of dim shafts of sunlight defeat the darkness, and
+the dust motes dance and sparkle in the air.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Field</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="15726">
+      <description/>
+    </exit>
+    <exit direction="east" keyword="" exitinfo="0" keynum="0" toroom="15731">
+      <description/>
+    </exit>
+    <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="15736">
+      <description/>
+    </exit>
+    <exit direction="west" keyword="" exitinfo="0" keynum="0" toroom="15729">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="\c02The Ogier Grove\c00" vnum="15731" zone="157">
+      <roomdescription>It is truly awe inspiring to think of how much effort must
+have went into the making of this place.  Hundreds of Ogier,
+all working diligently to create a place that reminded them
+of their stedding.  And it truly does bring a stedding to
+mind, this grove.  Gargantuan trees extend to heights rivaled
+only by the Towers in the city, and exceeded only by the
+White Tower itself, and flowers, tiny by comparison, dot the
+soft grass.  There are many different kinds of trees here,
+but by far the dominant tree is the evergreen.  Perhaps that
+was chosen by the ogier because it could help them believe 
+that they would survive the Longing.  If so it worked.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Field</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="15727">
+      <description/>
+    </exit>
+    <exit direction="east" keyword="" exitinfo="0" keynum="0" toroom="15732">
+      <description/>
+    </exit>
+    <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="15737">
+      <description/>
+    </exit>
+    <exit direction="west" keyword="" exitinfo="0" keynum="0" toroom="15730">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="\c02The Ogier Grove\c00" vnum="15732" zone="157">
+      <roomdescription>Dry, hardened pine cones almost completely cover the
+ground, and miraculously enough it seems that none of
+the flowers dotting the grass have been smothered.
+Artur Hawking&apos;s general Souran held siege on Tar Valon
+successfully for many years, and if ordered to do so
+he probably would have torched the entire city without
+regret.  Except for the Ogier grove.  It is doubtful that
+anyone but the most vile creature of shadow would be able
+to force themselves to harm a place as beautiful as this.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Field</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="15728">
+      <description/>
+    </exit>
+    <exit direction="east" keyword="" exitinfo="0" keynum="0" toroom="15733">
+      <description/>
+    </exit>
+    <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="15738">
+      <description/>
+    </exit>
+    <exit direction="west" keyword="" exitinfo="0" keynum="0" toroom="15731">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="\c02The Ogier Grove\c00" vnum="15733" zone="157">
+      <roomdescription>Here a semi-circle of trees grow to towering heights, their
+branches leaning out giving shade from the sun. Soft
+spongy green moss covers the trunks of the trees giving off
+a sweet scent.  Directly in the center of the circle is a small
+pond. A few fish can be seen through the ponds crystal
+clear waters. Around the pond are large rocks spaced out in
+intervals. The only sounds coming from the birds overhead.
+There is a calm peaceful serenity here.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Field</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="" exitinfo="0" keynum="0" toroom="15734">
+      <description/>
+    </exit>
+    <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="15739">
+      <description/>
+    </exit>
+    <exit direction="west" keyword="" exitinfo="0" keynum="0" toroom="15732">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="\c02The Ogier Grove\c00" vnum="15734" zone="157">
+      <roomdescription>The path here is paved in flat gray stones. Green grass
+grows outward from the path in all directions. There are
+patches of multicolored wildflowers growing sporadically
+throughout.  The path leads off for quite some distance.
+The skyline is made up of hundreds of towering trees. 
+</roomdescription>
+      <flags>0</flags>
+      <sector>Field</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="15740">
+      <description/>
+    </exit>
+    <exit direction="west" keyword="" exitinfo="0" keynum="0" toroom="15733">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="\c02The Ogier Grove\c00" vnum="15735" zone="157">
+      <roomdescription>The path continues on through a small meadow of sorts, the
+breeze coming through where there are few trees to hinder
+its passage, bending the tall grass as it blows. Often a
+squirrel or other small creatures can be seen running to and
+for about their business. 
+</roomdescription>
+      <flags>0</flags>
+      <sector>Field</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="15729">
+      <description/>
+    </exit>
+    <exit direction="east" keyword="" exitinfo="0" keynum="0" toroom="15736">
+      <description/>
+    </exit>
+    <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="15744">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="\c02The Ogier Grove\c00" vnum="15736" zone="157">
+      <roomdescription>The path from the small meadow leads up to the edge of a 
+thick copse of trees, along the tree line there is ample space 
+for someone to walk through into the trees. Each tree has a 
+wide trunk that man nor Ogier could place their arms 
+around.  The soft chirping of birds can be heard as they 
+flitter from tree to tree. The air here has the lingering smell 
+of soft jasmine and fresh wood. 
+</roomdescription>
+      <flags>0</flags>
+      <sector>Field</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="15730">
+      <description/>
+    </exit>
+    <exit direction="east" keyword="" exitinfo="0" keynum="0" toroom="15737">
+      <description/>
+    </exit>
+    <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="15745">
+      <description/>
+    </exit>
+    <exit direction="west" keyword="" exitinfo="0" keynum="0" toroom="15735">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="\c02The Ogier Grove\c00" vnum="15737" zone="157">
+      <roomdescription>Entering the thick tree line it is evident that the trees grow 
+for leagues around in a circle. The branches interlace to 
+form an arced dome over head. Inside of the copse,
+there are many large bushes and some smaller trees and 
+seedlings. The soft sound of animals moving and the flutter 
+of the wings of birds gives a soft tranquil feeling to the 
+area. The path becomes a slightly worn trail, the grass 
+growing over it in some places as if it has not been used in 
+awhile.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Field</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="15731">
+      <description/>
+    </exit>
+    <exit direction="east" keyword="" exitinfo="0" keynum="0" toroom="15738">
+      <description/>
+    </exit>
+    <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="15746">
+      <description/>
+    </exit>
+    <exit direction="west" keyword="" exitinfo="0" keynum="0" toroom="15736">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="\c02The Ogier Grove\c00" vnum="15738" zone="157">
+      <roomdescription>The clearing continues on here, the arced dome of the tree 
+line overhead letting almost no light into the area at all. 
+The air is sweet and smells faintly of flowers and the old 
+bark of the trees. Off to one side, along the trees, grows a 
+thick tangle of an ivy vine spreading its long green tendrils 
+between each tree making passage almost impossible.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Field</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="15732">
+      <description/>
+    </exit>
+    <exit direction="east" keyword="" exitinfo="0" keynum="0" toroom="15739">
+      <description/>
+    </exit>
+    <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="15747">
+      <description/>
+    </exit>
+    <exit direction="west" keyword="" exitinfo="0" keynum="0" toroom="15737">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="\c02The Ogier Grove\c00" vnum="15739" zone="157">
+      <roomdescription>Here the trees begin to thicken in the clearing leaving 
+almost no open space at all. The thick branches bending 
+down in some places almost touching the ground. Many 
+leaves line the floor of the grove from the branches 
+overhead. There is a small patch of emonds glory growing 
+next to one of the larger trees where a fair amount of sun 
+comes through a space in the domed branches overhead
+</roomdescription>
+      <flags>0</flags>
+      <sector>Field</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="15733">
+      <description/>
+    </exit>
+    <exit direction="east" keyword="" exitinfo="0" keynum="0" toroom="15740">
+      <description/>
+    </exit>
+    <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="15748">
+      <description/>
+    </exit>
+    <exit direction="west" keyword="" exitinfo="0" keynum="0" toroom="15738">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="\c02The Ogier Grove\c00" vnum="15740" zone="157">
+      <roomdescription>The trees grow closely together allowing just enough room 
+for perhaps a man on his horse to pass. Moss lines the 
+bottom of the trunks growing rapidly from the lack of the 
+sunlights reach. Often a berry bush can be seen growing 
+along the edges of the trees somehow managing to thrive in 
+the peaceful, yet dimly lighted area. 
+</roomdescription>
+      <flags>0</flags>
+      <sector>Field</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="15734">
+      <description/>
+    </exit>
+    <exit direction="east" keyword="" exitinfo="0" keynum="0" toroom="15741">
+      <description/>
+    </exit>
+    <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="15749">
+      <description/>
+    </exit>
+    <exit direction="west" keyword="" exitinfo="0" keynum="0" toroom="15739">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="\c02The Ogier Grove\c00" vnum="15741" zone="157">
+      <roomdescription>The trees become less thick in their growth here the 
+sunlight springing forth in long golden arcs between them 
+in the day light hours. The birds seem to enjoy this spot, 
+many of them can be seen flittering about and the soft 
+chirping of the baby birds can be heard. There is an overall 
+calm and tranquillity to the area. 
+</roomdescription>
+      <flags>0</flags>
+      <sector>Field</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="" exitinfo="0" keynum="0" toroom="15742">
+      <description/>
+    </exit>
+    <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="15750">
+      <description/>
+    </exit>
+    <exit direction="west" keyword="" exitinfo="0" keynum="0" toroom="15740">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="\c02The Ogier Grove\c00" vnum="15742" zone="157">
+      <roomdescription>Here the trees all taper out leaving several paces between 
+each. The soft spongy grass growing in thick patches giving 
+off a soft sweet smell. Outward a clearing can be seen and  
+a denser mass of trees. Small animals scurry in and out of 
+the tree line completing little tasks.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Field</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="15751">
+      <description/>
+    </exit>
+    <exit direction="west" keyword="" exitinfo="0" keynum="0" toroom="15741">
+      <description/>
+    </exit>
+    <exit direction="southeast" keyword="" exitinfo="0" keynum="0" toroom="15752">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="\c02The Ogier Grove\c00" vnum="15743" zone="157">
+      <roomdescription>Through the clearing tall grasses grow, often to  knee 
+height of an average man. Many small bushes and plants 
+grow sporadically in all directions. The breeze is heavy 
+here without many trees to hinder its passage. The reeds of 
+grass blowing gently when it passes arcing downward in a 
+swooping motion. 
+</roomdescription>
+      <flags>0</flags>
+      <sector>Field</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="" exitinfo="0" keynum="0" toroom="15744">
+      <description/>
+    </exit>
+    <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="15753">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="\c02The Ogier Grove\c00" vnum="15744" zone="157">
+      <roomdescription>The grove extends to all sides, huge, thick trees
+surrounding you in a natural display of breathtaking
+beauty.  The ground is covered with small, soft grass,
+perfectly even all throughout the grove.  There are
+no branches for some way up the trees, and they are
+separated from each by some distance, so it is easy
+to see in all directions.  Very little light is filtered
+through the leaves and needles far above, so the ogier
+grove is quite dark.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Field</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="15735">
+      <description/>
+    </exit>
+    <exit direction="east" keyword="" exitinfo="0" keynum="0" toroom="15745">
+      <description/>
+    </exit>
+    <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="15754">
+      <description/>
+    </exit>
+    <exit direction="west" keyword="" exitinfo="0" keynum="0" toroom="15743">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="\c02The Ogier Grove\c00" vnum="15745" zone="157">
+      <roomdescription>Small imprints in the grass lead one to think that
+a horse, or perhaps a large dog, has come through
+here recently.  Colorful, slightly moist flowers
+surround the base of a tree, forming an enclosing
+circle which is very pleasant to look at.  Traveling
+up the tree are harmless fungi, some of them even
+beneficial to the health of tree, aiding it in fighting
+off disease and insects by spreading their fluids 
+throughout the tree&apos;s system, rendering it inedible to
+termites and the like.  There is no path to speak of,
+but the spaces between the tall, majestic trees are so
+wide that no path is needed.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Field</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="15736">
+      <description/>
+    </exit>
+    <exit direction="east" keyword="" exitinfo="0" keynum="0" toroom="15746">
+      <description/>
+    </exit>
+    <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="15755">
+      <description/>
+    </exit>
+    <exit direction="west" keyword="" exitinfo="0" keynum="0" toroom="15744">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="\c02The Ogier Grove\c00" vnum="15746" zone="157">
+      <roomdescription>Huge, towering trees encapsulate this area.  Some of them
+are so incredibly thick that one could build a home inside
+them, if they were hollowed out.  Of course, such an act
+is unthinkable, as these trees have stood here longer any
+person can remember.  The creation of this grove extends
+far past human memory, and is now only an event in a history
+book, even to the most ancient of Ogier.  A few colorful
+flowers poke through the gentle carpet of grass, lending
+these lands a very peaceful feel.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Field</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="15737">
+      <description/>
+    </exit>
+    <exit direction="east" keyword="" exitinfo="0" keynum="0" toroom="15747">
+      <description/>
+    </exit>
+    <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="15756">
+      <description/>
+    </exit>
+    <exit direction="west" keyword="" exitinfo="0" keynum="0" toroom="15745">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="\c02The Ogier Grove\c00" vnum="15747" zone="157">
+      <roomdescription>There is a large open space here, where people can lay down
+in the soft, short grass and relax, escaping the horrors of
+every day life.  Well, perhaps life is not so horrible, but
+it certainly may seem so to someone who would spend their
+spare time in this place.  Because it is a large open space,
+during the day thin shafts of light manage to escape through
+the canopy of the forest, giving this place a very beautiful
+appearance.  At highsun, it especially shines, and sometimes
+hundreds of dim shafts of sunlight defeat the darkness, and
+the dust motes dance and sparkle in the air.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Field</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="15738">
+      <description/>
+    </exit>
+    <exit direction="east" keyword="" exitinfo="0" keynum="0" toroom="15748">
+      <description/>
+    </exit>
+    <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="15757">
+      <description/>
+    </exit>
+    <exit direction="west" keyword="" exitinfo="0" keynum="0" toroom="15746">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="\c02The Ogier Grove\c00" vnum="15748" zone="157">
+      <roomdescription>It is truly awe inspiring to think of how much effort must
+have went into the making of this place.  Hundreds of Ogier,
+all working diligently to create a place that reminded them
+of their stedding.  And it truly does bring a stedding to
+mind, this grove.  Gargantuan trees extend to heights rivaled
+only by the Towers in the city, and exceeded only by the
+White Tower itself, and flowers, tiny by comparison, dot the
+soft grass.  There are many different kinds of trees here,
+but by far the dominant tree is the evergreen.  Perhaps that
+was chosen by the ogier because it could help them believe 
+that they would survive the Longing.  If so it worked.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Field</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="15739">
+      <description/>
+    </exit>
+    <exit direction="east" keyword="" exitinfo="0" keynum="0" toroom="15749">
+      <description/>
+    </exit>
+    <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="15758">
+      <description/>
+    </exit>
+    <exit direction="west" keyword="" exitinfo="0" keynum="0" toroom="15747">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="\c02The Ogier Grove\c00" vnum="15749" zone="157">
+      <roomdescription>Dry, hardened pine cones almost completely cover the
+ground, and miraculously enough it seems that none of
+the flowers dotting the grass have been smothered.
+Artur Hawking&apos;s general Souran held siege on Tar Valon
+successfully for many years, and if ordered to do so
+he probably would have torched the entire city without
+regret.  Except for the Ogier grove.  It is doubtful that
+anyone but the most vile creature of shadow would be able
+to force themselves to harm a place as beautiful as this.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Field</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="15740">
+      <description/>
+    </exit>
+    <exit direction="east" keyword="" exitinfo="0" keynum="0" toroom="15750">
+      <description/>
+    </exit>
+    <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="15759">
+      <description/>
+    </exit>
+    <exit direction="west" keyword="" exitinfo="0" keynum="0" toroom="15748">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="\c02The Ogier Grove\c00" vnum="15750" zone="157">
+      <roomdescription>Here a semi-circle of trees grow to towering heights, their
+branches leaning out giving shade from the sun. Soft
+spongy green moss covers the trunks of the trees giving off
+a sweet scent.  Directly in the center of the circle is a small
+pond. A few fish can be seen through the ponds crystal
+clear waters. Around the pond are large rocks spaced out in
+intervals. The only sounds coming from the birds overhead.
+There is a calm peaceful serenity here.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Field</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="15741">
+      <description/>
+    </exit>
+    <exit direction="east" keyword="" exitinfo="0" keynum="0" toroom="15751">
+      <description/>
+    </exit>
+    <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="15760">
+      <description/>
+    </exit>
+    <exit direction="west" keyword="" exitinfo="0" keynum="0" toroom="15749">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="\c02The Ogier Grove\c00" vnum="15751" zone="157">
+      <roomdescription>The path here is paved in flat gray stones. Green grass
+grows outward from the path in all directions. There are
+patches of multicolored wildflowers growing sporadically
+throughout.  The path leads off for quite some distance.
+The skyline is made up of hundreds of towering trees. 
+</roomdescription>
+      <flags>0</flags>
+      <sector>Field</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="15742">
+      <description/>
+    </exit>
+    <exit direction="east" keyword="" exitinfo="0" keynum="0" toroom="15752">
+      <description/>
+    </exit>
+    <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="15761">
+      <description/>
+    </exit>
+    <exit direction="west" keyword="" exitinfo="0" keynum="0" toroom="15750">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="\c02The Ogier Grove\c00" vnum="15752" zone="157">
+      <roomdescription>The path continues on through a small meadow of sorts, the
+breeze coming through where there are few trees to hinder
+its passage, bending the tall grass as it blows. Often a
+squirrel or other small creatures can be seen running to and
+for about their business. 
+</roomdescription>
+      <flags>0</flags>
+      <sector>Field</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="west" keyword="" exitinfo="0" keynum="0" toroom="15751">
+      <description/>
+    </exit>
+    <exit direction="southwest" keyword="" exitinfo="0" keynum="0" toroom="15761">
+      <description/>
+    </exit>
+    <exit direction="northwest" keyword="" exitinfo="0" keynum="0" toroom="15742">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="\c02The Ogier Grove\c00" vnum="15753" zone="157">
+      <roomdescription>The path from the small meadow leads up to the edge of a 
+thick copse of trees, along the tree line there is ample space 
+for someone to walk through into the trees. Each tree has a 
+wide trunk that man nor Ogier could place their arms 
+around.  The soft chirping of birds can be heard as they 
+flitter from tree to tree. The air here has the lingering smell 
+of soft jasmine and fresh wood. 
+</roomdescription>
+      <flags>0</flags>
+      <sector>Field</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="15743">
+      <description/>
+    </exit>
+    <exit direction="east" keyword="" exitinfo="0" keynum="0" toroom="15754">
+      <description/>
+    </exit>
+    <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="15762">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="\c02The Ogier Grove\c00" vnum="15754" zone="157">
+      <roomdescription>Entering the thick tree line it is evident that the trees grow 
+for leagues around in a circle. The branches interlace to 
+form an arced dome over head. Inside of the copse,
+there are many large bushes and some smaller trees and 
+seedlings. The soft sound of animals moving and the flutter 
+of the wings of birds gives a soft tranquil feeling to the 
+area. The path becomes a slightly worn trail, the grass 
+growing over it in some places as if it has not been used in 
+awhile.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Field</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="15744">
+      <description/>
+    </exit>
+    <exit direction="east" keyword="" exitinfo="0" keynum="0" toroom="15755">
+      <description/>
+    </exit>
+    <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="15763">
+      <description/>
+    </exit>
+    <exit direction="west" keyword="" exitinfo="0" keynum="0" toroom="15753">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="\c02The Ogier Grove\c00" vnum="15755" zone="157">
+      <roomdescription>The clearing continues on here, the arced dome of the tree 
+line overhead letting almost no light into the area at all. 
+The air is sweet and smells faintly of flowers and the old 
+bark of the trees. Off to one side, along the trees, grows a 
+thick tangle of an ivy vine spreading its long green tendrils 
+between each tree making passage almost impossible.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Field</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="15745">
+      <description/>
+    </exit>
+    <exit direction="east" keyword="" exitinfo="0" keynum="0" toroom="15756">
+      <description/>
+    </exit>
+    <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="15764">
+      <description/>
+    </exit>
+    <exit direction="west" keyword="" exitinfo="0" keynum="0" toroom="15754">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="\c02The Ogier Grove\c00" vnum="15756" zone="157">
+      <roomdescription>Here the trees begin to thicken in the clearing leaving 
+almost no open space at all. The thick branches bending 
+down in some places almost touching the ground. Many 
+leaves line the floor of the grove from the branches 
+overhead. There is a small patch of emonds glory growing 
+next to one of the larger trees where a fair amount of sun 
+comes through a space in the domed branches overhead. 
+</roomdescription>
+      <flags>0</flags>
+      <sector>Field</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="15746">
+      <description/>
+    </exit>
+    <exit direction="east" keyword="" exitinfo="0" keynum="0" toroom="15757">
+      <description/>
+    </exit>
+    <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="15765">
+      <description/>
+    </exit>
+    <exit direction="west" keyword="" exitinfo="0" keynum="0" toroom="15755">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="\c02The Ogier Grove\c00" vnum="15757" zone="157">
+      <roomdescription>The trees grow closely together allowing just enough room 
+for perhaps a man on his horse to pass. Moss lines the 
+bottom of the trunks growing rapidly from the lack of the 
+sunlights reach. Often a berry bush can be seen growing 
+along the edges of the trees somehow managing to thrive in 
+the peaceful, yet dimly lighted area. 
+</roomdescription>
+      <flags>0</flags>
+      <sector>Field</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="15747">
+      <description/>
+    </exit>
+    <exit direction="east" keyword="" exitinfo="0" keynum="0" toroom="15758">
+      <description/>
+    </exit>
+    <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="15766">
+      <description/>
+    </exit>
+    <exit direction="west" keyword="" exitinfo="0" keynum="0" toroom="15756">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="\c02The Ogier Grove\c00" vnum="15758" zone="157">
+      <roomdescription>The trees become less thick in their growth here the 
+sunlight springing forth in long golden arcs between them 
+in the day light hours. The birds seem to enjoy this spot, 
+many of them can be seen flittering about and the soft 
+chirping of the baby birds can be heard. There is an overall 
+calm and tranquillity to the area. 
+</roomdescription>
+      <flags>0</flags>
+      <sector>Field</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="15748">
+      <description/>
+    </exit>
+    <exit direction="east" keyword="" exitinfo="0" keynum="0" toroom="15759">
+      <description/>
+    </exit>
+    <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="15767">
+      <description/>
+    </exit>
+    <exit direction="west" keyword="" exitinfo="0" keynum="0" toroom="15757">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="\c02The Ogier Grove\c00" vnum="15759" zone="157">
+      <roomdescription>Here the trees all taper out leaving several paces between 
+each. The soft spongy grass growing in thick patches giving 
+off a soft sweet smell. Outward a clearing can be seen and  
+a denser mass of trees. Small animals scurry in and out of 
+the tree line completing little tasks.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Field</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="15749">
+      <description/>
+    </exit>
+    <exit direction="east" keyword="" exitinfo="0" keynum="0" toroom="15760">
+      <description/>
+    </exit>
+    <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="15768">
+      <description/>
+    </exit>
+    <exit direction="west" keyword="" exitinfo="0" keynum="0" toroom="15758">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="\c02The Ogier Grove\c00" vnum="15760" zone="157">
+      <roomdescription>Through the clearing tall grasses grow, often to  knee 
+height of an average man. Many small bushes and plants 
+grow sporadically in all directions. The breeze is heavy 
+here without many trees to hinder its passage. The reeds of 
+grass blowing gently when it passes arcing downward in a 
+swooping motion. 
+</roomdescription>
+      <flags>0</flags>
+      <sector>Field</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="15750">
+      <description/>
+    </exit>
+    <exit direction="east" keyword="" exitinfo="0" keynum="0" toroom="15761">
+      <description/>
+    </exit>
+    <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="15769">
+      <description/>
+    </exit>
+    <exit direction="west" keyword="" exitinfo="0" keynum="0" toroom="15759">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="\c02The Ogier Grove\c00" vnum="15761" zone="157">
+      <roomdescription>A tall, spiked steel fence is here, tight against the
+edge of the Ogier Grove.  Through the fence you can see
+the city of Tar Valon.  Although not as peaceful and
+thoughtful a sight as the Ogier Grove, the city is
+nevertheless a very pleasant thing to look upon, with its
+tall, spired towers and gleaming white walls.  However,
+the peace of the grove tempts one to steal only a few more
+moments inside, just a few more minutes spent in the quiet
+platitude of the forest.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Field</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="15751">
+      <description/>
+    </exit>
+    <exit direction="west" keyword="" exitinfo="0" keynum="0" toroom="15760">
+      <description/>
+    </exit>
+    <exit direction="northeast" keyword="" exitinfo="0" keynum="0" toroom="15752">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="\c02The Ogier Grove\c00" vnum="15762" zone="157">
+      <roomdescription>Here at the southern tip of the grove, the shady forested area continues up
+to the city wall, carved by Ogier Stonemasons long ago, its walls over fifty
+feet high. The Ogier Grove in Tar Valon is one of the world&apos;s best-preserved,
+and though it has over the years become a bit less majestic than it once was,
+its tall lush trees and moist grass-covered ground are a reminder of a time
+when the atmosphere here was prevalent, or at least much less rare than it is
+today. Tall thick-trunked trees mesh their branches high above your head, the
+web of leaves and wood providing not only a filter for the hot, dry wind but
+also a covering of shade. Nebulous bits of light still strain through the
+leaves, creating an ever-changing pattern on the ground. Here and there along
+the ground, a few vines sprout from the moist soil, making their way to the
+trunk of one tree or another, and creeping up the base in a spiralling green
+line dotted with tiny white flowers.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Field</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="15753">
+      <description/>
+    </exit>
+    <exit direction="east" keyword="" exitinfo="0" keynum="0" toroom="15763">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="\c02The Ogier Grove\c00" vnum="15763" zone="157">
+      <roomdescription>The grove extends to all sides, huge, thick trees
+surrounding you in a natural display of breathtaking
+beauty.  The ground is covered with small, soft grass,
+perfectly even all throughout the grove.  There are
+no branches for some way up the trees, and they are
+separated from each by some distance, so it is easy
+to see in all directions.  Very little light is filtered
+through the leaves and needles far above, so the ogier
+grove is quite dark.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Field</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="15754">
+      <description/>
+    </exit>
+    <exit direction="east" keyword="" exitinfo="0" keynum="0" toroom="15764">
+      <description/>
+    </exit>
+    <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="15770">
+      <description/>
+    </exit>
+    <exit direction="west" keyword="" exitinfo="0" keynum="0" toroom="15762">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="\c02The Ogier Grove\c00" vnum="15764" zone="157">
+      <roomdescription>Small imprints in the grass lead one to think that
+a horse, or perhaps a large dog, has come through
+here recently.  Colorful, slightly moist flowers
+surround the base of a tree, forming an enclosing
+circle which is very pleasant to look at.  Traveling
+up the tree are harmless fungi, some of them even
+beneficial to the health of tree, aiding it in fighting
+off disease and insects by spreading their fluids 
+throughout the tree&apos;s system, rendering it inedible to
+termites and the like.  There is no path to speak of,
+but the spaces between the tall, majestic trees are so
+wide that no path is needed.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Field</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="15755">
+      <description/>
+    </exit>
+    <exit direction="east" keyword="" exitinfo="0" keynum="0" toroom="15765">
+      <description/>
+    </exit>
+    <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="15771">
+      <description/>
+    </exit>
+    <exit direction="west" keyword="" exitinfo="0" keynum="0" toroom="15763">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="\c02The Ogier Grove\c00" vnum="15765" zone="157">
+      <roomdescription>Huge, towering trees encapsulate this area.  Some of them
+are so incredibly thick that one could build a home inside
+them, if they were hollowed out.  Of course, such an act
+is unthinkable, as these trees have stood here longer any
+person can remember.  The creation of this grove extends
+far past human memory, and is now only an event in a history
+book, even to the most ancient of Ogier.  A few colorful
+flowers poke through the gentle carpet of grass, lending
+these lands a very peaceful feel.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Field</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="15756">
+      <description/>
+    </exit>
+    <exit direction="east" keyword="" exitinfo="0" keynum="0" toroom="15766">
+      <description/>
+    </exit>
+    <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="15772">
+      <description/>
+    </exit>
+    <exit direction="west" keyword="" exitinfo="0" keynum="0" toroom="15764">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="\c02The Ogier Grove\c00" vnum="15766" zone="157">
+      <roomdescription>There is a large open space here, where people can lay down
+in the soft, short grass and relax, escaping the horrors of
+every day life.  Well, perhaps life is not so horrible, but
+it certainly may seem so to someone who would spend their
+spare time in this place.  Because it is a large open space,
+during the day thin shafts of light manage to escape through
+the canopy of the forest, giving this place a very beautiful
+appearance.  At highsun, it especially shines, and sometimes
+hundreds of dim shafts of sunlight defeat the darkness, and
+the dust motes dance and sparkle in the air.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Field</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="15757">
+      <description/>
+    </exit>
+    <exit direction="east" keyword="" exitinfo="0" keynum="0" toroom="15767">
+      <description/>
+    </exit>
+    <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="15773">
+      <description/>
+    </exit>
+    <exit direction="west" keyword="" exitinfo="0" keynum="0" toroom="15765">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="\c02The Ogier Grove\c00" vnum="15767" zone="157">
+      <roomdescription>It is truly awe inspiring to think of how much effort must
+have went into the making of this place.  Hundreds of Ogier,
+all working diligently to create a place that reminded them
+of their stedding.  And it truly does bring a stedding to
+mind, this grove.  Gargantuan trees extend to heights rivaled
+only by the Towers in the city, and exceeded only by the
+White Tower itself, and flowers, tiny by comparison, dot the
+soft grass.  There are many different kinds of trees here,
+but by far the dominant tree is the evergreen.  Perhaps that
+was chosen by the ogier because it could help them believe 
+that they would survive the Longing.  If so it worked.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Field</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="15758">
+      <description/>
+    </exit>
+    <exit direction="east" keyword="" exitinfo="0" keynum="0" toroom="15768">
+      <description/>
+    </exit>
+    <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="15774">
+      <description/>
+    </exit>
+    <exit direction="west" keyword="" exitinfo="0" keynum="0" toroom="15766">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="\c02The Ogier Grove\c00" vnum="15768" zone="157">
+      <roomdescription>Dry, hardened pine cones almost completely cover the
+ground, and miraculously enough it seems that none of
+the flowers dotting the grass have been smothered.
+Artur Hawking&apos;s general Souran held siege on Tar Valon
+successfully for many years, and if ordered to do so
+he probably would have torched the entire city without
+regret.  Except for the Ogier grove.  It is doubtful that
+anyone but the most vile creature of shadow would be able
+to force themselves to harm a place as beautiful as this.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Field</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="15759">
+      <description/>
+    </exit>
+    <exit direction="east" keyword="" exitinfo="0" keynum="0" toroom="15769">
+      <description/>
+    </exit>
+    <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="15775">
+      <description/>
+    </exit>
+    <exit direction="west" keyword="" exitinfo="0" keynum="0" toroom="15767">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="\c02The Ogier Grove\c00" vnum="15769" zone="157">
+      <roomdescription>A tall, spiked steel fence is here, tight against the
+edge of the Ogier Grove.  Through the fence you can see
+the city of Tar Valon.  Although not as peaceful and
+thoughtful a sight as the Ogier Grove, the city is
+nevertheless a very pleasant thing to look upon, with its
+tall, spired towers and gleaming white walls.  However,
+the peace of the grove tempts one to steal only a few more
+moments inside, just a few more minutes spent in the quiet
+platitude of the forest.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Field</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="15760">
+      <description/>
+    </exit>
+    <exit direction="west" keyword="" exitinfo="0" keynum="0" toroom="15768">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="\c02The Ogier Grove\c00" vnum="15770" zone="157">
+      <roomdescription>A tall, spiked steel fence is here, tight against the
+edge of the Ogier Grove.  Through the fence you can see
+the city of Tar Valon.  Although not as peaceful and
+thoughtful a sight as the Ogier Grove, the city is
+nevertheless a very pleasant thing to look upon, with its
+tall, spired towers and gleaming white walls.  However,
+the peace of the grove tempts one to steal only a few more
+moments inside, just a few more minutes spent in the quiet
+platitude of the forest.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Field</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="15763">
+      <description/>
+    </exit>
+    <exit direction="east" keyword="" exitinfo="0" keynum="0" toroom="15771">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="\c02The Ogier Grove\c00" vnum="15771" zone="157">
+      <roomdescription>The grove extends to all sides, huge, thick trees
+surrounding you in a natural display of breathtaking
+beauty.  The ground is covered with small, soft grass,
+perfectly even all throughout the grove.  There are
+no branches for some way up the trees, and they are
+separated from each by some distance, so it is easy
+to see in all directions.  Very little light is filtered
+through the leaves and needles far above, so the ogier
+grove is quite dark.
+</roomdescription>
+      <flags>0</flags>
+      <sector>City</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="15764">
+      <description/>
+    </exit>
+    <exit direction="east" keyword="" exitinfo="0" keynum="0" toroom="15772">
+      <description/>
+    </exit>
+    <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="15776">
+      <description/>
+    </exit>
+    <exit direction="west" keyword="" exitinfo="0" keynum="0" toroom="15770">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="\c02The Ogier Grove\c00" vnum="15772" zone="157">
+      <roomdescription>Small imprints in the grass lead one to think that
+a horse, or perhaps a large dog, has come through
+here recently.  Colorful, slightly moist flowers
+surround the base of a tree, forming an enclosing
+circle which is very pleasant to look at.  Traveling
+up the tree are harmless fungi, some of them even
+beneficial to the health of tree, aiding it in fighting
+off disease and insects by spreading their fluids 
+throughout the tree&apos;s system, rendering it inedible to
+termites and the like.  There is no path to speak of,
+but the spaces between the tall, majestic trees are so
+wide that no path is needed.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Field</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="15765">
+      <description/>
+    </exit>
+    <exit direction="east" keyword="" exitinfo="0" keynum="0" toroom="15773">
+      <description/>
+    </exit>
+    <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="15777">
+      <description/>
+    </exit>
+    <exit direction="west" keyword="" exitinfo="0" keynum="0" toroom="15771">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="\c02The Ogier Grove\c00" vnum="15773" zone="157">
+      <roomdescription>Huge, towering trees encapsulate this area.  Some of them
+are so incredibly thick that one could build a home inside
+them, if they were hollowed out.  Of course, such an act
+is unthinkable, as these trees have stood here longer any
+person can remember.  The creation of this grove extends
+far past human memory, and is now only an event in a history
+book, even to the most ancient of Ogier.  A few colorful
+flowers poke through the gentle carpet of grass, lending
+these lands a very peaceful feel.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Field</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="15766">
+      <description/>
+    </exit>
+    <exit direction="east" keyword="" exitinfo="0" keynum="0" toroom="15774">
+      <description/>
+    </exit>
+    <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="15778">
+      <description/>
+    </exit>
+    <exit direction="west" keyword="" exitinfo="0" keynum="0" toroom="15772">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="\c02The Ogier Grove\c00" vnum="15774" zone="157">
+      <roomdescription>There is a large open space here, where people can lay down
+in the soft, short grass and relax, escaping the horrors of
+every day life.  Well, perhaps life is not so horrible, but
+it certainly may seem so to someone who would spend their
+spare time in this place.  Because it is a large open space,
+during the day thin shafts of light manage to escape through
+the canopy of the forest, giving this place a very beautiful
+appearance.  At highsun, it especially shines, and sometimes
+hundreds of dim shafts of sunlight defeat the darkness, and
+the dust motes dance and sparkle in the air.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Field</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="15767">
+      <description/>
+    </exit>
+    <exit direction="east" keyword="" exitinfo="0" keynum="0" toroom="15775">
+      <description/>
+    </exit>
+    <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="15779">
+      <description/>
+    </exit>
+    <exit direction="west" keyword="" exitinfo="0" keynum="0" toroom="15773">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="\c02The Ogier Grove\c00" vnum="15775" zone="157">
+      <roomdescription>A tall, spiked steel fence is here, tight against the
+edge of the Ogier Grove.  Through the fence you can see
+the city of Tar Valon.  Although not as peaceful and
+thoughtful a sight as the Ogier Grove, the city is
+nevertheless a very pleasant thing to look upon, with its
+tall, spired towers and gleaming white walls.  However,
+the peace of the grove tempts one to steal only a few more
+moments inside, just a few more minutes spent in the quiet
+platitude of the forest.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Field</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="15768">
+      <description/>
+    </exit>
+    <exit direction="west" keyword="" exitinfo="0" keynum="0" toroom="15774">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="\c02The Ogier Grove\c00" vnum="15776" zone="157">
+      <roomdescription>A tall, spiked steel fence is here, tight against the
+edge of the Ogier Grove.  Through the fence you can see
+the city of Tar Valon.  Although not as peaceful and
+thoughtful a sight as the Ogier Grove, the city is
+nevertheless a very pleasant thing to look upon, with its
+tall, spired towers and gleaming white walls.  However,
+the peace of the grove tempts one to steal only a few more
+moments inside, just a few more minutes spent in the quiet
+platitude of the forest.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Field</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="15771">
+      <description/>
+    </exit>
+    <exit direction="east" keyword="" exitinfo="0" keynum="0" toroom="15777">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="\c02The Ogier Grove\c00" vnum="15777" zone="157">
+      <roomdescription>It is truly awe inspiring to think of how much effort must
+have went into the making of this place.  Hundreds of Ogier,
+all working diligently to create a place that reminded them
+of their stedding.  And it truly does bring a stedding to
+mind, this grove.  Gargantuan trees extend to heights rivaled
+only by the Towers in the city, and exceeded only by the
+White Tower itself, and flowers, tiny by comparison, dot the
+soft grass.  There are many different kinds of trees here,
+but by far the dominant tree is the evergreen.  Perhaps that
+was chosen by the ogier because it could help them believe 
+that they would survive the Longing.  If so it worked.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Field</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="15772">
+      <description/>
+    </exit>
+    <exit direction="east" keyword="" exitinfo="0" keynum="0" toroom="15778">
+      <description/>
+    </exit>
+    <exit direction="west" keyword="" exitinfo="0" keynum="0" toroom="15776">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="\c02The Ogier Grove\c00" vnum="15778" zone="157">
+      <roomdescription>Dry, hardened pine cones almost completely cover the
+ground, and miraculously enough it seems that none of
+the flowers dotting the grass have been smothered.
+Artur Hawking&apos;s general Souran held siege on Tar Valon
+successfully for many years, and if ordered to do so
+he probably would have torched the entire city without
+regret.  Except for the Ogier grove.  It is doubtful that
+anyone but the most vile creature of shadow would be able
+to force themselves to harm a place as beautiful as this.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Field</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="15773">
+      <description/>
+    </exit>
+    <exit direction="east" keyword="" exitinfo="0" keynum="0" toroom="15779">
+      <description/>
+    </exit>
+    <exit direction="west" keyword="" exitinfo="0" keynum="0" toroom="15777">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="\c02The Ogier Grove\c00" vnum="15779" zone="157">
+      <roomdescription>A tall, spiked steel fence is here, tight against the
+edge of the Ogier Grove.  Through the fence you can see
+the city of Tar Valon.  Although not as peaceful and
+thoughtful a sight as the Ogier Grove, the city is
+nevertheless a very pleasant thing to look upon, with its
+tall, spired towers and gleaming white walls.  However,
+the peace of the grove tempts one to steal only a few more
+moments inside, just a few more minutes spent in the quiet
+platitude of the forest.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Field</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="15774">
+      <description/>
+    </exit>
+    <exit direction="west" keyword="" exitinfo="0" keynum="0" toroom="15778">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Common Room of the Great Serpent Inn" vnum="15780" zone="157">
+      <roomdescription>Relatively small, square tables of oak litter the floor of the
+common room. There are nine tables, all told, each one with a
+comfortable, padded chair on each side. A bar is at the far side of
+the room, opposite the entrance, and lining the bar are stools with
+brown leather tops. Behind the bar is the area where the
+barkeeper goes about his business of mixing drinks, serving ale
+and other beverages to the customers, and handing out orders to
+the serving girls. There are two windows of clear glass, one on
+each side of the doorway to the Inn, and they are protected with
+thick metal bars. An opening with no door, to the east, reveals a
+stairway going up to the second floor.
+</roomdescription>
+      <flags>154</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="15781">
+      <description>None
+</description>
+    </exit>
+    <exit direction="west" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="15787">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="At the Foot of the Stairs" vnum="15781" zone="157">
+      <roomdescription>Through the opening to the west the common room can be seen,
+the people inside drinking and laughing, most involved in 
+conversation.  The stairs lead up to the second floor, where the
+rooms of the Inn can be found.  There are rails on both sides of
+the stairs so that the more drunken patrons can go back and forth
+without serious risk of falling down and hurting themselves.  A
+fluffy red and marble gray carpet leads up the stairway, centered
+on it so that there is about ten inches between it&apos;s sides and the
+walls.
+</roomdescription>
+      <flags>10</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="west" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="15780">
+      <description>None
+</description>
+    </exit>
+    <exit direction="up" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="15782">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="A Hallway on the Second Floor" vnum="15782" zone="157">
+      <roomdescription>Torches line the walls so that people can see their way during the
+night, and there are two windows, safely barred, to allow light
+into the hall during the day.  The floor is polished oak, with the
+same carpet as can be found on the stairway, with the same ten
+inches of play between the carpets edges and the walls. The hall
+stretches east and west, doors lining the walls in between the
+torches, leading into the rooms where customers can stay the
+night.
+</roomdescription>
+      <flags>10</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="15783">
+      <description>None
+</description>
+    </exit>
+    <exit direction="west" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="15788">
+      <description>None
+</description>
+    </exit>
+    <exit direction="down" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="15781">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="In the Hallway, Near a Door" vnum="15783" zone="157">
+      <roomdescription>There is a door to the south, leading into one of the Inn&apos;s many
+overnight rooms.  The door has a sliding metal bar about five and
+a half feet above the ground, which can be opened only from the
+inside so as to allow the occupant a chance to see someone before
+allowing them in.  The door is a simple door, thick and made of
+oak, and it opens by swinging inwards.  A slim rectangle of wood
+outside the door prevents it from being opened outwards.
+</roomdescription>
+      <flags>10</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="15785">
+      <description>None
+</description>
+    </exit>
+    <exit direction="south" keyword="oak door" exitinfo="3" keynum="0" toroom="15784">
+      <description/>
+    </exit>
+    <exit direction="west" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="15782">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Stag Room" vnum="15784" zone="157">
+      <roomdescription>This room is for those who take a lot of pleasure in hunting, and
+usually costs a fair bit extra unless the person staying is a friend
+of the Inn-keeper.  The stuffed head of a giant, noble looking stag
+adorns the east wall, it&apos;s huge horns gracefully curving about and
+bearing almost a dozen points.  It must have been a very old
+beast.  The head of a large, vicious looking bear is on the south
+wall, directly above the doorway.  It&apos;s mouth is slightly open, and
+it is showing the points of it&apos;s teeth.  A medium sized bed is
+against the west wall, with pictures of animals being hunted and
+killed stitched into it in as life-like a manner as it&apos;s creator could
+manage.
+</roomdescription>
+      <flags>10</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="oak door" exitinfo="3" keynum="0" toroom="15783">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="In the Hallway" vnum="15785" zone="157">
+      <roomdescription>A doorway to the south will open into one of the Inn&apos;s bedrooms.
+There is a torch bracket on the northern wall, keeping the hall
+bright during the long nights.  The hallways extends to the east
+and west, revealing more doors, and to the west there is a stair
+leading down into the common room.  The carpet here is not
+nailed to the ground, so if someone wanted to they could lift it up
+with relative ease, and place something under it.  Most likely that
+is exactly what someone did once, and the innkeeper has either 
+ignored the problem to save money, or hasn&apos;t noticed it yet.
+</roomdescription>
+      <flags>10</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="south" keyword="oak door" exitinfo="3" keynum="0" toroom="15786">
+      <description/>
+    </exit>
+    <exit direction="west" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="15783">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Colored Room" vnum="15786" zone="157">
+      <roomdescription>Each wall here is a different color from the other three.  The north
+wall is pale bluish green, excepting the door which is the color of
+natural oak.  The east wall is a bluish color, with splashes of a
+lighter blue here and there. The west and south walls are both
+shades of purple, with the west wall a much darker tone than the
+south one.  A window opens up on the south wall, a large, long
+bay window, letting in light during the day.  It does not face the
+sun directly at any time of day, so the light is always mild but
+more than enough to see clearly.  Torch brackets hug each wall,
+each bracket with an unlit torch inside waiting for a customer to
+use them.  A desk is against the east wall, with parchments and
+quills aplenty, and the large bed is against the west wall, directly
+opposite the desk.
+</roomdescription>
+      <flags>10</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="Oak Door" exitinfo="3" keynum="0" toroom="15785">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Kitchen of the Great Serpent Inn" vnum="15787" zone="157">
+      <roomdescription>A stout woman putters about this warm, sunny room. Both the north and south walls bear
+large, partially opened windows. A large table rests in the middle of the room, its top a
+cutting board, bearing fresh baked breads and pastries. The hearth rests against the western
+wall, game hens being turned on a spit by the cooks assistant. Above the table hangs a rack
+of pots and pans used to make stews on the nearby wood stove. The scents wafting through
+the room are enough to make anyones mouth water.
+</roomdescription>
+      <flags>26</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="15780">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Hallway, West of the Stairs" vnum="15788" zone="157">
+      <roomdescription>A torch bracket is fixed on the southern wall, and a door which
+swings inwards leads into one of the rooms, to the north.  The
+hallway ends here to the west, but keeps going to the east.  A
+stairwell is just east of here, leading down into the common room
+of the Inn.  Sounds of talking and laughter can be heard, and
+sometimes a few thumps as an incredibly drunk traveler falls
+down the stairs back into the common room they were trying to
+leave.
+</roomdescription>
+      <flags>10</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="Oak Door" exitinfo="3" keynum="0" toroom="15789">
+      <description/>
+    </exit>
+    <exit direction="east" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="15782">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="In a Room" vnum="15789" zone="157">
+      <roomdescription>A long bay window faces north, allowing light in during the day,
+but not directly facing the sun so as to avoid letting in too much. 
+A desk occupies a small part of the room.  It is against the eastern
+wall, and on it is some parchment and a quill pen, as well as an 
+inkwell and a small round cup of fine sand.  The desk has a
+drawer which contains more paper, and another quill, should
+something happen to the originals.  The bed is large enough for a
+small family to sleep on, and looks very comfortable.  It has wide,
+loose-looking sheets and slim blankets with pleasant patterns
+covering everything.  The bedposts are covered with gilt enough
+for a Tairen High Lord, and brightly shining, small silver nobs
+adorn the top of each bedpost.  Underneath one of those nobs are
+some scratches, giving the impression that someone must have
+tried to steal them.  That person probably ended up in the Tower&apos;s
+prisons, and was never heard from again.
+</roomdescription>
+      <flags>554</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="south" keyword="Oak Door" exitinfo="3" keynum="0" toroom="15788">
+      <description/>
+    </exit>
+  </room>
+</rooms>

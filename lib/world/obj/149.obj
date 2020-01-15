@@ -1,0 +1,277 @@
+#14900
+quest board sign~
+a \c05q\c04u\c02e\c06s\c03t\c00 board~
+A \c05Q\c04U\c02E\c06S\c03T\c05I\c04N\c02G\c00 board is here..better read it~
+\c10*\c062 teams will be appointed\c10*\c00Each team will role play as they
+wish before signal that you are to begin tug'o'warring\c10*\c06When i echo
+\c01team one go\c06 team one will all deliver their emotes of pulling on the
+rope- falling, etc.  Like wise with team 2\c10*\c06 winner will be decided upon
+by quality of each teams emotes on a whole- and creativeness.  \c00 The teams
+selected here will also be employed in the next scenario.    
+~
+16 0 1
+0 0 0 0
+20000 0 0
+#14901
+quest dave ring heirloom gold silver~
+a very ornate wedding band~
+A ring that is vital to a quest is lying here on the ground.~
+~
+11 0 3
+0 0 0 0
+1 5000 0
+E
+ring band wedding ornate~
+The band is made of gold and silver twined vines and flowers. The petals of the flowers are studded with small diamond chips. It looks very old and very valuable.
+~
+A
+6 5
+#14902
+clock~
+a wall clock~
+An ornately carved and enamelled clock is hanging on the wall.~
+~
+8 0 0
+0 0 0 0
+0 0 0
+E
+clock~
+Around the face of the clock is a carved and painted scene of Aes Sedai and 
+warders fighting Trollocs and Fades.
+~
+P
+OnActionTo "look"
+Force "date"
+End
+OnEntry & Darkfriend
+EmoteTo "You look at the clock and notice that time is running out for your soul, darkfriend!"
+End
+OnRandom 20
+Emote "The clock on the wall softly chimes the hour."
+End
+Q
+#14903
+quest egg easter~
+a colorful easter \c01e\c04g\c10g\c00~
+An \c04e\c10g\c01g\c00 is lying here.~
+~
+8 0 1
+0 0 0 0
+0 0 0
+#14910
+sign board quest kerrin cadene~
+the \c05Quest\c00 sign~
+A \c05Q\c04u\c02e\c06s\c03t\c05i\c04n\c02g\c00 sign is here~
+\c03Welcome caemlyn citizens to a hunt gathered in celebration of Beltine\c00
+\c10*\c05 This is the camp where all kills are to be brought back for cooking and consumption
+\c10*\c05Feel free to role play entering with a kill- leaving for a kill- hunting in the distance- cooking- playing- talking :) anything
+this quest isn't so much about hunting as it is socializing after you get your kill n stuff :)
+so just have fun- sit around, eat drink be merry- talk of recent events and whatnot\c00
+maximum qp's to be awarded- 5..minimum..1
+~
+16 0 1
+0 0 0 0
+2000 0 0
+#14950
+lantern brass~
+a shuttered brass lantern~
+An unfinished object is lying here.~
+~
+1 4232 16385
+0 0 -1 0
+0 5000 0
+A
+20 1
+A
+18 20
+A
+19 20
+P
+OnWear & ! Guild "hunters of the horn"
+Stop
+Destroy
+EmoteTo "Cappen says to you, 'I'll take that!'"
+End
+Q
+#14951
+rapier~
+a finely crafted rapier~
+An unfinished object is lying here.~
+~
+5 4232 8193
+0 12 8 11
+2 0 0
+P
+OnWear & ! Guild "hunters of the horn"
+Stop
+Destroy
+EmoteTo "Cappen says to you, 'I'll take that!'"
+End
+Q
+#14952
+sturdy leather belt~
+a sturdy leather belt~
+An unfinished object is lying here.~
+~
+15 4232 2049
+9999 0 -1 0
+1 0 0
+A
+20 1
+A
+18 10
+A
+19 10
+A
+17 -50
+P
+OnWear & ! Guild "hunters of the horn"
+Stop
+Destroy
+EmoteTo "Cappen says to you, 'I'll take that!'"
+End
+Q
+#14953
+sturdy leather boots~
+sturdy leather boots~
+An unfinished object is lying here.~
+~
+9 4232 65
+0 0 0 0
+3 0 0
+A
+17 -50
+A
+20 1
+A
+18 20
+A
+19 20
+P
+OnWear & ! Guild "hunters of the horn"
+Stop
+Destroy
+EmoteTo "Cappen says to you, 'I'll take that!'"
+End
+Q
+#14968
+trap salidar clever gotcha~
+a cleverly designed trap~
+A cleverly designed trap is here waiting to ensnare you.~
+~
+0 0 1
+0 0 0 0
+0 0 0
+P
+OnAction "north"
+Stop
+Goto 4199
+Emote "Thirty scouts pointing bows at you emerge silently from the forest and take you into custody."
+Force "3 n"
+Force "w"
+Goto 4040
+End
+Q
+#14997
+Stefan's obj2~
+Stefan's obj2~
+Stefan's obj2~
+~
+16 0 1
+0 0 0 0
+1 1 0
+#14998
+Stefan's obj3~
+Stefan's obj3~
+Stefan's obj3~
+~
+16 0 1
+0 0 0 0
+1 1 0
+#14999
+book forms~
+a leatherbound book with a heron engraved on the cover~
+A book has been left here on the ground.~
+~
+15 64 1
+1 1 -1 0
+2 0 0
+E
+book cover~
+A heron has been embroidered into the cover of the book in many colors.
+
+\c01OOC: To read type "read contents" or "look contents"
+Enjoy\c00
+~
+E
+page6 6~
+Hummingbird Kisses the Honeyrose
+Wind and Rain
+Whirlwind on the Mountain
+The Falcon Stoops
+The Moon Rises Over the Lakes
+Apple Blossoms in the Wind
+~
+E
+page5 5~
+Thistledown Floats on the Whirlwind
+Lightning of the Three Prongs
+Leaf on the Breeze
+Watered Silk
+Falling Leaf
+Striking the Spark
+Dove Takes Flight
+Lion on the Hill
+Tower of the Morning
+~
+E
+page4 4~
+Heron Spreads His Wings
+Stones Falling Down the Mountain
+The Swallow Takes Flight
+~
+E
+page3 3~
+Wood Grouse Dances
+Ribbon in the Air
+Lizard in the Thornbush
+Courtier Taps His Fan
+Low Wind Rising
+Water Flows Downhill
+The Swallow Rides the Air
+~
+E
+page2 2~
+Boar Rushes Down the Mountain
+Cat Dances on the Wall
+The Bee Stings
+The Bell Rings
+The Grapevine Twines
+Flame Before the Whirlwind
+Bundling Straw
+Waterfall on the Mountainside
+Parting the Silk
+The Sun Rises
+~
+E
+page1 1~
+Heron Wading in the Rushes
+Cat on Hot Sand
+River Undercuts the Bank
+Kingfisher Takes a Silverback
+Moon Over Water
+Folding the Fan
+Unfolding the Fan
+~
+E
+contents~
+Student Forms - page1
+Trainee Forms - page2
+Tested Forms - page3
+Warder Forms - page4
+Gaidin Forms - page5
+Veteran Forms - page6
+
+\c01To read the pages type "read #" or "look #"\c00
+~
+$~

@@ -1,0 +1,519 @@
+#700
+guard arsmcrymob~
+a guardsman~
+A guardsman is standing here
+~
+A tall well armed guard is standing here watching everyone closely.
+~
+1052682 262656 0 E
+25 -80 -10 947 25d100+0 12d12+50
+0 0
+8 8 1 833
+BareHandAttack: 3
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Bash: 100
+Trip: 100
+P
+OnAction "kil kill attack att bash dirt dirtkick trip stun backstab" & Mode 1 & Guild "Daes Dae'mar"
+ActionTo "assist"
+Mode 2
+End
+OnMobLeave & Mode 2
+Mode 1
+End
+Q
+E
+#701
+Guard House Trakand~
+a guard of house Trakand~
+An guard of house Trakand stands here
+~
+It looks, err, unfinished.
+~
+1052680 262656 0 E
+25 -80 -10 947 25d100+0 6d12+50
+0 0
+8 8 1 833
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Bash: 100
+Trip: 100
+Kick: 100
+E
+#702
+door man doorman Maynard~
+the Doorman~
+Maynard is dressed in fine clothing waiting to welcome people to the manor.
+~
+It looks, err, unfinished.
+~
+655386 524288 0 E
+200 -180 -20 947 0d0+30000 30d127+50
+0 0
+8 8 1 0
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnAction "ba"
+Stop
+End
+OnActionTo "push"
+Stop
+Action "emote flourishes a pair of knives from up his sleeves. "
+End
+OnActionTo "drag"
+Stop
+Action "emote flourishes a pair of knives from his sleeves. "
+End
+OnEntry
+Pause 5
+Action "close door west"
+Action "lock door west"
+End
+OnTell "grant entrance" & Guild "Daes"
+Action "emote opens the door with a flourish. "
+Action "unlock door west"
+Action "open door west"
+Pause 5
+Action "close door west"
+Action "lock door west"
+End
+OnAction "knock"
+Action "unlock door west"
+Action "open door west"
+Action "west"
+Action "shout Someone seeks entrance into the manor. "
+Action "east"
+Action "close door west"
+Action "lock door west"
+Action "emote bows deeply. "
+End
+OnLeave
+Pause 5
+Action "close door west"
+Action "lock door west"
+End
+OnAction "kill"
+Stop
+End
+OnAction "kick"
+Stop
+End
+OnAction "b"
+Stop
+End
+OnActionTo "nod" & Guild "daes"
+Action "emote bows politely, flourishing his keys to the manor and stepping asside as he opens the door, waving for you to pass into the Andoran Mansion."
+Action "unlock door west"
+Action "open door west"
+Pause 4
+Action "close door west"
+Action "lock door west"
+End
+Q
+E
+#703
+Mylan Maid Servant~
+Mylan~
+Mylan, a maid in the manor
+~
+Mylan is a petite girl about 17 summers aged, she has dark eyes and
+short black hair. Her maids uniform has been altered to better display
+her youthful charms. She is rarely seen working and mostly flirts
+with the courtiers and visitors to the palace the higher ranking ones
+seem deserving of her dutiful attentions. She is scorned by the
+rest of the staff and would probably be dismissed if it were not for
+her aunt who has been in the Queen's service for decades.
+~
+90 0 0 E
+1 20 10 947 1d100+0 1d1+0
+0 0
+8 8 2 0
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnAttack
+Stop
+Say "You didn't really mean to hurt me did you?"
+Action "emote bats her eyelashes at you sweetly."
+End
+OnActionTo "tango"
+Action "emote coquettishly bites her lower lip... while sliding her hot hands up your strong arms to your neck, pulling you closer and giving you a powerfull, sensuous kiss, you won't soon forget....mmmmmmm !!"
+Pause 5
+Action "emote reluctantly pulls herself from your embrace."
+Pause 2
+Say "You do know how to take my breath away, don't you?"
+End
+OnEntry
+Pause 2
+Action "curtsey"
+Pause 2
+Say "Light Illumine thee.."
+End
+OnActionTo "push"
+Stop
+Action "emote bats her eyelashes innocently."
+Say "Owwwww, You keep pushing me around like that, and I'll think you mean it."
+End
+OnActionTo "drag"
+Stop
+Action "emote temptuously runs her hands up your chest."
+Say "I only let the higher nobles drag me off into dark corners.  But for some decent coinage, I might show you a good time."
+End
+OnActionTo "give 5 coins to mylan"
+Action "emote smiles seductively at you while pressing her back against the wall."
+Pause 2
+Action "emote slowly pulls the hem of her dress up a silky thigh."
+Pause 5
+Say "And just how much do you think that will buy you?"
+End
+OnAction "smile"
+Emote "$n smiles sweetly to $N."
+Pause 2
+Action "curtsey"
+Pause 1
+Say "Light Illumine..."
+Pause 1
+End
+OnAction "look mylan"
+Pause 1
+Action "giggle"
+Pause 1
+Say "How may I serve?"
+Emote "curtseys, displaying herself to her best advantage."
+End
+OnSay "dismissed"
+Pause 2
+Action "pout"
+Pause 2
+Emote "emote says with a pout,' As you wish...'"
+Action "flee"
+End
+OnActionTo "flirt" & Sex "male"
+Pause 2
+Action "eye"
+Pause 2
+Say "With you, surely you jest?"
+Pause 1
+Action "chuckle"
+Move "random"
+End
+OnActionTo "flirt" & Sex "male" & Nobility
+Pause 2
+Say "M'lord, you honor me, but alas I have my duties."
+End
+Q
+E
+#704
+Simonez son boy child kid~
+Simonez den Balgar~
+Simonez is a ten year child, dressed in fine clothing befitting the noble-born.
+~
+It looks, err, unfinished.
+~
+26 0 0 E
+1 20 10 947 1d100+0 1d1+0
+0 0
+8 8 1 0
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnTell "follow"
+Action "follow Steffan"
+End
+OnTell "stop"
+Action "follow self"
+End
+OnTell "east"
+Move "east"
+End
+OnTell "west"
+Move "west"
+End
+OnTell "north"
+Move "north"
+End
+OnTell "south"
+Move "south"
+End
+OnActionTo "push"
+Stop
+Say "You no can push den Balgars around like that."
+Action "emote glares indignantly you as is possible for his mere ten years to muster."
+End
+OnActionTo "drag"
+Stop
+Action "emote looks slightly amused at what you just tried to do."
+Say "You do be knowing the worth of a den Balgar."
+End
+OnActionTo "hug"
+Action "emote smiles warmly and hugs you tightly."
+End
+OnAttack
+Stop
+Action "emote quickly dodges your evil actions against one as innocent as he."
+End
+OnSayTo "no, you will not."
+Action "emote looks pouty and sulks."
+End
+OnActionTo "frowns"
+Action "emote looks up at your frowning face, his eyes wide and full of innocence."
+End
+Q
+E
+#705
+Devosha woman female servant~
+Devosha ~
+Devosha is stalking the halls for some excitement
+~
+This is a devastatingly beautiful woman.  Her eyes are a deep green that glance
+over you hungrily.  Her lips have been painted a sensuous shade of red that
+beckon to you.  She wears a sheer black gown that barely attempts to cover her
+body.  From what you can see, her skin is a creamy chocolate brown that would
+glimmer in the moonlight.  Her midnight black tresses are braided with gold
+beads, pearls and loops of satin ribbons.  If your eyes found their way to her
+feet, you would find them bare.    
+~
+16410 524288 0 E
+1 20 10 947 1d100+0 1d1+0
+0 0
+8 8 2 0
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnRandom 80
+Action "emote gives you a senusous look as she runs her hand suggestively up her thigh."
+Pause 8
+Say "Are you looking for some action, or are you just looking?"
+End
+OnRandom 20
+Action "emote looks you up one side and then the other then winks slowly."
+Pause 3
+Say "Nice specimen."
+End
+OnRandom 50
+Action "emote beckons you seductively."
+End
+OnSay "What's your"
+Pause 2
+Say "My name is Devosha, what's your's name handsome?"
+End
+OnSay "My name is"
+Pause 2
+Say "Oooooooo what a strong name.  You must be a really strong man to have a name like that."
+Pause 3
+Action "emote runs a wet tongue over her red lips making them glisten."
+Pause 2
+Say "I can't wait to find out."
+End
+OnActionTo "hug"
+Pause 2
+Say "Things like that don't come cheaply.  If you want that from me you will have to request service."
+End
+OnActionTo "huggle"
+Pause 2
+Say "Things like that don't come cheaply.  If you want that from me you will have to request service."
+End
+OnActionTo "kiss"
+Pause 2
+Say "Things like that don't come cheaply.  If you want that from me you will have to request service."
+End
+OnActionTo "french"
+Pause 2
+Action "emote runs her hand up your thigh, sending your head reeling and your heart pounding."
+Pause 4
+Say "Things like that don't come cheaply.  If you want that from me you will have to request service."
+End
+OnActionTo "snuggle"
+Pause 2
+Say "Things like that don't come cheaply.  If you want that from me you will have to request service."
+End
+OnActionTo "cuddle"
+Pause 2
+Say "Things like that don't come cheaply.  If you want that from me you will have to request service."
+End
+OnActionTo "smooch"
+Pause 2
+Say "Things like that don't come cheaply.  If you want that from me you will have to request service."
+End
+OnTell "request service"
+SayTo "Follow me, you good looking heart throb."
+End
+OnActionTo "follow"
+Action "west"
+Action "west"
+Action "west"
+Action "south"
+End
+Q
+E
+#777
+mob unfinished~
+Sassy the Cat~
+a grey and white cat named Sassy is here.
+~
+a small and cute, grey and white cat.
+~
+8 0 0 E
+20 20 10 947 1d100+0 1d1+0
+0 0
+8 8 2 0
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnSayTo "Here girl" & Sex "female" & Race "altara"
+Action "follow Wynta"
+End
+Q
+E
+#787
+coachman braynard~
+Braynard the DD coachman~
+Braynard, the DD coachman stands here, waiting to offer people rides.
+~
+It looks, err, unfinished.
+~
+2088986 524288 0 E
+200 -180 -20 947 0d0+30000 30d127+50
+0 0
+8 8 1 0
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Bash: 100
+Trip: 100
+Dirtkick: 100
+Kick: 100
+Disarm: 100
+Stun: 100
+P
+OnSay "Illian" & Guild "daes" & Carrying 715
+Say "Right away your grace"
+ActionTo "at trovaris trans"
+End
+Q
+E
+#802
+Tomas~
+Tomas, Captain of House Taravin~
+Tomas, Captain of House Taravin is here guarding the Captain General Brelon Taravin
+~
+It looks, err, unfinished.
+~
+8 4718592 0 E
+0 20 10 947 1d100+0 1d1+0
+0 0
+8 8 1 0
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnSayTo "Please see to the guests at the door" & Taveren & Sex "m" & Race "Andor" & Guild "daes" & Nobility
+MoveTo 700
+Action "open door e"
+Move "east"
+Action "emote bows then speaks to you as he rises, 'If you could please follow me, I will show you to lord Brelon's office.'"
+End
+OnAction "follow t"
+Action "emote bows and smiles kindly."
+MoveTo 802
+Pause 4
+Action "emote bows deeply upon entering the office.  "
+End
+Q
+E
+#905
+Doorman~
+the unfinished mob~
+An unfinished mob stands here.
+~
+It looks, err, unfinished.
+~
+8 0 0 E
+0 20 10 947 1d100+0 1d1+0
+0 0
+8 8 0 0
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnAction "weave 'open lock'"
+Stop
+End
+Q
+E
+#910
+mob unfinished~
+the unfinished mob~
+An unfinished mob stands here.
+~
+It looks, err, unfinished.
+~
+8 0 0 E
+0 20 10 947 1d100+0 1d1+0
+0 0
+8 8 0 0
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnAction "knock west"
+Shout
+Pause 1
+End
+OnTell "Grant entrance" & Guild "Daes"
+Say "'One moment while I open the door for you, your request for entrance has been accepted."
+Action "get key pouch"
+Action "4"
+Action "unlock door w"
+Action "open door w"
+Say "Please enter"
+Pause 3
+Action "close door w"
+Action "lock door w"
+Action "put key pouch"
+End
+Q
+E
+$

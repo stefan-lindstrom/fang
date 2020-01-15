@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<zone vnum="42" lifespan="30" top="4499" mode="2" lock="no">
+  <name>Sedai/Warder Houses - Salidar</name>
+  <resetcmds numberof="6">
+    <cmd command="SetStateOfDoor" ifflag="no">
+      <args arg1="4304" arg2="0" arg3="1"/>
+      <line lineno="7"/>
+    </cmd>
+    <cmd command="SetStateOfDoor" ifflag="yes">
+      <args arg1="4304" arg2="0" arg3="2"/>
+      <line lineno="11"/>
+    </cmd>
+    <cmd command="SetStateOfDoor" ifflag="no">
+      <args arg1="4302" arg2="2" arg3="2"/>
+      <line lineno="15"/>
+    </cmd>
+    <cmd command="SetStateOfDoor" ifflag="no">
+      <args arg1="4301" arg2="2" arg3="1"/>
+      <line lineno="19"/>
+    </cmd>
+    <cmd command="SetStateOfDoor" ifflag="yes">
+      <args arg1="4301" arg2="2" arg3="2"/>
+      <line lineno="23"/>
+    </cmd>
+    <cmd command="STOP"/>
+  </resetcmds>
+</zone>

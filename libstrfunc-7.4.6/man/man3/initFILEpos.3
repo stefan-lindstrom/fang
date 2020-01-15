@@ -1,0 +1,91 @@
+.Dd December 4, 2000
+.Dt sf_file 3
+.Os
+.Sh NAME
+.Nm initfdpos ,
+.Nm initFILEpos ,
+.Nm adjfdpos ,
+.Nm adjFILEpos
+.Nd file positions indicator handling
+.Sh SYNOPSIS
+.Fd #include <stdio.h>
+.Fd #include <strfunc.h>
+.Pp
+.Ft int
+.Fn initfdpos "const char *fname" "int stream" "const char *ext"
+.Ft int
+.Fn initFILEpos "const char *fname" "FILE *stream" "const char *ext"
+.Ft int
+.Fn adjfdpos "int stream" "int posfd" "int doSync"
+.Ft int
+.Fn adjFILEpos "FILE *stream" "int posfd" "int doSync"
+.Pp
+.Sh DESCRIPTION
+Those functions are used to maintain a file positions indicator between the
+program sessions. This is often needed when a process is being parsed a log
+file and tries to save current position within this log to start from this
+point later.
+.Pp
+.Ft int
+.Fn initfdpos "const char *fname" "int stream" "const char *ext"
+creates a position indicator file "<fname>.<ext>", and
+returns its file descriptor. If the position file is already exists,
+then it advances
+.Em stream's
+position according to the information derived from that file.
+.Nm initfdpos
+also checks the file size and inode changes in order to be robust
+in situations when file shrinked or replaced.
+.Pp
+.Ft int
+.Fn initFILEpos
+is almost the same except that it takes a
+.Em FILE *
+argument instead of plain file descriptor.
+.Pp
+Both functions returns position file descriptor, or -1 in case of failure.
+.Pp
+.Ft int
+.Fn adjfdpos "int stream" "int posfd" "int doSync"
+and
+.Fn adFILEdpos
+writes the current position within the file referenced by
+.Em stream
+into the
+.Em posfd .
+If
+.Em doSync
+is not zero, it also does
+.Xr fsync 2 .
+
+Return values: 0 (Success) or -1 in case of any errors.
+
+.Pp
+.Sh EXAMPLE
+.Bd -literal
+void main() {
+	int posfd;
+	FILE *logfile;
+	char buf[1042];
+
+	logfile = fopen("file.log", "r");
+	if(!logfile)
+		exit(EX_NOINPUT);
+
+	while(fgets(buf, sizeof(buf), logfile)) {
+		/* Do something ... */
+
+		adjFILEpos(logfile, posfd, 0);
+	};
+
+	/* Force data to be flushed on disk. */
+	adjFILEpos(logfile, posfd, 1);
+	fclose(logfile);
+	close(posfd);
+};
+.Ed
+.Pp
+.Sh SEE ALSO
+.Xr strfunc 3 .
+.Sh AUTHORS
+.An Lev Walkin <vlm@spelio.net.ru>

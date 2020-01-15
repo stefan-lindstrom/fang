@@ -1,0 +1,924 @@
+#31500
+deadly guard~
+the Guard Commander~
+A tall man, holding a long lance is here, smiling faintly.
+~
+He is wearing odd \c09green\c00 and \c10gold\c00 armor, which gleams
+faintly in the light.
+~
+1054750 262144 0 E
+150 -130 -15 716 30d450+1500 10d20+50
+20 130
+8 8 1 444
+BareHandAttack: 11
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Disarm: 100
+P
+OnEntry & Nobility
+ActionTo "nod"
+End
+OnAction "open"
+Stop
+SayTo "i'm sorry but you must have a summons to enter the council chamber"
+End
+OnEntry & Wearing 31519
+ActionTo "bow"
+Action "open door e"
+SayTo "right this way my lord."
+End
+OnEntry & Carrying 31520
+SayTo "i will inform the council you have arrived, please await them in one of the waiting rooms."
+Action "open door n"
+Action "open door s"
+End
+OnLeave
+Action "close door n"
+Action "close door e"
+Action "close door s"
+End
+OnActionTo "push drag"
+Stop
+SayTo "Get off me wretch!"
+ActionTo "kill"
+End
+Q
+E
+#31501
+woman guard council~
+The council guard~
+A woman, standing ready to do battle with trouble makers.
+~
+Her long \c10golden\c00 hair, is braided and thrown over one soldier.
+She licks her lips, and advances for battle.
+~
+1064024 786432 0 E
+100 -55 -10 716 20d300+1000 10d15+50
+50 100
+8 8 2 444
+BareHandAttack: 3
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Trip: 100
+Dirtkick: 100
+Kick: 100
+Disarm: 100
+P
+OnAction "kill hit punch kick dirtkick bash stun backstab" & ! Guild "forsaken"
+Stop
+Force "emote attempts to start a fight but is blocked by the guards."
+ActionTo "kill"
+End
+OnRandom 25
+Action "emote looks around the room checking up on everything."
+End
+OnActionTo "drag push"
+Stop
+SayTo "Don't touch me!"
+ActionTo "slap"
+End
+Q
+E
+#31502
+council guard man~
+a Council Guard~
+A council guard of the Council of Nine.
+~
+The council guard looks burly and rather mean spirited, he probably does not fight fair.
+~
+1054746 262144 0 E
+150 -110 -15 716 30d450+1500 10d15+50
+20 100
+8 8 1 444
+BareHandAttack: 3
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Disarm: 100
+P
+OnAction "kill hit punch bash kick stun dirt backstab" & ! Guild "forsaken"
+Stop
+Force "emote is stopped but a quick block from the guard."
+Emote "The guard advances on you!"
+ActionTo "kill"
+End
+OnActionTo "push drag"
+Stop
+SayTo "Sorry I cannot leave my post."
+Mode 2
+End
+OnActionTo "push drag" & Mode 2
+Stop
+SayTo "You were warned!"
+ActionTo "kill"
+End
+Q
+E
+#31503
+guard (hidden)~
+a female guard~
+A guard hidden in the shadows.
+~
+The guardswoman lurks in the shadows, always on the lookout for
+trouble. She does not look like she suffers fools lightly.
+~
+1317976 3735552 0 E
+150 -120 -15 716 30d450+1500 10d15+50
+50 110
+8 8 2 444
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Disarm: 100
+E
+#31504
+dreadlord man guard~
+a Dreadlord~
+An arrogant looking man is standing here.
+~
+This man has arrogance written all over him, they way he walks, the 
+way he stares at people like they were bugs to be stepped on, and
+the way in which seems to fell he owns this place all tell you he
+is probably not one to mess with.
+~
+5856328 589840 0 E
+150 -120 -10 716 30d0+1500 10d15+50
+250 120
+8 8 1 444
+BareHandAttack: 12
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Stun: 100
+P
+OnEntry & Sex "male" & ! Guild "forsaken"
+SayTo "Long Live Lord Brend!"
+ActionTo "kill"
+End
+OnEntry & Sex "male" & CanChannel & ! Guild "forsaken"
+ActionTo "look"
+Action "chuckle"
+End
+OnAction "grasp weave cast" & Sex "male" & ! Guild "forsaken"
+Stop
+Force "emote is suddenly surrounded by \c13a glowing sphere of energy!\c00"
+SayTo "You dare to channel here?"
+ActionTo "kill"
+End
+OnEntry & Sex "female" & Grasping & ! Guild "forsaken"
+Say "Someone is channeling!"
+Action "peer"
+ActionTo "point"
+SayTo "Die witch!"
+ActionTo "kill"
+End
+OnAction "grasp cast weave" & Sex "female" & ! Guild "forsaken"
+Stop
+Emote "\c13The air is filled with energy as someone trips a ward!\c00"
+Force "emote howls in pain as she hits a ward blocking her from the source!"
+SayTo "Die witch!"
+ActionTo "kill"
+End
+Q
+E
+#31505
+noble lady dreadlord~
+a noble lady~
+A noble lady walks the halls on important business.
+~
+This woman does not take notice of you, you are far beneath her station
+and attention. She seems intent on doing something, but you are not
+sure what exactly.  In fact she seems to be looking for something
+or perhaps someone, better hope its not you.
+~
+5247048 67632 0 E
+150 -100 -10 716 30d0+1500 10d15+50
+200 125
+8 8 2 444
+BareHandAttack: 12
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Stun: 100
+P
+OnEntry & Sex "female" & Grasping & ! Guild "forsaken"
+SayTo "I have been looking for you my foolish little child."
+ActionTo "kill"
+End
+OnAction "grasp weave cast" & Sex "female" & ! Guild "forsaken"
+Stop
+SayTo "I think not my little half trained one."
+ActionTo "kill"
+End
+OnAction "cast weave" & Sex "male" & ! Guild "forsaken"
+Stop
+Force "emote keels over in pain as some strange weave rips into him."
+SayTo "Check for wards next time."
+ActionTo "kill"
+End
+Q
+E
+#31506
+bodyguard body guard man~
+the personal guard of Lord Sobeth~
+The personal guard of Lord Sobeth looks for danger.
+~
+The guard has that no nonsense look about him that informs you he
+will not let you harm his Lord. He is well muscled and his sword
+look very very sharp.
+~
+1054746 851968 0 E
+150 -120 -15 716 30d450+1500 10d15+50
+125 100
+8 8 1 444
+BareHandAttack: 3
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Dirtkick: 100
+Disarm: 100
+P
+OnAction "kill attack hit kick bash stun dirt punch"
+Stop
+Force "emote is stopped from attacking by Lord Sobeth's guards."
+ActionTo "kill"
+End
+OnAction "push drag"
+Stop
+Force "emote is too weak to push anyone."
+End
+OnRandom 99
+Action "follow Sobeth"
+End
+Q
+E
+#31507
+bodyguard body guard~
+the personal guard of Lord Teloth~
+The personal guard of Lord Teloth looks for danger.
+~
+Lord Teloth's guard is big and burly, just what you would want from 
+a body guard. you think that perhaps it would be unwise to harm
+the person of Lord Teloth.
+~
+1054814 851968 0 E
+150 -120 -15 716 30d450+1500 10d15+50
+100 100
+8 8 1 444
+BareHandAttack: 3
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Disarm: 100
+P
+OnRandom 99
+Action "follow Teloth"
+End
+OnAction "push drag"
+Stop
+Force "emote is too wimpy to push anyone!"
+End
+OnAction "attack kill hit bash trip dirt punch"
+Stop
+Force "emote is stopped from attacking by Lord Teloth's guard."
+ActionTo "kill"
+End
+Q
+E
+#31508
+guard del'freish personal~
+Lord Del'Freish's body guard~
+The Personal Guard of Lord Del'Freish
+~
+The guardsman is alert and looking for danger, he eyes you
+suspiciously and watches as you pass by him. His sword looks
+sharp and well used.
+~
+1054746 851968 0 E
+150 -120 -15 716 30d450+1500 10d15+50
+125 100
+8 8 1 444
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Disarm: 100
+Stun: 100
+P
+OnAction "push drag"
+Stop
+Force "emote is too weak to push anyone!"
+End
+OnRandom 99
+Action "follow olmnezzar"
+End
+Q
+E
+#31509
+personal guard Su'Kiatrin~
+Lord Su'Kiatrin's body guard~
+The Personal Guard of Lord Su'Kiatrin
+~
+Lord Su'Kiatrin's guard looks lean and mean. As you walk by they
+totally ignore you, or at least they appear to. You get the feeling
+that if you tried to pull anything you would shortly find yourself
+cut up into small peices on the floor.
+~
+1054746 851968 0 E
+150 -120 -15 716 30d450+1500 10d15+50
+125 100
+8 8 1 444
+BareHandAttack: 3
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Disarm: 100
+Stun: 100
+P
+OnAction "hit kick kill bash stun dirt trip attack" & ! Guild "forsaken"
+Stop
+Force "emote is stopped by the body guard."
+End
+OnAction "push drag"
+Stop
+Force "emote is too weak to push anyone!"
+End
+OnRandom 99
+Action "follow Galnan"
+End
+Q
+E
+#31510
+personal guard Malloien~
+Lord Malloein's body guard~
+The personal Guard of Lord Malloien
+~
+Lord Malloien's guard's all seem quite tall, they look like they
+might be taller than your average Aiel. The cerimonial helms they
+are were also add to their height.
+~
+1054746 851968 0 E
+150 -120 -15 716 30d450+1500 10d15+50
+125 100
+8 8 1 444
+BareHandAttack: 3
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Disarm: 100
+Stun: 100
+P
+OnAction "push drag"
+Stop
+Force "emote is too weak to push anyone!"
+End
+OnRandom 99
+Action "follow Barin"
+End
+Q
+E
+#31511
+personal guard Lughenos~
+Lord den Lughenos' body guard~
+The personal guard of Lord Gregorin den Leghenos
+~
+These guards look well trained and somewhat mean spirited. They
+hover around Lord den Lughenos as if he is about to be attacked at
+all times. These guys do not look like they play nice.
+~
+1054746 851968 0 E
+150 -120 -15 716 30d450+1500 10d15+50
+125 100
+8 8 1 444
+BareHandAttack: 3
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Disarm: 100
+Stun: 100
+P
+OnAction "hit kick kill bash stun dirt trip attack" & ! Guild "forsaken"
+Stop
+Force "emote is stopped by the body guard."
+End
+OnAction "push drag"
+Stop
+Force "emote is too weak to push anyone!"
+End
+OnRandom 99
+Action "follow Gregorin"
+End
+Q
+E
+#31512
+personal guard Su'Mitos~
+Lord Su'Mitos' body guard~
+The personal guard of Lord Su'Mitos
+~
+Lord Su'Mitos' guards are extremely well groomed, their metal armor
+shines like glass, so much so you can see yourself starring at them
+with your mouth open.
+~
+1054746 851968 0 E
+150 -120 -15 716 30d450+1500 10d15+50
+125 100
+8 8 1 444
+BareHandAttack: 3
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Disarm: 100
+Stun: 100
+P
+OnAction "hit kick kill bash stun dirt trip attack" & ! Guild "forsaken"
+Stop
+Force "emote is stopped by the body guard."
+End
+OnAction "push drag"
+Stop
+Force "emote is too weak to push anyone!"
+End
+OnRandom 99
+Action "follow Fenan"
+End
+Q
+E
+#31513
+personal guard Gwedarr~
+Lord Gwedarr's body guard~
+The personal guard of Lord Gwedarr
+~
+Lord Gwedarr's guards are very handsome men, you wonder if his wife
+is hand picking them for other reasons. Or it could be that they
+only look handsome next to Lord Gwedarr who is quite possibly the
+single most ugly man you have ever seen.
+~
+1054746 851968 0 E
+150 -120 -15 716 30d450+1500 10d15+50
+125 100
+8 8 1 444
+BareHandAttack: 3
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Disarm: 100
+Stun: 100
+P
+OnAction "push drag"
+Stop
+Force "emote is too weak to push anyone!"
+End
+OnRandom 99
+Action "follow Shuyiann"
+End
+Q
+E
+#31514
+personal guard Brend~
+Lord Brend's body guard~
+The personal guard of Lord Brend
+~
+Lord Brend's guard looks somewhat glass eyed, but other wise seems
+alert. The near worshipful devotion that the guard shows to Lord
+Brend is somewhat odd, but you pass it off as simple admiration.
+~
+1054746 851968 0 E
+150 -120 -15 716 30d450+1500 10d15+50
+125 100
+8 8 1 444
+BareHandAttack: 3
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Disarm: 100
+Stun: 100
+P
+OnAction "hit kick kill bash stun dirt trip attack" & ! Guild "forsaken"
+Stop
+Force "emote is stopped by the body guard."
+End
+OnAction "push drag"
+Stop
+Force "emote is too weak to push anyone!"
+End
+Q
+E
+#31516
+Lord Aenar Sobeth noble man~
+Lord Aenar Sal Sobeth~
+Lord Aenar Sal Sobeth stands here.
+~
+Lord Sobeth is a short stocky man, although he does look as though
+he knows how to use his sword. The is dressed in beautiful silks
+and wears the green sash of the Council of Nine.
+~
+1055964 327680 0 E
+160 -130 -15 716 30d480+1600 10d15+50
+350 135
+6 8 1 444
+BareHandAttack: 3
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Disarm: 100
+P
+OnRandom 99
+Action "stand"
+Action "group all"
+End
+Q
+E
+#31517
+lord melin teloth man~
+Lord Melin Teloth~
+Lord Melin Teloth is standing here.
+~
+Lord Melin Teloth is a tall man, of about 40 years.  He looks 
+quite well kept for his age, even a bit too well kept, as if perhaps
+his black hair is not quite all natural. His muscled arms however
+speak of a man who keeps himself in shape.
+~
+1055960 327680 0 E
+160 -130 -15 716 30d510+1700 10d15+50
+350 135
+6 8 1 444
+BareHandAttack: 3
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Disarm: 100
+P
+OnRandom 99
+Action "stand"
+Action "group all"
+End
+Q
+E
+#31518
+Lord Olmnezzar Del'Freish~
+Lord Olmnezzar Del'Freish~
+Lord Olmnezzar Del'Freish
+~
+Lord Olmnezzar Del'Freish does not take any note of you as you
+stare at him.  His clothes look like they are worth several small
+houses, but he does not seem to even be aware of that. He is totally
+ignorant of money as he has never had any need to think about it.
+~
+1055964 327680 0 E
+160 -130 -15 716 30d480+1600 10d15+50
+350 135
+6 8 1 444
+BareHandAttack: 3
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Disarm: 100
+P
+OnRandom 99
+Action "stand"
+Action "group all"
+End
+Q
+E
+#31519
+Lord Galnan Su'Kiatarin~
+Lord Galnan Su'Kiatarin~
+Lord Galnan Su'Kiatarin strolls the halls of the Palace of Nine
+~
+Lord Galnan Su'Kiatarin is in his middle years, with just a touch of grey
+showing on his temples adding a distinguished looked to his flowing
+black hair.  Lord Su'Kiatarin looks like a man set in his ways, one
+who does not deal well with surprizes.
+~
+1055964 327680 0 E
+160 -130 -15 716 30d480+1600 10d15+50
+350 135
+6 8 1 444
+BareHandAttack: 3
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Disarm: 100
+P
+OnRandom 99
+Action "stand"
+Action "group all"
+End
+Q
+E
+#31520
+Lord Barin Malloien~
+Lord Barin Malloien~
+Lord Barin Malloien is on his way to the kitchens
+~
+Lord Barin Malloien is a portly man who is in constant need of
+nurishment, well according to him anyway.  He is on yet another
+of his deperate missions the the kitchens to find to something
+to eat to quite his poor deprived stomach.
+~
+1055964 327680 0 E
+160 -130 -15 716 30d480+1600 10d15+50
+350 135
+6 8 1 444
+BareHandAttack: 3
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Disarm: 100
+P
+OnRandom 99
+Action "sta"
+Action "group all"
+End
+Q
+E
+#31521
+Lord Gregorin den Lughenos~
+Lord Gregorin den Lughenos~
+Lord Gregorin den Lughenos is on his way to a meeting
+~
+Lord Gregorin den Lughenos pushes past you in a hurry, he has no
+time for common rable such are yourself.  He does not even notice
+you when you stare at him and his fine clothing, he is a man on
+a mission and nothing will get in his way.
+~
+1055964 327680 0 E
+160 -130 -15 716 30d480+1600 10d15+50
+350 135
+6 8 1 444
+BareHandAttack: 3
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Disarm: 100
+P
+OnRandom 99
+Action "stand"
+Action "group all"
+End
+Q
+E
+#31522
+Lord Shuyiann Gwedarr~
+Lord Shuyiann Gwedarr~
+Lord Shuyiann Gwedarr is surrounded by his guard
+~
+Lord Shuyiann Gwedarr stands here in the protective circle of his
+guard.  He seems a bit nervous as if someone were trying to kill
+him or something strange like that.  After all who would attempt
+to murder a member of the Council of Nine?
+~
+1055964 327680 0 E
+160 -130 -15 716 30d480+1600 10d15+50
+350 135
+6 8 1 444
+BareHandAttack: 3
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Disarm: 100
+P
+OnRandom 99
+Action "stand"
+Action "group all"
+End
+Q
+E
+#31523
+Lord Fenan Su'Mitos~
+Lord Fenan Su'Mitos~
+Lord Fenan Su'Mitos is joking with his guards
+~
+Lord Fenan Su'Mitos looks to be a happy man, unlike most of his
+fellow Council members, he seems to enjoy his position. He is
+red with laughter from a joke that his guard just told him, you
+wonder if he will roll around on the floor in all his finery.
+~
+1055964 327680 0 E
+160 -130 -15 716 30d480+1600 10d15+50
+350 135
+6 8 1 444
+BareHandAttack: 3
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Disarm: 100
+P
+OnRandom 99
+Action "stand"
+Action "group all"
+End
+Q
+E
+#31574
+lord captain guard~
+the Lord Captain of the Guards~
+The Lord Captain of the Guards stands here.
+~
+The Lord Captain is a stern man, who does not play games. If you
+are standing here you had better have a really good reason as to
+why.
+~
+5265434 264240 0 E
+170 -130 -15 716 30d0+1700 15d15+50
+100 130
+8 8 1 444
+BareHandAttack: 3
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Disarm: 100
+P
+OnEntry & Darkfriend & ! Guild "forsaken"
+SayTo "Why are you here? Has Lord Brend Summoned you?"
+Force "tell brend I am outside the door to your apartments."
+End
+OnEntry & Guild "forsaken"
+ActionTo "bow"
+SayTo "Greetings Chosen"
+End
+OnAction "open" & ! Guild "forsaken"
+Stop
+SayTo "You may not enter Lord Brends Apartments unless you are summoned."
+End
+OnAction "grasp cast weave" & ! Guild "forsaken"
+Stop
+Action "chuckle"
+ActionTo "kill"
+End
+OnAction "push drag"
+Stop
+Force "emote is too wimpy to push anyone!"
+End
+Q
+E
+#31597
+dead deadlyward illianward ward~
+\c05A deadly Ward\c00~
+\c05A deadly Ward\c00
+~
+\c05A deadly ward woven of spirit fire and air\c00
+~
+3137546 2 0 E
+199 20 10 716 1d100+0 1d1+0
+0 0
+8 8 0 444
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnAction "grasp cast weave" & ! Guild "forsaken"
+Stop
+Force "emote trips a deadly ward!"
+Cast "disintegrate"
+Cast "disintegrate"
+Cast "disintegrate"
+PurgeMob
+End
+OnEntry & CanChannel
+Force "emote senses something odd about this room."
+End
+Q
+E
+#31598
+ward lightning illianward lightningward~
+\c13A Lightning Ward\c00~
+\c13A Lightning Ward\c00
+~
+\c13A ward woven with spirit, water, air, and fire.\c00
+~
+1007626 50 0 E
+199 20 10 716 1d100+0 1d1+0
+0 0
+8 8 0 444
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnEntry & Grasping & ! Guild "forsaken"
+Force "emote triggers a deadly ward!"
+Cast "thunderburst"
+Cast "thunderburst"
+Cast "thunderburst"
+PurgeMob
+End
+Q
+E
+#31599
+fire ward fireward illianward~
+\c08A flaming ward\c00~
+\c08A flaming ward\c00
+~
+\c08A ward made of fire and spirit.\c00
+~
+1032202 50 0 E
+199 20 10 716 1d100+0 1d1+0
+0 0
+8 8 0 444
+BareHandAttack: 12
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnEntry & Grasping & ! Guild "forsaken"
+Cast "pain"
+Cast "fireball"
+Cast "fireball"
+Cast "fireball"
+PurgeMob
+End
+OnAction "grasp weave cast" & ! Guild "forsaken"
+Stop
+Force "emote triggers a deadly ward!"
+Cast "fireball"
+Cast "fireball"
+Cast "fireball"
+Cast "fireball"
+Cast "fireball"
+PurgeMob
+End
+Q
+E
+$

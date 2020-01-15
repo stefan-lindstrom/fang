@@ -1,0 +1,678 @@
+<?xml version="1.0"?>
+<rooms>
+  <room>
+    <roombasic title="Outside Mardecin!" vnum="2000" zone="20">
+      <roomdescription>The road continues north through the small town of Mardecin.
+The border between Tarabon and Amadacia separates the
+town from the Taraboner towns to the west. The area is filled
+with plains, and you see the sheep of the villagers grazing 
+lazily.
+</roomdescription>
+      <flags>0</flags>
+      <sector>City</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="2001">
+      <description>You see a street paved with stone leading to the north.
+</description>
+    </exit>
+    <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="17399">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Southern entrance of Mardecin." vnum="2001" zone="20">
+      <roomdescription>Grantite slabs paves the streets of Mardecin, worned by generations of
+feet and wagon wheels, the buildings are made out of bricks or stone.
+</roomdescription>
+      <flags>0</flags>
+      <sector>City</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="2002">
+      <description/>
+    </exit>
+    <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="2000">
+      <description>You see the fields outside Mardecin.
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The city of Mardecin" vnum="2002" zone="20">
+      <roomdescription>You stand on the street, there is a tune in the air, it sounds like 
+&apos;Heron on the wing&apos; but it sounds very bitter!
+</roomdescription>
+      <flags>0</flags>
+      <sector>City</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="2003">
+      <description/>
+    </exit>
+    <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="2001">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Main street of Mardecin." vnum="2003" zone="20">
+      <roomdescription>To the west is a Blacksmith&apos;s shop, but it looks empty, the main street
+continues to the north.
+</roomdescription>
+      <flags>0</flags>
+      <sector>City</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="2006">
+      <description/>
+    </exit>
+    <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="2002">
+      <description/>
+    </exit>
+    <exit direction="west" keyword="" exitinfo="1" keynum="0" toroom="2004">
+      <description>you see a door to a blacksmith&apos;s shop !
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Blacksmith&apos;s shop" vnum="2004" zone="20">
+      <roomdescription>The room is almost emty except for some pieces of metal that is lying
+on the dusty floor.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="" exitinfo="1" keynum="0" toroom="2003">
+      <description>you see the entrance of a blacksmith&apos;s shop
+</description>
+    </exit>
+    <exit direction="down" keyword="" exitinfo="1" keynum="0" toroom="2005">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The cellar to the Blacksmith&apos;s shop" vnum="2005" zone="20">
+      <roomdescription>When you clear your eyes from dust you see a cellar with rusty useless
+weapons and other useless stuff. 
+</roomdescription>
+      <flags>0</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="up" keyword="" exitinfo="1" keynum="0" toroom="2004">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Main street of Mardecin" vnum="2006" zone="20">
+      <roomdescription>People throngs the streets, but all are moving lethargically, their dull
+faces say&apos;s that they have no real reson to stir at all, beyong habit,
+the main street continues north
+</roomdescription>
+      <flags>0</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="2007">
+      <description/>
+    </exit>
+    <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="2003">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Main street of Mardecin" vnum="2007" zone="20">
+      <roomdescription>The people throngs the streets, to the east is a slate roofed inn, with
+men sitting morosely on benches out front, the inn has a number of 
+broken windows and the adjoining stable has it&apos;s door half off the 
+hinges.
+</roomdescription>
+      <flags>0</flags>
+      <sector>City</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="2014">
+      <description/>
+    </exit>
+    <exit direction="east" keyword="" exitinfo="1" keynum="0" toroom="2008">
+      <description/>
+    </exit>
+    <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="2006">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Inside the inn." vnum="2008" zone="20">
+      <roomdescription>The inside looks as worn out as the outside, some broken chairs is lying
+in a pile in the left corner, it&apos;s a stairway up to the second floor,
+some people is sitting in the right corner, they look bored.
+</roomdescription>
+      <flags>18</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="" exitinfo="1" keynum="0" toroom="2009">
+      <description/>
+    </exit>
+    <exit direction="west" keyword="" exitinfo="1" keynum="0" toroom="2007">
+      <description/>
+    </exit>
+    <exit direction="up" keyword="" exitinfo="0" keynum="0" toroom="2010">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Kitchen !" vnum="2009" zone="20">
+      <roomdescription>The kitchen looks greasy and have not been cleaned for a long time, on
+the floor is rats, and it smells spicy in here, the smell comes from
+the stove in the right corner.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="south" keyword="" exitinfo="1" keynum="0" toroom="2008">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Hallway" vnum="2010" zone="20">
+      <roomdescription>You stand in a little hallway there are three doors here leading north,
+east and south, it is dust everywhere here even on the doors, you see
+something on the floor.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="" exitinfo="3" keynum="0" toroom="2011">
+      <description/>
+    </exit>
+    <exit direction="east" keyword="" exitinfo="3" keynum="0" toroom="2012">
+      <description/>
+    </exit>
+    <exit direction="south" keyword="" exitinfo="3" keynum="0" toroom="2013">
+      <description/>
+    </exit>
+    <exit direction="down" keyword="" exitinfo="0" keynum="0" toroom="2008">
+      <description/>
+    </exit>
+    <exdesc keyword="floor flo ">
+      <description>When you look real close you see footprints leading south !
+</description>
+    </exdesc>
+  </room>
+  <room>
+    <roombasic title="Inn room" vnum="2011" zone="20">
+      <roomdescription>You stand in the middle of the biggest room on this floor, to the
+left is a large window and below it stands a desk, to the right
+is a bed and a sofa stand against the right wall.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="south" keyword="" exitinfo="3" keynum="0" toroom="2010">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Inn room" vnum="2012" zone="20">
+      <roomdescription>You are in a small room with a small window right in front of you, to
+the right is a small bed and to the left of the bed is a wooden chair,
+there is dust all over the place.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="west" keyword="" exitinfo="3" keynum="0" toroom="2010">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Inn room" vnum="2013" zone="20">
+      <roomdescription>You are in one of the little rooms in the inn, to the right is a small
+bed and to the right is a chair, there is a window to the south.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="" exitinfo="1" keynum="0" toroom="2010">
+      <description/>
+    </exit>
+    <exdesc keyword="window win wi">
+      <description>When you look through the window you see what once was a garden now it
+is a piece of land with nothing but dirt !
+</description>
+    </exdesc>
+    <exdesc keyword="chair ">
+      <description>You see a chair of wood, it looks hard to sit on !
+</description>
+    </exdesc>
+    <exdesc keyword="bed ">
+      <description>You see a hard small bed, it look like someone just have been sleeping
+in it !
+</description>
+    </exdesc>
+    <exdesc keyword="floor flo">
+      <description>You see a wooden floor with a lot of dust on it !
+</description>
+    </exdesc>
+  </room>
+  <room>
+    <roombasic title="Main street of Mardecin" vnum="2014" zone="20">
+      <roomdescription>You stand on the main street of Mardecin, people throngs the streets
+trying to do what they did yesterday and the day before, survive !
+The main street continues north .
+</roomdescription>
+      <flags>0</flags>
+      <sector>City</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="2015">
+      <description/>
+    </exit>
+    <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="2007">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Main street of Mardecin !" vnum="2015" zone="20">
+      <roomdescription>You stand on the main street of Mardecin, there is a alley leading to
+the west, the main street continues north.
+</roomdescription>
+      <flags>0</flags>
+      <sector>City</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="2021">
+      <description/>
+    </exit>
+    <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="2014">
+      <description/>
+    </exit>
+    <exit direction="west" keyword="" exitinfo="0" keynum="0" toroom="2016">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Dark alley" vnum="2016" zone="20">
+      <roomdescription>You stand in a dark alley, it smells of rotten fish and meat,. The stone
+paved street seem to end here and is replaced with soil. The few people
+that is here is eyeing you sucpicious. They look like they all could do
+with a bath. To the east is the safe main street, the alley continues
+to the west.
+</roomdescription>
+      <flags>0</flags>
+      <sector>City</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="" exitinfo="0" keynum="0" toroom="2015">
+      <description/>
+    </exit>
+    <exit direction="west" keyword="" exitinfo="0" keynum="0" toroom="2017">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="A dark alley" vnum="2017" zone="20">
+      <roomdescription>You stand in a dark alley, to the south is a abandon house there is a 
+big hole in the door and it smells burned wood. Strange it&apos;s nobody
+around. The alley continues to the west.
+</roomdescription>
+      <flags>0</flags>
+      <sector>City</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="" exitinfo="0" keynum="0" toroom="2016">
+      <description/>
+    </exit>
+    <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="2018">
+      <description>it looks like a abandon house!
+</description>
+    </exit>
+    <exit direction="west" keyword="" exitinfo="0" keynum="0" toroom="2019">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Abandon house " vnum="2018" zone="20">
+      <roomdescription>You stand in a abandon house, the floor is covered with ashes and broken
+furniture, and *gasp* there is blood on the walls it look like writing
+but who would write in blood when there is ink ?? there is no other exit
+than north.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="2017">
+      <description>to the north is that smelly dark alley !
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Dark alley" vnum="2019" zone="20">
+      <roomdescription>You stand in a dark alley, the further you go the darker it gets you 
+feel uneasy about going further, you see trashcans along the houses
+the smell of putrefaction follows your way. The alley continues to 
+the west.
+</roomdescription>
+      <flags>0</flags>
+      <sector>City</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="" exitinfo="0" keynum="0" toroom="2017">
+      <description/>
+    </exit>
+    <exit direction="west" keyword="" exitinfo="0" keynum="0" toroom="2020">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Blind alley" vnum="2020" zone="20">
+      <roomdescription>The alley is very dark here, it smells sweat and rotten fish, on the
+ground lies emty torn pouches, it looks like many people have been
+robbed here. The alley stops here with a stone wall but dont worry it
+is possible to go back to the east.
+</roomdescription>
+      <flags>0</flags>
+      <sector>City</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="" exitinfo="0" keynum="0" toroom="2019">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The main street of Mardecin" vnum="2021" zone="20">
+      <roomdescription>You stand on the stone paved street, to the right is a blacksmith&apos;s shop
+and someone is pounding steel and the noise echoes out in the street it
+sounds awful. People throng around and looks at you with angry eye&apos;s.
+The main street continues to the north and to the south.
+</roomdescription>
+      <flags>0</flags>
+      <sector>City</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="2024">
+      <description/>
+    </exit>
+    <exit direction="east" keyword="" exitinfo="0" keynum="0" toroom="2022">
+      <description/>
+    </exit>
+    <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="2015">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Hurons Blacksmith&apos;s shop" vnum="2022" zone="20">
+      <roomdescription>A large man is stand at a anvil pounding something that starts to look
+like a sword or is it spear, on the floor is a big pile of metal, it
+looks like someone has ordered a lot of weapons, wonder who that could 
+be ?, there is a door to the east and then there is a exit to the west.
+But you allready know the exit it&apos;s where you came from.
+</roomdescription>
+      <flags>18</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="door" exitinfo="3" keynum="0" toroom="2023">
+      <description/>
+    </exit>
+    <exit direction="west" keyword="" exitinfo="0" keynum="0" toroom="2021">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Store room" vnum="2023" zone="20">
+      <roomdescription>You stand in the store room it&apos;s completely emty except for some dust
+on the floor. It seemes like it is a lack of weapons in this town.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="west" keyword="door" exitinfo="3" keynum="0" toroom="2022">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Main street of Mardecin" vnum="2024" zone="20">
+      <roomdescription>People throng the street here and look at you when you take a short
+look around. Someone is shouting at you to move. The air is filled
+with different aromatic smells. The main street continues to the 
+south and to the north.
+</roomdescription>
+      <flags>0</flags>
+      <sector>City</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="2025">
+      <description/>
+    </exit>
+    <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="2021">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Main street of Mardecin." vnum="2025" zone="20">
+      <roomdescription>You stand on the stone paved main street of Mardecin, to the west is a
+thatchroofed seamstress shop. People throngs the streets and pay no
+attention to you, it have something to do with the whitcloaks that also
+is here. The main street continues to the the north or the south it&apos;s 
+your choice.
+</roomdescription>
+      <flags>0</flags>
+      <sector>City</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="2030">
+      <description/>
+    </exit>
+    <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="2024">
+      <description/>
+    </exit>
+    <exit direction="west" keyword="" exitinfo="0" keynum="0" toroom="2026">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Seamstress shop" vnum="2026" zone="20">
+      <roomdescription>You stand in a Seamstress shop, the shop is empty but who cares for 
+clothes when it&apos;s water and food they need, the interior of the shop
+is not large, and every scrap of wall is taken up by shelves holding
+bolts of silk or finely woven wool, spools of piping and binding, and
+ribbon and lace of every width and description. Dressmaker&apos;s dummies
+stands about the floor wearing garments ranging from half-made to com-
+plete, from something suitable for a dance in embroidered green wool 
+to a pearly gray silk gown that could have done very well at court.
+At first glance the shop had a look of prosperity and activity, but on
+a second glance you catch a hint of dust in one high neck of frothy So-
+linde lace, and on a large black velvet bow at the waist of another 
+gown. The exit is to the east, and a closed door is to the west.
+</roomdescription>
+      <flags>18</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="" exitinfo="0" keynum="0" toroom="2025">
+      <description/>
+    </exit>
+    <exit direction="west" keyword="" exitinfo="1" keynum="0" toroom="2027">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Kitchen" vnum="2027" zone="20">
+      <roomdescription>You stand in a nice and clean kitchen, here is one table and four chairs,
+on the table is a vase with yellow flowers in it and four small tea cup&apos;s
+, it&apos;s a stairway up to the second floor.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="" exitinfo="1" keynum="0" toroom="2026">
+      <description/>
+    </exit>
+    <exit direction="up" keyword="" exitinfo="0" keynum="0" toroom="2028">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Hallway" vnum="2028" zone="20">
+      <roomdescription>You stand in a little hallway the stairs leads down and there is a door
+to the west.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="west" keyword="" exitinfo="1" keynum="0" toroom="2029">
+      <description/>
+    </exit>
+    <exit direction="down" keyword="" exitinfo="0" keynum="0" toroom="2027">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Bedroom" vnum="2029" zone="20">
+      <roomdescription>You are in little bedroom, to the left of you is a small bed, to the 
+right is a small table and a chair, right in front of you is a small
+window, the room smells of perfume, the only exit is where you came
+from.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="" exitinfo="1" keynum="0" toroom="2028">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Main street of Mardecin" vnum="2030" zone="20">
+      <roomdescription>You stand on the stone paved main street of Mardecin, whitecloaks walks
+around among people eyeing them suspicios, people look down whenever a
+whitecloak looks at them, far away you hear the sound of a blacksmith,
+the street continues to the north or south.
+</roomdescription>
+      <flags>0</flags>
+      <sector>City</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="2031">
+      <description/>
+    </exit>
+    <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="2025">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Main street of Mardecin" vnum="2031" zone="20">
+      <roomdescription>You stand on the main street of Mardecin, to the east is a abandon black-
+smith&apos;s shop, whitecloaks are patroling the streets here maybe they are
+afraiad of a riot here too, the main streets continues to the north and 
+south.
+</roomdescription>
+      <flags>0</flags>
+      <sector>City</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="2034">
+      <description/>
+    </exit>
+    <exit direction="east" keyword="" exitinfo="1" keynum="0" toroom="2032">
+      <description/>
+    </exit>
+    <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="2030">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Abandon Blacksmith&apos;s shop" vnum="2032" zone="20">
+      <roomdescription>You stand in a abandon blacksmith&apos;s shop, maybe the owner have joined the
+dragon reborded army or the band of the red hand, to the left stands a
+dusty anvil and a small broken bucket, it smells oil and iron in here,
+to the east is a door and to the west is the exit.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="" exitinfo="1" keynum="0" toroom="2033">
+      <description/>
+    </exit>
+    <exit direction="west" keyword="" exitinfo="1" keynum="0" toroom="2031">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The old store room" vnum="2033" zone="20">
+      <roomdescription>This is what I call a empty place, it looks like none has been in here 
+for years, there is dust all over the place, there is some rusty weapons
+lying on the floor except for them the room is empty. 
+</roomdescription>
+      <flags>0</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="west" keyword="" exitinfo="1" keynum="0" toroom="2032">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Main street of Mardecin" vnum="2034" zone="20">
+      <roomdescription>You stand on the stone paved main street of Mardecin, Whitecloaks is
+patroling the streets, they are probobly afraid for another riot here 
+to, the main street continues to the north and to the south.
+</roomdescription>
+      <flags>0</flags>
+      <sector>City</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="2035">
+      <description/>
+    </exit>
+    <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="2031">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Northern entrance to Mardecin" vnum="2035" zone="20">
+      <roomdescription>You have just entered the city of Mardecin when you see a whitecloak draging
+a older man south, the city is full of whitecloaks, perhaps they are trying
+to prevent a riot starting here to, the stone paved street is leading south
+and to exit Mardecin you just have to go north.
+</roomdescription>
+      <flags>0</flags>
+      <sector>City</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="2036">
+      <description/>
+    </exit>
+    <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="2034">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Outside Mardecin." vnum="2036" zone="20">
+      <roomdescription>You stand outside the city of Mardecin, when you are looking north you see
+the fields that surrounds the city, the entrance the city is south.
+</roomdescription>
+      <flags>0</flags>
+      <sector>City</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="17361">
+      <description/>
+    </exit>
+    <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="2035">
+      <description/>
+    </exit>
+  </room>
+</rooms>

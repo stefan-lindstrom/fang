@@ -1,0 +1,1301 @@
+<?xml version="1.0"?>
+<rooms>
+  <room>
+    <roombasic title="\c07Kilian's\c00\c23 Room\c00" vnum="30100" zone="301">
+      <roomdescription>A long and narrow room, tucked under the eaves of the
+Cobblers attic.  Light streams in through the glass and
+wood double doors on the east wall. A \c03brass\c00 bed stands
+against one wall, covered with a \c01red\c00 and \c14white\c00 \c01q\c00\c14u\c00\c01i\c00\c14l\c00\c01t\c00
+and several pillows. A dormer window over the bed gives
+a wonderful view of Queens Park and holds a brass lamp
+and a few books.  A scratched washstand is next to the
+bed, holding a large bowl and pitcher.  Underneath is
+small cabinet door held closed with a \c03brass\c00 clasp. 
+A large wood chest bound with \c23leather\c00 rests at the foot 
+of the bed.   
+</roomdescription>
+      <flags>158</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="A wood and glass door" exitinfo="1" keynum="0" toroom="30101">
+      <description>A wood and glass door leads to a tiny balcony
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="A Cozy Balcony" vnum="30101" zone="301">
+      <roomdescription>This tiny balcony overlooks a fairly busy street.  The sights
+sounds and smells of the city are very evident from here.
+A set of wood and glass double doors on the west wall lead
+into a room.  A wooden swing hangs from the rafters on long
+metal chains and is piled high with pillows.  Two wrought
+iron chairs flank a painted wood table. A large brass 
+candlestick rests on the table and provides light in the 
+evening.  A set of wooden stairs leads down to the street.
+</roomdescription>
+      <flags>6</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="west" keyword="A wood and glass door" exitinfo="1" keynum="0" toroom="30100">
+      <description>A wood and glass door leads westward into Raisa's room.
+</description>
+    </exit>
+    <exit direction="down" keyword="stairs" exitinfo="0" keynum="0" toroom="30106">
+      <description>a newly built wooden staicase
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Workshop" vnum="30102" zone="301">
+      <roomdescription>This is the workshop where Tobias does most of
+his crafting.  Two large wooden tables stand in the
+room, their surfaces covered with unfinished
+instruments and various tools.  A tall set of
+shelves stands against one wall and holds the
+wood and other raw materials needed to build the
+instuments, as well as more tools and supplies.
+A door to the east leads to the front of the shop
+and a set of spiral stairs leads up to an attic room.
+</roomdescription>
+      <flags>14</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="A thick wooden door" exitinfo="3" keynum="30100" toroom="30103">
+      <description>A thick wooden door leads to the store front.
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="\c03Gunther's Boots\c00" vnum="30103" zone="301">
+      <roomdescription>Inside, one finds a neat and orderly shop.  Shelves against one wall hold
+all manner of shoes and boots.  A well dressed man is stitching a boot as
+boot as customers enter.  He is prompt about setting aside his work to
+serve them.  The door The door east leads back onto the street and there
+are also closed doors to the south and west.    
+</roomdescription>
+      <flags>158</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="door brightly painted" exitinfo="0" keynum="0" toroom="30106">
+      <description>A brightly painted door opens onto the street.
+</description>
+    </exit>
+    <exit direction="south" keyword="A thick wooden door" exitinfo="3" keynum="0" toroom="30104">
+      <description>A thick wooden door opens to the south.
+</description>
+    </exit>
+    <exit direction="west" keyword="door thick wooden" exitinfo="3" keynum="30100" toroom="30102">
+      <description>A thick wooden door leads to a workshop.
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Kitchen" vnum="30104" zone="301">
+      <roomdescription>Entering from a door in the north wall brings one into a small kitchen.  
+A wooden table with two chairs stands in front of the window while a
+cabinet and cooking stove line the wall.  There is a large copper and wood
+tub next to the stove and a smaller tub with a hand pump next to the
+cabinet.  A thick and heavy curtain hangs in a door way to the west.    
+</roomdescription>
+      <flags>14</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="door thick wooden" exitinfo="3" keynum="0" toroom="30103">
+      <description>A thick wooden door leads north into the Shoppe.
+</description>
+    </exit>
+    <exit direction="west" keyword="a thick curtain" exitinfo="0" keynum="0" toroom="30105">
+      <description>A thick curtain hangs in the doorway.
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="A Large Sleeping Chamber" vnum="30105" zone="301">
+      <roomdescription>Pushing aside a heavy curtain on the east wall brings one into a large
+bedroom.  An old metal bed stands against one wall, covered by thick
+blankets.  A small table stands next to the bed and holds an oil lamp and
+a small pipe.  There is a wardrobe against another wall and a very large,
+overstuffed chair in the corner.  A shelf next to the chair holds a bottle
+of brandy and several books and papers.  A set of wooden pegs near the
+doorway hold a gentlemans coat and riding cloak.    
+</roomdescription>
+      <flags>28</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="a heavy curtain" exitinfo="0" keynum="0" toroom="30104">
+      <description>A heavy curtain hangs in the doorway.
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="North Gate Road" vnum="30106" zone="301">
+      <roomdescription>The narrow, winding street lined with shops continues to flow
+north to Queens' Park and south to more shops and Inns.  West
+is a cobblers and east a dressmakers.  A set of newly built
+stairs rises up the side of the building to a small balcony.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="road" exitinfo="0" keynum="0" toroom="30111">
+      <description>road-door
+</description>
+    </exit>
+    <exit direction="east" keyword="bright blue door" exitinfo="1" keynum="0" toroom="30107">
+      <description>a bright blue door, dressed with a wreath of
+vines and dried roses
+</description>
+    </exit>
+    <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="30110">
+      <description/>
+    </exit>
+    <exit direction="west" keyword="door brightly painted" exitinfo="0" keynum="0" toroom="30103">
+      <description>A brightly painted door opens into a well-lit shop.
+</description>
+    </exit>
+    <exit direction="up" keyword="stairs" exitinfo="0" keynum="0" toroom="30101">
+      <description>a staircase up
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Marta Cambeli, The Dressmaker" vnum="30107" zone="301">
+      <roomdescription>Bright light streams through lace curtains to reveal dresses and other
+items of clothing.  A tabby cat suns in the window surrounded by materials
+and sewing notions.  Pegs and racks about the room hold swaths of material
+and unfinished pieces.  A woman looks up from her work to smile and with
+gathered pins motions her customer forward to begin the fitting.  Behind
+her to the east is a colorful beaded curtain hanging in an open doorway.
+Soft voices rise as the ladies in that room change their attire.    
+</roomdescription>
+      <flags>158</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="beaded curtain" exitinfo="0" keynum="0" toroom="30108">
+      <description>a beaded curtain hangs here
+</description>
+    </exit>
+    <exit direction="west" keyword="bright blue door" exitinfo="1" keynum="0" toroom="30106">
+      <description>a bright blue door
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Changing Area" vnum="30108" zone="301">
+      <roomdescription>Stepping through a beaded curtain brings one into a small room.  Pegs line
+the walls and there are two benches for sitting.  A large carved wood
+swivel mirror stands in the corner and narrow windows, set high in the
+wall allow plenty of soft light for examining one's clothing.    
+</roomdescription>
+      <flags>28</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="west" keyword="beaded curtain" exitinfo="0" keynum="0" toroom="30107">
+      <description>a beaded curtain hangs here
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="North Gate Road" vnum="30109" zone="301">
+      <roomdescription>The road continues down a narrow and winding street.  Far to the north is
+Queen's Park and to the south are more shops.  An archway to the east
+leads into a darken alley.    
+</roomdescription>
+      <flags>4</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="30516">
+      <description/>
+    </exit>
+    <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="30183">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="North Gate Road and Raesane Boulevard" vnum="30110" zone="301">
+      <roomdescription>The shops continues along a wide, straight street with many sights to see
+and foods to smell.  To the north are the sounds of music and crowds,
+while to the south lies an an inn and the scent of fresh baked bread and
+apple pies.    
+</roomdescription>
+      <flags>0</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="30106">
+      <description/>
+    </exit>
+    <exit direction="east" keyword="" exitinfo="0" keynum="0" toroom="30501">
+      <description/>
+    </exit>
+    <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="30136">
+      <description/>
+    </exit>
+    <exit direction="southwest" keyword="" exitinfo="0" keynum="0" toroom="30511">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="North Gate Road and Tal'isani Road" vnum="30111" zone="301">
+      <roomdescription>Horses and townspeople continue down the narrow, winding street.  To the
+north lies the Queen's Park and to the south lies more brightly painted
+shops with freshly thatched roofs.    
+</roomdescription>
+      <flags>0</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="30112">
+      <description/>
+    </exit>
+    <exit direction="east" keyword="" exitinfo="0" keynum="0" toroom="30502">
+      <description/>
+    </exit>
+    <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="30106">
+      <description/>
+    </exit>
+    <exit direction="west" keyword="" exitinfo="0" keynum="0" toroom="30439">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="North Gate Road" vnum="30112" zone="301">
+      <roomdescription>Continuing along the narrow street brings one almost inside Queens' Park
+to the north.  To the east is a large boarding house with a \c13Rooms to Let\c00
+sign on the bright \c02green\c00 front door.  To the west lanterns hang in front
+of a small shop.  To the south are more shops.    
+</roomdescription>
+      <flags>0</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="30574">
+      <description/>
+    </exit>
+    <exit direction="east" keyword="door" exitinfo="1" keynum="0" toroom="30114">
+      <description>a bright green door
+</description>
+    </exit>
+    <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="30111">
+      <description/>
+    </exit>
+    <exit direction="west" keyword="door bright yellow" exitinfo="1" keynum="0" toroom="30113">
+      <description>A bright yellow door opens into a warmly lit shop.
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="\c07The \c00\c10Light\c00 \c07of Caemlyn\c00" vnum="30113" zone="301">
+      <roomdescription>This is a warm and well lighted shop.  Lanterns hang on the walls and
+lamps sit neatly arranged on several shelves.    
+</roomdescription>
+      <flags>158</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="door bright yellow" exitinfo="1" keynum="0" toroom="30112">
+      <description>A bright yellow door leads to Market street.
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Park Boarding House" vnum="30114" zone="301">
+      <roomdescription>This is a very spacious parlor.  Two large sofas face each other, the
+fabric covering them dyed to match the front door to the west.  A low
+table rest between them, holding drinks, books and someone's embroidery.
+In a corner a small table holds a cut glass oil lamp and a well-used
+stones board.  Flanking the table are two faded chairs.  A brightly
+colored rug covers the floor, muffling the sound of any footsteps and
+lending the room a feeling of home.  An open doorway leads to the east and
+a set of narrow wooden stairs leads upwards to the second floor.    
+</roomdescription>
+      <flags>8</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="door open" exitinfo="0" keynum="0" toroom="30115">
+      <description>an open doorway leads into the kitchen
+</description>
+    </exit>
+    <exit direction="west" keyword="door" exitinfo="1" keynum="0" toroom="30112">
+      <description>a bright green door
+</description>
+    </exit>
+    <exit direction="up" keyword="stairs" exitinfo="0" keynum="0" toroom="30116">
+      <description>a set of stairs leading up
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Common Kitchen" vnum="30115" zone="301">
+      <roomdescription>Walking through an open doorway to the west brings one into a warm
+kitchen.  A pot is hung over a fire in the large hearth and bread bakes in
+small oven alcoves built into the fireplace itself.  A large table with
+several chairs stands in front of large windows on the north wall, and
+offers a view of Queen's Park.  A short, stout woman nods a greeting to
+those who enter, then returns to stirring the soup pot.    
+</roomdescription>
+      <flags>158</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="west" keyword="archway" exitinfo="0" keynum="0" toroom="30114">
+      <description>an archway separates the front parlor from the kitchen.
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Top of the Stairs" vnum="30116" zone="301">
+      <roomdescription>Upon reaching the top of the starcase there is a narrow hall.  To the
+north is a closed door and the hallway continues east.    
+</roomdescription>
+      <flags>8</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="door" exitinfo="3" keynum="30113" toroom="30117">
+      <description>an old wooden door
+</description>
+    </exit>
+    <exit direction="down" keyword="stairs" exitinfo="0" keynum="0" toroom="30114">
+      <description>a narrow staircase
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="A Rented Room" vnum="30117" zone="301">
+      <roomdescription>This is a small, clean room.  A bed rests against one wall and a table
+sets next to it.  A large trunk sets at the foot of the bed.  A door to
+the south leads back to the hall, while another on the east wall opens to
+a tiny bath.  A large window with a cushioned seat on the north wall
+overlooks the beautiful Queen's Park.  A brightly colored woven rug covers
+the bare wood floor and a set of pegs near the door are perfect to hold a
+cloak or a dress.    
+</roomdescription>
+      <flags>12</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="door" exitinfo="0" keynum="0" toroom="30118">
+      <description>a door
+</description>
+    </exit>
+    <exit direction="south" keyword="door" exitinfo="3" keynum="0" toroom="30116">
+      <description>a wooden door
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="A Tiny Bath" vnum="30118" zone="301">
+      <roomdescription>This is a very tiny room with just enough space to hold a 
+copper tub.  Towels are neatly folded on a small shelf and
+soaps and oils sit waiting to be used.
+</roomdescription>
+      <flags>520</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="west" keyword="" exitinfo="0" keynum="0" toroom="30117">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="A Small Alleyway" vnum="30128" zone="301">
+      <roomdescription>The street here passes a roughly hewn stone archway, the portal leading
+into a darkened alley.  The sounds of Market Street to the west are muted
+here, and any footsteps are muffled on the packed dirt surface.  To the
+east a stairway can be seen, and the alley continues.    
+</roomdescription>
+      <flags>0</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="road" exitinfo="0" keynum="0" toroom="30129">
+      <description>an opening
+</description>
+    </exit>
+    <exit direction="south" keyword="door south" exitinfo="0" keynum="0" toroom="31710">
+      <description/>
+    </exit>
+    <exit direction="west" keyword="road" exitinfo="0" keynum="0" toroom="30042">
+      <description>road
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="A Small Alcove" vnum="30129" zone="301">
+      <roomdescription>The alley continues to the east, the shadows of the nearby buildings
+blocking much of the sunlight during the day, and making the place that
+much darker during the night.  The sights and sounds of Market Street are
+muted, far to the west.  A small alcove is tucked here under a stairway,
+almost hidden from sight, where a man often leans, sharpening a small
+dagger.    
+</roomdescription>
+      <flags>150</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="alley" exitinfo="0" keynum="0" toroom="30137">
+      <description>the alley continues
+</description>
+    </exit>
+    <exit direction="west" keyword="road" exitinfo="0" keynum="0" toroom="30128">
+      <description>an opening
+</description>
+    </exit>
+    <exit direction="up" keyword="stairs" exitinfo="0" keynum="0" toroom="30130">
+      <description>a staircase leads up
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="A Dark Landing" vnum="30130" zone="301">
+      <roomdescription>Coming up the rickety stairway brings one to a small, very dark landing.
+There are worn wooden doors to the south and the east.    
+</roomdescription>
+      <flags>512</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="door" exitinfo="1" keynum="0" toroom="30133">
+      <description>a door into a dark warehouse
+</description>
+    </exit>
+    <exit direction="south" keyword="door" exitinfo="3" keynum="0" toroom="30131">
+      <description>a door into a dark warehouse
+</description>
+    </exit>
+    <exit direction="down" keyword="stairs" exitinfo="0" keynum="0" toroom="30129">
+      <description>a rickety stairway
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Warehouse" vnum="30131" zone="301">
+      <roomdescription>Entering a dark and dusty warehouse room filled with crates and boxes of
+goods, one can hear the skittering of tiny feet and catch sight of little
+glowing eyes behind some of the freight.    
+</roomdescription>
+      <flags>8</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="door" exitinfo="1" keynum="0" toroom="30130">
+      <description>an old wooden door
+</description>
+    </exit>
+    <exit direction="east" keyword="door" exitinfo="3" keynum="0" toroom="30132">
+      <description>a door into a warehouse room
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="A Secret Meeting" vnum="30132" zone="301">
+      <roomdescription>Upon entering this dimly lit room, there lies a group of men bent over a
+table, sorting piles of goods and coins.  They look up and smile
+dangerously, drawing their weapons.    
+</roomdescription>
+      <flags>8</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="door" exitinfo="0" keynum="0" toroom="30133">
+      <description>a door into a warehouse room
+</description>
+    </exit>
+    <exit direction="west" keyword="door" exitinfo="0" keynum="0" toroom="30131">
+      <description>a door leads to a warehouse
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="A Warehouse Room" vnum="30133" zone="301">
+      <roomdescription>This is a dark and dusty warehouse room, full of crates and barrels.  Old
+cobwebs hang thick in the shadows.  Sounds of skittering tiny feet and the
+squeak of bats can be heard.    
+</roomdescription>
+      <flags>1</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="south" keyword="door" exitinfo="0" keynum="0" toroom="30132">
+      <description>a door into a warehouse room
+</description>
+    </exit>
+    <exit direction="west" keyword="door" exitinfo="1" keynum="0" toroom="30130">
+      <description>the door to the stairway
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="A Tavern Kitchen" vnum="30134" zone="301">
+      <roomdescription>Pushing through a pair of swinging doors to the west brings one into a
+warm kitchen.  The smell of baking bread and roasting chicken fills the
+air.  A large stove stands against one wall and several shelves hold
+baking goods and utensils.    
+</roomdescription>
+      <flags>28</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="west" keyword="door" exitinfo="0" keynum="0" toroom="30135">
+      <description>hinged swinging doors
+</description>
+    </exit>
+    <exit direction="down" keyword="trapdoor" exitinfo="31" keynum="30865" toroom="30865">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Common Room of the \c05R\c12a\c05m\c12b\c05l\c12i\c05n \c12R\c05o\c12s\c05e\c00" vnum="30135" zone="301">
+      <roomdescription>This is a large, brightly lit room beyond the rose carved wooden door to
+the west.  A long bar of polished wood stands against one wall and
+swinging doors separate this room from another.  Several wooden tables and
+chairs fill the room, each set with a red checked tablecloth and a candle
+in a cut glass container.  The entire room seems warm and comforting.  A
+tall man stands behind the bar, drying a mug.  He looks up and nods to
+those who enter.  The smell of fresh baked bread and roasted chicken
+filter through the doorway and a friendly serving girl hurries to take
+everyone's order.    
+</roomdescription>
+      <flags>158</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="door" exitinfo="0" keynum="0" toroom="30134">
+      <description>hinged swinging doors
+</description>
+    </exit>
+    <exit direction="west" keyword="door wooden roses carved" exitinfo="3" keynum="0" toroom="30136">
+      <description>a heavy wooden door,  carved with wild roses
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="North Gate Road" vnum="30136" zone="301">
+      <roomdescription>This wide street travels all the way from the inner city wall to the north
+gates of Caemlyn. A building to the east has a small hanging sign and a heavy
+door of redwood, carved with wild roses.
+</roomdescription>
+      <flags>14</flags>
+      <sector>City</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="30110">
+      <description/>
+    </exit>
+    <exit direction="east" keyword="door east" exitinfo="3" keynum="0" toroom="30135">
+      <description/>
+    </exit>
+    <exit direction="south" keyword="road" exitinfo="0" keynum="0" toroom="30537">
+      <description>the road continues
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="A Dark Alley" vnum="30137" zone="301">
+      <roomdescription>The dim alley continues between the buildings, turning to the north here.
+There is a shroud of darkness ahead.  Toward the west can be heard the
+sounds of Market Street.    
+</roomdescription>
+      <flags>1</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="alley" exitinfo="0" keynum="0" toroom="30138">
+      <description>the alley continues
+</description>
+    </exit>
+    <exit direction="west" keyword="alley" exitinfo="0" keynum="0" toroom="30129">
+      <description>the alley continues
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="A Dark Alley" vnum="30138" zone="301">
+      <roomdescription>The alley turns here and continues to the north, with Market
+Street barely audible back to the south.  Soft footsteps can be
+heard as well as the squeak of rats.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="30139">
+      <description/>
+    </exit>
+    <exit direction="south" keyword="alley" exitinfo="0" keynum="0" toroom="30137">
+      <description>the alley continues
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="A Dark Alley" vnum="30139" zone="301">
+      <roomdescription>The alley continues to the north here.  From below can be heard the sound
+of loud voices and even music.  A set of stone steps leads down, where
+there are glimmerings of light from under a door.    
+</roomdescription>
+      <flags>0</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="south" keyword="alley" exitinfo="0" keynum="0" toroom="30138">
+      <description>the alley continues
+</description>
+    </exit>
+    <exit direction="down" keyword="steps" exitinfo="0" keynum="0" toroom="30140">
+      <description>a set of stone steps leads down here
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Cellars" vnum="30140" zone="301">
+      <roomdescription>The Cellars lie here down a set of worn stone steps into a dim, smoky
+room.  A fat man in a grease stained apron is filling mugs from an ale keg
+while several shady looking men and a woman or two drink at the battered
+and spill stained tables.  Thick smoke swirls in the room, making hard to
+see clearly and from a doorway to the west are sounds of alternating
+cheers and groans.    
+</roomdescription>
+      <flags>158</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="up" keyword="steps" exitinfo="0" keynum="0" toroom="30139">
+      <description>a set of stone steps leads up to an alley
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="\c14Delete \c09me, \c08please\c00" vnum="30165" zone="301">
+      <roomdescription>You are in an unfinished room.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+  </room>
+  <room>
+    <roombasic title="Oakseed Avenue" vnum="30169" zone="301">
+      <roomdescription>Along this narrow lane lies with the park to the south and more shops to
+the north.  The open air market to the east offers many hand crafted items
+or sale or barter.    
+</roomdescription>
+      <flags>0</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="30405">
+      <description/>
+    </exit>
+    <exit direction="east" keyword="" exitinfo="0" keynum="0" toroom="10226">
+      <description/>
+    </exit>
+    <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="30184">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="A Path in the Park" vnum="30170" zone="301">
+      <roomdescription>A small stone paved lane leads deeper into Queens' Park and
+meanders around benches and gravel paths.
+</roomdescription>
+      <flags>4</flags>
+      <sector>City</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="lane" exitinfo="0" keynum="0" toroom="30172">
+      <description>a small lane continues
+</description>
+    </exit>
+    <exit direction="west" keyword="" exitinfo="0" keynum="0" toroom="30633">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="A Quiet Corner" vnum="30171" zone="301">
+      <roomdescription>The lane winds onto to a quiet corner, tucked away behind one the the
+parks small trees.  A painted iron table stands here, its' top and sides
+done of open filigree.  Two matching chairs flank it.  Another table very
+similar stands a few feet away, with two older men sitting at it, drinking
+ale and playing a game of stones.  It is peaceful here except for the
+sounds of children playing back down the lane to the south.    
+</roomdescription>
+      <flags>4</flags>
+      <sector>City</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="south" keyword="path" exitinfo="0" keynum="0" toroom="30172">
+      <description>a path leading under a tree
+</description>
+    </exit>
+    <exit direction="down" keyword="trapdoor down" exitinfo="19" keynum="-1" toroom="30228">
+      <description>You see nothing special.
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="A Stone Paved Lane" vnum="30172" zone="301">
+      <roomdescription>A stone paved lane leads deeper east into the park.  To the
+north a raked gravel path winds around a small tree and a 
+similiar path leads south to a swing.  A peddler is standing
+here, hawking his wares.
+</roomdescription>
+      <flags>146</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="path" exitinfo="0" keynum="0" toroom="30171">
+      <description>a path leading under a tree
+</description>
+    </exit>
+    <exit direction="east" keyword="lane" exitinfo="0" keynum="0" toroom="30179">
+      <description>the lane continues
+</description>
+    </exit>
+    <exit direction="south" keyword="path" exitinfo="0" keynum="0" toroom="30173">
+      <description>a raked gravel path
+</description>
+    </exit>
+    <exit direction="west" keyword="lane" exitinfo="0" keynum="0" toroom="30170">
+      <description>a paved lane continues
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Rope Swing" vnum="30173" zone="301">
+      <roomdescription>Following a raked gravel path brings one to another tree.  This oak is
+larger, and a rope swing with a wooden seat has been hung from one of the
+branches.  A large wooden platform stands nearby with children playing on
+it.  A bench sits off to the side for parents to rest.  The path continues
+both back to the north and on to the east.    
+</roomdescription>
+      <flags>16</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="path" exitinfo="0" keynum="0" toroom="30172">
+      <description>a raked gravel path
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Nyerin Lane" vnum="30174" zone="301">
+      <roomdescription>This wide lane continues to wind through the park.  To the west
+is a raked gravel path leading to a child's wooden climbing
+platform and the street continues north and south.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="30176">
+      <description/>
+    </exit>
+    <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="30632">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Raesane Boulevard and Nyerin Lane" vnum="30176" zone="301">
+      <roomdescription>Here a large boulevard connects with a slightly smaller lane, though the
+lane is wider than most of the streets in a smaller city would be. To the
+east is a small garden filled with flowers. An aroma of roses drifts from
+that direction.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="30177">
+      <description/>
+    </exit>
+    <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="30174">
+      <description/>
+    </exit>
+    <exit direction="west" keyword="" exitinfo="0" keynum="0" toroom="30477">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Nyerin Lane" vnum="30177" zone="301">
+      <roomdescription>The street continues its north-south course.  To the east is a raked
+gravel path, leading to a small fountain.  The street continues to the
+north and south.    
+</roomdescription>
+      <flags>4</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="30504">
+      <description/>
+    </exit>
+    <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="30176">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="North Gate Road" vnum="30178" zone="301">
+      <roomdescription>This road intersects with another wide road just south of here, and
+itself eventually leads to the north gates of caemlyn. The road is
+divided, with a grassy hill separating one side from the other.
+</roomdescription>
+      <flags>0</flags>
+      <sector>City</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="30183">
+      <description/>
+    </exit>
+    <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="30574">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Tunnel Under North Gate Road" vnum="30179" zone="301">
+      <roomdescription>The paved lane continues through a large tunnel built 
+under North Gate Road. The tunnel is big enough to easily
+walk through and connects the east and west sides of the park.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="lane" exitinfo="0" keynum="0" toroom="30180">
+      <description>the lane continues
+</description>
+    </exit>
+    <exit direction="west" keyword="lane" exitinfo="0" keynum="0" toroom="30172">
+      <description>the lane continues
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="\c10The\c00 \c08Rose\c00 Garden" vnum="30180" zone="301">
+      <roomdescription>The tunnel under Market Street to the west leads to an open,
+sunny area.  The paved lane expands here to cover a large
+circular area.  A raised garden bed is filled with lovely dark
+green bushes bearing \c10yellow\c00, \c07white\c00, and \c08red\c00 roses.
+Stone benches set along the edge of the paving are perfect
+for resting and enjoying the fragrance of the flowers.  A
+raked gravel path leads both north and south from here.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="path" exitinfo="0" keynum="0" toroom="30181">
+      <description>the path continues
+</description>
+    </exit>
+    <exit direction="south" keyword="path" exitinfo="0" keynum="0" toroom="30182">
+      <description>the path continues
+</description>
+    </exit>
+    <exit direction="west" keyword="lane" exitinfo="0" keynum="0" toroom="30179">
+      <description>the lane continues
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="\c07The\c00 \c08Rose\c00 \c07Fountain\c00" vnum="30181" zone="301">
+      <roomdescription>Following a raked gravel path from the Rose Garden to the south or Market
+Street to the west brings one to a lovely fountain built to honor the
+daughter-heir Elayne.  A low wall surrounds the fountain, wide enough to
+provide seating for visitors.  Two stone benches rest under the shady
+branches of a small tree.  Singers, jugglers, and musicians wander this
+area performing for coin and a peddler stands to one side selling sweets
+and meat pies from a small cart.    
+</roomdescription>
+      <flags>146</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="south" keyword="path" exitinfo="0" keynum="0" toroom="30180">
+      <description>a gravel path
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Picnic Area" vnum="30182" zone="301">
+      <roomdescription>Following the raked gravel path to the north brings one to an open aren
+enclosed with large bushes.  There are three stone tables with benches
+used for picnics.  The area is cool and quiet perfect for enjoying a meal.
+  
+</roomdescription>
+      <flags>0</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="path" exitinfo="0" keynum="0" toroom="30180">
+      <description>the path continues
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="North Gate Road" vnum="30183" zone="301">
+      <roomdescription>Here the road between the north gate and the wall of the inner city
+continues here. To the south is lovely Queens' Park while the bustle
+of shops beckons from the north.
+</roomdescription>
+      <flags>0</flags>
+      <sector>City</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="30109">
+      <description/>
+    </exit>
+    <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="30178">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Oakseed Avenue" vnum="30184" zone="301">
+      <roomdescription>Here the road between the north gate and the wall of the inner city
+continues here.  To the east is a greengrocer and from the west the
+Queen's Park Inn is beckoning.  South leads to the park and more shops.  
+
+</roomdescription>
+      <flags>0</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="30169">
+      <description/>
+    </exit>
+    <exit direction="east" keyword="door" exitinfo="0" keynum="0" toroom="10143">
+      <description>A brightly colored door leads to the grocery
+</description>
+    </exit>
+    <exit direction="southwest" keyword="" exitinfo="0" keynum="0" toroom="30430">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="\c04Willem's Bows\c00" vnum="30185" zone="301">
+      <roomdescription>Stepping through the open doorway brings one to a large room with unstrung
+bows of all shapes and sizes hanging on the walls.  There are quivers,
+racks of arrows and various pieces of hunting equipment displayed about
+the room.  A low murmer of voices can be heard from the inn to the north
+and a young man nods as customers enter the shop.  He sets aside the arrow
+he is fletching and waits to help his customers with their purchases.    
+</roomdescription>
+      <flags>158</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="door" exitinfo="0" keynum="0" toroom="30186">
+      <description>an open doorway
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Queen's Park Inn" vnum="30186" zone="301">
+      <roomdescription>This is a small, but sunny room.  Chairs are placed on either side of the
+door and wooden pegs hold a variety of cloaks and capes.  A large wooden
+desk sits in front of the west wall with an open hallway visible behind
+it.  Doorways lead to the north and south as well.  A clerk sits ready to
+rent out a room or direct patrons to the dining area.    
+</roomdescription>
+      <flags>12</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="door" exitinfo="0" keynum="0" toroom="30187">
+      <description>an open doorway
+</description>
+    </exit>
+    <exit direction="east" keyword="door" exitinfo="3" keynum="0" toroom="30441">
+      <description>a heavy wooden door
+</description>
+    </exit>
+    <exit direction="south" keyword="door" exitinfo="1" keynum="0" toroom="30185">
+      <description>a wooden door 
+</description>
+    </exit>
+    <exit direction="west" keyword="hall" exitinfo="0" keynum="0" toroom="30188">
+      <description>a long hallway
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Dining Room" vnum="30187" zone="301">
+      <roomdescription>Entering from a doorway to the south brings one into a spacious dining
+room.  Small tables covered with red tablecloths and gold candles are
+arranged about the room.  Serving girls rush by carrying trays laden with
+food and drink.  Large windows overlook Market Street and also provide a
+cooling breeze.    
+</roomdescription>
+      <flags>158</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="south" keyword="door" exitinfo="0" keynum="0" toroom="30186">
+      <description>an open doorway
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Back Hallway" vnum="30188" zone="301">
+      <roomdescription>A set of wooden stairs leads to the second floor while a door to the north
+opens into an enormous kitchen.    
+</roomdescription>
+      <flags>12</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="doorway" exitinfo="0" keynum="0" toroom="30199">
+      <description>a heavy wooden door
+</description>
+    </exit>
+    <exit direction="east" keyword="" exitinfo="0" keynum="0" toroom="30186">
+      <description>the hallway continues
+</description>
+    </exit>
+    <exit direction="up" keyword="stairs" exitinfo="0" keynum="0" toroom="30189">
+      <description>a wooden stairway
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Upstairs Landing" vnum="30189" zone="301">
+      <roomdescription>This is a small landing at the top of the stairs.  There are doors to the
+north and south and a hallway leading east.    
+</roomdescription>
+      <flags>12</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="door" exitinfo="3" keynum="0" toroom="30194">
+      <description>a heavy wooden door 
+</description>
+    </exit>
+    <exit direction="east" keyword="hall" exitinfo="0" keynum="0" toroom="30195">
+      <description>the hallway continues
+</description>
+    </exit>
+    <exit direction="south" keyword="door gold 1" exitinfo="7" keynum="30125" toroom="30190">
+      <description>a heavy wooden door marked with a gold #1
+</description>
+    </exit>
+    <exit direction="down" keyword="stairs" exitinfo="0" keynum="0" toroom="30188">
+      <description>a wooden stairway
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="A Room With a Copper Tub" vnum="30190" zone="301">
+      <roomdescription>This is a cozy room filled with light.  A large wrought iron bed stands
+against the east wall.  A comfortable chair is next to the bed as well as
+a small table holding a cut glass lamp.  A small desk sits near the door.
+A huge copper tub sits next to a hearth of the east wall.  On the south
+wall matching glass and wood doors open to reveal a small balcony
+overlooking Queen's Park.  A brightly colored rug covers the bare wood
+floor.    
+</roomdescription>
+      <flags>588</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="door" exitinfo="7" keynum="30125" toroom="30189">
+      <description>a heavy wooden door marked #1
+</description>
+    </exit>
+    <exit direction="east" keyword="object" exitinfo="0" keynum="0" toroom="30193">
+      <description>climbing onto a large bed
+</description>
+    </exit>
+    <exit direction="south" keyword="door" exitinfo="1" keynum="0" toroom="30191">
+      <description>Double doors with glass panes open to a balcony.
+</description>
+    </exit>
+    <exit direction="west" keyword="object" exitinfo="0" keynum="0" toroom="30192">
+      <description>stepping into a bathtub
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="A Balcony Overlooking the Park" vnum="30191" zone="301">
+      <roomdescription>This is a small balcony overlooking Queen's Park.  Glass and wood double
+doors on the north wall lead back into the room.  Two painted iron chairs
+are here to relax in and a small painted iron table holds a candle in a
+brass holder.    
+</roomdescription>
+      <flags>4</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="door" exitinfo="1" keynum="0" toroom="30190">
+      <description>Double doors with glass panes open to a balcony
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="An Adjoining Guest Room" vnum="30192" zone="301">
+      <roomdescription>This is the perfect arrangement for an Aes Sedai traveling around with her
+Warder or a family with children as this room can accommodate the needs of
+traveling companions.  There is an average size trundel bed with an
+oversized trunk at the foot of the bed for storing clothing.  Two oak
+chairs can be used for sitting or for holding armour.  By the window is a
+small table that holds a lantern.  Hanging on the wall is a copper tub
+that can be used for baths.  Although there is no fireplace in this room,
+there is a brazier stored under the small table and a copper bedwarmer
+hanging over the bed that can be used for warmth.    
+</roomdescription>
+      <flags>604</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="object" exitinfo="0" keynum="0" toroom="30190">
+      <description>stepping out of a bathtub
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="A Small Gathering Room" vnum="30193" zone="301">
+      <roomdescription>A round table of oak is surrounded by a cluster of hearty chairs.  The
+nicks and scratches just seems to add character to the furniture.  Its a
+perfect place to enjoy a private meal or play a game of cards or stones.
+In front of the fireplace is a sofa and a small table before it with a
+full tea service set upon it made from the black clay near Four Kings.  
+
+</roomdescription>
+      <flags>574</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="west" keyword="object" exitinfo="0" keynum="0" toroom="30190">
+      <description>climbing off of a large bed
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="A Cozy Bed Chamber" vnum="30194" zone="301">
+      <roomdescription>This is a tidy room.  A wooden bed sits against one wall and a washstand
+with a bowl, pitcher and towels is next to it.  A wardrobe with a small
+mirror stands against another wall and there are two cushioned chairs near
+the window on the north wall.  A metal and glass lamp mounted on the wall
+provides light, as do the brass candleholders and candles on the
+washstand.  A door on the south wall leads back into the upstairs hallway.
+  
+</roomdescription>
+      <flags>76</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="south" keyword="door" exitinfo="3" keynum="0" toroom="30189">
+      <description>a heavy wooden door
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Hallway Continues" vnum="30195" zone="301">
+      <roomdescription>The wood planked floor has a tawny hue from years of scrubbing.  Near
+where the floor meets the walls it is an ebony colour from built up dirt
+that the servants apparently are unable to get clean.  There are no rugs
+on the floor, but the inn keeper has been known to throw down rushes when
+a festive mood strikes him.  The walls have a painted rose vine bearing
+roses that form a border about a third up the wall, but it has long faded.
+  
+</roomdescription>
+      <flags>12</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="door" exitinfo="1" keynum="0" toroom="30198">
+      <description>a heavy wooden door
+</description>
+    </exit>
+    <exit direction="south" keyword="door" exitinfo="3" keynum="0" toroom="30196">
+      <description>a heavy wooden door
+</description>
+    </exit>
+    <exit direction="west" keyword="hall" exitinfo="0" keynum="0" toroom="30189">
+      <description>the hallway continues
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="A Cozy Sleeping Chamber" vnum="30196" zone="301">
+      <roomdescription>This is a cozy room, filled with light.  An iron bed sits against one wall
+with a washstand next to it.  A bowl and pitcher rest on the stand and
+towels are stacked neatly on a shelf underneath.  A large wardrobe stands
+against another wall and two comfortable chairs flank a small table.  A
+metal lamp rests on the table.  A wood and glass door on the south wall
+opens onto a balcony overlooking the lovely Queen's Park.    
+</roomdescription>
+      <flags>12</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="door" exitinfo="3" keynum="0" toroom="30195">
+      <description>a heavy wooden door
+</description>
+    </exit>
+    <exit direction="south" keyword="door" exitinfo="0" keynum="0" toroom="30197">
+      <description>Double doors with glass panes lead to a balcony
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="A Balcony Overlooking Queen's Park" vnum="30197" zone="301">
+      <roomdescription>Opening the wood door, with its polished horn inserts, leads one onto a
+small balcony overlooking Queen's Park.  There are two painted iron chairs
+here to relax in and a small table just the right size to hold a book or
+glass of wine.    
+</roomdescription>
+      <flags>4</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="door" exitinfo="0" keynum="0" toroom="30196">
+      <description>Double doors with glass panes lead from the balcony
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="A Cozy Room With Storage" vnum="30198" zone="301">
+      <roomdescription>Here is a small but neatly arranged room.  A wooden bed sits against one
+wall and a small table with a bowl and pitcher is next to it.  A row of
+pegs hold clean towels and provide a place to hang other clothing.  A
+leather and wood trunk rests on the floor at the foot of the bed.  Two
+cushioned chairs sit under the north window and share a small table with a
+cut glass lamp on it.  A door on the south wall leads back to the upstairs
+hallway.    
+</roomdescription>
+      <flags>12</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="south" keyword="door" exitinfo="3" keynum="0" toroom="30195">
+      <description>a heavy wooden door
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="A Large Kitchen" vnum="30199" zone="301">
+      <roomdescription>Entering from the door to the south, reveals an emormous and well equipped
+kitchen.  A cook is giving orders to helpers and serving maids and the
+smells from the ovens and pots are mouthwatering.  A small wooden door on
+the west wall is open to let in a cooling breeze.    
+</roomdescription>
+      <flags>12</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="south" keyword="doorway" exitinfo="0" keynum="0" toroom="30188">
+      <description>a heavy wooden door
+</description>
+    </exit>
+  </room>
+</rooms>

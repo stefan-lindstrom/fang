@@ -1,0 +1,780 @@
+#29900
+statue guard baby~
+the statue of the hero~
+The statue of the Nameless Hero, looking almost alive.~
+~
+13 2176 0
+0 0 0 0
+0 0 0
+E
+statue guard nameless guardsman man baby~
+   The statue depicts the very ideal of a guardsman;
+tall and proud, his face made to look both solemn
+and gentle at the same time as he holds a young
+infant in his hand, his eyes looking upwards.
+   The Guardsmen of Caemlyn are said to have saved
+more lives in the line of duty than any casualties
+of any one war between countries, in all the years
+of honourable service.
+~
+#29901
+necklace gold braided nb caemlyn~
+a \c03b\c00\c10r\c00\c03a\c00\c10i\c00\c03d\c00\c10e\c00\c03d gold\c00 necklace~
+A gold necklace is lying here~
+~
+11 0 5
+0 0 0 0
+1 2500 0
+A
+3 1
+A
+4 1
+#29902
+necklace silver hammered nb caemlyn~
+a necklace of hammered \c07silver\c00~
+A silver necklace is lying here~
+~
+11 0 5
+0 0 0 0
+2500 0 0
+A
+9 3
+A
+17 -2
+#29903
+dagger Whitecloak evidence~
+a \c23soot\c00-smeared dagger marked with a \c10golden sunburst\c00~
+A Whitecloak dagger lies here looking dirty.~
+~
+5 73800 8193
+0 2 8 11
+1 0 0
+#29904
+fireplace narsil ~
+a fireplace for Narsil's room~
+\c23a large stone \c01fi\c08r\c10e\c03p\c10l\c01a\c08c\c01e\c23 warms the room, casting a romantic feel to the otherwise plain surroundings.\c00~
+~
+8 0 0
+0 0 0 0
+0 0 0
+E
+fireplace stone grey~
+The large fireplace is made all of smooth g\c14r\c23e\c00y stone, and it 
+ casts a warm, flickering glow over the room, giving off
+a lot of heat. The mantle is carved deeply with parallel 
+wavy lines.
+~
+P
+OnRandom 12
+Emote "The \c01fi\c08r\c10e\c03p\c10l\c01a\c08c\c01e\c00 crackles softly, sending a flurry of glowing sparks swirling in the heat around it."
+End
+Q
+#29970
+cloak caemlyn guardsmen~
+a \c01scarlet cloak\c00 embroidered with a \c14lion\c00 on the breast~
+A guild item for Caemlyn lies here.~
+~
+15 69832 1025
+1000000 0 -1 0
+1 0 0
+A
+17 -50
+A
+9 12
+A
+18 12
+A
+19 12
+P
+OnSteal
+Stop
+End
+OnWear & ! Guild "Caemlyn"
+Stop
+EmoteTo "\c01You should know better...\c00"
+Destroy
+End
+Q
+#29971
+breastplate caemlyn guardsmen~
+a gleaming \c13steel breastplate\c00 engraved with \c01lions\c00~
+A guild item for Caemlyn lies here?!? Call an IMM!~
+~
+11 69832 9
+0 0 0 0
+10 0 0
+A
+17 -50
+A
+9 12
+A
+18 12
+A
+19 12
+P
+OnSteal
+Stop
+End
+OnWear & ! Guild "Caemlyn"
+Stop
+EmoteTo "\c01You should know better...\c00"
+Destroy
+End
+Q
+#29972
+helm caemlyn guardsmen~
+a conical \c13steel helm\c00 with a barred visor~
+A guild item for Caemlyn lies here?!? Call an IMM!~
+~
+11 69832 17
+0 0 0 0
+3 0 0
+A
+17 -50
+A
+9 12
+A
+18 12
+A
+19 12
+P
+OnSteal
+Stop
+End
+OnWear & ! Guild "Caemlyn"
+Stop
+EmoteTo "\c01You should know better...\c00"
+Destroy
+End
+Q
+#29973
+sword caemlyn guardsmen~
+a double-bladed \c14s\c13w\c14o\c13r\c14d\c00 with a \c01lion\c00 enamled on the hilt~
+A guild item for Caemlyn lies here?!? Call an IMM!!~
+~
+5 69832 8193
+0 10 10 3
+4 0 0
+A
+20 1
+P
+OnSteal
+Stop
+End
+OnActionToCarry "wield" & ! Guild "Caemlyn"
+Stop
+EmoteTo "\c01You should know better...\c00"
+Destroy
+End
+OnActionToCarry "enhance"
+Stop
+Force "quit"
+Destroy
+End
+Q
+#29974
+sleeves rank caemlyn guardmen~
+a pair of \c01scarlet sleeves\c00 with \c03g\c10o\c03l\c10d\c03e\c10n \c03k\c10n\c03o\c10t\c03s\c00 of rank on the shoulder~
+A guild item for Caemlyn lies here?!? Call an IMM!~
+~
+11 69832 257
+0 0 0 0
+2 0 0
+A
+17 -50
+A
+9 14
+A
+18 14
+A
+19 14
+A
+20 1
+P
+OnSteal
+Stop
+End
+OnWear & ! Guild "Caemlyn"
+Stop
+EmoteTo "\c01You should know better...\c00"
+Destroy
+End
+Q
+#29975
+pen magistrate Caemlyn~
+a small \c07s\c14i\c07l\c14v\c07e\c14r\c00 pen engraved with the \c01lion\c00 of \c14Andor\c00~
+A guild item for Caemlyn lies here?!? Call an IMM!~
+~
+21 69832 16385
+0 0 0 0
+0 0 0
+A
+17 -50
+A
+9 50
+A
+18 10
+A
+19 10
+A
+13 50
+P
+OnSteal
+Stop
+End
+OnWear & ! Guild "Caemlyn"
+Stop
+EmoteTo "\c01You should know better...\c00"
+Destroy
+End
+Q
+#29976
+lantern magistrate Caemlyn~
+a small lantern worked in \c03g\c10o\c03l\c10d\c03e\c10n \c03f\c10i\c03l\c10i\c03g\c10r\c03e\c10e\c00~
+A guild item for Caemlyn lies here?!? Call an IMM!~
+~
+1 69832 16385
+0 0 -1 0
+1 0 0
+A
+17 -50
+A
+9 50
+A
+18 10
+A
+19 10
+A
+13 50
+P
+OnSteal
+Stop
+End
+OnWear & ! Guild "Caemlyn"
+Stop
+EmoteTo "\c01You should know better...\c00"
+Destroy
+End
+Q
+#29977
+robe magistrate Caemlyn~
+a \c01velvet robe\c00 of office trimmed with \c10thread\c00-of-\c10gold\c00~
+A guild item for Caemlyn lies here?!? Call an IMM!~
+~
+15 69832 1025
+1000000 0 -1 0
+5 0 0
+A
+17 -50
+A
+9 50
+A
+18 10
+A
+19 10
+A
+13 50
+P
+OnSteal
+Stop
+End
+OnWear & ! Guild "Caemlyn"
+Stop
+EmoteTo "\c01You should know better...\c00"
+Destroy
+End
+Q
+#29978
+ring magistrate Caemlyn~
+a \c03g\c10o\c03l\c10d\c03e\c10n \c03r\c10i\c03n\c10g\c00 ring marked with a \c14white lion\c00 on a field of \c01red\c00~
+A guild item for Caemlyn lies here?!? Call an IMM!~
+~
+11 69832 3
+0 0 0 0
+0 0 0
+A
+17 -50
+A
+9 50
+A
+18 10
+A
+19 10
+A
+13 50
+P
+OnSteal
+Stop
+End
+OnWear & ! Guild "Caemlyn"
+Stop
+EmoteTo "\c01You should know better...\c00"
+Destroy
+End
+Q
+#29979
+staff magistrate Caemlyn~
+a \c03g\c10o\c03l\c10d\c03-\c10c\c03a\c10p\c03p\c10e\c03d\c00 walking staff~
+A guild item for Caemlyn lies here?!? Call an IMM!~
+~
+5 69832 8193
+0 7 10 5
+6 0 0
+A
+18 10
+A
+19 10
+P
+OnActionToCarry "wield" & ! Guild "Caemlyn"
+Stop
+EmoteTo "\c01You should know better...\c00"
+Destroy
+End
+OnSteal
+Stop
+End
+OnActionToCarry "enhance"
+Stop
+EmoteTo "\c01You should know better...\c00"
+Force "quit"
+End
+Q
+#29980
+ring gleeman bard Caemlyn~
+a \c03g\c10o\c03l\c10d\c03e\c10n\c03 r\c10i\c03n\c10g\c00 set with a \c13harp\c00 over a \c14white lion\c00~
+A guild item for Caemlyn lies here?!? Call an IMM!~
+~
+11 69832 3
+0 0 0 0
+0 0 0
+A
+17 -50
+A
+9 50
+A
+3 1
+A
+2 1
+A
+18 7
+A
+19 7
+P
+OnSteal
+Stop
+End
+OnWear & ! Guild "Caemlyn"
+Stop
+EmoteTo "\c01You should know better...\c00"
+Destroy
+End
+Q
+#29985
+board ice iceboard~
+the \c06i\c14c\c06e \c14b\c06oa\c14rd\c00~
+A record board is carved into the ice of the wall here.~
+~
+12 0 1
+0 0 0 0
+0 0 0
+#29986
+flute gleeman Caemlyn~
+a \c03g\c10o\c03l\c10d\c00 and \c07s\c14i\c07l\c14v\c07e\c14r\c00-plated flute~
+A guild item for Caemlyn lies here?!? Call an IMM!~
+~
+11 69832 16385
+0 0 0 0
+1 0 0
+A
+17 -50
+A
+9 50
+A
+3 1
+A
+2 1
+A
+18 6
+A
+19 6
+P
+OnWear & ! Guild "Caemlyn"
+Stop
+EmoteTo "\c01You should know better...\c00"
+Destroy
+End
+Q
+#29987
+boots gleeman Caemlyn~
+a pair of \c03soft leather\c00 boots with turned-down tops~
+A guild item for Caemlyn lies here?!? Call an IMM!~
+~
+11 69832 65
+0 0 0 0
+3 0 0
+A
+17 -50
+A
+9 50
+A
+3 1
+A
+2 1
+A
+18 6
+A
+19 6
+P
+OnSteal
+Stop
+End
+OnWear & ! Guild "Caemlyn"
+Stop
+EmoteTo "\c01You should know better...\c00"
+Destroy
+End
+Q
+#29988
+cloak gleeman Caemlyn~
+a \c01p\c08a\c10t\c09c\c02h\c13w\c11o\c04r\c05k\c00 cloak~
+A guild item for Caemlyn lies here?!? Call an IMM!~
+~
+15 69832 1025
+1000000 0 -1 0
+2 0 0
+A
+17 -50
+A
+9 50
+A
+3 1
+A
+2 1
+A
+18 6
+A
+19 6
+P
+OnSteal
+Stop
+End
+OnWear & ! Guild "Caemlyn"
+Stop
+EmoteTo "\c01You should know better...\c00"
+Destroy
+End
+Q
+#29989
+throwing knife gleeman Caemlyn~
+a fine \c13steel\c00 throwing knife with a \c07s\c14i\c07l\c14v\c07e\c14r\c00 hilt~
+A guild item for Caemlyn lies here?!? Call an IMM!~
+~
+5 200904 8193
+0 7 10 11
+1 0 0
+A
+18 25
+A
+19 25
+P
+OnSteal
+Stop
+End
+OnWear & ! Guild "Caemlyn"
+Stop
+EmoteTo "\c01You should know better...\c00"
+Destroy
+End
+OnActionToCarry "enhance"
+Stop
+EmoteTo "\c01You should know better...\c00"
+Force "quit"
+End
+Q
+#29990
+workshirt blacksmith Caemlyn~
+a sturdy \c07workshirt\c00 sewn with panels of \c03soft leather\c00~
+A guild item for Caemlyn lies here?!? Report this to an IMM!~
+~
+11 69832 9
+0 0 0 0
+4 0 0
+A
+17 -50
+A
+9 25
+A
+13 75
+A
+18 10
+A
+19 10
+P
+OnSteal
+Stop
+End
+OnWear & ! Guild "Caemlyn"
+Stop
+EmoteTo "\c01You should know better...\c00"
+Destroy
+End
+Q
+#29991
+apron blacksmith Caemlyn~
+a \c03leather apron\c00 darkened by the heat of the \c01f\c10o\c08r\c10g\c01e\c00~
+A guild item for Caemlyn lies here?!? Call an IMM!~
+~
+11 69832 1025
+0 0 0 0
+5 0 0
+A
+17 -50
+A
+9 25
+A
+13 75
+A
+18 10
+A
+19 10
+P
+OnSteal
+Stop
+End
+OnWear & ! Guild "Caemlyn"
+Stop
+EmoteTo "\c01You should know better...\c00"
+Destroy
+End
+Q
+#29992
+anvil blacksmith Caemlyn~
+a small \c06iron anvil\c00 used for repairs~
+A guild item for Caemlyn lies here?!? Call an IMM!~
+~
+11 69832 16385
+0 0 0 0
+8 0 0
+A
+17 -50
+A
+9 25
+A
+13 75
+A
+18 10
+A
+19 10
+P
+OnSteal
+Stop
+End
+OnWear & ! Guild "Caemlyn"
+Stop
+EmoteTo "\c01 You should know better...\c00"
+Destroy
+End
+Q
+#29993
+hammer Caemlyn blacksmith~
+a heavy \c06iron hammer\c00 with a \c03leather-wrapped\c00 handle~
+A guild item for Caemlyn lies here?!? Call an IMM!~
+~
+5 69832 8193
+0 10 10 5
+10 0 0
+A
+18 10
+A
+19 10
+P
+OnSteal
+Stop
+End
+OnWear & ! Guild "Caemlyn"
+Stop
+EmoteTo "\c01You should know better...\c00"
+Destroy
+End
+OnActionToCarry "enhance"
+Stop
+EmoteTo "\c01You should know better...\c00"
+Force "quit"
+End
+Q
+#29994
+ring blacksmith Caemlyn~
+a \c03g\c10o\c03l\c10d\c03e\c10n \c03r\c10i\c03n\c10g\c00 marked with \c07crossed hammers\c00 over a \c14white lion\c00~
+A guild item for Caemlyn lies here?!? Call an IMM!~
+~
+11 69832 3
+0 0 0 0
+1 0 0
+A
+17 -50
+A
+9 25
+A
+13 75
+A
+18 10
+A
+19 10
+P
+OnSteal
+Stop
+End
+OnWear & ! Guild "Caemlyn"
+Stop
+EmoteTo "\c01You should know better...\c00"
+Destroy
+End
+Q
+#29995
+cloak merchant Caemlyn~
+a \c14downy \c01scarlet\c00 cloak with a \c14fur-trimmed\c00 hood~
+A guild item for Caemlyn lies here?!?! Call an IMM!~
+~
+15 69832 1025
+1000000 0 -1 0
+3 0 0
+A
+17 -50
+A
+9 50
+A
+3 1
+A
+4 1
+A
+18 6
+A
+19 6
+P
+OnSteal
+Stop
+End
+OnWear & ! Guild "Caemlyn"
+Stop
+EmoteTo "\c01You should know better...\c00"
+Destroy
+End
+Q
+#29996
+dagger merchant Caemlyn~
+a thin-bladed dagger with an \c10i\c14v\c10o\c14r\c10y\c00 hilt~
+A guild item for Caemlyn lies here?!? Call an IMM!~
+~
+5 69832 8193
+0 7 10 11
+1 0 0
+A
+18 25
+A
+19 25
+P
+OnSteal
+Stop
+End
+OnWear & ! Guild "Caemlyn"
+Stop
+EmoteTo "\c01You should know better...\c00"
+Destroy
+End
+OnActionToCarry "enhance"
+Stop
+EmoteTo "\c01You should know better...\c00"
+Force "quit"
+End
+Q
+#29997
+ring merchant Caemlyn~
+a \c03g\c10o\c03l\c10d\c03e\c10n \c03r\c10i\c03n\c10g\c00 engraved with crossed \c10keys\c00 over a \c14white lion\c00~
+A guild item for Caemlyn lies here?!? Call an IMM!~
+~
+11 69832 3
+0 0 0 0
+0 0 0
+A
+17 -50
+A
+9 50
+A
+3 1
+A
+4 1
+A
+18 7
+A
+19 7
+P
+OnSteal
+Stop
+End
+OnWear & ! Guild "Caemlyn"
+Stop
+EmoteTo "\c01You should know better...\c00"
+Destroy
+End
+Q
+#29998
+belt merchant Caemlyn~
+a belt crafted from \c07s\c14i\c07l\c14v\c07e\c14r \c07l\c14i\c07n\c14k\c07s\c00~
+A guild item for Caemlyn lies here?!? Call an IMM!~
+~
+11 69832 2049
+0 0 0 0
+1 0 0
+A
+17 -50
+A
+9 50
+A
+3 1
+A
+4 1
+A
+18 6
+A
+19 6
+P
+OnSteal
+Stop
+End
+OnWear & ! Guild "Caemlyn"
+Stop
+EmoteTo "\c01You should know better...\c00"
+Destroy
+End
+Q
+#29999
+lantern merchant Caemlyn~
+a bright \c07s\c14i\c07l\c14v\c07e\c14r\c00 lantern with filigree shutters~
+A guild item for Caemlyn lies here?!? Call an IMM!~
+~
+1 69832 16385
+0 0 -1 0
+1 0 0
+A
+17 -50
+A
+9 50
+A
+3 1
+A
+4 1
+A
+18 6
+A
+19 6
+P
+OnSteal
+Destroy
+End
+OnWear & ! Guild "Caemlyn"
+Stop
+EmoteTo "\c01You should know better...\c00"
+Destroy
+End
+Q
+$~

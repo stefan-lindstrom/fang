@@ -1,0 +1,95 @@
+#!/bin/sh
+
+CC=gcc
+MYFLAGS="-Wall -DCIRCLE_UTIL"
+PROFILE=
+
+INCDIR=".."
+LIBDIR=
+LIBS="-lcrypt -lm"
+
+BINDIR="../../bin"
+CFLAGS="-ggdb3 -O3 \$(MYFLAGS) \$(PROFILE) -I\$(INCDIR)"
+
+cat >Makefile <<EOF
+# Generated automatically from Makefile by Configure.
+# Make any changes here.
+#
+
+# C compiler to use
+CC = $CC
+
+# Any special flags you want to pass to the compiler
+MYFLAGS = $MYFLAGS
+
+#flags for profiling (see hacker.doc for more information)
+# use this when all XML converting is done. 
+#PROFILE = -DHAVE_CHAR_XML
+#otherwise, use this
+PROFILE=
+
+INCDIR = $INCDIR
+LIBDIR = $LIBDIR
+LIBS   = $LIBS
+
+##############################################################################
+# Do Not Modify Anything Below This Line (unless you know what you're doing) #
+##############################################################################
+
+BINDIR = $BINDIR
+
+CFLAGS = $CFLAGS
+
+
+default: all
+ 
+ 
+EOF
+
+
+echo -n "all:" >>Makefile
+for cfile in *.c; do
+    FILE=`basename "$cfile" .c`
+    echo -n " \$(BINDIR)/$FILE" >>Makefile
+done;
+cat >>Makefile <<EOF
+
+
+EOF
+
+
+for cfile in *.c; do
+    FILE=`basename "$cfile" .c`
+    cat >>Makefile <<EOF 
+
+$FILE: \$(BINDIR)/$FILE
+EOF
+done;
+
+CFLAGS="-ggdb3 -O3 $MYFLAGS $PROFILE -I$INCDIR"
+for cfile in *.c; do
+    FILE=`basename "$cfile" .c`
+    HEADERS=`$CC -MM $CFLAGS "$cfile" | sed "s/$FILE\\.o[ ]*:\?//g" | sed 's%[ ]\\.\\.\\/% \$(INCDIR)/%g' | tr -d '\\\\\\n'`
+    cat >>Makefile <<EOF 
+
+\$(BINDIR)/$FILE: $HEADERS
+	\$(CC) \$(CFLAGS) -o \$(BINDIR)/$FILE $cfile \$(LIBDIR) \$(LIBS)
+EOF
+done;
+
+cat >>Makefile <<EOF
+
+
+clean:
+	rm -f *.o *.d
+
+distclean:
+	rm -f *.o *.d *~
+EOF
+
+echo -n "	rm -f" >>Makefile
+for cfile in *.c; do
+    FILE=`basename "$cfile" .c`
+    echo -n " \$(BINDIR)/$FILE" >>Makefile
+done;
+

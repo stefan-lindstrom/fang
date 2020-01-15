@@ -1,0 +1,934 @@
+<?xml version="1.0"?>
+<mobiles>
+  <mobile vnum="28000" name="tall man cloak" special="NONE">
+    <description>He is wearing a brown cloak. His face is totally obscured by the hood of
+his cloak. You can make out the glinting of his eyes, but that is about it.
+He appears fairly powerful and looks like he knows his way around with
+a sword.
+</description>
+    <shortdesc>a tall man in a cloak</shortdesc>
+    <longdesc>A tall man whose face is hidden in the hood of his cloak stands here.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="120" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="1000"/>
+      <move ndize="10" dsize="20" bonus="100"/>
+      <ac>-190</ac>
+      <gold>500</gold>
+      <bankgold>0</bankgold>
+      <exp>1</exp>
+      <hitroll>48</hitroll>
+      <damroll>48</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="10281034"/>
+    <affected one="268713984" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="30" sides="127" add="48"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnAttack" argtype="STRING" argument="I'm hungry">
+      <action number="Emote" argtype="STRING" argument="stop that!"/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+    </mobprog>
+    <mobprog main="OnActionTo" argtype="STRING" argument="push">
+      <action number="Emote" argtype="STRING" argument="you can't push a shopkeeper!"/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="28001" name="boy ragged" special="NONE">
+    <description>He is dressed in rags and looks as if he hasn't eaten in a few
+days. He claims to have something for sale. If you are compassionate
+then you could spare the few coins he asks.
+</description>
+    <shortdesc>a ragged looking boy</shortdesc>
+    <longdesc>A ragged looking boy has something for sale.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="40" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="0"/>
+      <move ndize="10" dsize="20" bonus="100"/>
+      <ac>60</ac>
+      <gold>50</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="10281162"/>
+    <affected one="16384" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="30" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnAttack" argtype="STRING" argument="push">
+      <action number="Emote" argtype="STRING" argument="stop that!"/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+    </mobprog>
+    <mobprog main="OnActionTo" argtype="STRING" argument="push">
+      <action number="Emote" argtype="STRING" argument="you can't push a shopkeeper!"/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="28002" name="burly jacor man" special="NONE">
+    <description>   Jacor is very large and has muscles bigger than many Ogier's fists.  
+He looks as if he could snap an average man's neck with little effort.  
+Still, in spite of his rough appearance, something about his manner gives
+the impression of gentleness.    
+</description>
+    <shortdesc>Jacor, a burly man</shortdesc>
+    <longdesc>A burly man stands near the entrance overseeing the training.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="195" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="30" dsize="865" bonus="800"/>
+      <move ndize="10" dsize="20" bonus="100"/>
+      <ac>-180</ac>
+      <gold>100</gold>
+      <bankgold>0</bankgold>
+      <exp>250</exp>
+      <hitroll>49</hitroll>
+      <damroll>49</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="10281034"/>
+    <affected one="278576" two="0" three="0" four="0"/>
+    <attack type="6"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="30" sides="125" add="49"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnAttack" argtype="STRING" argument="push">
+      <action number="Emote" argtype="STRING" argument="stop that!"/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+    </mobprog>
+    <mobprog main="OnActionTo" argtype="STRING" argument="push">
+      <action number="Emote" argtype="STRING" argument="you can't push a shopkeeper!"/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="28003" name="innkeeper Boris large" special="NONE">
+    <description>Boris is a very large man. He looks like his size alone could be
+used to defeat many warriors in hand-to-hand combat. He has a soft
+voice, however, and seems to prefer being peaceful.
+</description>
+    <shortdesc>Boris, the large innkeeper</shortdesc>
+    <longdesc>Boris, the large innkeeper, smiles as you walk over to him.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="179" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="30" dsize="0" bonus="1000"/>
+      <move ndize="10" dsize="20" bonus="100"/>
+      <ac>-190</ac>
+      <gold>50</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>30</hitroll>
+      <damroll>30</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="13557786"/>
+    <affected one="805584944" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="30" sides="127" add="30"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="28004" name="salesman woman saleswoman man sales shopkeeper" special="NONE">
+    <description>She is wearing a prim dress and smiles at you, but only as a shopkeeper
+would. She points toward the wares and waits for you to make a decision.
+</description>
+    <shortdesc>a female shopkeeper</shortdesc>
+    <longdesc>A nice looking female shopkeeper stands here filling in for Rhada.
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="180" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="30" dsize="0" bonus="1000"/>
+      <move ndize="10" dsize="20" bonus="100"/>
+      <ac>-200</ac>
+      <gold>50</gold>
+      <bankgold>0</bankgold>
+      <exp>120</exp>
+      <hitroll>200</hitroll>
+      <damroll>50</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="13557834"/>
+    <affected one="805396480" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="30" sides="127" add="200"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="28005" name="Janice female innkeeper" special="NONE">
+    <description>She is very nice and has a wide selection of fine things to choose from.
+</description>
+    <shortdesc>Janice the female innkeeper</shortdesc>
+    <longdesc>Janice the female innkeeper stands here smiling.
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="200" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="30" dsize="1000" bonus="1000"/>
+      <move ndize="10" dsize="20" bonus="100"/>
+      <ac>-200</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>5</exp>
+      <hitroll>50</hitroll>
+      <damroll>50</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="10412106"/>
+    <affected one="16384" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="30" sides="127" add="50"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="28006" name="Phoela gem shopkeeper" special="NONE">
+    <description>She is wearing simple clothes, but is bedecked in many sparkling
+gems and jewels. She also wears a golden ring with a name engraved
+on it, but you cannot quite make out the name from here.
+</description>
+    <shortdesc>Phoela, the shopkeeper of the gem shop</shortdesc>
+    <longdesc>Phoela, the shopkeeper of the gem shop, stands here.
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="200" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="30" dsize="1000" bonus="1000"/>
+      <move ndize="10" dsize="20" bonus="100"/>
+      <ac>-200</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>50</exp>
+      <hitroll>200</hitroll>
+      <damroll>50</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="10281034"/>
+    <affected one="16384" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="30" sides="127" add="200"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="28007" name="guard aringill gate" special="NONE">
+    <description>All these guards pretty much look alike when on duty.  The helmet covers
+his hair and most of his face.  What is visible looks clean-shaven but a
+bit gaunt as if he has lost a little weight recently.  He is watchful,
+though.  Perhaps wary would be a better word, as if he has seen trouble
+and expects more.    
+</description>
+    <shortdesc>a gate guard</shortdesc>
+    <longdesc>One of Aringill's gate guards stands here.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="75" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="10" dsize="120" bonus="300"/>
+      <move ndize="10" dsize="20" bonus="100"/>
+      <ac>0</ac>
+      <gold>100</gold>
+      <bankgold>0</bankgold>
+      <exp>150</exp>
+      <hitroll>20</hitroll>
+      <damroll>30</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1083482"/>
+    <affected one="278560" two="0" three="0" four="0"/>
+    <attack type="14"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="4" sides="15" add="20"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="28008" name="mayor aringill" special="NONE">
+    <description>He is a large, rotund fellow. He puffs as he walks... apparently he isn't
+used to exerting himself much. He mops his forehead with a red, engraved
+hankerchief as he walks.
+</description>
+    <shortdesc>the mayor of Aringill</shortdesc>
+    <longdesc>The mayor of Aringill smiles warmly at you.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="46" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="25" dsize="150" bonus="400"/>
+      <move ndize="10" dsize="20" bonus="100"/>
+      <ac>20</ac>
+      <gold>600</gold>
+      <bankgold>0</bankgold>
+      <exp>130</exp>
+      <hitroll>29</hitroll>
+      <damroll>26</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1048776"/>
+    <affected one="2441264" two="0" three="0" four="0"/>
+    <attack type="13"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="10" sides="15" add="29"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnEntry" argtype="STRING" argument="push">
+      <action number="SayTo" argtype="STRING" argument="greetings there! welcome to our fine town of aringill!"/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="28009" name="small boy" special="NONE">
+    <description>He is enthralled in whatever he is reading, although he doesn't appear
+to totally understand it all. This is obvious because of the puzzled
+look that is on his face.
+</description>
+    <shortdesc>a small boy</shortdesc>
+    <longdesc>A small boy is reading a book here.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="22" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="5" dsize="150" bonus="220"/>
+      <move ndize="10" dsize="20" bonus="100"/>
+      <ac>70</ac>
+      <gold>20</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>10</hitroll>
+      <damroll>13</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1048650"/>
+    <affected one="16384" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="6" sides="10" add="10"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="28010" name="Nelson weapon weaponmaster master shopkeeper" special="NONE">
+    <description>He is a large man covered with many scars. He wears a large sword
+at his side and looks like he knows how to use it.
+</description>
+    <shortdesc>Nelson, the weaponmaster</shortdesc>
+    <longdesc>Nelson, the weaponmaster, stands here grinning.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="200" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="30" dsize="1000" bonus="1000"/>
+      <move ndize="10" dsize="20" bonus="100"/>
+      <ac>-200</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>200</hitroll>
+      <damroll>50</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="10481738"/>
+    <affected one="536887296" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="30" sides="127" add="200"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="28011" name="female shopkeeper Sasha" special="NONE">
+    <description>She is dressed plainly, but is well-built and probably has seen more
+battle than some men. Men aren't the only ones who can fight well...
+</description>
+    <shortdesc>Sasha, the shopkeeper of the Golden Shield</shortdesc>
+    <longdesc>Sasha, the shopkeeper of the Golden Shield stands here.
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="90" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="0"/>
+      <move ndize="10" dsize="20" bonus="100"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="10477642"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="28012" name="Molly healer wisdom" special="NONE">
+    <description>You look into the face of a woman with soft, hazel eyes. Although it
+appears that she never could be mean, for one second you almost could
+swear that blue flecks of ice appear in them for a moment.
+It was probably just an illusion, wasn't it?
+</description>
+    <shortdesc>Molly, Aringill's local healer</shortdesc>
+    <longdesc>Molly, healer of Aringill, stands here.
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="200" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="30" dsize="1000" bonus="1000"/>
+      <move ndize="10" dsize="20" bonus="100"/>
+      <ac>-190</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="9232394"/>
+    <affected one="16384" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="0" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="28013" name="wandering man lost" special="NONE">
+    <description>He is dressed in rags and has a very strange look on his face.
+</description>
+    <shortdesc>a wandering guy who looks lost</shortdesc>
+    <longdesc>A wandering guy who looks lost has a blank look on his face.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="31" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="12" dsize="120" bonus="300"/>
+      <move ndize="10" dsize="20" bonus="100"/>
+      <ac>40</ac>
+      <gold>70</gold>
+      <bankgold>0</bankgold>
+      <exp>95</exp>
+      <hitroll>17</hitroll>
+      <damroll>17</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1048776"/>
+    <affected one="8405248" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="8" sides="10" add="17"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnMobEntry" argtype="STRING" argument="push">
+      <action number="Emote" argtype="STRING" argument="the wandering guy walks in with a blank expression on his face."/>
+    </mobprog>
+    <mobprog main="OnMobLeave" argtype="STRING" argument="push">
+      <action number="Emote" argtype="STRING" argument="the wandering guy walks out, not walking in any particular direction except its away from here."/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="28014" name="a wandering soldier" special="NONE">
+    <description> He wears the uniform of the Aringill City Watch and seems to be on patrol.
+</description>
+    <shortdesc>a wandering soldier</shortdesc>
+    <longdesc>A soldier is here patrolling the streets.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="65" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="15" dsize="130" bonus="370"/>
+      <move ndize="10" dsize="20" bonus="100"/>
+      <ac>50</ac>
+      <gold>50</gold>
+      <bankgold>0</bankgold>
+      <exp>120</exp>
+      <hitroll>22</hitroll>
+      <damroll>24</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1310792"/>
+    <affected one="537149440" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="7" sides="12" add="22"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="28015" name="stern woman" special="NONE">
+    <description>She is wearing a brown dress and the most prominent feature on her
+face is the large frown. Apparently, you are not welcome here.
+</description>
+    <shortdesc>the stern-looking woman</shortdesc>
+    <longdesc>A stern-looking woman frowns at you.
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="40" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="12" dsize="150" bonus="400"/>
+      <move ndize="10" dsize="20" bonus="100"/>
+      <ac>20</ac>
+      <gold>80</gold>
+      <bankgold>0</bankgold>
+      <exp>120</exp>
+      <hitroll>25</hitroll>
+      <damroll>25</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1204298"/>
+    <affected one="268517376" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="8" sides="15" add="25"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="28016" name="mean lady woman" special="NONE">
+    <description>It looks, err, unfinished.
+</description>
+    <shortdesc>a mean-looking, matronly woman</shortdesc>
+    <longdesc>A mean-looking, matronly woman stands in front of the door to the east.
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="50" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="15" dsize="0" bonus="500"/>
+      <move ndize="10" dsize="20" bonus="100"/>
+      <ac>30</ac>
+      <gold>50</gold>
+      <bankgold>0</bankgold>
+      <exp>110</exp>
+      <hitroll>28</hitroll>
+      <damroll>22</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="5662730"/>
+    <affected one="805584896" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="8" sides="18" add="28"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="28017" name="leader circle council woman lady" special="NONE">
+    <description>She looks up in astonishment as you enter and then places her hands firmly
+on her hips. 'Unless you have a very good reason to be in here, I suggest
+you leave,' she says.
+</description>
+    <shortdesc>the woman who leads the Executive Council of the Women's Circle</shortdesc>
+    <longdesc>The woman who leads the Executive Council of the Women's Circle looks up as you enter.
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="48" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="28" dsize="110" bonus="30"/>
+      <move ndize="10" dsize="20" bonus="100"/>
+      <ac>-10</ac>
+      <gold>250</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>26</hitroll>
+      <damroll>30</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="657482"/>
+    <affected one="537149440" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="14" sides="25" add="26"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnLeave" argtype="STRING" argument="push">
+      <action number="SayTo" argtype="STRING" argument="' that's right.. next time get an appointment before barging in here!"/>
+    </mobprog>
+    <mobprog main="OnEntry" argtype="STRING" argument="push">
+      <action number="SayTo" argtype="STRING" argument="' hey! this is private meeting! get out!"/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="28018" name="advisor mayor" special="NONE">
+    <description>He is pacing nervously back and forth. He looks up as you enter, but then
+returns to pacing and staring off into space.
+</description>
+    <shortdesc>one of the mayor's advisors</shortdesc>
+    <longdesc>One of the mayor's many advisors stands here.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="27" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="11" dsize="60" bonus="40"/>
+      <move ndize="10" dsize="20" bonus="100"/>
+      <ac>60</ac>
+      <gold>150</gold>
+      <bankgold>0</bankgold>
+      <exp>95</exp>
+      <hitroll>15</hitroll>
+      <damroll>17</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1048648"/>
+    <affected one="537214976" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="14" sides="12" add="15"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="28019" name="innkeeper clerk attendant bellhop" special="NONE">
+    <description>He looks like a normal guy. He asks if you need any help.
+</description>
+    <shortdesc>the clerk of the inn</shortdesc>
+    <longdesc>The inn's clerk stands behind a desk.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="1" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="30" dsize="1000" bonus="1000"/>
+      <move ndize="10" dsize="20" bonus="100"/>
+      <ac>-200</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="10281034"/>
+    <affected one="16384" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="28020" name="a tame horse" special="NONE">
+    <description>It is a coppery color and looks as if it could really fly if
+someone urged it on enough. Thick muscles knot the great animal's body.
+</description>
+    <shortdesc>a tame horse</shortdesc>
+    <longdesc>A tamed horse is walking around.
+</longdesc>
+    <title/>
+    <chardata gender="NEUTRAL" class="Adventurer" level="22" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="9" dsize="110" bonus="220"/>
+      <move ndize="10" dsize="20" bonus="100"/>
+      <ac>70</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>80</exp>
+      <hitroll>10</hitroll>
+      <damroll>12</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="200"/>
+    <affected one="16384" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="4" sides="8" add="10"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="28021" name="foreigner visitor traveller traveler" special="NONE">
+    <description>An androgenous personage is walking around here, looking lost and fairly
+confused.  They wear clothing that clearly isn't similar to that of those
+who actually live here, giving the impression that they're perhaps foreign
+in some way.    
+</description>
+    <shortdesc>a foreigner</shortdesc>
+    <longdesc>A foreigner is walking around here.
+</longdesc>
+    <title/>
+    <chardata gender="NEUTRAL" class="Adventurer" level="25" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="5" dsize="100" bonus="250"/>
+      <move ndize="10" dsize="20" bonus="100"/>
+      <ac>60</ac>
+      <gold>225</gold>
+      <bankgold>0</bankgold>
+      <exp>110</exp>
+      <hitroll>15</hitroll>
+      <damroll>13</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1048648"/>
+    <affected one="2899968" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="8" sides="11" add="15"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="28159" name="female, serving, girl, waitress, Morrideya, servant" special="NONE">
+    <description>
+Morrideya is of average height and has long brown hair woven into a bun
+high on her head with pearl tipped wooden sticks holding it in place.  
+Her eyes are hazel in colour and her skin is fair with a few freckles
+sprinkled across her nose.  A plain blue dress lies beneath a white apron
+which she keeps tied in a full bow at her back.  She isn't particularly
+good with figuring change and her memory isn't the best so orders often
+get mixed up.    
+</description>
+    <shortdesc>Morrideya, serving girl of the Four Seasons Tavern</shortdesc>
+    <longdesc>Morrideya, serving girl of the Four Seasons Tavern
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="0" weight="200" height="198"/>
+    <abilities>
+      <str>11</str>
+      <int>11</int>
+      <wis>11</wis>
+      <dex>11</dex>
+      <con>11</con>
+      <cha>11</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="1" bonus="1"/>
+      <move ndize="10" dsize="20" bonus="100"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="10"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+</mobiles>

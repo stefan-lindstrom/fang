@@ -1,0 +1,476 @@
+#3500
+Turin andrys ~
+Turin the Arms Merchant~
+Turin looks up from his work as you enter and welcomes you to his store.
+~
+Turin is an old Warder, missing one leg.  He spends his time cleaning
+and rebuilding old weaponry and armor, as well as creating wooden
+practice weapons for use by the students.  
+~
+24586 0 0 E
+70 0 0 847 30d20+40 10d7+20
+100 200
+8 8 1 705
+BareHandAttack: 6
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+E
+#3501
+Mandarb a'lan RWG~
+Mandarb~
+A beautiful black battle stallion is here.
+~
+Before you stands a tall and proud warhorse.  He is black
+as night, but carries a firey white passion in his eyes.  As
+you look at his hooves you realize that they mean buissiness.
+Shoed in power, thes bad boys would do a little more than just
+give you a broken rib or two.  His name is proudly displayed
+on his bridle- Mandarb.
+~
+10 262176 100 E
+60 -40 3 847 5d100+100 5d10+50
+0 0
+8 8 1 705
+BareHandAttack: 6
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Bash: 100
+Kick: 100
+E
+#3502
+instructor warder~
+an ill-tempered instructor~
+An illtempered instructor stalks off to find his students
+~
+A worn veteran with many battle scars faces you.
+~
+90 0 0 E
+120 -110 -10 847 30d500+0 6d60+50
+250 125
+8 8 1 705
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Bash: 100
+Trip: 100
+Dirtkick: 100
+Kick: 100
+Disarm: 100
+E
+#3503
+deer moving woods ~
+the deer~
+A deer is here, moving through the woods.
+~
+A wild woodland deer, which looks at you oddly
+as you walk by.
+~
+65544 263200 0 E
+35 -5 6 847 20d150+350 5d10+25
+0 110
+8 8 0 705
+BareHandAttack: 9
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+E
+#3504
+eagle mother~
+the mother eagle~
+A large eagle is here, watching over its eggs.
+~
+The eagle is a quite a fine example of this
+noble type of bird, but it watches you closely
+if you make a move twords it's eggs.
+~
+327694 33824 0 E
+40 -10 5 847 25d150+250 10d10+30
+0 125
+8 8 2 705
+BareHandAttack: 8
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+E
+#3505
+snake tunnel~
+the tunnel snake~
+A large snake is here, laying in the dust.
+~
+The snake has grey scales, making it hard to see
+in the dust of the tunnel.
+~
+327742 820264 0 E
+45 -10 6 847 25d200+250 15d10+30
+0 125
+8 8 0 705
+BareHandAttack: 4
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+E
+#3506
+warder gaidin guard joshel~
+a Warder~
+A foreboding warder stands here seemingly at ease yet alert
+~
+undefined~
+2088986 2096 0 E
+200 -180 20 847 30d100+30000 30d127+50
+0 15000
+8 8 1 705
+BareHandAttack: 3
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Bash: 100
+Trip: 100
+Dirtkick: 100
+Kick: 100
+Disarm: 100
+Stun: 100
+P
+OnEntry & MGrankMore "trainee"
+Action "nod"
+SayTo "Greetings Gaidin."
+Action "unlock door south"
+Action "open door south"
+End
+OnEntry & ! MGrankMore "trainee"
+SayTo "You do not belong here."
+Force "north"
+End
+Q
+E
+#3508
+warder guard salidar Joshine~
+Joshine, the Salidar Guard~
+A man stands here plainly visible by the entrance as if guarding it.
+~
+You see an impressive Warder Guard standing here, big isn't he.
+~
+2089034 17631280 0 E
+199 -180 -20 847 30d1000+3000 30d100+50
+0 0
+8 8 1 0
+BareHandAttack: 3
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Bash: 100
+Stun: 100
+P
+OnTell "sallie dara" & Guild "band"
+Emote "Joshine smiles as he drops his arm and nods at you, 'You may pass' he still watches you warily as you pass."
+Force "north"
+End
+OnTell "sallie dara" & ! Guild "Rebel Aes Sedai" & ! Guild "Rebel Warder" & ! Guild "Band of the Red Hand"
+Emote "Joshine looks you over and shakes his head, 'you do not look like you belong here'"
+Action "open door d"
+Force "down"
+Action "close door d"
+Action "lock door d"
+Pause 5
+Action "shout A stranger has attempted to enter Salidar"
+End
+OnAction "north" & ! Guild "rebel warder" & ! Guild "rebel aes sedai" & ! Guild "band of the red hand"
+Stop
+Emote "Joshine unsheathes his sword quickly and holds out his arm, blocking your passage, 'You may not enter without authorization'"
+End
+OnTell "sallie dara" & Guild "rebel"
+Emote "Joshine smiles as he drops his arm and nods at you, 'You may pass'"
+Force "north"
+End
+Q
+E
+#3550
+student young RWG~
+a young student~
+A young student in a hurry to get to a class stands here.
+~
+This boy is scrambling to get to a class before he is late.  
+he is trying not to drop his precious sparring equipment
+as he rushes past you and almost trips.
+~
+1048712 0 0 E
+40 -10 2 847 10d100+40 5d8+30
+10 125
+8 8 1 705
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Dirtkick: 100
+Kick: 100
+E
+#3567
+jwine~
+an empty bottle of wine~
+An empty bottle of wine lies on the floor by the liquor cabinet.
+~
+This was once a full bottle of Andoran red wine.
+~
+10 0 0 E
+0 20 10 847 1d100+0 1d1+0
+0 0
+8 8 0 705
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+E
+#3569
+rebel chef master France~
+the Rebel Master Chef~
+The Rebel Master Chef stands here ready to serve you.
+~
+You see a tall man before you he is a round and seems very jolly. He
+is wearing a white apron and a large white chef's hat on his head. He
+carries a laddle in his hand and looks over his food with pride standing
+ready to serve you.
+~
+5234698 0 0 E
+200 -180 10 847 30d0+0 30d127+50
+0 0
+8 8 1 705
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Bash: 100
+Trip: 100
+Dirtkick: 100
+Kick: 100
+Disarm: 100
+Stun: 100
+E
+#3590
+boardroom rebel_warder guardmob~
+The Boardroom Mob~
+The Boardroom Mob is here
+~
+\c00~
+5105755 65586 0 E
+200 -180 -20 847 30d1000+30000 30d127+50
+0 0
+8 8 1 0
+BareHandAttack: 14
+Bash: 100
+Trip: 100
+Dirtkick: 100
+Kick: 100
+Disarm: 100
+Stun: 100
+P
+OnSay "board_room" & Wearing 3506
+ActionTo "teleport 3573"
+End
+Q
+E
+#3591
+Nissi rebel armor~
+Nissi, the Rebel armourer~
+Nissi, the Rebel armourer stands here ready to serve.
+~
+Nissi is retired warder. He is a tall man with several scars on his face which
+indicates his long and loyal service to his Sedai. Nissi is a friendly and
+helpful person which suites him for his curreent job.
+~
+1040394 65536 0 E
+200 -180 10 847 30d1000+0 30d127+50
+0 0
+8 8 1 705
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Bash: 100
+Trip: 100
+Dirtkick: 100
+Kick: 100
+Disarm: 100
+Stun: 100
+E
+#3592
+Kay weapon master weaponsmaster~
+Kay, the rebels weaponsmaster~
+Kay the weaponsmaster stands here
+~
+Kay is a muscular man he has a large build which comes from a 
+lifetime of hard work in front of a furnace, forging weapons. He has
+several old burns and scars on his hands which were probably gained
+from his early days as an apprentice weaponsmith, yet they are 
+hardly noticible because of his dark complexion. Kay has a friendly
+smile and despite his gruff apperance seems like a gentle man.
+~
+1040394 65536 0 E
+200 -180 10 847 30d1000+0 30d127+50
+0 0
+8 8 1 705
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Bash: 100
+Trip: 100
+Dirtkick: 100
+Kick: 100
+Disarm: 100
+Stun: 100
+E
+#3593
+Bank Balan money salidar banker~
+Balan, Salidar's banker.~
+Balan, salidar's banker is standing here ready to make a transaction.
+~
+You seen a tall, lanky man before you. He is wearing a black suit with a
+red bow tie. He is a short and thin man, he wears glasses and looks very
+intelligent. He has a friendly smile and has a pleasant manner about him
+and you feel confident in giving him your money.
+~
+11 65536 0 E
+200 -180 20 847 30d1000+0 30d127+50
+0 0
+8 8 1 705
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Bash: 100
+Trip: 100
+Dirtkick: 100
+Kick: 100
+Disarm: 100
+Stun: 100
+E
+#3597
+undefined~
+the unfinished mob~
+
+~
+
+~
+8 0 0 E
+0 20 10 847 1d100+0 1d1+0
+0 0
+8 8 0 705
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+E
+#3598
+horse mount RWG jo~
+a large warhorse~
+A large Warhorse crops grass here, eyeing you carefully.
+~
+This heavy white steed is trained to attack!
+~
+82202 32 0 E
+30 -30 7 847 4d6+20 2d6+50
+0 25
+8 8 1 705
+BareHandAttack: 6
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+E
+#3599
+Sedai Neolin~
+Neolin~
+Neolin is standing here.
+~
+The sedai seems lost in her book, although she occasionally
+says 'Hmmm...'
+~
+254106 0 1000 E
+100 -25 0 847 30d45+400 20d15+45
+5000 600
+8 8 2 705
+BareHandAttack: 12
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+E
+#3601
+Warder rwg helpful guild equipment.~
+a tall dark warder~
+A tall stoic warder stands here ready to equip you.
+~
+You see a tall man before you, his face scarred obviously
+from long hard years in battle.  He stands here motionless
+waiting for you to speak.
+~
+1042458 67632 100 E
+199 -180 20 847 1d100+30000 30d127+50
+7000 0
+8 8 1 705
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Bash: 100
+Trip: 100
+Dirtkick: 100
+Kick: 100
+Disarm: 100
+Stun: 100
+P
+OnAttack & Level "1 200"
+ActionTo "kill"
+End
+OnEntry & Guild "rebel warder" & MGrankLess "(null)"
+SayTo "You do not belong here trainee!"
+Force "south"
+End
+Q
+E
+$

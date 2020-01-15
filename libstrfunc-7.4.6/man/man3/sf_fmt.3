@@ -1,0 +1,292 @@
+.Dd October 1, 2000
+.Dt sf_fmt 3
+.Os
+.Sh NAME
+.Nm format_init ,
+.Nm format_free ,
+.Nm format_metarule ,
+.Nm formatf ,
+.Nm format_lastresult ,
+.Nm format_lastsize ,
+.Nm format_detach
+.Nd template formatting functions.
+.Sh SYNOPSIS
+.Fd #include <strfunc.h>
+.Pp
+.Ft fmt_base *
+.Fn format_init
+.Ft void
+.Fn format_free "fmt_base *base"
+.Ft int
+.Fn format_metarule "fmt_base *base" "char leftBrace" "char rightBrace" "char **(*function)(char *found, void *optKeyPassed)"
+.Ft char *
+.Fn formatf "fmt_base *base" "char *template" "void *optKeyToPass"
+.Ft char *
+.Fn format_lastresult "fmt_base *base" "size_t *optSize"
+.Ft size_t
+.Fn format_lastsize "fmt_base *base"
+.Ft char *
+.Fn format_detach "fmt_base *base" "size_t *optReturnSize"
+.Sh DESCRIPTION
+It is widely used for programs to read a template and display the
+data according to it.
+.Pp
+Those functions forms a powerful solution to work with a kind of "active"
+templates. The term "active" means that some operations, like a test of
+existence of a keyword, or equality tests, can be placed directly to the
+template and no special handling needed in an application to support it.
+.Xr strfunc 3
+library will automagically do the dirty work for you.
+.Pp
+The internal language of defining the template is powerful yet simple.
+Before we run into detailed explanation, let's talk about programming.
+.Pp
+First, programmer needed to initialize the formatting engine by
+defining the formatting rules. Formatting rules are stored inside the
+special structure
+.Ar fmt_base .
+.Fn format_init
+creates an empty structure and returns the pointer to it. One may define
+a numerous formatting bases and randomly use them. Formatting base
+may be freed using
+.Fn format_free "fmt_base *" .
+Please note that
+.Fn format_init
+will never return the NULL pointer.
+.Pp
+Second, there is a need to fill this empty structure with some formatting
+rules using the
+.Fn format_metarule
+function. Formatting rules are defined by specifiyng a braces and
+the function which will handle the data inside the braces.
+.Pp
+Say, we have a template "abc${def}ghi". Programmer should call the
+.Fn format_metarule "fb" "'{'" "'}'" "handler" ,
+where
+.Ar fb
+is the pointer to the formatting base returned by
+.Fn format_init .
+If two braces are equal, the result is undefined.
+.Ar handler
+is the function which should be defined as
+.Pp
+.Ft char **
+.Fn handler "char *found" "void *optKeyPassed" .
+.Pp
+It is possible to define a number of such a rules for the single
+.Ar fmt_base .
+The handler function should return the pointer to the internal
+.Ar char **
+data when it is possible, and NULL pointer otherwise. Please NOTE that this pointer is never modified or freed and probably
+it should be the semi-static structure inside the handler function.
+.Pp
+When you're finished to fill the
+.Ar fmt_base
+with the rules, the function
+.Fn formatf
+can be used multiple times to convert the specified template to the
+destination text. The optional
+.Ar optKeyToPass
+argument may be specified to pass some additional data, if necessary.
+.Pp
+.Fn formatf
+will place the output to the buffer located in the
+.Ar fmt_base
+and return a pointer to it. The pointer will never be NULL, and is not
+to be freed. If you need this buffer to be completely yours and do not want to
+.Xr strdup 3
+it, there is a function called
+.Fn format_detach "fmt_base *" "size_t *optReturnSize"
+to achive this.
+.Pp
+Two other functions,
+.Ft char *
+.Fn format_lastresult "fmt_base *" "size_t *optSize"
+and
+.Ft size_t
+.Fn format_lastsize "fmt_base *" ,
+are to be used to obtain the pointer to the buffer and its size without
+invoking
+.Fn formatf
+once more.
+.Sh ACTIVE TEMPLATE DEFINITION
+If a template is not containing the special tokens it will considered as
+plain text and returned unmodified.
+.Pp
+Special token and the whole template are defined in the following BNF:
+.Bd -literal -offset indent
+<template>  :=  *(*<string> *<token> *<string>)
+
+<token>     :=  <simple> | <join> | <index> | <choise> | <equality>
+
+<simple>    :=  '$' <LB> <param> <RB>
+
+<join>      :=  '$' <LB> <param> '+' <delimiter> <RB>
+
+<index>     :=  '$' <LB> <param> '[' <number> ']' <RB>
+
+<choise>    :=  '$' <LB> <param> '?' <iftrue> ':' <iffalse> <RB>
+
+<equality>  :=  '$' <LB> <param> { "==" | "!=" } *<string> '?' <iftrue> ':' <iffalse> <RB>
+
+<LB>        :=  <the second argument of format_metarule()>
+
+<RB>        :=  <the third argument of format_metarule()>
+
+<param>     := <string>
+
+<delimiter> := <string>
+
+<iftrue>    := <template>
+
+<iffalse>   := <template>
+
+<string>    :=  *<CHAR>
+
+<number>    :=  1*<character from '0' to '9'>
+.Ed
+.Pp
+The word
+.Ar param
+defined above, will be passed as the first argument to the handler function.
+.Sh ACTIVE TEMPLATE EXAMPLE
+The following is an example of the typical template. It may be placed to
+a file, then read and passed to
+.Fn formatf .
+It is also can be defined as the argument's value within the configuration
+file read by
+.Xr cfgread 3 .
+.Bd -literal -offset indent
+Login: ${login[0]}
+Password: ${password}
+Username: ${name?${name}:Unknown name}
+Comments: ${comment+, }
+$<status==Busy?User is busy>
+.Ed
+.Pp
+You can see the index token "${login[0]}", the simple token "${password}", the join token right after the "Comments: ", and equality token is the whole last string. Please note that the last token is formed using the angle braces: you should specify an additional handler function to handle this case. Refer to the
+.Ar PROGRAMMING EXAMPLE
+section.
+.Pp
+.Nm Simple
+tokens are used to display the data returned by the
+.Fn handler
+function almost without the modification. One exception from this rule exists:
+if handler return multiple values they are joined together with
+the string ", " as the separator.
+.Pp
+.Nm Join
+tokens are used to join the multiple values. As mentioned above,
+the
+.Ar handler
+function return the string array. In this case all values will be joined
+together separated by the specified delimiter. For this primer the delimiter
+is ", " (comma followed by single space).
+.Pp
+.Nm Index
+token used to get the specified value from the string array returned by
+.Ar handler .
+Values are counted from zero, so zero index will represent the first available
+string.
+.Pp
+.Nm Choise
+token used to give the dynamic behavior to the templates. The <iftrue>
+section will be placed to the output buffer if the
+.Ar handler
+return the valid non-NULL pointer to the non-empty array. This form
+can be used to rule the output if the expected parameter is not present
+or empty.
+.Pp
+.Nm Equality
+token used to test the array returned by the handler against the string
+value. The <iftrue> section will be placed to the output buffer if this string
+match at least one of the array's elements. All comparisons are
+canse-insensitive.
+.Sh PROGRAMMING EXAMPLE
+It is interesting how to implement the things to parse the above
+template example.
+.Bd -literal
+#include <strfunc.h>
+
+char **handler1(char *found, void *optKeyPassed);
+char **handler2(char *found, void *optKeyPassed);
+
+int
+main() {
+	fmt_base *fb;
+	char *template = "Login: ${login[0]}\enPassword: ${password}\enUsername: ${name?${name}:Unknown name}\enComments: ${comment+, }\en$<status==Busy?User is busy>\en";
+	char *s;
+
+	/* Create empty structure */
+	fb = format_init();
+
+	/* Add one formatting rule */
+	format_metarule(fb, '{', '}', handler1);
+
+	/* Add another formatting rule to parse angle braces */
+	format_metarule(fb, '<', '>', handler1);
+
+	/* Format the template */
+	s = formatf(fb, template, NULL);
+
+	/* Print out the result */
+	printf("%s", s);
+
+	/* Free the formatting structure */
+	format_free(fb);
+
+	return 0;
+};
+
+char **
+handler1(char *found, void *optKeyPassed) {
+	static char *arr[3] = { NULL, NULL, NULL };
+
+	(void)optKeyPassed;
+
+	arr[1] = NULL;
+
+	if(strcasecmp(found, "login") == 0) {
+		arr[0] = "john";
+		return NULL;
+	};
+
+	if(strcasecmp(found, "name") == 0) {
+		arr[0] = "John Smith";
+		return NULL;
+	};
+
+	if(strcasecmp(found, "password") == 0) {
+		arr[0] = "123";
+		return NULL;
+	};
+
+	if(strcasecmp(found, "comment") == 0) {
+		arr[0] = "Comment value #1";
+		arr[1] = "Comment value #2";
+		return NULL;
+	};
+
+	return NULL;
+};
+
+char **
+handler2(char *found, void *optKeyPassed) {
+	static char *arr[] = { NULL, NULL };
+
+	(void)optKeyPassed;
+
+	if(strcasecmp(found, status) == 0) {
+		arr[0] = "busy";
+		return arr;
+	};
+
+	return NULL;
+};
+.Ed
+.Pp
+.Sh SEE ALSO
+.Xr strfunc 3 ,
+.Xr cfgread 3 .
+.Sh AUTHORS
+.An Lev Walkin <vlm@spelio.net.ru>

@@ -1,0 +1,772 @@
+#15200
+cook chef large woman shopkeeper tward~
+the large cook for the Warders~
+A large woman with a ready smile is ready to feed you.
+~
+The cook apparently really enjoys her own cooking, to judge by her size.
+~
+10 0 0 E
+100 20 -10 611 1d100+0 1d1+0
+0 0
+8 8 2
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+E
+#15201
+Tower Guard~
+a stony faced man with an unblinking gaze~
+A stony faced Tower Guard stands vigil over the Gate
+~
+
+~
+6222 67895328 0 E
+90 -70 -4 611 30d150+5000 10d14+50
+200 100
+8 8 1
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Bash: 100
+Trip: 100
+Dirtkick: 100
+Kick: 100
+Disarm: 100
+P
+OnAction "w" & ! Sex "male" & ! Carrying 5023
+SayTo "show proper identification before entering, please."
+End
+OnAttack
+Say "brother!  help me defend the gate!"
+End
+OnAction "kill"
+ActionTo "kill"
+End
+Q
+E
+#15202
+nothing at all~
+nothing at all~
+nothing at all
+~
+nothing at all
+~
+1048584 0 0 E
+1 19 10 611 1d1+1 1d1+1
+1 1
+8 8 1
+BareHandAttack: 7
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+E
+#15203
+kitchen helper waitress~
+a cook's helper~
+a young lady helps the cook with her job
+~
+an attractive young woman, probably the daughter of
+one of the local townsmen, eager to attract the eye of
+someone who might be able to help her gain social
+standing.
+~
+10 0 0 E
+0 20 10 611 1d100+0 1d1+0
+0 0
+8 8 2
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+E
+#15204
+tailor clothier shopkeeper~
+the clothier~
+The Warder's Clothier stands here
+~
+a thin man with a skillful needle, the tailor produces clothing for the
+Warders of the White Tower.
+~
+26 48 0 E
+0 20 10 611 1d100+0 1d1+0
+0 0
+8 8 1
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+E
+#15205
+training warder jis~
+Jis~
+Jase
+~
+Jase is an Instructor
+~
+1105930 0 0 E
+1 -30 1 611 6d100+0 7d12+50
+0 1
+8 8 1
+BareHandAttack: 3
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnEntry & Guild "tower warders" & Wearing 15256
+SayTo "greetings, trainee.  you must seek another teacher."
+End
+OnEntry & Guild "tower warders" & Wearing 15257
+SayTo "greetings, tested.  you must seek another teacher."
+End
+OnEntry & Guild "tower warders" & Wearing 15258
+SayTo "greetings, brother.  you should seek out another teacher."
+End
+OnEntry & Guild "tower warders" & Wearing 15259
+Action "bow"
+Pause 2
+Say "greetings, gaidin.  another is more suited to teach you."
+End
+OnEntry & Guild "tower warders" & Wearing 15260
+Emote "jase bows very deeply."
+SayTo "it is an honor, veteran.  there is nothing i could teach you."
+End
+OnSayTo "yes" & Guild "tower warders" & Wearing 15255
+ActionTo "nod"
+SayTo "i teach these forms:"
+SayTo "heron wading in the rushes"
+SayTo "cat on hot sand"
+SayTo "river undercuts the bank"
+SayTo "kingfisher takes a silverback"
+SayTo "moon over water"
+SayTo "unfolding the fan"
+SayTo "which of these would you like to learn?"
+End
+OnSayTo "heron wading" & Guild "tower warders" & Wearing 15255
+SayTo "watch closely as i demonstrate."
+Emote "jase stands carefully balanced on one leg, raising the other in a manner reminiscent of"
+Emote "a wading heron, and extends his sword in front of him, parallel to the ground, forming"
+Emote "a square with his bent arm."
+Emote "jase explodes almost instantaneously into a downward slashing attack, lowering his foot"
+Emote "at the same instant.  when his toes contact the ground, the slash ends, and he returns"
+Emote "to the starting position.  -heron wading in the rushes-"
+End
+OnSayTo "cat on hot sand" & Guild "tower warders" & Wearing 15255
+SayTo "watch closely as i demonstrate."
+Emote "jase abruptly leaps backwards several feet, parrying as he lands. -cat on hot sand-"
+End
+OnSayTo "river undercuts" & Guild "tower warders" & Wearing 15255
+Emote "jase drops swiftly to one knee, drawing his weapon across in a deadly horizontal arc! -river undercuts the bank-"
+End
+OnSayTo "kingfisher" & Guild "tower warders" & Wearing 15255
+SayTo "watch closely as i demonstrate."
+Emote "jase abruptly snaps his wrists down, making a lightning slash at the outside of"
+Emote "his opponent's knee.  -kingfisher takes a silverback-"
+End
+OnSayTo "moon over the water" & Guild "tower warders" & Wearing 15255
+SayTo "watch closely as i demonstrate."
+Emote "jase makes an arc before him with his blade, the point directed skyward at all"
+Emote "times, as if blocking attacks from the front.  -moon over the water-"
+End
+OnSayTo "unfolding" & Guild "tower warders" & Wearing 15255
+Emote "jase raises his weapon before him, the tip of his blade at about 11 o'clock on"
+Emote "an imaginary clock face, then twists his wrist, whipping the blade clockwise"
+Emote "in a large vertical arc.  -unfolding the fan-"
+End
+Q
+E
+#15206
+old grizzled warder~
+You could probably learn a few things from him.~
+a grizzled old Warder stands here, ready to offer advice.
+~
+This grizzled old warrior has seen a few battles.
+~
+1050779 0 0 E
+1 -30 -10 611 10d100+500 10d100+50
+0 1
+8 8 1
+BareHandAttack: 11
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Bash: 100
+Trip: 100
+Dirtkick: 100
+Kick: 100
+Disarm: 100
+Stun: 100
+E
+#15207
+old man medic~
+This old man prescribes a regimen of diet and exercise~
+This old man is the medic on duty.
+~
+You could learn a thing or two from him.
+~
+1091723 16 0 E
+0 20 10 611 1d100+30000 1d1+0
+0 0
+6 6 1
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+E
+#15208
+scribe postmaster~
+the Scribe~
+The Scribe waits here to handle your mail.
+~
+The Scribe waits here to handle your mail.
+~
+2064394 0 0 E
+0 20 10 611 1d100+0 1d1+0
+0 0
+8 8 2
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+E
+#15209
+training warder 20 gil~
+Gil~
+Gil
+~
+Gil is an Instructor
+~
+1105930 0 0 E
+1 -30 1 611 6d100+0 7d12+50
+0 1
+8 8 1
+BareHandAttack: 3
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnEntry & Guild "tower warders" & Wearing 15255
+SayTo "i see you do be a student.  you do not yet be ready for me."
+End
+OnEntry & Guild "tower warders" & Wearing 15256
+SayTo "greetings, trainee.  do you be seeking instruction?"
+End
+OnEntry & Guild "tower warders" & Wearing 15257
+SayTo "i see you do be of the tested rank.  you must seek another teacher."
+End
+OnEntry & Guild "tower warders" & Wearing 15258
+SayTo "greetings, brother.  i have nothing to teach you."
+End
+OnEntry & Guild "tower warders" & Wearing 15259
+Action "bow"
+SayTo "greetings, gaidin.  your knowledge already exceeds mine."
+End
+OnEntry & Guild "tower warders" & Wearing 15260
+Emote "gil bows very deeply."
+SayTo "it is an honor, veteran.  there do be another who must teach you."
+End
+OnSayTo "yes" & Guild "tower warders" & Wearing 15256
+ActionTo "nod"
+SayTo "i do be teaching these forms:"
+SayTo "boar rushes down the mountain"
+SayTo "cat dances on the wall"
+SayTo "the bee stings"
+SayTo "the bell rings"
+SayTo "the grapevine twines"
+SayTo "flame before the whirlwind"
+SayTo "bundling straw"
+SayTo "waterfall on the mountainside"
+SayTo "parting the silk"
+SayTo "the sun rises"
+SayTo "which of these would you be learning?"
+End
+OnSayTo "boar rushes" & Guild "tower warders" & Wearing 15256
+SayTo "please do be watching my demonstration:"
+Emote "gil suddenly explodes into a pressing attack, his blade slashing, whirling and"
+Emote "stabbing at lightning speed!  -boar rushes down the mountain"
+End
+OnSayTo "cat dances" & Guild "tower warders" & Wearing 15256
+SayTo "please do be watching my demonstration:"
+Emote "gil begins to move backward in a straight line, his feet in line with one another,"
+Emote "while parrying quickly and accurately, with just enough force to stop the blows."
+Emote "{cat dances on the wall}"
+End
+OnSayTo "the bee stings" & Guild "tower warders" & Wearing 15256
+SayTo "please do be watching my demonstration."
+Emote "gil abruptly twines his weapon with yours, sliding his blade down and pricking your"
+Emote "thumb sharply with the tip of his weapon.  -the bee stings-"
+End
+OnSayTo "the bell rings" & Guild "tower warders" & Wearing 15256
+SayTo "please do be watching my demonstration."
+Emote "gil abruptly swings his weapon against yours with a ringing two handed blow!"
+Emote "{the bell rings}"
+End
+OnSayTo "the grapevine twines" & Guild "tower warders" & Wearing 15256
+SayTo "please do be watching my demonstration."
+Emote "gil abruptly twines his weapon with yours, stepping forward and twisting."
+Emote "{the grapevine twines}"
+End
+OnSayTo "flame before the whirlwind" & Guild "tower warders" & Wearing 15256
+SayTo "please do be watching my demonstration."
+Emote "gil sheathes his weapon."
+Emote "gil abruptly draws his weapon, turning the draw into a long slash as he"
+Emote "does so.  -flame before the whirlwind-"
+End
+OnSayTo "bundling straw" & Guild "tower warders" & Wearing 15256
+SayTo "please do be watching my demonstration."
+Emote "gil holds his weapon before him, point skyward, then blocks by moving it"
+Emote "to the left, followed by a blistering diagonal downward slash to the right."
+SayTo "-bundling straw-"
+End
+OnSayTo "waterfall" & Guild "tower warders" & Wearing 15256
+SayTo "please do be watching my demonstration."
+Emote "gil turns slightly, raising his weapon above his head and laying it against"
+Emote "his back, flat against his skin, protecting against a rearward slash."
+SayTo "-waterfall on the mountainside-"
+End
+OnSayTo "parting the silk" & Guild "tower warders" & Wearing 15256
+SayTo "please do be watching my demonstration."
+Emote "gil makes a blistering neck level slash, followed immediately by a strong"
+Emote "downward diagonal slash in the opposite direction.  -parting the silk-"
+End
+OnSayTo "the sun rises" & Guild "tower warders" & Wearing 15256
+SayTo "do be watching my demonstration."
+Emote "gil abruptly brings his weapon up in a rising slash, the very tip raised to cut into"
+Emote "an opponent's chest.  -the sun rises-"
+End
+Q
+E
+#15210
+training warder 20 Harve~
+Harve~
+Harve
+~
+Harve is an Instructor
+~
+1105930 0 0 E
+1 -30 1 611 6d100+0 7d12+50
+0 1
+8 8 1
+BareHandAttack: 3
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnEntry & Guild "tower warders" & Wearing 15255
+SayTo "i see you're a student.  you are not ready for me yet."
+End
+OnEntry & Guild "tower warders" & Wearing 15256
+SayTo "greetings, trainee.  you are not yet ready for my teachings."
+End
+OnEntry & Guild "tower warders" & Wearing 15257
+SayTo "i see you're of the tested rank...  would you be seeking instruction?"
+End
+OnEntry & Guild "tower warders" & Wearing 15258
+SayTo "greetings, brother.  you must seek another, for teaching."
+End
+OnEntry & Guild "tower warders" & Wearing 15259
+Action "bow"
+SayTo "greetings, gaidin.  i have nothing to teach you."
+End
+OnEntry & Guild "tower warders" & Wearing 15260
+Emote "harve bows very deeply."
+SayTo "it is an honor, veteran.  your knowledge far surpasses my own."
+End
+OnSayTo "yes" & Guild "tower warders" & Wearing 15257
+SayTo "i teach these forms:"
+SayTo "wood grouse dances"
+SayTo "ribbon in the air"
+SayTo "lizard in the thornbush"
+SayTo "courtier taps his fan"
+SayTo "low wind rising"
+SayTo "water flows downhill"
+SayTo "swallow rides the air"
+SayTo "which of these would you like to learn?"
+End
+OnSayTo "wood" & Guild "tower warders" & Wearing 15257
+SayTo "please be watching my demonstration."
+Emote "harve abruptly sidesteps to his right as if dodging an attack, then thrusts with his"
+Emote "blade as his foot lands.  immediately following the thrust, he steps forward with his"
+Emote "left foot and thrusts again as his foot lands.  -wood grouse dances-"
+End
+OnSayTo "ribbon" & Guild "tower warders" & Wearing 15257
+SayTo "please be watching my demonstration."
+Emote "harve makes a vertical parry to his right, then immediately makes a strong parry to"
+Emote "his left, turning his body on his rear foot to follow the blade.  -ribbon in the air"
+End
+OnSayTo "lizard" & Guild "tower warders" & Wearing 15257
+SayTo "please be watching my demonstration."
+Emote "harve makes a lightning fast stab at his opponent's throat!"
+Emote "harve quickly steps back and delivers a diagonal slash across the torso."
+SayTo "-lizard in the thornbush-"
+End
+OnSayTo "courtier" & Guild "tower warders" & Wearing 15257
+SayTo "please be watching my demonstration."
+SayTo "please be watching my demonstration."
+Emote "harve holds his blade up in a vertical parry, then quickly snaps it down to strike at"
+Emote "the inside of his opponent's weapon arm.  -courtier taps his fan-"
+End
+OnSayTo "low" & Guild "tower warders" & Wearing 15257
+SayTo "please be watching my demonstration."
+Emote "harve sits."
+Emote "harve draws his weapon while still in a sitting position, slashing upward"
+Emote "at his opponent's throat, then downward across the chest in a lightning quick reversal"
+Emote "of his weapon.  -low wind rising-"
+End
+OnSayTo "water" & Guild "tower warders" & Wearing 15257
+SayTo "please be watching my demonstration."
+Emote "harve abruptly steps to one side, falling into a crouch, while his weapon"
+Emote "thrusts at your groin!  -water flows downhill-"
+End
+OnSayTo "swallow" & Guild "tower warders" & Wearing 15257
+SayTo "please be watching my demonstration."
+Emote "harve steps quickly backward, dropping the point of his weapon toward the ground"
+Emote "to block a low attack.  -swallow rides the air-"
+End
+Q
+E
+#15211
+training warder 20 Ston~
+Ston~
+Ston
+~
+Ston is an Instructor
+~
+1105930 0 0 E
+1 -30 1 611 6d100+0 7d12+50
+0 1
+8 8 1
+BareHandAttack: 3
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnEntry & Guild "tower warders" & Wearing 15255
+SayTo "i see you're a student.  find a different teacher."
+End
+OnEntry & Guild "tower warders" & Wearing 15256
+SayTo "greetings, trainee.  you must seek teaching elsewhere."
+End
+OnEntry & Guild "tower warders" & Wearing 15257
+SayTo "i see you're of the tested rank.  you aren't ready for my teachings."
+End
+OnEntry & Guild "tower warders" & Wearing 15258
+SayTo "greetings, brother.  would you be seeking to increase your knowledge?"
+End
+OnEntry & Guild "tower warders" & Wearing 15259
+Action "bow"
+SayTo "greetings, gaidin.  i have nothing more to teach you."
+End
+OnEntry & Guild "tower warders" & Wearing 15260
+Emote "ston bows very deeply."
+SayTo "it is an honor, veteran.  another must aid your quest for knowledge."
+End
+OnSayTo "yes" & Guild "tower warders" & Wearing 15258
+SayTo "i teach the following forms:"
+SayTo "heron spreads his wings"
+SayTo "stones falling down the mountain"
+SayTo "the swallow takes flight"
+End
+OnSayTo "heron" & Guild "tower warders" & Wearing 15258
+SayTo "watch my demonstration."
+Emote "ston turns quickly and raises both arms above his head, drawing the sword along behind"
+Emote "in a sweeping cut from groin to throat, the blade pointed downwards. -heron spreads his wings-"
+End
+OnSayTo "stones" & Guild "tower warders" & Wearing 15258
+SayTo "watch my demonstration."
+Emote "ston makes a fast backhand slash at his opponent's temple, then follows through on the"
+Emote "blow, bringing his weapon around in a tight loop to slash diagonally down across the"
+Emote "base of his opponent's neck.  -stones falling down the mountain-"
+End
+OnSayTo "swallow" & Guild "tower warders" & Wearing 15258
+SayTo "watch my demonstration:"
+Emote "ston parries with his blade held point upward, turning his body away from the"
+Emote "blow, then follows with a rising backhand slash at his opponent's head."
+SayTo "-the swallow takes flight-"
+End
+Q
+E
+#15212
+training warder 20 Jack~
+Jack~
+Jack
+~
+Jack is an Instructor
+~
+1105930 0 0 E
+1 -30 1 611 6d100+0 7d12+50
+0 1
+8 8 1
+BareHandAttack: 3
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnEntry & Guild "tower warders" & Wearing 15255
+SayTo "hrmph.  a student.  off with you."
+End
+OnEntry & Guild "tower warders" & Wearing 15256
+SayTo "hmm. a trainee.  begone."
+End
+OnEntry & Guild "tower warders" & Wearing 15257
+SayTo "aha, you are of the tested rank...  you're not ready."
+End
+OnEntry & Guild "tower warders" & Wearing 15258
+SayTo "greetings, brother.  soon you will be ready for my teaching."
+End
+OnEntry & Guild "tower warders" & Wearing 15259
+Action "bow"
+SayTo "greetings, gaidin.  would you be seeking to increase your knowledge?"
+End
+OnEntry & Guild "tower warders" & Wearing 15260
+Emote "jack bows very deeply."
+SayTo "it is an honor, veteran.  i hope to equal your knowledge one day."
+End
+OnSayTo "yes" & Guild "tower warders" & Wearing 15259
+SayTo "i teach the following forms:"
+SayTo "thistledown floats on the whirlwind"
+SayTo "lightning of the three prongs"
+SayTo "leaf on the breeze"
+SayTo "watered silk"
+SayTo "falling leaf"
+SayTo "striking the spark"
+SayTo "dove takes flight"
+SayTo "lion on the hill"
+SayTo "tower of the morning"
+SayTo "which of these forms would you like to learn?"
+End
+OnSayTo "thistledown" & Guild "tower warders" & Wearing 15259
+SayTo "please be watching my demonstration:"
+Emote "jack abruptly leaps toward you, spinning clockwise, his weapon streaking"
+Emote "toward your neck!  -thistledown floats on the whirlwind-"
+Emote "(null)"
+Emote "lightning"
+SayTo "please be watching my demonstration:"
+Emote "jack abruptly makes three lightning fast controlled stabs at the head of his opponent"
+Emote "one to the left, one to the right, one to the center.  -lightning of the three prongs-"
+End
+OnSayTo "leaf" & Guild "tower warders" & Wearing 15259
+SayTo "please be watching my demonstration:"
+Emote "jack half spins his torso to the left, without changing his footing and executes"
+Emote "three rapid parries before spinning back to his starting position with a short slash"
+Emote "at mid-height. -leaf on the breeze-"
+End
+OnSayTo "silk" & Guild "tower warders" & Wearing 15259
+SayTo "please be watching my demonstration:"
+Emote "jack crouches suddenly, accompanied by a slash across the abdomen, and immediately"
+Emote "follows with a strong thrust to the heart, hold the sword parallel to the ground."
+Emote "-watered silk-"
+Emote "falling"
+SayTo "please be watching my demonstration:"
+Emote "jack blocks a slash to his midsection by parrying point upward, immediately steps"
+Emote "back one step and spins his blade to point downward, blocking an incoming thrust."
+Emote "{falling leaf}"
+End
+OnSayTo "spark" & Guild "tower warders" & Wearing 15259
+SayTo "please be watching my demonstration:"
+Emote "jack makes a hard two handed blow at the base of his opponent's blade, in a style"
+Emote "similar to 'the bell rings', but aimed to break rather than disarm."
+Emote "{striking the spark}"
+End
+OnSayTo "dove" & Guild "tower warders" & Wearing 15259
+SayTo "please be watching my demonstration:"
+Emote "jack steps forward and to the right, twisting to deliver a blow to his opponent's wrists"
+Emote "in a parry, then immediately striking upward in a slash at the opponent's throat."
+Emote "{dove takes flight}"
+End
+OnSayTo "lion" & Guild "tower warders" & Wearing 15259
+SayTo "please be watching my demonstration:"
+Emote "jack makes a stinging slash across your forearms, then reverses his blade for"
+Emote "a diagonal slash across the base of the neck.  he then quickly steps forward,"
+Emote "slightly to your right, and reverses again for a diagonal slash across your"
+Emote "torso.  -lion on the hill-"
+End
+OnSayTo "tower" & Guild "tower warders" & Wearing 15259
+SayTo "please be watching my demonstration:"
+Emote "jack steps back one step, drawing his weapon closer to his chest, point"
+Emote "skyward, then turns slightly as he delivers a diagonal slash to the base"
+Emote "of your neck.  -tower of the morning-"
+End
+Q
+E
+#15213
+training warder 20 Ricardo~
+Ricardo~
+Ricardo
+~
+Ricardo is an Instructor
+~
+1105930 0 0 E
+1 -30 1 611 6d100+0 7d12+50
+0 1
+8 8 1
+BareHandAttack: 3
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnEntry & Guild "tower warders" & Wearing 15255
+Emote "ricardo stares stonily at you."
+End
+OnEntry & Guild "tower warders" & Wearing 15256
+Emote "ricardo stares stonily at you."
+End
+OnEntry & Guild "tower warders" & Wearing 15257
+Emote "ricardo stares stonily at you."
+End
+OnEntry & Guild "tower warders" & Wearing 15258
+Emote "ricardo nods slightly."
+End
+OnEntry & Guild "tower warders" & Wearing 15259
+SayTo "soon."
+End
+OnEntry & Guild "tower warders" & Wearing 15260
+Emote "nods at you and smiles."
+SayTo "you are finally ready.  do you wish to learn?"
+End
+OnSayTo "yes" & Guild "tower warders" & Wearing 15260
+SayTo "i teach the following forms:"
+SayTo "hummingbird kisses the honeyrose"
+SayTo "wind and rain"
+SayTo "whirlwind on the mountain"
+SayTo "the falcon stoops"
+SayTo "the moon rises over the lakes"
+SayTo "apple blossoms in the wind"
+SayTo "which of these forms would you like to learn?"
+End
+OnSayTo "hummingbird" & Guild "tower warders" & Wearing 15260
+SayTo "watch and learn:"
+Emote "ricardo circles his blade around yours, never touching it, then"
+Emote "steps to the right, at the same time driving a thrust at your mouth."
+SayTo "-hummingbird kisses the honeyrose-"
+End
+OnSayTo "wind and rain" & Guild "tower warders" & Wearing 15260
+SayTo "watch and learn:"
+Emote "ricardo makes a wicked slash across the abdomen, then moves to his opponent's side and"
+Emote "continues in a wicked draw cut, then rips his blade free and into an overhanded arc,"
+Emote "slashing down at his opponent's shoulder as he steps past. -wind and rain-"
+End
+OnSayTo "whirlwind" & Guild "tower warders" & Wearing 15260
+SayTo "watch and learn:"
+Emote "ricardo abruptly spins clockwise, slashing backhand at his opponent's neck."
+SayTo "-whirlwind on the mountain-"
+End
+OnSayTo "falcon" & Guild "tower warders" & Wearing 15260
+SayTo "watch and learn:"
+Emote "ricardo feints an attack to the side of his opponent's head, then immediately steps"
+Emote "forward to deliver a wicked diagonal slash at his opponent's torso.  -the falcon stoops-"
+End
+OnSayTo "moon" & Guild "tower warders" & Wearing 15260
+SayTo "watch and learn:"
+Emote "ricardo makes an overhand parry, then twists his hips clockwise as he brings his weapon"
+Emote "down to hip level.  a thrust to his opponent's abdomen is made from hip level, then"
+Emote "the blade is twisted back out, and brought across in an wicked slash across the"
+Emote "stomach.  -the moon rises over the lakes-"
+End
+OnSayTo "apple" & Guild "tower warders" & Wearing 15260
+SayTo "watch and learn:"
+Emote "ricardo strikes at the wrists of an opponent to his right front, then abruptly spins to"
+Emote "his left, striking at that opponent's throat.  parrying quickly as he turns back to the"
+Emote "right, he then lowers his sword to waist level, parallel to the ground, and spins 180"
+Emote "degrees to catch any opponents within that arc.  coming to a stop facing left front, he"
+Emote "makes a diagonal downward slash across that opponent's chest."
+Emote "{apple blossoms in the wind}"
+End
+Q
+E
+#15214
+strange guy ~
+a \c10s\c00\c08t\c00\c09r\c00\c04a\c00\c06n\c00\c12g\c00\c08e\c00 guy~
+A \c10s\c00\c08t\c00\c09r\c00\c04a\c00\c06n\c00\c12g\c00\c08e\c00 guy is standing here, looking strange.
+~
+He looks EXACTLY like Gawyn, except for the fact that he looks nothing like
+Gawyn at all.  Come to think of it, he sort of resembles... no, that isn't
+right.  Is it even a he?   It's kind of hard to tell...
+~
+1024010 81968 0 E
+1 20 10 611 1d100+0 1d1+0
+0 1
+8 8 0
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnRandom 20
+Emote "The strange man hops up and down on one foot, saying over and over, "
+End
+OnEntry & Sex "female"
+ActionTo "whistle"
+End
+OnEntry & Sex "male"
+ActionTo "lick"
+End
+OnRandom 40
+Emote "The strange man suddenly says, "
+End
+Q
+E
+#15215
+couch comfortable~
+a comfortable couch~
+A large, comfortable looking couch is placed against the wall.
+~
+The couch looks as comfortable as it gets, with lots of fluffy pillows
+and places to rest your head against.
+~
+74 16 0 E
+200 20 10 611 1d100+0 1d1+0
+0 0
+8 8 0
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnAction "look"
+Action "tell kane Someone looked!"
+End
+Q
+E
+$

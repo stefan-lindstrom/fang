@@ -1,0 +1,893 @@
+#6200
+wrath Great Lord~
+&rThe wrath of The Great Lord of the Dark&n~
+&rThe wrath of the Great Lord of the Dark&n
+~
+You cannot see wrath you moron!
+~
+7331866 268765234 0 E
+199 -180 -20 896 1d0+25000 30d127+50
+0 0
+8 8 0 665
+BareHandAttack: 12
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Stun: 100
+P
+OnEntry & Mode 2
+Cast "disintegrate"
+Cast "disintegrate"
+Cast "disintegrate"
+Cast "disintegrate"
+Cast "disintegrate"
+Cast "disintegrate"
+Cast "disintegrate"
+Cast "disintegrate"
+Cast "disintegrate"
+Cast "disintegrate"
+Cast "disintegrate"
+Cast "disintegrate"
+Cast "disintegrate"
+Cast "disintegrate"
+Cast "disintegrate"
+Cast "disintegrate"
+Cast "disintegrate"
+Cast "disintegrate"
+Cast "disintegrate"
+Cast "disintegrate"
+End
+OnEntry
+Mode 2
+End
+Q
+E
+#6201
+thepitmob~
+thepitmob~
+thepitmob
+~
+thepitmob
+~
+26 2098 0 E
+200 20 10 896 1d100+0 1d1+0
+0 0
+8 8 1 665
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnAction "kneel grovel"
+Action "tell shai'tan Someone awaits you in the pit"
+Action "tell ierelle Someone awaits you in the pit"
+End
+OnEntry
+Action "tell shai'tan Someone has entered the pit"
+Action "tell ierelle Someone has entered the pit."
+End
+OnAction "tell users who multi" & Level "206 211"
+Action "tell shai'tan Someone you don't know about is here."
+Action "tell ierelle Someone invis above your level is in this room."
+End
+Q
+E
+#6203
+nightmare dream Dark One aura~
+the aura of Shai'tan~
+The aura of Shai'tan
+~
+What are you looking at it for, run twit!
+~
+6307898 2558002 0 E
+199 -180 -20 896 1d0+29500 30d127+50
+0 0
+8 8 0 665
+BareHandAttack: 12
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Bash: 100
+P
+OnEntry
+ActionTo "kill"
+End
+OnAction "jump wake dream"
+Stop
+Emote "You can't!"
+ActionTo "kill"
+End
+Q
+E
+#6204
+fade man myrddraal eyeless mounted~
+a mounted myrddraal~
+The shadowy form of a Myrddraal sits atop his mount here.
+~
+The very night seems to bend and shroud the figure before you, its dead black
+cloth and armor only adding to its darkness. A pale, fishbelly white face adds 
+the only colour. Its eyeless gaze surveying you with an icy contempt that even
+the bravest feel.
+~
+2492506 786464 0 E
+140 -5 0 896 10d100+7000 20d20+25
+750 100
+6 8 1 0
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Dirtkick: 100
+Disarm: 100
+Stun: 100
+P
+OnRandom 99
+Action "stand"
+Action "follow mount"
+End
+Q
+E
+#6205
+horse fade mount~
+the myrddraals mount~
+A magnificent black horse stands here, its eyes a fiery red.
+~
+A horse so dark its black coat seems almost unnatural watches you
+through firery red eyes. No sound or movement seems to phase it, but
+rather waits and obeys its masters command without hessitation. Sharp
+white teeth glint from within its mouth.
+~
+2103320 128 0 E
+100 20 10 896 1d100+5000 10d10+0
+0 0
+6 8 1 0
+BareHandAttack: 4
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Kick: 100
+P
+OnRandom 30
+Action "stand"
+End
+Q
+E
+#6206
+human man breeder~
+a breeding human~
+A man sits in the corner, his eyes darting wildly around him.
+~
+A dirty, unshaven and unwashed man sits in the corner, his eyes
+darting wildly around him. He seems to want to look in all directions
+at once, judging from where the next threat will come. Around his
+neck is clamped steel, its chain allowing him some movment but not
+much. There seems to be a red brand on the middle of his forehead,
+marking him as a breeding male: allowed life so he may impregnate
+female captives.
+~
+10 0 0 E
+10 20 10 896 1d100+0 1d1+0
+0 0
+8 8 1 0
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+E
+#6207
+female woman victim captive~
+a female victim~
+A woman lies in a heap in the corner, her clothes ripped and torn.
+~
+The woman lays in a corner, her clothes all but ripped from
+her wretched form, only blood and stratches cover most of
+her naked flesh. Her eyes seem to stare of into the distance as
+if in deep shock unable to cope with the memories of her past.
+A brand seems to show through on her forehead, seemingly 
+some of the breeding males has marked her out as producer.
+The iron shackle on her feet holds her firmly to the ground,
+her future as an object of their ravishings all but set in stone.
+~
+8 0 0 E
+10 20 10 896 1d100+0 1d1+0
+0 0
+8 8 2 0
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+E
+#6208
+child victim food boy~
+a small boy~
+A small boy huddles against some bones here.
+~
+A small boy huddles up against a pile of cloth and bone, his eyes
+shut permanently. Blood and dirt marr his clothes and although
+young, he seems reasonably well fed compared to some of his 
+peers. The great gashes across both his cheeks mark him out
+as a child born of the pit. His mother a breeding producer, his
+father possibly one of many who ravished her. He seems to be
+the tallest child in the pit and no doubt soon he will leave this
+place: the Myrddraal like their fodder sweet and young.
+~
+8 0 0 E
+5 20 10 896 1d100+0 1d1+0
+0 0
+8 8 1 0
+BareHandAttack: 4
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+E
+#6209
+trolloc guard~
+a trolloc guard~
+A goat-faced trolloc stands here watching over the human fodder.
+~
+Standing head and shoulders taller than even the tallest of men
+the trolloc stands guard with vigilence. His mismatched armor
+and long wickedly curved sword seemingly unnecessary besides his
+physical strength to keep the fodder inline. Occassionally he grunts
+with satisfaction as one of the breeding males tries to seize a 
+passing female and licks his lips as if contemplating doing the 
+same.
+~
+10 0 0 E
+40 20 10 896 1d100+2000 15d15+0
+0 0
+8 8 1 0
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+E
+#6210
+female victim fodder food~
+a female feeder~
+A female clad in only her scars and dried blood stands here, basket in hand.
+~
+The female seems to be young but her figure seems older, her 
+eyes are dark and vacant as if seen too many horrors for one lifetime.
+She goes about her duties without conscious thought, dropping basket
+loads of maggot infested rice into the pit below. The hands of the
+breeding males reach out for her constantly, more than ready to
+add her to their harems below.
+~
+10 0 0 E
+10 20 10 896 1d100+0 1d1+0
+0 0
+8 8 2 0
+BareHandAttack: 4
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+E
+#6211
+fade eyeless myrddraal ravish~
+a watching Eyeless~
+A Myrddraal stands here seemingly clad in the darkness that surrounds him.
+~
+As if poured from the same mold as his kin the Myrddraal stands
+here arrogantly, his body garbed in black as dark as any shadow.
+His cloak does not seem to even move with his sinous grace, it is
+as if even the elements dare not disturb him.
+~
+2099210 0 0 E
+100 0 10 896 1d100+4000 15d15+20
+0 0
+8 8 1 0
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Trip: 100
+Dirtkick: 100
+E
+#6212
+trolloc ravish boar~
+a boar-faced trolloc~
+A boar-faced trolloc stands over a young screaming woman.
+~
+The trollocs face seems a mad hybrid of boar and human characteristics. His
+mouth is almost hidden under a broad snout with two twisted tusks rising from
+each side. His face is made more revolting as it is drawn back into an 
+animalish grin of pleasure. Somehow he gives the impression of being aware
+of the presence of the Myrddraal in the room for he darts furtive glances
+in its direction as he savagly ravishes the woman below him.
+~
+10 0 0 E
+40 20 10 896 1d100+2000 5d5+0
+0 0
+8 8 1 0
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+E
+#6213
+woman female victim ravish~
+a female victim ~
+A female lies here beneath the looming form of a trolloc, her face covered with blood.
+~
+The woman appears to be not twenty years of age but her eyes seem filled
+with the horrors of genrations. She screams almost continuously for help
+she knows will not come, the Light long ago abondoning this place. Weakly
+she tries to claw the huge form off her but she seems to sense that her 
+resistance will only bring more trollocs eager to break the woman under
+the Myrddraals stare. The trollocs must be allowed some pleasures after all
+~
+10 0 0 E
+10 20 10 896 1d100+0 1d1+0
+0 0
+8 8 2 0
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+E
+#6214
+man old victim ~
+an elderly victim~
+An old man sits here rocking back and forth, his eyes staring vacantly.
+~
+The old man seems clothed in only rags and mud, his weak and feeble
+form rocking back and forth continually. He seem to stare out of vacant eyes
+looking through and beyond the prison walls to some far off peaceful place. 
+A huge bloodied gash runs down his left side, most likely from a fight
+with another trolloc dinner.
+~
+10 0 0 E
+10 20 10 896 1d100+0 1d1+0
+0 0
+8 8 1 0
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+E
+#6215
+darkfriend healer man~
+the darkfriend healer~
+A small dirty man stands here examining the mouth of one of his patients.
+~
+Dressed marginally better than the rest of the human slaves of the camp 
+the healer is still covered with blood and dirt. His unshaven face holds
+a look of helplessness and resignation. What appears to be a metallic instrument
+of some kind is held in his right hand and he uses it to force his patients
+mouth wider.
+~
+10 0 0 E
+10 20 10 896 1d100+0 1d1+0
+0 0
+8 8 1 0
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+E
+#6216
+victim man patient bound~
+a patient~
+A patient sits here bound to a chair by iron shackles and rope.
+~
+The patient seems to be a man in his middle years, grey streaking through
+his dark hair. Somewhat cleaner than the rest of the occupants of the camp
+he still has dirt and blood covering his boots. His mouth jammed wide by the 
+healer and securely bound to the chair the man seems to know there is no 
+escape. His eyes roll back in his head occassionally as the work progresses
+knowing that things will only get worse.
+~
+10 0 0 E
+10 20 10 896 1d100+0 1d1+0
+0 0
+8 8 1 0
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+E
+#6217
+disabled man patient~
+the disabled patient~
+A man with missing an arm and a leg sits up against the wall, his head rolled to one side.
+~
+Unsually clean like many other occupants of the infirmary this man
+sits up against the wall, his head hanging to one side. A small trail
+of drool leads from his mouth and makes a small puddle on what is
+left of his clothes. Although he stares with vacant eyes he occassionally
+manages to groan, the newly stiched humps that were once his arm and
+leg causing him some pain. Like many of the victims of biological experiments
+his days are sure to end in further pain and humilation. 
+~
+10 0 0 E
+10 20 10 896 1d100+0 1d1+0
+0 0
+8 8 1 0
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+E
+#6218
+trolloc bear~
+a bear-faced trolloc~
+A bear-faced trolloc sits by the entrance, munching greedily on a human torso.
+~
+A hideous mixture of bear and human traits the trolloc sits and munches
+at his evening meal greedily. Eyes with a shread of human intelligence
+dart around at his kin while doing so, obviously fearing they will try and
+steal his choice cut of meat. Blood and juice from the meat stain his
+fur and mis-matched armor, the paws that serve as hands apparently
+well adept at shredding meat.
+~
+2099338 0 0 E
+40 20 10 896 1d100+1000 5d5+0
+0 0
+8 8 1 0
+BareHandAttack: 8
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Bash: 100
+E
+#6219
+troloc child female~
+a female trolloc child~
+A small female trolloc darts about the room, searching for scraps of meat.
+~
+The small trolloc appears to be female, its face a hybrid combination
+of goat and human stock. Darting from place to place around the room 
+searching for scraps the child hisses and chants in a gutteral tongue.
+Clothed in only a single peice of leather you notice the child has
+some scars along its torso. It as if the older trollocs sometimes use
+her for fun. It is well in the crude trolloc society that females enjoy
+little else but being pregnant.
+~
+2097162 0 0 E
+20 20 10 896 1d100+200 1d1+0
+0 0
+8 8 2 0
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+E
+#6220
+man victim clothes~
+a clothed man~
+A man crouches underneath a small shadowy ledge in the wall.
+~
+The man seems to be a dominante male for the pit, he seems much better
+fed than those around and him and still have vestiges of the maggot infested
+rice around his mouth. Unlike the others of the pit he is clothed, a whole
+variety of torn wool and silk, some obviously meant for a child. The wild, savage
+gleam of his eyes suggest that they were the clothes of other victims,
+removed once they had been slayed for food.
+~
+10 0 0 E
+10 20 10 896 1d100+0 1d1+0
+0 0
+8 8 1 0
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+E
+#6221
+trolloc guard Ahf'frait ~
+a wolf-faced trolloc guardian~
+A large trollocs stands here sniffing the air for scent.
+~
+The trolloc seems to be a gruesome hybrid of human and wolf stock, its face
+half grey fur and half coarse skin. He sniffs the air hunting by scent and the 
+large wickedly curved axe seems to gleam in the shadowy light. Barking in
+a harsh gutteral language he seems to alight with animalistic glee, 
+the prey has been sighted.
+~
+2759880 524416 0 E
+100 -10 0 896 1d100+4000 20d15+0
+500 5
+8 8 1 0
+BareHandAttack: 6
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Dirtkick: 100
+Disarm: 100
+Stun: 100
+E
+#6234
+lightning bolt~
+\c13A Lightning Bolt!\c00~
+\c13A Lightning Bolt!\c00
+~
+Its bright and glowing and about to smack you!
+~
+4194312 271122434 0 E
+199 20 10 896 1d0+0 1d1+0
+0 0
+8 8 0 665
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnEntry
+Cast "call lightning"
+PurgeMob
+End
+Q
+E
+#6235
+dfokay trolloc~
+a beady eyed Trolloc~
+A beady eyed Trolloc
+~
+The trolloc has the head of a falcon and the body of a very large
+man. You notice also its has talons and not feet. this does not
+look like something you want to play with.
+~
+3143706 2096 0 E
+190 -170 -15 896 30d800+2000 15d15+50
+0 120
+8 8 1 665
+BareHandAttack: 8
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Bash: 100
+Trip: 100
+Dirtkick: 100
+Kick: 100
+Disarm: 100
+P
+OnEntry & ! Darkfriend
+ActionTo "kill"
+End
+Q
+E
+#6236
+dfokay myrrdraal~
+a deadly looking Myrrdraal~
+A deadly looking Myrrdraal
+~
+The Myrrdraal looks ready for battle, you get the sense that it does
+not like being way up here in the blight away from people it can
+kill and torture. The myrrdraal wants blood and it wants it now.
+~
+3143706 67632 0 E
+195 -180 -20 896 30d1000+2500 20d20+50
+0 150
+8 8 1 665
+BareHandAttack: 3
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Dirtkick: 100
+Disarm: 100
+P
+OnEntry & Guild "forsaken"
+ActionTo "kneel"
+End
+OnEntry & ! Darkfriend
+ActionTo "kill"
+End
+Q
+E
+#6237
+dreadlord darkfriend man lord df~
+\c23A dreadlord\c00\c03~
+\c23A dreadlord watches over the camp here.\c00\c03
+~
+The dreadlord is dressed in some sort of black uniform, with an odd
+cape that seems to hang motionless in the wind, much like that of
+a Fades. He looks to be in his mid-30s but then you notice his eyes,
+and you think he must be much older than that. He walks with an air
+of power and knowledge borne of a certainty that one day the Great
+Lord will Return.
+~
+5246990 0 0 E
+199 -180 -15 896 30d0+2000 10d20+50
+150 150
+8 8 1 665
+BareHandAttack: 12
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Dirtkick: 100
+E
+#6252
+pitmob aura warning~
+\c23An evil aura\c00~
+\c23An evil aura\c00
+~
+It looks evil smartass.
+~
+2088986 264240 0 E
+199 -180 -20 896 1d1+29000 30d127+50
+0 0
+8 8 1 665
+BareHandAttack: 12
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+E
+#6253
+forger thakan'dar~
+\c23A forger\c00~
+\c23A slow moving forger\c00
+~
+The forger looks as if it has been hacked from the very mountain.
+It is not alive in a true sense, but rather is a mindless slave with
+but one purpose, to make swords for the Myrrdraal.
+~
+3137562 264240 0 E
+199 -180 -20 896 1d1+25000 30d127+50
+0 0
+8 8 0 665
+BareHandAttack: 7
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Bash: 100
+P
+OnRandom 25
+Action "leave"
+Emote "The forger grabs the next victim in line and drags them inside the forge."
+Action "enter forge"
+End
+OnAction "take"
+ActionTo "kill"
+End
+Q
+E
+#6254
+forger thakan'dar~
+\c23A forger\c00~
+\c23A slow moving forger\c00
+~
+The forger looks as if it has been hacked from the mountains. It is
+not alive in any true sense, but rather is a mindless slave made for
+one purpose, to forge Myrrdraal blades.
+~
+3137562 264240 0 E
+199 -180 -20 896 1d1+25000 30d127+50
+0 0
+8 8 0 665
+BareHandAttack: 7
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Bash: 100
+P
+OnRandom 99
+Action "enter forge"
+End
+OnRandom 25
+Action "leave"
+Pause 2
+Emote "The forger carries a new sword to the river, to quench it in the tainted water."
+Pause 2
+Action "enter forge"
+End
+OnAction "take"
+ActionTo "kill"
+End
+Q
+E
+#6255
+forge victim woman~
+a forge victim~
+A poor tired starving woman awaits death here.
+~
+The woman has a knowing look in her eyes, that is somewhat haunting
+as if hse knows what horror she is about to face. It looks as if
+she has perhaps been here a while and not been fed, but then its
+not her body the Forgers are going to be using.
+~
+1048714 0 0 E
+5 18 10 896 1d50+5 1d6+2
+0 20
+6 6 2 665
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnRandom 25
+Emote "A forger emerges from the Forge."
+Pause 2
+Action "scream"
+Emote "The forger drags to woman inside the forge."
+Emote "\c23A forger\c00 enters \c23The Forge\c00"
+PurgeMob
+End
+Q
+E
+#6256
+forge victim wounded man~
+a forge victim~
+A wounded man lies here dying.
+~
+The poor man is bleeding from all manner of massive wounds, he seems
+to be fighting against his fate, foolish when you notice the brand
+on his chest marking him a Darkfriend. Some darkfriends just don't
+seem to understand the depths of their oaths it seems.
+~
+4194314 8388608 0 E
+15 10 10 896 2d0+150 2d8+10
+0 20
+2 2 1 665
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnRandom 15
+Emote "\c23A forger\c00 comes out of \c23The Forge\c00"
+Pause 1
+Emote "\c23The forger\c00 drags a wounded man inside the forge."
+Pause 1
+Emote "\c23A forger\c00 enters \c23The Forge\c00."
+PurgeMob
+End
+Q
+E
+#6260
+trolloc fog shrouded~
+\c00a \c13fog\c00 shrouded Trolloc~
+The shadowy form of a trolloc is partially hidden in the thick fog.
+~
+Only a vague shadow in the fog is the tall form of the snarling
+trolloc. The red glow of the lava rivers diffusing through the
+fog reflects off his chain armour and his large curved sword.
+~
+2097160 0 0 E
+100 -30 -8 896 6d500+600 12d15+50
+0 120
+8 8 1 0
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Bash: 100
+Kick: 100
+E
+#6261
+myrddraal fog shrouded~
+\c00a \c13fog \c00shrouded Myrddraal~
+A dark from of a Myrddraal is shrouded by the thick fog.
+~
+Only a vague shadow in the fog, the thin and tall form of the
+Myrddraal is humanlike. A flowing black cloak follows his flowing
+movements and before long the swirling fog has swallowed his form
+once more.
+~
+2097160 32 0 E
+120 -30 -10 896 6d800+400 15d18+50
+0 120
+8 8 1 0
+BareHandAttack: 3
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Disarm: 100
+Stun: 100
+E
+#6299
+lava~
+\c08L\c10a\c08v\c10a\c00~
+\c08L\c10a\c08v\c10a\c00
+~
+\c08L\c10a\c08v\c10a\c00
+~
+16424 2096 0 E
+199 -180 -20 896 1d1+29500 30d127+50
+0 0
+8 8 0 665
+BareHandAttack: 12
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnMobAttack
+Cast "burn"
+Cast "burn"
+Cast "burn"
+Cast "burn"
+Cast "burn"
+Cast "burn"
+Cast "burn"
+Cast "burn"
+Cast "burn"
+Cast "burn"
+Cast "burn"
+End
+OnAction "leave grasp weave tgrasp cast"
+ActionTo "kill"
+End
+Q
+E
+$

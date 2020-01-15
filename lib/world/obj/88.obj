@@ -1,0 +1,850 @@
+#8800
+block black rock~
+a large block of polished black rock.~
+A large block of polished black rock with steps cut into the back stands here.~
+~
+12 0 1
+0 0 0 0
+100000 0 0
+P
+OnEntry & ! Guild "Asha'man"
+Force "e"
+End
+Q
+#8801
+steak large juicy~
+a large, juicy steak~
+A steak is lying here, feeling homesick for the cow.~
+~
+19 0 1
+24 0 0 0
+1 1 0
+#8802
+barrel water filled~
+a barrel filled with water~
+A large, well-made barrel filled with water stands here.~
+The barrel looks new and sturdy and it seems to hold a lot of water.
+~
+23 0 1
+1000 1000 0 0
+10000 0 0
+#8803
+desk~
+a desk sits here~
+A sturdy, ominous-looking oaken desk stands here.~
+~
+12 0 1
+0 0 0 0
+10000 0 0
+#8804
+cool clear pool~
+a cool, clear pool~
+\c00A large \c04p\c00\c11o\c00\c04o\c00\c11l\c00 sits here.~
+The pool looks clear and cool. \c14Light\c00 and \c23shadow\c00 play across it making
+it look absolutely exotic. The cool lap of waves against the shore seem 
+very enticing in this heat and you wonder if it might not be a bad idea to
+take a swim.
+~
+23 0 1
+1000 1000 0 0
+10000 0 0
+#8805
+board asha'man guild~
+the Asha'man guild board~
+The Asha'man Guild Board~
+~
+12 0 1
+0 0 0 0
+10000 0 0
+#8806
+coat Asha'man guildeq~
+a high collared \c23black coat\c00~
+A tight fitting \c23black coat\c00 with a high collar lies here.~
+~
+15 69832 1025
+10000 0 -1 0
+5 0 0
+A
+17 -100
+A
+4 4
+A
+5 4
+A
+3 4
+A
+1 4
+A
+2 4
+P
+OnActionWear "east" & ! Guild "Asha'man"
+Destroy
+End
+OnActionWear "north" & ! Guild "Asha'man"
+Destroy
+End
+OnActionWear "west" & ! Guild "Asha'man"
+Destroy
+End
+OnActionWear "south" & ! Guild "Asha'man"
+Destroy
+End
+OnActionToCarry "enhance"
+Stop
+Emote "I'm sorry Dave, I'm afraid I can't do that."
+End
+Q
+#8807
+ball of light guildeq~
+a ball of brilliant \c14white\c00 light~
+A sphere of brilliant \c14white\c00 light lies here.~
+~
+1 69769 16385
+0 0 -1 0
+5 0 0
+A
+12 50
+A
+20 1
+P
+OnActionWear "south" & ! Guild "Asha'man"
+Destroy
+End
+OnActionWear "east" & ! Guild "Asha'man"
+Destroy
+End
+OnActionWear "west" & ! Guild "Asha'man"
+Destroy
+End
+OnActionToCarry "enhance"
+Stop
+Emote "I'm sorry Dave, I'm afraid I can't do that."
+End
+Q
+#8808
+pin sword silver dedicated guildeq~
+a \c23s\c00\c07i\c00\c23l\c00\c07v\c00\c23e\c00\c07r\c00 pin shaped like a sword~
+A \c23s\c00\c07i\c00\c23l\c00\c07v\c00\c23e\c00\c07r\c00 pin shaped like a tiny sword lies here.~
+~
+9 69832 5
+0 0 0 0
+1 0 0
+A
+17 -50
+A
+18 25
+A
+19 25
+P
+OnActionWear "north" & ! Guild "Asha'man"
+Destroy
+End
+OnActionWear "south" & ! Guild "Asha'man"
+Destroy
+End
+OnActionWear "east" & ! Guild "Asha'man"
+Destroy
+End
+OnActionWear "west" & ! Guild "Asha'man"
+Destroy
+End
+OnActionToCarry "enhance"
+Stop
+Emote "I'm sorry Dave, I'm afraid I can't do that."
+End
+Q
+#8809
+pin golden dragon asha'man guildeq~
+a \c10g\c00\c03o\c00\c10l\c00\c03d\c00\c10e\c00\c03n\c00 pin shaped like a dragon~
+A \c10g\c00\c03o\c00\c10l\c00\c03d\c00\c10e\c00\c03n\c00 pin shaped like a dragon lies here.~
+~
+9 69832 5
+0 0 0 0
+1 0 0
+A
+17 -50
+A
+18 25
+A
+19 25
+P
+OnActionWear "north" & ! Guild "Asha'man"
+Destroy
+End
+OnActionWear "south" & ! Guild "Asha'man"
+Destroy
+End
+OnActionWear "east" & ! Guild "Asha'man"
+Destroy
+End
+OnActionWear "west" & ! Guild "Asha'man"
+Destroy
+End
+OnActionToCarry "enhance"
+Stop
+Emote "I'm sorry Dave, I'm afraid I can't do that."
+End
+Q
+#8810
+belt brown leather guildeq~
+a thick \c03brown\c00 leather belt~
+A thick \c03brown\c00 leather belt lies here.~
+~
+9 69768 2049
+0 0 0 0
+5 0 0
+A
+17 -25
+A
+18 14
+A
+19 14
+P
+OnActionWear "south" & Wearing 8808
+Stop
+Destroy
+End
+OnActionWear "south" & ! Guild "Asha'man"
+Destroy
+End
+OnActionToCarry "enhance"
+Stop
+Emote "I'm sorry Dave, I'm afraid I can't do that."
+End
+Q
+#8811
+boots brown leather guildeq~
+a pair of \c03brown\c00 leather boots~
+A pair of \c03brown\c00 leather boots lie here.~
+~
+9 69768 65
+0 0 0 0
+5 0 0
+A
+17 -25
+A
+18 14
+A
+19 14
+P
+OnActionWear "south" & Wearing 8809
+Stop
+Destroy
+End
+OnActionWear "south" & ! Guild "Asha'man"
+Destroy
+End
+OnActionToCarry "enhance"
+Stop
+Emote "I'm sorry Dave, I'm afraid I can't do that."
+End
+Q
+#8812
+pouch black leather~
+a small black leather pouch~
+A small black leather pouch lies here.~
+~
+15 0 1
+10000 0 -1 0
+0 0 0
+#8813
+stream~
+a cool \c04s\c00\c11t\c00\c06re\c00\c13a\c00\c14m\c00 rushes quickly past \c02g\c00\c09r\c00\c02e\c00\c09e\c00\c02n\c00 banks~
+\c00A cool \c04s\c00\c11t\c00\c06re\c00\c13a\c00\c14m\c00 rushes quickly past \c02g\c00\c09r\c00\c02e\c00\c09e\c00\c02n\c00 banks.~
+~
+23 0 1
+1000 1000 0 0
+10000 0 0
+#8814
+waterfall~
+a \c04w\c00\c11a\c00\c06t\c00\c13er\c13\c14f\c00\c07a\c00\c14l\c00\c07l\c00~
+\c00The stream tumbles over glistening rocks in a beautiful \c04w\c00\c11a\c00\c06t\c00\c13er\c13\c14f\c00\c07a\c00\c14l\c00\c07l\c00.~
+~
+23 0 1
+1000 1000 0 0
+10000 0 0
+#8815
+roadblock~
+a roadblock~
+A large roadblock sits right in your path.~
+~
+0 0 1
+0 0 0 0
+10000 0 0
+P
+OnAction "north"
+Stop
+Emote "Warning: Travel north of this point results in your entrance to a room lacking exits. Please do not go north until this problem is fixed. Thank you. -Your Friendly Imm Staff"
+End
+OnTick
+Goto 30400
+End
+Q
+#8816
+sign large~
+a large OoC sign~
+\c00A large \c13OoC\c00 sign stands here just begging to be read.~
+This shop is always OoC under any circumstance. Just so ya know.
+
+Black sleeves:                    -15 AC, 7/7 hit/dam
+Black gauntlets:                  -50 AC
+Woolen trousers:                  -20 AC, 2/2 hit/dam
+Battle dagger:                     1d6, 10/10 hit/dam (stabbing weapon)
+Shirt of scales:                  -15 AC, +2 stre
+Polished steel bracers:           -20 AC, 5/5 hit/dam
+Obsidian dagger (q):               5d10, 50/50 hit/dam (stabbing weapon)
+
+Have a nice day,
+The Proprieter
+~
+16 0 1
+0 0 0 0
+10000 0 0
+#8817
+spring~
+a spring gushing cool water~
+\c00A spring \c11b\c00\c14u\c00\c13bbl\c00\c14e\c00\c11s\c00 from a cleft in a large rock here.~
+~
+23 0 1
+1000 1000 0 0
+10000 0 0
+#8818
+figurine heartstone cuendillar~
+a spindly figurine of a dancing man~
+A spindly, fragile looking figurine of a dancing man sits here, made of cuendillar.~
+The figurine looks graceful, it's arms and legs almost too thin and spindly to
+be human. It curves and twists in ways no human should be able to in its mad
+dance. Flat gray in color, it seems as if it will break apart in a strong
+breeze, but for all of that it would survive a drop from even the highest height.
+~
+16 0 16385
+0 0 0 0
+5 1 1
+A
+4 1
+#8819
+board recruiters recruiting asha'man AM~
+a bulletin board for Asha'man Recruiters~
+A bulletin board for Asha'man Recruiters hangs from the wall.~
+~
+12 0 1
+0 0 0 0
+10000 0 0
+#8820
+sleeves AM black cloth~
+a pair of \c23black\c00 cloth sleeves~
+A bundle of black cloth lies here.~
+~
+9 0 257
+0 0 0 0
+5 12000 0
+A
+17 -15
+A
+18 7
+A
+19 7
+#8821
+gauntlets AM black~
+a pair of \c23black\c00 steel gauntlets~
+A pair of \c23black\c00 steel gauntlets lie here.~
+~
+9 0 129
+0 0 0 0
+5 5000 0
+A
+17 -50
+#8822
+trousers~
+a pair of rough, \c23w\c00\c07o\c00\c23o\c00\c07l\c00\c23e\c00\c23n\c00 trousers~
+A pair of rough, woolen trousers lie here.~
+~
+9 0 33
+0 0 0 0
+3 5000 0
+A
+17 -20
+A
+18 2
+A
+19 2
+#8823
+dagger long AM~
+a long battle dagger~
+A long battle dagger lies here, looking very dangerous.~
+~
+5 0 8193
+0 1 6 14
+5 15000 0
+A
+18 10
+A
+19 10
+#8824
+shirt mail scale AM~
+a shirt of overlapping \c23steel\c00 scales~
+A shirt of overlapping \c23steel\c00 scales lie here.~
+~
+9 0 9
+0 0 0 0
+10 3500 0
+A
+17 -15
+A
+1 2
+#8825
+bracer polished steel~
+a polished \c23steel\c00 bracer~
+A polished \c23steel\c00 bracer lies here.~
+~
+9 0 4097
+0 0 0 0
+5 9500 0
+A
+17 -20
+A
+18 5
+A
+19 5
+#8826
+dagger obsidian~
+a polished \c23obsidian\c00 dagger~
+A dagger made from obsidian lies here.~
+~
+5 4232 8193
+0 5 10 14
+0 1 90
+A
+18 50
+A
+19 50
+P
+OnActionToCarry "enhance"
+Stop
+Emote "I'm sorry Dave, I'm afraid I can't do that."
+End
+Q
+#8827
+bookshelf~
+a large, oaken bookself~
+\c00A large, \c03oaken\c00 bookshelf stands here, holding many dusty old texts.~
+~
+15 0 1
+1000 0 -1 0
+10000 0 0
+E
+bookshelf~
+bookshelf
+~
+#8828
+key wooden Daer~
+an odd \c23wooden\c00 key~
+\c00An odd \c03wooden\c00 key lies here.~
+~
+18 0 1
+0 0 0 0
+1 0 0
+#8830
+lantern guildeq wife~
+a small, shuttered lantern~
+A small, shuttered lantern lies here, a sliver of light escaping.~
+~
+1 4232 16385
+0 0 -1 0
+5 0 0
+A
+20 1
+A
+18 20
+A
+19 20
+P
+OnActionWear "south" & ! Guild "Asha'man"
+Stop
+Destroy
+End
+OnActionToWear "north" & ! Guild "Asha'man"
+Stop
+Destroy
+End
+OnActionToCarry "enhance"
+Emote "I'm sorry Dave, I'm afraid I can't do that."
+End
+Q
+#8831
+cloak guildeq wife~
+a flowing \c04black\c00 cloak~
+A bunch of \c23black cloth\c00 lies here.~
+~
+9 4232 1025
+-100 0 0 0
+5 0 0
+A
+20 1
+A
+18 3
+A
+19 3
+P
+OnActionWear "south" & ! Guild "Asha'man"
+Stop
+Destroy
+End
+OnActionWear "north" & ! Guild "Asha'man"
+Stop
+Destroy
+End
+OnActionToCarry "enhance"
+Stop
+Emote "I'm sorry Dave, I'm afraid I can't do that."
+End
+Q
+#8832
+chalice guildeq wife~
+\c00a \c03g\c00\c10o\c00\c03l\c00\c10d\c00\c03e\c00\c10n\c00 chalice~
+\c00A \c03g\c00\c10o\c00\c03l\c00\c10d\c00\c03e\c00\c10n\c00 chalice lies here.~
+~
+17 4233 16385
+10 10 0 0
+15 0 0
+A
+12 30
+A
+4 2
+A
+3 2
+P
+OnActionWear "south" & ! Guild "Asha'man"
+Stop
+Destroy
+End
+OnActionWear "north" & ! Guild "Asha'man"
+Stop
+Destroy
+End
+OnActionToCarry "enhance"
+Stop
+Emote "I'm sorry Dave, I'm afraid I can't do that."
+End
+Q
+#8833
+dagger guildeq wife~
+a thin, steel dagger~
+A thin, steel dagger lies here.~
+~
+5 4232 8193
+0 10 10 14
+5 0 0
+#8834
+BTower Policy Board~
+Black Tower Policy Board~
+The \c04Black Tower\c06 Policy Board\c00 lies here.~
+~
+2 0 0
+0 0 0 0
+0 0 0
+#8840
+glow light ball asha guildeq~
+a ball of \c07brilliant white l\c10i\c07g\c10h\c07t\c00~
+A ball of white light lies floating here carelessly. Tell an Asha'man GL!~
+~
+1 69768 16385
+0 0 -1 0
+0 0 0
+A
+18 10
+A
+19 10
+#8841
+black coat asha guildeq~
+a high-collared \c04black coat\c00~
+A high-collared black coat lies here carelessly. Notify an Asha'man GL!~
+~
+15 70345 1025
+3000 0 -1 0
+0 0 0
+A
+20 1
+A
+12 50
+#8842
+silver pin asha guildeq~
+a \c23s\c07i\c23l\c07v\c23e\c07r\c23 p\c07i\c23n\c00 shaped like a \c23s\c07w\c23o\c07r\c23d\c00~
+A silver sword-shaped pin lies here carelessly. Notify an Asha'man GL!~
+~
+11 69832 5
+0 0 0 0
+0 0 0
+A
+20 1
+#8843
+golden pin asha guildeq~
+a \c03g\c10o\c03l\c10d\c03e\c10n\c03 p\c10i\c03n\c00 shaped like a \c03d\c10r\c03a\c10g\c03o\c10n\c00~
+A dragon-shaped pin lies here carelessly. Notify an Asha'man GL!~
+~
+11 69832 5
+0 0 0 0
+0 0 0
+A
+20 1
+#8844
+blade sword asha guildeq~
+a \c23c\c07u\c23r\c07v\c23e\c07d\c23 b\c07l\c23a\c07d\c23e\c00 bearing a \c04black hilt\c00~
+The sword of an Asha'man lies here. Notify an Asha'man GL!~
+~
+5 69768 32769
+0 10 10 11
+0 0 0
+A
+19 1
+#8845
+black sword blade asha guildeq~
+a \c23c\c07u\c23r\c07v\c23e\c07d\c23 \c07b\c23l\c07a\c23d\c07e\c00 bearing a \c04black hilt\c00~
+The sword of a mighty Asha'man lies here. Notify an Asha'man GL!~
+~
+5 69768 8193
+0 10 10 11
+0 0 0
+A
+19 1
+#8850
+lantern guild eq light~
+a \c04black lantern\c00~
+A black lantern lies here.~
+~
+1 69768 16385
+0 0 -1 0
+0 0 0
+#8851
+wedding ring guildeq~
+a \c03golden wedding band\c00~
+A band lies here.~
+~
+11 69832 3
+0 0 0 0
+0 0 0
+#8852
+cloak guildeq~
+a hooded \c04black cloak\c00~
+A black cloak lies here.~
+~
+11 69768 1025
+0 0 0 0
+0 0 0
+#8853
+dagger steel guildeq btower~
+a \c04black-hilted\c23 s\c07t\c23e\c07e\c23l \c07d\c23a\c07g\c23g\c07e\c23r\c00~
+A dagger lies here.~
+~
+5 69768 1
+0 0 0 0
+0 0 0
+#8863
+door ~
+a polished oaken door~
+A polished oaken door that seems to have been grown stands here.~
+~
+14 4096 1
+0 1 8828 0
+10000 0 0
+#8873
+key mortis~
+a small \c10brass\c00 key~
+A small \c10brass\c00 key is lying here.~
+~
+18 0 1
+0 0 0 0
+1 0 0
+#8874
+key Nathaniel Allesande~
+a small \c23s\c00\c07i\c00\c23l\c00\c07v\c00\c23e\c00\c07r\c00 key~
+A small \c23s\c00\c07i\c00\c23l\c00\c07v\c00\c23e\c00\c07r\c00 key lies here.~
+~
+18 200 1
+0 0 0 0
+0 0 0
+#8877
+key steel~
+a small \c23steel\c00 key~
+A small \c23steel\c00 key lies here.~
+\c00~
+18 65672 1
+0 0 0 0
+0 0 0
+#8878
+kilmor house~
+Asha'man Kilmor's house~
+\c04Asha'man\c06 Kilmor's\c23 house\c00 lies here.~
+\c00~
+14 2048 0
+0 15 8894 0
+0 0 0
+E
+key cabin study kilmor~
+A quite long, well crafted iron key. Void of almost any
+decorations, it seems to fill only one purpose (as it
+should be with keys, I presume), to provide the only means
+to open the lock this key 'belongs' to. 
+~
+#8879
+key Caidin~
+a small \c01c\c00\c03o\c00\c01p\c00\c03p\c00\c01e\c00\c03r\c00 key~
+A small key made of \c01c\c00\c03o\c00\c01p\c00\c03p\c00\c01e\c00\c03r\c00 lies here.~
+~
+18 69768 1
+0 0 0 0
+0 0 0
+#8880
+Oak tree door gigantic~
+a large oak tree~
+\c00A gigantic oak tree stands here, covering all beneath in \c23s\c00\c07h\c00\c23a\c00\c07d\c00\c23o\c00\c07w\c00\c23s\c00. It seems that there is a door set in the base of the tree.~
+~
+14 0 1
+0 1 8828 0
+0 0 0
+#8883
+justen house~
+Asha'man Justen's house~
+\c04A\c08s\c04h\c08a\c04'\c08m\c04a\c08n\c06 Justen's\c23 house\c00 lies here.~
+~
+14 2048 0
+0 15 8899 0
+0 0 0
+#8885
+shane house~
+Asha'man Shane's house~
+\c04Asha'man\c06 Shane's\c23 house\c00 lies here.~
+~
+14 2048 0
+0 15 8895 0
+0 0 0
+P
+OnTake & ! Guild "asha'man"
+Goto 8885
+EmoteTo "That is not your key to take!"
+End
+Q
+#8886
+verrick house~
+Asha'man Verrick's house~
+\c04Asha'man\c06 Verrick's\c23 house\c00 lies here.~
+~
+14 2048 0
+0 15 8890 0
+0 0 0
+#8887
+yoral house~
+Asha'man Yoral's house~
+\c04Asha'man\c06 Yoral's\c23 house\c00 lies here.~
+\c00~
+14 2048 0
+0 15 8896 0
+0 0 0
+#8890
+key~
+Asha'man Verrick's Key~
+A key lies here.~
+~
+18 0 1
+0 0 0 0
+0 0 0
+E
+monument column black names asha'man AM~
+\c14This monument, crafted of the One Power, has been placed here by
+the M'Hael in honor of those Asha'man who have sacrificed their
+lives in battle honorably.
+
+\c07Atriau Tarkard \c14[Elite Asha'man]\c00
+\c07Nathaniel Zagerin \c14[Asha'man]\c00
+~
+#8891
+parchment rules asha'man AM~
+\c02a \c14parchment \c02with the \c08Rules of the Farm\c00~
+\c02A \c14parchment \c02is posted here, reading \c08Rules of the Farm\c02.\c00~
+~
+16 0 1
+0 0 0 0
+10000 0 0
+E
+parchment rules farm asha'man~
+1.  Saidin must be used in performing all tasks and chores.
+
+2.  Subordinate Asha'man shall always salute their superiors properly,
+    with right fist to chest.
+
+3.  Only Dedicated and Asha'man may leave the farm.  All subordinate
+    ranks must be properly escorted.
+
+4.  Recruits may only seize Saidin under the supervision of a Dedicated
+    or Asha'man.
+
+5.  Asha'man of all ranks are required to attend Morning Directives, where
+    roll will be called and the Lord Dragon's orders will be read.  Failure
+    to be present without the M'Hael's express permission will result in
+    dire consequences.  Absentees will be treated as deserters.
+~
+#8892
+board recruiting recruiters asha'man AM~
+the Recruiters' Board~
+The Recruiters' Board~
+~
+12 0 1
+0 0 0 0
+10000 0 0
+#8893
+tree traitor's asha'man AM~
+\c05the Traitor's Tree\c00~
+\c05The Traitor's Tree\c00~
+~
+12 0 1
+0 0 0 0
+10000 0 0
+E
+tree traitor's asha'man~
+The Traitor's Tree looms darkly here, set off in a clearing by itself.  The
+ground beneath is bare of grass or greenery, stark and ominous like the owner
+of this hallowed ground.  Heads hang from the stiff branches, heads of Asha'man
+who have forsaken their brothers and their cause.  As you look on, you get the
+impression that this tree bears its sinister purpose with a dark pride.    
+~
+#8894
+key~
+Asha'man Kilmor's Key~
+A key lies here.~
+~
+18 0 1
+0 0 0 0
+0 0 0
+#8895
+key~
+Asha'man Shane's Key~
+A key lies here.~
+~
+18 0 1
+0 0 0 0
+0 0 0
+#8896
+key~
+Asha'man Yoral's Key~
+A key lies here.~
+~
+18 0 1
+0 0 0 0
+0 0 0
+#8898
+tent~
+a large, \c14white\c00 tent~
+\c00A large, \c14white\c00 which houses the Dedicated stands here.~
+~
+14 0 1
+0 1 -1 0
+10000 0 0
+#8899
+key~
+Asha'man Justen's key~
+A key lies here.~
+~
+18 0 1
+0 0 0 0
+0 0 0
+$~

@@ -1,0 +1,160 @@
+.Dd December 4, 2000
+.Dt sf_sed 3
+.Os
+.Sh NAME
+.Nm sed_compile ,
+.Nm sed_exec ,
+.Nm sed_free
+.Nd string editor
+.Sh SYNOPSIS
+.Fd #include <strfunc.h>
+.Pp
+.Ft sed_t *
+.Fn sed_compile "char *expr"
+.Ft char *
+.Fn sed_exec "sed_t *se" "char *string"
+.Ft svect *
+.Fn sed_results "sed_t *se"
+.Ft void
+.Fn sed_free "sed_t *se"
+.Pp
+.Sh DESCRIPTION
+These routines implement a subset of
+.Xr sed 1
+or
+Perl's s///, y/// and // functionality.
+.Pp
+You must compule your expression with
+.Fn sed_compile
+in order to evaluate it later.
+Once compiled, it can be evaluated multiple times. See the EXPRESSIONS
+block to know about expressions semantics.
+.Pp
+.Fn sed_free
+used to destroy the compiled structure and free the allocated memory.
+.Pp
+.Fn sed_exec
+takes the source string and transforms it according to the compiled rules.
+Resulting string stored in the internal buffer within the specified
+.Em sed_t
+structure.
+.Pp
+.Fn sed_results
+May be invoked multiple times after
+.Fn sed_exec
+to obtain last match results. An 'r' flag should be specified within the
+expression string.
+.Pp
+.Sh EXPRESSIONS
+Currently, this library supports two types of string transformations and
+one type of string match.
+.Pp
+.Nm Substitutions
+.Pp
+Expressions of this type are defined in the following BNF:
+.Bd -literal -offset indent
+<delim>	:=	'/' | <other_character>
+
+<regex>	:=	<regular_expression, re_format(7)>
+
+<to>	:=	<string>
+
+<flags>	:=	*( 'g' | 'i' | 'e' | 'r' | 'm' | 'n' )
+
+<expr>	:= 	s <delim> <regex> <delim> <to> <delim> <flags>
+
+.Ed
+Refer to
+.Xr sed 1
+manual page to know other details.
+.Pp
+.Nm Table lookup
+.Pp
+.Bd -literal -offset indent
+<delim>	:=	'/' | <other_character>
+
+<flags>	:=	*( 'i' )
+
+<expr>	:= 	y <delim> <string> <delim> <string> <delim> <flags>
+
+.Ed
+.Pp
+.Nm String match
+.Pp
+.Bd -literal -offset indent
+<delim>	:=	'/' | <other_character>
+
+<flags>	:=	*( 'i' | 'r' | 'm' | 'n' )
+
+<reply>	:=	<string>
+
+<expr>	:= 	<delim> <string> <delim> [ <reply> <delim>] <flags>
+
+.Ed
+In the last case, if string does not match,
+.Fn sed_exec
+will return a NULL pointer, <reply> otherwise. s/// and y/// functions will
+.Nm never
+return a NULL pointer.
+.Bl -tag -width "XXXXXX" -offset indent
+.Pp
+Flags are common to those transformations.
+.It 'i'
+case-insensitive matches.
+.It 'e'
+compile in extended mode (REG_EXTENDED).
+.It 'g'
+Make the substitution for all non-overlapping
+matches of the regular expression, not just the
+first one.
+.It 'r'
+Remember last match results to allow use of
+.Fn sed_results .
+.It 'm'
+Compile for newline-sensitive matching (REG_NEWLINE).
+.It 'n'
+Don't include zero
+.Xr regexec 3
+match (a whole substring) into results list.
+.El
+.Pp
+.Sh EXAMPLE
+.Bd -literal
+void main() {
+	sed_t *se1;
+	sed_t *se2;
+	sed_t *se3;
+	char *r1, *r2, r3;
+
+	/* Compile expressions */
+	se1 = sed_compile("s/(tree) (apple)/\\\\2 \\\\1/igr");
+	se2 = sed_compile("y/abc/AbC/i");
+	se3 = sed_compile("/apple/i");
+
+	r1 = sed_exec(se1, "Tree Apple");
+	r2 = sed_exec(se2, "abcabc");
+	r3 = sed_exec(se3, "another apple tree");
+
+	/*
+	** This will produce:
+	** "Apple Tree\enAbCAbC\en1\en"
+	*/
+	printf("%s\en%s\en%d\en", r1, r2, r3?1:0);
+
+	/*
+	** This will produce:
+	** "[Tree Apple], [Tree], [Apple]\en"
+	*/
+	printf("[%s]\en", sjoin(sed_results(se1), "], ["));
+
+	/* Free the resources */
+	sed_free(se1);
+	sed_free(se2);
+	sed_free(se3);
+};
+.Ed
+.Pp
+.Sh SEE ALSO
+.Xr strfunc 3 .
+.Sh AUTHORS
+.An Lev Walkin <vlm@spelio.net.ru>

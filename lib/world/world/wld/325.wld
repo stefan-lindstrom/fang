@@ -1,0 +1,605 @@
+<?xml version="1.0"?>
+<rooms>
+  <room>
+    <roombasic title="The first room of the rest of your life." vnum="32500" zone="325">
+      <roomdescription>This is the room where everyone begins his or her life here in the
+Dragon's Fang.  There are a few choices for travellers, all of them easy
+to follow.  You can go down from this room, and find yourself in Caemlyn
+and more specifically in the mail room.  You can go north from here and
+take a small but useful tour in the history of the Wheel of Time and see
+some of the most important events that led the world where it is today.  
+You can also go up, to the Fang School, where you can learn all you need
+to about playing in the Mud - it'll help you feel right at home here.  To
+get your first pointers on where things are here, and how things work,
+type &amp;Whelp basics&amp;n and &amp;Whelp FAQ&amp;n.  You could also ask a &amp;mNewbieGuide&amp;n, there
+are usually a few online!  To switch between IC (in character, for
+role-play), and OOC (out of character) simply type &amp;Wtoggle ic&amp;n - people who
+are OOC have an * by their name when you see them in a room, and the &amp;Wwho&amp;n
+list show's whether people are &amp;gIC&amp;n or&amp;r OOC&amp;n.  Welcome to the world of
+Dragon's Fang!    
+</roomdescription>
+      <flags>10</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="To the Age of Legends room. " exitinfo="0" keynum="0" toroom="32501">
+      <description>You look into a HUGE city, made out of tall, impossible buildings.
+It looks like a lot of birds are flying around the buildings.
+</description>
+    </exit>
+    <exit direction="up" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="29900">
+      <description>Up from here lies the Fang School, where you can
+learn a few things about the most important aspects
+of playing here.
+</description>
+    </exit>
+    <exit direction="down" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="10145">
+      <description>You can see a room in Caemlyn down some stairs
+here.. there are torches all over, and the way is
+well lit.
+</description>
+    </exit>
+    <exdesc keyword="button">
+      <description>Beside the beautiful golden plaque, is a large white button, that
+seems to call out to you, &quot;Press me, press me!&quot;.
+</description>
+    </exdesc>
+    <exdesc keyword="plaque">
+      <description>A large golden plaque, inscribed with the followin message:
+
+&quot;Welcome MUDer, to the realms of Dragons Fang. If you can read
+this, you don't need glasses, and you have successfully entered
+your first command in this realm. If you feel you need help from
+one of our wonderful immortals, just press the button besides this
+plaque.
+
+/The Staff
+&quot;
+</description>
+    </exdesc>
+  </room>
+  <room>
+    <roombasic title="The Age of Legends" vnum="32501" zone="325">
+      <roomdescription>You stand in the street of a vast city, filled with huge
+gleaming buildings that tower up into the sky. All around you
+strangely clad men and women hurry around, and strange carts
+without horses move through the streets propelled by an unseen
+force. This, you realize, must be the Age of Legends, in the
+times before the Dark One was freed from his prison.
+</roomdescription>
+      <flags>10</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="to the Hall of the Servants" exitinfo="0" keynum="0" toroom="32502">
+      <description>A strange room, filled with men and women.
+</description>
+    </exit>
+    <exit direction="south" keyword="Back to the start-room. " exitinfo="0" keynum="0" toroom="32500">
+      <description>You look back into the room where your life started.
+</description>
+    </exit>
+    <exdesc keyword="cart wagon">
+      <description>A starnge-looking cart, made out of glass and metall.
+You can see no horses to pull the cart, so you can't help
+wondering what is the driving force of this perculiar contraption.
+</description>
+    </exdesc>
+  </room>
+  <room>
+    <roombasic title="The Hall of Servants" vnum="32502" zone="325">
+      <roomdescription>You stand in a huge room, filled with men and women clad in
+fine and expensive-looking clothes. You recognize one of the
+symbols on the walls, a black-and-white disc, divided by a
+sinuous line, but you can't really recall what it is.
+One of the men in the room, is sitting on a chair, almost like
+a throne, receiving a strange ring from one of the women. This
+must be the raising of Lews Therin Telamon to be the Tamyrlin,
+in the days when males still could touch the One Power without
+going mad.
+
+When moving around in rooms on the MUD, sometimes you will find
+objects, like food, armor, weapons etc...You already know how to
+examine these objects, but to get them you can use the command
+GET &lt;objectname&gt;. To drop the object, type DROP &lt;obj-name&gt;.
+To use an useable object, you can try on of the following
+commands: WEAR, WIELD, HOLD. To stop using them, type REMOVE
+&lt;object-name&gt;. To compare an object in your inventory with one
+you're wearing, type COMPARE &lt;object-name&gt;.
+</roomdescription>
+      <flags>10</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="west" keyword="Back to the Age of Legends. " exitinfo="0" keynum="0" toroom="32501">
+      <description>You can faintly make out the Age of Legends-room.
+</description>
+    </exit>
+    <exit direction="down" keyword="Down to The Gathering of the Forsaken" exitinfo="0" keynum="0" toroom="32503">
+      <description>You can see a rotten ladder leading down into darkness,
+randomly lit up by something that looks like a huge fire.
+</description>
+    </exit>
+    <exdesc keyword="walls">
+      <description>The walls are of whites marble, inlaid with gold, and precious
+stones. At set intervals, banners are hanging, all with the
+strange black-and-white symbol you quite can't recognize.
+</description>
+    </exdesc>
+    <exdesc keyword="ring ">
+      <description>The ring of the Tamyrlin, words aren't enough to even begin
+describing this wonderful treasure.
+</description>
+    </exdesc>
+    <exdesc keyword="lews therin dragon kinslayer thelamon tamyrlin">
+      <description>A quite short man, not very muscular but whit a strong feeling
+of power and selfassurance. He got dark eyes, and dark hair, and
+is clad in the most perculiar clothes, but of fine materials in
+gold, black and scarlet.
+</description>
+    </exdesc>
+  </room>
+  <room>
+    <roombasic title="The Gathering of the Forsaken" vnum="32503" zone="325">
+      <roomdescription>This is the inside of a strange cave, with cliffs hanging from the ceiling
+or sprouting from the floor, almost like fangs.  In the middle of the cave
+is a huge lake of molten rock.  Upwards is a strange sky, of pulsating red
+with a thick purple edge.  Around the lake 13 men and women are kneeling
+with expressions of awe, terror and ecstasy on their faces.  This must be
+the first gathering of the Forsaken, 13 of the strongest Aes Sedai from
+the Age of Legends, that swore their souls to the Shadow in exchange for
+power and immortality.    
+</roomdescription>
+      <flags>10</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="west" keyword="At the Strike at Shayol Ghul" exitinfo="0" keynum="0" toroom="32504">
+      <description>Far away you can see something that only can be described as
+a ravaging battle.
+</description>
+    </exit>
+    <exit direction="up" keyword="Back to Hall of Servants" exitinfo="0" keynum="0" toroom="32502">
+      <description>Far away you can see the sparkling of Callandor where it
+lies in the Hall of Servants.
+</description>
+    </exit>
+    <exdesc keyword="forsaken chosen rahvin graendal moghedien lanfear sammael ishammael aginor balthamel mesaama bel'al demandred asmodean semirhage">
+      <description>No matter which of the Forsaken you look at, one thing they all
+got in common. Hunger for power, incredible cruelty, fear for
+failing their master, Shai'tan, or to be captured by the forces
+of the Light, led by lews Therin Telamon, the Dragon and Lord
+of the Morning.
+</description>
+    </exdesc>
+  </room>
+  <room>
+    <roombasic title="The Strike at Shayol Ghul" vnum="32504" zone="325">
+      <roomdescription>You stand in the middle of a raging battle. Human fighting other humans, 
+trollocs, myrddraal and othe shadowspawn. This must be the final assault
+by Lews Therin and his Hundred Companions, when they resealed the Dark
+One's prison thus imprisoning both the Dark One, and the dreaded Forsaken.
+This ended the War of the Shadow, but with the resealing of the prison,
+the Dark One's counterstroke tainted Saidin, the male half of the True Source.
+The Taint forces all male channelers to go mad, and thus the Breaking of
+the World began, when all the male channelers went mad, killing, destroying, 
+even changing the face of the Earth. Lews Therin himself killed all of his
+blood, and all his friends in his mad ravening, thus giving him the name
+Kinslayer. 
+
+When moving around the Dragons Fang, you will encounter other players. Some
+of those are PC, players controlled by other humans, others are Mobs. Mobs
+are computer controlled, some of them have a special purpose, like
+shopkeeping, others are just background scenery, or to be killed OOCly for
+levelling purposes.
+</roomdescription>
+      <flags>10</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="Back to the Gathering" exitinfo="0" keynum="0" toroom="32503">
+      <description>This passage surely must lead back to the Gathering of
+the Forsaken.
+</description>
+    </exit>
+    <exit direction="up" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="32505">
+      <description>Upwards you can see (and hear) people in panic. Shouting and wailing
+almost covering the sound of people dying, buildings being torn apart
+by some incredible force. 
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Breaking of the World" vnum="32505" zone="325">
+      <roomdescription>You stand once again in the beautiful city where you started your journey
+into the history of the Wheel of Time. But this time the city isn't that
+beautiful anymore. The buildings are rampaged, the earth is heaving, the
+strange carts are all destroyed and stand still. People are shouting in
+panic, and are trying to escape before the Breaking kills them. A few
+soldiers and female Aes Sedai are the only ones calm in this chaos, 
+obviously they will try to stop the madman (whoever he is) before he can
+reach the city and kill all it's inhabitants. 
+On one of the destroyed carts, you can see that someone has nailed a sign. 
+</roomdescription>
+      <flags>10</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="The Trolloc Wars" exitinfo="0" keynum="0" toroom="32506">
+      <description>Once again you see the battle between humans and shadowspawn. 
+Is this an error, a mistake made by a clumsy Immortal, or is 
+it a totally different battle?
+</description>
+    </exit>
+    <exit direction="down" keyword="Back to the Strike" exitinfo="0" keynum="0" toroom="32504">
+      <description>Down below you can still here the ssounds of the battle. 
+</description>
+    </exit>
+    <exdesc keyword="sign">
+      <description>&quot;I fear that the world as we know it will be lost forever. Thus have I
+inscribed the most important knowledge for those who come after us. In
+your interaction with other players on the Dragons Fang, the most
+important thing is Roleplaying. You should choose your character and
+build a background for him which fits in with the WoT-universe. Killing
+other players is forbidden, unless it's an outcome of RP.&quot;    
+</description>
+    </exdesc>
+  </room>
+  <room>
+    <roombasic title="The Trolloc Wars" vnum="32506" zone="325">
+      <roomdescription>After the Breaking, people tried to reform the society they knew. 
+Most fabled in these years was the Ten Nations. Among them
+Manetheren, always a thorn in the Dark Ones foot. But the 
+happiness in the Nations didn't last long, once again Trollocs, 
+Myrdraals and other Shadowspawn poured out of the Blight, led by
+Dreadlords. The Nations died, and most of them are forgotten, but 
+once again humankind managed to turn away this danger, and thus
+formed the realms as we know them today. 
+
+One of the most important commands on Dragon's Fang is the 'HELP' command.
+If there is something you don't know, and there isn't anyone around to ask
+questions, you can always use HELP!
+</roomdescription>
+      <flags>10</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="south" keyword="Back to the Breaking of the World" exitinfo="0" keynum="0" toroom="32505">
+      <description>This passage will lead you back to the Breaking of the World. 
+</description>
+    </exit>
+    <exit direction="west" keyword="To the Rise and Fall of Artur Hawkwing" exitinfo="0" keynum="0" toroom="32507">
+      <description>Far away you can make out a lot of people raising a statue, 
+but you can't make the statue out from this distance. Perhaps
+if you went closer?
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Rise and Fall of Artur Hawkwing" vnum="32507" zone="325">
+      <roomdescription>In the middle of the huge working grounds where you suddenly stand, 
+you can see people trying to raise a huge statue of a man holding a
+spire with a hawk. This must be the building of the capital of Artur
+Hawkwing, the High King who once almost conquered the whole world. 
+Unfortunately his empire was torn apart by some of his descendants 
+after his death, thus forming the kingdoms and countries as they are today. 
+The legends says that Hawkwing sent armies beyond the Aryth Ocean to 
+conquer the lands there, but no one knows for sure. 
+But one thing that is more or less a fact about Hawkwing is his strong
+hatred for Aes Sedai. Hawkwing's armies laid siege outside Tar Valon for
+over 20 years in an attempt to raze it from the face of the earth.
+You notice something inscribed on the statue's pedestal. 
+</roomdescription>
+      <flags>10</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="Back to the Trolloc Wars" exitinfo="0" keynum="0" toroom="32506">
+      <description>You can still faintly make out the battles of the Trolloc Wars, 
+but you don't wanna get back there, do you?
+</description>
+    </exit>
+    <exit direction="up" keyword="To the Aiel War" exitinfo="0" keynum="0" toroom="32508">
+      <description>Strange! Despite the fact that you're obviously is far away
+from the battle you hear, yoy can still make out some of the 
+people fighting. Tall men and women, clad in broun and grey
+clothes, and with a black shroud covering their faces. They
+</description>
+    </exit>
+    <exdesc keyword="statue pedestal inscription">
+      <description>In order to learn why the High King's empire fell, you must learn
+to use these commands. They will help you greatly in your interaction
+with other players on the MUD, and thus you might get the information
+you want. 
+To communicate with the persons in your room, you might use the command SAY. 
+EMOTE is another command that could be useful when RPing. SHOUT and HOLLER
+will bring your message to all people on the MUD, but most will be annoyed by them.
+</description>
+    </exdesc>
+  </room>
+  <room>
+    <roombasic title="The Aiel War" vnum="32508" zone="325">
+      <roomdescription>You stand once again amidst a huge battle.  People from all over the realm are
+fighting a common enemy.  Tall men and women, clad in grey and brown, and with
+some kind of black veil covering their faces.  These people are armed with
+spears and knives and bows, which they use with great success, but not a
+single one of them are carrying a sword.  This is obviously a battle from the
+Aiel War, when the deadly and legendary warriors of the Aiel Waste, crossed
+the Dragonwall and burned and slew their way almost to the walls of Tar Valon.
+But what most people don't know is that for the Aiel this wasn't a war at all.
+They set out as thieftakers with the only goal to capture and behead Laman,
+king of Cairhienin, who chopped down the sapling of the Tree of Life the Aiel
+brought as a peacegift many many years earlier.  Having done this, they turned
+back to the waste.  One of the Aiel's veils is lying on the ground. Strange is
+it writing on it or what?    
+</roomdescription>
+      <flags>10</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="Back to Reality again" exitinfo="0" keynum="0" toroom="32509">
+      <description>This door seems to lead out to the current time. Strange. 
+</description>
+    </exit>
+    <exit direction="down" keyword="Back to Hawkwings Empire" exitinfo="0" keynum="0" toroom="32507">
+      <description>This way you can go back to Hawkwings Empire.
+</description>
+    </exit>
+    <exdesc keyword="veil shoufa scribings inscription">
+      <description>Well friend, you're approaching the end of this history tour. A few more
+things need to be said about the Dragon's Fang.
+The most important thing to know, is that you must NEVER be afraid
+to ask an Imm for help if your stuck. After all we're here to help, if
+we can. But don't forget the magic word, Gimm..ehr, please, that is. :)
+If an immortal isn't on, don't hesitate to ask other players, either
+via the OOC-channel or with TELL. 
+</description>
+    </exdesc>
+  </room>
+  <room>
+    <roombasic title="Current Time" vnum="32509" zone="325">
+      <roomdescription>Ah, back in your own time again.  To a world in turmoil.  The unnatural weather
+doesn't only destroy the crops for farmers, it's rather unnerving.  War is
+raging in many parts of the world, a strange people called the Seanchan or
+something like that has taken over a large part of the world, and by rumours
+they are using Aes Sedai in battle.  Some people claim that the Forsaken are
+free, others claim that the Dragon is reborn and that the Last Battle is
+coming.  One thing is for sure though, this is YOUR chance to make a place for
+yourself in the history and to (hopefully) have a great time here at Dragons
+Fang.  And yes, examining this last sign might not be a bad idea.    
+</roomdescription>
+      <flags>10</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="south" keyword="Back to the Aiel War" exitinfo="0" keynum="0" toroom="32508">
+      <description>This passage leads back to the Aiel War
+</description>
+    </exit>
+    <exit direction="west" keyword="Back to the start" exitinfo="0" keynum="0" toroom="32500">
+      <description>Ah, this way to the start of the tour. At last!
+</description>
+    </exit>
+    <exdesc keyword="sign plaque writing">
+      <description>You have reached the end of this tour for sure. Hopefully you have learned a 
+little of the Wheel of Time-history, and some about how to play here on 
+Dragons Fang. If you still feel that you need help, you can still push the
+button in the start of this tour, and hopefully there wil be an Immortal that
+can answer your call, and give you the help you need. 
+Good Luck, and may Peace favor your Sword. 
+</description>
+    </exdesc>
+  </room>
+  <room>
+    <roombasic title="\c05Kerrin's Groovy OoC place\c00" vnum="32510" zone="325">
+      <roomdescription>The pale green walls here are decored with many fine tapestries- most of them depicting surrealistic images of dragons and beautiful landscapes.
+A futon bed is set against the northern most wall, decored with cream slashed blankets and burghandy cushions, and several 
+lamps hung upon diamond shaped sconces provide fair lighting.
+A computor rests upon a small desktop in a corner of the room, the seat well worn from use since Kerrin often sits here to do her work, and small 
+hand crafted sculptures of small animals decorate the area along with a few
+beanie babies.
+In the opposing corner is a cappicino machine and a stereo littered with a myriad of CD's,
+the artists ranging from Classical musicians, to Pink Floyd, to Broadway soundtracks, and among the mix are a few jazz cd's.
+All in all it's a fun room, highly personalized with Kerrin's artsy creations.
+</roomdescription>
+      <flags>1026</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="32601">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exit direction="east" keyword="door" exitinfo="17" keynum="0" toroom="32511">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exit direction="down" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="10186">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="\c05The Lounging Lizard \c03Coffee\c05 Bar\c00" vnum="32511" zone="325">
+      <roomdescription>The room has no walls since it is constructed in a circular fashion, and works of art are suspended neatly from the ceiling:
+Among these works are a few of Salvador Dahli's paintings, accompanied by several peices from Monet, and Piccasso.
+The floor is tiled neatly with emerald-swirled marble, and a few fuzzy throw rugs are tossed carelessly about.
+With several stools surrounding it, the bar is set in the center of the room- also constructed in a circular shape-
+and Cujo the fat chihuahua is perched high upon a tall box so that he may serve you.
+Four well cushioned sofas are set about the room- all of them upholstered with a
+shamelessly fuzzy, moo-cow spotted fabric.
+</roomdescription>
+      <flags>1178</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="west" keyword="Door" exitinfo="17" keynum="0" toroom="32510">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Kerrin's \c10G\c09a\c08M\c12e\c13 RoOm\c00" vnum="32512" zone="325">
+      <roomdescription>Your feet tingle as you realize that the entirety of the floor is carpeted with astroturf, and the low slung
+doorway abruptly gives way to a fair sized room with a domed ceiling.
+A mural is painted along the dome- a fancifull display of the night stars along with a few
+mildly colored planets..and in the glow of the blacklight- it is easy for one
+to forget themself beneath the awe inspiring depiction of the autumn sky.
+A vague fragrance of fresh flowers accents the room softly, and 
+the number of layered cushions strewn about the room begin to look more and more
+inviting as the picture draws you in.
+</roomdescription>
+      <flags>65538</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+  </room>
+  <room>
+    <roombasic title="\c05Cadene's \c06Wrestling\c05 Arena!\c00" vnum="32513" zone="325">
+      <roomdescription>At the center of this grand room is a raised dais, square shaped and lifted about a span above the floor.
+Four posts are set about the corners- and blue ropes are strung between them to act as a boundery of a sorts, 
+in order to safe guard any contestants from harm. 
+Surrounding the rink are more than a few well cushioned sofas, a small distance away from the battle-ground,
+and a number of coffee tables are set in between, offering a nice place for spectators to place their drink of choice.
+A few props are contained in a box set against the stage- and a cabinet full of food and drink 
+is neighboring a particularly large cow-spotted sofa.
+</roomdescription>
+      <flags>82</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+  </room>
+  <room>
+    <roombasic title="A Dense Gathering of Trees" vnum="32514" zone="325">
+      <roomdescription>The number of twists and turns along the path, accompanied by the obscuring blanket of shadows, all seems to
+lend itself towards a feeling of disorientation..Almost all sense of direction is lost, and you find yourself standing by a tree that looks suspiciously familiar..
+</roomdescription>
+      <flags>66</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+  </room>
+  <room>
+    <roombasic title="Behind the Guild walls of the Aluminators" vnum="32515" zone="325">
+      <roomdescription>The courtyard is a wide one, both the floors and walls made entirely of stone..Large wheeled barrels
+line the northernmost wall, and a rack of large red firesticks are opposite them to the south- 
+You find yourself in the center of the otherwise barren area, and as the moonlight
+sends a number of eddied shadows skittering across the ground, attention is drawn to
+the distant light filled windows to the east.
+Suddenly the courtyard radiates a sense of intrusion..Perhaps you'd best not be found here?
+</roomdescription>
+      <flags>2</flags>
+      <sector>City</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="32516">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exdesc keyword="fire stick firecracker">
+      <description>The rack to the south holds several Fire sticks..each one at least a span in height. The great red objects have tiny fuses protruding from them.
+</description>
+    </exdesc>
+  </room>
+  <room>
+    <roombasic title="Inside an Unusually Large Tinker Wagon" vnum="32516" zone="325">
+      <roomdescription>The wagon is decored in a large variety of colors, the combination of which causes the eye to wrench at the sight.
+With bright blue cupboards, red and green candy-striped walls, and a pink dining room set- 
+Only a tinker could glance about withour impairing their vision.
+Sounds of merriment drift through the open windows- filling the room with childrens' laughter,
+and the crackling of a warm fire accompanied with distant singing voices.
+Several hand crafted pots are hung over a full basin of water.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="0" exitinfo="0" keynum="0" toroom="32517">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exit direction="west" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="32515">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="A Wide Avenue Running Through Tanchico" vnum="32517" zone="325">
+      <roomdescription>The usually crowded street looks as though it has suffered a great disturbance as you draw near,
+with small scattered groups of people standing about a toppled wagon-
+the apparent focus of their attention. All social groups are represented,
+a few scrubby looking children off to one side- some noble women talk excitedly as they observe the mess,
+and several city guards are present- one of them grappling with a small boy, who screeches wildly in return.
+A closer look reveals three horses dancing nervously about the cart that they are bound to, and a well dressed woman
+lies pinned beneath of the wagon, apparently unconscious.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="32518">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exit direction="west" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="32516">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="A Snow Covered Clearing" vnum="32518" zone="325">
+      <roomdescription>A pristine setting, the ground is covered with a thick blanket of snow, nearly encompassing your legs well past the calves.
+Bare tree limbs reach towards the sky with their white burden wheighing heavily upon them, and 
+an occasional breeze disturbs the perfect stillness of the wood- sending small clumps of snow
+falling to the ground. Various animal tracks are imprinted upon the ground, making the act of tracking their source 
+a simple task, especially here in the outskirts of Emond's field, where nearly all of the inhabitants are
+accustomed to identifying the tracks of native woodland creatures.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="west" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="32517">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="An unfinished room" vnum="32567" zone="325">
+      <roomdescription>You are in an unfinished room.
+</roomdescription>
+      <flags>2</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+  </room>
+  <room>
+    <roombasic title="Me own plece" vnum="32599" zone="325">
+      <roomdescription>you are in a room, apparently.
+</roomdescription>
+      <flags>1102</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="32599">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exit direction="east" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="32599">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exit direction="south" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="32599">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exit direction="west" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="32599">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exit direction="up" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="32599">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exit direction="down" keyword="&lt;NONE&gt;" exitinfo="0" keynum="-1" toroom="32599">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exit direction="northeast" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="32599">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exit direction="southeast" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="32599">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exit direction="southwest" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="32599">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exit direction="northwest" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="32599">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+  </room>
+</rooms>

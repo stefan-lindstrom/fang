@@ -1,0 +1,725 @@
+<?xml version="1.0"?>
+<mobiles>
+  <mobile vnum="25601" name="watchtower mob guard man" special="NONE">
+    <description>This man stands medium height and weight, and has no real noticeable oddities
+about him, other then his intent, searching eyes.  A billet is held in a hand
+while the other holds a wooden shield as well.    
+</description>
+    <shortdesc>A watch-tower Guard.</shortdesc>
+    <longdesc>A Watch-Tower guard stands here with intent eyes.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="100" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="30" dsize="500" bonus="7000"/>
+      <move ndize="1" dsize="7000" bonus="7000"/>
+      <ac>-200</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>15</hitroll>
+      <damroll>15</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="4122"/>
+    <affected one="67110960" two="0" three="0" four="0"/>
+    <attack type="6"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="20" sides="127" add="15"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnRandom" argtype="INT" argument="100">
+      <action number="Action" argtype="STRING" argument="close inn"/>
+      <action number="Action" argtype="STRING" argument="close stable"/>
+    </mobprog>
+    <mobprog main="OnTick" argtype="INT" argument="100">
+      <action number="Action" argtype="STRING" argument="close inn"/>
+      <action number="Action" argtype="STRING" argument="close stable"/>
+    </mobprog>
+    <mobprog main="OnEntry" argtype="INT" argument="100">
+      <action number="Pause" argtype="INT" argument="30"/>
+      <action number="Action" argtype="STRING" argument="close inn"/>
+      <action number="Action" argtype="STRING" argument="close stable"/>
+    </mobprog>
+    <mobprog main="OnLeave" argtype="INT" argument="100">
+      <action number="Pause" argtype="INT" argument="30"/>
+      <action number="Action" argtype="STRING" argument="close inn"/>
+      <action number="Action" argtype="STRING" argument="close stable"/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="25602" name="male citizen baerlon" special="NONE">
+    <description>This man is tall and built much like a miner, muscular and soot-covered.
+His face has seen the wear of hard labor, but a certain twinkle gleams in
+his eyes as if he is still much in his prime of life.  He is clad in a
+long cloak, worn boots and pouch hangs at the leather belt about his
+waist.    
+</description>
+    <shortdesc>a citizen of Baerlon</shortdesc>
+    <longdesc>A citizen of Baerlon stands here.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="60" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="0" dsize="0" bonus="0"/>
+      <hit numd="30" dsize="20" bonus="1000"/>
+      <move ndize="1" dsize="1000" bonus="1000"/>
+      <ac>-50</ac>
+      <gold>50</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1050700"/>
+    <affected one="18432" two="0" three="0" four="0"/>
+    <attack type="13"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="5" sides="10" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="25603" name="female citizen baerlon" special="NONE">
+    <description>This woman appears fairly nice to gaze at with her long dark hair and
+matching dark eyes.  She has the look of a home-steader, an a child-bearer
+as per her full-formed beauty.  She is clad in a long dress and dusty
+sandals.    
+</description>
+    <shortdesc>a citizen of Baerlon</shortdesc>
+    <longdesc>A citizen of Baerlon Stands here.
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="65" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="0" dsize="0" bonus="0"/>
+      <hit numd="30" dsize="30" bonus="1000"/>
+      <move ndize="1" dsize="1000" bonus="1000"/>
+      <ac>-50</ac>
+      <gold>50</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="2124"/>
+    <affected one="2048" two="0" three="0" four="0"/>
+    <attack type="4"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="10" sides="20" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="25604" name="rat mob" special="NONE">
+    <description>It looks much like a vicious little rat, with big nasty teeth!
+</description>
+    <shortdesc>a vicious little rat</shortdesc>
+    <longdesc>A vicious little rat wanders by.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="10" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="0" dsize="0" bonus="0"/>
+      <hit numd="10" dsize="10" bonus="100"/>
+      <move ndize="1" dsize="100" bonus="100"/>
+      <ac>50</ac>
+      <gold>10</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="76"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="4"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="25605" name="beggar baerlon" special="NONE">
+    <description>This man looks completely haggard, perhaps a refugee from the recent
+troubles which have plagued the land.  Deep set eyes and a face lined with
+worry are hallmarks to this man's appearance, as well as the rags that he
+is clad in.    
+</description>
+    <shortdesc>a forlorn beggar</shortdesc>
+    <longdesc>A forlorn beggar rests here, begging for coins.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="20" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="0" dsize="0" bonus="0"/>
+      <hit numd="10" dsize="10" bonus="300"/>
+      <move ndize="1" dsize="300" bonus="300"/>
+      <ac>0</ac>
+      <gold>5</gold>
+      <bankgold>0</bankgold>
+      <exp>10</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="140"/>
+    <affected one="2048" two="0" three="0" four="0"/>
+    <attack type="13"/>
+    <pos default="Resting" other="Resting"/>
+    <damage num="2" sides="20" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnEntry" argtype="VOID" argument="NONE">
+      <action number="ActionTo" argtype="STRING" argument="pemote raises his hands up as he begs to you, &quot;&amp;WPlease, coins.. I'm starving..&amp;n&quot;"/>
+    </mobprog>
+    <mobprog main="OnAction" argtype="STRING" argument="give">
+      <action number="ActionTo" argtype="STRING" argument="pemote prostrates himself before you, exclaiming &quot;&amp;WMay the Light shine upon you for your mercy!&amp;n&quot;"/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="25606" name="miner mob male" special="NONE">
+    <description>This is a large, rather powerfully built man who is covered from head to
+toe in dust, and is quite probably a miner.  He walks with a rolling gait
+as he moves about.  He is clad in long pants, a woolen shirt and thick
+leather boots.    
+</description>
+    <shortdesc>a dusty miner</shortdesc>
+    <longdesc>A dust-covered miner walks by.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="110" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="0" dsize="0" bonus="0"/>
+      <hit numd="10" dsize="100" bonus="2500"/>
+      <move ndize="1" dsize="2500" bonus="2500"/>
+      <ac>-150</ac>
+      <gold>5</gold>
+      <bankgold>0</bankgold>
+      <exp>10</exp>
+      <hitroll>50</hitroll>
+      <damroll>50</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1054812"/>
+    <affected one="2096" two="0" three="0" four="0"/>
+    <attack type="13"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="15" sides="30" add="50"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="25607" name="city-watchman wary-eyed man guard" special="NONE">
+    <description>This wary-eyed man is of medium build and height, and is quite
+certainly in his middle age. He wears a cap, as well as a leather
+jerkin and carries around a billet with him as he moves about
+the area, looking for any kind of wrong doing.
+</description>
+    <shortdesc>a wary-eyed man</shortdesc>
+    <longdesc>A wary-eyed man travels through the area.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="70" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="0" dsize="0" bonus="0"/>
+      <hit numd="30" dsize="10" bonus="2500"/>
+      <move ndize="1" dsize="2500" bonus="2500"/>
+      <ac>-200</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>5</exp>
+      <hitroll>30</hitroll>
+      <damroll>50</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1227868"/>
+    <affected one="591920" two="0" three="0" four="0"/>
+    <attack type="14"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="10" sides="10" add="30"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <dgscript vnum="25608"/>
+    <dgscript vnum="25607"/>
+    <dgscript vnum="25606"/>
+    <dgscript vnum="25605"/>
+  </mobile>
+  <mobile vnum="25608" name="stray dog" special="NONE">
+    <description>IT looks much like a worn, rough and stary doggie. How cute?
+</description>
+    <shortdesc>a stray dog</shortdesc>
+    <longdesc>A stray dog moves along here, wagging its tail.
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="5" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="1000" bonus="200"/>
+      <move ndize="1" dsize="200" bonus="200"/>
+      <ac>0</ac>
+      <gold>10</gold>
+      <bankgold>0</bankgold>
+      <exp>500</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="134156"/>
+    <affected one="2096" two="0" three="0" four="0"/>
+    <attack type="4"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="30" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="25609" name="thief dark-cowled" special="NONE">
+    <description>A &amp;Kd&amp;wa&amp;Kr&amp;wk&amp;n-&amp;wc&amp;Ko&amp;ww&amp;Kl&amp;we&amp;Kd&amp;n thief stands here, peering around, this man is tall and lean
+with no visible weapons, however when you look at him, he is obviously not
+looking at you.    
+</description>
+    <shortdesc>a &amp;Kd&amp;wa&amp;Kr&amp;wk&amp;n-&amp;wc&amp;Ko&amp;ww&amp;Kl&amp;we&amp;Kd&amp;n thief</shortdesc>
+    <longdesc>A &amp;Kd&amp;wa&amp;Kr&amp;wk&amp;n-&amp;wc&amp;Ko&amp;ww&amp;Kl&amp;we&amp;Kd&amp;n thief stands here, peering around.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="199" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="0" dsize="0" bonus="0"/>
+      <hit numd="20" dsize="50" bonus="8500"/>
+      <move ndize="1" dsize="7500" bonus="8500"/>
+      <ac>-200</ac>
+      <gold>750</gold>
+      <bankgold>0</bankgold>
+      <exp>250</exp>
+      <hitroll>30</hitroll>
+      <damroll>30</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1748060"/>
+    <affected one="288966706" two="0" three="0" four="0"/>
+    <attack type="11"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="10" sides="15" add="30"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <dgscript vnum="25609"/>
+  </mobile>
+  <mobile vnum="25686" name="armorer smith man mob Erivan" special="NONE">
+    <description>The figure you are glancing at is tall with heavily corded muscles running
+along the lengths of his thick arms and thick legs.  An apron is worn over
+a leather vest, which covers downwards along his front.  Thick leather
+trousers adorn his legs and are tucked into thick, iron-shod leather
+boots.  This tall man has a rough-hewn face, seemingly chiseled from stone
+and a pair of two deadly cold eyes.    
+</description>
+    <shortdesc>a heavily-muscled armorer</shortdesc>
+    <longdesc>A heavily-muscled fellow stands here, gazing about balefully.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="200" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="15000"/>
+      <hit numd="1" dsize="1" bonus="15000"/>
+      <move ndize="1" dsize="15000" bonus="15000"/>
+      <ac>-200</ac>
+      <gold>250000000</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="14673950"/>
+    <affected one="608304" two="0" three="0" four="0"/>
+    <attack type="11"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="30" sides="127" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="25688" name="blacksmith smith" special="NONE">
+    <description>This man is tall and heavily-muscled with long black hair and matching
+black mustaches.  He has dark, deep set eyes which seem to hold a certain
+wariness within their depths.  He moves slowly, not as if tired, but as if
+he were looking out for the things around him.  He is clad in an apron and
+vest, while beneath he wears a thick shirt, trousers and a pair of dusty
+black boots.    
+</description>
+    <shortdesc>a heavily-muscled blacksmith </shortdesc>
+    <longdesc>A heavily-muscled blacksmith stands here.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="200" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="15000"/>
+      <hit numd="1" dsize="1" bonus="15000"/>
+      <move ndize="1" dsize="15000" bonus="15000"/>
+      <ac>-200</ac>
+      <gold>50000000</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="14671882"/>
+    <affected one="18480" two="0" three="0" four="0"/>
+    <attack type="11"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="25689" name="Smede" special="NONE">
+    <description>Smede is shorter then average for an Andoran, with a fat belly and a bald
+head.  He wears glasses as well as has a dark, scruffy beard on his face.
+Smede sounds rather uncouth when he speaks, curses popping into his words
+every few moments.    
+</description>
+    <shortdesc>Smede the hiding blacksmith.</shortdesc>
+    <longdesc>Smede, the hidden blacksmith's helper stands here, hidden behind a rack of weaponry.
+</longdesc>
+    <title/>
+    <chardata gender="NEUTRAL" class="Adventurer" level="200" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="25000"/>
+      <hit numd="1" dsize="1" bonus="20000"/>
+      <move ndize="1" dsize="20000" bonus="20000"/>
+      <ac>-200</ac>
+      <gold>5000000</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="14475294"/>
+    <affected one="3737650" two="0" three="0" four="0"/>
+    <attack type="4"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="25700" name="Guido man mob" special="NONE">
+    <description>The man you are glancing at is tall and thickly built with a squarish,
+clean-shaven face.  He has short, well-trimmed dark hair and seems to hold
+the appearance of some kind of professional.  He is clad in an odd-looking
+black suit, and shiny black shoes.  About his neck and hanging down amidst
+the front of his suit jacket is an odd, almost diamond shape neck-device.
+  
+</description>
+    <shortdesc>a tall, thickly built man</shortdesc>
+    <longdesc>A tall, thickly built man stands here.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="199" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="0" dsize="0" bonus="0"/>
+      <hit numd="1" dsize="1" bonus="15000"/>
+      <move ndize="1" dsize="15000" bonus="15000"/>
+      <ac>-200</ac>
+      <gold>1500</gold>
+      <bankgold>0</bankgold>
+      <exp>500</exp>
+      <hitroll>30</hitroll>
+      <damroll>30</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1304606"/>
+    <affected one="2096" two="0" three="0" four="0"/>
+    <attack type="13"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="30" sides="50" add="30"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <dgscript vnum="25700"/>
+    <dgscript vnum="25701"/>
+    <dgscript vnum="25703"/>
+  </mobile>
+  <mobile vnum="25725" name="woman beautiful " special="NONE">
+    <description>This woman can only be considered beautiful as she has long dark hair and
+matching eyes.  She is somewhat thin, but well-formed nonetheless.  She is
+garbed in a long, dark dress with matching dark shoes.    
+</description>
+    <shortdesc>A beautiful woman</shortdesc>
+    <longdesc>A beautiful woman stands here.
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="1" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="1" bonus="1"/>
+      <move ndize="1" dsize="1" bonus="1"/>
+      <ac>100</ac>
+      <gold>500000</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="9232394"/>
+    <affected one="2096" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnEntry" argtype="VOID" argument="NONE">
+      <action number="ActionTo" argtype="STRING" argument="pemote smiles prettily at you, fluttering her long eyelashes as she says, &quot;&amp;WGreetings, may the Light Illuminate you, be welcome to the Bathhouse of Baerlon!&amp;n&quot;"/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="25777" name="Frick" special="NONE">
+    <description>Frick is a tall, blocky man with deep-set wary eyes.
+</description>
+    <shortdesc>Frick</shortdesc>
+    <longdesc>A tall blocky man stands here, at the left side of the desk with wary eyes.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="100" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="30" dsize="10" bonus="1"/>
+      <move ndize="1" dsize="1" bonus="1"/>
+      <ac>-100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="14"/>
+    <affected one="48" two="0" three="0" four="0"/>
+    <attack type="14"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="25778" name="Frack" special="NONE">
+    <description>Frack is a tall, blocky man with deep-set wary eyes.
+</description>
+    <shortdesc>Frack</shortdesc>
+    <longdesc>A tall blocky man stands here, at the right side of the desk with wary eyes.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="100" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="30" dsize="10" bonus="1"/>
+      <move ndize="1" dsize="1" bonus="1"/>
+      <ac>-100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="4110"/>
+    <affected one="48" two="0" three="0" four="0"/>
+    <attack type="11"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="25779" name="Evette" special="NONE">
+    <description>Evette is a small, petite woman who is wearing glasses.  She is quite
+beautiful, if only she would let down her hair more often.  She is rather,
+well-formed with clear skin and lips which seem to hold an almost
+perpetual pout to them.    
+</description>
+    <shortdesc>Evette</shortdesc>
+    <longdesc>A small, petite woman with glasses sits here behind the desk.
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="100" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="1" bonus="10000"/>
+      <move ndize="1" dsize="10000" bonus="10000"/>
+      <ac>-50</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="14"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="4"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnRandom" argtype="STRING" argument="100">
+      <action number="Action" argtype="STRING" argument="sit chair"/>
+    </mobprog>
+    <mobprog main="OnAction" argtype="STRING" argument="deposit">
+      <action number="Emote" argtype="STRING" argument="$n smiles up at $N as $E makes a deposit."/>
+    </mobprog>
+    <mobprog main="OnAction" argtype="STRING" argument="withdraw">
+      <action number="Emote" argtype="STRING" argument="$n smiles up at $N as $E makes a withdrawl."/>
+    </mobprog>
+    <mobprog main="OnTick" argtype="VOID" argument="NONE">
+      <action number="Action" argtype="STRING" argument="sit chair"/>
+    </mobprog>
+    <mobprog main="OnEntry" argtype="VOID" argument="NONE">
+      <action number="Action" argtype="STRING" argument="sit chair"/>
+    </mobprog>
+  </mobile>
+</mobiles>

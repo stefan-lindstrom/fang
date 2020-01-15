@@ -1,0 +1,19 @@
+
+The simple way to compile and install the libstrfunc are the following the
+next steps:
+
+./configure
+make
+make install
+
+===
+To make mingw32 library using cygwin tools, pass appropriate
+--target argument to configure, e.g.:
+
+./configure --target=i386-pc-mingw32
+===
+
+-- 
+Lev Walkin, LMW28
+vlm@spelio.net.ru
+www.spelio.net.ru

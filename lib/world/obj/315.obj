@@ -1,0 +1,102 @@
+#31500
+wine fountain~
+a fountain~
+\c10A golden fountain filled with \c00\c01dark red wine\c10.\c00~
+~
+23 0 0
+1000 1000 2 0
+10000 0 0
+E
+sign crystal~
+Council Meeting Chamber: East
+Private rooms of the Councilman: Up(enter at your own risk)
+~
+#31501
+statue~
+a \c10golden statue\c00~
+A fully life sized statue in \c10solid gold\c00 of a guardsman.~
+~
+8 0 0
+0 0 0 0
+10000 1000000 0
+E
+sign parchment notice~
+Here ye, here ye: \c01
+ALL actions within Illian will be considered IC.  If someone is careful,\c03
+there is no reason for it to be OOC.  That means, Leveling, Pkilling, \c04
+ or simply being here is IC.  I believe this will cause more RP to occur,\c05
+as a charecter might be confronted by a guard, or a Magistrate, forcing\c06
+you to have a good story.  There are several new mobs here, and a few\c08
+new shops as well, so Enjoy.\c00           \c13Lord Brend\c00
+~
+#31502
+key council~
+a small key, with golden scrollwork on it~
+A small brass key lies here.~
+4
+~
+18 0 1
+0 0 0 0
+1 0 0
+#31503
+sword council~
+the sword of a Council Guard~
+A long straight blade lies here, nine \c08red\c00 circles lead up the blade.~
+~
+5 65536 32769
+0 3 10 3
+8 0 0
+A
+19 6
+A
+18 6
+A
+9 25
+#31519
+Green sash~
+\c02The sash of the Council of Nine.\c00~
+\c02The dark green sash shows nine \c10golden\c00\c02 bees marching across it.\c00~
+~
+11 4169 9
+0 0 0 0
+0 25000 0
+A
+12 13
+#31520
+Invitation Council of Nine~
+an invitation to appear before the Council of Nine~
+This invitation is a summons to appear before the Council of Nine~
+~
+16 64 1
+0 0 0 0
+0 0 0
+#31521
+Invitation Ballroom palace council~
+an invitation for a ball at the palace of the Council of Nine.~
+An invitation for a ball at the palace of the Council of Nine.~
+~
+16 0 1
+0 0 0 0
+0 0 0
+#31599
+Ward Spirit illianward spiritward~
+\c23A spirit ward\c00~
+\c23A spirit ward\c00~
+\c23A ward woven of spirit fills this room\c00
+~
+13 32 0
+0 0 0 0
+0 0 0
+P
+OnEntry & Grasping & ! Guild "forsaken"
+Force "emote screams in pain!"
+Force "release"
+EmoteTo "You release the source before the ward destroys you!"
+End
+OnAction "grasp weave cast" & ! Guild "forsaken"
+Stop
+Force "emote screams in pain!"
+EmoteTo "You release the source before the ward kills you!"
+End
+Q
+$~

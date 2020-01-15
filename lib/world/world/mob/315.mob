@@ -1,0 +1,139 @@
+<?xml version="1.0"?>
+<mobiles>
+  <mobile vnum="31501" name="guard Sanudo burly" special="NONE">
+    <description>\c00Sanudo is a thickly bearded broad shouldered sailor, who stands
+purposefully before the gangplank of the Maiden's Blade.  He wears only
+simple cotton pants and a plain leather vest, which leaves his powerfully
+muscled arms bare save for the pair of sturdy leather cuffs which encircle
+his wrists.  Several thick knife scars decorate those bare arms, and his
+heavily tanned face seems equally suited to broad grins and fierce glowers
+</description>
+    <shortdesc>Sanudo</shortdesc>
+    <longdesc>\c04Sanudo\c00, a burly merchant's guard stands here limiting access to the ship.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="200" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="1" bonus="24999"/>
+      <move ndize="10" dsize="20" bonus="100"/>
+      <ac>-200</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>200</hitroll>
+      <damroll>50</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="2088970"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="30" sides="127" add="200"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnAction" argtype="STRING" argument="north">
+      <sideterm number="Carrying" not="TRUE" argtype="STRING" argument="31575"/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="ActionTo" argtype="STRING" argument="glare"/>
+    </mobprog>
+    <dgscript vnum="31501"/>
+  </mobile>
+  <mobile vnum="31506" name="man barkeeper mob" special="NONE">
+    <description>&amp;nThe barkeeper is a fat, balding man.  He has a fairly clean apron that&amp;n
+&amp;nbarely makes it across his waiste.  He has a cheerful look on his face, a&amp;n
+&amp;nlook that matches perfectly with his kind smile.  He has a rag slung&amp;n
+&amp;nacross his shoulder and is wiping down glasses as he looks around the room&amp;n
+&amp;nand sometimes fills up a glass for someone sitting at the bar. &amp;n
+</description>
+    <shortdesc>the barkeep</shortdesc>
+    <longdesc>A barkeeper stands here.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="1" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="1" bonus="1"/>
+      <move ndize="10" dsize="100" bonus="1"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="10"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="31562" name="alvaro guard burly" special="NONE">
+    <description>&amp;RAlvaro&amp;n is a wiry fellow garbed in the traditional bright colors of Altara.
+His beard of black ringlets is carefully cropped about his jaw, above a
+collar which hangs loose well down his tanned chest.  Several thick knife
+scars decorate his lower arms, and his heavily tanned face generally bears
+a broad smile, as he awaits passerby on the side of the roadway, demanding
+the business of those he doesn't recognize.    
+</description>
+    <shortdesc>Alvaro</shortdesc>
+    <longdesc>&amp;RAlvaro&amp;n, a burly merchant's guard stands here limiting access to the area.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="200" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="30" dsize="1000" bonus="30000"/>
+      <move ndize="10" dsize="20" bonus="100"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>200</hitroll>
+      <damroll>50</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1042458"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="30" sides="127" add="200"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnAction" argtype="STRING" argument="west">
+      <sideterm number="Carrying" not="TRUE" argtype="STRING" argument="31576"/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="ActionTo" argtype="STRING" argument="glare"/>
+    </mobprog>
+  </mobile>
+</mobiles>

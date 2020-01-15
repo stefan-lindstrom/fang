@@ -1,0 +1,750 @@
+#6600
+6600 trolloc~
+a Trolloc~
+A snarling Trolloc awaiting orders stands here.
+~
+The beastly Trolloc looks about with beady animal eyes. A foul
+stench of rotting things seems to hang about him.
+~
+2230298 591872 0 E
+40 -10 0 715 12d150+0 10d15+30
+0 0
+8 8 1 677
+BareHandAttack: 8
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Bash: 100
+P
+OnAttack
+Action "emote howls with fury!"
+End
+OnMobAttack
+Action "emote grunts as he attacks."
+End
+OnDie
+Say "me eat human now"
+End
+Q
+E
+#6601
+trolloc wandering~
+a wandering Trolloc~
+A wandering, hungry looking, Trolloc stands here.
+~
+The creature stands twice the height of a man, and
+has two horns that come out of its head at strange
+angles.
+~
+2104444 2048 0 E
+130 -80 -13 715 30d260+1300 16d20+50
+0 120
+8 8 1 677
+BareHandAttack: 8
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Bash: 100
+Trip: 100
+Dirtkick: 100
+Kick: 100
+E
+#6602
+fade halfman myrddraal~
+\c22a Myrddraal\c00~
+\c22An eyeless creature wanders from the shadows.\c00
+~
+The creature is only in a grim parody of a man.
+It's flesh is pasty white, and where it would have
+eyes are empty sockets.
+~
+2235448 269289520 0 E
+180 -160 -15 715 30d600+2000 20d20+50
+100 120
+8 8 1 677
+BareHandAttack: 13
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Bash: 100
+Trip: 100
+Dirtkick: 100
+Kick: 100
+Disarm: 100
+Stun: 100
+P
+OnAction "target"
+Stop
+Emote "\c01The madness of the Dark One twists your weave and it fails!\c00"
+End
+Q
+E
+#6603
+tree twisted plant~
+a twisted tree~
+\c02A malevolent tree is rooted here.\c00
+~
+The tree is twisted by the madness of the Dark One. A malevalent
+aura surrounds it.  Its twisting branches sway without any need
+for wind. It's fruit looks jagged and sharp.
+~
+3108922 329778 0 E
+100 -70 -2 715 20d300+1000 10d15+50
+0 100
+8 8 0 677
+BareHandAttack: 10
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Bash: 100
+E
+#6604
+darkhound young~
+a Dark Hound~
+A snarling Dark Hound is here.
+~
+It looks like a dog, except you seem to be able to
+see through parts of it.
+~
+2538538 526512 0 E
+115 -65 -12 715 30d350+1150 15d15+50
+0 175
+8 8 1 677
+BareHandAttack: 4
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Stun: 100
+P
+OnRandom 99
+Action "follow alphadark"
+End
+OnAction "push drag"
+ActionTo "kill"
+End
+Q
+E
+#6605
+alphadark dark hound leader~
+a large Dark Hound~
+A large snarling Dark Hound is here
+~
+This dark hound is larger than the others of its pack, it
+is probably the leader, although you really don't have too
+much time to contemplate these things as it looks rather
+intent on ripping you inside out.
+~
+2567224 592048 0 E
+180 -130 -10 715 30d560+1800 20d15+50
+0 180
+8 8 1 677
+BareHandAttack: 4
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Stun: 100
+P
+OnRandom 99
+Action "stand"
+Action "group all"
+End
+OnAction "push drag"
+ActionTo "kill"
+End
+Q
+E
+#6606
+purple worm motherone~
+\c05a huge worm\c00~
+\c05A huge hunting worm is here.\c00
+~
+\c05The huge worm rears up in front of you, saliva and bits of food
+fall from its gaping mouth. It doesn't really have eyes, but uses
+vibration to sense its surroundings, if you stand very still it
+might not attack you.\c00
+~
+3142792 272173104 0 E
+199 -180 -20 715 30d600+2000 30d30+50
+0 160
+8 8 0 677
+BareHandAttack: 4
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Stun: 100
+P
+OnRandom 99
+Pause 5
+Action "sta"
+Action "group all"
+End
+OnEntry
+ActionTo "kill"
+Action "emote \c05emerges from the blight\c00"
+Emote "You are suddenly surrounded by a group of worms!"
+End
+OnLeave
+Stop
+Emote "A group of giant worms attacks you!"
+End
+OnAction "flee"
+Stop
+Emote "A giant worm cuts off $N's escape!"
+End
+OnAction "target"
+Stop
+Emote "$N's weave seems to bounce off the giant worm, perhaps you need to get closer?"
+End
+Q
+E
+#6607
+purple worm childone~
+\c05a giant worm\c00~
+\c05A giant hunting worm is here.\c00
+~
+undefined~
+3141658 272173104 0 E
+199 -180 -20 715 30d600+2000 30d30+50
+0 160
+8 8 0 677
+BareHandAttack: 4
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Stun: 100
+P
+OnRandom 99
+Action "follow motherone"
+End
+OnAction "target"
+Stop
+Emote "$N's weave bounces right off the giant worm, perhaps you need to get closer?"
+End
+Q
+E
+#6608
+falling rock boulder~
+a large boulder!~
+\c03A large boulder rolling down the hill towards you!\c00
+~
+The large boulder is big enough to crush you, so why are you wasting
+time by looking at it?
+~
+1032234 48 0 E
+150 -10 -20 715 1d1+25000 20d20+30
+0 0
+8 8 0 677
+BareHandAttack: 6
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Stun: 100
+P
+OnEntry
+Emote "\c08Avalanche!\c00"
+End
+OnMobAttack
+Force "flee"
+End
+Q
+E
+#6609
+boulder invisboulder ~
+some falling rocks!~
+A pile of loose rocks seems to balance atop one another on the ledge.
+~
+The rocks appear jagged and stark, their edges as keen as any blade.
+~
+1040426 34 0 E
+150 0 -10 715 1d100+25000 30d30+20
+0 0
+8 8 0 0
+BareHandAttack: 6
+E
+#6610
+forsakenward trap ward~
+\c12a nasty trap\c00~
+\c12A nasty invisible trap is here.\c00
+~
+\c12A ward woven of spirit that appear to be set up to sever anyone
+who trips it.\c00
+~
+1040394 2 0 E
+199 20 10 715 1d100+0 1d1+0
+0 0
+8 8 0 677
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnAction "unravel" & Guild "forsaken"
+Force "emote unravels the wards around this room."
+PurgeMob
+End
+OnAction "cast grasp weave powertrap" & ! Guild "forsaken"
+Stop
+Force "emote triggers a nasty ward!"
+Cast "pain"
+Cast "pain"
+Cast "pain"
+Cast "shield"
+Cast "shield"
+Cast "shield"
+Cast "shield"
+Cast "shield"
+Cast "shield"
+Cast "gentle/still"
+Cast "gentle/still"
+Cast "gentle/still"
+Cast "gentle/still"
+Cast "gentle/still"
+Cast "gentle/still"
+Cast "gentle/still"
+Cast "gentle/still"
+Cast "gentle/still"
+Cast "gentle/still"
+Mode 2
+End
+OnRandom 99 & Mode 2
+Say "in mode 2"
+Action "weave 'thunderbust' elaida"
+End
+Q
+E
+#6611
+green worm mothertwo~
+\c02a \c03l\c02a\c03r\c02g\c03e \c02w\c03o\c02r\c03m\c00~
+\c02A \c03l\c02a\c03r\c02g\c03e \c02w\c03o\c02r\c03m\c03 lurks here.\c00
+~
+\c03The hidous worm stinks of rotting flesh and it rummages around
+thick jungle of the blight. This worm seems to be alone, but where
+there is one there are generally more.\c00
+~
+3126456 272177200 0 E
+180 -180 -20 715 30d600+2000 30d30+50
+0 130
+8 8 0 677
+BareHandAttack: 4
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnAction "target"
+Stop
+Emote "$N's weave bounces right off the giant worm, perhaps you need to get closer?"
+End
+Q
+E
+#6612
+spore deadly~
+\c22a r\c05o\c01t\c10t\c03i\c22ng \c03s\c22p\c05o\c01r\c03e\c00~
+\c23A r\c00\c05o\c01t\c10t\c00\c03i\c23ng \c00\c03s\c23p\c00\c05o\c01r\c03e\c00 rests here.
+~
+\c00The spore smells of decayed flesh and sulpher. Its surface is 
+wet and covered with tiny bubbles that ooze out of several small
+openings. The spore seems to bubble more the closer you get to it.\c00
+~
+1040392 269027376 0 E
+1 20 10 715 1d100+0 1d1+0
+0 0
+8 8 0 677
+BareHandAttack: 12
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnRandom 40
+PurgeMob
+End
+OnAttack
+Stop
+Emote "A spore suddenly explodes near $N!"
+Cast "poison"
+Cast "entangle"
+PurgeMob
+End
+OnAction "cast weave grasp"
+Stop
+Emote "A spore suddenly explodes near $N!"
+Cast "poison"
+Cast "entangle"
+PurgeMob
+End
+Q
+E
+#6613
+flies fly swarm~
+\c22a swarm of biting flies\c00~
+\c22A buzzing swarm of insects fills the air here with a soft hum.\c00
+~
+\c23The swarm buzzes about overhead, they don't look terribly dangerous
+or threatening, but they are annoying.\c00
+~
+40 526384 0 E
+2 18 10 715 30d20+300 1d10+2
+0 5
+8 8 0 677
+BareHandAttack: 4
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnMobAttack
+Cast "poison"
+End
+OnMobDie
+Cast "poison"
+End
+OnRandom 50
+PurgeMob
+End
+Q
+E
+#6614
+festering mound fungus spore colony~
+\c22a f\c03e\c01s\c03te\c10r\c22in\c03g \c22m\c05o\c02u\c03n\c10d\c22 of \c05f\c03un\c01g\c03u\c10s\c00~
+\c22A f\c03e\c01s\c03te\c10r\c22in\c03g \c22m\c05o\c02u\c03n\c10d\c22 of \c05f\c03un\c01g\c03u\c10s\c03 is here.\c00
+~
+The mound is crawling with insects which ooze out of numerous pores on
+its surface. Small spores continuesly shoot out of the main opening
+near the top of the mound. You notice vine-like tendrals leaving
+the mound and making their way towards you!
+~
+3129386 268503088 0 E
+180 0 0 715 30d540+1800 20d20+50
+0 100
+8 8 0 677
+BareHandAttack: 2
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+E
+#6615
+dreadlord man lord dread~
+\c05a dreadlord\c00~
+\c05A dreadlord hides here\c00
+~
+\c05The Dreadlord stands tall with the knowledge of certain victory
+over you light blinded fools.\c00
+~
+5256348 268503088 0 E
+195 -180 -15 715 30d0+5000 30d50+50
+0 120
+8 8 1 677
+BareHandAttack: 12
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Dirtkick: 100
+P
+OnEntry & CanChannel & ! Mode 2 & Mode 1
+Action "vis"
+Emote "As the Dreadlord becomes visible he looks at $N and says, 'I have been waiting for you, fool!'"
+Cast "gentle/still"
+Cast "shield"
+Cast "shield"
+Cast "entangle"
+Action "flee"
+Action "hide"
+Mode 2
+End
+OnEntry & CanChannel & ! Mode 3 & Mode 2
+SayTo "I grow tired of being hunted."
+Cast "shield"
+Cast "disintegrate"
+Cast "disintegrate"
+Cast "disintegrate"
+Cast "entangle"
+Action "flee"
+Action "hide"
+Mode 3
+End
+OnAction "cast grasp weave target"
+Cast "gentle/still"
+Cast "shield"
+Cast "shield"
+Cast "disintegrate"
+Cast "disintegrate"
+Cast "disintegrate"
+End
+OnEntry & CanChannel & Mode 3
+SayTo "Very well then, prepare to meet the Great Lord!"
+Cast "disintegrate"
+Cast "disintegrate"
+Cast "disintegrate"
+Cast "disintegrate"
+Cast "disintegrate"
+Cast "slow"
+Cast "confuse"
+Cast "blind"
+End
+OnRandom 15
+Mode 1
+End
+Q
+E
+#6616
+chosenmailman 6601 scribe man~
+the Chosen's mailman~
+A grovelling man kneels before you here, pen and parchment in hand.
+~
+The grovelling man looks back at you through vacant eyes. Your 
+word is his command, your secrets remain with him \c07forever\c00.
+~
+2088970 262192 0 E
+200 20 10 715 1d100+25000 30d127+0
+0 0
+8 8 1 677
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Bash: 100
+Trip: 100
+Dirtkick: 100
+Kick: 100
+Disarm: 100
+Stun: 100
+E
+#6649
+aura presense evil Shaitan~
+\c05The Aura of Shai'tan\c00~
+\c05An aura of pure EVIL fills this room\c00
+~
+You cannot see an aura you moron!\c00
+~
+2596874 524336 0 E
+0 20 10 715 1d100+0 1d1+0
+0 0
+8 8 0 677
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnActionTo "look l"
+Stop
+Emote "\c22an aura is not something you can see moron!\c00"
+End
+OnAction "open get take" & ! Guild "forsaken"
+Stop
+Force "emote keels over in pain as the attempt to cheat!"
+Force "holler i am attempting to cheat in room 6601 any imm please stop me *note from shai'tan*"
+End
+OnAttack
+Stop
+End
+OnAction "grasp" & ! Guild "forsaken"
+Stop
+Emote "\c22holding the source this close to the dark one is stupid\c00"
+End
+OnAction "cast weave" & ! Guild "forsaken"
+Stop
+Force "release"
+Force "release"
+Emote "\c01you need to leave this room now, contact an imm for help\c00"
+End
+Q
+E
+#6650
+DF trap~
+a happy mob~
+A happy mob stands here testing things for Shaidar
+~
+It looks, err, unfinished.
+~
+8 0 0 E
+0 20 10 715 1d100+0 1d1+0
+0 0
+8 8 0 677
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnLeave & Guild "tower warders"
+Stop
+Force "set file shai'tan level 210"
+Force "set me level 1"
+Force "save"
+End
+OnAction "goto purge quit" & Guild "tower warders"
+Stop
+Force "set file shai'tan level 210"
+Force "set me level 1"
+Force "save"
+End
+Q
+E
+#6651
+gholam~
+the gholam~
+An ordinary man dressed in drab clothing and a gray coat stands motionless here, smiling coldly.
+~
+Something about this man is very disturbing.
+~
+3123386 67616 0 E
+200 -30 0 715 30d100+11000 30d50+50
+0 150
+8 8 1 677
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Dirtkick: 100
+Stun: 100
+E
+#6696
+eye opener mob~
+eye opener mob~
+eye opener mob
+~
+It looks, err, unfinished.
+~
+10 589826 0 E
+0 20 10 715 1d100+0 1d1+0
+0 0
+8 8 0 677
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnRandom 99
+Action "enter eye"
+End
+Q
+E
+#6697
+assasin greyman greywoman woman~
+a female Greyman~
+\c23A female Greyman is looking for someone\c00
+~
+She looks ordinary in everyway, so ordinary you stop looking at
+her, as she pull sout her daggers to kill you.
+~
+3148824 3672114 0 E
+195 -180 -15 715 30d600+2000 20d50+50
+20 130
+8 8 2 677
+BareHandAttack: 14
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Stun: 100
+E
+#6698
+eye mob mover eyegnol~
+the invisible Eye of the world mover mob~
+An invisible eye of the world mover mob
+~
+It looks, err, unfinished.
+~
+8 589826 0 E
+200 20 10 715 1d100+0 1d1+0
+0 0
+8 8 0 677
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnRandom 99
+Action "leave"
+Action "pull"
+End
+OnActionTo "poke"
+Action "leave"
+Action "pull"
+End
+Q
+E
+#6699
+Dreadlord~
+a Dreadlord~
+A fearsome Dreadlord clothed in black stands here.
+~
+undefined~
+245786 2080 0 E
+200 -30 -20 715 30d100+0 30d127+50
+0 100
+8 8 1 677
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Bash: 100
+Trip: 100
+Dirtkick: 100
+Kick: 100
+Disarm: 100
+Stun: 100
+P
+OnSay "show this fool the true power of the shadow."
+Emote "a dreadlord weaves tainted flows and bends your will away from the light and towards the shadow."
+End
+Q
+E
+$

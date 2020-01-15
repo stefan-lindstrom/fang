@@ -1,0 +1,191 @@
+#23500
+ring iron~
+\c00A \c23m\c07a\c14n\c23y\c07-\c14f\c23a\c07c\c14e\c23t\c07e\c14d\c00 \c23iron\c00 ring worn on his little finger.~
+\c00A \c23m\c07a\c14n\c23y\c07-\c14f\c23a\c07c\c14e\c23t\c07e\c14d\c00 \c23iron\c00 ring worn on his little finger.~
+glitters softly
+~
+1 69632 3
+0 0 -1 0
+0 100000000 0
+A
+14 10000
+A
+13 10000
+A
+20 20
+A
+18 1000
+A
+19 1000
+A
+17 -1000
+P
+OnSteal
+Stop
+EmoteTo "It will not come off!"
+End
+Q
+#23502
+bread herb~
+a thick loaf of \c03h\c02e\c01r\c03b&n bread~
+A thick loaf of \c03h\c02e\c01r\c03b&n bread sits here steaming a little.~
+Steams gently!
+~
+4 69704 1
+2 0 2000 0
+0 0 0
+#23503
+glass vial~
+a small vial of \c09a\c06q\c02u\c11a&n liquid~
+A small vial of \c09a\c06q\c02u\c11a&n liquid rests hear on a shelf~
+Swirls around softly!
+~
+4 4168 1
+1 0 2000 0
+1 0 0
+#23504
+packet herbs~
+a small packet of herbs~
+A small pouch has been placed rather carefully in the drawer.~
+Gives of a tangy scent!
+~
+4 69696 1
+0 0 2000 0
+10 0 0
+P
+OnTake
+EmoteTo "A small piece of paper fall from the packet, "
+End
+Q
+#23505
+desk oak~
+a small desk of \c03O\c23a\c07k&n~
+A small desk of \c03O\c23a\c07k\c00 has been pushed off toward a wall.~
+~
+15 69696 1
+5000 15 23512 0
+0 0 0
+P
+OnTake
+Stop
+EmoteTo "It's too heavy!"
+End
+Q
+#23506
+ring~
+a wolf head ring~
+A wolf head ring~
+~
+0 0 1
+0 0 0 0
+0 0 0
+P
+OnRandom 18
+Emote "1"
+End
+OnTake & Wolfkin
+EmoteTo "You feel the urge to hunt!"
+End
+Q
+#23507
+bunch berry berries~
+a small bunch of \c09be\c00r\c09r\c00ie\c09s&n~
+A small bunch of \c09be\c00r\c09r\c00ie\c09s&n lies here on the ground.~
+Ugh they taste awful!
+~
+4 69704 1
+0 0 500 0
+0 0 0
+#23508
+stream~
+\c00a small \c06t\c13r\c11i\c13ck\c06l\c11n\c06g\c00 stream&n~
+\c00A small \c06t\c13r\c11i\c13ck\c06l\c11n\c06g\c00 stream flowing freely.~
+Gurgles Softly!
+~
+23 69696 1
+5000 5000 0 0
+5005 0 0
+P
+OnTake
+Stop
+EmoteTo "The water drips through your fingers!"
+End
+Q
+#23509
+stream spring well water~
+a \c11b\c06u\c04b\c06b\c13l\c11i\c13n\c11g\c00 spring~
+A \c11b\c06u\c04b\c06b\c13l\c11i\c13n\c11g s\c13p\c06r\c11i\c06n\c13g\c00 breaks through the ground and flows away.~
+~
+23 69704 1
+10000 10000 0 0
+8000 0 0
+P
+OnTake
+Stop
+EmoteTo "The \c11water\c00 drips through your fingers!"
+End
+Q
+#23510
+map mountain side~
+a map of the pathways up the mountains of mist~
+A rolled up piece of parchment lies here.~
+~
+16 69704 1
+0 0 0 0
+0 0 0
+#23512
+key rusty~
+a small \c01rusty&n key~
+A small \c01rusty&n key lies half buried in the brush.~
+~
+18 69696 1
+0 0 0 0
+1 0 0
+#23533
+ice shard~
+a long shard of \c14ice&n~
+A shard of thick ice has been broken off here.  It's long point would make an excellent stabbing weapon.~
+Drips a little!
+~
+5 65736 8193
+10 5 10 14
+3 0 0
+A
+20 1
+A
+18 5
+A
+19 5
+#23562
+dagger black fade~
+a \c01bloody \c23black \c00dagger&n~
+A jagged black dagger wrought with some taint lies here dripping blood.~
+Slashes Down!
+~
+5 65728 8193
+15 4 5 14
+5 5000 0
+A
+6 -5
+A
+20 1
+A
+18 10
+A
+19 10
+#23573
+stalactite~
+a huge rock stalactite~
+An unfinished object is lying here.~
+~
+5 2112 32769
+400 100 5 7
+2000 0 0
+A
+20 1
+P
+OnDie
+Destroy
+End
+Q
+$~

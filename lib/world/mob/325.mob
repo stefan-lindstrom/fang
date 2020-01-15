@@ -1,0 +1,351 @@
+#32500
+baby myrdraal~
+a baby Myrdraal~
+The baby myrdraal is standing here, waiting to be squashed by a player. 
+~
+The myrdraal, the throwback of Trollocs, where the human stock used has taken
+the upper hand. Myrdrall looks almost like ordinary humans, except that they
+have no eyes. Despite this fact, they can still see wery well, both in light as 
+in the dark. A saying among the Borderlands is, that the look of the eyeless is fear. 
+A myrdraal can make the toughest man (or woman) shiver just by looking at them. 
+
+This myrdraal though, has not yet reached his full potential, so you better
+~
+2555978 128 0 E
+5 19 5 960 1d50+0 2d5+0
+200 200
+8 8 1 968
+BareHandAttack: 8
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+E
+#32502
+bonus mob~
+a bonus mob~
+A strange looking creature hulks in a corner.
+~
+It looks like something only a very strange man could conjure
+up in his dreams. Big, flappy ears, huge, pinkish tusks and
+large furry feet (six of them).
+~
+2056 0 0 E
+195 0 10 960 1d100+250 5d5+5
+120 150
+8 8 1 968
+BareHandAttack: 8
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnEntry & ! Guild "rebel aes sedai" & ! Guild "rebel warder"
+ActionTo "hit"
+End
+Q
+E
+#32503
+sad little girl quest~
+a sad little girl~
+A sad little girl stands alone here, wiping her tears.
+~
+A cute little kiddo. 
+~
+10 0 0 E
+1 20 10 960 1d100+0 1d1+0
+0 1
+8 8 2 968
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+E
+#32504
+teddy bear thief quest~
+a mean teddy bear thief~
+A weasely man stands in a corner, holding a teddy bear.
+~
+He looks nasty, and that teddy bear is probably not his.
+~
+88 0 0 E
+1 20 10 960 1d100+0 1d1+0
+0 1
+8 8 1 968
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnAttack
+Say "argh! damn you, i'll getcha for this."
+Pause 1
+Action "growl"
+End
+Q
+E
+#32505
+greedy merchant~
+the greedy merchant~
+A greedy merchant stands here, smiling widely.
+~
+He's the archetype for a greedy person; lots of gold and valuable
+baubles on him.
+~
+10 0 0 E
+1 20 10 960 1d100+0 1d1+0
+0 1
+8 8 1 968
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnAttack & ! Mode 1
+Emote "$n eeks as $N attacks $m, and runs away!"
+Mode 1
+Stop
+MoveTo 10186
+End
+OnAttack & Mode 1
+Emote "As $N attacks $n, $e manages to flee and runs on."
+Stop
+End
+Q
+E
+#32506
+one eyed man~
+the one eyed man~
+A man with a patch over his left eye stands here idly.
+~
+It looks, err, unfinished.
+~
+10 0 0 E
+1 20 10 960 1d100+0 1d1+0
+0 1
+8 8 1 968
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnSayTo "al'thor" & Questing
+Emote "$n gives a start at $n's word."
+Pause 2
+Emote "$n hisses, 'shhh...you fool, don't say that name aloud!'"
+Pause 4
+Emote "$n looks around worriedly."
+Pause 3
+Emote "$n says quietly, 'ok, listen...this is what you must do.'"
+Pause 4
+Emote "$n says quietly, 'there is a man in ebou dar...he's dressed in all red...'"
+Pause 2
+Emote "$n says quietly, 'he's very fond of horse races, and that's probably where you'll find him'"
+Pause 3
+Emote "$n says quietly, 'and to him, you must say the name never spoken...the name of the dark one'"
+Pause 3
+Emote "$n looks distinctly uncomfortable for a second, then continues, 'he will then tell you what to do.'"
+Pause 2
+Say "now, begone."
+End
+Q
+E
+#32507
+beastly fido~
+the beastly Fido~
+The beastly Fido stands here, looking lost...Where is his world?
+~
+Stock, stock, stock, stock!
+..with a twist, of course.
+~
+2097228 0 0 E
+15 17 10 960 3d100+300 3d4+2
+0 90
+8 8 1 968
+BareHandAttack: 4
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnMobAttack
+ActionTo "growl"
+End
+OnRandom 1
+Emote "$n looks around for corpses to devour."
+End
+OnRandom 1
+Emote "$n whines pitifully, looking lost."
+End
+OnSayTo "sit"
+Action "sit"
+Pause 2
+Emote "$n pants happily."
+End
+OnSayTo "fetch"
+Emote "$n barks happily and goes to fetch whatever $N wanted $m to fetch."
+End
+OnSayTo "kill"
+Emote "$n obediently tries to kill $N."
+ActionTo "kill"
+End
+OnSayTo "beer"
+Emote "$n looks sad as $e has no beer to give."
+End
+OnSayTo "gnu"
+Emote "$n makes $s famous impersonation of a proud steppe gnu."
+End
+OnSayTo "dead"
+Emote "$n playes dead very convincingly."
+End
+OnSayTo "stand"
+Action "stand"
+Pause 2
+Emote "$n pants happily."
+End
+OnSayTo "heel"
+ActionTo "follow"
+End
+OnSayTo "play"
+Action "follow self"
+End
+Q
+E
+#32508
+myrddraal captain~
+a myrddraal captain~
+A tall, imposing figure stands here.
+~
+Oh man! It's a Myrddraal! Not just that! It's a Captain! Flee
+~
+3103770 0 0 E
+195 -180 -20 960 30d100+18000 25d30+30
+100 150
+8 8 1 968
+BareHandAttack: 8
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Dirtkick: 100
+Disarm: 100
+E
+#32509
+test mob~
+a test mob~
+A test mob stands here.
+~
+It looks, err, unfinished.
+~
+8 0 0 E
+0 20 10 960 1d100+0 1d1+0
+0 0
+8 8 1 968
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnActionTo "poke" & Invisible
+Say "Hey! Who poked me?"
+Pause 3
+Action "peer"
+End
+Q
+E
+#32590
+cujo chihuahua~
+Cujo the fat chihuahua~
+Cujo the fat chihuahua is perched on top of a large box behind the counter.
+~
+He's one fat chihuahua..with black fur and four tiny legs protruding from his
+round body- and two white tipped paws..he's a comical sight. Better watch out for
+your ankles if you anger him.
+~
+4172 0 0 E
+1 20 10 960 1d100+0 1d1+0
+0 0
+6 6 1 968
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+E
+#32591
+man black shadow myrddraal~
+the black-clad man~
+A figure garbed in a cloak blacker than night itself is here, completely hidden within the folds of his cloak.
+~
+When one takes the time to gain a better look at the figure- it could almost be mistaken for a moving cloak,
+with no flesh showing what so ever...the garment hangs heavily, and remains deathly still despite the
+stirring of a light breeze. 
+~
+2097224 0 0 E
+180 20 10 960 1d100+0 1d1+0
+0 0
+8 8 0 968
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+E
+#32592
+hadeus~
+Hadeus~
+Hadeus stands here.
+~
+He is hidden within the depths of a voluminous cloak of coarse wool..and appears to be conversing with the black-clad man neighboring him.
+He clutches something in his left hand..it has an odd shine.
+~
+8 0 0 E
+1 19 -20 960 1d100+0 8d1+1
+0 0
+8 8 1 968
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+E
+#32595
+mob~
+an unfinished mob~
+an unfinished mob
+~
+it looks er...unfinished.
+~
+8 0 0 E
+1 20 10 960 1d100+0 1d1+0
+0 0
+8 8 0 968
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+E
+$

@@ -1,0 +1,2087 @@
+<?xml version="1.0"?>
+<objects>
+  <object vnum="1000" name="rack" special="NONE">
+    <description>A rack containing practice swords is here.</description>
+    <shortdesc>a rack</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="4000" value2="0" value3="-1" value4="0"/>
+      <flags type="15" wear="1" extra="0"/>
+      <data weight="200" cost="1" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <objprog main="OnTake" argtype="STRING" argument="enhance">
+      <action number="EmoteTo" argtype="STRING" argument="You can&apos;t take an entire weapons rack, just like that!"/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+    </objprog>
+  </object>
+  <object vnum="1001" name="bundled lathe" special="NONE">
+    <description>A bundled lathe lies discarded on the ground here.</description>
+    <shortdesc>a bundled lathe</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="1" value3="1" value4="14"/>
+      <flags type="5" wear="40961" extra="69640"/>
+      <data weight="1" cost="1" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="1002" name="board warders" special="NONE">
+    <description>The guild board for the Tower Warders stands here, tall and proud.</description>
+    <shortdesc>the guild board</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="0" wear="1" extra="0"/>
+      <data weight="100" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <objprog main="OnTake" argtype="STRING" argument="enhance">
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+    </objprog>
+    <objprog main="OnActionTo" argtype="STRING" argument="look">
+      <sideterm number="Guild" not="FALSE" argtype="STRING" argument="tower warders"/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="Emote" argtype="STRING" argument="The writing on the board is in a language you can&apos;t understand."/>
+    </objprog>
+  </object>
+  <object vnum="1003" name="lantern TowerWarder" special="NONE">
+    <description>If you see this, alert an imm immediately.</description>
+    <shortdesc>a softly \c10lit\c00 lantern</shortdesc>
+    <actiondesc>A lantern.    
+If you see this, alert an imm immediately.
+</actiondesc>
+    <affectflag>0</affectflag>
+    <objaffect location="XATTACKS" modifier="2"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="-1" value4="0"/>
+      <flags type="1" wear="16385" extra="69768"/>
+      <data weight="1" cost="1" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <objprog main="OnTake" argtype="STRING" argument="look">
+      <sideterm number="Guild" not="FALSE" argtype="STRING" argument="tower warders"/>
+      <action number="Force" argtype="STRING" argument="shout I have illegally stolen an item belonging to the Tower Warders.  Could an imm please purge me?"/>
+      <action number="Destroy" argtype="VOID" argument="NONE"/>
+    </objprog>
+    <objprog main="OnWear" argtype="STRING" argument="look">
+      <sideterm number="Guild" not="FALSE" argtype="STRING" argument="tower warders"/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="Force" argtype="STRING" argument="holler Umm.. I&apos;m being bad.  I&apos;ve stolen a lantern from the Tower Warders, and now I&apos;m trying to wear it.  Could an imm please beat me over the head with a moose?"/>
+      <action number="Destroy" argtype="VOID" argument="NONE"/>
+    </objprog>
+    <dgscript vnum="1000"/>
+  </object>
+  <object vnum="1004" name="sword TowerWarder" special="NONE">
+    <description>If you see this, alert an imm immediately.</description>
+    <shortdesc>a finely crafted \c07steel\c00 sword </shortdesc>
+    <actiondesc>If you see this, alert an imm immediately.
+</actiondesc>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="10" value3="10" value4="14"/>
+      <flags type="5" wear="8193" extra="69768"/>
+      <data weight="10" cost="1" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <objprog main="OnTake" argtype="STRING" argument="look">
+      <sideterm number="Guild" not="FALSE" argtype="STRING" argument="tower warders"/>
+      <action number="Force" argtype="STRING" argument="holler I have stolen the property of the Tower Warders.  I humbly beg the imms to destroy me."/>
+      <action number="Destroy" argtype="VOID" argument="NONE"/>
+    </objprog>
+    <objprog main="OnWear" argtype="STRING" argument="look">
+      <sideterm number="Guild" not="FALSE" argtype="STRING" argument="tower warders"/>
+      <action number="Force" argtype="STRING" argument="holler I have stolen a piece of guild equip from the Tower Warders.  Could an imm please purge me?"/>
+      <action number="Destroy" argtype="VOID" argument="NONE"/>
+    </objprog>
+  </object>
+  <object vnum="1005" name="cloak TowerWarder" special="NONE">
+    <description>If you see this, report it immediately to an imm.</description>
+    <shortdesc>a hooded cloak of fine \c23gray\c00 wool</shortdesc>
+    <actiondesc>If you see this, alert an imm immediately.
+</actiondesc>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="150" value3="0" value4="0"/>
+      <flags type="9" wear="1025" extra="69768"/>
+      <data weight="4" cost="1" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <objprog main="OnTake" argtype="STRING" argument="look">
+      <sideterm number="Guild" not="FALSE" argtype="STRING" argument="tower warders"/>
+      <action number="EmoteTo" argtype="STRING" argument="The cloaks crumbles in your hands like so much dust."/>
+      <action number="Destroy" argtype="VOID" argument="NONE"/>
+    </objprog>
+    <objprog main="OnWear" argtype="STRING" argument="look">
+      <sideterm number="Guild" not="FALSE" argtype="STRING" argument="tower warders"/>
+      <action number="EmoteTo" argtype="STRING" argument="Suddenly Gawyn appears before you and rips the cloak from your hands, a disapproving frown on his face."/>
+      <action number="Destroy" argtype="VOID" argument="NONE"/>
+    </objprog>
+  </object>
+  <object vnum="1006" name="belt TowerWarder" special="NONE">
+    <description>If you see this, please immediately alert an imm.</description>
+    <shortdesc>a \c03leather\c00 swordbelt</shortdesc>
+    <actiondesc>If you see this, alert an imm immediately.
+</actiondesc>
+    <affectflag>0</affectflag>
+    <objaffect location="HITROLL" modifier="40"/>
+    <objaffect location="DAMROLL" modifier="40"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="10000" value2="0" value3="-1" value4="0"/>
+      <flags type="15" wear="2049" extra="69768"/>
+      <data weight="2" cost="1" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <objprog main="OnTake" argtype="STRING" argument="look">
+      <sideterm number="Guild" not="FALSE" argtype="STRING" argument="tower warders"/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="EmoteTo" argtype="STRING" argument="The swordbelt you just tried to pick up disappears in a puff of pink smoke."/>
+      <action number="Destroy" argtype="VOID" argument="NONE"/>
+    </objprog>
+    <objprog main="OnWear" argtype="STRING" argument="look">
+      <sideterm number="Guild" not="FALSE" argtype="STRING" argument="tower warders"/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="EmoteTo" argtype="STRING" argument="Gawyn appears before you, violently wrenching the swordbelt from your hands with an expression of disgust in you marring his face."/>
+      <action number="Destroy" argtype="VOID" argument="NONE"/>
+    </objprog>
+    <dgscript vnum="1000"/>
+  </object>
+  <object vnum="1007" name="cloak color-shifting TowerWarder" special="WarderCloak">
+    <description>If you see this, immediately report it to an imm.</description>
+    <shortdesc>a \c23c\c00\c02o\c23l\c00\c02o\c23r\c00\c07-\c02s\c23h\c00\c02i\c23f\c00\c02t\c23i\c00\c02n\c23g\c00 \c14cloak\c00</shortdesc>
+    <actiondesc>If you see this, immediately report it to an imm.
+</actiondesc>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="9" wear="1025" extra="69640"/>
+      <data weight="4" cost="1" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <objprog main="OnTake" argtype="STRING" argument="look">
+      <sideterm number="Guild" not="FALSE" argtype="STRING" argument="tower warders"/>
+      <action number="EmoteTo" argtype="STRING" argument="The fancloth cloak crumbles apart in your hands, becoming nothing."/>
+      <action number="Destroy" argtype="VOID" argument="NONE"/>
+    </objprog>
+    <objprog main="OnWear" argtype="STRING" argument="look">
+      <sideterm number="Guild" not="FALSE" argtype="STRING" argument="tower warders"/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="EmoteTo" argtype="STRING" argument="A warder approaches and slices the cloak to nothingness the instant you blink."/>
+      <action number="Destroy" argtype="VOID" argument="NONE"/>
+    </objprog>
+    <dgscript vnum="1000"/>
+  </object>
+  <object vnum="1008" name="names list bronze silver" special="NONE">
+    <description>A list of names is carefully engraved into the wall here.</description>
+    <shortdesc>a list of names</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="12" wear="0" extra="66504"/>
+      <data weight="1" cost="1" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <exdesc keyword="names list wall">
+      <description>Balorain Gaidin (Siara)
+Siara Tremayne Aes Sedai (White Ajah)
+Siegfried Volsung Gaidin (Katja)
+Katja Seraphet Volsung Aes Sedai (Green Ajah)
+Jeremy Amoren Gaidin (Katja) (Kalia)
+Taryn Aes Sedai (Yellow Ajah)
+Sareena Aes Sedai (Red Ajah)
+Huira Aes Sedai (Brown Ajah)
+Aliane Senican Aes Sedai (White Ajah)
+Kaena Sharad Aes Sedai (Green Ajah)
+Clarise Chienar Gaidin (Anisette)
+Gregg Berensen Gaidin (Erisandra)
+Kerrin Aes Sedai (Green Ajah)
+A&apos;vron Ben&apos;amin Gaidin (Kerrin)
+Sianna Tiernan Aes Sedai (White Ajah)
+Anisette Aes Sedai (Grey Ajah)
+Student Silas Ortona
+Rolen Hajiro Gaidin (Tiernee)
+Tiernee du Vale Aes Sedai (Green Ajah)
+Jeremiah al&apos;Moren Gaidin (Kalia)
+Rheric Gaidin (Katja) (Isabeau) (Etaine)
+Auren al&apos;Mais Gaidin (Saskiat)
+Jakiri Gaidin (Morigen)
+Tahira Sydoren Aes Sedai (Grey Ajah)
+Liorin do Mehon a&apos;Lordeine Aes Sedai (Brown Ajah)
+Katirenne Myrela Kreeg, Keeper of the Chronicles (Green Ajah)
+Kalia ni&apos;Amoren a&apos;Brandt Aes Sedai (Green Ajah)
+Benoit DeMott (Aislara)
+Siri Kymren Mal&apos;ben Aes Sedai (White Ajah)
+Morigen Natal Aes Sedai (Yellow Ajah)
+Miriel Gio&apos;rdon Aes Sedai (Brown Ajah)
+Verde Azel (Trainee)
+Lyssa Dinaye Aes Sedai (Green Ajah)
+Tehrin Al&apos;Maern Gaidin (Lyssa)
+Balfor al&apos;Sport Gaidin (Lyssa)
+Shanna Tal&apos;verni&apos;e Aes Sedai (Red Ajah)
+</description>
+    </exdesc>
+    <objprog main="OnTake" argtype="STRING" argument="look">
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="Emote" argtype="STRING" argument="You cannot pick up the list of names, as it is a part of the wall..."/>
+    </objprog>
+  </object>
+  <object vnum="1009" name="steel helm quest" special="NONE">
+    <description>A steel helm lies here.</description>
+    <shortdesc>a steel helm</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="HITROLL" modifier="35"/>
+    <objaffect location="DAMROLL" modifier="35"/>
+    <objaffect location="ARMOR" modifier="-100"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="9" wear="17" extra="65672"/>
+      <data weight="3" cost="1" questcost="85" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="1010" name="breastplate steel" special="NONE">
+    <description>A steel breastplate is here.</description>
+    <shortdesc>a steel breastplate</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="ARMOR" modifier="-50"/>
+    <objaffect location="DAMROLL" modifier="6"/>
+    <objaffect location="HITROLL" modifier="6"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="9" wear="9" extra="65536"/>
+      <data weight="10" cost="56000" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="1011" name="steel ring" special="NONE">
+    <description>A steel ring lies here.</description>
+    <shortdesc>a steel ring</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="ARMOR" modifier="-40"/>
+    <objaffect location="HITROLL" modifier="6"/>
+    <objaffect location="DAMROLL" modifier="6"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="11" wear="3" extra="65536"/>
+      <data weight="1" cost="48000" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="1012" name="green cloak" special="NONE">
+    <description>A green cloak is lying on the ground here.</description>
+    <shortdesc>a green cloak</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="HITROLL" modifier="10"/>
+    <objaffect location="DAMROLL" modifier="10"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="40" value2="0" value3="0" value4="0"/>
+      <flags type="9" wear="1025" extra="65536"/>
+      <data weight="5" cost="43500" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="1013" name="forest green leggings" special="NONE">
+    <description>Some discarded leggings are here.</description>
+    <shortdesc>a pair of forest green leggings</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="ARMOR" modifier="-15"/>
+    <objaffect location="HITROLL" modifier="7"/>
+    <objaffect location="DAMROLL" modifier="7"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="11" wear="33" extra="0"/>
+      <data weight="4" cost="36000" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="1014" name="black boots" special="NONE">
+    <description>A pair of black leather boots is lying on the ground.</description>
+    <shortdesc>a pair of black leather boots</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="ARMOR" modifier="-25"/>
+    <objaffect location="HITROLL" modifier="7"/>
+    <objaffect location="DAMROLL" modifier="7"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="11" wear="65" extra="0"/>
+      <data weight="5" cost="39000" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="1015" name="sign" special="NONE">
+    <description>An \c14OoC sign\c00 is here, describing what the armory sells.</description>
+    <shortdesc>an OoC sign</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="12" wear="0" extra="0"/>
+      <data weight="100" cost="1" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <exdesc keyword="sign">
+      <description>++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ a pair of forest green leggings = -15 AC, 7/7 hitroll/damroll
++ a green cloak  = -25 AC, 8/8 hitroll/damroll                                     
++ a steel helm =  -100 AC, 35/35 hitroll/damroll                                  
++ a pair of forest green sleeves = -20 AC, 16/16 hitroll/damroll      
++ a steel ring = -40 AC, 6/6 hitroll/damroll
++ a pair of black leather boots = -25 AC, 7/7 hitroll/damroll
++ a statue of an Aes Sedai = - 15 AC, 5/7 hitroll/damroll
++ a silk kerchief = -15 AC, 10/10 hitroll/damroll
++ a plain boarhide swordbelt = -20 AC, 6/5 hitroll/damroll
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+</description>
+    </exdesc>
+    <objprog main="OnTake" argtype="STRING" argument="look">
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="EmoteTo" argtype="STRING" argument="You are not strong enough to pick up the sign."/>
+    </objprog>
+  </object>
+  <object vnum="1016" name="meal bread cheese" special="NONE">
+    <description>A meal consisting of bread and cheese is lying on the ground.</description>
+    <shortdesc>a meal of bread and cheese</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="24" value2="0" value3="0" value4="0"/>
+      <flags type="19" wear="1" extra="0"/>
+      <data weight="2" cost="5" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="1017" name="bowl vegetables" special="NONE">
+    <description>A bowl full of vegetables is here.</description>
+    <shortdesc>a bowl of vegetables</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="10" value2="0" value3="0" value4="0"/>
+      <flags type="19" wear="1" extra="196744"/>
+      <data weight="1" cost="5" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="1018" name="glass cool water" special="NONE">
+    <description>A glass of water is here.</description>
+    <shortdesc>a glass of cool water</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="3" value2="3" value3="0" value4="0"/>
+      <flags type="17" wear="1" extra="0"/>
+      <data weight="8" cost="5" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="1019" name="key ALIKASKEY TOWERWARDERS" special="NONE">
+    <description>A plain brass and steel key lies on the ground here.</description>
+    <shortdesc>Alika&apos;s key</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="18" wear="1" extra="65608"/>
+      <data weight="1" cost="1" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="1020" name="fountain plain" special="NONE">
+    <description>A plain fountain with an inscription at it&apos;s base is here.</description>
+    <shortdesc>a plain fountain</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="100" value2="100" value3="0" value4="0"/>
+      <flags type="23" wear="1" extra="0"/>
+      <data weight="900" cost="1" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <objprog main="OnTake" argtype="STRING" argument="look">
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="EmoteTo" argtype="STRING" argument="You cannot pick up something that is 10 times as heavy as yourself."/>
+    </objprog>
+  </object>
+  <object vnum="1021" name="gauntlet steel twardershop" special="NONE">
+    <description>A pair of thick steel gauntlets is lying here, on the ground.</description>
+    <shortdesc>a pair of thick steel gauntlets</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="HITROLL" modifier="10"/>
+    <objaffect location="DAMROLL" modifier="10"/>
+    <objaffect location="ARMOR" modifier="-1"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="14" value2="0" value3="0" value4="0"/>
+      <flags type="9" wear="129" extra="0"/>
+      <data weight="8" cost="49500" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="1022" name="thick steel shield" special="NONE">
+    <description>A thick steel shield is here, lying on the ground.</description>
+    <shortdesc>a thick steel shield</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="ARMOR" modifier="-1"/>
+    <objaffect location="HITROLL" modifier="5"/>
+    <objaffect location="DAMROLL" modifier="5"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="44" value2="0" value3="0" value4="0"/>
+      <flags type="9" wear="513" extra="0"/>
+      <data weight="4" cost="36000" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="1023" name="key" special="NONE">
+    <description>A plain key lies on the ground.</description>
+    <shortdesc>a plain key</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="18" wear="1" extra="73928"/>
+      <data weight="1" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="1024" name="plain cloak YOUNGLINGS" special="NONE">
+    <description>A plain cloak lies on the ground.</description>
+    <shortdesc>a plain cloak</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="HITROLL" modifier="40"/>
+    <objaffect location="DAMROLL" modifier="40"/>
+    <objaffect location="ARMOR" modifier="-100"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="9" wear="1025" extra="0"/>
+      <data weight="2" cost="1" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <objprog main="OnWear" argtype="STRING" argument="look">
+      <sideterm number="Guild" not="FALSE" argtype="STRING" argument="tower warders"/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="Destroy" argtype="VOID" argument="NONE"/>
+    </objprog>
+  </object>
+  <object vnum="1025" name="plain sword YOUNGLINGS" special="NONE">
+    <description>A plain sword lies on the ground here.</description>
+    <shortdesc>a plain sword</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="10" value3="10" value4="14"/>
+      <flags type="5" wear="8193" extra="69640"/>
+      <data weight="10" cost="1" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <objprog main="OnWear" argtype="STRING" argument="look">
+      <sideterm number="Guild" not="FALSE" argtype="STRING" argument="tower warders"/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="Destroy" argtype="VOID" argument="NONE"/>
+    </objprog>
+  </object>
+  <object vnum="1026" name="lantern" special="NONE">
+    <description>A lantern lies here on the ground.</description>
+    <shortdesc>a lantern</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="XATTACKS" modifier="3"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="1" wear="16385" extra="65544"/>
+      <data weight="2" cost="1" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <objprog main="OnWear" argtype="STRING" argument="look">
+      <sideterm number="Guild" not="FALSE" argtype="STRING" argument="tower warders"/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="Destroy" argtype="VOID" argument="NONE"/>
+    </objprog>
+  </object>
+  <object vnum="1027" name="sleeves green" special="NONE">
+    <description>A pair of green sleeves is here. Odd.</description>
+    <shortdesc>a pair of green sleeves</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="ARMOR" modifier="-100"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="9" wear="257" extra="69640"/>
+      <data weight="1" cost="1" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <objprog main="OnWear" argtype="STRING" argument="look">
+      <sideterm number="Guild" not="FALSE" argtype="STRING" argument="tower warders"/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="Destroy" argtype="VOID" argument="NONE"/>
+    </objprog>
+  </object>
+  <object vnum="1028" name="leg guards steel towerguard" special="NONE">
+    <description>Something feels very wrong here..</description>
+    <shortdesc>a pair of steel leg guards</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="ARMOR" modifier="-50"/>
+    <objaffect location="XATTACKS" modifier="1"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="9" wear="1" extra="69640"/>
+      <data weight="0" cost="1" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="1029" name="guards arm steel towerguard" special="NONE">
+    <description>There is nothing here.</description>
+    <shortdesc>a pair of steel arm guards</shortdesc>
+    <actiondesc>There is nothing here.
+</actiondesc>
+    <affectflag>0</affectflag>
+    <objaffect location="DAMROLL" modifier="20"/>
+    <objaffect location="ARMOR" modifier="-70"/>
+    <objaffect location="XATTACKS" modifier="1"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="9" wear="1" extra="69640"/>
+      <data weight="0" cost="1" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="1030" name="breastplate steel" special="NONE">
+    <description>There... is nothing.. here</description>
+    <shortdesc>a steel breastplate</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="HITROLL" modifier="50"/>
+    <objaffect location="DAMROLL" modifier="30"/>
+    <objaffect location="ARMOR" modifier="-80"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="9" wear="9" extra="69640"/>
+      <data weight="5" cost="1" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="1031" name="towerguard sword" special="NONE">
+    <description>Something is... here..</description>
+    <shortdesc>a sword marked with a single flame</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="7" value3="10" value4="14"/>
+      <flags type="5" wear="1" extra="69640"/>
+      <data weight="0" cost="1" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="1032" name="sign" special="NONE">
+    <description>An \c07OoC\c00 sign is here.  Read it.</description>
+    <shortdesc>an OoC sign</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="12" wear="1" extra="65736"/>
+      <data weight="100" cost="1" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <exdesc keyword="sign">
+      <description>If you are not a Tower Warder, you are IC here
+unless you have OOC in both your doing and
+your title.  If you are caught here and do not
+have OOC in your doing and title, you will either
+accept the consequences of being here IC&apos;ly, or
+you will be teleported out.
+</description>
+    </exdesc>
+    <objprog main="OnTake" argtype="STRING" argument="look">
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="Emote" argtype="STRING" argument="You can&apos;t take this sign!"/>
+      <action number="Force" argtype="STRING" argument="blush"/>
+    </objprog>
+  </object>
+  <object vnum="1033" name="book" special="NONE">
+    <description>A book entitled &quot;Alcarin&apos;s Description of Combat&quot; is here.</description>
+    <shortdesc>Alcarin&apos;s Description of Combat</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="12" wear="1" extra="73800"/>
+      <data weight="10" cost="200" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <exdesc keyword="wateredsilk">
+      <description>WATERED SILK
+If you should ever, for a reason beyond the understanding
+of this simple swordsman, find yourself crouching during
+a fight, this is a form which might be able to get you out
+of a tight situation.  A slash across the abdomen, followed
+by a strong thrust to the heart, and your opponent is 
+either dead or possibly on the defensive, giving you a 
+chance to stand up and organize a strategy.  Note, you must
+hold the sword parallel to the ground as you thrust at
+your opponents heart.
+</description>
+    </exdesc>
+    <exdesc keyword="breeze">
+      <description>LEAF ON THE BREEZE
+Spin halfway around from the waist up, keeping your
+feet firmly planted on the ground, and perform three
+quick parries, followed by spinning back and making
+a short slash to your opponents upper-body. 
+</description>
+    </exdesc>
+    <exdesc keyword="threeprongs">
+      <description>LIGHTNING OF THE THREE PRONGS
+This is three, tightly controlled, lightning fast
+thrusts to the head of your opponent.  Be careful
+in how you do this, or you may pull yourself out
+of position.  It takes a great deal of practice
+to master the forms which prerequisitely require
+a great deal of speed.  First thrust at the left
+of your opponents head, then the right, then at
+the center.
+</description>
+    </exdesc>
+    <exdesc keyword="swallowtakes">
+      <description>THE SWALLOW TAKES FLIGHT
+This sword form can be used in one of two ways.  You
+can either use it to defend against one attack, then
+counterattack, or use it to defend against one attack,
+then against yet another.  To defend, hold the sword
+vertically while turning your body away from the 
+attack.  After this, you can either counterattack, or
+defend again.  To counterattack, follow with a rising
+backhand slash to the side your enemies head or neck.
+If you wish to defend again, parry while holding the
+sword diagonally down, and step away from the attack.
+</description>
+    </exdesc>
+    <exdesc keyword="stonesfalling">
+      <description>STONES FALLING DOWN THE MOUNTAIN
+This is a two slash attack.  First you must slash
+your opponents temple, back-handedly, and second
+you will bring the sword up, continuiing in the
+same direction as the original slash, mind you,
+and then circle around to slash at the base of
+the enemies neck.
+</description>
+    </exdesc>
+    <exdesc keyword="heronspreads">
+      <description>HERON SPREADS HIS WINGS
+This is another attack tecnique, and a very
+aptly named one at that.  Firstly, both arms
+are spread out and up, like a heron spreading
+it&apos;s wings, the blade slashes upward from 
+your opponents groin to his throat.  Remember,
+thought, to quickly bring your defense back 
+into order, or you will be wide open and
+extrememly vulnerable.
+</description>
+    </exdesc>
+    <exdesc keyword="thornbush">
+      <description>LIZARD IN THE THORNBUSH
+This is a very simple sword form, in theory, but
+in practice is much more complicated, because it
+has to be done very quickly and precisely.  A
+lunging thrust to the throat of your enemy, followed
+by a quick slash across his torso, is all you are
+required to do with this form.  It sounds easy,
+but you must do it quickly or leave yourself open.
+However, if you are dextrous enough, this is a 
+very useful tecnique when facing several opponents,
+as it allows you to take one of them out of the
+equation, and very fast.
+</description>
+    </exdesc>
+    <exdesc keyword="sunrises">
+      <description>THE SUN RISES
+This form can be used for either attack or defense,
+depending upon the circumstances in which you are
+using it.  To attack, slash upwards at the chest of an 
+unarmored opponent with the tip of your blade.  Note,
+however, that your opponent must be unarmored.  The
+odds specify that if you try this against, say a
+Child of the Light, your blade will simply bounce
+harmlessly off of his plate armor.
+To use it as a defense, do the same and use it against
+low attacks.  In ideal conditions you will not allow
+it to throw you out of position, and it will in turn
+send your opponents sword high, allowing for a quick 
+low attack, such as River Undercuts the Bank. 
+</description>
+    </exdesc>
+    <exdesc keyword="waterfall">
+      <description>WATERFALL ON THE MOUNTAINSIDE
+This is a purely defensive sword tecnique, used to
+defend yourself from an attack from behind.  Without
+further ado, here is a description of the form.
+FORM DESCRIPTION- With your arms raised above your
+head, place the sword flat against your back.  This,
+in all likelihood, will be a successful defense 
+against slashing attacks from the rear.
+</description>
+    </exdesc>
+    <exdesc keyword="bundlingstraw">
+      <description>BUNDLING STRAW
+This is an excellent form for beginners, as it is both a defense
+and a counterattack.  It is not that hard to execute once you have
+learned the basics of balance, how to hold a sword, and how to
+hold a good stance that works for you.  Well, before I ramble on
+overly much, here is a description of the form.
+FORM DESCRIPTION-  Hold your sword parallel to your body, point up, and then
+move it across your body, to parry an attack.  Immediately after
+you have parried, slash downwards at your opponents stomach and
+legs, moving the sword in the opposite direction as before.
+</description>
+    </exdesc>
+    <exdesc keyword="introduction">
+      <description>Combat, like any other day to day activity, will eventually
+become a routine.  This, I stress, is very important:  DO 
+NOT let that happen.  Every time you kill, it must be as the
+first time, or you will become like that which we fight 
+against more than anything, the Darkness.  Take no pleasure
+in killing, and always pity your foe.  After all, even the
+lowliest of shadowspawn, the trolloc, obeys it&apos;s dark master
+only because it was created to do so.  Nevertheless, you
+must never waver, you must always face even the most 
+fiersome of beasts in order to protect your Aes Sedai.  In
+this book I will descibe to you many different tecniques
+used with a sword, and the following book I write will be
+designed to teach more specialized methods of fighting, such
+as with two swords, one in each hand, or against multiple
+opponents, all fought simultaneously.  On that note, enjoy
+this book, but do not enjoy the subject matter.
+</description>
+    </exdesc>
+    <exdesc keyword="description combat book contents">
+      <description> CONTENTS
+Introduction - introduction
+Bundling Straw - bundlingstraw
+Waterfall on the Mountainside - waterfall
+The Sun Rises - sunrises
+Lizard in the Thornbush - thornbush
+Heron Spreads His Wings - heronspreads
+Stones Falling Down the Mountain - stonesfalling
+The Swallow Takes Flight - swallowtakes
+Lightning of the Three Prongs - threeprongs
+Leaf on the Breeze - breeze
+Watered Silk - wateredsilk
+Tower of the Morning - towermorning
+</description>
+    </exdesc>
+    <exdesc keyword="towermorning">
+      <description>TOWER OF THE MORNING
+To use this form, keeps your legs apart with your
+knees bent, and ensure that your feet are in a 
+straight line at distance, so if the back knee is
+set down it is near the heel of the front foot.
+The toes should be angled inwards, and the sword
+held at guard.  Step back and pull your sword in
+towards your chest, then sweep it up to parry a 
+downward slash.  Open your stance slight and turn
+the body as you deliver a downward diagonal slash
+across the base of your enemies neck.
+</description>
+    </exdesc>
+    <objprog main="OnDie" argtype="STRING" argument="look">
+      <action number="Destroy" argtype="VOID" argument="NONE"/>
+    </objprog>
+    <objprog main="OnTick" argtype="STRING" argument="look">
+      <action number="Destroy" argtype="VOID" argument="NONE"/>
+    </objprog>
+  </object>
+  <object vnum="1034" name="bookshelf shelf shelves" special="NONE">
+    <description>Shelves full of books are here, in the library.</description>
+    <shortdesc>a shelf of books</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="10000" value2="0" value3="-1" value4="0"/>
+      <flags type="15" wear="1" extra="65736"/>
+      <data weight="200" cost="1" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <objprog main="OnTake" argtype="STRING" argument="look">
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="EmoteTo" argtype="STRING" argument="Are you nuts?! Even Hercules would have a hard time lifting this thing."/>
+    </objprog>
+  </object>
+  <object vnum="1035" name="pouch donna" special="NONE">
+    <description>Here is a pouch.</description>
+    <shortdesc>a pouch</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="2500" value2="0" value3="-1" value4="0"/>
+      <flags type="15" wear="2049" extra="65544"/>
+      <data weight="2" cost="1" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <objprog main="OnWear" argtype="STRING" argument="look">
+      <sideterm number="Guild" not="FALSE" argtype="STRING" argument="tower warders"/>
+      <action number="Destroy" argtype="VOID" argument="NONE"/>
+    </objprog>
+  </object>
+  <object vnum="1036" name="book" special="NONE">
+    <description>A book entitled &quot;Alcarin&apos;s Description of Combat - II&quot; is here.</description>
+    <shortdesc>a book</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="12" wear="1" extra="0"/>
+      <data weight="3" cost="1" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <objprog main="OnTake" argtype="STRING" argument="look">
+      <sideterm number="Guild" not="FALSE" argtype="STRING" argument="tower warders"/>
+      <action number="Destroy" argtype="VOID" argument="NONE"/>
+    </objprog>
+  </object>
+  <object vnum="1037" name="sword TowerWarder" special="NONE">
+    <description>If you see this, alert an IMM immediately.</description>
+    <shortdesc>a finely crafted \c07steel\c00 sword</shortdesc>
+    <actiondesc>If you see this, alert an IMM immediately.
+</actiondesc>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="10" value3="10" value4="14"/>
+      <flags type="5" wear="32769" extra="69768"/>
+      <data weight="10" cost="1" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <dgscript vnum="1000"/>
+  </object>
+  <object vnum="1038" name="immortal" special="NONE">
+    <description>&amp;RTHIS OBJECT IS ILLEGAL FOR A MORTAL TO POSSESS&amp;n</description>
+    <shortdesc>&amp;RTHIS OBJECT IS ILLEGAL FOR A MORTAL TO POSSESS&amp;n</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="STR" modifier="-30"/>
+    <objaffect location="HITROLL" modifier="-500000"/>
+    <objaffect location="DAMROLL" modifier="-5000000"/>
+    <objaffect location="XATTACKS" modifier="-30"/>
+    <objaffect location="ARMOR" modifier="350000"/>
+    <objaffect location="STR" modifier="-30"/>
+    <objflags>
+      <values value1="0" value2="0" value3="1" value4="0"/>
+      <flags type="2" wear="49152" extra="70344"/>
+      <data weight="2147483647" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="1039" name="khenten key" special="NONE">
+    <description>Khenten dropped his key give it back.</description>
+    <shortdesc>Khenten&apos;s Key</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="18" wear="1" extra="0"/>
+      <data weight="1" cost="1" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="1040" name="tower warder syllabus student trainee" special="NONE">
+    <description>If you see this lying around, notify a Tower Warder GL</description>
+    <shortdesc>the Syllabus for the Tower Warders</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="13" wear="1" extra="69832"/>
+      <data weight="1" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <exdesc keyword="Instructor veteran">
+      <description>To gain a Veteran/Instructor Rank, the following must be completed:
+
+Actual advancement at this level is at GL discretion.  Instructors also need to talk to the MoI and demonstrate a willingness and ability to teach.
+
+It should be noted that this ranking is attainable solely as a reflection of the degree of IC training you have chosen to acquire.  The ranks are not intended to be used as an OOC or IC excuse to lord it over any other Gaidin, and harsh disciplinary action will be taken if such actions occur.
+</description>
+    </exdesc>
+    <exdesc keyword="Advanced">
+      <description>&amp;yFor Advancement to Gaidin:&amp;n
+
+1.) Any and all lectures listed in the Trainee section that remain undone
+2.) Basic Politics
+3.) Intermediate Horsemanship - gaits, methods of reigning, keeping seat,
+      using knees and legs.
+4.) Pitching Camp &amp;Y{Instructor Only}&amp;n
+5.) Nature of the Bond &amp;R{BONDED Warders only}&amp;n
+
+Required Spars:
+2 Advanced (One 2 on 1, one 3-way)
+4 others of any category
+
+After completing the requirements, the trainee must see the Master of Trainees to be tested on skill level and theory.  If the veteran trainee passes such a test, they have the option of enrolling in the Tower Guard (see section on Trainee to Guard) until such time as they have found a Bondmate, or they may merely be set to Gaidin unbonded and go from there.  Anyone who achieves this rank, congratulations, in advance.
+</description>
+    </exdesc>
+    <exdesc keyword="trainee">
+      <description>&amp;yTo move to Advance Trainee, the following are required:&amp;n
+
+1.) Element of Surprise &amp;Y{Instructor Only} &amp;C(Backstab)&amp;n
+2.) &amp;RAt Least THREE of the following lectures:&amp;n
+      General Protection of Aes Sedai &amp;C(Rescue)&amp;n
+      General Protection of Aes Sedai from Channelers &amp;C(Dirtkick)&amp;n
+      Shadowspawn &amp;Y{Instructor Only}&amp;n
+3.) &amp;RAt Least One of the Following Lectures:&amp;n
+      Moving in Stealth &amp;C(Hide, Sneak, Hide Tracks)&amp;n
+      Tracking &amp;C(Seek, Track)&amp;n
+      Survival &amp;C(Forage)&amp;n
+      Weapon Types and Uses &amp;Y{Instructor Only}&amp;n
+
+Required Spars:
+2 with an Instructor
+2 Supervised
+2 Unsupervised
+2 Advanced (One 2 on 1, One Defender)
+
+Upon completion of the above requirements, the Trainee should see
+he Master of Trainees about being tested for advancement.  The
+test includes knowledge of what you have been taught, as well as
+a spar, so be prepared.
+</description>
+    </exdesc>
+    <exdesc keyword="Student">
+      <description>&amp;yIn order to advance to Trainee the following requirements must be completed:&amp;n
+
+1.) Tower Etiquette, and Rules for a Student &amp;Y{Instructor Only}&amp;n
+2.) The Sword and it&apos;s Basic Uses &amp;Y{Instructor Only}&amp;n
+3.) The Flame and the Void &amp;C(Void)&amp;n
+4.) Emote Fighting Techniques &amp;Y{Instructor Only}&amp;n
+5.) Warder and Tower Purpose
+6.) Warder Creed
+7.) Basic Horsemanship - saddling the animal, currying, bit and bridle types
+
+Required Spars:
+1 with an Instructor
+2 supervised
+2 unsupervised
+
+Upon completion of the above requirements, Students are advised to see
+the Master of Trainees about their test, which  through the means of
+a theoretical discussion and a spar, will determine whether the student 
+is prepared to be promoted.
+</description>
+    </exdesc>
+    <exdesc keyword="ranks privileges">
+      <description>&amp;yNotes on ranks and privileges:&amp;n
+
+Students (both Gaidin and Academy) may NOT use steel in spars, may NOT leave Tower grounds without accompaniment by a TG, Advanced Trainee, Warder or Aes Sedai, and then only to the city.
+
+Trainees may use steel in spar with INSTRUCTORS or Blademasters, may go into Tar Valon unaccompanied. May NOT leave the city.
+
+Advanced Trainees (both Gaidin and Academy) may use steel in spar with any warder or officer. Have access to the Tower Library.  May leave the city under the direction of an AS or Instructor
+
+&amp;RNone of the above ranks should be in any part of the tower other than the public areas and the warder complex without specific instructions.  They may NOT go into the prisons or dungeons without especial dispensation from the High Captain of the Tower Guard, or those he designates.  Other Dispensations to these rules may be granted by the Master of Instructors or the Master of Trainees.&amp;n
+
+Basic Tower Guards: May use steel in spar with anyone who has completed training. Restrictions on movement up to the High Captain of the Tower Guard. 
+
+TG Officers/Warders: May give any lecture unless otherwise noted. May supervise spars, may spar steel with advanced trainees.
+
+Instructors/Blademasters:  May use steel in spar with Trainees. Can give Instructor Spars.  Has full access to the Complete Formlist. Only INSTRUCTORS may give the instructor only lectures.
+</description>
+    </exdesc>
+    <exdesc keyword="contents">
+      <description>&amp;yTable of Contents:&amp;n
+
+Ranks and Priveledges &amp;W(Read Ranks)&amp;n
+Student Syllabus &amp;W(Read Student)&amp;n
+Trainee Syllabus &amp;W(Read Trainee)&amp;n
+Advanced Trainee Syllabus &amp;W(Read Advanced)&amp;n
+Academy Student Syllabus &amp;W(Read Acstudent)&amp;n
+Advanced Academy Syllabus &amp;W(Read Acadvanced)&amp;n
+Going from Trainee to Tower Guard &amp;W(Read TG)&amp;n
+</description>
+    </exdesc>
+    <exdesc keyword="acstudent">
+      <description>&amp;yFor Advancement to Advanced Academy Trainee:&amp;n
+
+The following requirements must be completed:
+1.) Tower Etiquette, and Rules for a Student &amp;Y{Instructor Only}&amp;n
+2.) The Sword and it&apos;s Basic Uses &amp;Y{Instructor Only}&amp;n
+3.) The Flame and the Void &amp;C(Void)&amp;n
+4.) Emote Fighting Techniques &amp;Y{Instructor Only}&amp;n
+
+Required Spars:
+1 with an Instructor
+2 supervised
+2 unsupervised
+
+Upon completion of the above requirements, Students are advised to see
+the Master of Trainees about their test, which  through the means of
+a theoretical discussion and a spar, will determine whether the student 
+is prepared to be promoted.
+</description>
+    </exdesc>
+    <exdesc keyword="acadvanced">
+      <description>&amp;yTo Graduate from the Academy:&amp;n
+
+1.)  Element of Surprise &amp;C(Backstab)&amp;n
+2.)  Moving in Stealth &amp;C(Hide, Sneak, Hide Tracks)&amp;n
+3.)  Tracking &amp;C(Seek, Track)&amp;n
+4.)  Weapon Types and Uses &amp;Y{Instructor Only}&amp;n
+5.)  Intermediate Horsemanship - gaits, methods of reigning, keeping
+       seat, using knees and legs.
+
+Required Spars:
+2 with an Instructor
+2 Supervised
+2 Unsupervised
+2 Advanced (One 2 on 1, One Defender)
+
+After completing the requirements, the trainee must see 
+the Master of Trainees to be tested on skill level and theory. 
+If the trainee passes such a test, they have the option of 
+enrolling in the ranks of the Tower Guard (as a guardsman only,
+not as an officer.  See the High Captain and the section on
+Trainees to Tower Guard), or they may leave the tower with our
+training and our blessings. 
+</description>
+    </exdesc>
+    <exdesc keyword="tg">
+      <description>Though any added lessons required for a Gaidin or an Academy Graduate
+to enter the Tower Guard is at the High Captain&apos;s discretion, the
+following list is a guidelines for what should be taken before
+attaining any rank above Guardsman.  These lessons are to be taught
+by the members of the Tower Guard.
+
+1.)  Protection of the White Tower
+2.)  Commanding Troops
+3.)  Troop Movements and Strategies
+
+Again, all ranks and duties are at the High Captain&apos;s discretion, though
+it is generally advised that all Officers have the above training.
+</description>
+    </exdesc>
+    <dgscript vnum="1000"/>
+  </object>
+  <object vnum="1041" name="instructor notes" special="NONE">
+    <description>If you see this lying around, tell a Tower Warder GL</description>
+    <shortdesc>the Instructor&apos;s Text</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="13" wear="1" extra="69824"/>
+      <data weight="1" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <exdesc keyword="acstudent">
+      <description>&amp;yFor Advancement to Advanced Academy Trainee:&amp;n
+
+The following requirements must be completed:
+1.) Tower Etiquette, and Rules for a Student &amp;Y{Instructor Only}&amp;W (Read Etiquette)&amp;n
+2.) The Sword and it&apos;s Basic Uses &amp;Y{Instructor Only}&amp;W (Read Sword)&amp;n
+3.) The Flame and the Void &amp;C(Void)&amp;n
+4.) Emote Fighting Techniques &amp;Y{Instructor Only}&amp;W (Read Efighting)&amp;n
+
+Required Spars:
+2 with an Instructor
+2 Supervised
+2 Unsupervised
+2 Advanced (One 2 on 1, One Defender)
+
+Upon completion of the above requirements, Students should be directed to the Master of Trainees for Testing.
+</description>
+    </exdesc>
+    <exdesc keyword="acadvanced">
+      <description>&amp;yTo Graduate from the Academy:&amp;n
+
+1.)  Element of Surprise &amp;C(Backstab)&amp;n
+2.)  Moving in Stealth &amp;C(Hide, Sneak, Hide Tracks)&amp;n
+3.)  Tracking &amp;C(Seek, Track)&amp;n
+4.)  Weapon Types and Uses &amp;Y{Instructor Only}&amp;W (Read Weapon)&amp;n
+5.)  Intermediate Horsemanship - gaits, methods of reigning, keeping
+       seat, using knees and legs.
+
+Required Spars:
+2 with an Instructor
+2 Supervised
+2 Unsupervised
+2 Advanced (One 2 on 1, One Defender)
+
+Upon completion of the above requirements, Students should be directed to the Master of Trainees for Testing.
+</description>
+    </exdesc>
+    <exdesc keyword="camp">
+      <description>This lecture should include:  Where to find water, basic sanitation, building a cookfire, pitching a tent, and choosing the right ground to set up camp.  Examples and demonstrations as necessary.
+</description>
+    </exdesc>
+    <exdesc keyword="surprise">
+      <description>The lecture should cover the importance of surprise in an attack.  A demonstration should be included with this as well.  (A good example is squatting on the yard with a handful of dirt, making the trainee watch what you do with the dirt, and surprise him by pelting him one with your other fist.  Other examples can be used.) 
+</description>
+    </exdesc>
+    <exdesc keyword="efighting">
+      <description>An OOC lesson on the proper techniques to emote fight.  Discussion of attacks, closed emotes, and defense should be covered.  Also, cover points on realism and the limits of the human body.
+</description>
+    </exdesc>
+    <exdesc keyword="weaponry">
+      <description>The instructor can teach, according to the student&apos;s wishes and his or her own abilities, the following:
+
+Sword, Axe, Spear, Mace, Staff, Bow, Shield, Armor, etc.
+</description>
+    </exdesc>
+    <exdesc keyword="shadowspawn">
+      <description>The instructor should talk about: Darkfriends, Trollocs, Fades, Draghkar, gray men and darkhounds, with possible mention of the forsaken and dreadlords
+
+</description>
+    </exdesc>
+    <exdesc keyword="towerprot">
+      <description>The lecture consists basically of politics - when to not speak, eyes and ears, hostile groups, and that sort of thing.
+</description>
+    </exdesc>
+    <exdesc keyword="sworduse">
+      <description>The lecture should explain the following issues:
+
+Why the Sword?
+Types of swords: Length, edges, curved/straight, 1hand/2hand
+Difference between swing and thrust
+Care and Grip
+Dodges and Parries
+Recommended Forms: 
+Folding the Fan, Dandelion in the Wind, Moon over Water
+</description>
+    </exdesc>
+    <exdesc keyword="etiquette">
+      <description>The lecture should discuss bowing to AS, proper address for AS/Instructors, use of steel on the practice yard, avoidance of novices, and comments on the red ajah if the instructor wishes. It must cover Tower Grounds policy, and respect for TGs.  All trainees must remain in public areas of the Tower, or Warder Complex. No trainee has access to the Dungeons or Prisons save by especial leave granted by the Captain of the Tower Guard.
+
+Students (Academy and Gaidin): May use steel for form practice, may NOT leave tower grounds without accompaniment by TG, Advanced Trainee, Warder or Aes Sedai, and then only to the city.
+
+Trainees: May use steel in spar with INSTRUCTORS or Blademasters, may go into Tar Valon unaccompanied. May NOT leave the city.
+
+Advanced Trainees (Academy and Gaidin): May use steel in spar with any graduated char. Have access to the Tower Library. May leave the city under the direction of an AS or Instructor.
+
+(Dispensation to Area Restrictions may be granted by the MoI or the MoT)
+</description>
+    </exdesc>
+    <exdesc keyword="lectures">
+      <description>&amp;yLectures that -must- be given by an Instructor:&amp;n
+
+* Tower Etiquette, and Rules for a Student (etiquette)
+* The Sword and Basic Uses (sworduse)
+* Emote Fighting Techniques (efighting)
+* Protection of the White Tower (towerprot)
+* Shadowspawn (shadowspawn)
+* Element of Surprise (surprise)
+* Weapon Types and Uses (weaponry)
+* Pitching Camp (camp)
+</description>
+    </exdesc>
+    <exdesc keyword="advanced">
+      <description>&amp;yThe Following is required to graduate:&amp;n
+
+1.) Any and all lectures listed in the Trainee section that remain undone
+2.) Basic Politics
+3.) Intermediate Horsemanship - gaits, methods of reigning, keeping seat,
+      using knees and legs.
+4.) Pitching Camp &amp;Y{Instructor Only}&amp;W (Read Camp)&amp;n
+5.) Nature of the Bond &amp;R{BONDED Warders only}&amp;n
+
+Required Spars:
+2 Advanced (One 2 on 1, one 3-way)
+4 others of any category
+
+After completing the above, the trainee should be directed to
+The Master of Trainees for his testing.
+</description>
+    </exdesc>
+    <exdesc keyword="trainee">
+      <description>&amp;yThe following are required for Trainees:&amp;n
+
+1.) Element of Surprise &amp;Y{Instructor Only}&amp;C (Backstab)&amp;W (Read Surprise)&amp;n
+2.) &amp;RAt Least THREE of the following lectures:&amp;n
+      General Protection of Aes Sedai &amp;C(Rescue)&amp;n
+      General Protection of Aes Sedai from Channelers &amp;C(Dirtkick)&amp;n
+      Shadowspawn &amp;Y{Instructor Only}&amp;W (Read Shadowspawn)&amp;n
+3.)&amp;R At Least One of the Following Lectures:&amp;n
+      Moving in Stealth &amp;C(Hide, Sneak, Hide Tracks)&amp;n
+      Tracking &amp;C(Seek, Track)&amp;n
+      Survival &amp;C(Forage)&amp;n
+      Weapon Types and Uses &amp;Y{Instructor Only}&amp;W (Read Weapon)&amp;n
+
+Required Spars:
+2 with an Instructor
+2 Supervised
+2 Unsupervised
+2 Advanced (One 2 on 1, One Defender)
+
+After completing the above, the trainee should be directed to
+The Master of Trainees for his testing.
+</description>
+    </exdesc>
+    <exdesc keyword="student">
+      <description>&amp;yThe following is required to advance to Trainee:&amp;n
+
+&amp;RNote:&amp;n If a specific lesson provides IC knowledge for a skill it is noted in (parentheses), Students should ask their teacher for the skill, and if the teacher can&apos;t instruct, talk to one of the GLs. Also during  lessons with Instructors use of prodigy is recommended.
+
+&amp;RAlso Note:&amp;n Supervised spars may be between any two members of the White Tower  Warders Guild and should be mailed to the MoI by the supervisor.  Unsupervised spars may be between any two members of the White Tower Warders Guild and should be mailed to the MoI by BOTH parties. This is on the honor system, if you are caught lying about this you WILL be deguilded, no second chances.
+
+1.) Tower Etiquette, and Rules for a Student &amp;Y{Instructor Only} &amp;W(Read Etiquette)&amp;n
+2.) The Sword and it&apos;s Basic Uses &amp;Y{Instructor Only} &amp;W(Read Sword)&amp;n
+3.) The Flame and the Void &amp;C(Void)&amp;n
+4.) Emote Fighting Techniques &amp;Y{Instructor Only}&amp;W (Read efighting)&amp;n
+5.) Warder and Tower Purpose
+6.) Warder Creed
+7.) Basic Horsemanship - saddling the animal, currying, bit and bridle types
+
+
+Required Spars:
+1 with an Instructor
+2 supervised
+2 unsupervised
+
+
+After completing all of the above, the student should be directed to the Master of Trainees for his testing.
+</description>
+    </exdesc>
+    <exdesc keyword="contents">
+      <description>&amp;yTable of Contents:&amp;n
+
+Lectures &amp;W(Read Lectures)&amp;n
+Students &amp;W(Read Students)&amp;n
+Trainees &amp;W(Read Trainees)&amp;n
+Advanced Trainees &amp;W(Read Advanced)&amp;n
+Academy Trainees, Student &amp;W(Read Acstudent)&amp;n
+Academy Trainees, Advanced &amp;W(Read Acadvanced)&amp;n
+</description>
+    </exdesc>
+  </object>
+  <object vnum="1042" name="pillar ooc policy tower guards" special="NONE">
+    <description>An OOC pillar listing the Tower Guard policy of the Tower.</description>
+    <shortdesc>a grey stone pillar</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="8" wear="0" extra="0"/>
+      <data weight="0" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <exdesc keyword="propriety">
+      <description>If you are trusted with the RP of an NPC Tower Guard, you will use the
+privilege appropriately, both OOC and IC.  No abuse of this trust will be
+tolerated.
+</description>
+    </exdesc>
+    <exdesc keyword="notify">
+      <description>If something happens while you have a Tower Guard assigned to you as an NPC,
+you are responsible for notifying the Tower Guard Captain via mudmail in
+the form of IC reports from the Tower Guard(s). If you want to -get- some
+Tower Guards for an IC project, contact him as well.
+</description>
+    </exdesc>
+    <exdesc keyword="miscellaneous">
+      <description>If a prisoner is assigned Tower Guards, the prisoner is responsible for
+emoting them realistically and making sure that they follow the orders
+given by the Tower Guard Captain, Amyrlin, Hall or Keeper. If the orders are
+not followed, it is the prisoners fault unless the guards are Icly killed
+or otherwise incapacitated to prevent them from doing so.
+
+If an Aes Sedai is assigned a contingent of Tower Guards to aid her, she is
+responsible for emoting them in the same manner listed above.
+
+If someone of sufficient rank to change the orders of the Tower Guards is
+present, they may assume command of the Guards in either of the above
+situations and emote them themselves.
+
+Most importantly, if you don&apos;t know what would be appropriate in a given
+situation - ASK A TOWER GL.
+</description>
+    </exdesc>
+    <exdesc keyword="captain">
+      <description>The Tower Guard Captain can be ordered about only by the Amyrlin, the Keeper
+or the Hall.  If he gives an order, the Tower Guards will obey. All the other
+orders from the Keeper, Amyrlin, or Hall go through him and he will ICly
+know about all of them.  He will receive reports if there is any IC event
+in which Tower Guards are emoted as NPCs and if he does not receive a report
+the RP is subject to nullification without a hearing from the Council.
+</description>
+    </exdesc>
+    <exdesc keyword="hall keeper">
+      <description>The Hall and the Keeper speak with the authority of Tower Law, but they can
+be countermanded by the Amyrlin. Otherwise, the same rules apply to them
+as to the Amyrlin Seat herself, as far as postings about the Tower Guards 
+are concerned.
+</description>
+    </exdesc>
+    <exdesc keyword="amyrlin">
+      <description>The Amyrlin has absolute command of the Tower Guards.  If she talks, they
+listen and obey absolutely. If a post is made by the Amyrlin Seat on a board,
+giving details of a guard assignment to a prisoner or other matter and
+setting forth the rules for visitations, the rules and details are Law.
+No exceptions will be made to them for anyone.
+</description>
+    </exdesc>
+    <exdesc keyword="pillar policy ooc">
+      <description>Policy concerning NPC Tower Guards:
+
+This must be followed at all times. Failure to do so will not be tolerated.
+Any RP involving this protocal may be nulled if it does not adhere to it.
+
+Command protocal - read command
+1. Amyrlin Seat - read amyrlin
+2. Keeper/Hall of the Tower - read keeper or read hall
+3. Tower Guard Captain - read captain
+4. Further details - read miscellaneous
+
+Report protocal - read report
+1. Notification - read notify
+2. IC and OOC propriety - read propriety
+</description>
+    </exdesc>
+    <exdesc keyword="command">
+      <description>Indvidual Aes Sedai do not have authority to countermand a Tower Guard&apos;s
+orders or to assume control of a prisoner&apos;s Tower Guards. The Tower Guard
+receive their orders from the Captain, the Hall, or the Amyrlin Seat.
+Tower Guards are not under direct authority of any single Aes Sedai unless
+they are specifically assigned as such. Any Tower Guard -not- assigned a
+task of any sort are free game to be ordered about by any Aes Sedai with
+proper notification at least OOCly.
+</description>
+    </exdesc>
+    <exdesc keyword="report">
+      <description>Some sort of report is -always- required whenever emoted Tower Guard are
+involved in RP. There is no acceptions to this of any sort. RP runs the
+risk of being nulled if no report is submitted.
+</description>
+    </exdesc>
+  </object>
+  <object vnum="1045" name="key toban" special="NONE">
+    <description>A small &amp;Kmetal&amp;n key is lying here, return to a &amp;WWhite Tower&amp;n GL.</description>
+    <shortdesc>a small &amp;Kmetal&amp;n key</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="18" wear="1" extra="0"/>
+      <data weight="1" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="1049" name="Khyran&apos;s key" special="NONE">
+    <description>A long key made from gold</description>
+    <shortdesc>a long key made from gold</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="18" wear="1" extra="69768"/>
+      <data weight="0" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="1050" name="personal Ganic" special="NONE">
+    <description>Personal Stuff</description>
+    <shortdesc>Personal Stuff</shortdesc>
+    <actiondesc>Personal Stuff
+</actiondesc>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="9999" value2="0" value3="-1" value4="0"/>
+      <flags type="15" wear="3" extra="69832"/>
+      <data weight="1" cost="1" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="1051" name="suggestions Ganic" special="NONE">
+    <description>Guild Suggestions</description>
+    <shortdesc>Guild Suggestions</shortdesc>
+    <actiondesc>Guild Suggestions
+</actiondesc>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="9999" value2="0" value3="-1" value4="0"/>
+      <flags type="15" wear="3" extra="69832"/>
+      <data weight="1" cost="1" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="1052" name="desk shondai table" special="NONE">
+    <description>&amp;gA broad &amp;yoaken&amp;g desk.</description>
+    <shortdesc>Shondai&apos;s desk</shortdesc>
+    <actiondesc>A large oaken desk, belonging to the Master at Arms.    
+</actiondesc>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="10000" value2="15" value3="1071" value4="0"/>
+      <flags type="15" wear="0" extra="69832"/>
+      <data weight="1000" cost="1" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="1053" name="kiel key" special="NONE">
+    <description>Kiel&apos;s Key</description>
+    <shortdesc>Kiel&apos;s Key</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="18" wear="1" extra="65672"/>
+      <data weight="1" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="1054" name="Captain&apos;s key." special="NONE">
+    <description>A small key made from silver</description>
+    <shortdesc>a small key made from silver</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="18" wear="1" extra="69768"/>
+      <data weight="0" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="1055" name="shift tree warder sedai donna" special="NONE">
+    <description>Strung from tree to tree are numerous shifts of dubious origin.</description>
+    <shortdesc>Strung from tree to tree are numerous shifts of dubious origin.</shortdesc>
+    <actiondesc>Strung from tree to tree are numerous shifts of dubious origin.
+</actiondesc>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="23" wear="0" extra="72520"/>
+      <data weight="100000" cost="1" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="1056" name="forest green sleeves armguard" special="NONE">
+    <description>A heap of forest green cloth lies here.</description>
+    <shortdesc>a pair of forest green sleeves</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="HITROLL" modifier="16"/>
+    <objaffect location="DAMROLL" modifier="16"/>
+    <objaffect location="ARMOR" modifier="-20"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="11" wear="257" extra="0"/>
+      <data weight="10" cost="52000" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="1057" name="bracelet" special="NONE">
+    <description>A bronze bracelet etched with the &amp;WFlame&amp;n of Tar Valon lies here.</description>
+    <shortdesc>a bronze bracelet etched with a &amp;WFlame&amp;n</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="ARMOR" modifier="-10"/>
+    <objaffect location="HITROLL" modifier="15"/>
+    <objaffect location="DAMROLL" modifier="15"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="11" wear="4097" extra="0"/>
+      <data weight="2" cost="73500" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="1058" name="helmet flame" special="NONE">
+    <description>A steel helmet lies here, with a &amp;Wwhite&amp;n flame embossed on it.</description>
+    <shortdesc>a helmet embossed with a &amp;WFlame&amp;n</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="ARMOR" modifier="-1"/>
+    <objaffect location="HITROLL" modifier="10"/>
+    <objaffect location="DAMROLL" modifier="10"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="29" value2="0" value3="0" value4="0"/>
+      <flags type="9" wear="17" extra="0"/>
+      <data weight="7" cost="54000" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="1059" name="swordbelt" special="NONE">
+    <description>A boarhide swordbelt lies here, abandoned.</description>
+    <shortdesc>a plain boarhide swordbelt</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="ARMOR" modifier="-20"/>
+    <objaffect location="HITROLL" modifier="6"/>
+    <objaffect location="DAMROLL" modifier="5"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="1000" value2="1" value3="-1" value4="0"/>
+      <flags type="15" wear="2049" extra="0"/>
+      <data weight="7" cost="45750" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="1060" name="heron marked sword Blademaster" special="NONE">
+    <description>A blademaster&apos;s sword lies here.</description>
+    <shortdesc>a curved, single-edged blade with a heron marked pommel</shortdesc>
+    <actiondesc>Nothing.
+</actiondesc>
+    <affectflag>0</affectflag>
+    <objaffect location="XATTACKS" modifier="1"/>
+    <objaffect location="HITROLL" modifier="25"/>
+    <objaffect location="DAMROLL" modifier="25"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="30" value3="5" value4="11"/>
+      <flags type="5" wear="32769" extra="69768"/>
+      <data weight="1" cost="1" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <objprog main="OnActionTo" argtype="STRING" argument="enhance">
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="EmoteTo" argtype="STRING" argument="This object may not be enhanced."/>
+    </objprog>
+  </object>
+  <object vnum="1061" name="heron marked sword Blademaster" special="NONE">
+    <description>The sword of a blademaster lies here.</description>
+    <shortdesc>a curved, single-edged sword with a heron marked pommel</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="XATTACKS" modifier="1"/>
+    <objaffect location="HITROLL" modifier="25"/>
+    <objaffect location="DAMROLL" modifier="25"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="25" value3="6" value4="11"/>
+      <flags type="5" wear="32769" extra="69768"/>
+      <data weight="1" cost="1" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="1062" name="sword curved slim" special="NONE">
+    <description>A beautiful sword with a slender, slightly curved, razor-sharp blade lies here.</description>
+    <shortdesc>a curved single-edged sword with a flawless edge</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="HITROLL" modifier="10"/>
+    <objaffect location="DAMROLL" modifier="10"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="3" value3="10" value4="11"/>
+      <flags type="5" wear="32769" extra="128"/>
+      <data weight="10" cost="63000" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="1063" name="statue aes sedai" special="NONE">
+    <description>A delicate ivory figurine lies here, carved into the shape of a shawl-clad woman.</description>
+    <shortdesc>a statue of an Aes Sedai</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="ARMOR" modifier="-15"/>
+    <objaffect location="HITROLL" modifier="5"/>
+    <objaffect location="DAMROLL" modifier="10"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="8" wear="16385" extra="0"/>
+      <data weight="3" cost="38250" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="1064" name="silk neck kerchief" special="NONE">
+    <description>A square of silk cloth lies here unattended</description>
+    <shortdesc>a silk kerchief</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="ARMOR" modifier="-15"/>
+    <objaffect location="HITROLL" modifier="10"/>
+    <objaffect location="DAMROLL" modifier="10"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="11" wear="5" extra="0"/>
+      <data weight="5" cost="49500" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="1065" name="sign" special="NONE">
+    <description>An &amp;WOOC&amp;g sign is here to show the stats on this shop&apos;s items.</description>
+    <shortdesc>an &amp;WOOC&amp;g sign is here to show the stats on this shop&apos;s items.</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="13" wear="0" extra="0"/>
+      <data weight="100000" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <exdesc keyword="sign">
+      <description>+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ a thick steel shield = -45 AC, 5/5 hitroll/damroll
++ a pair of thick steel gauntlets = - 15 AC, 10/10 hitroll/damroll
++ a helmet embossed with a &amp;WFlame&amp;n = - 30 AC, 10/10 hitroll/damroll
++ a bronze bracelet etched with the &amp;WFlame&amp;n = -10 AC, 15/15 hitroll/damroll
++ a curved single-edged sword with a flawless edge = 3d10, 10/10 hitroll/damroll
++ a steel breastplate = -50 AC, 5/5 hitroll/damroll
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+</description>
+    </exdesc>
+  </object>
+  <object vnum="1070" name="iron key" special="NONE">
+    <description>An iron key lies here.</description>
+    <shortdesc>an iron key</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="18" wear="1" extra="65672"/>
+      <data weight="1" cost="1" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="1071" name="key steel shondai" special="NONE">
+    <description>A small &amp;Ksteel&amp;n key lies here, please return to the Master at Arms.</description>
+    <shortdesc>a small &amp;Ksteel&amp;n key</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="18" wear="1" extra="4296"/>
+      <data weight="1" cost="1" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="1072" name="towerwarder tabard flame" special="NONE">
+    <description>A tabard for Tower Warders.</description>
+    <shortdesc>a crisp tabard of red and white</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="HITROLL" modifier="10"/>
+    <objaffect location="DAMROLL" modifier="10"/>
+    <objaffect location="XATTACKS" modifier="1"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="100" value2="0" value3="0" value4="0"/>
+      <flags type="9" wear="9" extra="69768"/>
+      <data weight="10" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <dgscript vnum="1000"/>
+  </object>
+  <object vnum="1073" name="traveller cloak" special="NONE">
+    <description>A wool cloak is here.</description>
+    <shortdesc>a traveller&apos;s cloak</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="HITROLL" modifier="12"/>
+    <objaffect location="DAMROLL" modifier="12"/>
+    <objaffect location="ARMOR" modifier="50"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="11" wear="1025" extra="0"/>
+      <data weight="5" cost="23000" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="1074" name="rules" special="NONE">
+    <description>A massive plaque has been placed near the board, type read rules.</description>
+    <shortdesc>a large plaque displaying the rules of the White Tower</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="0" wear="0" extra="0"/>
+      <data weight="0" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <exdesc keyword="rules2">
+      <description>\c00
+9) The Shadow and your bondmates: Please, out of respect for your
+bondmate, if you are a member of the shadow before bonding, or
+become a member of the shadow while bonded, please let your
+bondmate know this before either you bond, or when you choose to
+take this step. It is merely common courtesy to do so, mainly
+because involvement in the shadow, if you are bonded, does not
+only have consequences to your own char, but the char of your
+bondmate.
+10) Men in the tower: Novices are not to -ever- be in the warder
+barracks, in   any room of it, unless accompanied by an Aes Sedai
+and for more reason than a social visit. They are not to be 
+alone with us in private areas, or living chambers,   and never
+alone with us behind closed doors. Consequently, we are   not
+allowed in the Novice living areas, unless there is   an Aes
+Sedai present. Novices can go into the practice  yards, but if
+they behave inappropriately there, they   can expect punishment.
+Novices are free to associate  with us in any public area,
+no closed  doors, so long as it does not interfere with their
+lessons.
+Accepted are a bit more free, and will not be punished 
+for being in the warder practice yards. Accepted may go   into
+the public areas within the warder barracks, such as   the warder
+mess, the library, and the smithy. (No, not  the baths.) We are
+allowed in the public areas of the   Accepted living quarters,
+including the accepted garden,   and the wash. Accepted are not
+allowed into the private  rooms of men, nor are men allowed into
+their rooms.   Again, no closed doors, having a man of the tower
+help move an Accepted&apos;s furniture is acceptable, if the door is
+open.
+Comments or whatever else, mail me or Illaria.
+Cassin 
+</description>
+    </exdesc>
+    <exdesc keyword="rules">
+      <description>\c00Hey folks.
+Ok, I&apos;ve taken the time to clean up these boards a bit and to
+remove most of the posts from the previous gls who ran these
+guilds. I&apos;m going to repost this so that everyone can read it in
+one sitting and  are assured that it&apos;s completely current.
+1) Respect to the Masters: The MOI and MOT are two very
+challenging jobs for morts to take on. Please treat these two
+with respect and courtesy and try not to get on their back about
+problems. If there is something wrong, please let them know, talk
+it out with them in a civil manner so that it can be resolved
+favorably for all parties involved. The two Masters of the
+Warders run this guild, I&apos;m just here to officiate things and to
+make sure that everything runs smoothly.
+2) Trainees and Instructors: to all trainees, remember that you
+are trainees, that you are initiates into this craft of fighting.
+Your instructors have years, most likely decades of experience
+more than any trainee will ever have. Please take that to heart
+when you are sparring with your instructors. In no way should an
+instructor lose a spar unless he or she means to do so. All the
+instructors here are excellent rpers and have been carefully
+chosen for their positions and I trust that they will not abuse
+that authority. I just ask that you, the trainees, please try to
+keep in mind that you are such and refrain from thinking that you
+can stomp on your teachers. I&apos;m sure you might be frustrated
+enough sometimes, but it&apos;s just logical.
+3) Ic Consequences: Please keep in mind, always, that whatever
+you say and do icly, you have to take responsibility for. Please
+do not, as an example, go up to an Aes Sedai and call her a
+witch, it just doesn&apos;t go over very well and you should expect to
+have to deal with the consequences of such an action. I merely
+mean this as an example and it goes for all the guildees here,
+even when relating to the mud as a whole.
+4) Multiple TW Alts: You may create more than one Tower Warder
+Alt, this is perfectly fine with me, however, keep in mind, that
+you will have to reseek the tower as if you had never been here.
+No favoritism will be shown to you merely because you already
+have a TW alt. Backgrounds will still need to be submitted to me
+and approved and sponsors acquired.
+5) Non-guilded folk in the Tower: Visitors are allowed
+unaccompanied in the Tower Lobby  and in the Tower Gardens. They
+are not allowed access to the basement levels at all, they may go
+into the living  areas accompanied by someone of at least Aes
+Sedai rank or those Graduated from Warder training. 
+Anyone going to the third floor, where the library and the  hall
+of the tower, along with the Amyrlin&apos;s and Keeper&apos;s   offices,
+must be either guilded to the Aes Sedai or have   Aes Sedai
+escort and Warder escort (if not a warder)
+6) OoC DEbonding: This is merely an issue of respect. Please, if
+a Warder or an Aes Sedai, your bondmate, asks that oocly they be
+debonded from you, remember that this is perfectly acceptable. We
+are here to have fun and to play a game, not to create problems
+and hard feelings amongst anyone. It would be nice if people
+could work out their problems but sometimes issues are
+unreconcilable and this step deemed necessary.
+7) Major Events: If you or anyone you know, is planning on having
+a major event either in, or involving the White Tower, please
+mail both Cassin and Illaria on the matter so that we aren&apos;t left
+clueless. This is merely a courtesy issue, we aren&apos;t going to
+tell you that you can&apos;t have your event, but we would like the
+details so that if any questions are asked of us, we know how to
+respond.
+8) Tower guardsman: Please see the rules posted in both
+Guildareas for the rules concerning Tower Guards.
+
+
+Continued. Type read rules2 to get the last bit.
+</description>
+    </exdesc>
+  </object>
+  <object vnum="1075" name="golden eyes Immeq" special="NONE">
+    <description>A pair of Golden eyes, akin to a wolves.</description>
+    <shortdesc>A pair of bright &amp;Yg&amp;yo&amp;Yl&amp;yd&amp;Ye&amp;yn&amp;n eyes</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="11" wear="17" extra="69832"/>
+      <data weight="1" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="1092" name="invitation dalakhil" special="NONE">
+    <description>An invitation into Dalakhil&apos;s house.</description>
+    <shortdesc>An invitation into Dalakhil&apos;s house.</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="18" wear="1" extra="69832"/>
+      <data weight="0" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <objprog main="OnActionCarry" argtype="STRING" argument="put invitation">
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+    </objprog>
+  </object>
+</objects>

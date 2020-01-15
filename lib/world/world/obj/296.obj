@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<objects>
+  <object vnum="29697" name="sign post arrow" special="NONE">
+    <description>&amp;nA sign is nailed into the floor, showing where the exits lead.</description>
+    <shortdesc>A sign that points the way</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="12" wear="0" extra="0"/>
+      <data weight="0" cost="1" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <exdesc keyword="sign post arrow">
+      <description>East-Immortal Board Room
+West-Builder Pad
+South-Shining Sirius
+North-Black Tower Guild Area
+Down-Oval
+</description>
+    </exdesc>
+  </object>
+  <object vnum="29698" name="Bass electric" special="NONE">
+    <description>&amp;nA &amp;wchrome-finished&amp;n &amp;Ye&amp;Wl&amp;Ye&amp;Wc&amp;Yt&amp;Wr&amp;Yi&amp;Wc&amp;n bass-guitar hangs from a guitar stand here.</description>
+    <shortdesc>An &amp;Ye&amp;Wl&amp;Ye&amp;Wc&amp;Yt&amp;Wr&amp;Yi&amp;Wc&amp;n bass-guitar.</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="0" wear="1" extra="0"/>
+      <data weight="0" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <objprog main="OnActionCarry" argtype="STRING" argument="play bass">
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="Force" argtype="STRING" argument="hold bass"/>
+      <action number="Emote" argtype="STRING" argument="starts ripping out various chords and triplets on an &amp;Ye&amp;Wl&amp;Ye&amp;Wc&amp;Yt&amp;Wr&amp;Yi&amp;Wc&amp;n bass-guitar."/>
+    </objprog>
+  </object>
+  <object vnum="29699" name="guitar electric" special="NONE">
+    <description>&amp;nA chrome-finished &amp;Ye&amp;Wl&amp;Ye&amp;Wc&amp;Yt&amp;Wr&amp;Yi&amp;Wc&amp;n guitar hangs from a guitar stand here.</description>
+    <shortdesc>An &amp;Ye&amp;Wl&amp;Ye&amp;Wc&amp;Yt&amp;Wr&amp;Yi&amp;Wc&amp;n guitar</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="12" wear="16385" extra="0"/>
+      <data weight="0" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+</objects>

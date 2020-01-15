@@ -1,0 +1,95 @@
+#6500
+black wind machin shin~
+\c23Machin Shin, the Black Wind\c00~
+\c23The central vortex of the black wind screams before you!\c00
+~
+The Black Wind forms a sheer wall of dead black, sucking anything
+it touches into itself. It is pure mindless evil.
+~
+3126312 269289520 0 E
+199 -180 -20 637 0d0+30000 30d30+50
+0 150
+6 8 0
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Stun: 100
+P
+OnTick
+Emote "killkillkillkillkillkilldeathdeathdeathdeathdeathdeathpainpainpainpain"
+End
+OnEntry
+ActionTo "kill"
+Cast "destroy armor"
+Cast "destroy armor"
+Cast "destroy armor"
+End
+OnRandom 99
+Pause 5
+Action "stand"
+Action "pull spawner"
+End
+OnMobDie
+Action "take spawner"
+Action "junk spawner"
+End
+OnAction "cast weave"
+Cast "destroy armor"
+Cast "destroy weapon"
+Cast "pain"
+End
+Q
+E
+#6501
+tendril machin shin black wind~
+\c23A tendril of Machin Shin\c00~
+\c23A tendril of Machin Shin\c00
+~
+\c23You stare at a part of the deadly Black Wind, it blocks your escape
+you must destroy it be destroyed.\c00
+~
+3118136 268503088 0 E
+195 -180 -10 637 0d0+20000 20d20+50
+0 140
+8 8 0
+BareHandAttack: 12
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Stun: 100
+P
+OnRandom 40
+Emote "\c23A tendril of Machin Shin retreats into the central vortex.\c00"
+PurgeMob
+End
+OnLeave
+Stop
+Emote "\c23A tendril of Machin Shin blocks $N from leaving.\c00"
+Cast "destroy armor"
+End
+OnLeave
+Stop
+Emote "\c23A tendril of Machin Shin blocks $N as $E tries to flee!\c00"
+Cast "destroy weapon"
+End
+OnAction "cast weave"
+Cast "destroy armor"
+End
+OnAction "grasp"
+Cast "destroy weapon"
+End
+OnRandom 99
+Action "leave"
+End
+OnEntry
+Cast "pain"
+End
+Q
+E
+$

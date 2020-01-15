@@ -1,0 +1,185 @@
+.Dd March 29, 2001
+.Dt sf_split 3
+.Os
+.Sh NAME
+.Nm split ,
+.Nm splitf ,
+.Nm splitquotable ,
+.Nm sjoin ,
+.Nm join ,
+.Nm split_network
+.Nd split and join functions
+.Sh SYNOPSIS
+.Fd #include <strfunc.h>
+.Pp
+Split string and add tokens to the string array
+.Ft svect *
+.Fn split "char *string" "char *delim" "int flags"
+.Ft int
+.Fn splitf "svect *" "char *string" "char *delim" "int flags"
+.Ft int
+.Fn splitquotable "svect *" "char *string"
+.Pp
+Join the array tokens together
+.Ft char *
+.Fn join "char **" "char *delimiter"
+.Ft char *
+.Fn sjoin "svect *" "char *delimiter"
+.Pp
+Stand-alone network/mask splitting function
+.Ft int
+.Fn split_network "const char *ip_mask" "unsigned int *ip" "unsigned int *mask"
+.Pp
+.Sh DESCRIPTION
+These routines allows to split or join strings by specified tokens.
+.Pp
+.Ft int
+.Fn splitf "svect *" "char *string" "char *delim" "int flags"
+is the basic splitting function.
+.Em string
+specifies the source string.
+.Em delim 
+specifies the delimiter to be used to split
+.Em string
+into tokens.
+.Em flags
+is the bitwise OR of the following values:
+.Bl -tag -width "XXX" -offset indent
+.It 1
+two or more joined delimiters will be considered to be distinct
+instead of assuming them as one delimiter and skipping.
+.It 2
+delimiter will be considered as the pointer to delimiting string
+instead of assuming it as the pointer to character set.
+.It 4
+delimiter is the 
+.Em regular expression .
+Regular expression can be
+prefixed with and followed by /'es if there is a need to put some flags after
+it. Refer to
+.Xr sf_sed 3
+to obtain a flags and additional information about regular expressions.
+Setting this flag automaticaly discards 1 & 2.
+.Pp
+.El
+Return value is the number of tokens recognized and added to the vector, or
+-1 in case of an error caused by memory shortage or regular expressions
+handling failure.
+.Pp
+.Ft svect *
+.Fn split "char *string" "char *set" "int flags"
+is identical to the
+.Fn splitf
+in one exception that it will create a new
+.Nm svect *
+structure for you. The structure will always be allocated, but it can contain
+no data if
+.Fn splitf
+will be unable to find any tokens.
+.Pp
+.Ft int
+.Fn splitquotable "svect *sl" "char *string"
+is the function that recognizes single and double quotes and splits string
+according to them. There is a small hack that allows to know whether this
+or that piece of string (token) was originally inside the double or single
+quotes. The character (byte) right after the end of string within the list
+sl->list[N][sl->lens[N] + 1] will contain the '\0', '\1' or '\2' if the
+appropriate token was originaly found within the unquoted text,
+single or double quotes, respectively.
+.Pp
+To join vector elements together,
+.Fn sjoin "svect *" "char *delimiter"
+function may be called. Another call,
+.Fn join "char **list" "char *delimiter",
+may be required to join the
+.Em char **
+values together without using an intermediate
+.Em svect *
+structure.
+.Pp
+.Ft int
+.Fn split_network "const char *ip_mask" "unsigned int *ip" "unsigned int *mask"
+used to split IP/Mask strings to binary IP address and mask. Both
+.Em ip
+and
+.Em mask
+arguments should be supplied. They will be filled with recognized ip address
+and mask in
+.Em network
+byte order. Refer to
+.Xr byteorder 3
+or
+.Xr ntohl 3 .
+.Fn split_network
+regognizes the standart forms of ip address/mask pairs:
+.Bd -literal
+	a.b.c.d/masklen
+	a.b.c.d/0xHEXMASK
+	a.b.c.d 0xHEXMASK
+	a.b.c.d/a.b.c.d
+	a.b.c.d a.b.c.d
+	or, more common
+	a[.[b[.c[.d]]]]/a.b[.c[.d]]]
+	and
+	a[.[b[.c[.d]]]] a.b[.c[.d]]]
+.Ed
+.Pp
+.Sh EXAMPLES
+.Pp
+Example split function...
+.Bd -literal
+void removeMultipleSpaces(char *string) {
+	svect *sl;
+
+	/* Split string="some   bad   string"
+	 * and add tokens to the vector
+	 */
+	sl = split(string, NULL, 0);
+
+	/* And join them together to form
+	 * "some bad string"
+	 */
+	printf("%s\en", sjoin(sl, " "));
+
+	/* Destroy the string vector */
+	sfree(sl);
+};
+.Pp
+Split according to quotes
+.Bd -literal
+void quotes(char *string) {
+	svect *sl;
+	int i;
+
+	/* Create new string vector */
+	sl = sinit();
+
+	/* Split string=" one 'two three' four\" five\""
+	 * and add tokens to the vector
+	 */
+	sl = splitquotable(sl, string);
+
+	/* And join them together to form
+	 * "[one], [two three], [four], [five]"
+	 */
+	printf("[%s]\en", sjoin(sl, "], ["));
+
+	/* Single or double quoted? */
+	for(i = 0; i < sl->count; i++)
+		printf("%s: %s\en", sl->list[i],
+			(sl->list[i][sl->lens[i] + 1] == 0)?"plain text":
+			((sl->list[i][sl->lens[i] + 1] == 1)?"single quoted":
+			((sl->list[i][sl->lens[i] + 1] == 2)?"double quoted"))
+		);
+
+	/* Destroy the list */
+	sfree(sl);
+};
+.Ed
+.Sh SEE ALSO
+.Xr strfunc 3 ,
+.Xr sf_svect 3 ,
+.Xr sf_sed 3 ,
+.Xr byteorder 3 .
+.Sh AUTHORS
+.An Lev Walkin <vlm@spelio.net.ru>

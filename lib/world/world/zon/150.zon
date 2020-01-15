@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<zone vnum="150" lifespan="15" top="15099" mode="2" lock="no">
+  <name>Tar Valon I</name>
+  <resetcmds numberof="17">
+    <cmd command="ReadMobile" ifflag="no">
+      <args arg1="15099" arg2="1" arg3="15042"/>
+      <line lineno="7"/>
+    </cmd>
+    <cmd command="ReadMobile" ifflag="no">
+      <args arg1="15001" arg2="1" arg3="15048"/>
+      <line lineno="11"/>
+    </cmd>
+    <cmd command="Obj2Mob" ifflag="yes">
+      <args arg1="15002" arg2="9999" arg3="0"/>
+      <line lineno="15"/>
+    </cmd>
+    <cmd command="Obj2Mob" ifflag="yes">
+      <args arg1="15001" arg2="9999" arg3="0"/>
+      <line lineno="19"/>
+    </cmd>
+    <cmd command="Obj2Mob" ifflag="yes">
+      <args arg1="15000" arg2="9999" arg3="0"/>
+      <line lineno="23"/>
+    </cmd>
+    <cmd command="SetStateOfDoor" ifflag="no">
+      <args arg1="15043" arg2="0" arg3="1"/>
+      <line lineno="27"/>
+    </cmd>
+    <cmd command="ReadMobile" ifflag="no">
+      <args arg1="15000" arg2="1" arg3="15043"/>
+      <line lineno="31"/>
+    </cmd>
+    <cmd command="SetStateOfDoor" ifflag="no">
+      <args arg1="15053" arg2="2" arg3="1"/>
+      <line lineno="35"/>
+    </cmd>
+    <cmd command="SetStateOfDoor" ifflag="no">
+      <args arg1="15055" arg2="2" arg3="1"/>
+      <line lineno="39"/>
+    </cmd>
+    <cmd command="SetStateOfDoor" ifflag="no">
+      <args arg1="15058" arg2="3" arg3="1"/>
+      <line lineno="43"/>
+    </cmd>
+    <cmd command="SetStateOfDoor" ifflag="no">
+      <args arg1="15057" arg2="0" arg3="1"/>
+      <line lineno="47"/>
+    </cmd>
+    <cmd command="SetStateOfDoor" ifflag="no">
+      <args arg1="15057" arg2="1" arg3="2"/>
+      <line lineno="51"/>
+    </cmd>
+    <cmd command="SetStateOfDoor" ifflag="no">
+      <args arg1="15056" arg2="0" arg3="1"/>
+      <line lineno="55"/>
+    </cmd>
+    <cmd command="SetStateOfDoor" ifflag="no">
+      <args arg1="15046" arg2="1" arg3="1"/>
+      <line lineno="59"/>
+    </cmd>
+    <cmd command="SetStateOfDoor" ifflag="no">
+      <args arg1="15047" arg2="3" arg3="1"/>
+      <line lineno="63"/>
+    </cmd>
+    <cmd command="SetStateOfDoor" ifflag="no">
+      <args arg1="15004" arg2="2" arg3="1"/>
+      <line lineno="67"/>
+    </cmd>
+    <cmd command="STOP"/>
+  </resetcmds>
+</zone>

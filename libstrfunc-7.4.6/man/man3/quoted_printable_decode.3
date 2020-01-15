@@ -1,0 +1,28 @@
+.Dd October 1, 2000
+.Dt sf_mime 3
+.Os
+.Sh NAME
+.Nm base64_encode ,
+.Nm base64_decode ,
+.Nm quoted_printable_decode ,
+.Nm mime_word_decode
+.Nd MIME recoding functions
+.Sh SYNOPSIS
+.Fd #include <strfunc.h>
+.Ft char *
+.Fn base64_encode "void *data" "size_t size"
+.Ft void *
+.Fn base64_decode "char *string" "size_t *size"
+.Ft char *
+.Fn quoted_printable_decode "char *string"
+.Ft char *
+.Fn mime_word_decode "char *string"
+.Sh DESCRIPTION
+Those functions used to recode data to/from various standarts of
+MIME data transfer encodings. Their names are enough self-descriptive.
+.Sh SEE ALSO
+.Xr strfunc 3 ,
+.Xr sf_cgi 3 ,
+.Xr sf_time 3 .
+.Sh AUTHORS
+.An Lev Walkin <vlm@spelio.net.ru>

@@ -1,0 +1,2039 @@
+<?xml version="1.0"?>
+<rooms>
+  <room>
+    <roombasic title="The Beginning" vnum="22500" zone="225">
+      <roomdescription>
+     The room is empty for the most part. Maps and the things for
+     building are scattered all over the area, none too neatly. 
+     Mortar and wood are stacked neatly though, off to the side,
+     as well as paints and gold gilding and iron, and.. well, and
+     anything else that is needed for building great cities!
+
+     Take a look at the maps that should be laying on the floor
+     to see stage one of the great building project of Maradon,
+     The Palace.
+
+</roomdescription>
+      <flags>132826</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="23098">
+      <description>None
+</description>
+    </exit>
+    <exit direction="down" keyword="" exitinfo="0" keynum="0" toroom="10186">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The South Road" vnum="22501" zone="225">
+      <roomdescription>The road is very wide and clean, the smooth white stone it is made of appears
+to be almost seamless. Leading into a large, yet busy intersection, the South
+road intersects Palace street here. Palace street heads in an eastern and 
+western direction. Sounds of commerce are loud in the air, as well as a few 
+harsh barks of orders from a passing officer of the city guards. Towards the 
+north a very large wall is prominant, it&apos;s a pure white and also appears to be
+seamless, being made out of huge stone slabs.
+</roomdescription>
+      <flags>0</flags>
+      <sector>City</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="22502">
+      <description/>
+    </exit>
+    <exdesc keyword="wall">
+      <description>The wall is huge, it looks very impenetrable. It also looks as if it has
+withstood several attacks as it is. The white stone wall looks seamless,
+the huge slabs of stone it is made out of fitting almost perfectly into
+adjacent slabs.
+</description>
+    </exdesc>
+  </room>
+  <room>
+    <roombasic title="Before the Palace Gate" vnum="22502" zone="225">
+      <roomdescription>Leading north and south, the road moves directly next to the imposing wall that
+surrounds the palace. A large iron gate that is gilded beautifully blocks the
+road to the north, although impressive looking carriages and nobles on fine
+horses can be seen entering and leaving. The sounds of men issuing orders and
+jingling of harnesses can be heard from the north as well.
+</roomdescription>
+      <flags>0</flags>
+      <sector>City</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="22503">
+      <description/>
+    </exit>
+    <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="22501">
+      <description/>
+    </exit>
+    <exdesc keyword="gate iron">
+      <description>The large gate looks very imposing. It can hold back a large horde of 
+attackers. Even though it looks elegantly beautiful, it is very able to do
+the job it was made to do. Fine gold gilding lines the gate and causes
+it to look impressive indeed.
+</description>
+    </exdesc>
+  </room>
+  <room>
+    <roombasic title="The South Palace Gate" vnum="22503" zone="225">
+      <roomdescription>The large, gilded iron gate blocks off the entire entrance past the imposing
+wall towards the Palace. There is a small iron door to the west, leading 
+directly into the white wall that surrounds the Palace. Several pikes rest 
+beside the door and raucous men&apos;s voices can be heard from inside. A path
+leads to the north past the large gate, towards a beautiful Palace. South leads
+directly to the South road and back into the city.
+</roomdescription>
+      <flags>0</flags>
+      <sector>City</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="22506">
+      <description>None
+</description>
+    </exit>
+    <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="22502">
+      <description/>
+    </exit>
+    <exit direction="west" keyword="iron door" exitinfo="3" keynum="0" toroom="22504">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Guard Gate Room" vnum="22504" zone="225">
+      <roomdescription>A small, smokey room rests here. In the middle of the room lies an old table
+that has quite a few food and drink stains on it. Small, uncomfortable stools
+surround the table. Extra swords and pikes line a wall near where a dirty
+fireplace sits, piles of dry wood next to it. A seedy looking wooden door 
+leads to the west and a thick door made of iron stands to the east.
+</roomdescription>
+      <flags>8</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="iron door" exitinfo="3" keynum="0" toroom="22503">
+      <description/>
+    </exit>
+    <exit direction="west" keyword="wooden door" exitinfo="3" keynum="0" toroom="22505">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="A Back Guard Room" vnum="22505" zone="225">
+      <roomdescription>The room is very small, several dirty little cots line the walls. An endtable
+sits between the cots and large, dingy blankets lay on each cot. A corner 
+filled with an assortment of weapons and extra clothing is lit by a small oil
+lamp that hangs on the wall. The atmosphere is very dingy, yet keeps the rain
+off on cold nights. A seedy looking wooden door leads to the east.
+</roomdescription>
+      <flags>8</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="wooden door" exitinfo="3" keynum="0" toroom="22504">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Road to the Palace" vnum="22506" zone="225">
+      <roomdescription>The path is very wide, getting wider the further north towards the beautiful
+palace it leads. The large and imposing palace wall stands directly to the 
+south, it&apos;s only imperfection the beautiful gilded gate that mars it&apos;s pure 
+white surface. The road looks to be extremely well taken care of, almost 
+impeccable. A small white fence lines the road, making sure no one strays 
+from the path.
+</roomdescription>
+      <flags>0</flags>
+      <sector>City</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="22507">
+      <description>None
+</description>
+    </exit>
+    <exit direction="south" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="22503">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Entrance to the Palace Courtyard" vnum="22507" zone="225">
+      <roomdescription>The entrance area shows that the Palace Courtyard is indeed extremely large. 
+A clear path leads towards theg Palace steps in a large half circle, starting 
+towards the west, then leading towards the east where coaches and horses seem 
+to be led. The Palace itself to the north is magnificent, an extravagant piece 
+of architecture that seems unparalled anywhere in the world. Directly to the 
+east, a large circular area can be seen, apparently for exercising horses, but 
+a very large fence surrounds it, making the only clear route north or south.
+</roomdescription>
+      <flags>0</flags>
+      <sector>City</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="22508">
+      <description>None
+</description>
+    </exit>
+    <exit direction="south" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="22506">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Palace Courtyard" vnum="22508" zone="225">
+      <roomdescription>A wide path leads directly up to the regal steps before leading off towards
+the east. The steps are pure white and flawless, a dozen men wide, with a
+red carpet leading down the middle of it. Towards the top of the stairs a set
+of looming double doors lead into the absolutely stunning Palace. The doors
+themselves are incredibly impressive, they are made of the finest wood and
+appear to be gilded in a fine, extravagant gold. The smell of horses drift
+from the east, while a large structure, apparently barracks for soldiers
+lies to the west.
+</roomdescription>
+      <flags>0</flags>
+      <sector>City</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="double set gilded doors door" exitinfo="3" keynum="0" toroom="22516">
+      <description>At the top of the stairs are a pair of beautiful, gilded double doors. Wide
+enough so that five men could walk through it side by side.
+</description>
+    </exit>
+    <exit direction="east" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="22512">
+      <description>None
+</description>
+    </exit>
+    <exit direction="south" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="22507">
+      <description>None
+</description>
+    </exit>
+    <exit direction="west" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="22511">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Southern Training Yard" vnum="22509" zone="225">
+      <roomdescription>The area has a wide open space, perfect for sparring. Directly to the west the
+soldier&apos;s barracks extends from the north. Several benches line the wall of
+the barracks, underneath several windows. The benches also line the the very
+southern tip of the practice area. Towards the east of the sparring area, 
+several racks are filled with practice swords, lathes, spears, poles, pikes, 
+and almost any other weapon you can imagine. A small fountain rests to the 
+northern edge of the training area.
+</roomdescription>
+      <flags>0</flags>
+      <sector>City</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="22511">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="A Horse Exercise Yard" vnum="22510" zone="225">
+      <roomdescription>The wide area is surrounded by a large fence. The ground is a soft dirt 
+that seems to have been trampled on, nothing grows here. There is only
+one entrance and exit, that is towards the north. Extra tackle and bridles
+for horses rest on the fence as well as long poles that are used to 
+direct a horses movements. The air smells distinctly of horse.
+</roomdescription>
+      <flags>0</flags>
+      <sector>City</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="22512">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="A Practice Yard before the Soldier Barracks" vnum="22511" zone="225">
+      <roomdescription>A clear path leads from the east towards another wide open area that lies
+directly to the south. Sounds of clashing weapons can be heard to the south
+as well. A large building lies to the west, apparently housing the palace
+soldier&apos;s. The barracks stretch for quite a ways towards the north as well
+as south, the entrance resting directly to the west has a solid looking door, 
+fringed with iron. A clear space before the barracks has a few benches lining
+it for those who wish to watch practice spars of hand to hand combat between
+the soldier&apos;s.
+</roomdescription>
+      <flags>0</flags>
+      <sector>City</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="22508">
+      <description>None
+</description>
+    </exit>
+    <exit direction="south" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="22509">
+      <description>None
+</description>
+    </exit>
+    <exit direction="west" keyword="door wooden" exitinfo="3" keynum="0" toroom="22519">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Courtyard Before the Stables" vnum="22512" zone="225">
+      <roomdescription>A large trail leads here from the palace steps to the west. Quite a few
+elegant carraiges rest in precise rows. The largest one resting towards the
+back, it has the crest of the Queen on it and seems to have gold gilded on
+almost every single portion of it. Directly to the east is a gate that opens
+into the Royal Stables. A smaller path leads from the door to the stables
+to the south where a large fence can be seen.
+</roomdescription>
+      <flags>0</flags>
+      <sector>City</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="gate door" exitinfo="3" keynum="0" toroom="22513">
+      <description>None
+</description>
+    </exit>
+    <exit direction="south" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="22510">
+      <description>None
+</description>
+    </exit>
+    <exit direction="west" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="22508">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Entrance to the Stableyards" vnum="22513" zone="225">
+      <roomdescription>The area is very open and large, bails of hay are stacked up neatly against
+the southern wall. A few single ones have extra horses blankets and tackle
+gear laying on them because someone hasn&apos;t put them away yet. On the northern 
+wall, horse gear as well as the queen&apos;s own royal saddle hangs on the wall.
+All of the saddles look to be in very good condition, comparable even to the
+royal saddles and tackle. A wide hallway leads towards the east, a light 
+sprinkling of hay covers the ground. A gate to the west leads out of the
+stableyards.
+</roomdescription>
+      <flags>131080</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="22514">
+      <description>None
+</description>
+    </exit>
+    <exit direction="west" keyword="gate door" exitinfo="3" keynum="0" toroom="22512">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Stables" vnum="22514" zone="225">
+      <roomdescription>The large, straw-ridden hallway continues on, passing by several stalls to the
+north and south filled with horses. The horses look very well groomed and 
+taken care of, their coats shine healthily. Each stall has a half gate that
+is securely fastened, yet easy to open in an emergency. Buckets of oats and
+troughs of water line each of the stalls as well. The stalls themselves look
+to be cleaned on a daily basis, the implements for cleaning, shovels and 
+pitchforks rest against a nearby wall.
+</roomdescription>
+      <flags>8</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="22515">
+      <description>None
+</description>
+    </exit>
+    <exit direction="west" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="22513">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Stables" vnum="22515" zone="225">
+      <roomdescription>Reaching the end of the long stables, the scent of horse is almost overpowering
+yet, not quite. The many stalls that line the sides of the corridor look to
+be in very good condition, being kept very clean with fresh straw on the floor.
+The horses that fill the stalls are exceedingly well groomed and taken care of,
+their coats shine with a healthy sheen. Buckets of oats and fresh water are in
+each of the stalls for the precious horses, and bits of tackle and blankets for
+the horses drape over each stall. The gates for the stalls are closed securely
+with a metal sliding latch, easy to open in case of emergencies.
+</roomdescription>
+      <flags>8</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="west" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="22514">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Entrance to the Palace" vnum="22516" zone="225">
+      <roomdescription>The entrance to the Palace is spellbounding to the eye. The large gilded double
+doors give way to a wide hallway with floors that are polished to a mirror-like 
+sheen, and the walls are covered with expensive looking paintings with scenes of the country side, as well as gorgeous looking horses frollicking in meadows. At
+regular intervals, candleholders that appear to be polished to perfection as 
+well, give light to the entire hallway. The extravagant, marble floored hallway
+continues towards the north.
+</roomdescription>
+      <flags>8</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="22517">
+      <description>None
+</description>
+    </exit>
+    <exit direction="south" keyword="double doors gilded door" exitinfo="3" keynum="0" toroom="22508">
+      <description>The double set of gilded doors is very large and impressive.
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Entrance Hallway" vnum="22517" zone="225">
+      <roomdescription>The wide and spacious entrance hallway is extravagant. Immaculately created
+paintings and amazing tapestries grace the walls with their presence. Directly
+to the north a gorgeous set of double doors are closed, they permit entry into 
+the inner palace itself. The doors are gilded beautifully in gold as well as 
+having fresco&apos;s of horses painted on them. The high domed ceiling is adorned
+with the beautiful art as well. The marble floored hallway is polished to a 
+mirror like sheen and continues towards the south.
+</roomdescription>
+      <flags>28</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="gilded door" exitinfo="3" keynum="0" toroom="22523">
+      <description>None
+</description>
+    </exit>
+    <exit direction="south" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="22516">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Soldier&apos;s Barracks" vnum="22518" zone="225">
+      <roomdescription>The end of the barracks finally come into site. The countless amounts of 
+immaculate cots and chests had almost seemed endless. Everything seems to be
+put in it&apos;s place, even weaponry. Beside each cot, there seems to be an extra
+sword, or pike or staff. The beds are all made with precision, basically 
+everything here seems to be precise. The floor, although scuffed, shines 
+with cleanliness. The large windows allow the barracks an airiness that is
+rare for soldier&apos;s quarters. The large and elegant, shining palace wall
+can be seen clearly from the large window on the south wall.
+</roomdescription>
+      <flags>131080</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="22519">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Entrance to the Soldier&apos;s Barracks" vnum="22519" zone="225">
+      <roomdescription>The room is stark, yet apparently very full and bustling with activity. Well
+made cots line the walls, each one near a window. The amount of windows is 
+startling, causing the entire room to be very bright, and airy. Each cot has
+a small chest at the foot of it as well as well made, and well tended to 
+bedding. The pillows are made of a soft down it appears, and the blankets of 
+the warmest wool. Small, yet servicable nightstands also rest beside each cot,
+having a candle holder on each one. The cots seem to go on for quite a while,
+disappearing towards the north and south. The room is also almost immaculate,
+the floor cleanly swept, and everything precisely put away. The Palace Guards
+seem to be very well treated, and very organized. The door to the east leads
+outside again, the thick wooden door looks unbreakable, especially as parts of
+it are covered in a dullened iron.
+</roomdescription>
+      <flags>131080</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="22520">
+      <description>None
+</description>
+    </exit>
+    <exit direction="east" keyword="door wooden" exitinfo="3" keynum="0" toroom="22511">
+      <description>None
+</description>
+    </exit>
+    <exit direction="south" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="22518">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Soldier&apos;s Barracks" vnum="22520" zone="225">
+      <roomdescription>The immaculate barracks finally come to an end here. Countless amounts of
+cots with their small chests and sidestands seemed almost monotonous, 
+although the variety of weapons that rest near the cots give an intersting
+change of view. The scuffed, yet very clean floors shine dully and a light
+breeze flows through the barracks from an open window somewhere. The stunning
+palace can be seen through the large window on the North wall, making the 
+view incredible.
+</roomdescription>
+      <flags>131080</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="south" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="22519">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Guards&apos; Room" vnum="22521" zone="225">
+      <roomdescription>The room is not very large by the looks of it. Although with the clutter of
+extra weapons, armor, and other assorted banners and livery, it is not hard
+to think of the room as small. Several tables that look very well used sit
+in the center of the room with quite a few chairs around them. A few cots
+line the walls with the weapons and armor resting neatly inbetween the cots.
+For all of it&apos;s clutter, the room is very tidy, everything put in it&apos;s place.
+</roomdescription>
+      <flags>8</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="22526">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Guards&apos; Room" vnum="22522" zone="225">
+      <roomdescription>The room looks large with spacious tables resting in the direct center of it.
+At least a dozen chairs surround the well used tables, and tankards of left
+over ale have been left on the tables as well. A few cots line the walls for
+the guards to catch up on sleep if they need, and extra weapons and armor
+also line the walls. The room looks to be used often, yet is kept immaculate.
+</roomdescription>
+      <flags>8</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="22531">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Palace Hallway" vnum="22523" zone="225">
+      <roomdescription>The intersection in the hallway is grand to say the least. The stunning set of 
+gilded double doors to the south are only out matched by the immense double 
+doors of a smooth white stone towards the north. The wide hallway itself leads 
+off towards the east and west, the smooth floors a glossy marble that one could
+see their reflection in if they so desired.
+</roomdescription>
+      <flags>8</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="door double" exitinfo="3" keynum="0" toroom="22524">
+      <description>None
+</description>
+    </exit>
+    <exit direction="east" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="22531">
+      <description>None
+</description>
+    </exit>
+    <exit direction="south" keyword="gilded door" exitinfo="3" keynum="0" toroom="22517">
+      <description>None
+</description>
+    </exit>
+    <exit direction="west" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="22526">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Grand Hallway" vnum="22524" zone="225">
+      <roomdescription>You are in an unfinished room.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="22525">
+      <description>None
+</description>
+    </exit>
+    <exit direction="south" keyword="door" exitinfo="3" keynum="0" toroom="22523">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Grand Hallway" vnum="22525" zone="225">
+      <roomdescription>You are in an unfinished room.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="door" exitinfo="3" keynum="0" toroom="22566">
+      <description>None
+</description>
+    </exit>
+    <exit direction="south" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="22524">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Palace Hallway" vnum="22526" zone="225">
+      <roomdescription>Spacious is one way to describe this hallway, eight men could walk side by 
+side unhindered in it. The walls are covered with exquisite paintings of
+beautiful horses and prominant figures of the past. Candelbras rest at
+intervals along the walls which keep the hallway brightly lit. Sounds of 
+men talking can be heard to the south, behind a heavy looking wood door.
+The sounds of metal scraping along metal can also be heard.
+</roomdescription>
+      <flags>8</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="22523">
+      <description>None
+</description>
+    </exit>
+    <exit direction="south" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="22521">
+      <description>None
+</description>
+    </exit>
+    <exit direction="west" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="22527">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Palace Hallway" vnum="22527" zone="225">
+      <roomdescription>Large windows from the south bring light and a feeling of openness to the wide
+hallway. The marble floors gleam softly from it&apos;s pristine polished state and
+large candelbras line the hallway to bring even more light to the area. The
+north wall is filled with exotic tapestries of strange battles that happened
+long ago. The ceiling is arched as well, crossed by gilded girders which gives
+the hallway an air of richness as it leads to the east and west. 
+</roomdescription>
+      <flags>8</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="22526">
+      <description>None
+</description>
+    </exit>
+    <exit direction="west" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="22528">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Palace Hallway" vnum="22528" zone="225">
+      <roomdescription>You are in an unfinished room.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="22527">
+      <description>None
+</description>
+    </exit>
+    <exit direction="south" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="22597">
+      <description>None
+</description>
+    </exit>
+    <exit direction="west" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="22529">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Palace Hallway" vnum="22529" zone="225">
+      <roomdescription>You are in an unfinished room.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="22528">
+      <description>None
+</description>
+    </exit>
+    <exit direction="west" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="22530">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Palace Hallway" vnum="22530" zone="225">
+      <roomdescription>You are in an unfinished room.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="22538">
+      <description>None
+</description>
+    </exit>
+    <exit direction="east" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="22529">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Palace Hallway" vnum="22531" zone="225">
+      <roomdescription>The wide hallway leads in an eastern and western direction. Tapestries that
+can only be described as luxerious decorate the white walls. Scenes of battles
+long forgotten of the glorious calvary can be seen on the tapestries. To the
+direct south a large, heavy wooden door can be seen. Sounds of men talking 
+and armor rustling can be heard from that direction along with a camaraderie
+laugh every now and then.
+</roomdescription>
+      <flags>8</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="22532">
+      <description>None
+</description>
+    </exit>
+    <exit direction="south" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="22522">
+      <description>None
+</description>
+    </exit>
+    <exit direction="west" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="22523">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Palace Hallway" vnum="22532" zone="225">
+      <roomdescription>The air exudes a feeling of wealth, from the gilded golden girders that line
+the arched ceiling to the lush and exotic tapestries and paintings on the 
+walls. The marbled floor gives off a cool sensation and looks to be extremely
+well polished and cleaned. The hallway leads off to the east and west.
+</roomdescription>
+      <flags>8</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="22533">
+      <description>None
+</description>
+    </exit>
+    <exit direction="west" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="22531">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Palace Hallway" vnum="22533" zone="225">
+      <roomdescription>The wide and luxerious hallway enters a large and open area. A beautiful bay
+window rests to the south, allowing streams of light to enter. The clean and
+immaculately shined floor gleams brightly from the reflection of the light.
+Paintings and exotic tapestries line the walls, hardly any space left to be
+seen on them. The arched ceiling also gives the area a feeling of opennness,
+the gilded girders shine a gleaming yellow and candelbras line the hallway
+at regular intervals to give the area even more light.
+</roomdescription>
+      <flags>8</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="22534">
+      <description>None
+</description>
+    </exit>
+    <exit direction="south" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="22598">
+      <description>None
+</description>
+    </exit>
+    <exit direction="west" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="22532">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Palace Hallway" vnum="22534" zone="225">
+      <roomdescription>Continuing on, the long hallway leads east and west. To the west it appears
+the hallway is very brightly lit, while towards the east it seems to be a
+bit more dim. The floors are kept immaculate and spotless, the exotic marble
+glistening in it&apos;s polished sheen and the walls have no space left to them
+from all the tapestries and paintings that line them. Candelbras line the
+hallway at regular intervals to bring light to it, giving it an air of
+mystery.
+</roomdescription>
+      <flags>8</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="22535">
+      <description>None
+</description>
+    </exit>
+    <exit direction="west" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="22533">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Palace Hallway" vnum="22535" zone="225">
+      <roomdescription>The wide hallway turns here. A rich velvet red carpet appears here in the 
+center of the marbled floor to lead off towards the north while the marbled
+floor that least west is unadorned yet polished to a gleam. An extremely
+large painting that takes up an entire portion of wall from the ceiling
+to the floor rests on the eastern wall. The south wall has a very large
+window that allows light to enter this slightly darkened corner of the
+hallway, and large candelbras bring more light at regular intervals along
+the hall.
+</roomdescription>
+      <flags>8</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="22541">
+      <description>None
+</description>
+    </exit>
+    <exit direction="west" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="22534">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="A Guest Bedroom" vnum="22536" zone="225">
+      <roomdescription>You are in an unfinished room.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="22537">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Entrance Parlor to a Guest Room" vnum="22537" zone="225">
+      <roomdescription>You are in an unfinished room.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="door" exitinfo="3" keynum="0" toroom="22538">
+      <description>None
+</description>
+    </exit>
+    <exit direction="west" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="22536">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Palace Hallway" vnum="22538" zone="225">
+      <roomdescription>You are in an unfinished room.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="22561">
+      <description>None
+</description>
+    </exit>
+    <exit direction="east" keyword="door" exitinfo="3" keynum="0" toroom="22539">
+      <description>None
+</description>
+    </exit>
+    <exit direction="south" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="22530">
+      <description>None
+</description>
+    </exit>
+    <exit direction="west" keyword="door" exitinfo="3" keynum="0" toroom="22537">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Entrance Parlor to a Guest Room" vnum="22539" zone="225">
+      <roomdescription>You are in an unfinished room.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="22540">
+      <description>None
+</description>
+    </exit>
+    <exit direction="west" keyword="door" exitinfo="3" keynum="0" toroom="22538">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="A Guest Bedroom" vnum="22540" zone="225">
+      <roomdescription>You are in an unfinished room.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="west" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="22539">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Palace Hallway" vnum="22541" zone="225">
+      <roomdescription>You are in an unfinished room.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="22545">
+      <description>None
+</description>
+    </exit>
+    <exit direction="south" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="22535">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Chamberlein&apos;s Bedroom" vnum="22542" zone="225">
+      <roomdescription>You are in an unfinished room.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="22543">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Chamberlein&apos;s Study" vnum="22543" zone="225">
+      <roomdescription>You are in an unfinished room.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="south" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="22542">
+      <description>None
+</description>
+    </exit>
+    <exit direction="west" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="22544">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Drawing Room to the Chamberlein&apos;s Suite" vnum="22544" zone="225">
+      <roomdescription>You are in an unfinished room.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="22543">
+      <description>None
+</description>
+    </exit>
+    <exit direction="west" keyword="door" exitinfo="3" keynum="0" toroom="22545">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Palace Hallway" vnum="22545" zone="225">
+      <roomdescription>You are in an unfinished room.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="22549">
+      <description>None
+</description>
+    </exit>
+    <exit direction="east" keyword="door" exitinfo="3" keynum="0" toroom="22544">
+      <description>None
+</description>
+    </exit>
+    <exit direction="south" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="22541">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="An Exquisite Bedroom" vnum="22546" zone="225">
+      <roomdescription>You are in an unfinished room.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="22547">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="A Small, Elegant Study" vnum="22547" zone="225">
+      <roomdescription>You are in an unfinished room.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="22548">
+      <description>None
+</description>
+    </exit>
+    <exit direction="south" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="22546">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Entrance Parlor to a Minor Noble&apos;s Suite" vnum="22548" zone="225">
+      <roomdescription>You are in an unfinished room.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="door" exitinfo="3" keynum="0" toroom="22549">
+      <description>None
+</description>
+    </exit>
+    <exit direction="west" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="22547">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Palace Hallway" vnum="22549" zone="225">
+      <roomdescription>You are in an unfinished room.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="22553">
+      <description>None
+</description>
+    </exit>
+    <exit direction="south" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="22545">
+      <description>None
+</description>
+    </exit>
+    <exit direction="west" keyword="door" exitinfo="3" keynum="0" toroom="22548">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="An Exquisite Bedroom" vnum="22550" zone="225">
+      <roomdescription>You are in an unfinished room.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="22551">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="A Small, Elegant Study" vnum="22551" zone="225">
+      <roomdescription>You are in an unfinished room.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="south" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="22550">
+      <description>None
+</description>
+    </exit>
+    <exit direction="west" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="22552">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Entrance Parlor to a Minor Noble&apos;s Suite" vnum="22552" zone="225">
+      <roomdescription>You are in an unfinished room.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="22551">
+      <description>None
+</description>
+    </exit>
+    <exit direction="west" keyword="door" exitinfo="3" keynum="0" toroom="22553">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Palace Hallway" vnum="22553" zone="225">
+      <roomdescription>You are in an unfinished room.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="22554">
+      <description>None
+</description>
+    </exit>
+    <exit direction="east" keyword="door" exitinfo="3" keynum="0" toroom="22552">
+      <description>None
+</description>
+    </exit>
+    <exit direction="south" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="22549">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Palace Hallway" vnum="22554" zone="225">
+      <roomdescription>You are in an unfinished room.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="22555">
+      <description>None
+</description>
+    </exit>
+    <exit direction="south" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="22553">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Palace Hallway" vnum="22555" zone="225">
+      <roomdescription>You are in an unfinished room.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="22560">
+      <description>None
+</description>
+    </exit>
+    <exit direction="south" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="22554">
+      <description>None
+</description>
+    </exit>
+    <exit direction="west" keyword="door" exitinfo="3" keynum="0" toroom="22592">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="An Extravagant Bathing Area" vnum="22556" zone="225">
+      <roomdescription>You are in an unfinished room.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="door" exitinfo="1" keynum="0" toroom="22557">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="A Grand Bedroom" vnum="22557" zone="225">
+      <roomdescription>You are in an unfinished room.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="22558">
+      <description>None
+</description>
+    </exit>
+    <exit direction="west" keyword="door" exitinfo="1" keynum="0" toroom="22556">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="A Grand Study" vnum="22558" zone="225">
+      <roomdescription>You are in an unfinished room.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="south" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="22557">
+      <description>None
+</description>
+    </exit>
+    <exit direction="west" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="22559">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Entrance Parlor to a Major Noble&apos;s Guest Suite" vnum="22559" zone="225">
+      <roomdescription>You are in an unfinished room.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="22558">
+      <description>None
+</description>
+    </exit>
+    <exit direction="west" keyword="door" exitinfo="3" keynum="0" toroom="22560">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Palace Hallway" vnum="22560" zone="225">
+      <roomdescription>You are in an unfinished room.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="door" exitinfo="3" keynum="0" toroom="22559">
+      <description>None
+</description>
+    </exit>
+    <exit direction="south" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="22555">
+      <description>None
+</description>
+    </exit>
+    <exit direction="west" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="22588">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Palace Hallway" vnum="22561" zone="225">
+      <roomdescription>You are in an unfinished room.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="22562">
+      <description>None
+</description>
+    </exit>
+    <exit direction="south" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="22538">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Palace Hallway" vnum="22562" zone="225">
+      <roomdescription>You are in an unfinished room.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="22572">
+      <description>None
+</description>
+    </exit>
+    <exit direction="east" keyword="door" exitinfo="3" keynum="0" toroom="22564">
+      <description>None
+</description>
+    </exit>
+    <exit direction="south" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="22561">
+      <description>None
+</description>
+    </exit>
+    <exit direction="west" keyword="door" exitinfo="3" keynum="0" toroom="22563">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Servant&apos;s Quarters" vnum="22563" zone="225">
+      <roomdescription>You are in an unfinished room.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="door" exitinfo="3" keynum="0" toroom="22562">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Servant&apos;s Quarters" vnum="22564" zone="225">
+      <roomdescription>You are in an unfinished room.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="west" keyword="door" exitinfo="3" keynum="0" toroom="22562">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Grand Ballroom" vnum="22565" zone="225">
+      <roomdescription>You are in an unfinished room.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="northeast" keyword="door" exitinfo="1" keynum="0" toroom="22568">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Entrance and Recieving Hall to the Royal Throne Room" vnum="22566" zone="225">
+      <roomdescription>You are in an unfinished room.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="door" exitinfo="3" keynum="0" toroom="22567">
+      <description>None
+</description>
+    </exit>
+    <exit direction="south" keyword="door" exitinfo="3" keynum="0" toroom="22525">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Royal Throne Room" vnum="22567" zone="225">
+      <roomdescription>You are in an unfinished room.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="south" keyword="door" exitinfo="3" keynum="0" toroom="22566">
+      <description>None
+</description>
+    </exit>
+    <exit direction="west" keyword="door" exitinfo="3" keynum="0" toroom="22568">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Royal Hallway" vnum="22568" zone="225">
+      <roomdescription>You are in an unfinished room.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="door" exitinfo="3" keynum="0" toroom="22567">
+      <description>None
+</description>
+    </exit>
+    <exit direction="southwest" keyword="door" exitinfo="1" keynum="0" toroom="22565">
+      <description>None
+</description>
+    </exit>
+    <exit direction="northwest" keyword="door" exitinfo="1" keynum="0" toroom="22569">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Grand Dining Room" vnum="22569" zone="225">
+      <roomdescription>You are in an unfinished room.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="west" keyword="door" exitinfo="3" keynum="0" toroom="22570">
+      <description>None
+</description>
+    </exit>
+    <exit direction="southeast" keyword="door" exitinfo="1" keynum="0" toroom="22568">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="A Small Hallway" vnum="22570" zone="225">
+      <roomdescription>You are in an unfinished room.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="22577">
+      <description>None
+</description>
+    </exit>
+    <exit direction="east" keyword="door" exitinfo="3" keynum="0" toroom="22569">
+      <description>None
+</description>
+    </exit>
+    <exit direction="west" keyword="door" exitinfo="3" keynum="0" toroom="22571">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Palace Kitchens" vnum="22571" zone="225">
+      <roomdescription>You are in an unfinished room.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="door" exitinfo="3" keynum="0" toroom="22576">
+      <description>None
+</description>
+    </exit>
+    <exit direction="east" keyword="door" exitinfo="3" keynum="0" toroom="22570">
+      <description>None
+</description>
+    </exit>
+    <exit direction="west" keyword="door" exitinfo="3" keynum="0" toroom="22573">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Palace Hallway" vnum="22572" zone="225">
+      <roomdescription>You are in an unfinished room.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="22573">
+      <description>None
+</description>
+    </exit>
+    <exit direction="south" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="22562">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Palace Hallway" vnum="22573" zone="225">
+      <roomdescription>You are in an unfinished room.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="22575">
+      <description>None
+</description>
+    </exit>
+    <exit direction="east" keyword="door" exitinfo="3" keynum="0" toroom="22571">
+      <description>None
+</description>
+    </exit>
+    <exit direction="south" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="22572">
+      <description>None
+</description>
+    </exit>
+    <exit direction="west" keyword="door" exitinfo="3" keynum="0" toroom="22574">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Servant&apos;s Quarters" vnum="22574" zone="225">
+      <roomdescription>You are in an unfinished room.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="door" exitinfo="3" keynum="0" toroom="22573">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Palace Hallway" vnum="22575" zone="225">
+      <roomdescription>You are in an unfinished room.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="22579">
+      <description>None
+</description>
+    </exit>
+    <exit direction="south" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="22573">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Pantry" vnum="22576" zone="225">
+      <roomdescription>You are in an unfinished room.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="south" keyword="door" exitinfo="3" keynum="0" toroom="22571">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="A Small Hallway" vnum="22577" zone="225">
+      <roomdescription>You are in an unfinished room.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="door" exitinfo="3" keynum="0" toroom="22581">
+      <description>None
+</description>
+    </exit>
+    <exit direction="south" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="22570">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Servant&apos;s Quarters" vnum="22578" zone="225">
+      <roomdescription>You are in an unfinished room.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="door" exitinfo="3" keynum="0" toroom="22579">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Palace Hallway" vnum="22579" zone="225">
+      <roomdescription>You are in an unfinished room.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="22580">
+      <description>None
+</description>
+    </exit>
+    <exit direction="south" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="22575">
+      <description>None
+</description>
+    </exit>
+    <exit direction="west" keyword="door" exitinfo="3" keynum="0" toroom="22578">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Palace Hallway" vnum="22580" zone="225">
+      <roomdescription>You are in an unfinished room.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="22581">
+      <description>None
+</description>
+    </exit>
+    <exit direction="west" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="22579">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Palace Hallway" vnum="22581" zone="225">
+      <roomdescription>You are in an unfinished room.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="22589">
+      <description>None
+</description>
+    </exit>
+    <exit direction="east" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="22582">
+      <description>None
+</description>
+    </exit>
+    <exit direction="south" keyword="door" exitinfo="3" keynum="0" toroom="22577">
+      <description>None
+</description>
+    </exit>
+    <exit direction="west" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="22580">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Palace Hallway" vnum="22582" zone="225">
+      <roomdescription>You are in an unfinished room.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="22583">
+      <description>None
+</description>
+    </exit>
+    <exit direction="west" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="22581">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Palace  Hallway" vnum="22583" zone="225">
+      <roomdescription>You are in an unfinished room.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="22584">
+      <description>None
+</description>
+    </exit>
+    <exit direction="west" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="22582">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Palace Hallway" vnum="22584" zone="225">
+      <roomdescription>You are in an unfinished room.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="22591">
+      <description>None
+</description>
+    </exit>
+    <exit direction="east" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="22585">
+      <description>None
+</description>
+    </exit>
+    <exit direction="west" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="22583">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Palace Hallway" vnum="22585" zone="225">
+      <roomdescription>You are in an unfinished room.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="22586">
+      <description>None
+</description>
+    </exit>
+    <exit direction="west" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="22584">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Palace Hallway" vnum="22586" zone="225">
+      <roomdescription>You are in an unfinished room.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="22590">
+      <description>None
+</description>
+    </exit>
+    <exit direction="east" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="22587">
+      <description>None
+</description>
+    </exit>
+    <exit direction="west" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="22585">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Palace Hallway" vnum="22587" zone="225">
+      <roomdescription>You are in an unfinished room.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="22588">
+      <description>None
+</description>
+    </exit>
+    <exit direction="west" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="22586">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Palace Hallway" vnum="22588" zone="225">
+      <roomdescription>You are in an unfinished room.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="22596">
+      <description>None
+</description>
+    </exit>
+    <exit direction="east" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="22560">
+      <description>None
+</description>
+    </exit>
+    <exit direction="west" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="22587">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="An Alcove" vnum="22589" zone="225">
+      <roomdescription>You are in an unfinished room.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="south" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="22581">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="An Alcove" vnum="22590" zone="225">
+      <roomdescription>A single candelabra sheds a soft glow over the snug alcove, letting shadows
+play over the walls, giving the little nook a secluded feel. A plush settee
+sits back against the wall, its over-stuffed cushions looking incredibly
+inviting. In a tall vase several fragrant flowers flourish, their sweet
+scent filling the air. Above the settee a window opens to the ogier grove,
+the towering trees and shrubs, both exotic and common, forming a lush
+background for the romantic alcove.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="south" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="22586">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="A Path into the Palace Gardens" vnum="22591" zone="225">
+      <roomdescription>You are in an unfinished room.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="south" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="22584">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Entrance Parlor to a Major Noble&apos;s Guest Suite" vnum="22592" zone="225">
+      <roomdescription>You are in an unfinished room.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="door" exitinfo="3" keynum="0" toroom="22555">
+      <description>None
+</description>
+    </exit>
+    <exit direction="west" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="22593">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="A Large Study" vnum="22593" zone="225">
+      <roomdescription>You are in an unfinished room.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="22592">
+      <description>None
+</description>
+    </exit>
+    <exit direction="south" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="22594">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="A Grand Bedroom" vnum="22594" zone="225">
+      <roomdescription>You are in an unfinished room.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="22593">
+      <description>None
+</description>
+    </exit>
+    <exit direction="east" keyword="door" exitinfo="1" keynum="0" toroom="22595">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="An Extravagant Bathing Area" vnum="22595" zone="225">
+      <roomdescription>You are in an unfinished room.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="west" keyword="door" exitinfo="1" keynum="0" toroom="22594">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="A Small Alcove" vnum="22596" zone="225">
+      <roomdescription>You are in an unfinished room.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="south" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="22588">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="A Bay Window" vnum="22597" zone="225">
+      <roomdescription>The bay window is large and spacious. Luxerious &amp;Rr&amp;n&amp;re&amp;n&amp;Rd&amp;n &amp;rv&amp;n&amp;Re&amp;n&amp;rl&amp;n&amp;Rv&amp;n&amp;re&amp;n&amp;Rt&amp;n cushions line
+the bench that follows the sparkling clean &amp;Cw&amp;n&amp;ci&amp;n&amp;Cn&amp;n&amp;cd&amp;n&amp;Co&amp;n&amp;cw&amp;n&amp;Cs&amp;n. The large windows give
+a beautiful view of well kept grounds of flowers and aesthetically pleasing 
+&amp;Gt&amp;n&amp;gr&amp;n&amp;Ge&amp;n&amp;ge&amp;n&amp;Gs&amp;n with small &amp;Gs&amp;n&amp;gh&amp;n&amp;Gr&amp;n&amp;gu&amp;n&amp;Gb&amp;n&amp;gs&amp;n. No candelbras are near except from the hallway, so
+the only light comes from the windows, giving the window a secluded and
+romantic feeling.
+</roomdescription>
+      <flags>524</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="22528">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="A Bay Window" vnum="22598" zone="225">
+      <roomdescription>The bay window is large and spacious. Luxerious &amp;Rr&amp;n&amp;re&amp;n&amp;Rd&amp;n &amp;rv&amp;n&amp;Re&amp;n&amp;rl&amp;n&amp;Rv&amp;n&amp;re&amp;n&amp;Rt&amp;n cushions line
+the bench that follows the sparkling clean &amp;Cw&amp;n&amp;ci&amp;n&amp;Cn&amp;n&amp;cd&amp;n&amp;Co&amp;n&amp;cw&amp;n&amp;Cs&amp;n. The large windows give
+a beautiful view of well kept grounds of flowers and aesthetically pleasing 
+&amp;Gt&amp;n&amp;gr&amp;n&amp;Ge&amp;n&amp;ge&amp;n&amp;Gs&amp;n with small &amp;Gs&amp;n&amp;gh&amp;n&amp;Gr&amp;n&amp;gu&amp;n&amp;Gb&amp;n&amp;gs&amp;n. No candelbras are near except from the hallway, so
+the only light comes from the windows, giving the window a secluded and
+romantic feeling.
+</roomdescription>
+      <flags>524</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="22533">
+      <description>None
+</description>
+    </exit>
+  </room>
+</rooms>

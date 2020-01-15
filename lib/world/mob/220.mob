@@ -1,0 +1,45 @@
+#22000
+wolf Darkmoon~
+a large timber wolf~
+A large lone wolf pads about nearby, wary of strangers.
+~
+This wolf has grown quite large from his life in the woods. A few
+scars and a torn left ear prove he has also been in many fights. His
+coat is a fine blend of greys that darken to black at his nose and tail
+tip, ears, and all four paws. His amber colored eyes flick about
+as he scents the wind, cautious of any possible newcomer.
+~
+524378 65584 0 E
+100 -25 -15 849 8d900+400 10d20+45
+0 0
+8 8 1 0
+BareHandAttack: 4
+Stun: 100
+P
+OnEntry & ! Carrying 22007 & ! CanChannel
+Emote "The wolf growls at the sound of footsteps."
+End
+OnTell "follow" & Carrying 22007
+ActionTo "follow"
+End
+OnEntry & ! Carrying 22007 & CanChannel
+Emote "The wolf swivels his ears towards a noise but makes no other sound."
+End
+OnActionTo "pet" & Carrying 22007
+Emote "The wolf turns his head into the stroke, enjoying the attention."
+End
+OnActionTo "pet" & ! Carrying 22007
+Emote "The wolf backs away, teeth flashing threateningly."
+End
+OnEntry & Carrying 22007
+Emote "The wolf points both ears forward, appearing delighted by a new arrival."
+End
+OnEntry & ! Carrying 22007 & Darkfriend
+Emote "The wolf bares his teeth at something and looks suddenly alert."
+End
+OnTell "stay" & Carrying 22007
+Action "follow self"
+End
+Q
+E
+$

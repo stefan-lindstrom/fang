@@ -1,0 +1,89 @@
+.Dd October 1, 2000
+.Dt sf_misc 3
+.Os
+.Sh NAME
+.Nm eq ,
+.Nm ecq
+.Nd string equality test.
+.Pp
+.Nm countchar ,
+.Nm countchar2 ,
+.Nm countstr
+.Nd count characters and strings within the string.
+.Pp
+.Nm replace ,
+.Nm replace_detach ,
+.Nm limittextwidth
+.Nd miscellaneous text functions.
+.Sh SYNOPSIS
+.Fd #include <strfunc.h>
+.Pp
+Equality test:
+.Ft int
+.Fn eq "const char *a" "const char *b"
+.Pp
+Case-insensitive equality test:
+.Ft int
+.Fn ecq "const char *a" "const char *b"
+.Pp
+Count the number of specified character within the string:
+.Ft int
+.Fn countchar "const char *string" "char what2countChar"
+.Pp
+Count the number of specified characters within the string:
+.Ft int
+.Fn countchar2 "const char *string" "char *what2countSet"
+.Pp
+Count the number of specified little strings within the big string:
+.Ft int
+.Fn countstr "const char *string" "char *what2countString"
+.Pp
+Replace the substring:
+.Ft char *
+.Fn replace "char *string", "char *what" "char *to"
+.Ft char *
+.Fn replace_detach
+.Pp
+Limit text width by inserting line breaks:
+.Ft char *
+.Fn limittextwidth "char *text", "size_t width"
+.Sh DESCRIPTION
+.Fn eq
+and
+.Fn ecq
+function are just short names for
+.Xr !strcmp 3
+and 
+.Xr !strcasecmp 3
+.Pp
+.Fn countchar
+and
+.Fn countchar2
+both used to compute the number of specified character's occurences within
+the specified string.
+.Fn countstr
+used to compute the number of little string's occurences within the big
+string.
+.Pp
+.Fn replace
+replaces the occurences of string
+.Ar what
+to the specified string
+.Ar to
+and able to do it when invoked recursive. The string is stored inside the
+library and if you want it to be completely yours, call
+.Fn replace_detach .
+.Pp
+.Fn limittextwidth
+ALTERS the source string, inserting the newlines ('\en') to break the long
+lines. Long line is the line which is more then
+.Ar width
+characters in length.
+.Sh SEE ALSO
+.Xr strfunc 3 ,
+.Xr sf_cgi 3 ,
+.Xr sf_mime 3 ,
+.Xr sf_fmt 3 ,
+.Xr sf_mem 3 .
+.Sh AUTHORS
+.An Lev Walkin <vlm@spelio.net.ru>

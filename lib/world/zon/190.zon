@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<zone vnum="190" lifespan="30" top="19099" mode="2" lock="no">
+  <name>\c07(\c06Anneas\c07) Stedding Jinsuin\c00</name>
+  <resetcmds numberof="16">
+    <cmd command="ReadObject" ifflag="no">
+      <args arg1="19050" arg2="1" arg3="19012"/>
+      <line lineno="7"/>
+    </cmd>
+    <cmd command="ReadMobile" ifflag="no">
+      <args arg1="19000" arg2="1" arg3="19012"/>
+      <line lineno="11"/>
+    </cmd>
+    <cmd command="ReadMobile" ifflag="no">
+      <args arg1="19023" arg2="1" arg3="19023"/>
+      <line lineno="15"/>
+    </cmd>
+    <cmd command="Obj2Mob" ifflag="yes">
+      <args arg1="19010" arg2="999" arg3="0"/>
+      <line lineno="19"/>
+    </cmd>
+    <cmd command="Obj2Mob" ifflag="yes">
+      <args arg1="19011" arg2="999" arg3="0"/>
+      <line lineno="23"/>
+    </cmd>
+    <cmd command="Obj2Mob" ifflag="yes">
+      <args arg1="19012" arg2="999" arg3="0"/>
+      <line lineno="27"/>
+    </cmd>
+    <cmd command="Obj2Mob" ifflag="yes">
+      <args arg1="19013" arg2="999" arg3="0"/>
+      <line lineno="31"/>
+    </cmd>
+    <cmd command="SetStateOfDoor" ifflag="no">
+      <args arg1="19019" arg2="5" arg3="1"/>
+      <line lineno="35"/>
+    </cmd>
+    <cmd command="SetStateOfDoor" ifflag="no">
+      <args arg1="19052" arg2="4" arg3="1"/>
+      <line lineno="39"/>
+    </cmd>
+    <cmd command="SetStateOfDoor" ifflag="no">
+      <args arg1="19053" arg2="5" arg3="1"/>
+      <line lineno="43"/>
+    </cmd>
+    <cmd command="SetStateOfDoor" ifflag="no">
+      <args arg1="19051" arg2="0" arg3="1"/>
+      <line lineno="47"/>
+    </cmd>
+    <cmd command="ReadMobile" ifflag="no">
+      <args arg1="24020" arg2="10" arg3="19016"/>
+      <line lineno="51"/>
+    </cmd>
+    <cmd command="ReadMobile" ifflag="no">
+      <args arg1="24039" arg2="10" arg3="19016"/>
+      <line lineno="55"/>
+    </cmd>
+    <cmd command="ReadMobile" ifflag="no">
+      <args arg1="24000" arg2="4" arg3="19015"/>
+      <line lineno="59"/>
+    </cmd>
+    <cmd command="ReadMobile" ifflag="no">
+      <args arg1="24001" arg2="7" arg3="19015"/>
+      <line lineno="63"/>
+    </cmd>
+    <cmd command="STOP"/>
+  </resetcmds>
+  <editors>
+    <editor name="Brannock"/>
+  </editors>
+</zone>

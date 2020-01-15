@@ -1,0 +1,631 @@
+#13000
+soldier man~
+a man in a black coat~
+A man in a black coat strides confidently by.
+~
+He seems to hardly notice you. His eyes have a far off look and you can't help
+but think that he has a rather large opinion of himself. The way he ignores everything is evidence enough of that.
+~
+5298266 512 600 E
+20 -21 0 896 10d0+300 5d10+41
+20 200
+8 8 1 959
+BareHandAttack: 3
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Kick: 100
+E
+#13001
+man coat black guardian~
+a guardian of the Black Tower~
+a man in a black coat stands here.
+~
+He sneers at you and attacks wildly.
+~
+5234776 524304 0 E
+100 -80 -15 896 15d0+2000 10d40+50
+50 80
+8 8 1 959
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Bash: 100
+Trip: 100
+Dirtkick: 100
+Kick: 100
+Disarm: 100
+Stun: 100
+P
+OnEntry & Guild "asha'man"
+Say "pass in peace brother."
+End
+OnEntry & Guild "rebel" & Guild "tower" & Guild "aiel" & Guild "kin" & Guild "children" & Guild "seanchan" & Guild "band" & Guild "legion" & Guild "warder"
+ActionTo "kill"
+End
+Q
+E
+#13002
+rat pack thief little~
+a little thieving packrat~
+a little thieving packrat is here.
+~
+It looks, err, unfinished.
+~
+1040460 2621442 0 E
+200 -180 -20 896 30d1000+0 1d1+50
+0 0
+8 8 0 959
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+E
+#13003
+woman wife cooking~
+the cooking wife~
+an Asha'man's wife is cooking here, and will serve you.
+~
+It looks, err, unfinished.
+~
+10 0 0 E
+200 20 10 896 1d100+0 1d1+0
+10 0
+8 8 2 959
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+E
+#13004
+A trainer~
+a trainer~
+Henre Haslin stands here, sword in one hand, wine bottle in the other.
+~
+\c00~
+2088986 0 0 E
+100 -80 0 896 20d1000+1500 0d15+50
+0 85
+8 8 1 959
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Bash: 100
+Trip: 100
+Dirtkick: 100
+Kick: 100
+Disarm: 100
+Stun: 100
+P
+OnEntry
+SayTo "care for a lesson boy?"
+End
+Q
+E
+#13005
+rock large pile~
+a large rock~
+a large rock lies here.
+~
+it is smooth, and grey.
+~
+1040394 134479872 0 E
+5 20 0 896 1d100+0 1d1+0
+0 100
+8 8 0 959
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnMobDie
+Emote "\c08with a shower of sparks, the rock explodes!\c00"
+End
+Q
+E
+#13006
+aiel one handed man brown grey~
+the one handed Aiel~
+A one handed Aiel, ready to train you in hand to hand combat.
+~
+He is deadly looking, and seems to float through the air.  You realize
+he might be able to kill you before you can even grasp the One Power.
+~
+2088971 0 0 E
+0 20 10 896 1d100+0 1d1+0
+0 0
+8 8 1 959
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+E
+#13007
+craftsman AM man~
+the Asha'man craftsman~
+A craftsman stands here, ready to sell you many objects.
+~
+He is tall and burly.  Several other men standing around here convince
+you not to steal anything.
+~
+2095114 262144 0 E
+150 -80 10 896 30d600+2500 30d100+50
+1000 1
+8 8 1 959
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Bash: 100
+Trip: 100
+Dirtkick: 100
+Kick: 100
+Disarm: 100
+Stun: 100
+E
+#13008
+messenger postmaster asha'man ~
+Aiel Messenger~
+An Aiel messenger stands here, bracing himself for a sprint if needed.
+~
+\c00~
+1064986 32 0 E
+200 -180 -20 896 30d1000+200 30d100+50
+0 0
+8 8 1 959
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnRandom 100
+Say "\c06have you a message for me to deliver?\c00"
+End
+OnActionTo "nod"
+Say "\c06type 'mail <playername>' to enter the message edit system.\c00"
+End
+Q
+E
+#13009
+Asha'man Soldier~
+a man in a \c04black coat\c00, with neither pin on his collar~
+A \c04black-coated\c00 Soldier of the Asha'man stands here.
+~
+A stern faced young man, wearing the \c04Black Coat\c00 of the Asha'man. He carries himself with some confidence, yet his eyes flash uncertainty as he practices several swings with his blade.
+~
+4194312 0 0 E
+30 20 10 896 1d0+0 1d1+0
+0 0
+8 8 1 959
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Bash: 100
+P
+OnAttack
+SayTo "So, you want to practice? Very well, let's do it!"
+End
+Q
+E
+#13010
+guardian asha~
+the Asha guardian~
+The Asha'man guardian stands here, ever vigilant.
+~
+It looks, err, unfinished.
+~
+16394 2 0 E
+0 20 10 896 1d100+0 1d1+0
+0 0
+8 8 1 0
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnEntry & ! Guild "black"
+Force "shout I am sneaking around the farm -OOCly-. Something I shouldn't be doing. Someone please come and punish me!"
+Force "west"
+End
+Q
+E
+#13011
+asha guardian ~
+a \c04black-coated\c00 man~
+A \c04black-coated man\c00 watches the path carefully from atop the watch tower.
+~
+It looks, err, unfinished.
+~
+10 0 500 E
+199 20 10 896 1d100+0 1d1+0
+0 0
+8 8 1 0
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnAction "east west south north up down northwest southwest northeast southeast" & ! Guild "Black"
+Stop
+Emote "sneers at you and your foolish action."
+Shout
+End
+Q
+E
+#13012
+mob unfinished~
+Mazrim's door-closer gholam~
+Mazrim's door-closer gholam stands here.
+~
+It looks, err, unfinished.
+~
+10 2 0 E
+0 20 10 896 1d100+0 1d1+0
+0 0
+8 8 0 0
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+E
+#13056
+Wolf~
+Qantaqa, the adorable wolf cub~
+\c03Qantaqa, a sleek \c07grey \c03timber wolf with \c13glowing \c10golden eyes\c03
+~
+A large grey timber wolf with golden eyes that sparkle with intelligence sits contentedly on her haunches at the foot of Mazrim's simple desk, her tongue lolling about and nearly touching the floor.
+While she appears relaxed and at ease her eyes seem to be following your every move and her ears perk forward slightly as you approach the M'Hael.
+~
+4647002 2096 100 E
+200 -80 -20 896 30d0+250 30d127+50
+2 150
+8 8 2 959
+BareHandAttack: 4
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Trip: 100
+Dirtkick: 100
+Kick: 100
+Disarm: 100
+Stun: 100
+P
+OnActionTo "pet"
+Emote "qantaqa leans her shaggy head into your fingers contentedly as her left, rear paw begins rythmically beating on the floor."
+End
+OnRandom 25
+Emote "qantaqa's head jerks up, her ears perking forward as if she hears something."
+Emote "the shaggy timber wolf pads silently over to you and flops down at your feet, resting her head on her paws."
+End
+OnAttack
+ActionTo "laugh"
+Stop
+End
+OnSayTo "sit" & Sex "male" & Guild "asha'man"
+Emote "qantaqa plants her haunches on the floor obediently, her eyes seeking out mazrim's awaiting her next command."
+End
+Q
+E
+#13057
+Airan cat feline~
+Airan~
+A diminuitive black cat can be seen occasionally as he prowls about Narishma's sanctuary.
+~
+\c03Airan studies you through half-lidded \c02e\c09m\c00\c02e\c09r\c00\c02a\c09l\c00\c02d\c03 eyes, his tail casually dancing
+back and forth. He is of the long-haired variety of cat, and his fur is the
+color of \c04m\c05i\c00d\c04n\c00i\c05g\c04h\c00t\c03. He pads carefully about Narishma's office, not disturbing
+anything with his wanderings. He seems at home here, his cursory study of
+you showing that he knows this is his home, and you are the visitor here.\c00
+~
+10 0 0 E
+0 20 10 896 1d100+0 1d1+0
+0 0
+8 8 1 959
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnActionTo "look" & ! Darkfriend
+Emote "airan glances around the room, but otherwise seems to ignore any scrutiny."
+End
+OnActionTo "look" & Darkfriend
+ActionTo "growl"
+End
+OnRandom 10
+Emote "airan glances about the office with his \c02e\c09m\c00\c02e\c09r\c00\c02a\c09l\c00\c02d\c00 gaze."
+End
+OnActionTo "pet" & ! Darkfriend
+ActionTo "purr"
+End
+OnActionTo "pet" & Darkfriend
+Stop
+Force "emote tries to pet airan."
+Emote "airan arches his back and hisses loudly before retreating to the safety of narishma's desk."
+End
+OnAttack
+Stop
+Emote "airan growls low in his throat and quickly retreats under the desk, vanishing almost instantly."
+Pause 30
+Emote "airan emerges from under the desk, his long tail twitching violently."
+End
+Q
+E
+#13060
+mob casey zherza~
+Zherza~
+Zherza
+~
+It looks, err, unfinished.
+~
+8 0 0 E
+200 20 10 896 1d100+0 1d1+0
+0 0
+8 8 0 959
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+E
+#13120
+Asha'man Sentries~
+a group of Asha'man sentries~
+\c00A group of \c04black-coated\c00 \c14sentries\c00 are on guard here.
+~
+It looks, err, unfinished.
+~
+10 0 0 E
+0 20 10 896 1d100+0 1d1+0
+0 0
+8 8 1 0
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnAction "northwest nw" & ! Guild "black"
+Stop
+Pause 1
+Emote "One of the \c04black-coated\c00 men chuckles from the \c03watchtower\c00. He abruptly stops, \c01menace\c00 replacing laughter. In a voice filled with \c23no emotion\c00, the man addresses you, 'You do not belong here. Leave this place.'"
+End
+OnEntry & Guild "Black"
+Pause 1
+Emote "One of the \c04black-coated\c00 men nods towards you, from the \c03watchtower's\c00 heights."
+End
+Q
+E
+#13121
+horses herd~
+a variety of horses~
+\c00The horses pace about and munch on \c03hay\c00, within the pen here.
+~
+It looks, err, unfinished.
+~
+10 0 0 E
+0 20 10 896 1d100+0 1d1+0
+0 0
+8 8 0 0
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnEntry
+Pause 1
+Emote "One of the more skittery horses watches your approach suspiciously."
+End
+Q
+E
+#13122
+woman child~
+a woman~
+A woman sits on the ground here, a child in her lap.
+~
+It looks, err, unfinished.
+~
+10 0 0 E
+0 20 10 896 1d100+0 1d1+0
+0 0
+8 8 2 0
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnEntry
+Pause 1
+Emote "The woman \c06smiles\c00 up at you in greeting, briefly."
+End
+Q
+E
+#13123
+serving wife woman~
+the serving wife~
+A woman serves here, managing over the mess hall.
+~
+It looks, err, unfinished.
+~
+10 0 0 E
+0 20 10 896 1d100+0 1d1+0
+0 0
+8 8 2 0
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnEntry
+Pause 1
+Emote "The serving wife nods politely to you as you enter, saying softly, 'Is there something I can get for you?'"
+End
+Q
+E
+#13124
+btower asha ~
+a black-coated man~
+A \c04black-coated\c00 man stands here, just by the entrance.
+~
+It looks, err, unfinished.
+~
+10 0 0 E
+0 20 10 896 1d100+0 1d1+0
+0 0
+8 8 1 0
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnEntry & Wearing 8843
+Pause 1
+Emote "The \c04black-coated\c00 nods respectfully towards you, conscious of the \c01D\c10r\c01a\c10g\c01o\c10n\c01 p\c10i\c01n\c00 on the collar of your \c04coat\c00."
+End
+OnAction "east" & ! Wearing 8843
+Stop
+Pause 1
+Emote "The \c04black-coated\c00 man comes very close to a sneer, sizing you up with his eyes before saying, 'You are not Asha'man. You may not enter unless you are following one.'"
+End
+Q
+E
+#13125
+sora grady btower wife~
+Sora Grady~
+Sora Grady stands behind the kitchen counter here.
+~
+It looks, err, unfinished.
+~
+16394 0 0 E
+0 20 10 896 1d100+0 1d1+0
+0 0
+8 8 2 0
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnEntry
+Pause 2
+Emote "Sora Grady, wife of the Asha'man, greets you with a scowl."
+End
+Q
+E
+#13126
+mob unfinished~
+Illaria rules! mob~
+An unfinished mob stands here.
+~
+It looks, err, unfinished.
+~
+8 0 0 E
+0 20 10 896 1d100+0 1d1+0
+0 0
+8 8 1 0
+E
+#13127
+mob unfinished~
+Illaria kicks ass! mob~
+An unfinished mob stands here.
+~
+It looks, err, unfinished.
+~
+8 0 0 E
+0 20 10 896 1d100+0 1d1+0
+0 0
+8 8 1 0
+E
+#13180
+The Lesson Information Board Guardian~
+the Lesson Information Board Guardian~
+The guardian stands here.
+~
+It looks, err, unfinished.
+~
+16394 2 0 E
+0 20 10 896 1d100+0 1d1+0
+0 0
+8 8 0 0
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnAction "read look board" & ! Wearing 8843
+Stop
+End
+Q
+E
+#13181
+board guardian ~
+the Board Guardian~
+The board guardian stands here.
+~
+It looks, err, unfinished.
+~
+16394 2 0 E
+0 20 10 896 1d100+0 1d1+0
+0 0
+8 8 0 0
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnAction "read look board" & ! Guild "black"
+Stop
+End
+Q
+E
+$

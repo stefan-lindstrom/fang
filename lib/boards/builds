@@ -1,0 +1,211 @@
+<?xml version="1.0"?>
+<board>
+  <vnum>32602</vnum>
+  <read>0</read>
+  <write>0</write>
+  <remove>203</remove>
+  <flags>0</flags>
+  <guild>24</guild>
+  <key>builder</key>
+  <title>The &amp;MBuilder&amp;n Noteboard&amp;n</title>
+  <messages>
+    <message>
+      <heading>Wed Jan  3 (Prion)      :: a building bug</heading>
+      <slot>1</slot>
+      <level>210</level>
+      <author>0</author>
+      <date>0</date>
+      <text>Tzeentch just told me that if you set an object's !tool off, tool it,
+then set it's !tool back on, it will revert back to it's old short
+desc and anyone wearing the object anywhere on the mud will suddenly
+get all their stats altered by the object permanently boosted. He
+had this happen to him with an angreal object, where a player online
+with the object suddenly got a permanent 50% increase in mana, and then
+the normal added 50% mana from the object's affections as well.
+
+So, avoid setting !tool off, tooling, then setting it on again!
+</text>
+    </message>
+    <message>
+      <heading>Mon Jan  8 (Prion)      :: The new Houses policy</heading>
+      <slot>2</slot>
+      <level>210</level>
+      <author>0</author>
+      <date>0</date>
+      <text>If you type 'policy houses' you will see that players can now build their
+own houses. This is a new addition to the responsibilities of the
+builders, but a pretty simple one.  All you need to do is collect the
+right amount of money then build the rooms/objs somewhere in the zones
+related to zone 200. Object and mob vnums should match the room vnums
+that the player owns. For instance, if I bought room 20030 and 20031,
+the two mobs and objects I can buy are vnums 20030 and 20031.
+Objects can be anything at all, from keys for doors to furniture, even
+something that can be picked up - they just must have no stats on them.
+They should also be unique to that room; set the amount allowed in the
+world to 1. The same goes for mobs.
+
+So far as room setting goes, you can set whatever flags the player
+asks for and make any doors, titles, extra descs, etc the player
+wants. I trust you guys; you all can handle telling players what doesn't
+seem acceptable and what does.
+
+Finally, in attaching the house to a place in the world, I'm going
+to set up a few actual new streets in the main cities listed in the
+policy so we have 'player neighborhoods'. This should keep everything
+neater and more easy to manage. I apologize that I don't have the
+vnums yet, but I will post again within 3 days with the rest of the
+details. You shouldn't be pressured by players to get their houses in
+before then.
+
+If you have any questions, suggestions, criticisms, please post!
+P
+</text>
+    </message>
+    <message>
+      <heading>Wed Jan 10 (Prion)      :: Where to build Houses</heading>
+      <slot>3</slot>
+      <level>210</level>
+      <author>0</author>
+      <date>0</date>
+      <text>I've gotten a chance to add a few neighborhoods and find roads that
+are clear enough to add entrances to people's homes. Let me know
+what you think. These should work pretty well to keep the cities
+from getting too cluttered.
+
+Caemlyn:
+  houses - Theren Boulevard, rooms 30482-30489
+  shops/inns - plazas after Theren, rooms 30490 and 30491
+
+Illian:
+  houses - Flower Lane, rooms 26003-26009
+  shops - anywhere along the docks, starting at room 26169
+
+Aringill:
+  both - anywhere along the wall roads
+
+West of Caemlyn:
+  both - anywhere along the roads between Four Kings (2501-2528)
+     and Whitebridge (1586-1599)
+
+East of Cairhien:
+  both - anywhere along the road to the Waste (7500-7520)
+
+I have nothing yet for the Two Rivers or any other area. What is
+currently set up is expandable, of course, if we need more room for
+more houses. Feel free to use any unused exit to fill up space.
+</text>
+    </message>
+    <message>
+      <heading>Wed Jan 10 (Prion)      :: formatting</heading>
+      <slot>4</slot>
+      <level>210</level>
+      <author>0</author>
+      <date>0</date>
+      <text>the edit /f now formats to 75 lines instead of 80.
+</text>
+    </message>
+    <message>
+      <heading>Fri Jan 12 (Prion)      :: re: building houses</heading>
+      <slot>5</slot>
+      <level>210</level>
+      <author>0</author>
+      <date>0</date>
+      <text>Use zone 315 for the houses themselves.
+Thanks!
+</text>
+    </message>
+    <message>
+      <heading>Mon Jun  4 (Tempus)     :: Player Houses</heading>
+      <slot>6</slot>
+      <level>210</level>
+      <author>0</author>
+      <date>0</date>
+      <text>If you build a player house, zone 315 please.
+Thanks
+</text>
+    </message>
+    <message>
+      <heading>Tue Aug  7 (Drathus)    :: &quot;The Caemlyn horse market&quot; Room # 30696</heading>
+      <slot>7</slot>
+      <level>203</level>
+      <author>0</author>
+      <date>0</date>
+      <text>Since we don't have mounts, and it's a one exit room, at the request
+of a player I set it !MOB so mobs don't wander in and out and spam RP.
+</text>
+    </message>
+    <message>
+      <heading>Mon Apr 15 (Ainge)      :: \c06Tessandra : 1\c00</heading>
+      <slot>8</slot>
+      <level>203</level>
+      <author>0</author>
+      <date>0</date>
+      <text>I've walked through one room for Tessandra, vnum 31549
+
+Ainge, builder
+</text>
+    </message>
+    <message>
+      <heading>Mon Apr 15 (Ainge)      :: \c06Gaindal : 7\c00</heading>
+      <slot>9</slot>
+      <level>203</level>
+      <author>0</author>
+      <date>0</date>
+      <text>I've walked through the following 7 rooms for Gaindal: vnums 31591 through 31597, inclusively. These were rooms held prior to the new policy cap on rooms
+
+Ainge, Builder
+</text>
+    </message>
+    <message>
+      <heading>Mon Apr 15 (Ainge)      :: \c06Asin : 1\c00</heading>
+      <slot>10</slot>
+      <level>203</level>
+      <author>0</author>
+      <date>0</date>
+      <text>I've walked through Asin's one room, vnum 31508
+It is not connected to the Mudd
+
+Ainge, Builder
+</text>
+    </message>
+    <message>
+      <heading>Mon Apr 15 (Ainge)      :: \c06Tancred : 30\c00</heading>
+      <slot>11</slot>
+      <level>203</level>
+      <author>0</author>
+      <date>0</date>
+      <text>I've gone over the desc of Tancred's 30 rooms with the following vnums: 31517 through 31546 inclusive
+
+These rooms are all connected to the Mudd.
+
+In addition, Tancred had these 30 rooms prior to the new house cap.
+
+Ainge, Builder
+</text>
+    </message>
+    <message>
+      <heading>Tue Apr 23 (Ainge)      :: \c06Dannighe : 2\c00</heading>
+      <slot>12</slot>
+      <level>203</level>
+      <author>0</author>
+      <date>0</date>
+      <text>Walked through rooms 31548 and 31547 for Dannighe.
+These rooms are connected to the MUDD.
+
+Ainge, Builder
+</text>
+    </message>
+    <message>
+      <heading>Sun May  5 (Ainge)      :: \c06Aleus : 2\c00</heading>
+      <slot>13</slot>
+      <level>203</level>
+      <author>0</author>
+      <date>0</date>
+      <text>I've walked through Aleus's rooms 31512 &amp; 31513
+They weren't connected to the mudd and I connected them so they now exist to the south of Caemlyn.
+
+Ainge, Builder
+</text>
+    </message>
+  </messages>
+</board>

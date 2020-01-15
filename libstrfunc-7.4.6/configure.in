@@ -1,0 +1,169 @@
+dnl Process this file with autoconf to produce a configure script.
+AC_INIT(strfunc.c)
+AC_CANONICAL_SYSTEM
+AC_PREREQ(2.13)
+AM_INIT_AUTOMAKE(libstrfunc, 7)
+
+PATH=${PATH}:/usr/ucb:/usr/ccs/bin
+export PATH
+
+AC_SUBST(PATH)
+
+AM_MAINTAINER_MODE
+
+AM_PROG_LIBTOOL
+
+dnl *** Autoconf support ***
+AC_ARG_ENABLE(autoconf,
+  [  --disable-autoconf      disable automatic generation of configure script ],
+  enable_autoconf=$enableval, enable_autoconf=yes
+)
+AC_PATH_PROG(AUTOCONF, autoconf, @echo autoconf not available)
+AC_PATH_PROG(AUTOHEADER, autoheader, @echo autoheader not available)
+if test -z "$AUTOCONF"; then enable_autoconf=no ; fi
+if test -z "$AUTOHEADER"; then enable_autoconf=no ; fi
+if test x$enable_autoconf = xyes; then
+  CONFIGURE_DEPENDS="configure.in aclocal.m4"
+fi
+AC_SUBST(CONFIGURE_DEPENDS)
+
+dnl *** Regular expressions support ***
+AC_ARG_WITH(regex, [  --without-regex         disable regex library ],
+  with_regex=$withval, with_regex=yes)
+AC_ARG_WITH(rx,    [  --without-rx            disable GNU rx library ],
+  with_rx=$withval, with_rx=yes)
+AC_ARG_WITH(pcre,  [  --without-pcre          disable PCRE library ],
+  with_pcre=$withval, with_pcre=yes)
+AC_DEFUN(AC_CHECK_REGEX,
+[
+if test re_$with_regex = re_yes ; then re_try="regex.h"; fi
+if test re_$with_rx = re_yes    ; then re_try="$re_try rxposix.h"; fi
+if test re_$with_pcre = re_yes  ; then re_try="$re_try pcreposix.h"; fi
+
+re_found=no
+if test -n "$re_try" ; then
+  dnl autoheader does not detect headers checked like this
+  dnl templates added to acconfig.h
+  AC_CHECK_HEADERS($re_try)
+  if test "$ac_cv_header_regex_h" = "yes"; then
+    AC_CHECK_FUNC(regcomp, re_found=yes)
+    if test "$re_found" = "no"; then
+      AC_CHECK_LIB(regex, regcomp)
+      if test "$ac_cv_lib_regex_regcomp" = "yes"; then
+        re_found=yes
+      fi
+    fi
+  fi
+  if test "$ac_cv_header_rxposix_h$re_found" = "yesno"; then
+      AC_CHECK_LIB(rx, regcomp)
+      if test "$ac_cv_lib_rx_regcomp" = "yes"; then
+        re_found=yes
+        AC_MSG_RESULT([	sed will use GNU rx])
+      fi
+  fi
+  if test "$ac_cv_header_pcreposix_h$re_found" = "yesno"; then
+      dnl 07-dec-2001 [als] $ac_save_LIBS is undocummented.
+      dnl                   use common function to add -lpcre to LIBS
+      AC_CHECK_LIB(pcre, pcre_compile)
+      AC_CHECK_LIB(pcreposix, regcomp) dnl ,,, -lpcre)
+      if test "$ac_cv_lib_pcreposix_regcomp" = "yes"; then
+        re_found=yes
+        AC_MSG_RESULT([	sed will use PCRE])
+      fi
+  fi
+fi
+if test "$re_found" = "yes"; then
+  AC_DEFINE(HAVE_REGEX_LIB, 1,
+    [Define if you have POSIX-compatible regexp library
+        (regex, GNU rx or PCRE).])
+  AC_DEFINE(HAVE_REGCOMP, 1,
+    [same as HAVE_REGEX_LIB, for backward compatibility.])
+else
+  AC_MSG_WARN([
+	No regexp library found.  mime_word_decode(), sf_sed(3)
+	and sf_split(3) functions may fail. (Sometimes silently.)])
+fi
+])
+
+
+dnl Checks for programs.
+AC_PROG_CC
+AC_PROG_CPP
+AC_PROG_INSTALL
+AC_PROG_LN_S
+AC_PROG_MAKE_SET
+AC_PROG_YACC
+AC_PATH_PROG(AR, ar, ar, $PATH:/usr/ucb:/usr/ccs/bin)
+
+dnl *** Building mingw32 with cygwin compiler ***
+case "$build" in
+*cygwin*)
+  case "$target" in
+  *mingw*)
+    CC="$CC -mno-cygwin"
+  esac ;;
+esac
+
+dnl Checks for header files.
+AC_HEADER_STDC
+AC_CHECK_HEADERS(fcntl.h time.h sys/time.h unistd.h)
+AC_CHECK_HEADERS(netinet/in.h sys/param.h)
+AC_CHECK_HEADERS(regex.h)
+AC_CHECK_HEADERS(sysexits.h)
+AC_CHECK_HEADERS(sys/locking.h)
+AC_CHECK_HEADERS(errno.h)
+AC_CHECK_HEADERS(getopt.h)
+
+dnl Checks for typedefs, structures, and compiler characteristics.
+AC_C_CONST
+AC_C_BIGENDIAN
+AC_TYPE_OFF_T
+AC_TYPE_SIZE_T
+AC_CHECK_TYPE(ssize_t, int)
+AC_STRUCT_TM
+
+dnl AC_STRUCT_TIMEZONE
+dnl 06-dec-2001 [als] Standard AC STRUCT_TIMEZONE fails with mingw32.
+dnl                   Function body (from autoconf 2.13)
+dnl                   included verbatim with modified test program.
+AC_CACHE_CHECK([for tm_zone in struct tm], ac_cv_struct_tm_zone,
+[AC_TRY_COMPILE([#include <sys/types.h>
+#include <$ac_cv_struct_tm>], [struct tm tm; tm.tm_zone;],
+  ac_cv_struct_tm_zone=yes, ac_cv_struct_tm_zone=no)])
+if test "$ac_cv_struct_tm_zone" = yes; then
+  AC_DEFINE(HAVE_TM_ZONE)
+else
+  AC_CACHE_CHECK(for tzname, ac_cv_var_tzname,
+[AC_TRY_LINK(
+changequote(<<, >>)dnl
+<<#include <time.h>
+#ifndef __WIN32__
+#ifndef tzname /* For SGI.  */
+extern char *tzname[]; /* RS6000 and others reject char **tzname.  */
+#endif
+#endif>>,
+changequote([, ])dnl
+[atoi(*tzname);], ac_cv_var_tzname=yes, ac_cv_var_tzname=no)])
+  if test $ac_cv_var_tzname = yes; then
+    AC_DEFINE(HAVE_TZNAME)
+  fi
+fi
+
+AC_OBJEXT 
+AC_EXEEXT 
+
+dnl Checks for library functions.
+AC_FUNC_MMAP
+AC_CHECK_FUNCS(mktime strstr)
+AC_CHECK_FUNCS(localtime_r gmtime_r)
+AC_CHECK_FUNCS(sleep _sleep)
+AC_CHECK_FUNCS(snprintf _snprintf)
+AC_CHECK_FUNCS(vsnprintf _vsnprintf)
+AC_CHECK_FUNCS(htonl)
+AC_CHECK_FUNCS(fcntl lockf _locking fsync ftruncate _chsize)
+AC_CHECK_REGEX
+AC_REPLACE_FUNCS(getopt)
+
+AM_CONFIG_HEADER(config.h strfunc.h getopt.h)
+
+AC_OUTPUT(Makefile bin/Makefile test/Makefile man/Makefile)

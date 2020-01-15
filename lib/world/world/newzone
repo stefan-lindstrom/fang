@@ -1,0 +1,49 @@
+#!/bin/sh
+
+if [ "$1" == "" ]; then
+echo You must give a number for the new zone
+exit
+fi
+
+if [ -e zon/$1.zon ]; then
+echo Zone file $1.zon already exists
+exit
+fi
+
+if [ -e wld/$1.wld ]; then
+echo Room file $1.wld already exists
+exit
+fi
+
+echo "<?xml version=\"1.0\"?>" > $1.zon
+echo "<zone vnum=\"$1\" lifespan=\"30\" top=\""$1"99\" mode=\"2\" lock=\"yes\">" >> $1.zon
+echo "  <name>New Zone</name>" >> $1.zon
+echo "  <resetcmds numberof=\"1\">" >> $1.zon
+echo "    <cmd command=\"STOP\"/>" >> $1.zon
+echo "  </resetcmds>" >> $1.zon
+echo "</zone>" >> $1.zon
+ 
+echo "<?xml version=\"1.0\"?>" > $1.wld
+echo "<rooms>" >> $1.wld
+echo "  <room>" >> $1.wld
+echo "    <roombasic title=\"An unfinished room\" vnum=\""$1"00\" zone=\"$1\">" >> $1.wld
+echo "      <roomdescription>You're in an unfinished  room." >> $1.wld
+echo "      </roomdescription>" >> $1.wld
+echo "      <flags>0</flags>" >> $1.wld
+echo "      <sector>Outside</sector>" >> $1.wld
+echo "      <special>NONE</special>" >> $1.wld
+echo "    </roombasic>" >> $1.wld
+echo "  </room>" >> $1.wld
+echo "</rooms>" >> $1.wld
+
+echo "<?xml version=\"1.0\"?>" > $1.mob
+echo "<mobiles>" >> $1.mob
+echo "</mobiles>" >> $1.mob
+
+echo "<?xml version=\"1.0\"?>" > $1.obj
+echo "<objects>" >> $1.obj
+echo "</objects>" >> $1.obj
+
+#echo "\$" > $1.shp
+echo "\$" > $1.qst
+echo "\$" > $1.trg

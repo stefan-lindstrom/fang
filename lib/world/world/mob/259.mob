@@ -1,0 +1,61 @@
+#25900
+Genna~
+Genna, the cook~
+Genna, the cook for the Chapterhouse looks busy in her kitchen.
+~
+Genna is a portly woman, although her face is very friendly. She
+smiles often and can be heard singing every now and then as she
+cooks. She wears an andoran type dress with an apron tied in front.
+She looks to be in her late forties, and has been with the
+for years, often acting like a mother to the younger ones.
+~
+1040474 0 0 E
+0 20 10 729 1d100+0 1d1+0
+0 0
+8 8 2 1005
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnEntry
+SayTo "Are you hungry? I have some lovely flaming casserole..."
+End
+OnAction "buy"
+SayTo "Enjoy it! You kids need to eat more, you work too hard."
+End
+Q
+E
+#25901
+serving girl~
+a serving girl~
+A serving girl rushes from table to table, taking orders.
+~
+The girl is different from the rest. She wears a longer skirt, and more
+prudent shoes. She has a friendly face and a nice smile, often there
+before you realize you need a refill or any service. She's quick,
+efficient, and sometimes a flirt as she throws a wink or two to the
+nicer men.
+~
+1040474 0 0 E
+150 20 10 729 1d100+0 1d1+0
+0 0
+8 8 2 0
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnEntry
+SayTo "Welcome to the &YG&yo&Yl&yd&Ye&yn&n Lion! May I show you to a table?"
+End
+OnTell "I'm hungry"
+SayTo "The roast is especially good today. You should try that."
+End
+Q
+E
+$

@@ -1,0 +1,852 @@
+<?xml version="1.0"?>
+<mobiles>
+  <mobile vnum="2500" name="small rat" special="NONE">
+    <description>It looks, err, unfinished.
+</description>
+    <shortdesc>a small rat</shortdesc>
+    <longdesc>A small rat scurries around here.
+</longdesc>
+    <title/>
+    <chardata gender="NEUTRAL" class="Adventurer" level="3" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="9" dsize="9" bonus="30"/>
+      <move ndize="1" dsize="30" bonus="30"/>
+      <ac>90</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>2</hitroll>
+      <damroll>2</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="12"/>
+    <affected one="65664" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="2" sides="6" add="2"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="2501" name="cat" special="NONE">
+    <description>The cat looks thin and hungry, fortunately there are lots of rats.
+</description>
+    <shortdesc>a Cat</shortdesc>
+    <longdesc>A stray Cat, looking for mice.
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="10" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="200"/>
+      <move ndize="1" dsize="200" bonus="200"/>
+      <ac>80</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>50</exp>
+      <hitroll>5</hitroll>
+      <damroll>10</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="8"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="8"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="5" sides="8" add="5"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnTick" argtype="STRING" argument="hug amber">
+      <action number="Action" argtype="STRING" argument="kill rat"/>
+    </mobprog>
+    <mobprog main="OnEntry" argtype="STRING" argument="hug amber">
+      <action number="Emote" argtype="STRING" argument="the cat hisses at you."/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="2502" name="guard bundy" special="NONE">
+    <description>A large heavily muscled wagon guard who
+walks past with a sullen expression on
+a face that looks like it has seen too 
+many bar fights.
+</description>
+    <shortdesc>a Merchants guard</shortdesc>
+    <longdesc>A burly merchants guard stands here.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="40" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="11" dsize="120" bonus="400"/>
+      <move ndize="1" dsize="400" bonus="400"/>
+      <ac>-20</ac>
+      <gold>40</gold>
+      <bankgold>0</bankgold>
+      <exp>120</exp>
+      <hitroll>15</hitroll>
+      <damroll>15</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="4168"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="10" sides="5" add="15"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="2503" name="tuke" special="NONE">
+    <description>It looks, err, unfinished.
+</description>
+    <shortdesc>a tired old man</shortdesc>
+    <longdesc>Tuke of Tuke's Fine Clothes stands here.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="200" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="0"/>
+      <move ndize="1" dsize="0" bonus="0"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="9232394"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="2504" name="strom bouncer" special="NONE">
+    <description>This man has clearly seen better days.  He appears to be filthy from days
+of sweaty activity, his teeth crooked or broken, and his hair
+non-existent.  His clothes are simple enough but the stains were weeks in
+the making.    
+</description>
+    <shortdesc>Strom, the Dancing Cartman's ugly man, wanders around with his arms folded.</shortdesc>
+    <longdesc>Strom, strongarm for the Dancing Cartman, stands here with his arms folded.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="100" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="2" dsize="1000" bonus="200"/>
+      <move ndize="1" dsize="200" bonus="200"/>
+      <ac>-30</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>120</exp>
+      <hitroll>30</hitroll>
+      <damroll>40</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="6216"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="25" sides="80" add="30"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="2505" name="hunter horn bundy" special="NONE">
+    <description>The Hunter shows all the arrogance and
+pride common to the wealthier class though
+it does not take away from the air of danger
+that surounds him.
+</description>
+    <shortdesc>a dangerous Hunter for the Horn</shortdesc>
+    <longdesc>A dangerous looking man in expensive clothes stands here.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="60" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="10" dsize="180" bonus="500"/>
+      <move ndize="1" dsize="500" bonus="500"/>
+      <ac>-40</ac>
+      <gold>120</gold>
+      <bankgold>0</bankgold>
+      <exp>120</exp>
+      <hitroll>20</hitroll>
+      <damroll>20</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="8"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="5" sides="6" add="20"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="2506" name="merchant bundy" special="NONE">
+    <description>The merchant has the expensive clothes
+and the superior expression that is so
+common amoungst his kind.
+</description>
+    <shortdesc>a blue cloaked merchant</shortdesc>
+    <longdesc>A sneering merchant in a large cloak stands here.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="50" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="10" dsize="150" bonus="500"/>
+      <move ndize="1" dsize="500" bonus="500"/>
+      <ac>-30</ac>
+      <gold>90</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>15</hitroll>
+      <damroll>15</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="72"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="4" sides="6" add="15"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="2507" name="thief beggar dark bundy" special="NONE">
+    <description>This man, face hidden by a deep hood 
+seems to radiate a feeling of danger.
+Hands that are hidden within a heavy
+cloak move quickly and a flash of
+metal can be seen.
+</description>
+    <shortdesc>a dark robed figure</shortdesc>
+    <longdesc>A cloaked master thief slouches here.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="60" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="4" dsize="350" bonus="150"/>
+      <move ndize="1" dsize="150" bonus="150"/>
+      <ac>-100</ac>
+      <gold>25</gold>
+      <bankgold>0</bankgold>
+      <exp>120</exp>
+      <hitroll>10</hitroll>
+      <damroll>10</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1160"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="5" sides="5" add="10"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="2508" name="Lyonel" special="NONE">
+    <description>A small thin man looks you up and down
+giving you a small smile as he bows. The
+way he walks says he is nothing but
+a weakling but the gleam in his eyes
+says something else.
+</description>
+    <shortdesc>a cringing man</shortdesc>
+    <longdesc>Lyonel the second hand salesman stands here.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="200" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="0"/>
+      <move ndize="1" dsize="0" bonus="0"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="9232394"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="2509" name="shirley cook bundy" special="NONE">
+    <description>Long blond hair cascades down the
+huge form of the cook of the Inn
+of the Dancing Cartman. Her pouty
+mouth and blue eyes are the only
+indications she was much more in
+her youth.
+</description>
+    <shortdesc>Shirley the head cook</shortdesc>
+    <longdesc>Shirley, the head cook, stands here stirring a pot.
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="199" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="5" dsize="500" bonus="0"/>
+      <move ndize="1" dsize="0" bonus="0"/>
+      <ac>0</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>20</hitroll>
+      <damroll>20</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="10"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="20" sides="20" add="20"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="2510" name="Dwella" special="NONE">
+    <description>A short pretty Lady with long brown hair
+curled into tiny ringlets. Her green eyes
+seem to sparkle as she looks over the goods
+displayed in her small shop.
+</description>
+    <shortdesc>a small pretty lady</shortdesc>
+    <longdesc>The jeweller Dwella is waiting to serve you here.
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="200" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="0"/>
+      <move ndize="1" dsize="0" bonus="0"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="9232394"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="2511" name="boy begger bundy" special="NONE">
+    <description>Ragged, dirty cloak, rags for shoes this 
+poor youth looks like he has seen better 
+days. His eyes look up at you and he
+pleads for some coins.
+</description>
+    <shortdesc>a poor homeless boy</shortdesc>
+    <longdesc>a scruffy looking child of the streets is standing here.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="40" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="10" dsize="120" bonus="400"/>
+      <move ndize="1" dsize="400" bonus="400"/>
+      <ac>-10</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>120</exp>
+      <hitroll>15</hitroll>
+      <damroll>20</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="8"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="8" sides="10" add="15"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="2512" name="sentry cotl" special="NONE">
+    <description>Wearing bright plate armour, the sentry keeps
+a viligent lookout. Strong of arm and chest he
+does not look like a man to annoy though his
+White cloak stands out from the greenery of the
+forest.
+</description>
+    <shortdesc>a \c14Whitecloak\c00 sentry</shortdesc>
+    <longdesc>A stiff backed sentry is standing here.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="120" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="25" dsize="360" bonus="1200"/>
+      <move ndize="1" dsize="1200" bonus="1200"/>
+      <ac>-120</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>100</hitroll>
+      <damroll>50</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="4106"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="10" sides="15" add="100"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="2513" name="sleepy soldier" special="NONE">
+    <description>With his armour half off, and dark circles under
+his eyes the bulky looking soldier is preparing
+to take his rest.
+</description>
+    <shortdesc>a \c06sleepy\c00 soldier</shortdesc>
+    <longdesc>A tired looking soldier is preparing for sleep.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="40" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="10" dsize="100" bonus="320"/>
+      <move ndize="1" dsize="320" bonus="320"/>
+      <ac>-40</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>120</exp>
+      <hitroll>15</hitroll>
+      <damroll>15</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="10"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="10" sides="15" add="15"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="2514" name="bored soldier" special="NONE">
+    <description>In the armour and cloak bearing the golden
+sunburst, this Child of the Light walks
+through the camp with a bored expression on
+his narrow face. Finished his patrol duties
+he has nothing to do until next rotation.
+</description>
+    <shortdesc>a bored \c14Soldier\c00</shortdesc>
+    <longdesc>A bored looking Soldier of the light is resting here.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="60" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="10" dsize="120" bonus="300"/>
+      <move ndize="1" dsize="300" bonus="300"/>
+      <ac>-60</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>300</exp>
+      <hitroll>20</hitroll>
+      <damroll>20</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="8"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="5" sides="10" add="20"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="2515" name="farmer cotl" special="NONE">
+    <description>Hard at work on the farm, the farmer takes
+a great deal of effort to make it look like
+he is paying little attention to what is 
+around him.
+</description>
+    <shortdesc>a \c10strange\c00 looking farmer</shortdesc>
+    <longdesc>A hard faced farmer stares back at you with cold eyes.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="60" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="10" dsize="170" bonus="120"/>
+      <move ndize="1" dsize="120" bonus="120"/>
+      <ac>-50</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>120</exp>
+      <hitroll>20</hitroll>
+      <damroll>20</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="10"/>
+    <affected one="48" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="4" sides="10" add="20"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnEntry" argtype="STRING" argument="hug amber">
+      <sideterm number="Guild" not="FALSE" argtype="VOID" argument="NONE"/>
+      <action number="Emote" argtype="STRING" argument="The farmer frowns at you then motions towards the bushes. A brief flash of white answers the call."/>
+      <action number="Action" argtype="STRING" argument="tell rhadam Intruder in Camp"/>
+      <action number="Action" argtype="STRING" argument="tell pedron Intruder in Camp"/>
+      <action number="Doing" argtype="STRING" argument="is trying to sneak into where they should not be."/>
+      <action number="Pause" argtype="INT" argument="2"/>
+      <action number="Emote" argtype="STRING" argument="Could that have been a Whitecloak lookout going to tell the Commander?"/>
+      <action number="Emote" argtype="STRING" argument="Perhaps you should no continue along this path."/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="2520" name="sexy model playboy" special="NONE">
+    <description>It looks, err, unfinished.
+</description>
+    <shortdesc>A &amp;Msexy&amp;n model</shortdesc>
+    <longdesc>\c14A \c13sexy\c14 playboy model is ready to be your lovetoy.\c00
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="200" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="0"/>
+      <move ndize="1" dsize="0" bonus="0"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="491530"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnLeave" argtype="STRING" argument="hug amber">
+      <sideterm number="Wearing" not="TRUE" argtype="INT" argument="600"/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="Say" argtype="STRING" argument="Oh I know you don't want to leave me, my little puffball!"/>
+    </mobprog>
+    <mobprog main="OnAction" argtype="STRING" argument="goto switch teleport trans">
+      <sideterm number="Wearing" not="TRUE" argtype="INT" argument="600"/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="Emote" argtype="STRING" argument="The Model shakes her head sadly and tears start to form in her eyes, ' I can't let you leave me. '"/>
+    </mobprog>
+    <mobprog main="OnAction" argtype="STRING" argument="purge load switch force push pull">
+      <sideterm number="Wearing" not="TRUE" argtype="INT" argument="600"/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="Emote" argtype="STRING" argument="The model giggles softly and her breasts bounce up and down under her vest, ' Baby, you don't really want to do that! '"/>
+    </mobprog>
+    <mobprog main="OnAction" argtype="STRING" argument="OLC medit oedit zedit redit">
+      <sideterm number="Wearing" not="TRUE" argtype="INT" argument="600"/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="Emote" argtype="STRING" argument="The Model pouts and says, ' You don't need to work, not when I am here to keep you company ' she grins and blows you a kiss."/>
+    </mobprog>
+    <mobprog main="OnAction" argtype="STRING" argument="remove">
+      <sideterm number="Wearing" not="TRUE" argtype="INT" argument="600"/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="Emote" argtype="STRING" argument="The Model grins evilly and says in a seductive voice, ' If you want to remove something how about my clothes. I can even help you ' she slips out of her vest and lets it fall to the ground."/>
+    </mobprog>
+    <mobprog main="OnSay" argtype="STRING" argument="Stefan Mats">
+      <action number="SayTo" argtype="STRING" argument="Oh! You like them too?"/>
+      <action number="Pause" argtype="INT" argument="2"/>
+      <action number="Say" argtype="STRING" argument="So cute and with great bodies. They are my little swedish meatballs."/>
+      <action number="Pause" argtype="INT" argument="2"/>
+      <action number="Emote" argtype="STRING" argument="The Model runs a hand down under her skirt as she is talking, when she pulls it back it is glistening with moisture."/>
+    </mobprog>
+    <mobprog main="OnAction" argtype="STRING" argument="set">
+      <sideterm number="Wearing" not="TRUE" argtype="INT" argument="600"/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="Emote" argtype="STRING" argument="The Model quickler covers her mouth with her hand to hide a small giggle."/>
+      <action number="SayTo" argtype="STRING" argument="Set? Why do you want to set something when I'm right here?"/>
+      <action number="Emote" argtype="STRING" argument="n"/>
+      <action number="Force" argtype="STRING" argument="600"/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="Emote" argtype="STRING" argument="The Model shakes her head and says with a grin, ' Nope, your staying with me!"/>
+    </mobprog>
+    <mobprog main="OnAction" argtype="STRING" argument="wiznet ooc holler send echo gecho qecho at tell reply auction osay">
+      <sideterm number="Wearing" not="TRUE" argtype="INT" argument="600"/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="Emote" argtype="STRING" argument="The Model quickler covers her mouth with her hand to hide a small giggle."/>
+      <action number="SayTo" argtype="STRING" argument="Oh baby, you can talk to me. Or if you don't like to talk...."/>
+      <action number="Emote" argtype="STRING" argument="The model pulls open the front of her vest revealing her full breasts."/>
+    </mobprog>
+    <mobprog main="OnActionTo" argtype="STRING" argument="kiss">
+      <sideterm number="Wearing" not="FALSE" argtype="INT" argument="600"/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="Emote" argtype="STRING" argument="The model stamps her foot and pushes you away, her face red with anger."/>
+      <action number="SayTo" argtype="STRING" argument="No! Only my little swedish meatball can touch me!"/>
+    </mobprog>
+    <mobprog main="OnActionTo" argtype="STRING" argument="fondle">
+      <sideterm number="Wearing" not="FALSE" argtype="INT" argument="600"/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="Emote" argtype="STRING" argument="The model stamps her foot and pushes you away, her face red with anger."/>
+      <action number="SayTo" argtype="STRING" argument="No! Only my little swedish meatball can touch me!"/>
+    </mobprog>
+    <mobprog main="OnActionTo" argtype="STRING" argument="goose">
+      <sideterm number="Wearing" not="FALSE" argtype="INT" argument="600"/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="Emote" argtype="STRING" argument="The model stamps her foot and pushes you away, her face red with anger."/>
+      <action number="SayTo" argtype="STRING" argument="No! Only my little swedish meatball can touch me!"/>
+    </mobprog>
+    <mobprog main="OnActionTo" argtype="STRING" argument="stroke">
+      <sideterm number="Wearing" not="FALSE" argtype="INT" argument="600"/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="Emote" argtype="STRING" argument="The model stamps her foot and pushes you away, her face red with anger."/>
+      <action number="SayTo" argtype="STRING" argument="No! Only my little swedish meatball can touch me!"/>
+    </mobprog>
+    <mobprog main="OnActionTo" argtype="STRING" argument="lick">
+      <sideterm number="Wearing" not="FALSE" argtype="INT" argument="600"/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="Emote" argtype="STRING" argument="The model stamps her foot and pushes you away, her face red with anger."/>
+      <action number="SayTo" argtype="STRING" argument="No! Only my little swedish meatball can touch me!"/>
+    </mobprog>
+    <mobprog main="OnActionTo" argtype="STRING" argument="kiss">
+      <sideterm number="Wearing" not="TRUE" argtype="INT" argument="600"/>
+      <action number="Emote" argtype="STRING" argument="The model licks her lips and begins to rub over her breasts, erect nipples fully visable under her vest."/>
+      <action number="SayTo" argtype="STRING" argument="Baby, yes, YES, I want more, take me now my lovemuffin!"/>
+      <action number="Emote" argtype="STRING" argument="The model quickly steps out of her clothes and jumps into your lap."/>
+    </mobprog>
+    <mobprog main="OnActionTo" argtype="STRING" argument="fondle">
+      <sideterm number="Wearing" not="TRUE" argtype="INT" argument="600"/>
+      <action number="Emote" argtype="STRING" argument="The model licks her lips and begins to rub over her breasts, erect nipples fully visable under her vest."/>
+      <action number="SayTo" argtype="STRING" argument="Baby, yes, YES, I want more, take me now my lovemuffin!"/>
+      <action number="Emote" argtype="STRING" argument="The model quickly steps out of her clothes and jumps into your lap."/>
+    </mobprog>
+    <mobprog main="OnActionTo" argtype="STRING" argument="stroke">
+      <sideterm number="Wearing" not="TRUE" argtype="INT" argument="600"/>
+      <action number="Emote" argtype="STRING" argument="The model licks her lips and begins to rub over her breasts, erect nipples fully visable under her vest."/>
+      <action number="SayTo" argtype="STRING" argument="Baby, yes, YES, I want more, take me now my lovemuffin!"/>
+      <action number="Emote" argtype="STRING" argument="The model quickly steps out of her clothes and jumps into your lap."/>
+    </mobprog>
+    <mobprog main="OnActionTo" argtype="STRING" argument="lick">
+      <sideterm number="Wearing" not="TRUE" argtype="INT" argument="600"/>
+      <action number="Emote" argtype="STRING" argument="The model licks her lips and begins to rub over her breasts, erect nipples fully visable under her vest."/>
+      <action number="SayTo" argtype="STRING" argument="Baby, yes, YES, I want more, take me now my lovemuffin!"/>
+      <action number="Emote" argtype="STRING" argument="The model quickly steps out of her clothes and jumps into your lap."/>
+    </mobprog>
+    <mobprog main="OnAction" argtype="STRING" argument="kill grasp weave cast powertrap kick bash trip stun charge dirtkick backstab charge punch disarm">
+      <sideterm number="Wearing" not="TRUE" argtype="INT" argument="600"/>
+      <action number="Say" argtype="STRING" argument="Oh baby you don't want to hurt me do you."/>
+    </mobprog>
+    <mobprog main="OnAction" argtype="STRING" argument="kill grasp weave cast powertrap kick bash trip stun charge dirtkick backstab charge punch disarm">
+      <sideterm number="Wearing" not="FALSE" argtype="INT" argument="600"/>
+      <action number="Emote" argtype="STRING" argument="The Model pokes her tongue out at you and crosses her arms under he breasts..nice...firm...ripe breasts."/>
+    </mobprog>
+    <mobprog main="OnAttack" argtype="STRING" argument="kill grasp weave cast powertrap kick bash trip stun charge dirtkick backstab charge punch disarm">
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="Emote" argtype="STRING" argument="The Model giggles."/>
+    </mobprog>
+    <mobprog main="OnActionTo" argtype="STRING" argument="charge">
+      <sideterm number="Wearing" not="TRUE" argtype="INT" argument="600"/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="SayTo" argtype="STRING" argument="Oh you!"/>
+      <action number="Pause" argtype="INT" argument="2"/>
+      <action number="Emote" argtype="STRING" argument="The model says in a seductive voice, ' If you are feeling that energetic then I'm all here my love. '"/>
+    </mobprog>
+    <mobprog main="OnActionTo" argtype="STRING" argument="aim">
+      <sideterm number="Wearing" not="TRUE" argtype="INT" argument="600"/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="Emote" argtype="STRING" argument="The Model's eyes widen and she says in a breathless voice, ' An army man! I love men in uniform..and out. '"/>
+    </mobprog>
+    <mobprog main="OnAction" argtype="STRING" argument="tieweave">
+      <sideterm number="Wearing" not="TRUE" argtype="INT" argument="600"/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="Say" argtype="STRING" argument="No no no. No tieing of weave. I could find some rope if you really want to tie something up."/>
+      <action number="Pause" argtype="INT" argument="2"/>
+      <action number="Emote" argtype="STRING" argument="The Model smiles at you seductively."/>
+    </mobprog>
+    <mobprog main="OnAction" argtype="STRING" argument="drag pull">
+      <sideterm number="Wearing" not="TRUE" argtype="INT" argument="600"/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+    </mobprog>
+    <mobprog main="OnAction" argtype="STRING" argument="steal">
+      <sideterm number="Wearing" not="TRUE" argtype="INT" argument="600"/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+    </mobprog>
+    <mobprog main="OnAction" argtype="STRING" argument="weave cast">
+      <sideterm number="Wearing" not="TRUE" argtype="INT" argument="600"/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+    </mobprog>
+    <mobprog main="OnAction" argtype="STRING" argument="throw">
+      <sideterm number="Wearing" not="TRUE" argtype="INT" argument="600"/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="Say" argtype="STRING" argument="Baby, we can use toys if you really want to."/>
+    </mobprog>
+    <mobprog main="OnSayTo" argtype="STRING" argument="slartibarfast">
+      <action number="Force" argtype="STRING" argument="goto 10186"/>
+    </mobprog>
+    <mobprog main="OnSay" argtype="STRING" argument="anju sermani">
+      <action number="Action" argtype="STRING" argument="goto 22"/>
+    </mobprog>
+    <mobprog main="OnTick" argtype="VOID" argument="NONE">
+      <action number="MoveTo" argtype="INT" argument="22"/>
+      <action number="Action" argtype="STRING" argument="goto 22"/>
+    </mobprog>
+  </mobile>
+</mobiles>

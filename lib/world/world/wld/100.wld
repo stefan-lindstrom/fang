@@ -1,0 +1,3676 @@
+<?xml version="1.0"?>
+<rooms>
+  <room>
+    <roombasic title="A beginning" vnum="10000" zone="100">
+      <roomdescription>You are in an unfinished room.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+  </room>
+  <room>
+    <roombasic title="The skilled blacksmith" vnum="10001" zone="100">
+      <roomdescription>You are in a dusty room filled with various articles for handling
+metal; tongs of all shapes and sizes, hammers, anvils and a large
+furnace from which heat emanates in waves. Several apprentices walk
+around here, making metal items of various sizes and shapes,
+all overseen by an elderly man with a sharp eye and an impressive girth.
+A sign over a bench describes the services and pricing.
+</roomdescription>
+      <flags>1048604</flags>
+      <sector>Inside</sector>
+      <special>RepairShop</special>
+    </roombasic>
+    <exit direction="west" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="29950">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exdesc keyword="sign">
+      <description>Bring your items in! We repair them good as new!
+Price: one quarter of the value of the original item.
+Syntax: repair &lt;itemname&gt;
+</description>
+    </exdesc>
+  </room>
+  <room>
+    <roombasic title="\c07Adani and Na'aori Lanes\c00" vnum="10100" zone="100">
+      <roomdescription>Here this small lane meets the inner city wall, which leads mostly
+straight east and west here. To the west, a small grassy area opens up
+from the meeting place here of three lanes into a park. The ground here
+slopes upward to the south and a bit to the east as well, though the
+crests of most of the hills here in the inner city are not terribly
+high. The streets follow the curve of the hills naturally, affording views
+of the parks and small neighborhoods from many angles. Much of what the
+Ogiers originally built here still remains.Fairly far to the south, the
+palace wall forms the southernmost border of the streets and lanes of the
+inner city. The small streets here so close to the palace wind through small
+hills and quaint, well-kept parks. Just to the south is a neighborhood of
+small but prosperous homes.
+</roomdescription>
+      <flags>0</flags>
+      <sector>City</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="10101">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exit direction="southeast" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="10104">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exit direction="southwest" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="10123">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="\c07Na'aori Lane\c00" vnum="10101" zone="100">
+      <roomdescription>Medium-sized trees border this street between the stone paving and the white
+carved stones of the inner city wall.  The trees are fairly tall with very thin
+trunks, making them difficult for an adult to climb; the lack of branches on
+the low ends of these trunks make climbing difficult for a child.  The streets
+follow the curve of the hills naturally, affording views of the parks and small
+neighborhoods from many angles.  Much of what the Ogiers originally built here
+still remains.  To the south and west, a smallish neighborhood made up of
+mostly narrow homes and boarding houses wedges itself between two lanes that
+travel generally north and south.  The neighborhood slopes up and down with the
+ground's slight hills.    
+</roomdescription>
+      <flags>0</flags>
+      <sector>City</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="10102">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exit direction="west" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="10100">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="\c07Na'aori Lane\c00" vnum="10102" zone="100">
+      <roomdescription>Here this lane curves with the corner of the inner city wall of Caemlyn,
+curving westward toward a small park at the end of the street, and southward to
+eventually curve around one of the small neighborhoods that pop up here and
+there in the inner city, the older part of Caemlyn.  The palace rises
+majestically from the ground to the south, about level with the ground here,
+although several small hills slope up and down between the palace and this
+point.  The streets follow the curve of the hills naturally, affording views of
+the parks and small neighborhoods from many angles.  Much of what the Ogiers
+originally built here still remains.  To the southwest, a small bakery
+separates this street from another paved lane.    
+</roomdescription>
+      <flags>0</flags>
+      <sector>City</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="south" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="10103">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exit direction="west" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="10101">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="\c07Na'aori Lane\c00" vnum="10103" zone="100">
+      <roomdescription>The road curves around the corner of a small neighborhood that opens up to the
+south via a small lane that winds around the narrow homes and shops in the
+inner city of Caemlyn, the oldest part of the city.  The neighborhood sits just
+against the inner city wall, just north of the eastern gated entrance into the
+inner city from the rest of Caemlyn.  The streets follow the curve of the hills
+naturally, affording views of the parks and small neighborhoods from many
+angles.  Much of what the Ogiers originally built here still remains.  The gate
+appears to be a grey stone arch of some kind.  An aged peddler wanders down
+this lane, delivering his pitch in a tone of voice that is loud and yet somehow
+refrains from being intrusive.    
+</roomdescription>
+      <flags>0</flags>
+      <sector>City</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="10102">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exit direction="southwest" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="10105">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="\c07Adani Lane\c00" vnum="10104" zone="100">
+      <roomdescription>Just to the northwest it looks like this street meets at least one other of
+about equal size in an asymmetric intersection.  All of the streets here in the
+smaller and older inner city of Caemlyn are paved with the same white stone,
+similar in tint and texture to the streets in the rest of the city, though they
+have a slightly different quality to them.  Perhaps it is the care that the
+keepers of the streets have taken to retain the older quality of the area,
+polishing the stones so that they are almost but not quite level, choosing a
+slightly more grey tint, and sizing the stones in a seemingly random, yet
+interlocking, assortment.  To the west, a small alley slopes down a hill into a
+small neighborhood wedged between two lanes.    
+</roomdescription>
+      <flags>0</flags>
+      <sector>City</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="south" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="10105">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exit direction="northwest" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="10100">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="\c07Na'aori and Adani Lanes\c00" vnum="10105" zone="100">
+      <roomdescription>Here two lanes in the inner city meet in an asymmetric intersection as both
+lanes curve slightly through the intersection.  Caemlyn's inner city is a maze
+of small lanes paved with an older greyish-white stone pattern.  The streets
+follow the curve of the hills naturally, affording views of the parks and small
+neighborhoods from many angles.  Much of what the Ogiers originally built here
+still remains.  To the southeast a street juts through a small neighborhood
+next to the city wall on its way out the eastern inner city gate.  Here on the
+eastern side of the inner city, the two city walls are quite close together,
+only separated by one wide road.    
+</roomdescription>
+      <flags>0</flags>
+      <sector>City</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="10104">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exit direction="northeast" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="10103">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exit direction="southeast" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="10106">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exit direction="southwest" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="10108">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="\c07Adani Lane and Cevines Lane\c00" vnum="10106" zone="100">
+      <roomdescription>Here the inner city meets the wall separating these roads from the outer city
+streets, and the gate on the eastern wall that leads between the two.  
+Caemlyn's inner city is a maze of small lanes paved with an older greyish-
+white stone pattern.  The streets follow the curve of the hills naturally,
+affording views of the parks and small neighborhoods from many angles.  Much of
+what the Ogiers originally built here still remains.  This lane gives way
+directly to the south to a small park nestled between the city wall and another
+lane next to the palace.    
+</roomdescription>
+      <flags>0</flags>
+      <sector>City</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="30636">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exit direction="southwest" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="10107">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exit direction="northwest" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="10105">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="\c07Cevines Lane\c00" vnum="10107" zone="100">
+      <roomdescription>One of the many small parks in the inner city opens up to the east of here,
+just south of the eastern gate leading to the outer city.  Caemlyn's inner city
+is a maze of small lanes paved with an older greyish-white stone pattern.  The
+streets follow the curve of the hills naturally, affording views of the parks
+and small neighborhoods from many angles.  Much of what the Ogiers originally
+built here still remains.  To the south it appears that this lane meets a
+slightly wider street adjacent to the Royal Palace of Andor.  A few guards
+patrol the back entrance to the palace, unemotionally concentrating on their
+duties.    
+</roomdescription>
+      <flags>0</flags>
+      <sector>City</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="south" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="10110">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exit direction="northeast" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="10106">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="\c07Na'aori Lane\c00" vnum="10108" zone="100">
+      <roomdescription>Just to the south this narrowish lane meets a wider lane which borders the rear
+of the Royal Palace of Andor.  Caemlyn's inner city is a maze of small lanes
+paved with an older greyish-white stone pattern.  The streets follow the curve
+of the hills naturally, affording views of the parks and small neighborhoods
+from many angles.  Much of what the Ogiers originally built here still remains.
+The back entrance to the palace is just to the west, the gates closed and
+guarded.  This lane is wide enough for a cart or a wagon to pass through
+unhindered, but not more than two, certainly.    
+</roomdescription>
+      <flags>0</flags>
+      <sector>City</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="south" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="10109">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exit direction="northeast" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="10105">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="\c07Tyrale Crescent and Na'aori Lane\c00" vnum="10109" zone="100">
+      <roomdescription>This fairly wide lane curves around the grounds of the Royal Palace of Andor
+with all its golden spires and brilliant white walls.  Caemlyn's inner city is
+a maze of small lanes paved with an older greyish-white stone pattern.  The
+streets follow the curve of the hills naturally, affording views of the parks
+and small neighborhoods from many angles.  Much of what the Ogiers originally
+built here still remains.  This street, however, is quite wide enough for a
+wagon or a cart to pass with plenty of room on either side.  A smaller road
+branches off to the north here, twisting around a small neighborhood as it
+slopes gently uphill.    
+</roomdescription>
+      <flags>0</flags>
+      <sector>City</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="10108">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exit direction="west" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="10119">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exit direction="southeast" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="10110">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="\c07Tyrale Crescent and Cevines Lane\c00" vnum="10110" zone="100">
+      <roomdescription>A small side street branches off to the north, curving around a small park
+which borders the eastern inner city wall.  Caemlyn's inner city is a maze of
+small lanes paved with an older greyish-white stone pattern.  The streets
+follow the curve of the hills naturally, affording views of the parks and small
+neighborhoods from many angles.  Much of what the Ogiers originally built here
+still remains.  This street is large enough for a cart, though the smaller road
+that juts off to the north does not appear as though it would be wide enough
+for more than a horse or two to pass side-by-side.    
+</roomdescription>
+      <flags>0</flags>
+      <sector>City</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="10107">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exit direction="east" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="10111">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exit direction="northwest" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="10109">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="\c07Tyrale Crescent\c00" vnum="10111" zone="100">
+      <roomdescription>To the south it looks as though a small concealed gate leads to a narrow
+entrance to the Royal Palace of Andor.  Caemlyn's inner city is a maze of small
+lanes paved with an older greyish-white stone pattern.  The streets follow the
+curve of the hills naturally, affording views of the parks and small
+neighborhoods from many angles.  Much of what the Ogiers originally built here
+still remains.  Another, unhidden entrance leads by way of a stone arch to a
+shaded park bordered with trees and centered with a small fountain.    
+</roomdescription>
+      <flags>0</flags>
+      <sector>City</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="west" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="10110">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="\c07Tyrale Crescent\c00" vnum="10112" zone="100">
+      <roomdescription>An old performer is here, sitting just inside the Origan Gate that leads from
+the larger outer city to the older inner city.  Caemlyn's inner city is a maze
+of small lanes paved with an older greyish-white stone pattern.  The streets
+follow the curve of the hills naturally, affording views of the parks and small
+neighborhoods from many angles.  Much of what the Ogiers originally built here
+still remains.  The performer is using a lute of some kind, playing a merry
+tune that has a few children who were running by here dancing chaotically
+around the street.    
+</roomdescription>
+      <flags>0</flags>
+      <sector>City</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="southwest" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="10113">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exit direction="northwest" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="30052">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="\c07Tyrale Crescent\c00" vnum="10113" zone="100">
+      <roomdescription>Just to the north and east it looks like the road forks, one branch winding off
+through the inner city, the other leading to the Origan Gate between the inner
+and outer cities.  Caemlyn's inner city is a maze of small lanes paved with an
+older greyish-white stone pattern.  The streets follow the curve of the hills
+naturally, affording views of the parks and small neighborhoods from many
+angles.  Much of what the Ogiers originally built here still remains.  It looks
+like a small park opens its gates to the street just to the east here, one of
+the smallest of the parks here in the inner city.    
+</roomdescription>
+      <flags>0</flags>
+      <sector>City</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="northeast" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="10112">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exit direction="southwest" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="10114">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="\c07Tyrale Crescent\c00" vnum="10114" zone="100">
+      <roomdescription>To the north, one of the smaller neighborhoods distributed throughout the inner
+city is nestled between this lane and the western city wall.  Caemlyn's inner
+city is a maze of small lanes paved with an older greyish-white stone pattern.
+The streets follow the curve of the hills naturally, affording views of the
+parks and small neighborhoods from many angles.  Much of what the Ogiers
+originally built here still remains.  The lane to the south looks like it
+branches off with an even narrower street that twists through a long, thin
+neighborhood set in the middle of the inner city.    
+</roomdescription>
+      <flags>0</flags>
+      <sector>City</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="south" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="10115">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exit direction="northeast" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="10113">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="\c07Tyrale Crescent and Adani Lane\c00" vnum="10115" zone="100">
+      <roomdescription>Here the wide paved lane that traces a line around the inside of the city wall
+branches off toward the east with a much smaller lane that twists through a
+small neighborhood and a quaint partk.  Caemlyn's inner city is a maze of small
+lanes paved with an older greyish-white stone pattern.  The streets follow the
+curve of the hills naturally, affording views of the parks and small
+neighborhoods from many angles.  Much of what the Ogiers originally built here
+still remains.  To the south, the Royal Palace of Andor sprouts from the
+ground, towering majestically over everything else in the area.    
+</roomdescription>
+      <flags>0</flags>
+      <sector>City</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="10114">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exit direction="east" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="10120">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exit direction="south" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="10116">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="\c07Tyrale Crescent\c00" vnum="10116" zone="100">
+      <roomdescription>This wide road bends here as the inner city wall meets the wall of the Andoran
+Royal Palace.  Caemlyn's inner city is a maze of small lanes paved with an
+older greyish-white stone pattern.  The streets follow the curve of the hills
+naturally, affording views of the parks and small neighborhoods from many
+angles.  Much of what the Ogiers originally built here still remains.  It looks
+as though a small gated entrance to the side gardens of the palace opens onto
+the street here, though the gate appears to be locked, and looks like it has
+not been used in some time.    
+</roomdescription>
+      <flags>0</flags>
+      <sector>City</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="10115">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exit direction="east" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="10117">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="\c07Tyrale Crescent\c00" vnum="10117" zone="100">
+      <roomdescription>The wall of the Royal Palace of Andor curves sharply around the palace grounds
+here, causing this wide lane to curve sharply as it does so.  Caemlyn's inner
+city is a maze of small lanes paved with an older greyish- white stone pattern.
+The streets follow the curve of the hills naturally, affording views of the
+parks and small neighborhoods from many angles.  Much of what the Ogiers
+originally built here still remains.  Nestled into the corner wall of the
+palace is a group of performers, looking somewhat like a family of performers,
+some playing music and others dancing and telling a story.    
+</roomdescription>
+      <flags>0</flags>
+      <sector>City</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="west" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="10116">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exit direction="northeast" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="10118">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="\c07Tyrale Crescent\c00" vnum="10118" zone="100">
+      <roomdescription>It looks as though there is an entrance to the Andoran Royal Palace to the east
+of here, though the wide gates are closed most of the time.  Caemlyn's inner
+city is a maze of small lanes paved with an older greyish-white stone pattern.
+The streets follow the curve of the hills naturally, affording views of the
+parks and small neighborhoods from many angles.  Much of what the Ogiers
+originally built here still remains.  As the palace wall curves to the south
+and west, so does this wide lane, and it looks as though just around that curve
+is a group of performers, singing and dancing as they tell a story.    
+</roomdescription>
+      <flags>0</flags>
+      <sector>City</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="10119">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exit direction="southwest" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="10117">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="\c07Tyrale Crescent\c00" vnum="10119" zone="100">
+      <roomdescription>The back gates to the Andoran Royal Palace face the street here, though they
+are closed and guarded.  From time to time a cart pulls up to the gate and the
+driver says a few words to the guard before the gates open and the cart pulls
+into the palace.  Caemlyn's inner city is a maze of small lanes paved with an
+older greyish-white stone pattern.  The streets follow the curve of the hills
+naturally, affording views of the parks and small neighborhoods from many
+angles.  Much of what the Ogiers originally built here still remains.  Here a
+smaller lane branches off to the northwest, through a small park right in front
+of the palace gates.    
+</roomdescription>
+      <flags>0</flags>
+      <sector>City</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="10109">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exit direction="west" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="10118">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exit direction="northwest" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="10121">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="\c07Adani Lane\c00" vnum="10120" zone="100">
+      <roomdescription>To the east, a narrow, tall boarding house separates this small lane which just
+to the west meets a larger street, from the wide main road that runs along the
+wall of the Royal Palace.  Caemlyn's inner city is a maze of small lanes paved
+with an older greyish-white stone pattern.  The streets follow the curve of the
+hills naturally, affording views of the parks and neighborhoods from many
+angles.  Much of what the Ogiers originally built here still remains.  The road
+continues through the quiet neighborhoods, sloping gently uphill to the
+northeast.    
+</roomdescription>
+      <flags>0</flags>
+      <sector>City</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="west" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="10115">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exit direction="northeast" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="10121">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="\c07Adani Lane\c00" vnum="10121" zone="100">
+      <roomdescription>A small gate opens up to a park directly north of here, and this quaint road
+pushes through a small neighborhood to the north and east.  Caemlyn's inner
+city is a maze of small lanes paved with an older greyish-white stone pattern.
+The streets follow the curve of the hills naturally, affording views of the
+parks and small neighborhoods from many angles.  Much of what the Ogiers
+originally built here still remains.  To the southeast a narrow alley bordered
+by smallish buildings leads to the widest road in the inner city, the road
+which borders the Andoran Royal Palace.    
+</roomdescription>
+      <flags>0</flags>
+      <sector>City</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="northeast" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="10122">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exit direction="southeast" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="10119">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exit direction="southwest" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="10120">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="\c07Adani Lane\c00" vnum="10122" zone="100">
+      <roomdescription>To the east a small neighborhood follows the slope of the ground, sloping
+upwards gently to the east; the road here is slightly lower than the rest of
+the houses and apartments to the east.  Caemlyn's inner city is a maze of small
+lanes paved with an older greyish-white stone pattern.  The streets follow the
+curve of the hills naturally, affording views of the parks and small
+neighborhoods from many angles.  Much of what the Ogiers originally built here
+still remains.  Lane continues off to the north and curves slightly to the
+southwest.  To the north past the bend in the road, another neighborhood is
+nestled against the northern wall between the inner city and the outer.    
+</roomdescription>
+      <flags>0</flags>
+      <sector>City</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="10123">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exit direction="southwest" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="10121">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="\c07Adani Lane\c00" vnum="10123" zone="100">
+      <roomdescription>Here this lane curves between two neighborhoods, sloping gently uphill toward
+the south and slightly east.  Caemlyn's inner city is a maze of small lanes
+paved with an older greyish-white stone pattern.  The streets follow the curve
+of the hills naturally, affording views of the parks and small neighborhoods
+from many angles.  Much of what the Ogiers originally built here still remains.
+A peddler is wandering between the two neighborhoods, having just turned off a
+small lane through the neighborhood to the east.  The peddler is calling his
+wares quite loudly, earning the annoyed glances of the people going about their
+business in the inner city.    
+</roomdescription>
+      <flags>0</flags>
+      <sector>City</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="south" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="10122">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exit direction="northeast" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="10100">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Egils Greengrocer" vnum="10143" zone="100">
+      <roomdescription>You enter a large open air market with boxes of fruit and vegetables set in
+neat rows.  Large pieces of algode cloth are draped over the top of the
+structure to provide shade.  You see many bargains awaiting your purchase.    
+</roomdescription>
+      <flags>158</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="door" exitinfo="0" keynum="0" toroom="10226">
+      <description>an opening in the market
+</description>
+    </exit>
+    <exit direction="west" keyword="door" exitinfo="0" keynum="0" toroom="30184">
+      <description>A brightly colored door leads to the street.
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="\c01Caemlyn\c00\c14 Pigeon\c00\c01 and \c00\c14Courier\c00\c01 Service\c00" vnum="10145" zone="100">
+      <roomdescription>This room has a rather frantic atmosphere, what with messengers running in and
+out, oblivious to all except the front door, their destination in mind.  
+Pigeons occasionally fly in a window to the side of the door and up a set of
+side stairs that lead to the roof and that are caged off, though the bars are
+wide enough that the pigeons can fly through easily.  Long wooden benches
+against the far wall provide seating for those who are waiting for messages,
+incoming or outgoing.  Though it looks chaotic, somehow all the messages get to
+their intended recipient each and every day, with as few mistakes as can be
+expected.    
+(OOC: Only level 5 and under allowed up)
+</roomdescription>
+      <flags>158</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="30643">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exit direction="up" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="32500">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Marceus' fletchery" vnum="10147" zone="100">
+      <roomdescription>A very small little shop, more like a little living room than anything else, it
+is stuffed with bundles of arrows of all varieties.  There is a large basket of
+carefully selected feathers in a corner, and beside it a little worn stool,
+many rolls of thread, and a closed box.    
+</roomdescription>
+      <flags>158</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+  </room>
+  <room>
+    <roombasic title="The Donation Room" vnum="10184" zone="100">
+      <roomdescription>This is a small room which takes up the entirety of the building in which it is
+located.  The walls have no windows, being filled with shelves and cabinets,
+many of which are themselves filled with items that have been donated by nobles
+and rich merchants.  The room appears to once have been somewhat organized,
+though the endless rummaging and tossing around of unwanted merchandise has
+caused quite a mess; a dress is lying in a heap in the corner instead of hung
+on the rack built into the west wall, a teacup lies shattered in the middle of
+the floor, and dozens more pieces of clothing or armor are strewn about the
+room.    
+</roomdescription>
+      <flags>1048734</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="29906">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Centre of \c01Caemlyn\c00" vnum="10186" zone="100">
+      <roomdescription>The oval plaza is built in the heart of Caemlyn, acting as a gathering
+place for citizens, travelers, and merchants to meet and gossip.  Paved in
+flagstones of &amp;Wwhite&amp;n and &amp;Kgray&amp;n in an octagonal pattern, this area appears to
+be well kept and quite peaceful.  A few &amp;gt&amp;yr&amp;ge&amp;ye&amp;gs&amp;n grow just past the paved
+plaza, adding the option of resting in the shade for a bit.  The pattern
+formed by the flagstones radiates outward from a beautifully crafted
+&amp;Km&amp;wa&amp;Wrb&amp;wl&amp;Ke&amp;n fountain in the direct center of the oval, several benches sit at
+spaced intervals around the wide basin, providing a resting place for
+weary feet.  The gates to the Andoran Royal Palace lie to the north, the
+palace spreading out ahead in a majestic display of beauty.  Roads branch
+off from here in all directions, the Palace Circle curving around the
+royal palace to the east and west through the inner city.  South Gate Road
+leads through the city and beyond to the south, past the rising spires of
+the city wall visible in the distance.  At most times of the day, several
+members of the &amp;RQ&amp;rue&amp;we&amp;Wn's G&amp;wu&amp;rar&amp;Rd&amp;n patrol the plaza as a measure of peace within
+the area.    
+</roomdescription>
+      <flags>1048734</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="29950">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exit direction="east" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="30643">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exit direction="south" keyword="&lt;NONE&gt;" exitinfo="0" keynum="-1" toroom="30645">
+      <description>You see nothing special.
+</description>
+    </exit>
+    <exit direction="west" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="30642">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exdesc keyword="&lt;NONE&gt;">
+      <description> &lt;NONE&gt;
+</description>
+    </exdesc>
+    <dgscript vnum="10188"/>
+  </room>
+  <room>
+    <roombasic title="Outside The Pattern" vnum="10188" zone="100">
+      <roomdescription>So you bit it, eh?  Picked on the wrong mob?  Forgot the little guy who
+assists?  Wandered into the same room as an agressive mob?  Well you're dead
+now.  Here you sit, floating among the threads of the pattern, waiting to be
+spit back out whenever the Wheel of Time sees fit.  Of course you could always
+just go down and reenter the land of the living, but where's the fun in that?
+</roomdescription>
+      <flags>158</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="down" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="10186">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Inside of the Hole" vnum="10199" zone="100">
+      <roomdescription>&amp;KPale moonlight faintly illuminates the beginning of the hole, the light
+soon being lost in the darkness as the passage descends farther
+underground, growing narrower as it goes deeper.  Visibility is nearly
+impossible in the heavy blackness, the walls of the hole feel both slimy
+and cold to the touch, a soft echoing drip of some sort of substance
+hitting the ground rising upward.  Something sticky hangs on the walls at
+various points, perhaps more spider webs, a hollow wind whistling at the
+top of the passage, the air taking on a stale scent the farther one
+descends&amp;n.    
+</roomdescription>
+      <flags>65690</flags>
+      <sector>Field</sector>
+      <special>NONE</special>
+    </roombasic>
+  </room>
+  <room>
+    <roombasic title="In A Neat Courtyard" vnum="10200" zone="100">
+      <roomdescription>To be added
+</roomdescription>
+      <flags>0</flags>
+      <sector>City</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="door" exitinfo="1" keynum="0" toroom="10205">
+      <description>The entry hall of the inn is here.
+</description>
+    </exit>
+    <exit direction="south" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="30655">
+      <description>Through the archway is Queens Circle.
+</description>
+    </exit>
+    <exit direction="west" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="10201">
+      <description>The stable for the inn is here.
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="In The Stables" vnum="10201" zone="100">
+      <roomdescription>The floor underfoot is paved with even stones, their surface kept clean of
+debris.  A room to the side has shelves and hooks which are stacked and hung
+full of tack and grooming tools.  The many stalls are all well kept, filled
+with sweet smelling straw.  In each, there are water and food troughts which
+are kept well-filled by the stableboys.    
+</roomdescription>
+      <flags>8</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="&lt;NONE&gt;" exitinfo="0" keynum="-1" toroom="10200">
+      <description>The courtyard is here.
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="In a Small Hallway" vnum="10202" zone="100">
+      <roomdescription>To be added.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="door" exitinfo="1" keynum="-1" toroom="10203">
+      <description>The sign on the door says: Inkeeper's Office.
+</description>
+    </exit>
+    <exit direction="up" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="10215">
+      <description>A hallway is here, up a flight of stairs.
+</description>
+    </exit>
+    <exit direction="northeast" keyword="door" exitinfo="1" keynum="0" toroom="10207">
+      <description>The sign on the door says: Bookkeeper's Office.
+</description>
+    </exit>
+    <exit direction="northwest" keyword="&lt;NONE&gt;" exitinfo="1" keynum="0" toroom="10205">
+      <description>The main entry hall is here.
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="In the Innkeeper's Office" vnum="10203" zone="100">
+      <roomdescription>To be added.
+</roomdescription>
+      <flags>8</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="west" keyword="door" exitinfo="1" keynum="-1" toroom="10202">
+      <description>A small hallway is here.
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="In a Stairwell" vnum="10204" zone="100">
+      <roomdescription>To be added.
+</roomdescription>
+      <flags>8</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="&lt;NONE&gt;" exitinfo="0" keynum="-1" toroom="10205">
+      <description>The main entry hall is here.
+</description>
+    </exit>
+    <exit direction="up" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="10225">
+      <description>The second floor hallway is here.
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="In the Main Entry Hall" vnum="10205" zone="100">
+      <roomdescription>To be added.
+</roomdescription>
+      <flags>8</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="10209">
+      <description>The common room is here.
+</description>
+    </exit>
+    <exit direction="east" keyword="&lt;NONE&gt;" exitinfo="0" keynum="-1" toroom="10206">
+      <description>A barroom is here.
+</description>
+    </exit>
+    <exit direction="south" keyword="door" exitinfo="1" keynum="0" toroom="10200">
+      <description>The Courtyard is here.
+</description>
+    </exit>
+    <exit direction="west" keyword="&lt;NONE&gt;" exitinfo="0" keynum="-1" toroom="10204">
+      <description>A stairwell is here.
+</description>
+    </exit>
+    <exit direction="southeast" keyword="door" exitinfo="1" keynum="0" toroom="10202">
+      <description>A small hallway is here.
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="In the Barroom" vnum="10206" zone="100">
+      <roomdescription>To be added.
+</roomdescription>
+      <flags>8</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="west" keyword="door" exitinfo="1" keynum="-1" toroom="10205">
+      <description>The main hall is here.
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="In the Bookkeeper's Office" vnum="10207" zone="100">
+      <roomdescription>To be Added.
+</roomdescription>
+      <flags>8</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="southwest" keyword="door" exitinfo="1" keynum="0" toroom="10202">
+      <description>A hallway is here.
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="In a Private Dining Room" vnum="10208" zone="100">
+      <roomdescription>TBA
+</roomdescription>
+      <flags>8</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="door" exitinfo="1" keynum="-1" toroom="10209">
+      <description>The Common Room is here.
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="In the Common Room" vnum="10209" zone="100">
+      <roomdescription>TBA
+</roomdescription>
+      <flags>8</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="door" exitinfo="1" keynum="-1" toroom="10212">
+      <description>A private dining room is here.
+</description>
+    </exit>
+    <exit direction="east" keyword="door" exitinfo="1" keynum="-1" toroom="10210">
+      <description>The kitchens are here.
+</description>
+    </exit>
+    <exit direction="south" keyword="&lt;NONE&gt;" exitinfo="0" keynum="-1" toroom="10205">
+      <description>The entry hall is here.
+</description>
+    </exit>
+    <exit direction="west" keyword="door" exitinfo="1" keynum="-1" toroom="10208">
+      <description>A Private Dining room is here.
+</description>
+    </exit>
+    <exit direction="northeast" keyword="door" exitinfo="1" keynum="0" toroom="10213">
+      <description>A small garden is here.
+</description>
+    </exit>
+    <exit direction="northwest" keyword="door" exitinfo="1" keynum="0" toroom="10211">
+      <description>The library is here.
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Kitchens" vnum="10210" zone="100">
+      <roomdescription>TBA
+</roomdescription>
+      <flags>8</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="door" exitinfo="1" keynum="-1" toroom="10214">
+      <description>The kitchen garden is here.
+</description>
+    </exit>
+    <exit direction="west" keyword="door" exitinfo="1" keynum="-1" toroom="10209">
+      <description>The common room is here.
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="In the Library" vnum="10211" zone="100">
+      <roomdescription>TBA
+</roomdescription>
+      <flags>8</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="southeast" keyword="door" exitinfo="1" keynum="0" toroom="10209">
+      <description>The common room is here.
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="In a Private Dining Room" vnum="10212" zone="100">
+      <roomdescription>TBA
+</roomdescription>
+      <flags>8</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="south" keyword="door" exitinfo="1" keynum="-1" toroom="10209">
+      <description>The common room is here.
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="In a Small Garden" vnum="10213" zone="100">
+      <roomdescription>TBA
+</roomdescription>
+      <flags>0</flags>
+      <sector>City</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="southwest" keyword="door" exitinfo="1" keynum="0" toroom="10209">
+      <description>The common room is here.
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="In the Kitchen Garden" vnum="10214" zone="100">
+      <roomdescription>TBA
+</roomdescription>
+      <flags>0</flags>
+      <sector>City</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="west" keyword="door" exitinfo="1" keynum="-1" toroom="10210">
+      <description>The kitchen is here.
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="A Small Landing" vnum="10215" zone="100">
+      <roomdescription>TBA
+</roomdescription>
+      <flags>8</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="door" exitinfo="9" keynum="-1" toroom="10216">
+      <description>A private room is here.
+</description>
+    </exit>
+    <exit direction="down" keyword="&lt;None&gt;" exitinfo="0" keynum="0" toroom="10202">
+      <description>A small hallway is here.
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="A Small Bedroom" vnum="10216" zone="100">
+      <roomdescription>TBA
+</roomdescription>
+      <flags>8</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="door" exitinfo="1" keynum="-1" toroom="10218">
+      <description>A small bathing chamber is here.
+</description>
+    </exit>
+    <exit direction="east" keyword="door" exitinfo="1" keynum="-1" toroom="10217">
+      <description>A balcony is here.
+</description>
+    </exit>
+    <exit direction="west" keyword="door" exitinfo="9" keynum="0" toroom="10215">
+      <description>The hallway is here.
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="On a Shaded Balcony" vnum="10217" zone="100">
+      <roomdescription>TBA
+</roomdescription>
+      <flags>8</flags>
+      <sector>Water (Swim)</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="west" keyword="&lt;NONE&gt;" exitinfo="0" keynum="-1" toroom="10216">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="A Small Bathing Chamber" vnum="10218" zone="100">
+      <roomdescription>TBA
+</roomdescription>
+      <flags>8</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="south" keyword="door" exitinfo="1" keynum="-1" toroom="10216">
+      <description>A small bedroom is here.
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="A Large Bed Chamber" vnum="10219" zone="100">
+      <roomdescription>TBA
+</roomdescription>
+      <flags>8</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="10220">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="A Guest Room" vnum="10220" zone="100">
+      <roomdescription>TBA
+</roomdescription>
+      <flags>8</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="door" exitinfo="1" keynum="-1" toroom="10225">
+      <description>The Hall is here.
+</description>
+    </exit>
+    <exit direction="east" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="10229">
+      <description>None
+</description>
+    </exit>
+    <exit direction="west" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="10219">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="A Guest Room" vnum="10221" zone="100">
+      <roomdescription>TBA
+</roomdescription>
+      <flags>8</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="door" exitinfo="1" keynum="-1" toroom="10240">
+      <description>The Hallway is here.
+</description>
+    </exit>
+    <exit direction="east" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="10223">
+      <description>None
+</description>
+    </exit>
+    <exit direction="west" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="10233">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="A Guest Room" vnum="10222" zone="100">
+      <roomdescription>TBA
+</roomdescription>
+      <flags>8</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="door" exitinfo="1" keynum="-1" toroom="10227">
+      <description>The Hallway is here.
+</description>
+    </exit>
+    <exit direction="east" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="10250">
+      <description>None
+</description>
+    </exit>
+    <exit direction="west" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="10251">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="A Private Bedroom" vnum="10223" zone="100">
+      <roomdescription>TBA
+</roomdescription>
+      <flags>8</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="west" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="10221">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="A Guest Room" vnum="10224" zone="100">
+      <roomdescription>This room seems to be decorated as best as possible for the rent paid.  A well
+woven carpet lies on the floor beneath a black laquered table and four matching
+chairs.  There are lamps spread throughout the room, keeping it well lit and
+bright.  Off to one corner a small shelf holds several books, left there by the
+innkeep for leisure reading.  Next to the shelf a comfortable looking low
+backed cushioned chair sits invitingly.  There are several similar looking
+chairs surround a sofa close to the center of the room, meant for casual
+conversation.  Light breezes flow into the room from the west, where light
+colored curtains move slightly from an open doorway.    
+</roomdescription>
+      <flags>8</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="10243">
+      <description>To the north, a sturdy looking doorway leading to the bath chamber.
+</description>
+    </exit>
+    <exit direction="east" keyword="door" exitinfo="1" keynum="0" toroom="10225">
+      <description>The Hallway is here.
+</description>
+    </exit>
+    <exit direction="south" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="10277">
+      <description>An invitingly soft looking bed waits there.
+</description>
+    </exit>
+    <exit direction="west" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="10242">
+      <description>A soft gentle breeze flows through the doorway.
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="In the Second Floor Hallway" vnum="10225" zone="100">
+      <roomdescription>The floors of this inn are well worn yet they have been kept clean and
+polished since the day it was built.  There are several closed doors 
+obviously leading into private rooms rented out by this establishment,
+however to the east the hallway continues down it's path.  The decoration
+of the hallway consists of several paintings as well as well crafted
+vase containing yellow flowers.  The stairway leads back down to the
+first floor of the inn.
+</roomdescription>
+      <flags>8</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="door" exitinfo="1" keynum="-1" toroom="10230">
+      <description>A guest room is here.
+</description>
+    </exit>
+    <exit direction="east" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="10240">
+      <description>A hallway is here.
+</description>
+    </exit>
+    <exit direction="south" keyword="door" exitinfo="1" keynum="-1" toroom="10220">
+      <description>A guest room is here.
+</description>
+    </exit>
+    <exit direction="west" keyword="door" exitinfo="1" keynum="0" toroom="10224">
+      <description>A guest room is here.
+</description>
+    </exit>
+    <exit direction="down" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="10204">
+      <description>The downstairs hall is here.
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Konrad's shop of Useful Things" vnum="10226" zone="100">
+      <roomdescription>Cooling breezes ruffle the algode panels that block the sun in this
+open air shop.  Hanging on beams and arranged on shelves are containers
+of every shape and size.  Barrels, bottles, and skins are stacked all
+about, some full of ale or water already.
+</roomdescription>
+      <flags>1048726</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="south" keyword="door" exitinfo="0" keynum="0" toroom="10143">
+      <description>opening between stalls in market
+</description>
+    </exit>
+    <exit direction="west" keyword="&lt;NONE&gt;" exitinfo="0" keynum="-1" toroom="30169">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="A Hallway" vnum="10227" zone="100">
+      <roomdescription>TBA
+</roomdescription>
+      <flags>8</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="door" exitinfo="1" keynum="-1" toroom="10232">
+      <description>A guest room is here.
+</description>
+    </exit>
+    <exit direction="east" keyword="door" exitinfo="1" keynum="0" toroom="10241">
+      <description>A guest room is here.
+</description>
+    </exit>
+    <exit direction="south" keyword="door" exitinfo="1" keynum="-1" toroom="10222">
+      <description>A guest room is here.
+</description>
+    </exit>
+    <exit direction="west" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="10240">
+      <description>The Hallway is here.
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Recall Room" vnum="10228" zone="100">
+      <roomdescription>This is a totally empty room with a strange symbol carved into the
+floor in gold. The symbol looks homely and comforting, somehow.
+</roomdescription>
+      <flags>158</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="5085">
+      <description/>
+    </exit>
+    <exit direction="east" keyword="" exitinfo="0" keynum="0" toroom="25600">
+      <description/>
+    </exit>
+    <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="25040">
+      <description/>
+    </exit>
+    <exit direction="west" keyword="" exitinfo="0" keynum="0" toroom="26103">
+      <description/>
+    </exit>
+    <exit direction="up" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="10145">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exit direction="down" keyword="" exitinfo="0" keynum="0" toroom="29906">
+      <description/>
+    </exit>
+    <exit direction="northeast" keyword="" exitinfo="0" keynum="0" toroom="29002">
+      <description/>
+    </exit>
+    <exit direction="southwest" keyword="" exitinfo="0" keynum="0" toroom="23014">
+      <description/>
+    </exit>
+    <exit direction="northwest" keyword="" exitinfo="0" keynum="0" toroom="17286">
+      <description/>
+    </exit>
+    <dgscript vnum="10228"/>
+  </room>
+  <room>
+    <roombasic title="A Private Bath Chamber" vnum="10229" zone="100">
+      <roomdescription>TBA
+</roomdescription>
+      <flags>8</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="west" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="10220">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Sitting Room" vnum="10230" zone="100">
+      <roomdescription>TBA
+</roomdescription>
+      <flags>8</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="10246">
+      <description>None
+</description>
+    </exit>
+    <exit direction="east" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="10245">
+      <description>None
+</description>
+    </exit>
+    <exit direction="south" keyword="door" exitinfo="1" keynum="0" toroom="10225">
+      <description>A hallway is here.
+</description>
+    </exit>
+    <exit direction="west" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="10244">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="A Guest Room" vnum="10231" zone="100">
+      <roomdescription>This description is yet unfinished...
+</roomdescription>
+      <flags>8</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="10249">
+      <description>None
+</description>
+    </exit>
+    <exit direction="east" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="10247">
+      <description>None
+</description>
+    </exit>
+    <exit direction="south" keyword="door" exitinfo="1" keynum="-1" toroom="10240">
+      <description>The hallway is here.
+</description>
+    </exit>
+    <exit direction="west" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="10248">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="A Guest Room" vnum="10232" zone="100">
+      <roomdescription>TBA
+</roomdescription>
+      <flags>8</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="10254">
+      <description>None
+</description>
+    </exit>
+    <exit direction="east" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="10252">
+      <description>None
+</description>
+    </exit>
+    <exit direction="south" keyword="door" exitinfo="1" keynum="-1" toroom="10227">
+      <description>The hallway is here.
+</description>
+    </exit>
+    <exit direction="west" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="10253">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="A Small Bath Chamber" vnum="10233" zone="100">
+      <roomdescription>TBA
+</roomdescription>
+      <flags>8</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="10221">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="A Private Hallway" vnum="10234" zone="100">
+      <roomdescription>TBA
+</roomdescription>
+      <flags>8</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="door" exitinfo="1" keynum="0" toroom="10235">
+      <description>A sitting room is here.
+</description>
+    </exit>
+    <exit direction="down" keyword="door" exitinfo="25" keynum="0" toroom="10240">
+      <description>A hallway is here.
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="In the Sitting Room" vnum="10235" zone="100">
+      <roomdescription>TBA
+</roomdescription>
+      <flags>8</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="door" exitinfo="1" keynum="0" toroom="10236">
+      <description>The bedroom is here.
+</description>
+    </exit>
+    <exit direction="west" keyword="door" exitinfo="1" keynum="0" toroom="10234">
+      <description>The Hallway is here.
+</description>
+    </exit>
+    <exit direction="northeast" keyword="door" exitinfo="1" keynum="0" toroom="10238">
+      <description>The balcony is here.
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Bedroom" vnum="10236" zone="100">
+      <roomdescription>TBA
+</roomdescription>
+      <flags>8</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="door" exitinfo="1" keynum="-1" toroom="10237">
+      <description>The bathing chamber is here.
+</description>
+    </exit>
+    <exit direction="east" keyword="door" exitinfo="1" keynum="0" toroom="10238">
+      <description>The balcony is here.
+</description>
+    </exit>
+    <exit direction="south" keyword="door" exitinfo="1" keynum="-1" toroom="10235">
+      <description>The sitting room is here.
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="In the Bathing Chamber" vnum="10237" zone="100">
+      <roomdescription>TBA
+</roomdescription>
+      <flags>8</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="south" keyword="door" exitinfo="1" keynum="-1" toroom="10236">
+      <description>The bathroom is here.
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="On the Balcony" vnum="10238" zone="100">
+      <roomdescription>TBA
+</roomdescription>
+      <flags>8</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="west" keyword="door" exitinfo="1" keynum="0" toroom="10236">
+      <description>The Bedroom is here.
+</description>
+    </exit>
+    <exit direction="down" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="10239">
+      <description>There is a small garden below.
+</description>
+    </exit>
+    <exit direction="southwest" keyword="door" exitinfo="1" keynum="0" toroom="10235">
+      <description>The sitting room is here.
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="In the Garden" vnum="10239" zone="100">
+      <roomdescription>TBA
+</roomdescription>
+      <flags>8</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="up" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="10238">
+      <description>A balcony is here, up a flight of stairs.
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="A Hallway" vnum="10240" zone="100">
+      <roomdescription>This description is yet unfinished...
+</roomdescription>
+      <flags>8</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="door" exitinfo="1" keynum="0" toroom="10231">
+      <description>A guest room is here.
+</description>
+    </exit>
+    <exit direction="east" keyword="door" exitinfo="1" keynum="-1" toroom="10227">
+      <description>A guest room is here.
+</description>
+    </exit>
+    <exit direction="south" keyword="door" exitinfo="1" keynum="0" toroom="10221">
+      <description>A guest room is here.
+</description>
+    </exit>
+    <exit direction="west" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="10225">
+      <description>A hallway is here.
+</description>
+    </exit>
+    <exit direction="up" keyword="door" exitinfo="25" keynum="0" toroom="10234">
+      <description>A private hallway is here.
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="A Long Wood Paneled Hallway" vnum="10241" zone="100">
+      <roomdescription>This description is yet unfinished...
+</roomdescription>
+      <flags>8</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="10255">
+      <description>None
+</description>
+    </exit>
+    <exit direction="east" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="10256">
+      <description>None
+</description>
+    </exit>
+    <exit direction="south" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="10257">
+      <description>None
+</description>
+    </exit>
+    <exit direction="west" keyword="door" exitinfo="1" keynum="-1" toroom="10227">
+      <description>The hallway is here.
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="An Outside Balcony" vnum="10242" zone="100">
+      <roomdescription>This shaded balcony overlooks the western side of the grand city named
+Caemlyn.  From the streets below, merchants voices carry up into the
+air above.  The buildings that were built close together look almost
+like a maze with it spreading as far as the eye can see, past the outer
+gates of Caemlyn.  The balcony itself is decorated with several plants
+growing from pots as well as the ivy vines that have twined itself on
+the sides of the inn.
+</roomdescription>
+      <flags>0</flags>
+      <sector>City</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="10224">
+      <description>Light colored curtains cover two large doors.
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="A Private Bath Chamber" vnum="10243" zone="100">
+      <roomdescription>TBA
+</roomdescription>
+      <flags>8</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="south" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="10224">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="A Large Bedroom" vnum="10244" zone="100">
+      <roomdescription>This description is yet unfinished...
+</roomdescription>
+      <flags>8</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="10230">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="A Private Bath Chamber" vnum="10245" zone="100">
+      <roomdescription>TBA
+</roomdescription>
+      <flags>8</flags>
+      <sector>City</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="west" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="10230">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="An Outdoor Balcony Overlooking the City" vnum="10246" zone="100">
+      <roomdescription>This description is yet unfinished...
+</roomdescription>
+      <flags>0</flags>
+      <sector>City</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="south" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="10230">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="A Private Bedroom" vnum="10247" zone="100">
+      <roomdescription>This description is yet unfinished...
+</roomdescription>
+      <flags>8</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="west" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="10231">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="A Small Bath Chamber" vnum="10248" zone="100">
+      <roomdescription>This description is yet unfinished...
+</roomdescription>
+      <flags>8</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="10231">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="An Outdoor Balcony" vnum="10249" zone="100">
+      <roomdescription>TBA
+</roomdescription>
+      <flags>0</flags>
+      <sector>City</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="south" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="10231">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="A Large Bedroom" vnum="10250" zone="100">
+      <roomdescription>TBA
+</roomdescription>
+      <flags>8</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="west" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="10222">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="A Private Bath Chamber" vnum="10251" zone="100">
+      <roomdescription>TBA
+</roomdescription>
+      <flags>8</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="10222">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="A Small Bath Chamber" vnum="10252" zone="100">
+      <roomdescription>TBA
+</roomdescription>
+      <flags>8</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="west" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="10232">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="A Large Bedroom" vnum="10253" zone="100">
+      <roomdescription>TBA
+</roomdescription>
+      <flags>8</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="10232">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="A Large Balcony Overlooking the City" vnum="10254" zone="100">
+      <roomdescription>TBA
+</roomdescription>
+      <flags>0</flags>
+      <sector>City</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="south" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="10232">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="A Sitting Room" vnum="10255" zone="100">
+      <roomdescription>TBA
+</roomdescription>
+      <flags>8</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="south" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="10241">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Down the Hallway" vnum="10256" zone="100">
+      <roomdescription>TBA
+</roomdescription>
+      <flags>8</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="10259">
+      <description>None
+</description>
+    </exit>
+    <exit direction="east" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="10258">
+      <description>None
+</description>
+    </exit>
+    <exit direction="south" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="10260">
+      <description>None
+</description>
+    </exit>
+    <exit direction="west" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="10241">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="A Large Sitting Room" vnum="10257" zone="100">
+      <roomdescription>TBA
+</roomdescription>
+      <flags>8</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="10241">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Further Down the Hallway" vnum="10258" zone="100">
+      <roomdescription>TBA
+</roomdescription>
+      <flags>0</flags>
+      <sector>City</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="10259">
+      <description>None
+</description>
+    </exit>
+    <exit direction="east" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="10261">
+      <description>None
+</description>
+    </exit>
+    <exit direction="south" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="10260">
+      <description>None
+</description>
+    </exit>
+    <exit direction="west" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="10256">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="A Spacious Sitting Room" vnum="10259" zone="100">
+      <roomdescription>TBA
+</roomdescription>
+      <flags>8</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="10268">
+      <description>None
+</description>
+    </exit>
+    <exit direction="south" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="10258">
+      <description>None
+</description>
+    </exit>
+    <exit direction="west" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="10269">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="A Guest Room" vnum="10260" zone="100">
+      <roomdescription>TBA
+</roomdescription>
+      <flags>8</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="10258">
+      <description>None
+</description>
+    </exit>
+    <exit direction="east" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="10265">
+      <description>None
+</description>
+    </exit>
+    <exit direction="west" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="10266">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Hallway Ends" vnum="10261" zone="100">
+      <roomdescription>TBA
+</roomdescription>
+      <flags>0</flags>
+      <sector>City</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="10262">
+      <description>None
+</description>
+    </exit>
+    <exit direction="east" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="10264">
+      <description>None
+</description>
+    </exit>
+    <exit direction="south" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="10263">
+      <description>None
+</description>
+    </exit>
+    <exit direction="west" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="10258">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="A Well Decorated Sitting Room" vnum="10262" zone="100">
+      <roomdescription>TBA
+</roomdescription>
+      <flags>8</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="10273">
+      <description>None
+</description>
+    </exit>
+    <exit direction="east" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="10271">
+      <description>None
+</description>
+    </exit>
+    <exit direction="south" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="10261">
+      <description>None
+</description>
+    </exit>
+    <exit direction="west" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="10272">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="A Large Sitting Room" vnum="10263" zone="100">
+      <roomdescription>TBA
+</roomdescription>
+      <flags>8</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="10261">
+      <description>None
+</description>
+    </exit>
+    <exit direction="east" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="10275">
+      <description>None
+</description>
+    </exit>
+    <exit direction="south" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="10274">
+      <description>None
+</description>
+    </exit>
+    <exit direction="west" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="10276">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="\c14Delete \c09me, \c08please\c00" vnum="10264" zone="100">
+      <roomdescription>TBA
+</roomdescription>
+      <flags>0</flags>
+      <sector>City</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="west" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="10261">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="A Large Bedroom" vnum="10265" zone="100">
+      <roomdescription>TBA
+</roomdescription>
+      <flags>8</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="south" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="10267">
+      <description>None
+</description>
+    </exit>
+    <exit direction="west" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="10260">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="A Private Bath Chamber" vnum="10266" zone="100">
+      <roomdescription>TBA
+</roomdescription>
+      <flags>8</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="10260">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="A Private Balcony" vnum="10267" zone="100">
+      <roomdescription>TBA
+</roomdescription>
+      <flags>0</flags>
+      <sector>City</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="10265">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="A Large Private Bedroom" vnum="10268" zone="100">
+      <roomdescription>TBA
+</roomdescription>
+      <flags>8</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="10270">
+      <description>None
+</description>
+    </exit>
+    <exit direction="west" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="10259">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="An Elegant Bath Chamber" vnum="10269" zone="100">
+      <roomdescription>TBA
+</roomdescription>
+      <flags>8</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="10259">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="A Balcony Overlooking the City" vnum="10270" zone="100">
+      <roomdescription>
+TBA
+</roomdescription>
+      <flags>0</flags>
+      <sector>City</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="south" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="10268">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="A Beautiful Bath Chamber" vnum="10271" zone="100">
+      <roomdescription>TBA
+</roomdescription>
+      <flags>8</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="west" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="10262">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="A Spacious Bedroom" vnum="10272" zone="100">
+      <roomdescription>TBA
+</roomdescription>
+      <flags>8</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="10262">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="A Large, Private Balcony" vnum="10273" zone="100">
+      <roomdescription>TBA
+</roomdescription>
+      <flags>0</flags>
+      <sector>City</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="south" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="10262">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="A Private Balcony" vnum="10274" zone="100">
+      <roomdescription>tba
+</roomdescription>
+      <flags>8</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="10263">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="A Well Decorated Bedroom" vnum="10275" zone="100">
+      <roomdescription>TBA
+</roomdescription>
+      <flags>8</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="west" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="10263">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="A Small, Elegant Bath Chamber" vnum="10276" zone="100">
+      <roomdescription>TBA
+</roomdescription>
+      <flags>8</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="10263">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="A Small Bedroom" vnum="10277" zone="100">
+      <roomdescription>Several rugs decorate the wooden floors of this room.  A large four posted bed
+lays lazily in the center of the room.  With it's clean sheets, soft pillows
+and warm blankets, it looks quite inviting.  Off to the left there is a large
+dresser with five drawers meant for storage.  There is also a large chest at
+the foot of the bed, with engravings of a roaring lion etched into its frame.
+To the right there is a large oak desk against the wall, with several small
+cabinets and a polished mirror for dressing.  Close by, there is small
+washstand and several towels to clean the dirt off any tired traveler.    
+</roomdescription>
+      <flags>0</flags>
+      <sector>City</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="10224">
+      <description>The Sitting room.
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="\c03The Golden Harp\c00" vnum="10386" zone="100">
+      <roomdescription>You stand inside a tidy, albeit small, room that has a few tables and
+chairs. The windows are small and sparse, giving the entire place a rather
+glum look. There is one long wooden trestle table, over which whiskey
+and only whiskey is sold. No maids walk around in here to serve you.
+There is one grim looking fellow standing behind the table to take
+your order.
+</roomdescription>
+      <flags>158</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+  </room>
+  <room>
+    <roombasic title="Fredrik's flower shop" vnum="10387" zone="100">
+      <roomdescription>The room is filled with flowers of all kinds and colors.  Roses, daisies,
+heartsblush and forget-me-nots fill the room with fragrance.  In the 
+back of the shop is a counter made of thick blue glass and a large
+glass cupboard where the more sensitive and rare flowers are stored.
+</roomdescription>
+      <flags>158</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="door" exitinfo="0" keynum="0" toroom="30655">
+      <description>A door of intricate weave design with thin bands of iron.
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The training office" vnum="10389" zone="100">
+      <roomdescription>A room full of training implements of all possible as well as seemingly
+useless implements for the enhancing of various abilities, this room
+has a vaulted ceiling of naturally finished wood and walls painted
+white. It is stacked from floor ceiling with books, wooden weapons,
+mind games, agility testers and things for which you have no name, the
+stacks in seemingly random piles, although the old man who sits in here
+all day seems to know where everything is. This is obviously the place
+to go when you want to train, be it strength, intelligence, practice in
+the One Power, or similar.
+</roomdescription>
+      <flags>158</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="30640">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exdesc keyword="sign ooc">
+      <description>   The commands to convert practices to trains and visa versa are
+simply called &quot;tutor&quot; and &quot;achieve&quot; . Use the helpfiles to find
+out more about them, and about trains and practices in general.
+</description>
+    </exdesc>
+  </room>
+  <room>
+    <roombasic title="The questskill and questspell shop." vnum="10390" zone="100">
+      <roomdescription>You enter a large open pavillion.  Mounted on the wooden support
+beams are several boards, all covered with scraps of paper and 
+parchment.  The postings offer lessons in combat and weaponry from
+seasoned fighers, hunting and survival skills, and even call for 
+apprentices to learn languages, crafts and trades.
+(type list to see skills and spells available)
+</roomdescription>
+      <flags>158</flags>
+      <sector>Inside</sector>
+      <special>SkillShop</special>
+    </roombasic>
+    <exit direction="west" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="30683">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Thor's fine weapons" vnum="10391" zone="100">
+      <roomdescription>You stand in a large room which is bare, save for weapons of all fashions and
+tastes standing on racks on the floor and hanging on the walls.
+Most is of mediocre quality, but some is actually really good.
+</roomdescription>
+      <flags>158</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="30647">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The road south." vnum="10400" zone="100">
+      <roomdescription>The hot, dusty roads continues to the south, and a small, less used road can be
+seen leading eastwards, where you see well kept fields...Well, as well as they
+can be when they are dry as sand.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Field</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="30678">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exit direction="east" keyword="&lt;NONE&gt;" exitinfo="0" keynum="-1" toroom="10401">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exit direction="south" keyword="&lt;NONE&gt;" exitinfo="0" keynum="-1" toroom="10404">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Small road to a farmstead" vnum="10401" zone="100">
+      <roomdescription>The little, dusty road stretches east and west.  To the east is some kind of
+farm, a rather large one, with a barn and a large, two storey manor.  To the
+west you see a lot of travelers going north, towards Caemlyn, which spreads out
+with its large walls and proud pennants.    
+</roomdescription>
+      <flags>0</flags>
+      <sector>Field</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="&lt;NONE&gt;" exitinfo="0" keynum="-1" toroom="10402">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exit direction="west" keyword="&lt;NONE&gt;" exitinfo="0" keynum="-1" toroom="10400">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exdesc keyword="road">
+      <description>It has not been used very often lately, at least not by anything with wheels.
+Old, deep dug tracks from the wetter days can still be seen.
+</description>
+    </exdesc>
+  </room>
+  <room>
+    <roombasic title="A small dusty road" vnum="10402" zone="100">
+      <roomdescription>You see some wilting flowers on the side of the road. It must have been a grand
+sight to see that flowerbed blossom in the spring, but now it looks sad more
+than anything else. A ways to the west you can see people walking or riding
+north and south on the large, well travelled road to Caemlyn, which looms
+with its impressive stone wall to the north, across large, well kept fields.
+To the east the road continues, to turn south after a while.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Field</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="&lt;NONE&gt;" exitinfo="0" keynum="-1" toroom="10403">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exit direction="west" keyword="&lt;NONE&gt;" exitinfo="0" keynum="-1" toroom="10401">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="A turn in the small road" vnum="10403" zone="100">
+      <roomdescription>Here the road makes a turn around a large, man built pile of rocks and boulders.
+The pile looks impressive, and must be the result of generations of toil to
+keep the crop fields clear of obstructions.
+To the north, across a large field, Caemlyn proudly stretches out, banners flying
+in the wind and large mansions distinguisable above the tower walls.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Field</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="south" keyword="door" exitinfo="1" keynum="-1" toroom="10407">
+      <description>You see a rather large farmstead with a barn and a large two storey house.
+Right now there are no cattle outside, probably because of the heat.
+</description>
+    </exit>
+    <exit direction="west" keyword="&lt;NONE&gt;" exitinfo="0" keynum="-1" toroom="10402">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exdesc keyword="rocks boulders pile">
+      <description>It consists of rocks, from the size of your fist to three feet high
+boulders that must have been rolled to here.
+</description>
+    </exdesc>
+  </room>
+  <room>
+    <roombasic title="The road between Almoria village and Caemlyn" vnum="10404" zone="100">
+      <roomdescription>This is the main south road towards Caelmyn, which you even now can see 
+stretchoing out in the distance. The permanent motion of people makes this
+air around you permanently dusty, and some travellers curse slightly as
+the cough.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Field</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="&lt;NONE&gt;" exitinfo="0" keynum="-1" toroom="10400">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exit direction="east" keyword="&lt;NONE&gt;" exitinfo="0" keynum="-1" toroom="10405">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="A T-intersection" vnum="10405" zone="100">
+      <roomdescription>Here the road goes three ways; west, south and east.
+The road has apparently been used a -lot-, the stone that with such
+care has been set in the road has been severely worn down and in
+some places it has broken down entirely.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Field</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="&lt;NONE&gt;" exitinfo="0" keynum="-1" toroom="10406">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exit direction="south" keyword="&lt;NONE&gt;" exitinfo="0" keynum="-1" toroom="10411">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exit direction="west" keyword="&lt;NONE&gt;" exitinfo="0" keynum="-1" toroom="10404">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The resting spot" vnum="10406" zone="100">
+      <roomdescription>Here is a small area that is frequently visited by tired travellers.
+It's a small clearing, with coarse grass and otherwise mostly 
+single trees sparsely scattered. It is close to the Caemlyn road just
+to the west and is blissfully calm. Some travellers with a wagon
+have decided to take a break here presently and don't mind some
+company.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Field</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="550">
+      <description>None
+</description>
+    </exit>
+    <exit direction="west" keyword="&lt;NONE&gt;" exitinfo="0" keynum="-1" toroom="10405">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The kitchen" vnum="10407" zone="100">
+      <roomdescription>A room about 20 times 20 feet, it is freshly painted and very well kept.
+A large oven is built into the south wall, and you can smell freshly
+baked bread. There is a large table, surrounded by ten ordinary and
+one decorated chair, in the western side, and lots of iron pans and
+copper pots hang on the walls.
+</roomdescription>
+      <flags>154</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="door" exitinfo="1" keynum="-1" toroom="10403">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exit direction="east" keyword="door" exitinfo="1" keynum="-1" toroom="10408">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exit direction="south" keyword="door" exitinfo="1" keynum="-1" toroom="10412">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="A washing room" vnum="10408" zone="100">
+      <roomdescription>This room has a lot of large to mansize cauldrons in it, and in one
+some water is simmering. There are lots of clothes hanging to dry
+in here, making you duck as you pass them by. The smell of soap
+is filling the air, and it's almost warmer in here than outside.
+</roomdescription>
+      <flags>8</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="door" exitinfo="1" keynum="-1" toroom="10409">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exit direction="south" keyword="door" exitinfo="1" keynum="-1" toroom="10413">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exit direction="west" keyword="door" exitinfo="1" keynum="-1" toroom="10407">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Between the house and the barn" vnum="10409" zone="100">
+      <roomdescription>You are in a small, cleared area between the farm's barn and the living 
+quarters. There is a well in the middle of the area, and some chicken
+walk around peacefully.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Field</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="barn door" exitinfo="1" keynum="-1" toroom="10410">
+      <description>To the east two large, but rather rickety, barn doors stand ajar.
+</description>
+    </exit>
+    <exit direction="south" keyword="&lt;NONE&gt;" exitinfo="0" keynum="-1" toroom="10414">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exit direction="west" keyword="door" exitinfo="1" keynum="-1" toroom="10408">
+      <description>Just west of here, a door to the mansion can be seen, and you smell a faint
+odour of soap coming from there.
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="A barn" vnum="10410" zone="100">
+      <roomdescription>As you enter the barn, you're surprised to see how little hay there is in it,
+not even enough for half a year more. Also, some tools have seemingly not
+been used for quite a while, like the plough that stands against the eastern
+wall and rusts.
+
+</roomdescription>
+      <flags>8</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="west" keyword="door" exitinfo="1" keynum="-1" toroom="10409">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="On the road" vnum="10411" zone="100">
+      <roomdescription>Caemlyn's walls and spires fade into the distance; however there are
+plenty of things to watch anyways.  The travellelers that pass you by, for
+instance, are quite pleasing to the eye to gape at.  There seems to be a
+small forest to the southwest and there is an intersection in the street
+heading north and south.    
+</roomdescription>
+      <flags>0</flags>
+      <sector>Field</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="&lt;NONE&gt;" exitinfo="0" keynum="-1" toroom="10405">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exit direction="south" keyword="&lt;NONE&gt;" exitinfo="0" keynum="-1" toroom="10420">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="A living room" vnum="10412" zone="100">
+      <roomdescription>This room is sparsely furnished with rather expensive-looking leather
+couches, two smaller and a large table. A large carpet that looks
+imported covers most of the floor, and there are some simpler 
+paintings on the walls. There is even a bookshelf with about three
+dozen books, all well worn.
+</roomdescription>
+      <flags>8</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="door" exitinfo="1" keynum="-1" toroom="10407">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exit direction="east" keyword="door" exitinfo="1" keynum="-1" toroom="10413">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="To the second floor" vnum="10413" zone="100">
+      <roomdescription>There are some rather strange looking statues (ugly, to be honest)
+just in front of a stairway that takes the entire south and east
+side of the room. There seems to have been a rug covering the
+steps, since the middle of them are much brighter in hue, but
+it has been removed for some reason.
+</roomdescription>
+      <flags>8</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="door" exitinfo="1" keynum="-1" toroom="10408">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exit direction="west" keyword="door" exitinfo="1" keynum="-1" toroom="10412">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exit direction="up" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="10462">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Close to the food cellar" vnum="10414" zone="100">
+      <roomdescription>You stand in a dusty, cleared area between the mansion and a cellar that
+has been dug into a small, perhaps manmade, mound. To the northeast a
+large, seemingly newly painted barn stands.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Field</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="&lt;NONE&gt;" exitinfo="0" keynum="-1" toroom="10409">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exit direction="east" keyword="door" exitinfo="3" keynum="-1" toroom="10415">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The food cellar" vnum="10415" zone="100">
+      <roomdescription>Here at least ten man high shelves have been placed, and on each food
+has been neatly stacked. Preserved fruits, dried meat, jam, potato
+sacks, flour sacks....it seems as though most of the fresh food is
+running low, though. Perhaps they forgot to buy some the last week?
+</roomdescription>
+      <flags>8</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="west" keyword="door" exitinfo="3" keynum="-1" toroom="10414">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="By a small brook" vnum="10416" zone="100">
+      <roomdescription>A small brook makes its way through the fields.  Some willows surround it
+on both sides, hanging boughs dipping into the water.  The distance from
+the waterline to the beginning of vegetation gives the impression that the
+water level is much lower than normal.  There is much mud, dry as well as
+soggy on the sides.    
+</roomdescription>
+      <flags>0</flags>
+      <sector>Field</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="8901">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exit direction="east" keyword="&lt;NONE&gt;" exitinfo="0" keynum="-1" toroom="10417">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="At the end of the small forest" vnum="10417" zone="100">
+      <roomdescription>The forest slowly gives way to a field, and further west you see a small
+brook that seems to still contain water, since the vegetation over there
+still thrives,
+To the south and east the small forest continues.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Forest</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="&lt;NONE&gt;" exitinfo="0" keynum="-1" toroom="10418">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exit direction="west" keyword="&lt;NONE&gt;" exitinfo="0" keynum="-1" toroom="10416">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="In the small forest" vnum="10418" zone="100">
+      <roomdescription>Here, at the edge of the forest, some less tough trees have lost most
+of their leaves and look about ready to give up altogether.
+Lots of dried leaves litter the ground, and the undergrowth seems
+to be failing as well.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Forest</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="&lt;NONE&gt;" exitinfo="0" keynum="-1" toroom="10419">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exit direction="west" keyword="&lt;NONE&gt;" exitinfo="0" keynum="-1" toroom="10417">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="In the small forest" vnum="10419" zone="100">
+      <roomdescription>Here fir, pine and cedar trees battle with each other ever so slowly
+about the room, but all the trees seem to be in a bad shape from this
+hot, dry weather; the needles are beginning to dry and brown and fall
+off. You can see further than normally because of the drought, but
+that's a small consolation.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Forest</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="&lt;NONE&gt;" exitinfo="0" keynum="-1" toroom="10420">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exit direction="west" keyword="&lt;NONE&gt;" exitinfo="0" keynum="-1" toroom="10418">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="An intersection" vnum="10420" zone="100">
+      <roomdescription>Here the wide, stone paved Caemlyn road crosses another, far smaller path
+that goes west-east. To the west there's a small forest, to the east some
+fields, to the south and north the Caemlyn road vanishes in the haze.
+Some other travellers pass you by as you look around.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Field</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="&lt;NONE&gt;" exitinfo="0" keynum="-1" toroom="10411">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exit direction="east" keyword="&lt;NONE&gt;" exitinfo="0" keynum="-1" toroom="10421">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exit direction="south" keyword="&lt;NONE&gt;" exitinfo="0" keynum="-1" toroom="10424">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exit direction="west" keyword="&lt;NONE&gt;" exitinfo="0" keynum="-1" toroom="10419">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="In the fields" vnum="10421" zone="100">
+      <roomdescription>You're standing on the side of some farmer's fields, overlooking
+the landscape that stretches at all sides. You see the constant
+movement of people to the west, where the large, stone paved
+Caemlyn road goes, and far off to the east some deer stand in
+the field, eating on what scarce vegetation there is.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Field</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="south" keyword="&lt;NONE&gt;" exitinfo="0" keynum="-1" toroom="10425">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exit direction="west" keyword="&lt;NONE&gt;" exitinfo="0" keynum="-1" toroom="10420">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The graveyard on the hill" vnum="10422" zone="100">
+      <roomdescription>Here, on the top of the low hill, graves have been dug and tombstones
+been set, apparently during a long time; the text on some tombstones
+can no longer be read. Flowers have been put at some of the more 
+recent graves, and someone seems to be tending the area here.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Hills</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="&lt;NONE&gt;" exitinfo="0" keynum="-1" toroom="10423">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="In the small forest, close to a hill" vnum="10423" zone="100">
+      <roomdescription>The small forest continues to stretch north and south, and to the
+west you see a small hill, on which no trees grow. Apparently
+some people seem to go here on a regular basis, since there are
+recent tracks and a path that leads up to there.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Forest</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="&lt;NONE&gt;" exitinfo="0" keynum="-1" toroom="10418">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exit direction="south" keyword="&lt;NONE&gt;" exitinfo="0" keynum="-1" toroom="10426">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exit direction="west" keyword="&lt;NONE&gt;" exitinfo="0" keynum="-1" toroom="10422">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Caemlyn road" vnum="10424" zone="100">
+      <roomdescription>The road continues along the landscape, and a short way south it 
+takes a turn eastwards. There is a small path leading east from 
+here, but it seems to go nowhere; when you look east, you see
+only fields.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Field</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="&lt;NONE&gt;" exitinfo="0" keynum="-1" toroom="10420">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exit direction="east" keyword="&lt;NONE&gt;" exitinfo="0" keynum="-1" toroom="10425">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exit direction="south" keyword="&lt;NONE&gt;" exitinfo="0" keynum="-1" toroom="10429">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Along the fields" vnum="10425" zone="100">
+      <roomdescription>As you pass this area by, you notice how the small bushes that are 
+spread throughout the landscape seem to be drying out and die.
+Some are already dead, and the fauna in general looks damaged.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Field</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="&lt;NONE&gt;" exitinfo="0" keynum="-1" toroom="10421">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exit direction="west" keyword="&lt;NONE&gt;" exitinfo="0" keynum="-1" toroom="10424">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="In the small forest" vnum="10426" zone="100">
+      <roomdescription>A large firtree has fallen here a long time ago, spreading it's branches
+all over the area. To the northwest you see a small hill rise above
+the treetops, and soutwards the trail leaves the forest.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Forest</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="&lt;NONE&gt;" exitinfo="0" keynum="-1" toroom="10423">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exit direction="east" keyword="&lt;NONE&gt;" exitinfo="0" keynum="-1" toroom="10427">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exit direction="south" keyword="&lt;NONE&gt;" exitinfo="0" keynum="-1" toroom="10428">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="In the middle of the small forest" vnum="10427" zone="100">
+      <roomdescription>Here the silence is what strikes you the most; it's dead still here,
+as if the forest with all its inhabitants held their breaths in
+anticipation of something..Where are all the animals?
+</roomdescription>
+      <flags>0</flags>
+      <sector>Forest</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="&lt;NONE&gt;" exitinfo="0" keynum="-1" toroom="10419">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exit direction="west" keyword="&lt;NONE&gt;" exitinfo="0" keynum="-1" toroom="10426">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="On a path close to the small forest" vnum="10428" zone="100">
+      <roomdescription>You see long, flat fields to the west and south, stretching as far as you
+can see. Most of those fields have been cultivated, and small villages
+and farmsteads are spread throught the countryside.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Field</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="&lt;NONE&gt;" exitinfo="0" keynum="-1" toroom="10426">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exit direction="east" keyword="&lt;NONE&gt;" exitinfo="0" keynum="-1" toroom="10429">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Caemlyn road turns" vnum="10429" zone="100">
+      <roomdescription>Here the road takes a sharp turn to the east, creating some trouble
+as the longer wagons try to make their way without colliding with those
+heading the other way. To the east you see the road turn once more southwards,
+and to the west there is a small, nondescript path that seems to lead to
+the nearby little forest that lies to the northwest.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Field</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="&lt;NONE&gt;" exitinfo="0" keynum="-1" toroom="10424">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exit direction="east" keyword="&lt;NONE&gt;" exitinfo="0" keynum="-1" toroom="10430">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exit direction="west" keyword="&lt;NONE&gt;" exitinfo="0" keynum="-1" toroom="10428">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Caemlyn road turns" vnum="10430" zone="100">
+      <roomdescription>Here the road takes a turn around some rather high little hill made of
+stones. Far to the south, you see smokes slowly rising up from
+chimneys of the little village Almoria. The road seems to go straight
+through the little village.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Field</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="south" keyword="&lt;NONE&gt;" exitinfo="0" keynum="-1" toroom="10431">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exit direction="west" keyword="&lt;NONE&gt;" exitinfo="0" keynum="-1" toroom="10429">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Closing in to Almoria village" vnum="10431" zone="100">
+      <roomdescription>You see an intersection close by south, and further off a gathering of
+houses tell you that the village of Almoria is close. To the east and
+west large fields stretch out towards the horizon, and you see another 
+village far off to the east.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Field</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="&lt;NONE&gt;" exitinfo="0" keynum="-1" toroom="10430">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exit direction="south" keyword="&lt;NONE&gt;" exitinfo="0" keynum="-1" toroom="10435">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The marble quarry" vnum="10432" zone="100">
+      <roomdescription>You're standing in the midst of an intensive activity; men breaking
+stones, men shaping stone, men dragging stone. You see down the large
+hole that they appear to be making marble stones, and large ones too.
+A large pile of shaped marble stones lies on the northern side, and
+some men are working hard on adding another stone to that collection
+without damaging anything.
+</roomdescription>
+      <flags>0</flags>
+      <sector>City</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="&lt;NONE&gt;" exitinfo="0" keynum="-1" toroom="10433">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Close to the quarry" vnum="10433" zone="100">
+      <roomdescription>You're closing in to the end of the road, where a large hole of
+some sort has been dug. There are some men helping out in getting
+up a pushcart from down there, and a large pile of symmetric,
+white stones have been neatly piled on the side.
+</roomdescription>
+      <flags>0</flags>
+      <sector>City</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="&lt;NONE&gt;" exitinfo="0" keynum="-1" toroom="10434">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exit direction="west" keyword="&lt;NONE&gt;" exitinfo="0" keynum="-1" toroom="10432">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Along the small paved road" vnum="10434" zone="100">
+      <roomdescription>One might wonder why they would make a road here...It doesn't seem
+to lead to any particular place, and the road is paved with stones.
+To the east, the wide, and much used, Caemlyn road stretches 
+nort-south.
+</roomdescription>
+      <flags>0</flags>
+      <sector>City</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="&lt;NONE&gt;" exitinfo="0" keynum="-1" toroom="10435">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exit direction="west" keyword="&lt;NONE&gt;" exitinfo="0" keynum="-1" toroom="10433">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="At an intersection" vnum="10435" zone="100">
+      <roomdescription>Here two stone paved roads cross, the Caemlyn road goes south and north,
+and another, far smaller, leads east and west. The villagers must be
+rather prosperous to afford such luxury as a paved road.
+</roomdescription>
+      <flags>4</flags>
+      <sector>City</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="&lt;NONE&gt;" exitinfo="0" keynum="-1" toroom="10431">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exit direction="east" keyword="&lt;NONE&gt;" exitinfo="0" keynum="-1" toroom="10436">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exit direction="south" keyword="&lt;NONE&gt;" exitinfo="0" keynum="-1" toroom="10438">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exit direction="west" keyword="&lt;NONE&gt;" exitinfo="0" keynum="-1" toroom="10434">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The village dump" vnum="10436" zone="100">
+      <roomdescription>The first thing that hits you as you enter the area is the stink.
+There seems to be junk and human trash just about everywhere!
+Some freshyl built mounds look suspicious...could they just be
+burying it all?
+</roomdescription>
+      <flags>0</flags>
+      <sector>City</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="west" keyword="&lt;NONE&gt;" exitinfo="0" keynum="-1" toroom="10435">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Inside a house" vnum="10437" zone="100">
+      <roomdescription>You've entered one of the houses of Almoria village.
+It's rather tidy and looks well kept enough; paintings on
+one wall, a rather new carpet, some good furniture...
+But, this is not your house, so you decide to not go any
+further in and investigate.
+</roomdescription>
+      <flags>8</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="&lt;NONE&gt;" exitinfo="0" keynum="-1" toroom="10438">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Another intersection" vnum="10438" zone="100">
+      <roomdescription>You are now at the northern edge of the small, and rather cozy, village
+of Almoria. The Caemlyn road continues north and south, flanked on 
+both sides by small but sturdy looking houses. Almost all houses seem
+to have slate roofs, an unusual luxury in a village, and of the people
+you see, most seem to be rather well off.
+</roomdescription>
+      <flags>0</flags>
+      <sector>City</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="&lt;NONE&gt;" exitinfo="0" keynum="-1" toroom="10435">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exit direction="east" keyword="&lt;NONE&gt;" exitinfo="0" keynum="-1" toroom="10439">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exit direction="south" keyword="&lt;NONE&gt;" exitinfo="0" keynum="-1" toroom="10442">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exit direction="west" keyword="&lt;NONE&gt;" exitinfo="0" keynum="-1" toroom="10437">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="A small house" vnum="10439" zone="100">
+      <roomdescription>This room seems to belong to someone less well of than the others; the roof
+is thatched instead of slated, the rooms are sparsely furnished and the
+house itself looks run down.
+</roomdescription>
+      <flags>8</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="west" keyword="&lt;NONE&gt;" exitinfo="0" keynum="-1" toroom="10438">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The home of a young couple" vnum="10440" zone="100">
+      <roomdescription>This place is comfortable, even though it's in a terrible
+state of needing repairs and untidyness.
+Somehow the owners of this house has managed to create
+an orderly spot in one corner of the room.
+</roomdescription>
+      <flags>8</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="south" keyword="&lt;NONE&gt;" exitinfo="0" keynum="-1" toroom="10448">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="A retired guardsmans home" vnum="10441" zone="100">
+      <roomdescription>This room is obviously the main living room of this house, and
+everything in here is kept in order with a military precision.
+Not a speck of dust nor a book out of perfect symmetry in
+the book shelves.
+</roomdescription>
+      <flags>24</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="&lt;NONE&gt;" exitinfo="0" keynum="-1" toroom="10442">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="At a memorial" vnum="10442" zone="100">
+      <roomdescription>In the middle of the road that crosses Almoria village, they have erected
+a statue, depicting some long forgotten king. It was once rather impressive,
+but the marble has been worn down so much that no facial features can be
+discernible in the face.
+</roomdescription>
+      <flags>0</flags>
+      <sector>City</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="&lt;NONE&gt;" exitinfo="0" keynum="-1" toroom="10438">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exit direction="east" keyword="&lt;NONE&gt;" exitinfo="0" keynum="-1" toroom="10443">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exit direction="south" keyword="&lt;NONE&gt;" exitinfo="0" keynum="-1" toroom="10449">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exit direction="west" keyword="&lt;NONE&gt;" exitinfo="0" keynum="-1" toroom="10441">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="A middleaged widows home" vnum="10443" zone="100">
+      <roomdescription>This place is really neat, with lots of carpets, small trinkets
+on the tables, embroidered curtains and whatnot.
+On a mantelpiece there's a picture of a dashing young man
+on top of a horse.
+</roomdescription>
+      <flags>28</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="west" keyword="&lt;NONE&gt;" exitinfo="0" keynum="-1" toroom="10442">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Room #10444" vnum="10444" zone="100">
+      <roomdescription>This description is yet unfinished...
+</roomdescription>
+      <flags>8</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="south" keyword="&lt;NONE&gt;" exitinfo="0" keynum="-1" toroom="10450">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Inside a Small Brick House" vnum="10445" zone="100">
+      <roomdescription>You are in a small brick house. A large fireplace centers this one
+room home. Its massive chimney narrows as it approaches the roof.
+A small table with 2 chairs sits against the northern wall. Upon it
+lie two small baskets, one containing fruit, and the other bread.
+Against the western wall lies a small cot which looks as if it has
+been recently used.
+</roomdescription>
+      <flags>28</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="south" keyword="door" exitinfo="3" keynum="-1" toroom="10451">
+      <description>A door opens into the street.
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Just another ordinary house" vnum="10446" zone="100">
+      <roomdescription>Immediately as you step in here, you sense something wrong...
+Everything looks haphazard, dirty laundry has been just dropped on
+the ground, furniture has been cut through with a knife that still
+sticks from the back of a sofa. Someone has even bothered to hack
+at a wooden wall with an axe.
+</roomdescription>
+      <flags>8</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="door" exitinfo="3" keynum="-1" toroom="10447">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The west end of White Road" vnum="10447" zone="100">
+      <roomdescription>Here ends White road, and you see slate roofed houses on three
+sides. All looks very peaceful and quiet...too quiet. 
+Doesn't that house to the west look a bit ominous?
+</roomdescription>
+      <flags>0</flags>
+      <sector>City</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="&lt;NONE&gt;" exitinfo="0" keynum="-1" toroom="10448">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exit direction="south" keyword="&lt;NONE&gt;" exitinfo="0" keynum="-1" toroom="10453">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exit direction="west" keyword="door" exitinfo="3" keynum="-1" toroom="10446">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Along White Road" vnum="10448" zone="100">
+      <roomdescription>The endless, dusty motion of people moving along the Caemlyn Road
+has receded to just a few villagers taking a walk at a far more
+comfortable pace than the hurried, stressing pace that the
+passers-by move by. It's rather obvious why the village has named
+their only street White Road: the cobblestones are made of marble.
+</roomdescription>
+      <flags>0</flags>
+      <sector>City</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="&lt;NONE&gt;" exitinfo="0" keynum="-1" toroom="10440">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exit direction="east" keyword="&lt;NONE&gt;" exitinfo="0" keynum="-1" toroom="10449">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exit direction="west" keyword="&lt;NONE&gt;" exitinfo="0" keynum="-1" toroom="10447">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The centre of Almoria village" vnum="10449" zone="100">
+      <roomdescription>This is apparently the center of the village, the village well is here,
+and several benches have been placed throught the cobbled square.
+A very large, old oak stands in the northwest corner of the green,
+and it seems to cope with the unusual weather fairly well. To the south,
+the road to Far Madding starts, and to the north, the same road
+winds its way back to Camelyn.
+</roomdescription>
+      <flags>0</flags>
+      <sector>City</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="&lt;NONE&gt;" exitinfo="0" keynum="-1" toroom="10442">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exit direction="east" keyword="&lt;NONE&gt;" exitinfo="0" keynum="-1" toroom="10450">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exit direction="south" keyword="&lt;NONE&gt;" exitinfo="0" keynum="-1" toroom="10455">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exit direction="west" keyword="&lt;NONE&gt;" exitinfo="0" keynum="-1" toroom="10448">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Along White Road" vnum="10450" zone="100">
+      <roomdescription>The endless, dusty motion of people moving along the Caemlyn Road
+has receded to just a few villagers taking a walk at a far more
+comfortable pace than the hurried, stressing pace that the
+passers-by move by. It's rather obvious why the village has named
+their only street White Road: the cobblestones are made of marble.
+</roomdescription>
+      <flags>0</flags>
+      <sector>City</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="&lt;NONE&gt;" exitinfo="0" keynum="-1" toroom="10451">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exit direction="west" keyword="&lt;NONE&gt;" exitinfo="0" keynum="-1" toroom="10449">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The east end of White Road" vnum="10451" zone="100">
+      <roomdescription>The road ends here, and on three sides houses surround it. To the east
+is a shop of some sort, and north and south there are ordinary houses.
+</roomdescription>
+      <flags>0</flags>
+      <sector>City</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="door" exitinfo="3" keynum="-1" toroom="10445">
+      <description>A small house lies ahead.
+</description>
+    </exit>
+    <exit direction="east" keyword="&lt;NONE&gt;" exitinfo="0" keynum="-1" toroom="10452">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exit direction="west" keyword="&lt;NONE&gt;" exitinfo="0" keynum="-1" toroom="10450">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Marble marvels" vnum="10452" zone="100">
+      <roomdescription>This small shop contains one thing only, and that's marble statues
+of every kind, from small figurines to one life-size horse. Some 
+of the items are actually quite well made, looking very life like.
+</roomdescription>
+      <flags>158</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="west" keyword="&lt;NONE&gt;" exitinfo="0" keynum="-1" toroom="10451">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="An empty house" vnum="10453" zone="100">
+      <roomdescription>Immediately upon entering this house, you realise
+that it is abandoned...Thick layers of dust on the
+floor, no furniture to be seen anywhere, save for a 
+lonesome chair in the midst of this room.
+</roomdescription>
+      <flags>8</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="&lt;NONE&gt;" exitinfo="0" keynum="-1" toroom="10447">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Room #10454" vnum="10454" zone="100">
+      <roomdescription>This description is yet unfinished...
+</roomdescription>
+      <flags>8</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="&lt;NONE&gt;" exitinfo="0" keynum="-1" toroom="10448">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The road South" vnum="10455" zone="100">
+      <roomdescription>The Camelyn road here turns south, and heads out
+across the countryside twords the town of Far Madding.
+All around you you can see people walking to and from
+Camelyn and Almoria village.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="&lt;NONE&gt;" exitinfo="0" keynum="-1" toroom="10449">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exit direction="south" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="10600">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The angry farmer's home" vnum="10456" zone="100">
+      <roomdescription>This place is occupied by an angry farmer who
+immediately when you enter the room stands up and growls
+at you.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="&lt;NONE&gt;" exitinfo="1" keynum="-1" toroom="10450">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Room #10457" vnum="10457" zone="100">
+      <roomdescription>This description is yet unfinished...
+</roomdescription>
+      <flags>8</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="&lt;NONE&gt;" exitinfo="0" keynum="-1" toroom="10451">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Room #10458" vnum="10458" zone="100">
+      <roomdescription>This description is yet unfinished...
+</roomdescription>
+      <flags>0</flags>
+      <sector>City</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="&lt;NONE&gt;" exitinfo="0" keynum="-1" toroom="10456">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exit direction="south" keyword="&lt;NONE&gt;" exitinfo="0" keynum="-1" toroom="10459">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Room #10459" vnum="10459" zone="100">
+      <roomdescription>This description is yet unfinished...
+</roomdescription>
+      <flags>0</flags>
+      <sector>City</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="&lt;NONE&gt;" exitinfo="0" keynum="-1" toroom="10458">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exit direction="east" keyword="&lt;NONE&gt;" exitinfo="0" keynum="-1" toroom="10460">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exit direction="south" keyword="&lt;NONE&gt;" exitinfo="0" keynum="-1" toroom="10461">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Room #10460" vnum="10460" zone="100">
+      <roomdescription>This description is yet unfinished...
+</roomdescription>
+      <flags>8</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="west" keyword="&lt;NONE&gt;" exitinfo="0" keynum="-1" toroom="10459">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Room #10461" vnum="10461" zone="100">
+      <roomdescription>This description is yet unfinished...
+</roomdescription>
+      <flags>0</flags>
+      <sector>City</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="&lt;NONE&gt;" exitinfo="0" keynum="-1" toroom="10459">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The stairs down" vnum="10462" zone="100">
+      <roomdescription>Here there is only one thing; the stairs down. No furniture, no
+carpet, no window. It looks gloomy and spooky with no light source
+within the room.
+</roomdescription>
+      <flags>9</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="door" exitinfo="3" keynum="0" toroom="10465">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exit direction="west" keyword="door" exitinfo="1" keynum="0" toroom="10463">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exit direction="down" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="10413">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The maids bedroom" vnum="10463" zone="100">
+      <roomdescription>This room is rather small and sparsely furnished, but it is tidy.
+There is a small bed along the western wall, and a cupboard and a
+closet in the southwest corner. Beside the bed there is a small
+table with a brass oil lamp on it. You can see the fields through
+the window facing the west.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="door" exitinfo="7" keynum="10413" toroom="10464">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exit direction="east" keyword="door" exitinfo="1" keynum="0" toroom="10462">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="A larger bedroom" vnum="10464" zone="100">
+      <roomdescription>This room is dominated by the large double bed which is placed against the
+northern wall. On the floor is a thick, soft carpet that seems foreign,
+and there are two smaller night tables, one on each side of the bed.
+There is a heavy oaktable placed against the western wall, just below the
+window, and a sturdy chair of some black wood stands beside it.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="door" exitinfo="7" keynum="10413" toroom="10465">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exit direction="south" keyword="door" exitinfo="7" keynum="10413" toroom="10463">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The childrens bedroom" vnum="10465" zone="100">
+      <roomdescription>In this room no less than four beds of various are crammed together,
+and there is little room for anything else. Some childrens 
+paintings have been nailed to the wall, most of them depicting
+common animals.
+The room is rather untidy; there are clothes and toys here and there
+in here.
+</roomdescription>
+      <flags>10</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="south" keyword="door" exitinfo="3" keynum="0" toroom="10462">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exit direction="west" keyword="door" exitinfo="7" keynum="10413" toroom="10464">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Living Room" vnum="10466" zone="100">
+      <roomdescription>This large room is the main living area of the house. Couches rest
+against each of the various walls, apparently inviting the viewer to sit
+as they look very comfortable. A doorway stands in the southern wall, as
+well as two windows which look outwards over the city street. Plants rest
+at various intervals within, giving a sort of healthy, clean scent to the
+area. In each of the west, north, and east walls, a doorway is set, the
+doorway west leading to Sybil's Bedroom, the doorway east leading to the
+Guest Bedroom and the doorway north leading into the Kitchen. The wooden
+floors are covered with a variety of decent rugs, while upon the walls are
+various wall-furnishings which add a little bit of color to the room. A
+wooden stand rests in the southwest corner of the area with pegs and the
+like to hang cloaks and/or coats upon. In the southeast corner of the
+room rests a large stand with a rectangular glass tank which rests atop of
+it. The glass tank itself is filled to the brim with clear, &amp;cc&amp;Crys&amp;Wtal&amp;Clin&amp;ce
+&amp;Cw&amp;ca&amp;Ct&amp;ce&amp;Cr&amp;n, while within that water, a variety of colored fish swim about in a
+calm, lazy sort of way. 
+</roomdescription>
+      <flags>65546</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="door north" exitinfo="1" keynum="-1" toroom="10469">
+      <description/>
+    </exit>
+    <exit direction="east" keyword="door east" exitinfo="1" keynum="-1" toroom="10468">
+      <description/>
+    </exit>
+    <exit direction="west" keyword="door west" exitinfo="1" keynum="-1" toroom="10467">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Sybil's Bedroom" vnum="10467" zone="100">
+      <roomdescription>This large room seems to be kept very well tended, as not as single speck
+of dust can be seen about the area, however the room as a well lived-in
+look from the various personal items which are scattered about the room.
+Set into the western wall is a window which looks outwards, while resting
+against that wall, just under the windowsill, is a finely crafted wooden
+desk with an assortment of scattered papers and scrolls littering every
+available inch of its surface. Upon the southern wall a large, silver
+mirror hangs, while just blow it a polished oak drawer chest rests. In
+the southwestern corner of the room rests a large, sturdily constructed
+bed, neatly made with blankets and sheets of earthy tones, while opposite,
+in the northwest corner of the room is a large bookshelf. Resting within
+the bookshelf is an assortment of varying books, the books themselves from
+different nations and in an assortment of languages. Oftentimes, a &amp;Kblack&amp;n
+cat can be seen lulling about on a small scrollwork throw-rug which rests
+directly before the bookshelf, while siting at the side of the bed is a
+small table, with a bronze lamp resting upon it. Directly at the base of
+the bed, stands a small wooden chest, polished and well-kept, with a large
+padlock keeping it shut at all times. 
+</roomdescription>
+      <flags>40</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="door east" exitinfo="1" keynum="-1" toroom="10466">
+      <description/>
+    </exit>
+    <exit direction="west" keyword="" exitinfo="0" keynum="0" toroom="4071">
+      <description/>
+    </exit>
+    <dgscript vnum="10467"/>
+  </room>
+  <room>
+    <roombasic title="A Guest Bedroom" vnum="10468" zone="100">
+      <roomdescription>This large room is easily dominated by the bed which rests against the
+eastern wall, directly beneath a window which looks outwards into the
+city. To either side of the bed rests a small wooden stand holding
+various knick-knacks but most notably a bronze lamp with which to
+illuminate the room. Against the southern wall rests a small chest of
+drawers while against the northern wall rests a small desk with a
+comfortable-appearing chair sitting before it. A rug rests just past the
+doorway, spreading out across the wooden floor and ending just at the edge
+of the bed. Set into the western wall of this room is a doorway, which
+leads back to the living room of this comfortable house. 
+</roomdescription>
+      <flags>10</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="west" keyword="door west" exitinfo="1" keynum="-1" toroom="10466">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Kitchen" vnum="10469" zone="100">
+      <roomdescription>This large kitchen seems to be kept tidy at all times.  Shelves line each
+of the walls along with cupboards and drawers, holding a myriad of various
+cooking utensils as well as eating utensils.  A sink it set into the shelf
+which rests against the western wall, while in the northwestern corner is
+a stone oven.  In the southwestern corner of the room is a large basin
+which seems to be usually filled to the brim with clear waters.  Set into
+the the north, south and eastern walls are doorways which lead to various
+areas, while in the northeast corner of the room is a trapdoor leading
+downwards, and in the southeast corner of the room is a string which is
+attached to a dropable stairway which leads up into the attic.    
+</roomdescription>
+      <flags>10</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="backdoor door north" exitinfo="1" keynum="-1" toroom="10473">
+      <description/>
+    </exit>
+    <exit direction="east" keyword="door east" exitinfo="1" keynum="-1" toroom="10470">
+      <description/>
+    </exit>
+    <exit direction="south" keyword="door south" exitinfo="1" keynum="-1" toroom="10466">
+      <description/>
+    </exit>
+    <exit direction="up" keyword="trapdoor up" exitinfo="1" keynum="-1" toroom="10472">
+      <description/>
+    </exit>
+    <exit direction="down" keyword="trapdoor down" exitinfo="1" keynum="-1" toroom="10471">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Gaidin's Bedroom" vnum="10470" zone="100">
+      <roomdescription>This large room could be considered bare of accourtment as it is certainly
+a modestly decorated room.  Resting against each of the northern, eastern
+and southern walls rests a meager cot, while at the ends of each of the
+cots sits a wooden chest.  Set into the eastern wall is a large window
+which has apparently been boarded up by someone, although it is a rather
+tidy job, little sunlight managing to creep through the cracks between the
+wooden boards.  Set into each the northern, eastern and southern walls are
+wall brackets which hold torches for the dark hours of the night.  In the
+western wall a door is set which leads to the kitchen.    
+</roomdescription>
+      <flags>11</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="west" keyword="door west" exitinfo="1" keynum="-1" toroom="10469">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Cellar" vnum="10471" zone="100">
+      <roomdescription>This large cellar is rather dark and damp, although it is kept well
+cleaned and well tended at all times.  Wall brackets have been set into
+the each of the four walls, bearing torches which provide for ilumination
+in the dark area.  Shelves line each of the four walls, a myriad of
+varying foodstuffs and salted meats and the like scattered amongst them.
+Barrels of water and casks of brandy rest beneath the various shelves, as
+well as large sacks of grain, salt and even a large sack of sugar.  In the
+northeastern corner of this room is a stairway which leads upwards to a
+trapdoor which leads into the kitchen.    
+</roomdescription>
+      <flags>2091</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="up" keyword="trapdoor up" exitinfo="1" keynum="-1" toroom="10469">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Attic" vnum="10472" zone="100">
+      <roomdescription>This large area is quite obviously an attic.  Dust and cobwebs seem to
+inhabit this area in thickness while scattered about the area are a
+variety of boxes.  These boxes are all packed belongings which seem to
+belong to the current inhabitants of the house.  Set into the eastern
+portion of the wall of this area is a small window which overlooks the
+road while set into the western portion of the floor of this area is a
+stairway which can be slid down to the level below or pulled up to manage
+space.  Wooden crossbeams and the like cause for an uneven footing in this
+area while essentially this area is cluttered with junk.    
+</roomdescription>
+      <flags>2091</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="down" keyword="trapdoor down" exitinfo="1" keynum="-1" toroom="10469">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Back Yard (Training Yard)" vnum="10473" zone="100">
+      <roomdescription>This large area is completely fenced in, by a tall, wooden fence which has
+been painted a pristine white color.  The fence stands almost two spans
+high, and is formed of thick wood, blocking the likelihood of outsiders
+managing to enter the house from the outside in this area.  Two benches
+rest in this area, one in the eastern portion and one in the western, both
+of these resting not far from the fence, while in the northeastern corner
+of this area is a wooden outhouse.  Set up are three wooden shafts which
+have been driven into the ground, while attached to these wooden shafts
+are pairs of old, ragged clothing which have apparently been filled with
+straw, perhaps these are target dummies?  Each of the dummies has a
+variety of small incisions, showing that they are indeed used for
+practice, quite possibly practice with a keen-edged blade.  To the south
+is the house, and the backdoor leading into the house.    
+</roomdescription>
+      <flags>2</flags>
+      <sector>City</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="south" keyword="backdoor door south" exitinfo="1" keynum="-1" toroom="10469">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Outhouse" vnum="10475" zone="100">
+      <roomdescription>The interior of the outhouse is rather modest, being wholly formed of
+wood.  Set against the opposite wall from the doorway is a padded toilet
+seat, while beneath is a large hole and only darkness within.  This area
+is well-tended and often cleaned, as well as the privy which lies behind
+and beneath the outhouse.  Adorning each of eastern and western walls of
+this outhouse are scrollwork wall hangings, which tend to distract the eye
+or mind of a one using the outhouse.    
+</roomdescription>
+      <flags>65707</flags>
+      <sector>Inside</sector>
+      <special>Hospital</special>
+    </roombasic>
+    <exdesc keyword="picture">
+      <description>Oddly enough, it seems as if someone has taken a finely drawn portrait of
+a beautiful woman and tacked it up beneath one of the scrollwork wall
+hangings.  The woman is beautiful, astoundingly so, and completely nude,
+as she stands displaying her body fully to the viewer of the picture.  
+She has long, dark hair and matching eyes, with a pert little nose and a
+nicely, angular face.  Pouty lips are formed into a wide smile, while
+pearly whites are somewhat visible.    
+</description>
+    </exdesc>
+  </room>
+</rooms>

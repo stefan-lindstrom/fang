@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<zone vnum="295" lifespan="30" top="29599" mode="2" lock="no">
+  <name>Forms School</name>
+  <resetcmds numberof="13">
+    <cmd command="ReadMobile" ifflag="no">
+      <args arg1="29507" arg2="1" arg3="29500"/>
+      <line lineno="7"/>
+    </cmd>
+    <cmd command="SetStateOfDoor" ifflag="no">
+      <args arg1="29523" arg2="3" arg3="1"/>
+      <line lineno="11"/>
+    </cmd>
+    <cmd command="SetStateOfDoor" ifflag="no">
+      <args arg1="29523" arg2="0" arg3="1"/>
+      <line lineno="15"/>
+    </cmd>
+    <cmd command="SetStateOfDoor" ifflag="no">
+      <args arg1="29598" arg2="1" arg3="1"/>
+      <line lineno="19"/>
+    </cmd>
+    <cmd command="ReadMobile" ifflag="no">
+      <args arg1="29524" arg2="1" arg3="29524"/>
+      <line lineno="23"/>
+    </cmd>
+    <cmd command="UNKNOWN" ifflag="yes">
+      <args arg1="29513" arg2="5000" arg3="0"/>
+      <line lineno="27"/>
+    </cmd>
+    <cmd command="Obj2Mob" ifflag="yes">
+      <args arg1="29512" arg2="5000" arg3="0"/>
+      <line lineno="31"/>
+    </cmd>
+    <cmd command="Obj2Mob" ifflag="yes">
+      <args arg1="29514" arg2="5000" arg3="0"/>
+      <line lineno="35"/>
+    </cmd>
+    <cmd command="Obj2Mob" ifflag="yes">
+      <args arg1="29511" arg2="1000" arg3="0"/>
+      <line lineno="39"/>
+    </cmd>
+    <cmd command="Obj2Mob" ifflag="yes">
+      <args arg1="29510" arg2="1000" arg3="0"/>
+      <line lineno="43"/>
+    </cmd>
+    <cmd command="SetStateOfDoor" ifflag="no">
+      <args arg1="29524" arg2="2" arg3="1"/>
+      <line lineno="47"/>
+    </cmd>
+    <cmd command="UNKNOWN" ifflag="no">
+      <args arg1="29501" arg2="1" arg3="29512"/>
+      <line lineno="51"/>
+    </cmd>
+    <cmd command="STOP"/>
+  </resetcmds>
+</zone>

@@ -1,0 +1,112 @@
+#6400
+Trolloc Ways~
+A wandering Trolloc~
+A wandering Trolloc wanders about the Ways.
+~
+The Trolloc looks as if it might be lost, which seems to have upset
+the creature, which is not good for you.
+~
+2104380 0 0 E
+100 -30 -5 641 30d150+2000 25d25+50
+0 100
+8 8 1
+BareHandAttack: 7
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Bash: 100
+Stun: 100
+E
+#6401
+Myrddraal Ways~
+A black robed Myrddraal~
+A black robed myrddraal travels the ways.
+~
+The pasty white flesh of the myrddraal looks even more frightening
+in the wane light of the Ways. The myrddraal himself looks as if he would
+rather not be here, which is rather unfortunate for you as you will
+provide him with a little distraction.
+~
+2757816 526384 0 E
+170 -80 -15 641 30d200+5000 30d50+50
+50 100
+8 8 1
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Dirtkick: 100
+Disarm: 100
+Stun: 100
+P
+OnEntry
+ActionTo "stun"
+End
+Q
+E
+#6402
+Greyman Ways~
+a greyman~
+A greyman stalks the ways
+~
+The greyman is almost impossible to see, but you can clearly see the 
+gleaming dagger in his hand.
+~
+2104504 3672112 0 E
+100 -55 -5 641 30d100+500 30d100+30
+200 100
+8 8 1
+BareHandAttack: 14
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Trip: 100
+Stun: 100
+P
+OnTick
+Action "hide"
+End
+OnEntry & ! Darkfriend
+Emote "a gleaming dagger stabs you in the back!"
+ActionTo "kill"
+Action "flee"
+Action "hide"
+End
+Q
+E
+#6497
+spawner machingnol opener~
+spawner opener~
+spawner opener
+~
+It looks, err, unfinished.
+~
+8 2098 0 E
+200 20 10 641 1d100+0 1d1+0
+0 0
+6 8 0
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnRandom 99
+Action "stand"
+Action "enter spawner"
+End
+OnRandom 20
+PurgeMob
+End
+Q
+E
+$

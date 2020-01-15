@@ -1,0 +1,1360 @@
+<?xml version="1.0"?>
+<objects>
+  <object vnum="18100" name="Dragonsworn belt" special="NONE">
+    <description>\c00a thick \c03leather \c23belt \c00with a small \c01dragon \c00embroidered upon it, is lying here.</description>
+    <shortdesc>\c00a thick \c03leather \c23belt \c00with a small \c01dragon \c00embroidered upon it</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="HITROLL" modifier="40"/>
+    <objaffect location="DAMROLL" modifier="40"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="10000" value2="0" value3="-1" value4="0"/>
+      <flags type="15" wear="2049" extra="69768"/>
+      <data weight="10" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <objprog main="OnWear" argtype="STRING" argument="look board">
+      <sideterm number="Guild" not="FALSE" argtype="STRING" argument="Dragonsworn"/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="Destroy" argtype="VOID" argument="NONE"/>
+    </objprog>
+    <objprog main="OnSteal" argtype="STRING" argument="look board">
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+    </objprog>
+    <dgscript vnum="18100"/>
+  </object>
+  <object vnum="18101" name="boots dragonsworn" special="NONE">
+    <description>\c00a pair of well made \c23black \c03leather \c23boots\c00, is lying here.</description>
+    <shortdesc>\c00a pair of well made \c23black \c03leather \c23boots\c00</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="XATTACKS" modifier="1"/>
+    <objaffect location="HITROLL" modifier="10"/>
+    <objaffect location="DAMROLL" modifier="10"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="100" value2="0" value3="0" value4="0"/>
+      <flags type="9" wear="65" extra="77960"/>
+      <data weight="5" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <objprog main="OnWear" argtype="STRING" argument="look board">
+      <sideterm number="Guild" not="FALSE" argtype="STRING" argument="dragonsworn"/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="Destroy" argtype="VOID" argument="NONE"/>
+    </objprog>
+    <objprog main="OnSteal" argtype="STRING" argument="look board">
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+    </objprog>
+    <dgscript vnum="18100"/>
+  </object>
+  <object vnum="18102" name="0" special="NONE">
+    <description>&amp;na long bladed dagger with a &amp;rdragon&amp;n engraved on the pommel, is lying here.</description>
+    <shortdesc>&amp;wa long bladed dagger with a &amp;rdragon&amp;n engraved on the pommel</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="10" value3="10" value4="14"/>
+      <flags type="5" wear="8193" extra="77960"/>
+      <data weight="4" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <objprog main="OnWear" argtype="STRING" argument="look board">
+      <sideterm number="Guild" not="FALSE" argtype="STRING" argument="dragonsworn"/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="Destroy" argtype="VOID" argument="NONE"/>
+    </objprog>
+    <dgscript vnum="18100"/>
+  </object>
+  <object vnum="18103" name="dragonsworn lantern light" special="NONE">
+    <description>\c00a \c23s\c07i\c14lv\c07e\c23r \c00lantern with a \c01dragon \c00emblazed upon it, lying here.</description>
+    <shortdesc>\c00a \c23s\c07i\c14lv\c07e\c23r \c00lantern with a \c01dragon \c00emblazed upon it</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="XATTACKS" modifier="2"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="-1" value4="0"/>
+      <flags type="1" wear="16385" extra="77960"/>
+      <data weight="7" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <objprog main="OnActionToCarry" argtype="STRING" argument="hold">
+      <sideterm number="Guild" not="FALSE" argtype="STRING" argument="dragonsworn"/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="Destroy" argtype="VOID" argument="NONE"/>
+    </objprog>
+    <objprog main="OnSayRoom" argtype="STRING" argument="Are you illegally wearing geq?">
+      <sideterm number="Guild" not="FALSE" argtype="STRING" argument="Dragonsworn"/>
+      <action number="Force" argtype="STRING" argument="say Yes. Punish me oh great one! I am unworthy."/>
+      <action number="Destroy" argtype="VOID" argument="NONE"/>
+    </objprog>
+    <objprog main="OnSteal" argtype="STRING" argument="Are you illegally wearing geq?">
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+    </objprog>
+    <dgscript vnum="18100"/>
+  </object>
+  <object vnum="18104" name="dragonsworn sword" special="NONE">
+    <description>&amp;wa long sword with a &amp;rdragon&amp;n wrapped around the hilt, is lying here.</description>
+    <shortdesc>&amp;wa longsword with a &amp;rdragon&amp;n wrapped around the hilt</shortdesc>
+    <actiondesc>\c00</actiondesc>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="10" value3="10" value4="14"/>
+      <flags type="5" wear="32769" extra="77960"/>
+      <data weight="12" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <objprog main="OnSteal" argtype="STRING" argument="Are you illegally wearing geq?">
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+    </objprog>
+    <objprog main="OnActionWear" argtype="STRING" argument="wield">
+      <sideterm number="Guild" not="FALSE" argtype="STRING" argument="dragonsworn"/>
+      <action number="Destroy" argtype="VOID" argument="NONE"/>
+    </objprog>
+    <dgscript vnum="18100"/>
+  </object>
+  <object vnum="18105" name="section key DS" special="NONE">
+    <description>A secton key was left laying here.</description>
+    <shortdesc>a section leader's key</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="18" wear="1" extra="69768"/>
+      <data weight="1" cost="1" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="18106" name="Kindrana's Key" special="NONE">
+    <description>Undefined</description>
+    <shortdesc>a &amp;Wsilver&amp;n key with &amp;Ygold&amp;n markings stating the name &amp;MKindrana&amp;n.</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="18" wear="1" extra="70088"/>
+      <data weight="0" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="18107" name="Masema's key DS" special="NONE">
+    <description>A silver key with gold markings stating the name Masema sits here.</description>
+    <shortdesc>a &amp;Wsilver&amp;n key with &amp;Ygold&amp;n markings stating the name &amp;RMasema&amp;n.</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="18" wear="1" extra="70376"/>
+      <data weight="0" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="18108" name="key shai'tanskey DS" special="NONE">
+    <description>A key lies here gathering dust.</description>
+    <shortdesc>a key of iron</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="18" wear="1" extra="0"/>
+      <data weight="1" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="18109" name="Masema key DS" special="NONE">
+    <description>An &amp;Kiron&amp;n key with the name &amp;GMasema&amp;n engraved upon it lies here.</description>
+    <shortdesc>an &amp;Kiron&amp;n key with the name &amp;GMasema&amp;n engraved upon it</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="18" wear="1" extra="69832"/>
+      <data weight="0" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="18110" name="key DS" special="NONE">
+    <description>\c07Key to the \c01Dragonsworn \c07guild area\c00</description>
+    <shortdesc>\c07Key to the \c01Dragonsworn \c07guild area\c00</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="18" wear="1" extra="69832"/>
+      <data weight="0" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <dgscript vnum="18100"/>
+  </object>
+  <object vnum="18111" name="Dylaer's key DS" special="NONE">
+    <description>An unfinished object is lying here.</description>
+    <shortdesc>a Solid &amp;YGold&amp;n Key</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="18" wear="1" extra="69832"/>
+      <data weight="0" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="18112" name="A Prison Key" special="NONE">
+    <description>A Cell Key</description>
+    <shortdesc>a Cell Key</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="18" wear="1" extra="69832"/>
+      <data weight="0" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="18113" name="Theodore's Key" special="NONE">
+    <description>An odd looking key sits here.</description>
+    <shortdesc>a &amp;Bblue&amp;n key</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="18" wear="1" extra="69832"/>
+      <data weight="0" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="18114" name="spy key DS" special="NONE">
+    <description>A small Ivory key, lies here.</description>
+    <shortdesc>a small Ivory key</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="18" wear="1" extra="69832"/>
+      <data weight="0" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="18115" name="pewt DS" special="NONE">
+    <description>Pewt's Key, lies ehre.</description>
+    <shortdesc>Pewt's Key</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="18" wear="1" extra="69832"/>
+      <data weight="0" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="18116" name="key mart" special="NONE">
+    <description>Mart's key lies here.</description>
+    <shortdesc>Mart's key</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="18" wear="1" extra="69832"/>
+      <data weight="0" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="18117" name="memorial" special="NONE">
+    <description>\c07A beautiful \c23M\c07a\c23r\c07b\c23l\c07e stone with several ingravings upon it.\c00</description>
+    <shortdesc>\c07A beautiful \c23M\c07a\c23r\c07b\c23l\c07e stone with several ingravings upon it.\c00</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="12" wear="0" extra="0"/>
+      <data weight="0" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="18118" name="cookie cutie" special="NONE">
+    <description>\c07Your such a \c13C\c06u\c13t\c06i\c13e \c07Cookie!\c00</description>
+    <shortdesc>&amp;wYou're such a &amp;CC&amp;cu&amp;Ct&amp;ci&amp;Ce&amp;w Cookie!&amp;n</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="19" wear="1" extra="64"/>
+      <data weight="0" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="18119" name="&amp;BJuliet's Key&amp;n" special="NONE">
+    <description>A shiny object is lying here.</description>
+    <shortdesc>a silver key to a room.</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="18" wear="1" extra="65992"/>
+      <data weight="0" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="18120" name="Ayanna" special="NONE">
+    <description>A small \c03br\c10a\c03ss\c00 key with \c03Bayani\c00 engraved upon it.</description>
+    <shortdesc>a small \c03br\c10a\c03ss\c00 key with \c03Bayani\c00 engraved upon it.</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="18" wear="1" extra="69832"/>
+      <data weight="0" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="18121" name="club cudgel" special="NONE">
+    <description>A wooden club wrapped with steel bands has been dropped here.</description>
+    <shortdesc>a wooden club wrapped with steel bands</shortdesc>
+    <actiondesc>This club looks like it could split a skull!
+</actiondesc>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="4" value2="1" value3="8" value4="5"/>
+      <flags type="5" wear="8193" extra="0"/>
+      <data weight="3" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="18122" name="potato  DS" special="NONE">
+    <description>\c07a large \c03p\c10o\c03t\c10a\c03t\c10o\c00, lies here.</description>
+    <shortdesc>\c07a large \c03p\c10o\c03t\c10a\c03t\c10o\c00</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="19" wear="1" extra="64"/>
+      <data weight="1" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="18123" name="bed" special="NONE">
+    <description>\c06A medium sized bed covered with a deep \c02f\c23o\c02r\c23e\c02s\c23t\c00 \c02green\c00 bedspread with a simple pillow</description>
+    <shortdesc>\c06A medium sized bed covered with a deep \c02f\c23o\c02r\c23e\c02s\c23t\c00 \c02green\c00 bedspread with a simple pillow</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="2" value2="0" value3="3" value4="0"/>
+      <flags type="24" wear="0" extra="0"/>
+      <data weight="100000000" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="18124" name="Chair" special="NONE">
+    <description>&amp;cA simple &amp;ywooden&amp;n armless chair with a tall intricately carved back, with a &amp;gcushioned&amp;n seat</description>
+    <shortdesc>&amp;cA simple &amp;ywooden&amp;n armless chair with a tall intricately carved back, with a &amp;gcushioned&amp;n seat</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="1" value4="0"/>
+      <flags type="24" wear="0" extra="0"/>
+      <data weight="2147483647" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="18125" name="Bed" special="NONE">
+    <description>&amp;cA simple bed with a &amp;Bdark blue &amp;ccoverlet spread atop it along with a pair of plump pillows stands here.&amp;n</description>
+    <shortdesc>&amp;cA simple bed with a &amp;Bdark blue &amp;ccoverlet spread atop it along with a pair of plump pillows&amp;n</shortdesc>
+    <actiondesc>\c00</actiondesc>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="2" value2="0" value3="3" value4="0"/>
+      <flags type="24" wear="0" extra="0"/>
+      <data weight="2147483647" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="18126" name="trunk chest" special="NONE">
+    <description>&amp;cA rectangular, &amp;Ks&amp;ct&amp;we&amp;Ke&amp;cl&amp;wb&amp;Ko&amp;cu&amp;wn&amp;Kd &amp;ywood &amp;ctrunk with a a heavy &amp;Klock &amp;cattached to the front remains here.&amp;n</description>
+    <shortdesc>&amp;cA rectangular, &amp;Ks&amp;ct&amp;we&amp;Ke&amp;cl&amp;wb&amp;Ko&amp;cu&amp;wn&amp;Kd &amp;ywood &amp;ctrunk with a a heavy &amp;Klock &amp;cattached to the front&amp;n</shortdesc>
+    <actiondesc>\c00</actiondesc>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="1000" value2="1" value3="-1" value4="0"/>
+      <flags type="15" wear="0" extra="0"/>
+      <data weight="1000" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="18127" name="Cedric key" special="NONE">
+    <description>\c06A simple \c23ir\c06o\c23n \c06key with the name \c01Cedric \c06enscribed\c00</description>
+    <shortdesc>\c06A simple \c23ir\c06o\c23n \c06key with the name \c01Cedric \c06enscribed\c00</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="18" wear="1" extra="69832"/>
+      <data weight="0" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="18128" name="Darnay nose" special="NONE">
+    <description>\c01D\c02a\c03r\c04n\c05a\c06y\c07'\c08s\c09 \c01N\c02o\c03s\c04e\c05!\c00</description>
+    <shortdesc>\c01D\c02a\c03r\c04n\c05a\c06y\c07'\c08s\c09 \c01N\c02o\c03s\c04e\c05!\c00</shortdesc>
+    <actiondesc>\c01D\c02a\c03r\c04n\c05a\c06y\c07'\c08s\c09 \c01N\c02o\c03s\c04e\c05!\c00
+</actiondesc>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="15" wear="8193" extra="69704"/>
+      <data weight="1" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="18129" name="Darnay Arm" special="NONE">
+    <description>\c01D\c02a\c03r\c04n\c05a\c06y\c07'\c08s\c09 \c01A\c02r\c03m\c04!\c00</description>
+    <shortdesc>\c01D\c02a\c03r\c04n\c05a\c06y\c07'\c08s\c09 \c01A\c02r\c03m\c04!\c00</shortdesc>
+    <actiondesc>\c01D\c02a\c03r\c04n\c05a\c06y\c07'\c08s\c09 \c01A\c02r\c03m\c04!\c00
+</actiondesc>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="9" wear="257" extra="69832"/>
+      <data weight="2" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="18130" name="sign dragonsworn" special="NONE">
+    <description>An entirely &amp;gOOC&amp;n sign stands here.</description>
+    <shortdesc>a sign</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="2" wear="0" extra="71752"/>
+      <data weight="1000000" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <exdesc keyword="sign">
+      <description> Guildboard: southeast; w
+Preaching Training Room: e; northeast; n
+Sparring Training Room: e; northeast; e
+Dragonsworn Etiquette Room: e; northeast; w
+Forms Training Room: e; 2northeast
+Weapons Training Room: e; northeast; northwest
+The mess hall: s; e
+The courtyard: s; w; southwest
+The stables: s; w; southwest; 3w
+The Hot Springs: southeast; e
+The second floor of the mansion: 2s; u
+The prison cells: 2s; d
+</description>
+    </exdesc>
+  </object>
+  <object vnum="18131" name="sign dragonsworn" special="NONE">
+    <description>An entirely &amp;gOOC&amp;n sign stands here.</description>
+    <shortdesc>another sign</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="12" wear="0" extra="71752"/>
+      <data weight="1000000" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <exdesc keyword="sign">
+      <description>The Postmasters Office: e; northeast; w
+Theodore's Office: e; northeast; n; w
+Laran's Office: e; northeast; 2n; w
+The large meeting room of the Dragonsworn: e; northeast; 2n; northwest; w
+Prophetess Valtara's office: e; northeast; 2n; northwest; n
+The Prophet's office: e; northeast; 2n; northwest; w; 2n
+The Prophetess Kindrana's office: w; northwest; 2n; northeast; n
+Arlea's Office: w; northwest; 2n; e
+Dylaer's Office: w; northwest; n; e
+Kaldren al'Giron's Office: e; northeast; n; 2northwest; n
+Ryokui's converted office space: e; northeast; n; 2northwest; e
+A sitting room: e; northeast; 2n; northwest; w; 3s; e
+</description>
+    </exdesc>
+  </object>
+  <object vnum="18132" name="board DS" special="NONE">
+    <description>The guildboard of the \c08D\c01ragonsworn\c00</description>
+    <shortdesc>the guildboard of the \c08D\c01ragonsworn\c00</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="16" wear="0" extra="0"/>
+      <data weight="2147483647" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="18133" name="0" special="NONE">
+    <description>A &amp;wfinely&amp;n cut &amp;Kw&amp;koo&amp;Kl&amp;n riding dress with divided skirts lies in a heap here.</description>
+    <shortdesc>a &amp;wfinely&amp;n cut &amp;Kw&amp;koo&amp;Kl&amp;n riding dress with divided skirts</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="100" value2="0" value3="0" value4="0"/>
+      <flags type="9" wear="9" extra="78088"/>
+      <data weight="3" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <dgscript vnum="18100"/>
+  </object>
+  <object vnum="18134" name="0" special="NONE">
+    <description>A pair of &amp;cslim&amp;n &amp;wknee high &amp;Yl&amp;yea&amp;Yt&amp;yhe&amp;Yr&amp;n riding &amp;Kb&amp;koot&amp;Ks&amp;n sit here.</description>
+    <shortdesc>a pair of &amp;cslim&amp;n &amp;wknee high &amp;Yl&amp;yea&amp;Yt&amp;yhe&amp;Yr&amp;n riding &amp;Kb&amp;koot&amp;Ks&amp;n</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="XATTACKS" modifier="1"/>
+    <objaffect location="HITROLL" modifier="10"/>
+    <objaffect location="DAMROLL" modifier="10"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="9" wear="65" extra="78088"/>
+      <data weight="4" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <dgscript vnum="18100"/>
+  </object>
+  <object vnum="18135" name="dragonsworn sash modest" special="NONE">
+    <description>A &amp;cmodest &amp;Yl&amp;yea&amp;Yt&amp;yhe&amp;Yr &amp;wsash&amp;n with a tiny &amp;rdragon&amp;n embroidered upon it has been discarded here.</description>
+    <shortdesc>a &amp;cmodest &amp;Yl&amp;yea&amp;Yt&amp;yhe&amp;Yr &amp;wsash&amp;n with a tiny &amp;rdragon&amp;n embroidered upon it</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="HITROLL" modifier="40"/>
+    <objaffect location="DAMROLL" modifier="40"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="10000" value2="0" value3="-1" value4="0"/>
+      <flags type="15" wear="2049" extra="69896"/>
+      <data weight="2" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <dgscript vnum="18100"/>
+  </object>
+  <object vnum="18136" name="0" special="NONE">
+    <description>A set of &amp;wtwin dual edged &amp;Wd&amp;wag&amp;Wg&amp;wer&amp;ws&amp;n with &amp;rdragons&amp;n engraved on their pommels have been dropped here carelessly, what a find!</description>
+    <shortdesc>a set of &amp;wtwin dual edged &amp;Wd&amp;wag&amp;Wg&amp;wer&amp;ws&amp;n with &amp;rdragons&amp;n engraved on their pommels</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="10" value3="10" value4="11"/>
+      <flags type="5" wear="32769" extra="77832"/>
+      <data weight="2" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <dgscript vnum="18100"/>
+  </object>
+  <object vnum="18137" name="0" special="NONE">
+    <description>A &amp;Wb&amp;wa&amp;Wt&amp;wt&amp;Wl&amp;we &amp;Kw&amp;kor&amp;Kn &amp;Wsteel &amp;wbreastplate&amp;n with a &amp;Yg&amp;yolde&amp;Yn&amp;n maned &amp;Rd&amp;rrago&amp;Rn&amp;n emblazened upon it sits here collecting dust.</description>
+    <shortdesc>a &amp;Wb&amp;wa&amp;Wt&amp;wt&amp;Wl&amp;we &amp;Kw&amp;kor&amp;Kn &amp;Wsteel &amp;wbreastplate&amp;n with a &amp;Yg&amp;yolde&amp;Yn&amp;n maned &amp;Rd&amp;rrago&amp;Rn&amp;n emblazened upon it</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="XATTACKS" modifier="1"/>
+    <objaffect location="HITROLL" modifier="10"/>
+    <objaffect location="DAMROLL" modifier="10"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="100" value2="0" value3="0" value4="0"/>
+      <flags type="9" wear="9" extra="8192"/>
+      <data weight="5" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <dgscript vnum="18100"/>
+  </object>
+  <object vnum="18138" name="dsseq dss spy cloak" special="NONE">
+    <description>A long &amp;Kg&amp;kra&amp;Ky&amp;n &amp;Wd&amp;wu&amp;Ws&amp;wt&amp;n cloak lies in a heap here.</description>
+    <shortdesc>a long &amp;Kg&amp;kra&amp;Ky&amp;n &amp;Wd&amp;wu&amp;Ws&amp;wt&amp;n cloak</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="HITROLL" modifier="10"/>
+    <objaffect location="DAMROLL" modifier="10"/>
+    <objaffect location="ARMOR" modifier="-40"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="500" value2="0" value3="-1" value4="0"/>
+      <flags type="15" wear="1025" extra="69640"/>
+      <data weight="3" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="18139" name="dsseq dss spy vest shirt" special="NONE">
+    <description>A &amp;Kb&amp;klac&amp;Kk&amp;n &amp;Yl&amp;yea&amp;Yt&amp;yhe&amp;Yr&amp;n vest, and a &amp;wwhite &amp;Ws&amp;wi&amp;Wl&amp;wk&amp;We&amp;wn&amp;n shirt sit in a pile here.</description>
+    <shortdesc>a &amp;Kb&amp;klac&amp;Kk&amp;n &amp;Yl&amp;yea&amp;Yt&amp;yhe&amp;Yr&amp;n vest, over a &amp;wwhite &amp;Ws&amp;wi&amp;Wl&amp;wk&amp;We&amp;wn&amp;n shirt</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="STR" modifier="2"/>
+    <objaffect location="HITROLL" modifier="5"/>
+    <objaffect location="DAMROLL" modifier="7"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="30" value2="0" value3="0" value4="0"/>
+      <flags type="9" wear="9" extra="69640"/>
+      <data weight="2" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="18140" name="satchel dss" special="NONE">
+    <description>A small &amp;yleather&amp;n satchel sits here.</description>
+    <shortdesc>a small &amp;yleather&amp;n satchel</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="100" value2="0" value3="-1" value4="0"/>
+      <flags type="15" wear="18433" extra="69832"/>
+      <data weight="0" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <exdesc keyword="pocket">
+      <description>Inside the satchel you see various &amp;cvials&amp;n and small cylinders.
+Each &amp;cvial&amp;n has a different &amp;Yc&amp;Go&amp;Ml&amp;Wo&amp;Rr&amp;n or hue to it, their contents liquid.
+The cylinders, two of them, one &amp;Kblack&amp;n and one &amp;Wwhite&amp;n and only
+an inch tall and no more than an inch in diameter.  Looking
+closer, you see one of the &amp;cvials&amp;n has a &amp;ycork&amp;n stopper with a
+brush attached to inside, the liquid in this &amp;cvial&amp;n looking more
+thick than the rest, not to mention &amp;wcolorless&amp;n.
+</description>
+    </exdesc>
+  </object>
+  <object vnum="18141" name="rose white" special="NONE">
+    <description>A beautiful white rose grows here.</description>
+    <shortdesc>a beautiful &amp;Ww&amp;white&amp;n rose</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="12" wear="16385" extra="4160"/>
+      <data weight="1" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="18142" name="garden rose" special="NONE">
+    <description>A small rose garden where many beautiful white roses grow splits the path here.</description>
+    <shortdesc>a beautiful rose garden</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="50000" value2="0" value3="-1" value4="0"/>
+      <flags type="15" wear="0" extra="71752"/>
+      <data weight="10000000" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="18143" name="table" special="NONE">
+    <description>A small wooden table sits here, against the rear wall.</description>
+    <shortdesc>a small wooden table</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="24" wear="0" extra="69704"/>
+      <data weight="100000" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="18144" name="chair" special="NONE">
+    <description>A small wooden chair sits before the table here.</description>
+    <shortdesc>a small wooden chair</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="24" wear="0" extra="69704"/>
+      <data weight="10" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="18145" name="stool" special="NONE">
+    <description>A small rickety stool sits before the table here.</description>
+    <shortdesc>a small rickety stool</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="24" wear="1" extra="65608"/>
+      <data weight="5" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="18146" name="stump" special="NONE">
+    <description>A wide treestump has been set before the table here.</description>
+    <shortdesc>a wide treestump</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="24" wear="1" extra="65608"/>
+      <data weight="3" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="18147" name="spoon ladle" special="NONE">
+    <description>A wooden ladle sits here.</description>
+    <shortdesc>a wooden ladle</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="10" wear="8193" extra="65600"/>
+      <data weight="0" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="18148" name="table long" special="NONE">
+    <description>A long wooden table stands here.</description>
+    <shortdesc>a long wooden table</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="24" wear="0" extra="67648"/>
+      <data weight="100000" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="18149" name="pot kettle iron" special="NONE">
+    <description>An old iron pot sits atop the table.</description>
+    <shortdesc>an iron pot</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="200" value2="125" value3="0" value4="0"/>
+      <flags type="23" wear="1" extra="69696"/>
+      <data weight="8" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="18150" name="fountain dragonsworn" special="NONE">
+    <description>\c00A gorgeous \c14c\c13r\c14y\c13s\c14t\c13a\c14l\c00 fountain lies in the center of the room.</description>
+    <shortdesc>\c00A gorgeous \c14c\c13r\c14y\c13s\c14t\c13a\c14l\c00 fountain</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="9999999" value2="999999" value3="0" value4="0"/>
+      <flags type="23" wear="0" extra="0"/>
+      <data weight="1000004" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="18162" name="Vindor's key" special="NONE">
+    <description>This is Vindor's key, please return it to him ASAP!</description>
+    <shortdesc>a steel key, with glints of red along it's surface</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="18" wear="1" extra="72264"/>
+      <data weight="0" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="18163" name="key feylon" special="NONE">
+    <description>A small silvery key lies here.</description>
+    <shortdesc>a thin silvery key</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="18" wear="1" extra="72264"/>
+      <data weight="0" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <exdesc keyword="">
+      <description>\c00</description>
+    </exdesc>
+  </object>
+  <object vnum="18164" name="key vinas" special="NONE">
+    <description>A key glints here.</description>
+    <shortdesc>a nondescript steel key</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="18" wear="1" extra="70344"/>
+      <data weight="0" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="18169" name="necklace trinket" special="NONE">
+    <description>&amp;nA small &amp;Ws&amp;wi&amp;Wl&amp;wv&amp;We&amp;wr &amp;rhe&amp;Ra&amp;rrt&amp;n on a leather cord has been dropped here.  What a shame..</description>
+    <shortdesc>&amp;na small &amp;Ws&amp;wi&amp;Wl&amp;wv&amp;We&amp;wr &amp;rhe&amp;Ra&amp;rrt&amp;n dangling by a leather cord</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="9" wear="5" extra="0"/>
+      <data weight="2" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="18170" name="Ryokui's Wedding Ring" special="NONE">
+    <description>IF THIS IS LYING HERE, CONTACT RYOKUI</description>
+    <shortdesc>a solid &amp;Yg&amp;yol&amp;Yd&amp;n wedding band inlaid with small &amp;cd&amp;wi&amp;ca&amp;wm&amp;co&amp;wn&amp;cd&amp;ws&amp;n circling around it.</shortdesc>
+    <actiondesc>A small but shocking spark emerges as Ryokui slides the ring on his 
+finger, sealing his vows.
+</actiondesc>
+    <affectflag>0</affectflag>
+    <objaffect location="HITROLL" modifier="10"/>
+    <objaffect location="DAMROLL" modifier="10"/>
+    <objaffect location="MAXHIT" modifier="60"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="9" wear="3" extra="69704"/>
+      <data weight="0" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <exdesc keyword="Ryokui's Wedding Ring">
+      <description>A solid &amp;Yg&amp;yol&amp;Yd&amp;n wedding band inlaid with small &amp;cd&amp;wi&amp;ca&amp;wm&amp;co&amp;wn&amp;cd&amp;ws&amp;n
+circling around it.  An inscription on the inside reads
+&amp;r&quot;To My Darling Ryokui, With Love, &amp;mKindrana&amp;r&quot;&amp;n
+</description>
+    </exdesc>
+  </object>
+  <object vnum="18171" name="ring kindrana" special="NONE">
+    <description>&amp;wA &amp;Wt&amp;wwiste&amp;Wd &amp;wb&amp;Wa&amp;wn&amp;Wd&amp;w of &amp;Yg&amp;yol&amp;Yd&amp;w, &amp;We&amp;wd&amp;Wg&amp;we&amp;Wd &amp;wwith &amp;Ws&amp;ki&amp;wl&amp;kv&amp;we&amp;Wr &amp;wand &amp;We&amp;wncruste&amp;Wd&amp;w with &amp;wt&amp;Wi&amp;wny &amp;Cd&amp;ci&amp;Ca&amp;cm&amp;Co&amp;cn&amp;Cd&amp;cs&amp;n</description>
+    <shortdesc>&amp;wan &amp;We&amp;wlegan&amp;Wt &amp;wb&amp;Wa&amp;wnd of &amp;Yg&amp;yol&amp;Yd&amp;n</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="HITROLL" modifier="10"/>
+    <objaffect location="DAMROLL" modifier="10"/>
+    <objaffect location="ABS" modifier="50"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="9" wear="3" extra="69704"/>
+      <data weight="1" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <exdesc keyword="inscript">
+      <description> &amp;wOn the underside of the ring, there is a &amp;Cc&amp;calli&amp;Cg&amp;craphi&amp;Cc &amp;Winscription&amp;w reading: &amp;wFor you, my love Kindrana, may we always be each other's &amp;Rh&amp;rear&amp;Rt&amp;w, each other's &amp;Ch&amp;cop&amp;Ce&amp;w, and always live forever, our &amp;Ys&amp;youl&amp;Ys&amp;w never leaving one another's &amp;Wembrace&amp;n&amp;w.&amp;n
+</description>
+    </exdesc>
+  </object>
+  <object vnum="18173" name="tent green and brown" special="NONE">
+    <description>&amp;WA &amp;Kl&amp;Wa&amp;Kr&amp;Wg&amp;Ke&amp;g green &amp;wand &amp;ybrown&amp;w tent&amp;n.</description>
+    <shortdesc>&amp;wA &amp;Kl&amp;Wa&amp;Kr&amp;Wg&amp;Ke&amp;g green&amp;w and &amp;ybrown&amp;w tent&amp;n.</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="14" wear="1" extra="0"/>
+      <data weight="50000" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="18177" name="rabbit foot" special="NONE">
+    <description>A tiny rabbit's foot sits here.</description>
+    <shortdesc>a rabbit's foot</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="18" wear="1" extra="69864"/>
+      <data weight="0" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <objprog main="OnSteal" argtype="VOID" argument="NONE">
+      <action number="Destroy" argtype="VOID" argument="NONE"/>
+    </objprog>
+  </object>
+  <object vnum="18178" name="gnith" special="NONE">
+    <description>Nothing is here, really!</description>
+    <shortdesc>nothing</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="HITROLL" modifier="40000"/>
+    <objaffect location="DAMROLL" modifier="40000"/>
+    <objaffect location="XATTACKS" modifier="50"/>
+    <objaffect location="MAXHIT" modifier="3500"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="5000" value2="2250" value3="0" value4="0"/>
+      <flags type="9" wear="16387" extra="70217"/>
+      <data weight="1" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="18179" name="longneck bottle leine" special="NONE">
+    <description>An empty longneck bottle of Leinenkugel's Original Lager has been placed here for the recycling service to collect.. whoever the recycling service is.</description>
+    <shortdesc>a longneck bottle of Leinenkugel's Original Lager</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="DAMROLL" modifier="73000"/>
+    <objaffect location="MAXHIT" modifier="3000"/>
+    <objaffect location="ABS" modifier="2000"/>
+    <objaffect location="MAXMOVE" modifier="15000"/>
+    <objaffect location="HITROLL" modifier="73000"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="73000" value2="10" value3="10" value4="11"/>
+      <flags type="5" wear="32769" extra="69641"/>
+      <data weight="3" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="18180" name="zippo" special="NONE">
+    <description>A tarnished stainless steel zippo lighter has been discarded here.</description>
+    <shortdesc>a stainless steel zippo lighter</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="ARMOR" modifier="-6000"/>
+    <objaffect location="DAMROLL" modifier="35000"/>
+    <objaffect location="ABS" modifier="5000"/>
+    <objaffect location="MAXHIT" modifier="3000"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="-1" value4="0"/>
+      <flags type="1" wear="1" extra="69640"/>
+      <data weight="1" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <exdesc keyword="bottom">
+      <description>                &amp;wZIPPO&amp;n
+            &amp;wBradford, PA&amp;n
+</description>
+    </exdesc>
+  </object>
+  <object vnum="18181" name="smoke pack cigarettes marlboro" special="NONE">
+    <description>An empty pack of &amp;rMarlboro &amp;RRed &amp;wbrand cigarettes&amp;n has been crumpled up here.</description>
+    <shortdesc>a pack of &amp;rMarlboro &amp;RRed &amp;wbrand cigarettes&amp;n</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="MAXHIT" modifier="3500"/>
+    <objaffect location="HITROLL" modifier="40000"/>
+    <objaffect location="DAMROLL" modifier="40000"/>
+    <objaffect location="XATTACKS" modifier="50"/>
+    <objaffect location="MAXMOVE" modifier="15000"/>
+    <objaffect location="STR" modifier="20"/>
+    <objflags>
+      <values value1="5000" value2="4000" value3="0" value4="0"/>
+      <flags type="9" wear="16385" extra="70152"/>
+      <data weight="2" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="18182" name="coat jacket" special="NONE">
+    <description>A lenghty wool overcoat sits in a heap here, folded over itself haphazardly.</description>
+    <shortdesc>a lengthy wool over coat</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="9" wear="1025" extra="72264"/>
+      <data weight="4" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="18189" name="cookie ds dragonsworn" special="NONE">
+    <description>A cookie branded with the &amp;GD&amp;gr&amp;Ga&amp;gg&amp;Go&amp;gn&amp;G'&amp;gs &amp;wFang&amp;n sits here.</description>
+    <shortdesc>a cookie branded with the &amp;GD&amp;gr&amp;Ga&amp;gg&amp;Go&amp;gn&amp;G'&amp;gs &amp;wFang&amp;n</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="1" value3="25" value4="0"/>
+      <flags type="4" wear="16385" extra="69696"/>
+      <data weight="0" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="18190" name="token" special="NONE">
+    <description>An item more valued for it's symbolism than anything else has been left here.  What a shame *SNIFF*.</description>
+    <shortdesc>&amp;wa small &amp;Yt&amp;yoke&amp;Yn &amp;wof &amp;Wa&amp;wp&amp;Wp&amp;wr&amp;We&amp;wc&amp;Wi&amp;wa&amp;Wt&amp;wi&amp;Wo&amp;wn&amp;n</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="UNDEFINED" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="12" wear="16385" extra="73800"/>
+      <data weight="1" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <exdesc keyword="token">
+      <description>This meager item has been created in an effort to show some
+small semblence of appreciation for those who care deeply for
+and about Dragon's Fang.  Not only that though, this is also a
+representation of friendship and caring, however understated in
+nature.  Given to only those willing to bear their souls, to be able
+to embrace their integrity and honesty and make sacrifices to
+such a degree as to warrant wonder and awe, if not respect.
+This is a salute, to you, my friends.
+</description>
+    </exdesc>
+  </object>
+  <object vnum="18194" name="Ryokui's office key" special="NONE">
+    <description>A small steel key sits here.</description>
+    <shortdesc>a small steel key</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="18" wear="1" extra="69704"/>
+      <data weight="0" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <objprog main="OnSteal" argtype="VOID" argument="NONE">
+      <action number="Destroy" argtype="VOID" argument="NONE"/>
+    </objprog>
+  </object>
+  <object vnum="18195" name="korwyn " special="NONE">
+    <description>&amp;wA f&amp;Wi&amp;wn&amp;We&amp;wly cr&amp;Wa&amp;wft&amp;We&amp;wd sw&amp;Wo&amp;wrd&amp;n lies here waiting to be picked up by Korwyn.</description>
+    <shortdesc>&amp;wa f&amp;Wi&amp;wn&amp;We&amp;wly cr&amp;Wa&amp;wft&amp;We&amp;wd sw&amp;Wo&amp;wrd&amp;n</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="XATTACKS" modifier="50"/>
+    <objaffect location="MAXMANA" modifier="500"/>
+    <objaffect location="ABS" modifier="500"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="500" value2="2000" value3="50" value4="11"/>
+      <flags type="5" wear="32769" extra="69832"/>
+      <data weight="10" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="18196" name="ryokui key" special="NONE">
+    <description>&amp;wa &amp;Kdark&amp;w metal key&amp;n lies here.</description>
+    <shortdesc>&amp;wa &amp;Kdark&amp;w metal key&amp;n</shortdesc>
+    <actiondesc>&amp;wA &amp;Kdark&amp;w metal key&amp;n bearing the inscription Ryokui's key.
+</actiondesc>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="18" wear="1" extra="70344"/>
+      <data weight="5" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="18197" name="passage wagon" special="NONE">
+    <description>A narrow passage leading to somewhere...</description>
+    <shortdesc>a passage</shortdesc>
+    <actiondesc>\c00</actiondesc>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="10" value3="18194" value4="0"/>
+      <flags type="14" wear="1" extra="71752"/>
+      <data weight="10000000" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="18198" name="bedroll korwyn" special="NONE">
+    <description>&amp;wA comfortable and inviting looking, &amp;Ww&amp;wh&amp;Wi&amp;wt&amp;We &amp;wc&amp;Wo&amp;wtt&amp;Wo&amp;wn bedroll, lined with a &amp;Kb&amp;wl&amp;Ka&amp;wc&amp;Kk&amp;w s&amp;Wi&amp;wl&amp;Wk&amp;w sheet&amp;n.</description>
+    <shortdesc>a bedroll</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="2" value2="1" value3="2" value4="0"/>
+      <flags type="24" wear="1" extra="0"/>
+      <data weight="50000" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="18199" name="waterfall tempus" special="NONE">
+    <description>&amp;nA cascading &amp;Cw&amp;ca&amp;Ct&amp;ce&amp;Cr&amp;cf&amp;Ca&amp;cl&amp;Cl&amp;n spills down from nowhere in &amp;KO&amp;wbl&amp;Wiv&amp;wio&amp;Kn&amp;n and forms into a &amp;cc&amp;Crys&amp;Wtal&amp;Clin&amp;ce&amp;n pool of glowing &amp;Cw&amp;ca&amp;Ct&amp;ce&amp;Cr&amp;n</description>
+    <shortdesc>&amp;wa &amp;CW&amp;ca&amp;Ct&amp;ce&amp;Cr&amp;cf&amp;Ca&amp;cl&amp;Cl&amp;n</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="9999999" value2="9999999" value3="0" value4="0"/>
+      <flags type="23" wear="0" extra="0"/>
+      <data weight="10000004" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+</objects>

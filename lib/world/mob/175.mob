@@ -1,0 +1,545 @@
+#17500
+whitecloak sentry soldier~
+\c00a \c14whitecloak\c00 sentry~
+A stiff backed sentry is standing here.
+~
+Wearing bright plate armour, the sentry keeps a viligent lookout. Strong of arm and chest he does not look like a man to annoy though his White cloak stands out from the greenery of the forest.
+~
+1576986 65536 0 E
+100 -80 -14 581 10d350+3250 12d15+50
+0 100
+8 8 1 860
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Dirtkick: 100
+Disarm: 100
+Stun: 100
+P
+OnRandom 45
+Emote "The Sentry peers out intently into the forest. He half draws his sword at a sound from the undergrowth."
+End
+Q
+E
+#17501
+patrolling whitecloak soldier~
+\c00a patrolling \c14Whitecloak\c00~
+\c00A large soldier in a pure \c14white cloak\c00 is patrolling the area.
+~
+Wearing a pure white cloak and heavy armour this Child of the
+Light patrols the paths of the camp. Hard, cold, and disciplined
+he moves with his eyes constantly searching the surroundings
+for any hint of a disturbance.
+~
+1314904 65536 0 E
+100 -60 -10 581 10d250+360 12d15+50
+20 50
+8 8 1 860
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Bash: 100
+Trip: 100
+Dirtkick: 100
+P
+OnAttack
+Say "The Light curse you Darkfriend!"
+End
+Q
+E
+#17502
+child whitecloak~
+\c00a \c14Child\c00 of the \c14Light\c00~
+\c00A stern faced \c14Child\c00 of the \c14Light\c00 stands here.
+~
+Like any other this soldier strides around one hand
+resting casually on the hilt of his sword ever alert
+for trouble. Wearing the \c14White\c00 cloak depicting a
+golden sunburst which proclaims him a Child of the Light
+he watches the surroundings with a strange light in
+his hallow eyes.
+~
+1048584 0 0 E
+60 -40 -8 581 4d500+360 10d15+40
+50 60
+8 8 1 860
+BareHandAttack: 14
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Bash: 100
+Kick: 100
+P
+OnRandom 45
+Emote "Loud calls echo through the trees.  "
+End
+Q
+E
+#17503
+whitecloak soldier guard prison~
+\c00the \c08prison \c14guard\c00~
+\c00The \c08prison\c00 guard stands here guarding the entrance.
+~
+Standing at attention and watching everything around him the
+guard is ready to guard and protect what he has been ordered
+to by his superiors. His sword sheathed he stands wielding a
+heavy spear it's long tip made from hardened metal.
+~
+1048602 65536 0 E
+1 -80 -20 581 0d0+29999 30d127+150
+0 0
+8 8 1 860
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnEntry & ! Guild "child"
+Pause 3
+Emote "The \c08Guard\c00 growls and lashes out at the prisoner with his staff. Watching with a satisfied expression as the prisoner cries out in pain he turns to fix you with a piercing gaze."
+End
+OnAttack
+Say "I think maybe you need to go to the sparring grounds for a little training first."
+Stop
+Action "laugh"
+Doing "really needs to get some combat training."
+End
+OnRandom 10
+Emote "The Guard shakes his head and mutters something about having to watch over darkfriends."
+End
+Q
+E
+#17504
+Barny shop keeper~
+\c13Barny\c00 the \c23blacksmith\c00~
+\c13Barny\c00 the \c23blacksmith\c00 is standing here over a forge.\c00
+~
+Grimacing at you as he notices your appraisal he returns back to
+his work over the forge. Barely pausing the blows of his hammer
+as he shouts at one of the workers to work on the bellows. His huge
+gut seems to fall out of the leather apron though from the quality
+of his work he is indeed a master smith.
+~
+1048586 327680 0 E
+200 -80 -20 581 1d0+29999 30d127+150
+0 0
+8 8 1 860
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+E
+#17505
+Entrance guard whitecloak~
+\c00an \c10Entrance\c00 guard\c00~
+\c00A stern-faced \c14whitecloak\c00 soldier stands here arrogantly.
+~
+Stepping forward from his place beside the trunk of a huge tree
+the large man that is guarding the path here pauses to wearily
+glance you over. Wearing a heavy dark green cloak that hides what
+he is wearing you notice a flash of white as he returns to his post.
+~
+1576986 65536 0 E
+80 -60 -10 581 10d150+1500 10d15+45
+20 1
+8 8 1 860
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Trip: 100
+Dirtkick: 100
+P
+OnEntry
+Say "The Creators hand shelters those who serve the will of the Children "
+End
+OnLeave & ! Guild "child"
+Stop
+Emote "The guard shakes his head and murmurs softly, ' I cannot let you do that stranger. '"
+End
+OnAction "weave powertrap cast" & Sex "female"
+Stop
+Say "FOUL WITCHES!"
+ActionTo "kill"
+End
+OnAction "weave powertrap cast" & Sex "male"
+Stop
+Say "Tainted One! You shall DIE!"
+ActionTo "kill"
+End
+OnAction "powertrap"
+Stop
+End
+Q
+E
+#17506
+whitecloak crossbowman~
+\c00a \c08dangerous\c00 \c14crossbowman\c00~
+\c00A \c14crossbowman\c00 searches the surroundings with \c08zealous\c00 eyes here.
+~
+Cold and dangerous, this man walks the paths of the camp
+with a hand always covering the trigger of his crossbow.
+His eyes burning with a zealous rage and his huge shoulders
+and quick movements a tesmament to his ability you hope
+you never give cause for this man to fire.
+~
+1839112 65536 0 E
+120 -90 -14 581 10d300+250 15d15+50
+80 120
+8 8 1 860
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Trip: 100
+Disarm: 100
+Stun: 100
+P
+OnAttack & ! Guild "child"
+Stop
+Say "For the Light!"
+ActionTo "bash"
+End
+OnAttack & Guild "child"
+Stop
+Say "Traitorous Dog! You will burn in the Creators flames for this. Die Darkfriend Scum!"
+ActionTo "disarm"
+End
+OnAction "weave powertrap cast" & Sex "female"
+Stop
+Say "I don't know how you passed the outer guards but you wont pass me Darkfriend Witch! \c14For the Light\c00!"
+ActionTo "disarm"
+End
+OnAction "weave powertrap cast" & Sex "male"
+Stop
+Say "I don't know how you passed the outer guards but you wont pass me Tainted One! \c14For the Light\c00!"
+ActionTo "disarm"
+End
+OnAction "powertrap"
+Stop
+End
+Q
+E
+#17507
+inquisitor questioner hotl~
+\c00an \c08Inquisitor\c00 of the \c14Light\c00~
+\c14A scowling \c08Inquisitor\c14, with zealous eyes, peers back at you.\c00
+~
+His eyes glow with a burning inner light. His hands are clenched
+his mouth set into a perminent scowl. A white cloak with the emblem
+of a red shephards crook over a golden sunburst pulled close around
+him. He is a inquisitor. Fear the Light. 
+~
+1048602 67174400 0 E
+120 -100 -10 581 0d0+4700 15d15+50
+120 120
+8 8 1 860
+BareHandAttack: 2
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Trip: 100
+Dirtkick: 100
+Stun: 100
+P
+OnAttack
+Stop
+Say "You want to test the powers of the Hand of the Light? THEN DIE!"
+ActionTo "kill"
+End
+OnRandom 15
+Emote "Terrible screams sound from within the tent to the east."
+End
+OnAction "weave cast powertrap"
+Stop
+Say "The \c14Light\c00 curse you \c08Darkfriend\c00!"
+ActionTo "disarm"
+End
+Q
+E
+#17508
+veteran whitecloak~
+\c00a grizzled old veteran\c00~
+A veteran of many wars is waiting here to begin his lesson.
+~
+Standing tall this old veteran is still able and willing to
+train the young soldiers who will one day make up the supreme
+fighting force of the Children of the Light.
+~
+1048584 0 0 E
+80 -60 -6 581 10d150+200 12d15+40
+0 20
+8 8 1 860
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Trip: 100
+P
+OnAttack
+Say "BURN YOU DARKFRIEND!"
+End
+Q
+E
+#17509
+archer whitecloak~
+a practising archer~
+An archer is practising his skills with the bow here.
+~
+A small cavalry bow in his hands the Soldier aims patiently
+at the target at the far ends of the grounds. His pure white
+cloak pulled out of the way and a quiver still full on his hip
+it looks like he fully intends to practice all day.
+~
+1048586 0 0 E
+1 -80 10 581 1d100+0 1d1+150
+0 0
+8 8 1 860
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnEntry
+Emote "An arrow streaks down towards the target and hits with a resounding 'THUD'"
+Pause 2
+Action "curse"
+Pause 4
+Emote "The Archer looks from his arrow, far from the centre of the target, then turns back to you, eyes piercing blue."
+End
+Q
+E
+#17510
+medic whitecloak~
+\c00a \c14whitecloak \c08m\c14e\c08d\c14i\c08c\c00~
+\c00A \c08m\c14e\c08d\c14i\c08c\c00 stands here wrapping up some bandages.
+~
+Dressed in a white apron and pointed hat this quiet man serves
+the Children of the Light in the capacity of Medic. Unlike most
+nations where those that practice herbs are women Amador frowns
+severely on any woman trying to heal the sick and so males have
+been forced to take up the trade.
+~
+5242890 0 0 E
+199 -80 10 581 1d0+0 1d1+150
+0 0
+8 8 1 860
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnEntry & Hurt & Guild "child"
+Say "My Lord! You are injured!"
+Emote "The \c14whitecloak \c08m\c14e\c08d\c14i\c08c\c00 mixes up some herbs and rubs them over your wounds, ' There. Now be sure to look after yourself a little better My Lord.'"
+Cast "advanced heal"
+Cast "advanced heal"
+Cast "advanced heal"
+Cast "invigorate"
+Cast "advanced heal"
+Cast "invigorate"
+End
+Q
+E
+#17511
+pale prisoner~
+\c00a \c14pale faced\c00 prisoner\c00~
+\c00A \c11cringing\c00 man sits \c22shackled\c00 to an iron rod here.
+~
+Clad in clothes little better than rags the pitiful
+little man screams for help as you enter. Cringing
+whenever he is looked at and tugging in vain at the
+heavy shackles that bind him his eyes light up with
+hope that maybe he can be freed.
+~
+1048586 0 0 E
+50 -15 -2 581 3d400+150 1d8+20
+0 20
+8 8 1 860
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnEntry & ! Guild "child"
+Pause 1
+Emote "The prisoner looks up at you with pain filled eyes and whimpers softly, ' NO. Not again! I walk in the Light! Not AGAIN!! '"
+End
+OnLeave & ! Guild "child"
+Action "shout Light burn you!"
+End
+OnAttack & ! Guild "child"
+Emote "The eyes of the prisoner light up with joy and tilting back his head he shouts, ' \c14FREEDOM!\c00 '."
+End
+OnAttack & Guild "child"
+Say "Thank you My Lord...I have...found the...Light."
+End
+OnActionTo "look"
+Pause 1
+Emote "The prisoner whimpers and tries to curl himself into a ball."
+End
+Q
+E
+#17512
+farmer~
+\c00a \c10strange\c00 looking farmer~
+\c00The \c11cold\c00 eyes of the farmer turn to regard you as you enter his yard.\c00
+~
+Hard at work on the farm, the farmer takes a
+great deal of effort to make it look like he
+is paying little attention to what is around
+him.
+~
+1048602 48 0 E
+60 20 10 581 1d100+0 1d1+0
+0 0
+8 8 1 860
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnEntry & ! Guild "child"
+Emote "The farmer frowns at you then motions towards the bushes. A brief flash of white answers the call."
+Doing "is trying to sneak into where they should not be."
+Pause 2
+Emote "Could that have been a Whitecloak lookout going to tell the Commander?"
+Emote "Perhaps you should not continue along this path."
+End
+Q
+E
+#17550
+Geebs Butler~
+\c10Geebs\c00 the butler~
+Geebs the Butler looks at you expectantly.
+~
+Clothed in the uniform so common to servants,
+Geebs strolls around the house with a permanent
+frown on his old face. When asked anything he
+merely moves his lips into something resembling
+a smile and says "Charmed, I'm sure".
+~
+2120 0 0 E
+75 -130 -1 581 30d100+10 10d6+50
+200 200
+8 8 1 0
+BareHandAttack: 13
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Trip: 100
+P
+OnEntry & ! Guild "child"
+SayTo "Do you have an appointment? Please wait in the room to the west."
+End
+Q
+E
+#17551
+maid ~
+\c14the house \c13maid\c00~
+The maid of the house stands here polishing a shelf.
+~
+Dressed in a low cut dress that becomes even lower
+as she bends further over the maid of the house
+contends herself with keeping the waiting room clean.
+~
+10 0 0 E
+0 20 10 581 1d100+0 1d1+0
+0 0
+8 8 2 860
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnActionTo "lick kiss tickle goose fondle grope stroke french"
+Emote "emote covers her mouth with a delicate hand and giggles, her cheeks reddening."
+End
+Q
+E
+#17552
+servant~
+an elderly servant~
+An elderly servant is washing the floor here.
+~
+It looks, err, unfinished.
+~
+10 0 0 E
+1 20 10 581 1d100+0 1d1+0
+0 0
+6 6 1 860
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnEntry
+Emote "The elderly servant drywashes his hands and complains about his nice clean floors."
+End
+Q
+E
+#17553
+Mallory Eden~
+Mallory Eden the master merchant~
+\c14Master \c08merchant\c00, and the owner of the house, Mallory Eden is resting here.
+~
+Light coloured hair turning grey at the sides hangs loosely down
+the back of the man before you. Wearing tight brown leather pants,
+a loose white shirt and an expensive cape of bright red he idly
+strokes a thick braided golden chain hanging from his neck. He
+doesn't seem to be carrying any weapons although in his hand is a
+thick leather bound book.
+~
+6216 128 0 E
+100 -130 -4 581 30d200+40 15d10+40
+1000 200
+8 8 1 860
+BareHandAttack: 7
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Bash: 100
+Dirtkick: 100
+Disarm: 100
+E
+$

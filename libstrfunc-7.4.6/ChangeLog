@@ -1,0 +1,385 @@
+
+			libstrfunc
+
+7.4.6:	12 Jan 2003
+
+	* Added a possibility of a function call upon memory failures.
+	* Fixed url_encode() bug introduced in 7.4.5 :/
+
+7.4.5:	30 Nov 2002
+
+	* Fixed problem with splitf()'ing regular expressions, when they
+	  starting with "/".
+	* Fixed problem with sed()'ing expressions like "( )*".
+	* Several man page fixes.
+	* Fixed potential mmap() problem in cfgread().
+	* Code identation and style fixes.
+	* Fixed bug with sbuf_fetch().
+
+7.4:	29 Jun 2002
+
+	* Project automakefied. 10x2 Alexey Mahotkin <alexm@hsys.msk.ru>.
+	* strtotime() better recognizes some time representations;
+	  module test included. (Interesting fact: strtotime() performs
+	  more than 50 times faster than yacc-based curl_getdate() found
+	  in the libcurl, http://curl.haxx.se/)
+	* slist renamed to svect to reflect actual meaning of
+	  this data structure.
+	* Fixed bug in formatf() which triggers when metafunction
+	  return { NULL }.
+	* formatf() was convinced to support ${a[n]?b:c} when n > 0.
+	* Fixed memory leak and sed_free() bug in sed*() code.
+
+7.3:	25 Dec 2001
+
+	* Offset field added to sbuf structure.
+	* sbuf_fetch() added. Suggested by Pavel Plesov <mclap@simtts.mv.ru>.
+	* MinGW builds with Cygwin tools.
+	  Submitted by alexander smishlajev <alex@tycobka.lv>.
+	* Support for different POSIX-compatible regexp libraries.
+	* strtotime() performs 50 times faster.
+
+7.2.7:	22 Nov 2001
+
+	* Allocation bug fixed in cgifunc.c.
+
+		Thanks to Eric Gentry <eric_gentry@hp.com>
+
+	* lockf() replaced with fcntl().
+	* manual pages fixed.
+
+7.2.6:	28 Jul 2001
+
+	* Minor NULL<->NUL gcc 3.0 compile problems fixed.
+	* Fixed sed misbehaviour on unescaping slashes.
+	* Added sed modifier 'm' aka REG_NEWLINE.
+
+	  Thanks to bjudson@benjudson.com.
+
+7.2.5:	19 Jul 2001
+
+	* params() now invokes parse_form() and can be used stand-alone.
+	* eq*() now immune to NULL's.
+
+7.2.4:	02 Jul 2001
+
+	* strtotime() now recognizes dates in MM.DD[.YYYY] format.
+
+7.2.3:	07 Jun 2001
+
+	* Other CGI functions are made consistent
+	with libstrfunc memory control technique.
+
+7.2.2:	26 May 2001
+
+	* lang*(), replace() and cgi*() functions are made consistent
+	with libstrfunc memory control technique.
+
+7.2.1:	22 May 2001
+
+	* Security bugfix in formatf().
+	* format*() functions are made consistent
+	with libstrfunc memory control technique.
+
+7.2.0:	16 May 2001
+
+	* sed_*() and cookie() are made consistent
+	with libstrfunc memory control technique.
+	* Documented strfunc_ctl() and memory control technique.
+	* splitf can use regular expressions as delimiters.
+
+7.1.0:	15 May 2001
+
+	* inet_aton() avoided by implementing sf_iaton().
+	* split_network() not destroys input value.
+
+7.0.8:	10 May 2001
+
+	* sjoin(NULL, ...) works fine.
+
+7.0.7:	30 Apr 2001
+
+	* sbuf_*, mime_word_decode are made consistent
+	with libstrfunc memory control technique.
+
+7.0.6:	22 Apr 2001
+
+	* strtotime() now recognizes something like "1997/06/23 13:22:33" and
+	derivatives.
+	* TFMT_X208 constant defined to follow the RFC2252 style of using X.208
+	standard for general time representation
+
+7.0.5:	06 Apr 2001
+
+	* mime_word_decode() fixed after sed() changes.
+
+7.0.4:	03 Apr 2001	(8765 lines, 184633 bytes)
+
+	* Light join() fix.
+	* Improved strtotime() behaviour on syslogd dates.
+	* Significal changes in sed() internals. 'n' flag added.
+	* splitf() improved to reflect the need in splitting by
+	arbitrary strings instead of character sets.
+	* int, size_t and ssize_t are properly reassigned to arguments.
+
+7.0.0:	31 Mar 2001	(8614 lines, 181895 bytes)
+
+	* Code was significaly revised and almost fully rewritten.
+	* *destroy => *free.
+	* param2() returns pointer to static structure.
+	* binparam() & parammeta() removed.
+	* Due to incompatible changes library's major number changed to 7
+
+6.1.0:	15 Mar 2001
+
+	* Fixes in sed_*() functions.
+	* Added sed_results().
+
+6.0.6:	02 Mar 2001
+
+	* Old bug in configuration file parser line counter fixed.
+
+6.0.5:	29 Jan 2001
+
+	* initFILEpos now fully transparent.
+
+6.0.2:	15 Jan 2001
+
+	* Portability changes.
+
+6.0.1:	29 Dec 2000	(6247 lines, 132687 bytes)
+
+	* sins() behaves more accurate.
+	* sed_compile() behaves more accurate.
+
+6.0.0:	25 Dec 2000
+
+	* Significant portability issues; changes inspired by ancom@ugk.uaz.ru.
+	* Library number changed, but is still compatible with 5.5.
+	* sed.c works without REG_STARTEND.
+	* datetime.c works without timegm and tm_gmtoff.
+	* {init|adj}{FILE|fd}pos() are able to deal with extensible position
+	format.
+
+5.6.1:	19 Dec 2000
+
+	* Fixed bug with duplicate names when mmap() is not available
+	(10x2ancom).
+
+5.6.0:	18 Dec 2000
+
+	* warnx() removed due to non-portability.
+	* fprintf's removed from {init|adj}{FILE|fd}pos().
+	* sbuf_zero() and sbuf_detach() added.
+	* sbuf_fgets() added.
+	* updated manual pages about sf_*().
+
+5.5.6:	14 Dec 2000
+
+	* sbuf_sprintf() function added.
+
+5.5.5:	12 Dec 2000
+
+	* GNU autoconf suite was used to form a complete distribution.
+
+5.5.0:	11 Dec 2000
+
+	* Some significial changes, including the naming conventions
+	and interfaces.
+	* Stability added to sarray() && mkarray().
+
+5.2.5:	11 Dec 2000
+
+	* Even more minor changes.
+
+5.2.4:	08 Dec 2000
+
+	* cfgget2() is not saves the object in the internal memory.
+	* More accurate escaping handling in cfglex.c
+	* sed_compile() recognizes one more expression.
+	* timetostr and strtotime binaries added.
+
+5.2.1:	07 Dec 2000
+
+	* Light makefile changes.
+
+5.2.0:	04 Dec 2000
+
+	* sbuf (clever buffer) structure and appropriate handlers added.
+	* A subset of the sed(1)'s functionality added.
+	* manual pages on sf_file, sf_sed and sf_sbuf created.
+	* mime_word_decode() completely rewritten.
+
+5.1.3:	03 Dec 2000
+
+	* splitquotable() patch.
+
+5.1.2:	21 Nov 2000
+
+	* strtotime():
+		+ 'T' is now not necessary delimiter between date and time.
+		+ More careful distinguishing between the time_t and ISO times.
+		+ ISO time allows incomplete times and dates, like "hh:mm..".
+
+5.1.1:	14 Nov 2000
+
+	* CGI: Attribute name now url_decoded.
+
+5.1.0:	04 Nov 2000 (5243 lines)
+
+	* Added functions initfdpos() and adjfdpos().
+	* Added functions initFILEpos() and adjFILEpos().
+
+5.0.1:	31 Oct 2000	(5040 lines)
+
+	* Improved koi8_r_to_windows_1251().
+	* mime_word_decode() now automaticaly recodes known charsets to koi8-r.
+	* Recode tables size set to safe value.
+
+	TODO: revise the _detach() functions.
+	TODO: mime_word_decode() should always return utf-8.
+
+5.0.0:	19 Oct 2000	(5020 lines)
+
+	* Final release.
+	* do*lean() changed to *_detach().
+	* Major number changed to 5.0.
+	* Makefile was somewhat simplified to achieve portability.
+
+	TODO: revise the _detach() functions.
+
+4.9.9:	6 Oct 2000
+
+	* TFMT_OLD822GMT flag added to timetostr()
+	* Absolutely idiotic bug in strtotime() fixed. (Related with GMT/LT).
+	* Manual pages were slightly improved to achieve readability for the
+	native english readers.
+
+4.9.6:	2 Oct 2000	(4465 lines)
+
+	* Introduced replace_detach().
+	* Introduced countstr().
+	* Manual pages rewritten to reflect that changes.
+
+4.9.5:	2 Oct 2000	(4431 lines)
+
+	* Introduceed char *timetostr(time_t time, int flags);
+	* fetchdate() is now able to recognize ISO-8601, ctime() and
+	unix_time formats.
+	* fetchdate() performs up to ten times faster.
+	* fetchdate() renamed to strtotime(3).
+	* httptime() removed, use timetostr() instead.
+	* match() and match1() removed as unnecessary.
+	* sinit(slist *) replaced by sinit(void).
+	* Due to incompatible changes library's major number changed to 4.9
+	* All necessary manual pages created.
+
+4.5.2:	28 Sep 2000
+
+	* cfgread(): equal sign is optional between an attribute and a value.
+	Equal sign may be placed between an attribute and a left brace.
+
+4.5.1:	25 Sep 2000
+
+	* Licks in limittextwidth().
+	* Fixed cfgread()' rc in reading broken config file (10x2basil). From
+	now it will return 0x1 if something failed inside the well-opened file.
+	* mime_word_decode(): added '\t' to the list of whitespace symbols.
+
+4.5.0:	18 Sep 2000
+
+	* formatf() function now accepts the third value - a key to be passed to
+	the invoked helper functions due to this significal change, the library
+	major number has changed to leave intact already built applications.
+	* Created sf_cfgread(3) manual page.
+	* getlanguageprefs() introduced in CGI module.
+	* sins() added for inserting values into slist structure.
+	* fetchdate() guesses that GMT = time - our_offset.
+
+4.3.2:	16 Sep 2000
+
+	* parse_form() performs additional checks to ensure data correctness.
+	* fetchdate() recognizes an RFC-850 (obsoleted) time format.
+
+4.3.1:	14 Sep 2000
+
+	* fetchdate() acts more accurately on broken times.
+
+4.3.0:	13 Sep 2000
+
+	* fetchdate() and mime_word_decode() acting significaly faster.
+	* iso-8859-5 to koi8-r table added.
+	* Quoted-printable engine slightly improved.
+
+4.2.2:	7 Sep 2000
+
+	* Little lick in fetchdate().
+
+4.2.1
+
+	* Three of six manual pages created.
+
+4.2:	24 Aug 2000
+
+	* Some improvements in the formatf() about \escaping.
+
+4.1.1:	30 Jun 2000
+
+	* Some licks in the config parsing.
+
+4.1:
+
+	* formatf() now recognizes something like this:
+		${attr==value?${printok}:${printfail}}
+	* cookie*() and set_cookie() functions added.
+
+4.0:
+
+	* libcfg-3.1 has integrated into this code.
+
+3.8.0:
+
+	* Format functions added for generalizing of metacharacters handling.
+	* Version control (strfunc_build()) added.
+
+3.7.6:
+
+	* url_decode() updated to be more stable on unusual data.
+	* httptime() function added for creating Expires field in CGI's.
+	* warning: mime_word_decode() invisibly "touches" the argument!
+	(Feature is documented bug).
+
+3.7.5:
+
+	* fetchdate() function added.
+	* base64_encode() function added.
+
+3.7.2:
+
+	* lang_recode() function added.
+	* windows_1251_to_koi8_r and koi8_r_to_windows_1251 tables added.
+	* struct slistpair and related functions (sgetp(), scgetp()) added.
+
+3.7.1:
+
+	* mime_word_decode() reviewed to match RFC2045 (base64 encoding).
+
+3.7.0:
+
+	* CGI part of the library handles multipart/form-data encoding!
+
+3.6.0:
+
+	* url_encode() function added.
+	* quoted_printable_decode() function added.
+	* mime_word_decode() function added.
+	* base64_decode() function added.
+	* match() (regex-based) function added.
+	+ Added C++ compatibility in header.
+
+3.5.0:
+
+	* stand-alone strfunc.c turned into this library
+	* code was rechecked and cleaned
+	* strfunc.h was totally rewriten
+

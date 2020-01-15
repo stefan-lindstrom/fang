@@ -1,0 +1,176 @@
+<?xml version="1.0"?>
+<mobiles>
+  <mobile vnum="6400" name="Trolloc Ways" special="NONE">
+    <description>The Trolloc looks as if it might be lost, which seems to have upset
+the creature, which is not good for you.
+</description>
+    <shortdesc>a wandering Trolloc</shortdesc>
+    <longdesc>A wandering Trolloc wanders about the Ways.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="100" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="30" dsize="150" bonus="2000"/>
+      <move ndize="10" dsize="100" bonus="2000"/>
+      <ac>-50</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>50</hitroll>
+      <damroll>50</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="2104380"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="7"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="25" sides="25" add="50"/>
+    <timer amount="0"/>
+    <skills vector="33"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="6401" name="Myrddraal Ways" special="NONE">
+    <description>The pasty white flesh of the myrddraal looks even more frightening
+in the wane light of the Ways. The myrddraal himself looks as if he would
+rather not be here, which is rather unfortunate for you as you will
+provide him with a little distraction.
+</description>
+    <shortdesc>a black robed Myrddraal</shortdesc>
+    <longdesc>A black robed myrddraal travels the ways.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="170" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="30" dsize="200" bonus="5000"/>
+      <move ndize="10" dsize="100" bonus="5000"/>
+      <ac>-150</ac>
+      <gold>50</gold>
+      <bankgold>0</bankgold>
+      <exp>500</exp>
+      <hitroll>100</hitroll>
+      <damroll>50</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="2757816"/>
+    <affected one="526384" two="0" three="0" four="0"/>
+    <attack type="11"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="30" sides="50" add="100"/>
+    <timer amount="0"/>
+    <skills vector="52"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnEntry" argtype="STRING" argument="leave grasp weave tgrasp cast">
+      <action number="ActionTo" argtype="STRING" argument="stun"/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="6402" name="Greyman Ways" special="NONE">
+    <description>The greyman is almost impossible to see, but you can clearly see the 
+gleaming dagger in his hand.
+</description>
+    <shortdesc>a greyman</shortdesc>
+    <longdesc>A greyman stalks the ways
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="100" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="30" dsize="100" bonus="500"/>
+      <move ndize="10" dsize="100" bonus="500"/>
+      <ac>-50</ac>
+      <gold>200</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>75</hitroll>
+      <damroll>30</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="2104504"/>
+    <affected one="3672112" two="0" three="0" four="0"/>
+    <attack type="14"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="30" sides="100" add="75"/>
+    <timer amount="0"/>
+    <skills vector="34"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnTick" argtype="STRING" argument="leave grasp weave tgrasp cast">
+      <action number="Action" argtype="STRING" argument="hide"/>
+    </mobprog>
+    <mobprog main="OnEntry" argtype="STRING" argument="leave grasp weave tgrasp cast">
+      <sideterm number="Darkfriend" not="TRUE" argtype="VOID" argument="NONE"/>
+      <action number="Emote" argtype="STRING" argument="a gleaming dagger stabs you in the back!"/>
+      <action number="ActionTo" argtype="STRING" argument="kill"/>
+      <action number="Action" argtype="STRING" argument="flee"/>
+      <action number="Action" argtype="STRING" argument="hide"/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="6497" name="spawner machingnol opener" special="NONE">
+    <description>It looks, err, unfinished.
+</description>
+    <shortdesc>spawner opener</shortdesc>
+    <longdesc>spawner opener
+</longdesc>
+    <title/>
+    <chardata gender="NEUTRAL" class="Adventurer" level="200" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="0"/>
+      <move ndize="10" dsize="100" bonus="0"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="8"/>
+    <affected one="2098" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnRandom" argtype="INT" argument="99">
+      <action number="Action" argtype="STRING" argument="stand"/>
+      <action number="Action" argtype="STRING" argument="enter spawner"/>
+    </mobprog>
+    <mobprog main="OnRandom" argtype="INT" argument="20">
+      <action number="PurgeMob" argtype="VOID" argument="NONE"/>
+    </mobprog>
+  </mobile>
+</mobiles>

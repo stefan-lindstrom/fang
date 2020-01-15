@@ -1,0 +1,91 @@
+#14900
+cujo king chihuahua~
+\c03Cujo\c00 the King chihuahua~
+\c03Cujo\c00 the king chihuahua is here, seething over a taco supreme.
+~
+A fat little animal- four legs sprout from its compact body precariously, and
+its ears lay back against its tiny skull as it growls threateningly- eyeing
+your ankles sharply.    
+~
+8 0 0 E
+170 -20 10 687 20d500+300 9d40+50
+5000 5000
+8 8 1
+BareHandAttack: 9
+Trip: 100
+Dirtkick: 100
+P
+OnDie
+Emote "howls victoriously, having slain an enemy. Yip yip- yoowwwrwwwwoooo!"
+End
+Q
+E
+#14901
+chihuahua cujo sentinel~
+A chihuahua sentinel~
+A Chihuahua sentinel surveys the area alertly
+~
+This chihuahua is of a tan hue, and is wearing a silly conical hat.  He looks
+in your direction and yawns, pausing to scratch his ear with a hind leg.    
+~
+8 0 0 E
+50 2 10 687 9d130+100 12d40+18
+2000 3000
+8 8 1
+BareHandAttack: 4
+P
+OnDie
+Emote "howls victoriously, having slain a victim..Yip yip- arooooo!"
+End
+Q
+E
+#14902
+Chihuahua cujo commoner~
+A chihuahua of common blood~
+A chihuahua of no importance scurries about..scorned by the hierchy of chihuahuas.
+~
+This chihuahua is virtualy hairless, revealing tender pink skin beneath of its
+white fur.  Its tail is tucked between its legs as it scurries away.    
+~
+8 0 0 E
+20 20 10 687 1d100+0 1d1+0
+200 1000
+8 8 1
+E
+#14999
+godzirra dreadlord lord~
+Godzirra, the Dreadlord~
+A large man with a wild look in his eyes is standing here.
+~
+I know what you're asking yourself. Did I use 6 rolling rings or was it just 5.
+Well, to tell you the truth, in all the comotion, I kinda lost count myself. But
+since this is Rolling Ring, the most powerful killing weave ever made, and it 
+will blow your head clean off, you gotta ask yourself, 'do I feel lucky?'. Well, 
+do you, punk?
+~
+5939210 264192 0 E
+199 -180 -20 687 1d100+20000 30d10+50
+500 100
+8 8 1
+BareHandAttack: 3
+Stun: 100
+P
+OnActionTo "stun"
+Cast "firestorm"
+Cast "firestorm"
+Cast "firestorm"
+Cast "firestorm"
+Cast "firestorm"
+End
+OnActionTo "weave" & Sex "male"
+Emote "Godzirra screams, 'You traitor!'"
+Cast "gentle"
+Cast "gentle"
+Cast "gentle"
+Cast "rolling ring"
+Cast "firestorm"
+Cast "firestorm"
+End
+Q
+E
+$

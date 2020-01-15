@@ -1,0 +1,162 @@
+.Dd October 1, 2000
+.Dt sf_time 3
+.Os
+.Sh NAME
+.Nm strtotime ,
+.Nm timetostr
+.Nd date and time conversions.
+.Sh SYNOPSIS
+.Fd #include <strfunc.h>
+.Ft time_t
+.Fn strtotime "char *datestring"
+.Ft char *
+.Fn timetostr "time_t value" "int flags"
+.Sh DESCRIPTION
+Those functions used to convert time format from string to binary
+.Ft time_t
+and vice versa.
+.Pp
+.Fn strtotime "char *"
+takes one string argument that represents the date and time in a number
+of formats, briefly shown below.
+.Fn strtotime
+is immune to trailing spaces, newlines and other non-printable and
+printable tails. It also tries to recognize elder time formats variants
+and strings created by broken implementations.
+.Pp
+.Nm 1 .
+ISO-8601 notation. This form best suited for use in mixed human/automatic
+parsing and comparisons.  The typical date string looks like:
+.Bd -literal -offset indent
+20000930T172458+0400
+or
+2000-09-30T17:24:58+0400
+or
+2000-09-30T21:24:58Z
+.Ed
+.Pp
+.Nm 2 .
+RFC-822 (updated by RFC-1123). This form used in the E-mail
+headers, like "Data:" and other. The date in this format looks like:
+.Bd -literal -offset indent
+Sat, 30 Sep 2000 17:24:58 +0400 (MSD)
+or
+Sat, 30 Sep 2000 17:24:58 +0400
+or even
+Sat, 30 Sep 2000 17:24:58 MSD
+that is but widely used, but lame,
+though correctly handled by strtotime.
+.Ed
+.Pp
+.Nm 3 .
+.Xr ctime 3
+or
+.Xr asctime 3
+form:
+.Bd -literal -offset indent
+Sat Sep 30 17:24:58 2000
+.Ed
+.Pp
+.Nm 4 .
+Syslog daemon's form:
+.Bd -literal -offset indent
+Mar 23 19:07:43
+.Ed
+.Pp
+.Nm 5 .
+Unix time in numeric form. This form specifies the number of seconds passed
+since the Epoch (00:00:00 UTC, January 1, 1970; see
+.Xr time 3 ).
+Typical form is "970257600" (signed long number).
+.Pp
+.Nm Other types .
+A set of other formats that are widely used is supported too.
+.Bd -literal -offset indent
+Thursday, 10-Jun-93 01:29:59 GMT
+Thu, 10 Jan 1993 01:29:59 GMT
+Wed Jun  9 01:29:59 1993 GMT
+1997/06/23 13:22:33
+
+and derivatives.
+.Ed
+.Pp
+Support for other time representation formats can be added upon request.
+.Pp
+.Fn timetostr "time_t value" "int flags"
+used to convert the time value to the user-specified representation format,
+specified by flags. Flags are defined in strfunc.h:
+.Pp
+.Nm TFMT_UNIX
+- simple numeric unix_time format.
+.Pp
+.Nm TFMT_CTIME
+-
+.Xr ctime 3
+and
+.Xr asctime 3
+format.
+.Pp
+.Nm TFMT_RFC822
+- format defined in RFC's 822 and 1123.
+.Pp
+.Nm TFMT_X208
+- format specified in X.208.
+.Pp
+.Nm TFMT_ISO8601
+- general representation according to ISO-8601 conventions.
+.Pp
+Those flags are present to specify the output format. And the following ones
+exist to slightly modify the output:
+.Pp
+.Nm TFMT_LOCAL
+- construct string representing the time within the local timezone instead
+of default GMT (zero timezone offset).
+.Pp
+.Nm TFMT_UF
+- user-friendly output. This flag turns on some additional features like
+dashes and colons within the ISO-8601 output or timezone abbreviation within
+the RFC-822 date string.
+.Pp
+.Nm TFMT_OLD822GMT
+- use old RFC-822 scheme with the hard-coded GMT zone abbreviation. This
+flag also disables the TFMT_LOCAL and TFMT_UF flag will be ignored. The
+typical string in this format will look like
+"Sat, 30 Sep 2000 21:24:58 GMT".
+This time format is widely used by the HTTP browsers and CGI scripts to
+exchange the "expiration" and "modified" times. This flag should be used
+in conjunction with TFMT_RFC822.
+.Pp
+Those flags can be mixed by OR'ing.
+.Pp
+.Sh RETURN VALUES
+The
+.Fn strtotime
+function returns the value of given time representation in seconds since
+0 hours, 0 minutes, 0 seconds, January 1, 1970, Coordinated Universal Time.
+If parse error occured, zero is returned and global variable errno is set to
+.Nm EINVAL
+to indicate an error.
+.Pp
+.Fn timetostr
+always returns pointer to the internal static object with string representation
+of given time_t value.
+.Pp
+.Sh EXAMPLE
+.Bd -literal
+void test() {
+	char *timeString = "Sat, 1 Oct 2000 01:34:00 +0400";
+	time_t timeValue = 970348600;
+
+	printf("timeString -> time_t: %ld\en", (long)strtotime(timeString));
+
+	printf("timeValue -> string: %s\en",
+		timetostr(timeValue,
+			TFMT_RFC822 | TFMT_LOCAL | TFMT_UF));
+}
+.Ed
+.Sh SEE ALSO
+.Xr strfunc 3 ,
+.Xr ctime 3 ,
+.Xr asctime 3 .
+.Sh AUTHORS
+.An Lev Walkin <vlm@spelio.net.ru>

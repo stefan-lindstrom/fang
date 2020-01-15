@@ -1,0 +1,1633 @@
+#1000
+rack~
+a rack~
+A rack containing practice swords is here.~
+~
+15 0 1
+4000 0 -1 0
+200 1 0
+P
+OnTake
+EmoteTo "You can't take an entire weapons rack, just like that!"
+Stop
+End
+Q
+#1001
+bundled lathe~
+a bundled lathe~
+A bundled lathe lies discarded on the ground here.~
+~
+5 69640 40961
+0 1 1 14
+1 1 0
+#1002
+board warders~
+the guild board~
+The guild board for the Tower Warders stands here, tall and proud.~
+~
+0 0 1
+0 0 0 0
+100 0 0
+P
+OnTake
+Stop
+End
+OnActionTo "look" & ! Guild "tower warders"
+Stop
+Emote "The writing on the board is in a language you can't understand."
+End
+Q
+#1003
+lantern TowerWarder~
+a softly \c10lit\c00 lantern~
+If you see this, alert an imm immediately.~
+A lantern.    
+If you see this, alert an imm immediately.
+~
+1 69768 16385
+0 0 -1 0
+1 1 0
+A
+20 2
+P
+OnTake & ! Guild "tower warders"
+Force "shout I have illegally stolen an item belonging to the Tower Warders.  Could an imm please purge me?"
+Destroy
+End
+OnWear & ! Guild "tower warders"
+Stop
+Force "holler Umm.. I'm being bad.  I've stolen a lantern from the Tower Warders, and now I'm trying to wear it.  Could an imm please beat me over the head with a moose?"
+Destroy
+End
+Q
+#1004
+sword TowerWarder~
+a finely crafted \c07steel\c00 sword ~
+If you see this, alert an imm immediately.~
+If you see this, alert an imm immediately.
+~
+5 69768 8193
+0 10 10 14
+10 1 0
+P
+OnTake & ! Guild "tower warders"
+Force "holler I have stolen the property of the Tower Warders.  I humbly beg the imms to destroy me."
+Destroy
+End
+OnWear & ! Guild "tower warders"
+Force "holler I have stolen a piece of guild equip from the Tower Warders.  Could an imm please purge me?"
+Destroy
+End
+Q
+#1005
+cloak TowerWarder~
+a hooded cloak of fine \c23gray\c00 wool~
+If you see this, report it immediately to an imm.~
+If you see this, alert an imm immediately.
+~
+9 69768 1025
+100 0 0 0
+4 1 0
+P
+OnTake & ! Guild "tower warders"
+EmoteTo "The cloaks crumbles in your hands like so much dust."
+Destroy
+End
+OnWear & ! Guild "tower warders"
+EmoteTo "Suddenly Gawyn appears before you and rips the cloak from your hands, a disapproving frown on his face."
+Destroy
+End
+Q
+#1006
+belt TowerWarder~
+a \c03leather\c00 swordbelt~
+If you see this, please immediately alert an imm.~
+If you see this, alert an imm immediately.
+~
+15 69768 2049
+1000 0 -1 0
+2 1 0
+A
+18 40
+A
+19 40
+P
+OnTake & ! Guild "tower warders"
+Stop
+EmoteTo "The swordbelt you just tried to pick up disappears in a puff of pink smoke."
+Destroy
+End
+OnWear & ! Guild "tower warders"
+Stop
+EmoteTo "Gawyn appears before you, violently wrenching the swordbelt from your hands with an expression of disgust in you marring his face."
+Destroy
+End
+Q
+#1007
+cloak color-shifting TowerWarder~
+a \c23c\c00\c02o\c23l\c00\c02o\c23r\c00\c07-\c02s\c23h\c00\c02i\c23f\c00\c02t\c23i\c00\c02n\c23g\c00 \c14cloak\c00~
+If you see this, immediately report it to an imm.~
+If you see this, immediately report it to an imm.
+~
+9 69640 1025
+0 0 0 0
+4 1 0
+P
+OnTake & ! Guild "tower warders"
+EmoteTo "The fancloth cloak crumbles apart in your hands, becoming nothing."
+Destroy
+End
+OnWear & ! Guild "tower warders"
+Stop
+EmoteTo "A warder approaches and slices the cloak to nothingness the instant you blink."
+Destroy
+End
+Q
+#1008
+names list bronze silver~
+a list of names~
+A list of names is carefully engraved into the wall here.~
+~
+12 66504 0
+0 0 0 0
+1 1 0
+E
+names list wall~
+Balorain Gaidin (Siara)
+Siara Tremayne Aes Sedai (White Ajah)
+Siegfried Volsung Gaidin (Katja)
+Katja Seraphet Volsung Aes Sedai (Green Ajah)
+Jeremy Amoren Gaidin (Katja) (Kalia)
+Taryn Aes Sedai (Yellow Ajah)
+Sareena Aes Sedai (Red Ajah)
+Huira Aes Sedai (Brown Ajah)
+Aliane Senican Aes Sedai (White Ajah)
+Kaena Sharad Aes Sedai (Green Ajah)
+Clarise Chienar Gaidin (Anisette)
+Gregg Berensen Gaidin (Erisandra)
+Kerrin Aes Sedai (Green Ajah)
+A'vron Ben'amin Gaidin (Kerrin)
+Sianna Tiernan Aes Sedai (White Ajah)
+Anisette Aes Sedai (Grey Ajah)
+Student Silas Ortona
+Rolen Hajiro Gaidin (Tiernee)
+Tiernee du Vale Aes Sedai (Green Ajah)
+Jeremiah al'Moren Gaidin (Kalia)
+Rheric Gaidin (Katja) (Isabeau) (Etaine)
+Auren al'Mais Gaidin (Saskiat)
+Jakiri Gaidin (Morigen)
+Tahira Sydoren Aes Sedai (Grey Ajah)
+Liorin do Mehon a'Lordeine Aes Sedai (Brown Ajah)
+Katirenne Myrela Kreeg, Keeper of the Chronicles (Green Ajah)
+Kalia ni'Amoren a'Brandt Aes Sedai (Green Ajah)
+Benoit DeMott (Aislara)
+Siri Kymren Mal'ben Aes Sedai (White Ajah)
+Morigen Natal Aes Sedai (Yellow Ajah)
+Miriel Gio'rdon Aes Sedai (Brown Ajah)
+Verde Azel (Trainee)
+~
+P
+OnTake
+Stop
+Emote "You cannot pick up the list of names, as it is a part of the wall..."
+End
+Q
+#1009
+steel helm quest~
+a steel helm~
+A steel helm lies here.~
+~
+9 65672 17
+0 0 0 0
+3 1 85
+A
+18 35
+A
+19 35
+A
+17 -100
+#1010
+breastplate steel~
+a steel breastplate~
+A steel breastplate is here.~
+~
+9 65536 9
+0 0 0 0
+10 56000 0
+A
+17 -50
+A
+19 6
+A
+18 6
+#1011
+steel ring~
+a steel ring~
+A steel ring lies here.~
+~
+11 65536 3
+0 0 0 0
+1 48000 0
+A
+17 -40
+A
+18 6
+A
+19 6
+#1012
+green cloak~
+a green cloak~
+A green cloak is lying on the ground here.~
+~
+9 65536 1025
+40 0 0 0
+5 43500 0
+A
+18 10
+A
+19 10
+#1013
+forest green leggings~
+a pair of forest green leggings~
+Some discarded leggings are here.~
+~
+11 0 33
+0 0 0 0
+4 36000 0
+A
+17 -15
+A
+18 7
+A
+19 7
+#1014
+black boots~
+a pair of black leather boots~
+A pair of black leather boots is lying on the ground.~
+~
+11 0 65
+0 0 0 0
+5 39000 0
+A
+17 -25
+A
+18 7
+A
+19 7
+#1015
+sign~
+an OoC sign~
+An \c14OoC sign\c00 is here, describing what the armory sells.~
+~
+12 0 0
+0 0 0 0
+100 1 0
+E
+sign~
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ a pair of forest green leggings = -15 AC, 7/7 hitroll/damroll
++ a green cloak  = -25 AC, 8/8 hitroll/damroll                                     
++ a steel helm =  -100 AC, 35/35 hitroll/damroll                                  
++ a pair of forest green sleeves = -20 AC, 16/16 hitroll/damroll      
++ a steel ring = -40 AC, 6/6 hitroll/damroll
++ a pair of black leather boots = -25 AC, 7/7 hitroll/damroll
++ a statue of an Aes Sedai = - 15 AC, 5/7 hitroll/damroll
++ a silk kerchief = -15 AC, 10/10 hitroll/damroll
++ a plain boarhide swordbelt = -20 AC, 6/5 hitroll/damroll
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+~
+P
+OnTake
+Stop
+EmoteTo "You are not strong enough to pick up the sign."
+End
+Q
+#1016
+meal bread cheese~
+a meal of bread and cheese~
+A meal consisting of bread and cheese is lying on the ground.~
+~
+19 0 1
+24 0 0 0
+2 5 0
+#1017
+bowl vegetables~
+a bowl of vegetables~
+A bowl full of vegetables is here.~
+~
+19 0 1
+10 0 0 0
+1 5 0
+#1018
+glass cool water~
+a glass of cool water~
+A glass of water is here.~
+~
+17 0 1
+3 3 0 0
+8 5 0
+#1019
+key ALIKASKEY TOWERWARDERS~
+Alika's key~
+A plain brass and steel key lies on the ground here.~
+~
+18 65608 1
+0 0 0 0
+1 1 0
+#1020
+fountain plain~
+a plain fountain~
+A plain fountain with an inscription at it's base is here.~
+~
+23 0 1
+100 100 0 0
+900 1 0
+P
+OnTake
+Stop
+EmoteTo "You cannot pick up something that is 10 times as heavy as yourself."
+End
+Q
+#1021
+gauntlet steel twardershop~
+a pair of thick steel gauntlets~
+A pair of thick steel gauntlets is lying here, on the ground.~
+~
+9 0 129
+14 0 0 0
+8 49500 0
+A
+18 10
+A
+19 10
+A
+17 -1
+#1022
+thick steel shield~
+a thick steel shield~
+A thick steel shield is here, lying on the ground.~
+~
+9 0 513
+44 0 0 0
+4 36000 0
+A
+17 -1
+A
+18 5
+A
+19 5
+#1023
+key~
+a plain key~
+A plain key lies on the ground.~
+~
+18 73928 1
+0 0 0 0
+1 0 0
+#1024
+plain cloak YOUNGLINGS~
+a plain cloak~
+A plain cloak lies on the ground.~
+~
+9 0 1025
+0 0 0 0
+2 1 0
+A
+18 40
+A
+19 40
+A
+17 -100
+P
+OnWear & ! Guild "tower warders"
+Stop
+Destroy
+End
+Q
+#1025
+plain sword YOUNGLINGS~
+a plain sword~
+A plain sword lies on the ground here.~
+~
+5 69640 8193
+0 10 10 14
+10 1 0
+P
+OnWear & ! Guild "tower warders"
+Stop
+Destroy
+End
+Q
+#1026
+lantern~
+a lantern~
+A lantern lies here on the ground.~
+~
+1 65544 16385
+0 0 0 0
+2 1 0
+A
+20 3
+P
+OnWear & ! Guild "tower warders"
+Stop
+Destroy
+End
+Q
+#1027
+sleeves green~
+a pair of green sleeves~
+A pair of green sleeves is here. Odd.~
+~
+9 69640 257
+0 0 0 0
+1 1 0
+A
+17 -100
+P
+OnWear & ! Guild "tower warders"
+Stop
+Destroy
+End
+Q
+#1028
+leg guards steel towerguard~
+a pair of steel leg guards~
+Something feels very wrong here..~
+~
+9 69640 1
+0 0 0 0
+0 1 0
+A
+17 -50
+A
+20 1
+#1029
+guards arm steel towerguard~
+a pair of steel arm guards~
+There is nothing here.~
+There is nothing here.
+~
+9 69640 1
+0 0 0 0
+0 1 0
+A
+19 20
+A
+17 -70
+A
+20 1
+#1030
+breastplate steel~
+a steel breastplate~
+There... is nothing.. here~
+~
+9 69640 9
+0 0 0 0
+5 1 0
+A
+18 50
+A
+19 30
+A
+17 -80
+#1031
+towerguard sword~
+a sword marked with a single flame~
+Something is... here..~
+~
+5 69640 1
+0 7 10 14
+0 1 0
+#1032
+sign~
+an OoC sign~
+An \c07OoC\c00 sign is here.  Read it.~
+~
+12 65736 1
+0 0 0 0
+100 1 0
+E
+sign~
+If you are not a Tower Warder, you are IC here
+unless you have OOC in both your doing and
+your title.  If you are caught here and do not
+have OOC in your doing and title, you will either
+accept the consequences of being here IC'ly, or
+you will be teleported out.
+~
+P
+OnTake
+Stop
+Emote "You can't take this sign!"
+Force "blush"
+End
+Q
+#1033
+book~
+Alcarin's Description of Combat~
+A book entitled "Alcarin's Description of Combat" is here.~
+~
+12 73800 1
+0 0 0 0
+10 200 0
+E
+towermorning~
+TOWER OF THE MORNING
+To use this form, keeps your legs apart with your
+knees bent, and ensure that your feet are in a 
+straight line at distance, so if the back knee is
+set down it is near the heel of the front foot.
+The toes should be angled inwards, and the sword
+held at guard.  Step back and pull your sword in
+towards your chest, then sweep it up to parry a 
+downward slash.  Open your stance slight and turn
+the body as you deliver a downward diagonal slash
+across the base of your enemies neck.
+~
+E
+description combat book contents~
+ CONTENTS
+Introduction - introduction
+Bundling Straw - bundlingstraw
+Waterfall on the Mountainside - waterfall
+The Sun Rises - sunrises
+Lizard in the Thornbush - thornbush
+Heron Spreads His Wings - heronspreads
+Stones Falling Down the Mountain - stonesfalling
+The Swallow Takes Flight - swallowtakes
+Lightning of the Three Prongs - threeprongs
+Leaf on the Breeze - breeze
+Watered Silk - wateredsilk
+Tower of the Morning - towermorning
+~
+E
+introduction~
+Combat, like any other day to day activity, will eventually
+become a routine.  This, I stress, is very important:  DO 
+NOT let that happen.  Every time you kill, it must be as the
+first time, or you will become like that which we fight 
+against more than anything, the Darkness.  Take no pleasure
+in killing, and always pity your foe.  After all, even the
+lowliest of shadowspawn, the trolloc, obeys it's dark master
+only because it was created to do so.  Nevertheless, you
+must never waver, you must always face even the most 
+fiersome of beasts in order to protect your Aes Sedai.  In
+this book I will descibe to you many different tecniques
+used with a sword, and the following book I write will be
+designed to teach more specialized methods of fighting, such
+as with two swords, one in each hand, or against multiple
+opponents, all fought simultaneously.  On that note, enjoy
+this book, but do not enjoy the subject matter.
+~
+E
+bundlingstraw~
+BUNDLING STRAW
+This is an excellent form for beginners, as it is both a defense
+and a counterattack.  It is not that hard to execute once you have
+learned the basics of balance, how to hold a sword, and how to
+hold a good stance that works for you.  Well, before I ramble on
+overly much, here is a description of the form.
+FORM DESCRIPTION-  Hold your sword parallel to your body, point up, and then
+move it across your body, to parry an attack.  Immediately after
+you have parried, slash downwards at your opponents stomach and
+legs, moving the sword in the opposite direction as before.
+~
+E
+waterfall~
+WATERFALL ON THE MOUNTAINSIDE
+This is a purely defensive sword tecnique, used to
+defend yourself from an attack from behind.  Without
+further ado, here is a description of the form.
+FORM DESCRIPTION- With your arms raised above your
+head, place the sword flat against your back.  This,
+in all likelihood, will be a successful defense 
+against slashing attacks from the rear.
+~
+E
+sunrises~
+THE SUN RISES
+This form can be used for either attack or defense,
+depending upon the circumstances in which you are
+using it.  To attack, slash upwards at the chest of an 
+unarmored opponent with the tip of your blade.  Note,
+however, that your opponent must be unarmored.  The
+odds specify that if you try this against, say a
+Child of the Light, your blade will simply bounce
+harmlessly off of his plate armor.
+To use it as a defense, do the same and use it against
+low attacks.  In ideal conditions you will not allow
+it to throw you out of position, and it will in turn
+send your opponents sword high, allowing for a quick 
+low attack, such as River Undercuts the Bank. 
+~
+E
+thornbush~
+LIZARD IN THE THORNBUSH
+This is a very simple sword form, in theory, but
+in practice is much more complicated, because it
+has to be done very quickly and precisely.  A
+lunging thrust to the throat of your enemy, followed
+by a quick slash across his torso, is all you are
+required to do with this form.  It sounds easy,
+but you must do it quickly or leave yourself open.
+However, if you are dextrous enough, this is a 
+very useful tecnique when facing several opponents,
+as it allows you to take one of them out of the
+equation, and very fast.
+~
+E
+heronspreads~
+HERON SPREADS HIS WINGS
+This is another attack tecnique, and a very
+aptly named one at that.  Firstly, both arms
+are spread out and up, like a heron spreading
+it's wings, the blade slashes upward from 
+your opponents groin to his throat.  Remember,
+thought, to quickly bring your defense back 
+into order, or you will be wide open and
+extrememly vulnerable.
+~
+E
+stonesfalling~
+STONES FALLING DOWN THE MOUNTAIN
+This is a two slash attack.  First you must slash
+your opponents temple, back-handedly, and second
+you will bring the sword up, continuiing in the
+same direction as the original slash, mind you,
+and then circle around to slash at the base of
+the enemies neck.
+~
+E
+swallowtakes~
+THE SWALLOW TAKES FLIGHT
+This sword form can be used in one of two ways.  You
+can either use it to defend against one attack, then
+counterattack, or use it to defend against one attack,
+then against yet another.  To defend, hold the sword
+vertically while turning your body away from the 
+attack.  After this, you can either counterattack, or
+defend again.  To counterattack, follow with a rising
+backhand slash to the side your enemies head or neck.
+If you wish to defend again, parry while holding the
+sword diagonally down, and step away from the attack.
+~
+E
+threeprongs~
+LIGHTNING OF THE THREE PRONGS
+This is three, tightly controlled, lightning fast
+thrusts to the head of your opponent.  Be careful
+in how you do this, or you may pull yourself out
+of position.  It takes a great deal of practice
+to master the forms which prerequisitely require
+a great deal of speed.  First thrust at the left
+of your opponents head, then the right, then at
+the center.
+~
+E
+breeze~
+LEAF ON THE BREEZE
+Spin halfway around from the waist up, keeping your
+feet firmly planted on the ground, and perform three
+quick parries, followed by spinning back and making
+a short slash to your opponents upper-body. 
+~
+E
+wateredsilk~
+WATERED SILK
+If you should ever, for a reason beyond the understanding
+of this simple swordsman, find yourself crouching during
+a fight, this is a form which might be able to get you out
+of a tight situation.  A slash across the abdomen, followed
+by a strong thrust to the heart, and your opponent is 
+either dead or possibly on the defensive, giving you a 
+chance to stand up and organize a strategy.  Note, you must
+hold the sword parallel to the ground as you thrust at
+your opponents heart.
+~
+P
+OnDie
+Destroy
+End
+OnTick
+Destroy
+End
+Q
+#1034
+bookshelf shelf shelves~
+a shelf of books~
+Shelves full of books are here, in the library.~
+~
+15 65736 1
+10000 0 -1 0
+200 1 0
+P
+OnTake
+Stop
+EmoteTo "Are you nuts?! Even Hercules would have a hard time lifting this thing."
+End
+Q
+#1035
+pouch~
+a pouch~
+Here is a pouch.~
+~
+15 65544 2049
+2500 0 -1 0
+2 1 0
+P
+OnWear & ! Guild "tower warders"
+Destroy
+End
+Q
+#1036
+book~
+a book~
+A book entitled "Alcarin's Description of Combat - II" is here.~
+~
+12 0 1
+0 0 0 0
+3 1 0
+P
+OnTake & ! Guild "tower warders"
+Destroy
+End
+Q
+#1037
+sword tower warder~
+a finely crafted \c07steel\c00 sword~
+If you see this, alert an IMM immediately.~
+If you see this, alert an IMM immediately.
+~
+5 69768 32768
+0 10 10 14
+10 1 0
+#1038
+an Easton aluminum hockey stick~
+an Easton aluminum hockey stick~
+An Easton aluminum hockey stick has been dropped here.~
+~
+5 70152 49152
+99999 99999 50 14
+0 0 0
+A
+9 10000
+A
+18 9999
+A
+19 9999
+A
+20 10
+A
+17 -30000
+A
+1 32
+#1039
+khenten key~
+Khenten's Key~
+Khenten dropped his key give it back.~
+~
+18 0 1
+0 0 0 0
+1 1 0
+#1040
+tower warder syllabus student trainee~
+the Syllabus for the Tower Warders~
+If you see this lying around, notify a Tower Warder GL~
+~
+13 69832 1
+0 0 0 0
+1 0 0
+E
+contents~
+&y***Ranks and privileges***
+&W***Student***
+&y***Trainee***
+&W***Advanced Trainee***
+&y***Instructor/Veteran subrank***
+~
+E
+ranks privileges~
+&yNotes on ranks and privileges:
+
+&WStudents may use steel for form practice, may NOT leave tower grounds without accompaniment by YG, TG, Advanced Trainee, Warder or Aes Sedai, and then only to the city.
+&yTrainees: May use steel in spar with INSTRUCTORS or Blademasters, may go into Tar Valon unaccompanied. May NOT leave the city.
+&WAdvanced Trainees: May use steel in spar with any warder or officer. Have access to the Tower Library. May leave the city under the direction of an AS or Instructor&n
+&RNone of the above ranks should be in any part of the tower other than
+the public areas and the warder complex without specific instructions.
+They may NOT go into the prisons or dungeons without especial 
+dispensation from the Captain of the Tower Guard.&n
+Other Dispensations to these rules may be granted by the Master of 
+Instructors or the Master of Trainees.
+&WBasic Tower Guards/Younglings: May use steel in spar with anyone who has completed training. Restrictions on movement up to the Captain of the Tower Guard, and the Commander of the Younglings respectively.
+&yTG/YG Officers/Warders: May give any lecture unless otherwise noted. May supervise spars, may spar steel with advanced trainees.
+&WInstructors/Blademasters:May use steel in spar with Trainees. Can give Instructor Spars, Advanced spars, and teach forms.Has full access to the Complete Formlist. Only INSTRUCTORS may give the instructor only lectures.&n
+~
+E
+Student~
+&yNew Members of the White Tower start at the Student rank.&n
+
+&WIn order to advance to Trainee the following requirements must be completed:
+&R{Note: It is STRONGLY recommended that these be learned and taught in
+order at this rank}&n
+1.) Tower Etiquette, and Rules for a Student &Y{Instructor Only}&n
+2.) The Sword and it's Basic Uses &M[Required for Forms]&Y{Instructor Only}&n
+3.) The Flame and the Void &C(Void)&n
+4.) Emote Fighting Techniques
+ 
+5.) Warder and Tower Purpose
+6.) Warder Creed
+Required Spars: 1 with an Instructor
+2 supervised
+2 unsupervised
+
+Required Forms:
+Heron Wading in The Rushes
+Folding The Air
+The Sun Rises
+Dove Takes Flight
+Stones Falling From the Mountain
+The Bell Rings
+Boar Rushes Down The Mountain
+
+Upon completion of the above requirements, Students are advised to see
+the Master of Trainees about their test, which  through the means of
+a theoretical discussion and a spar, will determine whether the student 
+is prepared to be promoted.
+~
+E
+trainee~
+&yTo move to Advanced Trainee, the following are required:&n
+
+Element of Surprise &C(Backstab)&n
+&RAt Least THREE&n of the following lectures:
+General Protection of Aes Sedai &C(Rescue)&n
+Protection of Aes Sedai from Channelers &C(Dirtkick)&n
+Protection of the White Tower &Y{Instructor Only}&n
+Shadowspawn &Y{Instructor Only}&n
+&RAt Least ONE&n of the Following lectures:
+Moving in Stealth &C(Hide, Sneak, Hide Tracks)&n
+Tracking &C(Seek, Track, Hide Tracks)&n
+Survival &C(Forage)&n
+Weapon Types and Uses &Y{Instructor Only}&n
+Required Spars:
+2 with an Instructor
+2 Supervised
+2 Unsupervised
+2 Advanced (One 2 on 1, One Defender)
+
+Required Forms:
+Hummingbird Kisses the Honeyrose
+Soft Rain at Sunset
+The Rose Unfolds
+Wind Blows Over The Wall
+Wind and Rain (Disarm)
+Moon Rises Over The Lakes
+
+Upon completion of the above requirements, the Trainee should see the Master
+of Trainees about being tested for advancement. The test includes knowledge
+of what you have been taught, as well as a spar, so be prepared.
+~
+E
+Advanced~
+For Advancement to Basic Tower Guard or Youngling:
+
+&RAny and all lectures listed in the Trainee section that remain undone
+Lessons in the following:
+P-fights/kills
+&ROptional&n Training in Aliasing/trigs
+Nature of the Bond &Y{BONDED Warders only}&n
+Required Spars:
+2 Advanced (One 2 on 1, one 3-way)
+4 others of any category
+
+Required Forms:
+Parting The Silk
+ARc of The Moon
+Whirlwind on The Mountain
+Black Pebbles on Snow
+Lion on The Hill
+The Falcon Stoops
+
+After completing the requirements, the trainee must see 
+the Master of Trainees to be tested on skill level and theory. 
+If the veteran trainee passes such a test, they have the option of 
+enrolling in the ranks of the tower guards until such time as they
+have found a Bondmate, or they may merely be set to Gaidin unbonded and
+go from there. Anyone who achieves this rank, congratulations, in advance.
+~
+E
+Instructor veteran~
+To gain a Veteran/Instructor Rank, the following must be completed:
+
+Expert Forms (Level V): &M[SIX lvl IV forms req'd]&n
+
+&YBM/Instructors may teach level V forms.&n
+ Dove takes Flight
+ Lion on the Hill
+ Tower of the Morning
+ Wind and Rain
+ Whirlwind on the Mountain
+ The Falcon Stoops
+ The Moon Rises over the Lakes
+ The Creeper Embraces the Oak
+ Apple Blossoms in the Wind &M[ALL other Level V forms required]&n
+Actual advancement at this level is at GL discretion.  Instructors also need to talk to the MoI and demonstrate a willingness and ability to teach.
+It should be noted that this ranking is attainable solely as a reflection of the degree of IC training you have chosen to acquire.  It is not required that you complete any of the Instructor/Veteran form lessons unless you are looking for the rank.  The ranks are not intended to be used as an OOC or IC excuse to lord it over any other Gaidin, and harsh disciplinary action will be taken if such actions occur.
+~
+#1041
+instructor notes~
+the Instructor's Text~
+If you see this lying around, tell a Tower Warder GL~
+~
+13 69824 1
+0 0 0 0
+1 0 0
+E
+contents~
+&yStudents
+&WTrainees
+&yAdvanced Trainees
+&WInstructor/Veteran&n
+&yLectures&n
+&WFormlist&n
+~
+E
+student~
+
+If a specific lesson provides IC knowledge for a skill it is noted in &C(parentheses)&n, Students should ask their teacher for the skill, and if the teacher can't instruct, talk to one of the GLs. Also during  lessons with Instructors use of prodigy is recommended. Pre-Requirements for lessons are noted in &M[Brackets]&n
+Supervised spars may be between any two members of the White Tower  Warders Guild and should be mailed to the MoI by the supervisor.  Unsupervised spars may be between any two members of the White Tower Warders Guild and should be mailed to the MoI by BOTH parties. This is on the honor system, if you are caught lying about this you WILL be deguilded, no second chances.
+
+&WIn order to advance to Trainee the following requirements must be completed:&n
+&R{Note: It is STRONGLY recommended that these be learned and taught in order at this rank}&n
+1.) Tower Etiquette, and Rules for a Student &Y{Instructor Only}&n(refer to &getiquette&n)
+2.) The Sword - Basic Uses &M[Required for Forms]&Y{Instructor Only}&n (refer to &gsworduse&n)
+3.) The Flame and the Void &C(Void)&n
+4.) Emote Fighting Techniques
+ 
+5.) Warder and Tower Purpose
+6.) Warder Creed
+Required Spars:
+1 with an Instructor
+2 supervised
+2 unsupervised
+Required Forms:
+Heron Wading in The Rushes
+Folding The Air
+The Sun Rises
+Dove Takes Flight
+Stones Falling From The Mountain
+The Bell Rings
+Boar Rushes Down The Mountain
+
+After completing all of the above, the student should be directed
+to the Master of Trainees for his testing.
+~
+E
+trainee~
+&WThe following are required for Trainees:&n
+
+Element of Surprise &C(Backstab)&n
+&RAt Least THREE&n of the following lectures:
+General Protection of Aes Sedai &C(Rescue)&n
+Protection of Aes Sedai from Channelers &C(Dirtkick)&n
+Protecting the Tower &Y{Instructor Only}&n(refer to &gtowerprot&n)
+Shadowspawn &Y{Instructor Only}&n(refer to &gshadowspawn&n)
+&RAt Least ONE&n of the Following lectures:
+Moving in Stealth &C(Hide, Sneak, Hide Tracks)&n
+Tracking &C(Seek, Track, Hide Tracks)&n
+Survival &C(Forage)&n
+Weapon Types and Uses &Y{Instructor Only}&n(refer to &gweaponry&n)
+Required Spars:
+2 with an Instructor
+2 Supervised
+2 Unsupervised
+2 Advanced (One 2 on 1, One Defender)
+Required Forms:
+Hummingbird Kisses the Honeyrose
+Soft Rain at Sunset
+The Rose Unfolds
+Wind Blows Over The Wall
+Wind and Rain (Disarm)
+Moon Rises Over the Lakes
+
+After completing the above, the trainee should be directed to
+The Master of Trainees for his testing.
+~
+E
+advanced~
+For Advancement to Basic Tower Guard or Youngling:
+
+&RAny and all lectures listed in the Trainee section that remain undone
+Lessons in the following:
+P-fights/kills
+&ROptional&n Training in Aliasing/trigs
+Nature of the Bond &Y{BONDED Warders only}&n
+Required Spars:
+2 Advanced (One 2 on 1, one 3-way)
+4 others of any category
+Required Forms:
+Parting The Silk
+Arc of The Moon
+Whirlwind on The Mountain
+Black Pebbles on Snow
+Lion on The Hill
+The Falcon Stoops
+
+After completing all of the above, the trainee should be directed
+to the Master of Trainees for his testing.
+~
+E
+lectures~
+Lectures that -must- be given by an Instructor:
+
+* Tower Etiquette, and Rules for a Student (etiquette)
+* The Sword and Basic Uses (sworduse)
+* Protection of the White Tower (towerprot)
+* Shadowspawn (shadowspawn)
+* Weapon Types and Uses (weaponry)
+~
+E
+etiquette~
+The lecture should discuss bowing to AS, proper address for AS/Instructors, use of steel on the practice yard, avoidance of novices, and comments on the red ajah if the instructor wishes. It must cover Tower Grounds policy, and respect for TGs.  All trainees must remain in public areas of the Tower, or Warder Complex. No trainee has access to the Dungeons or Prisons save by especial leave granted by the Captain of the Tower Guard.
+
+Students: May use steel for form practice, may NOT leave tower grounds without accompaniment by YG, TG, Advanced Trainee, Warder or Aes Sedai, and then only to the city.
+Trainees: May use steel in spar with INSTRUCTORS or Blademasters, may go into Tar Valon unaccompanied. May NOT leave the city.
+Advanced Trainees: May use steel in spar with any graduated char. Have access to the Tower Library. May leave the city under the direction of an AS or Instructor
+(Dispensation to Area Restrictions may be granted by the MoI or the MoT)
+~
+E
+sworduse~
+The lecture should explain the following issues:
+
+Why the Sword?
+Types of swords: Length, edges, curved/straight, 1hand/2hand
+Difference between swing and thrust
+Care and Grip
+Dodges and Parries
+Recommended Forms: 
+Folding the Fan, Dandelion in the Wind, Moon over Water
+~
+E
+towerprot~
+The lecture consists basically of politics - when to not speak, eyes and ears, hostile groups, and that sort of thing.
+~
+E
+shadowspawn~
+The instructor should talk about: Darkfriends, Trollocs, Fades, Draghkar, gray men and darkhounds, with possible mention of the forsaken and dreadlords
+
+~
+E
+weaponry~
+The instructor can teach, according to the student's wishes and his or her own abilities, the following:
+
+Sword, Axe, Spear, Mace, Staff, Bow, Shield, Armor, etc.
+~
+E
+formlist~
+Level I (level1)
+Level II (level2)
+Level III (level3)
+~
+E
+level3~
+
+Parting The Silk: Attack: Bring your weapon in a horizontal
+slash from left to right, across the upper chest of your
+opponent. Follow up by stepping forward and lashing your weapon
+down from their right shoulder to opposite hip.
+
+Arc of The Moon: Defense and Counter: Bring your weapon across in
+a high horizontal arc designed to knock aside an incoming
+downward or diagonal slash. Respond by lashing your blade from
+left to right, across your opponent's throat.
+
+Whirlwind on the Mountain: Attack: Step forward, bringing
+your weapon in a vertical slash, down across your opponent's
+right arm in an attempt to severely damage the motion of the
+limb. Quickly step to your right, following up with a horizontal
+slash at armpit level, from right to left.
+
+Black Pebbles on Snow: Defence and counter: Block an incoming
+thrust or diagonal attack by batting it up and away from its
+intended target. Bring your blade low and slashing in a
+horizontal arc across their gut, if right handed, left if left.
+When completing the slash, your weapon should be beginning to arc
+back upwards to block your opponent's response.
+
+Lion on the Hill: Defence and counter: Designed to block a
+thrust to the chest or stomach, sidestep to the right if right
+handed, left if left handed, bringing your weapon across your
+body to knock the attack down and askew. Counter by bringing your
+weapon backhandedly across your opponent's stomach.
+
+The Falcon Stoops: Attack: With left foot forward and blade at
+ready position, take a step forward with your right foot,
+slashing from your opponent's left shoulder to right hip, a quick
+slash that sacrifices strength and force for speed. Immediately
+after this feint, step back to give your blade room to play,
+before stepping forward again and driving your weapon in a
+thrusting attack at your opponent's sternum.
+
+~
+E
+level2~
+Hummingbird Kisses the Honeyrose: Defence and Counter: Block an
+incoming thrusting attack at chest or stomach by parrying the
+attack wide to your right if so handed, left if so handed.
+Quickly take a step forward, bringing your weapon up to thrust at
+the soft part under your opponent's chin.
+
+Soft Rain at Sunset: Defence and Counter: Block an incoming
+thrust to the chest or stomach by batting the attack to the right
+if right handed, left if left, then quickly step forward, lifting
+your blade and bringing it down in a controlled but hard stroke
+aimed to split the skull of your opponent from crown to teeth.
+
+The Rose Unfolds: Unsheathing Defence: Used as an immediate
+defence when someone is attacking with steel, draw your weapon
+and with a single controlled sweep, bring it across in front of
+you from left to right, blade held vertically and ready to knock
+aside any incoming attacks. If your opponent is left handed, add
+a reverse stroke after the first motion is completed, bringing
+your weapon back from right to left.
+
+Wind Blows Over The Wall: Attack: Feint a slash at your
+opponent's left hip, a short horizontal stroke from left to
+right. Follow up by stepping forward and to the right, bringing
+your weapon above your opponent's, assuming they have gone for
+the feint and then thrust for their larynx.
+
+Wind and Rain: Disarming maneuver: Feint for your opponent's
+throat or face, forcing them to commit to the defence, before
+lashing your weapon hard across the bycept of their sword arm.
+
+Moon Rises Over the Lakes: Defence and counter: Designed to
+block an incoming thrust at chest or stomach, sidestep hard and
+turn your body more towards the thrusting opponent, bringing your
+weapon in a hard, controlled but very quick slash across the
+tender skin of their flank, below the ribs and above the hip.
+~
+E
+level1~
+Heron Wading in The Rushes: attack: balance training) Right foot
+up, touching left thigh. Sword makes a square with bent arm,
+passing back over the biceps, and is parallel to the ground.
+Slashing two handed strike. When foot touches ground, immediately
+return to starting position. Strike ends at exact  same time as foot
+touches.
+
+Folding The Air: Simple Defence: Designed to parry a thrust to
+the chest, step to the right if you are right handed, to the left
+if left handed, then bring your weapon across your body to knock
+the incoming attack up and away from its mark.    
+
+The Sun Rises: Simple Defence: Designed to block an overhead,
+downward attack, step back, lifting your blade from low guard, to
+meet their's and hault the attack.
+
+Boar Rushes Down the Mountain: attack: With your weapon
+hilt held at waist level, tip slightly off parallel to the
+ground, pointing down. With left foot advanced, step forward hard
+with your right and snap your wrists violently upward as you
+close with your opponent, the tip of your weapon rising rapidly
+to rip your opponent open from their abdomen to their chest in a
+hard, rising slash.
+
+Stones Falling From The Mountain: Attack: With left foot leading,
+blade in two hands, step forward towards your opponent, bringing
+your weapon down hard at the crown of their skull, a virtical
+slash designed to split their head open from crown to collarbone.
+
+Dove Takes Flight: defence and counter: Designed to defend
+against a broad high slash or thrust at the face or throat,
+quickly duck, step forward and thrust with your weapon up at
+either below the juncture of your opponent's rib cage or at the
+chest.
+
+The Bell Rings:  Attack: Starting from 'ready' position, with
+left foot forward, and right back, hilt held at waist, tip at
+your opponent's neck... Step forward, bringing your right foot up
+to your left, then step forward with your left, and as you step
+forward with your left foot, thrust with the tip of your blade at
+the opponent's sternum
+~
+#1042
+pillar ooc policy tower guards~
+a grey stone pillar~
+A grey stone pillar is here OOCly, holding the details of an important policy you should read.~
+~
+8 0 0
+0 0 0 0
+0 0 0
+E
+pillar policy ooc~
+Policy concerning NPC Tower Guards:
+
+1.  Protocol needs to be followed to prevent IC and OOC confusion.
+2.  Failure to follow protocol will not be tolerated.  Illaria and Antan reserve the right to null any RP involving Tower Guard NPCs that does not adhere to protocol.
+3.  Protocol is as follows:
+Command protocol
+1.  The Amyrlin Seat (read amyrlin)
+2.  The Keeper / Hall of the Tower (read keeper or read hall)
+3.  The Tower Guard Captain (read captain)
+4.  Miscellaneous (read miscellaneous)
+Report protocol
+1.  Mailing (read mailing)
+2.  IC and OOC propriety (read propriety)
+~
+E
+amyrlin~
+The Amyrlin has absolute command of the Tower Guards.  If she talks, they listen, and obey absolutely.  Therefore, if a post is made by Elaida or The Amyrlin Seat on a board, giving details of a guard assignment to a prisoner or what have you, and setting forth the rules for visitation... those rules and details are law.  No exceptions will be made to them for anyone.
+~
+E
+hall keeper~
+Their word is likewise law, but they can be countermanded by the Amyrlin.  Otherwise, the same rules apply to them as to her, as far as postings about the Tower Guards go.
+
+~
+E
+captain~
+He can be ordered about only by the Amyrlin, the Keeper, or the Hall.  If he gives an order, the Tower Guards will obey.  All the orders from the Keeper or Amyrlin go through him, so he knows ICly about all of them.  He will receive reports if there is any IC event in which Tower Guards are emoted as NPCs, and if he does not receive a report, the RP is subject to nullification, without a hearing from the Council.
+~
+E
+miscellaneous~
+If a prisoner is assigned Tower Guards to guard him or her, the prisoner is responsible for emoting them realistically, and for making sure that they follow the orders given them by the Tower Guard Captain, Amyrlin, Hall, or Keeper.  If the orders are not followed, it is the prisoner's fault unless the guards are ICly killed or otherwise incapacitated to prevent them from doing so.
+If an Aes Sedai is assigned a contingent of Tower Guards to aid her in some mission, she is responsible for emoting them in keeping with their IC orders, again unless something happens to them to prevent the execution of their orders.
+If someone of sufficient rank to change the orders of the Tower Guards is present, they may assume command of the Guards in either of the above situations and emote them themselves.
+Most importantly - if you don't know what would be appropriate in a given situation... ASK A TOWER GUILDLEADER!!!!!!
+~
+E
+mailing~
+If something happens while you have a Tower Guard assigned to you as an NPC, you are responsible for mailing the Tower Guard Captain to let him know about it, in the form of IC reports from the guard or guards.  If you want to -get- some Tower Guards for some IC project, you mail him as well.
+~
+E
+propriety~
+If you are trusted with the RP of an NPC Tower Guard, you will use the privilege appropriately, both OOCly and ICly.  No abuse of this sort of trust will be tolerated. 
+~
+#1049
+Khyran's key~
+a long key made from gold~
+A long key made from gold~
+~
+18 69768 1
+0 0 0 0
+0 0 0
+#1050
+personal Ganic~
+Personal Stuff~
+Personal Stuff~
+Personal Stuff
+~
+15 69832 3
+9999 0 -1 0
+1 1 0
+#1051
+suggestions Ganic~
+Guild Suggestions~
+Guild Suggestions~
+Guild Suggestions
+~
+15 69832 3
+9999 0 -1 0
+1 1 0
+#1052
+backgrounds Ganic~
+Seeker Backgrounds~
+Seeker Backgrounds~
+Seeker Backgrounds
+~
+15 69832 5
+9999 0 -1 0
+1 1 0
+#1053
+kiel key~
+Kiel's Key~
+Kiel's Key~
+~
+18 65672 1
+0 0 0 0
+1 0 0
+#1054
+Captain's key.~
+a small key made from silver~
+A small key made from silver~
+~
+18 69768 1
+0 0 0 0
+0 0 0
+#1055
+shift tree warder sedai~
+Strung from tree to tree are numerous shifts of dubious origin.~
+Strung from tree to tree are numerous shifts of dubious origin.~
+Strung from tree to tree are numerous shifts of dubious origin.
+~
+23 72520 0
+0 0 0 0
+100000 1 0
+#1056
+forest green sleeves armguard~
+a pair of forest green sleeves~
+A heap of forest green cloth lies here.~
+~
+11 0 257
+0 0 0 0
+10 52000 0
+A
+18 16
+A
+19 16
+A
+17 -20
+#1057
+bracelet~
+a bronze bracelet etched with a &WFlame&n~
+A bronze bracelet etched with the &WFlame&n of Tar Valon lies here.~
+~
+11 0 4097
+0 0 0 0
+2 73500 0
+A
+17 -10
+A
+18 15
+A
+19 15
+#1058
+helmet flame~
+a helmet embossed with a &WFlame&n~
+A steel helmet lies here, with a &Wwhite&n flame embossed on it.~
+~
+9 0 17
+29 0 0 0
+7 54000 0
+A
+17 -1
+A
+18 10
+A
+19 10
+#1059
+swordbelt~
+a plain boarhide swordbelt~
+A boarhide swordbelt lies here, abandoned.~
+~
+15 0 2049
+1000 1 -1 0
+7 45750 0
+A
+17 -20
+A
+18 6
+A
+19 5
+#1060
+heron marked sword Blademaster~
+a curved, single-edged blade with a heron marked pommel~
+A blademaster's sword lies here.~
+Nothing.
+~
+5 69768 32769
+0 30 5 11
+1 1 0
+A
+20 1
+A
+18 25
+A
+19 25
+P
+OnActionTo "enhance"
+Stop
+EmoteTo "This object may not be enhanced."
+End
+Q
+#1061
+heron marked sword Blademaster~
+a curved, single-edged sword with a heron marked pommel~
+The sword of a blademaster lies here.~
+~
+5 69768 32769
+0 25 6 11
+1 1 0
+A
+20 1
+A
+18 25
+A
+19 25
+#1062
+sword curved slim~
+a curved single-edged sword with a flawless edge~
+A beautiful sword with a slender, slightly curved, razor-sharp blade lies here.~
+~
+5 128 32769
+0 3 10 11
+10 63000 0
+A
+18 10
+A
+19 10
+#1063
+statue aes sedai~
+a statue of an Aes Sedai~
+A delicate ivory figurine lies here, carved into the shape of a shawl-clad woman.~
+~
+8 0 16385
+0 0 0 0
+3 38250 0
+A
+17 -15
+A
+18 5
+A
+19 10
+#1064
+silk neck kerchief~
+a silk kerchief~
+A square of silk cloth lies here unattended~
+~
+11 0 5
+0 0 0 0
+5 49500 0
+A
+17 -15
+A
+18 10
+A
+19 10
+#1065
+sign~
+an &WOOC&g sign is here to show the stats on this shop's items.~
+An &WOOC&g sign is here to show the stats on this shop's items.~
+~
+13 0 0
+0 0 0 0
+100000 0 0
+E
+sign~
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ a thick steel shield = -45 AC, 5/5 hitroll/damroll
++ a pair of thick steel gauntlets = - 15 AC, 10/10 hitroll/damroll
++ a helmet embossed with a &WFlame&n = - 30 AC, 10/10 hitroll/damroll
++ a bronze bracelet etched with the &WFlame&n = -10 AC, 15/15 hitroll/damroll
++ a curved single-edged sword with a flawless edge = 3d10, 10/10 hitroll/damroll
++ a steel breastplate = -50 AC, 5/5 hitroll/damroll
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+~
+#1070
+iron key~
+an iron key~
+An iron key lies here.~
+~
+18 65672 1
+0 0 0 0
+1 1 0
+#1071
+key steel Ferend~
+a steel key~
+A steel key lies forgotten here.~
+~
+18 4296 1
+0 0 0 0
+1 1 0
+#1072
+towerwarder tabard flame~
+a crisp tabard of red and white~
+A tabard for Tower Warders.~
+~
+9 69768 9
+100 0 0 0
+10 0 0
+A
+18 10
+A
+19 10
+A
+20 1
+#1073
+traveller cloak~
+a traveller's cloak~
+A wool cloak is here.~
+~
+11 0 1025
+0 0 0 0
+5 23000 0
+A
+18 12
+A
+19 12
+A
+17 50
+#1074
+rules~
+a large plaque displaying the rules of the White Tower~
+A massive plaque has been placed near the board, type read rules.~
+~
+0 0 0
+0 0 0 0
+0 0 0
+E
+rules~
+\c00Hey folks.
+Ok, I've taken the time to clean up these boards a bit and to
+remove most of the posts from the previous gls who ran these
+guilds. I'm going to repost this so that everyone can read it in
+one sitting and  are assured that it's completely current.
+1) Respect to the Masters: The MOI and MOT are two very
+challenging jobs for morts to take on. Please treat these two
+with respect and courtesy and try not to get on their back about
+problems. If there is something wrong, please let them know, talk
+it out with them in a civil manner so that it can be resolved
+favorably for all parties involved. The two Masters of the
+Warders run this guild, I'm just here to officiate things and to
+make sure that everything runs smoothly.
+2) Trainees and Instructors: to all trainees, remember that you
+are trainees, that you are initiates into this craft of fighting.
+Your instructors have years, most likely decades of experience
+more than any trainee will ever have. Please take that to heart
+when you are sparring with your instructors. In no way should an
+instructor lose a spar unless he or she means to do so. All the
+instructors here are excellent rpers and have been carefully
+chosen for their positions and I trust that they will not abuse
+that authority. I just ask that you, the trainees, please try to
+keep in mind that you are such and refrain from thinking that you
+can stomp on your teachers. I'm sure you might be frustrated
+enough sometimes, but it's just logical.
+3) Ic Consequences: Please keep in mind, always, that whatever
+you say and do icly, you have to take responsibility for. Please
+do not, as an example, go up to an Aes Sedai and call her a
+witch, it just doesn't go over very well and you should expect to
+have to deal with the consequences of such an action. I merely
+mean this as an example and it goes for all the guildees here,
+even when relating to the mud as a whole.
+4) Multiple TW Alts: You may create more than one Tower Warder
+Alt, this is perfectly fine with me, however, keep in mind, that
+you will have to reseek the tower as if you had never been here.
+No favoritism will be shown to you merely because you already
+have a TW alt. Backgrounds will still need to be submitted to me
+and approved and sponsors acquired.
+5) Non-guilded folk in the Tower: Visitors are allowed
+unaccompanied in the Tower Lobby  and in the Tower Gardens. They
+are not allowed access to the basement levels at all, they may go
+into the living  areas accompanied by someone of at least Aes
+Sedai rank or those Graduated from Warder training. 
+Anyone going to the third floor, where the library and the  hall
+of the tower, along with the Amyrlin's and Keeper's   offices,
+must be either guilded to the Aes Sedai or have   Aes Sedai
+escort and Warder escort (if not a warder)
+6) OoC DEbonding: This is merely an issue of respect. Please, if
+a Warder or an Aes Sedai, your bondmate, asks that oocly they be
+debonded from you, remember that this is perfectly acceptable. We
+are here to have fun and to play a game, not to create problems
+and hard feelings amongst anyone. It would be nice if people
+could work out their problems but sometimes issues are
+unreconcilable and this step deemed necessary.
+7) Major Events: If you or anyone you know, is planning on having
+a major event either in, or involving the White Tower, please
+mail both Cassin and Illaria on the matter so that we aren't left
+clueless. This is merely a courtesy issue, we aren't going to
+tell you that you can't have your event, but we would like the
+details so that if any questions are asked of us, we know how to
+respond.
+8) Tower guardsman: Please see the rules posted in both
+Guildareas for the rules concerning Tower Guards.
+
+
+Continued. Type read rules2 to get the last bit.
+~
+E
+rules2~
+\c00
+9) The Shadow and your bondmates: Please, out of respect for your
+bondmate, if you are a member of the shadow before bonding, or
+become a member of the shadow while bonded, please let your
+bondmate know this before either you bond, or when you choose to
+take this step. It is merely common courtesy to do so, mainly
+because involvement in the shadow, if you are bonded, does not
+only have consequences to your own char, but the char of your
+bondmate.
+10) Men in the tower: Novices are not to -ever- be in the warder
+barracks, in   any room of it, unless accompanied by an Aes Sedai
+and for more reason than a social visit. They are not to be 
+alone with us in private areas, or living chambers,   and never
+alone with us behind closed doors. Consequently, we are   not
+allowed in the Novice living areas, unless there is   an Aes
+Sedai present. Novices can go into the practice  yards, but if
+they behave inappropriately there, they   can expect punishment.
+Novices are free to associate  with us in any public area,
+no closed  doors, so long as it does not interfere with their
+lessons.
+Accepted are a bit more free, and will not be punished 
+for being in the warder practice yards. Accepted may go   into
+the public areas within the warder barracks, such as   the warder
+mess, the library, and the smithy. (No, not  the baths.) We are
+allowed in the public areas of the   Accepted living quarters,
+including the accepted garden,   and the wash. Accepted are not
+allowed into the private  rooms of men, nor are men allowed into
+their rooms.   Again, no closed doors, having a man of the tower
+help move an Accepted's furniture is acceptable, if the door is
+open.
+Comments or whatever else, mail me or Illaria.
+Cassin 
+~
+$~

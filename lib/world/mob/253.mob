@@ -1,0 +1,334 @@
+#25300
+Sebastian golden lion ~
+a large \c03golden lion\c00~
+\c07a large\c00 \c03golden lion\c00 stalks regally about the room. 
+~
+Sebastian is huge, with a soft, shaggy mane, and looks very dangerous, yet lovable. 
+He blinks regally at you, regarding you with \c03golden\c00 eyes. 
+
+~
+499722 2096 0 E
+101 -55 -10 1016 20d300+1000 10d10+50
+0 0
+8 8 1
+BareHandAttack: 4
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Disarm: 100
+P
+OnActionTo "hug"
+Emote "sebastian starts to purr, a deep low noise, and nuzzles you gently. "
+End
+OnActionTo "nuzzle"
+Emote "sebastian shakes his \c03golden mane\c00 and tickles you with it. "
+End
+OnActionTo "kiss"
+Emote "sebastian calmly accepts your show of affection, then returns the kiss with his warm \c05pink\c00 tongue."
+End
+OnActionTo "pet"
+Emote "sebastian lays his ears flat against his head and growls softly. "
+End
+OnActionTo "pat"
+Emote "sebastian stares at you like you are insane and ignores you. "
+End
+OnAction "yawn"
+Emote "sebastian yawns lazily, also, and blinks his \c03golden eyes\c00."
+End
+OnActionTo "cuddle"
+Emote "sebastian rests his \c03golden\c00 head in your lap and closes his eyes happily. "
+End
+OnAction "curl"
+Emote "sebastian snuggles up to you and puts one \c03golden\c00 paw on you protectively. "
+End
+OnActionTo "tickle"
+Emote "sebastian licks you with his wet \c05pink\c00 tongue until you stop your foolishness. "
+End
+OnActionTo "snuggle"
+Emote "sebastian returns your snuggle with a \c03lion-sized\c00 one of his own."
+End
+OnActionTo "lick"
+Emote "sebastian gives you a regal tongue bath in response, then proceeds to look amused at your antics."
+End
+Q
+E
+#25301
+Cherilyndria jeweller woman shopkeeper~
+Cherilyndria the Royal Jeweller ~
+Cherilyndria, smiling, waits to outfit you in gold and jewels. 
+~
+She is small, with dark brown hair hanging in waves to her shoulders. 
+She smiles sweetly as you enter. 
+~
+1048586 2096 0 E
+75 -20 -10 1016 20d100+500 8d20+40
+0 0
+8 8 2
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+E
+#25302
+Yekaterina royal florist woman~
+Yekaterina, the Royal Florist~
+Yekaterina, busy arranging flowers, glances up from her work to smile at you.
+~
+Yekaterina is small, with bright \c06b\c00\c03l\c00o\c05s\c00\c03s\c00o\c06m\c00\c05s\c00 in her honey-colored hair. 
+She busies herself, critically arranging flowers into bouquets and in vases. 
+She is excellent at her work.
+
+~
+1728522 48 0 E
+100 -55 -9 1016 20d500+1000 8d10+50
+0 0
+8 8 2
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+E
+#25303
+queen tylin woman~
+Queen Tylin~
+Tylin, of House Mitsobar, Queen of Ebou Dar, stands here regarding you imperially.
+~
+The Queen of Altara is diminutive, but imposing--her \c23black hair\c00 touched
+with grey at the temples, and her dark eagle's eyes looking at you 
+majestically. Her \c06blue silk\c00 gown is drawn up to her knees and pinned 
+there, showing layered white petticoats, and the oval cut-out at the 
+bosom of her dress frames an ornate, j\c01e\c00w\c02e\c00l\c01l\c00e\c02d\c00 marriage knife. She looks
+as though she, with her very presence, could make an Aes Sedai step back.
+~
+1204234 48 0 E
+150 -75 -10 1016 30d550+1500 10d15+50
+200 120
+8 8 2
+BareHandAttack: 3
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Trip: 100
+Disarm: 100
+P
+OnActionTo "push"
+Stop
+Emote "Queen Tylin looks outraged and astonished."
+Say "How dare you attempt to lay hands on my person? Guards!"
+Emote "Queen Tylin draws her long, slim belt knife. It glitters in her hand as she looks you over haughtily."
+Say "You had better be skilled at using that . . . my guards will be here shortly. "
+End
+OnActionTo "slap"
+Stop
+Emote "Queen Tylin sidesteps quickly, her silk skirts barely rustling, and your arm passes through the air where she used to stand."
+Emote "Queen Tylin smiles coldly."
+Say "Did you really think you would succeed in doing that? I think not. Guards!"
+End
+OnActionTo "drag"
+Stop
+Emote "Queen Tylin steps away from you, drawing her belt knife. "
+Say "You should know better than to try a silly thing like that. Guards!"
+End
+OnEntry & Wearing 3740
+Say "Ah, an Aes Sedai come to pay me a visit? "
+Emote "Queen Tylin looks you over, scrutinizing with her dark eagle's eyes."
+Say "You do not look like any Aes Sedai that I have seen. Who are you, and why are you here?"
+End
+OnEntry & Wearing 3741
+Say "Ah, an Aes Sedai come to pay me a visit? "
+Emote "Queen Tylin looks you over, scrutinizing with her dark eagle's eyes."
+Say "You do not look like any Aes Sedai that I have seen. Who are you, and why are you here?"
+End
+OnEntry & Wearing 3742
+Say "Ah, an Aes Sedai come to pay me a visit? "
+Emote "Queen Tylin looks you over, scrutinizing with her dark eagle's eyes."
+Say "You do not look like any Aes Sedai that I have seen. Who are you, and why are you here?"
+End
+OnEntry & Wearing 3743
+Say "Ah, an Aes Sedai come to pay me a visit? "
+Emote "Queen Tylin looks you over, scrutinizing with her dark eagle's eyes."
+Say "You do not look like any Aes Sedai that I have seen. Who are you, and why are you here?"
+End
+OnEntry & Wearing 3744
+Say "Ah, an Aes Sedai come to pay me a visit? "
+Emote "Queen Tylin looks you over, scrutinizing with her dark eagle's eyes."
+Say "You do not look like any Aes Sedai that I have seen. Who are you, and why are you here?"
+End
+OnEntry & Wearing 3745
+Say "Ah, an Aes Sedai come to pay me a visit? "
+Emote "Queen Tylin looks you over, scrutinizing with her dark eagle's eyes."
+Say "You do not look like any Aes Sedai that I have seen. Who are you, and why are you here?"
+End
+OnActionTo "spit"
+Stop
+Emote "Queen Tylin steps back, a look of outrage and disgust on her face, and you miss her."
+Say "How dare you? Get out of my Palace, you filthy peasant! Guards!"
+Action "open door east"
+ActionTo "push"
+Force "east"
+Action "close door east"
+End
+OnAction "steal"
+Stop
+Say "How dare you! Leave this place!"
+SayTo "Thief! Your life is forfeit!"
+End
+Q
+E
+#25304
+snake green striped zith~
+a tiny \c02green\c00 snake~
+\c07a\c00 tiny \c02green\c00 snake with a bright \c01scarlet\c00 stripe quietly slithers about in the gardens here.
+~
+small, and \c09bright green\c00 with a single \c01scarlet\c00 stripe running down her 
+back, she moves about slowly, her bright \c05pink\c00 tongue \c14thpping\c00 as she 
+tests her surroundings carefully. 
+
+
+~
+958600 591920 0 E
+85 -30 -2 1016 20d300+850 10d15+50
+0 90
+8 8 2
+BareHandAttack: 4
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Stun: 100
+P
+OnEntry
+Emote "the little snake hisses softly and moves away to hide herself deeper into the vegetation."
+End
+OnRandom 40
+Emote "the little snake flickers her tongue with an inaudible \c14thp\c00."
+End
+OnActionTo "kiss"
+Emote "the little \c09green\c00 snake lightly touches the end of your nose with her cute little forked tongue. "
+End
+OnActionTo "pat"
+Emote "the little \c09green\c00 snake moves her head to the side in a characteristially sinuous and serpentine motion."
+Emote "the little snake \c14thps\c00 at you pointedly."
+End
+OnActionTo "look"
+Emote "the little snake \c14thps\c00 absently in your direction."
+End
+Q
+E
+#25305
+Terina royal cook~
+Terina the Royal Cook~
+Terina, one of the many cooks at the palace, is preparing a large tray of food here.
+~
+Tall and slim, Terina busies herself making a tray of food to send upstairs to one of the palace guests. 
+~
+2072586 16 0 E
+90 -30 0 1016 20d200+900 6d10+50
+0 0
+8 8 2
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnEntry
+Emote "terina looks up from her work and smiles wryly at you."
+SayTo "i suppose you will be wanting something to eat. well, tell me quick because i need to finish this right away."
+SayTo "the roast looks very good today . . . i know because i cooked it myself!"
+End
+OnRandom 20
+Emote "the \c03f\c00\c01i\c00\c03r\c00\c01e\c00 flares up briefly, sending a blast of warm air circulating through the room."
+End
+Q
+E
+#25306
+a short female servant~
+a short female servant~
+a short female servant hurries quietly about her duties in the palace here.
+~
+she is short, and slightly plump, her pale green skirts sewn up on 
+one side to expose her layered white petticoats underneath, the 
+crest of the royal family on her left shoulder. she hurries about, 
+busy as usual. 
+
+
+~
+1051656 524288 0 E
+85 -65 -1 1016 17d255+850 15d15+40
+75 100
+8 8 2
+BareHandAttack: 14
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Trip: 100
+Kick: 100
+E
+#25307
+guard palace liveried livery tarasin quiet~
+a liveried Palace Guard~
+a liveried palace guard patrols quietly and unobtrusively here.
+~
+tall and slim, the guard is wearing an immaculately neat \c02dark green\c00 
+uniform with the crest of the royal family on his right shoulder. he walks 
+about quietly, observing without a word, his left hand resting comfortably 
+on his sword hilt. he looks at you briefly, then passes by.
+
+
+~
+1051656 0 0 E
+100 -90 -1 1016 20d280+1000 18d18+50
+90 110
+8 8 1
+BareHandAttack: 3
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Trip: 100
+Kick: 100
+Disarm: 100
+E
+#25308
+servant female tall tarasin~
+a tall female servant~
+a tall, slender female servant hurries past you here with an armful of bedding.
+~
+tall and brown-haired, she looks at you briefly and nods as she rushes by, 
+obviously on the way to a bedroom to tidy up. her long, pale green skirts 
+are sewn up on one side to show her white petticoats, and the crest on her 
+left shoulder marks her as a personal servant of the royal family.
+~
+1051656 0 0 E
+87 -154 -1 1016 17d256+870 18d18+47
+90 100
+8 8 2
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Trip: 100
+Kick: 100
+E
+$

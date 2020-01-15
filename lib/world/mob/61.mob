@@ -1,0 +1,131 @@
+#6100
+Trakand House Guard Man~
+a Captain of the House Trakand Guard~
+\c07A Guard Captain, the \c14s\c00\c07i\c14l\c00\c07v\c14e\c00\c07r \c14k\c00\c07e\c14y\c00\c07s\c14t\c00\c07o\c14n\c00\c07e of \c14H\c08o\c14u\c08s\c14e \c08T\c14r\c08a\c14k\c08a\c14n\c08d\c00\c07 upon his chest.
+~
+A handsome young guardsman stands here, dressed in the uniform of
+House Trakand.  Though he is young, he looks as if he knows how to
+use his sword if he has too.
+~
+1054814 0 0 E
+40 0 1 641 3d100+1300 9d20+20
+25 125
+8 8 1
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Trip: 100
+Disarm: 100
+P
+OnEntry & Nobility & Sex "male"
+ActionTo "nod"
+SayTo "greetings m'lord"
+Mode 1
+End
+OnEntry & Nobility & Sex "female"
+Action "nod"
+SayTo "greetings m'lady"
+Mode 1
+End
+OnEntry & Guild "children of the light" & ! Nobility
+SayTo "we want none of your kind here!"
+Emote "the guard advances on the whitecloaks"
+SayTo "leave now!"
+Mode 2
+End
+OnEntry & ! Nobility & ! Guild "children of the light"
+SayTo "do you have an appointment?"
+End
+OnSay "certainly"
+SayTo "very well, you may pass."
+Mode 1
+End
+OnAction "n no nor north" & Mode 2
+Stop
+SayTo "sorry, we don't let scum like you go in."
+Force "emote is shoved back roughly by the guards."
+End
+OnAction "n no nor north" & Guild "children of the light"
+Stop
+ActionTo "kill"
+End
+OnRandom 99
+Mode 2
+End
+Q
+E
+#6128
+graendal doorman~
+A nearly naked man~
+A nearly naked man
+~
+The man is dressed in the smalled of outfits, to better show off his
+stunning body. He stands here immoble awaiting his the bidding of his mistress.
+~
+1015834 2096 0 E
+1 19 -20 641 1d100+10000 30d100+1
+0 0
+8 8 1
+BareHandAttack: 12
+P
+OnAction "n north" & ! Wearing 6780 & ! Mode 2
+Stop
+Emote "\c08You are immersed in flames from an unseen ward!\c00"
+Force "sit"
+End
+OnAction "sta stand"
+Stop
+Emote "You are too stunned from the ward to stand!\c00"
+End
+OnAction "grasp" & Wearing 6780
+Emote "\c08An unseen ward flares and disintegrates.\c00"
+Mode 2
+End
+OnLeave
+Pause 5
+Mode 1
+Emote "\c08A flaming ward flares into existance and then turns invisible!\c00"
+End
+OnAttack
+Stop
+Emote "\c08You are immersed in flames from an unseen ward!\c00"
+End
+OnActionTo "bash hit kick stun backstab trip dirt"
+Stop
+End
+OnAction "push drag"
+Stop
+Emote "Something stops you."
+End
+Q
+E
+#6129
+fire ward graendal~
+A ward~
+a ward
+~
+The ward is made of fire and spirit.
+~
+884762 2098 0 E
+199 -180 -20 641 1d100+20000 30d120+50
+0 0
+8 8 0
+BareHandAttack: 12
+P
+OnAction "n north" & ! Mode 2 & ! Wearing 6780
+Force "scream"
+ActionTo "kill"
+End
+OnAction "grasp" & Wearing 6780
+Mode 2
+End
+OnLeave
+Pause 5
+Mode 1
+End
+Q
+E
+$

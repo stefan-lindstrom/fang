@@ -1,0 +1,238 @@
+#29500
+recruit school form Whelan~
+Whelan, a new recruit~
+Whelan, a new recruit for the Dragon's Army brings a platter of food in.
+~
+5
+~
+10 0 0 E
+10 10 10 968 30d100+5000 1d1+10
+0 0
+8 8 1
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+E
+#29501
+Morri trainer teacher soldier~
+Morri~
+\c10Morri\c00, a soldier for the \c01Dragon\c00 is practising his forms.
+~
+
+~
+10 0 0 E
+20 10 10 968 30d100+10000 30d30+10
+0 0
+8 8 1
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnEntry & Carrying 29502
+SayTo "greetings student.  forms?  yes i know the following ones."
+Pause 1
+Say "moon over water"
+Say "unfolding the fan"
+Say "cat on hot sand"
+Say "kingfisher takes a silverback"
+Say "river undercuts the bank"
+Pause 1
+Say "which form would you like to learn?"
+End
+OnSay "moon over water" & Carrying 29502
+Emote "morri traces a wide arc from one side to the other, sword pointing mostly up. -moon over water"
+End
+OnSay "unfolding the fan" & Carrying 29502
+Emote "morri begins a circular parry, his arm level with his waist."
+Emote "morri begins his parry starting at about the 10 or 11 o'clock position and moves it clockwise to deflect the attack.  -unfolding the fan"
+End
+OnSay "cat on hot sand" & Carrying 29502
+Emote "morri abruptly leaps backwards several feet, parrying as he lands. -cat on hot sand"
+End
+OnSay "kingfisher takes a silverback" & Carrying 29502
+Emote "morri snaps a  short, quick slash to the outside of his opponents knee.  -kingfisher takes a silverback"
+End
+OnSay "river undercuts the bank" & Carrying 29502
+Emote "morri drops swiftly to one knee, drawing his weapon across in a deadly horizontal arc! -river undercuts the bank"
+End
+Q
+E
+#29502
+Junie trainer scout teacher~
+Junie~
+\c10Junie\c00, a scout for the \c01Dragon\c00, sharpens her sword.
+~
+It looks, err, unfinished.
+~
+10 0 0 E
+0 20 10 968 1d100+0 1d1+0
+0 0
+8 8 2
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnEntry & Carrying 29503
+Pause 1
+Say "hello.  yes, i am practicing the following forms"
+Pause 2
+Say "the sun rises"
+Say "cat dances on the wall"
+Say "bundling straw"
+Pause 1
+Say "which form would you like to learn?"
+End
+OnSay "sun rises" & Carrying 29503
+Pause 2
+Emote "junie sweeps her blade in a long upward slash, aiming for the chest of her opponent. -the sun rises"
+End
+OnSay "cat dances" & Carrying 29503
+Pause 2
+Emote "junie walkes forward and backward along an imaginary wall, keeping her feet in a straight line, parrying the whole while."
+Pause 1
+Emote "junie makes each parry light and fast, only powerful enough to sufficiently block the blow. -cat dances on the wall"
+End
+OnSay "bundling straw" & Carrying 29503
+Pause 1
+Emote "junie holds her sword parallel to her body, point up, and moves it horizontally across the body,  to parry."
+Pause 1
+Emote "junie immediately slashes downward at the attacker's stomach and legs, moving in the opposite direction as the parry. -bundling straw"
+End
+Q
+E
+#29503
+Jack trainer soldier teacher~
+Jack, the gruff Sergeant at Arms~
+\c10Jack\c00, the gruff Sergeant at Arms for the \c01Dragon's Army\c00
+~
+It looks, err, unfinished.
+~
+10 0 0 E
+0 20 10 968 1d100+0 1d1+0
+0 0
+8 8 1
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+E
+#29504
+Brad, the dashing young Captain~
+Brad, the dashing young Captain~
+\c10Brad\c00, the dashing young Captain in the \c01Dragons' Army\c00, is polishing his armor.
+~
+It looks, err, unfinished.
+~
+10 0 0 E
+0 20 10 968 1d100+0 1d1+0
+0 0
+8 8 1
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+E
+#29505
+Nick trainer teacher courier~
+Nick, the brave and daring courier.~
+\c10Nick\c00, the brave and daring courier, is awaiting a message for the \c01Dragon\c00.
+~
+It looks, err, unfinished.
+~
+10 0 0 E
+0 20 10 968 1d100+0 1d1+0
+0 0
+8 8 1
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+E
+#29506
+Terry trainer teacher engineer~
+Terry, the burly engineer.~
+\c10Terry\c00, the tall and strong engineer, is building a better crossbow for the \c01Dragon\c00.
+~
+It looks, err, unfinished.
+~
+10 0 0 E
+0 20 10 968 1d100+0 1d1+0
+0 0
+8 8 1
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+E
+#29507
+Da Postyguy~
+Da Postyguy~
+Im gunna go postal on you!
+~
+Look at me again and I slice yer head off, and your family. ha
+~
+10 16 12 E
+12 8 1 968 12d12+12 12d12+12
+12 12
+8 8 0
+E
+#29524
+Grace shopkeeper innkeeper ~
+Grace, a lovely serving girl~
+Grace, the innkeepers daughter, waits to serve your meal
+~
+Grace, the innkeepers daughter is small and fair, with blond hair and a 
+light sprinkling of freckles across her nose.  She smiles as you enter and
+straightens her apron, ready to take your order.
+~
+8 0 0 E
+1 20 10 968 1d100+0 1d1+0
+0 0
+8 8 2
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnEntry & Nobility & Sex "male"
+Emote "Grace curtseys before you."
+Pause 2
+Say "greetings mi'lord. welcome to the lakeside tavern."
+End
+OnEntry & Nobility & Sex "female"
+Emote "grace curtseys before you"
+Pause 2
+Say "greetings mi'Lady, may I take your wrap?"
+End
+OnEntry & Guild "Children of the Light"
+Emote "grace frowns at you and straightens her apron."
+Pause 2
+Say "very well, what is your order?"
+End
+OnEntry
+Emote "grace smiles at you and gives a little half curtsey."
+Pause 2
+Say "hello. please sit and I will take your order."
+End
+Q
+E
+$

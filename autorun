@@ -1,0 +1,137 @@
+#!/bin/sh
+#
+# CircleMUD 3.0 autorun script
+# Contributions by Fred Merkel, Stuart Lamble, and Jeremy Elson
+# Copyright (c) 1996 The Trustees of The Johns Hopkins University
+# All Rights Reserved
+# See license.doc for more information
+#
+#############################################################################
+#
+# This script can be used to run CircleMUD over and over again (i.e., have it
+# automatically reboot if it crashes).  It will run the game, and copy some
+# of the more useful information from the system logs to the 'log' directory
+# for safe keeping.
+#
+# You can control the operation of this script by creating and deleting files
+# in Circle's root directory, either manually or by using the 'shutdown'
+# command from within the MUD.
+#
+# Creating a file called .fastboot makes the script wait only 5 seconds
+# between reboot attempts instead of the usual 60.  If you want a quick
+# reboot, use the "shutdown reboot" command from within the MUD.
+#
+# Creating a file called .killscript makes the script terminate (i.e., stop
+# rebooting the MUD).  If you want to shut down the MUD and make it stay
+# shut down, use the "shutdown die" command from within the MUD.
+#
+# Finally, if a file called pause exists, the script will not reboot the MUD
+# again until pause is removed.  This is useful if you want to turn the MUD
+# off for a couple of minutes and then bring it back up without killing the
+# script.  Type "shutdown pause" from within the MUD to activate this feature.
+#
+
+# Set coredumpsize to unlimited.
+ulimit -c unlimited
+
+# The port on which to run the MUD, and for the developing version it is:
+PORT=4111
+
+# Default flags to pass to the MUD server (see running.doc for a description
+# of all flags).
+FLAGS='-q'
+
+#############################################################################
+
+while ( : ) do
+
+  DATE=`date`
+  echo "autorun starting game $DATE" >> syslog
+
+  if ps uwx | grep fang | grep circle | grep $PORT | grep -v grep > /dev/null; then
+    echo "Circle is already running, make sure you don't try to start an 'extra' autorun!"
+    exit 1;
+  fi         
+
+  if [ -r lib/core ]; then
+     echo "Currently saving core-file for debugging!" >> syslog
+     date >> debuglog
+     echo "------" >> debuglog
+     gdb -batch -x gdb_comm -d ../fang1/src bin/circle lib/core >> debuglog
+     echo "" >> debuglog
+  fi
+
+  if [ -r bin/new.circle ]; then
+    echo "found new code :9 - SWAPPING!" >> syslog
+    if [ bin/new.circle -nt bin/circle ]; then
+      mv bin/circle bin/old.circle
+      mv bin/new.circle bin/circle
+    else
+      echo "new code older than old code :9 - SWAP ABORTED!" >> syslog
+      mv bin/new.circle bin/old.circle
+    fi
+  fi
+
+  echo "running bin/circle $FLAGS $PORT" >> syslog
+
+  if [ ! -r .debug ]; then
+    bin/circle $FLAGS $PORT >> syslog 2>&1
+  else
+    rm .debug
+    valgrind -v --suppressions=valgrind.supp --leak-check=yes bin/circle $FLAGS $PORT >> syslog 2>&1
+  fi
+
+
+  while [ -f .hotboot ]; do
+    if ps uwx | grep fang | grep circle | grep -v grep | grep '\-h' | grep $PORT > /dev/null; then
+      sleep 10;
+    else
+      echo "No hotboot process found, continuing..." >> syslog
+      rm .hotboot
+    fi
+  done
+
+  tail -30 syslog > syslog.CRASH
+
+  fgrep "OLC" syslog >> log/OLCCommands
+  fgrep "self-delete" syslog >> log/delete
+  fgrep "death trap" syslog >> log/dts
+  fgrep "killed" syslog >> log/rip
+  fgrep "burned" syslog >> log/rip
+  fgrep "Running" syslog >> log/restarts
+  fgrep "advanced" syslog >> log/levels
+  fgrep "equipment lost" syslog >> log/rentgone
+  fgrep "usage" syslog >> log/usage
+  fgrep "new player" syslog >> log/newplayers
+  fgrep "SYSERR" syslog >> log/errors
+  fgrep "(GC)" syslog >> log/godcmds
+  fgrep "Bad PW" syslog >> log/badpws
+
+  rm log/syslog.1
+  mv log/syslog.2 log/syslog.1
+  mv log/syslog.3 log/syslog.2
+  mv log/syslog.4 log/syslog.3
+  mv log/syslog.5 log/syslog.4
+  mv log/syslog.6 log/syslog.5
+  mv syslog       log/syslog.6
+  touch syslog
+
+  if [ ! -r .fastboot ]; then
+    sleep 10
+  else
+    rm .fastboot
+    sleep 5
+  fi
+
+  if [ -r .killscript ]; then
+    DATE=`date`;
+    echo "autoscript killed $DATE"  >> syslog
+    rm .killscript
+    exit
+  fi
+
+  while [ -r pause ]; do
+    sleep 60
+  done
+
+done

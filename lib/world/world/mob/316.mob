@@ -1,0 +1,351 @@
+<?xml version="1.0"?>
+<mobiles>
+  <mobile vnum="31600" name="Healing Capture Flag Aes Sedai" special="NONE">
+    <description>The official Aes Sedai for the Capture the Flag Quest is here to heal your
+wounds, of course.  Now, what are you waiting for?  Get out there and get
+that flag!
+</description>
+    <shortdesc>\c01The Capture the Flag Aes Sedai\c00</shortdesc>
+    <longdesc>\c01The Capture the Flag Aes Sedai\c00
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="199" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="10" dsize="0" bonus="0"/>
+      <move ndize="10" dsize="20" bonus="100"/>
+      <ac>-200</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>100</hitroll>
+      <damroll>50</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="6283290"/>
+    <affected one="2096" two="0" three="0" four="0"/>
+    <attack type="4"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="30" sides="127" add="100"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnEntry" argtype="STRING" argument="peck">
+      <action number="Cast" argtype="STRING" argument="advanced healing"/>
+      <action number="Cast" argtype="STRING" argument="delve"/>
+      <action number="Cast" argtype="STRING" argument="delve"/>
+      <action number="Cast" argtype="STRING" argument="delve"/>
+      <action number="Cast" argtype="STRING" argument="delve"/>
+      <action number="Cast" argtype="STRING" argument="delve"/>
+      <action number="Cast" argtype="STRING" argument="delve"/>
+      <action number="Cast" argtype="STRING" argument="delve"/>
+      <action number="Cast" argtype="STRING" argument="delve"/>
+      <action number="Cast" argtype="STRING" argument="delve"/>
+      <action number="Cast" argtype="STRING" argument="delve"/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="31601" name="invisible shouting mob" special="NONE">
+    <description>It's the shouting mob.
+</description>
+    <shortdesc>the invisible shouting mob</shortdesc>
+    <longdesc>The shouting mob.
+</longdesc>
+    <title/>
+    <chardata gender="NEUTRAL" class="Adventurer" level="0" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="0"/>
+      <move ndize="10" dsize="20" bonus="100"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1040410"/>
+    <affected one="2" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnLeave" argtype="STRING" argument="peck">
+      <sideterm number="Carrying" not="FALSE" argtype="INT" argument="31604"/>
+      <sideterm number="Carrying" not="FALSE" argtype="INT" argument="31605"/>
+      <action number="Pause" argtype="INT" argument="3"/>
+      <action number="Shout" argtype="VOID" argument="NONE"/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="31620" name="red flag mob" special="NONE">
+    <description>It's an invisible red flag mob.  what more do you need?
+</description>
+    <shortdesc>the Red Flag Mob</shortdesc>
+    <longdesc>The Red Flag Mob is here.
+</longdesc>
+    <title/>
+    <chardata gender="NEUTRAL" class="Adventurer" level="200" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="30" dsize="1000" bonus="15000"/>
+      <move ndize="10" dsize="20" bonus="100"/>
+      <ac>-200</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>100</hitroll>
+      <damroll>50</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1040410"/>
+    <affected one="18482" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="30" sides="100" add="100"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnLeave" argtype="STRING" argument="peck">
+      <sideterm number="Carrying" not="FALSE" argtype="INT" argument="31603"/>
+      <action number="Force" argtype="STRING" argument="qsay I have the Red Flag, come and get me!"/>
+      <action number="Pause" argtype="INT" argument="3"/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="31630" name="blue flag mob" special="NONE">
+    <description>It's the blue flag mob.  Go do something else now.
+</description>
+    <shortdesc>the Blue Flag Mob</shortdesc>
+    <longdesc>The Blue Flag Mob is here.
+</longdesc>
+    <title/>
+    <chardata gender="NEUTRAL" class="Adventurer" level="200" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="30" dsize="1000" bonus="15000"/>
+      <move ndize="10" dsize="20" bonus="100"/>
+      <ac>-200</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>200</hitroll>
+      <damroll>50</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1044506"/>
+    <affected one="18482" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="30" sides="127" add="200"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnLeave" argtype="STRING" argument="peck">
+      <sideterm number="Carrying" not="FALSE" argtype="INT" argument="31604"/>
+      <action number="Force" argtype="STRING" argument="qsay I have the Blue Flag!  Come and get me!"/>
+      <action number="Pause" argtype="INT" argument="3"/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="31699" name="frogspid frog spider frogspider" special="NONE">
+    <description>It's a frogspider.
+</description>
+    <shortdesc>Frogspid</shortdesc>
+    <longdesc>Frogspid.
+</longdesc>
+    <title/>
+    <chardata gender="NEUTRAL" class="Adventurer" level="69" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="30" dsize="1000" bonus="15000"/>
+      <move ndize="10" dsize="20" bonus="100"/>
+      <ac>-200</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>200</hitroll>
+      <damroll>50</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1028136"/>
+    <affected one="870448" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="30" sides="127" add="200"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnActionTo" argtype="STRING" argument="poke">
+      <action number="SayTo" argtype="STRING" argument="testing"/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="31700" name="morigan cat kitty" special="NONE">
+    <description>In tones of &amp;Kblack&amp;n, &amp;ybrown&amp;n, and &amp;Kg&amp;wr&amp;Ke&amp;wy&amp;n, this tiger tabby cat is both sleek and
+beautiful, bearing &amp;ggr&amp;Ge&amp;gen&amp;n eyes and a grace to rival any elegant noble.  
+Unlike most cats, this one is friendly and meows readily to greet, tending
+to be underfoot rather than aloof, and her soft fur makes her most
+agreeable to touch.    
+</description>
+    <shortdesc>a tabby cat</shortdesc>
+    <longdesc>A small cat wanders here, marked in tawny tiger stripes from it's nose to the end of it's long tail.
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="199" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="30" dsize="300" bonus="1"/>
+      <move ndize="30" dsize="200" bonus="100"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>200</hitroll>
+      <damroll>50</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="8"/>
+    <affected one="48" two="0" three="0" four="0"/>
+    <attack type="8"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="30" sides="127" add="200"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnActionTo" argtype="STRING" argument="scratch">
+      <action number="ActionTo" argtype="STRING" argument="purr"/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="31701" name="nycholas servant man" special="NONE">
+    <description>This man wears a weathered, good natured look like an overcoat, and a
+smile comes easily to his face.  An auburn mop of hair crowns kind blue
+eyes within a handsome, middle-aged visage, giving him a unique kind of
+rustic countenance.  When he speaks, it is softly and yet in a strong
+bass, no doubt given weight by his broad frame and considerable height.  
+His hands are thickly calloused by hard work, and his body is sun-bronzed
+and fit from a life of working out doors.    
+</description>
+    <shortdesc>Nycholas the dusty servant</shortdesc>
+    <longdesc>Nycholas stands here, a broom in his hands, his clothes dusty with recent work.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="200" weight="200" height="198"/>
+    <abilities>
+      <str>11</str>
+      <int>11</int>
+      <wis>11</wis>
+      <dex>11</dex>
+      <con>11</con>
+      <cha>11</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="1" bonus="24999"/>
+      <move ndize="10" dsize="20" bonus="100"/>
+      <ac>-200</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>200</hitroll>
+      <damroll>50</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="2088970"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="30" sides="127" add="200"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="31702" name="claire woman maid cook" special="NONE">
+    <description>Rather diminutive of height, a dark-haired brunette stands here, wearing a
+peasent's dress and a clean apron over it.  Her features are a little
+round, giving her an almost child-like prettiness, and though few would
+call her outright beautiful, she is not difficult to look upon.  Her voice
+is pleasant and cheerful, as is the sparkle in her dark eyes, and her
+manner is both polite and generous.    
+</description>
+    <shortdesc>Claire the sweet cheeked maiden</shortdesc>
+    <longdesc>Claire stands here, tending a brewing meal, likely the source of the pleasent smells.
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="200" weight="200" height="198"/>
+    <abilities>
+      <str>11</str>
+      <int>11</int>
+      <wis>11</wis>
+      <dex>11</dex>
+      <con>11</con>
+      <cha>11</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="1" bonus="24999"/>
+      <move ndize="10" dsize="20" bonus="100"/>
+      <ac>-200</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>200</hitroll>
+      <damroll>50</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="2088970"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="30" sides="127" add="200"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+</mobiles>

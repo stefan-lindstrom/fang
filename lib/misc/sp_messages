@@ -1,0 +1,1987 @@
+* Note: all lines between records which start with '*' are comments and
+* are ignored.  Comments can only be between records, not within them.
+*
+* This file is where the messages go for spells.
+*
+* All records must start with 'M' in the first column (for 'Message').
+* The next line must contain the spell number (defined in spells.h),
+* then the messages (one per line):
+*
+* Death-message (caster, target_cant_chann, target_can_chann_!same_sex,target_can_chann_same_sex,
+*                onlookers(same with can/cant channel))
+* Miss-message  (caster, target_cant_chann, target_can_chann_!same_sex,target_can_chann_same_sex,
+*                onlookers(same with can/cant channel))
+* Hit-message   (caster, target_cant_chann, target_can_chann_!same_sex,target_can_chann_same_sex,
+* All messages must be contained in one line.  They will be sent through
+* act(), meaning that all standard act() codes apply, and each message will
+* automatically be wrapped to 79 columns when they are printed.  '#' can
+* be substituted for a message if none should be printed.  Note however
+* that, unlike the socials file, all twelve lines must be present for each
+* record, regardless of any '#' fields which may be contained in it.
+*
+* The stupid layout of act, makes it hard to do good messages for onlookers
+* either you have to exclude the caster, or the target. For now, the caster
+* wont be a part of the message if it's a damage spell, i.e. has a target.
+* the  victim will be excluded if it's a creative spell. See below for 
+* examples
+*****************************************************
+*                                                   *
+*                    Creative Spell                 *
+*****************************************************
+
+* Armor *
+
+M
+ 1
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+You try performing the weave but it snaps out of your grasp.
+!TARGET
+!TARGET
+!TARGET
+$n's face takes on a look of concentration but nothing seems to occur.
+$n begins to concentrate but nothing seems to occur.
+$n draws on the Power and $s face begins to concentrate, but nothing seems to occur.
+Drawing on the Power and using flows of Air, you create a weak shield around you.
+!TARGET
+!TARGET
+!TARGET
+The air shimmers slightly around $n as what seems to be a weak shield of air, snaps into existence.
+The air shimmers slightly around $n as what seems to be a weak shield of air, snaps into existence.
+$n draws on the Power and using flows of Air, $e creates a weak shield around $mself.
+
+
+* air-sword *
+
+M
+ 2 
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+You try performing the weave but it snaps out of your grasp.
+!TARGET
+!TARGET
+!TARGET
+$n concentrates for a moment but nothing seems to occur.
+$n concentrates for a moment but nothing seems to occur.
+$n draws on the Power but nothing seems to occur.
+Drawing on the Power and using flows of Air, you channel and a sword carved of iron hard air, comes into your hands.
+!TARGET
+!TARGET
+!TARGET
+$n concentrates for a moment and suddenly a sword, seemingly carved of insubstantial air, comes into $s hands.
+$n concentrates for a moment and suddenly a sword, seemingly carved of insubstantial air, comes into $s hands.
+$n draws on the Power and using flows of Air, $e channels and a blade carved of insubstantial looking air, comes into $n's hands.
+
+* Gate *
+
+M
+ 3
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+You try performing the weave but it snaps out of your grasp. 
+!TARGET
+!TARGET
+!TARGET
+$n concentrates for a moment but nothing seems to occur.
+$n concentrates for a moment but nothing seems to occur. 
+$n draws on the Power but nothing seems to occur.
+Drawing on the Power and using flows of Spirit, you channel. A blazing line forms before you, slowly beginning to revolve outwards into a Gateway.
+!TARGET
+!TARGET
+!TARGET
+A blazing line suddenly appears before you, slowly beginning to revolve outwards, forming a Gateway.
+A blazing line appears before you, splitting in two and slowly beginning to revolve outwards, forming a Gateway.
+$n draws upon the Power and using flows of Spirit $e channels. A blazing line suddenly appears before $n, splitting in two and slowly revolving outwards, forming a Gateway.
+
+* Invisibility *
+
+M
+ 5
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+You try performing the weave but it snaps out of your grasp.
+!TARGET
+!TARGET
+!TARGET
+$n concentrates for a moment but nothing seems to occur.
+$n concentrates for a moment but nothing seems to occur.$
+n draws on the Power, attempting to weave flows of Air, but nothing seems to occur.
+Drawing on the Power and using flows of Air, touched with Fire, you fashion a screen before you, a mirror that effectively renders you invisible.
+!TARGET
+!TARGET
+!TARGET
+Suddenly $n begins to waver, $s form insubstantial for a moment, before $e totally disappears from view.
+Suddenly $n begins to waver, $s form insubstantial for a moment, before $e totally disappears from view.
+$n draws on the Power, using flows of Air, touched with Fire to fashion a screen before $mself, effectively rendering $m invisible.
+
+* Call Lightning *
+
+M
+ 6
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+You try performing the weave but it snaps out of your grasp.
+$n concentrates for a moment but nothing seems to occur. 
+$n concentrates for a moment but nothing seems to occur.
+$n draws on the Power, using flows of Air and Fire, touched with Water, but nothing seems to occur.
+$n concentrates for a moment but nothing seems to occur.
+$n concentrates for a moment but nothing seems to occur.
+$n draws on the Power, using flows of Air and Fire, touched with Water, but nothing seems to occur.
+Drawing on the Power, you use flows of Air and Fire, touched with Water to channel blue bolts of lightning to strike from the sky, devastating the ground around you with blasts of electric energy.
+$n concentrates for a moment and suddenly blue bolts of lightning fall from the sky, striking the earth with terrible force/
+$n concentrates for a moment and suddenly blue bolts of lightning fall from the sky above, crashing to earth and striking with terrible force.
+$n draws on the Power, using flows of Air and Fire, touched with Water to cause blue bolts of lightning to fall from the sky, terrible energy striking directly at you.
+$n concentrates and suddenly blue bolts of lightning fall from the sky above, striking down with terrible force, directly upon $N.
+$n concentrates and suddenly blue bolts of lightning fall from the sky above, striking to earth with terrible force, directly at $N.
+$n draws on the Power, using flows of Air and Fire, touched with Water to cause bolts of blue lightning to fall from the sky, striking to earth with terrible force, directly at $N.
+
+* fire-sword *
+
+M
+ 7 
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+You try performing the weave but it snaps out of your grasp.
+!TARGET
+!TARGET
+!TARGET
+$n concentrates for a moment but nothing seems to occur.
+$n concentrates for a moment but nothing seems to occur.
+$n draws on the Power, using flows of Fire touched with Air, but nothing seems to occur.
+Drawing on the Power, you channel flows of Fire touched with Air, causing a blade carved of a living flame, to come into your hands.
+!TARGET
+!TARGET
+!TARGET
+$n concentrates and a blade, carved of a living flame, leaps into $s hands.
+ $n concentrates for a moment and a blade, carved of a living flame, leaps into $s hands.
+$n draws on the Power, channeling flows of Fire, touched with air, to cause a sword of flame to leap into $s hands.
+
+* Wrap *
+
+M
+ 8
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+You try performing the weave but it snaps out of your grasp.
+$n concentrates for a moment but nothing seems to occur.
+$n concentrates for a moment but nothing seems to occur.
+$n draws on the Power, channeling flows of Air but nothing seems to occur.
+$N's clothes move a bit strangely for a second.
+$N's clothes move a bit all by themselves.
+$n draws on the Power, channeling flows of Air at $N but nothing seems to occur.
+Drawing on the Power and channeling flows of Air, you wrap $N securely with the wrap, preventing all movement.
+Suddenly something seems to grab you from all sides, preventing any movement.
+Suddenly something seems to grab you from all sides, preventing all movement.
+$n draws on the Power, channeling flows of Air, wrapping you up securely and preventing any movement.
+$N stiffens up straight, $s eyes beginning to bulge as $e realizes what has made $M immobile.
+$N stiffens up straight, $S eyes beginning to bulge as $e realizes what has made $M immobile.
+$n draws on the Power, channeling flows of Air around $N, wrapping $M up securely and preventing all movement.
+
+* Gag! *
+
+M
+ 9
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+You try performing the weave but it snaps out of your grasp.
+$n concentrates at you but nothing seems to occur.
+$n concentrates at you but nothing seems to occur.
+$n draws on the Power, channeling flows of Air at you, but nothing seems to occur.
+$n concentrates at $N but nothing seems to occur.
+$n concentrates at $N but nothing seems to occur.
+$n draws on the Power, channeling flows of Air at $n but nothing seems to occur.
+Drawing on the Power, you channel flows of Air at $N, forcing $S jaws open and stuffing a gag into $S mouth.
+$n concentrates at you and suddenly an invisible force yanks your jaws open, stuffing some sort of gag into your mouth, effectively silencing you.
+$n concentrates at you and suddenly an invisible force yanks your jaws open, stuffing some sort of gag into your mouth, effectively silencing you.
+$n draws on the Power, channeling flows of Air at you, which pry your jaws open and stuff an invisible gag into your mouth, cutting off all sound.
+$n concentrates at $N and suddenly $N's mouth flies open and stays open, seemingly held there by some invisible hand, effectively silencing $M.
+$n concentrates at $N and suddenly $N's mouth flies open and is held open by some invisible hand.
+$n draws on the Power, channeling flows of Air at $N, a gag that pries $N's jaws open and moving inside $S mouth to prevent $M from making a sound.
+
+* Gentle *
+
+M
+ 12
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+You try performing the weave but it snaps out of your grasp.
+!$n concentrates at you but nothing seems to occur.
+$n concentrates at you but nothing seems to occur.
+$n draws on the Power, channeling flows of Spirit at you but nothing seems to occur.
+$n concentrates at $N but nothing seems to occur.
+$n concentrates at $N but nothing seems to occur.
+$n draws on the Power, channeling flows of Spirit at $N but nothing seems to occur.
+Drawing on the Power, you channel an axe-like flow of spirit at $N. Suddenly, the flow snaps through all resistance and $N collapses to the ground, giving out with a scream of utter horror.
+!nOCHANNELING_TARGETS
+$n concentrates at you and suddenly an invisible knife blade severs you completely from the One Power. You fall to the ground in agony, a scream ripped from your very soul.
+$n draws on the Power, channeling an axe-like flow of Spirit that cuts into your connection to the Power. Suddenly a taring feeling, a snapping, floods your body and the Power drains out of you. You give out with a gut-wrenching scream and fall to the ground, cut off from the Source.
+$n concentrates at $N and suddenly $N gives out with a scream, wrenched from the soul, a scream filled with complete and utter horror, before $E falls to the ground.
+$n concentrates at $N and suddenly $N falls to the ground, rolling around in agony. A scream is wrenched from the prone body, a scream that beats at the air around you, the scream of someone who has lost the will to live.
+$n draws on the Power, channeling an axe-like flow of Spirit that connects with $N. A scream of total and complete despair is ripped from $N as $E falls to the ground, a scream that beats at the air around you, the scream of someone who has nothing left for which to live.
+
+* Create Water*
+M
+ 13
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+You try performing the weave but it snaps out of your grasp.
+!TARGET!
+!TARGET!
+!TARGET!
+$n concentrates for a moment but nothing seems to occur.
+$n concentrates for a moment but nothing seems to occur.
+$n draws on the Power, channeling flows of Water, touched with Earth, but nothing seems to occur.
+Drawing on the Power, you channel flows of Water, touched with Earth, to fashion a crude well, filled with crystal clear water.
+!TARGET!
+!TARGET!
+!TARGET!
+$n concentrates for a moment and suddenly a crude looking well, fashioned with some kind of stone or earth substance, appears at $s feet, filled with crystal clear water.
+$n concentrates for a moment and suddenly a crude looking well, fashioned with some sort of stone or earth substance, appears at $s feet, filled with crystal clear water.
+$n draws on the Power, channeling flows of Water, touched with Earth to fashion a crude looking well, appearing on the ground before $m, filled with crystal clear water.
+
+* Heal *
+M
+ 14
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+Resting a hand on $N's head, you try performing the weave but nothing seems to occur.
+$n rests a hand on your head, $s face taking on an expression of concentration, but nothing seems to occur.
+$n rests a hand on your head, $s face taking on an expression of concentration but nothing seems to occur.
+$n draws on the Power, channeling flows of Air and Water at you while holding a hand to your head, but nothing seems to occur.
+$n rests a hand on $N's head, while $s face takes on an expression of concentration, but nothing seems to occur.
+$n rests a hand on $N's head, while $s face takes on an expression of concentration, but nothing seems to occur.
+$n draws on the Power, channeling flows of Air and Water at $N but nothing seems to occur.
+Drawing on the Power and holding a hand to $N's head, you channel flows of Air and Water which sink into $N, causing all visible and internal wounds to mend slowly.
+$n rests a hand on your head, while $s face takes on a look of concentration. Suddenly a chill invades your body, a chill that gives you a good impression of what it might be like to stand in the middle of a blizzard, while naked. The healing is soon over, having left you gasping for breath and causing your stomach to growl loudly.
+$n rests a hand on your head, while $s face takes on an expression of concentration. Suddenly, a chill invades your body, a chill so cold it forces you on to your toes and causing you to gasp loudly. Quickly the healing is over, and all visible wounds disappear but a loud growling noise from your stomach tells you that you will need food soon.
+$n draws on the Power, while resting a hand on your head. $e channels flows of Air and Water into you and suddenly a chill invades your being, forcing you on to your toes and causing you to gasp loudly. Soon the healing is over and all visible wounds have disappeared but your growling stomach tells you that you will need food soon.
+$n rests a hand on $N's head, while $s face takes on an expression of concentration. $N suddenly gasps loudly, $s body going completely rigid for a moment, before relaxing. The wounds on $S body disappear.
+ $n rests a hand on $N's head, while $s face takes on an expression of concentration. suddenly, $N gasps loudly, $S whole body going rigid for a moment, before $E relaxes. The wounds on $N's body heal up rapidly and soon no mark remains.
+$n draws on the Power, channeling flows of Air and Water into $N, while $e rests a hand on $S head. Suddenly $N's body goes rigid for a moment, the wounds on $S body quickly healing, while loud gasps are torn from $N.
+
+* Heal Gentling*
+
+M
+ 15
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+You try performing the weave but it snaps out of your grasp.
+!NOCHANNTARG
+$n takes your head in $s hands, concentrating on you, but nothing seems to occur.
+$n takes your head in $s hands, concentrating on you, but nothing seems to occur.
+$n takes $N's head in $s hands, concentrating on $M, but nothing seems to occur.
+$n takes your head in $s hands, concentrating at $M, but nothing seems to occur.
+$n draws on the Power, channeling flows of Fire and Earth, mixed with Spirit, but nothing seems to occur.
+Drawing on the Power, you channel flows of Fire and Earth, mixed with Spirit, running them through $N's body, while holding $S head in your hands. Finding the cut, you bridge the gap with flows of Fire and Earth, restoring $S connection to the Power.
+!NOCHANNTARG
+$n takes your head in $s hands, concentrating on you. Suddenly the emptiness within you is gone, the glow of the Power, once again within reach.
+$n takes your head in $s hands, concentrating on you for a moment. Suddenly, the emptiness within you is filled by some invisible flow. The One Power is once again accessible to you and an inexplicable joy sweeps through you.
+$n takes $n head in $s hands, concentrating at $M. Suddenly $N gives out with a joyous sound, the light coming back into $S eyes.
+$n takes $N's head in $s hands, concentrating at $M. Suddenly, $N gives out with a joyous sound, the light coming back into $S eyes.
+$n draws on the Power, channeling flows of Fire and Earth, mixed with Spirit, while grasping $N's head. The flows enter $N, seeming to build a bridge of some sort, reconnecting $M to the One Power.
+
+* Airshield *
+M
+ 16
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+You try performing the weave but it snaps out of your grasp.
+!TARGET
+!TARGET
+!TARGET
+$n concentrates for a moment but nothing seems to occur.
+$n concentrates for a moment but nothing seems to occur.
+$n draws on the Power, channeling flows of Air, but nothing seems to occur.
+Drawing on the Power, you channel flows of Air, fashioning a shield that envelops you.
+!TARGET
+!TARGET
+!TARGET
+$n concentrates for a moment and suddenly the air surrounding $m seems to waver and shimmer for a moment, before returning to normal.
+$n concentrates for a moment and suddenly the air surrounding $m wavers and shimmers for a brief moment, before returning to normal.
+$n draws on the Power, channeling flows of Air, fashioning a shield with them, that surrounds $s body.
+
+* Burn *
+M
+ 17
+Drawing on the Power and channeling flows of fire, you cause Small bolts of flame leap from your hands, burning your victim, leaving $N in a pile of ashes.
+$N lifts $s hands to you, small bolts of flame leaping from them. They smash into your body with tremendous force, turning your body into ashes and killing you instantly.
+$N lifts $s hands and suddenly small bolts of flame leap from $s palms, taring into you with terrible force, causing your body to turn into a pile of ashes, killing you instantly.
+$n lifts $S hands and suddenly small bolts of flame leap from $S palms, smashing into you and causing your body to turn into a pile of ashes, killing you instantly.
+$n's hands lift toward $N and small bolts of flame leap from $s palms, striking $N and turning $S body into ashes, which float away on the breeze.
+$n's hands lift towards $N, small bolts of flame leaping from $s palms, striking $N and turning $M into ashes.
+$n concentrates on $N, lifting $s hands toward $M. Suddenly bolts of flame leap from $s palms, striking $N and turning $S body into ashes.
+You try performing the weave but it snaps out of your grasp.
+!TARGET
+!TARGET!
+!TARGET!
+!TARGET!
+!TARGET!
+!TARGET!
+Drawing on the Power, you channel weak flows of Fire, manifesting themselves as bolts of flame, leaping from your hands and striking $N's chest.
+$n concentrates for a moment, $s hands lifting at you. Suddenly bolts of flame leap from $s hands, striking you in the chest and face.
+$n concentrates for a moment, $s hands coming up towards you. suddenly small bolts of flame leap from $s hands, striking your chest and face.
+$n draws on the Power, channeling weak flows of Fire that manifest as small bolts of flame, leaping from $s hands. They strike your chest and face, burning your skin.
+$n concentrates on $N and suddenly small bolts of flame leap from $n's hands, striking $N on face and chest, turning skin to crisp as $E screams.
+$n concentrates on $N and suddenly small bolts of flame leap from $s outstretched hands, striking $N on face and chest, causing the skin to burn and crisp while $E lets out a scream.
+$n draws on the Power, channeling weak flows of Fire that manifest themselves as small bolts of flame leaping from $s hands. They strike $N rapidly, burning $S face and chest and causing $M to scream.
+
+
+* Airblow *
+M
+ 18
+Drawing on the Power, you channel flows of Air, forming a ball of Air that smashes into $N, killing $M messily.
+$n concentrates on you for a moment and suddenly a ball of nothingness, slams into your face, killing you instantly.
+$n concentrates on you for a moment and suddenly a ball of nothingness slams into your face with tremendous force, killing you instantly.
+$n draws on the Power, channeling flows of Air into a ball that flies at you, smashing into your face with tremendous force, killing you instantly.
+$n concentrates on $N and suddenly, $N is hurled to the floor, $S face a bloody mask of agony as $E dies.
+$n concentrates on $N and suddenly $N is hurled to the floor with tremendous force, $S face a bloody mask as $E dies.
+$n draws on the Power, channeling flows of Air into a tight ball that $e hurls at $N, smashing into $M with tremendous force, hurling $M to the ground and killing $M.
+You try performing the weave but it snaps out of your grasp.
+!TARGET
+!TARGET
+!TARGET
+$n concentrates for a moment, but nothing seems to occur.
+$n concentrates for a moment, but nothing seems to occur.
+$n draws on the Power, channeling flows of Air, but nothing seems to occur. 
+Drawing on the Power, you channel flows of Air into a ball that smashes into $N with tremendous force, carrying $M backwards.
+$n concentrates on you and suddenly an invisible ball of force, slams into your head, hurling you backwards, dazed and confused.
+$n concentrates on you and suddenly an invisible ball of force, slams into your head, hurling you backwards, leaving you dazed and confused. $
+n draws on the Power, channeling flows of Air into a ball that forms before you and smashes into you with tremendous force.
+$n concentrates on $N and suddenly $N is hurled backwards, some tremendous blow, having struck $M in the head.
+$n concentrates on $N and suddenly $N is hurled backwards as something unseen, slams into $M.
+$n draws on the Power, channeling flows of Air into a ball that forms before $N, slamming into $M with tremendous force, hurling$M backwards, dazed and confused.
+
+* Ice Arrows *
+M
+ 19
+Drawing on the Power and channeling flows of Water, mixed with Air, you fashion arrows of deadly spikes of ice, that pierce $N's body, carrying it to the ground in a lifeless heap.
+$n concentrates on you and suddenly arrows, fashioned with what seems to be long strings of ice, form before you, piercing into you and killing you instantly.
+$n concentrates on you and suddenly long shafts of what seems to be ice, forms before your eyes, suddenly flying at you and piercing your body in hundreds of places, killing you instantly.
+$n draws on the Power, channeling flows of Water, mixed with Air, to form shafts of ice-like arrows, that pierce your body, killing you almost instantly.
+$n concentrates on $N and suddenly shafts of ice-like arrows form before $N's face, driving into $M with terrible force, killing $M almost instantly.
+$n concentrates on $N and suddenly shafts of ice-like arrows, form before $N's face, driving into $S body with terrible force, hurling $M to the ground and killing $M almost instantly.
+$n draws on the Power, channeling flows of Water, mixed with Air,to form a full dozen shafts of ice, that penetrate $N, killing $M almost instantly.
+You try performing the weave but it snaps out of your grasp.
+!TARGET!
+Your skin itches
+$n fiddles with the One Power.
+$n concentrates but nothing seems to occur.
+$n concentrates for a moment but nothing seems to occur.
+$n draws on the Power, channeling flows of Water and Air, but nothing seems to occur.
+Drawing on the Power and channeling flows of Water, mixed with Air, you form a dozen shafts of ice-like arrows, that drive into $N's body, hurling $M backwards.
+$n concentrates on you and suddenly shafts of ice-like arrows form before your eyes, striking you with terrible force, carrying you backwards in shock.
+$n concentrates on you and suddenly a dozen shafts of ice-like arrows, form before your eyes, striking you with terrible force, hurling you backward in shock.
+$n draws on the Power, channeling flows of Water, mixed with Air, forming shafts of ice-like arrows, that strike you with terrible force.
+$n concentrates on $N and suddenly shafts of ice-like arrows form before $N's face, driving at $M and hitting $M with terrible force, hurling $M backward in shock.
+$n concentrates on $N and suddenly, shafts of ice-like arrows form before $N's face, driving into $S body with terrible force, hurling $M backward in shock.
+$n draws on the Power, channeling flows of Water, mixed with Air, forming a dozen shafts of ice-like arrows, that penetrate $N, hurling $M backward in shock as a scream is ripped from $S throat.
+
+* Meteor *
+M
+ 21
+Drawing on the Power and channeling flows of Earth and Fire, mixed with Air, you cause large stones of rock, to come smashing down on to $N, killing $M with the barrage.
+$n concentrates for a moment and suddenly stones of rock form in the air, falling toward you with terrible speed. One of the stones smashes you full in the face, shattering the bone structure and sending you into oblivion.
+$n concentrates for a moment and suddenly stones of rock form in the air, falling from the sky, smashing into your face, shattering the bone structure and sending you into oblivion.
+$n concentrates for a moment and suddenly stones of rock form above you, falling with terrible speed toward you, smashing into your face, shattering the bone structure and sending you into oblivion.
+$n draws on the Power, channeling flows of Earth and Fire, mixed with Air, causing large stones of rock to form above you, falling toward you, smashing into your face, shattering the bone structure and sending you into oblivion.
+$n concentrates on $N and suddenly stones form above $n's head, speeding toward $N, smashing into $S face, shattering $S face, sending $M to the ground in a lifeless heap.
+$n concentrates on $N and suddenly stones form above $n's head, streaking toward $N, smashing into $S body, sending $M to the ground in a lifeless heap.
+You try performing the weave but it snaps out of your grasp.
+!TARGET!
+!TARGET!
+!TARGET!
+$n concentrates for a moment but nothing seems to occur.
+$n concentrates for a moment but nothing seems to occur.
+$n draws on the Power, concentrating, but nothing seems to occur.
+Drawing on the Power, you channel flows of Earth and Fire, mixed with Air, creating large boulders that fall from the sky, smashing into $N with terrific force.
+$n concentrates for a moment and suddenly large boulders form above $s head, streaking at you with terrific speed, smashing into you with awful force.
+$n concentrates for a moment and suddenly large boulders form above $s head, streaking toward you, smashing into you with terrific force.
+$n draws on the Power, channeling flows of Earth and Fire, mixed with Air, causing large boulders to form above $s head. They streak toward you with horrifying force, smashing into you with terrific force.
+$n concentrates on $N and suddenly large stones of rock, form above $s head, moving toward $N and smashing into $M with terrific force.
+$n concentrates on $N and suddenly large stones of rock form above $s head, moving towards $N, smashing into $M with terrific force, throwing $M backwards in agony.
+$n draws on the Power, channeling flows of Earth and Fire, mixed with Air causing stones of rock to form above $s head, streaking toward $N and smashing $M to the ground with terrific force.
+
+* Light *
+M
+ 22
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+You try performing the weave but it snaps out of your grasp.
+!TARGET
+!TARGET
+!TARGET
+$n concentrates for a moment but nothing seems to occur.
+$n concentrates for a moment but nothing seems to occur.
+$n draws on the Power, channeling flows of Fire and Spirit but nothing seems to occur.
+Drawing on the Power, you channel flows of Fire and Spirit, causing a globe of Light to spin nearby, illuminating the area with ease.
+!TARGET
+!TARGET
+!TARGET
+$n concentrates for a moment and suddenly a small globe of light forms before $m, easily illuminating the immediate area.
+$n concentrates for a moment and suddenly a small globe of light forms before $m, easily illuminating the immediate area.
+$n draws on the Power, channeling flows of Fire and Spirit, forming a small globe of light before $mself, illuminating the immediate area.
+
+* Earthquake *
+
+M
+ 23
+Drawing on the Power and channeling flows of Earth and Fire into the ground, you cause the earth beneath $N, to explode into motion, tossing $M to the ground and killing $M with falling stones.
+$n concentrates for a moment and suddenly the ground heaves violently beneath your feet, sending you flying into the air and crashing to the ground, breaking your neck in the process.
+$n concentrates for a moment and suddenly the ground heaves violently, sending you flying into the air and crashing to the ground with bone shattering force, breaking your neck as you fall.
+$n draws on the Power, channeling flows of Fire and Earth, mixed with Air, causing the ground to heave violently beneath your feet, sending you flying into the air and causing you to land with bone shattering force. Your neck is snapped from your fall.
+$n concentrates on $N and suddenly the ground beneath $N's feet, heaves violently, sending $N smashing to the ground with bone shattering force. The unnatural odd position in which $n's neck is resting, tells you $E is very dead.
+$n concentrates on $N and suddenly the ground beneath $N's feet, heaves violently, sending $N into the air and crashing to the ground with bone shattering force. The unnatural angle at which $N's neck rests, tells you $E is very dead.
+$n draws on the Power, channeling flows of Fire and Air, mixed with Earth, into the ground, causing it to heave violently, sending $N into the air and crashing back to earth with bone shattering force. the unnatural angle at which $N's neck is resting, tells you $E is very dead.
+You try performing the weave but it snaps out of your grasp.
+!TARGET!
+!TARGET!
+!TARGET!
+$n concentrates for a moment but nothing seems to occur.
+$n concentrates for a moment but nothing seems to occur.
+$n draws on the Power, channeling flows of Fire and Earth, mixed with Air, but nothing seems to occur.
+Drawing on the Power, you channel flows of Earth and Fire, mixed with Air, causing the ground beneath $N's feet, to heave violently, sending $M crashing to the ground with bone shattering force.
+$n concentrates on you and suddenly the ground beneath your feet heaves violently, tossing you into the air and then crashing to the ground with bone shattering force.
+$n concentrates on you and suddenly the ground heaves beneath your feet, sending you into the air and then crashing to the ground with bone shattering force.
+$n draws on the Power, channeling flows of Earth and Fire, mixed with Air, causing the ground to heave violently beneath your feet, tossing you into the air and then crashing back to earth, with bone shattering force.
+$n concentrates and suddenly the ground beneath $N's feet roars and heaves violently, tossing $M into the air and then crashing back to earth, with bone shattering force.
+$n concentrates and suddenly the ground beneath $N's feet roars and heaves violently, tossing $M high into the air and then crashing back to the earth, with bone shattering force.
+$n draws on the Power, channeling flows of Fire and Earth, mixed with Air, causing the ground to roar and heave violently beneath $N's feet, tossing $M into the air and then pulling $M back down with bone shattering force.
+
+* Rolling Ring *
+M
+ 24
+Drawing on the Power and channeling flows of Earth and Fire, you cause a ring to form you, systematically moving farther away from your position. Explosions rock the ground, shattering stone as one might break a twig and crushing all life out of anyone that stands in the way of this terrible machine of death.
+$n concentrates and suddenly a ring of exploding earth begins to move outward from $s position, sending gouts of flame, dust and stone hundreds of paces into the air with the violent explosions. You are unable to avoid the ring, it's hellish inferno swallowing you up and destroy your mortal body within seconds.
+$n concentrates and suddenly a ring of exploding earth begins to move outwards from $s position, sending gouts of flame, dust and stone, hundreds of paces into the air. The ring moves far to quickly for you to avoid it's horrid embrace and soon the ground opens under your feet, swallowing you whole and destroying your mortal body in a split second.
+$n draws on the Power, channeling flows of Earth and Fire, causing a rolling ring of death to move outward from $s position. The ring easily catches up to you, opening beneath your feet and swallowing you so completely that nothing remains of your mortal body.
+$n concentrates and suddenly the ground around $m explodes outward, earth shifting and flowing like something alive, fires raging and consuming all in their path. $N is unable to avoid the ring of destructive, obliterating power rapidly approaching and $E is sucked into the hellish inferno, dying instantly.
+$n concentrates and suddenly the ground around $m explodes outward earth shifting and flowing like something alive, flames raging and ready to consume all in its path. $N is unable to avoid the ring of destructive, obliterating power, and is sucked into the hellish inferno. $n draws on the Power, channeling flows of Earth and Fire into the ground around $m, causing it to explode outwards, the earth flowing like something alive, the fire raging, ready to consume all in its path. $n is unable to avoid the destructive, obliterating ring and is sucked into the hellish inferno.
+$n concentrates and suddenly the ground around $m explodes outward earth shifting and flowing like something alive, flames raging and ready to consume all in its path. $N is unable to avoid the ring of destructive, obliterating power, and is sucked into the hellish inferno. $n draws on the Power, channeling flows of Earth and Fire into the ground around $m, causing it to explode outwards, the earth flowing like something alive, the fire raging, ready to consume all in its path. $n is unable to avoid the destructive, obliterating ring and is sucked into the hellish inferno.
+You try performing the weave but it snaps out of your grasp.
+$n concentrates for a moment but nothing seems to occur.
+$n concentrates for a moment, but nothing seems to occur.
+$n draws on the Power, channeling flows of Earth and Fire, but nothing seems to occur.
+$n concentrates for a moment, but nothing seems to occur.
+$n concentrates for a moment, but nothing seems to occur.
+$n draws on the Power, channeling flows of Earth and Fire, but nothing seems to occur.
+Drawing on the Power and channeling flows of Earth and Fire into the ground, you create a rolling ring of destructive earth and flames, obliterating all in its path with horrific ease. $N is snatched up by the massive ring of death, burned by the flames and crushed with the flying stones, but $E manages to survive for now.
+$n concentrates for a moment and suddenly the ground around $m explodes outward in blasts of flame and death, a circular ring of horror that grabs you and tosses you backwards, burnt and bleeding from dozens of near fatal wounds.
+$n concentrates for a moment and suddenly the ground around $m explodes outward in blasts of flame and death, moving in circular patterns, destroying everything in its path. It grabs you mercilessly, tossing you violently backwards, leaving you burnt and bleeding from dozens of near fatal wounds.
+$n draws on the Power, channeling flows of Earth and Fire into the ground, causing it to explode outwards in a circular pattern, blasts of flame and death radiating from the ring of horror. You are grabbed then tossed violently backwards as the ring burns and tares you up like some terrible meat grinder, leaving you with near fatal wounds.
+$n concentrates for a moment and suddenly the ground explodes outward from $s position, flame and death raining down and eating up ground like some hungry beast. $N is grabbed up by the inferno of horror, tossing $M backwards to the ground, leaving $M burnt and bloody from near fatal wounds.
+$n concentrates for a moment and suddenly the ground explodes outward from $s position, flame and death moving away from $N, in an attempt to find something to consume. $N is unable to flee the rage of the hellish inferno and $E is tossed backwards, burnt and bleeding from near fatal wounds.
+$n draws on the Power, channeling flows of Earth and Fire into the ground, causing it to explode violently outward, spraying death in all directions, the earth opening to swallow, the flames ready to consume. $N is unable to avoid the horrific inferno and is tossed backwards to the ground, burnt and bleeding from near fatal wounds.
+
+* Lightning *
+
+M
+ 25
+Drawing on the Power, you channel flows of Water and Fire, forming a lightning bolt that streaks from your palms, exploding directly in $N's face, frying $M instantly and leaving $M as ashes on the ground.
+$n concentrates and suddenly a blue bolt of lightning streaks from $s palms, slamming into your face and chest, blowing you backwards, off your feet and to the ground, just before your vision fades to black and oblivion consumes you.
+$n concentrates and suddenly a blue bolt of lightning, streaks from $s palms, slamming into your face and chest, blowing you backwards, off your feet and to the ground, just before your vision fades to black and oblivion consumes you.
+$n draws on the Power, channeling flows of Water and Fire, forming a blue lightning bolt, that streaks from $s palms, slamming into your face and chest, hurling you backwards off your feet and to the ground, just before your vision fades to black and oblivion consumes you.
+$n concentrates for a moment and suddenly a blue lightning bolt streaks from $s palms, slamming into $N's face and chest, hurling $M backwards off $S feet and hitting the ground a few paces away, $S sightless eyes, staring at the sky.
+$n concentrates for a moment and suddenly a blue lightning bolt, streaks from $s palms, slamming into $N's face and chest, hurling $M backwards off $S feet and hitting the ground, $S sightless eyes, staring at the sky.
+$n draws on the Power, channeling flows of Water and Fire, forming a blue lightning bolt that streaks from $s palms, slamming into $N's face and chest, hurling $M back off S feet and to the ground, $S sightless eyes, staring at the sky above.
+You try performing the weave but it snaps out of your grasp.
+!TARGET!
+!TARGET!
+!TARGET!
+$n concentrates but nothing seems to occur.
+$n concentrates for a moment, but nothing seems to occur.
+$n draws on the Power, channeling flows of Water and Fire, but nothing seems to occur.
+Drawing on the Power, you channel flows of Water and Fire, forming a blue lightning bolt, that streaks from your palms, exploding in $N's face and chest, blowing $M off $S feet but not killing $M.
+$n concentrates and suddenly a blue bolt of lightning, streaks from $s palms, exploding as it slams into your face and chest, making your blood feel as if it were aboil with the release of energy, but you still seem to be alive.
+$n concentrates for a moment and suddenly a blue bolt of lightning streaks from $s palms, slamming into your face and chest, tossing you backwards off your feet, and leaving you dazed and confused, in a heap on the ground.
+$n draws on the Power, channeling flows of Water and Fire, forming a blue lightning bolt that streaks from $s palms, slamming into your face and chest, blowing you backwards off your feet and leaving you dazed and confused in a heap on the ground.
+$n concentrates for a moment and suddenly a blue bolt of lightning streaks from $s palms, slamming into $N's face and chest, tossing $M backwards off $S feet and leaving $M screaming in agony on the ground.
+$n concentrates for a moment and suddenly a blue bolt of lightning streaks from $s palms, slamming into $N's face and chest, blowing $M off $S feet, leaving $M screaming in agony on the ground.
+$n draws on the Power, channeling flows of Water and Fire, forming a blue bolt of crackling lightning that streaks from $s palms, slamming into $N's face and chest, tossing $M backwards off $S feet, and leaving $M screaming in agony on the ground.        
+
+* Fireball *
+
+M
+ 26
+Drawing on the Power, you channel flows of Fire, mixed with Air, forming a fireball that leaps from your hands, slamming into $N's face and chest, burning $M to ash where $E stands.
+$n concentrates for a moment and suddenly a fireball streaks from $s outstretched hands, slamming into your face and chest, hurling you backwards and to the ground as your vision fades to black and oblivion consumes you.
+$n concentrates and suddenly a ball of flame appears between $s hands, streaking from $s open palms to slam into your face and chest with explosive force, hurling you to the ground with bone shattering force. You feel no pain as your vision fades to black and oblivion consumes you.
+$n draws on the Power, channeling flows of Fire and Air, forming a fireball that streaks from $s palms, slamming into your face and chest with explosive burning, searing pain, hurling you to the ground with bone shattering force, a scream ripped from your throat. You feel no pain as your vision begins to fade to black and oblivion consumes you.
+$n concentrates for a moment and suddenly a fireball, the size of three or four large fists,, streaks from $n's open hands, slamming into $N, face and chest with explosive force, hurling $M to the ground, a scream ripped from $S throat. The shard remains of a human now lies on the ground, sightless eyes, staring at the sky.
+$n concentrates for a moment and suddenly a fireball, the size of three or four large fists, streaks from $s open palms, slamming into $N's face and chest with horrific effect, hurling the burnt body to the ground with bone shattering force. A shard human now lies on the ground, sightless eyes, staring at the sky above.
+$n draws on the Power, channeling flows of Fire and Air, forming a fireball that streaks from $s open palms, slamming into $N's face and chest, hurling the now burnt body to the ground with bone shattering force. The shard remains of a human being now lies upon the ground, sightless eyes staring at the sky.
+You try performing the weave, but it snaps out of your grasp.
+$n concentrates for a moment, but nothing seems to occur.
+$n concentrates for a moment, but nothing seems to occur.
+$n draws on the Power, channeling flows of Fire and Air, but nothing seems to occur.
+$n concentrates for a moment, but nothing seems to occur.
+$n concentrates for a moment, but nothing seems to occur.
+$n draws on the Power, channeling flows of Fire and Air, but nothing seems to occur.
+Drawing on the Power, you channel flows of Fire and Air, forming a fireball that streaks from your open palms, slamming into $N with terrific force, hurling $M backwards.
+$n concentrates and suddenly a fireball appears between $s hands, streaking forward and slamming into your face and chest, hurling you backwards with terrific force.
+$n concentrates for a moment and suddenly a fireball appears between $s hands, streaking forward to slam explosively into your face and chest, hurling you backwards with terrific force.
+$n draws on the Power, channeling flows of Fire and Air, forming a fireball between $s hands, that streaks forward, slamming into your face and chest with explosive force, hurling you backwards in agony.
+$n concentrates for a moment and suddenly a fireball appears between $s hands, streaking forward to slam into $N's face and chest, hurling $M backwards in agony.
+$n concentrates for a moment and suddenly a fireball appears between $s hands, streaking forward to slam into $n with explosive force, hurling $M backward in agony.
+$n draws on the Power, channeling flows of Fire and Air, forming a fireball that streaks from $s open palms, slamming with terrific force, into $N's face and chest, hurling $M back in agony.
+
+
+* Darkness *
+
+M
+ 27
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+You try performing the weave but it snaps out of your grasp.
+!TARGET
+!TARGET
+!TARGET
+$n concentrates for a moment, but nothing seems to occur.
+$n concentrates for a moment, but nothing seems to occur.
+$n draws on the Power, channeling flows of Earth and Air, but nothing seems to occur.
+Drawing on the Power, you channel flows of Earth mixed with Air to form a dense screen that causes the room to darken.
+!TARGET
+!TARGET
+!TARGET
+$n concentrates for a moment and suddenly darkness befalls the room, a screen made of some dark material, that does not yield to the light to allow it within the makeshift dome.
+$n concentrates for a moment and suddenly a darkness befalls the room, the light dimming from the exterior until all light is gone from any outside source.
+$n draws on the Power, channeling flows of Spirit, mixed with Earth and Air, creating a dome-like structure that allows a curtain of darkness to befall the room.
+
+* Blindness *
+
+M
+ 28
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+You try performing the weave but it snaps out of your grasp.
+$n concentrates for a moment, but nothing seems to occur.
+$n concentrates for a moment, but nothing seems to occur.
+$n draws on the Power, channeling flows of Air and Earth, but nothing seems to occur.
+$n concentrates for a moment, but nothing seems to occur.
+$n concentrates for a moment, but nothing seems to occur.
+$n draws on the Power, channeling flows of Air and Earth, but nothing seems to occur.Weaving flows of Air, you make $N blind.
+Drawing on the Power, you channel flows of Earth and Air, forming a band of visibly impermeable Power, that covers $N's eyes, preventing $M from seeing anything.
+$n concentrates on you and suddenly a band of blackness drifts across your vision, effectively preventing you from seeing anything.
+$n concentrates on you and suddenly a band of blackness drifts across your vision, effectively preventing you from seeing anything.
+$n draws on the Power, channeling flows of Earth and Air, forming a band of blackness that drifts across your vision, completely cutting off your vision.
+$n concentrates for a moment and suddenly $N shakes his head, seemingly trying to clear something from $S vision.
+$n concentrates for a moment and $N starts in surprise, shaking $S head as if trying to dislodge something.
+$n draws on the Power, channeling flows of Earth and Air, fashioning a band of blackness across $N's vision, preventing $M from seeing a thing.
+
+* Sanctuary *
+M
+ 33
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+You try performing the weave but it snaps out of your grasp.
+!TARGET
+!TARGET
+!TARGET
+$n concentrates for a moment, but nothing seems to occur.
+$n concentrates for a moment, but nothing seems to occur.
+$n draws on the Power, channeling flows of Spirit, but nothing seems to occur.
+Drawing on the Power, you channel flows of Spirit, fashioning a ward around your surroundings. A feeling of peace descends as the ward is woven,.
+!TARGET
+!TARGET
+!TARGET
+$n concentrates for a moment, eyes faraway. A peaceful feeling descends upon you suddenly, soothing your aches and pains.
+$n concentrates for a moment, eyes faraway. A peaceful feeling descends upon you suddenly, soothing your aches and pains.
+$n draws on the Power, channeling flows of all five Powers, fashioning a ward around the area. a peaceful feeling suddenly invades your being, soothing your aches and pains.
+
+* Sleep *
+M
+ 34
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+You try performing the weave but it snaps out of your grasp.
+$n concentrates for a moment, but nothing seems to occur.
+$n concentrates for a moment, but nothing seems to occur.
+$n draws on the Power, channeling flows of Spirit, but nothing seems to occur.
+$n concentrates for a moment, but nothing seems to occur.
+$n concentrates for a moment, but nothing seems to occur.
+$n draws on the Power, channeling flows of Spirit, but nothing seems to occur.
+Drawing on the Power, you channel flows of Spirit, weaving them at $N and causing $M to drift off to sleep.
+$n concentrates on you and suddenly you feel extremely tired, the weariness, falling on you like a shroud. Your vision fades away and you fall into a deep sleep.
+$n concentrates on you and suddenly you feel extremely tired, the weariness falling on you like a shroud. Your vision begins to fade and you enter a deep sleep.
+$n draws on the Power, channeling flows of Spirit at you, causing your eye-lids to flutter dangerously on the edge of sleep. You try to fight the weave but it pulls you under like inexorably.
+$n concentrates and suddenly $N yawns, trying to cover it up with a hand. $N looks slightly alarmed as $$E takes $S hand away, but in the next moment, $E falls to the flor, unconscious.
+$n concentrates and suddenly $N yawns, trying to cover it up with a raised hand. $N looks slightly alarmed as $E takes $S hand away, but in the next moment, $E falls unceremoniously to the floor, unconscious.
+$n draws on the Power, channeling flows of Spirit at $N, causing $M to yawn for a moment, before falling out of $S chair and hitting the ground, unconscious.
+
+* Infravision *
+
+M
+ 36
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+You try performing the weave but it snaps out of your grasp.
+!TARGET
+!TARGET
+!TARGET
+$n concentrates for a moment, but nothing seems to occur.
+$n concentrates for a moment, but nothing seems to occur.
+$n draws on the Power, channeling flows of Fire and Spirit, but nothing seems to occur.
+Drawing on the Power, you channel flows of Spirit and Air, enhancing your vision, allowing you to see your surroundings in much better light.
+!TARGET
+!TARGET
+!TARGET
+$n concentrates for a moment and $s eyes begin to glow, giving off a pale light.
+$n concentrates for a moment and suddenly $s eyes begin to glow, giving off a pale light.
+$n draws on the Power, channeling flows of Spirit and Fire, causing $s eyes to glow with a pale light.
+
+* Chill *
+
+M
+ 37
+Drawing on the Power, you channel flows of Water and Air, surrounding $N with a solid enclosure of ice that draws all the heat from $S body, leaving $M frozen cold and dead on the ground.
+$n concentrates on you and suddenly an enclosure of ice surrounds you, drawing the heat from your body, forcing you to the ground and stripping your consciousness away, leaving you in oblivion.
+$n concentrates on you and suddenly an enclosure of ice surrounds you, drawing the heat from your body, forcing you to the ground and stripping your consciousness away, leaving you in oblivion.
+$n draws on the Power, channeling flows of Water and Air at you, wrapping you in an enclosure of ice, drawing the heat from your body, forcing you to the ground and stripping consciousness away, leaving you in oblivion.
+$n concentrates for a moment and suddenly an enclosure of ice surrounds $N, quickly drawing the heat from $S body, forcing $M to the ground and leaving $M an empty husk.
+$n concentrates for a moment and suddenly an enclosure of ice surrounds $N, drawing all the heat from $S body, forcing $M to the ground, leaving $M an empty husk.
+$n draws on the Power, channeling flows of Water and Air, constructing an enclosure of ice that surrounds $N completely, drawing the heat from $S body, forcing $M to the ground, leaving $M an empty husk.
+You try performing the weave but it snaps out of your grasp.
+$n concentrates for a moment, but nothing seems to occur.
+$n concentrates for a moment, but nothing seems to occur.
+$n draws on the Power, channeling flows of Water and Air, but nothing seems to occur.
+$n concentrates for a moment, but nothing seems to occur.
+$n concentrates for a moment, but nothing seems to occur.
+$n draws on the Power, channeling flows of Water and Air, but nothing seems to occur.
+Drawing on the Power, you channel flows of Water and air, drawing the heat from around $N, trying to chill $M to unconsciousness.
+$n concentrates on you and suddenly the air around you becomes extremely cold, all warmth, having been yanked from your surroundings.
+$n concentrates on you and suddenly the air around you becomes extremely cold, all warmth, having been pulled from the air around you.
+$n draws on the Power, channeling flows of Water and Air, removing every ounce of heat from the air around $N and leaving $M shivering from extreme cold.
+$n concentrates and suddenly $N shivers uncontrollably,, face and hands turning a blue as an extreme cold begins to radiate from where $E stands.
+$n concentrates and suddenly $N shivers uncontrollably, $S face and hands turning blue as $E begins to radiate extreme cold.
+$n draws on the Power, channeling flows of Water and Air, removing all warmth from $N's surroundings, leaving $M shivering uncontrollably.
+
+* Earthshield *
+M
+ 38
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+You try performing the weave but it snaps out of your grasp.
+!TARGET
+!TARGET
+!TARGET
+$n concentrates for a moment, but nothing seems to occur.
+$n concentrates for a moment, but nothing seems to occur.
+$n draws on the Power, channeling flows of Earth and Air, but nothing seems to occur.
+Drawing on the Power, you channel flows of Earth and Air, forming a shield around you, helping to protect you from harm.
+!TARGET
+!TARGET
+!TARGET
+$n concentrates for a moment and suddenly $e is surrounded by what seems to be a shield of earth, the thin brown wall, helping to protect $m from harm.
+$n concentrates for a moment, and suddenly $e is surrounded by a thin brown wall, helping to protect $m from harm.
+$n draws on the Power, channeling flows of Earth and Air, forming a thin brown shield around $mself,, helping to protect $m from harm.
+
+*Create Food*
+M
+ 45
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+You try performing the weave but it snaps out of your grasp.
+!TARGET!
+!TARGET!
+!TARGET!
+$n concentrates for a moment, but nothing seems to occur.!
+$n concentrates for a moment, but nothing seems to occur.!
+$n draws on the Power, channeling flows of Air, Earth and Water, but nothing seems to occur.
+Drawing on the Power, you channel flows of Air, Earth, and Water, into the ground, finding mushrooms in the earth and causing them to grow upward, bursting through the ground.
+!TARGET!
+!TARGET!
+!TARGET!
+$n concentrates for a moment and suddenly mushrooms burst up from the ground before $m.
+$n concentrates for a moment and suddenly mushrooms burst up from the ground before $m.
+$n draws on the Power, channeling flows of Air, Earth and Water, into the ground and causing mushrooms to burst through the earth before $m.
+
+* Sliceweave *
+
+M
+ 46
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+You try performing the weave but it snaps out of your grasp.
+$n concentrates for a moment, but nothing seems to occur.
+$n concentrates for a moment, but nothing seems to occur.
+$n draws on the Power, channeling flows of Spirit, Fire and Earth and flailing them about, to no effect.
+$n concentrates for a moment, but nothing seems to occur.
+$n concentrates for a moment, but nothing seems to occur.
+$n draws on the Power, channeling flows of Spirit, Fire, and Earth into a blade of power, trying to cut a weave around $N, to no effect.
+Drawing on the Power, you channel flows of Spirit, Fire and Earth, forming the power into a blade that slices through all the weaves that surround $N, parting them like fine silk and leaving $M free of visible weaves.
+$n concentrates for a moment, but nothing seems to occur.
+$n concentrates for a moment, but nothing seems to occur.
+$n draws on the Power, channeling flows of Spirit, Earth and Fire, using them to form a blade of power that slices through the weaves hindering you.
+$n concentrates for a moment, staring at $N intently, then $e relaxes as $N breaks into a broad smile.
+$n concentrates, staring at $N intently before $e relaxes and $N gives $m a broad smile.
+$n draws on the Power, channeling flows of Spirit, Fire, and Earth, forming a blade of power, that cuts cleanly through the weaves that surrounds $N.
+
+* Delve *
+M
+ 48
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+You try performing the weave but it snaps out of your grasp.
+$n concentrates for a moment, but nothing seems to occur.
+$n concentrates for a moment, but nothing seems to occur.
+$n draws on the Power, channeling flows of all five Powers, but nothing seems to occur.
+$n concentrates for a moment, but nothing seems to occur.
+$n concentrates for a moment, but nothing seems to occur.
+$n draws on the Power, channeling flows of all five Powers, but nothing seems to occur.
+Drawing on the Power, you channel flows of all five Powers, weaving them intricately and spinning them throughout $N's body, first checking for wounds, then healing the ones possible.
+$n concentrates for a moment, putting a hand on your head, but nothing seems to occur.
+$n concentrates for a moment, laying a hand on your head. suddenly you are gripped by a convulsion and are pierced to the soul by cold, but it is soon over and you sway on your feet.
+$n concentrates on you, placing a hand on your head. Suddenly, a cold pierces your soul and body, chilling you to the bone but the next moment, releasing you, as if nothing had happened.
+$n concentrates on $N, placing a hand on $S head, staring intently at something. Suddenly $N goes up on $S toes, a dozen expressions crossing $S face rapidly, before $E settles back to the ground, looking uncomfortable.
+$n concentrates on $N, placing a hand on $S head, staring at something intently. Suddenly, $N goes up on $S toes, a dozen expressions passing over $S face, before $E relaxes, looking slightly uncomfortable.
+$n draws on the Power, channeling flows of all five Powers, while resting a hand on $N's head. Suddenly, $N goes up on $S toes, shaking uncontrollably, a dozen different expressions passing across $S face, before $E relaxes.
+
+* Minor Healing *
+M
+ 49
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+You try performing the weave but it snaps out of your grasp.
+$n concentrates for a moment, but nothing seems to occur.
+$n concentrates for a moment, but nothing seems to occur.
+$n draws on the Power, channeling flows of Air and Water, but nothing seems to occur.
+$n concentrates for a moment, but nothing seems to occur.
+$n concentrates for a moment, but nothing seems to occur.
+$n draws on the Power, channeling flows of Air and Water, but nothing seems to occur.
+Drawing on the Power, you channel flows of Air and Water into $N, searching for wounds and healing what you can.
+$n concentrates on you and suddenly you shiver uncontrollably as a chill passes through you. As quick as it happens, the feeling is gone, leaving you feeling exhausted but your wounds seem to be in a better condition.
+$n concentrates on you and suddenly a chill invades your being, passing through you and causing you to shiver uncontrollably. As quick as the feeling arrived, it passes and you are left feeling exhausted.
+Drawing on the Power, you channel flows of Water and Air, weaving them into $N, spinning them through $S body, searching and repairing the wounds that can be healed. $N slumps in exhaustion as you finish your work, a growl coming from $S stomach.
+$n concentrates, placing a hand on $N's head, staring into $S face intently. Suddenly, $N gasps aloud, face going taught for a moment, before relaxing. The wounds on $S body slowly heal up, leaving unbroken skin where there once was a gaping hole.
+$n concentrates, placing a hand on $N's head, staring into $S face. Suddenly, $N goes rigid, face taught, before $E relaxes, the wounds on $S body, healing to unbroken skin.
+$n draws on the Power, channeling flows of Water and Air, spinning them through $N's body as $e places a hand on $S head. Suddenly, $N gasps aloud, face going rigid for a moment, before relaxing once more. The wounds on $N's body heal slowly, unbroken skin replacing gash.
+
+* Dome of Air *
+M
+ 50
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+You try performing the weave but it snaps out of your grasp.
+!TARGET
+!TARGET
+!TARGET
+$n concentrates for a moment, but nothing seems to occur.
+$n concentrates for a moment, but nothing seems to occur.
+$n draws on the Power, channeling flows of Air and Spirit, but nothing seems to occur.
+Drawing on the Power, you channel flows of Air and Spirit, fashioning a large dome around your immediate surroundings, a greyish ward that prevents anyone from coming any closer to you.
+!TARGET
+!TARGET
+!TARGET
+$n concentrates for a moment and suddenly a greyish dome snaps into existence around the area, a seemingly impenetrable wall, that stops anything from coming within it's outer barrier.
+$n concentrates for a moment and suddenly a large, greyish dome snaps into existence around the area, a thick, impenetrable wall that prevents anything from coming within it's outer barrier.
+$n draws on the Power, channeling flows of Air and Spirit, fashioning a large, greyish dome that covers the immediate area, preventing anything from coming within it's outer barrier.
+
+* Ball of Light *
+M
+ 51
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+You try performing the weave but it snaps out of your grasp.
+!TARGET
+!TARGET
+!TARGET
+$n concentrates for a moment, but nothing seems to occur.
+$n concentrates for a moment, but nothing seems to occur.
+$n draws on the Power, channeling flows of Air and Fire, but nothing seems to occur.
+Drawing on the Power, you channel flows of Air and Fire, creating a ball of light that floats before you, guiding your way.
+!TARGET
+!TARGET
+!TARGET
+$n concentrates for a moment and suddenly a small ball of light winks into existence before $m, floating effortlessly, illuminating the immediate surroundings.
+$n concentrates for a moment and suddenly a small ball of light winks into existence before $m, floating effortlessly, illuminating the immediate surroundings.
+$n draws on the Power, channeling flows of Air and Fire, fashioning a small ball of light that winks into existence before $m, illuminating the area with bright light.
+
+* Disintegrate *
+
+M
+ 52
+Drawing on the Power, you channel flows of Air, Earth, and Fire, spinning them harshly into $N's body, and forcing them to work against each other, causing explosions and taring $M apart from within. $N's body explodes and falls into bloody pieces as your weave tares $M apart.
+$n concentrates and suddenly inexplicable forces invade your being, fires roaring in your head and limbs, earth and stone dragging you down, air taring you apart. You feel vague feelings of explosions that seem to emanate from you, before you lose consciousness and oblivion takes you.
+$n concentrates and suddenly inexplicable forces invade your being, fires raging in your head and along your limbs, earth and stone dragging you to the ground, air taring you literally apart. You feel vague sensations of explosions emanating from your body before you lose consciousness and oblivion takes you.
+$n draws on the Power, channeling flows of Air, Earth, and Fire, spinning them into you harshly and before you can react it is all over. Fires rage through your skull and along your limbs, earth and stone drag you to the ground, air tries to literally tare you apart. You feel vague sensations of explosions emanating from your body, before you lose consciousness and oblivion takes you.
+$n concentrates and suddenly $N gives out with a horrifying scream of total agony, $S head beginning to spew smoke as fires literally consume $S limbs. Earth distorts $S frame and air tares $S body apart until nothing of what was once $N, remains. All that is left is a pile of smoking, bloody bones and scraps of skin.
+$n concentrates and suddenly $N gives out with a horrifying scream of total agony, $S head beginning to spew smoke as fires literally consume $S limbs. Earth distorts $S frame and air tares $S body apart until nothing of what was once $N, remains. All that is left is a pile of smoking, bloody bones and scraps of skin.
+$n draws on the Power, channeling flows of Earth, Fire, and Air, spinning them violently into $N's body, the earth grinding $S bones to dust, the fire raging through $S face and limbs, the air taring $M from within. The bloody remains of something lies on the ground, where there once was a human being.
+You try performing the weave but it snaps out of your grasp.
+$n concentrates for a moment, but nothing seems to occur.
+$n concentrates for a moment, but nothing seems to occur.
+$n draws on the Power, channeling flows of Earth, Fire and Air, but nothing seems to occur.
+$n concentrates for a moment, but nothing seems to occur.
+$n concentrates for a moment, but nothing seems to occur.
+$n draws on the Power, channeling flows of Earth, Fire and Air, but nothing seems to occur.
+Drawing on the Power, you channel flows of Earth, Fire and Air, spinning them violently into $N's body, using the fire to rage through $S skull and limbs, earth to crush bones and the air to tare $M apart from within. $N manages to escape the nastier parts of the weave but a scream is still torn from $S throat.
+$n concentrates on you and suddenly fire blooms in your head and limbs, the pain atrocious as it flares throughout your being. Air tries to tare you apart from within as something else tries to crush your bones. You narrowly escape the slow, painful death but the memory of pain remains as well as not a few wounds.
+$n concentrates on you and suddenly fire blooms in your head and limbs, the pain atrocious as it flares throughout your being. Air tries to tare you apart from within as something else tries to crush your bones. You narrowly escape the slow, painful death but the memory of pain remains as well as not a few wounds.
+$n draws on the Power, channeling flows of Earth, Fire and Air at you and suddenly fire blooms in your head and limbs, the pain atrocious as it flares throughout your being. Air tries to tare you apart from within as something else tries to crush your bones. You narrowly escape the slow, painful death but the memory of pain remains as well as not a few wounds.
+$n concentrates and suddenly $N gives out with a horrific scream, as smoke begins to appear from $S clothing. Another scream is wrenched from $N as a taring noise can be heard but $E manages to maneuver out of the way of whatever it is, killing $M.
+$n concentrates and suddenly $N gives out with a horrific scream, as smoke begins to appear from $S clothing. Another scream is wrenched from $N as a taring noise can be heard but $E manages to maneuver out of the way of whatever it is, killing $M.
+$n draws on the Power, channeling flows of Earth, Fire and Air, spinning them violently into $N's body, causing fires to rage through $S head and limbs, while earth tries to crush $S bones and air tare $M from within. $N falls to the ground, moaning in agony but $E manages to recover and get to $S feet.
+
+* Ball of Air *
+
+M
+ 53
+Drawing on the Power, you channel flows of Air and Spirit, forming a ball between your outstretched hands, rolling out and smashing into $N's face and chest, leaving $M on the ground, a crushed skull with sightless, glazed eyes, staring at the sky.
+$n concentrates and suddenly a ball of nothingness, slams into your face and chest, carrying you off your feet, smashing you to the ground with terrible force. You feel bones snap from the impact but consciousness already begins to flee your failing body and soon oblivion consumes you.
+$n concentrates and suddenly a ball of nothingness, slams into your face and chest, carrying you off your feet, smashing you to the ground with terrible force. You feel bones snap from the impact but consciousness already begins to flee your failing body and soon oblivion consumes you.
+$n draws on the Power, channeling flows of Air and Spirit, forming a ball between $s outstretched hands, a ball that rolls towards you, slamming into your face and chest and hurling you to the ground with bone shattering force. You feel the snap of bones breaking as you impact with the ground, but soon all you know is endless oblivion.
+$n concentrates and suddenly a ball of nothingness, slams into $N's face and chest, carrying $M off $S feet, smashing $M to the ground with terrible force, leaving $S crushed skull to stare sightlessly at the sky above.
+$n concentrates and suddenly a ball of nothingness, slams into $N's face and chest, carrying $M off $S feet, smashing $M to the ground with terrible force, leaving $S crushed skull to stare sightlessly at the sky above.
+$n draws on the Power, channeling flows of Air and Spirit, forming a ball between $s outstretched palms, that streaks toward $N, slamming into $S face and chest, carrying $M off $S feet, and smashing $S skull against the ground. 
+You try performing the weave but it snaps out of your grasp.
+$n concentrates for a moment, but nothing seems to occur.
+$n concentrates for a moment, but nothing seems to occur.
+$n draws on the Power, channeling flows of Air and Spirit, but nothing seems to occur.
+$n concentrates for a moment, but nothing seems to occur.
+$n concentrates for a moment, but nothing seems to occur.
+$n draws on the Power, channeling flows of Air and Spirit, but nothing seems to occur.
+Drawing on the Power, you channel flows of Air and Spirit, forming a ball between your outstretched hands, rolling out and smashing into $N's face and chest, tossing $M backwards off $S feet.
+$n concentrates and suddenly a ball of nothingness, slams into your face and chest, carrying you off your feet, smashing you to the ground with terrible force.
+$n concentrates and suddenly a ball of nothingness, slams into your face and chest, carrying you off your feet, smashing you to the ground with terrible force.
+$n draws on the Power, channeling flows of Air and Spirit, forming a ball between $s outstretched palms, that streaks toward $N, slamming into $S face and chest, carrying $M off $S feet.
+$n concentrates and suddenly a ball of nothingness, slams into $N's face and chest, carrying $M off $S feet, smashing $M to the ground with terrible force.
+$n concentrates and suddenly a ball of nothingness, slams into $N's face and chest, carrying $M off $S feet, smashing $M to the ground with terrible force.
+$n draws on the Power, channeling flows of Air and Spirit, forming a ball between $s outstretched palms, that streaks toward $N, slamming into $S face and chest, carrying $M off $S feet.
+
+* Open Lock *
+M
+ 54
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+You try performing the weave but  it snaps out of your grasp.
+!TARGET
+!TARGET
+!TARGET
+$n concentrates for a moment, but nothing seems to occur.
+$n concentrates for a moment, but nothing seems to occur.
+$n draws on the Power, channeling flows of Earth and Air, but nothing seems to occur.
+Drawing on the Power, you channel flows of Earth and Air, slipping them into the lock of the door, manipulating the mechanism and popping it open.
+!TARGET
+!TARGET
+!TARGET
+$n concentrates for a moment and suddenly the loud click of an unlocking door can be heard.
+$n concentrates for a moment and suddenly the loud click of an unlocking door can be heard.
+$n draws on the Power, channeling flows of Earth and Air into a door, slipping them expertly through the mechanism and opening the lock quickly.
+
+* Call Fire *
+M
+ 55
+Drawing on the Power, you channel huge amounts of Fire, balls of flame bursting from your outstretched palms, exploding in all directions, killing everything in their path.
+$n concentrates and suddenly a bolt of flame, one of a dozen, slams into your face and chest, hurling you to the ground with bone shattering force, burning and searing your skin mercilessly. You feel the skin crisp as if it was happening to someone else, as consciousness begins to fade, and oblivion consumes you.
+$n concentrates and suddenly a bolt of flame, one of a dozen, slams into your face and chest, hurling you to the ground with bone shattering force, burning and searing your skin mercilessly. You feel the skin crisp as if it was happening to someone else, as consciousness begins to fade, and oblivion consumes you.
+$n draws on the Power, channeling massive flows of Fire. One of the bolts of flame flung from $n's outstretched palms, slams you into the ground mercilessly, burning your face and chest, the searing pain terrible until oblivion becomes a relief.
+$n concentrates and suddenly a bolt of flame, one of a dozen, slams into $N's face and chest, hurling $M to the ground with bone shattering force, burning and searing $S skin mercilessly, until all that is left is a pile of smoking ashes.
+$n concentrates and suddenly a bolt of flame, one of a dozen, slams into $N's face and chest, hurling $M to the ground with bone shattering force, burning and searing $S skin mercilessly, until all that is left is a pile of smoking ashes.
+$n draws on the Power, channeling massive flows of Fire. One of the bolts of flame flung from $n's outstretched palms, slams into $N, the ground mercilessly, tossing $M to the ground with terrific force, burning and searing until all that is left is a pile of smoking ash.
+You try performing the weave but it snaps out of your grasp.
+$n concentrates for a moment, but nothing seems to occur.
+$n concentrates for a moment, but nothing seems to occur.
+$n draws on the Power, channeling flows of Fire, but $e cannot manage to control them.
+$n concentrates for a moment, but nothing seems to occur.
+$n concentrates for a moment, but nothing seems to occur.
+$n draws on the Power, channeling flows of Fire, but $e cannot manage to control them.
+Drawing on the Power, you channel flows of Fire and suddenly huge bolts of flame leap from your outstretched palms, burning and searing their way through everything in their path. $N is spun around as a fireball connects with $M.
+$n concentrates and suddenly huge bolts of flame burst from $s palms, streaking in all directions, burning everything in their path. One such bolt slams into you, hurling you backwards and to the ground with tremendous force.
+$n concentrates and suddenly huge bolts of flame burst from $s palms, streaking in all directions, burning everything in their path. One such bolt slams into you, hurling you backwards and to the ground with tremendous force.
+$n draws on the Power, channeling flows of Fire that burst from $s hands in the shape of huge bolts of flame, streaking in all directions. One such bolt slams into you, hurling you off your feet and tossing you to the ground with contemptuous ease.
+$n concentrates and suddenly a bolt of flame, one of a dozen, slams into $N's face and chest, hurling $M to the ground with bone shattering force.
+$n concentrates and suddenly a bolt of flame, one of a dozen, slams into $N's face and chest, hurling $M to the ground with bone shattering force.
+$n draws on the Power, channeling massive flows of Fire. One of the bolts of flame flung from $n's outstretched palms, slams into $N, the ground mercilessly, tossing $M to the ground with terrific force.
+
+* Shaft of Fire *
+
+M
+ 56
+Drawing on the Power, you channel flows of Fire and Air, forming a shaft of blazing flame that slams into $N's chest like a burning spear, leaving a smoking hole where there once was a heart.
+$n concentrates and suddenly a wrist-thick shaft of flame shoots from $s open palm, slamming into your chest with horrific speed, burning a hole directly through your heart like a burning spear, and killing you before you hit the ground.
+$n concentrates and suddenly a wrist-thick shaft of flame shoots from $s open palm, slamming into your chest with horrific speed, burning a hole directly through your heart like a burning spear, and killing you before you hit the ground.
+$n draws on the Power, channeling flows of Fire and Air, causing a wrist-thick shaft of burning flame to streak from $s palm, slamming into your chest like a burning spear, leaving your body a smoking ruin as you die before you hit the floor.
+$n concentrates and suddenly a wrist-thick shaft of flame shoots from $s open palm, slamming into $N's chest with horrific speed, burning a hole directly through $S heart like a burning spear, and killing $M before $E hit the ground.
+$n concentrates and suddenly a wrist-thick shaft of flame shoots from $s open palm, slamming into $N's chest with horrific speed, burning a hole directly through $S heart like a burning spear, and killing $M before $E hit the ground.
+$n draws on the Power, channeling flows of Fire, forming a wrist-thick shaft of flame that streaks from $s palms, slamming into $N's chest with tremendous force, burning and searing a hole through $M like a living spear, leaving a ragged, burnt hole where there once was a heart.
+You try performing the weave but it snaps out of your grasp.
+$n concentrates for a moment, but nothing seems to occur.
+$n concentrates for a moment, but nothing seems to occur.
+$n draws on the Power, channeling flows of Fire, but nothing seems to occur.
+$n concentrates for a moment, but nothing seems to occur.
+$n concentrates for a moment, but nothing seems to occur.
+$n draws on the Power, channeling flows of Fire, but nothing seems to occur.
+Drawing on the Power, you channel flows of Fire, creating a wrist-thick shaft of flame that strikes $N in the chest, hurling $M screaming and howling in agony, to the floor with a tremendous crash.
+$n concentrates and suddenly a wrist-thick shaft of flame shoots from $s open palm, slamming into your chest with horrific speed, hurling you to the ground.
+$n concentrates and suddenly a wrist-thick shaft of flame shoots from $s open palm, slamming into your chest with horrific speed, hurling you to the ground.
+$n draws on the Power, channeling flows of Fire and Air, causing a wrist-thick shaft of burning flame to streak from $s palm, slamming into your chest like a burning spear, hurling you to the ground.
+$n concentrates and suddenly a wrist-thick shaft of flame shoots from $s open palm, slamming into $N's chest with horrific speed, hurling $M to the ground.
+$n concentrates and suddenly a wrist-thick shaft of flame shoots from $s open palm, slamming into $N's chest with horrific speed, hurling $M to the ground.
+$n draws on the Power, channeling flows of Fire, forming a wrist-thick shaft of flame that streaks from $s palms, slamming into $N's chest with tremendous force, hurling $M to the ground.
+
+* Dome of Fire *
+M
+ 57
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+You try performing the weave but it snaps out of your grasp.
+!TARGET
+!TARGET
+!TARGET
+$n concentrates for a moment, but nothing seems to occur.
+$n concentrates for a moment, but nothing seems to occur.
+$n draws on the Power, channeling flows of Fire, Air and Spirit, but nothing seems to occur.
+Drawing on the Power, you channel flows of Fire, Air, and Spirit, fashioning a large ward around the immediate area, the barrier, shimmering and dancing with flames.
+!TARGET
+!TARGET
+!TARGET
+$n concentrates for a moment and suddenly a large dome of air, seemingly laced with flames, snaps into existence around the immediate area, the barrier flickering and dancing with fire.
+$n concentrates for a moment and suddenly a large dome of air, seemingly laced with flames, snaps into existence around the immediate area, the barrier flickering and dancing with fire.
+$n draws on the Power, channeling flows of Fire, Air, and Spirit, fashioning a large ward around the immediate area, the barrier, shimmering and dancing with flames.
+
+* Devastation *
+
+M
+ 58
+Drawing on the Power, you channel flows of Fire, Earth, and Air, spinning them violently into $N's body, taring it apart limb by limb with flames, fists of air and stones to crush bones. Soon, all that remains of $N is a smoking pile of shard, broken bones.
+$n concentrates and suddenly fire blooms in your skull and along your limbs, raging through you like something alive. Other powers literally tare you limb from limb, and frying what cannot be torn. You fall into oblivion long before the process is completed.
+$n concentrates and suddenly fire blooms in your skull and along your limbs, raging through you like something alive. Other powers literally tare you limb from limb, and frying what cannot be torn. You fall into oblivion long before the process is completed.
+$n draws on the Power, channeling flows of Fire, Earth, and Air, spinning them into you with terrifying force, literally taring you limb from aching limb until oblivion blessedly sweeps you away.
+$n concentrates on $N and suddenly fire blooms on  $N's skull and along $S limbs, raging through $M like something alive. Powers literally tare $M limb from limb, and frying what cannot be torn, leaving $M a smoking ruin.
+$n concentrates on $N and suddenly fire blooms on  $N's skull and along $S limbs, raging through $M like something alive. Powers literally tare $M limb from limb, and frying what cannot be torn, leaving $M a smoking ruin.
+$n Draws on the Power, channeling flows of Fire, Earth, and Air, spinning them violently into $N's body, taring it apart limb by limb with flames, fists of air and stones to crush bones. Soon, all that remains of $N is a smoking pile of shard, broken bones.
+You try performing the weave but it snaps out of your grasp.
+$n concentrates for a moment, but nothing seems to occur.
+$n concentrates for a moment, but nothing seems to occur.
+$n draws on the Power, channeling flows of Fire, Air and Earth, but nothing seems to occur.
+$n concentrates for a moment, but nothing seems to occur.
+$n concentrates for a moment, but nothing seems to occur.
+$n draws on the Power, channeling flows of Fire, Air and Earth, but nothing seems to occur.
+Drawing on the Power, you channel flows of Fire, Earth, and Air, spinning them violently into $N's body, taring it apart limb by limb with flames, fists of air and stones to crush bones.
+$n concentrates and suddenly fire blooms in your skull and along your limbs, raging through you like something alive. Other powers literally tare you limb from limb, and frying what cannot be torn.
+$n concentrates and suddenly fire blooms in your skull and along your limbs, raging through you like something alive. Other powers literally tare you limb from limb, and frying what cannot be torn.
+$n draws on the Power, channeling flows of Fire, Earth, and Air, spinning them into you with terrifying force, taring you apart aching limb by aching limb.
+$n concentrates on $N and suddenly fire blooms on  $N's skull and along $S limbs, raging through $M like something alive. Powers literally tare $M limb from limb, and frying what cannot be torn.
+$n concentrates on $N and suddenly fire blooms on  $N's skull and along $S limbs, raging through $M like something alive. Powers literally tare $M limb from limb, and frying what cannot be torn.
+$n Draws on the Power, channeling flows of Fire, Earth, and Air, spinning them violently into $N's body, taring it apart limb by limb with flames, fists of air and stones to crush bones.
+
+* Destroy Weapon *
+
+M
+ 59
+Drawing on the Power, you channel flows of Spirit, Earth, and Air, mixed with Fire, directing them at $N's weapons which promptly explodes furiously, the superheated shards of metal slashing backwards into $N and killing $M instantly.
+$n concentrates and suddenly your weapon becomes hot in your hands, shaking for a moment, before exploding in shards of superheated metal, that lacerate your face and throat, forcing you to your knees, and quickly, oblivion as the blood pumps out of your soon to be dead body.
+$n concentrates and suddenly your weapon becomes hot in your hands, shaking for a moment, before exploding in shards of superheated metal, that lacerate your face and throat, forcing you to your knees, and quickly, oblivion as the blood pumps out of your soon to be dead body.
+$n draws on the Power, channeling flows of Fire, Air, Earth and Spirit. Suddenly your weapon becomes hot in your hands, shaking for a moment, before exploding in shards of superheated metal, that lacerate your face and throat, forcing you to your knees, and quickly, oblivion as the blood pumps out of your soon to be dead body.
+$n concentrates and suddenly the weapon in $N's fist begins to shake slightly. Obviously, through some unnatural means, the blade is to hot to hold as $S fingers begin to burn. Before $E can let go of the blade, it explodes into shards of searing, hot metal, that lacerate $M, causing $M to cry out in agony, before slumping to the ground, the blood pumping from many different wounds.
+$n concentrates and suddenly the weapon in $N's fist begins to shake slightly. Obviously, through some unnatural means, the blade is to hot to hold as $S fingers begin to burn. Before $E can let go of the blade, it explodes into shards of searing, hot metal, that lacerate $M, causing $M to cry out in agony, before slumping to the ground, the blood pumping from many different wounds.
+$n draws on the Power, channeling flows of Fire, Air, Earth and Spirit. Suddenly $N's weapon becomes hot in $S hands, shaking for a moment, before exploding in shards of superheated metal, that lacerate $S face and throat, forcing $M to $S knees and then to slump on the ground in death.
+You try performing the weave but it snaps out of your grasp.
+$n concentrates for a moment, but nothing seems to occur.
+$n concentrates for a moment, but nothing seems to occur.
+$n draws on the Power, channeling flows of all five Powers, save Water, but nothing seems to occur.
+$n concentrates for a moment, but nothing seems to occur.
+$n concentrates for a moment, but nothing seems to occur.
+$n draws on the Power, channeling flows of all five Powers, save Water, but nothing seems to occur.
+Drawing on the Power, you channel flows of all five Powers, save Water, spinning them into $N's weapons, causing the steel, forged weapons to first turn extremely hot, then to superheated conditions. $N's weapon then explodes in $S face, the shards of metal, lacerating $S face and throat, forcing $M to $S knees.
+$n concentrates and suddenly your weapon becomes hot in your hands, shaking for a moment, before exploding in shards of superheated metal, that lacerate your face and throat, forcing you to your knees,.
+$n concentrates and suddenly your weapon becomes hot in your hands, shaking for a moment, before exploding in shards of superheated metal, that lacerate your face and throat, forcing you to your knees,.
+$n draws on the Power, channeling flows of Fire, Air, Earth and Spirit. Suddenly $N's weapon becomes hot in $S hands, shaking for a moment, before exploding in shards of superheated metal, that lacerate $S face and throat, forcing $M to $S knees.
+$n concentrates and suddenly the weapon in $N's fist begins to shake slightly. Obviously, through some unnatural means, the blade is to hot to hold as $S fingers begin to burn. Before $E can let go of the blade, it explodes into shards of searing, hot metal, that lacerate $M, causing $M to cry out in agony,.
+$n concentrates and suddenly the weapon in $N's fist begins to shake slightly. Obviously, through some unnatural means, the blade is to hot to hold as $S fingers begin to burn. Before $E can let go of the blade, it explodes into shards of searing, hot metal, that lacerate $M, causing $M to cry out in agony,.
+$n draws on the Power, channeling flows of Fire, Air, Earth and Spirit. Suddenly $N's weapon becomes hot in $S hands, shaking for a moment, before exploding in shards of superheated metal, that lacerate $S face and throat, forcing $M to $S knees.
+
+* Drown *
+M
+ 60
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+You try performing the weave but it snaps out of your grasp.
+$n concentrates for a moment, but nothing seems to occur.
+$n concentrates for a moment, but nothing seems to occur.
+$n draws on the Power, channeling flows of Water, but nothing seems to occur.
+$n concentrates for a moment, but nothing seems to occur.
+$n concentrates for a moment, but nothing seems to occur.
+$n draws on the Power, channeling flows of Water, but nothing seems to occur.
+Drawing on the Power, you channel flows of Water, directing them into $N's mouth, a continuous stream, that prevents any breathing.
+$n concentrates on you and suddenly a wrist-thick stream of water splashes into your face, a continuous stream, flowing into your mouth and preventing you from taking a breath.
+$n concentrates on you and suddenly a wrist-thick stream of water splashes into your face, a continuous stream, flowing into your mouth and preventing you from taking a breath.
+$n draws on the Power, channeling flows of Water, splashing you in the face with it, a continuous stream flowing into your mouth and preventing you from taking a breath.
+$n concentrates on $N and suddenly a wrist-thick stream of water splashes into $S face, a continuous stream, flowing into $S mouth and preventing $M from taking a breath.
+$n concentrates on $N and suddenly a wrist-thick stream of water splashes into $S face, a continuous stream, flowing into $S mouth and preventing $M from taking a breath.
+$n draws on the Power, channeling flows of Water, a continuous stream that flows into $N's mouth, forcing $M to swallow and giving $M no opportunity to breathe.
+
+* Poison *
+M
+ 61
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+You try performing the weave but nothing seems to occur.
+$n concentrates for a moment, but nothing seems to occur.
+$n concentrates for a moment, but nothing seems to occur.
+$n draws on the Power, channeling flows of all five Powers, but nothing seems to occur.
+$n concentrates for a moment, but nothing seems to occur.
+$n concentrates for a moment, but nothing seems to occur.
+$n draws on the Power, channeling flows of all five Powers, but nothing seems to occur.
+Drawing on the Power, you channel flows of all the five Powers, blending them together into a complex weave, that infuses $N with a harmful and agonizing poison.
+$n concentrates on you and suddenly fire seems to have replaced blood in your veins as something is done to you. Agonizing breath after agonizing breath are taken but the pain from the poison is horrendous.
+$n concentrates on you and suddenly fire seems to have replaced blood in your veins as something is done to you. Agonizing breath after agonizing breath are taken but the pain from the poison is horrendous.
+$n draws on the Power, channeling flows from all the five Powers, melding them together into a single, very nasty weave, that invades your being and sets your blood aflame with it's potent poison.
+$n concentrates on $N and suddenly $E looks very sick, sweat breaking out all over $S body at once.
+$n concentrates on $N and suddenly $E looks very sick, sweat breaking out all over $S body at once.
+$n draws on the Power, channeling flows from all the five Powers, melding them together into a single, very nasty weave, that invades $N's being and sets $S blood aflame with it's potent poison.
+
+* Invigorate *
+M
+ 62
+!KILL!
+!KILL!
+!KILL!
+!KILL!
+!KILL!
+!KILL!
+!KILL!
+You try performing the weave but it snaps out of your grasp.
+$n concentrates for a moment, but nothing seems to occur.
+$n concentrates for a moment, but nothing seems to occur.
+$n draws on the Power, channeling flows of Air, Water and Spirit, but nothing seems to occur.
+$n concentrates for a moment, but nothing seems to occur.
+$n concentrates for a moment, but nothing seems to occur.
+$n draws on the Power, channeling flows of Air, Water and Spirit, but nothing seems to occur.
+Drawing on the Power, you channel flows of Air, Spirit, and Water, spinning them into $N's body and removing all weariness from $M.
+$n concentrates on you and suddenly the weariness in arm and leg, leave you.
+$n concentrates on you and suddenly the weariness in arm and leg, leave you.
+$n draws on the Power, channeling flows of Air, Water and Spirit, forming a weave that enters you and searches out the weariness inside of you, removing it so you can continue your journey without respite.
+$n concentrates and suddenly, $N straightens up more, the haggard expression on $S face, falling away to be replaced with something akin to awe.
+$n concentrates and suddenly, $N straightens up more, the haggard expression on $S face, falling away to be replaced with something akin to awe.
+$n draws on the Power, channeling flows of Air, Water and Spirit, spinning them into $N's body and removing all the weariness from $M.
+
+* Storm *
+M
+ 63
+Drawing on the Power, you channel flows of Air and Water, weaving them furiously and creating a local wind and rain storm, beating down on $N's unprotected self, forcing $M to $S knees with brutal force.
+$n concentrates for a moment and suddenly wind begins to pick up, swirling violently around the area, scooping up and tossing about, everything not nailed down. Rain begins to pound down in horrific sheets, lightning stabbing down out of a suddenly cloud-filled sky, all directed at you. The sheer force of the wind and rain pounds you mercilessly to your knees while the lightning ends your misery.
+$n concentrates for a moment and suddenly wind begins to pick up, swirling violently around the area, scooping up and tossing about, everything not nailed down. Rain begins to pound down in horrific sheets, lightning stabbing down out of a suddenly cloud-filled sky, all directed at you. The sheer force of the wind and rain pounds you mercilessly to your knees while the lightning ends your misery.
+$n draws on the Power, channeling flows of Air, Fire, and Water, causing wind to swirl around you violently, battering you about, while sheets of rain and lightning pour out of the sky, a veritable manifestation of nature sweeping over you and leaving you floating in endless oblivion.
+$n concentrates and suddenly a storm begins to brew around$N, wind swirling violently, rain driving down, lightning sheeting down, all battering and frying $M mercilessly. $E falls to the ground, unconscious but one last bolt of lightning crashes down and ends $S misery.
+$n concentrates and suddenly a storm begins to brew around$N, wind swirling violently, rain driving down, lightning sheeting down, all battering and frying $M mercilessly. $E falls to the ground, unconscious but one last bolt of lightning crashes down and ends $S misery.
+$n draws on the Power, channeling flows of Air, Fire, and Water, causing wind to swirl around $N violently, battering $M about, while sheets of rain and lightning pour out of the sky, a veritable manifestation of nature sweeping over $S prone body, leaving nothing behind.
+You try performing the weave but it snaps out of your grasp.
+$n concentrates for a moment, but nothing seems to occur.
+$n concentrates for a moment, but nothing seems to occur.
+$n draws on the Power, channeling flows of Air, Fire, and Water, but nothing seems to occur.
+$n concentrates for a moment, but nothing seems to occur.
+$n concentrates for a moment, but nothing seems to occur.
+$n draws on the Power, channeling flows of Air, Fire, and Water, but nothing seems to occur.
+Drawing on the Power, you channel flows of Air, Water and Fire, weaving them intricately together, forming a local storm of wind, rain and lightning, battering $N about mercilessly.
+$n concentrates for a moment and suddenly the wind swirls violently around you, rain beginning to pour down in driving sheets, lightning forking down to fry you where you stand. You receive a battering from the storm but manage to avoid the nastier parts of the odd storm.
+$n concentrates for a moment and suddenly the wind swirls violently around you, rain beginning to pour down in driving sheets, lightning forking down to fry you where you stand. You receive a battering from the storm but manage to avoid the nastier parts of the odd storm.
+$n draws on the Power, channeling flows of Air, Fire and Water, weaving them intricately, fashioning a local storm, wind and rain driving down, battering you to the ground.
+$n concentrates and suddenly a storm brews into existence around $N, wind and rain battering $M to $S knees as lightning tries to fry $M where $E stands.
+$n concentrates and suddenly a storm brews into existence around $N, wind and rain battering $M to $S knees as lightning tries to fry $M where $E stands.
+$n draws on the Power, channeling flows of Air, Water, and Fire, spinning an intricate weave at $N, wind and rain battering $M to the ground, lightning trying to strike $M from the sky.
+
+* Dart of Air*
+M
+ 64
+You nearly decapitate $N with your Dart of Air, who dies instantly!
+Suddenly your throat is torn open by something unseen!
+Suddenly your throat is torn open by something unseen!
+$n weaves a Dart of Air and rips your throat open with it!
+$N's throat is suddenly ripped open by something invisible!
+$N's throat is suddenly ripped open by something invisible!
+$n weaves a Dart of Air at $N, whose throat is ripped open!
+Hm...failure.
+!TARGET
+!TARGET
+$n plays with some weaves of Air while looking at you.
+!TARGET
+!TARGET
+$n fails at making some kind of violent small Air weave.
+You create a Dart of Air, striking $N with it.
+Something suddenly stabs you! Ow, that hurt!
+Something suddenly stabs you! Ow, that hurt!
+$n weaves a small object of Air and throws it at you, stabbing you.
+Without warning, $N's cheek gets a large nasty cut!
+Without warning, $N's cheek gets a large nasty cut! Wonder why your skin is itching...?
+You see $n weave a small weave of Air and stab $N with it.
+
+* Call Frost *
+M
+ 65
+The searing frost chills your enemies to nothing!
+Your body is suddenly chilled to ice, and you die a painful death.
+Your skin itches just before you're struck by a cold frost that kills you.
+You see $n draw forth flows of Air, Water and Spirit and you die.
+$N dies as $e's immersed in a column of frost that comes from nowhere!
+Your skin itches as $N is engulfed in a column of frost that consumes $m!
+$n draws forth flows and creates a column of frost that kills $N!
+You fail to draw forth the flows properly.
+Something make you feel nervous as $n looks irritated.
+Your skin tingles briefly.
+You see $n try to draw forth large flows of something and fail.
+$n mutters something as he looks irritated.
+Your skin tingles briefly as $n looks irritated.
+You see $n try to draw forth large flows of something and fail.
+You create a huge column of frost and hit $N with it.
+You're suddely hit by a column of frost coming from nowhere!
+Your skin tingles just before you're struck by great bluish-white ice!
+$n draws forth flows, creates a column of frost and hits YOU with it!
+$N is suddenly hit by a column of frost and screams in pain!
+Your skin tingles as $N is struck by a column of frost, coming from nowhere!
+$n draws forth flows of Air, Spirit and Water and hits $N mercilessly!
+
+* Shaft of Frost *
+
+M
+ 66
+The frost freezes $N to ice! $N is no more. Gotcha >:)
+You feel a searing pain as your body freezes to ice all of a sudden. R.I.P.
+You're frozen to nothingness, all that remains is a lump of ice! R.I.P.
+You see $n draw forth flows of Fire and Spirit, then you see no more....
+$N is suddenly struck by a shaft of fire that burns $m to cinders!
+Your skin itches just before $N is burned to ashes by a shaft of fire!
+You see $n draw forth flows of Water and Spirit and freeze $N to ice!
+Hm...no...that one didn't work out quite right.
+$n looks at you with a chilling fury.
+$n looks at you, and your skin tingles ever so slightly.
+As $n looks at you, you see $m try to draw forth some flows.
+$n looks at $N with a chilling fury in $s eyes, but nothing happens.
+Your skin tingles slightly as $n looks chillingly at $N.
+Hm....$n prepares some weaves, but just before drawing them $e stops...
+A thick shaft of Water and Spirit slams dead onto $N's body.
+Suddenly you're hit by a shaft of frost! Oh, the cold! 
+Your skin tingles just before you're hit by a freezing shaft of frost!
+You see $n draw forth flows of Spirit and Water just before a shaft of frost hits you!
+$N is suddenly struck by a strange shaft of frost, and is badly chilled!
+Your skin itches as $N suddenly is hit by a shaft of frost!
+$n draws forth flows of Spirit and Water, directing both at $N who gets chilled!
+
+* wind armor *
+M 
+ 67
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+You try performing the weave but it snaps out of your grasp.
+$n concentrates for a moment, but nothing seems to occur.
+$n concentrates for a moment, but nothing seems to occur.
+$n draws on the Power, channeling flows of Air and Spirit, but nothing seems to occur.
+$n concentrates for a moment, but nothing seems to occur.
+$n concentrates for a moment, but nothing seems to occur.
+$n draws on the Power, channeling flows of Air, but nothing seems to occur.
+You create a nice Wind Armor. 
+Suddenly you feel like you could fight anything without coming to harm!
+Suddenly you feel like you could fight anything without coming to harm!
+$n weave thick flows to create an Wind Armor for you!
+Suddenly $N looks very confident. 
+Suddenly $N looks very confident. 
+$n weave thick flows to create GOOD protection for $N!
+
+* Confusion *
+M 
+ 68
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+You fail to weave a sutiable confusion for $N.
+!TARGET
+!TARGET
+$n looks at you in a confusing manner when drawing some flows...
+!TARGET
+Your skin tingles lightly.
+$n draws forth some flows, but releases them again soon enough.
+You aim flows against $N's head, confusing $M. 
+You feel very confused all of a sudden...Umm..what were you supposed to do?
+You feel very confused all of a sudden...Umm..what were you supposed to do?
+$n weaves flows against your head, and you suddenly feel rather confused.
+$N looks very confused, blinking and blinking...
+Your skin itches as $N suddenly looks very confused.
+$n weaves a flow against $N's head, who looks very confused suddenly.
+
+* Confusion *
+M 
+ 69
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+You fail to weave a sutiable slowing weave on $N.
+!TARGET
+!TARGET
+$n looks at you calmly when drawing some flows...
+!TARGET
+Your skin tingles lightly.
+$n draws forth some flows, but releases them again soon enough.
+You aim flows around $N, slowing $M down.
+Yuck, what is this!? You feel like you move in a bowl of jello, sl o w l y...
+Your skin itches just before you feel yourself slow down, hindered by something!
+$n weaves flows of Air against you, s l o w i n g  you down.
+$N suddenly begins to move slowly...wonder why?
+Your skin itches as $N begins to move strangely slowly.
+$n weaves a flow of Air at $N, who moves slowly, struggling at the flows.
+
+* Unbalance *
+M
+ 70
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+You fail to unbalance $N. 
+!TARGET
+!TARGET
+$n prepares something that looks nasty when looking at you.
+!TARGET
+!TARGET
+$n prepares a weave while looking menacingly at $N.
+Weaving a complex weave at $N's head, you distort his balance.
+You suddenly feel very dizzy and have trouble standing up.
+You feel dizzy all of a sudden and stagger around, trying toregain your balance.
+$n weaves something at your head and you suddenly feel your balance slipping.
+$N suddenly staggers around the room like $E's drunk...
+Your skin itches as $N suddenly begins to stagger about drunkenly.
+$n weaves a weave at $N, who all of a sudden begins to stagger about drunkenly.
+
+* Explosion *
+M
+ 71
+Wowie! You tear $N apart with your explosion.
+Suddenly the earth errupts under you feet, tearing you apart! RIP!
+You feel a violent itch in your skin as the earth errupts to tear you apart! RIP!
+You see $n weave flows to make the earth errupt under your feet, killing you! RIP!
+Suddenly the earth errupts under $Ns feet, tearing $E apart! RIP!
+Suddenly the earth errupts under $Ns feet, tearing $E apart! RIP!
+You see $n weave flows to make the earth errupt, killing $N instantly!
+Pathetic! You couldn`t make a firecracker explode with a flamethrower!
+The earth shifts slightly beneath your feet. 
+The earth shifts slightly beneath your feet. 
+You see $n weave flows against you, making the earth shift slightly.
+The earth shifts slightly beneath your feet. 
+The earth shifts slightly beneath your feet. 
+You see $n weave flows against $N, making the earth shift slightly.
+You make the earth explode beneath $N.
+Suddenly the earth errupts under you feet.
+You feel your skin itch as the earth suddenly explodes under your feet.
+You see $n weave flows against you, causing the grount to errupt under your feet.
+Suddenly the earth explode under $Ns feet!
+Suddenly the earth explode under $Ns feet!
+You see $n weave flows against $N, causing the earth to explode beneath $Es feet!
+
+* Dome of Frost *
+M
+ 72
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+You failed to draw enough of the One Power to create the ward.
+!TARGET
+!TARGET
+!TARGET
+$n looks at the room...hasn't it become slightly colder here?
+Your skin itches as $n looks around the room.
+$n begins to draw forth huge flows of Water, Air and Spirit, but stops halfway.
+Deftly using Water, Spirit and Air, you create a powerful Dome of Frost ward around the room.
+!TARGET
+!TARGET
+!TARGET
+The air all around the room shimmers briefly in coldish blue and white. Strange.
+You notice that the air all around shimmers briefly of extreme cold, and your skin itches.
+Drawing forth huge amounts of Water, Spirit and Air, $n creates a frost ward around the room.
+
+* Fist of Air *
+M
+ 73
+You crush $Ns head with your powerful Fist of Air. Yuk!
+You feel a gigantic fist cluthcing your head before everything goes black. RIP!
+You feel a gigantic fist cluthcing your head before everything goes black. RIP!
+$n weave flows of Air, creating a huge fist crushing your head to pieces. RIP!
+Suddenly $N clutches $Es head that simply implodes! Yuk!
+Suddenly $N clutches $Es head that simply implodes! Yuk!
+$n weave flows of Air and simply crushes $Ns head with it!
+Nice weave trying to give $N a new haircut?
+You feel a slight preassure against your head, but it vanishes instantly.
+You feel a slight preassure against your head, but it vanishes instantly.
+You see $n weave flows of Air against you, briefly pressing against your head. 
+$N grimaces briefly.
+$N grimaces briefly.
+You see $n weave flows of Air against $N who grimaces briefly
+You give $Ns head a good squeeze. Way to go!
+Suddenly you feel something trying to crush your head.
+Suddenly you feel something trying to crush your head.
+You see $n weave flows of Air aginst you, crushing your head HARD! Revenge!
+$N clutches $Es head in pain.
+$N clutches $Es head in pain.
+You see $n weave flows of Air aginst $N who clutches $Es head in pain.
+
+* FireStorm *
+M 
+ 74
+$N turns to ashes in your cruel Firestorm!
+Suddenly the very air turns to fire, incinerating you! RIP!
+Suddenly the very air turns to fire, incinerating you! RIP!
+$n weave HUGE flows, turning the air to Fire, instantly killing YOU! RIP!
+As the air turns fire, $N is turned to ashes!
+As the air turns fire, $N is turned to ashes!
+$n weave HUGE flows, turning the air to Fire, instantly killing $N!
+You couldn't make a fly uncomfortable with your weave!
+The air seems to shimmer slightly. Is it hotter, or...?
+The air seems to shimmer slightly. Is it hotter, or...?
+$n weave HUGE flows making the air grow slightly hotter. 
+The air seems to shimmer slightly. Is it hotter, or...?
+The air seems to shimmer slightly. Is it hotter, or...?
+$n weave HUGE flows making the air grow slightly hotter. 
+You turn the air to a fiery storm with your weave. Time for a bar-b-q?
+Suddenly the air turns to fire, scorching you beyond imagination.
+Suddenly the air turns to fire, scorching you beyond imagination.
+$n weave thick flows, turning the air to fire, scorhing you badly!
+Suddenly the air turns to fire, scorching $N beyond imagination.
+Suddenly the air turns to fire, scorching $N beyond imagination.
+$n weave thick flows, turning the air to fire, scorhing $N badly!
+
+* Refresh *
+M
+ 75
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+Sorry, but I think $N just have to be tired a bit longer.
+You get a sudden feeling of refreshion, but it vanishes instantly.
+You get a sudden feeling of refreshion, but it vanishes instantly.
+$n weave some flows against you, but nothing happens.
+$N suddenly looks releaved, then goes back to his old tired expression.
+$N suddenly looks releaved, then goes back to his old tired expression.
+$n weave flows against $N, but nothing happens.
+You refresh $N. Nice weaving!
+Suddenly you feel like you could walk another 100 leagues. 
+Suddenly you feel like you could walk another 100 leagues. 
+$n weave some flows against you, removing some of your fatigue.
+$N suddenly looks VERY refreshed.
+$N suddenly looks VERY refreshed.
+$n weave flows againt $N who suddenly looks very refreshed. 
+
+* earth armor *
+M
+ 76
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+You fail to create an Earth Armor.
+You have a slight feeling of being protected. Nah, prolly just your imagination.
+You have a slight feeling of being protected. Nah, prolly just your imagination.
+$n weave thick flows against you, then just releases them.
+Looks like the earth itself is trying to protect $N for a brief moment. then everything is normal again.
+Looks like the earth itself is trying to protect $N for a brief moment. then everything is normal again.
+$n weave thick flows against $N, then just releases them.
+You create a nice Earth Armor. 
+Suddenly you feel like you could fight anything without coming to harm!
+Suddenly you feel like you could fight anything without coming to harm!
+$n weave thick flows to create an Earth Armor for you!
+Suddenly $N looks very confident. 
+Suddenly $N looks very confident. 
+$n weave thick flows to create GOOD protection for $N!
+
+* Destroy Armor *
+M
+ 77
+You grin as the pieces of the exploding armor kills $N outright.
+Suddenly a piece of your armor explodes and rips you to pieces!
+Suddenly a piece of your explodes and rips you to pieces!
+$n weaves flows that makes a pice of your armor explode, and the shards kill you!
+All of a sudden, a piece of $Ns armor just explodes, the shards killing him!
+Your skin tingles as a piece of $Ns armor suddenly explodes, killing him!
+$n weaves flows that makes a piece of $Ns armor explode and kill him!
+Darn! You made a mistake.
+!TARGET
+!TARGET
+$n looks at your armor in a peculiar manner.
+!TARGET
+!TARGET
+$n fiddles with some weaves, but nothing comes forth.
+You almost laugh at $N's expression as a piece of $S armor explodes in $S hands.
+Suddenly a piece of your armor explodes in shower of sparks and shards!
+Just after your skin itches a piece of your armor explodes in a shower of sparks and shards!
+$n weaves flows of Fire and Earth at a piece of your armor which explodes!
+All of a sudden, a piece of $Ns armor explodes in a shower of sparks and shards!
+Your skin itches as you see a piece of $Ns armor explode in a shower of shards an sparks!
+$n weaves flows of Fire and Earth at a piece of $Ns armor which explodes!
+
+* Fire Arrows *
+M
+ 78
+You create so many fire arrows that you impale the now dead $N.
+You're hit by a veritable storm of fire arrows and die.
+You're hit by a whole wall of fire arrows and die!
+$n weaves a multitude of fire arrows that kill you!
+$N is struck by a dozen arrows of fire that come from nowhere and kill $m!
+$N is struck by a dozen arrows of fire that come from nowhere and kill $m!
+$n weaves flows of Air and Fire, and kills $N with fire arrows.
+You fail to create the right amounts of flows to make any fire arrows.
+!TARGET!
+Your skin itches
+$n fiddles with the One Power.
+!TARGET!
+Your skin itches for some reason...And isn't it warm here?
+$n tries to do something with the One Power...
+You create a dozen fire arrows and hurl them at $N, damaging $m.
+You're suddenly hit by a dozen arrows made of....fire??
+Your skin itches just before a dozen fire arrows materialize and hit you.
+$n weaves flows of Air and Fire, creating fire arrows and hitting you!
+$N is suddenly hit by....fire arrows?
+A dozen fire arrows materialize and strike $N, and your skin itches...
+$n weaves flows of Air and Fire and strikes $N with fire arrows.
+
+* Earth Missile *
+M
+ 79
+Your Earth Missile is so powerful so it kills $N instantly.
+You're instantly killed by a GIGANTIC missile of...Earth? RIP!
+You're instantly killed by a GIGANTIC missile of...Earth? RIP!
+$n creates a HUGE Earth Missile, tearing you apart with it`s hit. RIP!
+$N is suddenly killed by a gigantic missile made of....Earth?
+$N is suddenly killed by a gigantic missile made of....Earth?
+$n makes a missile out of Earth, and squarely kills $N with it.
+You fail to make an Earth Missile.
+!TARGET!
+Your skin itches.
+$n fiddles with the One Power.
+!TARGET!
+Ýour skin itches for some reason...
+$n tries to do something with the One Power...
+Your Earth Missile sends $N staggering with it`s impact!
+You almost lose your balance as a missile made of Earth hits you!
+You almost lose your balance as a missile made of Earth hits you!
+$n creates a missile of Earth, and hurls straight into YOUR face!
+$N staggers under the impact of a HUGE earth missile.
+$N staggers under the impact of a HUGE earth missile.
+$n creates a missile of Earth, and hurls straight into $Ns face. Bullseye!
+
+* Kin Heal, guild spell *
+M
+ 80
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+You fail to draw flows suitable for this complex weave.
+!TARGET
+!TARGET
+!TARGET
+!TARGET
+!TARGET
+!TARGET
+You successfully draw forth enormous weaves of all five flows and heal all those linked with you.
+!TARGET
+!TARGET
+!TARGET
+$n's eyebrows furrow, and suddenly all in $s party shivers, like on command.
+Your skin itches like hell as $n seems concentrated on something and others shiver.
+You see $n draw forth huge flows to heal all those linked with $r.
+
+* Shield of Saidin, Asha'man guild spell *
+M
+ 81
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+You fail to create a Shield of Saidin.
+!TARGET
+Your skin itches a little.
+$n tries to do something with the One Power.
+!TARGET
+Your skin itches a little.
+$n tries to do something with the One Power.
+Using flows of Spirit and Air, you create a Shield of Saidin.
+The air around you seems to shimmer just a bit.
+Your skin itches as the air around you shimmers a little.
+$n creates some sort of shield around you, made of Air and Spirit.
+The air around $N seems to shimmer a little.
+Your skin tingles and the air around $N seems to shimmer just a little.
+$n creates some sort of shield, made of Air and Spirit, around $N.
+
+* Cripple *
+M
+ 82
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+You fail to cripple $N.
+Your back tingles a little...
+Your skin itches a little.
+$n tries to do something with the One Power.
+$N scratches $S back absently.
+Your skin itches a little.
+$n tries to do something with the One Power.
+Using flows of all five flows, you cripple $N.
+AUGH! Your legs and back hurt like hell all of a sudden! 
+AUGH! Your legs and back hurt like hell all of a sudden! 
+$n weaves a distorting weave on YOU, twisting the bones in your legs and back!
+$N suddenly screams in agony!
+Your skin tingles and suddenly $N screams in agony!
+$n, using all five flows, twists and bends the bones in $N's back and legs!
+
+* Deaf *
+M
+ 83
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+You fail to deafen $N.
+Your ears tingles a little...
+Your skin itches a little.
+$n tries to do something with the One Power.
+$N scratches $S ear absently.
+Your skin itches a little.
+$n tries to do something with the One Power.
+Using flows of all five flows, you deafen $N.
+What the..? Everything is suddenly so quiet? Utter silence!
+Your skin itches as everything goes deathly quiet....not a sound..?
+$n weaves something at your head, and suddenly everything is utterly quiet..?
+$N looks surprised all of a sudden, and scratches $S ears vigorously.
+Your skin tingles and $N looks surprised, scratching $S ears.
+$n, using all five flows, does something to $N's hearing.
+
+* Advanced Healing *
+M
+ 84
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+You fail.
+!TARGET
+!TARGET
+$n tries something with the One Power.
+!TARGET
+!TARGET
+$n tries something with the One Power.
+Using vast amounts of all five flows, you heal $N of all maladies.
+You feel as standing in an icecold waterfall, then very tired.
+You feel as standing in an icecold waterfall, then very tired.
+$n uses vast amounts of the One Power to heal you, and the forces make you shiver.
+$n shivers violently for a second.
+Your skin itches as $n shivers violently.
+$n uses vast amounts of the One Power to heal $N who shivers violently.
+
+* Thunderburst, Rebel Aes Sedai guild weave *
+
+M
+ 85
+You weave flows of Earth and Fire and you crush your enemies to death.
+The air moves in circles around you and crushes you utterly.
+You feel a tingle in your skin as the air opens up and crushes you.
+You see $n weave flows of Air, Earth and Fire to make the air crush you!
+Suddenly the air moves around $Ns feet. $N is dead
+You feel a tingle in your skin as the air moves around $N. $N is dead!
+$n weaves flows of Air, Earth and Fire to make the air destroy $N. $N is dead!
+You hardly make the flies notice you. 
+Something ripples the air, like some small gust of wind. 
+You feel a tingle in your skin.
+You see $n weave flows of Earth, Air and Fire, but nothing more.
+$n makes some leaves shift beneath $Ns feet.
+You feel a tingle in your skin, that's about it. 
+$n (tries) to weave flows of Earth, Air and Fire. Wonder why?
+Your Thunderburst hits $N with full impact!
+Suddenly the earth moves in circles trying to kill you. Ouch!
+You feel a tingle in your skin but you hardly notice as the air tries to swallow you.
+$n weaves flows of Air, Earth and Fire and makes the air move to crush you!
+Circles of air ripple and hit $N with full impact!
+You feel something itching in your skin as $N is almost consumed by the air.
+You see $n weave flows of Air, Fire and Earth and make quite an impression on $N.
+
+* Stormshield, Rebel Aes Sedai guild spell *
+M
+ 86
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+You fail to create a Stormshield.
+!TARGET
+Your skin itches a little.
+$n tries to do something with the One Power.
+!TARGET
+Your skin itches a little.
+$n tries to do something with the One Power.
+Using flows of Spirit, Air, Fire and Earth, you create a Stormshield.
+The air around you seems to shimmer just a bit.
+Your skin itches as the air around you shimmers a little.
+$n creates some sort of shield around you, made of Air, Fire, Earth and Spirit.
+The air around $N seems to shimmer a little.
+Your skin tingles and the air around $N seems to shimmer just a little.
+$n creates some sort of shield, made of Air, Fire, Eart and Spirit, around $N.
+
+* Group Restore, Rebel Aes Sedai guild spell *
+M
+ 87
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+You fail to weave a Group Restore.
+!TARGET
+!TARGET
+!TARGET
+!TARGET
+!TARGET
+$n plays with some pretty strong weaves, but refrains from using them.
+Using all file flows, you heal all those grouped with you.
+You feel as if someone was pouring ice cold water along your spine, then MUCH better.
+You feel as if someone was pouring ice cold water along your spine, then MUCH better.
+$n weaves a powerful healing weave into you, and you shiver as the flows go through you.
+$N shivers violently for a second.
+Your skin itches as $N shudders violently for a second.
+$n uses all five flows to heal all those grouped with $r.
+
+* Fog *
+M
+ 90
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+You fail to make a fog.
+!TARGET
+!TARGET
+!TARGET
+The air feels a bit damp.
+The air feels a bit damp.
+$n tries to do something with Air, Water and Fire.
+You create a dense fog in the surrounding area.
+!TARGET
+!TARGET
+!TARGET
+All of a sudden, a thick fog appears from nowhwere!
+All of a sudden, a fog appears from nowhwere!
+$n creates a thick fog that covers the surrounding area.
+
+* Entangle *
+M
+ 91
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+You fail to do anything useful with your weaves.
+!TARGET
+!TARGET
+$n does something with a complex weave and looks disappointed.
+!TARGET
+!TARGET
+$n does something with a complex weave and looks disappointed.
+You force-grow a dense nest of vines, entangling $N.
+Hey, what is this!? You're stuck, caught in some weird vines!
+Hey, what is this!? You're stuck, caught in some weird vines!
+With an expert move $n force-grows some vines and catch you in the foliage.
+$N is suddenly caught in vines as nature goes crazy and grows like never before!
+$N is suddenly caught in vines as nature goes crazy and grows like never before!
+$N is suddenly caught in vines as $n force-grows them, effectively trapping $M.
+
+
+* Mend *
+M
+ 92
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+You fail to repair the item.
+!TARGET
+!TARGET
+!TARGET
+!TARGET
+!TARGET
+$n frowns as $e peers at an object.
+You repair the item.
+!TARGET
+!TARGET
+!TARGET
+!TARGET
+!TARGET
+$n uses flows of Earth to repair an item. Well done!
+
+
+* PortalStones, when listing possible destinations 
+M
+ 800
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+!FAIL 
+!FAIL
+!FAIL
+!FAIL
+!FAIL
+!FAIL
+!FAIL
+You weave flows of all five Powers, and find the following destinations:
+!TARGET
+!TARGET
+!TARGET
+$n looks intently at the Portal Stone. 
+You feel a tingle in your skin as $n looks intently at a Portal Stone.
+You see $n weave flows of all five Powers into a Portal Stone. 
+
+* Portal Stones, transfering gorup members, and also failures. 
+M
+ 801
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+You feel a surge of the One Power through you into the Portal Stone. Panic!
+!TARGET
+!TARGET
+!TARGET
+$n frowns deeply at a Portal Stone, then fall asleep.
+You feel a tingle in yoiur skin as $n suddenly falls asleep. 
+You see $n weave flows of all Five Powers into a Portal Stone, then suddenly falls asleep.
+You weave flows of all five Powers into a Portal Stone to transfer $N to your destination.
+Suddenly the room starts to flicker and fade, and suddenly you're at a new room!
+You feel a tingle in your skin as the room starts tto flicker.
+Suddenly you're at a new location. 
+You see $n weave flows of all five Powers into a Portal Stone, and suddenly you're at a new location.
+Suddenly $N starts to flicker and fade, and suddenly $E is gone!
+You feel a tingle in your skin as $N starts to flicker. Suddenly $E vanishes!
+You see $n weave flows of all five Powers into a Portal Stones as
+$N suddenly vanishes.
+
+* PortalStones, when transfering self.  
+M
+ 802
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+!KILL
+!FAIL 
+!FAIL
+!FAIL
+!FAIL
+!FAIL
+!FAIL
+!FAIL
+You weave flows of all five Powers, and transfer yourself to your chosen destination.
+!TARGET
+!TARGET
+!TARGER
+$n looks intently at the Portal Stone, then begins to fade, until $e is gone completely. 
+You feel a tingle in your skin as $n looks intently at a Portal Stone. Suddenly $e vanishes!
+You see $n weave flows of all five Powers into a Portal Stone and fades out out of existance.

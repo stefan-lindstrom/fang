@@ -1,0 +1,680 @@
+<?xml version="1.0"?>
+<objects>
+  <object vnum="6200" name="nomagic grasp blocker" special="NONE">
+    <description>Grasp blocker</description>
+    <shortdesc>grasp blocker</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="13" wear="0" extra="32"/>
+      <data weight="0" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <objprog main="OnAction" argtype="STRING" argument="grasp tgrasp weave cast powertrap">
+      <sideterm number="Wearing" not="TRUE" argtype="INT" argument="6667"/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="EmoteTo" argtype="STRING" argument="You cannot channel this close to the Bore."/>
+      <action number="Emote" argtype="STRING" argument="$N looks confused."/>
+    </objprog>
+    <objprog main="OnEntry" argtype="STRING" argument="grasp tgrasp weave cast powertrap">
+      <sideterm number="Grasping" not="FALSE" argtype="VOID" argument="NONE"/>
+      <action number="Force" argtype="STRING" argument="rel"/>
+      <action number="EmoteTo" argtype="STRING" argument="It&apos;s too dangerous to hold the One Power this close to the Bore."/>
+    </objprog>
+  </object>
+  <object vnum="6201" name="ko&apos;bal trolloc enamel tribe disk" special="NONE">
+    <description>A small enamel disk lies here, glinting of \c01red\c00 enamel. </description>
+    <shortdesc>a small enamel disk, embossed with a \c23wicked black trident\c00 on \c08b\c01l\c08o\c01o\c08d\c01 r\c08e\c01d\c00</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="11" wear="257" extra="65608"/>
+      <data weight="2" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <exdesc keyword="ko&apos;bal">
+      <description>The three pronged trident of the Ko&apos;bal trolloc tribe stands out 
+clearly. Its black form depicted quite well on the blood red enamel.
+</description>
+    </exdesc>
+  </object>
+  <object vnum="6202" name="cloak inky black fade myrddraal" special="NONE">
+    <description>A pile of inky black cloth lies here.</description>
+    <shortdesc>a long cloak, blacker than the deepest shadows</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="11" wear="1025" extra="65600"/>
+      <data weight="5" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <exdesc keyword="cloak fade myrddraal">
+      <description>It appears to be a large black cloak of a Myrddraal. Now parted from
+its owner it moves slightly in the breeze but its colour remains like
+that of its masters blood: blacker than the deepest shadow.
+</description>
+    </exdesc>
+  </object>
+  <object vnum="6203" name="sword myrddraal fade eyeless black" special="NONE">
+    <description>A slender blade, as black as night lies here.</description>
+    <shortdesc>a fine black blade, forged and tempered in the shadows of Thakan&apos;dar</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="5" wear="8193" extra="65608"/>
+      <data weight="12" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <exdesc keyword="blade sword">
+      <description>The long slender blade looks expertly made, much like those of 
+tempered by the master smiths of Tear. One difference is obvious however,
+the blade is as dark and black as the Dark Ones heart and the finest cut of
+the superb edge can fester and kill within moments. Seasoned with the soul of
+a human captive this blade is one to be reckoned with in the hands of the Eyeless.
+</description>
+    </exdesc>
+  </object>
+  <object vnum="6204" name="pen human fodder " special="NONE">
+    <description>A ricketly wooden pen made of thorned blackberry is here, its front gate ajar.</description>
+    <shortdesc>a pen of human fodder</shortdesc>
+    <actiondesc>\c00
+</actiondesc>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="13" wear="1" extra="0"/>
+      <data weight="9999" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <exdesc keyword="pen">
+      <description>The large wooden pen seems to be made of the thorned branches of a 
+blackberry. Its only gate standing ajar. From within can be heard 
+pitiful sobs of the weak and wretched, too sick or injured to even
+attempt to crawl out of the enclosure. Some cry out in vain for the 
+Lights salvation while others lie still knowing their fate. As you 
+watch a large goat-faced trolloc lumbers through the entrance and 
+drags out another human. No resistance met the trolloc takes him
+back to his greedy peers at the cookfire. 
+</description>
+    </exdesc>
+  </object>
+  <object vnum="6205" name="bones pile clean" special="NONE">
+    <description>A small pile of \c07bones\c00 lie here, seemingly picked clean of flesh.</description>
+    <shortdesc>a pile of bones</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="13" wear="1" extra="0"/>
+      <data weight="5" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <exdesc keyword="bones">
+      <description>The pile of bones appear bright white, the blood and flesh that
+once surrounded them picked clean by the hungry victims of the pit.
+They appear to be the bones of a young child, not long from the womb.
+Small raised points on what appears to be a remnant of the skull seems
+to confirm their origins. The hybrid spawn of trolloc and human are
+most often stillborn.
+</description>
+    </exdesc>
+  </object>
+  <object vnum="6206" name="tooth broken bone" special="NONE">
+    <description>A small blackened piece of bone lies here.</description>
+    <shortdesc>a broken tooth</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="0" wear="1" extra="0"/>
+      <data weight="1" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <exdesc keyword="bone tooth">
+      <description>On closer inspection the piece of bone appears to be a tooth. Its charred
+and blacken form broken near the base as if violently removed from the mouth
+of its former owner. Although quite large and denser than that of human 
+molars the tooth is recognisably trolloc in origins.
+</description>
+    </exdesc>
+  </object>
+  <object vnum="6207" name="closet small" special="NONE">
+    <description>A small wooden closet sits in the corner.</description>
+    <shortdesc>a small closet</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="5000" value2="5" value3="-1" value4="0"/>
+      <flags type="15" wear="1" extra="0"/>
+      <data weight="9999" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <exdesc keyword="closet ">
+      <description>The closet appears small and very ordinary. It has double doors on the front
+with no apparent locking mechanism.
+</description>
+    </exdesc>
+  </object>
+  <object vnum="6208" name="severed arm apendage" special="NONE">
+    <description>A severed arm lies here, the product of some experiment.</description>
+    <shortdesc>a severed arm</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="13" wear="1" extra="0"/>
+      <data weight="5" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <exdesc keyword="severed arm">
+      <description>The arm looks pale and bloodless as if it has been stored here here for
+some time. You begin to wonder however as the room you are in is humid and
+quite hot. The discolouration should not have occured so rapidly. The
+arm seems to have been removed with some care, a sharp instrument being used
+Small holes in the base of the wrist suggest that something was implanted
+there or perhaps drained.
+</description>
+    </exdesc>
+  </object>
+  <object vnum="6209" name="severed leg" special="NONE">
+    <description>A severed leg lies on the ground here, by its shape it is human in origin.</description>
+    <shortdesc>a severed leg</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="13" wear="1" extra="0"/>
+      <data weight="5" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <exdesc keyword="leg severed">
+      <description>The leg appears to be from a man of average height, removed not far
+above the knee. It seems to have been removed methodically with a sharp
+although slightly rusted instrument. Oddly down one side runs a small red
+scar, as if the whole leg has been opened in the past and something
+removed. 
+</description>
+    </exdesc>
+  </object>
+  <object vnum="6210" name="rack" special="NONE">
+    <description>A rack of weapons, made of black iron stands to one side.</description>
+    <shortdesc>an iron rack of weapons</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="100000" value2="0" value3="-1" value4="0"/>
+      <flags type="15" wear="1" extra="0"/>
+      <data weight="9000" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <exdesc keyword="iron rack">
+      <description>The rack seems to be made of black iron like much within the
+encampment. Weapons of seemingly every make and description bristle
+across its length. What could be patches of blood and flesh soak the
+sand beneath but the weapons themselves are clean and well cared 
+for. Each strike of lightning seems to make the wicked blades
+gleam menacingly.
+</description>
+    </exdesc>
+  </object>
+  <object vnum="6211" name="wicked blade trolloc sword" special="NONE">
+    <description>A wickedly curved black blade lies on the ground here.</description>
+    <shortdesc>a wickedly curved trolloc sword</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="3" value3="6" value4="3"/>
+      <flags type="5" wear="32769" extra="64"/>
+      <data weight="12" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <exdesc keyword="sword trolloc wicked">
+      <description>The long wickedly curved blade seems to be made of some sort of
+crude steel. Down its length run sharp notches, each seeming to 
+be a fang of silver among the black. The three pronged trident of
+the Ko&apos;bal is scratched across the large hilt, making this a 
+trolloc sword. A sword whos wounds will fester and kill as surely
+as a strike to the heart.
+</description>
+    </exdesc>
+  </object>
+  <object vnum="6212" name="spear trolloc long" special="NONE">
+    <description>A spear with as black wooden shaft lies here on the ground.</description>
+    <shortdesc>a long shafted trolloc spear</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="2" value3="7" value4="11"/>
+      <flags type="5" wear="32769" extra="64"/>
+      <data weight="12" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <exdesc keyword="trolloc spear shaft">
+      <description>The spear appears to be made of black wood and iron. It&apos;s long
+shafted length is heavy and durable. A spiked iron tip with, seemingly
+razor-sharp barbs, makes this a formidable weapon. By its size and weight 
+it is quite obviously a trolloc weapon.
+</description>
+    </exdesc>
+  </object>
+  <object vnum="6213" name="blade black steel sword" special="NONE">
+    <description>A black steel sword lies on the ground here.</description>
+    <shortdesc>a long bladed, black steel sword</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="3" value2="3" value3="6" value4="10"/>
+      <flags type="5" wear="8193" extra="0"/>
+      <data weight="12" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <exdesc keyword="sword black steel ">
+      <description>The black steel sword seems well forged. Its long slender
+blade sharpened only on a single side. Appearing well
+balanced and hilted with unadorned steel the sword
+looks made to fit human hands.
+</description>
+    </exdesc>
+  </object>
+  <object vnum="6214" name="mace spiked wicked" special="NONE">
+    <description>A large iron mace lies on the ground here.</description>
+    <shortdesc>a large iron mace</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="3" value3="7" value4="5"/>
+      <flags type="5" wear="32769" extra="0"/>
+      <data weight="20" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <exdesc keyword="mace ">
+      <description>The mace appears to be made of solid iron, its head bristling 
+with wicked looking spikes. The faint gleam of oil covers the 
+surface to protect it from the elements and decay. The shaft 
+seems made of hard black wood and on its base the three pronged
+trident of the Ko&apos;bal is shown clearly.
+</description>
+    </exdesc>
+  </object>
+  <object vnum="6215" name="disk trolloc Dha&apos;vol" special="NONE">
+    <description>A small enamelled disk lies here.</description>
+    <shortdesc>a small enamel disk, embossed with a \c23black horned skull\c00 on \c08b\c01l\c08o\c01o\c08d \c01r\c08e\c01d\c00</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="11" wear="257" extra="64"/>
+      <data weight="2" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <exdesc keyword="dha&apos;vol horned skull">
+      <description>The disk appears to be made of enamelled, a \c23black horned skull\c00
+on \c08b\c01l\c08o\c01o\c08d \c01r\c08e\c01d\c00 shown clearly. You recognise it as a tribal symbol
+for the Dha&apos;vol, of of the fiercest trolloc tribes to emerge.
+tribes to emerge.
+</description>
+    </exdesc>
+  </object>
+  <object vnum="6216" name="disk trolloc dhai&apos;mon" special="NONE">
+    <description>A small enamelled disk lies here.</description>
+    <shortdesc>a small enamel disk, embossed with a \c23black iron fist\c00 on \c08b\c01l\c08o\c01o\c08d \c01r\c08e\c01d\c00</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="11" wear="257" extra="64"/>
+      <data weight="2" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <exdesc keyword="dhai&apos;mon disk fist">
+      <description>The small disk is enamel, embossed with the black iron fist of 
+the Dhai&apos;mon trolloc tribe. 
+</description>
+    </exdesc>
+  </object>
+  <object vnum="6217" name="trolloc disk Ahf&apos;frait whirlwind" special="NONE">
+    <description>A small enamelled disk lies here on the ground.</description>
+    <shortdesc>a small enamel disk, embossed with a \c23savage black whirlwind\c00 on \c08b\c01l\c08o\c01o\c08d \c01r\c08e\c01d\c00</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="11" wear="257" extra="64"/>
+      <data weight="2" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <exdesc keyword="Ahf&apos;frait trolloc disk">
+      <description>The disk appears to be enamel, embossed with a dark savage whirlwind
+on blood red. You recognise this as the sign of the Ahf&apos;frait trolloc
+tribe, one of the most feared of the shadowspawn creatures.
+</description>
+    </exdesc>
+  </object>
+  <object vnum="6218" name="dagger black steel" special="NONE">
+    <description>A black steel dagger lies on the ground here.</description>
+    <shortdesc>a slightly curved black steel dagger</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="2" value3="4" value4="14"/>
+      <flags type="5" wear="8193" extra="64"/>
+      <data weight="7" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <exdesc keyword="dagger">
+      <description>The dagger is made of some kind of black steel, its blade long 
+and thin. The dual sided edge appears razor sharp and small, perfect
+for placing silently in the ribs. 
+</description>
+    </exdesc>
+  </object>
+  <object vnum="6219" name="axe battel trolloc" special="NONE">
+    <description>A large wicked looking axe lies here gathering dust.</description>
+    <shortdesc>a large wickedly curved battle axe</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="4" value3="4" value4="6"/>
+      <flags type="5" wear="32769" extra="64"/>
+      <data weight="40" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <exdesc keyword="axe trolloc battle">
+      <description>The axe appears to be made of black iron like many trolloc weapons.
+Its long handle seems well worn and cared for, with only the black
+savage whirlwind of the Ahf&apos;frait carving marring its smooth surface.
+The wicked blade itself is finely balanced and too large and heavy
+for human hands.
+</description>
+    </exdesc>
+  </object>
+  <object vnum="6220" name="disk enamel encampment dreadlord rings concentric sunburst" special="NONE">
+    <description>A small enamel disk lies here gathering dust.</description>
+    <shortdesc>a small enamel disk, embossed with a \c23black\c00 and \c08b\c01l\c08o\c01o\c08d\c01 r\c08e\c01d\c00 symbol</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="11" wear="20485" extra="72"/>
+      <data weight="3" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <exdesc keyword="disk enamel symbol">
+      <description>The disk appears small and well made, its edges unscratched.
+Appearing in its centre is a strange symbol: three \c08b\c01l\c08o\c01o\c08d \c01r\c08e\c01d\c00
+concentric rings surrounding a \c23sunburst as black as night.\c00
+</description>
+    </exdesc>
+  </object>
+  <object vnum="6252" name="pitward pit doom ward" special="NONE">
+    <description>The Pit of Doom Ward</description>
+    <shortdesc>the Pit of Doom Ward</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="1" wear="0" extra="32"/>
+      <data weight="0" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <objprog main="OnRandom" argtype="INT" argument="50">
+      <action number="Emote" argtype="STRING" argument="\c10F\c08l\c00\c03a\c23m\c10e\c08s \c23d\c00\c03a\c08n\c10c\c08e \c23a\c10c\c00\c01r\c10o\c00\c03s\c08s \c08t\c00\c01h\c10e \c10p\c23o\c00\c01o\c10l \c00\c03o\c10f \c00\c03m\c10o\c08l\c10t\c03e\c08n \c23l\c08a\c10v\c03a\c00."/>
+    </objprog>
+    <objprog main="OnAction" argtype="STRING" argument="grasp cast weave powertrap tgrasp">
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="Emote" argtype="STRING" argument="$N screams with inhuman pain!"/>
+      <action number="EmoteTo" argtype="STRING" argument="Reality begins to tear apart around you, you quickly stop trying to channel."/>
+    </objprog>
+  </object>
+  <object vnum="6255" name="\c23The forge\c00" special="NONE">
+    <description>\c23The forge\c00</description>
+    <shortdesc>\c23The forge\c00</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="14" wear="0" extra="2048"/>
+      <data weight="0" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <objprog main="OnRandom" argtype="INT" argument="50">
+      <action number="Emote" argtype="STRING" argument="A scream of agony emerges from within the forge as a new sword is made."/>
+    </objprog>
+  </object>
+  <object vnum="6260" name="valley path" special="NONE">
+    <description>A narrow winding path that leads into the \c23fog shrouded\c00 valley below.</description>
+    <shortdesc>a path down to the valley</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="14" wear="0" extra="0"/>
+      <data weight="1980" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <exdesc keyword="path">
+      <description>The path winds and curves its way around black jagged rocks. Narrow
+at even its widest point the path soon disappears from sight below into
+the never ending fog that shrouds this area. The smell of sulfur and the 
+distant screams of pain echo along the valley walls. Perhaps it would be best
+to avoid this place. 
+</description>
+    </exdesc>
+  </object>
+  <object vnum="6280" name="pit" special="NONE">
+    <description>\c00A \c13deep\c00 hole in the ground.</description>
+    <shortdesc>a mistake: Wrong oedit</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="14" wear="0" extra="0"/>
+      <data weight="1980" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="6281" name="pit hole" special="NONE">
+    <description>A large hole dug from the earth.</description>
+    <shortdesc>a pit of human misery</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="14" wear="0" extra="0"/>
+      <data weight="1980" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <exdesc keyword="pit hole">
+      <description>The pit seems to have been carved and dug out of the rock and
+earth by hand. What appears to be deep claw marks mar much of the 
+surface of the exposed rock while a combination of blood and 
+bodily fluids has caused the earth to dry into a tough, smooth
+black surface. Moaning and cries of terror sometimes waft up from
+below, but you cannot see what causes them. The deepest depths are
+shrouded in dark shadow.
+</description>
+    </exdesc>
+  </object>
+  <object vnum="6283" name="gates iron" special="NONE">
+    <description>A large black iron gate is seemingly set into the rock wall.</description>
+    <shortdesc>the iron gates of the courtyard</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="14" wear="1" extra="0"/>
+      <data weight="9999" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <exdesc keyword="gate iron">
+      <description>The gates lead off to the east and over top the faint outline
+of a large building can be seen. Seemingly made of black iron the
+gate appears to be well made and in good condition. Large spikes
+bristle across each iron rod and what could be dried blood covers 
+more than one.
+</description>
+    </exdesc>
+  </object>
+  <object vnum="6299" name="lava pool" special="NONE">
+    <description>\c10A \c08p\c00\c03o\c10o\c23l \c08o\c10f \c08l\c00\c03a\c10v\c03a</description>
+    <shortdesc>\c10A \c08p\c00\c03o\c10o\c23l \c08o\c10f \c08l\c00\c03a\c10v\c00\c03a\c00</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="14" wear="0" extra="2048"/>
+      <data weight="0" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <objprog main="OnSayRoom" argtype="STRING" argument="Shai&apos;tan">
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="EmoteTo" argtype="STRING" argument="As you attempt to utter the Great Lord&apos;s name you are suddenly pushed into the pool of lava by an unseen hand!"/>
+      <action number="Force" argtype="STRING" argument="enter pool"/>
+      <action number="Emote" argtype="STRING" argument="$N starts to say something but is shoved into the lava pool!"/>
+    </objprog>
+  </object>
+</objects>

@@ -1,0 +1,711 @@
+<?xml version="1.0"?>
+<rooms>
+  <room>
+    <roombasic title="\c02Welcome to the Dragon&apos;s Fang Mud School\c00" vnum="29900" zone="299">
+      <roomdescription>Welcome to \c10Mud-school\c00.  Typing \c05help\c00 at any time will bring
+up a menu of topics with information on the mud, commands,
+guilds, etc.  Typing \c05score\c00 will show your health, stats, and other
+information about your character.  Type \c05look\c00 to see room
+descriptions and \c05look player name or object name\c00 to see people
+and items.  Typing \c05glance player name\c00 will allow you to see that
+character&apos;s description.  Let&apos;s move \c10N\c00 to meet the trainer.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="29901">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="\c02The Trainer&apos;s Office\c00" vnum="29901" zone="299">
+      <roomdescription>You enter a small office filled with armor, weapons, books and other
+items.  A battered desk is partially buried under a saddle and tack.
+An older man sits in a corner chair oiling a piece of leather armor.
+He sets it aside and stands as you enter.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="29902">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exit direction="south" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="29900">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="\c02Alley between Office and School\c00" vnum="29902" zone="299">
+      <roomdescription>Stepping out a small door the two of you arrive in a narrow alley that
+seems to wind between the office and a larger building.  The heat
+is oppressive and little in the way of a breeze reaches you here.  The
+alley appears deserted, but...what is that shadow over in the corner?
+</roomdescription>
+      <flags>0</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="south" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="29901">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exit direction="west" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="29903">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="\c02Mud School\c00" vnum="29903" zone="299">
+      <roomdescription>Entering through wooden double doors brings you to a large room
+with people running from place to place.  Door lead to smaller 
+classrooms, each with an instructor teaching mud skills.  The old man 
+bows takes a seat, lighting up his pipe.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="29904">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exit direction="east" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="29902">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exit direction="west" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="29905">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="\c02The Wise Woman&apos;s Balcony\c00" vnum="29904" zone="299">
+      <roomdescription>You open the door and find yourself on a small balcony overlooking
+the fair city of Caemlyn.  A white haired woman sits on a wooden bench.
+Her skin is tanned and her loose blouse and flowing skirt ripple
+in the warm breeze.  She looks up and nods, as if expecting you.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="south" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="29903">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exit direction="down" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="32500">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="\c02The Wheel Weaves...and so can you\c00" vnum="29905" zone="299">
+      <roomdescription>You step through the door into a small, cool room.  It is lit with small
+orbs of glowing light that cast a golden glow of rich rugs on the floor
+and well made tapestries hanging on the walls.  Books in worn leather 
+bindings fill shelves and companion small figurines, stones and the
+odd animal skull.  The air in front of you shimmers and a hooded
+figure becomes visible.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="29903">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exit direction="northeast" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="29904">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The OOC room" vnum="29906" zone="299">
+      <roomdescription>A blank room with an ooc board. 
+</roomdescription>
+      <flags>30</flags>
+      <sector>City</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="29977">
+      <description>None
+</description>
+    </exit>
+    <exit direction="south" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="29976">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Wisdom&apos;s Cottage" vnum="29942" zone="299">
+      <roomdescription>This large room has a plank floor of wood.  Along the wall lies a number
+of cots where patients lie being tended to by the Wisdom.  Between each
+cot is a small wooden table that holds a ceramic pitcher of water and a
+bowl with clean towels stacked on the small shelf below.  At the foot of 
+each cot lies a leather tooled trunk with spare cotton blankets.  There 
+are a few rocking chairs scattered about the room as well as a couple of
+tables around which are straight back chairs with cane bottoms.  Upon
+the floor lies braided rugs.  To one side near a window is the Wisdom&apos;s
+desk fully equipped with inks, quill, parchments and sealing waxes.
+</roomdescription>
+      <flags>12</flags>
+      <sector>Inside</sector>
+      <special>Hospital</special>
+    </roombasic>
+    <exit direction="east" keyword="door" exitinfo="1" keynum="0" toroom="29945">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exit direction="south" keyword="door" exitinfo="1" keynum="0" toroom="29943">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exit direction="west" keyword="door" exitinfo="3" keynum="0" toroom="30066">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Wisdom&apos;s Kitchen" vnum="29943" zone="299">
+      <roomdescription>This kitchen has many cabinets and a variety of jars containing dried
+herbs, various teas, roots, bark and healing plants.  From the exposed rafters
+hang bunches of dried herbs.  A black pot belly stove keeps the kitchen a
+warm place.  There is a water pump and sink set into the wooden counter.
+Copper pots and iron pots hang upon one wall.  There is a wooden table
+with ladder back chairs around it.  The wood floor is bare of any rugs.  
+To one side there is what appears to be a door in floor, with a piece of
+rope for a handle.
+</roomdescription>
+      <flags>12</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="door" exitinfo="1" keynum="0" toroom="29942">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exit direction="down" keyword="door" exitinfo="17" keynum="0" toroom="29944">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Wisdom&apos;s Root Cellar" vnum="29944" zone="299">
+      <roomdescription>The root cellar contains roots and dried bark for use in healing remedies.
+There are wooden boxes and crates used for storage.  A wine rack lies
+along one wall, draped with cobwebs and covered with dust.  Some candles
+and a flint box lie on one of the crates.
+</roomdescription>
+      <flags>13</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="up" keyword="door" exitinfo="17" keynum="0" toroom="29943">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Private Room" vnum="29945" zone="299">
+      <roomdescription>This is a private room where a patient can recover from a lengthy illness or
+injury.  A four poster bed against one wall is wrapped in a mist of netting
+with soft pillows and cotton bedding.  There is a carved wooden screen of six
+panels that can hide the bed away when not in use.  When there is no patient
+here, the room is used as a place for the Wisdom to meet with her guests and
+visitors.  There is a plush sofa and a number of chairs and a tea service upon
+a side table.  The room is also used to teach others the healing arts.    
+</roomdescription>
+      <flags>26</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="west" keyword="door" exitinfo="1" keynum="0" toroom="29942">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="\c03Gates to the Andoran Royal Palace\c00" vnum="29950" zone="299">
+      <roomdescription>Tall and weathered looking Aiel watch you walk through the gates
+with sharp eyes.  The Andoran Palace Guard check your credentials,
+sometimes waving you on toward the palace, other times referring you to
+an Aiel warrior or the captain of the guard.  The brilliant white stone
+of the wall and the white and gold stone pavings do nothing to lesson
+the oppressive heat felt in the city.  The paved path continues north to 
+the palace and a large courthouse as well as west to the guard barracks.
+</roomdescription>
+      <flags>150</flags>
+      <sector>City</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="29970">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exit direction="east" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="10001">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exit direction="south" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="10186">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="\c01Path to the Guard Barracks\c00" vnum="29951" zone="299">
+      <roomdescription>A wide paved stone path curves along the inner wall and in front
+of a large stone barracks.  Guards in their bright \c01red\c00 and \c14white\c00 uniforms
+rush past you, hurrying to perform their duties.  The sounds of the city 
+are muted here, although you catch a faint sound of wood hitting wood.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="29950">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exit direction="west" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="29952">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="\c01The Path Continues\c00" vnum="29952" zone="299">
+      <roomdescription>The wide paved stone path continues along the inner wall and in front
+of a large stone barracks.  Sitting on a stone bench near the wall
+is a palace guard sharpening his sword.  He nods as you walk past,
+but keeps a wary eye on your movements.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="29951">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exit direction="west" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="29953">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="\c01A Close Call\c00" vnum="29953" zone="299">
+      <roomdescription>You are almost knocked down as a very young guardsmen rushes by.
+He mumbles an apology and continues running, tucking his shirt into his
+breeches as he goes.  A few older guardsmen shakes their heads and
+follow along at a more sedate pace.
+</roomdescription>
+      <flags>0</flags>
+      <sector>City</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="29952">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exit direction="west" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="29954">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="\c01The Paved Path\c00" vnum="29954" zone="299">
+      <roomdescription> You walk among increasing numbers of guardsmen
+who seem to be leaving for the city or just returning
+from their patrols. The shining armors and sheathed
+swords cause the occasional Aiel to eye them in contempt.
+</roomdescription>
+      <flags>0</flags>
+      <sector>City</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="29953">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exit direction="west" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="29955">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="\c01A Small Plaza\c00" vnum="29955" zone="299">
+      <roomdescription>   You are in a small circular plaza, the ground
+fertile enough for a few pine trees to grow around
+a statue that dominates the center of the yard.
+   Guardsmen and civilians come here to relax, since
+it&apos;s not as heavily crowded as the Oval plaza,
+and it&apos;s closer to the center of Caemlyn than the
+Queen&apos;s Park itself.
+</roomdescription>
+      <flags>0</flags>
+      <sector>City</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="29954">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exit direction="west" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="29956">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="\c01The Path Continues\c00" vnum="29956" zone="299">
+      <roomdescription>   You are still on the path that leads from the
+Barracks of the Guard east to the road that connects
+the Palace to the Oval plaza in Caemlyn. Guards
+and peddlers walk around you, while in a small
+distance there is some sort of statue.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="29955">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="\c03The Path to the Palace\c00" vnum="29957" zone="299">
+      <roomdescription>The paved stone path continues over a slight rise and begins to 
+curve.  The Palace can be seen far to the north and just ahead is a 
+grey stone building housing the courts and prison.  To your left is
+a manor house used to house visiting nobles.
+</roomdescription>
+      <flags>20</flags>
+      <sector>City</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="29958">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exit direction="south" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="29967">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exit direction="west" keyword="door" exitinfo="15" keynum="709" toroom="700">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="\c03In Front of the Courthouse\c00" vnum="29958" zone="299">
+      <roomdescription>The path continues in front of the Courthouse.  Red cloaked guards
+patrol, often entering or leaving with clerks and magistrates of the
+court.  Ahead to the north, the road begins to curve toward the Palace.
+</roomdescription>
+      <flags>16</flags>
+      <sector>City</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="door" exitinfo="15" keynum="711" toroom="29896">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exit direction="east" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="29861">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exit direction="south" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="29957">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="\c02The Trader&apos;s Pavillion\c00" vnum="29959" zone="299">
+      <roomdescription>You walk under a colorful tent, the sides open to allow a breeze
+to circulate inside.  Long wooden tables hold all manner of goods
+from the far reaches of Andor.  An old peddler nods and steps up to 
+greet you,  his carefully polished guardsmans sword hanging at his
+side.
+</roomdescription>
+      <flags>150</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="30639">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="\c03Approaching the Courthouse\c00" vnum="29967" zone="299">
+      <roomdescription> Here the road begins to turn, around the \c01Barracks\c00 and
+toward another impressive looking building in the distance.
+The number of guards increases, with patrols of officers
+leading their men past more and more frequently.
+</roomdescription>
+      <flags>0</flags>
+      <sector>City</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="29957">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exit direction="south" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="29968">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="\c03The Path to the Palace\c00" vnum="29968" zone="299">
+      <roomdescription>   The Path is well paved and janitors work here
+constantly to clean it three times a day, as the
+number of citizens from all Caemlyn and various
+parts of Andor come to visit, or seek justice.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="29967">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exit direction="south" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="29969">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="\c03The Path Continues Uphill\c00" vnum="29969" zone="299">
+      <roomdescription>   To reach the palace it seems that you have to walk
+uphill, as both that and the rest of the buildings you
+can see from where you are are on higher ground than
+the rest of Caemlyn.
+   The Path is well tended, and there is an air of
+quiet peace around you, even in troubled times such
+as these.
+</roomdescription>
+      <flags>0</flags>
+      <sector>City</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="29968">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exit direction="south" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="29970">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="\c03Path to the Palace\c00" vnum="29970" zone="299">
+      <roomdescription>   This is where the \c02Path\c00 begins, the paved
+road that begins near the famous Oval Plaza of the
+city of Caemlyn and reaches uphill as far as the
+Royal Palace of Andor itself.
+   Soldiers of the Guard and Aiel, along with travellers,
+peddlers and visitors make their way all around you
+each too busy with their own affairs to give you
+more than momentary notice.
+</roomdescription>
+      <flags>0</flags>
+      <sector>City</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="29969">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+    <exit direction="south" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="29950">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="\c01Haldon&apos;s\c03 Leatherworks\c00" vnum="29971" zone="299">
+      <roomdescription>You enter a small shop that smells strongly of leather and polish.
+Oil and water cured leather pieces are stacked and ready to be
+shaped into armor and belt.  Several finished pieces are 
+arranged on two long tables and hung on the wall.  A short man with
+bushy red hair nods to you as you enter.  
+</roomdescription>
+      <flags>158</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="" exitinfo="0" keynum="0" toroom="30641">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="\c04Ferari&apos;s \c07Fine Weapons\c00" vnum="29972" zone="299">
+      <roomdescription>You enter a small shop with a variety of well made weapons displayed.
+A man with massive shoulders and forearms is polishing a long 
+blade, the steel gleaming in the lamplight.  
+</roomdescription>
+      <flags>158</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="door" exitinfo="0" keynum="0" toroom="30647">
+      <description>a heavy wooden door
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="\c02Fredrik&apos;s \c01F\c02l\c03o\c04w\c05e\c03r\c02 Shop\c00" vnum="29973" zone="299">
+      <roomdescription>You are in an unfinished room.
+</roomdescription>
+      <flags>2</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+  </room>
+  <room>
+    <roombasic title="\c03Old City\c00\c14 Oval\c00\c03 Plaza\c00" vnum="29974" zone="299">
+      <roomdescription>  This is the Oval plaza, situated in the very heart of the old city where
+travelers and citizens in Caemlyn meet and discuss everything from the
+recent news about the lord Dragon and his Aiel to personal matters
+and local business.  This is a busy place, with merchants, soldiers,
+gleefolk and Aiel rushing from place to place to perform various tasks.
+North you can see the gates of the palace while south leads you
+past the inner gates, the moneychangers, smithys and shops of the
+new city all the way to the outer wall and gates of Caemlyn.  West
+takes you deeper into the city and to the east you find more shops,
+a pigeon message service and the finest Inn found in the old city,
+The Golden Bowl.
+</roomdescription>
+      <flags>150</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+  </room>
+  <room>
+    <roombasic title="\c01Caemlyn\c00\c14 Pigeon\c00\c01 and\c00\c14 Courier\c00\c01 Service\c00" vnum="29975" zone="299">
+      <roomdescription>You are in a busy room with messengers running in and out as
+well as pigeons coming and going.  A large desk holds baskets
+and boxes, letters and other packages.  Long wooden benches
+have been placed against one wall for seating.  The noise is
+almost too much but all the mail seems to get to the people
+it is intended for.   A small set of stairs leads to the pigeon
+coops on the roof. (\c0200C-only level 5 and under allowed up\c00)
+</roomdescription>
+      <flags>190</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="door" exitinfo="0" keynum="0" toroom="30643">
+      <description>a wooden door
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="\c02Bulletins \c00\c14and \c00\c02Notices \c00\c14of \c00\c03Merit\c00" vnum="29976" zone="299">
+      <roomdescription>The brightly colored awning covering the area here provides some relief from
+the unrelenting heat and sun that has plagued the world in recent times.  A few
+wooden benches here make a half-circle around a large sign that stands near the
+back of the tent, supported by twin wooden posts, each at least two hands
+thick.  It is here where notices of new laws, requests for workers, and
+announcements of all kinds can be found.  Here you will not see any of the
+wealthiest citizens of Caemlyn, but their servants are almost guaranteed to
+mingle here in the morning, themselves sharing gossip between noble houses
+while they gather the latest official news and spread the unofficial.    
+</roomdescription>
+      <flags>158</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="29906">
+      <description>None
+</description>
+    </exit>
+    <exit direction="south" keyword="awning" exitinfo="0" keynum="0" toroom="30643">
+      <description>a bright awning flutters in the slight breeze
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Ideas Board Room" vnum="29977" zone="299">
+      <roomdescription>This room&apos;s purpose is simply to house the board below.  Please feel free to
+post any ideas, concerns etc.  You feel should go here.    
+</roomdescription>
+      <flags>142</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="south" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="29906">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="\c06Nothing \c00" vnum="29980" zone="299">
+      <roomdescription>a unfinished room
+</roomdescription>
+      <flags>22</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+  </room>
+  <room>
+    <roombasic title="Inside the walls" vnum="29981" zone="299">
+      <roomdescription>You have just walked past the walls that surround the mansion of \c11House di&apos;Matera\c00 and you notice that the courtyard is much bigger than it seems from the outside. A broad darkgrey marble stair lead up to
+the great double doors that lead inside the mansion, which seems to be built of red granite. The two thick pillars which holds the roof that covers the stairs are of the same material as the stairs. A gardener is tending the few trees still alive and a messenger is talking to one of the two \c08guards\c00 posted at each side of the doors.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+  </room>
+  <room>
+    <roombasic title="Hall with a broad double Staircase." vnum="29982" zone="299">
+      <roomdescription>You stand in the highceilinged hall which is topped with a red glass dome that spreads a soft red glow over the room. A large staircase starts at each sidewall and leads up to a balcony looking room above. On the walls beneath the staircase hangs the portraits of all the old lords of the house and you notice a paintng that looks very new, it&apos;s golden frame not so dull as the others.;Straight ahead is two large glass doors etched with the sign of house di&apos;Matera, a golden star inside a red triangle with it
+s point down.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+  </room>
+  <room>
+    <roombasic title="Rand&apos;s Chambers " vnum="29985" zone="299">
+      <roomdescription>Desc to be determined later.
+</roomdescription>
+      <flags>8</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="west" keyword="Not set yet...
+" exitinfo="0" keynum="0" toroom="785">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="\c23Narsil&apos;s\c06 Room\c00" vnum="29988" zone="299">
+      <roomdescription>Stepping into the room, the first thing you notice is the 
+lack of life and brightness. This room has obviously not 
+had anyone living in it for quite some time. It doesn&apos;t even
+look as though it has been opened in years. There is a fine 
+layer of clean dust covering most everything in here. There 
+are a few signs that this room has recently been reoccupied,
+however. The bed is no longer perfectly made, the pillows 
+no longer perfectly plumped. The floor shows signs of tracks
+made through the dust layer, enough so that individual 
+footprints are not outlined, but there are wide streaks of 
+the absence of dust crossing and crisscrossing the dark
+wood of the floor. The weapons, on display nearly everywhere
+in the room, are placed alternately between furniture and
+tapestries, and they have not even a speck of dirt or dust
+on them. The only color in the room comes from the bed, 
+quite easily large enough for two people, its blankets in
+dark, \c03e\c06a\c02r\c01t\c03h\c02y\c00 colors, contrasting with its pristine \c14white\c00
+sheets. This is obviously a man&apos;s room. 
+</roomdescription>
+      <flags>8924</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="south" keyword="door south" exitinfo="1" keynum="0" toroom="1023">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="a Blacksmiths shop" vnum="29997" zone="299">
+      <roomdescription>You are in an unfinished room.
+</roomdescription>
+      <flags>2</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+  </room>
+  <room>
+    <roombasic title="Unnamed&apos;s Undecided Abode" vnum="29998" zone="299">
+      <roomdescription>Don&apos;t expect a description yet, punk.
+</roomdescription>
+      <flags>74</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="91">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="\c14The \c06I\c14c\c06e \c14B\c06o\c14x\c07\c00" vnum="29999" zone="299">
+      <roomdescription>\c07The entire room has been carved from a single \c14bl\c06o\c14ck of \c06i\c14c\c06e\c07.  The walls are 
+\c07smooth and seamless and there is no exit of any sort.  There is an extreme 
+\c06ch\c14i\c06ll\c07 in the \c06air\c07 and trickles of \c06i\c14c\c06y water\c07 have pooled onto the floor.  Upon 
+\c07the wall are words which were roughly \c23scr\c07a\c23tch\c07e\c23d\c07 by some previous unlucky 
+\c07occupant: \c06If you are here, you can be sure that there is a problem\c07\c00.
+</roomdescription>
+      <flags>8442</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <dgscript vnum="29999"/>
+  </room>
+</rooms>

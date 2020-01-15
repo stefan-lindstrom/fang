@@ -1,0 +1,4312 @@
+<?xml version="1.0"?>
+<mobiles>
+  <mobile vnum="23000" name="gate guard man" special="NONE">
+    <description>Defending the gates of this famous Border town is not a chore left to
+green recruits.  Seasoned soldiers line the battlements of Fal Dara,
+victors of dozens of battles against Shadowspawn raids.  They move about
+with a grace that, if spotted in any other land other than the Borderlands
+would be considered a Warder's fluid gait.  Blades strapped to backs, they
+examine each man and woman's bareheaded visage before allowing them
+passage into the city.    
+</description>
+    <shortdesc>a Fal Daran gate guard</shortdesc>
+    <longdesc>A guard stands here, closely examining each passer by.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="150" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="13000"/>
+      <move ndize="1" dsize="13000" bonus="13000"/>
+      <ac>-200</ac>
+      <gold>400</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>70</hitroll>
+      <damroll>50</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1185802"/>
+    <affected one="2096" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="18" sides="18" add="70"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnActionTo" argtype="STRING" argument="push">
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+    </mobprog>
+    <mobprog main="OnActionTo" argtype="STRING" argument="drag">
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="23001" name="merchant man" special="NONE">
+    <description>At the head of his wagon, this merchant, along with his guards,
+are carrying goods to market in the town. He looks at you,
+dismissing you out of hand but the guards with him look
+appraisingly at the well cared for weapons at your side.
+</description>
+    <shortdesc>a merchant</shortdesc>
+    <longdesc>A merchant hurries to get his goods to market.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="10" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="500"/>
+      <move ndize="1" dsize="500" bonus="500"/>
+      <ac>100</ac>
+      <gold>500</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>5</hitroll>
+      <damroll>5</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1050636"/>
+    <affected one="2096" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="5" sides="0" add="5"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="23002" name="citizen man" special="NONE">
+    <description>Walking around town, buying this and that, this citizen is going
+about his business at a brisk walk. He obviously want to get home
+or somewhere for an important occasion of some sort.
+
+</description>
+    <shortdesc>a citizen</shortdesc>
+    <longdesc>A citizen is in a hurry to get somewhere
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="10" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="500"/>
+      <move ndize="1" dsize="500" bonus="500"/>
+      <ac>100</ac>
+      <gold>300</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>10</hitroll>
+      <damroll>5</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="2136"/>
+    <affected one="2224" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="5" sides="5" add="10"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="23003" name="girl child young" special="NONE">
+    <description>This child seems to have lost her doll somewhere. Her face turns
+up towards you, imploring you to help her find her toy. 
+</description>
+    <shortdesc>a little girl</shortdesc>
+    <longdesc>A girl runs around, trying to find her lost toy.
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="5" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="300"/>
+      <move ndize="1" dsize="300" bonus="300"/>
+      <ac>100</ac>
+      <gold>10</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>5</hitroll>
+      <damroll>5</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1048776"/>
+    <affected one="2096" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="2" sides="2" add="5"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="23004" name="soldier guard shienaran " special="NONE">
+    <description>The topknotted Shienaran soldier is a vet of many battles against
+Shadowspawn, spanning all of the Borderlands. many times, the
+Black Hawk of Shienar has flown beside the other banners of the
+north and this man stood with them against more evil than you
+could possibly imagine.
+</description>
+    <shortdesc>a Shienaran soldier</shortdesc>
+    <longdesc>A Shienaran soldier is off duty and looking for something to do.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="150" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="0" dsize="100" bonus="13000"/>
+      <move ndize="1" dsize="13000" bonus="13000"/>
+      <ac>-160</ac>
+      <gold>500</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>75</hitroll>
+      <damroll>10</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1181720"/>
+    <affected one="2096" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="18" sides="18" add="75"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnActionTo" argtype="STRING" argument="drag">
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+    </mobprog>
+    <mobprog main="OnActionTo" argtype="STRING" argument="push">
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="23005" name="servant man livery" special="NONE">
+    <description>The black and gold livery of the fortress of Lord Agelmar is
+plain but serviceable, a perfect definition of the whole city.
+These men and women carry messages and goods, anything that the
+lords of the keep ask them to carry, where they are asked to
+carry it. The servant bids you good day as he hurrying to
+continue carrying out his assigned task.
+</description>
+    <shortdesc>a servant of the keep</shortdesc>
+    <longdesc>A servant scurries about his duties.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="15" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="1200"/>
+      <move ndize="1" dsize="1200" bonus="1200"/>
+      <ac>50</ac>
+      <gold>50</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>10</hitroll>
+      <damroll>5</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1050760"/>
+    <affected one="2096" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="6" sides="4" add="10"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="23006" name="woman dressed rich" special="NONE">
+    <description>Dressed in decent clothes, you wouldn't be surprised if this
+woman was the owner of a large house in the nicer part of town.
+beringed hands wave to friends passing by, the sun catching the
+glint of gold as her hand falls to her side.
+</description>
+    <shortdesc>a well dressed woman</shortdesc>
+    <longdesc>A wealthy looking woman strolls down the street.
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="12" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="1000"/>
+      <move ndize="1" dsize="1000" bonus="1000"/>
+      <ac>70</ac>
+      <gold>200</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>10</hitroll>
+      <damroll>10</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1050632"/>
+    <affected one="2096" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="4" sides="4" add="10"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="23007" name="hawker seller " special="NONE">
+    <description>You wonder what sort of drink these people use to keep their
+voices going after 12 hours of screaming out what they're
+selling. Despite the noise near these hawker stands, they  do
+manage to sell very useful items.
+</description>
+    <shortdesc>a hawker</shortdesc>
+    <longdesc>A hawker stands here, shouting out what he's got for sale.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="20" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="1500"/>
+      <move ndize="1" dsize="1500" bonus="1500"/>
+      <ac>20</ac>
+      <gold>600</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>20</hitroll>
+      <damroll>12</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1050634"/>
+    <affected one="2096" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="6" sides="4" add="20"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="23008" name="dog" special="NONE">
+    <description>Somehow managing to escape his leash, this dog is running around
+the city terrorizing little children until the owner can
+recapture it.
+</description>
+    <shortdesc>a dog</shortdesc>
+    <longdesc>A dog chases after a bird.
+</longdesc>
+    <title/>
+    <chardata gender="NEUTRAL" class="Adventurer" level="10" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="1000"/>
+      <move ndize="1" dsize="1000" bonus="1000"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>5</hitroll>
+      <damroll>10</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="65612"/>
+    <affected one="2096" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="2" sides="2" add="5"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="23009" name="man watch " special="NONE">
+    <description>Keeping the peace is one of the main duties a watchman has to
+perform and they look like they perform it well. X Shienaran
+soldiers, late of the battles in the blight and elsewhere, 
+comprise the majority of the city watch. Greying and balding most
+of them are, but they seem to keep everything running smoothly in
+every day life.
+</description>
+    <shortdesc>a member of the city watch</shortdesc>
+    <longdesc>A city watchman makes sure the peace is kept.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="20" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="2000"/>
+      <move ndize="1" dsize="2000" bonus="2000"/>
+      <ac>50</ac>
+      <gold>200</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>15</hitroll>
+      <damroll>15</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1054808"/>
+    <affected one="2096" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="3" sides="5" add="15"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnActionTo" argtype="STRING" argument="drag">
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+    </mobprog>
+    <mobprog main="OnActionTo" argtype="STRING" argument="push">
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="23010" name="sad looking man" special="NONE">
+    <description>A man walking around in a short sleeved shirt is somewhat odd
+especially in this bitter cold winter but the man doesn't seem to
+care much one way or another. he watches the activities of the
+city with eyes filled with sadness. He seems to have lost someone
+special to him recently.
+</description>
+    <shortdesc>a man with a heavy heart</shortdesc>
+    <longdesc>A man strolls around the streets aimlessly.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="15" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="1050"/>
+      <move ndize="1" dsize="1050" bonus="1050"/>
+      <ac>50</ac>
+      <gold>200</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>10</hitroll>
+      <damroll>15</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1048664"/>
+    <affected one="2096" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="5" sides="1" add="10"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="23011" name="priest man" special="NONE">
+    <description>Wearing a full length white robe, shining in the sunlight, this
+priest goes about his duties caring for the sick and injured.
+Your not sure if it's just a trick of the light but his face
+almost seems to glow with a holy radiance. 
+</description>
+    <shortdesc>a priest</shortdesc>
+    <longdesc>A priest wrapped in serenity moves around, helping his guests.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="5" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="0"/>
+      <move ndize="1" dsize="0" bonus="0"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>5</hitroll>
+      <damroll>2</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1220634"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="3" sides="3" add="5"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="23012" name="boy young lost" special="NONE">
+    <description>Looking for his mother, this boy peers into every face he comes
+across. He looks small, cold, and alone.
+</description>
+    <shortdesc>a lost boy</shortdesc>
+    <longdesc>A boy looks around, seemingly lost.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="5" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="100"/>
+      <move ndize="1" dsize="100" bonus="100"/>
+      <ac>100</ac>
+      <gold>5</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>3</hitroll>
+      <damroll>3</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1050824"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="2" sides="2" add="3"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="23013" name="servant woman hurry" special="NONE">
+    <description>It looks, err, unfinished.
+</description>
+    <shortdesc>a servant</shortdesc>
+    <longdesc>A woman laden with items for her employer, runs past.
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="5" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="150"/>
+      <move ndize="1" dsize="150" bonus="150"/>
+      <ac>100</ac>
+      <gold>50</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1048776"/>
+    <affected one="128" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="23014" name="apprentice woman" special="NONE">
+    <description>Hands covered in flower, this baker's apprentice tries to do the
+work of three apprentices as she scurries about the shop.
+</description>
+    <shortdesc>an apprentice</shortdesc>
+    <longdesc>An apprentice works away at the back of the store.
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="5" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="500"/>
+      <move ndize="1" dsize="500" bonus="500"/>
+      <ac>100</ac>
+      <gold>50</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>5</hitroll>
+      <damroll>5</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1048586"/>
+    <affected one="2096" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="5"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="23015" name="guardsman guard watch gate" special="NONE">
+    <description>Well muscled young men populate the gate watch. Blades folded
+against their backs and topknots like the Shienaran soldiers,
+they are chosen for skills in war but for good sight to spot
+Shadowspawn as far away as humanly possible. 
+</description>
+    <shortdesc>a member of the gate watch</shortdesc>
+    <longdesc>A guardsman watches the gate closely.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="25" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="2000"/>
+      <move ndize="1" dsize="2000" bonus="2000"/>
+      <ac>50</ac>
+      <gold>200</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>10</hitroll>
+      <damroll>10</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1055770"/>
+    <affected one="2096" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="4" sides="7" add="10"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnActionTo" argtype="STRING" argument="drag">
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+    </mobprog>
+    <mobprog main="OnActionTo" argtype="STRING" argument="push">
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="23016" name="citizen woman" special="NONE">
+    <description>Going about her business, this citizen has thoughts for only what
+she's going to buy in the market for her house. After walking a
+few feet, not returning your hello, she stops and turns around
+and returns your pleasant greeting.
+</description>
+    <shortdesc>a citizen</shortdesc>
+    <longdesc>A woman walks past you, deep in thought.
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="15" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="1500"/>
+      <move ndize="1" dsize="1500" bonus="1500"/>
+      <ac>100</ac>
+      <gold>200</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>10</hitroll>
+      <damroll>10</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1050696"/>
+    <affected one="2096" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="4" sides="4" add="10"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="23017" name="blacksmith man" special="NONE">
+    <description>Hugely muscled arms lift in a hardy wave as you walk into his
+shop. Brown eyes stare back at you from a heavy brow, sweating
+less than you thought humanly possible in this sweltering heat.
+Clasping arms with you in the warrior's salute, he returns to his
+work.
+</description>
+    <shortdesc>a blacksmith</shortdesc>
+    <longdesc>a burly blacksmith works in his forge.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="20" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="2000"/>
+      <move ndize="1" dsize="2000" bonus="2000"/>
+      <ac>100</ac>
+      <gold>200</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>10</hitroll>
+      <damroll>10</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1050650"/>
+    <affected one="2096" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="5" sides="5" add="10"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="23018" name="inn keep keeper innkeeper" special="NONE">
+    <description>There's something about thin innkeepers that is just not normal.
+There's no problem in terms of thinness with this particular
+innkeeper, he must have three chins. The white apron covering his
+bulging stomach gives you the feeling that this is a man who
+enjoys his comforts, and one who would run a nice comfortable
+inn.
+</description>
+    <shortdesc>the innkeeper</shortdesc>
+    <longdesc>The innkeeper scurries over to greet you as you enter.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="20" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="2000"/>
+      <move ndize="1" dsize="2000" bonus="2000"/>
+      <ac>100</ac>
+      <gold>500</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>10</hitroll>
+      <damroll>10</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1050634"/>
+    <affected one="2096" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="4" sides="4" add="10"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="23019" name="man patron" special="NONE">
+    <description>This man sits with a group of his friends at a table, sipping on
+a glass of fine wine. Blue eyes look up at you, inquiring as to
+your business here.
+</description>
+    <shortdesc>a patron</shortdesc>
+    <longdesc>A patron of this fine inn sits at a near by table.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="10" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="200"/>
+      <move ndize="1" dsize="200" bonus="200"/>
+      <ac>100</ac>
+      <gold>50</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>5</hitroll>
+      <damroll>5</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1051658"/>
+    <affected one="2096" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="2" sides="3" add="5"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="23020" name="serving woman " special="NONE">
+    <description>Long blond hair past her shoulders swings to one side as she
+looks over at you, returning your smile. Carrying a tray of
+drinks, she starts over to place one in front of you and inquires
+if you want anything else that she can provide.
+</description>
+    <shortdesc>a serving woman</shortdesc>
+    <longdesc>A serving woman walks around the inn, carrying items to and from the kitchen.
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="5" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="200"/>
+      <move ndize="1" dsize="200" bonus="200"/>
+      <ac>100</ac>
+      <gold>50</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>5</hitroll>
+      <damroll>5</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1050634"/>
+    <affected one="2096" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="2" sides="2" add="5"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="23021" name="baker man" special="NONE">
+    <description>Wiping flower from his hands, on to his apron, the baker waddles
+over to you with a big smile on his face. Hearing a bang at the
+back of the store, he turns around to shout instructions of
+caution to his apprentices, then returns his attention back to
+his newest customer.
+</description>
+    <shortdesc>the baker</shortdesc>
+    <longdesc>Covered in flour, somehow this baker manages to run his establishment.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="1" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="0"/>
+      <move ndize="1" dsize="0" bonus="0"/>
+      <ac>100</ac>
+      <gold>1000000</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="10280970"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="23022" name="lad young stocker" special="NONE">
+    <description>A young lad of the city is here, stocking the shelves for the old
+man who runs the store. Due to the shop owners height or lack
+there of, he employs young people of the city to help him with
+the heavier and higher work.
+</description>
+    <shortdesc>a young lad</shortdesc>
+    <longdesc>A young lad is here, helping stock the shelves.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="15" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="1500"/>
+      <move ndize="1" dsize="1500" bonus="1500"/>
+      <ac>100</ac>
+      <gold>50</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>5</hitroll>
+      <damroll>8</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1049610"/>
+    <affected one="2096" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="4" sides="4" add="5"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="23023" name="old man" special="NONE">
+    <description>An old man with A long wispy grey beard, receding hair line and
+watery blue eyes, glances your way, as he notices your interest.
+He finishes his conversation with someone who is obviously one of
+his customers and comes over to see what he can do to help you.
+</description>
+    <shortdesc>the old shop keeper</shortdesc>
+    <longdesc>An old man moves about his store with a slow gait.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="5" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="0"/>
+      <move ndize="1" dsize="0" bonus="0"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="10280970"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="23024" name="Solin" special="NONE">
+    <description>An aging warrior, Solin seems to be in his mid 50's but still
+looks as hard as nails. His powerfully muscled arms wield the
+heaviest of weapons with apparent ease. formerly the Master of
+arms in Lord Agelmar's fortress, he decided to open his own shop
+and sell his superior devices of death.
+</description>
+    <shortdesc>Solin</shortdesc>
+    <longdesc>A burly shop keeper runs his store with an iron fist.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="2" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="0"/>
+      <move ndize="1" dsize="0" bonus="0"/>
+      <ac>100</ac>
+      <gold>1000000</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="10280970"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="23025" name="apprentice man" special="NONE">
+    <description>to take some of the load off Solin, two apprentices work away at
+the back of the shop, pounding pieces of metal into their proper
+shapes, as well as, polishing Solin's work. When the raids in the
+summer get hotter there's a definite need for their help.
+</description>
+    <shortdesc>an apprentice</shortdesc>
+    <longdesc>An apprentice works away in the back of the shop, helping Solin do his job.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="25" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="2500"/>
+      <move ndize="1" dsize="2500" bonus="2500"/>
+      <ac>100</ac>
+      <gold>100</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>5</hitroll>
+      <damroll>10</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1048586"/>
+    <affected one="2096" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="4" sides="4" add="5"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="23026" name="Balon man warrior" special="NONE">
+    <description>Like Solin in the stall next to him, Balon is an aging warrior
+who looks like he hasn't lost very much of a step ever. A greying
+topknot and the blade still at his back does something to keep
+the image of a soldier about him. Balon's speciality, however,
+is in the construction of armor and at this task, there is no
+better in Shienar. His heavily calloused hands look like they
+were
+made for work with hard metals and his face looks as hard as some
+of the steel he forges.
+</description>
+    <shortdesc>Balon</shortdesc>
+    <longdesc>A man whose every move tells you he's a deadly warrior, pounds some metal.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="0" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="0"/>
+      <move ndize="1" dsize="0" bonus="0"/>
+      <ac>100</ac>
+      <gold>1000000</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="10280970"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="23027" name="jeweller man shop keeper" special="NONE">
+    <description>No one would have any problem identifying this shop keepers
+profession. Large spectacles glance up from a tabletop where' he
+was closely inspecting a particularly beautiful piece of
+jewellery. A singularly greedy smile starts to split his face in
+two at the sight of your fine looking clothing.
+</description>
+    <shortdesc>the jeweller</shortdesc>
+    <longdesc>The owner of this establishment looks over as you enter.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="0" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="0"/>
+      <move ndize="1" dsize="0" bonus="0"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="10280970"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="23028" name="young apprentice" special="NONE">
+    <description>Pounding away at different pieces of armor, undenting severe
+damage, these apprentices are trying to learn from the best in
+the business. They happily accept their duty of repair work for
+the chance to watch the master at work.
+</description>
+    <shortdesc>an apprentice</shortdesc>
+    <longdesc>An apprentice works at repairing well used armor.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="25" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="2000"/>
+      <move ndize="1" dsize="2000" bonus="2000"/>
+      <ac>50</ac>
+      <gold>100</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>10</hitroll>
+      <damroll>10</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="10"/>
+    <affected one="2096" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="4" sides="4" add="10"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="23029" name="mob unfinished" special="NONE">
+    <description>It looks, err, unfinished.
+</description>
+    <shortdesc>the unfinished mob</shortdesc>
+    <longdesc>An unfinished mob stands here.
+</longdesc>
+    <title/>
+    <chardata gender="NEUTRAL" class="Adventurer" level="0" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="0"/>
+      <move ndize="1" dsize="0" bonus="0"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="8"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="23030" name="soldier man" special="NONE">
+    <description>Dancing and Clapping to the beat, this soldier has left his
+weapons somewhere else for the time being as he tries to forget
+the death and decay outside the walls for a little while.
+Respites from the Blight do not come often and these soldiers
+have learned to take advantage of such when they have the
+opportunity. Jumping down from his bench, he grabs a serving
+woman whose had eyes on him all night and they swing into the
+middle of the floor for the next dance.
+</description>
+    <shortdesc>an off-duty soldier</shortdesc>
+    <longdesc>A man stands on a bench enjoying himself.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="30" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="3000"/>
+      <move ndize="1" dsize="3000" bonus="3000"/>
+      <ac>20</ac>
+      <gold>300</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>15</hitroll>
+      <damroll>15</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1048602"/>
+    <affected one="2096" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="5" sides="5" add="15"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="23031" name="bar man bartender" special="NONE">
+    <description>Wiping off the bar, this bartender looks like an x soldier as
+well. You start to wonder if this whole town is filled with
+soldiers and x soldiers. He's the perfect image of a bartender,
+graciously filling all the shouted out orders. The only flaw in
+the image is his tendency to hop up on the bar, shouting and
+clapping along with the party, from time to time.
+</description>
+    <shortdesc>the bartender</shortdesc>
+    <longdesc>a bartender is wiping off his countertop.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="1" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="0"/>
+      <move ndize="1" dsize="0" bonus="0"/>
+      <ac>100</ac>
+      <gold>50000</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="10280970"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="23032" name="bar bartender" special="NONE">
+    <description>Wiping off the bar, this bartender looks like an x soldier as
+well. You start to wonder if this whole town is filled with
+soldiers and x soldiers. He's the perfect image of a bartender,
+graciously filling all the shouted out orders. The only flaw in
+the image is his tendency to hop up on the bar, shouting and
+clapping along with the party, from time to time.
+</description>
+    <shortdesc>the bartender</shortdesc>
+    <longdesc>The bartender is here, wiping down his bar.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="0" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="0"/>
+      <move ndize="1" dsize="0" bonus="0"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="10280970"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="23033" name="Salorna" special="NONE">
+    <description>Waves of blond hair flow down Salorna's back as she bends over a
+patient, applying a poultice of some kind to a wound. she stands
+up and you almost take an involuntary step backwards her ice blue
+eyes meet yours. You believe the phrase is that someone has seen
+the wolf but this woman's gaze doesn't do that phrase justice. In
+a short clipped tone, she asks what you want.
+</description>
+    <shortdesc>Salorna</shortdesc>
+    <longdesc>A beautiful young woman seems to be the one in charge here.
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="0" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="0"/>
+      <move ndize="1" dsize="0" bonus="0"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="10280970"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="23034" name="apprentice woman" special="NONE">
+    <description>Assisting Salorna, the great healer of Fal Dara, is an honor many
+would strive to have. Pulling the majority of her apprentices
+from the ranks of the acolytes in the sanctuary in town, Salorna
+teaches a more advanced form of healing that these women are
+certainly willing to learn.
+</description>
+    <shortdesc>an apprentice</shortdesc>
+    <longdesc>An apprentice stands at Salorna's side, learning the ways of a master healer.
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="10" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="1000"/>
+      <move ndize="1" dsize="1000" bonus="1000"/>
+      <ac>100</ac>
+      <gold>200</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>5</hitroll>
+      <damroll>5</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1048586"/>
+    <affected one="2096" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="3" sides="3" add="5"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="23035" name="apprentice" special="NONE">
+    <description>The apprentice looks up from working on a bruised hoof. Wiping
+a lock of blond hair out of his eyes, he dusts off his hands on
+his knees as he  stands to see what you require.
+</description>
+    <shortdesc>an apprentice</shortdesc>
+    <longdesc>An apprentice helping with the horses motions for you to enter.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="20" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="1500"/>
+      <move ndize="1" dsize="1500" bonus="1500"/>
+      <ac>100</ac>
+      <gold>200</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>10</hitroll>
+      <damroll>10</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1048586"/>
+    <affected one="2096" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="5" sides="5" add="10"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="23036" name="Laera" special="NONE">
+    <description>A plump looking woman with flower somehow in her hair. She looks
+up from beating some doe just long enough to register that
+someone has entered her establishment. She motions for one of her
+apprentices to greet you then goes back to her work.
+</description>
+    <shortdesc>Laera</shortdesc>
+    <longdesc>Laera works away with some dough.
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="30" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="3000"/>
+      <move ndize="1" dsize="3000" bonus="3000"/>
+      <ac>100</ac>
+      <gold>500</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>20</hitroll>
+      <damroll>20</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1048586"/>
+    <affected one="2096" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="5" sides="5" add="20"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="23037" name="Daerin man huge" special="NONE">
+    <description>A gigantic man, easily seven feet tall, hefts a lance that longer
+than he is tall with no problems. His hugely muscled arms and
+thick fingers point out strong and weak points about each
+individual lance to his customers. He does not have the usual
+characteristics of the Ogier race but you wonder.
+</description>
+    <shortdesc>Darein</shortdesc>
+    <longdesc>A huge man stands by one wall displaying how to use a lance.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="0" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="0"/>
+      <move ndize="1" dsize="0" bonus="0"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="10280970"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="23038" name="father" special="NONE">
+    <description>Relaxing in a fully stuffed chair, the father of the family is
+content to watch the kids play while he smokes a pipe. His wife
+having banned him from sharpening weapons in the house, his hands
+are restless and he doesn't know what to do with them. he scoops
+up a book from the book shelf, reseats himself in his favorite
+chair and begins to read.
+</description>
+    <shortdesc>the father</shortdesc>
+    <longdesc>The father of the family reclines in a chair.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="20" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="2500"/>
+      <move ndize="1" dsize="2500" bonus="2500"/>
+      <ac>50</ac>
+      <gold>200</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>10</hitroll>
+      <damroll>10</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1048586"/>
+    <affected one="2096" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="3" sides="5" add="10"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="23039" name="wife mother" special="NONE">
+    <description>The mother and wife of the family sits in a chair, sowing a tunic
+for one of the kids. she gets up as you enter, expecting that
+you'd want something to drink but indicating that it isn't
+necessary, she returns to her knitting.
+</description>
+    <shortdesc>the mother and wife</shortdesc>
+    <longdesc>The mother and wife of the family sits in another chair.
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="20" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="2500"/>
+      <move ndize="1" dsize="2500" bonus="2500"/>
+      <ac>50</ac>
+      <gold>200</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>10</hitroll>
+      <damroll>10</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1048586"/>
+    <affected one="2096" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="5" sides="3" add="10"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="23040" name="boy" special="NONE">
+    <description>Snatching up the toy Trolloc with the thousand holes poked in it,
+the boy of the family runs off being chased by his sister.
+</description>
+    <shortdesc>the boy of the family</shortdesc>
+    <longdesc>A boy is here playing with a toy of some kind.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="5" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="200"/>
+      <move ndize="1" dsize="200" bonus="200"/>
+      <ac>100</ac>
+      <gold>200</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>2</hitroll>
+      <damroll>2</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1048586"/>
+    <affected one="2096" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="2" sides="2" add="2"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="23041" name="girl" special="NONE">
+    <description>Looking after the boy, his sister decides that she won't give him
+the satisfaction of being chased and decides to cuddle up with
+her father and try to read the book he's reading.
+</description>
+    <shortdesc>the girl of the family</shortdesc>
+    <longdesc>A girl is here playing a toy of some kind.
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="5" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="200"/>
+      <move ndize="1" dsize="200" bonus="200"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>2</hitroll>
+      <damroll>2</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1048586"/>
+    <affected one="2096" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="2" sides="2" add="2"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="23042" name="Wailin man " special="NONE">
+    <description>Long mustaches hang down past Wailin's chin. They wag from side
+to side as he illustrates his instructions to his apprentices. He
+turns to the door and a smile blooms on his face as he spots you.
+</description>
+    <shortdesc>Wailin</shortdesc>
+    <longdesc>An older looking man greets you as you enter.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="1" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="0"/>
+      <move ndize="1" dsize="0" bonus="0"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="10280970"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="23043" name="apprentice" special="NONE">
+    <description>it's obvious to you by now that Wailin tries to cater to the more
+wealthy part of Fal Dara and this reflects in the apprentices he
+chooses. gangly young men who have no affinity for working with
+armor stand at the back of the shop looking furtive. Wailin seems
+to think that if he offers to apprentice young sons of noble
+houses in Fal Dara, he'll get some kind of advantage.
+</description>
+    <shortdesc>an apprentice</shortdesc>
+    <longdesc>An apprentice stands at the back of the shop looking like he doesn't belong.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="20" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="1500"/>
+      <move ndize="1" dsize="1500" bonus="1500"/>
+      <ac>100</ac>
+      <gold>200</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>10</hitroll>
+      <damroll>10</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1048586"/>
+    <affected one="2096" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="3" sides="3" add="10"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="23044" name="apprentice" special="NONE">
+    <description>Unlike the apprentices across the way in Wailin's armor shop,
+these apprentices have an employer that believes in learning from
+hands on experience. Polishing, forming, strengthening,
+repairing, all the different forms of the weaponsmith's trade.
+These apprentices look happy, rightfully so, they are learning
+from one only second in skill to Solin.]
+</description>
+    <shortdesc>an apprentice</shortdesc>
+    <longdesc>An apprentice works at repairing a warhammer.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="25" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="2000"/>
+      <move ndize="1" dsize="2000" bonus="2000"/>
+      <ac>100</ac>
+      <gold>200</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>5</hitroll>
+      <damroll>15</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1048586"/>
+    <affected one="2096" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="5" sides="5" add="5"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="23045" name="Faran man" special="NONE">
+    <description>the old rivalry between Faran and solin, the two best
+weaponsmiths in Fal Dara, will not stop until they both lye in
+the grave and even then they'll keep spitting at each other.
+Lying under the gruff unfriendly exterior, however, is a
+friendship that has grown up between them since they were both
+employed by Lord Agelmar. Faran even looks similar to Solin with
+his aging gray hair but hard face that has seen very much indeed.
+</description>
+    <shortdesc>Faran</shortdesc>
+    <longdesc>A master weaponsmith watches his apprentices work with a look of approval.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="1" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="0"/>
+      <move ndize="1" dsize="0" bonus="0"/>
+      <ac>100</ac>
+      <gold>1000000</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="10280970"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="23046" name="lord high first man agelmar" special="NONE">
+    <description>Lord Agelmar, High Seat of house Jagad, the greatest captain in
+Shienar, and Lord of Fal Dara at first looks to peaceful for his
+position and for the room he lives in with his scholarly blue
+velvet coat. That impression turns out to be totally false as
+you get a good look at his face. And a face it is, with it's hard
+lines, and brown eyes like stone. The crinkles at the corners of
+his eyes are the only sign of age in this great man, otherwise it
+looks like he hasn't lost a step.
+</description>
+    <shortdesc>Lord Agelmar</shortdesc>
+    <longdesc>Lord Agelmar, High Seat of House Jagad, looks up from his writing.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="199" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="29000"/>
+      <move ndize="1" dsize="29000" bonus="29000"/>
+      <ac>-200</ac>
+      <gold>1000</gold>
+      <bankgold>0</bankgold>
+      <exp>25</exp>
+      <hitroll>200</hitroll>
+      <damroll>50</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1956890"/>
+    <affected one="788528" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="30" sides="127" add="200"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnActionTo" argtype="STRING" argument="push">
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+    </mobprog>
+    <mobprog main="OnActionTo" argtype="STRING" argument="drag">
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+    </mobprog>
+    <mobprog main="OnActionTo" argtype="STRING" argument="speardance">
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="Say" argtype="STRING" argument="You bloody Darkfriend, I'll have your flaming shadow rotted head on a poll for that."/>
+      <action number="ActionTo" argtype="STRING" argument="kill"/>
+    </mobprog>
+    <mobprog main="OnActionTo" argtype="STRING" argument="aim'">
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="Say" argtype="STRING" argument="You bloody Darkfriend, I'll have your flaming shadow rotted head on a poll for that."/>
+      <action number="ActionTo" argtype="STRING" argument="kill"/>
+    </mobprog>
+    <mobprog main="OnActionTo" argtype="STRING" argument="charge">
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="Say" argtype="STRING" argument="You bloody Darkfriend, I'll have your flaming shadow rotted head on a poll for that!"/>
+      <action number="ActionTo" argtype="STRING" argument="kill"/>
+    </mobprog>
+    <mobprog main="OnAttack" argtype="STRING" argument="charge">
+      <action number="Action" argtype="STRING" argument="emote growls in rage and attacks you."/>
+      <action number="Action" argtype="STRING" argument="f"/>
+      <action number="ActionTo" argtype="STRING" argument="kill"/>
+      <action number="Action" argtype="STRING" argument="dirt"/>
+      <action number="Action" argtype="STRING" argument="punch"/>
+      <action number="Action" argtype="STRING" argument="kick"/>
+    </mobprog>
+    <mobprog main="OnActionTo" argtype="STRING" argument="kill">
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="Action" argtype="STRING" argument="kill"/>
+      <action number="ActionTo" argtype="STRING" argument="kill"/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="23047" name="The Master at Arms" special="NONE">
+    <description>A heron branded on his sword, this Blademaster is one of the
+masters at Arms in Fal Dara. he moves with a grace that is
+exceptional in it's fluidity but also lightning quick. the
+standard long hilted broadsword used by the Shienarans has been
+modified by this Master, lending still enough weight to do
+tremendous damage but leaving the Master free to use it only in
+one hand.
+</description>
+    <shortdesc>the master at Arms</shortdesc>
+    <longdesc>The Master at Arms for Fal Dara, teaches some students.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="170" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="21000"/>
+      <move ndize="1" dsize="21000" bonus="21000"/>
+      <ac>-150</ac>
+      <gold>900</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>150</hitroll>
+      <damroll>50</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1264666"/>
+    <affected one="2096" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="30" sides="20" add="150"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnActionTo" argtype="STRING" argument="drag">
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+    </mobprog>
+    <mobprog main="OnActionTo" argtype="STRING" argument="push">
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="23048" name="master horse man" special="NONE">
+    <description>the topknot turns in your direction as the Master of horse
+notices the stare. Eyes filled with black steely determination
+cause you to almost take a step backward in their intensity. The
+reins of a horse held in one hand and a saddle in the other, this
+master seeks to pound his well honed skills into his students,
+whether they like it or not.
+</description>
+    <shortdesc>the Master of Horse</shortdesc>
+    <longdesc>The Master of Horse shows onlookers how it's supposed to be done.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="180" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="12000"/>
+      <move ndize="1" dsize="12000" bonus="12000"/>
+      <ac>-120</ac>
+      <gold>900</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>100</hitroll>
+      <damroll>50</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1182746"/>
+    <affected one="2096" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="30" sides="30" add="100"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="23049" name="master man hand " special="NONE">
+    <description>the first curious thing about this master of fighting is that
+their is nothing remarkable about him. An average man, with the
+ever present topknot and carrying no weapon, he moves like the
+Blademaster, swift sure and deadly. His hands lift to point
+directly at a student, and he takes a stance, preparing for an
+attack.
+</description>
+    <shortdesc>the master of Combat</shortdesc>
+    <longdesc>A tall man in his 50's, stands over a beaten opponent.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="170" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="15000"/>
+      <move ndize="1" dsize="15000" bonus="15000"/>
+      <ac>-110</ac>
+      <gold>900</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>100</hitroll>
+      <damroll>50</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="347162"/>
+    <affected one="2096" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="20" sides="30" add="100"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="23050" name="soldier rider man" special="NONE">
+    <description>A grizzled old campaigner looks up from checking his saddle as
+you approach. Making little noise, you thought you may be
+undetected, yet the man obviously has instincts honed in battle.
+The sword at his side, along with the large lance strapped to the
+saddle, gives the impression of ruthlessness often found in
+younger soldiers, but cold dark eyes, stare at you intently, not
+differentiating you from an enemy quite yet.
+</description>
+    <shortdesc>a soldier</shortdesc>
+    <longdesc>An experienced rider examines his mount for flaws.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="100" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="10000"/>
+      <move ndize="1" dsize="10000" bonus="10000"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>50</hitroll>
+      <damroll>50</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1313802"/>
+    <affected one="18480" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="20" sides="10" add="50"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="23051" name="officer man teacher " special="NONE">
+    <description>While the master assists in honing the already fine skills of the
+soldiers eastward, this experienced officer has been given the
+charge of guiding the still training soldiers in their lessons.
+Thick hands, caloused from steddy work wave instructions to his
+students, getting one man to tighten a sturrip, another to point
+his lance higher, and another to ease up on the death squeeze the
+soldier has on his poor horse.
+</description>
+    <shortdesc>an officer</shortdesc>
+    <longdesc>An experienced soldier teaches a group of riders useful skills.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="90" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="12000"/>
+      <move ndize="1" dsize="12000" bonus="12000"/>
+      <ac>-100</ac>
+      <gold>700</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>70</hitroll>
+      <damroll>50</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1117194"/>
+    <affected one="2096" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="10" sides="15" add="70"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="23052" name="soldier new man" special="NONE">
+    <description>topknots still vivid with color proclaim these men newly
+appointed to the garrison of Fal Dara. Having little to no battle
+experience outside of keeping the peace inside the walls, they
+need to be shown some skills by some of the older troops, to keep
+them alive in their first few engagements against Shadowspawn.3
+</description>
+    <shortdesc>a new soldier</shortdesc>
+    <longdesc>A soldier listens attentively to his instructor.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="50" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="7500"/>
+      <move ndize="1" dsize="7500" bonus="7500"/>
+      <ac>-80</ac>
+      <gold>500</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>40</hitroll>
+      <damroll>40</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1186826"/>
+    <affected one="2096" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="10" sides="10" add="40"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="23053" name="soldier new man" special="NONE">
+    <description>Being beaten thoroughly by one's teacher instills a certain
+amount of humility but also anger at being embarrassed. Bruises
+poke out everywhere skin shows on this young man's body, which
+happens to be quite a few bruises as most of his clothing has
+been ripped by repeated blows from recalcitrant horses. The
+novelty of becoming a soldier will wear off in a few months, then
+the actual training will begin for this new addition to the
+fighting force of Fal Dara..
+</description>
+    <shortdesc>a trainee</shortdesc>
+    <longdesc>A young soldier, trying to get his horse in hand, stumbles about.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="40" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="5000"/>
+      <move ndize="1" dsize="5000" bonus="5000"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>30</hitroll>
+      <damroll>30</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1186826"/>
+    <affected one="2096" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="10" sides="8" add="30"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="23054" name="student skilled man soldier" special="NONE">
+    <description>One of the more promising hand to hand fighters in all of Fal
+Dara lyes on the ground, composing himself. Having one's body
+subjected to multiple blows hard enough to kill a Trolloc, tends
+to make someone think about the wisdom of continuing life. The
+Master gives the student a hand to his feet, a pat on the back
+and a word of encouragement for his fine fighting skills.
+</description>
+    <shortdesc>a skilled student</shortdesc>
+    <longdesc>A skilled soldier tries to collect himself after that beating.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="150" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="16000"/>
+      <move ndize="1" dsize="16000" bonus="16000"/>
+      <ac>100</ac>
+      <gold>700</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>100</hitroll>
+      <damroll>50</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1182746"/>
+    <affected one="2096" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="20" sides="20" add="100"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="23055" name="watching soldier man" special="NONE">
+    <description>Having recently finished working with the Blademaster in the
+northern part of the field or just watching the show, this
+soldier one of a group watches the combat between master and
+student. yelling out encouragement to the overtaxed student, they
+wait in anticipation to see if the master will lose his first
+match. It was not to be and when the student fell to the ground
+looking like he got run over by a wagon, money exchanged hands in
+the crowd as bets were paid.
+</description>
+    <shortdesc>a watching soldier</shortdesc>
+    <longdesc>A soldier watches the instruction intently.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="80" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="10000"/>
+      <move ndize="1" dsize="10000" bonus="10000"/>
+      <ac>-90</ac>
+      <gold>500</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>50</hitroll>
+      <damroll>40</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1117210"/>
+    <affected one="2096" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="15" sides="10" add="50"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="23056" name="soldier man teacher" special="NONE">
+    <description>topknot swinging in the breeze, this soldier beats some sense
+into his new recruits. Asking the newcomers to have at the more
+experienced fighters with every little trick they have, the
+instructors of these new recruits are soldiers themselves. having
+no trouble dealing with the soldiers even in pairs, this man
+looks just as deadly without a blade in his hand.
+</description>
+    <shortdesc>an experienced officer</shortdesc>
+    <longdesc>A man stands here, taking on one or two trainees at a time.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="80" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="13000"/>
+      <move ndize="1" dsize="13000" bonus="13000"/>
+      <ac>-90</ac>
+      <gold>500</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>60</hitroll>
+      <damroll>40</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1051658"/>
+    <affected one="2096" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="15" sides="12" add="60"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="23057" name="trainee man" special="NONE">
+    <description>A young man, bruises from shoulders to shins staggers towards you
+for a few steps, before falling to the ground. He sits up wiping
+dirt and hair out of his eyes, rapidly blinking to refocus his
+vision. This seems to be one of the trainees that are being
+taught humility.
+</description>
+    <shortdesc>a trainee</shortdesc>
+    <longdesc>A trainee picks himself off the ground, wincing.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="30" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="3000"/>
+      <move ndize="1" dsize="3000" bonus="3000"/>
+      <ac>50</ac>
+      <gold>300</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>10</hitroll>
+      <damroll>10</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1051658"/>
+    <affected one="2048" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="5" sides="5" add="10"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="23058" name="soldier man " special="NONE">
+    <description>Swords gleaming in the sunlight, these bare chested fighters
+practice with each other, while the master at Arms watches, no
+expression on his face. the practicing soldiers have learned to
+take good care of their weapons, and although they have probably
+ran through many a Trolloc, they are unblemished by stain or
+grime. Honing skills already very good, these soldiers seek
+perfection like their master.
+</description>
+    <shortdesc>a practicing soldier</shortdesc>
+    <longdesc>A man flows from form to form with fluid grace.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="150" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="13000"/>
+      <move ndize="1" dsize="13000" bonus="13000"/>
+      <ac>-120</ac>
+      <gold>800</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>90</hitroll>
+      <damroll>40</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1117194"/>
+    <affected one="2096" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="15" sides="12" add="90"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnActionTo" argtype="STRING" argument="drag">
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+    </mobprog>
+    <mobprog main="OnActionTo" argtype="STRING" argument="push">
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="23059" name="instructer soldier officer man" special="NONE">
+    <description>unlike the ringing of steel heard off to the east, the
+instruction in this part of the field is being done with wooden
+practice blades. Still, even with the unsharpened edges of one of
+these blades, the experienced soldiers who instruct the younger
+men in the garrison, can still crush bones with them. Tossing two
+blades to a pair of soldiers nearby, the instructor prepares to
+give a lesson.
+</description>
+    <shortdesc>an experienced soldier</shortdesc>
+    <longdesc>a topknotted soldier is ready to teach a lesson.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="80" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="11000"/>
+      <move ndize="1" dsize="11000" bonus="11000"/>
+      <ac>-100</ac>
+      <gold>500</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>50</hitroll>
+      <damroll>40</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1051658"/>
+    <affected one="2096" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="10" sides="12" add="50"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="23060" name="soldier young man" special="NONE">
+    <description>Blades crashing together with tremendous force, this soldier
+attempts to square off against one of the seasoned experienced
+officers in the garrison. he shows himself to be a promising
+blade as he manages to illude most of the blows quickly enough to
+return some of his own. clack clack clack, blades crash together
+over and over until finally, exhausted and having lost
+concentration, the younger man yields.
+</description>
+    <shortdesc>a young soldier</shortdesc>
+    <longdesc>A soldier goes head to head with one of the instructers.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="70" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="8000"/>
+      <move ndize="1" dsize="8000" bonus="8000"/>
+      <ac>-50</ac>
+      <gold>500</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>40</hitroll>
+      <damroll>35</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1051658"/>
+    <affected one="2096" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="10" sides="9" add="40"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="23061" name="officer soldier man" special="NONE">
+    <description>Standing rock still, waiting for the advance of the trainees,
+this soldier looks like he's been through a few combat missions.
+Scars cross his face from eye level to jaw, making him look
+decidedly evil. His bared wooden blade does nothing to improve
+the image of fatherly love as he uses it to deflect clumsy
+strokes from the trainees.
+</description>
+    <shortdesc>an experienced soldier</shortdesc>
+    <longdesc>A soldier gives the trainees a lesson in humility.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="70" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="0"/>
+      <move ndize="1" dsize="0" bonus="0"/>
+      <ac>-50</ac>
+      <gold>500</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1051658"/>
+    <affected one="2096" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="23062" name="trainee man " special="NONE">
+    <description>New to the fighting force of Fal dara, this young trainee tries
+to match his skill against a seasoned soldier, with little
+success. Being fast is not the only necessary skill for being
+good with a blade, and this is one of the lessons this young man
+is learning right now.
+</description>
+    <shortdesc>a trainee</shortdesc>
+    <longdesc>A trainee tries to fend off the blows from his instructor.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="30" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="2000"/>
+      <move ndize="1" dsize="2000" bonus="2000"/>
+      <ac>50</ac>
+      <gold>400</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>10</hitroll>
+      <damroll>10</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1051658"/>
+    <affected one="2096" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="5" sides="5" add="10"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="23063" name="warhorse horse" special="NONE">
+    <description>A huge warhorse more than a span and a half at the shoulder
+glares at you with baleful eyes. having had full training, this
+warhorse only lets his owner near him, unless otherwise commanded
+by the rider and it seems that no such command has been given.
+pawing at the ground, the horse tries to decide whether you'd
+taste good for dinner.
+</description>
+    <shortdesc>a raging warhorse</shortdesc>
+    <longdesc>A huge warhorse paws at the ground and widens his nostrils in anger.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="50" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="5000"/>
+      <move ndize="1" dsize="5000" bonus="5000"/>
+      <ac>50</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>15</hitroll>
+      <damroll>15</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="66570"/>
+    <affected one="2096" two="0" three="0" four="0"/>
+    <attack type="4"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="8" sides="8" add="15"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="23064" name="relaxed soldier man" special="NONE">
+    <description>Reclining on a cot, this soldier kicks back and tells a story to
+a group of his friends about how he and a patrol massacred a
+group of Trollocs at this pass and in that field. Most likely
+totally erroneous, it amuses his friends all the same.
+</description>
+    <shortdesc>a relaxed soldier</shortdesc>
+    <longdesc>A soldier relaxes here, telling a story to his friends.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="50" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="5000"/>
+      <move ndize="1" dsize="5000" bonus="5000"/>
+      <ac>50</ac>
+      <gold>500</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>15</hitroll>
+      <damroll>15</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1055754"/>
+    <affected one="2096" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="7" sides="7" add="15"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="23065" name="listening soldier" special="NONE">
+    <description>A soldier leans forward, making sure he gets every word of the
+tale tellers story. laughing uproariously in more than one part,
+he seems to have been greatly amused by the lurid tale.
+</description>
+    <shortdesc>a listening soldier</shortdesc>
+    <longdesc>A soldier leans intently forward, trying to catch each word.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="50" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="5000"/>
+      <move ndize="1" dsize="5000" bonus="5000"/>
+      <ac>50</ac>
+      <gold>500</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>15</hitroll>
+      <damroll>15</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1055754"/>
+    <affected one="2096" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="8" sides="8" add="15"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="23066" name="older soldier aged" special="NONE">
+    <description>While sharpening his blade with a whetstone, this soldier brags
+about past accomplishments to his comrades. The greying topknot
+on his head reveals his age, nearly 30 years in the guards so the
+other soldiers try not to show their lack of belief in his
+obvious embellishments. 
+</description>
+    <shortdesc>an aged soldier</shortdesc>
+    <longdesc>An older looking soldier sharpens his blade while talking of old campaigns.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="50" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="5000"/>
+      <move ndize="1" dsize="5000" bonus="5000"/>
+      <ac>50</ac>
+      <gold>500</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>15</hitroll>
+      <damroll>15</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1055754"/>
+    <affected one="2096" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="9" sides="7" add="15"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="23067" name="soldier sharper repair man listening" special="NONE">
+    <description>Taking out a small hammer for repair work, this soldier, while
+listening to his old companion spew his stories about past
+honors, sets to taking out some of the dents in his breast plate.
+It looks like hard going for many dents scar the well used armor,
+evidence of many battles fought in service for his homeland.
+</description>
+    <shortdesc>a soldier</shortdesc>
+    <longdesc>A soldier sits here, listening while removing dents from his armor.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="50" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="5000"/>
+      <move ndize="1" dsize="5000" bonus="5000"/>
+      <ac>50</ac>
+      <gold>500</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>15</hitroll>
+      <damroll>15</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1055754"/>
+    <affected one="2096" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="5" sides="5" add="15"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="23068" name="soldier man winner" special="NONE">
+    <description>Hopping around in obvious delight, this soldier seems to have bet
+on the right contestant as money starts flowing into his hands
+from other soldiers, looking less happy. Still smiles all around
+show that the winning is even and no one begrudges losing a coin
+or two.
+</description>
+    <shortdesc>a winning soldier</shortdesc>
+    <longdesc>A soldier, having coins passed to him, bet on the right man.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="50" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="5000"/>
+      <move ndize="1" dsize="5000" bonus="5000"/>
+      <ac>50</ac>
+      <gold>500</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>15</hitroll>
+      <damroll>15</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1055754"/>
+    <affected one="2096" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="9" sides="9" add="15"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="23069" name="loser soldier man" special="NONE">
+    <description>Having bet on the wrong man, this soldier doesn't look so
+cheerful as he passes his coins along. Though, as a matter of
+fact, you don't know if this soldier could actually look cheerful
+with his unwaveringly grim face and the evil looking scars
+running down his cheeks.
+</description>
+    <shortdesc>a losing soldier</shortdesc>
+    <longdesc>This soldier has bet and lost, judging by his expression.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="50" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="5000"/>
+      <move ndize="1" dsize="5000" bonus="5000"/>
+      <ac>50</ac>
+      <gold>500</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>15</hitroll>
+      <damroll>15</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1055754"/>
+    <affected one="2096" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="9" sides="9" add="15"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="23070" name="rattling rattle rattler soldier man contesting contestant" special="NONE">
+    <description>The roller of the dice looks neither overly happy or
+disappointed. Obviously these soldiers have played this game
+many times before and realize the wealth will turn in their favor
+sometime in the future. Picking up the dice cup again, the
+soldier prepares to toss the pips again and see what turns up.
+</description>
+    <shortdesc>a contesting soldier</shortdesc>
+    <longdesc>A soldier crouches on the ground, rattling dice in the cup.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="50" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="5000"/>
+      <move ndize="1" dsize="5000" bonus="5000"/>
+      <ac>50</ac>
+      <gold>500</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>15</hitroll>
+      <damroll>15</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="7178"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="9" sides="9" add="15"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="23071" name="flute play playing soldier" special="NONE">
+    <description>fingers dancing along his flute, this soldier plays flawlessly
+amongst the cheering and clapping. The vocals being provided by
+at least 20 other voices, this man whose talents lye in the
+musical realm, as well as the physical, plays a perfect
+accompaniment.
+</description>
+    <shortdesc>a flute playing soldier</shortdesc>
+    <longdesc>A soldier sits on a cot, playing his flute to the delight of his friends.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="0" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="5000"/>
+      <move ndize="1" dsize="5000" bonus="5000"/>
+      <ac>-120</ac>
+      <gold>500</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>100</hitroll>
+      <damroll>15</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1055754"/>
+    <affected one="2096" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="9" sides="9" add="100"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="23072" name="cherring soldier man mob" special="NONE">
+    <description>Clapping his hands in delight, this topknotted soldier bellows
+out the words to the flute player's song but his voice is all but
+drowned by the  20 odd other bellowing soldiers. Lending a
+shoulder, this man, one of a dozen, prop the flute player on
+raised hands, carrying him around the room in a drunken stupor.
+</description>
+    <shortdesc>a singing soldier</shortdesc>
+    <longdesc>Cheering wildly, this soldier accompanies the flute player in his song.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="50" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="5000"/>
+      <move ndize="1" dsize="5000" bonus="5000"/>
+      <ac>50</ac>
+      <gold>500</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>15</hitroll>
+      <damroll>15</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1055754"/>
+    <affected one="2096" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="10" sides="10" add="15"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="23073" name="cleaning washing soldier man" special="NONE">
+    <description>Rolling up his sleeves, this soldier prepares to get to work on
+cleaning his clothing. Dirt, grime, blood stains and other such
+spoils of war spot the garments as he scoops up a bar of soap and
+tries to remove the worst of the damage.
+</description>
+    <shortdesc>a soldier </shortdesc>
+    <longdesc>A soldier kneels here, attempting to remove stains from his clothes.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="50" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="5000"/>
+      <move ndize="1" dsize="5000" bonus="5000"/>
+      <ac>100</ac>
+      <gold>500</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>15</hitroll>
+      <damroll>15</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1055754"/>
+    <affected one="2096" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="10" sides="10" add="15"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="23074" name="hand soldier man fighter" special="NONE">
+    <description>Setting his feet wide apart, the soldier stands slightly
+sideways, waiting for the attack to come. His combatant rushes at
+him with a raised fist, attempting to draw all attention to this
+attack. The soldier in his stance knows better and while ducking
+the punch, he catches the foot aimed at his groin and tosses the
+hapless soldier over his shoulder.
+</description>
+    <shortdesc>a trained fighter</shortdesc>
+    <longdesc>A soldier trained in hand to hand combat waits for his opponent to rush him.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="50" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="5000"/>
+      <move ndize="1" dsize="5000" bonus="5000"/>
+      <ac>50</ac>
+      <gold>500</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>15</hitroll>
+      <damroll>15</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1051658"/>
+    <affected one="2096" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="10" sides="10" add="15"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="23075" name="trolloc nightmare" special="NONE">
+    <description>The head of an eagle blended with a human's has been engineered
+by evil forces that is hard to fully understand. toughened hide
+protects them as much as chain mail would and hugely powerful
+hands, ending with extremely sharp claws, make this form of
+shadowspawn very dangerous.
+</description>
+    <shortdesc>a Trolloc</shortdesc>
+    <longdesc>A Trolloc with strangely animal features growls at something in the night.
+</longdesc>
+    <title/>
+    <chardata gender="NEUTRAL" class="Adventurer" level="170" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="9000"/>
+      <move ndize="1" dsize="9000" bonus="9000"/>
+      <ac>-150</ac>
+      <gold>500</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>90</hitroll>
+      <damroll>50</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="2098248"/>
+    <affected one="2096" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="15" sides="30" add="90"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="23076" name="fade creature blackness myrddraal shadow" special="NONE">
+    <description>black cloak not moving an inch in the night's breeze, rests upon
+the shoulders of one of the more fearsome creatures created by
+the Shadow. A pasty white face with a blank patch of skin where
+eyes should be, sends daggers of paralyzing fear into your heart.
+Hands covered with gloves, raise a black sword created in the
+forges of Thakandar, a sword whose wounds kill no matter what
+form of healing is introduced.
+</description>
+    <shortdesc>a Myrddraal</shortdesc>
+    <longdesc>A creature of blackness and shadow wearing a black cloak.
+</longdesc>
+    <title/>
+    <chardata gender="NEUTRAL" class="Adventurer" level="185" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="5000"/>
+      <hit numd="1" dsize="100" bonus="9000"/>
+      <move ndize="1" dsize="9000" bonus="9000"/>
+      <ac>-200</ac>
+      <gold>200</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>200</hitroll>
+      <damroll>50</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="2098186"/>
+    <affected one="2096" two="0" three="0" four="0"/>
+    <attack type="11"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="30" sides="50" add="200"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="23077" name="a servantuservant fort " special="NONE">
+    <description>Wearing a grey coat, with no adornment on the sleeves save a bit
+of embroidery, this servant rushes around carrying necessary
+items to and from soldiers. Having volunteered to serve in this
+most northern of outposts, these men are soldiers in their own
+right, and if the fort is in combat, and their servants skills
+are not needed, they would pick up a sword and enter the
+fray.
+</description>
+    <shortdesc>a servant</shortdesc>
+    <longdesc>A servant does his job with military efficiency.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="50" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="0" bonus="3500"/>
+      <move ndize="1" dsize="3500" bonus="3500"/>
+      <ac>-100</ac>
+      <gold>500</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>30</hitroll>
+      <damroll>20</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1055752"/>
+    <affected one="2096" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="10" sides="10" add="30"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="23078" name="man commander officer" special="NONE">
+    <description>The commander of the garrison in this borderfort, is tall and
+broad shouldered, commanding a great deal of respect. topknot
+grizzled from many battles and many years fighting in the
+northlands, his face looks hard as stone, but a flicker of humor
+lyes deep within his cold blue eyes. sleeves covered with black
+and gold entwined bars shows his rank though you cannot determine
+what exactly that rank is other than he is the highest officer in
+this fort.
+</description>
+    <shortdesc>the commander of the garrison</shortdesc>
+    <longdesc>The commander of the borderfort garrison gives orders to a patrol.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="170" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="10000"/>
+      <move ndize="1" dsize="10000" bonus="10000"/>
+      <ac>-200</ac>
+      <gold>500</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>90</hitroll>
+      <damroll>50</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1055754"/>
+    <affected one="2096" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="15" sides="31" add="90"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="23079" name="soldier patrol" special="NONE">
+    <description>blade strapped to his back, this soldier is part of a patrol just
+come back from a stint outside the fort. topknot swinging from
+side to side as he walks with his friends, this man seems to have
+a underlying happy nature overlaid by a hard steely
+determination.
+</description>
+    <shortdesc>a soldier</shortdesc>
+    <longdesc>a soldier just in from a patrol.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="100" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="6000"/>
+      <move ndize="1" dsize="6000" bonus="6000"/>
+      <ac>-100</ac>
+      <gold>500</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>60</hitroll>
+      <damroll>45</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1055754"/>
+    <affected one="2096" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="15" sides="20" add="60"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="23080" name="soldier man" special="NONE">
+    <description>Sharpening his sword, this soldier looks new to the garrison.
+Dead looking eyes glance up at you not caring if you are here or
+not. this man seems to have lost all he loved in this life and
+feels the only outlet for his pain is to kill the murderers of
+his family. Desperation makes a man careless and you wouldn't be
+surprised if this man dies before his third or fourth patrol.
+</description>
+    <shortdesc>an unhappy soldier</shortdesc>
+    <longdesc>A soldier sits here, showing very little emotion.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="120" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="10000"/>
+      <move ndize="1" dsize="10000" bonus="10000"/>
+      <ac>-150</ac>
+      <gold>500</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>80</hitroll>
+      <damroll>50</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1051658"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="15" sides="20" add="80"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="23081" name="noble nobleman" special="NONE">
+    <description>Fine clothes mark this man apart from a common citizen. golden
+embroidery cover the sleeves of his coat, marching down the red
+sides all the way to the cuffs. Arguing animatedly with one of
+his fellow nobles, he is totally oblivious of your presence until
+you look at him.
+</description>
+    <shortdesc>a noble</shortdesc>
+    <longdesc>A nobleman argues aggressively with another noble.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="100" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="6000"/>
+      <move ndize="1" dsize="6000" bonus="6000"/>
+      <ac>-120</ac>
+      <gold>500</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>60</hitroll>
+      <damroll>40</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1050634"/>
+    <affected one="2096" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="10" sides="1" add="60"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="23082" name="noble nobleman" special="NONE">
+    <description>sitting behind his desk, reading reports and making notes, this
+noble looks up as you enter his private study. unaccustomed to
+people just barging in on him, he stands up looking more than
+a little annoyed at the intrusion. thickly muscled shoulders and
+powerful arms ending in huge hands calloused from past duties
+shows you that this lord is not just a feeble lord but a warrior
+in his own right.
+</description>
+    <shortdesc>a noble</shortdesc>
+    <longdesc>A noble sits behind a desk, writing a report of some kind.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="120" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="7000"/>
+      <move ndize="1" dsize="7000" bonus="7000"/>
+      <ac>-100</ac>
+      <gold>1000</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>50</hitroll>
+      <damroll>50</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1051658"/>
+    <affected one="2096" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="10" sides="20" add="50"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="23083" name="servant" special="NONE">
+    <description>Running around the Keep, carrying trays of food and other goods
+to nobles and soldiers alike, this servant looks harried. tousled
+hair waves in the breeze as he runs past. Obviously he has a lot
+to do in a short period of time.
+</description>
+    <shortdesc>a servant</shortdesc>
+    <longdesc>A servant looks like he's in quite a hurry.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="20" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="1000"/>
+      <move ndize="1" dsize="1000" bonus="1000"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>10</hitroll>
+      <damroll>10</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1050632"/>
+    <affected one="2096" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="5" sides="5" add="10"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="23084" name="guard protector personal man" special="NONE">
+    <description>The personal guards of Lord Agelmar are the best of the Fal Daran
+force. Tall, broad shouldered and very well developed senses of
+danger, these men, like every other man, do not know when they
+are to die. But unlike most other people, they are willing to die
+to a man to save their Lord.
+</description>
+    <shortdesc>a bodyguard</shortdesc>
+    <longdesc>A personal guard of Lord Agelmar guards the door to his chambers.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="170" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="12000"/>
+      <move ndize="1" dsize="12000" bonus="12000"/>
+      <ac>-200</ac>
+      <gold>200</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>200</hitroll>
+      <damroll>50</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="2038794"/>
+    <affected one="526384" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="15" sides="32" add="200"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnActionTo" argtype="STRING" argument="drag">
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+    </mobprog>
+    <mobprog main="OnActionTo" argtype="STRING" argument="push">
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="23085" name="librarian" special="NONE">
+    <description>Wrapped in dignified robes, this librarian is slight of stature
+but his gaze, when he looks at you, is untroubled by clouded
+vision and his crystal clear blue eyes boar into you with a
+seemingly endless fountain of wisdom. Thin hands, old hands with
+many wrinkles reach out to grasp your arm in the warrior's
+greeting, holding a surprising amount of strength for such an old
+man.
+</description>
+    <shortdesc>the Librarian of the Keep.</shortdesc>
+    <longdesc>The librarian of Lord Agelmar's fortress rests here, reading a book.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="50" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="4000"/>
+      <move ndize="1" dsize="4000" bonus="4000"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>20</hitroll>
+      <damroll>30</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1065994"/>
+    <affected one="2096" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="10" sides="10" add="20"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="23086" name="soldier" special="NONE">
+    <description>Topknot still a pure vivid shade of brown, this soldier is in his
+early years of service. Blade strapped to his back, he moves
+about the Keep, trying to find a friend to play at dice with.
+</description>
+    <shortdesc>a soldier</shortdesc>
+    <longdesc>A young soldier with a commanding presence moves through the hall.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="100" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="50" bonus="5000"/>
+      <move ndize="1" dsize="5000" bonus="5000"/>
+      <ac>-120</ac>
+      <gold>500</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>40</hitroll>
+      <damroll>40</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1051656"/>
+    <affected one="2096" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="10" sides="14" add="40"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="23087" name="doctor man healer" special="NONE">
+    <description>White coat buttoned up the side, this surgeon moves about his
+infirmary with brisk efficient movements. hands, skin unlined by
+age, reach out to comfort and ease the pain of his patients with
+seemingly unflaggable energy and care. His brown hair is closely
+cropped in order not to get in the way of his work and his clear
+brown eyes mirror his personality which is of a kind nature.11m86
+</description>
+    <shortdesc>a healer</shortdesc>
+    <longdesc>A man adept in the healing arts helps a patient.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="100" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="6000"/>
+      <move ndize="1" dsize="6000" bonus="6000"/>
+      <ac>-120</ac>
+      <gold>1000</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>50</hitroll>
+      <damroll>30</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1055754"/>
+    <affected one="2096" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="12" sides="15" add="50"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="23088" name="jailer mman jail" special="NONE">
+    <description>A hard bitten veteran, chosen for his lack of compassion, serves
+as the jailer for Fal Dara. Hugely muscled arms, almost to the
+point of looking piculiar, stretch his sleeves to bursting when
+he flexes them. Black hair caught in a topknot almost seems to
+bristle whenever angry. His cold blue eyed gaze seems to cut as
+deep as a sword blade, digging out your deepest secrets and
+examining them.
+</description>
+    <shortdesc>the jailer of the keep</shortdesc>
+    <longdesc>The Jailer of the Keep stomps angrilly about the room.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="150" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="7000"/>
+      <move ndize="1" dsize="7000" bonus="7000"/>
+      <ac>-100</ac>
+      <gold>1000</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1051658"/>
+    <affected one="2096" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="10" sides="25" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="23089" name="prisoner man" special="NONE">
+    <description>Dirty and unkempt, this prisoner looks like he does not have
+another battle left within him when you enter the cell. However,
+upon your arrival, he leaps up off his filthy cot and attacks you
+with a surprising ferocity.
+</description>
+    <shortdesc>a prisoner</shortdesc>
+    <longdesc>A man gets up from his cot in the corner.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="50" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="0" dsize="100" bonus="4000"/>
+      <move ndize="1" dsize="4000" bonus="4000"/>
+      <ac>0</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>20</hitroll>
+      <damroll>20</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1050664"/>
+    <affected one="2096" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="10" sides="7" add="20"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="23090" name="servant man" special="NONE">
+    <description>Sitting at the dinner table, this servant looks up curiously as
+he hears his front door open to admit someone. accustomed to
+guests at odd hours he is, but he is not accustomed to guests who
+decide it is unnecessary to knock.
+</description>
+    <shortdesc>a servant</shortdesc>
+    <longdesc>a man starts up out of his chair, demanding an explanation for your rudeness.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="40" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="3000"/>
+      <move ndize="1" dsize="3000" bonus="3000"/>
+      <ac>0</ac>
+      <gold>200</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>15</hitroll>
+      <damroll>15</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1050634"/>
+    <affected one="2096" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="5" sides="5" add="15"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="23091" name="soldier man" special="NONE">
+    <description>Relaxing on a cot, this soldier is off duty and trying to make
+the most of it. Pulling duty up in a borderfort is a grim lot but
+it is an honor as well, for people who cannot hack the duty, are
+not chosen.
+</description>
+    <shortdesc>a soldier</shortdesc>
+    <longdesc>A soldier takes a rest on his assigned cot.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="90" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="6500"/>
+      <move ndize="1" dsize="6500" bonus="6500"/>
+      <ac>-80</ac>
+      <gold>100</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>50</hitroll>
+      <damroll>25</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1055754"/>
+    <affected one="2096" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="12" sides="14" add="50"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="23092" name="aiel aielman man" special="NONE">
+    <description>Three spears held loosely in his right hand, and his left on his
+belt knife, this aielman looks a young and very dangerous man.
+Shoufa wrapped around his head and the fabled black veil resting
+on his chest, he cuts quite a menacing figure Most. Aiel, are
+extremely distrustful of outsiders known to them as Wetlanders,
+and that distrust is backed up by an almost legendary fighting
+ability.
+</description>
+    <shortdesc>an Aielman</shortdesc>
+    <longdesc>A man wearing traditional Aiel garb, emerges from a tent.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="140" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="8000"/>
+      <move ndize="1" dsize="8000" bonus="8000"/>
+      <ac>-100</ac>
+      <gold>100</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>75</hitroll>
+      <damroll>45</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1051658"/>
+    <affected one="2096" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="20" sides="10" add="75"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnActionTo" argtype="STRING" argument="drag">
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+    </mobprog>
+    <mobprog main="OnActionTo" argtype="STRING" argument="push">
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="23093" name="woman cook" special="NONE">
+    <description>Overseeing the servants in the kitchen, this cook uses a large
+wooden spoon to direct her underlings. Wearing a flower covered
+apron, this woman looks the perfect image of a provider.
+</description>
+    <shortdesc>a cook</shortdesc>
+    <longdesc>A woman threatens the servants with her spoon.
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="50" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="2500"/>
+      <move ndize="1" dsize="2500" bonus="2500"/>
+      <ac>-50</ac>
+      <gold>200</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>0</hitroll>
+      <damroll>20</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1051658"/>
+    <affected one="2096" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="10" sides="5" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="23094" name="man soldier " special="NONE">
+    <description>sitting at the table that dominates this room, this soldier grabs
+a bite to eat while he receives orders from his commander.
+Patrols are sent out on a regular basis, in all directions from
+the city, this soldier seems to be part of one of those very same
+patrols, made to locate enemy forces around the city. 
+</description>
+    <shortdesc>a soldier</shortdesc>
+    <longdesc>A soldier catches a quick meal while he gets his orders.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="100" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="30" dsize="100" bonus="8000"/>
+      <move ndize="1" dsize="8000" bonus="8000"/>
+      <ac>-100</ac>
+      <gold>50</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>70</hitroll>
+      <damroll>10</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1055754"/>
+    <affected one="2096" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="13" sides="13" add="70"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="23095" name="man captain" special="NONE">
+    <description>Standing at the head of the table, this man. a captain from his
+uniform, gives the orders to his patrol. having already received
+his orders from his commander, this man is preparing to take his
+patrol out beyond the comforting walls of the city.
+</description>
+    <shortdesc>the Captain of the patrol</shortdesc>
+    <longdesc>A captain and leader of this patrol gives out his orders.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="120" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="30" dsize="100" bonus="10000"/>
+      <move ndize="1" dsize="10000" bonus="10000"/>
+      <ac>-120</ac>
+      <gold>200</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>80</hitroll>
+      <damroll>10</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1055754"/>
+    <affected one="2096" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="15" sides="15" add="80"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="23096" name="woman servant cleaning" special="NONE">
+    <description>Carrying clothes to be washed, this woman works in the cleaning
+rooms of the Keep. so many soldiers around the city and all of
+them having to sleep in the barracks in the Keep, there is a lot
+of things to clean.
+</description>
+    <shortdesc>a cleaning servant</shortdesc>
+    <longdesc>A woman carries dirty uniforms to get cleaned.
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="40" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="2000"/>
+      <move ndize="1" dsize="2000" bonus="2000"/>
+      <ac>-50</ac>
+      <gold>100</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>20</hitroll>
+      <damroll>20</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1051658"/>
+    <affected one="2096" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="10" sides="4" add="20"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="23097" name="noble man" special="NONE">
+    <description>Looking bewildered and confused, this noble, who has obviously
+just woken up, looks at you, anger starting to come into his
+expression. Gold flashes as he clenches his beringed hands into
+fists, demanding what you are doing in his private rooms.
+</description>
+    <shortdesc>an infuriated noble </shortdesc>
+    <longdesc>A noble rubs his eyes, having just arisen.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="80" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="6000"/>
+      <move ndize="1" dsize="6000" bonus="6000"/>
+      <ac>-40</ac>
+      <gold>200</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>75</hitroll>
+      <damroll>10</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1051658"/>
+    <affected one="2096" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="11" sides="11" add="75"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="23098" name="man servant " special="NONE">
+    <description>waiting upon the pleasure of their employer, this servant takes
+his ease in a sitting room chair. needing many messages and
+errands done a day, there is enough need to employ this man as
+well as many others.
+</description>
+    <shortdesc>a servant</shortdesc>
+    <longdesc>A servant takes his ease while waiting upon the pleasure of his employer.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="50" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="3500"/>
+      <move ndize="1" dsize="3500" bonus="3500"/>
+      <ac>0</ac>
+      <gold>100</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>60</hitroll>
+      <damroll>10</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1051658"/>
+    <affected one="2096" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="8" sides="8" add="60"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="23099" name="man noble" special="NONE">
+    <description>An ink quill in one hand, a piece of parchment in the other, this
+noble listens to the report of the patrol and writes down points
+that interest him. Having someone learned in the ways of war
+debrief the patrols, allows the information to be used quickly if
+necessary. If the information is important, no red tape will hold
+it up from getting into the right hands.
+</description>
+    <shortdesc>a noble</shortdesc>
+    <longdesc>A noble takes notes while he listens to the report of the patrol.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="100" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="8200"/>
+      <move ndize="1" dsize="8200" bonus="8200"/>
+      <ac>-80</ac>
+      <gold>500</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>80</hitroll>
+      <damroll>10</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1055754"/>
+    <affected one="2096" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="13" sides="13" add="80"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="23100" name="man soldier patrol" special="NONE">
+    <description>Trained to give quick concise reports in a short period of time,
+this soldier helps explain what they found on the patrol.
+Obviously not having found much of importance, this patrol having
+been sent to the south, no flurry of activity accompanies the
+words of this member of the patrol.
+</description>
+    <shortdesc>a soldier</shortdesc>
+    <longdesc>A soldier helps give the report of his patrol.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="110" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="9000"/>
+      <move ndize="1" dsize="9000" bonus="9000"/>
+      <ac>-100</ac>
+      <gold>100</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>85</hitroll>
+      <damroll>10</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1055754"/>
+    <affected one="2096" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="14" sides="14" add="85"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="23101" name="Shuruga dragon" special="NONE">
+    <description>A huge being, fully the size of a building floats down out of the
+sky. Wing span over a hundred feet, this, the last of the mighty
+gold Dragons obeys the call of Ashen Shugar, the last of the
+Valheru. Using magic, as well as flame and talon, these dragons
+serve their masters willingly and the combination between
+powerful servant and Dragon Lord, make the Valheru terrible foes,
+mighty enough to challenge the gods.
+</description>
+    <shortdesc>Mighty Shuruga</shortdesc>
+    <longdesc>A magnificent golden dragon rests, while awaiting the call of it's master.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="1" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="29000"/>
+      <move ndize="1" dsize="29000" bonus="29000"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>200</hitroll>
+      <damroll>50</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1039386"/>
+    <affected one="526384" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="200"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="23102" name="banker" special="NONE">
+    <description>It looks, err, unfinished.
+</description>
+    <shortdesc>the unfinished mob</shortdesc>
+    <longdesc>An unfinished mob stands here.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="1" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="0"/>
+      <move ndize="1" dsize="0" bonus="0"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="8"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+</mobiles>

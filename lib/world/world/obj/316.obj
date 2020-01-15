@@ -1,0 +1,328 @@
+<?xml version="1.0"?>
+<objects>
+  <object vnum="31600" name="doorway capture flag quest" special="NONE">
+    <description>\c01The Capture The Flag Quest Doorway\c00</description>
+    <shortdesc>\c01The Capture The Flag Quest Doorway\c00</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="14" wear="0" extra="0"/>
+      <data weight="0" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="31601" name="red arrow west" special="NONE">
+    <description>\c00A \c08red\c00 arrow points west.</description>
+    <shortdesc>\c08a red arrow pointing west\c00</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="13" wear="0" extra="0"/>
+      <data weight="0" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="31602" name="blue arrow east" special="NONE">
+    <description>\c00A \c11blue\c00 arrow points east.\c00</description>
+    <shortdesc>\c11a blue arrow pointing east\c00</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="13" wear="0" extra="0"/>
+      <data weight="0" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="31603" name="red flag" special="NONE">
+    <description>The \c08Red Flag\c00 is planted here.</description>
+    <shortdesc>\c08THE RED FLAG\c00</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="13" wear="1" extra="73792"/>
+      <data weight="1" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <objprog main="OnTake" argtype="STRING" argument="enhance">
+      <action number="Force" argtype="STRING" argument="qsay &amp;nI have the &amp;RRed Flag&amp;n!  Come and get me!"/>
+      <action number="Pause" argtype="STRING" argument="0"/>
+    </objprog>
+  </object>
+  <object vnum="31604" name="blue flag" special="NONE">
+    <description>The \c11Blue Flag\c00 is planted here.</description>
+    <shortdesc>\c11THE BLUE FLAG\c00</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="13" wear="1" extra="78664"/>
+      <data weight="1" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <objprog main="OnTake" argtype="STRING" argument="enhance">
+      <action number="Force" argtype="STRING" argument="qsay &amp;nI have the &amp;BBlue Flag&amp;n!  Come and get me!"/>
+      <action number="Pause" argtype="STRING" argument="0"/>
+    </objprog>
+  </object>
+  <object vnum="31607" name="polar bear " special="NONE">
+    <description>A large wooden pen, full of polar bears sits in the middle of the lake</description>
+    <shortdesc>a large polar bear pen</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="3" value2="1" value3="1" value4="0"/>
+      <flags type="24" wear="1" extra="8"/>
+      <data weight="1000" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="31650" name="t-shirt tee-shirt tshirt teeshirt died stupid" special="NONE">
+    <description>A shirt with the caption, &quot;I died and all I got was this stupid t-shirt.&quot; is laying here because some ungrateful sod ditched it.</description>
+    <shortdesc>a shirt proclaiming, &quot;&amp;RI died and all I got was this stupid t-shirt.&amp;n&quot;</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="STR" modifier="-1"/>
+    <objaffect location="DEX" modifier="-1"/>
+    <objaffect location="INT" modifier="-1"/>
+    <objaffect location="WIS" modifier="-1"/>
+    <objaffect location="CON" modifier="-1"/>
+    <objaffect location="CHA" modifier="-1"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="11" wear="9" extra="69696"/>
+      <data weight="1" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="31651" name="omelette du fromage" special="NONE">
+    <description>A cheese omelette is on the ground.  Can you say, &quot;Omelette du Fromage?&quot;</description>
+    <shortdesc>an &amp;Yo&amp;wm&amp;Ye&amp;wl&amp;Ye&amp;wt&amp;Yt&amp;we &amp;Yd&amp;wu &amp;Yf&amp;wr&amp;Yo&amp;wm&amp;Ya&amp;wg&amp;Ye&amp;n</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="5" value2="0" value3="0" value4="0"/>
+      <flags type="19" wear="1" extra="0"/>
+      <data weight="1" cost="20" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="31675" name="inn door" special="NONE">
+    <description>The inn is a low house, looking very inviting with an open door.</description>
+    <shortdesc>an inn</shortdesc>
+    <actiondesc>The inn is, as all other houses, built from logs, it is a 
+two story building with a toppy roof and not many windows. 
+Looking through the door of the inn you can see a small 
+common room, a few tables can be glanced through the door, 
+though nothing else can be seen from the outside.
+</actiondesc>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="14" wear="0" extra="0"/>
+      <data weight="0" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <exdesc keyword="inn door">
+      <description>The inn is, as all other houses, built from logs, it is a 
+two story building with a toppy roof and not many windows. 
+Looking through the door of the inn you can see a small 
+common room, a few tables can be glanced through the door, 
+though nothing else can be seen from the outside.
+</description>
+    </exdesc>
+  </object>
+  <object vnum="31690" name="quest fraser pink vest" special="NONE">
+    <description>&amp;MA BRIGHT PINK QUEST VEST IS HERE ON THE FLOOR.  CALL AN IMM!&amp;n</description>
+    <shortdesc>&amp;MA BRIGHT PINK VEST WHOSE STATS SHOULD STAY PUT&amp;n</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="HITROLL" modifier="25"/>
+    <objaffect location="DAMROLL" modifier="25"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="9" wear="9" extra="78664"/>
+      <data weight="0" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="31702" name="key lio seren house" special="NONE">
+    <description>A key was left here by accident.</description>
+    <shortdesc>an elegantly carved silver key</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="18" wear="1" extra="69768"/>
+      <data weight="0" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="31710" name="keys ramone" special="NONE">
+    <description>Some keys tied on a leather cord lies here.</description>
+    <shortdesc>a large bunch of &amp;wk&amp;Ke&amp;wy&amp;Ks&amp;n</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="18" wear="1" extra="200"/>
+      <data weight="1" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <exdesc keyword="keys">
+      <description>Tied together on a cord of leather are several metal keys in different
+sizes.  The cord also has a small brass tag labeled &amp;ySilvershard
+Mercenaries&amp;n
+</description>
+    </exdesc>
+  </object>
+  <object vnum="31711" name="bed" special="NONE">
+    <description>There is a large, comfortable bed placed here.</description>
+    <shortdesc>a comfortable bed</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="2" value2="0" value3="4" value4="0"/>
+      <flags type="24" wear="0" extra="0"/>
+      <data weight="0" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <exdesc keyword="bed">
+      <description>This large bed has a comfortably soft mattress and has new, fresh-smelling
+sheets.  It has ornate bedposts and a high back where a scene from the
+Great Hunt of the Horn has been carved into the dark wood.  The bed has
+the air of belonging to someone who has a need of flaunting himself.    
+</description>
+    </exdesc>
+  </object>
+  <object vnum="31712" name="cabinet locker oak cupboard" special="NONE">
+    <description>A massive cabinet made of oak stands here along a wall.</description>
+    <shortdesc>a massive cabinet</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="1000" value2="10" value3="31710" value4="0"/>
+      <flags type="15" wear="0" extra="0"/>
+      <data weight="0" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <exdesc keyword="cabinet locker oak cupboard">
+      <description>Reaching up to the roof, this huge ornate cabinet has room for just about
+anything.  The sturdy construction and the heavy lock ensures that the
+things kept inside wont be removed by anyone except for the one who has
+the right keys.    
+</description>
+    </exdesc>
+  </object>
+  <object vnum="31713" name="Chairs cozy high-backed" special="NONE">
+    <description>Several cozy chairs are placed in front of the fireplace.</description>
+    <shortdesc>a cozy chair</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="4" value4="0"/>
+      <flags type="24" wear="0" extra="0"/>
+      <data weight="1" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <exdesc keyword="Chairs cozy high-backed">
+      <description>This nice set of chairs is worn with use, but are still very comfortable
+despite having seen better days.  The chairs are clad with classy red
+velvet from Tear.    
+</description>
+    </exdesc>
+  </object>
+  <object vnum="31714" name="Keg wine" special="NONE">
+    <description>A small keg with a tap is standing on a small table.</description>
+    <shortdesc>a small keg of &amp;rwine&amp;n</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="10000" value2="10000" value3="2" value4="0"/>
+      <flags type="23" wear="1" extra="0"/>
+      <data weight="0" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <exdesc keyword="keg wine">
+      <description>The small wooden keg is clearly filled with alcohol.  An unpretentious tap
+allows one to fill a glass with dark red wine.  It is labeled Jehannah 983
+NE, a good year.    
+</description>
+    </exdesc>
+  </object>
+</objects>

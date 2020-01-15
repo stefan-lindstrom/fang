@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<mobiles>
+  <mobile vnum="29699" name="kitty pet" special="NONE">
+    <description>She&apos;s a cute little kitten, probably less than a month old.  She&apos;s all
+black, with the exception of a white blotch over her right eye.  She makes
+little swipes at the air with her claws every so often, fighting with an
+imaginary enemy.    
+</description>
+    <shortdesc>Jeraus&apos; pet kitten, Mitsy</shortdesc>
+    <longdesc>Mitsy, Jeraus&apos; pet kitten, walks around the room, occaisionally purring
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="1" weight="200" height="198"/>
+    <abilities>
+      <str>11</str>
+      <int>11</int>
+      <wis>11</wis>
+      <dex>11</dex>
+      <con>11</con>
+      <cha>11</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="1" bonus="1"/>
+      <move ndize="10" dsize="100" bonus="1"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1040394"/>
+    <affected one="2096" two="0" three="0" four="0"/>
+    <attack type="8"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnSayTo" argtype="STRING" argument="exits">
+      <action number="SayTo" argtype="STRING" argument="Look at the post, MEOW!"/>
+      <action number="Emote" argtype="STRING" argument="licks her paws."/>
+    </mobprog>
+    <mobprog main="OnSay" argtype="STRING" argument="nice kitty">
+      <action number="ActionTo" argtype="STRING" argument="purr"/>
+    </mobprog>
+  </mobile>
+</mobiles>

@@ -1,0 +1,155 @@
+.Dd October 1, 2000
+.Dt sf_cgi 3
+.Os
+.Sh NAME
+.Nm params ,
+.Nm param ,
+.Nm param2 ,
+.Nm set_cookie ,
+.Nm cookie ,
+.Nm cookies ,
+.Nm html_quote,
+.Nm getlanguageprefs
+.Nd functions to support CGI programming
+.Pp
+.Nm url_decode ,
+.Nm url_encode
+.Nd recoding functions
+.Pp
+.Nm lang_recode ,
+.Nm windows_1251_to_koi8_r ,
+.Nm koi8_r_to_windows_1251 ,
+.Nm cp 866_to_koi8_r ,
+.Nm koi8_r_to_cpp_866 ,
+.Nm iso_8859_5_to_koi8_r
+.Nd charset recoding functions
+.Sh SYNOPSIS
+.Fd #include <strfunc.h>
+.Ft char *
+.Fn param "char *fieldname"
+.Ft svect *
+.Fn param2 "char *fieldname" "int flags"
+.Pp
+.Ft int
+.Fn set_cookie "char *name" "char *value" "char *optDomain" "char *optPath" "time_t optMaxAge" "char *optComment" "int optSecure"
+.Ft char *
+.Fn cookie "char *name"
+.Ft svect *
+.Fn cookies "void"
+.Ft char *
+.Fn html_quote "char *"
+.Ft svect *
+.Fn getlanguageprefs "void"
+.Pp
+URL-encoding and decoding
+.Ft char *
+.Fn url_decode "char *str"
+.Ft char *
+.Fn url_encode "char *str"
+.Pp
+.Ft char *
+.Fn lang_recode "char *string" "char table[]"
+.Ft char *
+.Fn windows_1251_to_koi8_r "char *string"
+.Ft char *
+.Fn koi8_r_to_windows_1251 "char *string"
+.Ft char *
+.Fn cp_866_to_koi8_r "char *string"
+.Ft char *
+.Fn koi8_r_to_cp_866 "char *string"
+.Ft char *
+.Fn iso_8859_5_to_koi8_r "char *string"
+.Sh DESCRIPTION
+These routines give the user a method of dealing with CGI forms and other related data.
+.Pp
+.Ft char *
+.Fn param "char *paramName"
+function used to obtain the form parameters by specifying their names.
+.Pp
+.Ft svect *
+.Fn param2 "char *paramName" "int flags"
+may be required if multiple values are expected. It stores the current
+result in the internal buffer and other invocations will destroy its contents.
+Flags used to specify the type of returned values. If flags = 0,
+.Fn param2
+will return the decoded values of the parameter specified by
+.Em paramName .
+If flags = 1,
+.Fn param2
+will return the unmodified (non-decoded) values.
+If flags = 2,
+.Fn param2
+will return the appropriate content types (to use with multipart forms and
+binary values).
+.Pp
+.Ft svect *
+.Fn params "void"
+used to get all the parameter names (keys). Not always applicable, sure.
+.Pp
+.Ft char *
+.Fn cookie "char *cookieName"
+and
+.Ft svect *
+.Fn cookies "void"
+functions are used to obtain the cookie by its name or all cookie names,
+respectively.
+.Pp
+.Ft int
+.Fn set_cookie "char *name" "char *value" "char *optDomain" "char *optPath" "time_t optMaxAge" "char *optComment" "int optSecure"
+is used to set a cookie. Arguments prefixed by 'opt' are optional.
+.Pp
+.Ft char *
+.Fn html_quote "char *"
+used to escape some symbols, such as quotation mark, ampersand, left and right angle quotes, and others. This function can be used to safe include any text to the html document.
+.Pp
+.Ft svect *
+.Fn getlanguageprefs
+returns a pointer to an internal
+.Em svect
+structure containing the array of user-preferred languages (from
+.Em HTTP_ACCEPT_LANGUAGE ). If this information is not available, it returns
+NULL.
+.Pp
+.Ft char *
+.Fn url_decode "char *"
+and
+.Fn url_encode "char *"
+are used to deal with url-encoded strings.
+.Pp
+.Fn lang_recode "char *string" "char table[]"
+used to recode a string with the specified table. Table size must be no less than 128 bytes, it represents the upper half of the character table.
+.Fn windows_1251_to_koi8_r ,
+.Fn koi8_r_to_windows_1251
+and other recoding functions are self-descriptive too. If you want to add some other charset encodings, please call the author or use
+.Ft char
+.Fn lang_recode .
+.Sh EXAMPLE
+.Bd -literal
+void cgiparse() {
+	char *login, pwd, oldpwd;
+
+	login = param("login");
+	pwd = param("password");
+	oldpwd = param("oldpassword");
+
+	if(!login || !pwd || !oldpwd) {
+		printf("One or more parameters are missing.\en");
+		return;
+	};
+
+	/* ... some job ... */
+
+	/* This will produce the following output:
+	 * "John Smith &lt;john@smith.com&gt;\en"
+	 */
+	printf("%s\en", html_quote("John Smith <john@smith.com>") );
+
+};
+.Ed
+.Sh SEE ALSO
+.Xr strfunc 3 ,
+.Xr svect 3 ,
+.Xr replace 3 ,
+.Xr limittextwidth 3 .
+.Sh AUTHORS
+.An Lev Walkin <vlm@spelio.net.ru>

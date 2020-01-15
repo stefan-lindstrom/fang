@@ -1,0 +1,50 @@
+#30600
+merchant wine Ciaran~
+Ciaran the wine merchant~
+\c03Ciaran \c05the wine merchant\c03 is standing here.\c00
+~
+Ciaran, a short man with a busy red beard and a long apron is busily
+sampling the various wines and spirits he is selling.
+~
+180234 0 0 E
+1 19 10 714 1d100+20000 1d1+1
+0 0
+8 8 1
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+E
+#30601
+salesman man clothe fine~
+a horse salesman~
+A man dressed in fine clothing stands here smiling.
+~
+He's dressed in Caemlyn's latest fashion and carries
+on a lot of golden items. Apparently horse selling is
+a lucrative market.
+~
+8 0 0 E
+1 20 10 714 1d100+0 1d1+0
+0 0
+8 8 1
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnSayTo "help"
+SayTo "Ahah, so you want some help, my friend? Of course I can help you out."
+Emote "$n smiles $s most winning smile at $N."
+Pause 4
+Say "To tell you all of it would be rather tedious, my friend, so I suggest you should type "
+Pause 3
+Say "Good day to you, sir. I hope you find something of your fancy here."
+End
+Q
+E
+$
