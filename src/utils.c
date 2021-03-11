@@ -1232,7 +1232,7 @@ int generic_result_mod(struct char_data *ch,int skill_num,char *string,byte use_
   {
     if ((GET_SKILL(ch,skill_num) < 100) && !noinc) 
     {
-      GET_SKILL(ch,skill_num)++;
+      ADD_SKILL(ch,skill_num,1);
       send_to_char(tmp2,ch);
     }
     if (!noinc) 
@@ -1255,7 +1255,7 @@ int generic_result_mod(struct char_data *ch,int skill_num,char *string,byte use_
       if ((GET_SKILL(ch,skill_num) < 100) && !noinc) 
       {
         send_to_char(string,ch);
-        GET_SKILL(ch,skill_num)++;
+        ADD_SKILL(ch,skill_num,1);
       }
       if (!noinc) 
       {
@@ -1429,7 +1429,7 @@ void SET_SKILL(struct char_data *ch, int skill, byte value)
 void ADD_SKILL(struct char_data *ch, int skill, byte toAdd)
 {
   if (!IS_NPC(ch)) {
-    byte finalVal = GET_SK*ILL(ch, skill) + toAdd;
+    byte finalVal = GET_SKILL(ch, skill) + toAdd;
     SET_SKILL(ch, skill, finalVal);
   }
 }
@@ -1438,7 +1438,7 @@ void ADD_SKILL(struct char_data *ch, int skill, byte toAdd)
 long GET_TIMES(struct char_data *ch, int skill)
 {
   if (IS_NPC(ch)) {
-    return ch->mob_specials.no_skill[skill]:
+    return ch->mob_specials.no_skill[skill];
   }
   return ch->player_specials->no_skill[skill];
 }
@@ -1446,7 +1446,7 @@ long GET_TIMES(struct char_data *ch, int skill)
 void SET_TIMES(struct char_data *ch, int skill, long value)
 {
   if (IS_NPC(ch)) {
-    ch->mob_specials.no_skill[skill] = value:
+    ch->mob_specials.no_skill[skill] = value;
    } else {
      ch->player_specials->no_skill[skill] = value;
    }
@@ -1492,7 +1492,7 @@ char *GET_RNAME(struct char_data *ch)
 
 void SET_RNAME(struct char_data *ch, const char *newName)
 {
-  if (IS_NPC(c)) {
+  if (IS_NPC(ch)) {
     ch->player.short_descr = newName;
   } else {
     ch->player.name = newName;
@@ -1521,7 +1521,7 @@ char *GET_TITLE(struct char_data *ch)
   if (GET_DISGUISED(ch)) {
     return GET_DTITLE(ch);
   }
-  return GET_RTITLE(ch));
+  return GET_RTITLE(ch);
 }
 
 void SET_TITLE(struct char_data *ch, const char *title)
@@ -1529,6 +1529,6 @@ void SET_TITLE(struct char_data *ch, const char *title)
   if (GET_DISGUISED(ch)) {
     GET_DTITLE(ch) = title;
   } else {
-    return GET_RTITLE(ch) = title;
+    GET_RTITLE(ch)= title;
   }
 }

@@ -759,9 +759,9 @@ void run_single_program(struct mob_prog_list *program, struct char_data *ch,
         sp = find_skill_num(al->argument);
         if (!((sp < 1)||(sp > MAX_SPELLS))) {
           if (NULL != spell_list[sp]) {
-            GET_SKILL(mob,sp) = 100;
+            SET_SKILL(mob, sp, 100);
             spell_list[sp](mob,ch,NULL,&world[ch->in_room],NULL,0,sp,0,1,1.0);
-            GET_SKILL(mob,sp) = 0;
+            SET_SKILL(mob, sp, 0);
           }
         }
         break;

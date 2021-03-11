@@ -580,7 +580,7 @@ int slice_weave_failed(struct char_data *ch, struct char_data *victim, int mana_
   if (GET_MANA(victim) < (mana/2 + 0.1*GET_MAX_MANA(victim)))
     return 1;
 
-  GET_MANA(victim) -= mana/2;
+  SET_MANA(victim, -(mana/2));
 
   vict_str = GET_FIRE(victim) + GET_SPIRIT(victim);
   ch_str = GET_FIRE(ch) + GET_SPIRIT(ch);

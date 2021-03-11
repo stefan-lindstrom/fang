@@ -40,10 +40,10 @@
  *
  *
  ******************************************************************************/
-#include <gnome-xml/parser.h>
-#include <gnome-xml/tree.h>
-#include <gnome-xml/entities.h>
-#include <gnome-xml/parserInternals.h>
+#include <libxml/parser.h>
+#include <libxml/tree.h>
+#include <libxml/entities.h>
+#include <libxml/parserInternals.h>
 #include <errno.h>
 
 #include "dll.h"
@@ -226,7 +226,7 @@ void destination_list(struct char_data *ch)
   }
 
   gen_message(PORTAL_LIST,ch,NULL,FALSE,TRUE);
-  GET_MANA(ch) -= 100;
+  ADD_MANA(ch, -100);
 
   asend_to_char(ch,"This stone will take you to: \r\n");
 
@@ -286,11 +286,11 @@ void travel_to(struct char_data *ch, const char *deststr)
       next = list->next_in_room;
 
       if (is_in_group(ch,list) && (list != ch)) {
-    gen_message(PORTAL_TRANSF_GM,ch,list,TRUE,TRUE);
-    char_from_room(list);
-    char_to_room(list,real_room(dest->in_room));
-    do_look(list,"",0,0);
-    GET_MANA(ch) -= 200;
+	gen_message(PORTAL_TRANSF_GM,ch,list,TRUE,TRUE);
+	char_from_room(list);
+	char_to_room(list,real_room(dest->in_room));
+	do_look(list,"",0,0);
+	ADD_MANA(ch, -200);
       }
     }
   }
@@ -298,7 +298,7 @@ void travel_to(struct char_data *ch, const char *deststr)
   char_from_room(ch);
   char_to_room(ch,real_room(dest->in_room));
   do_look(ch,"",0,0);
-  GET_MANA(ch) -= 200;
+  ADD_MANA(ch, -200);
 }
 
 stone_t *find_stone_by_roomnum(room_num vnum)
@@ -378,23 +378,23 @@ int read_stones(void)
     return 0;
   }
 
-  if (!(doc->root) || strcasecmp("stones",doc->root->name)) {
-    alog("Document root in portal stone file %s!",doc->root ? 
+  if (!doc->children || !strcasecmp("stones",doc->children->name)) {
+    alog("Document root in portal stone file %s!",doc->children ? 
      "is not named \"stones\"" : "does not exist");
     xmlFreeDoc(doc);
     return 0;
   }
 
-  for (stone = doc->root->childs; NULL != stone; stone = stone->next) {
+  for (stone = doc->children; NULL != stone; stone = stone->next) {
     st = calloc(1,sizeof(stone_t));
     st->in_room = xmlAtoi(xmlGetProp(stone,"inroom"));
     st->num     = xmlAtoi(xmlGetProp(stone,"num"));
     st->name    = xmlGetProp(stone,"stonename");
     st->destinations = createDll();
 
-    for (tmp1 = stone->childs; tmp1 != NULL; tmp1 = tmp1->next) {
-      if (!strcasecmp(tmp1->name,"destinations") && tmp1->childs) {
-    for (tmp2 = tmp1->childs; NULL != tmp2; tmp2 = tmp2->next) {
+    for (tmp1 = stone->children; tmp1 != NULL; tmp1 = tmp1->next) {
+      if (!strcasecmp(tmp1->name,"destinations") && tmp1->children) {
+    for (tmp2 = tmp1->children; NULL != tmp2; tmp2 = tmp2->next) {
       if (!strcasecmp(tmp2->name,"destination")) {
         append(st->destinations,(void *)xmlAtoi(xmlGetProp(tmp2,"vroom")));
       }
@@ -453,7 +453,7 @@ int save_stones(void)
 
   doc = xmlNewDoc("1.0");
   stones = xmlNewDocNode(doc,NULL,"stones",NULL);
-  doc->root = stones;
+  doc->children = stones;
 
   if (first(__stones)) {
     do {

@@ -16,7 +16,6 @@
 
 #include <stddef.h>
 #include <fnmatch.h>
-//#include <mlloc.h>
 
 #include "utils.h"
 #include "boards.h"
@@ -40,7 +39,7 @@ static void dumpBoardToXmlFile( MSG_BOARD *board, char *file )
   doc = xmlNewDoc("1.0");
   
   tree = xmlNewDocNode(doc,NULL,"board",NULL);
-  doc->root = tree;
+  doc->children = tree;
 
   sprintf( buf, "%li", board->vnum );
   xmlNewChild( tree, NULL, "vnum", buf );
@@ -104,28 +103,28 @@ static MSG*  fetchXmlMessage( xmlNodePtr xmlMsg )
   CREATE( work, MSG, 1 );
   work->next = NULL;
   
-  for (temp = xmlMsg->childs; NULL != temp; temp = temp->next) 
+  for (temp = xmlMsg->children; NULL != temp; temp = temp->next) 
   {
       if (!strcasecmp(temp->name,"header")) 
-	work->header =xmlToString( temp->childs );
+	work->header =xmlToString( temp->children );
       else if (!strcasecmp(temp->name,"heading")) 
-	work->heading =xmlToString( temp->childs );
+	work->heading =xmlToString( temp->children );
       else if (!strcasecmp(temp->name,"level")) 
-	work->level =atoi( temp->childs->content );
+	work->level =atoi( temp->children->content );
       else if (!strcasecmp(temp->name,"author")) 
-	work->author =atoi( temp->childs->content );
+	work->author =atoi( temp->children->content );
       else if (!strcasecmp(temp->name,"dater")) 
-	work->date =atoi( temp->childs->content );
+	work->date =atoi( temp->children->content );
       else if (!strcasecmp(temp->name,"date")) 
-	work->date =atoi( temp->childs->content );
+	work->date =atoi( temp->children->content );
       else if (!strcasecmp(temp->name,"slot")) 
-	work->slot_num =atoi( temp->childs->content );
+	work->slot_num =atoi( temp->children->content );
       else if (!strcasecmp(temp->name,"authorname")) 
-	work->author_name = xmlToString( temp->childs );
+	work->author_name = xmlToString( temp->children );
       else if (!strcasecmp(temp->name,"editname")) 
-	work->edit_name = xmlToString( temp->childs );
+	work->edit_name = xmlToString( temp->children );
       else if (!strcasecmp(temp->name,"text")) 
-	work->msg = xmlToString( temp->childs );
+	work->msg = xmlToString( temp->children );
   }
   return work;
 }
@@ -143,7 +142,7 @@ static MSG*  fetchXmlMessages( xmlNodePtr xmlMsgs )
     return NULL;
   }
 
-  for( temp = xmlMsgs->childs; temp; temp = temp->next )
+  for( temp = xmlMsgs->children; temp; temp = temp->next )
   {
     if( !strcasecmp( temp->name, "message" ) )
       work = fetchXmlMessage( temp );
@@ -177,7 +176,7 @@ static MSG_BOARD* readBoardFromXml(char *file)
     axlog( SYS_OLC, LVL_IMMORT, TRUE, "Couldn't parse XML-file %s", filename );
     return NULL;
   }
-  if (!(root = doc->root)) 
+  if (!(root = doc->children)) 
   {
     axlog( SYS_OLC, LVL_IMMORT, TRUE, "No XML-root in board document %s", file );
     xmlFreeDoc(doc);
@@ -195,24 +194,24 @@ static MSG_BOARD* readBoardFromXml(char *file)
   strcpy( bi->file, file );
   strcpy( bi->key, file );
   
-  for (temp = root->childs; NULL != temp; temp = temp->next) 
+  for (temp = root->children; NULL != temp; temp = temp->next) 
   {
       if (!strcasecmp(temp->name,"vnum")) 
-	bi->vnum =atoi( temp->childs->content );
+	bi->vnum =atoi( temp->children->content );
       else if (!strcasecmp(temp->name,"read")) 
-	read_lvl =atoi( temp->childs->content );
+	read_lvl =atoi( temp->children->content );
       else if (!strcasecmp(temp->name,"write")) 
-	write_lvl =atoi( temp->childs->content );
+	write_lvl =atoi( temp->children->content );
       else if (!strcasecmp(temp->name,"remove")) 
-	remove_lvl =atoi( temp->childs->content );
+	remove_lvl =atoi( temp->children->content );
       else if (!strcasecmp(temp->name,"flags")) 
-	bi->flags =atol( temp->childs->content );
+	bi->flags =atol( temp->children->content );
       else if (!strcasecmp(temp->name,"guild")) 
-	bi->guild =atoi( temp->childs->content );
+	bi->guild =atoi( temp->children->content );
       else if (!strcasecmp(temp->name,"key")) 
-        strcpy( bi->key, temp->childs->content );
+        strcpy( bi->key, temp->children->content );
       else if (!strcasecmp(temp->name,"title")) 
-	bi->title = xmlToString( temp->childs );
+	bi->title = xmlToString( temp->children );
       else if (!strcasecmp(temp->name,"messages")) 
         bi->msgs = fetchXmlMessages( temp );
   }

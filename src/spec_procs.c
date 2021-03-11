@@ -612,12 +612,14 @@ SPECIAL(guild)
       percent = ((30 + number(0,GET_RINT(ch)) + number(0,GET_RWIS(ch))) >> 1);
       percent += check_taveren(ch);
    
-      if (percent > 70) 
-    percent = 70;
-      GET_SKILL(ch,skill_num) += percent;
+      if (percent > 70) { 
+	percent = 70;
+      }     
+      ADD_SKILL(ch, skill_num, percent);
     
-      if (GET_SKILL(ch,skill_num) > 70) 
-    GET_SKILL(ch,skill_num) = 70;
+      if (GET_SKILL(ch,skill_num) > 70) {
+	SET_SKILL(ch, skill_num, 70);
+      }
       return 1;
     }
     else {
@@ -632,11 +634,14 @@ SPECIAL(guild)
       percent = ((30 + number(0,GET_RINT(ch)) + number(0,GET_RWIS(ch))) >> 1);
       percent += check_taveren(ch);
    
-      if (percent > 50) percent = 50;
-      GET_SKILL(ch,skill_num) += percent;
+      if (percent > 50) {
+	percent = 50;
+      }
+      ADD_SKILL(ch, skill_num, percent);
       
-      if (GET_SKILL(ch,skill_num) > 50) 
-    GET_SKILL(ch,skill_num) = 50;
+      if (GET_SKILL(ch,skill_num) > 50) {
+	SET_SKILL(ch, skill_num, 50);
+      }
       return 1;
     }
   }
@@ -786,7 +791,7 @@ SPECIAL(newbiehealer)
       act("$n gives you some purple leaves, which you for some strange reason eat. You feel better!", TRUE, mob, 0, ch, TO_VICT);
       act("$n gives $N some purple leaves, which he eats, after which he looks instantly better.", TRUE, mob, 0, ch, TO_ROOM);
       GET_HIT(ch) = GET_MAX_HIT(ch);
-      GET_MANA(ch) = GET_MAX_MANA(ch);
+      SET_MANA(ch, GET_MAX_MANA(ch));
     }
   }
   return 0;
@@ -977,7 +982,7 @@ SPECIAL(trainer)
     }
     sprintf(buf, "Ok, you raise %s by ten steps at the cost of a train.\r\n", text);
     send_to_char(buf, ch);
-    if (!strcmp(text, "mana")) GET_MAX_MANA(ch) +=10;
+    if (!strcmp(text, "mana")) ADD_MAX_MANA(ch, 10);
     if (!strcmp(text, "hitpoints")) GET_MAX_HIT(ch) +=10;
     if (!strcmp(text, "move")) GET_MAX_MOVE(ch) +=10;
     GET_TRAINS(ch) --;
@@ -1745,7 +1750,7 @@ SPECIAL(herb)
       return 0;
     obj_from_char(herb);
     GET_HIT(ch) = MIN(GET_MAX_HIT(ch), GET_HIT(ch) + 100);
-    GET_MANA(ch) = MIN(GET_MAX_MANA(ch), GET_MANA(ch) + 100);
+    SET_MANA(ch, MIN(GET_MAX_MANA(ch), GET_MANA(ch) + 100));
     GET_MOVE(ch) = MIN(GET_MAX_MOVE(ch), GET_MOVE(ch) + 100);
     GET_FRACT_MOVE(ch) = 0;
     send_to_char("You eat the Herbs and feal refreshed.\r\n", ch);
@@ -1922,7 +1927,7 @@ SPECIAL(skillshop)
         (spell_info[buy].type == SKILL_QUEST)? "skill":"spell", spells[buy]);
       send_to_char(buf, ch);
       send_to_char("Don't forget to practice it now!\r\n", ch);
-      GET_SKILL(ch, buy) = 1;
+      SET_SKILL(ch, buy, 1);
       GET_QP(ch) -= cost;
       return 1;
     }
@@ -1973,7 +1978,7 @@ SPECIAL(portal_stones)
        send_to_char("\r\n",ch);
        j++;
      }
-     GET_MANA(ch) -= 100;
+     ADD_MANA(ch, -100);
      return 1;
    }
    if (CMD_IS("travel")) {
@@ -1997,14 +2002,14 @@ SPECIAL(portal_stones)
       }
 
       if (NOWHERE == real_room(stones[stones[i].linked_with[j]].in_room)) {
-    send_to_char("Destination room does not exists in world...please inform an Imm!\r\n",ch);
-    return 1;
+	send_to_char("Destination room does not exists in world...please inform an Imm!\r\n",ch);
+	return 1;
       }
 
       result = generic_result_mod(ch,SKILL_PORTAL_STONES,NULL,FALSE,(GET_INT(ch) - 15));
 
       if ((result == TOTAL_FUCKUP) || (result == TOTAL_FAILURE)) {
-        GET_MANA(ch) = 0;
+        SET_MANA(ch, 0);
         GET_MOVE(ch) = 0;
         GET_FRACT_MOVE(ch) = 0;
         REMOVE_BIT(PRF_FLAGS(ch),PRF_GRASPING);
@@ -2017,12 +2022,12 @@ SPECIAL(portal_stones)
       if (IS_AFFECTED(ch,AFF_GROUP)) {
         for (list = world[ch->in_room].people; list; list = list->next_in_room) {
             if (is_in_group(ch,list) && (list != ch)) {
-            gen_message(PORTAL_TRANSF_GM,ch,list,TRUE,TRUE);
-            char_from_room(list);
-            char_to_room(list,real_room(stones[stones[i].linked_with[j]].in_room));
-            do_look(list,"",0,0);
-            GET_MANA(ch) -= 200;      
-          }
+	      gen_message(PORTAL_TRANSF_GM,ch,list,TRUE,TRUE);
+	      char_from_room(list);
+	      char_to_room(list,real_room(stones[stones[i].linked_with[j]].in_room));
+	      do_look(list,"",0,0);
+	      ADD_MANA(ch, -200);
+	   }
         }
       }
       gen_message(PORTAL_TRANSF_SELF,ch,ch,TRUE,TRUE);
@@ -2030,7 +2035,7 @@ SPECIAL(portal_stones)
       char_from_room(ch);
       char_to_room(ch,real_room(stones[stones[i].linked_with[j]].in_room));
       do_look(ch,"",0,0);
-      GET_MANA(ch) -= 200;      
+      ADD_MANA(ch, -200);
 
      return 1;
    }

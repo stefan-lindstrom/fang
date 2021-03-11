@@ -424,8 +424,8 @@ void init_mobile(struct char_data *mob)
 
   SET_BIT(MOB_FLAGS(mob), MOB_ISNPC);
   GET_HIT(mob) = 1;
-  GET_MANA(mob) = 1;
-  GET_MAX_MANA(mob) = 100;
+  SET_MANA(mob, 1);
+  SET_MAX_MANA(mob, 100);
   GET_MAX_MOVE(mob) = 100;
   GET_NDD(mob) = 1;
   GET_SDD(mob) = 1;

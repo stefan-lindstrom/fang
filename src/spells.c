@@ -387,8 +387,8 @@ void perform_unlink(struct char_data *ch)
     }
 
     if (ch->player_specials->manalinked >= 0)
-      GET_MANA(vict) = (ch->player_specials->manalinked * vict->player_specials->managiven) / 
-      ch->player_specials->max_manalinked;
+      ADD_MANA(vict,  ((ch->player_specials->manalinked * vict->player_specials->managiven) /
+		       ch->player_specials->max_manalinked));
     else
       vict->points.mana = ch->player_specials->manalinked;
     /* free the victim */
@@ -585,7 +585,7 @@ ACMD(do_powertrap)
   result = generic_result_mod(ch, spell, NULL, FALSE, 0);
   if ((result == TOTAL_FUCKUP) || (result == TOTAL_FAILURE)) {
     send_to_char("Your weave fizzles.\r\n", ch);
-    GET_MANA(ch) -= 200;
+    ADD_MANA(ch, -200);
     check_mana(ch);
     return;
   }
@@ -595,7 +595,8 @@ ACMD(do_powertrap)
     sprintf(buf, "a %s enters the room.\r\n", valid_triggers[i]);
   asend_to_char(ch, "Ok, you set the weave %s to go off when %s",
    spells[spell], buf);
-  GET_MANA(ch) -= spell_info[spell].mana;
+  
+  ADD_MANA(ch, -spell_info[spell].mana);
   af.duration = (delay)?delay: 1000;
   af.bitvector = RAFF_TRAP;
   af.speed = RAFF_SLOW;
@@ -724,24 +725,24 @@ BSPELL(armor)
 
   switch(result) {
     case TOTAL_FUCKUP:
-        gen_message(SPELL_ARMOR,ch,ch,FALSE,FALSE);
-        return;
-        break;
+      gen_message(SPELL_ARMOR,ch,ch,FALSE,FALSE);
+      return;
+      break;
     case TOTAL_FAILURE:
-        GET_MANA(ch) -= (mana / 2);
-        gen_message(SPELL_ARMOR,ch,ch,FALSE,FALSE);
-        return;
-        break;
+      ADD_MANA(ch, -(mana / 2));
+      gen_message(SPELL_ARMOR,ch,ch,FALSE,FALSE);
+      return;
+      break;
     case SOME_SUCCESS:
-        break;
+      break;
     case TOTAL_SUCCESS:
-        mana /= 2;
-        af.duration = (int) (1.25 * af.duration);
-        af.modifier -= 20;
-        break;
+      mana /= 2;
+      af.duration = (int) (1.25 * af.duration);
+      af.modifier -= 20;
+      break;
   }
 
-  GET_MANA(ch) -= mana;
+  ADD_MANA(ch, -mana);
   affect_to_char(ch,&af); 
   gen_message(SPELL_ARMOR,ch,ch,FALSE,TRUE);	 
   check_if_learned(ch,SPELL_ARMOR);	/* Doesn't do anything, yet...*/
@@ -947,14 +948,14 @@ BSPELL(minor_healing)
   success = normal_spell_test(SPELL_MINOR_HEAL, ch, NULL, mana, bonus);
 
   if (success) {
-    GET_TIMES(ch,CAN_WEAVE) =  (PULSE_VIOLENCE);
+    SET_TIMES(ch,CAN_WEAVE,  (PULSE_VIOLENCE));
     gen_message(SPELL_MINOR_HEAL,ch,vict,TRUE,TRUE);
     GET_HIT(vict) = MIN(GET_MAX_HIT(vict), GET_HIT(vict) + hitp);
     check_if_learned(ch,SPELL_MINOR_HEAL);
   }
   else
   {
-    GET_TIMES(ch,CAN_WEAVE) =  (2*PULSE_VIOLENCE);
+    SET_TIMES(ch,CAN_WEAVE, (2*PULSE_VIOLENCE));
     gen_message(SPELL_MINOR_HEAL,ch,vict,TRUE,FALSE);
   }  
 
@@ -1013,7 +1014,6 @@ BSPELL(invisibility)
       break;
   }
 
-
   if (!(IS_TALENT_SET(GET_SPSKILLS1(ch), GET_SPSKILLS2(ch), i) || IS_IMMORTAL(ch))) {
     send_to_char("Sorry. You need to report this talent to the Storymaster.\r\n",ch);
     return;
@@ -1051,28 +1051,27 @@ BSPELL(invisibility)
 
   switch(result) {
     case TOTAL_FUCKUP:
-        GET_MANA(ch) -= (mana * 2);
-        gen_message(SPELL_INVISIBILITY,ch,NULL,FALSE,FALSE);
-        return;
-        break;
+      ADD_MANA(ch, -(mana * 2));
+      gen_message(SPELL_INVISIBILITY,ch,NULL,FALSE,FALSE);
+      return;
+      break;
     case TOTAL_FAILURE:
-        GET_MANA(ch) -= (mana / 2);
-        gen_message(SPELL_INVISIBILITY,ch,NULL,FALSE,FALSE);
-        return;
-        break;
+      ADD_MANA(ch, -(mana / 2));
+      gen_message(SPELL_INVISIBILITY,ch,NULL,FALSE,FALSE);
+      return;
+      break;
     case SOME_SUCCESS:
-        break;
+      break;
     case TOTAL_SUCCESS:
-        mana /= 2;
-        af.duration  = (int) (1.25 * af.duration);
-        af.modifier -= 20;
-        break;
+      mana /= 2;
+      af.duration  = (int) (1.25 * af.duration);
+      af.modifier -= 20;
+      break;
   }
-  GET_MANA(ch) -= mana;
+  ADD_MANA(ch, -mana);
   gen_message(SPELL_INVISIBILITY,ch,NULL,FALSE,TRUE);
   affect_to_char(ch, &af);
   check_if_learned(ch,SPELL_INVISIBILITY);
-
 }
 
 BSPELL(airshield)
@@ -1300,31 +1299,30 @@ BSPELL(blindness)
 
   switch (result) {
     case TOTAL_FUCKUP:
-        GET_MANA(ch) -= (mana * 2);
-        gen_message(SPELL_BLINDNESS,ch,vict,TRUE,FALSE);
-        return;
-        break;
+      ADD_MANA(ch, (mana * 2));
+      gen_message(SPELL_BLINDNESS,ch,vict,TRUE,FALSE);
+      return;
+      break;
     case TOTAL_FAILURE:
-        GET_MANA(ch) -= (mana / 2);
-        gen_message(SPELL_BLINDNESS,ch,vict,TRUE,FALSE);
-        return;
-        break;
+      ADD_MANA(ch, - (mana / 2));
+      gen_message(SPELL_BLINDNESS,ch,vict,TRUE,FALSE);
+      return;
+      break;
     case SOME_SUCCESS:
         break;
     case TOTAL_SUCCESS:
         mana /= 2;
-            af.duration  = (int) (1.25 * af.duration);
+	af.duration  = (int) (1.25 * af.duration);
         af2.duration = (int) (1.25 * af2.duration);
         af.modifier  += 25;
         af2.modifier -= 15;
         break;
   }
-  GET_MANA(ch) -= mana;
+  ADD_MANA(ch, -mana);
   affect_to_char(vict,&af);
   affect_to_char(vict,&af2);
   gen_message(SPELL_BLINDNESS,ch,vict,TRUE,TRUE);
   check_if_learned(ch,SPELL_BLINDNESS);
-
 }
 
 BSPELL(pain)
@@ -1523,33 +1521,32 @@ BSPELL(call_lightning)
   switch (result) {
     case TOTAL_FUCKUP:
       mana *=2;
-      GET_MANA(ch) -= mana;
+      ADD_MANA(ch, -mana);
       GET_HIT(ch)  -= (damage);
       do_own_damage(ch);
       act("$n draws lightning down on no-one, except himself! LOOOSER!",FALSE,ch,NULL,NULL,TO_ROOM);
       send_to_char("You're a real smeghead, unless you hadn't figured already\r\n",ch);
-      GET_TIMES(ch,CAN_WEAVE) =  (7*PULSE_VIOLENCE);
+      SET_TIMES(ch, CAN_WEAVE, (7*PULSE_VIOLENCE));
       return;
     case TOTAL_FAILURE:
       mana /= 2;
-      GET_MANA(ch) -= mana;
-      GET_TIMES(ch,CAN_WEAVE) =  (7*PULSE_VIOLENCE);
+      ADD_MANA(ch, -mana);
+      SET_TIMES(ch,CAN_WEAVE, (7*PULSE_VIOLENCE));
       gen_message(SPELL_CALL_LIGHTNING,ch,NULL,FALSE,FALSE);
       return;
       break;
     case SOME_SUCCESS:
-      GET_TIMES(ch,CAN_WEAVE) =  (5*PULSE_VIOLENCE);
+      SET_TIMES(ch,CAN_WEAVE, (5*PULSE_VIOLENCE));
       break;
     case TOTAL_SUCCESS:
-      GET_TIMES(ch,CAN_WEAVE) =  (4*PULSE_VIOLENCE);
+      SET_TIMES(ch,CAN_WEAVE, (4*PULSE_VIOLENCE));
       mana /= 2;
       damage = (int) (damage * 1.5);
       break;
   }
-  GET_MANA(ch) -= mana;
+  ADD_MANA(ch, -mana);
   check_if_learned(ch,SPELL_CALL_LIGHTNING);
   do_area_spell_agg(ch,damage,SPELL_CALL_LIGHTNING);
-
 }
 
 BSPELL(firesword)
@@ -1577,13 +1574,13 @@ BSPELL(firesword)
     case TOTAL_FUCKUP:   
       mana *= 2;
       gen_message(SPELL_FIRESWORD,ch, NULL,FALSE,FALSE);
-      GET_MANA(ch) -= mana;
+      ADD_MANA(ch, -mana);
       return;
       break;
     case TOTAL_FAILURE:
       gen_message(SPELL_FIRESWORD,ch, NULL,FALSE,FALSE);
       mana /= 2;
-      GET_MANA(ch) -= mana;
+      ADD_MANA(ch, -mana);
       return;
       break;
     case SOME_SUCCESS:
@@ -1595,45 +1592,44 @@ BSPELL(firesword)
       break;
    }
 
-   GET_MANA(ch) -= mana;
-   sword = create_obj();
+  ADD_MANA(ch, -mana);
+  sword = create_obj();
+  
+  sword->item_number       = NOTHING;
+  sword->in_room           = NOWHERE;
+  sword->name              = str_dup("sword fire flame");
+  sword->description       = str_dup("A sword carved from Fire");
+  sword->short_description = str_dup("A sword carved from Fire");
+  sword->action_description= str_dup("A sword carved from Fire");
+  
+  CREATE(sword->ex_description,struct extra_descr_data,1);
+  sword->ex_description->next = NULL;
+  sword->ex_description->keyword = str_dup(sword->name);
+  sword->ex_description->description = str_dup("A sword made out of a strange looking, "
+					       "almost glowing metal.\r\n");
 
-   sword->item_number       = NOTHING;
-   sword->in_room           = NOWHERE;
-   sword->name              = str_dup("sword fire flame");
-   sword->description       = str_dup("A sword carved from Fire");
-   sword->short_description = str_dup("A sword carved from Fire");
-   sword->action_description= str_dup("A sword carved from Fire");
- 
-   CREATE(sword->ex_description,struct extra_descr_data,1);
-   sword->ex_description->next = NULL;
-   sword->ex_description->keyword = str_dup(sword->name);
-   sword->ex_description->description = str_dup("A sword made out of a strange looking, "
-                        "almost glowing metal.\r\n");
+  GET_OBJ_TYPE(sword)      = ITEM_WEAPON;
+  GET_OBJ_WEAR(sword)      = ITEM_WEAR_TAKE | ITEM_WEAR_WIELD;
+  GET_OBJ_EXTRA(sword)     = ITEM_NODONATE | ITEM_NODROP | ITEM_NOSELL;
 
-   GET_OBJ_TYPE(sword)      = ITEM_WEAPON;
-   GET_OBJ_WEAR(sword)      = ITEM_WEAR_TAKE | ITEM_WEAR_WIELD;
-   GET_OBJ_EXTRA(sword)     = ITEM_NODONATE | ITEM_NODROP | ITEM_NOSELL;
-
-   if (is_dreamer(ch)) 
-     SET_BIT(OBJ_EXTRA_FLAGS(sword),ITEM_TAR);
-
-   GET_OBJ_VAL(sword,3)     = 3; /* Id for flame-swords! */
-   GET_OBJ_VAL(sword,0)	    = 0;
-   GET_OBJ_VAL(sword,1)     = MIN(100,dam_dice);
-   GET_OBJ_VAL(sword,2)     = 10;
-   GET_OBJ_WEIGHT(sword)    = 14;
-   GET_OBJ_TIMER(sword)     = time;
-   
-   gen_message(SPELL_FIRESWORD,ch, NULL,FALSE,TRUE);
-   
-   if (GET_EQ(ch,WEAR_WIELD_R)) {
-     obj_to_char(unequip_char(ch,WEAR_WIELD_R),ch);
-     send_to_char("You put your old weapon in your inventory.\r\n",ch);
-   } 
-   equip_char(ch,sword,WEAR_WIELD_R);
-   check_if_learned(ch,SPELL_FIRESWORD);
-
+  if (is_dreamer(ch)) 
+    SET_BIT(OBJ_EXTRA_FLAGS(sword),ITEM_TAR);
+  
+  GET_OBJ_VAL(sword,3)     = 3; /* Id for flame-swords! */
+  GET_OBJ_VAL(sword,0)	    = 0;
+  GET_OBJ_VAL(sword,1)     = MIN(100,dam_dice);
+  GET_OBJ_VAL(sword,2)     = 10;
+  GET_OBJ_WEIGHT(sword)    = 14;
+  GET_OBJ_TIMER(sword)     = time;
+  
+  gen_message(SPELL_FIRESWORD,ch, NULL,FALSE,TRUE);
+  
+  if (GET_EQ(ch,WEAR_WIELD_R)) {
+    obj_to_char(unequip_char(ch,WEAR_WIELD_R),ch);
+    send_to_char("You put your old weapon in your inventory.\r\n",ch);
+  } 
+  equip_char(ch,sword,WEAR_WIELD_R);
+  check_if_learned(ch,SPELL_FIRESWORD);
 }
 
 
@@ -1733,7 +1729,7 @@ BSPELL(wrap)
       af.mana_add = mana_add;
       break;
   }   
-  GET_MANA(ch)-=mana;    
+  ADD_MANA(ch, -mana);
   gen_message(SPELL_WRAP,ch, vict,TRUE,TRUE);
   affect_to_char(vict,&af);
   check_if_learned(ch,SPELL_WRAP);
@@ -1808,13 +1804,13 @@ BSPELL(gag)
     case TOTAL_FUCKUP:
       mana *= 2;
       gen_message(SPELL_GAG,ch,vict,TRUE,FALSE);
-      GET_MANA(ch) -= mana;
+      ADD_MANA(ch, -mana);
       return;
       break;
     case TOTAL_FAILURE:
       mana /= 2;
       gen_message(SPELL_GAG,ch,vict,TRUE,FALSE);
-      GET_MANA(ch) -= mana;
+      ADD_MANA(ch, -mana);
       return;
       break;
     case SOME_SUCCESS:
@@ -1826,7 +1822,7 @@ BSPELL(gag)
   } 
   gen_message(SPELL_GAG,ch,vict,TRUE,TRUE);
   mana = ((mana < 0) ? -mana : mana);
-  GET_MANA(ch) -= mana;
+  ADD_MANA(ch, -mana);
   affect_to_char(vict,&af);
   check_if_learned(ch,SPELL_GAG);
 }
@@ -1895,13 +1891,13 @@ BSPELL(shield)
     case TOTAL_FUCKUP:
       mana *= 2;
       gen_message(SPELL_SHIELD,ch,vict,TRUE,FALSE);
-      GET_MANA(ch) -= mana;
+      ADD_MANA(ch, -mana);
       return;
       break;
     case TOTAL_FAILURE:
       mana /= 2;
       gen_message(SPELL_SHIELD,ch,vict,TRUE,FALSE);
-      GET_MANA(ch) -= mana;
+      ADD_MANA(ch, -mana);
       return;
       break;
     case TOTAL_SUCCESS:
@@ -1929,7 +1925,7 @@ BSPELL(shield)
     gen_message(SPELL_SHIELD,ch,vict,TRUE,FALSE);
     check_if_learned(ch,SPELL_SHIELD);
   }
-  GET_MANA(ch) -= mana;
+  ADD_MANA(ch, -mana);
 }
 
 
@@ -2069,35 +2065,34 @@ BSPELL(earthquake)
 
   mana = (mana_add + spell_info[SPELL_EARTHQUAKE].mana);
 
- 
   bonus  = IntBonus(ch);
   result = generic_result_mod(ch,SPELL_EARTHQUAKE,NULL,FALSE,bonus);
   GET_TAINT(ch) += add_taint(ch,(int)(mana * 0.5));
  
   switch (result) {
     case TOTAL_FUCKUP :
-      GET_MANA(ch) -= (2 * mana); 
+      ADD_MANA(ch, -(2 * mana)); 
       GET_HIT(ch)  -= (damage);
       GET_POS(ch) = POS_SITTING;
       send_to_char("Your uncontrolled channeling hurts no one except yourself!\r\n",ch);
       update_pos(ch);
-      GET_TIMES(ch,CAN_WEAVE) =  (7*PULSE_VIOLENCE);
+      SET_TIMES(ch,CAN_WEAVE, (7*PULSE_VIOLENCE));
       return;
       break;
     case TOTAL_FAILURE:
-      GET_MANA(ch) -= (mana / 2);
+      ADD_MANA(ch, -(mana / 2));
       gen_message(SPELL_EARTHQUAKE,ch,NULL,FALSE,FALSE);
-      GET_TIMES(ch,CAN_WEAVE) =  (7*PULSE_VIOLENCE);
+      SET_TIMES(ch,CAN_WEAVE, (7*PULSE_VIOLENCE));
       return;
       break;
     case SOME_SUCCESS :
-      GET_TIMES(ch,CAN_WEAVE) =  (5*PULSE_VIOLENCE);
-      GET_MANA(ch) -= mana;
+      SET_TIMES(ch,CAN_WEAVE, (5*PULSE_VIOLENCE));
+      ADD_MANA(ch, -mana);
       break;
     case TOTAL_SUCCESS:
-      GET_TIMES(ch,CAN_WEAVE) =  (4*PULSE_VIOLENCE);
+      SET_TIMES(ch,CAN_WEAVE, (4*PULSE_VIOLENCE));
       damage = (int) (damage * 1.25);
-      GET_MANA(ch) -= (mana / 2);
+      ADD_MANA(ch, -(mana / 2));
       break;
   }
   do_area_spell(ch,damage,SPELL_EARTHQUAKE);
@@ -2156,7 +2151,7 @@ BSPELL(sliceweave)
     case SOME_SUCCESS :
       break;
   }
-  GET_MANA(ch) -= mana;
+  ADD_MANA(ch, -mana);
   if (!chance)   /* I like that one :) */
     return;
    
@@ -2186,7 +2181,7 @@ BSPELL(whirlwind)
 
   success = normal_spell_test(SPELL_WHIRLWIND, ch, NULL, mana, bonus);
   if (success) {
-    GET_TIMES(ch,CAN_WEAVE) =  (PULSE_VIOLENCE * 3);
+    SET_TIMES(ch, CAN_WEAVE, (PULSE_VIOLENCE * 3));
     do_area_ngroup_agg(ch, damage,SPELL_WHIRLWIND);   
     check_if_learned(ch,SPELL_WHIRLWIND);
   }
@@ -2276,7 +2271,7 @@ BSPELL(fireball) // Yes I am screwing with this Rei
   dam = MIN(dam,4000);
 
   if (success) {
-    GET_TIMES(ch,CAN_WEAVE) =  (PULSE_VIOLENCE * 3); 
+    SET_TIMES(ch,CAN_WEAVE, (PULSE_VIOLENCE * 3));
     damage(ch, vict, dam, SPELL_FIREBALL);    
     check_if_learned(ch,SPELL_FIREBALL);
   }   
@@ -2358,30 +2353,30 @@ BSPELL(delve)
 
   switch(result) {
     case TOTAL_FUCKUP:
-        mana = (mana * 2);
-                GET_HIT(vict) -= dice(2,20);
-                update_pos(vict);
-                send_to_char("Instead of delving your victim, you harm it more!\r\n",ch);
-                act("Instead of delving you, $n hurts you!",FALSE,ch,NULL,vict,TO_VICT);
-                GET_MANA(ch) -= mana;
-                return;
-        break;
+      mana = (mana * 2);
+      GET_HIT(vict) -= dice(2,20);
+      update_pos(vict);
+      send_to_char("Instead of delving your victim, you harm it more!\r\n",ch);
+      act("Instead of delving you, $n hurts you!",FALSE,ch,NULL,vict,TO_VICT);
+      ADD_MANA(ch, -mana);
+      return;
+      break;
     case TOTAL_FAILURE:
-            mana /= 2;
-                GET_MANA(ch) -= mana;
-                gen_message(SPELL_DELVE,ch,vict,TRUE,FALSE);
-                return;
-        break;
+      mana /= 2;
+      ADD_MANA(ch, -mana);
+      gen_message(SPELL_DELVE,ch,vict,TRUE,FALSE);
+      return;
+      break;
     case SOME_SUCCESS:
-        break;
+      break;
     case TOTAL_SUCCESS:
-        mana /= 2;
-        break;
+      mana /= 2;
+      break;
   }
   GET_HIT(vict) = (int)(MIN(GET_MAX_HIT(vict), GET_HIT(vict) + 200 + dice(3,8))*mod);
   GET_MOVE(vict) = (int)(MIN(GET_MAX_MOVE(vict), GET_MOVE(vict) + 100 + dice(3,8))*mod);
   GET_FRACT_MOVE(vict) = 0;
-  GET_MANA(ch)    -= mana;
+  ADD_MANA(ch, -mana);
   update_pos(vict);
   gen_message(SPELL_DELVE,ch,vict,TRUE,TRUE);
   check_if_learned(ch,SPELL_DELVE);
@@ -2400,32 +2395,33 @@ BSPELL(heal)
 
   switch(result) {
     case TOTAL_FUCKUP:
-                GET_TIMES(ch,CAN_WEAVE) =  (7*PULSE_VIOLENCE);
-                GET_HIT(vict) -= dice(ndice,20);
-                update_pos(vict);
-                send_to_char("Instead of healing your victim, you harm it more!\r\n",ch);
-                act("Instead of healing you, $n hurts you!",FALSE,ch,NULL,vict,TO_VICT);
-                GET_MANA(ch) -= mana;
-                return;
-        break;
+      SET_TIMES(ch,CAN_WEAVE, (7*PULSE_VIOLENCE));
+      GET_HIT(vict) -= dice(ndice,20);
+      update_pos(vict);
+      send_to_char("Instead of healing your victim, you harm it more!\r\n",ch);
+      act("Instead of healing you, $n hurts you!",FALSE,ch,NULL,vict,TO_VICT);
+      ADD_MANA(ch, -mana);
+      return;
+      break;
     case TOTAL_FAILURE:
-                GET_TIMES(ch,CAN_WEAVE) =  (6*PULSE_VIOLENCE);
-            mana /= 2;
-                GET_MANA(ch) -= mana;
-                gen_message(SPELL_HEAL,ch,vict,TRUE,FALSE);
-                return;
-        break;
+      SET_TIMES(ch,CAN_WEAVE,  (6*PULSE_VIOLENCE));
+      mana /= 2;
+      ADD_MANA(ch,  -mana);
+      gen_message(SPELL_HEAL,ch,vict,TRUE,FALSE);
+      return;
+      break;
     case SOME_SUCCESS:
-                GET_TIMES(ch,CAN_WEAVE) =  (5*PULSE_VIOLENCE);
-        break;
+      SET_TIMES(ch,CAN_WEAVE, (5*PULSE_VIOLENCE));
+      break;
     case TOTAL_SUCCESS:
-                GET_TIMES(ch,CAN_WEAVE) =  (4*PULSE_VIOLENCE);
-        mana /= 2;
-                ndice += (int) (1.75 * ndice);
-        break;
+      SET_TIMES(ch,CAN_WEAVE, (4*PULSE_VIOLENCE));
+      mana /= 2;
+      ndice += (int) (1.75 * ndice);
+      break;
   }
   GET_HIT(vict) = MIN(GET_MAX_HIT(vict), GET_HIT(vict) + dice(ndice,20));
-  GET_MANA(ch)  -= mana;
+  ADD_MANA(ch, -mana);
+  
   if (IS_AFFECTED(vict, AFF_POISON | AFF_BLIND))  /* Heal removes all poisons as well */
     for (af = vict->affected; af; af = af_next)  {
       af_next = af->next;
@@ -2492,13 +2488,13 @@ BSPELL(airsword)
     case TOTAL_FUCKUP:   
       mana *= 2;
       gen_message(SPELL_AIRSWORD,ch, NULL,FALSE,FALSE);
-      GET_MANA(ch) -= mana;
+      ADD_MANA(ch, -mana);
       return;
       break;
     case TOTAL_FAILURE:
       gen_message(SPELL_AIRSWORD,ch, NULL,FALSE,FALSE);
       mana /= 2;
-      GET_MANA(ch) -= mana;
+      ADD_MANA(ch, -mana);
       return;
       break;
     case SOME_SUCCESS:
@@ -2510,44 +2506,44 @@ BSPELL(airsword)
       break;
    }
 
-   GET_MANA(ch) -= mana;
-   sword = create_obj();
+  ADD_MANA(ch, mana);
+  sword = create_obj();
+  
+  sword->item_number       = NOTHING;
+  sword->in_room           = NOWHERE;
+  sword->name              = str_dup("sword air");
+  sword->description       = str_dup("A sword carved from Air");
+  sword->short_description = str_dup("A sword carved from Air");
+  sword->action_description= str_dup("A sword carved from Air");
+  
+  CREATE(sword->ex_description,struct extra_descr_data,1);
+  sword->ex_description->next = NULL;
+  sword->ex_description->keyword = str_dup(sword->name);
+  sword->ex_description->description = str_dup("A sword made out of a strange looking,\r\n"
+					       "almost glowing metal.\r\n");
+  
+  GET_OBJ_TYPE(sword)      = ITEM_WEAPON;
+  GET_OBJ_WEAR(sword)      = ITEM_WEAR_TAKE | ITEM_WEAR_WIELD;
+  GET_OBJ_EXTRA(sword)     = ITEM_NODONATE | ITEM_NODROP | ITEM_NOSELL;
 
-   sword->item_number       = NOTHING;
-   sword->in_room           = NOWHERE;
-   sword->name              = str_dup("sword air");
-   sword->description       = str_dup("A sword carved from Air");
-   sword->short_description = str_dup("A sword carved from Air");
-   sword->action_description= str_dup("A sword carved from Air");
- 
-   CREATE(sword->ex_description,struct extra_descr_data,1);
-   sword->ex_description->next = NULL;
-   sword->ex_description->keyword = str_dup(sword->name);
-   sword->ex_description->description = str_dup("A sword made out of a strange looking,\r\n"
-                        "almost glowing metal.\r\n");
+  if (is_dreamer(ch)) 
+    SET_BIT(OBJ_EXTRA_FLAGS(sword),ITEM_TAR);
 
-   GET_OBJ_TYPE(sword)      = ITEM_WEAPON;
-   GET_OBJ_WEAR(sword)      = ITEM_WEAR_TAKE | ITEM_WEAR_WIELD;
-   GET_OBJ_EXTRA(sword)     = ITEM_NODONATE | ITEM_NODROP | ITEM_NOSELL;
-
-   if (is_dreamer(ch)) 
-     SET_BIT(OBJ_EXTRA_FLAGS(sword),ITEM_TAR);
-
-   GET_OBJ_VAL(sword,3)     = 3; /* Id for flame-swords! */
-   GET_OBJ_VAL(sword,0)	    = 0;
-   GET_OBJ_VAL(sword,1)     = MIN(dam_dice, 80);
-   GET_OBJ_VAL(sword,2)     = 10;
-   GET_OBJ_WEIGHT(sword)    = 14;
-   GET_OBJ_TIMER(sword)     = time;
-   
-   gen_message(SPELL_AIRSWORD,ch, NULL,FALSE,TRUE);
-   
-   if (GET_EQ(ch,WEAR_WIELD_R)) {
-     obj_to_char(unequip_char(ch,WEAR_WIELD_R),ch);
-     send_to_char("You put your old weapon in your inventory.\r\n",ch);
-   } 
-   equip_char(ch,sword,WEAR_WIELD_R);
-   check_if_learned(ch,SPELL_AIRSWORD);
+  GET_OBJ_VAL(sword,3)     = 3; /* Id for flame-swords! */
+  GET_OBJ_VAL(sword,0)	    = 0;
+  GET_OBJ_VAL(sword,1)     = MIN(dam_dice, 80);
+  GET_OBJ_VAL(sword,2)     = 10;
+  GET_OBJ_WEIGHT(sword)    = 14;
+  GET_OBJ_TIMER(sword)     = time;
+  
+  gen_message(SPELL_AIRSWORD,ch, NULL,FALSE,TRUE);
+  
+  if (GET_EQ(ch,WEAR_WIELD_R)) {
+    obj_to_char(unequip_char(ch,WEAR_WIELD_R),ch);
+    send_to_char("You put your old weapon in your inventory.\r\n",ch);
+  } 
+  equip_char(ch,sword,WEAR_WIELD_R);
+  check_if_learned(ch,SPELL_AIRSWORD);
 }
 
 
@@ -2591,7 +2587,7 @@ BSPELL(airblow) /* No 18 */
 //asend_to_char(ch,"tmp1 = %d, dam = %d, mana_add = %d\r\n",tmp1,dam,mana_add);
 
   if (success) {
-    GET_TIMES(ch,CAN_WEAVE) =  (PULSE_VIOLENCE); 
+    SET_TIMES(ch,CAN_WEAVE, (PULSE_VIOLENCE));
     damage(ch, vict, dam, SPELL_AIRBLOW);
     check_if_learned(ch,SPELL_AIRBLOW); 
   }
@@ -2614,7 +2610,7 @@ BSPELL(ice_arrows) /* No 19 */
 
   success  = normal_spell_test(SPELL_ICE_ARROWS, ch, vict, mana, bonus);
   if (success) {
-    GET_TIMES(ch,CAN_WEAVE) =  (PULSE_VIOLENCE * 1); 
+    SET_TIMES(ch,CAN_WEAVE, (PULSE_VIOLENCE * 1));
     damage(ch, vict, dam, SPELL_ICE_ARROWS);
     check_if_learned(ch,SPELL_ICE_ARROWS);  
   }
@@ -2729,7 +2725,7 @@ BSPELL(disintegrate)
   if (success) {
     damage(ch, vict, dam, SPELL_DISINTEGRATE);
     check_if_learned(ch,SPELL_DISINTEGRATE);
-    GET_TIMES(ch,CAN_WEAVE) = (3 * PULSE_VIOLENCE);    
+    SET_TIMES(ch,CAN_WEAVE,  (3 * PULSE_VIOLENCE));
   }
 
   GET_TAINT(ch) += add_taint(ch, (int)(mana * 0.9));
@@ -2749,7 +2745,7 @@ BSPELL(meteor) /* No 21 */
   mana   = spell_info[SPELL_METEOR].mana + mana_add;
   success  = normal_spell_test(SPELL_METEOR, ch, vict, mana, bonus);
   if (success) {
-    GET_TIMES(ch,CAN_WEAVE) =  (4*PULSE_VIOLENCE);
+    SET_TIMES(ch,CAN_WEAVE, (4*PULSE_VIOLENCE));
     do_area_spell_agg(ch,dam,SPELL_METEOR);
     check_if_learned(ch,SPELL_METEOR);
   }
@@ -2809,29 +2805,29 @@ BSPELL(rolling_ring) /* No 24 */
 
   switch (result) {
     case TOTAL_FUCKUP:
-            mana *= 2;
-            GET_MANA(ch) -= mana;
-                GET_TIMES(ch,CAN_WEAVE) =  (7*PULSE_VIOLENCE);
-                damage(ch,ch,damag,SPELL_ROLLING_RING);
-            return;
-        break;
+      mana *= 2;
+      ADD_MANA(ch, -mana);
+      SET_TIMES(ch,CAN_WEAVE, (7*PULSE_VIOLENCE));
+      damage(ch,ch,damag,SPELL_ROLLING_RING);
+      return;
+      break;
     case TOTAL_FAILURE:
-                GET_TIMES(ch,CAN_WEAVE) =  (6*PULSE_VIOLENCE);
-        mana /= 2;
-        GET_MANA(ch) -= mana;
-        gen_message(SPELL_ROLLING_RING,ch,NULL,FALSE,FALSE);
-        return;
-        break;
+      SET_TIMES(ch,CAN_WEAVE, (6*PULSE_VIOLENCE));
+      mana /= 2;
+      ADD_MANA(ch, -mana);
+      gen_message(SPELL_ROLLING_RING,ch,NULL,FALSE,FALSE);
+      return;
+      break;
     case SOME_SUCCESS:
-                GET_TIMES(ch,CAN_WEAVE) =  (5*PULSE_VIOLENCE);
-        break;
+      SET_TIMES(ch,CAN_WEAVE, (5*PULSE_VIOLENCE));
+      break;
     case TOTAL_SUCCESS:
-                GET_TIMES(ch,CAN_WEAVE) =  (4*PULSE_VIOLENCE);
-        mana /= 2;
-        damag = (int) (1.25 * damag);
-        break;
+      SET_TIMES(ch,CAN_WEAVE, (4*PULSE_VIOLENCE));
+      mana /= 2;
+      damag = (int) (1.25 * damag);
+      break;
   }
-  GET_MANA(ch) -= mana;
+  ADD_MANA(ch, -mana);
 
   if (damag < 0 || damag > 20000)
     damag = 20000;
@@ -2906,7 +2902,7 @@ BSPELL(dart_of_air)
   mana = spell_info[SPELL_DARTOFAIR].mana + mana_add;
   success = normal_spell_test(SPELL_DARTOFAIR, ch, NULL, mana, 0);
   if (success) {
-    GET_TIMES(ch,CAN_WEAVE) =  (PULSE_VIOLENCE * 1); 
+    SET_TIMES(ch,CAN_WEAVE, (PULSE_VIOLENCE * 1)); 
     damage(ch, vict, dam,SPELL_DARTOFAIR);
     check_if_learned(ch,SPELL_DARTOFAIR);  
   }
@@ -2948,7 +2944,7 @@ BSPELL(storm)
 
   success = normal_spell_test(SPELL_STORM, ch, NULL, mana, 0);
   if (success)  {
-    GET_TIMES(ch,CAN_WEAVE) =  (3*PULSE_VIOLENCE);
+    SET_TIMES(ch,CAN_WEAVE, (3*PULSE_VIOLENCE));
     do_area_spell_agg(ch, dam,SPELL_STORM); 
     GET_HIT(ch) -= (int)(100*mod);
     for (list = world[ch->in_room].people; list; list = list->next_in_room) {
@@ -2993,7 +2989,7 @@ BSPELL(thunderburst)
   bonus  = IntBonus(ch);
   success  = normal_spell_test(SPELL_THUNDERBURST, ch, NULL, mana, bonus);
   if (success) {
-    GET_TIMES(ch,CAN_WEAVE) =  (PULSE_VIOLENCE * 4);
+    SET_TIMES(ch,CAN_WEAVE, (PULSE_VIOLENCE * 4));
     do_area_ngroup_agg(ch, dam, SPELL_THUNDERBURST);
     check_if_learned(ch,SPELL_THUNDERBURST);
   }
@@ -3014,7 +3010,7 @@ BSPELL(stormsfury)
   bonus  = IntBonus(ch);
   success  = normal_spell_test(SPELL_STORMSFURY, ch, NULL, mana, bonus);
   if (success) {
-    GET_TIMES(ch,CAN_WEAVE) =  (PULSE_VIOLENCE * 4);
+    SET_TIMES(ch,CAN_WEAVE, (PULSE_VIOLENCE * 4));
     do_area_ngroup_agg(ch, dam, SPELL_STORMSFURY);
     check_if_learned(ch,SPELL_STORMSFURY);
   }
@@ -3034,7 +3030,7 @@ BSPELL(shaft_of_fire)
   mana   = spell_info[SPELL_SHAFTOFFIRE].mana + mana_add;
   success = normal_spell_test(SPELL_SHAFTOFFIRE, ch, vict, mana, IntBonus(ch));  
   if (success) {
-    GET_TIMES(ch,CAN_WEAVE) =  (PULSE_VIOLENCE * 1);
+    SET_TIMES(ch,CAN_WEAVE, (PULSE_VIOLENCE * 1));
     damage(ch, vict, dam, SPELL_SHAFTOFFIRE);
     check_if_learned(ch,SPELL_SHAFTOFFIRE);
   }
@@ -3055,7 +3051,7 @@ BSPELL(shaft_of_frost)
   mana   = spell_info[SPELL_SHAFTOFFROST].mana + mana_add;
   success = normal_spell_test(SPELL_SHAFTOFFROST, ch, vict, mana, IntBonus(ch));  
   if (success) {
-    GET_TIMES(ch,CAN_WEAVE) =  (PULSE_VIOLENCE * 1);
+    SET_TIMES(ch,CAN_WEAVE, (PULSE_VIOLENCE * 1));
     damage(ch, vict, dam, SPELL_SHAFTOFFROST);
     check_if_learned(ch,SPELL_SHAFTOFFROST);  
   }
@@ -3333,7 +3329,7 @@ BSPELL(fist_of_air) /* No 73 */
   mana  = spell_info[SPELL_FISTOFAIR].mana + mana_add;
   success  = normal_spell_test(SPELL_FISTOFAIR, ch, vict, mana, bonus);
   if (success) {
-    GET_TIMES(ch,CAN_WEAVE) =  (PULSE_VIOLENCE); 
+    SET_TIMES(ch,CAN_WEAVE, (PULSE_VIOLENCE)); 
     damage(ch, vict, dam, SPELL_FISTOFAIR);
     check_if_learned(ch,SPELL_FISTOFAIR);
   }
@@ -3356,7 +3352,7 @@ BSPELL(firestorm) /* No 74 */
   success  = normal_spell_test(SPELL_FIRESTORM, ch, NULL, mana, bonus);
   if (success) { 
     do_area_ngroup_agg(ch, dam, SPELL_FIRESTORM);
-    GET_TIMES(ch,CAN_WEAVE) =  (PULSE_VIOLENCE * 4);
+    SET_TIMES(ch,CAN_WEAVE, (PULSE_VIOLENCE * 4));
     check_if_learned(ch,SPELL_FIRESTORM);
   }
 
@@ -3374,7 +3370,7 @@ BSPELL(refresh) /* No 75 */
   success = normal_spell_test(SPELL_REFRESH,ch,vict,mana,bonus);
 
   if (success) {
-    GET_TIMES(ch,CAN_WEAVE) =  (PULSE_VIOLENCE);
+    SET_TIMES(ch,CAN_WEAVE ,(PULSE_VIOLENCE));
     gen_message(SPELL_REFRESH,ch,vict,TRUE,TRUE);
     GET_MOVE(vict) += dice(ndice,10);
     GET_FRACT_MOVE(vict) = 0;
@@ -3490,16 +3486,16 @@ int item_to_destroy(struct char_data *ch,int *dam_mult)
     case WEAR_NECK_1:
     case WEAR_NECK_2:
     case WEAR_HEAD:
-                    *dam_mult = 3;
-                break;
+      *dam_mult = 3;
+      break;
     case WEAR_BODY:
     case WEAR_ABOUT:
     case WEAR_WAIST:
-                    *dam_mult = 2;
-                    break;
+      *dam_mult = 2;
+      break;
     default:
-                    *dam_mult = 1;
-                    break;
+      *dam_mult = 1;
+      break;
   }
   return test;
 }
@@ -3542,15 +3538,16 @@ BSPELL(fire_arrows) /* No 78 */
   bonus = IntBonus(ch) + calc_weave_bonus(ch,vict);
   dam = (100+mana_add)*mod;
 
-  if (dam > 2500) 
-    mana_add = MAX(0, mana_add - (dam - 2500)/mod); 
+  if (dam > 2500) {
+    mana_add = MAX(0, mana_add - (dam - 2500)/mod);
+  }
   dam = MIN(dam, 2500);
 
   mana  = spell_info[SPELL_FIRE_ARROWS].mana + mana_add;
   success  = normal_spell_test(SPELL_FIRE_ARROWS, ch, vict, mana, bonus);
 
   if (success) {
-    GET_TIMES(ch,CAN_WEAVE) =  (PULSE_VIOLENCE * 1); 
+    SET_TIMES(ch,CAN_WEAVE, (PULSE_VIOLENCE * 1)); 
     damage(ch, vict, dam, SPELL_FIRE_ARROWS);
     check_if_learned(ch,SPELL_FIRE_ARROWS);
   }
@@ -3565,14 +3562,15 @@ BSPELL(earth_missile) /* No 79 */
   bonus   = IntBonus(ch) + calc_weave_bonus(ch,vict);
 
   dam = (125 + mana_add/2)*mod;
-  if (dam > 2500) 
-    mana_add = MAX(0, mana_add - (dam - 2500)/(mod/2.0)); 
+  if (dam > 2500) {
+    mana_add = MAX(0, mana_add - (dam - 2500)/(mod/2.0));
+  }
   dam = MIN(dam, 2500);
 
   mana    = spell_info[SPELL_EARTH_MISSILE].mana + mana_add;
   success = normal_spell_test(SPELL_EARTH_MISSILE,ch,vict,mana,bonus);
   if (success) {
-    GET_TIMES(ch,CAN_WEAVE) =  (PULSE_VIOLENCE * 1);
+    SET_TIMES(ch,CAN_WEAVE, (PULSE_VIOLENCE * 1));
     damage(ch,vict, dam,SPELL_EARTH_MISSILE);
     check_if_learned(ch,SPELL_EARTH_MISSILE);  
   }
@@ -3934,30 +3932,30 @@ BSPELL(wrath) /* No 101 */
 
   switch (result) {
     case TOTAL_FUCKUP:
-            mana *= 2;
-            dam /= 2;
-            GET_MANA(ch) -= mana;
-                GET_TIMES(ch,CAN_WEAVE) =  (7*PULSE_VIOLENCE);
-                damage(ch,ch,dam,SPELL_WRATH);
-            return;
-        break;
+      mana *= 2;
+      dam /= 2;
+      ADD_MANA(ch, -mana);
+      SET_TIMES(ch,CAN_WEAVE, (7*PULSE_VIOLENCE));
+      damage(ch,ch,dam,SPELL_WRATH);
+      return;
+      break;
     case TOTAL_FAILURE:
-                GET_TIMES(ch,CAN_WEAVE) =  (6*PULSE_VIOLENCE);
-        mana /= 2;
-        GET_MANA(ch) -= mana;
-        gen_message(SPELL_WRATH,ch,NULL,FALSE,FALSE);
-        return;
-        break;
+      SET_TIMES(ch,CAN_WEAVE, (6*PULSE_VIOLENCE));
+      mana /= 2;
+      ADD_MANA(ch, -mana);
+      gen_message(SPELL_WRATH,ch,NULL,FALSE,FALSE);
+      return;
+      break;
     case SOME_SUCCESS:
-                GET_TIMES(ch,CAN_WEAVE) =  (5*PULSE_VIOLENCE);
-        break;
+      SET_TIMES(ch,CAN_WEAVE, (5*PULSE_VIOLENCE));
+      break;
     case TOTAL_SUCCESS:
-                GET_TIMES(ch,CAN_WEAVE) =  (4*PULSE_VIOLENCE);
-        mana /= 2;
-        dam = (int) (1.33 * dam);
-        break;
+      SET_TIMES(ch,CAN_WEAVE,(4*PULSE_VIOLENCE));
+      mana /= 2;
+      dam = (int) (1.33 * dam);
+      break;
   }
-  GET_MANA(ch) -= mana;
+  ADD_MANA(ch, -mana);
 
   if (dam < 0 || dam > 20000)
     dam = 20000;
@@ -4016,28 +4014,29 @@ int normal_spell_test(int type, struct char_data *ch, struct char_data *victim,
   switch (result) {
     case TOTAL_FUCKUP:
     case TOTAL_FAILURE:
-        GET_MANA(ch) -= mana;
-        gen_message(type, ch, victim, target, FALSE);
-        return 0;
-        break;
+      ADD_MANA(ch, -mana);
+      gen_message(type, ch, victim, target, FALSE);
+      return 0;
+      break;
     case SOME_SUCCESS:
         break;
     case TOTAL_SUCCESS:
-                if ((victim) && (GET_LEVEL(ch) < LVL_IMMORT))
-                  if (!IS_NPC(victim) && IS_SET(spell_info[type].targets, IS_AGGRESSIVE)) {
-                    af.duration = 10;
-                    af.modifier = 0;
-                    af.location = APPLY_NONE;
-                    af.bitvector = AFF_NOQUIT;
-                    af.bitvector2 = af.bitvector3 = 0;
-                    af.next = NULL;
-                    af.type = NOQUIT_TEXT;
-                    affect_to_char(ch, &af);
-                  }
-        mana /= 2;
-        break;
+      if ((victim) && (GET_LEVEL(ch) < LVL_IMMORT)) {
+	if (!IS_NPC(victim) && IS_SET(spell_info[type].targets, IS_AGGRESSIVE)) {
+	  af.duration = 10;
+	  af.modifier = 0;
+	  af.location = APPLY_NONE;
+	  af.bitvector = AFF_NOQUIT;
+	  af.bitvector2 = af.bitvector3 = 0;
+	  af.next = NULL;
+	  af.type = NOQUIT_TEXT;
+	  affect_to_char(ch, &af);
+	}
+      }
+      mana /= 2;
+      break;
   }
-  GET_MANA(ch) -=mana;
+  ADD_MANA(ch, -mana);
   return 1;
 }
 
