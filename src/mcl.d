@@ -84,4 +84,25 @@ mcl.o: mcl.c interpreter.h structs.h sysdep.h conf.h \
  /usr/local/include/glib-2.0/glib/deprecated/gthread.h \
  /usr/local/include/glib-2.0/glib/glib-autocleanups.h bitvector.h \
  objprog.h prog.h mobprog.h act.h chess.h db.h dll.h portstone.h olc.h \
- screen.h retainer.h dynvars.h weather.h messages.h msgedit.h
+ screen.h retainer.h /usr/include/libxml2/libxml/parser.h \
+ /usr/include/libxml2/libxml/xmlversion.h \
+ /usr/include/libxml2/libxml/xmlexports.h \
+ /usr/include/libxml2/libxml/tree.h \
+ /usr/include/libxml2/libxml/xmlstring.h \
+ /usr/include/libxml2/libxml/xmlregexp.h \
+ /usr/include/libxml2/libxml/dict.h /usr/include/libxml2/libxml/hash.h \
+ /usr/include/libxml2/libxml/valid.h \
+ /usr/include/libxml2/libxml/xmlerror.h \
+ /usr/include/libxml2/libxml/list.h \
+ /usr/include/libxml2/libxml/xmlautomata.h \
+ /usr/include/libxml2/libxml/entities.h \
+ /usr/include/libxml2/libxml/encoding.h \
+ /usr/include/libxml2/libxml/xmlIO.h \
+ /usr/include/libxml2/libxml/globals.h /usr/include/libxml2/libxml/SAX.h \
+ /usr/include/libxml2/libxml/xlink.h /usr/include/libxml2/libxml/SAX2.h \
+ /usr/include/libxml2/libxml/xmlmemory.h \
+ /usr/include/libxml2/libxml/threads.h \
+ /usr/include/libxml2/libxml/parserInternals.h \
+ /usr/include/libxml2/libxml/HTMLparser.h \
+ /usr/include/libxml2/libxml/chvalid.h dynvars.h weather.h messages.h \
+ msgedit.h

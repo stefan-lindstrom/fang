@@ -6,7 +6,7 @@
 CC = gcc
 
 # Any special flags you want to pass to the compiler
-MYFLAGS = -Wall -I/usr/include/libxml2
+MYFLAGS = -std=gnu90 -I/usr/include/libxml2
 
 #flags for profiling (see hacker.doc for more information)
 # Uncomment this if no dmallocinf is to be done. Comment it out if debugging

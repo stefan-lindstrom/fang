@@ -31,10 +31,10 @@
 #include <errno.h>
 #include <string.h>
 
-#include <gnome-xml/parser.h>
-#include <gnome-xml/tree.h>
-#include <gnome-xml/entities.h>
-#include <gnome-xml/parserInternals.h>
+#include <libxml/parser.h>
+#include <libxml/tree.h>
+#include <libxml/entities.h>
+#include <libxml/parserInternals.h>
 #include <stdio.h>
 
 #include "messages.h"
@@ -105,7 +105,7 @@ static int save_fight_msgs(void)
   doc = xmlNewDoc("1.0");
   
   tree = xmlNewDocNode(doc,NULL,"messages",NULL);
-  doc->root = tree;
+  doc->children = tree;
 
   for (i = 0; i < MAX_MESSAGES; i++) {
     if (fight_messages[i].a_type) { // type == 0 -> no message!
@@ -177,7 +177,7 @@ static int save_sp_msgs(void)
   doc = xmlNewDoc("1.0");
 
   tree = xmlNewDocNode(doc,NULL,"spmessages",NULL);
-  doc->root = tree;
+  doc->children = tree;
 
   for (i = 0; i < MAX_SPELL_MESS; i++) {
     if (spell_messages[i].a_type) { // type == 0 -> no message!
@@ -249,7 +249,7 @@ static int save_tp_msgs(void)
   doc = xmlNewDoc("1.0");
   
   tree = xmlNewDocNode(doc,NULL,"tpmessages",NULL);
-  doc->root = tree;
+  doc->children = tree;
   
   for (i = 0; i < MAX_SPELL_MESS; i++) {
     if (tp_messages[i].a_type) { // type == 0 -> no message!
@@ -334,46 +334,46 @@ static void fillInOpMsg(xmlNodePtr msg, struct sp_msg_type *m)
 {
   xmlNodePtr tmp;
 
-  for (tmp = msg->childs; tmp != NULL; tmp = tmp->next) {
+  for (tmp = msg->children; tmp != NULL; tmp = tmp->next) {
     if (!strcasecmp(tmp->name, "weaver")) {
-      if (tmp->childs && tmp->childs->content)
-	m->weaver = strdup(tmp->childs->content);
+      if (tmp->children && tmp->children->content)
+	m->weaver = strdup(tmp->children->content);
       else
 	m->weaver = strdup("<EMPTY>");
     }
     if (!strcasecmp(tmp->name,"notchann")) { 
-      if (tmp->childs && tmp->childs->content)
-	m->vict_nc = strdup(tmp->childs->content); 
+      if (tmp->children && tmp->children->content)
+	m->vict_nc = strdup(tmp->children->content); 
       else
         m->vict_nc = strdup("<EMPTY>");
     }
     if (!strcasecmp(tmp->name,"oppsexchann")) { 
-      if (tmp->childs && tmp->childs->content)
-	m->vict_cos = strdup(tmp->childs->content); 
+      if (tmp->children && tmp->children->content)
+	m->vict_cos = strdup(tmp->children->content); 
       else
         m->vict_cos = strdup("<EMPTY>");
     }
     if (!strcasecmp(tmp->name,"samesexchann")) { 
-      if (tmp->childs && tmp->childs->content)
-	m->vict_css = strdup(tmp->childs->content); 
+      if (tmp->children && tmp->children->content)
+	m->vict_css = strdup(tmp->children->content); 
      else
        m->vict_css = strdup("<EMPTY>");
     }
     if (!strcasecmp(tmp->name,"notchannroom")) { 
-      if (tmp->childs && tmp->childs->content)
-	m->onl_nc = strdup(tmp->childs->content); 
+      if (tmp->children && tmp->children->content)
+	m->onl_nc = strdup(tmp->children->content); 
       else
         m->onl_nc = strdup("<EMPTY>");
     }
     if (!strcasecmp(tmp->name,"oppsexchannroom")) { 
-      if (tmp->childs && tmp->childs->content)
-	m->onl_cos = strdup(tmp->childs->content); 
+      if (tmp->children && tmp->children->content)
+	m->onl_cos = strdup(tmp->children->content); 
       else
         m->onl_cos = strdup("<EMPTY>");
     }
     if (!strcasecmp(tmp->name,"samesexchannrroom")) { 
-      if (tmp->childs && tmp->childs->content)
-	m->onl_css = strdup(tmp->childs->content); 
+      if (tmp->children && tmp->children->content)
+	m->onl_css = strdup(tmp->children->content); 
       else
         m->onl_css = strdup("<EMPTY>");
     }
@@ -384,34 +384,34 @@ static void fillInTpMsg(xmlNodePtr msg, struct tp_msg_type *m)
 {  
   xmlNodePtr tmp;
 
-  for (tmp = msg->childs; tmp != NULL; tmp = tmp->next) {
+  for (tmp = msg->children; tmp != NULL; tmp = tmp->next) {
     if (!strcasecmp(tmp->name, "weave")) { 
-      if (tmp->childs && tmp->childs->content)
-	m->weaver = strdup(tmp->childs->content);
+      if (tmp->children && tmp->children->content)
+	m->weaver = strdup(tmp->children->content);
       else
         m->weaver  = strdup("<EMPTY>");
     }
     if (!strcasecmp(tmp->name, "tpuser")) { 
-      if (tmp->childs && tmp->childs->content)
-	m->vict_tpu = strdup(tmp->childs->content);
+      if (tmp->children && tmp->children->content)
+	m->vict_tpu = strdup(tmp->children->content);
       else
         m->vict_tpu = strdup("<EMPTY>");
     }
     if (!strcasecmp(tmp->name, "nottpuser")) { 
-      if (tmp->childs && tmp->childs->content)
-	m->vict_ntp = strdup(tmp->childs->content);
+      if (tmp->children && tmp->children->content)
+	m->vict_ntp = strdup(tmp->children->content);
       else
         m->vict_ntp = strdup("<EMPTY>");
     }
     if (!strcasecmp(tmp->name, "tpuserroom")) { 
-      if (tmp->childs && tmp->childs->content)
-	m->onl_tpu = strdup(tmp->childs->content);
+      if (tmp->children && tmp->children->content)
+	m->onl_tpu = strdup(tmp->children->content);
       else
         m->onl_tpu = strdup("<EMPTY>");
     }
     if (!strcasecmp(tmp->name, "nottpuserroom")) { 
-      if (tmp->childs && tmp->childs->content)
-	m->onl_npu = strdup(tmp->childs->content);
+      if (tmp->children && tmp->children->content)
+	m->onl_npu = strdup(tmp->children->content);
       else
         m->onl_npu = strdup("<EMPTY>");
     }
@@ -422,22 +422,22 @@ static void fillInFightMsg(xmlNodePtr msg, struct msg_type *m)
 {
   xmlNodePtr tmp;
  
-  for (tmp = msg->childs; tmp != NULL; tmp = tmp->next) {
+  for (tmp = msg->children; tmp != NULL; tmp = tmp->next) {
     if (!strcasecmp(tmp->name, "attacker")) {
-      if (tmp->childs && tmp->childs->content)
-	m->attacker_msg = strdup(tmp->childs->content);
+      if (tmp->children && tmp->children->content)
+	m->attacker_msg = strdup(tmp->children->content);
       else
         m->attacker_msg = strdup("<EMPTY>");
     }
     if (!strcasecmp(tmp->name,"victim")) {
-      if (tmp->childs && tmp->childs->content)
-	m->victim_msg   = strdup(tmp->childs->content);
+      if (tmp->children && tmp->children->content)
+	m->victim_msg   = strdup(tmp->children->content);
       else
         m->victim_msg = strdup("<EMPTY>");
     }
     if (!strcasecmp(tmp->name,"room")) {
-      if (tmp->childs && tmp->childs->content)
-	m->room_msg     = strdup(tmp->childs->content);
+      if (tmp->children && tmp->children->content)
+	m->room_msg     = strdup(tmp->children->content);
       else
         m->room_msg = strdup("<EMPTY>");
     }
@@ -455,7 +455,7 @@ static int load_fight_msgs(void)
   if (!(doc = xmlParseFile(MESS_FILE_XML))) {
     return 2;
   }
-  if (!(root = doc->root)) {
+  if (!(root = doc->children)) {
     return 5;
   }
   if (strcasecmp("messages",root->name)) {
@@ -469,20 +469,20 @@ static int load_fight_msgs(void)
   }
 
   i = 0; 
-  for (temp = root->childs; NULL != temp; temp = temp->next) {
+  for (temp = root->children; NULL != temp; temp = temp->next) {
     if (!strcasecmp(temp->name, "message")) {
       fight_messages[i].a_type = xmlAtol(xmlGetProp(temp,"type"));
       fight_messages[i].number_of_attacks = xmlAtol(xmlGetProp(temp,"nummsg"));
 
       j = 0; 
-      for (temp2 = temp->childs; NULL != temp2; temp2 = temp2->next) {
+      for (temp2 = temp->children; NULL != temp2; temp2 = temp2->next) {
 	if (!strcasecmp(temp2->name, "msg")) {
 	  m = calloc(1, sizeof(struct message_type));
           m->next = fight_messages[i].msg;
           fight_messages[i].msg = m;
 	  j++;
 
-	  for (temp3 = temp2->childs; NULL != temp3; temp3 = temp3->next) {
+	  for (temp3 = temp2->children; NULL != temp3; temp3 = temp3->next) {
 	    if (!strcasecmp(temp3->name, "die")) {
 	      fillInFightMsg(temp3, &m->die_msg);
 	    }
@@ -524,7 +524,7 @@ static int load_sp_msgs(void)
   if (!(doc = xmlParseFile(SPELL_FILE_XML))) {
     return 3;
   }
-  if (!(root = doc->root)) {
+  if (!(root = doc->children)) {
     return 5;
   }
   if (strcasecmp("spmessages",root->name)) {
@@ -538,20 +538,20 @@ static int load_sp_msgs(void)
   }
 
   i = 0;
-  for (temp = root->childs; NULL != temp; temp = temp->next) {
+  for (temp = root->children; NULL != temp; temp = temp->next) {
     if (!strcasecmp(temp->name, "message")) {
       spell_messages[i].a_type = xmlAtol(xmlGetProp(temp,"type"));
       spell_messages[i].number_of_attacks = xmlAtol(xmlGetProp(temp,"nummsg"));
 
       j = 0;
-      for (temp2 = temp->childs; NULL != temp2; temp2 = temp2->next) {
+      for (temp2 = temp->children; NULL != temp2; temp2 = temp2->next) {
         if (!strcasecmp(temp2->name, "msg")) {
           m = calloc(1, sizeof(struct sp_message_type));
           m->next = spell_messages[i].msg;
           spell_messages[i].msg = m;
           j++;
 
-          for (temp3 = temp2->childs; NULL != temp3; temp3 = temp3->next) {
+          for (temp3 = temp2->children; NULL != temp3; temp3 = temp3->next) {
             if (!strcasecmp(temp3->name, "die")) {
               fillInOpMsg(temp3, &m->die_msg);
             }
@@ -592,7 +592,7 @@ static int load_tp_msgs(void)
   if (!(doc = xmlParseFile(TP_FILE_XML))) {
     return 4;
   }
-  if (!(root = doc->root)) {
+  if (!(root = doc->children)) {
     return 5;
   }
   if (strcasecmp("tpmessages",root->name)) {
@@ -606,20 +606,20 @@ static int load_tp_msgs(void)
   }
 
   i = 0;
-  for (temp = root->childs; NULL != temp; temp = temp->next) {
+  for (temp = root->children; NULL != temp; temp = temp->next) {
     if (!strcasecmp(temp->name, "message")) {
       tp_messages[i].a_type = xmlAtol(xmlGetProp(temp,"type"));
       tp_messages[i].number_of_attacks = xmlAtol(xmlGetProp(temp,"nummsg"));
 
       j = 0;
-      for (temp2 = temp->childs; NULL != temp2; temp2 = temp2->next) {
+      for (temp2 = temp->children; NULL != temp2; temp2 = temp2->next) {
         if (!strcasecmp(temp2->name, "msg")) {
           m = calloc(1, sizeof(struct tp_message_type));
           m->next = tp_messages[i].msg;
           tp_messages[i].msg = m;
           j++;
 
-          for (temp3 = temp2->childs; NULL != temp3; temp3 = temp3->next) {
+          for (temp3 = temp2->children; NULL != temp3; temp3 = temp3->next) {
             if (!strcasecmp(temp3->name, "die")) {
               fillInTpMsg(temp3, &m->die_msg);
             }

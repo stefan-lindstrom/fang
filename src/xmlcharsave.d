@@ -85,5 +85,7 @@ xmlcharsave.o: xmlcharsave.c conf.h sysdep.h \
  /usr/local/include/glib-2.0/glib/glib-autocleanups.h structs.h \
  bitvector.h objprog.h prog.h mobprog.h utils.h comm.h handler.h db.h \
  dll.h interpreter.h class.h spells.h tree.h constants.h olc.h screen.h \
- xmlcharsave.h xmlobjsave.h guild.h dg_olc.h retainer.h dg_scripts.h \
- act.h
+ xmlcharsave.h xmlobjsave.h /usr/include/libxml2/libxml/parserInternals.h \
+ /usr/include/libxml2/libxml/HTMLparser.h \
+ /usr/include/libxml2/libxml/chvalid.h guild.h dg_olc.h retainer.h \
+ dg_scripts.h act.h

@@ -85,5 +85,8 @@ act.wizard2.o: act.wizard2.c config.h structs.h sysdep.h conf.h \
  /usr/local/include/glib-2.0/glib/glib-autocleanups.h bitvector.h \
  objprog.h prog.h mobprog.h shop.h act.h interpreter.h constants.h \
  utils.h comm.h handler.h db.h dll.h spells.h tree.h screen.h olc.h \
- class.h xmlcharsave.h guild.h guild_parser.h xmlobjsave.h dg_scripts.h \
+ class.h xmlcharsave.h guild.h guild_parser.h \
+ /usr/include/libxml2/libxml/parserInternals.h \
+ /usr/include/libxml2/libxml/HTMLparser.h \
+ /usr/include/libxml2/libxml/chvalid.h xmlobjsave.h dg_scripts.h \
  portstone.h boards.h

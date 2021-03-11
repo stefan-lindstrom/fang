@@ -83,6 +83,27 @@ handler.o: handler.c alias.h structs.h sysdep.h conf.h \
  /usr/local/include/glib-2.0/glib/deprecated/grel.h \
  /usr/local/include/glib-2.0/glib/deprecated/gthread.h \
  /usr/local/include/glib-2.0/glib/glib-autocleanups.h bitvector.h \
- objprog.h prog.h mobprog.h fight.h mobact.h act.h interpreter.h utils.h \
- comm.h db.h dll.h handler.h spells.h tree.h cards.h xmlobjsave.h class.h \
- dg_scripts.h retainer.h config.h
+ objprog.h prog.h mobprog.h fight.h spells.h tree.h mobact.h act.h \
+ interpreter.h utils.h comm.h db.h dll.h handler.h cards.h xmlobjsave.h \
+ /usr/include/libxml2/libxml/parser.h \
+ /usr/include/libxml2/libxml/xmlversion.h \
+ /usr/include/libxml2/libxml/xmlexports.h \
+ /usr/include/libxml2/libxml/tree.h \
+ /usr/include/libxml2/libxml/xmlstring.h \
+ /usr/include/libxml2/libxml/xmlregexp.h \
+ /usr/include/libxml2/libxml/dict.h /usr/include/libxml2/libxml/hash.h \
+ /usr/include/libxml2/libxml/valid.h \
+ /usr/include/libxml2/libxml/xmlerror.h \
+ /usr/include/libxml2/libxml/list.h \
+ /usr/include/libxml2/libxml/xmlautomata.h \
+ /usr/include/libxml2/libxml/entities.h \
+ /usr/include/libxml2/libxml/encoding.h \
+ /usr/include/libxml2/libxml/xmlIO.h \
+ /usr/include/libxml2/libxml/globals.h /usr/include/libxml2/libxml/SAX.h \
+ /usr/include/libxml2/libxml/xlink.h /usr/include/libxml2/libxml/SAX2.h \
+ /usr/include/libxml2/libxml/xmlmemory.h \
+ /usr/include/libxml2/libxml/threads.h \
+ /usr/include/libxml2/libxml/parserInternals.h \
+ /usr/include/libxml2/libxml/HTMLparser.h \
+ /usr/include/libxml2/libxml/chvalid.h class.h dg_scripts.h retainer.h \
+ config.h

@@ -83,5 +83,5 @@ spell_parser.o: spell_parser.c act.h structs.h sysdep.h conf.h \
  /usr/local/include/glib-2.0/glib/deprecated/grel.h \
  /usr/local/include/glib-2.0/glib/deprecated/gthread.h \
  /usr/local/include/glib-2.0/glib/glib-autocleanups.h bitvector.h \
- objprog.h prog.h mobprog.h interpreter.h shop.h fight.h class.h spells.h \
- tree.h db.h dll.h constants.h utils.h handler.h comm.h skills.h
+ objprog.h prog.h mobprog.h interpreter.h shop.h fight.h spells.h tree.h \
+ class.h db.h dll.h constants.h utils.h handler.h comm.h skills.h

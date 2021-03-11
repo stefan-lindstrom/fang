@@ -159,50 +159,50 @@ struct retainer_data *readXmlRetainer(xmlNodePtr node)
   char *tempStr;
 
   ret = calloc(1, sizeof(struct retainer_data));
-  for (tmp = node->childs; tmp; tmp = tmp->next)
+  for (tmp = node->children; tmp; tmp = tmp->next)
   {
     // All XML nodes are assumed to be standard <tag></tag>.
     // Meaning, empty tags (<tag/>) are ignored
-    if (!tmp->childs) 
+    if (!tmp->children) 
       continue;
     if (!strcasecmp(tmp->name, "name"))
-      ret->name = xmlToString(tmp->childs);
+      ret->name = xmlToString(tmp->children);
     else if (!strcasecmp(tmp->name, "template"))
     {
-      tempStr = xmlToString(tmp->childs);
+      tempStr = xmlToString(tmp->children);
       sprintf(ret->data.name, tempStr);
       free(tempStr);
     }
     else if (!strcasecmp(tmp->name, "description"))
-      ret->desc = xmlToString(tmp->childs);
+      ret->desc = xmlToString(tmp->children);
     else if (!strcasecmp(tmp->name, "owner"))
-      ret->owner = xmlToString(tmp->childs);
+      ret->owner = xmlToString(tmp->children);
     else if (!strcasecmp(tmp->name, "doing"))
-      ret->doing = xmlToString(tmp->childs);
+      ret->doing = xmlToString(tmp->children);
     else if (!strcasecmp(tmp->name, "title"))
-      ret->title = xmlToString(tmp->childs);
+      ret->title = xmlToString(tmp->children);
     else if (!strcasecmp(tmp->name, "hp"))
-      ret->hp = atoi(tmp->childs->content);
+      ret->hp = atoi(tmp->children->content);
     else if (!strcasecmp(tmp->name, "maxhp"))
-      ret->data.maxhp = atoi(tmp->childs->content);
+      ret->data.maxhp = atoi(tmp->children->content);
     else if (!strcasecmp(tmp->name, "move"))
-      ret->move = atoi(tmp->childs->content);
+      ret->move = atoi(tmp->children->content);
     else if (!strcasecmp(tmp->name, "maxmove"))
-      ret->data.maxmove = atoi(tmp->childs->content);
+      ret->data.maxmove = atoi(tmp->children->content);
     else if (!strcasecmp(tmp->name, "lastPaid"))
-      ret->last_paid = atol(tmp->childs->content);
+      ret->last_paid = atol(tmp->children->content);
     else if (!strcasecmp(tmp->name, "level"))
-      ret->data.level = atoi(tmp->childs->content);
+      ret->data.level = atoi(tmp->children->content);
     else if (!strcasecmp(tmp->name, "damage"))
-      ret->data.damage = atoi(tmp->childs->content);
+      ret->data.damage = atoi(tmp->children->content);
     else if (!strcasecmp(tmp->name, "hitroll"))
-      ret->data.hitroll = atoi(tmp->childs->content);
+      ret->data.hitroll = atoi(tmp->children->content);
     else if (!strcasecmp(tmp->name, "rent"))
-      ret->data.rent = atoi(tmp->childs->content);
+      ret->data.rent = atoi(tmp->children->content);
     else if (!strcasecmp(tmp->name, "mobflags"))
-      ret->data.mobflags = atol(tmp->childs->content);
+      ret->data.mobflags = atol(tmp->children->content);
     else if (!strcasecmp(tmp->name, "mobskills"))
-      ret->data.mobskills = atol(tmp->childs->content);
+      ret->data.mobskills = atol(tmp->children->content);
     else if (!strcasecmp(tmp->name, "playerobjs")) 
       ret->eq = xmlCopyNode(tmp, 1);
   }
@@ -244,7 +244,7 @@ void read_retainers(struct char_data *ch)
   if (!(doc = xmlParseFile(fname))) 
     return;
 
-  if (!(root = doc->root)) {
+  if (!(root = doc->children)) {
     xmlFreeDoc(doc);
     return;
   }
@@ -254,7 +254,7 @@ void read_retainers(struct char_data *ch)
     return;
   }
 
-  for (temp = root->childs; temp && index < NUM_RETAINERS; temp =  temp->next)
+  for (temp = root->children; temp && index < NUM_RETAINERS; temp =  temp->next)
   {
     if (!strcasecmp(temp->name, "retainer") && (ret = readXmlRetainer(temp)))
     {
@@ -305,7 +305,7 @@ void save_retainers(struct char_data *ch)
   fclose(fl);
   doc = xmlNewDoc("1.0");
   retainers = xmlNewDocNode(doc, NULL, "retainers",NULL);
-  doc->root = retainers;
+  doc->children = retainers;
 
   for (index = 0; index < NUM_RETAINERS; index ++)
   {
@@ -321,7 +321,7 @@ void save_retainers(struct char_data *ch)
     }
     temp = xmlNewNode(NULL, "retainer");
     xmlAddChild(retainers, temp);
-    if (ret->eq && ret->eq->childs)
+    if (ret->eq && ret->eq->children)
     {
       xmlAddChild(temp, ret->eq);
       // Since the _entire_ document is freed at the end, 

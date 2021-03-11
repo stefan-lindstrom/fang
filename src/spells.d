@@ -83,6 +83,6 @@ spells.o: spells.c fight.h structs.h sysdep.h conf.h \
  /usr/local/include/glib-2.0/glib/deprecated/grel.h \
  /usr/local/include/glib-2.0/glib/deprecated/gthread.h \
  /usr/local/include/glib-2.0/glib/glib-autocleanups.h bitvector.h \
- objprog.h prog.h mobprog.h act.h interpreter.h config.h utils.h comm.h \
- spells.h tree.h handler.h db.h dll.h constants.h xmlcharsave.h guild.h \
+ objprog.h prog.h mobprog.h spells.h tree.h act.h interpreter.h config.h \
+ utils.h comm.h handler.h db.h dll.h constants.h xmlcharsave.h guild.h \
  magic.h graph.h

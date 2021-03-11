@@ -83,6 +83,9 @@ act.wizard.o: act.wizard.c fight.h structs.h sysdep.h conf.h \
  /usr/local/include/glib-2.0/glib/deprecated/grel.h \
  /usr/local/include/glib-2.0/glib/deprecated/gthread.h \
  /usr/local/include/glib-2.0/glib/glib-autocleanups.h bitvector.h \
- objprog.h prog.h mobprog.h class.h spells.h tree.h db.h dll.h config.h \
+ objprog.h prog.h mobprog.h spells.h tree.h class.h db.h dll.h config.h \
  constants.h act.h interpreter.h utils.h comm.h handler.h screen.h olc.h \
- hotboot.h xmlcharsave.h namedspec.h xmlobjsave.h dg_scripts.h
+ hotboot.h xmlcharsave.h namedspec.h xmlobjsave.h \
+ /usr/include/libxml2/libxml/parserInternals.h \
+ /usr/include/libxml2/libxml/HTMLparser.h \
+ /usr/include/libxml2/libxml/chvalid.h dg_scripts.h

@@ -84,4 +84,4 @@ dg_objcmd.o: dg_objcmd.c act.h structs.h sysdep.h conf.h \
  /usr/local/include/glib-2.0/glib/deprecated/gthread.h \
  /usr/local/include/glib-2.0/glib/glib-autocleanups.h bitvector.h \
  objprog.h prog.h mobprog.h interpreter.h constants.h screen.h \
- dg_scripts.h utils.h comm.h handler.h db.h dll.h fight.h
+ dg_scripts.h utils.h comm.h handler.h db.h dll.h fight.h spells.h tree.h

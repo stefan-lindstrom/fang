@@ -85,5 +85,26 @@ act.other.o: act.other.c skimming.h structs.h sysdep.h conf.h \
  /usr/local/include/glib-2.0/glib/glib-autocleanups.h bitvector.h \
  objprog.h prog.h mobprog.h spells.h tree.h class.h db.h dll.h alias.h \
  fight.h magic.h constants.h config.h act.h interpreter.h spec_procs.h \
- utils.h comm.h handler.h screen.h xmlobjsave.h xmlcharsave.h \
- guild_parser.h guild.h graph.h mail.h retainer.h
+ utils.h comm.h handler.h screen.h xmlobjsave.h \
+ /usr/include/libxml2/libxml/parser.h \
+ /usr/include/libxml2/libxml/xmlversion.h \
+ /usr/include/libxml2/libxml/xmlexports.h \
+ /usr/include/libxml2/libxml/tree.h \
+ /usr/include/libxml2/libxml/xmlstring.h \
+ /usr/include/libxml2/libxml/xmlregexp.h \
+ /usr/include/libxml2/libxml/dict.h /usr/include/libxml2/libxml/hash.h \
+ /usr/include/libxml2/libxml/valid.h \
+ /usr/include/libxml2/libxml/xmlerror.h \
+ /usr/include/libxml2/libxml/list.h \
+ /usr/include/libxml2/libxml/xmlautomata.h \
+ /usr/include/libxml2/libxml/entities.h \
+ /usr/include/libxml2/libxml/encoding.h \
+ /usr/include/libxml2/libxml/xmlIO.h \
+ /usr/include/libxml2/libxml/globals.h /usr/include/libxml2/libxml/SAX.h \
+ /usr/include/libxml2/libxml/xlink.h /usr/include/libxml2/libxml/SAX2.h \
+ /usr/include/libxml2/libxml/xmlmemory.h \
+ /usr/include/libxml2/libxml/threads.h \
+ /usr/include/libxml2/libxml/parserInternals.h \
+ /usr/include/libxml2/libxml/HTMLparser.h \
+ /usr/include/libxml2/libxml/chvalid.h xmlcharsave.h guild_parser.h \
+ guild.h graph.h mail.h retainer.h
