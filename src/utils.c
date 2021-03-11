@@ -1516,3 +1516,19 @@ void SET_NOBILITY(struct char_data *ch, const char *nob)
   }
 }
 
+char *GET_TITLE(struct char_data *ch)
+{
+  if (GET_DISGUISED(ch)) {
+    return GET_DTITLE(ch);
+  }
+  return GET_RTITLE(ch));
+}
+
+void SET_TITLE(struct char_data *ch, const char *title)
+{
+  if (GET_DISGUISED(ch)) {
+    GET_DTITLE(ch) = title;
+  } else {
+    return GET_RTITLE(ch) = title;
+  }
+}

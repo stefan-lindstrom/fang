@@ -411,28 +411,28 @@ long bitv2, long bitv3,
       if (((GET_SEX(ch) == SEX_MALE) &&  !IS_SET(OBJ_EXTRA_FLAGS(obj),ITEM_NOMALE)) ||
          ((GET_SEX(ch) == SEX_FEMALE) && !IS_SET(OBJ_EXTRA_FLAGS(obj),ITEM_NOFEMALE))) {
          if (!add) {
-           GET_MAX_MANA(ch) -= obj->mana_add;
+           ADD_MAX_MANA(ch, -obj->mana_add);
            obj->mana_add = 0;
          }
          else {
            mana_add = (int)(GET_MAX_MANA(ch) * (mod/100.0));
            if ((GET_MAX_MANA(ch) + mana_add) > 15000)
              mana_add = (15000 - GET_MAX_MANA(ch));
-           GET_MAX_MANA(ch) += mana_add;
+           ADD_MAX_MANA(ch, mana_add);
            obj->mana_add = mana_add;
          }
        }   
      }    
      else {
        if (!add) {
-         GET_MAX_MANA(ch) -= obj->mana_add;
+         ADD_MAX_MANA(ch, -obj->mana_add);
          obj->mana_add = 0;
        }
        else {
          if ((GET_MAX_MANA(ch) + mod) > 15000)
             mod = (15000 - GET_MAX_MANA(ch));
          obj->mana_add = mod;
-         GET_MAX_MANA(ch) += mod;
+         ADD_MAX_MANA(ch, mod);
        }
     }
     break;	

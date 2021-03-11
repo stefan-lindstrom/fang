@@ -2536,7 +2536,7 @@ void check_mana(struct char_data *ch)
     send_to_char("You would probably have burned yourself out by now, but\r\n", ch);
     send_to_char("since you're below level 20, we let it pass this time.\r\n", ch);
     send_to_char("Watch your mana....never let it go below 0.\r\n", ch);
-    GET_MANA(ch) = 0;
+    SET_MANA(ch, 0);
     return;
   }
   if (result < (diff / 2) ) {
@@ -2548,7 +2548,7 @@ void check_mana(struct char_data *ch)
     GET_MOVE(ch) = 0;
     GET_FRACT_MOVE(ch) = 0;
     GET_HIT(ch)   = 1;
-    GET_MANA(ch)  = 0;
+    SET_MANA(ch, 0);
     raw_kill(ch,NULL);
     alog("%s killed by overchanneling.",GET_NAME(ch));
     return;
@@ -2562,14 +2562,14 @@ void check_mana(struct char_data *ch)
     GET_HIT(ch)   = 1;
     GET_MOVE(ch) = 0;
     GET_FRACT_MOVE(ch) = 0;
-    GET_MANA(ch)  = 0;
+    SET_MANA(ch, 0);
     alog("%s burned out by overchanneling.",GET_NAME(ch));
     return;
   }
   
   send_to_char("You feel VERY tired!\r\n",ch);
   GET_POS(ch)   = POS_SLEEPING;
-  GET_MANA(ch)  = 0;
+  SET_MANA(ch, 0);
   GET_MOVE(ch) = 0;
   GET_FRACT_MOVE(ch) = 0;
   REMOVE_BIT(PRF_FLAGS(ch),PRF_GRASPING);

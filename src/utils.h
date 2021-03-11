@@ -277,8 +277,11 @@ extern int dummy_int[MAX_SKILLS+1];
 #define GET_NAME(ch)	 (IS_NPC(ch) ? (ch)->player.short_descr : \
                          (GET_DISGUISED(ch) ? GET_DNAME(ch)  : GET_RNAME(ch)))
 #define GET_KWS_CH(ch)   (IS_NPC(ch) ? (ch)->player.name : GET_NAME(ch))
-#define GET_DESC(ch) 	 (GET_RDESC(ch))  
-#define GET_TITLE(ch)    (GET_DISGUISED(ch) ? GET_DTITLE(ch) : GET_RTITLE(ch))
+#define GET_DESC(ch) 	 (GET_RDESC(ch))
+
+extern char *GET_TITLE(struct char_data *ch);
+extern void SET_TITLE(struct char_data *ch, const char *title);
+
 #define GET_CPROMPT(ch)  ((ch)->player.custom_prompt)
 
 extern char *GET_NOBILITY(struct char_data *ch);

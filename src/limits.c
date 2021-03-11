@@ -785,7 +785,7 @@ void set_title(struct char_data * ch, char *title)
   if (GET_TITLE(ch) != NULL)
     free(GET_TITLE(ch));
 
-  GET_TITLE(ch) = str_dup(title);
+  SET_TITLE(ch, str_dup(title));
 }
 
 
@@ -1039,7 +1039,7 @@ void heartbeat_regen()
   for (ch = character_list; ch; ch = ch->next) 
     if (GET_POS(ch) > POS_STUNNED) {
       GET_HIT(ch) = MIN(GET_HIT(ch) + hit_gain(ch), GET_MAX_HIT(ch));
-      GET_MANA(ch) = MIN(GET_MANA(ch) + mana_gain(ch), GET_MAX_MANA(ch));
+      SET_MANA(ch, MIN(GET_MANA(ch) + mana_gain(ch), GET_MAX_MANA(ch)));
       GET_MOVE(ch) = MIN(GET_MOVE(ch) + move_gain(ch), GET_MAX_MOVE(ch));
       GET_FRACT_MOVE(ch) = 0;
     }

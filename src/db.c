@@ -3813,7 +3813,7 @@ void reset_char(struct char_data * ch)
   if (GET_FRACT_MOVE(ch) <= 0)
     GET_FRACT_MOVE(ch) = 0;
   if (GET_MANA(ch) <= 0)
-    GET_MANA(ch) = 1;
+    SET_MANA(ch, 1);
 
   GET_LAST_TELL(ch) = NOBODY;
 }
@@ -3905,7 +3905,7 @@ void init_char(struct char_data * ch)
 
   for (i = 1; i <= MAX_SKILLS; i++) {
     if (GET_LEVEL(ch) < LVL_IMPL)
-      SET_SKILL(ch, i, 0)
+      SET_SKILL(ch, i, 0);
     else
       SET_SKILL(ch, i, 100);
   }

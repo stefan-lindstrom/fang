@@ -236,8 +236,8 @@ void raffect_update(int speed)
       for (raff = world[i].aff; raff != NULL; raff = next) {
         next = raff->next;
 
-    if (raff->duration == -1)
-      continue;
+	if (raff->duration == -1)
+	  continue;
 
         if (raff->speed == speed) {
           if (raff->duration > 1) {
@@ -246,7 +246,7 @@ void raffect_update(int speed)
                 raff->duration--;
               else {
                 mana_cost = ((spell_info[raff->type].mana + raff->mana_add)/raff->duration);
-                GET_MANA(ch) -= mana_cost;
+                ADD_MANA(ch, -mana_cost);
                 sprintf(tmp,"Your maintaining of the %s-weave in %s cost you %d mana\r\n",spells[raff->type],world[i].name,mana_cost);
                 send_to_char(tmp,ch);
               }
@@ -653,7 +653,7 @@ void update_noinc(void)
         continue;
       }
       else if (GET_INC_TIME(i,j)) {
-    GET_INC_TIME(i,j) = 0;
+	GET_INC_TIME(i,j) = 0;
         CLEAR_NOINC(i,j);
       }
     }
@@ -678,7 +678,7 @@ void affect_update(void)
             af->duration--; /* somehow we didn't get the weaver! */
           else {
             mana_cost = ((spell_info[af->type].mana + af->mana_add) / af->duration);
-            GET_MANA(ch) -= mana_cost;
+            ADD_MANA(ch, -mana_cost);
             sprintf(tmp,"Your maintaining of your %s-weave on %s cost you %d mana.\r\n",spells[af->type],GET_NAME(i),mana_cost);
             if(!PLR_FLAGGED(ch, PLR_MAILING | PLR_WRITING))
               send_to_char(tmp,ch);
@@ -716,15 +716,15 @@ void mana_update(int taint)
       if (i->player_specials->linked_by)
         continue;
       if (IS_SET(PRF_FLAGS(i),PRF_GRASPING) && GET_SEX(i) == SEX_FEMALE)
-        GET_MANA(i) -= 10;
+        ADD_MANA(i, -10);
       else if (IS_SET(PRF_FLAGS(i),PRF_GRASPING) && GET_SEX(i) == SEX_MALE) {
         if (taint && IS_SET(PRF_FLAGS(i),PRF_IC)) {
           GET_TAINT(i) += add_taint(i,10);
         }
-        GET_MANA(i) -= 15;
+        ADD_MANA(i, -15);
       }
       else if (IS_SET(PRF_FLAGS(i),PRF_TGRASP))
-        GET_MANA(i) -= 20;
+        ADD_MANA(i, -20);
     }
   }
 }
@@ -737,7 +737,7 @@ void update_timers(void)
   for (i = character_list; i != NULL; i = i->next) {
     for (j = 0; j < MAX_CAN; j++) {
       if (GET_TIMES(i,j)) {
-        GET_TIMES(i,j) -= PULSE_VIOLENCE;
+        ADD_TIMES(i,j, -PULSE_VIOLENCE);
       }
     }
   }
@@ -860,7 +860,7 @@ void perform_unravel_char(struct char_data *ch,struct char_data *target,int weav
     send_to_char("\r\n",target);
     sprintf(tmp,"$n weaves flows of Spirit and unravels the %s-weave on $N.",spells[tweave->type]);
     act(tmp,FALSE,ch,0,target,TO_OPUSERSS);
-    GET_MANA(ch) -= user;   
+    ADD_MANA(ch, -user);
 
     /* Commented out the messages for people whose maintained weaves are unraveled since that is not allowed anymore
     if (weaver) {
@@ -885,7 +885,7 @@ void perform_unravel_char(struct char_data *ch,struct char_data *target,int weav
     } 
     sprintf(tmp,"$n weave flows of Spirit and tries to unravel the %s-weave on $N,but fails!",spells[tweave->type]);
     act(tmp,FALSE,ch,0,target,TO_OPUSERSS);
-    GET_MANA(ch) -= user;   
+    ADD_MANA(ch, -user);   
 
     if (weaver) {
       if (!(tweave->tie_info) && (weaver->in_room != ch->in_room) && (weaver != ch)) {
@@ -948,7 +948,7 @@ void perform_unravel_room(struct char_data *ch,struct room_data *target,int weav
 
     sprintf(tmp,"$n weave flows of Spirit and unravels the %s-weave in this room.",spells[tweave->type]);
     act(tmp,FALSE,ch,0,target,TO_OPUSERSS);
-    GET_MANA(ch) -= user;   
+    ADD_MANA(ch, -user);
 
     if (weaver) {
       if (!(tweave->tie_info) && (weaver->in_room != ch->in_room) && (weaver != ch)) {
@@ -968,7 +968,7 @@ void perform_unravel_room(struct char_data *ch,struct room_data *target,int weav
 
     sprintf(tmp,"$n weave flows of Spirit and tries to unravel the %s-weave in this room,but fails!",spells[tweave->type]);
     act(tmp,FALSE,ch,0,target,TO_OPUSERSS);
-    GET_MANA(ch) -= user;   
+    ADD_MANA(ch, -user);
 
     if (weaver) {
       if (!(tweave->tie_info) && (weaver->in_room != ch->in_room) && (weaver != ch)) {

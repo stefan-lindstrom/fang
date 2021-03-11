@@ -1735,7 +1735,7 @@ void nanny(struct descriptor_data *d, char *arg)
     STATE(d) = CON_CLOSE;
     return;
       }
-      if (restrict) {
+      if (restrict_run) {
     SEND_TO_Q("Sorry, new players can't be created at the moment.\r\n", d);
     sprintf(buf, "Request for new char %s denied from %s (wizlock)",
         GET_NAME(d->character), d->host);
@@ -1804,7 +1804,7 @@ void nanny(struct descriptor_data *d, char *arg)
         xlog(SYS_CONN, MAX(LVL_IMMORT, GET_INVIS_LEV(d->character)), buf, TRUE);
     return;
       }
-      if (GET_LEVEL(d->character) < restrict) {
+      if (GET_LEVEL(d->character) < restrict_run) {
     SEND_TO_Q("The game is temporarily restricted.. try again later.\r\n", d);
     STATE(d) = CON_CLOSE;
     sprintf(buf, "Request for login denied for %s [%s] (wizlock)",
@@ -1893,7 +1893,8 @@ void nanny(struct descriptor_data *d, char *arg)
         d->character->real_abils.intel = 11;
         d->character->real_abils.wis = 11;
         d->character->real_abils.cha = 11;
-        GET_MANA(d->character) = GET_MAX_MANA(d->character) = 50;
+        SET_MANA(d->character, 50);
+	SET_MAX_MANA(d->character, 50);
         GET_MOVE(d->character) = GET_MAX_MOVE(d->character) = 50;
         GET_FRACT_MOVE(d->character) = 0;
         GET_HIT(d->character)  = GET_MAX_HIT(d->character)  = 50;
@@ -2463,7 +2464,7 @@ void withdraw_bonuses(struct descriptor_data *d)
   GET_RCHA(d->character)  -= modifiers[race][5];
   GET_MOVE(d->character) -= modifiers[race][6];
   GET_FRACT_MOVE(d->character) = 0;
-  GET_MANA(d->character) -= modifiers[race][7];
+  ADD_MANA(d->character, -modifiers[race][7]);
   GET_HIT(d->character)  -= modifiers[race][8];
 }
 
@@ -2479,7 +2480,7 @@ void add_bonuses(struct descriptor_data *d)
   GET_RCHA(d->character)  += modifiers[race][5];
   GET_MOVE(d->character)  += modifiers[race][6];
   GET_FRACT_MOVE(d->character) = 0;
-  GET_MANA(d->character)  += modifiers[race][7];
+  ADD_MANA(d->character,  modifiers[race][7]);
   GET_HIT(d->character)   += modifiers[race][8];
 }
 
@@ -2729,10 +2730,14 @@ void do_set_ability(struct descriptor_data *d,char *arg2,int abl)
           GET_MOVE(d->character) = GET_MAX_MOVE(d->character) -= 10;
         break;
       case ABL_MANA :
-        if (up)
-          GET_MANA(d->character) = GET_MAX_MANA(d->character) += 10;
-        else
-          GET_MANA(d->character) = GET_MAX_MANA(d->character) -= 10;
+        if (up) {
+          ADD_MANA(d->character, 10);
+	  ADD_MAX_MANA(d->character, 10);
+	}
+        else {
+          ADD_MANA(d->character, -10);
+	  ADD_MAX_MANA(d->character, -10);
+	}
         break;
       case ABL_HIT  :
         if (up)
