@@ -60,7 +60,7 @@ splitf(svect *s, const char *msg, const char *dlm, int flags) {
 	int dlen;
 	char cp, cd;
 
-	(const char *)p = msg;
+	p = (char *)msg;
 
 	if(p == NULL || s == NULL) {
 		errno = EINVAL;

@@ -98,7 +98,7 @@ sed_compile(const char *expr) {
 	}
 	*pstrt = 0;
 
-	for((const char *)c = expr; *c; c++) {
+	for(c = (char *)expr; *c; c++) {
 		if(*c == '\\') {
 			if(*++c == dlm) {
 				*pstrt++ = dlm;
@@ -575,7 +575,7 @@ here1:
 
 		if(se->rexopt & REG_ICASE) {
 
-			for((const char *)s = string; (cs=*s); s++) {
+			for(s = (char *)string; (cs=*s); s++) {
 				cs = tolower(cs);
 				for(c = sfr; *c; c++)
 					if(cs == *c)
@@ -592,7 +592,7 @@ here1:
 
 		} else {
 
-			for((const char *)s = string; (cs=*s); s++) {
+			for(s = (char *)string; (cs=*s); s++) {
 				for(c = sfr; *c; c++)
 					if(cs == *c)
 						break;
