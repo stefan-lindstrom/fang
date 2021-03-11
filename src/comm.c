@@ -315,7 +315,8 @@
 #include <netinet/in.h>
 #include <netdb.h>
 #include <signal.h>
-//#include <mlloc.h>
+#include <bits/sigaction.h> // ugly hack for linux when compiling with std=c99
+#include <malloc.h>
 #include <errno.h>
 #endif
 
@@ -902,7 +903,7 @@ int main(int argc, char **argv)
       mlog("Quick boot mode -- rent check supressed.");
       break;
     case 'r':
-      restrict = 1;
+      restrict_run = 1;
       mlog("Restricting game -- no new players allowed.");
       break;
     case 's':
@@ -2614,7 +2615,7 @@ RETSIGTYPE unrestrict_game()
   mudlog("Received SIGUSR2 - completely unrestricting game (emergent)",
      BRF, LVL_IMMORT, TRUE);
   ban_list = NULL;
-  restrict = 0;
+  restrict_run = 0;
 }
 
 

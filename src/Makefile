@@ -12,8 +12,8 @@ MYFLAGS = -Wall -I/usr/include/libxml2
 # Uncomment this if no dmallocinf is to be done. Comment it out if debugging
 #PROFILE=-DDMALLOC_DISABLE
 
-LUAINCDIR = -I/home/echion/code/Fang/fang1/lua-5.0/include
-LUALIBDIR = -L/home/echion/code/Fang/fang1/lua-5.0/lib
+LUAINCDIR = -I/home/fang/git/fang/lua-5.0/include
+LUALIBDIR = -L/home/fang/git/fang/lua-5.0/lib
 LUALIBS   = -llualib -llua
 
 #DMALLOCLIBDIR = /home/fang/dmalloc/lib
@@ -22,14 +22,14 @@ LUALIBS   = -llualib -llua
 
 XMLLIBS   = -lz -lxml
 
-GLIBINCDIR = `glib-config --cflags glib`
-#GLIBINCDIR = -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include
+#GLIBINCDIR = `glib-config --cflags glib`
+GLIBINCDIR = -I/usr/local/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/local/lib64/glib-2.0/include/
 
-GLIBLIBS = `glib-config --libs glib`
-#GLIBLIBS = -L/usr/lib -lglib-2.0
+#GLIBLIBS = `glib-config --libs glib`
+GLIBLIBS = -L/usr/local/include/glib-2.0/ -lglib-2.0
 
-STRLIBDIR=-L/home/echion/code/Fang/fang1/libstrfunc-7.4.6/.libs
-STRINCDIR=-I/home/echion/code/Fang/fang1/libstrfunc-7.4.6
+STRLIBDIR=-L/home/fang/git/fang/libstrfunc-7.4.6/.libs
+STRINCDIR=-I/home/fang/git/fang/libstrfunc-7.4.6
 STRLIB=-lstrfunc
 
 INCDIRS = $(LUAINCDIR) $(GLIBINCDIR) $(STRINCDIR)

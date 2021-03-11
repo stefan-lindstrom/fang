@@ -15,7 +15,7 @@
 
 # real mans
 
-SHELL = /bin/sh
+SHELL = /bin/bash
 
 srcdir = .
 top_srcdir = ..
@@ -40,10 +40,10 @@ pkglibdir = $(libdir)/libstrfunc
 pkgincludedir = $(includedir)/libstrfunc
 top_builddir = ..
 
-ACLOCAL = ${SHELL} /home/echion/code/Fang/fang1/libstrfunc-7.4.6/missing --run aclocal
-AUTOCONF = /usr/bin/autoconf
-AUTOMAKE = ${SHELL} /home/echion/code/Fang/fang1/libstrfunc-7.4.6/missing --run automake
-AUTOHEADER = /usr/bin/autoheader
+ACLOCAL = ${SHELL} /home/fang/git/fang/libstrfunc-7.4.6/missing --run aclocal
+AUTOCONF = @echo autoconf not available
+AUTOMAKE = ${SHELL} /home/fang/git/fang/libstrfunc-7.4.6/missing --run automake
+AUTOHEADER = @echo autoheader not available
 
 INSTALL = /usr/bin/install -c
 INSTALL_PROGRAM = ${INSTALL}
@@ -58,15 +58,15 @@ NORMAL_UNINSTALL = :
 PRE_UNINSTALL = :
 POST_UNINSTALL = :
 build_alias = 
-build_triplet = i686-pc-linux-gnu
+build_triplet = x86_64-unknown-linux-gnu
 host_alias = 
-host_triplet = i686-pc-linux-gnu
+host_triplet = x86_64-unknown-linux-gnu
 target_alias = 
-target_triplet = i686-pc-linux-gnu
-AMTAR = ${SHELL} /home/echion/code/Fang/fang1/libstrfunc-7.4.6/missing --run tar
+target_triplet = x86_64-unknown-linux-gnu
+AMTAR = ${SHELL} /home/fang/git/fang/libstrfunc-7.4.6/missing --run tar
 AR = /usr/bin/ar
 AS = @AS@
-AWK = gawk
+AWK = mawk
 CC = gcc
 CONFIGURE_DEPENDS = configure.in aclocal.m4
 CPP = gcc -E
@@ -81,14 +81,14 @@ MAINT = #
 OBJDUMP = @OBJDUMP@
 OBJEXT = o
 PACKAGE = libstrfunc
-PATH = /usr/local/bin:/usr/bin:/bin:/usr/bin/X11:/usr/games:/usr/local/java/bin:/usr/ucb:/usr/ccs/bin
+PATH = /usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/usr/ucb:/usr/ccs/bin
 RANLIB = ranlib
 STRIP = strip
 VERSION = 7
-YACC = bison -y
+YACC = yacc
 am__include = include
 am__quote = 
-install_sh = /home/echion/code/Fang/fang1/libstrfunc-7.4.6/install-sh
+install_sh = /home/fang/git/fang/libstrfunc-7.4.6/install-sh
 
 real_mans = sf_cfg.3 sf_cgi.3 sf_file.3 sf_fmt.3 sf_mem.3 sf_mime.3 \
 	sf_misc.3 sf_sbuf.3 sf_sed.3 sf_split.3 sf_svect.3 sf_time.3 strfunc.3

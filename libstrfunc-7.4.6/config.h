@@ -167,7 +167,7 @@
 /* #undef HAVE_RXPOSIX_H */
 
 /* Define if you have the PCRE library */
-#define HAVE_PCREPOSIX_H 1
+/* #undef HAVE_PCREPOSIX_H */
 
 /* Define if you have tzname() */
 /* #undef HAVE_TZNAME */

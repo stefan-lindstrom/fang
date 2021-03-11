@@ -608,7 +608,7 @@ extern int top_of_zone_table;
 extern struct social_messg *soc_mess_list;
 extern int top_of_socialt;
 extern int top_of_world;
-extern int restrict;
+extern int restrict_run;
 extern int immlock;
 extern int time_restrict;
 extern int questlock;
