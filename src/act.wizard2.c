@@ -1589,7 +1589,7 @@ ACMD(do_set)
 
      // Now old file is deleted, name change can take place!
      free(GET_RNAME(vict));
-     GET_RNAME(vict) = strdup(buf2);
+     SET_RNAME(vict, strdup(buf2));
      change_default_descs(vict);
      write_aliases(vict); 
      save_XML_playerfile(vict, CRASH_FILE);
@@ -1615,7 +1615,7 @@ ACMD(do_set)
      if (GET_NOBILITY(vict))
       free(GET_NOBILITY(vict));
      if (!strcmp(val_arg, "off")){
-       GET_NOBILITY(vict) = NULL;
+       SET_NOBILITY(vict,  NULL);
        act("$N's nobility title has been turned off.", TRUE, ch, NULL, vict,
        TO_CHAR);
        act("$n has turned off your nobility title.", TRUE, ch, NULL,
@@ -1623,7 +1623,7 @@ ACMD(do_set)
        sprintf(to_log, "%s OFF.",to_log);
        break;
      }
-     GET_NOBILITY(vict) = str_dup(val_arg);
+     SET_NOBILITY(vict,  str_dup(val_arg));
      sprintf(buf, "%s has been set to obility title %s.\r\n", GET_NAME(vict), 
         GET_NOBILITY(vict));
      send_to_char(buf, ch);

@@ -280,7 +280,9 @@ extern int dummy_int[MAX_SKILLS+1];
 #define GET_DESC(ch) 	 (GET_RDESC(ch))  
 #define GET_TITLE(ch)    (GET_DISGUISED(ch) ? GET_DTITLE(ch) : GET_RTITLE(ch))
 #define GET_CPROMPT(ch)  ((ch)->player.custom_prompt)
-#define GET_NOBILITY(ch) (GET_DISGUISED(ch) ? GET_DNOBILITY(ch): GET_RNOBILITY(ch))
+
+extern char *GET_NOBILITY(struct char_data *ch);
+extern void SET_NOBILITY(struct char_data *ch, const char *nob);
 
 #define IN_ROOM(ch)	   ((ch)->in_room)
 #define GET_WAS_IN(ch)	   ((ch)->was_in_room)
@@ -290,8 +292,9 @@ extern int dummy_int[MAX_SKILLS+1];
 
 #define GET_AGE(ch)     (age(ch).year)
 
-#define GET_RNAME(ch)     (IS_NPC(ch) ? \
-			    (ch)->player.short_descr : (ch)->player.name)
+extern char *GET_RNAME(struct char_data *ch);
+extern void SET_RNAME(struct char_data *ch, const char *newName);
+
 #define GET_RTITLE(ch)      ((ch)->player.title)
 #define GET_LEVEL(ch)       ((ch)->player.level)
 #define IS_NEWBIE(ch)       (GET_LEVEL((ch)) <= 20 ? 1 : 0)
@@ -309,6 +312,8 @@ extern int dummy_int[MAX_SKILLS+1];
 #define GET_QUEST(ch)	    ((ch)->player_specials->saved.current_quest) 
 
 #define GET_RNOBILITY(ch) ((ch)->player.nobility)
+
+
 #define GET_BM(ch)        ((ch)->player_specials->saved.blademastery)
 #define GET_SUBDUE(ch)    ((ch)->player_specials->saved.subdue)
 #define CHAR_SCENE(ch)	  ((ch)->player_specials->scene)
@@ -360,10 +365,10 @@ extern int dummy_int[MAX_SKILLS+1];
 extern void SET_MANA(struct char_data *ch, long val);
 extern long GET_MANA(struct char_data *ch);
 extern void ADD_MANA(struct char_data *ch, long val);
+extern long GET_MAX_MANA(struct char_data *ch);
+extern void SET_MAX_MANA(struct char_data *ch, long value);
+extern void ADD_MAX_MANA(struct char_data *ch, long toAdd);
 
-#define GET_MAX_MANA(ch)  (!IS_NPC(ch) ? ((ch)->player_specials->linking[0] ? \
-                             (ch)->player_specials->max_manalinked : \
-                             (ch)->points.max_mana): (ch)->points.mana)
 #define GET_GOLD(ch)	  ((ch)->points.gold)      
 #define GET_BANK_GOLD(ch) ((ch)->points.bank_gold) 
 #define GET_HITROLL(ch)	  ((ch)->points.hitroll)

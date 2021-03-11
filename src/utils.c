@@ -1451,3 +1451,68 @@ void SET_TIMES(struct char_data *ch, int skill, long value)
      ch->player_specials->no_skill[skill] = value;
    }
 }
+
+long GET_MAX_MANA(struct char_data *ch)
+{
+  if (!IS_NPC(ch)) {
+    if (ch->player_specials->linking[0]) {
+      return ch->player_specials->max_manalinked;
+    }
+    return ch->points.max_mana;
+  }
+  return ch->points.mana;
+}
+
+void SET_MAX_MANA(struct char_data *ch, long value)
+{
+  if (!IS_NPC(ch)) {
+    if (ch->player_specials->linking[0]) {
+      ch->player_specials->max_manalinked = value;
+    } else {
+      ch->points.max_mana = value;
+    }
+  } else {
+    ch->points.mana = value;
+  }
+}
+
+void ADD_MAX_MANA(struct char_data *ch, long toAdd)
+{
+  long current = GET_MAX_MANA(ch);
+  SET_MAX_MANA(ch, (current + toAdd));
+}
+
+char *GET_RNAME(struct char_data *ch)
+{
+  if (IS_NPC(ch)) {
+    return ch->player.short_descr;
+  }
+  return ch->player.name;
+}
+
+void SET_RNAME(struct char_data *ch, const char *newName)
+{
+  if (IS_NPC(c)) {
+    ch->player.short_descr = newName;
+  } else {
+    ch->player.name = newName;
+  }    
+}
+
+char *GET_NOBILITY(struct char_data *ch)
+{
+  if (GET_DISGUISED(ch)) {
+    return GET_DNOBILITY(ch);
+  }
+  return GET_RNOBILITY(ch);
+}
+
+void SET_NOBILITY(struct char_data *ch, const char *nob)
+{
+  if (GET_DISGUISED(ch)) {
+    GET_DNOBILITY(ch) = nob;
+  } else {
+    GET_RNOBILITY(ch) = nob;
+  }
+}
+

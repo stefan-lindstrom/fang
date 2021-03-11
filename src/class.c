@@ -704,7 +704,7 @@ void do_start(struct char_data * ch)
   advance_level(ch);
 
   GET_HIT(ch) = GET_MAX_HIT(ch);
-  GET_MANA(ch) = GET_MAX_MANA(ch);
+  SET_MANA(ch, GET_MAX_MANA(ch));
   GET_MOVE(ch) = GET_MAX_MOVE(ch);
   GET_FRACT_MOVE(ch) = 0;
 
@@ -789,7 +789,7 @@ void advance_level(struct char_data * ch)
   }
 
   GET_MAX_HIT(ch) += add_hp;
-  GET_MAX_MANA(ch) += add_mana;
+  ADD_MAX_MANA(ch,  add_mana);
   GET_MAX_MOVE(ch) += add_move;
 
   if (GET_TRAINS(ch) != (ubyte)0xFF) {

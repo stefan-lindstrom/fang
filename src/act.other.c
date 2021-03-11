@@ -451,8 +451,8 @@ ACMD(do_manaconv)
   sum_prac = (int)((GET_MAX_MANA(ch) / 20.0)+0.5);
   GET_PRACTICES(ch) += sum_prac;
 
-  GET_MANA(ch) = GET_MAX_MANA(ch) = 0;  
-
+  SET_MANA(ch, 0);
+  SET_MAX_MANA(ch, 0);
 
   for (i = 0; i < GET_LEVEL(ch); i++) {
     t = number(1,max_hp);
@@ -555,7 +555,7 @@ ACMD(do_forget)
     trains = 0;
     qps    = spell_info[skill].cost[(int)GET_CLASS(ch)];
   }
-  GET_SKILL(ch, skill) = 0;
+  SET_SKILL(ch, skill, 0);
   if (trains >= 0)
     GET_TRAINS(ch) += trains;
   else 
@@ -796,7 +796,7 @@ ACMD(do_locate)
               if((number(0,95)<3) && (GET_SKILL(ch,SKILL_LOCATE)<95))
               {
                 send_to_char("Your skill in locate has improved!\r\n", ch);
-                GET_SKILL(ch, SKILL_LOCATE)++;
+                ADD_SKILL(ch, SKILL_LOCATE, 1);
               }
            }
         }     
@@ -1531,9 +1531,11 @@ ACMD(do_use)
   orig_mana  = GET_MANA(ch);
   orig_mmana = GET_MAX_MANA(ch);
   orig_skill = GET_SKILL(ch,spelln);
-  GET_SKILL(ch,spelln) = 100;
+  SET_SKILL(ch,spelln, 100);
   GET_LEVEL(ch) = lvl_cast;
-  GET_MANA(ch) = GET_MAX_MANA(ch) = mana_cost;
+  SET_MANA(ch, mana_cost);
+  SET_MAX_MANA(ch,  mana_cost);
+  
   for (i = 0; i < 5; i++) {
     orig_flow[i] = fp[i];
     fp[i] = spell_info[spelln].min_level[CLASS_WILDER][i];
@@ -1552,9 +1554,10 @@ ACMD(do_use)
   /*
    * Restore original values!
    */
-  GET_SKILL(ch,spelln) = orig_skill;
-  GET_MANA(ch) = orig_mana;
-  GET_MAX_MANA(ch) = orig_mmana;
+  SET_SKILL(ch,spelln,  orig_skill);
+  SET_MANA(ch,  orig_mana);
+  SET_MAX_MANA(ch, orig_mmana);
+  
   GET_LEVEL(ch) = orig_lvl;
   if (!cc) {
     GET_SPARK(ch) = 0;
@@ -2417,24 +2420,24 @@ ACMD(do_grasp)
   
   if (result == 100) {
     send_to_char("You couldn't even grasp for breath, stupid!\r\n",ch);
-    GET_MANA(ch) -= 100;
+    ADD_MANA(ch, -100);
     return;
   }
   else if (result > GET_SKILL(ch,SKILL_GRASP)) {
     send_to_char("You fail to reach the One Power!\r\n",ch);
-    GET_MANA(ch) -= 10;
+    ADD_MANA(ch, -10);
     return;
   }
   else if ((result <= GET_SKILL(ch,SKILL_GRASP)) && (result > 5)) {
     send_to_char("You reach the One Power!\r\n",ch);
     SET_BIT(PRF_FLAGS(ch),PRF_GRASPING);
-    GET_MANA(ch) -= 5;
+    ADD_MANA(ch, -5);
   }
   else {
     result = number(0,100);
     if ((result <= GET_SKILL(ch,SKILL_GRASP)) && (GET_SKILL(ch,SKILL_GRASP) < 50)) {
       send_to_char("You become better in reaching the One Power!\r\n",ch);
-      GET_SKILL(ch,SKILL_GRASP)++;
+      ADD_SKILL(ch,SKILL_GRASP, 1);
     }
     else {
       send_to_char("You reach the One Power!\r\n",ch);
@@ -2484,12 +2487,12 @@ ACMD(do_release)
   if (result == 100) {
     send_to_char("Aaargh! The One Power scourge through you and you aren't\r\n"
                  "able to stop it!\r\n",ch);
-    GET_MANA(ch) -= 100;
+    ADD_MANA(ch, -100);
     return;
   }
   else if (result > GET_SKILL(ch,SKILL_RELEASE)) {
     send_to_char("Panic! You can't let go of the One Power!\r\n",ch);
-    GET_MANA(ch) -= 25;
+    ADD_MANA(ch, -25);
     return;
   }
   else if ((result <= GET_SKILL(ch,SKILL_RELEASE)) && (result > 5)) {
@@ -2500,7 +2503,7 @@ ACMD(do_release)
     result = number(0,100);
     if ((result <= GET_SKILL(ch,SKILL_RELEASE)) && GET_SKILL(ch,SKILL_RELEASE) < 50) {
       send_to_char("You become better at releasing the One Power!\r\n",ch);
-      GET_SKILL(ch,SKILL_RELEASE)++;
+      ADD_SKILL(ch,SKILL_RELEASE, 1);
     }
     else 
       send_to_char("With great effort you reluctantly let go of the One Power.\r\n",ch);
@@ -3338,7 +3341,7 @@ ACMD(do_herblore)
     act("$n tries to utilize $s skills to heal $N, but fails.", TRUE, ch, 0, vict, TO_NOTVICT);
     asend_to_char(vict, "%s tried to help you with herbs, but failed.\r\n", GET_NAME(ch));
     asend_to_char(ch, "You try to help %s, but fail.\r\n", GET_NAME(vict));
-    GET_MANA(ch) /= 2;
+    SET_MANA(ch, (GET_MANA(ch) / 2));
     affect_to_char(vict, &af);
     return;
   }
@@ -3350,7 +3353,7 @@ ACMD(do_herblore)
   asend_to_char(vict, "%s puts a herb bandange on your wounds. You feel better.\r\n", GET_NAME(ch));
   GET_HIT(vict) = MIN(GET_MAX_HIT(vict), GET_HIT(vict) + hp);
   GET_MOVE(vict) = MIN(GET_MAX_MOVE(vict), GET_MOVE(vict) + move);
-  GET_MANA(vict) = MIN(GET_MAX_MANA(vict), GET_MANA(vict) + mana);
+  SET_MANA(vict, MIN(GET_MAX_MANA(vict), GET_MANA(vict) + mana));
   af.duration ++;
   affect_to_char(vict, &af);
 }

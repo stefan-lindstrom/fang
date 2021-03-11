@@ -43,6 +43,7 @@
 #define __FIGHT_H__
 
 #include "structs.h"
+#include "spells.h"
 
 /*
  * Data

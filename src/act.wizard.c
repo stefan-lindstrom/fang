@@ -1259,7 +1259,7 @@ ACMD(do_qrestore)
 
   for (;list;list = list->next) {
     if ((list->character != ch) && (GET_LEVEL(list->character) <LVL_IMMORT) && PRF_FLAGGED(list->character,PRF_QUEST)) {
-      GET_MANA(list->character) = GET_MAX_MANA(list->character);
+      SET_MANA(list->character, GET_MAX_MANA(list->character));
       GET_MOVE(list->character) = GET_MAX_MOVE(list->character);
       GET_FRACT_MOVE(list->character) = 0;
       GET_HIT(list->character)  = GET_MAX_HIT(list->character);
@@ -2423,7 +2423,8 @@ ACMD(do_advance)
     GET_LEVEL(victim) = 0;
     GET_TRAINS(victim) = 0;
     do_start(victim);
-    GET_MAX_MANA(victim) = GET_MANA(victim) = 50;
+    SET_MAX_MANA(victim, 50);
+    SET_MANA(victim,  50);
     GET_MAX_HIT(victim)  = GET_HIT(victim)  = 50;
     GET_MAX_MOVE(victim) = GET_MOVE(victim) = 50;
     GET_FRACT_MOVE(victim) = 0;
@@ -2465,7 +2466,7 @@ void do_restore_all(struct char_data *ch)
   for (i = character_list; i != NULL; i = i->next) {
     if (!IS_NPC(i) && (GET_LEVEL(i) < LVL_IMMORT)) {
       GET_HIT(i)  = GET_MAX_HIT(i);
-      GET_MANA(i) = GET_MAX_MANA(i);
+      SET_MANA(i, GET_MAX_MANA(i));
       GET_MOVE(i) = GET_MAX_MOVE(i);
       GET_FRACT_MOVE(i) = 0;
       update_pos(i);
@@ -2482,7 +2483,7 @@ void do_restore_quest(struct char_data *ch)
   for (i = character_list; i != NULL; i = i->next) {
     if (!IS_NPC(i) && (GET_LEVEL(i) < LVL_IMMORT) && PRF_FLAGGED(i, PRF_QUEST)) {
       GET_HIT(i)  = GET_MAX_HIT(i);
-      GET_MANA(i) = GET_MAX_MANA(i);
+      SET_MANA(i, GET_MAX_MANA(i));
       GET_MOVE(i) = GET_MAX_MOVE(i);
       GET_FRACT_MOVE(i) = 0;
       update_pos(i);
@@ -2509,7 +2510,7 @@ ACMD(do_restore)
     send_to_char(NOPERSON, ch);
   else {
     GET_HIT(vict) = GET_MAX_HIT(vict);
-    GET_MANA(vict) = GET_MAX_MANA(vict);
+    SET_MANA(vict, GET_MAX_MANA(vict));
     GET_MOVE(vict) = GET_MAX_MOVE(vict);
     GET_FRACT_MOVE(vict) = 0;
 
@@ -2972,12 +2973,12 @@ ACMD(do_wizlock)
       send_to_char("Invalid wizlock value.\r\n", ch);
       return;
     }
-    restrict = value;
+    restrict_run = value;
     when = "now";
   } else
     when = "currently";
 
-  switch (restrict) {
+  switch (restrict_run) {
   case 0:
     sprintf(buf, "The game is %s completely open.\r\n", when);
     break;
@@ -2986,7 +2987,7 @@ ACMD(do_wizlock)
     break;
   default:
     sprintf(buf, "Only level %d and above may enter the game %s.\r\n",
-        restrict, when);
+        restrict_run, when);
     break;
   }
   send_to_char(buf, ch);
