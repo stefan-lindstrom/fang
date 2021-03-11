@@ -1452,6 +1452,12 @@ void SET_TIMES(struct char_data *ch, int skill, long value)
    }
 }
 
+void ADD_TIMES(struct char_data *ch, int skill, long value)
+{
+  long new_val = GET_TIMES(ch, skill) + value;
+  SET_TIMES(ch, skill, new_val);
+}
+
 long GET_MAX_MANA(struct char_data *ch)
 {
   if (!IS_NPC(ch)) {

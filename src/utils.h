@@ -466,6 +466,7 @@ extern void ADD_MAX_MANA(struct char_data *ch, long toAdd);
 
 extern long GET_TIMES(struct char_data *ch, int skill);
 extern void SET_TIMES(struct char_data *ch, int skill, long value);
+extern void  ADD_TIMES(struct char_data *ch, int skill, long value);
 
 #define GET_RACE(ch)            ((ch)->player_specials->saved.race)
 #define GET_AJAH(ch)            ((ch)->player_specials->saved.ajah)

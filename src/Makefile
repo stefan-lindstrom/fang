@@ -20,7 +20,7 @@ LUALIBS   = -llualib -llua
 #DMALLOCINCDIR = /home/fang/dmalloc/include
 #DMALLOCLIBS   = -ldmalloc -ldmalloclp
 
-XMLLIBS   = -lz -lxml
+XMLLIBS   = -lz -lxml2
 
 #GLIBINCDIR = `glib-config --cflags glib`
 GLIBINCDIR = -I/usr/local/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/local/lib64/glib-2.0/include/
