@@ -156,7 +156,7 @@ ACMD(do_aim)
     dam = dice(GET_OBJ_VAL(wielded,1), GET_OBJ_VAL(wielded, 2));
     if (number(1,100) < 4)
       if (GET_SKILL(ch, SKILL_AIM) < 100)
-        GET_SKILL(ch, SKILL_AIM)++;   
+        ADD_SKILL(ch, SKILL_AIM, 1);   
   }
   dam *= 3;
   damage(ch, vict, dam, SKILL_AIM); 
@@ -301,7 +301,7 @@ ACMD(do_flank)
         WAIT_STATE(vict, PULSE_VIOLENCE * 3);
         damage(ch, vict, dam, SKILL_FLANK);       
         if ((number(0,100) < 4) && (GET_SKILL(ch, SKILL_FLANK) < 100)) {
-          GET_SKILL(ch, SKILL_FLANK)++;
+          ADD_SKILL(ch, SKILL_FLANK, 1);
           send_to_char("Man, what a nice move. You learn something from it too!\r\n", ch);
         }
       }
@@ -502,7 +502,7 @@ ACMD(do_backstab)
         hit(ch, vict, SKILL_BACKSTAB);
         break;
     }
-    GET_TIMES(ch, CAN_FLEE) = (10 * PULSE_VIOLENCE);
+     SET_TIMES(ch, CAN_FLEE,  (10 * PULSE_VIOLENCE));
   }
   if (mprog)
     run_mobprog(ch, 0);
@@ -646,7 +646,7 @@ ACMD(do_breakshield)
   if ( chance <= result )
   {
     send_to_char("You slam on the shield from the True Source with full force, breaking it!\r\n", ch);
-    GET_TIMES(ch,CAN_BREAK) =  (PULSE_VIOLENCE * 14);
+    SET_TIMES(ch,CAN_BREAK, (PULSE_VIOLENCE * 14));
     if (weaver && (SCMD_MAINTAINED == tweave->tie_info)) 
       asend_to_char(weaver,"%s slams in to your shield, shattering it...\r\n",GET_NAME(ch));
     affect_from_char(ch,SPELL_SHIELD);
@@ -655,7 +655,7 @@ ACMD(do_breakshield)
   else
   {
     send_to_char("You slam and slap against the shield with no results.. its too strong.\r\n",ch);
-    GET_TIMES(ch,CAN_BREAK) =  (PULSE_VIOLENCE * 14);
+    SET_TIMES(ch,CAN_BREAK, (PULSE_VIOLENCE * 14));
     if (weaver && (SCMD_MAINTAINED == tweave->tie_info))
       asend_to_char(weaver,"%s slams into your shield, but fails to shatter it...\r\n",GET_NAME(ch));
   }
@@ -749,19 +749,19 @@ ACMD(do_stab)
      switch (percent) {
       case TOTAL_FUCKUP:
         damage(vict,ch,dam,SKILL_STAB);
-        GET_TIMES(ch,CAN_STAB) = (4 * PULSE_VIOLENCE);
+        SET_TIMES(ch,CAN_STAB, (4 * PULSE_VIOLENCE));
         break;
       case TOTAL_FAILURE:
         damage(ch,vict,0,SKILL_STAB);
-        GET_TIMES(ch,CAN_STAB) = (3 * PULSE_VIOLENCE);
+        SET_TIMES(ch,CAN_STAB,  (3 * PULSE_VIOLENCE));
         break;
       case SOME_SUCCESS:
         damage(ch, vict, dam,SKILL_STAB);
-        GET_TIMES(ch,CAN_STAB) = (3 * PULSE_VIOLENCE);
+        SET_TIMES(ch,CAN_STAB, (3 * PULSE_VIOLENCE));
         break;
       case TOTAL_SUCCESS: 
         damage(ch, vict, dam,SKILL_STAB);
-        GET_TIMES(ch,CAN_STAB) = (2 * PULSE_VIOLENCE);
+        SET_TIMES(ch,CAN_STAB, (2 * PULSE_VIOLENCE));
         break;
     }
   }
@@ -919,7 +919,7 @@ ACMD(do_retreat)
     if ((number (0, 100) < 3) && (GET_SKILL(ch, SKILL_RETREAT) < 100))
     {
       send_to_char("You have become better at retreating!/r/n", ch);
-      GET_SKILL(ch, SKILL_RETREAT)++;
+      ADD_SKILL(ch, SKILL_RETREAT, 1);
     }
 
     if ((number (0, 101) > GET_SKILL(ch, SKILL_RETREAT)) || (!CAN_GO(ch, attempt)))
@@ -988,18 +988,18 @@ ACMD(do_bash)
   }
 
   old = GET_SKILL(ch,SKILL_BASH);
-  GET_SKILL(ch,SKILL_BASH) = (int)(old * (double)(mod/100.0));
+  SET_SKILL(ch,SKILL_BASH, (int)(old * (double)(mod/100.0)));
 
   if (GET_TIMES(ch,CAN_BASH)) {
     send_to_char("You haven't regained your balance since your last bash!",ch);
-    GET_SKILL(ch,SKILL_BASH) = old;
+    SET_SKILL(ch, SKILL_BASH, old);
     return;
   }
   mprog = check_for_mobprogs_and_stops(ch, vict, NULL, MPC_ATTACK, 0, 0);
   if (mprog != 2) {
     if (GET_LEVEL(vict) >= LVL_IMMORT) {
       damage(ch,vict,0,SKILL_BASH);
-      GET_SKILL(ch,SKILL_BASH) = old;
+      SET_SKILL(ch,SKILL_BASH,  old);
       return;
     }
     if (!IS_NPC(ch))
@@ -1023,17 +1023,17 @@ ACMD(do_bash)
       case TOTAL_FUCKUP:
         damage(vict,ch,10,SKILL_BASH);
         GET_POS(ch) = POS_SITTING;
-        GET_TIMES(ch,CAN_BASH) = (PULSE_VIOLENCE * 6);
+        SET_TIMES(ch,CAN_BASH, (PULSE_VIOLENCE * 6));
         break;
       case TOTAL_FAILURE:
         damage(ch, vict, 0, SKILL_BASH);
         GET_POS(ch) = POS_SITTING;
-        GET_TIMES(ch,CAN_BASH) = (PULSE_VIOLENCE * 4);
+        SET_TIMES(ch,CAN_BASH, (PULSE_VIOLENCE * 4));
         break;
       case SOME_SUCCESS:
         damage(ch,vict,1,SKILL_BASH);
         GET_POS(vict) = POS_SITTING;
-        GET_TIMES(ch,CAN_BASH) =  (PULSE_VIOLENCE * 4);
+        SET_TIMES(ch,CAN_BASH, (PULSE_VIOLENCE * 4));
 
         if (IS_NPC(vict))
           GET_MOB_WAIT(vict) += PULSE_VIOLENCE;
@@ -1042,7 +1042,7 @@ ACMD(do_bash)
       case TOTAL_SUCCESS:
         damage(ch,vict,50,SKILL_BASH);
         GET_POS(vict) = POS_SITTING;
-        GET_TIMES(ch,CAN_BASH) = (2*PULSE_VIOLENCE);
+        SET_TIMES(ch,CAN_BASH,  (2*PULSE_VIOLENCE));
 
         if (IS_NPC(vict))
           GET_MOB_WAIT(vict) += 2 * PULSE_VIOLENCE;
@@ -1050,7 +1050,7 @@ ACMD(do_bash)
         break;
     }
   }
-  GET_SKILL(ch,SKILL_BASH) = old;
+  SET_SKILL(ch,SKILL_BASH, old);
   /* Gotta check for increases when the "real" Bash%age is back in.*sigh* */
   if (!IS_NPC(ch))
     percent = generic_result_mod(ch,SKILL_BASH, NULL, FALSE, -(GET_AC(vict) / 5));
@@ -1168,19 +1168,19 @@ ACMD(do_kick)
     switch (percent) {
       case TOTAL_FUCKUP:
         damage(vict,ch,GET_LEVEL(vict),SKILL_KICK);
-        GET_TIMES(ch,CAN_KICK) = (PULSE_VIOLENCE * 6);
+        SET_TIMES(ch,CAN_KICK, (PULSE_VIOLENCE * 6));
         break;
       case TOTAL_FAILURE:
         damage(ch, vict, 0, SKILL_KICK);
-        GET_TIMES(ch,CAN_KICK) = (PULSE_VIOLENCE * 4);
+        SET_TIMES(ch,CAN_KICK, (PULSE_VIOLENCE * 4));
         break;
       case SOME_SUCCESS:
         damage(ch, vict, GET_LEVEL(ch) , SKILL_KICK);
-        GET_TIMES(ch,CAN_KICK) = (PULSE_VIOLENCE * 4);
+        SET_TIMES(ch,CAN_KICK, (PULSE_VIOLENCE * 4));
         break;
       case TOTAL_SUCCESS:
         damage(ch, vict, GET_LEVEL(ch) << 1, SKILL_KICK);
-        GET_TIMES(ch,CAN_KICK) = (2*PULSE_VIOLENCE);
+        SET_TIMES(ch,CAN_KICK, (2*PULSE_VIOLENCE));
         break;
     }
   }
@@ -1240,19 +1240,19 @@ ACMD(do_punch)
     switch (percent) {
       case TOTAL_FUCKUP:
         damage(vict,ch,GET_LEVEL(vict),SKILL_PUNCH);
-        GET_TIMES(ch,CAN_PUNCH) = (PULSE_VIOLENCE * 6);
+        SET_TIMES(ch,CAN_PUNCH, (PULSE_VIOLENCE * 6));
         break;
       case TOTAL_FAILURE:
         damage(ch, vict, 0, SKILL_PUNCH);
-        GET_TIMES(ch,CAN_PUNCH) = (PULSE_VIOLENCE * 4);
+        SET_TIMES(ch,CAN_PUNCH, (PULSE_VIOLENCE * 4));
         break;
       case SOME_SUCCESS:
         damage(ch, vict, GET_LEVEL(ch) , SKILL_PUNCH);
-        GET_TIMES(ch,CAN_PUNCH) = (PULSE_VIOLENCE * 4);
+        SET_TIMES(ch,CAN_PUNCH, (PULSE_VIOLENCE * 4));
         break;
       case TOTAL_SUCCESS:
         damage(ch, vict, GET_LEVEL(ch) << 1, SKILL_PUNCH);
-        GET_TIMES(ch,CAN_PUNCH) = (PULSE_VIOLENCE * 2);
+        SET_TIMES(ch,CAN_PUNCH, (PULSE_VIOLENCE * 2));
         break;
     }
   }
@@ -1327,12 +1327,12 @@ ACMD(do_trip)
     switch (percent) {
       case TOTAL_FUCKUP :
         damage(vict,ch,GET_LEVEL(vict),SKILL_TRIP);
-        GET_TIMES(ch,CAN_TRIP) = (6 * PULSE_VIOLENCE);
+        SET_TIMES(ch,CAN_TRIP, (6 * PULSE_VIOLENCE));
         GET_POS(ch) = POS_SITTING;       
         break;
    
       case TOTAL_FAILURE:
-        GET_TIMES(ch,CAN_TRIP) = (4 * PULSE_VIOLENCE);
+        SET_TIMES(ch,CAN_TRIP, (4 * PULSE_VIOLENCE));
         damage(ch,vict,0,SKILL_TRIP);
         GET_POS(ch) = POS_SITTING;       
         break;
@@ -1340,7 +1340,7 @@ ACMD(do_trip)
       case SOME_SUCCESS: 
         GET_POS(vict) = POS_SITTING;       
         damage(ch,vict,5,SKILL_TRIP);      
-        GET_TIMES(ch,CAN_TRIP) = (4 * PULSE_VIOLENCE);
+        SET_TIMES(ch,CAN_TRIP, (4 * PULSE_VIOLENCE));
 
         if (IS_NPC(vict)) 
           GET_MOB_WAIT(vict) += PULSE_VIOLENCE;
@@ -1349,7 +1349,7 @@ ACMD(do_trip)
 
       case TOTAL_SUCCESS:
         GET_POS(vict) = POS_SITTING;
-        GET_TIMES(ch,CAN_TRIP) = (2 * PULSE_VIOLENCE);
+        SET_TIMES(ch,CAN_TRIP, (2 * PULSE_VIOLENCE));
         damage(ch,vict,GET_LEVEL(ch),SKILL_TRIP);
 
     if (IS_NPC(vict))
@@ -1445,7 +1445,7 @@ ACMD(do_dirtkick)
     switch (percent) {
       case TOTAL_FUCKUP : 
         damage(vict,ch,10,SKILL_DIRTKICK);
-        GET_TIMES(ch,CAN_DIRTKICK) = (10 * PULSE_VIOLENCE);
+        SET_TIMES(ch,CAN_DIRTKICK, (10 * PULSE_VIOLENCE));
         if (!affected_by_spell(ch,SKILL_DIRTKICK) && !IS_AFFECTED2(ch,AFF2_NODIRTKICK)) {
           affect_to_char(ch,&af1);
           affect_to_char(ch,&af2);
@@ -1458,24 +1458,24 @@ ACMD(do_dirtkick)
      
       case TOTAL_FAILURE:
         damage(ch,vict,0,SKILL_DIRTKICK);
-        GET_TIMES(ch,CAN_DIRTKICK) = (5 * PULSE_VIOLENCE);
+        SET_TIMES(ch,CAN_DIRTKICK,  (5 * PULSE_VIOLENCE));
         break;
      
       case SOME_SUCCESS:
-        GET_TIMES(ch,CAN_DIRTKICK) = (5 * PULSE_VIOLENCE);
+        SET_TIMES(ch,CAN_DIRTKICK, (5 * PULSE_VIOLENCE));
         if (!affected_by_spell(vict,SKILL_DIRTKICK)) {
           affect_to_char(vict,&af1);
           affect_to_char(vict,&af2);
         }
         else {
           affect_join(vict,&af1,TRUE,FALSE,FALSE,TRUE);
-      affect_join(vict,&af2,TRUE,FALSE,FALSE,TRUE);
+	  affect_join(vict,&af2,TRUE,FALSE,FALSE,TRUE);
         }
         damage(ch,vict,5,SKILL_DIRTKICK);
         break;
 
       case TOTAL_SUCCESS:
-        GET_TIMES(ch,CAN_DIRTKICK) = (2 * PULSE_VIOLENCE);
+        SET_TIMES(ch,CAN_DIRTKICK, (2 * PULSE_VIOLENCE));
         af1.duration = af2.duration = 10 + (GET_LEVEL(ch) / 4);
         af1.modifier *=2;
         af2.modifier *=2;
@@ -1515,8 +1515,8 @@ ACMD(do_shoot)
     "the southeast"
   };
   
-  if (GET_TIMES(ch, CAN_SHOOT)) 
-  { send_to_char("Hey now, mister lightning...You have to wait a little until you can shoot again.\r\n", ch);
+  if (GET_TIMES(ch, CAN_SHOOT)) {
+    send_to_char("Hey now, mister lightning...You have to wait a little until you can shoot again.\r\n", ch);
     return;
   }
     
@@ -1530,8 +1530,8 @@ ACMD(do_shoot)
     if( (bow = GET_EQ(ch, WEAR_WIELD_R)) )
       if(GET_OBJ_TYPE(bow) != ITEM_BOW) bow = NULL;
 
-  if (!bow) 
-  { send_to_char("Shoot with what?\r\n", ch);
+  if (!bow)  {
+    send_to_char("Shoot with what?\r\n", ch);
     return;
   }
 
@@ -1545,8 +1545,8 @@ ACMD(do_shoot)
   }
 
   two_arguments(argument, targetstr, dirstr);
-  if ((!*targetstr) || (!*dirstr))
-  { send_to_char("Shoot who where?\r\n", ch);
+  if ((!*targetstr) || (!*dirstr)) {
+    send_to_char("Shoot who where?\r\n", ch);
     return;
   }
   for (i = 0; i < NUM_OF_DIRS; i++) /* Check if shooter typed in a correct dir */
@@ -1601,7 +1601,7 @@ ACMD(do_shoot)
     return;
   }
 
-  GET_TIMES(ch, CAN_SHOOT) = (2-(GET_DEX(ch)-15)/10) * PULSE_VIOLENCE;
+  SET_TIMES(ch, CAN_SHOOT, ((2-(GET_DEX(ch)-15)/10) * PULSE_VIOLENCE));
   obj_from_char(arrow);
   sprintf(buf,"$n shoots an arrow %s", dirs[dir]);
   act(buf, TRUE, ch, NULL, NULL, TO_ROOM);
@@ -1651,7 +1651,7 @@ ACMD(do_shoot)
     }
     if ((number(0,100)< 6) && (GET_SKILL(ch, SKILL_SHOOT)<100)) {
       send_to_char("Excellent shot! You learn how to aim better from this.\r\n", ch);
-      GET_SKILL(ch, SKILL_SHOOT)++;
+      ADD_SKILL(ch, SKILL_SHOOT, 1);
     }
   }
   else
@@ -1875,19 +1875,19 @@ ACMD(do_disarm)
 
     switch(result) {
       case TOTAL_FUCKUP:
-        GET_TIMES(ch,CAN_DISARM) = (6 * PULSE_VIOLENCE);
+        SET_TIMES(ch,CAN_DISARM, (6 * PULSE_VIOLENCE));
         damage(ch,vict,0,SKILL_DISARM);
         return;
         break;
       case TOTAL_FAILURE:
-        GET_TIMES(ch,CAN_DISARM) = (3 * PULSE_VIOLENCE);
+        SET_TIMES(ch,CAN_DISARM, (3 * PULSE_VIOLENCE));
         damage(ch,vict,0,SKILL_DISARM);
         return;
       case SOME_SUCCESS:
-        GET_TIMES(ch,CAN_DISARM) = (3 * PULSE_VIOLENCE);
+        SET_TIMES(ch,CAN_DISARM, (3 * PULSE_VIOLENCE));
         break;
       case TOTAL_SUCCESS:
-        GET_TIMES(ch,CAN_DISARM) = PULSE_VIOLENCE;
+        SET_TIMES(ch,CAN_DISARM,  PULSE_VIOLENCE);
         break;
     }
     if (NULL != GET_EQ(vict,WEAR_WIELD_R)) {
@@ -1965,7 +1965,7 @@ ACMD(do_stun)
 
     if ((GET_LEVEL(victim) >= LVL_IMMORT) || (result == TOTAL_FUCKUP) || (result == TOTAL_FAILURE)){
       damage(ch,victim,0,SKILL_STUN);
-      GET_TIMES(ch,CAN_STUN) = (16 * PULSE_VIOLENCE);
+      SET_TIMES(ch,CAN_STUN, (16 * PULSE_VIOLENCE));
       GET_POS(ch) = POS_SITTING;
       return;
     }
@@ -1973,14 +1973,14 @@ ACMD(do_stun)
       WAIT_STATE(victim,PULSE_VIOLENCE * 2);
       damage(ch,victim,1,SKILL_STUN);
       GET_POS(victim) = POS_STUNNED;
-      GET_TIMES(ch,CAN_STUN) = (12 * PULSE_VIOLENCE);
+      SET_TIMES(ch,CAN_STUN, (12 * PULSE_VIOLENCE));
       update_pos(victim);
       return;
     }
     if (result == TOTAL_SUCCESS) {
       WAIT_STATE(victim,PULSE_VIOLENCE * 3);
       GET_POS(victim) = POS_STUNNED;
-      GET_TIMES(ch,CAN_STUN) = (8 * PULSE_VIOLENCE);
+      SET_TIMES(ch,CAN_STUN, (8 * PULSE_VIOLENCE));
       damage(ch,victim,GET_LEVEL(ch),SKILL_STUN);
       update_pos(victim);
       return;
@@ -2015,9 +2015,9 @@ int mastery(struct char_data *ch)
   if ((number(1,100) <= 2) && (true < 3)) {
     asend_to_char(ch,"Your %s skill increases!\r\n",skl);
     if (1 == true)
-      GET_SKILL(ch,SKILL_BLADEMASTERY)++;
+      ADD_SKILL(ch,SKILL_BLADEMASTERY, 1);
     else if (2 == true)
-      GET_SKILL(ch,SKILL_SPEARMASTERY)++;
+      ADD_SKILL(ch,SKILL_SPEARMASTERY, 1);
   }
 
   return true;

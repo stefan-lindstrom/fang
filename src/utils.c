@@ -1388,3 +1388,66 @@ long count_newlines(char **ptr_str)
   return i;
 }
 
+void SET_MANA(struct char_data *ch, long val)
+{
+  if (!IS_NPC(ch) && ch->player_specials->linking[0]) {
+    ch->player_specials->manalinked = val;
+  } else {
+    ch->points.mana = val;
+  }
+}
+
+long GET_MANA(struct char_data *ch)
+{
+  if (!IS_NPC(ch) && ch->player_specials->linking[0]) {
+    return  ch->player_specials->manalinked;
+  }
+  return ch->points.mana;
+}
+
+void ADD_MANA(struct char_data *ch, long val)
+{
+  long total = GET_MANA(ch) + val;
+  SET_MANA(ch, total); 
+}
+
+byte GET_SKILL(struct char_data *ch, int skill)
+{
+  if (IS_NPC(ch)) {
+    return 0;
+  }
+  return ch->player_specials->saved.skills[skill];
+}
+
+void SET_SKILL(struct char_data *ch, int skill, byte value)
+{
+  if (!IS_NPC(ch)) {
+    ch->player_specials->saved.skills[skill] = value;
+  }
+}
+
+void ADD_SKILL(struct char_data *ch, int skill, byte toAdd)
+{
+  if (!IS_NPC(ch)) {
+    byte finalVal = GET_SK*ILL(ch, skill) + toAdd;
+    SET_SKILL(ch, skill, finalVal);
+  }
+}
+
+
+long GET_TIMES(struct char_data *ch, int skill)
+{
+  if (IS_NPC(ch)) {
+    return ch->mob_specials.no_skill[skill]:
+  }
+  return ch->player_specials->no_skill[skill];
+}
+
+void SET_TIMES(struct char_data *ch, int skill, long value)
+{
+  if (IS_NPC(ch)) {
+    ch->mob_specials.no_skill[skill] = value:
+   } else {
+     ch->player_specials->no_skill[skill] = value;
+   }
+}

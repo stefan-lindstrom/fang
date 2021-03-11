@@ -33,37 +33,37 @@ void perform_put(struct char_data * ch, struct obj_data * obj,struct obj_data * 
    return;
 
   if (GET_OBJ_TYPE(cont) == ITEM_FURNITURE) {
-
-   if (GET_OBJ_VAL(cont, 0) != 3) {
-    send_to_char("You can't put things there !\r\n", ch);
-    return;
+    if (GET_OBJ_VAL(cont, 0) != 3) {
+      send_to_char("You can't put things there !\r\n", ch);
+      return;
    }
    
-   for (i = list; i; i = i->next_content)
-     if (i->on_obj == cont)
-      counter++;
+    for (i = list; i; i = i->next_content) {
+      if (i->on_obj == cont) {
+	counter++;
+      }
+    }
 
-   if (GET_OBJ_VAL(cont, 2) < counter) {
-    send_to_char("No room !\r\n", ch);
-    return;
-   }
-
-   obj_from_char(obj);
-   obj_to_room(obj, ch->in_room);
-   obj->on_obj = cont;
+    if (GET_OBJ_VAL(cont, 2) < counter) {
+      send_to_char("No room !\r\n", ch);
+      return;
+    }
+    obj_from_char(obj);
+    obj_to_room(obj, ch->in_room);
+    obj->on_obj = cont;
    
-   sprintf(buf, "You put $p %s $P.", furniture_usages[GET_OBJ_VAL(cont, 1)]);
-   act(buf, FALSE, ch, obj, cont, TO_CHAR);
-   sprintf(buf, "$n puts $p %s $P.", furniture_usages[GET_OBJ_VAL(cont, 1)]);
-   act(buf, FALSE, ch, obj, cont, TO_ROOM);
-   return;
+    sprintf(buf, "You put $p %s $P.", furniture_usages[GET_OBJ_VAL(cont, 1)]);
+    act(buf, FALSE, ch, obj, cont, TO_CHAR);
+    sprintf(buf, "$n puts $p %s $P.", furniture_usages[GET_OBJ_VAL(cont, 1)]);
+    act(buf, FALSE, ch, obj, cont, TO_ROOM);
+    return;
   }
 
   /* If we got here , it means that this item is a container */
 
-  if (GET_OBJ_WEIGHT(cont) + GET_OBJ_WEIGHT(obj) > GET_OBJ_VAL(cont, 0))
+  if (GET_OBJ_WEIGHT(cont) + GET_OBJ_WEIGHT(obj) > GET_OBJ_VAL(cont, 0)) {
     act("$p won't fit in $P.", FALSE, ch, obj, cont, TO_CHAR);
-  else {
+  } else {
     obj_from_char(obj);
     obj_to_obj(obj, cont);
     act("You put $p in $P.", FALSE, ch, obj, cont, TO_CHAR);
@@ -1835,9 +1835,9 @@ ACMD(do_play)
       break;
       case 2: 
         if (GET_OBJ_VAL(obj, 0) == 1) 
-          GET_MANA(vict) = MAX(-5 , GET_MANA(vict) - val);
+          SET_MANA(vict, MAX(-5 , GET_MANA(vict) - val));
         else
-          GET_MANA(vict) = MIN(GET_MANA(vict) + val , GET_MAX_MANA(vict));
+          SET_MANA(vict, MIN(GET_MANA(vict) + val , GET_MAX_MANA(vict)));
       break;
       case 3: 
         if(GET_OBJ_VAL(obj, 0) == 1) 
@@ -1921,7 +1921,7 @@ ACMD(do_apply)
       GET_HIT(vict) = MIN(GET_MAX_HIT(vict), GET_HIT(vict) + val);
     break;
     case 2:
-      GET_MANA(vict) = MIN(GET_MAX_MANA(vict), GET_MANA(vict) + val);
+      SET_MANA(vict, MIN(GET_MAX_MANA(vict), GET_MANA(vict) + val));
     break;
     case 3:
       GET_MOVE(vict) = MIN(GET_MAX_MOVE(vict), GET_MOVE(vict) + val);

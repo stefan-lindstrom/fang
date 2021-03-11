@@ -861,10 +861,12 @@ ACMD(do_fx)
     if (PRF_FLAGGED(ch, PRF_NOREPEAT))
       send_to_char(OK, ch);
     else {
-      if (*argument)
-        if (PRF2_FLAGGED(ch, PRF2_RPTAG))
+      if (*argument) {
+        if (PRF2_FLAGGED(ch, PRF2_RPTAG)) {
           send_to_char("[RP] ", ch);
-        act(coltext(buf, ch), FALSE, ch, 0, 0, TO_CHAR);
+	}
+      }
+      act(coltext(buf, ch), FALSE, ch, 0, 0, TO_CHAR);
     }
 
     to_eavesdropper(coltext(strcat(buf,"\r\n"), ch), ch->in_room);    
@@ -1061,7 +1063,7 @@ ACMD(do_pound)
 
     if ((GET_LEVEL(victim) >= LVL_IMMORT) || (result == TOTAL_FUCKUP) || (result == TOTAL_FAILURE)) {
       damage(ch,victim,0,SKILL_POUND);
-      GET_TIMES(ch,CAN_POUND) = (4 * PULSE_VIOLENCE);
+      SET_TIMES(ch,CAN_POUND, (4 * PULSE_VIOLENCE));
       GET_POS(ch) = POS_SITTING;
       return;
     }
@@ -1069,14 +1071,14 @@ ACMD(do_pound)
       WAIT_STATE(victim,PULSE_VIOLENCE * 2);
       damage(ch,victim,dam,SKILL_POUND);
       GET_POS(victim) = POS_STUNNED;
-      GET_TIMES(ch,CAN_POUND) = (3 * PULSE_VIOLENCE);
+      SET_TIMES(ch,CAN_POUND, (3 * PULSE_VIOLENCE));
       update_pos(victim);
       return;
     }
     if (result == TOTAL_SUCCESS) {
       WAIT_STATE(victim,PULSE_VIOLENCE * 3);
       GET_POS(victim) = POS_STUNNED;
-      GET_TIMES(ch,CAN_POUND) = (2 * PULSE_VIOLENCE);
+      SET_TIMES(ch,CAN_POUND, (2 * PULSE_VIOLENCE));
       damage(ch,victim,2*dam,SKILL_POUND);
       update_pos(victim);
       return;
@@ -1645,7 +1647,7 @@ ACMD(martial_arts)
   } while (ma_skills_ok(ch,skills[num]) && !GET_SKILL(ch,skills[num]));
 
   for (i = 0; i < MAX_CAN; i++)
-    GET_TIMES(ch,i) = 0;
+    SET_TIMES(ch,i, 0);
 
   if (FIGHTING(ch) && ((result == SOME_SUCCESS)||(result==TOTAL_SUCCESS))) {
     if (skills[num] == SKILL_KICK)
@@ -2746,8 +2748,12 @@ ACMD(do_disengage)
   }
   if ((number(0, 100) < 3) &&  (GET_SKILL(ch, SKILL_DISENGAGE) < 100))
   {
+    int skill = GET_SKILL(ch, SKILL_DISENGAGE);
+
     send_to_char("You have improved at disengaging from combat!\r\n", ch);
-    GET_SKILL(ch, SKILL_DISENGAGE)++;
+
+    skill++;
+    SET_SKILL(ch, SKILL_DISENGAGE, skill);
   }
 
   if (number(0, 100) > GET_SKILL(ch, SKILL_DISENGAGE))
@@ -2821,8 +2827,10 @@ ACMD(do_hunt)
         die = number(0, 101);
         if ((die <= 3) && (GET_SKILL(ch, SKILL_HUNT) < 100))
         {
+	  int skill = GET_SKILL(ch, SKILL_HUNT);
           send_to_char("Congratulations! You increase your skill in hunting.\r\n", ch);
-          GET_SKILL(ch, SKILL_HUNT) += 1;
+	 
+          SET_SKILL(ch, SKILL_HUNT, skill + 1);
         }
         if (GET_SKILL(ch, SKILL_HUNT) < die)
           GET_MOVE(ch) = MAX(0, GET_MOVE(ch) - 40);
@@ -3085,8 +3093,9 @@ ACMD(do_search)
 
   if ((number(0, 100) > 3) && (GET_SKILL(ch, SKILL_SEARCH) < 100))
   {
+    int skill = GET_SKILL(ch, SKILL_SEARCH) + 1;
     send_to_char("You improve at searching!\r\n", ch);
-    GET_SKILL(ch, SKILL_SEARCH)++;
+    SET_SKILL(ch, SKILL_SEARCH, skill);
   }
 
   if (number(0, 100) < GET_SKILL(ch, SKILL_SEARCH))
@@ -3165,24 +3174,24 @@ ACMD(t_grasp)
   switch (generic_result(ch,SKILL_TGRASP,NULL,FALSE)) {
    case TOTAL_FUCKUP :
      send_to_char("The Great Lord don't like loosers like you!\r\n",ch);
-     GET_MANA(ch) -= 200;
+     ADD_MANA(ch, -200);
      return;
      break;
 
    case TOTAL_FAILURE:
      send_to_char("You don't find the True Power! Has the Great Lord lost patience with you?\r\n",ch);
-     GET_MANA(ch) -= 100;
+     ADD_MANA(ch, -100);
      return;
      break;
 
    case SOME_SUCCESS :
     send_to_char("You feel like you could conquer the world as the True Power surge through you!\r\n",ch);
-    GET_MANA(ch) -=  50;
+    ADD_MANA(ch, -50);
     break;
 
    case TOTAL_SUCCESS:
      send_to_char("Amazing! Does the Great Lord intend to make you Nae'blis?\r\n",ch);
-     GET_MANA(ch) -= 10;
+     ADD_MANA(ch, -10);
      break;
    }
    SET_BIT(PRF_FLAGS(ch),PRF_TGRASP);
@@ -3191,7 +3200,7 @@ ACMD(t_grasp)
      send_to_char("As you sieze the True Power you loose your grip on the\r\n"
                   "One Power instead!\r\n",ch);
      act("$n suddenly let's go of the One Power. Wonder why?",FALSE,ch,NULL,NULL,TO_OPUSERSS);
-      REMOVE_BIT(PRF_FLAGS(ch),PRF_GRASPING);
+     REMOVE_BIT(PRF_FLAGS(ch),PRF_GRASPING);
    }
    act("A dark aura surrounds $n as $e grasps the True Power.",FALSE,ch,0,NULL,TO_TPUSER); 
 }
@@ -3216,25 +3225,25 @@ ACMD(t_release)
   switch (generic_result(ch,SKILL_TRELEASE,NULL,FALSE)) {
     case TOTAL_FUCKUP :
       send_to_char("Arrgh! The True Power burns you to cinders!\r\n",ch);
-      GET_MANA(ch) -= 200;
+      ADD_MANA(ch, -200);
       GET_HIT(ch)   -= 200;
       return;
       break;
 
     case TOTAL_FAILURE:
       send_to_char("Panic! You can't let go of the True Power!\r\n",ch);
-      GET_MANA(ch) -= 50;
+      ADD_MANA(ch, -50);
       return;
       break;
 
     case SOME_SUCCESS :
       send_to_char("With a sigh of regret you push yourself away from the True Power.\r\n",ch);
-      GET_MANA(ch) -= 100;
+      ADD_MANA(ch, -100);
       break;
 
     case TOTAL_SUCCESS:
       send_to_char("With a superhuman selfcontrol you easily loose the True Power!\r\n",ch);
-      GET_MANA(ch) -= 25;
+      ADD_MANA(ch, - 25);
       break;
   }
   REMOVE_BIT(PRF_FLAGS(ch),PRF_TGRASP);
@@ -3315,8 +3324,10 @@ ACMD(do_supply)
     send_to_char("You reach your supply lines in a hurry, and have a good meal.\r\n", ch);
     GET_COND(ch, FULL) = 20;
     GET_COND(ch, THIRST) = 20;
-    if(number(1, 100) <= 3 && GET_SKILL(ch,SKILL_SUPPLY) < 100)
-    GET_SKILL(ch,SKILL_SUPPLY)++;
+    
+    if(number(1, 100) <= 3 && GET_SKILL(ch,SKILL_SUPPLY) < 100) {
+      ADD_SKILL(ch, SKILL_SUPPLY, 1);
+    }
   }
 }
 
@@ -3347,7 +3358,7 @@ ACMD(do_forage)
     GET_COND(ch, FULL) = 20;
     GET_COND(ch, THIRST) = 20;
     if(number(1, 100) <= 3 && GET_SKILL(ch,SKILL_FORAGE) < 100)
-    GET_SKILL(ch,SKILL_FORAGE)++;
+      ADD_SKILL(ch, SKILL_FORAGE, 1);
   }
 }
 
@@ -3497,7 +3508,7 @@ ACMD(do_herbmastery)
     sprintf(buf, "You try to use the herbs you've got to heal %s, but fail.\r\n", GET_NAME(victim));
     send_to_char(buf, ch);
     act("$n does something to $N's wounds, but then looks vexed.", FALSE, ch, 0, victim, TO_ROOM);
-    GET_MANA(ch) -= 25;
+    ADD_MANA(ch, -25);
     return;
   }
   sprintf(buf, "You skillfully tend to %s's wounds.\r\n", GET_NAME(victim));
@@ -3509,7 +3520,7 @@ ACMD(do_herbmastery)
   af.location = APPLY_NONE;
   af.bitvector = AFF_BANDAGED;
   affect_to_char(victim, &af);
-  GET_MANA(ch) -= 50;
+  ADD_MANA(ch, -50);
   GET_HIT(victim) = MIN(GET_HIT(victim) + 1500, GET_MAX_HIT(victim));
   update_pos(victim);
 }
@@ -3602,8 +3613,9 @@ ACMD(do_seek)
   GET_TRAVEL_TO(ch) = target->in_room;
 
   act("You begin hunting $N down.", TRUE, ch, 0, target, TO_CHAR);
-    if(number(1, 100) <= 3 && GET_SKILL(ch,SKILL_SEEK) < 100)
-    GET_SKILL(ch,SKILL_SEEK)++;                 
+  if(number(1, 100) <= 3 && GET_SKILL(ch,SKILL_SEEK) < 100) {
+    ADD_SKILL(ch, SKILL_SEEK, 1);
+  }
 }
 
 ACMD(do_wolfsense)
@@ -3634,8 +3646,9 @@ ACMD(do_wolfsense)
   GET_TRAVEL_TO(ch) = target->in_room;
 
   act("You begin following $N's smell.", TRUE, ch, 0, target, TO_CHAR);
-    if(number(1, 100) <= 3 && GET_SKILL(ch,SKILL_WOLFSENSE) < 100)
-    GET_SKILL(ch,SKILL_WOLFSENSE)++;
+  if(number(1, 100) <= 3 && GET_SKILL(ch,SKILL_WOLFSENSE) < 100) {
+    ADD_SKILL(ch, SKILL_WOLFSENSE, 1);
+  }
 }
 
 ACMD(do_wolfcall)
@@ -3744,15 +3757,13 @@ ACMD(do_trail)
   struct char_data *target;
   char arg1[MAX_INPUT_LENGTH];
 
-af = clear_aff_var(af);
+  af = clear_aff_var(af);
 
   af.type = SPELL_SENSE_LIFE;
   af.duration = 1;
   af.bitvector = AFF_SENSE_LIFE;
 
   affect_to_char(ch,&af);
-
-
 
   if (!GET_SKILL(ch, SKILL_TRAIL)) {
     send_to_char("Huh?!?\r\n", ch);
@@ -3776,20 +3787,16 @@ af = clear_aff_var(af);
        send_to_char("You can't see anything but stars!\r\n", ch);
     else if (IS_AFFECTED(ch, AFF_BLIND) || IS_SET(GET_PERMANENT(ch), PRM_BLIND))
        send_to_char("You can't see a damned thing, you're blind!\r\n", ch);
-    else if (IS_DARK(ch->in_room) && !CAN_SEE_IN_DARK(ch) &&
-       (!GET_WOLFKIN(ch) || ROOM_FLAGGED(ch->in_room, ROOM_VERY_DARK)))
-       {
+    else if (IS_DARK(ch->in_room) && !CAN_SEE_IN_DARK(ch) &&  (!GET_WOLFKIN(ch) || ROOM_FLAGGED(ch->in_room, ROOM_VERY_DARK)))  {
        send_to_char("It is pitch black...\r\n", ch);
        list_char_to_char(world[ch->in_room].people, ch);   /* glowing red eyes */
-       } else {
+     } else {
        half_chop(argument, arg, arg2);
 
-    if (!*arg)                  /* "look" alone, without an argument at all */
-      look_at_room(ch, 1);
-  }   
-
-
-
+       if (!*arg) {                 /* "look" alone, without an argument at all */
+	 look_at_room(ch, 1);
+       }
+    }   
     return;
   }
 
@@ -3800,11 +3807,10 @@ af = clear_aff_var(af);
 
   GET_TRAVEL_TO(ch) = target->in_room;
   act("You begin hunting $N down.", TRUE, ch, 0, target, TO_CHAR);
-    if(number(1, 100) <= 3 && GET_SKILL(ch,SKILL_TRAIL) < 100)
-    GET_SKILL(ch,SKILL_TRAIL)++;
+  if (number(1, 100) <= 3 && GET_SKILL(ch,SKILL_TRAIL) < 100) {
+    ADD_SKILL(ch, SKILL_TRAIL, 1);
+  }
 }
-
-
 
 ACMD(do_charge)
 {

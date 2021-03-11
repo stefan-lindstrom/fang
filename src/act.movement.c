@@ -1,7 +1,7 @@
 /* ************************************************************************
 *   File: act.movement.c                                Part of CircleMUD *
 *  Usage: movement commands, door handling, & sleep/rest/etc state        *
-*                                                                         *
+*                                                                 §        *
 *  All rights reserved.  See license.doc for complete information.        *
 *                                                                         *
 *  Copyright (C) 1993, 94 by the Trustees of the Johns Hopkins University *
@@ -910,7 +910,7 @@ int ok_pick(struct char_data *ch, int keynum, int pickproof, int scmd)
     else if ((number(0,100)<3) && (GET_SKILL(ch,SKILL_PICK_LOCK) < 100))
       {
         send_to_char("You have improved at picking locks!\r\n",ch);
-        GET_SKILL(ch, SKILL_PICK_LOCK)++;
+        ADD_SKILL(ch, SKILL_PICK_LOCK, 1);
       }
     else      
       return (1);

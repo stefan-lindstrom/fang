@@ -356,10 +356,11 @@ extern int dummy_int[MAX_SKILLS+1];
 #define GET_FRACT_MOVE(ch) ((ch)->char_specials.fract_move)
 #define GET_MOVE(ch)	  ((ch)->points.move)
 #define GET_MAX_MOVE(ch)  ((ch)->points.max_move)
-#define GET_MANA(ch)	  (!IS_NPC(ch) ? ((ch)->player_specials->linking[0] ? \
-                             (ch)->player_specials->manalinked : \
-                             (ch)->points.mana): (ch)->points.mana)
-                          
+
+extern void SET_MANA(struct char_data *ch, long val);
+extern long GET_MANA(struct char_data *ch);
+extern void ADD_MANA(struct char_data *ch, long val);
+
 #define GET_MAX_MANA(ch)  (!IS_NPC(ch) ? ((ch)->player_specials->linking[0] ? \
                              (ch)->player_specials->max_manalinked : \
                              (ch)->points.max_mana): (ch)->points.mana)
@@ -454,9 +455,10 @@ extern int dummy_int[MAX_SKILLS+1];
 #define GET_AUTOQUEST(ch) 	((ch)->player_specials->saved.AutoQuest[0])
 #define GET_AFW(ch)		((ch)->player_specials->afk_String)
 #define GET_AFK(ch)		((ch)->player_specials->afk_String)
-#define GET_TIMES(ch,i)         (IS_NPC(ch)? \
-                                ((ch)->mob_specials.no_skill[i]): \
-                                ((ch)->player_specials->no_skill[i]))
+
+extern long GET_TIMES(struct char_data *ch, int skill);
+extern void SET_TIMES(struct char_data *ch, int skill, long value);
+
 #define GET_RACE(ch)            ((ch)->player_specials->saved.race)
 #define GET_AJAH(ch)            ((ch)->player_specials->saved.ajah)
 #define old_GET_MOUNTS(ch)		((ch)->player_specials->mounts)
@@ -504,10 +506,11 @@ extern int dummy_int[MAX_SKILLS+1];
 #define GET_CRAFT_TYPE(ch)      ((ch)->player_specials->obj_type)
 #define GET_CRAFT_EDESC(ch)     ((ch)->player_specials->tl)
 #define GET_XATTACKS(ch)	((ch)->player_specials->xattacks)
-// The one below is an -awful- hack to avoid accessing nonexistant
-// structures for mobs... /Fredrik 990227
-#define GET_SKILL(ch, i)	((IS_NPC(ch))?dummy_int[i]:(ch)->player_specials->saved.skills[i])
-#define SET_SKILL(ch, i, pct)	{ (ch)->player_specials->saved.skills[i] = pct; }
+
+extern byte GET_SKILL(struct char_data *ch, int skill);
+extern void SET_SKILL(struct char_data *ch, int skill, byte value);
+extern void ADD_SKILL(struct char_data *ch, int skill, byte toAdd);
+
 #define GET_LASTEMOTESTR(ch)	((ch)->player_specials->lastemotestr)
 #define GET_LASTEMOTETYPE(ch)	((ch)->player_specials->lastemotetype)
 #define GET_EQ(ch, i)		((ch)->equipment[i])
