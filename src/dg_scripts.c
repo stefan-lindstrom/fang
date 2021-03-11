@@ -8,10 +8,10 @@
 *  $Revision: 1.5 $
 **************************************************************************/
 
-#include <gnome-xml/parser.h>
-#include <gnome-xml/tree.h>
-#include <gnome-xml/entities.h>
-#include <gnome-xml/parserInternals.h>
+#include <libxml/parser.h>
+#include <libxml/tree.h>
+#include <libxml/entities.h>
+#include <libxml/parserInternals.h>
 #include <string.h>
 #include <stdio.h>
 
@@ -3424,7 +3424,7 @@ void XML_to_DGVariables(xmlNodePtr node, struct char_data *ch)
     return;
   }
 
-  for (temp = node->childs; temp; temp = temp->next)
+  for (temp = node->children; temp; temp = temp->next)
     if (!strcasecmp(temp->name, "variable"))
       add_var(&(SCRIPT(ch)->global_vars), xmlGetProp(temp, "name"),
               xmlGetProp(temp, "value"), atol(xmlGetProp(temp, "context")));

@@ -95,6 +95,9 @@
 #include "dg_olc.h"
 #include "olc.h"
 
+static void readRoomsFromXml(char *);
+static void dumpRoomsToXmlFile(int start, int stop, FILE *file);
+
 /*
  * Reads and parses all rooms in file <f>
  * Ex:
@@ -105,15 +108,11 @@
  */
 void load_xml_rooms(char *f)
 {
-  static void readRoomsFromXml(char *);
-
   readRoomsFromXml(f);
 }
 
 void room_save_zone_to_file(int rstart,int rstop, FILE *f)
 {
-  static void dumpRoomsToXmlFile(int start, int stop, FILE *file);
-
   // Attempt to dump this room-file as xml as well...
   dumpRoomsToXmlFile(rstart,rstop,f);
 
@@ -244,7 +243,7 @@ static void dumpRoomsToXmlFile(int start, int stop, FILE *file)
   doc = xmlNewDoc("1.0");
   
   tree = xmlNewDocNode(doc,NULL,"rooms",NULL);
-  doc->root = tree;
+  doc->children = tree;
 
   for (i = start; i <= stop; i++) {
     if (-1 != (rr = real_room(i))) {
@@ -318,18 +317,18 @@ static void fetchRoomBasics(xmlNodePtr basic, struct room_data *rm)
   rm->number  = xmlAtoi(xmlGetProp(basic,"vnum"));
   rm->zone    = real_zone(rm->number);
 
-  for (temp = basic->childs; temp != NULL; temp = temp->next) {
+  for (temp = basic->children; temp != NULL; temp = temp->next) {
     if (!strcasecmp(temp->name,"flags"))
-      rm->room_flags = atoi(temp->childs->content);
+      rm->room_flags = atoi(temp->children->content);
 
     else if (!strcasecmp(temp->name,"sector"))
-      rm->sector_type = string2sector(temp->childs->content);
+      rm->sector_type = string2sector(temp->children->content);
 
     else if (!strcasecmp(temp->name,"special")) {
-      if (!strcasecmp(temp->childs->content,"NONE")) {
+      if (!strcasecmp(temp->children->content,"NONE")) {
     rm->func = NULL; 
       }
-      rm->func = getSpecialName(temp->childs->content);
+      rm->func = getSpecialName(temp->children->content);
     }
 
     /* Saved if Ders wanna add depth/height later on.
@@ -340,7 +339,7 @@ static void fetchRoomBasics(xmlNodePtr basic, struct room_data *rm)
       rm->room_depth = atoi(temp->childs->content);
     */
     else if (!strcasecmp(temp->name,"roomdescription"))
-      rm->description = xmlToString(temp->childs);
+      rm->description = xmlToString(temp->children);
 
     else
       continue; // Some unknown type here...*shudder* :)
@@ -364,7 +363,7 @@ static void fetchRoomExit(xmlNodePtr ex, struct room_data *r)
   new->exit_info = xmlAtoi(xmlGetProp(ex,"exitinfo"));
   new->key       = xmlAtoi(xmlGetProp(ex,"keynum"));
   new->to_room   = xmlAtoi(xmlGetProp(ex,"toroom"));
-  new->general_description = (xmlToString(ex->childs->childs));
+  new->general_description = (xmlToString(ex->children->children));
   r->dir_option[dir] = new;
 }
 
@@ -374,7 +373,7 @@ static void fetchRoomExDesc(xmlNodePtr de,struct room_data *r)
   new = calloc(1,sizeof(struct extra_descr_data));
   
   new->keyword     = xmlGetProp(de,"keyword");
-  new->description = xmlToString(de->childs->childs);
+  new->description = xmlToString(de->children->children);
 
   new->next = r->ex_description;
   r->ex_description = new;
@@ -392,7 +391,7 @@ static struct room_data *fetchXmlRoom(xmlNodePtr room)
     r->dir_option[i] = NULL;
   }
 
-  for (temp = room->childs; NULL != temp; temp = temp->next) {
+  for (temp = room->children; NULL != temp; temp = temp->next) {
     if (!strcasecmp(temp->name,"ROOMBASIC")) {
       fetchRoomBasics(temp,r);
     }
@@ -427,7 +426,7 @@ static void readRoomsFromXml(char *file)
     alog("readRoomsFromXml:[roomproto.c]: Couldn't parse XML-file %s",file);
     return;
   }
-  if (!(root = doc->root)) {
+  if (!(root = doc->children)) {
     alog("readRoomsFromXml:[roomproto.c]: No XML-root in document %s",file);
     xmlFreeDoc(doc);
     return;
@@ -437,7 +436,7 @@ static void readRoomsFromXml(char *file)
     xmlFreeDoc(doc);
     return;
   }
-  for (temp = root->childs; NULL != temp; temp = temp->next) {
+  for (temp = root->children; NULL != temp; temp = temp->next) {
     rm = fetchXmlRoom(temp);
     *(world+last_room_rnum) = *rm;
     /*

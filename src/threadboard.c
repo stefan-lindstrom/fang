@@ -5,7 +5,7 @@
 #include "utils.h"
 #include "comm.h"
 
-thrBoard *thr_board_list = 0;
+static thrBoard *thr_board_list = 0;
 
 /*
  * Adds a reply to a message, used only when reading the saved messages from file
@@ -36,27 +36,27 @@ void addReplyToMessage(xmlNodePtr message, thrMsg *parent)
   thisReply->replyTo = parent;
   thisReply->board->top++;
   
-  for (tmp = message->childs; tmp; tmp = tmp->next)
+  for (tmp = message->children; tmp; tmp = tmp->next)
   {
     if (!strcasecmp(tmp->name, "author"))
     {
       free(thisReply->author);
-      thisReply->author = strdup(tmp->childs->content);
+      thisReply->author = strdup(tmp->children->content);
     }
     else if (!strcasecmp(tmp->name, "header"))
     {
       free(thisReply->header);
-      thisReply->header = strdup(tmp->childs->content);
+      thisReply->header = strdup(tmp->children->content);
     }
     else if (!strcasecmp(tmp->name, "date"))
     {
       free(thisReply->date);
-      thisReply->date = strdup(tmp->childs->content);
+      thisReply->date = strdup(tmp->children->content);
     }
     else if (!strcasecmp(tmp->name, "contents"))
     {
       free(thisReply->contents);
-      thisReply->contents = strdup(tmp->childs->content);
+      thisReply->contents = strdup(tmp->children->content);
     }
     else if (!strcasecmp(tmp->name, "message"))
     {
@@ -89,7 +89,7 @@ void addMessagesToBoard(xmlNodePtr msgList, thrBoard *board)
   {
     return;
   }
-  for (message = msgList->childs; message; message = message->next)
+  for (message = msgList->children; message; message = message->next)
   {
     if (strcasecmp(message->name, "message"))
     {
@@ -103,30 +103,30 @@ void addMessagesToBoard(xmlNodePtr msgList, thrBoard *board)
     thisMsg->board = board;
     thisMsg->number = board->top;
     board->top ++;
-    for (tmp = message->childs; tmp; tmp = tmp->next)
+    for (tmp = message->children; tmp; tmp = tmp->next)
     {
       if (!strcasecmp(tmp->name, "author"))
       {
         free(thisMsg->author);
-        thisMsg->author = strdup(tmp->childs->content);
+        thisMsg->author = strdup(tmp->children->content);
       }
       else if (!strcasecmp(tmp->name, "header"))
       {
         free(thisMsg->header);
-        thisMsg->header = strdup(tmp->childs->content);
+        thisMsg->header = strdup(tmp->children->content);
       }
       else if (!strcasecmp(tmp->name, "date"))
       {
         free(thisMsg->date);
-        thisMsg->date = strdup(tmp->childs->content);
+        thisMsg->date = strdup(tmp->children->content);
       }
       else if (!strcasecmp(tmp->name, "contents"))
       {
         free(thisMsg->contents);
-    if (tmp->childs)
-      thisMsg->contents = strdup(tmp->childs->content);
-    else 
-      thisMsg->contents = strdup(""); 
+	if (tmp->children)
+	  thisMsg->contents = strdup(tmp->children->content);
+	else 
+	  thisMsg->contents = strdup(""); 
       }
       else if (!strcasecmp(tmp->name, "message"))
       {
@@ -201,15 +201,14 @@ thrBoard *readBoard(int vnum)
   {
     return NULL;
   }
-  root = doc->root;
 
-  if (!(root = doc->root) || strcasecmp(root->name, "threadboards"))
+  if (!(root = doc->children) || strcasecmp(root->name, "threadboards"))
   {    
     xmlFreeDoc(doc);
     return NULL;
   }
 
-  for (board = root->childs; board; board = board->next)
+  for (board = root->children; board; board = board->next)
   {
     if (strcasecmp(board->name, "board"))
     {
@@ -219,7 +218,7 @@ thrBoard *readBoard(int vnum)
     thisBoard->name = strdup("unknown");
     thisBoard->vnum = -1;
     thisBoard->top = 1;    
-    for (tmp = board->childs; tmp; tmp = tmp->next)
+    for (tmp = board->children; tmp; tmp = tmp->next)
     {
       if (!strcasecmp(tmp->name, "messages"))
       {
@@ -228,11 +227,11 @@ thrBoard *readBoard(int vnum)
       else if (!strcasecmp(tmp->name, "name"))
       {
         free(thisBoard->name);
-        thisBoard->name = strdup(tmp->childs->content);
+        thisBoard->name = strdup(tmp->children->content);
       }
       else if (!strcasecmp(tmp->name, "vnum"))
       {
-        thisBoard->vnum = atoi(tmp->childs->content);
+        thisBoard->vnum = atoi(tmp->children->content);
       } 
     }
     if (!lastBoard)
@@ -323,7 +322,7 @@ void saveThreadBoard(thrBoard *board)
   }
   doc = xmlNewDoc("1.0");
   root = xmlNewDocNode(doc, NULL, "threadboards", NULL);
-  doc->root = root;
+  doc->children = root;
   boardNode = xmlNewChild(root, NULL, "board", NULL);
   xmlNewChild(boardNode, NULL, "name", board->name);
   sprintf(buf, "%d", board->vnum);

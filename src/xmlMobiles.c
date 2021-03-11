@@ -84,10 +84,10 @@
 #include <errno.h>
 #include <string.h>
 
-#include <gnome-xml/parser.h>
-#include <gnome-xml/tree.h>
-#include <gnome-xml/entities.h>
-#include <gnome-xml/parserInternals.h>
+#include <libxml/parser.h>
+#include <libxml/tree.h>
+#include <libxml/entities.h>
+#include <libxml/parserInternals.h>
 #include <stdio.h>
 
 #include "db.h"
@@ -147,29 +147,29 @@ static void fetchAbils(xmlNodePtr a,struct char_data *mob)
   xmlNodePtr atmp;
   char *p = NULL;
 
-  for (atmp = a->childs; NULL != atmp; atmp = atmp->next) {
+  for (atmp = a->children; NULL != atmp; atmp = atmp->next) {
     if (!strcasecmp(atmp->name,"STR")) {
-      mob->real_abils.str = (char)atoi((p == xmlToString(atmp->childs)) ? p : "18");
+      mob->real_abils.str = (char)atoi((p == xmlToString(atmp->children)) ? p : "18");
       if (p) free(p);
     }
     else if (!strcasecmp(atmp->name,"INT")) {
-      mob->real_abils.intel = (char)atoi((p == xmlToString(atmp->childs)) ? p : "18");
+      mob->real_abils.intel = (char)atoi((p == xmlToString(atmp->children)) ? p : "18");
       if (p) free(p);
     }
     else if (!strcasecmp(atmp->name,"WIS")) {
-      mob->real_abils.wis = (char)atoi((p == xmlToString(atmp->childs)) ? p : "18");
+      mob->real_abils.wis = (char)atoi((p == xmlToString(atmp->children)) ? p : "18");
       if (p) free(p);
     }
     else if (!strcasecmp(atmp->name,"DEX")) {
-      mob->real_abils.dex = (char)atoi((p == xmlToString(atmp->childs)) ? p : "18");
+      mob->real_abils.dex = (char)atoi((p == xmlToString(atmp->children)) ? p : "18");
       if (p) free(p);
     }
     else if (!strcasecmp(atmp->name,"CON")) {
-      mob->real_abils.con = (char)atoi((p == xmlToString(atmp->childs)) ? p : "18");
+      mob->real_abils.con = (char)atoi((p == xmlToString(atmp->children)) ? p : "18");
       if (p) free(p);
     }
     else if (!strcasecmp(atmp->name,"CHA")) {
-      mob->real_abils.cha = (char)atoi((p == xmlToString(atmp->childs)) ? p : "18");
+      mob->real_abils.cha = (char)atoi((p == xmlToString(atmp->children)) ? p : "18");
       if (p) free(p);
     }
     else
@@ -183,7 +183,7 @@ static void fetchStats(xmlNodePtr s, struct char_data *mob)
   xmlNodePtr tmp;
   char *p;
 
-  for (tmp = s->childs; NULL != tmp; tmp = tmp->next) {
+  for (tmp = s->children; NULL != tmp; tmp = tmp->next) {
     if (!strcasecmp(tmp->name,"MANA")) {
       mob->mob_specials.mananodice   = atoi((p = xmlGetProp(tmp,"numd"))  ? p : "1");
       if (p) free(p);
@@ -209,43 +209,43 @@ static void fetchStats(xmlNodePtr s, struct char_data *mob)
       if (p) free(p);
     }
     else if (!strcasecmp(tmp->name,"AC")) {
-      p = xmlToString(tmp->childs);
+      p = xmlToString(tmp->children);
       p = (NULL == p ? "100" : p);
       mob->points.armor = atoi(p);
       if (p) free(p);
     }
     else if (!strcasecmp(tmp->name,"GOLD")) {
-      p = xmlToString(tmp->childs);
+      p = xmlToString(tmp->children);
       p = (NULL == p ? "0" : p);
       mob->points.gold = atoi(p);
       if (p) free(p);
     }
     else if (!strcasecmp(tmp->name,"BANKGOLD")) {
-      p = xmlToString(tmp->childs);
+      p = xmlToString(tmp->children);
       p = (NULL == p ? "0" : p);
       mob->points.bank_gold = atoi(p);
       if (p) free(p);
     }
     else if (!strcasecmp(tmp->name,"EXP")) {
-      p = xmlToString(tmp->childs);
+      p = xmlToString(tmp->children);
       p = (NULL == p ? "0" : p);
       mob->points.exp = atoi(p);
       if (p) free(p);
     }
     else if (!strcasecmp(tmp->name,"HITROLL")) {
-      p = xmlToString(tmp->childs);
+      p = xmlToString(tmp->children);
       p = (NULL == p ? "0" : p);
       mob->points.hitroll = atoi(p);
       if (p) free(p);
     }
     else if (!strcasecmp(tmp->name,"DAMROLL")) {
-      p = xmlToString(tmp->childs);
+      p = xmlToString(tmp->children);
       p = (NULL == p ? "0" : p);
       mob->points.damroll = atoi(p);
       if (p) free(p);
     }
     else if (!strcasecmp(tmp->name,"ABS")) {
-      p = xmlToString(tmp->childs);
+      p = xmlToString(tmp->children);
       p = (NULL == p ? "0" : p);
       if (p) free(p);
       /* What to do with this, we've no MOB ABS saved, no? */
@@ -293,7 +293,7 @@ static void fetchSkills(xmlNodePtr sv, struct char_data *mob)
   mob->mob_specials.skills[0] = calloc(j, sizeof(int));
   mob->mob_specials.skills[1] = calloc(j, sizeof(int));
 
-  tmp = sv->childs;
+  tmp = sv->children;
 
   for (; i < j; i++) {
     name = xmlGetProp(tmp,"name");
@@ -425,7 +425,7 @@ static void fetchMobProg(xmlNodePtr prog, struct char_data *obj)
   if (p)
     free(p);
       
-  for (tmp = prog->childs; NULL != tmp; tmp = tmp->next) {  
+  for (tmp = prog->children; NULL != tmp; tmp = tmp->next) {  
     if (!strcasecmp(tmp->name,"SIDETERM")) {  
       side = calloc(1,sizeof(struct side_term_list)); 
       fetchSide(tmp,side);
@@ -433,12 +433,12 @@ static void fetchMobProg(xmlNodePtr prog, struct char_data *obj)
       
       // Need to insert side as the last element in maino's side list. 
       if (NULL == maino->sideterms)
-    maino->sideterms = side;
+	maino->sideterms = side;
       else {
-    sp = maino->sideterms;
-    while (NULL != sp->next)
-      sp = sp->next;
-    sp->next = side;
+	sp = maino->sideterms;
+	while (NULL != sp->next)
+	  sp = sp->next;
+	sp->next = side;
       } 
     } 
     else if (!strcasecmp(tmp->name,"ACTION")) { 
@@ -448,12 +448,12 @@ static void fetchMobProg(xmlNodePtr prog, struct char_data *obj)
 
       // Need to inser action as the last element in maino's action list
       if (NULL == maino->actions)
-    maino->actions = action;
+	maino->actions = action;
       else { 
-    ap = maino->actions;
-    while (NULL != ap->next)
-      ap = ap->next;
-    ap->next = action;
+	ap = maino->actions;
+	while (NULL != ap->next)
+	  ap = ap->next;
+	ap->next = action;
       } 
     } 
     else
@@ -483,18 +483,18 @@ static struct char_data *fetchXmlMob(xmlNodePtr m)
   mob->nr = last_obj_rnum;
   mob->player.name = xmlGetProp(m,"name");
 
-  for (tmp = m->childs; NULL != tmp; tmp = tmp->next) {
+  for (tmp = m->children; NULL != tmp; tmp = tmp->next) {
     if (!strcasecmp(tmp->name,"DESCRIPTION"))
-      mob->player.description = xmlToString(tmp->childs);
+      mob->player.description = xmlToString(tmp->children);
 
     else if (!strcasecmp(tmp->name,"SHORTDESC"))
-      mob->player.short_descr = xmlToString(tmp->childs);
+      mob->player.short_descr = xmlToString(tmp->children);
 
     else if (!strcasecmp(tmp->name,"LONGDESC"))
-      mob->player.long_descr = xmlToString(tmp->childs);
+      mob->player.long_descr = xmlToString(tmp->children);
 
     else if (!strcasecmp(tmp->name,"TITLE"))
-      mob->player.title = xmlToString(tmp->childs);
+      mob->player.title = xmlToString(tmp->children);
 
     else if (!strcasecmp(tmp->name,"CHARDATA"))
       fetchCharData(tmp,mob);
@@ -580,7 +580,7 @@ void load_xml_mobiles(char *file)
     return;
   }
 
-  if (!(root = doc->root)) {
+  if (!(root = doc->children)) {
     alog("load_xml_mobiles:[xmlMobiles.c]: No XML-root in document %s",file);
     xmlFreeDoc(doc);
     return;
@@ -592,7 +592,7 @@ void load_xml_mobiles(char *file)
     return;
   }
   
-  for (temp = root->childs; NULL != temp; temp = temp->next) {
+  for (temp = root->children; NULL != temp; temp = temp->next) {
     mob = fetchXmlMob(temp);
     mob->player_specials = &dummy_mob;
 
@@ -951,7 +951,7 @@ void mobiles_save_zone_to_file(int start,int stop,FILE *f)
   doc = xmlNewDoc("1.0");
 
   tree = xmlNewDocNode(doc,NULL,"mobiles",NULL);
-  doc->root = tree;
+  doc->children = tree;
 
   for (i = start; i <= stop; i++) {     
     if (-1 != (rr = real_mobile(i))) {

@@ -448,47 +448,47 @@ struct obj_data *get_one_obj_XML(xmlNodePtr xobj)
 
 
 
-  for (temp  = xobj->childs; temp; temp = temp->next)
+  for (temp  = xobj->children; temp; temp = temp->next)
   {
     if (!strcasecmp("name", temp->name)) // <name>
     {
-      obj->short_description = strdup(temp->childs->content);
+      obj->short_description = strdup(temp->children->content);
       tooled = 1;
     }
     else if (!strcasecmp("keywords", temp->name)) // <keywords>
     {
-      obj->name = strdup(temp->childs->content);
+      obj->name = strdup(temp->children->content);
       tooled = 1;
     }
     else if (!strcasecmp("desc", temp->name)) // <desc>
     {
-      obj->description = strdup(temp->childs->content);
+      obj->description = strdup(temp->children->content);
       tooled = 1;
     }
     else if (!strcasecmp("adesc", temp->name)) // <adesc>
     {
-      obj->action_description = strdup(temp->childs->content);
+      obj->action_description = strdup(temp->children->content);
       tooled = 1;
     }
     else if (!strcasecmp("values", temp->name)) // <values>
     {
-      sscanf(temp->childs->content, "%ld %ld %ld %ld", &GET_OBJ_VAL(obj,0),    
+      sscanf(temp->children->content, "%ld %ld %ld %ld", &GET_OBJ_VAL(obj,0),    
        &GET_OBJ_VAL(obj, 1), &GET_OBJ_VAL(obj, 2), &GET_OBJ_VAL(obj, 3));
       tooled = 1;
     }   
     else if (!strcasecmp("worth", temp->name)) // <worth>
     {
-      GET_OBJ_COST(obj) = atoi(temp->childs->content);
+      GET_OBJ_COST(obj) = atoi(temp->children->content);
       tooled = 1;
     }
     else if (!strcasecmp("extraflags", temp->name)) // <extraflags>
     {
       tooled = 1;
-      GET_OBJ_EXTRA(obj) = atol(temp->childs->content);
+      GET_OBJ_EXTRA(obj) = atol(temp->children->content);
     }
     else if (!strcasecmp("wearflags", temp->name)) // <wearflags>
     {
-      GET_OBJ_WEAR(obj) = atol(temp->childs->content);
+      GET_OBJ_WEAR(obj) = atol(temp->children->content);
       tooled = 1;
     }
     else if (!strcasecmp("aff", temp->name))
@@ -496,7 +496,7 @@ struct obj_data *get_one_obj_XML(xmlNodePtr xobj)
       for (i = 0; i < MAX_OBJ_AFFECT; i++)
         if (!obj->affected[i].location) {
           int tmp;
-          sscanf(temp->childs->content, "%d %ld", &tmp, &(obj->affected[i].modifier));
+          sscanf(temp->children->content, "%d %ld", &tmp, &(obj->affected[i].modifier));
           obj->affected[i].location = (byte)tmp;
           break;      
         }
@@ -504,7 +504,7 @@ struct obj_data *get_one_obj_XML(xmlNodePtr xobj)
       tooled = 1;
     }
     else if (!strcasecmp("qeqdata",temp->name)) {
-      obj->obj_flags.boughtBy = strdup(temp->childs->content);
+      obj->obj_flags.boughtBy = strdup(temp->children->content);
       obj->obj_flags.boughtFrom[0] = xmlAtol(xmlGetProp(temp,"shopVnum"));
       obj->obj_flags.boughtFrom[1] = xmlAtol(xmlGetProp(temp,"shopRoomVnum"));
       obj->obj_flags.boughtWhen    = xmlAtol(xmlGetProp(temp,"byingTime"));   
@@ -520,11 +520,11 @@ struct obj_data *get_one_obj_XML(xmlNodePtr xobj)
   if (tooled) {
     obj->ex_description = NULL;
 
-    for (temp  = xobj->childs; temp; temp = temp->next) {
+    for (temp  = xobj->children; temp; temp = temp->next) {
 
       if (!strcasecmp("extradesc",temp->name)) {
         struct extra_descr_data *ex = calloc(1,sizeof(struct extra_descr_data));
-        ex->description = strdup(temp->childs->content);
+        ex->description = strdup(temp->children->content);
         ex->keyword     = strdup(xmlGetProp(temp,"keyword"));
 
         ex->next            = obj->ex_description;
@@ -576,7 +576,7 @@ void equip_char_XML(struct char_data *ch, xmlNodePtr root)
     alog("SYSERR: (equip_char_XML) Attempt to equip %s with an <%s> xml node when it should be <playerobjs>", GET_RNAME(ch), root->name);
     return;
   }
-  for (temp = root->childs; temp; temp = temp->next)
+  for (temp = root->children; temp; temp = temp->next)
   {
     if (!temp->name || !*temp->name)
     {
@@ -630,7 +630,7 @@ void equip_char_XML(struct char_data *ch, xmlNodePtr root)
     }
     else if (xmlNodeIsText(temp) && !strcasecmp(temp->name, "coins")) // <coins>
     {
-      sscanf(temp->childs->content, "%ld %ld", &GET_GOLD(ch), &GET_BANK_GOLD(ch));
+      sscanf(temp->children->content, "%ld %ld", &GET_GOLD(ch), &GET_BANK_GOLD(ch));
     }
   }
 }
@@ -677,7 +677,7 @@ void read_XML_playerfile(struct char_data *ch, int mode)
     return;
   }
 
-  if (!(root = doc->root))
+  if (!(root = doc->children))
   {
     xmlFreeDoc(doc);
     return;
@@ -717,7 +717,7 @@ void read_XML_roomobjs(int vnum)
   {
     return;
   }
-  if (!(root = doc->root))
+  if (!(root = doc->children))
   {
     xmlFreeDoc(doc);
     return;
@@ -727,7 +727,7 @@ void read_XML_roomobjs(int vnum)
     xmlFreeDoc(doc);
     return;
   }
-  for (temp = root->childs; temp; temp = temp->next)
+  for (temp = root->children; temp; temp = temp->next)
   {
     if (!temp->name || !*temp->name)
     {
@@ -761,7 +761,7 @@ void save_objs_in_rooms()
 
   doc = xmlNewDoc("1.0");
   tree = xmlNewDocNode(doc, NULL, "roomobjs",NULL);
-  doc->root = tree;
+  doc->children = tree;
         
   for (i = 0; rooms_that_save_objs[i] > 0 ; i++) {
     if (real_room(rooms_that_save_objs[i]) == NOWHERE)
@@ -861,7 +861,7 @@ void save_XML_playerfile(struct char_data *ch, int mode)
 
   doc = xmlNewDoc("1.0");
   tree = xmlNewDocNode(doc, NULL, "playerobjs",NULL);
-  doc->root = tree;
+  doc->children = tree;
 
   sprintf(buf, "%ld %ld",  GET_GOLD(ch), GET_BANK_GOLD(ch));
   temp = xmlNewChild(tree, NULL, "coins", buf);
@@ -905,7 +905,7 @@ xmlNodePtr  *all_objs_in_XML_node(xmlNodePtr xobj, int *num)
   CREATE( all, xmlNodePtr, sizeOfArray );
 
   *num = 0;
-  for (tmp = xobj->childs; tmp; tmp = tmp->next) // Go over the contents
+  for (tmp = xobj->children; tmp; tmp = tmp->next) // Go over the contents
   {
     if (!strcasecmp(tmp->name, "obj")) // An obj here.
     {
@@ -1064,7 +1064,7 @@ ACMD(do_listobj)
     asend_to_char(ch, "Failed to parse file for %s, reason: %s.\r\n", name, strerror(errno)); 
     return;
   }
-  if (!(root = doc->root))
+  if (!(root = doc->children))
   {
     asend_to_char(ch, "Odd. XML tree has no root? Failed to read file, somehow.\r\n");
     xmlFreeDoc(doc);

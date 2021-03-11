@@ -87,10 +87,10 @@
 #include <errno.h>
 #include <string.h>
 
-#include <gnome-xml/parser.h>
-#include <gnome-xml/tree.h>
-#include <gnome-xml/entities.h>
-#include <gnome-xml/parserInternals.h>
+#include <libxml/parser.h>
+#include <libxml/tree.h>
+#include <libxml/entities.h>
+#include <libxml/parserInternals.h>
 #include <stdio.h>
 
 #include "db.h"
@@ -130,7 +130,7 @@ static void fetchObjAffect(xmlNodePtr affect, int pos, struct obj_data *obj)
 
 static void fetchObjFlags(xmlNodePtr flags, struct obj_data *obj)
 { 
-  xmlNodePtr tmp = flags->childs;
+  xmlNodePtr tmp = flags->children;
   
   for (; NULL != tmp; tmp = tmp->next) {
     if (!strcasecmp(tmp->name,"VALUES")) { 
@@ -175,9 +175,9 @@ static void fetchExDesc(xmlNodePtr desc, struct obj_data *obj)
 
   exd->keyword = xmlGetProp(desc,"keyword");
 
-  for (tmp = desc->childs; NULL != tmp; tmp = tmp->next) { 
+  for (tmp = desc->children; NULL != tmp; tmp = tmp->next) { 
     if (!strcasecmp(tmp->name,"description"))
-      exd->description = xmlToString(tmp->childs);
+      exd->description = xmlToString(tmp->children);
     else
       ; // Room for future expansion. :)
   }
@@ -299,7 +299,7 @@ static void fetchObjProg(xmlNodePtr prog, struct obj_data *obj)
   if (p)
     free(p);
       
-  for (tmp = prog->childs; NULL != tmp; tmp = tmp->next) {  
+  for (tmp = prog->children; NULL != tmp; tmp = tmp->next) {  
     if (!strcasecmp(tmp->name,"SIDETERM")) {  
       side = calloc(1,sizeof(struct side_term_list)); 
       fetchSide(tmp,side);
@@ -307,12 +307,12 @@ static void fetchObjProg(xmlNodePtr prog, struct obj_data *obj)
       
       // Need to insert side as the last element in maino's side list. 
       if (NULL == maino->sideterms)
-    maino->sideterms = side;
+	maino->sideterms = side;
       else {
-    sp = maino->sideterms;
-    while (NULL != sp->next)
-      sp = sp->next;
-    sp->next = side;
+	sp = maino->sideterms;
+	while (NULL != sp->next)
+	  sp = sp->next;
+	sp->next = side;
       } 
     } 
     else if (!strcasecmp(tmp->name,"ACTION")) { 
@@ -322,12 +322,12 @@ static void fetchObjProg(xmlNodePtr prog, struct obj_data *obj)
 
       // Need to inser action as the last element in maino's action list
       if (NULL == maino->actions)
-    maino->actions = action;
+	maino->actions = action;
       else { 
-    ap = maino->actions;
-    while (NULL != ap->next)
-      ap = ap->next;
-    ap->next = action;
+	ap = maino->actions;
+	while (NULL != ap->next)
+	  ap = ap->next;
+	ap->next = action;
       } 
     } 
     else
@@ -357,18 +357,18 @@ static struct obj_data *fetchXmlObj(xmlNodePtr o)
   obj->item_number = last_obj_rnum;
   obj->name        = xmlGetProp(o,"name");
 
-  for (tmp = o->childs; NULL != tmp; tmp = tmp->next) { 
+  for (tmp = o->children; NULL != tmp; tmp = tmp->next) { 
     if (!strcasecmp(tmp->name,"DESCRIPTION")) 
-      obj->description = xmlToString(tmp->childs); // fetch description
+      obj->description = xmlToString(tmp->children); // fetch description
 
     else if (!strcasecmp(tmp->name,"SHORTDESC"))
-      obj->short_description = xmlToString(tmp->childs); // Fetch short desc
+      obj->short_description = xmlToString(tmp->children); // Fetch short desc
 
     else if (!strcasecmp(tmp->name,"ACTIONDESC"))
-      obj->action_description = xmlToString(tmp->childs); // Fetch action desc
+      obj->action_description = xmlToString(tmp->children); // Fetch action desc
 
     else if (!strcasecmp(tmp->name,"AFFECTFLAG"))
-      obj->obj_flags.bitvector = atoi(tmp->childs->name); // fetch affect flag stuff; 
+      obj->obj_flags.bitvector = atoi(tmp->children->name); // fetch affect flag stuff; 
 
     else if (!strcasecmp(tmp->name,"OBJAFFECT")) { 
       fetchObjAffect(tmp,currAff,obj); // fetch affect on pos currAff
@@ -405,7 +405,7 @@ void load_xml_objects(char *file)
     alog("load_xml_objects:[xmlObjects.c]: Couldn't parse XML-file %s",file);
     return;
   }
-  if (!(root = doc->root)) {
+  if (!(root = doc->children)) {
     alog("load_xml_objects:[xmlObjects.c]: No XML-root in document %s",file);
     xmlFreeDoc(doc);
     return;
@@ -416,7 +416,7 @@ void load_xml_objects(char *file)
     xmlFreeDoc(doc);
     return;
   }
-  for (temp = root->childs; NULL != temp; temp = temp->next) {
+  for (temp = root->children; NULL != temp; temp = temp->next) {
     obj = fetchXmlObj(temp);
     *(obj_proto+last_obj_rnum) = *obj;
     (obj_proto+last_obj_rnum)->in_room = NOWHERE;
@@ -654,7 +654,7 @@ void objects_save_zone_to_file(int start,int stop,FILE *f)
   doc = xmlNewDoc("1.0");
 
   tree = xmlNewDocNode(doc,NULL,"objects",NULL);
-  doc->root = tree;
+  doc->children = tree;
 
   for (i = start; i <= stop; i++) {     
     if (-1 != (rr = real_object(i))) {

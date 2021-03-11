@@ -5,10 +5,10 @@
 #include "utils.h"
 #include "db.h"
 
-#include <gnome-xml/parser.h>
-#include <gnome-xml/tree.h>
-#include <gnome-xml/entities.h>
-#include <gnome-xml/parserInternals.h>
+#include <libxml/parser.h>
+#include <libxml/tree.h>
+#include <libxml/entities.h>
+#include <libxml/parserInternals.h>
 
 int xmlAtoi(char *string) {
   int tmp = -1;
@@ -33,7 +33,7 @@ long xmlAtol(char *string) {
 }
 
 xmlNodePtr xmlNullTest(xmlNodePtr *node) {
-  if (xmlIsBlankNode(*node) && !(*node)->childs && !(*node)->properties) {
+  if (xmlIsBlankNode(*node) && !(*node)->children && !(*node)->properties) {
     xmlFreeNode(*node);
     *node = NULL;
   }

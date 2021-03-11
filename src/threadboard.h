@@ -32,7 +32,6 @@ struct threadBoard {
 
 typedef struct threadBoard thrBoard;
 
-extern thrBoard *thr_board_list;
 
 extern void readBoards();
 extern void saveBoard(thrBoard* aBoard);

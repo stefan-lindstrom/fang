@@ -71,10 +71,10 @@
 #include <errno.h>
 #include <string.h>
 
-#include <gnome-xml/parser.h>
-#include <gnome-xml/tree.h>
-#include <gnome-xml/entities.h>
-#include <gnome-xml/parserInternals.h>
+#include <libxml/parser.h>
+#include <libxml/tree.h>
+#include <libxml/entities.h>
+#include <libxml/parserInternals.h>
 #include <stdio.h>
 
 #include "xmlZones.h"
@@ -147,7 +147,7 @@ static void fetchZCmds(xmlNodePtr p,struct zone_data *z)
 {
   int numcmds = xmlAtoi(xmlGetProp(p,"numberof")),i;
   struct reset_com *curr;
-  xmlNodePtr cmd = p->childs,rest;
+  xmlNodePtr cmd = p->children, rest;
   char *ptr;
   z->cmd = calloc(numcmds,sizeof(struct reset_com));
 
@@ -165,7 +165,7 @@ static void fetchZCmds(xmlNodePtr p,struct zone_data *z)
       curr->percentage = 100;
     }
 
-    rest = cmd->childs;
+    rest = cmd->children;
     for (; NULL != rest; rest = rest->next) {
       if (!strcasecmp(rest->name,"ARGS")) {
     curr->arg1 = xmlAtol(xmlGetProp(rest,"arg1"));
@@ -178,7 +178,7 @@ static void fetchZCmds(xmlNodePtr p,struct zone_data *z)
         }
       }
       else if (!strcasecmp(rest->name,"line")) {
-    curr->line = xmlAtoi(xmlGetProp(rest,"lineno"));
+	curr->line = xmlAtoi(xmlGetProp(rest,"lineno"));
       }
       else // Comment, unknown node type?*shrug*
     ;
@@ -189,7 +189,7 @@ static void fetchZCmds(xmlNodePtr p,struct zone_data *z)
 
 static void fetchEditors(xmlNodePtr node, struct zone_data *z)
 {
-  xmlNodePtr temp = node->childs;
+  xmlNodePtr temp = node->children;
   char *name;
 
   for (; NULL != temp; temp = temp->next) { 
@@ -217,7 +217,7 @@ void load_xml_zone(char *file)
     alog("load_xml_zone [xmlZones.c]: Couldn't parse XML-file %s",file);
     return;
   }
-  if (!(root = doc->root)) {
+  if (!(root = doc->children)) {
     alog("load_xml_zone:[xmlZones.c]: No XML-root in document %s",file);
     xmlFreeDoc(doc);
     return;
@@ -241,9 +241,9 @@ void load_xml_zone(char *file)
     free(tmp);
   // Do actual reading here...
 
-  for (temp = root->childs; NULL != temp; temp = temp->next) {
+  for (temp = root->children; NULL != temp; temp = temp->next) {
     if (!strcasecmp(temp->name,"NAME"))
-      z->name = xmlToString(temp->childs);
+      z->name = xmlToString(temp->children);
     else if (!strcasecmp(temp->name,"RESETCMDS"))
       fetchZCmds(temp,z);
     else if (!strcasecmp(temp->name,"EDITORS"))
@@ -383,7 +383,7 @@ void save_xml_zone(FILE *f,int rzone)
   doc = xmlNewDoc("1.0");
 
   tree = xmlNewDocNode(doc,NULL,"zone",NULL);
-  doc->root = tree;
+  doc->children = tree;
   
   sprintf(buf,"%d",z->number);
   xmlNewProp(tree,"vnum",buf);

@@ -257,10 +257,10 @@ static xmlNodePtr makeGuildBasic(struct guild_info *g,xmlDocPtr doc)
   xmlNewChild(basic,NULL,"gchan",(p = internalXmlString(g->gchan_name,doc)));
   free(p);
   
-  xmlNewProp(basic->childs->next->next->next, "gchan_color", g->gchan_color);
+  xmlNewProp(basic->children->next->next->next, "gchan_color", g->gchan_color);
 
   sprintf(buf, "%d", g->gchan_type);
-  xmlNewProp(basic->childs->next->next->next, "gchan_type", buf);
+  xmlNewProp(basic->children->next->next->next, "gchan_type", buf);
 
   sprintf(buf, "%d", g->gold);
   xmlNewProp(basic, "gold", buf);
@@ -283,7 +283,7 @@ void GuildToXml(struct guild_info *g, FILE *f)
 
   doc = xmlNewDoc("1.0");
   guild = xmlNewDocNode(doc, NULL, "guildfile", NULL);
-  doc->root = guild;
+  doc->children = guild;
 
   xmlAddChild(guild, makeGuildBasic(g, doc));
 
@@ -373,7 +373,7 @@ static void fetchGuildieInfo(xmlNodePtr guildie, struct guildie_info *g)
   g->deposited = xmlAtoi(xmlGetProp(guildie, "deposited"));
   g->withdrew = xmlAtoi(xmlGetProp(guildie, "withdrew"));
 
-  for (temp = guildie->childs; NULL != temp; temp = temp->next) {
+  for (temp = guildie->children; NULL != temp; temp = temp->next) {
    if (!strcasecmp(temp->name, "SPONSORER")) {
     s = calloc(1, sizeof(struct sponsorer_info));
     s->next = g->sponsorers;
@@ -409,7 +409,7 @@ static void fetchGzoneInfo(xmlNodePtr gzone, struct gzone_info *g)
 static void fetchGhelpInfo(xmlNodePtr ghelp, struct ghelp_info *g)
 {
   g->keyword = xmlGetProp(ghelp, "keyword");
-  g->entry = xmlToString(ghelp->childs->childs);
+  g->entry = xmlToString(ghelp->children->children);
 }
 
 static void fetchGuildBasics(xmlNodePtr basic, struct guild_info *g)
@@ -427,20 +427,20 @@ static void fetchGuildBasics(xmlNodePtr basic, struct guild_info *g)
   g->guildwalk_room = xmlAtoi(xmlGetProp(basic, "guildwalk_room"));
   g->gold = xmlAtoi(xmlGetProp(basic, "gold"));
 
-  for (temp = basic->childs; temp != NULL; temp = temp->next) {
+  for (temp = basic->children; temp != NULL; temp = temp->next) {
     if (!strcasecmp(temp->name, "desc"))
-     g->description = xmlToString(temp->childs);
+      g->description = xmlToString(temp->children);
 
     else if (!strcasecmp(temp->name, "reqs"))
-     g->requirements = xmlToString(temp->childs);
+      g->requirements = xmlToString(temp->children);
 
     else if (!strcasecmp(temp->name, "gossip"))
-     g->gossip = xmlToString(temp->childs);
+      g->gossip = xmlToString(temp->children);
 
     else if (!strcasecmp(temp->name, "gchan")) {
-     g->gchan_name = xmlToString(temp->childs);
-     g->gchan_color = xmlGetProp(temp, "gchan_color");
-     g->gchan_type = xmlAtoi(xmlGetProp(temp, "gchan_type"));
+      g->gchan_name = xmlToString(temp->children);
+      g->gchan_color = xmlGetProp(temp, "gchan_color");
+      g->gchan_type = xmlAtoi(xmlGetProp(temp, "gchan_type"));
     }
 
     else 
@@ -464,7 +464,7 @@ void XmlToGuild(char *file)
     alog("XmlToGuild:[guild_parser.c]: Couldn't parse XML-file %s",file);
     return;
    }
-   if (!(root = doc->root)) {
+   if (!(root = doc->children)) {
     alog("XmlToGuild:[guild_parser.c]: No XML-root in document %s",file);
     xmlFreeDoc(doc);
     return;
@@ -479,7 +479,7 @@ void XmlToGuild(char *file)
    g->next = guilds_data;
    guilds_data = g;
 
-   for (temp = root->childs; NULL != temp; temp = temp->next) {
+   for (temp = root->children; NULL != temp; temp = temp->next) {
 
     if (!strcasecmp(temp->name, "GUILDBASIC")) 
     fetchGuildBasics(temp, g);

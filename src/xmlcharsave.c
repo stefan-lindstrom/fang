@@ -343,8 +343,7 @@
 #include "retainer.h"
 
 void addStringToXml(xmlNodePtr node, const char *tag, const char *entry);
-int string_length(char str[]);
-
+int string_length(char *str);
 
 /*
  * Creates the <immstuff> node (poofin, commandgroups etc)
@@ -1113,14 +1112,16 @@ void xmlsave_char(struct char_data *ch)
 
   doc = xmlNewDoc("1.0");
   player = xmlNewDocNode(doc, NULL, "player",NULL);
-  doc->root = player;
+  doc->children = player;
 
   /* Here starts the node building */
     
   sprintf(buf, "%ld %ld",  GET_GOLD(ch), GET_BANK_GOLD(ch));
   xmlNewProp(player,"name", ch->player.name);
+
   if (GET_DISGUISED(ch))
     xmlNewProp(player, "dname", GET_DNAME(ch));
+  
   xmlNewProp(player, "gender", genders[(int)GET_SEX(ch)]);
   xmlNewProp(player, "class", pc_class_types[(int) GET_CLASS(ch)]);
   sprintf(buf, "%d", (NOWHERE != ch->in_room) ? world[ch->in_room].number : -1);
@@ -1307,24 +1308,24 @@ static void xml_to_abilities(xmlNodePtr node, struct char_data *ch)
     return;
   }
 
-  for (temp = node->childs; temp; temp = temp->next)  {
+  for (temp = node->children; temp; temp = temp->next)  {
     if (!strcasecmp(temp->name, "strength"))  {
-      GET_STR(ch) = atoi(temp->childs->content);
+      GET_STR(ch) = atoi(temp->children->content);
       GET_RSTR(ch) = GET_STR(ch);
     } else if (!strcasecmp(temp->name, "constitution"))  {
-      GET_CON(ch) = atoi(temp->childs->content);
+      GET_CON(ch) = atoi(temp->children->content);
       GET_RCON(ch) = GET_CON(ch);
     } else if (!strcasecmp(temp->name, "dexterity")) {
-      GET_DEX(ch) = atoi(temp->childs->content);
+      GET_DEX(ch) = atoi(temp->children->content);
       GET_RDEX(ch) = GET_DEX(ch);
     } else if (!strcasecmp(temp->name, "intelligence")) {
-      GET_INT(ch) = atoi(temp->childs->content);
+      GET_INT(ch) = atoi(temp->children->content);
       GET_RINT(ch) = GET_INT(ch);
     } else if (!strcasecmp(temp->name, "wisdom")) {
-      GET_WIS(ch) = atoi(temp->childs->content);
+      GET_WIS(ch) = atoi(temp->children->content);
       GET_RWIS(ch) = GET_WIS(ch);
     } else if (!strcasecmp(temp->name, "charisma")) { 
-      GET_CHA(ch) = atoi(temp->childs->content);
+      GET_CHA(ch) = atoi(temp->children->content);
       GET_RCHA(ch) = GET_CHA(ch);
     }
   }
@@ -1346,13 +1347,13 @@ static void xml_to_pdata(xmlNodePtr node, struct char_data *ch)
     return;
   }
 
-  for (temp = node->childs; temp; temp = temp->next) {
+  for (temp = node->children; temp; temp = temp->next) {
     if (!strcasecmp(temp->name, "hitp"))  {
       GET_HIT(ch) = xmlAtoi(xmlGetProp(temp, "value"));
       GET_MAX_HIT(ch) = xmlAtoi(xmlGetProp(temp, "max"));
     } else if (!strcasecmp(temp->name, "mana")) {
-      GET_MANA(ch) = xmlAtoi(xmlGetProp(temp, "value"));
-      GET_MAX_MANA(ch) = xmlAtoi(xmlGetProp(temp, "max"));
+      SET_MANA(ch, xmlAtoi(xmlGetProp(temp, "value")));
+      SET_MAX_MANA(ch, xmlAtoi(xmlGetProp(temp, "max")));
     } else if (!strcasecmp(temp->name, "move")) {
       GET_MOVE(ch) = xmlAtoi(xmlGetProp(temp, "value")); 
       GET_MAX_MOVE(ch) = xmlAtoi(xmlGetProp(temp, "max"));
@@ -1360,11 +1361,11 @@ static void xml_to_pdata(xmlNodePtr node, struct char_data *ch)
       GET_GOLD(ch) = xmlAtol(xmlGetProp(temp, "carrying"));
       GET_BANK_GOLD(ch) = xmlAtol(xmlGetProp(temp, "inbank"));
     } else if (!strcasecmp(temp->name, "experience")) {
-      GET_EXP(ch) = atol(temp->childs->content);
+      GET_EXP(ch) = atol(temp->children->content);
     } else if (!strcasecmp(temp->name, "trains")) {
-      GET_TRAINS(ch) = atoi(temp->childs->content);
+      GET_TRAINS(ch) = atoi(temp->children->content);
     } else if (!strcasecmp(temp->name, "pracs")) {
-      GET_PRACTICES(ch) = atol(temp->childs->content);
+      GET_PRACTICES(ch) = atol(temp->children->content);
     }
   }
 }
@@ -1384,17 +1385,17 @@ static void xml_to_immstuff(xmlNodePtr node, struct char_data *ch)
     return;
   }
 
-  for (temp = node->childs; temp; temp = temp->next) {
+  for (temp = node->children; temp; temp = temp->next) {
     if (!strcasecmp("poofin", temp->name)) {
-      POOFIN(ch) = strdup(temp->childs->content);
+      POOFIN(ch) = strdup(temp->children->content);
     }  else if (!strcasecmp("poofout", temp->name)) {
-      POOFOUT(ch) = strdup(temp->childs->content);
+      POOFOUT(ch) = strdup(temp->children->content);
     } else if (!strcasecmp("invstart", temp->name)) {
-      GET_INVSTART(ch) = MIN(atol(temp->childs->content), LVL_IMPL);
+      GET_INVSTART(ch) = MIN(atol(temp->children->content), LVL_IMPL);
     } else if (!strcasecmp("olczone", temp->name)) {
-      GET_OLC_ZONE(ch) = atol(temp->childs->content);
+      GET_OLC_ZONE(ch) = atol(temp->children->content);
     } else if (!strcasecmp("commandgroups", temp->name)) {
-      ch->player_specials->saved.command_groups = atol(temp->childs->content);
+      ch->player_specials->saved.command_groups = atol(temp->children->content);
     }
   } 
 }
@@ -1415,7 +1416,7 @@ static void xml_to_affects(xmlNodePtr node, struct char_data *ch)
     return;
   }
 
-  for (temp = node->childs; temp; temp = temp->next)  {
+  for (temp = node->children; temp; temp = temp->next)  {
     if (strcasecmp(temp->name, "affection")) {
       continue;
     }
@@ -1423,17 +1424,17 @@ static void xml_to_affects(xmlNodePtr node, struct char_data *ch)
     aff = (struct affected_type *) calloc(1, sizeof(struct affected_type));
     aff->result = xmlAtol(xmlGetProp(temp,"result"));
 
-    for (temp2 = temp->childs; temp2; temp2 = temp2->next) {
+    for (temp2 = temp->children; temp2; temp2 = temp2->next) {
       if (!strcasecmp(temp2->name, "type")) {
-        aff->type = atoi(temp2->childs->content);
+        aff->type = atoi(temp2->children->content);
       } else if (!strcasecmp(temp2->name, "duration")) {
-        aff->duration = atoi(temp2->childs->content);
+        aff->duration = atoi(temp2->children->content);
       } else if (!strcasecmp(temp2->name, "location")) {
-        aff->location = atoi(temp2->childs->content);
+        aff->location = atoi(temp2->children->content);
       } else if (!strcasecmp(temp2->name, "tieinfo")) {
-        aff->tie_info = atoi(temp2->childs->content);
+        aff->tie_info = atoi(temp2->children->content);
       } else if (!strcasecmp(temp2->name, "weaver")) {
-    aff->weaver = atol(temp2->childs->content);
+    aff->weaver = atol(temp2->children->content);
       } else if (!strcasecmp(temp2->name, "bvs")) {
 
         if ((aff->bitvector = xmlAtol(xmlGetProp(temp2, "bv1"))) == -1)
@@ -1449,15 +1450,15 @@ static void xml_to_affects(xmlNodePtr node, struct char_data *ch)
       aff->bitvector4 = 0;
 
       } else if (!strcasecmp(temp2->name, "modifier")) {
-        aff->modifier = atol(temp2->childs->content);
+        aff->modifier = atol(temp2->children->content);
       } else if (!strcasecmp(temp2->name, "speed")) {
-        aff->speed = atol(temp2->childs->content);
+        aff->speed = atol(temp2->children->content);
       } else if (!strcasecmp(temp2->name, "mana_add")) {
-        aff->mana_add = atol(temp2->childs->content);
+        aff->mana_add = atol(temp2->children->content);
       } else if (!strcasecmp(temp2->name, "spell")) {
-        aff->spell = atol(temp2->childs->content);
+        aff->spell = atol(temp2->children->content);
       } else if (!strcasecmp(temp2->name, "gender")) {
-        aff->sex = atol(temp2->childs->content);
+        aff->sex = atol(temp2->children->content);
       }
     }
     affect_to_char(ch,aff);
@@ -1483,13 +1484,13 @@ static void xml_to_skills(xmlNodePtr node, struct char_data *ch)
 
   // Imms get 100% in everything...
   if (GET_LEVEL(ch) >= LVL_IMMORT)  {
-    for (num = 0 ; num <= MAX_SKILLS; num ++) {
-      GET_SKILL(ch, num) = 100;
+    for (num = 1 ; num <= MAX_SKILLS; num++) {
+      SET_SKILL(ch, num, 100);
     }
-    GET_SKILL(ch, 0) = 0; /* skill 0 is unused, should -always- be zero! */
+    SET_SKILL(ch, 0, 0); /* skill 0 is unused, should -always- be zero! */
   }
 
-  for (temp = node->childs; temp; temp = temp->next) 
+  for (temp = node->children; temp; temp = temp->next) 
   {
     if (strcasecmp(temp->name, "skill"))
       continue;
@@ -1501,7 +1502,7 @@ static void xml_to_skills(xmlNodePtr node, struct char_data *ch)
     {
       percent = xmlAtoi(xmlGetProp(temp, "prof"));
       if ((percent > 0) && (percent <= 100)) 
-	GET_SKILL(ch, num) = percent;
+	SET_SKILL(ch, num, percent);
     }    
   } // for...
 }
@@ -1514,7 +1515,7 @@ static void xml_to_tells(xmlNodePtr node, struct char_data *ch)
   if (!node || strcmp(node->name, "tells") || !ch)
     return;
 
-  for (temp = node->childs; temp; temp = temp->next) {
+  for (temp = node->children; temp; temp = temp->next) {
     if (strcmp(temp->name, "tell"))
       continue;
 
@@ -1532,7 +1533,7 @@ static void xml_to_rplog(xmlNodePtr node, struct char_data *ch)
   if (!node || strcmp(node->name, "rplog") || !ch)
     return;
 
-  for (temp = node->childs; temp; temp = temp->next) {
+  for (temp = node->children; temp; temp = temp->next) {
     if (strcmp(temp->name, "rp"))
       continue;
 
@@ -1561,7 +1562,7 @@ static void xml_to_conditions(xmlNodePtr node, struct char_data *ch)
     return;
   }
 
-  for (temp = node->childs; temp; temp = temp->next) {
+  for (temp = node->children; temp; temp = temp->next) {
     if (!strcasecmp(temp->name, "cond")) {
 
       if ((type = xmlGetProp(temp, "type")) && (val = xmlGetProp(temp, "val")))  {
@@ -1575,10 +1576,10 @@ static void xml_to_conditions(xmlNodePtr node, struct char_data *ch)
         } else if (!strcasecmp(type, "taint")) {
           GET_TAINT(ch) = MAX(0, atol(val));
         } else if (!strcasecmp(type,"compulsion")) {
-      GET_COMPULSION(ch) = atol(val);
-    }
-    free(type);
-    free(val);
+	  GET_COMPULSION(ch) = atol(val);
+	}
+	free(type);
+	free(val);
       }
     }
   } // for
@@ -1611,17 +1612,17 @@ static void xml_to_channeling(xmlNodePtr node, struct char_data *ch)
     free(type);
   }
 
-  for (temp = node->childs; temp; temp = temp->next) {
+  for (temp = node->children; temp; temp = temp->next) {
     if (!strcasecmp(temp->name, "air")) {
-      GET_AIR(ch) = MAX(0, atoi(temp->childs->content));
+      GET_AIR(ch) = MAX(0, atoi(temp->children->content));
     } else if (!strcasecmp(temp->name, "earth")) {
-      GET_EARTH(ch) = MAX(0, atoi(temp->childs->content));
+      GET_EARTH(ch) = MAX(0, atoi(temp->children->content));
     } else if (!strcasecmp(temp->name, "fire")) {
-      GET_FIRE(ch) = MAX(0, atoi(temp->childs->content));
+      GET_FIRE(ch) = MAX(0, atoi(temp->children->content));
     } else if (!strcasecmp(temp->name, "spirit")) {
-      GET_SPIRIT(ch) = MAX(0, atoi(temp->childs->content));
+      GET_SPIRIT(ch) = MAX(0, atoi(temp->children->content));
     } else if (!strcasecmp(temp->name, "water")) {
-      GET_WATER(ch) = MAX(0, atoi(temp->childs->content));
+      GET_WATER(ch) = MAX(0, atoi(temp->children->content));
     }
   } /* for... */
 }
@@ -1632,15 +1633,15 @@ static void xml_to_notifylist(xmlNodePtr list,struct char_data *ch)
   int empty_strings = 0;
   xmlNodePtr tmp;
 
-  for (tmp = list->childs; NULL != tmp; tmp = tmp->next) {
+  for (tmp = list->children; NULL != tmp; tmp = tmp->next) {
     if (!strcasecmp(tmp->name,"listentry")) {
       num = xmlAtoi(xmlGetProp(tmp,"pos"));
-      if (!tmp->childs || !tmp->childs->content || !*tmp->childs->content) {
-    empty_strings++;
-    continue;
+      if (!tmp->children || !tmp->children->content || !*tmp->children->content) {
+	empty_strings++;
+	continue;
       }
       
-      strcpy(ch->player_specials->notifylist[num-empty_strings],tmp->childs->content);
+      strcpy(ch->player_specials->notifylist[num-empty_strings],tmp->children->content);
     }
   }
 }
@@ -1650,15 +1651,15 @@ static void xml_to_xdescs(xmlNodePtr list, struct char_data *ch)
   xmlNodePtr tmp;
   struct player_extradesc *xd;
 
-  for (tmp = list->childs; NULL != tmp; tmp = tmp->next) {
+  for (tmp = list->children; NULL != tmp; tmp = tmp->next) {
     if (!strcasecmp(tmp->name,"xdesc")) {
       xd=calloc(1, sizeof(struct player_extradesc));
       xd->descnum=xmlAtoi(xmlGetProp(tmp, "descnum"));
       xd->keyword=str_dup(xmlGetProp(tmp, "keyword"));
-      if (!tmp->childs || !tmp->childs->content || !*tmp->childs->content) {
+      if (!tmp->children || !tmp->children->content || !*tmp->children->content) {
         continue;
       }
-      xd->desc=str_dup(tmp->childs->content);
+      xd->desc=str_dup(tmp->children->content);
       xd->next=NULL;
       add_playerxdesc(xd, ch);      
     }
@@ -1671,14 +1672,14 @@ static void xml_to_markedmap(xmlNodePtr list,struct char_data *ch)
   int empty_strings = 0;
   xmlNodePtr tmp;
 
-  for (tmp = list->childs; NULL != tmp; tmp = tmp->next) {
+  for (tmp = list->children; NULL != tmp; tmp = tmp->next) {
     if (!strcasecmp(tmp->name,"maploc")) {
       num = xmlAtoi(xmlGetProp(tmp,"pos"));
-      if (!tmp->childs || !tmp->childs->content || !*tmp->childs->content) {
-    empty_strings++;
-    continue;
+      if (!tmp->children || !tmp->children->content || !*tmp->children->content) {
+	empty_strings++;
+	continue;
       }
-      GET_MAPPED(ch, num)=atol(tmp->childs->content);      
+      GET_MAPPED(ch, num)=atol(tmp->children->content);      
     }
   }
 }
@@ -1734,7 +1735,7 @@ static void xml_to_playerspecials(xmlNodePtr node, struct char_data *ch)
   GET_LAST_EMOTE(ch) = xmlAtoi(xmlGetProp(node,"emoteCnt")); 
   GET_AUTHORIZED(ch) = xmlAtoi(xmlGetProp(node,"auth"));
 
-  for (temp = node->childs; temp; temp = temp->next) {
+  for (temp = node->children; temp; temp = temp->next) {
     if (!strcasecmp(temp->name, "skills"))
       xml_to_skills(temp, ch);
     else if (!strcasecmp(temp->name, "tells"))
@@ -1746,41 +1747,40 @@ static void xml_to_playerspecials(xmlNodePtr node, struct char_data *ch)
       HPTAUGHT(ch)=xmlAtoi(xmlGetProp(temp,"hptaught"));
     }
     else if (!strcasecmp("commandgroups", temp->name))
-      ch->player_specials->saved.command_groups = atol(temp->childs->content);
-    else if (!strcasecmp("extradescs", temp->name) && temp->childs)
+      ch->player_specials->saved.command_groups = atol(temp->children->content);
+    else if (!strcasecmp("extradescs", temp->name) && temp->children)
       xml_to_xdescs(temp,ch);
-    else if (!strcasecmp("notifylist",temp->name) && temp->childs)
+    else if (!strcasecmp("notifylist",temp->name) && temp->children)
       xml_to_notifylist(temp,ch);
-    else if (!strcasecmp("markedmap",temp->name) && temp->childs)
+    else if (!strcasecmp("markedmap",temp->name) && temp->children)
       xml_to_markedmap(temp,ch);
 /*    else if (!strcasecmp("ignorelist",temp->name) && temp->childs)
       xml_to_ignorelist(temp,ch); */
-    else if (!strcasecmp("doing", temp->name) && temp->childs) 
-      GET_DOING(ch) = strdup(temp->childs->content);
-    else if (!strcasecmp(temp->name, "conditions") && temp->childs)
+    else if (!strcasecmp("doing", temp->name) && temp->children) 
+      GET_DOING(ch) = strdup(temp->children->content);
+    else if (!strcasecmp(temp->name, "conditions") && temp->children)
       xml_to_conditions(temp, ch);
-    else if (!strcasecmp(temp->name, "freeze") && temp->childs)
-      GET_FREEZE_LEV(ch) = atoi(temp->childs->content);
-    else if (!strcasecmp(temp->name, "badpws") && temp->childs)
-      GET_BAD_PWS(ch) = atoi(temp->childs->content);
-    else if (!strcasecmp(temp->name, "servant")  && temp->childs)
-      sprintf(GET_SERVANT(ch), temp->childs->content);
-    else if (!strcasecmp("channeling", temp->name) && temp->childs)
+    else if (!strcasecmp(temp->name, "freeze") && temp->children)
+      GET_FREEZE_LEV(ch) = atoi(temp->children->content);
+    else if (!strcasecmp(temp->name, "badpws") && temp->children)
+      GET_BAD_PWS(ch) = atoi(temp->children->content);
+    else if (!strcasecmp(temp->name, "servant")  && temp->children)
+      sprintf(GET_SERVANT(ch), temp->children->content);
+    else if (!strcasecmp("channeling", temp->name) && temp->children)
       xml_to_channeling(temp, ch);
-    else if ( !strcasecmp("blademastery", temp->name) && temp->childs)
-      GET_BM(ch) = atoi(temp->childs->content);
+    else if ( !strcasecmp("blademastery", temp->name) && temp->children)
+      GET_BM(ch) = atoi(temp->children->content);
     else if (!strcasecmp("aiel", temp->name)) {
     } else if (!strcasecmp("taveren",temp->name)) {
       GET_TAVEREN(ch) = 1;
     } else if (!strcasecmp("wolfkin",temp->name)) {
        GET_WOLFKIN(ch) = 1;
-       if ((ptr = xmlGetProp(temp, "metKindred")) && 
-         !strcasecmp(ptr, "yes")) {
+       if ((ptr = xmlGetProp(temp, "metKindred")) && !strcasecmp(ptr, "yes")) {
          GET_ISWOLFKIN(ch) = 1;
-     free(ptr);
+	 free(ptr);
        }
     } else if (!strcasecmp("nobility",temp->name)) {
-      GET_NOBILITY(ch) = xmlGetProp(temp, "rank");
+      SET_NOBILITY(ch,  xmlGetProp(temp, "rank"));
     } else if (!strcasecmp("drfflags",temp->name)) {
       GET_DFINTR(ch) = xmlAtoi(xmlGetProp(temp, "flag"));
     } else if (!strcasecmp("ajah",temp->name)) {
@@ -1790,7 +1790,7 @@ static void xml_to_playerspecials(xmlNodePtr node, struct char_data *ch)
     }
     else if (!strcasecmp("bonds",temp->name))
     {
-      for (temp2 = temp->childs; temp2; temp2 = temp2->next) {
+      for (temp2 = temp->children; temp2; temp2 = temp2->next) {
         if (!strcasecmp(temp2->name, "bond")) {
           if ((ptr = xmlGetProp(temp2, "type")) && xmlAtoi(xmlGetProp(temp2, "id")) != -1)
           {
@@ -1801,7 +1801,7 @@ static void xml_to_playerspecials(xmlNodePtr node, struct char_data *ch)
             } else if (!strcasecmp(ptr, "minion")) {
               GET_MINION(ch) = xmlAtol(xmlGetProp(temp2, "id"));
             }
-        free(ptr);
+	    free(ptr);
           }
         }
       } 
@@ -1809,7 +1809,7 @@ static void xml_to_playerspecials(xmlNodePtr node, struct char_data *ch)
 
     else if (!strcasecmp("flags",temp->name)) {
 
-      for (temp2 = temp->childs; temp2; temp2 = temp2->next) {
+      for (temp2 = temp->children; temp2; temp2 = temp2->next) {
         if (!(ptr = xmlGetProp(temp2, "flag")))
           continue;
 
@@ -1826,11 +1826,11 @@ static void xml_to_playerspecials(xmlNodePtr node, struct char_data *ch)
         } else if (!strcasecmp(temp2->name, "autoflags")) {
           AUTO_FLAGS(ch) = num;
           if ((PLR_FLAGS(ch) = xmlAtol(xmlGetProp(temp2,"act"))) == -1)
-        PLR_FLAGS(ch) = 0;
-      if ((AFF_FLAGS(ch) = xmlAtol(xmlGetProp(temp2,"affs"))) == -1)
-        AFF_FLAGS(ch) = 0;
+	    PLR_FLAGS(ch) = 0;
+	  if ((AFF_FLAGS(ch) = xmlAtol(xmlGetProp(temp2,"affs"))) == -1)
+	    AFF_FLAGS(ch) = 0;
         }
-    free(ptr);
+	free(ptr);
       }
     } // flags
 
@@ -1841,26 +1841,26 @@ static void xml_to_playerspecials(xmlNodePtr node, struct char_data *ch)
     } else if (!strcasecmp("lines",temp->name)) {
       GET_LINES(ch) = xmlAtoi(xmlGetProp(temp, "value"));
     } else if (!strcasecmp("prefix", temp->name)) {
-      GET_PREFIX(ch) = strdup(temp->childs->content);
+      GET_PREFIX(ch) = strdup(temp->children->content);
     } else if (!strcasecmp("spec_skills",temp->name)) {
       if ((GET_SPSKILLS1(ch) = xmlAtol(xmlGetProp(temp,"spec1"))) == -1)
-    GET_SPSKILLS1(ch) = 0;
+	GET_SPSKILLS1(ch) = 0;
 
       if ((GET_SPSKILLS2(ch) = xmlAtol(xmlGetProp(temp,"spec2"))) == -1)
-    GET_SPSKILLS2(ch) = 0;
+	GET_SPSKILLS2(ch) = 0;
 
     } else if (!strcasecmp("talents", temp->name)) {
       if ((GET_PRIMTALENTS1(ch) = xmlAtol(xmlGetProp(temp, "primary1"))) == -1)
-    GET_PRIMTALENTS1(ch) = 0;
+	GET_PRIMTALENTS1(ch) = 0;
 
       if ((GET_PRIMTALENTS2(ch) =xmlAtol(xmlGetProp(temp, "primary2"))) == -1)
-    GET_PRIMTALENTS2(ch) = 0;
+	GET_PRIMTALENTS2(ch) = 0;
 
       if ((GET_SECTALENTS1(ch) = xmlAtol(xmlGetProp(temp, "secondary1"))) == -1)
-    GET_SECTALENTS1(ch) = 0;
+	GET_SECTALENTS1(ch) = 0;
 
       if ((GET_SECTALENTS2(ch) = xmlAtol(xmlGetProp(temp, "secondary2"))) == -1)
-    GET_SECTALENTS2(ch) = 0;
+	GET_SECTALENTS2(ch) = 0;
     }
   }
 }
@@ -1931,15 +1931,15 @@ static void xml_to_playerdata(xmlNodePtr node, struct char_data *ch)
   GET_HEIGHT(ch) = xmlAtoi(xmlGetProp(node, "height"));
   GET_WEIGHT(ch) = xmlAtoi(xmlGetProp(node, "weight"));
 
-  for (temp = node->childs; temp; temp = temp->next) {
+  for (temp = node->children; temp; temp = temp->next) {
     if (!strcasecmp("password", temp->name))
-      sprintf(GET_PASSWD(ch), temp->childs->content);
+      sprintf(GET_PASSWD(ch), temp->children->content);
     else if (!strcasecmp("birth", temp->name))
-      ch->player.time.birth = atol(temp->childs->content);
+      ch->player.time.birth = atol(temp->children->content);
     else if (!strcasecmp("lastLogon", temp->name))
-      ch->player.time.logon = atol(temp->childs->content);
+      ch->player.time.logon = atol(temp->children->content);
     else if (!strcasecmp("host", temp->name))
-      ch->tempHost = strdup(temp->childs->content);
+      ch->tempHost = strdup(temp->children->content);
 /* To come...there is no ch->desc at this time
     else if (!strcasecmp("host", temp->name))
       sprintf(ch->desc->host, temp->childs->content);
@@ -1981,21 +1981,20 @@ static void xml_to_descriptions(struct char_data *ch,xmlNodePtr descs)
   int pos;
 
   GET_CURRENTDESC(ch) = xmlAtoi(xmlGetProp(descs,"current"));
-  for (temp = descs->childs; NULL != temp; temp = temp->next) {
+  for (temp = descs->children; NULL != temp; temp = temp->next) {
     if (!strcasecmp(temp->name,"desc")) {
       pos = xmlAtoi(xmlGetProp(temp,"pos"));
 
       if (pos < 0 || pos >= MAX_DESCRIPTIONS)
         continue;
 
-      if (temp->childs) {
+      if (temp->children) {
         GET_DESCNUM(ch,pos) = str_dup(
-         ((temp->childs->content) ? 
-          (char *)temp->childs->content :
+         ((temp->children->content) ? 
+          (char *)temp->children->content :
   	  "This space for rent!\r\n"));
       } else 
 	GET_DESCNUM(ch,pos) = str_dup("This space for rent!\r\n");
-
     }
   }
 }
@@ -2028,7 +2027,7 @@ struct char_data *raw_load(char *name, int old)
     return NULL;
   }
   
-  if (!(root = doc->root)) {
+  if (!(root = doc->children)) {
     xmlFreeDoc(doc);
     return NULL;
   }
@@ -2079,25 +2078,25 @@ struct char_data *raw_load(char *name, int old)
   /* to make sure they are set to normal if they don't have a mycolor */
   (void)strcpy(GET_MYCOLOR(ch), "&n");
 
-  for (temp = root->childs; temp; temp = temp->next) {
-    if (!strcasecmp("desc", temp->name) && temp->childs)
-      GET_RDESC(ch) = strdup(temp->childs->content);
-    else if (!strcasecmp("descriptions",temp->name) && temp->childs)
+  for (temp = root->children; temp; temp = temp->next) {
+    if (!strcasecmp("desc", temp->name) && temp->children)
+      GET_RDESC(ch) = strdup(temp->children->content);
+    else if (!strcasecmp("descriptions",temp->name) && temp->children)
       xml_to_descriptions(ch,temp);
     else if (!strcasecmp("prompt",temp->name))
-      GET_CPROMPT(ch) = strdup(temp->childs->content);
+      GET_CPROMPT(ch) = strdup(temp->children->content);
     else if (!strcasecmp("title", temp->name))
-      GET_RTITLE(ch) = strdup(temp->childs->content);
+      GET_RTITLE(ch) = strdup(temp->children->content);
     else if (!strcasecmp("dtitle", temp->name))
-      GET_DTITLE(ch) = strdup(temp->childs->content);
-    else if (!strcasecmp("email", temp->name) && temp->childs)
-      GET_CONTACTINFO(ch) = strdup(temp->childs->content);
-    else if (!strcasecmp("pretitle",temp->name) && temp->childs)
-      GET_PRETITLE(ch) = strdup(temp->childs->content);
-    else if (!strcasecmp("mycolor",temp->name) && temp->childs)
-      strcpy(GET_MYCOLOR(ch), temp->childs->content);
-    else if (!strcasecmp("background",temp->name) && temp->childs)
-      GET_BACKGROUND(ch) = strdup(temp->childs->content);
+      GET_DTITLE(ch) = strdup(temp->children->content);
+    else if (!strcasecmp("email", temp->name) && temp->children)
+      GET_CONTACTINFO(ch) = strdup(temp->children->content);
+    else if (!strcasecmp("pretitle",temp->name) && temp->children)
+      GET_PRETITLE(ch) = strdup(temp->children->content);
+    else if (!strcasecmp("mycolor",temp->name) && temp->children)
+      strcpy(GET_MYCOLOR(ch), temp->children->content);
+    else if (!strcasecmp("background",temp->name) && temp->children)
+      GET_BACKGROUND(ch) = strdup(temp->children->content);
     else if (!strcasecmp("playerdata", temp->name))
       xml_to_playerdata(temp, ch);
     else if (!strcasecmp("cspecial", temp->name))
@@ -2132,7 +2131,7 @@ struct char_data *raw_load(char *name, int old)
       if( GET_SKILL(ch, i ) && !strcmp( spells[i], "!UNUSED!" ) ) { 
 	int percent = MIN(GET_SKILL( ch, i ), 70);
 	int pracs = percent / 20;
-	GET_SKILL( ch, i ) = 0;
+	SET_SKILL( ch, i, 0);
 	sprintf( xlogbuf, "%s has redeamed %d practices for !UNUSED! skill %d.", ch->player.name, pracs, i );
 	xlog( SYS_SKILLSET, LVL_IMMORT, xlogbuf, TRUE );
       /* This should be unescesary, sinc redemption is done when reading player_index...
