@@ -10,6 +10,14 @@
 #include <libxml/entities.h>
 #include <libxml/parserInternals.h>
 
+xmlNodePtr getNextChildElement(xmlNodePtr elem) 
+{
+  if ((NULL == elem) || (NULL == elem->children)) {
+    return NULL;
+  }
+  return elem->children->next;
+}
+
 int xmlAtoi(char *string) {
   int tmp = -1;
 

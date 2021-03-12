@@ -151,7 +151,8 @@ static void fetchZCmds(xmlNodePtr p,struct zone_data *z)
 {
   int numcmds = xmlAtoi(xmlGetProp(p,"numberof")),i;
   struct reset_com *curr;
-  xmlNodePtr cmd = p->children, rest;
+  xmlNodePtr cmd = getNextChildElement(p), rest;
+
   char *ptr;
   z->cmd = calloc(numcmds,sizeof(struct reset_com));
 
@@ -169,12 +170,14 @@ static void fetchZCmds(xmlNodePtr p,struct zone_data *z)
       curr->percentage = 100;
     }
 
-    rest = cmd->children;
-    for (; NULL != rest; rest = rest->next) {
+    rest = getNextChildElement(cmd);
+   
+    for (; NULL != rest; rest = xmlNextElementSibling(rest)) {
       if (!strcasecmp(rest->name,"ARGS")) {
-    curr->arg1 = xmlAtol(xmlGetProp(rest,"arg1"));
-    curr->arg2 = xmlAtol(xmlGetProp(rest,"arg2"));
-    curr->arg3 = xmlAtol(xmlGetProp(rest,"arg3"));
+	curr->arg1 = xmlAtol(xmlGetProp(rest,"arg1"));
+	curr->arg2 = xmlAtol(xmlGetProp(rest,"arg2"));
+	curr->arg3 = xmlAtol(xmlGetProp(rest,"arg3"));
+	
         if (curr->command == 'V')
         {
          curr->sarg1 = xmlGetProp(rest,"sarg1");
@@ -187,16 +190,18 @@ static void fetchZCmds(xmlNodePtr p,struct zone_data *z)
       else // Comment, unknown node type?*shrug*
     ;
     }
-    cmd = cmd->next;
+    cmd = xmlNextElementSibling(cmd);
   }
 }
 
 static void fetchEditors(xmlNodePtr node, struct zone_data *z)
 {
-  xmlNodePtr temp = node->children;
+  xmlNodePtr temp;// = node->children;
   char *name;
 
-  for (; NULL != temp; temp = temp->next) { 
+  for (temp = xmlFirstElementChild(node); NULL != temp; temp = xmlNextElementSibling(temp)) // = temp->next)
+  {  
+    //  for (; NULL != temp; temp = temp->next) { 
     if (!strcasecmp(temp->name,"ALL")) { 
       z->all = 1;
       deleteAll(z->hfl_Editors,free);
@@ -221,11 +226,14 @@ void load_xml_zone(char *file)
     alog("load_xml_zone [xmlZones.c]: Couldn't parse XML-file %s",file);
     return;
   }
-  if (!(root = doc->children)) {
+
+  root = xmlDocGetRootElement(doc);
+  if (NULL == root) {  
     alog("load_xml_zone:[xmlZones.c]: No XML-root in document %s",file);
     xmlFreeDoc(doc);
     return;
   }
+  
   if (strncasecmp("ZONE",root->name,strlen(root->name))) {
     alog("load_xml_zone:[xmlZones.c]: XML-root (%s in file %s) is not a "
      "zone-object!",root->name,file);
@@ -245,7 +253,8 @@ void load_xml_zone(char *file)
     free(tmp);
   // Do actual reading here...
 
-  for (temp = root->children; NULL != temp; temp = temp->next) {
+  for (temp = xmlFirstElementChild(root); NULL != temp; temp = xmlNextElementSibling(temp))
+  {
     if (!strcasecmp(temp->name,"NAME"))
       z->name = xmlToString(temp->children);
     else if (!strcasecmp(temp->name,"RESETCMDS"))

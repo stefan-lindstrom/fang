@@ -424,8 +424,9 @@ static void fetchMobProg(xmlNodePtr prog, struct char_data *obj)
     maino->argument = xmlGetProp(prog,"argument");
   if (p)
     free(p);
-      
-  for (tmp = prog->children; NULL != tmp; tmp = tmp->next) {  
+
+  for (tmp = xmlFirstElementChild(prog); NULL != tmp; tmp = xmlNextElementSibling(tmp))
+  {  
     if (!strcasecmp(tmp->name,"SIDETERM")) {  
       side = calloc(1,sizeof(struct side_term_list)); 
       fetchSide(tmp,side);
@@ -483,7 +484,8 @@ static struct char_data *fetchXmlMob(xmlNodePtr m)
   mob->nr = last_obj_rnum;
   mob->player.name = xmlGetProp(m,"name");
 
-  for (tmp = m->children; NULL != tmp; tmp = tmp->next) {
+  for (tmp = xmlFirstElementChild(m); NULL != tmp; tmp = xmlNextElementSibling(tmp))
+  {
     if (!strcasecmp(tmp->name,"DESCRIPTION"))
       mob->player.description = xmlToString(tmp->children);
 
@@ -580,7 +582,8 @@ void load_xml_mobiles(char *file)
     return;
   }
 
-  if (!(root = doc->children)) {
+   root = xmlDocGetRootElement(doc);
+  if (NULL == root) {
     alog("load_xml_mobiles:[xmlMobiles.c]: No XML-root in document %s",file);
     xmlFreeDoc(doc);
     return;
@@ -591,8 +594,9 @@ void load_xml_mobiles(char *file)
     xmlFreeDoc(doc);
     return;
   }
-  
-  for (temp = root->children; NULL != temp; temp = temp->next) {
+
+   for (temp = xmlFirstElementChild(root); NULL != temp; temp = xmlNextElementSibling(temp))
+   {
     mob = fetchXmlMob(temp);
     mob->player_specials = &dummy_mob;
 

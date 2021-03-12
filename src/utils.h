@@ -11,6 +11,11 @@
 #ifndef __UTILS_H__
 #define __UTILS_H__
 
+#include <libxml/parser.h>
+#include <libxml/tree.h>
+#include <libxml/entities.h>
+#include <libxml/parserInternals.h>
+
 #include "structs.h"
 /* external declarations and prototypes **********************************/
 
@@ -751,6 +756,7 @@ extern void stop_follower(struct char_data * ch);
 extern struct time_info_data mud_time_passed(time_t t2, time_t t1);
 extern int xmlAtoi(char *string);
 extern long xmlAtol(char *string);
+extern xmlNodePtr getNextChildElement(xmlNodePtr elem);
 extern double gaussrand(void);
 extern unsigned int randPoisson(double dMean);
 extern int gaussian_var(int med,int d,int l,int h);

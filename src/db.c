@@ -3234,9 +3234,13 @@ void reset_zone(int zone)
       break; 
        
     default:
-      ZONE_ERROR("unknown cmd in reset table; cmd disabled");
-      ZCMD.command = '*';
-      break;
+      {
+	char buf[4096];
+	sprintf(buf, "unknown cmd '%c' in reset table; cmd disabled", ZCMD.command);
+	ZONE_ERROR(buf);
+	ZCMD.command = '*';
+	break;
+      }
     }
 
   }
