@@ -1,7 +1,15 @@
 <?xml version="1.0"?>
 <zone vnum="154" lifespan="30" top="15499" mode="2" lock="no">
-  <name>&amp;KA new zone&amp;n</name>
-  <resetcmds numberof="1">
+  <name>Blademastery Dedication Zone</name>
+  <resetcmds numberof="3">
+    <cmd command="ReadMobile" ifflag="no">
+      <args arg1="15401" arg2="1" arg3="15401"/>
+      <line lineno="7"/>
+    </cmd>
+    <cmd command="UNKNOWN" ifflag="no">
+      <args arg1="15401" arg2="1" arg3="15401"/>
+      <line lineno="11"/>
+    </cmd>
     <cmd command="STOP"/>
   </resetcmds>
 </zone>

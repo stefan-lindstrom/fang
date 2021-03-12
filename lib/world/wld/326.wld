@@ -4,7 +4,7 @@
     <roombasic title="The Immortal-mirror Room" vnum="32600" zone="326">
       <roomdescription>You enter a large room, every inch of the walls decorated with 
 mirrors. All the mirrors are highly polished, and framed in 
-purest gold, save one, that doesn&apos;t even look like a mirror. 
+purest gold, save one, that doesn't even look like a mirror. 
 Strange, it looks more like the Mortal Bulletin Board.
 </roomdescription>
       <flags>1082</flags>
@@ -18,14 +18,14 @@ Strange, it looks more like the Mortal Bulletin Board.
     <exdesc keyword="mirror walls frame">
       <description>This mirror looks expensive enough to make you weep
 for the rest of your life if you broke it. And then 
-we don&apos;t count the 7 years of bad luck. When you look
+we don't count the 7 years of bad luck. When you look
 deep into the mirror you see a beastly creature, what
 on earth could be that UGLY?
 </description>
     </exdesc>
   </room>
   <room>
-    <roombasic title="The Grand Gathering area" vnum="32601" zone="326">
+    <roombasic title="The Grand Gathering Area" vnum="32601" zone="326">
       <roomdescription>A large hemisphere with a crystal roof that lets in a dimmed, soft light,
 illuminating the walls that are covered every square inch with C-code
 defining the Dragons Fang mud. The room is dominated by a very large
@@ -45,7 +45,7 @@ mortal-board!
     </exit>
     <exit direction="east" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="32602">
       <description>Behind this dull opening, is the board noone whishes to 
-talk about. Some might even deny it&apos;s existance. It&apos;s 
+talk about. Some might even deny it's existance. It's 
 the BUG-board! 
 </description>
     </exit>
@@ -104,9 +104,9 @@ Fredrik and Stefan in qa very early stage.
     <roombasic title="The Immortal Board-room" vnum="32603" zone="326">
       <roomdescription>You enter a magnificent room, with statues lining up the walls. 
 When examining the statues, you realize that they are all the
-Immortals in the Realm of Dragon&apos;s Fang. 
+Immortals in the Realm of Dragon's Fang. 
 </roomdescription>
-      <flags>1066</flags>
+      <flags>1034</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
@@ -118,51 +118,41 @@ Immortals in the Realm of Dragon&apos;s Fang.
       <description>This leads to the Quest Board.
 </description>
     </exit>
+    <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="7">
+      <description/>
+    </exit>
     <exit direction="west" keyword="" exitinfo="0" keynum="0" toroom="32619">
       <description/>
     </exit>
     <exit direction="up" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="2579">
       <description>&lt;NONE&gt;</description>
     </exit>
-    <exdesc keyword="statues walls ">
-      <description>The statues lining these walls all looks like they&apos;re made by different 
-people. Some are made of gold, others of marble, some are beset with
-gems and jewels, and they&apos;ra of all imaginable sizes. They do got one
-thing in common though, they all picture the Immortlas of Dragons Fang. 
+    <exdesc keyword="&lt;NONE&gt;">
+      <description>&lt;NONE&gt;
 </description>
     </exdesc>
-    <exdesc keyword="Guild leaders Guildleaders">
-      <description>Here are various statues of othyer Immortals, Guildleaders, 
-Herous of The Horn, Builders, etc...
-None mentioned, none forgot!
+    <exdesc keyword="&lt;NONE&gt;">
+      <description>&lt;NONE&gt;
 </description>
     </exdesc>
-    <exdesc keyword="Rincewind Robert">
-      <description>Yet Another Coder,suroounded by veritable moutains of empty
-pizza-boxes, and Coca-cola can&apos;s, he&apos;s the Master of the
-Sacred Compiler.
+    <exdesc keyword="&lt;NONE&gt;">
+      <description>&lt;NONE&gt;
 </description>
     </exdesc>
-    <exdesc keyword="Rand Erik Valorien">
-      <description>Ah, the twin-paradox! Rand/Erik, Impementor/Player, 
-Dragon Reborn/Beerdrinker, the duality of humans are astonishing.
+    <exdesc keyword="&lt;NONE&gt;">
+      <description>&lt;NONE&gt;
 </description>
     </exdesc>
-    <exdesc keyword="Shai&apos;tan Shaitan ">
-      <description>The Great Lords statue, Shai&apos;tan the Implementor, Shai&apos;tan the
-follower of the Chicken Reborn, Watcher of the plate, Keeper
-of the recepies!
+    <exdesc keyword="&lt;NONE&gt;">
+      <description>&lt;NONE&gt;
 </description>
     </exdesc>
-    <exdesc keyword="stefan ">
-      <description>A satue of Stefan,yet another Implementor, trying in 
-vain to stomp a 15-feet bug&quot;
+    <exdesc keyword="&lt;NONE&gt;">
+      <description>&lt;NONE&gt;
 </description>
     </exdesc>
-    <exdesc keyword="fredrik">
-      <description>You see a statue of Fredrik the Implementor. In his hands
-he holds the Divine Thermos, a must when sitting up for
-days without sleep,coding.
+    <exdesc keyword="&lt;NONE&gt;">
+      <description>&lt;NONE&gt;
 </description>
     </exdesc>
   </room>
@@ -183,10 +173,10 @@ the bugs in the old ones.
   </room>
   <room>
     <roombasic title="The Guildleader Room" vnum="32605" zone="326">
-      <roomdescription>This is a room built for all those busybody Immortals who cannot
+      <roomdescription>This is a room built for all those busybody Guildleaders who cannot
 sit still without finding something to improve, comment on, suggest
 to code and whatnot. There is a large oval table (not a round table,
-we aren&apos;t the Knights Who Say Ni, now are we?) in the center of the
+we aren't the Knights Who Say Ni, now are we?) in the center of the
 room, and on it are charts, blue prints, pencils, stencils and lots of 
 sharp instruments an architect would know what to do with.
 </roomdescription>
@@ -194,6 +184,9 @@ sharp instruments an architect would know what to do with.
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
+    <exit direction="down" keyword="" exitinfo="0" keynum="0" toroom="10186">
+      <description/>
+    </exit>
   </room>
   <room>
     <roombasic title="the Story Room" vnum="32606" zone="326">
@@ -236,7 +229,7 @@ contrasting with the coolness of the marble floor.
     </roombasic>
   </room>
   <room>
-    <roombasic title="\c06The \c10Builder&apos;s\c06 Council Chamber\c00" vnum="32608" zone="326">
+    <roombasic title="\c06The \c10Builder's\c06 Council Chamber\c00" vnum="32608" zone="326">
       <roomdescription>The builders council chamber is where the builders meet to plan
 out new building projects. As you look down you can see the entire
 MUD below you, you note the many many missing areas in need of
@@ -249,12 +242,46 @@ working builders to make areas for them :)
     </roombasic>
   </room>
   <room>
-    <roombasic title="A Empty Immortal Room" vnum="32609" zone="326">
-      <roomdescription>\c00</roomdescription>
-      <flags>9798</flags>
+    <roombasic title="Fischer's Dark Cubicle" vnum="32609" zone="326">
+      <roomdescription>\c00You've stumbled into a cubical the size of a small office.  The lights
+over head have been removed so that the space inside the walls is
+fairly dark.
+
+A desk like surface seems to stretch along two walls but it's hard to
+tell for sure, since the surface is covered with books, paper, soda
+cups and potato chip bags.  A white board covers the third wall and
+that is covered with sayings, doodles and anything that has nothing
+to do with programming.
+
+All across the back of the desk, on raised platforms, are a row of
+monitors attached to row upon row of computers under the desk.
+
+A sign reads:
+Oval Plaza - South
+Immortal Area - North
+Ideas Board - NE
+Main OOC Board - NW
+</roomdescription>
+      <flags>9294</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
+    <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="32603">
+      <description>The cubical exits into the immortal's lounge
+</description>
+    </exit>
+    <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="10186">
+      <description>The Oval Plaza can be seen though this Gate
+</description>
+    </exit>
+    <exit direction="northeast" keyword="" exitinfo="0" keynum="0" toroom="29977">
+      <description/>
+    </exit>
+    <exit direction="northwest" keyword="" exitinfo="0" keynum="0" toroom="29906">
+      <description>
+Through the shimmering gate, the OOC board can be seen.
+</description>
+    </exit>
   </room>
   <room>
     <roombasic title="A Empty Immortal Room" vnum="32610" zone="326">
@@ -323,7 +350,7 @@ Before we go to \c10Paradise\c23 by way of \c02Kensal \c02Green\c23.\c00
 
 \c13(\c06Look door; look todo. Kensal Green is a cemetery.\c13)\c00
 </roomdescription>
-      <flags>1102</flags>
+      <flags>1118</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
@@ -375,8 +402,8 @@ You stumbled in and \c11bumped\c00 your head,
 \c23if not for me\c00 then you would be \c01dead\c00
 I picked you up and put you back on \c03solid ground\c00
 If I go crazy then will you still call me \c06Superman\c00
-If I&apos;m alive and well, will you be there \c05holding\c00 my hand
-I&apos;ll keep you by my side with my \c07superhuman might\c00
+If I'm alive and well, will you be there \c05holding\c00 my hand
+I'll keep you by my side with my \c07superhuman might\c00
 \c10Kryptonite\c00
 </roomdescription>
       <flags>66090</flags>
@@ -386,10 +413,10 @@ I&apos;ll keep you by my side with my \c07superhuman might\c00
   </room>
   <room>
     <roombasic title="Winter Garden" vnum="32617" zone="326">
-      <roomdescription>The well was one of the garden&apos;s secrets, hidden under an overhang of dark
+      <roomdescription>The well was one of the garden's secrets, hidden under an overhang of dark
 stones down which the brier roses fell.  Beneath their sweet scent lay
 something shadowy, mysterious, the smell of earth, water, wet stone.  Moving
-the cascading briers one could see one&apos;s own reflection there just on the
+the cascading briers one could see one's own reflection there just on the
 surface.  Into the garden, they came riding horses white as hoarfrost.  Snow
 and stars and dark whirled around one another to etch fine-boned faces, eyes of
 night and crystal fire.  Their mantles of dark wind and snow, their wild hair
@@ -397,24 +424,37 @@ caught snow and falling stars.  &quot;\c06Come\c00,&quot; the wind called.  &quo
 us.  This is not your true home.  You belong elsewhere.  You belong with
 us\c00,&quot; they said.    
 </roomdescription>
-      <flags>90</flags>
+      <flags>602</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
+    <exit direction="east" keyword="" exitinfo="0" keynum="0" toroom="32618">
+      <description/>
+    </exit>
     <exit direction="down" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="29950">
       <description>&lt;NONE&gt;</description>
     </exit>
   </room>
   <room>
-    <roombasic title="A Empty Immortal Room" vnum="32618" zone="326">
-      <roomdescription>\c00</roomdescription>
-      <flags>2</flags>
+    <roombasic title="Ombria's \c22Shadow\c00" vnum="32618" zone="326">
+      <roomdescription>\c00The shadow city of Ombria is as old as Ombria.  Some say it is a different
+city completely, existing side by side with Ombria in a time so close to
+us that there are places, streets, gates, old houses, where one time fades
+into the other, one city becomes the other.  Others, say both cities exist
+in one time, this moment, and you walk through both of them each day, just
+as, walking down a street, you pass through light and shadow and light.  
+
+</roomdescription>
+      <flags>734</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
+    <exit direction="west" keyword="" exitinfo="0" keynum="0" toroom="32617">
+      <description/>
+    </exit>
   </room>
   <room>
-    <roombasic title="Fang&apos;s Builder Pad" vnum="32619" zone="326">
+    <roombasic title="Fang's Builder Pad" vnum="32619" zone="326">
       <roomdescription>This is where all the Immortals who build can post to share ideas and
 news. A board floats in the center, waiting to be used.
 </roomdescription>
@@ -428,7 +468,7 @@ news. A board floats in the center, waiting to be used.
     </exit>
   </room>
   <room>
-    <roombasic title="Inside Eramys&apos; Wagon" vnum="32620" zone="326">
+    <roombasic title="Inside Eramys' Wagon" vnum="32620" zone="326">
       <roomdescription> \c00As you push your way past the \c12rose colored beads\c00 to enter the wagon,
  your nose is filled with the odor of incense.  The walls are covered in a
  multitude of floral prints and dried flowers.  Many \c10soft pillows\c00
@@ -446,7 +486,7 @@ news. A board floats in the center, waiting to be used.
   </room>
   <room>
     <roombasic title="Inside a small, dusty wagon" vnum="32621" zone="326">
-      <roomdescription>You&apos;re in a small confined makeshift wagon that is covered with dust everywhere.
+      <roomdescription>You're in a small confined makeshift wagon that is covered with dust everywhere.
 It was once painted green or turquoise, but now use and time has worn so much
 paint away that all that is left of it is some patches in the corners.
 </roomdescription>
@@ -473,7 +513,7 @@ paint away that all that is left of it is some patches in the corners.
     <exdesc keyword="map">
       <description>The map takes up a considerable amount of space, with several unfamiliar
 locations written upon it:  Selvan, Celestra, Seragon Falls, others that
-certainly aren&apos;t quite clear as to where they could possibly be.  However
+certainly aren't quite clear as to where they could possibly be.  However
 seemingly in the middle of nowhere in one place, a large clump of trees
 that stretches for miles and labelled the Greater Sevanayah Reach, is
 a dot with the words &quot;Home&quot; printed almost in a fond manner near it.
@@ -510,18 +550,18 @@ present whatsoever on his head.
 </description>
     </exdesc>
     <exdesc keyword="blueprints maps">
-      <description>Drawings of various areas of Dragon&apos;s Fang litter the desk
+      <description>Drawings of various areas of Dragon's Fang litter the desk
 and the surrounding floor.
 </description>
     </exdesc>
     <exdesc keyword="couch sofa">
-      <description>A monstrosity by some people&apos;s standards, but it seems to
+      <description>A monstrosity by some people's standards, but it seems to
 fit in this room nicely. Large and overstuffed, it could
 easily and comfortably sit five people.
 </description>
     </exdesc>
     <exdesc keyword="rug carpet">
-      <description>A Tairen rug of the finest quality rests on the floor. It&apos;s
+      <description>A Tairen rug of the finest quality rests on the floor. It's
 pattern is of a maze of some kind, intricately and tightly
 woven, spiralling out to the edges of the rug. The threads
 of the walls of the maze is thread-of-gold, and it is a
@@ -540,7 +580,7 @@ startling contrast to the scarlet of the rug itself.
   </room>
   <room>
     <roombasic title="Administration Room" vnum="32627" zone="326">
-      <roomdescription>You&apos;re in an unfinished  room.
+      <roomdescription>You're in an unfinished  room.
 </roomdescription>
       <flags>0</flags>
       <sector>Inside</sector>
@@ -577,7 +617,7 @@ visible.
     </roombasic>
   </room>
   <room>
-    <roombasic title="\c13Kiera&apos;s Sanctuary\c00" vnum="32629" zone="326">
+    <roombasic title="\c13Kiera's Sanctuary\c00" vnum="32629" zone="326">
       <roomdescription>\c00You land with a splash into a large pool of water.  As you come back up 
 you notice that you are in a pool that is surrounded by rocky outcroppings
 and cliffs.  The water is cool but not uncomfortable and quite still, 
@@ -585,7 +625,7 @@ except for the ripples made by the people swimming.  When you look more
 closely at the rocks surrounding the pool, you can see some small shrubbery
 and other plants growing through the area...  and you might even see a small
 animal, a rabbit or squirrel perhaps, playing.  On rare occcasion, you may
-even see a small fox making it&apos;s way.  The sky is the soft shadings of
+even see a small fox making it's way.  The sky is the soft shadings of
 evening... gradually darkening shades of blue, mixed with shades of
 pink and gold.   
 </roomdescription>
@@ -617,8 +657,8 @@ pink and gold.
     </roombasic>
   </room>
   <room>
-    <roombasic title="Thoril&apos;s Refuge" vnum="32632" zone="326">
-      <roomdescription>Everything is becoming clear now... I don&apos;t quite know what it its, 
+    <roombasic title="Thoril's Refuge" vnum="32632" zone="326">
+      <roomdescription>Everything is becoming clear now... I don't quite know what it its, 
 but it is becoming clear now...
 
 Darkness...  you stand in complete darkness... until you move that is.
@@ -633,7 +673,7 @@ of metal can be heard from behind you. As you turn, you see a door has
 opened across the romm from you. Removing your hand from the wall, the 
 door closes up, and the wall stops glowing.  Touching other pieces of 
 the code seems to generate the same effect, everything from doors to 
-TV&apos;s, a bed, and so on appearing.  Touching one last piece of code, you 
+TV's, a bed, and so on appearing.  Touching one last piece of code, you 
 dont see the humanoid shape emerging from the wall.  Grabbing your 
 wrist, he lifts you up and stares at you with his lifeless eyes.  You 
 hear in your mind:
@@ -644,7 +684,7 @@ hear in your mind:
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
-    <exit direction="north" keyword="Illy&apos;s room" exitinfo="0" keynum="0" toroom="96">
+    <exit direction="north" keyword="Illy's room" exitinfo="0" keynum="0" toroom="96">
       <description/>
     </exit>
   </room>
@@ -666,22 +706,23 @@ hear in your mind:
     </roombasic>
   </room>
   <room>
-    <roombasic title="Ayanna&apos;s Fantasy World" vnum="32635" zone="326">
-      <roomdescription>Thick plush carpetting of a deep \c04d\c00\c11a\c00\c04r\c00\c11k\c00 \c04b\c00\c11l\c00\c04u\c00\c11e\c00 stretches from 
-wall to wall of \c06A\c00\c04y\c00\c05a\c00\c07n\c00\c06n\c00\c04a\c00&apos;\c05s\c00 private room. Once through the
-flickering light causing \c23s\c00\c22h\c00\c23a\c00\c22d\c00\c23o\c00\c22w\c00\c23s\c00 to move like living beings 
-over the covered \c01b\c00\c03r\c00\c01i\c00\c03c\c00\c01k\c00 walls. In the center of the room, a
-low table covered with lit candles and slowly burning incense 
-sits like an altar, filling the room with the scent of \c05j\c00\c01a\c00\c05s\c00\c01m\c00\c05i\c00\c01n\c00\c05e\c00.
-Two plushly carpetted steps lead up to the centerpiece of 
-the room, a large circular bed. \c23B\c00\c22l\c00\c23a\c00\c22c\c00\c23k\c00 \c23s\c00\c22a\c00\c23t\c00\c22i\c00\c23n\c00 sheets, now 
-\c04r\c00\c05u\c00\c04m\c00\c05p\c00\c04l\c00\c05e\c00\c04d\c00 cover the soft appearing bed. Soft \c07p\c00\c14i\c00\c07l\c00\c14l\c00\c07o\c00\c14w\c00\c07s\c00 lay
-twined within the sheets, and a small table sits next to the
-bed. Near to the bed, a long low \c03w\c00\c10o\c00\c03o\c00\c10d\c00\c03e\c00\c10n\c00 bookshelf sits,
-filled with neat stacks of books. Tastefully placed along the
-walls are a series of posters
+    <roombasic title="Natalia's Place" vnum="32635" zone="326">
+      <roomdescription>The shimmer of the &amp;Ws&amp;ct&amp;Wa&amp;cr&amp;Ws&amp;n fill the night sky, providing faint light though
+the warm &amp;ro&amp;Yr&amp;ra&amp;Yn&amp;rg&amp;Ye&amp;n of the setting sun can still be seen to the west.  A soft
+&amp;Czephyr&amp;n rustles the flowers that fill this meadow, stirring the aromatic
+incense and carrying it along towards the forest that edges the eastern
+horizon.  A &amp;Bblue&amp;n and &amp;Wwhite&amp;n checkered blanket sits in the midst of the
+blossoming &amp;rbuds&amp;n, flattening some of the flora to allow for a level surface
+on which to sit.  On one corner of the coverlet sits a &amp;ystraw&amp;n woven basket,
+the aroma of freshly baked bread as well as a myriad of other food smells
+seem to waft up from inside.  Already, there is a pitcher and a few
+ceramic cups that are set off to the side in case someone gets thirsty.  
+In the distance, the soft trickle of water can be heard as a small stream
+winds its way through the &amp;bf&amp;Bl&amp;co&amp;ww&amp;ce&amp;Br&amp;by&amp;n field.  Overall, this looks like a very
+inviting spot for a relaxing picnic or perhaps just some idle
+conversation.    
 </roomdescription>
-      <flags>1546</flags>
+      <flags>1034</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
@@ -702,18 +743,18 @@ over the beach. Indistinct figures laying nestled between the sand dunes.
     </exdesc>
     <exdesc keyword="sarah">
       <description>\c11I will remember you, will you remember me?\c00
-\c13Don&apos;t let your life pass you by, weep not for the memories\c00
-\c10I&apos;m so tired, but i can&apos;t sleep\c00
+\c13Don't let your life pass you by, weep not for the memories\c00
+\c10I'm so tired, but i can't sleep\c00
 \c08Standing on the edge of something much too deep\c00
-\c09It&apos;s funny how we feel so much, but we cannot say a word\c00
-\c10We are screaming inside, but we can&apos;t be heard..\c00
+\c09It's funny how we feel so much, but we cannot say a word\c00
+\c10We are screaming inside, but we can't be heard..\c00
 \c08But I will remember you, will you remember me?\c00
-\c11Don&apos;t let your life pass you by, weep not for the memories\c00
+\c11Don't let your life pass you by, weep not for the memories\c00
 </description>
     </exdesc>
   </room>
   <room>
-    <roombasic title="&amp;bRyokui&amp;n And &amp;mKindrana&apos;s&amp;n &amp;WWedding&amp;n Room" vnum="32636" zone="326">
+    <roombasic title="&amp;bRyokui&amp;n And &amp;mKindrana's&amp;n &amp;WWedding&amp;n Room" vnum="32636" zone="326">
       <roomdescription>The area before here is surrounded by lush &amp;Gtrees&amp;n and thick &amp;ggrass&amp;n.  As the &amp;ypath&amp;n
 opens up into this area, the &amp;gtrees&amp;n form a beautifully perfect circle in which
 the bright &amp;cblue&amp;n sky can be seen above covered with puffy, soft &amp;Wwhite&amp;n clouds.  
@@ -740,7 +781,7 @@ birds which have come to join in the &amp;Mfestivities&amp;n.
     </exit>
   </room>
   <room>
-    <roombasic title="&amp;bRyokui&amp;n And &amp;mKindrana&apos;s&amp;n &amp;WWedding&amp;n Reception Room" vnum="32637" zone="326">
+    <roombasic title="&amp;bRyokui&amp;n And &amp;mKindrana's&amp;n &amp;WWedding&amp;n Reception Room" vnum="32637" zone="326">
       <roomdescription>Upon exiting the wedding &amp;Gg&amp;gro&amp;Gu&amp;gnds&amp;n, a large room of soft &amp;ywood&amp;n and delicately
 scented &amp;Cf&amp;bl&amp;Yo&amp;rw&amp;Be&amp;Crs&amp;n lies here.  The floor is old oak, creaking faintly under your
 feet, a polished dark &amp;yb&amp;Yr&amp;yown&amp;n.  &amp;YF&amp;Res&amp;rt&amp;yiv&amp;Re&amp;n buntings hang from columns spaced at even
@@ -762,7 +803,7 @@ room.
     </exit>
   </room>
   <room>
-    <roombasic title="\c11Ryokui\c00 and \c05Kindrana&apos;s\c00 Honeymoon Suite" vnum="32638" zone="326">
+    <roombasic title="\c11Ryokui\c00 and \c05Kindrana's\c00 Honeymoon Suite" vnum="32638" zone="326">
       <roomdescription>Behind the \c04w\c06at\c07er\c06fa\c04ll\c00 is a long dark corridor, billowing \c06m\c07is\c06t\c00 seeping into the
 air of the cave but diminishing further in.  A soft glow appears a little
 farther down, the cave widening into a room carved out of the rock.  The \c03li\c07g\c03ht\c00
@@ -773,7 +814,7 @@ spilling across the top and down to the floor.  \c01Burgandy\c00 and \c07white\c
 have been scattered all over the bed, the matching fluffy pillows and around
 the floor beside it, adding to the sensual atmosphere of the room.  A full
 length mirror stands on the north side of the bed, about two feet wide and six
-feet tall.  It&apos;s \c23si\c07l\c23ve\c07r\c23y\c00 depths reflect the tapestry that covers the south
+feet tall.  It's \c23si\c07l\c23ve\c07r\c23y\c00 depths reflect the tapestry that covers the south
 wall, holding the chill from the rock wall at bay.  Another mirror is placed at
 an angle on the eastern wall, turned in such a way that it catches the bed and
 reflection of the other mirror, making it seem as if a hundred or more beds
@@ -805,7 +846,7 @@ ways to improve the playerbase and help the different guilds.
     </roombasic>
   </room>
   <room>
-    <roombasic title="The Newbie Meeting Room" vnum="32643" zone="326">
+    <roombasic title="Mystery - It's What's for Dinner" vnum="32643" zone="326">
       <roomdescription>You are in an unfinished room.
 </roomdescription>
       <flags>18</flags>
@@ -832,8 +873,21 @@ ways to improve the playerbase and help the different guilds.
     </roombasic>
   </room>
   <room>
-    <roombasic title="&amp;nAn Unfinished Room for the &amp;RBM&amp;n Tournament" vnum="32650" zone="326">
-      <roomdescription>You are in an unfinished room.
+    <roombasic title="A spectacular stadium for blademastery events." vnum="32650" zone="326">
+      <roomdescription>   The floor of the arena is oval in shape, stretching near one hundred
+fifty feet along the east-west axis and seventy-five along the
+north-south.  The floor is made of slate set so precisely that it appears
+to be one solid piece.  Five sparring rings are cut into the stone floor,
+three along the northern wall and two staggered with them along the south.
+Each of these rings is twenty feet in diameter with perhaps ten feet
+separating each from the other.  A wall ten feet high surrounds this oval.
+A gate at the end of the north axis is the only entrance.  Rising around
+the wall in a bowl shape are the stands, plain bleachers for the most
+part, although the east, west and south cardinal points have small areas
+separated off from the bleachers, filled with comfortable chairs
+apparently set aside for the nobility.  On the floor of the arena at the
+east end of the long axis is a table with three chairs for the judges of
+the event.    
 </roomdescription>
       <flags>0</flags>
       <sector>Inside</sector>
@@ -841,8 +895,15 @@ ways to improve the playerbase and help the different guilds.
     </roombasic>
   </room>
   <room>
-    <roombasic title="&amp;nAn Unfinished Room for the &amp;RBM&amp;n Tournament" vnum="32651" zone="326">
-      <roomdescription>You are in an unfinished room.
+    <roombasic title="The stadium around the sparring arena" vnum="32651" zone="326">
+      <roomdescription>   Bleachers stretch around the oval floor of the arena except for at the
+east, west and south cardinal points, where roped off sections with plush
+chairs have been set aside for the nobility.  The stadium is fashioned in
+a bowl shape, allowing even those in the very back a good view of the
+action.  Five rings about twenty feet in diameter each are carved into the
+floor of the arena, with a table along the eastmost point for the judges.
+A gate along the northmost point is the only entrance in the ten foot high
+wall which separates the spectators from the contestants.    
 </roomdescription>
       <flags>0</flags>
       <sector>Inside</sector>
@@ -904,22 +965,46 @@ ways to improve the playerbase and help the different guilds.
     </roombasic>
   </room>
   <room>
-    <roombasic title="&amp;nAn Unfinished Room for the &amp;RBM&amp;n Tournament" vnum="32658" zone="326">
-      <roomdescription>You are in an unfinished room.
+    <roombasic title="&amp;wThe Camp Pavillion&amp;n" vnum="32658" zone="326">
+      <roomdescription>Warm air tries to escape when the flap of the tent is moved, spilling out
+into the cold.  The tent itself is large and welcoming, many tables and
+benches about the area for people to sit and talk or share a small meal.
+The flooring put down is a dark rich blue with white threading throughout
+to brighten it and the novices do their best to keep it spotless with a
+short rug at the entrance for wiping mud off the boots.  It looks as if it
+also serves as a meeting area for men and women alike with benches around
+the edges and against the walls.  A trunk of books sits across from the
+opening for those moments when one just wants to warm themselves and read.
 </roomdescription>
-      <flags>0</flags>
+      <flags>26</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
+    <exit direction="north" keyword="flap" exitinfo="3" keynum="0" toroom="2750">
+      <description>The flap of the tent is well weathered and highly used as this is a rather
+busy area. 
+</description>
+    </exit>
+    <exit direction="east" keyword="" exitinfo="0" keynum="0" toroom="32659">
+      <description/>
+    </exit>
   </room>
   <room>
-    <roombasic title="&amp;nAn Unfinished Room for the &amp;RBM&amp;n Tournament" vnum="32659" zone="326">
-      <roomdescription>You are in an unfinished room.
+    <roombasic title="&amp;wThe Back Area of the Pavillion&amp;n" vnum="32659" zone="326">
+      <roomdescription>In the back of the pavillion is more tables and benches.  One long bench
+rests against the back wall allowing a good view of the front entrance to
+the tent.  Novices themselves are responsible for keeping this area warm
+and clean, sweeping up crumbs or drying out spilled drinks.  Candles sit
+atop the tables to keep it bright and warmers are about the room being
+sure to keep the tent pleasant.    
 </roomdescription>
-      <flags>0</flags>
+      <flags>26</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
+    <exit direction="west" keyword="" exitinfo="0" keynum="0" toroom="32658">
+      <description/>
+    </exit>
   </room>
   <room>
     <roombasic title="&amp;nAn Unfinished Room for the &amp;RBM&amp;n Tournament" vnum="32660" zone="326">
@@ -931,12 +1016,15 @@ ways to improve the playerbase and help the different guilds.
     </roombasic>
   </room>
   <room>
-    <roombasic title="A Empty Immortal Room" vnum="32664" zone="326">
+    <roombasic title="&amp;WSprinkles' Room&amp;n" vnum="32664" zone="326">
       <roomdescription>\c00</roomdescription>
       <flags>1098</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
+    <exit direction="down" keyword="" exitinfo="0" keynum="0" toroom="10186">
+      <description/>
+    </exit>
   </room>
   <room>
     <roombasic title="\c07The \c10C\c03o\c10u\c03n\c10c\c03i\c10l \c07Meeting Room\c00" vnum="32666" zone="326">
@@ -969,7 +1057,7 @@ unfamiliar scents meandering from both.
   </room>
   <room>
     <roombasic title="A Small Stand" vnum="32668" zone="326">
-      <roomdescription>Fragrances of enough \c14s\c07u\c14g\c07a\c14r\c00 to put a s&apos;redit to the moon
+      <roomdescription>Fragrances of enough \c14s\c07u\c14g\c07a\c14r\c00 to put a s'redit to the moon
 (with some energy left over) seep into the senses. The
 ground is hard \c03dirt\c00, and the shadows from nearby tents
 provide a cool release from the unnatural heat. Children
@@ -1022,7 +1110,7 @@ velvet.
     </exdesc>
     <exdesc keyword="tea set">
       <description>The set is made of fine china and would be an excellant addition to 
-anyone&apos;s collection.
+anyone's collection.
 </description>
     </exdesc>
     <exdesc keyword="table">
@@ -1046,22 +1134,21 @@ anyone&apos;s collection.
     </exdesc>
   </room>
   <room>
-    <roombasic title="Meraeyn&apos;s Vacation House" vnum="32671" zone="326">
+    <roombasic title="Meraeyn's Vacation House" vnum="32671" zone="326">
       <roomdescription>     The warm sun coming through a large skylight, and the sounds of waves
 come through an open door.  Outside is a long tropical beach, just begging
 to be abused for a beautiful session of sunbathing or watersports.  Inside
 are all the comforts of the modern home.  Big screen TV, Big comfy leather
 couches, a computer set up in the corner, and a small kitchen to get a
 snack or meal from.  Off to one side, right where it can stay cool all the
-time is a hammock for guests to sack out in... just hope they don&apos;t fall
+time is a hammock for guests to sack out in... just hope they don't fall
 out!
 </roomdescription>
       <flags>8</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
-    <exit direction="east" keyword="Not set yet...
-" exitinfo="0" keynum="0" toroom="32672">
+    <exit direction="east" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="32672">
       <description>None
 </description>
     </exit>
@@ -1084,8 +1171,7 @@ absolutely nothing!
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
-    <exit direction="west" keyword="Not set yet...
-" exitinfo="0" keynum="0" toroom="32671">
+    <exit direction="west" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="32671">
       <description>None
 </description>
     </exit>
@@ -1102,7 +1188,7 @@ The &amp;Kblack&amp;w motif is continued with the &amp;Kblack silken&amp;w sheet
 cover the large feather matress, and the matching covers on the
 feather pillows laying next to the headboard.&amp;n
 </roomdescription>
-      <flags>66058</flags>
+      <flags>66056</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
@@ -1112,16 +1198,19 @@ feather pillows laying next to the headboard.&amp;n
       <roomdescription>&amp;wThis room seems to be carved inside of an immense solid block of
 &amp;Kobsidian&amp;w.  No doorways are visible, nor does there seem to be any
 windows.  Several small lamps hanging on the walls provide &amp;Wl&amp;Yi&amp;Wg&amp;Yh&amp;Wt&amp;w.
-Along one wall lies a beautiful sofa of &amp;Kblack leather&amp;w and to it&apos;s
-left against the far wall lies a huge four poster bed, also which
+Along one wall lies a beautiful sofa of &amp;Kblack leather&amp;w and to it's
+left against the far wall rests a huge four poster bed, also which
 appears to be carved out of &amp;Kobsidian&amp;w.  A small fireplace is set
 into the wall opposite the sofa, a nice &amp;rf&amp;Ri&amp;rr&amp;Re&amp;w burning within.  A
 bearskin rug lies on the floor in front of it.&amp;n
 </roomdescription>
-      <flags>1034</flags>
+      <flags>10</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
+    <exit direction="down" keyword="hole" exitinfo="0" keynum="0" toroom="69">
+      <description/>
+    </exit>
     <exdesc keyword="boards">
       <description>29906 - Main OOC Board
 29976 - Main IC Board
@@ -1142,7 +1231,8 @@ bearskin rug lies on the floor in front of it.&amp;n
 
  1100 - Seafolk Board
 
- 5051 - Tower Main Board
+ 5028 - White Tower OOC Board
+ 5192 - White Tower IC Board
 </description>
     </exdesc>
     <exdesc keyword="ceiling">
@@ -1152,7 +1242,7 @@ polished, and unblemished &amp;Kobsidian&amp;n.
     </exdesc>
     <exdesc keyword="walls">
       <description>&amp;wThe walls of this room are highly polished, unblemished &amp;Kobsidian&amp;w.  
-Furthermore, it appears that there is not a single seam in the room&apos;s
+Furthermore, it appears that there is not a single seam in the room's
 construction.  &amp;n
 </description>
     </exdesc>
@@ -1181,18 +1271,21 @@ A wonderful &amp;rf&amp;Ri&amp;rr&amp;Re&amp;n is burning within it.
 </description>
     </exdesc>
     <exdesc keyword="rug bearskin">
-      <description>&amp;nA truely marvelous bearskin rug, the fur is a dark brown that&apos;s peppered
+      <description>&amp;nA truely marvelous bearskin rug, the fur is a dark brown that's peppered
 with black.  This must be a very comfortable place to lay, in front of the
 fireplace.    
 </description>
     </exdesc>
     <exdesc keyword="lamp light">
       <description>&amp;wThe lamps hanging on the wall appear to be either &amp;Kblack&amp;w wrought iron, or
-another metal that&apos;s been covered with &amp;Kblack&amp;w enamel so that it blends in
+another metal that's been covered with &amp;Kblack&amp;w enamel so that it blends in
 with the walls.  Small highly polished silver mirrors behind the wicks
 reflect the &amp;Wl&amp;Yi&amp;Wg&amp;Yh&amp;Wt&amp;w out into the room.    
 </description>
     </exdesc>
+    <dgscript vnum="32688"/>
+    <dgscript vnum="32687"/>
+    <dgscript vnum="13299"/>
   </room>
   <room>
     <roombasic title="&amp;wAn Ornate Bed With A Flowing &amp;KBlack Silk&amp;w Canopy&amp;n" vnum="32689" zone="326">
@@ -1204,32 +1297,40 @@ reflect the &amp;Wl&amp;Yi&amp;Wg&amp;Yh&amp;Wt&amp;w out into the room.
     </roombasic>
   </room>
   <room>
+    <roombasic title="A Vacuole" vnum="32690" zone="326">
+      <roomdescription>You hang suspended inside a solid fluid of some sort which holds
+you immobile.  No matter how you struggle you are completely
+unable to do anything.  Anything but wait for someone to free
+you from this Vacuole.
+</roomdescription>
+      <flags>2105346</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <dgscript vnum="32690"/>
+  </room>
+  <room>
     <roombasic title="The boat &quot;Flygande Otto&quot;" vnum="32698" zone="326">
-      <roomdescription>You&apos;re standing on the deck of &quot;Flygande Otto&quot;.
+      <roomdescription>You're standing on the deck of &quot;Flygande Otto&quot;.
 </roomdescription>
       <flags>0</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
-    <exit direction="west" keyword="Aboard MS Flygande Otto
-" exitinfo="0" keynum="-1" toroom="28059">
-      <description>A gangplank leading off the ship &quot;MS Flygande Otto&quot; onto the harbour of Southern Dock of Aringill
-</description>
-    </exit>
   </room>
   <room>
     <roombasic title="The Mended Drum" vnum="32699" zone="326">
       <roomdescription>This is not the best pub in town to visit. Oh-no!
-The costumers are what more polite persons might refer to as
+The customers are what more polite persons might refer to as
 total bastards. Brawls, singing, heavy drinking, gambling, 
-watchmens trying to sneak out, or inf failing that, arresting 
-those people already unconsious, it&apos;s all here. In a corner
-stands Detritus, the Drum&apos;s splatter (Like a bouncer, only trolls
+watchmens trying to sneak out, or if failing that, arresting 
+those people already unconsious, it's all here. In a corner
+stands Detritus, the Drum's splatter (Like a bouncer, only trolls
 uses more force). Some have wondered why the place is called the Mended
-Drum, the answer is that the owner got tired of the old name &apos;The Broken Drum&apos;. 
+Drum, the answer is that the owner got tired of the old name 'The Broken Drum'. 
 
 Now, why would anyone name a pub the Broken Drum?
-The answer is obvious, because you can&apos;t beat it. 
+The answer is obvious, because you can't beat it. 
 </roomdescription>
       <flags>90</flags>
       <sector>Inside</sector>
@@ -1241,10 +1342,6 @@ The answer is obvious, because you can&apos;t beat it.
     </exit>
     <exit direction="east" keyword="door" exitinfo="0" keynum="0" toroom="10228">
       <description>To home room
-</description>
-    </exit>
-    <exit direction="up" keyword="Bouncing entrance" exitinfo="0" keynum="0" toroom="32699">
-      <description>Bouncing entrance
 </description>
     </exit>
   </room>

@@ -357,7 +357,8 @@ static struct obj_data *fetchXmlObj(xmlNodePtr o)
   obj->item_number = last_obj_rnum;
   obj->name        = xmlGetProp(o,"name");
 
-  for (tmp = o->children; NULL != tmp; tmp = tmp->next) { 
+  for (tmp = xmlFirstElementChild(o); NULL != tmp; tmp = xmlNextElementSibling(tmp))
+  { 
     if (!strcasecmp(tmp->name,"DESCRIPTION")) 
       obj->description = xmlToString(tmp->children); // fetch description
 
@@ -405,7 +406,9 @@ void load_xml_objects(char *file)
     alog("load_xml_objects:[xmlObjects.c]: Couldn't parse XML-file %s",file);
     return;
   }
-  if (!(root = doc->children)) {
+
+  root = xmlDocGetRootElement(doc);
+  if (NULL == root) {
     alog("load_xml_objects:[xmlObjects.c]: No XML-root in document %s",file);
     xmlFreeDoc(doc);
     return;
@@ -416,7 +419,9 @@ void load_xml_objects(char *file)
     xmlFreeDoc(doc);
     return;
   }
-  for (temp = root->children; NULL != temp; temp = temp->next) {
+  
+  for (temp = xmlFirstElementChild(root); NULL != temp; temp = xmlNextElementSibling(temp))
+  {
     obj = fetchXmlObj(temp);
     *(obj_proto+last_obj_rnum) = *obj;
     (obj_proto+last_obj_rnum)->in_room = NOWHERE;

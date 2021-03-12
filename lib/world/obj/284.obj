@@ -1,105 +1,198 @@
-#28400
-traven blade~
-a huge black-\c01hilted\c00 broadsword~
-A huge broadsword that belongs to Traven is lying here.~
-~
-5 4232 8193
-0 100 50 3
-20 1000 0
-A
-13 100
-A
-18 50
-A
-19 50
-#28401
-ash traven~
-a finely carved staff of \c22ash\c00~
-A thin staff of ash is lying here.~
-~
-12 1152 16385
-0 0 0 0
-4 1000 0
-A
-9 50
-A
-12 500
-A
-13 500
-A
-18 50
-A
-19 50
-#28402
-traven light gemstone~
-a glowing gemstone~
-A glowing gemstone hovers above ground DO NOT TOUCH!!!~
-~
-1 4104 7159
-0 0 -1 0
-1 1 0
-A
-12 500
-A
-12 500
-A
-12 500
-A
-13 500
-A
-13 500
-A
-13 500
-#28403
-desk~
-a fine wooden desk~
-The Captain's fine wooden desk sits near the back wall.~
-~
-15 8 0
-200 1 -1 0
-1000 100 0
-#28404
-captains key~
-a small metal key~
-A small key is lying here.~
-~
-18 0 16385
-0 0 0 0
-1 10 0
-#28405
-traven chandra ring~
-a brilliantly \c03glowing\c00 band \c01forged\c00 of the four elements, bound by \c04love\c00.~
-A ring made for Chandra is here.~
-~
-11 4296 3
-0 0 0 0
-1 10000 0
-A
-20 1
-A
-12 100
-#28406
-eagle key~
-a key, marked with an \c03eagle\c00.~
-An eagle marked key is lying here.~
-~
-18 0 1
-0 0 0 0
-1 10 0
-#28407
-horse key~
-a key, marked with a \c05horse\c00.~
-A horse marked key is lying here.~
-~
-18 0 1
-0 0 0 0
-1 10 0
-#28408
-rose key~
-a key, marked with a \c01rose\c00.~
-A rose marked key is lying here.~
-~
-18 0 1
-0 0 0 0
-1 10 0
-$~
+<?xml version="1.0"?>
+<objects>
+  <object vnum="28400" name="traven blade" special="NONE">
+    <description>A huge broadsword that belongs to Traven is lying here.</description>
+    <shortdesc>a huge black-\c01hilted\c00 broadsword</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="MAXHIT" modifier="100"/>
+    <objaffect location="HITROLL" modifier="50"/>
+    <objaffect location="DAMROLL" modifier="50"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="100" value3="50" value4="3"/>
+      <flags type="5" wear="8193" extra="4232"/>
+      <data weight="20" cost="1000" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="28401" name="ash traven" special="NONE">
+    <description>A thin staff of ash is lying here.</description>
+    <shortdesc>a finely carved staff of \c22ash\c00</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="ABS" modifier="50"/>
+    <objaffect location="MAXMANA" modifier="500"/>
+    <objaffect location="MAXHIT" modifier="500"/>
+    <objaffect location="HITROLL" modifier="50"/>
+    <objaffect location="DAMROLL" modifier="50"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="12" wear="16385" extra="1152"/>
+      <data weight="4" cost="1000" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="28402" name="traven light gemstone" special="NONE">
+    <description>A glowing gemstone hovers above ground DO NOT TOUCH!!!</description>
+    <shortdesc>a glowing gemstone</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="MAXMANA" modifier="500"/>
+    <objaffect location="MAXMANA" modifier="500"/>
+    <objaffect location="MAXMANA" modifier="500"/>
+    <objaffect location="MAXHIT" modifier="500"/>
+    <objaffect location="MAXHIT" modifier="500"/>
+    <objaffect location="MAXHIT" modifier="500"/>
+    <objflags>
+      <values value1="0" value2="0" value3="-1" value4="0"/>
+      <flags type="1" wear="7159" extra="4104"/>
+      <data weight="1" cost="1" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="28403" name="desk" special="NONE">
+    <description>The Captain&apos;s fine wooden desk sits near the back wall.</description>
+    <shortdesc>a fine wooden desk</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="200" value2="1" value3="-1" value4="0"/>
+      <flags type="15" wear="0" extra="8"/>
+      <data weight="1000" cost="100" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="28404" name="captains key" special="NONE">
+    <description>A small key is lying here.</description>
+    <shortdesc>a small metal key</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="18" wear="16385" extra="0"/>
+      <data weight="1" cost="10" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="28405" name="ring traven" special="NONE">
+    <description>Traven&apos;s ring.. leave it alone!</description>
+    <shortdesc>pure force</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="XATTACKS" modifier="5"/>
+    <objaffect location="MAXMANA" modifier="100"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="11" wear="2" extra="4232"/>
+      <data weight="1" cost="10000" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="28406" name="eagle key" special="NONE">
+    <description>An eagle marked key is lying here.</description>
+    <shortdesc>a key, marked with an \c03eagle\c00.</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="18" wear="1" extra="0"/>
+      <data weight="1" cost="10" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="28407" name="horse key" special="NONE">
+    <description>A horse marked key is lying here.</description>
+    <shortdesc>a key, marked with a \c05horse\c00.</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="18" wear="1" extra="0"/>
+      <data weight="1" cost="10" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="28408" name="rose key" special="NONE">
+    <description>A rose marked key is lying here.</description>
+    <shortdesc>a key, marked with a \c01rose\c00.</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="18" wear="1" extra="0"/>
+      <data weight="1" cost="10" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="28410" name="bed" special="NONE">
+    <description>A circular bed with black satin sheets sits in the middle of the room.</description>
+    <shortdesc>circular bed</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="2" value2="1" value3="2" value4="0"/>
+      <flags type="24" wear="0" extra="0"/>
+      <data weight="10000" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <exdesc keyword="mirror">
+      <description>Directly above the bed, attached to the canopy is a large silver mirrorr.
+</description>
+    </exdesc>
+    <exdesc keyword="bed">
+      <description>Soft sheets lay mussed on the bed, as if it was recently used. A pair of very soft looking pillows lay at the head of the bed.
+</description>
+    </exdesc>
+  </object>
+  <object vnum="28411" name="marble bench" special="NONE">
+    <description>A &amp;Wwhite&amp;n marble bench is sitting beneath the statue.</description>
+    <shortdesc>a white marble bench</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="5" value4="0"/>
+      <flags type="24" wear="0" extra="0"/>
+      <data weight="1000" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+</objects>

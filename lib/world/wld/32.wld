@@ -61,7 +61,7 @@ than a cold.
       <roomdescription>   The road runs from north to south here, you easily
 noteice that it is rather well traveled by the lack of
 grass on the path itself, but still fellow travelers
-aren&apos;t too often encountered.
+aren't too often encountered.
 </roomdescription>
       <flags>0</flags>
       <sector>Field</sector>
@@ -155,7 +155,7 @@ heavy horses like they used to outside the forest.\c00
   </room>
   <room>
     <roombasic title="Through the Plains of Altara" vnum="3208" zone="32">
-      <roomdescription>   There&apos;s a pine forest in a small distance away from
+      <roomdescription>   There's a pine forest in a small distance away from
 here, the trees easily visible from where you stand. Some
 merchants riding horses or mules occasionally pass you by,
 but none seems too eager to begin conversation other with
@@ -231,7 +231,7 @@ for experienced trackers and travellers who walk it frequently.
   <room>
     <roombasic title="Through Grasslands" vnum="3212" zone="32">
       <roomdescription>   Although the grass around you is tall, almost up to your
-knee if you stray from the well travelled path, you can&apos;t
+knee if you stray from the well travelled path, you can't
 help but wonder how it will be if the rain was to be more
 frequent. The sound of small mules ridden by merchants or the
 occasional horse carrying the more hurried travellers is the
@@ -244,7 +244,10 @@ one that keeps reaching your ears.
     <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="3213">
       <description/>
     </exit>
-    <exit direction="west" keyword="" exitinfo="0" keynum="0" toroom="3211">
+    <exit direction="east" keyword="door east arwynn" exitinfo="15" keynum="31587" toroom="31587">
+      <description/>
+    </exit>
+    <exit direction="west" keyword="door arwynn east" exitinfo="9" keynum="31587" toroom="3211">
       <description/>
     </exit>
   </room>
@@ -269,7 +272,7 @@ weapons when they see you.
   </room>
   <room>
     <roombasic title="Entering a Hilly Region" vnum="3214" zone="32">
-      <roomdescription>  The ground here isn&apos;t as level as it used to be,
+      <roomdescription>  The ground here isn't as level as it used to be,
 small hills that are hard to travel with a horse force
 most people to slow down their pace and dismount. There
 are occasional trees on the bottom of some hills, but
@@ -327,7 +330,7 @@ to climb more than you need to walk.
       <roomdescription>   Small hills, many of them in a distance away from
 where you stand is the most interesting feature of
 an otherwise rather dull place. Occasional merchants 
-and their guards aren&apos;t about to offer anyone friendly
+and their guards aren't about to offer anyone friendly
 conversation, so all you can do is walk on.
 </roomdescription>
       <flags>0</flags>
@@ -421,7 +424,7 @@ riding past you all the time, wrapped in heavy cloaks
 that prove to be more of an annoyance during the day than
 actual help; once the night claims the lands though, the
 climate can be quite hostile and cold without a roof over
-one&apos;s head.
+one's head.
 </roomdescription>
       <flags>0</flags>
       <sector>Field</sector>
@@ -441,7 +444,7 @@ riding past you all the time, wrapped in heavy cloaks
 that prove to be more of an annoyance during the day than
 actual help; once the night claims the lands though, the
 climate can be quite hostile and cold without a roof over
-one&apos;s head.
+one's head.
 </roomdescription>
       <flags>0</flags>
       <sector>Field</sector>
@@ -458,7 +461,7 @@ one&apos;s head.
     <roombasic title="Approaching a Sandy Area" vnum="3224" zone="32">
       <roomdescription>   The ground is slowly becoming less hard, grass not as
 green or tall as it used to be; rain around these parts of
-the road shouldn&apos;t be too frequent, and the thought should
+the road shouldn't be too frequent, and the thought should
 prove enough to force a wise traveller to never attempt a
 journey without a filled waterskin or two.
 </roomdescription>
@@ -510,13 +513,11 @@ the savage Aiel often do.
     </exit>
   </room>
   <room>
-    <roombasic title="A dusty path" vnum="3227" zone="32">
-      <roomdescription>   The path is clear and well defined, you never
-have to guess where it leads to around this part
-of the road that runs between cities. Although you
-never see any posts to mark the road or landmarks to
-let you know exactly where you are, there is little
-doubt as to where to go next.
+    <roombasic title="A Dusty Path" vnum="3227" zone="32">
+      <roomdescription>The path is clear and well defined, you never have to guess where it leads
+to around this part of the road that runs between cities.  Although you
+never see any posts to mark the road or landmarks to let you know exactly
+where you are, there is little doubt as to where to go next.    
 </roomdescription>
       <flags>0</flags>
       <sector>Field</sector>
@@ -547,12 +548,11 @@ to confuse even travellers who have never taken it before.
     </exit>
   </room>
   <room>
-    <roombasic title="A dusty path" vnum="3229" zone="32">
-      <roomdescription>   These parts of the road can be easier travelled on the
-back of a trusty mount, horses can speed up one&apos;s journey
-where the landscape is void of hills or deep forests, 
-provided water supplies last for both the animal and its
-owner.
+    <roombasic title="A Dusty Path" vnum="3229" zone="32">
+      <roomdescription>These parts of the road can be easier travelled on the back of a trusty
+mount, horses can speed up one's journey where the landscape is void of
+hills or deep forests, provided water supplies last for both the animal
+and its owner.    
 </roomdescription>
       <flags>0</flags>
       <sector>Field</sector>
@@ -605,7 +605,7 @@ from chimneys and leather or oil shops in it.
   </room>
   <room>
     <roombasic title="A small Fishing Village" vnum="3232" zone="32">
-      <roomdescription>   You are walking through what should be the village&apos;s
+      <roomdescription>   You are walking through what should be the village's
 main street, one that nobody bothered to raise any signs
 to declare its name, nor do the villagers themselves seem
 too interested in you, one more travellers among the dozens
@@ -754,6 +754,9 @@ difficult to cultivate.
       <special>NONE</special>
     </roombasic>
     <exit direction="east" keyword="" exitinfo="0" keynum="0" toroom="3240">
+      <description/>
+    </exit>
+    <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="31700">
       <description/>
     </exit>
     <exit direction="west" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="3238">
@@ -1270,7 +1273,7 @@ without a cloud anywhere, and the sun beats down on you.
     </exit>
   </room>
   <room>
-    <roombasic title="A narrow pass" vnum="3266" zone="32">
+    <roombasic title="A Narrow Pass" vnum="3266" zone="32">
       <roomdescription>There is a narrow pass here through the small mountains
 that are on both sides. Rocks of many sizes are piled up
 in heaps on each side of the pass, almost as if this path
@@ -1348,7 +1351,7 @@ of anything but grass.
     <roombasic title="A Wooden Bridge Across the River" vnum="3270" zone="32">
       <roomdescription>A narrow, wooden bridge allows a wagon and horse cross
 before it takes you across the river Manetherendrelle - 
-the fabled river of legend that was once the heart&apos;s blood of
+the fabled river of legend that was once the heart's blood of
 the famed nation and city of Manethern far to the northwest.
 The dirt road is slightly muddy on both side of the river,
 whose banks are larger than they should be due to the drought.
@@ -1406,7 +1409,7 @@ graze off to the northeast.
     <roombasic title="Border between Murandy and Illian" vnum="3273" zone="32">
       <roomdescription>Here is a small wooden outpost, in which two guards lounge
 around, pretending to guard the border. Each guard has different
-regalia and sigils, marking them to be from different lord&apos;s manors.
+regalia and sigils, marking them to be from different lord's manors.
 They are obviously Murandian guards, famed for their incompetency.
 </roomdescription>
       <flags>0</flags>
@@ -1460,12 +1463,12 @@ a valuable item.
     </exit>
   </room>
   <room>
-    <roombasic title="A Baron&apos;s Land off to the West" vnum="3276" zone="32">
+    <roombasic title="A Baron's Land off to the West" vnum="3276" zone="32">
       <roomdescription>The surrounding area is flat, and there are fields of wheat 
 and rye on both sides of the road. Vineyards are seen in
 the distance, and the wine of Murandy is famous all over 
 the land. To the northwest is a large manor, with several
-adjoining farms that look as if they belong to the manor&apos;s
+adjoining farms that look as if they belong to the manor's
 owner. 
 </roomdescription>
       <flags>0</flags>
@@ -1502,7 +1505,7 @@ vineyards up to the north.
     <roombasic title="Entering a Large Field of Wildflowers" vnum="3278" zone="32">
       <roomdescription>You walk through a field of wildflowers which the main
 path goes through. Clumps of heartsblush, blue daisies
-and small yellow flowers that you can&apos;t identify grow
+and small yellow flowers that you can't identify grow
 everywhere. The air is fragrant with the scent of cut grass
 and flowers.
 </roomdescription>
@@ -1635,11 +1638,11 @@ Murandy is famous for.
     </exit>
   </room>
   <room>
-    <roombasic title="A Distillary in the Distance" vnum="3285" zone="32">
-      <roomdescription>The distillary is made of wood, and has a bunch of
+    <roombasic title="A Winery in the Distance" vnum="3285" zone="32">
+      <roomdescription>The winery is made of wood, and has a bunch of
 grapes painted over the door. Several men carry large 
-oak barrels to and fro the storage shed that is next to
-the distillary. Beyond the distillary is an adjoining
+oak barrels to and from the storage shed that is next to
+the winery. Beyond the winery is an adjoining
 farmhouse. 
 </roomdescription>
       <flags>0</flags>
@@ -1750,7 +1753,7 @@ under your feet.\c00
     </exit>
   </room>
   <room>
-    <roombasic title="A small clearing" vnum="3290" zone="32">
+    <roombasic title="A Small Clearing" vnum="3290" zone="32">
       <roomdescription>\c02You reach the center of the forest and stand in 
 a small \c07clearing\c02 filled with pine needles and
 a few patches of chewed grass. There are small
@@ -1907,7 +1910,7 @@ by trees, and all of them appear to look alike.\c00
     </exit>
   </room>
   <room>
-    <roombasic title="A path by the edge of a Forest" vnum="3296" zone="32">
+    <roombasic title="A Path by the Edge of the Forest" vnum="3296" zone="32">
       <roomdescription>This is a very sparsely traveled grass filled path
 that goes through the forest that stretches to the north 
 and south. It continues through the brush to the east,
@@ -1925,7 +1928,7 @@ where tall pines and firs are at the edge of the forest.
     </exit>
   </room>
   <room>
-    <roombasic title="A path by the edge of the forest" vnum="3297" zone="32">
+    <roombasic title="A Path by the Edge of the Forest" vnum="3297" zone="32">
       <roomdescription>This is a very sparsely traveled grass filled path
 that goes through the forest that stretches to the north 
 and south. It continues through the brush to the east,
@@ -1968,7 +1971,7 @@ animals that frequent this rare source of water.\c00
     </exit>
   </room>
   <room>
-    <roombasic title="A winding grassy path" vnum="3299" zone="32">
+    <roombasic title="A Winding Grassy Path" vnum="3299" zone="32">
       <roomdescription>A winding, grass filled path leaves the pine forest
 to the west. The ground is covered with patches of
 old grass as well as new grass. Everything looks 

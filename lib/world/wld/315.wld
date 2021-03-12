@@ -10,8 +10,8 @@
     </roombasic>
   </room>
   <room>
-    <roombasic title="\c06Kalahad&apos;s Shop\c00" vnum="31501" zone="315">
-      <roomdescription>A tiny bell rings from above the door as it opens into \c06Kalahad&apos;s\c00 shop, the
+    <roombasic title="\c06Kalahad's Shop\c00" vnum="31501" zone="315">
+      <roomdescription>A tiny bell rings from above the door as it opens into \c06Kalahad's\c00 shop, the
 faint scent of \c06silk\c00 in the air.  The shop is decorated with \c04linen\c00 flags
 hanging from the walls, each showing the different banners that represent
 each country of the world.  A soft, white mat covers the entire floor of
@@ -56,7 +56,7 @@ table stands between them, holding a large vase full of fresh daisys.
   <room>
     <roombasic title="A Cozy Bedroom" vnum="31503" zone="315">
       <roomdescription>This room is dominated by a very large, comfortable looking bed on the
-north wall.  A tall dresser stands to the east of the bed, it&apos;s old rugged
+north wall.  A tall dresser stands to the east of the bed, it's old rugged
 look gives the room a well lived in feel.  To the west of the bed is a
 small wash basin, enclosed in a small nook carved from the wall.  A number
 of small windows allow a great deal of light to enter, diffused by \c23g\c07r\c23a\c07y\c00
@@ -72,7 +72,7 @@ window shades.
     </exit>
   </room>
   <room>
-    <roombasic title="A Room in Tallon&apos;s Cabin" vnum="31504" zone="315">
+    <roombasic title="A Room in Tallon's Cabin" vnum="31504" zone="315">
       <roomdescription>You are standing in the first room of a quaint little cabin.  The
 defeaning noise of the waterfall is muted hear, reduced to a peaceful
 drone.  This room is not very large, nor is it very small.  On the north
@@ -81,7 +81,7 @@ chairs in front of it.  In the northwest corner is a woodstove meant for
 cooking, and an assortment of pots and pans hang nearby.  The room is
 sparsely furnished, with only two chairs in front of the fireplace and two
 simple wooden chairs around an oaken table in the center of the room.  
-The there&apos;s a door on the west wall that proly leads to the bedroom.    
+The there's a door on the west wall that proly leads to the bedroom.    
 </roomdescription>
       <flags>28</flags>
       <sector>Inside</sector>
@@ -92,13 +92,2181 @@ The there&apos;s a door on the west wall that proly leads to the bedroom.
     </exit>
   </room>
   <room>
-    <roombasic title="A Room Ragnar Paid For" vnum="31505" zone="315">
-      <roomdescription>This room is unused at the moment.
-But is still owned by Ragnar.
+    <roombasic title="Ragnar's Memorial" vnum="31505" zone="315">
+      <roomdescription>An open field stretches as far as the eye can see.  In the center, there
+is a headstone, marked with the following:
+
+We passed upon the stair, we spoke of was and when 
+Although I wasn't there, he said I was his friend 
+Which came as some surprise I spoke into his eyes 
+I thought you'd died alone, a long long time ago  
+
+Oh no, not me 
+I never lost control 
+You're face to face 
+With The Man Who Sold The World  
+
+I laughed and shook his hand, and made my way back home 
+I searched for form and land, for years and years I roamed 
+I gazed a hazey stare at all the millions here 
+I must have died alone, a long long time ago  
+
+Who knows? not me 
+We never lost control 
+You're face to face 
+With the Man who Sold the World  
 </roomdescription>
       <flags>0</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
+    <exit direction="south" keyword="door" exitinfo="9" keynum="31561" toroom="30483">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Nightflower Inn" vnum="31506" zone="315">
+      <roomdescription>Walking into the room, the first thing one would notice is that it is devoid
+of the usual smells of an inn.  The only smell that is easily picked out
+is the smell of burning wood, not an unpleasant smell.  The room is well
+lit, and the tables are spread about in an ordered fashion, each one of
+them cleaned very well, almost no stains mark them.  The bar is also
+clean, as is the man behind it.  Serving girls walk about the room, taking
+orders and delivering meals to customers.  There is a fire burning in the
+center of the left wall, and there is a picture of a nightflower bursting
+on the ceiling.    
+</roomdescription>
+      <flags>154</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="door north" exitinfo="3" keynum="-1" toroom="30482">
+      <description>You see nothing special.
+</description>
+    </exit>
+    <exit direction="down" keyword="door" exitinfo="3" keynum="0" toroom="31547">
+      <description>A thick oak door with a brass ring instead of a knob.    
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Pocket Hotel" vnum="31507" zone="315">
+      <roomdescription>As you look around, you see that the room stands high in the trees, and is
+also made of pocket lint, spare change, gum wrappers, and anything else
+you could find in a pocket.  A man stands at the desk, looking over his
+books.  He smiles as you walk up to the desk, and puts a book out in front
+of you.  &quot;If you would just sign here, we can get you a room with free
+room service.  &quot; He smiles at you, and looks down at the register he has
+just handed you.  You write your name, and smile.    
+</roomdescription>
+      <flags>64</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="south" keyword="door" exitinfo="15" keynum="31507" toroom="30485">
+      <description>You see nothing special.
+</description>
+    </exit>
+    <exit direction="west" keyword="door" exitinfo="15" keynum="31509" toroom="31508">
+      <description>These double doors are carved from the finest woods into a scene of a
+turbulent sea at night with a ship being tossed about below a full moon
+and a single shooting star.  The door handles are of a highly polished
+brass and shaped like crested waves.    
+</description>
+    </exit>
+    <exit direction="up" keyword="" exitinfo="0" keynum="-1" toroom="31509">
+      <description>You see nothing special.
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Asin's Room" vnum="31508" zone="315">
+      <roomdescription>Soft, velvet curtains of deep \c04blue\c00 drape over a large, bay window.  The
+window opens onto an expansive vista of the ocean, colours swirling and
+blending together in a beautiful vortex as \c13waves\c00 crash against the shore
+and \c23gulls\c00 cry to their mates.  Up against the northern wall of the room is
+a great wooden bed carved like a cresting wave.  Its sheets are soft,
+muted tones of \c09green\c00 and \c04blue\c00 silks.  From the topmost of the bed's crest
+flows netting like \c02seafoam\c00 down the sides of the bed.  Next to the bed is
+a small stand of mahogany, carved ornately like a living thing of lush
+\c09vines\c00, a tangle of which forms the legs.  The floor is a highly polished
+wood, painted with tiny, intricate strokes like magic transforming the
+floor into the bottom of \c03seafloor\c00.  The southern end of the room is
+dominated by a large \c03wardrobe\c00, the panels of which are carved into a
+harbor scene of great \c04sea-fareing ships\c00.  There is a polished mirror next
+to the wardrobe.  The mirror is about six feet in width, ten feet in
+length, and three feet in height.  A \c06chair\c00 in one corner adds an almost
+surreal quality to the room it appears to be a large \c09conch \c02shell\c00 with soft
+\c13silk\c00 cushions in the hollow, making this \c06chair\c00 exceeding comfortable.    
+</roomdescription>
+      <flags>552</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+  </room>
+  <room>
+    <roombasic title="Second Floor Hallway of the Pocket Hotel" vnum="31509" zone="315">
+      <roomdescription>Numbered doors down this hall all lead to the guestrooms.  People can be
+seen during the day coming and going, but at night everything is deserted
+and seems to be forgotten, except by roomservice and maids.    
+</roomdescription>
+      <flags>192</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="door" exitinfo="7" keynum="31506" toroom="31510">
+      <description>This is a double door carved from \c03yellow \c10tinged \c03oak.  It is an open
+carving of trailing \c03roses, \c04daisies, \c00and lilies, behind which lies a solid
+door inlayed with the mellow \c03yellow \c00and brown tones of horn.  The door
+opens from the center by polished, \c10brass, \c03roses.  \c00
+</description>
+    </exit>
+    <exit direction="down" keyword="" exitinfo="0" keynum="-1" toroom="31507">
+      <description>You see nothing special.
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Fayth's Office" vnum="31510" zone="315">
+      <roomdescription>In the center of this vast room with its \c10wooden \c04floors, \c00lies a \c02garden \c00of
+mediation above which is a great \c04skylight\c00.  The \c02garden\c00 has \c03roses, \c04daisies,
+\c00lilies and small \c02trees \c00of magnolia and crepe myrtle.  Among the \c02trees\c00 sing
+small, brightly painted \c04birds\c00 and a \c04fountain\c00 of alabaster \c04bubbles
+\c00contently.  There is also a \c10bench \c00and \c02gazing ball.  \c00 The \c02stained \c03glass
+\c04window \c00is round and depicts a wild \c02garden \c00of \c03flowers.  \c00 The \c10sofa\c00 and
+\c04chairs\c00 are shaped like open \c03flowers\c00.  Even the \c02lamps\c00 are shaped like
+\c04daisies\c00 and lilies.  The \c10fireplace \c00is beset with trailing \c03rose \c02vines.  \c00 In
+the aire, is the ever lingering scent of \c03roses\c00, making this room quite
+unforgetable.    
+</roomdescription>
+      <flags>8</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="south" keyword="door" exitinfo="7" keynum="31506" toroom="31509">
+      <description>\c00This is a double door carved from \c03yellow \c10tinged \c03oak.  It is an open
+carving of trailing \c03roses, \c04daisies, \c00and lilies, behind which lies a solid
+door inlayed with the mellow \c03yellow \c00and brown tones of horn.  The door
+opens from the center by polished, \c10brass, \c03roses.  \c00
+</description>
+    </exit>
+    <exit direction="down" keyword="" exitinfo="0" keynum="-1" toroom="31508">
+      <description>You see nothing special.
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Rikard's Den" vnum="31511" zone="315">
+      <roomdescription>The faint tick tock of a clock fills this perfectly square room, the
+pendulum swinging from side to side over the mantle that it sits upon.  A
+strange dwelling this is, no door or window can be seen and yet the room
+appears to be well lighted, spacious.  The room itself seems to be divided
+into three parts, the smallest being the living room.  A couch, covered
+with a dark, earthen green fabric, rests in the southeastern part of the
+room.  Steams rises from a white cup that rests upon the dark, wooden
+table that sits right in front of the couch.  Seperating the kitchen from
+the living area is a small, two chaired table.  A vase of fresh flowers
+sits in the middle of the table, the fragrant aroma almost completely
+masking the underlying scent of burning wood.  The source of the smell is
+a small woodstove that is placed in the southwestern corner.  The largest
+part of the room by far is the sleeping area.  A huge bed rests on the
+middle of the northern wall, four wooden posts rising up from each corner.
+Two tables sit upon either side of the bed, both covered with books and
+scattered pieces of paper.  A large wadrobe sits on the west wall from the
+bed, one door slightly ajar.  The wooden surface of the wardrobe has been
+etched with intricate strands of ivy, flowers and birds resting among the
+leaves.  On the eastern wall, between the bedroom and the living area, is
+a large fireplace.  It's cherry stained mantle laden with figurines.  The
+ticking clock hanging on the wall, right above the mantle.    
+</roomdescription>
+      <flags>8</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="south" keyword="" exitinfo="0" keynum="-1" toroom="31553">
+      <description>You see nothing special.
+</description>
+    </exit>
+    <exit direction="up" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="10186">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="An Overgrown Field" vnum="31512" zone="315">
+      <roomdescription>At one time, the large field must have been a farmstead.  Time, however,
+or perhaps disuse have left it wild and overgrown.  The treeline
+encroaches and the grass and flowers of the land grow haphazardly.  On the
+edge of the deeper woods rests a nicely sized farm house.  Colored in the
+soft tones of natural hardwoods weathered over the years, the house has a
+certain rustic, well-loved look.  Standing two stories high, with a number
+of windows angled to catch the sunlight at different times of the day, the
+house also boasts a rather large porch, which looks to be a more recent
+addition.  Curving around one corner, the well-crafted, open-air porch
+covers a full half of the outer portion of the house.  A similarly newish
+looking roof of wood panels covers it, supported by skillfully carved
+wooden pillars.  A hardwood door bearing a knob of burnished brass allows
+entry into the home.    
+</roomdescription>
+      <flags>64</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="" exitinfo="0" keynum="-1" toroom="31513">
+      <description>You see nothing special.
+</description>
+    </exit>
+    <exit direction="south" keyword="door" exitinfo="31" keynum="31512" toroom="10444">
+      <description>A door made of dark wood.    
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Main Room of a Forested House" vnum="31513" zone="315">
+      <roomdescription>The interior of this home is much warmer than the rustic exterior might
+suggest.  Rich throw rugs of deep blues and rich burgundies dot the
+smooth, carefully laid hardwood of the floor itself.  Everywhere rich wood
+tones glow in the warm light of the sun, or the flickering of candle
+sconces in the evening hours.  A large stone fireplace dominates the east
+wall, surrounded by various furniture.  An obvious den, whose welcoming
+surroundings give way via an archway into a dining room set with hand made
+and carved table and chairs.  A staircase rises around the corner to the
+west, framed and concealed by a carefully kept kitchen nook, complete with
+aesthetically pleasing cabinetry and counters.  The sills of the windows
+are dotted with small wood carvings.  Animals, figures, various symbols.
+Everything has a carefully tended, lived-in look.    
+</roomdescription>
+      <flags>586</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="south" keyword="" exitinfo="0" keynum="-1" toroom="31512">
+      <description>You see nothing special.
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Foyer" vnum="31514" zone="315">
+      <roomdescription>The same hard wood seems to have been used on both the walls and floor of
+this room, though the wood used for the walls seems to have been stained
+slightly lighter.  The floor is very dark in color, and gleams with a dull
+shine in which a reflection can almost be seen.  A staircase spirals
+upwards towards the rooms above.  Covering the walls are various
+tapestries of unknown origin and a few portraits of what surely are House
+Anshar nobles.  A coat rack stands in the corner, and over it are draped
+several coats of expensive cut and cloth.    
+</roomdescription>
+      <flags>22</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="door" exitinfo="17" keynum="0" toroom="31568">
+      <description/>
+    </exit>
+    <exit direction="south" keyword="door" exitinfo="15" keynum="31514" toroom="30484">
+      <description>You see nothing special.
+</description>
+    </exit>
+    <exit direction="up" keyword="" exitinfo="0" keynum="-1" toroom="31515">
+      <description>You see nothing special.
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Sitting Room" vnum="31515" zone="315">
+      <roomdescription>The room is quite large, and decorated with a rather heavy hand.  There
+are a handful of very large, very plush couches scattered about the room
+in no apparent scheme.  Some of these couches have large armchairs next to
+them - perfect for an intimate conversation.  Small end tables and coffee
+tables are arranged next to the couches as well.  Two very large windows
+occupy one of the walls, giving a very good look at the street below.  
+During the daytime, sunlight pours through these windows and bathes the
+room in its warm light.  Underneath the pair of windows is a very large
+bar area.  On the counter, dozens upon dozens of bottles of spirits lay
+ready for consumption.  Empty goblets rest there as well, ready to be
+used.  On the walls, more tapestries with muted colors.  A very large map
+of Camelyn graces one of the walls.  It looks very old and was obviously
+done by a master cartographer.    
+</roomdescription>
+      <flags>10</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="west" keyword="" exitinfo="0" keynum="-1" toroom="31516">
+      <description>You see nothing special.
+</description>
+    </exit>
+    <exit direction="down" keyword="" exitinfo="0" keynum="-1" toroom="31514">
+      <description>You see nothing special.
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Ehndrick's chambers" vnum="31516" zone="315">
+      <roomdescription>The room lies in obvious disaray.  The bed lays in the center of the room,
+though it has been moved slightly from its original position - giving it
+an off kilter look in relationship to the rest of the room.  The sheets
+lay tangled on top of the gigantic feather mattress.  A small end table
+lays beside the bed, and several empty bottles of wine lay haphazardly
+balanced there.  The desk that stands in the corner is a mess of papers
+and a bottle of ink has spilled and then dried.  The dark curtains remain
+drawn across the windows at all times.  A large wardrobe lays against the
+same wall as the bed, and it's doors are open wide.  The contents can be
+clearly seen - dozens of fine coats, shirts, and breeches lay neatly hung
+up.  Several pairs of boots are placed in order at the foot of the
+wardrobe.  A large portrait of a beautiful, naked, brunette woman reposing
+on a sofa is hanging on the wall opposite from the bed.    
+</roomdescription>
+      <flags>8</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="" exitinfo="0" keynum="-1" toroom="31515">
+      <description>You see nothing special.
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Main Deck" vnum="31517" zone="315">
+      <roomdescription>This is the main deck of the Maiden's Blade with its broad planks.  The
+deck runs near 150 feet from the peak of the slightly raised forecastle to
+the canted front wall of the rear cabin.  Steep stairs running up to
+either side of the central door, which is sunken two steps below the deck.
+Graceful walls sweep down to the outside of either stair, melding with the
+light graceful rails that run the length of the deck.  Two sturdy raked
+masts rise high from the relatively narrow deck, and a third shorter spar
+rises from the center of the elongated rear castle.  The Blade's
+triangular sails are furled at the moment, but make an impressive sight
+nonetheless.  Between the two primary masts, a pair of broad trap doors
+hang open to the cargo space below.    
+</roomdescription>
+      <flags>0</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="31518">
+      <description/>
+    </exit>
+    <exit direction="east" keyword="" exitinfo="0" keynum="-1" toroom="31527">
+      <description>You see nothing special.
+</description>
+    </exit>
+    <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="31523">
+      <description/>
+    </exit>
+    <exit direction="up" keyword="" exitinfo="0" keynum="0" toroom="31524">
+      <description/>
+    </exit>
+    <exit direction="down" keyword="door" exitinfo="3" keynum="0" toroom="31521">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Captain's Cabin" vnum="31518" zone="315">
+      <roomdescription>A heavy oak door opens inward on this room, off of the deck of The
+Maiden's Blade.  The rear wall of this space sports two banks of thickly
+shuttered windows, which typically stand open, to either side of the wall.
+Between the two sets of windows, the wall is ornamented with a massive map
+of the known world, delicately scribed in exquisite detail, and picked out
+in expensive colored inks.  Below the map, placed prominently at the back
+of the room, stands a heavy wooden desk, with a broad empty surface.  In
+the space before the desk there is a broad open path straight to the main
+door.  To the port side of the cabin, a narrow pair of stairs leads
+alternately down belowdecks, and up to the aft deck.  To the starboard
+side of the path there is bolted a small wooden table, surrounded by
+several chairs, likewise secured to the floor.  Along the walls are one or
+two windows, much smaller than the ones against the rear wall, but the
+wall space is dominated by a series of chart shelves, map cabinets, heavy
+wooden lockers, and various navigational paraphenalia.    
+</roomdescription>
+      <flags>8</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="31517">
+      <description/>
+    </exit>
+    <exit direction="up" keyword="" exitinfo="0" keynum="0" toroom="31525">
+      <description/>
+    </exit>
+    <exit direction="down" keyword="" exitinfo="0" keynum="0" toroom="31519">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Dining Cabin" vnum="31519" zone="315">
+      <roomdescription>Dark paneled walls have lanterns on gimbals that stay upright in the worst
+of weathers and are hung with many small oil paintings of various lands.
+A narrow railed staircase leads up along the port side of the room, and
+two large armchairs have been bolted to the floorboards in the alcove
+beneath it.  The room is dominated by a massive oak dining table, which is
+secured in place, lengthwise across the room.  It is laid out with fine
+domani lace, and elegant hardwood chairs are bolted at intervals around
+it.  Secure on the floor there stretches a broad expanse of deeply piled
+carpet, of a pattern imported from Shaara.  Towards the rear wall of the
+Cabin, several sturdily shuttered bookshelves are attached to the wall
+between a series of closed doors, and a set of low benches are set into
+the walls, in a manner which allows them to be folded up and latched in
+place.  Several more cabinets reside near the front of the room, likewise
+latched, these containing a suprisingly delicate and refined set of
+tableware.    
+</roomdescription>
+      <flags>8</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="door" exitinfo="3" keynum="-1" toroom="31530">
+      <description>You see nothing special.
+</description>
+    </exit>
+    <exit direction="south" keyword="door" exitinfo="3" keynum="0" toroom="31520">
+      <description/>
+    </exit>
+    <exit direction="up" keyword="" exitinfo="0" keynum="0" toroom="31518">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Galley" vnum="31520" zone="315">
+      <roomdescription>This room is a compact and orderly kitchen.  The smell of simmering food
+and exotic spices fills the air.  Pots, pans and cooking utensils hang
+from clever latched hooks from the ceiling and several casks, barrels and
+crates hold various foodstuffs and spices.  A butcher block table is neat
+and orderly, with small and large bowls of polished wood ready to receive
+the ingredients of the next meal.  A couple of chairs are arraigned to
+either side of the table, low, backless and wooden, they none the less
+look comfortable.  The oven and stove is a clever affair, cast iron and
+set into a low box of copper plate surrounded by sand.    
+</roomdescription>
+      <flags>8</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="door" exitinfo="3" keynum="0" toroom="31519">
+      <description/>
+    </exit>
+    <exit direction="east" keyword="" exitinfo="0" keynum="-1" toroom="31539">
+      <description>You see nothing special.
+</description>
+    </exit>
+    <exit direction="south" keyword="door" exitinfo="1" keynum="-1" toroom="31535">
+      <description>You see nothing special.
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Hold" vnum="31521" zone="315">
+      <roomdescription>The hold consists a long open space, situated between the private cabins
+to the aft, and the somewhat less sophisticated berths of the sailors,
+towards the prow.  It is piled high with all manner of supplies and
+storage containers, and still retains space for more.  There are several
+small cramped stalls for the transport of mounts, as well as a small hoist
+system, for moving the heavier goods up and down the length of the hold.
+</roomdescription>
+      <flags>8</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="door" exitinfo="1" keynum="-1" toroom="31535">
+      <description>You see nothing special.
+</description>
+    </exit>
+    <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="31522">
+      <description/>
+    </exit>
+    <exit direction="up" keyword="door" exitinfo="3" keynum="0" toroom="31517">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Sailor's Berths" vnum="31522" zone="315">
+      <roomdescription>The crew's berths are seperated from the cargo hold by a reinforced wall,
+but are otherwise quite similar.  The area is crossed by various beams and
+joists which reinforce the prow of the ship, and is slung all about with
+hammocks and the personal effects of the sailors.  A single narrow
+staircase of sturdy construction runs upwards in the center of this space,
+back towards the rear of the ship.  At the top of the stairs a trapdoor
+lies open into the enclosed space beneath the low foredeck.    
+</roomdescription>
+      <flags>8</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="31521">
+      <description/>
+    </exit>
+    <exit direction="up" keyword="" exitinfo="0" keynum="0" toroom="31523">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Forward Cabin" vnum="31523" zone="315">
+      <roomdescription>This low-ceiling space lies open to the main deck, enclosed only by the
+two sets of broad steps which run against either rail, up onto the low
+forecastle.  The broad beamed ceiling is hung with the various tools and
+devices necessary for the upkeep of a ship, as well as innumerable coils
+of spare rope, in all styles and lengths.  A single trap door towards the
+open deck leads forward, down into the gloom of the crewmen's berths.    
+</roomdescription>
+      <flags>8</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="31517">
+      <description/>
+    </exit>
+    <exit direction="up" keyword="" exitinfo="0" keynum="0" toroom="31526">
+      <description/>
+    </exit>
+    <exit direction="down" keyword="" exitinfo="0" keynum="0" toroom="31522">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="In the Rigging" vnum="31524" zone="315">
+      <roomdescription>Three tall masts rise from the deck, supporting broad sheets of canvas,
+and a complicated web of lines, understandable only to the experienced
+sailor.  Some of the intricate tangle of rope seems to have no purpose at
+all, save to allow the crew easy movement about the rigging, but others
+connect to the masts, spars, and sails in seemingly random fashion,
+allowing the whole comglomeration to be adjusted in the most minute
+detail.  The central mast is mounted with a series of small wooden
+handholds, which lead up to a small unenclosed platform near the top, from
+which a lookout can survey the surrounding seas.    
+</roomdescription>
+      <flags>0</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="down" keyword="" exitinfo="0" keynum="0" toroom="31517">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Aft Deck" vnum="31525" zone="315">
+      <roomdescription>This is the highest deck on the Maiden's Blade, and is surmounted by the
+heavy apparatus for guiding the tiller.  A high railing surrounds the deck
+on all sides, although it is slightly lower along the forward edge,
+overlooking the deck.  To the port side of the castle a trapdoor opens
+onto a staircase which leads down into the cabins below.    
+</roomdescription>
+      <flags>0</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="down" keyword="" exitinfo="0" keynum="0" toroom="31518">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Forecastle" vnum="31526" zone="315">
+      <roomdescription>Two low broad sets of steps lead up from the main deck onto this low
+forward extension, which hangs out above the prow.  Thick ropes run up
+into the rigging from the rails here, and a ratcheted winch is bolted
+heavily to the deck, securing the anchor chain where it runs down through
+a small aperture in the decking.    
+</roomdescription>
+      <flags>0</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="down" keyword="" exitinfo="0" keynum="0" toroom="31523">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Gang Plank of the Maiden's Blade Ship" vnum="31527" zone="315">
+      <roomdescription>Consisting of two broad planks, joined together by several crossing
+lathes, this gangway runs from the dockside to the main deck of the
+Maiden's Blade.  For reasons of security, two lines have been made fast to
+rings on either side of a gap in the ship's rail, and run down to similar
+rings set on top of posts on the wharf.    
+</roomdescription>
+      <flags>0</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="28060">
+      <description/>
+    </exit>
+    <exit direction="west" keyword="" exitinfo="0" keynum="-1" toroom="31517">
+      <description>You see nothing special.
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Tancred's Cabin" vnum="31528" zone="315">
+      <roomdescription>This room resides at the stern of the Maiden's Blade, a row of small glass
+windows which open high on the wall providing a view of the Sea or
+whatever port she may visit.  Beneath the windows is a long expensively
+upholstered seat which stretches from one stained mahogany wall to the
+other.  Against the starboard wall a sturdy desk and a short-backed stool
+are bolted in place, the drawers and cabinets of the desk fitted with
+heavy bronze latches.  A thickly piled rug of foreign origin has been
+somehow secured to the floor, its brilliant yellows whites and blues
+contrasting sharply with delicate tracings of crimson.  Across the room
+from the desk, a bed has been built into the port wall, with heavy royal
+blue curtains draped to conceal the recessed area.  Around the curtained
+aperture are many more drawers and cabinets, all secured with the same
+bronze latches as their counterparts on the desk.    
+</roomdescription>
+      <flags>8</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="south" keyword="door" exitinfo="15" keynum="31528" toroom="31530">
+      <description>You see nothing special.
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="A Sleeping Alcove" vnum="31529" zone="315">
+      <roomdescription>Mahogany panelling surrounds this recessed area, which provides extensive
+space for stretching out and relaxing.  Shelves are set at either end of
+the space, a bit more than a foot above the level of the mattress.  The
+bedding which fills the rest of the space is entirely in blue, with shades
+ranging from sky blue, to deep navy.  Several blankets and quilts of
+differing thicknesses are scattered about haphazardly, and an impressive
+assortment of pillows, all covered in expensive cloth, is packed against
+one end.    
+</roomdescription>
+      <flags>65562</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+  </room>
+  <room>
+    <roombasic title="The Hallway" vnum="31530" zone="315">
+      <roomdescription>This hallway runs along the aft end of the dining cabin, a large and
+ornately carved oak door dividing the two.  At each of the the starboard
+and port corners of the hallway, where it turns and runs the fore of the
+ship, slightly smaller but no less ornamented doorways open onto rooms.  
+The doors at either end of the hallway are surmounted by beautifully
+carved lintels, one of a rapier-wielding maid, and the other of a woman
+cradling a rose.  At the center of the hallway, opposite the door forward
+into the dining cabin, is a fourth portal, this one mounted with the
+Maracin family arms, carved in a half dozen different woods and set with
+ivory and gold.    
+</roomdescription>
+      <flags>0</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="door" exitinfo="15" keynum="31528" toroom="31528">
+      <description>You see nothing special.
+</description>
+    </exit>
+    <exit direction="south" keyword="door" exitinfo="3" keynum="-1" toroom="31519">
+      <description>You see nothing special.
+</description>
+    </exit>
+    <exit direction="northeast" keyword="" exitinfo="0" keynum="-1" toroom="31532">
+      <description>You see nothing special.
+</description>
+    </exit>
+    <exit direction="southeast" keyword="" exitinfo="0" keynum="-1" toroom="31533">
+      <description>You see nothing special.
+</description>
+    </exit>
+    <exit direction="southwest" keyword="" exitinfo="0" keynum="-1" toroom="31542">
+      <description>You see nothing special.
+</description>
+    </exit>
+    <exit direction="northwest" keyword="" exitinfo="0" keynum="-1" toroom="31531">
+      <description>You see nothing special.
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Ariadne's Cabin" vnum="31531" zone="315">
+      <roomdescription>This cabin is panelled with beautifully finished &amp;rmahogan&amp;ry&amp;n woodwork, a
+curious contrast to the less delicate materials and much more workmanlike
+craftsmanship of the planks which make up the ceiling and the floors.  A
+solid door of tastefully carved &amp;Ko&amp;ya&amp;Kk&amp;n is situated at the forward end of the
+room, on the port side.  Against the opposite end of the room a bed has
+been bolted in place, a small writing desk and a narrow closet similarly
+attached at it's foot.  The only other peice of furiture in the cabin is a
+rather bulky clothes chest, situated close enough to the writing desk that
+it could be used as a makeshift stool.  A small porthole of polished &amp;rb&amp;Rr&amp;ya&amp;Rs&amp;rs&amp;n
+and real glass is set into the wall above the bed, and another pair are
+set into the starboard wall - there's no clear indication of how the cabin
+is lit at night, for there are no lamps or candles present.  The elegant,
+if rather sparse look is softened only by a circular &amp;ggreen&amp;n and &amp;Wwhite&amp;n
+&amp;gc&amp;nh&amp;ge&amp;nc&amp;gk&amp;ne&amp;gr&amp;ne&amp;gd&amp;n rug, which covers a large part of the wooden floor.    
+</roomdescription>
+      <flags>0</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="southeast" keyword="" exitinfo="0" keynum="-1" toroom="31530">
+      <description>You see nothing special.
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="A Guest Cabin" vnum="31532" zone="315">
+      <roomdescription>This cabin is panelled with beautifully finished oaken woodwork, a curious
+contrast to the less delicate materials and much more workmanlike
+craftsmanship of the planks which make up the ceiling and the floors.  A
+solid door of tastefully carved oak is situated at the forward end of the
+room, on the starboard side.  Against the opposite end of the room, a bed
+has been secured in place, with a similarly attached small set of drawers
+and a closet reaching to the ceiling by its foot.  A small porthole of
+polished brass and real glass is set into the wall above the bed, and
+another pair are set into the port wall.    
+</roomdescription>
+      <flags>0</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="southwest" keyword="" exitinfo="0" keynum="-1" toroom="31530">
+      <description>You see nothing special.
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Port Hallway" vnum="31533" zone="315">
+      <roomdescription>This hallway runs down the port side of the ship, opening onto several
+rooms with external views.  The walls are panelled in dark stained
+hardwood, and fitted with ornate brass lanterns, worked with the
+semblances of beasts lions, bears, and the like.  Above each doorway is a
+small crest which indicates the identity of its occupant.  At the moment,
+only two of the crests are carved with a coat of arms, the third is simply
+a blank shield, waiting to be replaced by the sigil of its claimant.    
+</roomdescription>
+      <flags>0</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="door" exitinfo="7" keynum="31534" toroom="31534">
+      <description>You see nothing special.
+</description>
+    </exit>
+    <exit direction="northeast" keyword="" exitinfo="0" keynum="-1" toroom="31540">
+      <description>You see nothing special.
+</description>
+    </exit>
+    <exit direction="southeast" keyword="" exitinfo="0" keynum="-1" toroom="31541">
+      <description>You see nothing special.
+</description>
+    </exit>
+    <exit direction="northwest" keyword="" exitinfo="0" keynum="-1" toroom="31530">
+      <description>You see nothing special.
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Cordell's Cabin" vnum="31534" zone="315">
+      <roomdescription>The cramped cabin is made even moreso by the oversized bed bolted to the
+floor.  The net hammock above the bed is serving as a storage closet, it
+seems.  A trunk rests at the foot of the bed, enameled in glossy back with
+highly polished brass fittings.  It isn't secured, but the fit is too
+tight for it to matter.  A porthole, of actual glass and brass, is in the
+port wall.  On the aft wall, above the head of the bed, is an ornate
+crest, sable, emblazoned with a leaping argent hart, rampant.  A small,
+but ornately carved, writing desk is bolted to the wall just forward of
+the door.  A three-legged stool is affixed to the floor in front of the
+desk.    
+</roomdescription>
+      <flags>0</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="west" keyword="door" exitinfo="7" keynum="31534" toroom="31533">
+      <description>You see nothing special.
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Galley Passage" vnum="31535" zone="315">
+      <roomdescription>A short hallway extends forward from the galley door, here, opening into
+the Hold through a wide door at its other end.  The wooden walls are
+largely unornamented, and the brass lanterns set at intervals are much
+plainer than those in other parts of the ship, simply marked with a rough
+stamp of the Maracin arms.  At the center point of this hallway, two
+ordinary doors of solid wood open opposite each other.  Neither bears any
+indication of what may be behind it.    
+</roomdescription>
+      <flags>0</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="door" exitinfo="1" keynum="-1" toroom="31520">
+      <description>You see nothing special.
+</description>
+    </exit>
+    <exit direction="east" keyword="door" exitinfo="3" keynum="-1" toroom="31536">
+      <description>You see nothing special.
+</description>
+    </exit>
+    <exit direction="south" keyword="door" exitinfo="1" keynum="-1" toroom="31521">
+      <description>You see nothing special.
+</description>
+    </exit>
+    <exit direction="west" keyword="door" exitinfo="3" keynum="-1" toroom="31537">
+      <description>You see nothing special.
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Guardsmen's Berths" vnum="31536" zone="315">
+      <roomdescription>This room is fitted with the same stained oak panelling which graces many
+of the finer private cabins, but it is essentially bare of ornament.  
+Three lanterns are affixed to the aft wall, and a solitary brass porthole
+resides in the port wall.  A row of bunks runs along the forward wall,
+sufficient to house a dozen men, and another set of bunks on the aft wall
+would hold six more.  Beneath the lanterns to either side of the aft
+bunks, are set a series of low cabinets and lockers, for the men's
+personal items.    
+</roomdescription>
+      <flags>0</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="west" keyword="door" exitinfo="3" keynum="-1" toroom="31535">
+      <description>You see nothing special.
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Guardsmen's Berths" vnum="31537" zone="315">
+      <roomdescription>This room is fitted with the same stained oak panelling which graces many
+of the finer private cabins, but it is essentially bare of ornament.  
+Three lanterns are affixed to the aft wall, and two more are set to either
+side of a heavy wooden door in the starboard wall.  A row of bunks runs
+along the forward wall, sufficient to house nine men, and another stack of
+bunks on the aft wall would hold three more.  Beneath the lanterns to
+either side of the aft bunks, are set a series of low cabinets and
+lockers, for the men's personal items.    
+</roomdescription>
+      <flags>0</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="door" exitinfo="3" keynum="-1" toroom="31535">
+      <description>You see nothing special.
+</description>
+    </exit>
+    <exit direction="west" keyword="door" exitinfo="3" keynum="-1" toroom="31538">
+      <description>You see nothing special.
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Officer's Berths" vnum="31538" zone="315">
+      <roomdescription>This room is outfitted in slightly finer fashion than the ordinary
+guardsmen's berths.  The bunks here are only two high, and each set of
+sleeping compartments is seperated by a set of cabinets and drawers in
+stained and polished mahogany.  Between the two sets of bunks to the fore,
+and the single set aft, two gleaming brass portholes have been set into
+the starboard wall.  A small bookshelf is recessed into the wall behind
+the door, and on the opposite side of the entry a small working desk has
+been installed.    
+</roomdescription>
+      <flags>0</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="door" exitinfo="3" keynum="-1" toroom="31537">
+      <description>You see nothing special.
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Raeynar's Cabin" vnum="31539" zone="315">
+      <roomdescription>This bare cell is much smaller than any of the guest cabins, but it is
+located conveniently to the Galley, and despite its dimunutive size, it
+shares the same fine finishing touches as the other rooms.    
+</roomdescription>
+      <flags>0</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="west" keyword="" exitinfo="0" keynum="-1" toroom="31520">
+      <description>You see nothing special.
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Brenner's Cabin" vnum="31540" zone="315">
+      <roomdescription>This cabin is panelled with beautifully finished oaken woodwork, a curious
+contrast to the less delicate materials and much more workmanlike
+craftsmanship of the planks which make up the ceiling and the floors.  A
+solid door of tastefully carved oak is situated at the forward end of the
+room, on the starboard side.  Against the opposite end of the room, a bed
+has been secured in place, with a similarly attached small set of drawers
+and a closet reaching to the ceiling by its foot.  A small porthole of
+polished brass and real glass is set into the wall above the bed, and
+another pair are set into the port wall.    
+</roomdescription>
+      <flags>0</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="southwest" keyword="" exitinfo="0" keynum="-1" toroom="31533">
+      <description>You see nothing special.
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="An Empty Cabin" vnum="31541" zone="315">
+      <roomdescription>This cabin is panelled with beautifully finished oaken woodwork, a curious
+contrast to the less delicate materials and much more workmanlike
+craftsmanship of the planks which make up the ceiling and the floors.  A
+solid door of tastefully carved oak is situated at the aft end of the
+room, on the starboard side.  Against the opposite end of the room, a bed
+has been secured in place, with a similarly attached small set of drawers
+and a closet reaching to the ceiling by its foot.  A small porthole of
+polished brass and real glass is set into the wall above the bed, and
+another pair are set into the port wall.    
+</roomdescription>
+      <flags>0</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="northwest" keyword="" exitinfo="0" keynum="-1" toroom="31533">
+      <description>You see nothing special.
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Starboard Hallway" vnum="31542" zone="315">
+      <roomdescription>This hallway runs down the starboard side of the ship, opening onto
+several rooms with external views.  The walls are panelled in dark stained
+hardwood, and fitted with ornate brass lanterns, worked with the
+semblances of beasts lions, bears, and the like.  Above each doorway is a
+small crest which indicates the identity of its occupant.  At the moment,
+none of the crests in this hallway are carved with a coat of arms.  They
+are all simply blank shields, waiting to be replaced by the sigil of their
+claimants.    
+</roomdescription>
+      <flags>0</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="south" keyword="" exitinfo="0" keynum="-1" toroom="31546">
+      <description>You see nothing special.
+</description>
+    </exit>
+    <exit direction="west" keyword="" exitinfo="0" keynum="-1" toroom="31544">
+      <description>You see nothing special.
+</description>
+    </exit>
+    <exit direction="northeast" keyword="" exitinfo="0" keynum="-1" toroom="31530">
+      <description>You see nothing special.
+</description>
+    </exit>
+    <exit direction="southwest" keyword="" exitinfo="0" keynum="-1" toroom="31545">
+      <description>You see nothing special.
+</description>
+    </exit>
+    <exit direction="northwest" keyword="" exitinfo="0" keynum="-1" toroom="31543">
+      <description>You see nothing special.
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="A Guest Cabin" vnum="31543" zone="315">
+      <roomdescription>This cabin is panelled with beautifully finished oaken woodwork, a curious
+contrast to the less delicate materials and much more workmanlike
+craftsmanship of the planks which make up the ceiling and the floors.  A
+solid door of tastefully carved oak is situated at the forward end of the
+room, on the port side.  Against the opposite end of the room, a bed has
+been secured in place, with a similarly attached small set of drawers and
+a closet reaching to the ceiling by its foot.  A small porthole of
+polished brass and real glass is set into the wall above the bed, and
+another pair are set into the starboard wall.    
+</roomdescription>
+      <flags>0</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="southeast" keyword="" exitinfo="0" keynum="-1" toroom="31542">
+      <description>You see nothing special.
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="A Guest Cabin" vnum="31544" zone="315">
+      <roomdescription>This unfurnished cabin is somewhat narrower than the other guest cabins,
+but shares the same fine finishing touches as the other rooms.  At the
+moment, it is simply an empty cubicle, sporting a single porthole in the
+starboard wall, and lanterns mounted to either side of the doorway to the
+hall.    
+</roomdescription>
+      <flags>0</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="" exitinfo="0" keynum="-1" toroom="31542">
+      <description>You see nothing special.
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="A Guest Cabin" vnum="31545" zone="315">
+      <roomdescription>This cabin is panelled with beautifully finished oaken woodwork, a curious
+contrast to the less delicate materials and much more workmanlike
+craftsmanship of the planks which make up the ceiling and the floors.  A
+solid door of tastefully carved oak is situated at the aft end of the
+room, on the port side.  Against the opposite end of the room, a bed has
+been secured in place, with a similarly attached small set of drawers and
+a closet reaching to the ceiling by its foot.  A small porthole of
+polished brass and real glass is set into the wall above the bed, and
+another pair are set into the starboard wall.    
+</roomdescription>
+      <flags>0</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="northeast" keyword="" exitinfo="0" keynum="-1" toroom="31542">
+      <description>You see nothing special.
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="A Guest Cabin" vnum="31546" zone="315">
+      <roomdescription>This unfurnished cabin is somewhat narrower than the other guest cabins,
+but shares the same fine finishing touches as the other rooms.  At the
+moment, it is simply an empty cubicle, sporting a set of ornate brass
+lanterns against the forward wall, and two more mounted to either side of
+the doorway to the hall.    
+</roomdescription>
+      <flags>0</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="" exitinfo="0" keynum="-1" toroom="31542">
+      <description>You see nothing special.
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Wine Cellar of the Nightflower Inn" vnum="31547" zone="315">
+      <roomdescription>The only light in the cellar comes from a few torches that are attached to
+the wall in random fashion.  They illuminate large wooden racks holding
+bottles of wine, ranging from cheap to expensive.  There is also a cabinet
+in the far corner with a large lock on it, standing next to a door that
+seems fairly sturdy, with multiple locks on it.  The floor is clean swept,
+and there are no cobwebs to be seen, at least in this faint light.  The
+walls and floor are made out of stone, all of it painted white, helping to
+reflect light from the few torches.    
+</roomdescription>
+      <flags>8</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="door" exitinfo="15" keynum="31511" toroom="31548">
+      <description>A thick oak door much scuffed and scarred though it doesn't look like it
+is used much save for storage.    
+</description>
+    </exit>
+    <exit direction="up" keyword="door" exitinfo="3" keynum="0" toroom="31506">
+      <description>A thick oak door with a brass ring instead of a knob.    
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Dannighe's Labrotory" vnum="31548" zone="315">
+      <roomdescription>The room is fairly large, for being underground.  There are several lamps
+in here, keeping the room fairly well lit, although none of them are near
+any of the large, locked cabinets or by the table in the center.  The
+floor is very well swept, and the room seems very well organized, almost
+as if it was a matter of life or death.  The only thing marring the
+perfection of this room are the burn marks that are on the table.  On
+either side of the table, there are two large buckets filled with water,
+like everything else, very well maintained.    
+</roomdescription>
+      <flags>8</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="south" keyword="door" exitinfo="15" keynum="31511" toroom="31547">
+      <description>A thick oak door much scuffed and scarred though it doesn't look like it
+is used much save for storage.    
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Grand Entrance" vnum="31549" zone="315">
+      <roomdescription>The Grand entrance to the Rahiedar mansion is very large.  The high domed
+ceiling is covered in a beautiful map of the realm of the Seanchan.  
+Extending down from the ceiling are five massive columns of green marble
+that flare out to benches at the base.  On the floor surrounded by the
+columns is a large mosaic.  It depicts a luscious green field over which a
+large golden sun is rising and flanking the rising sun are two beautiful
+rampant Raken.  On the west wall are various portraits of High Lords and
+High Ladies of the house Rahiedar.  Along the eastern wall are screens
+with exotic birds painted on them.  Along the north wall is a screen with
+a bright gold Raken painted on it.  The Raken seems to have a rather large
+emerald for an eye.    
+</roomdescription>
+      <flags>24</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="screen" exitinfo="3" keynum="-1" toroom="31579">
+      <description>a screen with birds
+</description>
+    </exit>
+    <exit direction="south" keyword="door" exitinfo="7" keynum="31580" toroom="14404">
+      <description>Great double doors carved ornately from red cinnabar with great Raken.  
+The door handles are shaped like polished brassed leashes.    
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Campsite" vnum="31550" zone="315">
+      <roomdescription>Set up deep in the forest, the warm &amp;yglow&amp;n of a campfire provides abundant
+light for the surrounding area.  A tripod has been set up across the fire,
+three heavy chains hanging down to hold a \c23black\c00 pot just above the
+flickering flames.  The aroma of a hearty stew wafts through the campsite
+on the gentle \c06br\c07ee\c06ze\c00, the sound of rustling leaves adding to the peaceful
+atmosphere of the night.  Other preparations are in plain site, hinting to
+the fact that this might not be a temporary site.  Piles of wood are
+stacked up neatly off to one side of the area, far enough away from the
+fire to not be a hazard but close enough to not be a burden.  A rack of
+various types of weapons is set up close to where the horses are hobbled,
+the silvery bits of metal glistening in the faint light from the stars.  
+Hanging from the limbs of a nearby trees are chunks of salted and smoked
+meats, as well as sacks of other food items such as flour, rice and dried
+\c01v\c02e\c03g\c01et\c03a\c01b\c02l\c03e\c01s\c00.  A break in the boughs of the surrounding trees provide the
+beautiful site of the stars, laying against a blanket sky of the deepest
+\c04blue\c00.  Situated several paces back from the fire are three sturdy, canvas
+tents.  The one to the right is back a bit further than the rest and
+somewhat larger also.  The other two are placed so close that the edges
+meet and it seems to make a two room tent instead of being seperate.    
+</roomdescription>
+      <flags>8</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="" exitinfo="0" keynum="-1" toroom="31551">
+      <description>You see nothing special.
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Raina and Talbain's Tent" vnum="31551" zone="315">
+      <roomdescription>The inside of the larger tent is suprisingly spacious and airy despite
+being a make-shift building of canvas.  Rectangular in shape, four sapling
+trees make up the dome shaped top in which the canvas drapes over.  Each
+fastened together at the corners with wide straps of leather.  Each of the
+four corners rest on top of the splitted ends of other saplings that are
+tilted slightly to make for a wide base.  Rugs are scattered across the
+floor of the tent to provide protection from the ground, keeping the
+sleeping bag from resting on the sometimes damp ground.  The sleeping bag
+is made from the softest of furs on the outside, varying in color and
+texture, and the inside made from black silk-like material so that it will
+be soft against the skin.  Two small chest rest upon either side of the
+head of the sleeping bag, each open to reveal clothing for both men and
+women among other personal possesions.    
+</roomdescription>
+      <flags>8</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="west" keyword="" exitinfo="0" keynum="-1" toroom="31550">
+      <description>You see nothing special.
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Loser Room" vnum="31552" zone="315">
+      <roomdescription>This plain room looks kinda loserly.  There is an old couch on the north
+wall meant for people to sit and be losers.  There is an old computer in
+the northwest corner, and a Star Trek movie poster on the eastern wall.  
+</roomdescription>
+      <flags>8194</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="down" keyword="" exitinfo="0" keynum="-1" toroom="10228">
+      <description>You see nothing special.
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Rikard's Kitchen" vnum="31553" zone="315">
+      <roomdescription>&amp;n&amp;R            aAn                  ,       aAn ,dMMMAn,  an.   JM
+&amp;n&amp;R           dMMMk  aAn   aAn   an,A  jMF dMMMk^&quot;  &quot;^YMMVP&quot;P.aAV&quot;
+&amp;n&amp;R          jMT &quot;M jM^Mk jM^Mk jM^MM ,MF jM^d&quot;M       &quot;jMMMMMP^
+&amp;n&amp;R          MM   ' MF AP MF YP MF AP     MM &quot;^&quot;        MM ###
+&amp;n&amp;R          MM     M| M| M| ' .M| M|     MM            MM
+&amp;n&amp;R          MM     Mk Vk Mk .aMMk Ml ,   MM       aAn  MM    an,A
+&amp;n&amp;R          MM     YMUMP YMUMP YMUMk,N   MM  ,An jM^MM MM   jMMMM
+&amp;n&amp;R          MM      ^W^   ^W^   YP&quot;VP&quot;   MM  P&quot;M MF MP MM   MF AP
+&amp;n&amp;R          MMl         .,oammmo,.       MMl ` M M| M| MM   M| M|
+&amp;n&amp;R          TMMk.  .,aAMMMMMMMMMMMMo,    TMMk.jM Mk Mk MM   Mk Ml ,
+&amp;n&amp;R           YMMMMMMMMP^&quot;#     &quot;#^VMMt    YMMMMP YMMMP VYk jMMMMk,M
+&amp;n&amp;R            ^YMV^#&quot;              VP      ^YMP   ^W^   ^MMP YP&quot;VP&quot;&amp;n
+</roomdescription>
+      <flags>0</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="" exitinfo="0" keynum="-1" toroom="31511">
+      <description>You see nothing special.
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Empty Room" vnum="31554" zone="315">
+      <roomdescription> Empty Description waiting to be filled.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+  </room>
+  <room>
+    <roombasic title="Aaron's Den" vnum="31555" zone="315">
+      <roomdescription>The doorway opens up into a massive room, easily fifteen feet high, with
+vaulted ceilings of oak, braced to look like the bottom of a ship from the
+inside.  The furniture is sparse and compliments the size of the room, fit
+for an Ogier and not a human.  A large pine table dominates the center
+with matching chairs around it.  A bed is pressed up against the one wall,
+headboard decorated with scenes of trees and vines are carved into the
+posts.  There are hooks for lanterns to be hung along the walls every few
+feet.  Hung from racks opposite the bed are a plethora of weapons, rangin
+from staffs to daggers to broadswords.  They shine brightly in the light,
+as if well cared for.    
+</roomdescription>
+      <flags>12</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="west" keyword="door" exitinfo="7" keynum="31555" toroom="28118">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Ever-changing &amp;RM&amp;Yi&amp;Gn&amp;Bd&amp;n of Amanda" vnum="31556" zone="315">
+      <roomdescription>This place is a rip in time and space, ever-shifting in shape and form. One minute,
+there is a &amp;rt&amp;yr&amp;re&amp;ye&amp;n with a &amp;yr&amp;Yo&amp;yp&amp;Ye&amp;n swing, then it has shifted to a room painted
+entirely in &amp;Kblack&amp;n, a &amp;Wdisco&amp;n ball hanging from the center of the ceiling. Next, the ceiling
+transforms into a thousand panels of &amp;Wg&amp;Cl&amp;Wa&amp;Cs&amp;Ws&amp;n, letting in the &amp;Ym&amp;noo&amp;Yn&amp;n and &amp;Cs&amp;Wta&amp;Cr&amp;W light&amp;n.
+Background noises alternate from &amp;Yc&amp;Mh&amp;Yi&amp;Ml&amp;Yd&amp;Mi&amp;Ys&amp;Mh&amp;n laughter to &amp;bs&amp;Ko&amp;Bb&amp;Kb&amp;bi&amp;Kn&amp;bg&amp;n to the finest
+&amp;co&amp;br&amp;Wc&amp;bh&amp;ce&amp;bs&amp;Wt&amp;br&amp;ca&amp;bl&amp;n music to utter &amp;Wsilence&amp;n coming from everywhere and nowhere at once.  A
+ace will appear on a wall, then vanish just as it came, nameless and eerie. The &amp;Ys&amp;Ru&amp;Yn&amp;n
+will shine in randomly, accompanied by the &amp;Cs&amp;Bw&amp;Ce&amp;Be&amp;Ct&amp;n sound of birds chirping and the
+soft scent of &amp;Mf&amp;Rl&amp;Yo&amp;Mw&amp;Re&amp;Yr&amp;Rs&amp;n.  But, eventually, everything shifts to something else.  Enjoy
+your stay, and do try to not get lost.
+</roomdescription>
+      <flags>24</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="door" exitinfo="15" keynum="31556" toroom="30587">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="A Cabin in the Middle of a Sparse Wood" vnum="31557" zone="315">
+      <roomdescription>The inside of the cabin is rather cozy.  The smooth-sanded walls are
+stained a deep reddish color, and the brick fireplace enhances the red
+appearance of the walls.  The solid oak door is remarkably heavy, but
+swing easily on the well-oiled steel hinges holding it in place.  There is
+a wrought-iron stand next to the fireplace, and it is full of dry
+firewood.  The fireplace itself is the centerpiece of the room, the bricks
+perfectly laid and mortared.  The inside is coated with carbon residue and
+bits of charred wood, indicating heavy use.  The room lacks furniture of
+any kind save for the large chest in the far corner from the door, which
+is made of the same oak the door is, and is gilded with silver.  A heavy
+iron lock adorns the front of the chest, keeping it firmly sealed.  
+Through the window on the same wall as the door and its partner on the
+opposite wall, the surrounding land can be seen.  A sparse wood begins a
+few feet from the cabin in all direction, trees a few feet apart.  Most of
+the trees are diciduous, but a few pines and spruces can be seen.    
+</roomdescription>
+      <flags>8</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="door" exitinfo="11" keynum="31557" toroom="23325">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Trophy Room" vnum="31558" zone="315">
+      <roomdescription>All around the room are glass display cases of various sizes and shapes.
+Each case contains a variety of weapons.  The cases in the northern part
+of the room all seem to contain staff type weapons with blades on one of
+the ends.  A few of them seem to have a dark red substance dried on the
+cutting edge of the blade.  In the cases on the western side of the room
+are an assortment of spiked and bladed maces.  A few of the weapons have
+bits of wood or bone stuck to them.  The eastern cases contain a variety
+of ancient looking swords.  There is also a small hallway leading to the
+rose garden on the east wall.  The southern wall is primarily covered by a
+large screen.  Painted on the screen, a very large and fierce looking
+Raken is hovering over the seal of the House Rahiedar.    
+</roomdescription>
+      <flags>24</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+  </room>
+  <room>
+    <roombasic title="The Rose Garden" vnum="31559" zone="315">
+      <roomdescription>A narrow gravel path winds its way through the rose garden.  On either
+side of the path are bushes full of bright yellow roses in various shades.
+At several places along the path are small stone benches that face grand
+displays of gardening.  Birds can be heard singing from several tall trees
+in the corners of the garden.  Small cherry and plum trees provide shade
+and a wash of pink with their blossoms.  At night, candles set in stone
+lanterns illuminate the garden.    
+</roomdescription>
+      <flags>0</flags>
+      <sector>City</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="south" keyword="" exitinfo="0" keynum="-1" toroom="31579">
+      <description>You see nothing special.
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Jephrey's Room" vnum="31560" zone="315">
+      <roomdescription>The walls of this medium-sized, square room are plastered with posters,
+the majority of them of a music theme, so many that at first glance the
+white paint underneath is not apparent.  Pushed against the far wall is a
+large, comfortable looking couch, several pillows and a black blanket
+piled on one end.  A large wooden desk is pushed against the right wall,
+several feet between its end and the couch's.  Papers are liberally spread
+across the oaken surface of the desk, along with several half-empty cups.
+A large, padded chair is pushed underneath the desk, while another,
+smaller chair sits in corner, looking to be rarely used.    
+</roomdescription>
+      <flags>65540</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+  </room>
+  <room>
+    <roombasic title="A Smurfish Room" vnum="31561" zone="315">
+      <roomdescription>All around &amp;Gt&amp;gr&amp;Ge&amp;ge&amp;Gs&amp;n tower as far up as the eye can see.  The &amp;Ggrass&amp;n is greener
+here than on the other side of any fence, and from time to time, a
+&amp;bm&amp;Bu&amp;ws&amp;Wh&amp;br&amp;Bo&amp;wo&amp;Wm&amp;n springs up from the grass in hues of bright &amp;Yo&amp;yr&amp;Ya&amp;yn&amp;Yg&amp;ye&amp;n and &amp;Yyellow&amp;n
+with spots of &amp;Mp&amp;mi&amp;Mn&amp;mk&amp;n or &amp;bb&amp;Bl&amp;bu&amp;Be&amp;n.  Small huts can be seen dotting the ground,
+colored in those same orange and &amp;Yyellow&amp;n colors, and little &amp;bb&amp;Bl&amp;bu&amp;Be&amp;n creatures
+with &amp;Wwhite&amp;n hats can be seen running about playing smurf-tag and
+smurfahoop.  Off to one corner, sitting underneath a large &amp;bm&amp;Bu&amp;ws&amp;Wh&amp;br&amp;Bo&amp;wo&amp;Wm&amp;n, is
+Grampa Smurf, reading to a group of smurflings, while Smurfette sits to
+the side, watching.  The sky is always &amp;bb&amp;Bl&amp;bu&amp;Be&amp;n and &amp;Ysunny&amp;n, except for when the
+shadow of that nasty cat Azrael darkens it.    
+</roomdescription>
+      <flags>24</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="down" keyword="" exitinfo="0" keynum="0" toroom="10186">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="A Narrow Track" vnum="31562" zone="315">
+      <roomdescription>This rutted road leads from the main road between Ebou Dar and the
+Amadician Border deep into the tangled and overgrown forests of the
+Altaran coast.  Low branches overhang the track at regular intervals, and
+heavy brush crowds in to the sides of the two shallow wheel ruts which
+constitute the path.  The road itself, however, shows signs of heavy and
+recent use, and is in good enough shape to allow the passage of heavy
+wagons.    
+</roomdescription>
+      <flags>0</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="" exitinfo="0" keynum="0" toroom="17342">
+      <description/>
+    </exit>
+    <exit direction="west" keyword="" exitinfo="0" keynum="-1" toroom="31563">
+      <description>You see nothing special.
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="A Small Clearing" vnum="31563" zone="315">
+      <roomdescription>A small clearing opens among the trees, several stumps still dotting the
+edges of the opening.  At the western edge of the cleared space lies a
+broad expanse of water, perhaps a hundred spans across, heavily overhung
+by branches upon either bank.  A sluggish current stirs the smooth surface
+of the water in places, as the river flows south to the Sea.  A narrow
+track leads east into the woods from here, to the main road and then to
+Ebou Dar.  Several small cabins are scattered about, for the most part
+located back under the overhanging tree branches.  At the center of the
+clearing is a single larger structure, quickly constructed of rough-hewn
+planks in the same fashion as the various other buildings, but much larger
+in scale.  Situated beneath the shade of several large trees, it is devoid
+of windows, but a single broad door hangs on runners at the western end of
+the building, to allow entrance.  From that large door a ramp of stone
+slabs has been laid, and a rutted dirt track leads down to a wooden pier
+at the water's edge.    
+</roomdescription>
+      <flags>0</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="" exitinfo="0" keynum="-1" toroom="31562">
+      <description>You see nothing special.
+</description>
+    </exit>
+    <exit direction="south" keyword="" exitinfo="0" keynum="-1" toroom="31564">
+      <description>You see nothing special.
+</description>
+    </exit>
+    <exit direction="west" keyword="" exitinfo="0" keynum="-1" toroom="31565">
+      <description>You see nothing special.
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Beneath the Trees" vnum="31564" zone="315">
+      <roomdescription>Small cabins are scattered about here, protected beneath the sheltering
+and shading branches of a grove of old and gnarled oaks.  A small stream
+runs by to the south, its soggy banks marking the edge of the tangled
+ungrowth which naturally occupies this part of the world.  In the slightly
+more open space about the cabins, various tools and implements are
+scattered about in haphazard fashion, but they and the buildings
+themselves seem to be in good repair.    
+</roomdescription>
+      <flags>0</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="" exitinfo="0" keynum="-1" toroom="31563">
+      <description>You see nothing special.
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="A Rough Pier" vnum="31565" zone="315">
+      <roomdescription>A short pier extends out into deeper water here, supported by heavy wooden
+piles driven into the riverbed.  The brown and murky water which flows
+between them is obscured by freshly cut planks cobbled together into a
+rough but sturdy surface.  While not an attractive structure, this pier
+seems as serviceable as any city's more permanent facilities.  The far
+side of the river seems somehow gloomy and oppressive, the bank only a
+dark blur, lost beneath heavy overhanging branches and dangling strands of
+swamp moss.  Downstream, however, the distant sound of surf can be heard,
+and the cries of seabirds echo across the open water.    
+</roomdescription>
+      <flags>0</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="" exitinfo="0" keynum="-1" toroom="31563">
+      <description>You see nothing special.
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Warehouse" vnum="31566" zone="315">
+      <roomdescription>The high ceilings of this building are supported by broad beams which run
+from windowless wall to windowless wall.  Between those walls, however,
+there is very little of interest.  A few dusty crates rest in the back
+corner, and a few assorted tools lie scattered just inside the door, but
+other clues as to the intended purpose of this building are absent.    
+</roomdescription>
+      <flags>65544</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+  </room>
+  <room>
+    <roombasic title="The Factor's Office" vnum="31567" zone="315">
+      <roomdescription>Unlike most of the other small cabins, this building sports a small porch,
+upon which rest an assortment of crates, sacks, and various tools.  A
+narrow passage between these cluttered piles leads through an open doorway
+into the interior.  Inside, a fair sized common room is scattered with
+paperwork and furniture, as well as piles of dry goods and other staples.
+At the back of the room a single desk is wedged into a corner, usually
+occupied by a rather harried looking individual.    
+</roomdescription>
+      <flags>65544</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+  </room>
+  <room>
+    <roombasic title="The servant's quarters" vnum="31568" zone="315">
+      <roomdescription>The walls of the room are made of the same richly stained wood as 
+the rest of the household, but other than that, the room shares nothing
+with the decadence that can be found throught the rest of the apartment
+There is a plain single bed, with one pillow, made up recently with
+plain white sheets. A light blanket has been folded up at the foot of
+the bed for when the night gets too cold. A plain, functional dresser
+stands against one of the walls - it's dark wood complimenting the
+wood of the walls and floor. There is a wardrobe of similar make
+and color against the other wall. A solitary picture depicting a 
+meadow in spring hangs above the bed. 
+</roomdescription>
+      <flags>131086</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="west" keyword="door" exitinfo="17" keynum="0" toroom="31514">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Entrance Hall of the Todande House" vnum="31569" zone="315">
+      <roomdescription>As you walk in you notice how grand this house is and simply stare in awe.
+There are beautiful paintings adorning the walls, and various weapons from
+all over the world are mounted on the walls, there is a single chair and a
+table in the corner to the left.  The sitting room is to the west.    
+</roomdescription>
+      <flags>8</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="south" keyword="door south" exitinfo="15" keynum="31569" toroom="30486">
+      <description/>
+    </exit>
+    <exit direction="west" keyword="" exitinfo="0" keynum="0" toroom="31570">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Sitting Room of the Todande House" vnum="31570" zone="315">
+      <roomdescription>As you walk in you notice some fine furniture made from the finest wood
+that can be found in the Boarderlands, intricate designs lace up and down
+the legs and arms of the chairs and across the table that is centered in
+the room.  Mauv'nor's room is up the stairs, Shon's is to the northwest,
+and Seth's is to the north east through a hallway.    
+</roomdescription>
+      <flags>8</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="" exitinfo="0" keynum="0" toroom="31569">
+      <description/>
+    </exit>
+    <exit direction="up" keyword="door up" exitinfo="3" keynum="0" toroom="31571">
+      <description/>
+    </exit>
+    <exit direction="northeast" keyword="door northeast ne" exitinfo="3" keynum="0" toroom="31573">
+      <description/>
+    </exit>
+    <exit direction="northwest" keyword="door northwest nw" exitinfo="3" keynum="0" toroom="31572">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Mauv'nor Todande's Room" vnum="31571" zone="315">
+      <roomdescription>A large room, with one single window that looks out onto the street that
+the house faces.  There is a desk and a chair in the corner, just right of
+the door, and a large bed in the the northern corner of the room.  A
+custom made stand for armor sits about 4 or 5 feet from the bed, and
+several intricately designed swords litter the wall above the stand.    
+</roomdescription>
+      <flags>8</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="down" keyword="door down" exitinfo="3" keynum="0" toroom="31570">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Shon's Room" vnum="31572" zone="315">
+      <roomdescription>This room is stark and nearly empty, reflecting that the person who owns
+it is either poor or recognizes the value of money that he does have, and
+doesn't wish to spend it frivolously.  Either way, the effect is the
+same-the furnishments are few, though well made, and eminently practical.
+A bed is against the wall to the left, and a desk is pressed against the
+far wall.  The desk is covered with various inane things, such as oddly
+colored stones and various pieces of metal and other such.  Various
+scrolls also cover a section of the desk, the uppermost being an old and
+worn copy of a manuscript about channeling and it's effects upon people.
+  
+</roomdescription>
+      <flags>8</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="southeast" keyword="door southeast se" exitinfo="3" keynum="0" toroom="31570">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Seth's Room" vnum="31573" zone="315">
+      <roomdescription>This chamber is lit solely by a single oval shaped lamp upon a small round
+oaken table near the center of the room during the evening hours and
+during the day by an arch shaped window overlooking the outstretched view
+of Caemlyn to the north.  A small bed lies in the back corner in the
+shadows, with a small shaded divider surrounding it.  Beside the bed there
+is a small oaken end table containing a single drawer and a candleholder
+with candle atop it.  A round finely woven red carpet sweeps around the
+center of the room, four large pillows evenly placed around the table for
+sitting on.  The room is vast, offering enough room for several occupants
+comfortably, yet it holds just one, and by the looks of the chamber, it is
+kept spotless and in perfect order.    
+</roomdescription>
+      <flags>8</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="southwest" keyword="door southwest sw" exitinfo="3" keynum="0" toroom="31570">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Bradden and Kilatara's Bedroom" vnum="31574" zone="315">
+      <roomdescription>This small cave appears to be a bedroom, due mainly to the fact of the
+large four-poster bed that dominates a larger part of the room.  &amp;WS&amp;Ci&amp;Wl&amp;ck&amp;n
+sheets, and thick down-filled blankets cover the bed, along with four
+fluffy pillows.  A doubled-doored wardrobe is against one wall, and on the
+floor at the end of the bed is a large, &amp;yb&amp;Yr&amp;ya&amp;Ys&amp;ys&amp;n-bound chest.  Situated on
+the other wall is a large painting, showing a lone &amp;Kw&amp;wo&amp;Kl&amp;wf&amp;n, &amp;Ye&amp;yy&amp;Ye&amp;ys&amp;n shining,
+howling at a representation of the &amp;WW&amp;wh&amp;Wi&amp;wt&amp;We &amp;wT&amp;Wo&amp;ww&amp;We&amp;wr&amp;n in Tar Valon.  Right next
+to the painting is a medicine chest, hung on the wall, the front of it a
+&amp;Ws&amp;wh&amp;Wi&amp;wn&amp;Wi&amp;wn&amp;Wg&amp;n mirror.  To the south, a man-sized opening in the rock wall leads
+into a larger room, glimpses of furniture visible through it.    
+</roomdescription>
+      <flags>6</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="south" keyword="" exitinfo="2" keynum="0" toroom="598">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Kamiya Dojo" vnum="31575" zone="315">
+      <roomdescription>   A large room with a well-polished &amp;yw&amp;Yo&amp;yo&amp;Yd&amp;ye&amp;Yn&amp;n floor, clear of any
+adornments. The wall in which the entrance is set appears to be made
+from &amp;Wp&amp;Ba&amp;Wp&amp;Be&amp;Wr&amp;n of some sort, whereas the other walls seem to be made
+from sturdy &amp;yw&amp;Yo&amp;yo&amp;Yd&amp;n, perhaps even &amp;yo&amp;Ka&amp;yk&amp;n. On the door to the right of the
+entrance, several plaques are featured, all with strange symbols in
+some unknown language on them. Set into the inner wall, straight across
+the room from the entrance, is a small &amp;Bs&amp;Ch&amp;Wri&amp;Cn&amp;Be&amp;n, with a wall hanging
+featuring the same type of symbols as those on the right wall. In
+front of the shrine is the only object on the floor, a square &amp;Mp&amp;mi&amp;Mn&amp;mk&amp;n
+cushion, quite thin.
+</roomdescription>
+      <flags>393432</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+  </room>
+  <room>
+    <roombasic title="Jauder &amp; Marlindra's Rare Antiquities Shop" vnum="31576" zone="315">
+      <roomdescription>This is a quaint shop with wooden plank floors and high ceiling with
+exposed beams.  There are several wooden cases containing a variety of
+antiques including weapons, fans, buttons, jewelry, badges, vases,
+statues, boxes, cons, and just about anything else imaginable.  The goods
+in this shop frequently change as new aquistions are made and some are
+sold.  There is a table with a game of stones usually set up on it in
+front of the back fireplace where patrons often gather to chat and gossip.
+Another table near the window always has a teapot of freshly steeped tea.
+In addition to the wooden floor cases, there is also an assortment of
+furniture from bygone days.  The whole shop seems as if it were someone's
+grandmother's great attic only without all the dust.    
+</roomdescription>
+      <flags>12</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="door" exitinfo="7" keynum="31579" toroom="28064">
+      <description>The door is arch-shaped and made of thick oak.  The brass handle is
+antique and shaped like the Tower at Tar Valon.  Hung near the top of the
+door is a cluster of sweet-sounding bells to announce all entrances and
+exits from the shop.    
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Campsite Clearing" vnum="31578" zone="315">
+      <roomdescription> &amp;n    A firepit that is worn rests in the middle of the clearing.  Trees all
+around drape close to the ring of the campsite, but don't quite touch, or
+otherwise have branches that hover above the clearing.  A tent is fastened
+down here, the dark material it is made out of looking almost rough.  
+Firewood is stacked by the tent, ready to be used to feed the fire.  A
+long line goes from one tree to the other, a laundry line almost.  A large
+barrel of water sits near the tent as well, ready to use for washing or
+other simple tasks.  The shafts of light that pierce through the trees,
+whether it be moonlight or sunlight, illuminates the dirt bared ground,
+from where the grass has been worn away.  The clearing itself seems to
+have not been here long, but also seems to be used often.  Set up on one
+of the trees is a small target, seeming to have many knotches in it where
+it has been struck or shot with something.  
+&amp;n    The sounds that surround the camp are that of the forest.  Birds
+chipring, squirrels chittering, and the occasional growl of a bear or howl
+of a wolf.  The rustling of foilage also is occasionally heard, indicating
+a deer that has passed by.  The clearing is quite peaceful, offering an
+aura of comfort and rest.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Forest</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="" exitinfo="0" keynum="0" toroom="15327">
+      <description/>
+    </exit>
+    <exdesc keyword="owner">
+      <description>OOC NOTICE: This room is owned by Isharahien.
+</description>
+    </exdesc>
+  </room>
+  <room>
+    <roombasic title="The Grand Parlor" vnum="31579" zone="315">
+      <roomdescription>A long brightly lit room, the Grand Parlor is a cheerful room.  In both
+the northeast and southwest corners of the elongated chamber are large
+fireplaces, in which roar brightly dancing fires.  All throughout the room
+are placed groups of chairs situated in small circles.  Along the outer
+walls are side tables full of various sweet meats, fruits, vegetables, and
+assorted chilled beverages.  The eastern end of the room is comprised of
+on large window of colored glass.  The design in the window is the same as
+the mosaic on the floor of the Grand Entrance, the bright sun, flanked by
+two rampant Raken, rising over a field of green.  On the southern wall, a
+large map of the Westlands is surrounded by the symbols of both Rahiedar
+and the Empress.  To the west is a screen with various exotic beats of war
+painted on it.  In between tables of food on the north wall, is a small
+hallway.    
+</roomdescription>
+      <flags>24</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="" exitinfo="0" keynum="-1" toroom="31559">
+      <description>You see nothing special.
+</description>
+    </exit>
+    <exit direction="west" keyword="screen" exitinfo="3" keynum="-1" toroom="31549">
+      <description>a screen with birds
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="High Lady Na'era's Office" vnum="31580" zone="315">
+      <roomdescription>This room is sparsely furnished, having only three pieces making up the
+entire list of furniture.  A plain, uncomfortable looking wooden chair
+stands in the exact center of the rather large office.  The chair faces a
+large, ornately carved desk of some indeterminate wood.  The desk sits
+facing east and has a comfortable chair behind it.  On the western wall
+are three large flags.  The center flag bears the symbol of the Empress,
+and if one were sitting in the chair, it could just be seen over whomever
+were sitting at the desk.  To the left and slightly down from the center
+flag is a flag bearing a map of Seanchan.  To the right and down of the
+Empress' flag is a flag bearing the symbol of the House Rahiedar.  The
+north wall is filled with circular windows of various sizes.  Hanging in
+each window is a small glass object, which reflects the sunlight and
+displays tiny rainbows around the room.  On the south wall is a large
+empty fireplace.  On the eastern wall is a small, plain wooden door.    
+</roomdescription>
+      <flags>24</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+  </room>
+  <room>
+    <roombasic title="Entrance to the Campsite" vnum="31581" zone="315">
+      <roomdescription>&amp;yThe forest opens up in a clearing of hard packed dirt.  The ground looks
+as if though it has been used as a camp for travellers a long time.  It is
+a peaceful spot in the middle of the dense forest and the attentive might
+notice that the birds have stopped singing.  At the moment, a large tent
+of brown and green fabric is occupying most of the clearing to the north,
+but there is also a welcoming little fire to the west.  The path to the
+Southeast leads to a smaller clearing in the forest.  Northeast, there is
+something that looks like an enclosed pasture for horses, except that it
+has no grass.&amp;n    
+</roomdescription>
+      <flags>131214</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="tent" exitinfo="31" keynum="31581" toroom="31584">
+      <description/>
+    </exit>
+    <exit direction="west" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="31582">
+      <description>None
+</description>
+    </exit>
+    <exit direction="northeast" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="31585">
+      <description>None
+</description>
+    </exit>
+    <exit direction="southeast" keyword="" exitinfo="0" keynum="0" toroom="8907">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="A Small Campfire" vnum="31582" zone="315">
+      <roomdescription>&amp;ySafely away from the tent, a rustic little fire is burning.  It has been
+placed in a deep pit so that it will not be seen from afar.  A pot with
+something is bubbling above the fire and giving off a strong musty smell.
+The dirt in this area is not as hard packed as the rest of the clearing,
+suggesting that it have only been taken into use recently.  A picket line
+for horses has been constructed from a couple of branches that has been
+tied together.  A few logs have been placed around the fire to serve as
+benches.  There is a short trail back to the camp to the east.  &amp;n
+</roomdescription>
+      <flags>131082</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="31581">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="A Bed Chamber of Sorts" vnum="31583" zone="315">
+      <roomdescription>&amp;yLight is sparse in this part of the tent and that is completely as it
+should be as this is obviously a sleeping area.  The ground is covered
+with carpets that together with the firepans keeps the warmth at night.  
+The bed is not a wetlander bed, but an Aiel one.  Actually it is not much
+more than mattress made of perhaps a dozen sown-together thick wool
+blankets.  The comfortable algode pillow ensures a good sleep though.  
+Empty bottles of assorted spirits as tossed all over the room and the give
+the room a rancid odour.  Along one of the walls, there is a large iron
+chest that has a forbidding air about it.  There is a pearl drapery to the
+east that leads to a better-lit part of the large tent.  &amp;n
+</roomdescription>
+      <flags>131086</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="31584">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Inside an Aiel Tent" vnum="31584" zone="315">
+      <roomdescription>&amp;yThis section of the quite large tent seems to be a reception room of
+sorts.  The dirt floor is covered with expensive-looking Tairen carpets
+and the walls are covered in tapestries of fine Shaaran silk.  In the
+middle of the room there is a low table upon which some glasses filled
+with oosquai stands.  Around the table, there are several comfortable
+cushions decorated with quaint patterns.  In a corner, there is a large
+keg with a tap.  A nice soporific smell of incense is slowly emanating
+from several tall firepans.  Other than that, there are not many pieces of
+furniture.  To the west, a pearl drapery leads to another part of the
+tent.  The exit out of the tent is to the south.  &amp;n
+</roomdescription>
+      <flags>131082</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="south" keyword="tent" exitinfo="3" keynum="31581" toroom="31581">
+      <description>None
+</description>
+    </exit>
+    <exit direction="west" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="31583">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Trevyr's Training Ground" vnum="31585" zone="315">
+      <roomdescription>&amp;yA crude fence made of rope tied around tall posts encloses this
+rectangular area.  The fence doesn't have an opening, so it is necessary
+to step over the ropes to get inside.  The dirt is carefully cleared of
+any stones or roots that otherwise would stick up from the ground.  The
+path leading to the campsite is to the southwest.  &amp;n
+</roomdescription>
+      <flags>131084</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="southwest" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="31581">
+      <description>None
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="A Cozy Country Manor" vnum="31586" zone="315">
+      <roomdescription>This is the main entrance to a cozy manor.  Upon the floor is a bear rug.
+There are large lampstands made of brass and shaped like lions.  It is a
+small gathering area and as such has a sofa and a couple of chairs covered
+in leather.  A mahogany table has a silver bowl on it that holds the cards
+of visitors to the manor.  Two windows flank each side of the door.  The
+windows are arched to a point and are paned with polished horn.  The door
+is very interesting as it is very thick, made of cypress, and heavily
+carved with hunting scenes and landscapes of Andor and Shienar.  The thick
+pillars of beeswax candles sit on the table and scent the room with honey.
+  
+</roomdescription>
+      <flags>10</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="south" keyword="door" exitinfo="1" keynum="31588" toroom="15300">
+      <description>You see nothing special.
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Arwynn's Abode" vnum="31587" zone="315">
+      <roomdescription>This is a very plain room.  It is full of rather nondescript furniture.  
+Perhaps it will look better once the owner is through unpacking.    
+</roomdescription>
+      <flags>8</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="west" keyword="door west arwynn" exitinfo="15" keynum="31587" toroom="3212">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Root &amp; Wine Cellars" vnum="31588" zone="315">
+      <roomdescription>You are in an unfinished room.
+</roomdescription>
+      <flags>8</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="up" keyword="door" exitinfo="3" keynum="0" toroom="31595">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Nursery" vnum="31589" zone="315">
+      <roomdescription>You are in an unfinished room.
+</roomdescription>
+      <flags>8</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="west" keyword="door" exitinfo="3" keynum="0" toroom="31592">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Jossard's Chambers" vnum="31590" zone="315">
+      <roomdescription>You are in an unfinished room.
+</roomdescription>
+      <flags>8</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="door" exitinfo="3" keynum="0" toroom="31592">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Loft" vnum="31591" zone="315">
+      <roomdescription>This loft has a wooden floor and over looks the main room of the manor
+below letting in lots of light.  There is a small sofa covered in a floral
+pattern and a couple of upholstered chairs with soft cushions.  There is a
+marble table with a fine porcelain tea service fashioned like flowers from
+the garden.  Against one of the walls is a small desk for personal
+correspondance by the lady of the Manor.    
+</roomdescription>
+      <flags>8</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="31592">
+      <description/>
+    </exit>
+    <exit direction="down" keyword="" exitinfo="0" keynum="0" toroom="31597">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Upstairs Hall" vnum="31592" zone="315">
+      <roomdescription>The upstairs hall has a wooden floor and thick chair rail.  There are
+tables on both sides of the hall with candle-stands upon them.  Rooms open
+off this mail hall on both sides.  Between the rooms are various landscape
+paintings and of a little boy.    
+</roomdescription>
+      <flags>8</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="door" exitinfo="3" keynum="0" toroom="31589">
+      <description/>
+    </exit>
+    <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="31591">
+      <description/>
+    </exit>
+    <exit direction="west" keyword="door" exitinfo="3" keynum="0" toroom="31590">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Banquet Hall" vnum="31593" zone="315">
+      <roomdescription>A great arch opening leads to this banquet room.  The arch is thickly
+molded and painted an eggshell colour while the walls are painted muted
+shades of grey, lavender, mauve and taupe.  In the center of the room is a
+large cherry table with three pedastals of carved lillies.  Across the
+table is draped a table cloth of fancy Murandy lace.  Around the table are
+finely carved chairs made from cherry wood.  There is a fireplace along
+one wall dressed in black marble and above it are a set of swords hung
+with blue tassels.  The windows are paned with polished horn giving the
+room a mellow glow.  On one wall is a painting of Lyllion and Gaindal in
+the orchard.    
+</roomdescription>
+      <flags>8</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="northeast" keyword="" exitinfo="0" keynum="0" toroom="31597">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Manor's Study" vnum="31594" zone="315">
+      <roomdescription>There is a scalloped cornice about the ceiling and a picture rail painted
+white.  The walls are stenciled in a block pattern of light and dark
+green.  The fireplace is a dark green almost black in colour with open
+grill work forming a lower border.  The windows are draped in red brocade
+with a gold leaf design.  Near the fireplace is the large oak desk where
+the records for the Cider House are kept.  On the desk is a bottle of
+brandy, couple glasses, a flask of water, numerous papers, sealing wax,
+oil lamp, quills and a small portrait of Lyllion holding an infant in her
+arms.  The desk chair is quite grand with a high back and thickly
+cushioned seat.  The desk itself is carved across the front with the cider
+house and the orchard being harvested.  Above the fireplace is the mounted
+head of a deer.  There are many candle- stands in the room as well as
+plants.  There is also a sofa and several chairs.    
+</roomdescription>
+      <flags>0</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="west" keyword="" exitinfo="0" keynum="0" toroom="31597">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Manor Kitchen" vnum="31595" zone="315">
+      <roomdescription>The kitchen has gleeming copper pots hanging from a rack above the great
+chopping block located in the middle of the room.  There are bunches of
+herbs and peppers hanging from the bare rafters in order to dry.  The wood
+burning stove gleams brightly along one wall.  A shiny red water pump
+stands poised above a new porcelain sink, the colour of a newly laid bird
+egg.  There are polished shelves, bins and carved cabinets all about the
+kitchen to hold all the things required for sumptuous cooking.  A round
+window above the sink and two narrow windows on either side of the
+fireplace look out upon the gardens.  In front of the fireplace is a cozy
+table with a gathering of well cushioned chairs.  The stairs lead down
+into a well stocked cellar.    
+</roomdescription>
+      <flags>131080</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="" exitinfo="0" keynum="-1" toroom="31597">
+      <description>You see nothing special.
+</description>
+    </exit>
+    <exit direction="down" keyword="door" exitinfo="3" keynum="0" toroom="31588">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Master Chamber" vnum="31596" zone="315">
+      <roomdescription>This is a large bed chamber with a very high ceiling.  The floor is made
+of narrow plank boards that with age now have a soft creak when walked
+across.  Large rugs on the floor keep the feet warm in the winter.  A
+great fireplace lies on the east wall, in front of which is a small sofa
+and chair as well as a tea table.  On the south wall lies two tall windows
+of stained glass between which lies a desk, bookcase and a well stocked
+wine cabinet.  A grand bed lies along the west wall besides which is a
+rocking chair and a cradle shaped like a open walnut.  Above the bed is a
+great round stained glass window.  At the foot of the bed is an ornate
+blanket trunk with a padded top for sitting.  On the north wall lies a
+double armoire.  There are candlestands placed all over the room for
+lighting.    
+</roomdescription>
+      <flags>131592</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="door" exitinfo="15" keynum="31597" toroom="31597">
+      <description>You see nothing special.
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The A'Garfola Manor" vnum="31597" zone="315">
+      <roomdescription>This is the grand entrance to the manor.  Beyond the arches it opens into
+a large sitting room.  There is a large fireplace in the sitting room and
+above the mantle is a painting of the palace of Arad Doman.  The sofa sits
+before the fireplace and is flanked by small tables and then winged back
+chairs.  Near one window is a rocking chair with soft cushions, obviously
+used for rocking babies.  By another window is a large and much used desk
+where the records from the Cider House are kept.  There is a tea table
+with a full tea service upon it.  Upon the floor are thick wool rugs of
+good quality in a dark blue colour depicting hawks among climbing vines
+with little red berries.    
+</roomdescription>
+      <flags>131080</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="door" exitinfo="15" keynum="31597" toroom="30070">
+      <description>You see nothing special.
+</description>
+    </exit>
+    <exit direction="east" keyword="" exitinfo="0" keynum="0" toroom="31594">
+      <description/>
+    </exit>
+    <exit direction="south" keyword="" exitinfo="0" keynum="-1" toroom="31595">
+      <description>You see nothing special.
+</description>
+    </exit>
+    <exit direction="west" keyword="door" exitinfo="15" keynum="31597" toroom="31596">
+      <description>You see nothing special.
+</description>
+    </exit>
+    <exit direction="up" keyword="" exitinfo="0" keynum="0" toroom="31591">
+      <description/>
+    </exit>
+    <exit direction="southwest" keyword="" exitinfo="0" keynum="0" toroom="31593">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Llewellyn's Bedroom" vnum="31598" zone="315">
+      <roomdescription>This room is somewhat small and cozy, with a door in the southern wall,
+the southeast corner, leading outwards and into the main living room.  A
+large, comfortable-appearing bed is placed opposite against the northern
+wall while set against the western wall is a large chest of drawers.  
+Resting upon the top of the chest is a small silver mirror and a silvery
+straight-razor and bowl.  While, north of the chest, at the end of the bed
+is a small table with several scattered books and the like.  Resting
+against the southern wall of the room is a wooden stand and shelving,
+perfect for holding books or other various miscellany.    
+</roomdescription>
+      <flags>10861</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="south" keyword="" exitinfo="0" keynum="-1" toroom="31599">
+      <description>You see nothing special.
+</description>
+    </exit>
+    <dgscript vnum="31597"/>
+  </room>
+  <room>
+    <roombasic title="The Main Room of the Cabin" vnum="31599" zone="315">
+      <roomdescription>The Main Room of the cabin is tidy and well kept.  Set into the southern
+wall of this room is the doorway leading outside, while opposite, in the
+north wall is a doorway leading to another room.  A small kitchen occupies
+the eastern portion of this room while the western wall is dominated by
+the stone fireplace.  In the northwest corner of the room is a large,
+stuffed leather chair while sitting directly to the east of it is a large
+table with a chair on the opposite side.  In the southwest corner is a
+tall wooden stand with several pegs, perfect for hanging cloaks and the
+like upon it.  A bookcase is placed against the southern wall with various
+books, while resting up against the bookcase is a worn, yet preserved
+quarterstaff standing approximately six feet in height.    
+</roomdescription>
+      <flags>66123</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="" exitinfo="0" keynum="-1" toroom="31598">
+      <description>You see nothing special.
+</description>
+    </exit>
+    <dgscript vnum="31598"/>
+    <dgscript vnum="31597"/>
   </room>
 </rooms>

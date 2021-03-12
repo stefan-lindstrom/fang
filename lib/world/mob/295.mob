@@ -1,238 +1,426 @@
-#29500
-recruit school form Whelan~
-Whelan, a new recruit~
-Whelan, a new recruit for the Dragon's Army brings a platter of food in.
-~
-5
-~
-10 0 0 E
-10 10 10 968 30d100+5000 1d1+10
-0 0
-8 8 1
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-E
-#29501
-Morri trainer teacher soldier~
-Morri~
-\c10Morri\c00, a soldier for the \c01Dragon\c00 is practising his forms.
-~
-
-~
-10 0 0 E
-20 10 10 968 30d100+10000 30d30+10
-0 0
-8 8 1
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-P
-OnEntry & Carrying 29502
-SayTo "greetings student.  forms?  yes i know the following ones."
-Pause 1
-Say "moon over water"
-Say "unfolding the fan"
-Say "cat on hot sand"
-Say "kingfisher takes a silverback"
-Say "river undercuts the bank"
-Pause 1
-Say "which form would you like to learn?"
-End
-OnSay "moon over water" & Carrying 29502
-Emote "morri traces a wide arc from one side to the other, sword pointing mostly up. -moon over water"
-End
-OnSay "unfolding the fan" & Carrying 29502
-Emote "morri begins a circular parry, his arm level with his waist."
-Emote "morri begins his parry starting at about the 10 or 11 o'clock position and moves it clockwise to deflect the attack.  -unfolding the fan"
-End
-OnSay "cat on hot sand" & Carrying 29502
-Emote "morri abruptly leaps backwards several feet, parrying as he lands. -cat on hot sand"
-End
-OnSay "kingfisher takes a silverback" & Carrying 29502
-Emote "morri snaps a  short, quick slash to the outside of his opponents knee.  -kingfisher takes a silverback"
-End
-OnSay "river undercuts the bank" & Carrying 29502
-Emote "morri drops swiftly to one knee, drawing his weapon across in a deadly horizontal arc! -river undercuts the bank"
-End
-Q
-E
-#29502
-Junie trainer scout teacher~
-Junie~
-\c10Junie\c00, a scout for the \c01Dragon\c00, sharpens her sword.
-~
-It looks, err, unfinished.
-~
-10 0 0 E
-0 20 10 968 1d100+0 1d1+0
-0 0
-8 8 2
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-P
-OnEntry & Carrying 29503
-Pause 1
-Say "hello.  yes, i am practicing the following forms"
-Pause 2
-Say "the sun rises"
-Say "cat dances on the wall"
-Say "bundling straw"
-Pause 1
-Say "which form would you like to learn?"
-End
-OnSay "sun rises" & Carrying 29503
-Pause 2
-Emote "junie sweeps her blade in a long upward slash, aiming for the chest of her opponent. -the sun rises"
-End
-OnSay "cat dances" & Carrying 29503
-Pause 2
-Emote "junie walkes forward and backward along an imaginary wall, keeping her feet in a straight line, parrying the whole while."
-Pause 1
-Emote "junie makes each parry light and fast, only powerful enough to sufficiently block the blow. -cat dances on the wall"
-End
-OnSay "bundling straw" & Carrying 29503
-Pause 1
-Emote "junie holds her sword parallel to her body, point up, and moves it horizontally across the body,  to parry."
-Pause 1
-Emote "junie immediately slashes downward at the attacker's stomach and legs, moving in the opposite direction as the parry. -bundling straw"
-End
-Q
-E
-#29503
-Jack trainer soldier teacher~
-Jack, the gruff Sergeant at Arms~
-\c10Jack\c00, the gruff Sergeant at Arms for the \c01Dragon's Army\c00
-~
-It looks, err, unfinished.
-~
-10 0 0 E
-0 20 10 968 1d100+0 1d1+0
-0 0
-8 8 1
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-E
-#29504
-Brad, the dashing young Captain~
-Brad, the dashing young Captain~
-\c10Brad\c00, the dashing young Captain in the \c01Dragons' Army\c00, is polishing his armor.
-~
-It looks, err, unfinished.
-~
-10 0 0 E
-0 20 10 968 1d100+0 1d1+0
-0 0
-8 8 1
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-E
-#29505
-Nick trainer teacher courier~
-Nick, the brave and daring courier.~
-\c10Nick\c00, the brave and daring courier, is awaiting a message for the \c01Dragon\c00.
-~
-It looks, err, unfinished.
-~
-10 0 0 E
-0 20 10 968 1d100+0 1d1+0
-0 0
-8 8 1
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-E
-#29506
-Terry trainer teacher engineer~
-Terry, the burly engineer.~
-\c10Terry\c00, the tall and strong engineer, is building a better crossbow for the \c01Dragon\c00.
-~
-It looks, err, unfinished.
-~
-10 0 0 E
-0 20 10 968 1d100+0 1d1+0
-0 0
-8 8 1
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-E
-#29507
-Da Postyguy~
-Da Postyguy~
-Im gunna go postal on you!
-~
-Look at me again and I slice yer head off, and your family. ha
-~
-10 16 12 E
-12 8 1 968 12d12+12 12d12+12
-12 12
-8 8 0
-E
-#29524
-Grace shopkeeper innkeeper ~
-Grace, a lovely serving girl~
-Grace, the innkeepers daughter, waits to serve your meal
-~
-Grace, the innkeepers daughter is small and fair, with blond hair and a 
+<?xml version="1.0"?>
+<mobiles>
+  <mobile vnum="29500" name="recruit school form Whelan" special="NONE">
+    <description>5
+</description>
+    <shortdesc>Whelan, a new recruit</shortdesc>
+    <longdesc>Whelan, a new recruit for the Dragon's Army brings a platter of food in.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="10" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="30" dsize="100" bonus="5000"/>
+      <move ndize="10" dsize="20" bonus="100"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>10</hitroll>
+      <damroll>10</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="9232394"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="10"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="29501" name="Morri trainer teacher soldier" special="NONE">
+    <description>
+</description>
+    <shortdesc>Morri</shortdesc>
+    <longdesc>\c10Morri\c00, a soldier for the \c01Dragon\c00 is practising his forms.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="20" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="30" dsize="100" bonus="10000"/>
+      <move ndize="10" dsize="20" bonus="100"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>10</hitroll>
+      <damroll>10</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="10"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="30" sides="30" add="10"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnEntry" argtype="STRING" argument="wash">
+      <sideterm number="Carrying" not="FALSE" argtype="INT" argument="29502"/>
+      <action number="SayTo" argtype="STRING" argument="greetings student.  forms?  yes i know the following ones."/>
+      <action number="Pause" argtype="INT" argument="1"/>
+      <action number="Say" argtype="STRING" argument="moon over water"/>
+      <action number="Say" argtype="STRING" argument="unfolding the fan"/>
+      <action number="Say" argtype="STRING" argument="cat on hot sand"/>
+      <action number="Say" argtype="STRING" argument="kingfisher takes a silverback"/>
+      <action number="Say" argtype="STRING" argument="river undercuts the bank"/>
+      <action number="Pause" argtype="INT" argument="1"/>
+      <action number="Say" argtype="STRING" argument="which form would you like to learn?"/>
+    </mobprog>
+    <mobprog main="OnSay" argtype="STRING" argument="moon over water">
+      <sideterm number="Carrying" not="FALSE" argtype="INT" argument="29502"/>
+      <action number="Emote" argtype="STRING" argument="morri traces a wide arc from one side to the other, sword pointing mostly up. -moon over water"/>
+    </mobprog>
+    <mobprog main="OnSay" argtype="STRING" argument="unfolding the fan">
+      <sideterm number="Carrying" not="FALSE" argtype="INT" argument="29502"/>
+      <action number="Emote" argtype="STRING" argument="morri begins a circular parry, his arm level with his waist."/>
+      <action number="Emote" argtype="STRING" argument="morri begins his parry starting at about the 10 or 11 o'clock position and moves it clockwise to deflect the attack.  -unfolding the fan"/>
+    </mobprog>
+    <mobprog main="OnSay" argtype="STRING" argument="cat on hot sand">
+      <sideterm number="Carrying" not="FALSE" argtype="INT" argument="29502"/>
+      <action number="Emote" argtype="STRING" argument="morri abruptly leaps backwards several feet, parrying as he lands. -cat on hot sand"/>
+    </mobprog>
+    <mobprog main="OnSay" argtype="STRING" argument="kingfisher takes a silverback">
+      <sideterm number="Carrying" not="FALSE" argtype="INT" argument="29502"/>
+      <action number="Emote" argtype="STRING" argument="morri snaps a  short, quick slash to the outside of his opponents knee.  -kingfisher takes a silverback"/>
+    </mobprog>
+    <mobprog main="OnSay" argtype="STRING" argument="river undercuts the bank">
+      <sideterm number="Carrying" not="FALSE" argtype="INT" argument="29502"/>
+      <action number="Emote" argtype="STRING" argument="morri drops swiftly to one knee, drawing his weapon across in a deadly horizontal arc! -river undercuts the bank"/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="29502" name="Junie trainer scout teacher" special="NONE">
+    <description>It looks, err, unfinished.
+</description>
+    <shortdesc>Junie</shortdesc>
+    <longdesc>\c10Junie\c00, a scout for the \c01Dragon\c00, sharpens her sword.
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="0" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="0"/>
+      <move ndize="10" dsize="20" bonus="100"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="10"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnEntry" argtype="STRING" argument="river undercuts the bank">
+      <sideterm number="Carrying" not="FALSE" argtype="INT" argument="29503"/>
+      <action number="Pause" argtype="INT" argument="1"/>
+      <action number="Say" argtype="STRING" argument="hello.  yes, i am practicing the following forms"/>
+      <action number="Pause" argtype="INT" argument="2"/>
+      <action number="Say" argtype="STRING" argument="the sun rises"/>
+      <action number="Say" argtype="STRING" argument="cat dances on the wall"/>
+      <action number="Say" argtype="STRING" argument="bundling straw"/>
+      <action number="Pause" argtype="INT" argument="1"/>
+      <action number="Say" argtype="STRING" argument="which form would you like to learn?"/>
+    </mobprog>
+    <mobprog main="OnSay" argtype="STRING" argument="sun rises">
+      <sideterm number="Carrying" not="FALSE" argtype="INT" argument="29503"/>
+      <action number="Pause" argtype="INT" argument="2"/>
+      <action number="Emote" argtype="STRING" argument="junie sweeps her blade in a long upward slash, aiming for the chest of her opponent. -the sun rises"/>
+    </mobprog>
+    <mobprog main="OnSay" argtype="STRING" argument="cat dances">
+      <sideterm number="Carrying" not="FALSE" argtype="INT" argument="29503"/>
+      <action number="Pause" argtype="INT" argument="2"/>
+      <action number="Emote" argtype="STRING" argument="junie walkes forward and backward along an imaginary wall, keeping her feet in a straight line, parrying the whole while."/>
+      <action number="Pause" argtype="INT" argument="1"/>
+      <action number="Emote" argtype="STRING" argument="junie makes each parry light and fast, only powerful enough to sufficiently block the blow. -cat dances on the wall"/>
+    </mobprog>
+    <mobprog main="OnSay" argtype="STRING" argument="bundling straw">
+      <sideterm number="Carrying" not="FALSE" argtype="INT" argument="29503"/>
+      <action number="Pause" argtype="INT" argument="1"/>
+      <action number="Emote" argtype="STRING" argument="junie holds her sword parallel to her body, point up, and moves it horizontally across the body,  to parry."/>
+      <action number="Pause" argtype="INT" argument="1"/>
+      <action number="Emote" argtype="STRING" argument="junie immediately slashes downward at the attacker's stomach and legs, moving in the opposite direction as the parry. -bundling straw"/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="29503" name="Jack trainer soldier teacher" special="NONE">
+    <description>It looks, err, unfinished.
+</description>
+    <shortdesc>Jack, the gruff Sergeant at Arms</shortdesc>
+    <longdesc>\c10Jack\c00, the gruff Sergeant at Arms for the \c01Dragon's Army\c00
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="0" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="0"/>
+      <move ndize="10" dsize="20" bonus="100"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="10"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="29504" name="Brad, the dashing young Captain" special="NONE">
+    <description>It looks, err, unfinished.
+</description>
+    <shortdesc>Brad, the dashing young Captain</shortdesc>
+    <longdesc>\c10Brad\c00, the dashing young Captain in the \c01Dragons' Army\c00, is polishing his armor.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="0" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="0"/>
+      <move ndize="10" dsize="20" bonus="100"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="10"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="29505" name="Nick trainer teacher courier" special="NONE">
+    <description>It looks, err, unfinished.
+</description>
+    <shortdesc>Nick, the brave and daring courier.</shortdesc>
+    <longdesc>\c10Nick\c00, the brave and daring courier, is awaiting a message for the \c01Dragon\c00.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="0" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="0"/>
+      <move ndize="10" dsize="20" bonus="100"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="10"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="29506" name="Terry trainer teacher engineer" special="NONE">
+    <description>It looks, err, unfinished.
+</description>
+    <shortdesc>Terry, the burly engineer.</shortdesc>
+    <longdesc>\c10Terry\c00, the tall and strong engineer, is building a better crossbow for the \c01Dragon\c00.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="0" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="0"/>
+      <move ndize="10" dsize="20" bonus="100"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="10"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="29507" name="postmaster" special="PostMaster">
+    <description>He doesn't seem all that special.
+</description>
+    <shortdesc>a postmaster</shortdesc>
+    <longdesc>The Postmaster stands here, readly to deliver your messages.
+</longdesc>
+    <title/>
+    <chardata gender="NEUTRAL" class="Adventurer" level="12" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="12" dsize="12" bonus="12"/>
+      <move ndize="10" dsize="20" bonus="100"/>
+      <ac>10</ac>
+      <gold>12</gold>
+      <bankgold>0</bankgold>
+      <exp>12</exp>
+      <hitroll>12</hitroll>
+      <damroll>12</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="10"/>
+    <affected one="16" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="12" sides="12" add="12"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="29524" name="Grace shopkeeper innkeeper " special="NONE">
+    <description>Grace, the innkeepers daughter is small and fair, with blond hair and a 
 light sprinkling of freckles across her nose.  She smiles as you enter and
 straightens her apron, ready to take your order.
-~
-8 0 0 E
-1 20 10 968 1d100+0 1d1+0
-0 0
-8 8 2
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-P
-OnEntry & Nobility & Sex "male"
-Emote "Grace curtseys before you."
-Pause 2
-Say "greetings mi'lord. welcome to the lakeside tavern."
-End
-OnEntry & Nobility & Sex "female"
-Emote "grace curtseys before you"
-Pause 2
-Say "greetings mi'Lady, may I take your wrap?"
-End
-OnEntry & Guild "Children of the Light"
-Emote "grace frowns at you and straightens her apron."
-Pause 2
-Say "very well, what is your order?"
-End
-OnEntry
-Emote "grace smiles at you and gives a little half curtsey."
-Pause 2
-Say "hello. please sit and I will take your order."
-End
-Q
-E
-$
+</description>
+    <shortdesc>Grace, a lovely serving girl</shortdesc>
+    <longdesc>Grace, the innkeepers daughter, waits to serve your meal
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="1" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="0"/>
+      <move ndize="10" dsize="20" bonus="100"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="9232392"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnEntry" argtype="STRING" argument="bundling straw">
+      <sideterm number="Nobility" not="FALSE" argtype="VOID" argument="NONE"/>
+      <sideterm number="Sex" not="FALSE" argtype="STRING" argument="male"/>
+      <action number="Emote" argtype="STRING" argument="Grace curtseys before you."/>
+      <action number="Pause" argtype="INT" argument="2"/>
+      <action number="Say" argtype="STRING" argument="greetings mi'lord. welcome to the lakeside tavern."/>
+    </mobprog>
+    <mobprog main="OnEntry" argtype="STRING" argument="bundling straw">
+      <sideterm number="Nobility" not="FALSE" argtype="VOID" argument="NONE"/>
+      <sideterm number="Sex" not="FALSE" argtype="STRING" argument="female"/>
+      <action number="Emote" argtype="STRING" argument="grace curtseys before you"/>
+      <action number="Pause" argtype="INT" argument="2"/>
+      <action number="Say" argtype="STRING" argument="greetings mi'Lady, may I take your wrap?"/>
+    </mobprog>
+    <mobprog main="OnEntry" argtype="STRING" argument="bundling straw">
+      <sideterm number="Guild" not="FALSE" argtype="STRING" argument="Children of the Light"/>
+      <action number="Emote" argtype="STRING" argument="grace frowns at you and straightens her apron."/>
+      <action number="Pause" argtype="INT" argument="2"/>
+      <action number="Say" argtype="STRING" argument="very well, what is your order?"/>
+    </mobprog>
+    <mobprog main="OnEntry" argtype="STRING" argument="bundling straw">
+      <action number="Emote" argtype="STRING" argument="grace smiles at you and gives a little half curtsey."/>
+      <action number="Pause" argtype="INT" argument="2"/>
+      <action number="Say" argtype="STRING" argument="hello. please sit and I will take your order."/>
+    </mobprog>
+  </mobile>
+</mobiles>

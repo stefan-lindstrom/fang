@@ -2,7 +2,7 @@
 <rooms>
   <room>
     <roombasic title="An unfinished room" vnum="0" zone="0">
-      <roomdescription>You&apos;re in an unfinished  room.
+      <roomdescription>You're in an unfinished  room.
 </roomdescription>
       <flags>4</flags>
       <sector>Inside</sector>
@@ -15,11 +15,17 @@
 matter, surrounded by swirling glowing light, which fades into the relative
 darkness around you without any trace of edges or shadow.
    There is a &quot;No Tipping&quot; notice pinned to the darkness.
+There is also a sign that says &quot;If you get stuck in this room...
+ take a step south to re-enter the Oval Plaza in Caemlyn.&quot;
 </roomdescription>
       <flags>152</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
+    <exit direction="south" keyword="" exitinfo="0" keynum="-1" toroom="10186">
+      <description>You see nothing special.
+</description>
+    </exit>
   </room>
   <room>
     <roombasic title="Inside a Dream" vnum="2" zone="0">
@@ -40,7 +46,7 @@ Dreaming.
     </roombasic>
   </room>
   <room>
-    <roombasic title="Inside a Dream" vnum="3" zone="0">
+    <roombasic title="Inside Naare's Dream" vnum="3" zone="0">
       <roomdescription>Here and there, abstract and surreal things float about in the vast void of
 Dreamland.  Floating, whirling, twisting shapes float about through this
 dreamscape, nothing solid or real being here, except what maybe is inside the
@@ -112,25 +118,17 @@ Dreaming.
     </roombasic>
   </room>
   <room>
-    <roombasic title="erehwon (silent, motionless, still)" vnum="7" zone="0">
-      <roomdescription>The \c23ebony\c00 sky surrounds this bowl shaped depression in the earth.
-Bright pinpricks of light dot the sky, far distant \c06s\c14t\c10a\c14r\c06s\c00 providing
-the sole illumination. A faint \c07mist\c00 hangs low to the ground, thinning
-as it climbs up the inclining walls. \c06S\c14ta\c06r\c07l\c06i\c14g\c06h\c07t\c00 glimmers and reflects
-off of hidden gems, showing the beauty that hides in the earth. At
-the center of the depression sits a small \c06r\c23i\c07p\c06p\c23l\c07i\c06n\c23g\c00 pool of cool \c06w\c07a\c06t\c07e\c06r\c00.
-Slow underneath currents stir the \c06w\c07a\c06t\c07e\c06r\c00 slowly, \c06s\c14ta\c06r\c07l\c06i\c14g\c06h\c07t\c00 bouncing
-off the surface of the \c06w\c07a\c06t\c07e\c06r\c00. \c02M\c09o\c02s\c09s\c00, thick and glistening with moisture
-lays in earthy splendor around the pool, faint steam drifting lazily 
-above the surface. A lazy breeze stirs the \c07mist\c00, coming from a portal
-that is set deeply into the earth to the north. A faint hint of \c05j\c01a\c05s\c01m\c05i\c01n\c05e\c00
-wafts in the air.
+    <roombasic title="The Multi-Player Listing Room" vnum="7" zone="0">
+      <roomdescription>Here is a room for listing those people who share IP addresses and
+for university IP addresses.  Although the people listed on the
+board here may be showing up as multi-players, he or she are
+approved to do so.
 </roomdescription>
-      <flags>1034</flags>
+      <flags>3138</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
-    <exit direction="down" keyword="door" exitinfo="29" keynum="518" toroom="503">
+    <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="32603">
       <description/>
     </exit>
   </room>
@@ -155,46 +153,25 @@ the guests, providing food and drink.
     </exit>
   </room>
   <room>
-    <roombasic title="&amp;KJeraus&apos; Magical Music World&amp;n" vnum="9" zone="0">
-      <roomdescription>\c00You stand inside a large squarish room that looks like the inside of a
-box.  The walls are coloured white so bright you can see your reflection
-in them, and the ceiling and floor are painted black like night.  On one
-wall hang a variety of instruments: a few guitars, a bass, a banjo, a
-synthesizer, a drum set, etc.  Amplifiers and speakers clutter the floor
-in a disorganized manner.  All of these things are painted with a silvery
-chrome finish that makes them all shiny and sparkly and stuff.    
+    <roombasic title="An Unfinished Room" vnum="9" zone="0">
+      <roomdescription>An Unfinished Room
 </roomdescription>
-      <flags>9226</flags>
+      <flags>2</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
-    <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="13100">
-      <description/>
-    </exit>
-    <exit direction="east" keyword="" exitinfo="0" keynum="0" toroom="32603">
-      <description/>
-    </exit>
-    <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="66">
-      <description/>
-    </exit>
-    <exit direction="west" keyword="" exitinfo="0" keynum="0" toroom="32619">
-      <description/>
-    </exit>
-    <exit direction="down" keyword="" exitinfo="0" keynum="0" toroom="10186">
-      <description/>
-    </exit>
   </room>
   <room>
-    <roombasic title="Deran&apos;s decorated office" vnum="10" zone="0">
+    <roombasic title="Deran's decorated office" vnum="10" zone="0">
       <roomdescription>You are inside a large office. The place is really
 fancy. It is decorated with the best hand made
 furniture and the most beautiful art objects you
-have ever seen. It&apos;s quite obvious that a lot of hard
+have ever seen. It's quite obvious that a lot of hard
 work was put here , to make this place so comfertable
 and nice looking.
 </roomdescription>
       <flags>10</flags>
-      <sector>Forest</sector>
+      <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
     <exit direction="east" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="12">
@@ -204,6 +181,10 @@ and nice looking.
     <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="32603">
       <description/>
     </exit>
+    <exit direction="west" keyword="" exitinfo="0" keynum="-1" toroom="11889">
+      <description>You see nothing special.
+</description>
+    </exit>
     <exit direction="down" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="29906">
       <description>&lt;NONE&gt;</description>
     </exit>
@@ -212,24 +193,37 @@ and nice looking.
     </exit>
   </room>
   <room>
-    <roombasic title="A Empty Immortal Room" vnum="11" zone="0">
-      <roomdescription>\c00</roomdescription>
-      <flags>14</flags>
+    <roombasic title="Valios' Quiet Retreat" vnum="11" zone="0">
+      <roomdescription> A large, &amp;cs&amp;nh&amp;ci&amp;nm&amp;cm&amp;ne&amp;cr&amp;ni&amp;cn&amp;ng&amp;n &amp;Blake&amp;n stands to be the centerpiece of this &amp;mmajestic&amp;n and beautiful area, the &amp;Bw&amp;Ca&amp;Bt&amp;Ce&amp;Br&amp;n proudly reflecting a &amp;Ysun&amp;n that seems to be permanently locked at &amp;yt&amp;rw&amp;yi&amp;rl&amp;yi&amp;rg&amp;yh&amp;rt&amp;n.  The surface of the lake is smooth and unmarred, like that of &amp;cglass&amp;n, for it seems that no &amp;Wf&amp;ni&amp;Ws&amp;nh swim in the water, no &amp;ga&amp;yl&amp;gg&amp;ya&amp;ge&amp;n grows on the surface, not even &amp;ydirt&amp;n to make it murky.  Around the entire circumference of the &amp;Blake&amp;n, small &amp;Wwhite&amp;n stones, all indentical to one another, have been placed, an official marker to where the water ends and the land begins.  Just on the other side of the stones from the water, grass &amp;Ggreener&amp;n than is surely possible covers the land like a blanket, the &amp;ggreen&amp;n cushion broken only by &amp;Rw&amp;Yi&amp;Bl&amp;Rd&amp;Yf&amp;Bl&amp;Ro&amp;Yw&amp;Be&amp;Rr&amp;Ys&amp;n of all the colors of the &amp;Rr&amp;ya&amp;Yi&amp;Gn&amp;Bb&amp;mo&amp;Mw&amp;n and more.  Farther away from the &amp;Blake&amp;n, the ground slopes up and away, going on for what seems like forever, nothing but &amp;ggrass&amp;n and &amp;Rf&amp;Yl&amp;Bo&amp;Rw&amp;Ye&amp;Br&amp;Rs&amp;n in every direction for as far as the eye can see.  An elegant bench of pure &amp;Wivory&amp;n is the only piece of furniture in this whole place, gilted with pure &amp;Ygold&amp;n and padded with &amp;rred&amp;n velvet cushions.  &amp;RR&amp;ro&amp;Rs&amp;re&amp;Rs&amp;n are carved into the hard bench all along the side, so intricately done that it seems as though the bench &amp;Gg&amp;gr&amp;Go&amp;gw&amp;Gs&amp;n right out of the ground.
+</roomdescription>
+      <flags>1682</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
   </room>
   <room>
-    <roombasic title="&amp;kA room with a good, honest, mature room title.&amp;n" vnum="12" zone="0">
-      <roomdescription>Welcome to a land of &amp;Mf&amp;ml&amp;Mu&amp;mf&amp;Mf&amp;n and cozyness, of plump pillows and &amp;Yc&amp;yu&amp;Yd&amp;yd&amp;Yl&amp;yy &amp;Mb&amp;Wu&amp;Mn&amp;Wn&amp;My&amp;n
-teddies.  There aren&apos;t walls, floors or ceilings, no windows or doors
-(although there are suspicious breaks in the mass of &amp;Mc&amp;wu&amp;Wt&amp;we&amp;Mn&amp;me&amp;Ws&amp;Ms&amp;n that suggest
-there&apos;s a way to escape), and indeed spatial awareness for now is
-suspended, gravity put on hold and realism banished.  Strangest of all,
-this place is never &amp;Ws&amp;wi&amp;Kl&amp;we&amp;Wn&amp;wt&amp;n - there&apos;s always music, &amp;Wb&amp;Yr&amp;Wi&amp;Yg&amp;Wh&amp;Wt&amp;n, &amp;Kd&amp;ka&amp;Kr&amp;kk&amp;n, &amp;Rc&amp;Yh&amp;We&amp;Ye&amp;Mr&amp;Cy&amp;n or
-&amp;Bd&amp;be&amp;ms&amp;cp&amp;Ko&amp;mn&amp;bd&amp;Ke&amp;cn&amp;mt&amp;n, &amp;Gg&amp;gu&amp;ci&amp;gt&amp;ca&amp;Gr&amp;cs&amp;n and drums and teenagers whining about &amp;Rl&amp;ro&amp;Rv&amp;re&amp;n, strange,
-alien beats or simple haunting melody&apos;s.  Sometimes you can even hear the
-words..  If you listen closely enough.    
+    <roombasic title="" vnum="12" zone="0">
+      <roomdescription>&amp;kMurky shadows conceal this heavenly abode when its owner isn't present,
+revealing only an iridescent platform of &amp;Ws&amp;Ki&amp;Wl&amp;Kv&amp;We&amp;Kr&amp;Wy &amp;yg&amp;Yo&amp;Wl&amp;yd&amp;k light and a few
+comfortable looking leather chairs.  No grand gesture or biblical &quot;&amp;clet
+there be light&amp;k&quot; is required to bring about change however, for upon her
+entry the ethereal Residence of God is bathed in &amp;Ws&amp;wh&amp;Wi&amp;wm&amp;Wm&amp;we&amp;Wr&amp;wi&amp;Wn&amp;wg &amp;Wr&amp;Ca&amp;Wd&amp;wi&amp;Wa&amp;Cn&amp;Wc&amp;we&amp;k, its
+outer perimeter illuminated to reveal not walls, but all the &amp;ks&amp;wt&amp;ka&amp;wr&amp;kr&amp;wy
+&amp;kh&amp;we&amp;ka&amp;wv&amp;ke&amp;wn&amp;ks&amp;k.  Below, visible through the swirling &amp;Km&amp;wi&amp;Ks&amp;wt&amp;W-&amp;wl&amp;Ki&amp;wk&amp;Ke&amp;k substance that
+forms the floor, the land is spread out like a board game awaiting
+players..  Yet this board itself is alive, the restless trees blowing in
+the breeze, the seas pounding against the shoreline with the distant,
+lulling roar of the ocean.  Antlike, the people of the land continue on
+about there daily chores, unaware of the brooding deity who spends the
+majority of her time perched on the largest of the leather chairs.  There
+are a few other items often scattered around the area as if to add a
+little characterising homeliness - or simply due to general untidiness - a
+few odd looking devices of twisted &amp;rmu&amp;ylt&amp;gic&amp;bol&amp;rou&amp;yre&amp;gd &amp;Mmu&amp;Rlt&amp;mif&amp;ra&amp;mc&amp;Ret&amp;Med&amp;k materials,
+with no visible purpose.  A fleecy &amp;bblue&amp;k blanket is crumpled up on the
+largest of the chairs, and near it's right armrest stands an oddly
+incongruous gate-post, to which is attached a small tawny she-goat.  From
+this odd vantage God keeps her weary vigil, hurls the fiery lightening
+bolts of her discontent, and rewards the bulging ranks of her faithful.  &amp;n
 </roomdescription>
       <flags>9302</flags>
       <sector>Inside</sector>
@@ -247,79 +241,80 @@ words..  If you listen closely enough.
       <description>You see nothing special.
 </description>
     </exit>
-    <exit direction="down" keyword="" exitinfo="0" keynum="-1" toroom="29906">
-      <description>You see nothing special.
-</description>
-    </exit>
     <exdesc keyword="guitar">
       <description>I cannot take this anymore 
-I&apos;m saying everything I&apos;ve said before 
+I'm saying everything I've said before 
 All these words they make no sense 
 I find bliss in ignorance 
-Less I hear the less you&apos;ll say 
-But you&apos;ll find that out anyway 
+Less I hear the less you'll say 
+But you'll find that out anyway 
 Everything you say to me 
 Takes me one step closer to the &amp;We&amp;Md&amp;Wg&amp;Me&amp;n 
-And I&apos;m about to break 
+And I'm about to break 
 I need a little room to breathe 
-Cause I&apos;m one step closer to the edge 
-And I&apos;m about to break
+Cause I'm one step closer to the edge 
+And I'm about to break
 </description>
     </exdesc>
     <exdesc keyword="despondant">
       <description>&amp;KScrew that, forget about that
-I don&apos;t wana think about anything like that.
+I don't wana think about anything like that.
 Screw that, forget about that
-I don&apos;t wana know about anything like that.
-I&apos;ve got nothing to do, but hang around and get screwed up on you.
-I&apos;ve got nothing to do, but hang around and get screwed up on you.
+I don't wana know about anything like that.
+I've got nothing to do, but hang around and get screwed up on you.
+I've got nothing to do, but hang around and get screwed up on you.
 </description>
     </exdesc>
     <exdesc keyword="dark">
-      <description>The ashtray&apos;s full and I&apos;m spillin&apos; my guts
+      <description>The ashtray's full and I'm spillin' my guts
 She wants to know am I still a slut
-I&apos;ve got to take it on the otherside
-&amp;rS&amp;Kc&amp;Ra&amp;Kr&amp;Rl&amp;re&amp;Kt &amp;rs&amp;Rt&amp;ra&amp;Rr&amp;rl&amp;Re&amp;rt&amp;n and she&apos;s in my bed
+I've got to take it on the otherside
+&amp;rS&amp;Kc&amp;Ra&amp;Kr&amp;Rl&amp;re&amp;Kt &amp;rs&amp;Rt&amp;ra&amp;Rr&amp;rl&amp;Re&amp;rt&amp;n and she's in my bed
 A candidate for my &amp;Ws&amp;wo&amp;Wu&amp;wl &amp;Km&amp;wa&amp;Kt&amp;we &amp;rb&amp;Rl&amp;re&amp;Rd&amp;n
 Push the trigger and pull the thread
-I&apos;ve got to take it on the otherside
+I've got to take it on the otherside
 Take it on the otherside
 </description>
     </exdesc>
     <exdesc keyword="love">
-      <description>On my own, pretending he&apos;s beside me.  On my own, I talk with him till
+      <description>On my own, pretending he's beside me.  On my own, I talk with him till
 morning.  Without him, I feel his arms around me, and when I loose my way
 I close my eyes and he has found me.  In the &amp;cr&amp;ba&amp;ci&amp;bn&amp;n, the &amp;Wp&amp;wa&amp;Wi&amp;wn&amp;n it &amp;Ws&amp;wh&amp;Wi&amp;wn&amp;We&amp;ws&amp;n like
 &amp;Ws&amp;wi&amp;Wl&amp;wv&amp;We&amp;wr&amp;n.  Harbour lights, go misty in the river.  In the darkness, the
-tree&apos;s are full of &amp;Ws&amp;wt&amp;Wa&amp;Wr&amp;wl&amp;Wi&amp;wg&amp;Wh&amp;wt&amp;n, and all I see is him and me forever and
+tree's are full of &amp;Ws&amp;wt&amp;Wa&amp;Wr&amp;wl&amp;Wi&amp;wg&amp;Wh&amp;wt&amp;n, and all I see is him and me forever and
 forever.    
 </description>
     </exdesc>
+    <dgscript vnum="11812"/>
   </room>
   <room>
-    <roombasic title="Daylan&apos;s Quarters" vnum="13" zone="0">
-      <roomdescription>This sparsely-furnished room gives the appearance of constant occupancy. 
-On the north end of the wide rectangular space the room is dominated by a
-polished \c01r\c23o\c01s\c23e\c01w\c23o\c01o\c23d\c00 table, its broad surface supported by elegantly carved
-legs and strewn with all manner of reports, maps, books, treaties, and,
-at one corner, a \c06g\c13l\c03o\c13b\c06e\c00. The only clear area is directly in front of the
-large, comfortable-looking \c23chair\c00 that rests between the desk and the north
-wall. A door is swung open behind the desk, and you can see a small bedroom
-on the other side of it, tidy but cramped. Along the west wall is a row of
-\c03bookshelves\c00. Although several shelves bear trinkets and souvenirs from 
-distant lands, there are still volumes on a variety of subjects. The east
-wall is taken up with a row of tall \c13w\c06i\c14n\c00d\c14o\c06w\c13s\c00 that look out upon the lands
-that make up Randland, and a set of \c03f\c14renc\c03h d\c14oor\c03s\c00, the doors have been left
-open to allow a \c13b\c06reez\c13e\c00 to blow through. The southern portion of the room 
-is made to feel like a separate space, with a large cozy rug covering the
-floor. Five large \c23chairs\c00 surround a low table stacked with books, and each
-chair is accompanied by an end table and fronted by a footstool. On each of
-the end tables sits a \c23w\c14r\c00o\c14u\c00g\c14h\c23t\c00-\c23i\c14r\c00o\c23n l\c14a\c00n\c14t\c00e\c14r\c23n\c00 that casts a soft shadow across
-the rest of the room and allows someone enough light to sit and read a book.
-In the corner is an ornate, \c23w\c14r\c00o\c14u\c00g\c14h\c23t\c00-\c23i\c14r\c00o\c23n\c00 spiral stair case that leads down
-into the world.
+    <roombasic title="&amp;wBeneath the &amp;WI&amp;Cr&amp;cr&amp;Bi&amp;bd&amp;We&amp;Cs&amp;cc&amp;Be&amp;bn&amp;Wt&amp;n Willow&amp;n" vnum="13" zone="0">
+      <roomdescription>
+You suddenly find yourself bathed in &amp;wwh&amp;Wit&amp;ce-&amp;Bbl&amp;bue&amp;n light, flashing reflections
+of the sunlight dancing from the leaves of an unusual willow tree that you
+stand beneath. It's &amp;Ws&amp;wi&amp;Wl&amp;wv&amp;We&amp;wr&amp;n trunk reaches into the heavens with singular
+grandeur, bearing the thick masses of branches that hold those sparkling,
+soothing leaves. They can almost be seen through, and they are small and
+delicate on their own, yet together they create a magnificent array of
+illumination and make this area altogether haunting to dwell within.
+Nestled among the roots that break the uneven ground, there sits a large
+and comfortable-looking couch draped in &amp;Kblack velvet&amp;n, though how such a
+luxury could survive under the bare elements is unclear. The tree itself
+is surrounded by strange &amp;Yg&amp;yolde&amp;Yn&amp;n walls, some distance away, all bearing the
+windows and towers and bridges of an intricately woven living space. Who
+lives there is anyone's best guess, since the perimeter of the tree seems
+to be the only inhabited place. A beautiful bar rests, fully stocked, along
+one wall and beside it, there is a floor lamp topped with a lovely &amp;rc&amp;Yo&amp;gl&amp;co&amp;Br&amp;be&amp;md&amp;n
+&amp;rg&amp;Yl&amp;ga&amp;cs&amp;Bs&amp;n shade. The wall opposite boasts a beautiful tumbling of water down
+it's golden surface, sending the sounds and mists of it's passing into
+the air. A ways away from it, hovering in mid-air, there is an antique
+wooden music box, subtly yet intricately engraved. The last immediately
+noticeable feature of this place is a pair of weapons, also suspended -
+a longsword and a spear, both of ancient but quality craftsmanship.
+The spirits here seem to hold a number of secrets... some suggested
+at, and some barely recognizeable at all.
 </roomdescription>
-      <flags>1034</flags>
+      <flags>1098</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
@@ -329,10 +324,10 @@ into the world.
       <roomdescription>I dream of rain, I dream of gardens in the desert sand.
 I wake in vain, I dream of love as time runs through my hand.
 I dream of fire, those dreams that tie two hearts that will never die.
-And near the flames, the shadows play in the shape of the man&apos;s desire.
+And near the flames, the shadows play in the shape of the man's desire.
 
 And now she turns, this way she moves in the logic of all my dreams.
-This fire burns, I realize that nothing&apos;s as it seems.
+This fire burns, I realize that nothing's as it seems.
 I dreamm of rain, I lift my gaze to empty skies above.
 I close my eyes, the rare perfume is the sweet intoxication of love.
 
@@ -354,7 +349,7 @@ that keeps pressing on from the sea. Large foaming waves crash onto
 the shore and almost seem to threaten to reach you and drive you 
 into the cold waters.
 </roomdescription>
-      <flags>0</flags>
+      <flags>10370</flags>
       <sector>Hills</sector>
       <special>NONE</special>
     </roombasic>
@@ -374,7 +369,7 @@ above sea level, the waves more often than not passing right over
 it when the seas go high. Not a scrap of green shows on these
 craggy little heaps of sharp, wet stone.
 </roomdescription>
-      <flags>0</flags>
+      <flags>10370</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
@@ -397,7 +392,7 @@ have sought shelter here until aid or death comes.
 A few at least moderately dry planks and what looks like pieces of
 a barrel have been stowed away in case others come upon the same spot.
 </roomdescription>
-      <flags>0</flags>
+      <flags>10370</flags>
       <sector>Hills</sector>
       <special>NONE</special>
     </roombasic>
@@ -415,7 +410,7 @@ Nothing can ever hope to survive for long on this bare piece of
 rock. Only the lone, piercing cries of a seagull break the 
 monotonous sound of waves crashing in.
 </roomdescription>
-      <flags>0</flags>
+      <flags>10370</flags>
       <sector>Hills</sector>
       <special>NONE</special>
     </roombasic>
@@ -434,7 +429,7 @@ idea where the nearest piece of land can be. Nothing at all
 except for a few lonely seagulls nests who somehow manage to survive
 here.
 </roomdescription>
-      <flags>0</flags>
+      <flags>10370</flags>
       <sector>Hills</sector>
       <special>NONE</special>
     </roombasic>
@@ -454,7 +449,7 @@ here.
 made out of a pile of rocks. On top lies a small cross made out
 of bleached wood, held together with worn string.
 </roomdescription>
-      <flags>262144</flags>
+      <flags>272514</flags>
       <sector>Hills</sector>
       <special>NONE</special>
     </roombasic>
@@ -466,15 +461,52 @@ of bleached wood, held together with worn string.
     </exit>
   </room>
   <room>
-    <roombasic title="A Empty Immortal Room" vnum="21" zone="0">
-      <roomdescription>\c00</roomdescription>
-      <flags>1602</flags>
+    <roombasic title="&amp;bDeanna's Porch&amp;n" vnum="21" zone="0">
+      <roomdescription>\c00Sheer, &amp;wwhite&amp;n curtains blow in the slight breeze that creeps through
+the partially open window behind the &amp;ywooden porch swing&amp;n. An &amp;givy&amp;n-
+covered trellis running along the side of the porch nearly conceals the
+&amp;yrocking chair&amp;n in the corner, the steady creaking noise keeping time
+as it moves back and forth. A small &amp;ytable&amp;n sits next to the chair,
+a tall pitcher of &amp;Ylemonade&amp;n, ice cubes clinking softly, serves as a
+centerpiece. Four empty glasses surround it, just waiting to be filled.
+Two &amp;yplants&amp;n dangle on either side of the heavy, oak front door, which
+remains open, though the screen door is closed to prevent insects from
+entering. A soft tinkle of &amp;yclassical music&amp;n can be heard from within.
+</roomdescription>
+      <flags>1626</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
+    <exdesc keyword="swing">
+      <description>Constructed using Western Red Cedar, this wooden porch swing features
+a finely sanded finish, and fully routed edges. Engraved in the back
+is an intricate flower pattern, and the blue cushion on the seat of the
+swing is accompanied by two small matching pillows.
+</description>
+    </exdesc>
+    <exdesc keyword="rocking chair">
+      <description>The rocking chair is stained Black Walnut, with a deep color that does
+a great job of accenting the wood grain. Sturdy and durable, the chair
+features six curved slats for the seat, and eight for the back. It 
+measures large enough to seat a full-grown adult.
+</description>
+    </exdesc>
+    <exdesc keyword="plants">
+      <description>Two ivy plants hang on either side of the door, each planted in a light
+green plastic pot. The plants looks healthy, though the dirt is a little
+dry - they could both use a good watering. They're fastened securely,
+barely moving in the slight breeze.
+</description>
+    </exdesc>
+    <exdesc keyword="classical music">
+      <description>The twangy sounds of a classical guitar drift outside from deeper within,
+a fast, upbeat, flamenco. Musical enthusiasts would recognize it as
+&amp;bRondo in A Minor&amp;n &amp;yperformed by &amp;bDionisio Aguado&amp;n.
+</description>
+    </exdesc>
   </room>
   <room>
-    <roombasic title="&amp;nBrannock&apos;s Coding Spot" vnum="22" zone="0">
+    <roombasic title="&amp;nBrannock's Coding Spot" vnum="22" zone="0">
       <roomdescription>As you enter this room, a sudden ease seeps into your bones.  You look
 around the room and see stacks of books, coding manuals, reference material.
 
@@ -488,7 +520,7 @@ around the room and see stacks of books, coding manuals, reference material.
     </exit>
   </room>
   <room>
-    <roombasic title="Faust&apos;s Domain" vnum="23" zone="0">
+    <roombasic title="Faust's Domain" vnum="23" zone="0">
       <roomdescription>A &amp;yworm&amp;n within the &amp;rrose&amp;n
 
 A &amp;rrose&amp;n, but one, none other &amp;rrose&amp;n had I,
@@ -510,8 +542,7 @@ He dies who loves it,--if the &amp;yworm&amp;n be there.
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
-    <exit direction="east" keyword="Not set yet...
-" exitinfo="0" keynum="0" toroom="25">
+    <exit direction="east" keyword="Not set yet... " exitinfo="0" keynum="0" toroom="25">
       <description>None
 </description>
     </exit>
@@ -527,7 +558,7 @@ He dies who loves it,--if the &amp;yworm&amp;n be there.
       <roomdescription>\c00Lush green grass grows as far as the eye can see. Wildflowers bloom all
 across this field. In the middle of the field sits an overturned cardboard
 microwave box, behind it a small chair. The box, written on in a child-like
-script reads simply, &apos;Swift Kick In The Butt $1.00&apos;. 
+script reads simply, 'Swift Kick In The Butt $1.00'. 
 </roomdescription>
       <flags>1566</flags>
       <sector>Inside</sector>
@@ -538,61 +569,62 @@ script reads simply, &apos;Swift Kick In The Butt $1.00&apos;.
     </exit>
   </room>
   <room>
-    <roombasic title="&amp;cBrianna&apos;s Bath House&amp;n" vnum="25" zone="0">
-      <roomdescription>Steam rises from the large jacuzzi in the center of the room.  The water laps
-gently at the edges of the porcelain tub, occasionally spilling over onto the
-floor.  The floor is a beautiful maze pattern, the tiles crafted of delicate
-&amp;Bb&amp;bl&amp;Bu&amp;be&amp;Bs&amp;n and &amp;Gg&amp;gr&amp;Ge&amp;ge&amp;Gn&amp;gs&amp;n, and &amp;Rr&amp;re&amp;Rd&amp;rs&amp;n.  Overstuffed couches and easychairs line the walls
-of the room, providing a place to sit and relax between baths.  Set in one
-corner of the room, though, is a king-sized bed, with fluffy cushions and
-pillows all over it.    
-</roomdescription>
-      <flags>526</flags>
-      <sector>Inside</sector>
-      <special>NONE</special>
-    </roombasic>
-    <exit direction="north" keyword="Not set yet...
-" exitinfo="0" keynum="0" toroom="70">
-      <description>None
-</description>
-    </exit>
-    <exit direction="east" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="24">
-      <description>&lt;NONE&gt;</description>
-    </exit>
-    <exit direction="west" keyword="Not set yet...
-" exitinfo="0" keynum="0" toroom="23">
-      <description>None
-</description>
-    </exit>
-  </room>
-  <room>
-    <roombasic title="Masema&apos;s Palette" vnum="26" zone="0">
+    <roombasic title="&amp;KL'espirit d'escalier&amp;n" vnum="25" zone="0">
       <roomdescription>
 
 
 
 
-&amp;w             &amp;n&amp;wAn empty canvas..... &amp;n
+
+
+&quot;The Spirit of the Stairway.  I don't think we have a word for it in
+english.
+
+&amp;g            &amp;nIt means, well, the clever things to say that you only think to
+&amp;g            &amp;nyourself when you're on the way out.
+
+&amp;g                          &amp;nAll the cool stuff you wish you'd said at the time.&quot;
+
+
+
 
 
 
 
 
 </roomdescription>
-      <flags>1614</flags>
+      <flags>1562</flags>
       <sector>Inside</sector>
-      <special>Pigeon</special>
+      <special>NONE</special>
     </roombasic>
-    <exit direction="north" keyword="door" exitinfo="31" keynum="18109" toroom="87">
-      <description/>
-    </exit>
-    <exit direction="south" keyword="door" exitinfo="31" keynum="18109" toroom="92">
-      <description>None
-</description>
-    </exit>
   </room>
   <room>
-    <roombasic title="Cappen&apos;s Lair" vnum="27" zone="0">
+    <roombasic title="An unused room" vnum="26" zone="0">
+      <roomdescription>An empty buffer...Hmm...A SBS-error perhaps?
+</roomdescription>
+      <flags>1102</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exdesc keyword="fragile">
+      <description>&amp;wSometimes it feels it would be better for us all
+If I ceased to exist or was never born at all
+
+Sometimes it feels it would be easier to fall
+than to flutter in the air with these wings so weak and torn&amp;n
+</description>
+    </exdesc>
+    <exdesc keyword="">
+      <description>An empty buffer...Hmm...A SBS-error perhaps?
+</description>
+    </exdesc>
+    <exdesc keyword="">
+      <description>An empty buffer...Hmm...A SBS-error perhaps?
+</description>
+    </exdesc>
+  </room>
+  <room>
+    <roombasic title="Cappen's Lair" vnum="27" zone="0">
       <roomdescription>   You find yourself in a large cave that is surprisingly warm and dry.  
 A big, comfortable bed occupies the northwest corner and a small stand
 with a washbasin sits below a cracked mirror on the opposite wall.  A
@@ -602,7 +634,7 @@ onto the small ice chest next to it.  A large, colorful rug covers most of
 the southern part of the floor, scattered with lots of big pillows and
 even a couple of overstuffed armchairs.  At the far south end of the cave,
 a large entrance gives view to a countryside devastated by fires and
-explosions.  This is Cappen&apos;s home, the place where he comes to think,
+explosions.  This is Cappen's home, the place where he comes to think,
 relax, and, yes, vent.  Be at ease here.  As long as you are polite to the
 other guests, no harm will befall you . . .
 </roomdescription>
@@ -614,9 +646,16 @@ other guests, no harm will befall you . . .
       <description>You see nothing special.
 </description>
     </exit>
-    <exit direction="south" keyword="" exitinfo="0" keynum="-1" toroom="29906">
+    <exit direction="south" keyword="" exitinfo="0" keynum="-1" toroom="5194">
       <description>In the distance you see the OOC board.
 </description>
+    </exit>
+    <exit direction="up" keyword="secret" exitinfo="19" keynum="0" toroom="73">
+      <description>Something doesn't seem quite right about the ceiling.
+</description>
+    </exit>
+    <exit direction="down" keyword="" exitinfo="0" keynum="0" toroom="4076">
+      <description/>
     </exit>
     <exit direction="northwest" keyword="" exitinfo="0" keynum="-1" toroom="89">
       <description>You see nothing special.
@@ -629,7 +668,7 @@ A very disturbing reflection greets you. The crack cuts right across your neck.
     </exdesc>
   </room>
   <room>
-    <roombasic title="&amp;YH&amp;ya&amp;Yz&amp;ye&amp;Yl&amp;y&apos;&amp;Ys &amp;yH&amp;Yi&amp;yd&amp;Ye&amp;yo&amp;Yu&amp;yt&amp;n" vnum="28" zone="0">
+    <roombasic title="&amp;YH&amp;ya&amp;Yz&amp;ye&amp;Yl&amp;y'&amp;Ys &amp;yH&amp;Yi&amp;yd&amp;Ye&amp;yo&amp;Yu&amp;yt&amp;n" vnum="28" zone="0">
       <roomdescription>A faint scent of soap hangs in the air, and some wet spots can be seen
 on the ground.  Except for that, the room would have seemed neat and
 clean, and very empty, if not someone had spoiled it by scribbling
@@ -646,13 +685,13 @@ something on one of the walls:
     </exit>
   </room>
   <room>
-    <roombasic title="Cornelius and Ellaine&apos;s Room" vnum="29" zone="0">
+    <roombasic title="Esbjorn's and Ellaine's Tasteless Boudoir" vnum="29" zone="0">
       <roomdescription>
 &amp;KThe Despair Factor
 
 Along the path where the &amp;cs&amp;Ct&amp;cr&amp;Ce&amp;ca&amp;Cm&amp;K is talking,
 I breathe the &amp;wm&amp;Wi&amp;ws&amp;Wt&amp;K and continue walking.
-The &amp;yw&amp;Yo&amp;yo&amp;Yd&amp;K, it whispers in a language of it&apos;s own.
+The &amp;yw&amp;Yo&amp;yo&amp;Yd&amp;K, it whispers in a language of it's own.
 As a sigh escaped my &amp;rl&amp;Ri&amp;rp&amp;Rs&amp;K,
 I feel the light &amp;mc&amp;Ma&amp;mr&amp;Me&amp;ms&amp;Ms&amp;K of fingertips,
 That steal away the &amp;bb&amp;Br&amp;be&amp;Ba&amp;bt&amp;Bh&amp;K, and leave me on my own,
@@ -665,21 +704,21 @@ One....big...dark..room.
 Do I hear the &amp;kh&amp;Ka&amp;kl&amp;Kl&amp;ko&amp;Kw sound,
 Footsteps resounding on the &amp;Cf&amp;cr&amp;Co&amp;cz&amp;Ce&amp;cn&amp;K ground,
 or the &amp;Mc&amp;mo&amp;Mm&amp;mf&amp;Mo&amp;mr&amp;Mt&amp;K of knowing,
-I&apos;ll never be &amp;Gs&amp;ge&amp;Ge&amp;gn&amp;K when I fall.
+I'll never be &amp;Gs&amp;ge&amp;Ge&amp;gn&amp;K when I fall.
 I wait for just one &amp;Rt&amp;ro&amp;Ru&amp;rc&amp;Rh&amp;K...
 And I &amp;Yf&amp;ya&amp;Yl&amp;yl&amp;K...
 Weightless. &amp;BE&amp;bn&amp;Bd&amp;bl&amp;Be&amp;bs&amp;Bs&amp;K.
-Faithless, I&apos;ll &amp;Wa&amp;wd&amp;Wo&amp;wr&amp;We&amp;K you.
+Faithless, I'll &amp;Wa&amp;wd&amp;Wo&amp;wr&amp;We&amp;K you.
 
 A single touch before I fade.
 Painless let me pass through.
 &amp;n
 </roomdescription>
-      <flags>8265</flags>
+      <flags>73</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
-    <exit direction="up" keyword="Cornelius" exitinfo="19" keynum="0" toroom="19109">
+    <exit direction="up" keyword="Cornelius" exitinfo="19" keynum="0" toroom="10186">
       <description/>
     </exit>
   </room>
@@ -704,7 +743,7 @@ Painless let me pass through.
     <roombasic title="An Unfinished Room" vnum="32" zone="0">
       <roomdescription>You are in an unfinished room.
 </roomdescription>
-      <flags>8</flags>
+      <flags>10</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
@@ -713,7 +752,7 @@ Painless let me pass through.
     <roombasic title="Meeting room for the Grand Tournament Admins" vnum="33" zone="0">
       <roomdescription>You are in a large room. On the walls, many &amp;WWhite&amp;n, &amp;rRed&amp;n,
 &amp;GGreen&amp;n, and &amp;BBlue&amp;n tapstries, and everything in between, depict
-battles fought and won by many of DF&apos;s greatest emote fighters.
+battles fought and won by many of DF's greatest emote fighters.
 The room is dominated by the eloquently yet strong looking desk,
 the oaken chair before it rising nearly to the ceiling emanating
 both what seems tradition and homeishness at the same time.
@@ -724,11 +763,11 @@ both what seems tradition and homeishness at the same time.
     </roombasic>
   </room>
   <room>
-    <roombasic title="&amp;CDa&amp;cla&amp;Bkh&amp;bil&amp;B&apos;s &amp;cCa&amp;Cve&amp;n" vnum="34" zone="0">
+    <roombasic title="&amp;CDa&amp;cla&amp;Bkh&amp;bil&amp;B's &amp;cCa&amp;Cve&amp;n" vnum="34" zone="0">
       <roomdescription>&amp;gHidden behind the &amp;Krock &amp;goutside is up a passageway leading within the hill.
 &amp;gA short crawl space through a &amp;Kdark &amp;gpassage leads to a &amp;yf&amp;Ku&amp;yr &amp;gcurtain, which,
 &amp;gif moved aside, opens to a large room with the &amp;yh&amp;Gi&amp;yl&amp;Gl&amp;g. A shaft in the ceiling
-&amp;gof the room, covered over in sparse &amp;Gb&amp;gr&amp;Gu&amp;gs&amp;Gh&amp;g, light&apos;s the cave with &amp;Yd&amp;ya&amp;Yp&amp;yp&amp;Yl&amp;ye&amp;Yd
+&amp;gof the room, covered over in sparse &amp;Gb&amp;gr&amp;Gu&amp;gs&amp;Gh&amp;g, light's the cave with &amp;Yd&amp;ya&amp;Yp&amp;yp&amp;Yl&amp;ye&amp;Yd
 &amp;g&amp;yr&amp;Ya&amp;yy&amp;Ys &amp;yo&amp;Yf &amp;ys&amp;Yu&amp;yn&amp;Yl&amp;yi&amp;Yg&amp;yh&amp;Yt&amp;g, spinning and shifting as the wind above stirs the &amp;Gb&amp;gr&amp;Gu&amp;gs&amp;Gh&amp;g.
 &amp;gA small &amp;rf&amp;Yi&amp;Rr&amp;ye&amp;rp&amp;Yi&amp;yt&amp;g, lying directly under the skylight to draw out the &amp;Ksmoke&amp;g, 
 &amp;gis dug into the floor and lined with smooth &amp;Kstones&amp;g. A small &amp;rw&amp;yo&amp;ro&amp;yd&amp;re&amp;yn &amp;gspit is 
@@ -748,25 +787,34 @@ both what seems tradition and homeishness at the same time.
       <sector>Hills</sector>
       <special>NONE</special>
     </roombasic>
-    <exit direction="north" keyword="dalakhil door" exitinfo="1" keynum="-1" toroom="1092">
-      <description>A door into the House.
-</description>
-    </exit>
     <exit direction="down" keyword="" exitinfo="0" keynum="-1" toroom="10186">
       <description>You see nothing special.
 </description>
     </exit>
   </room>
   <room>
-    <roombasic title="A Empty Immortal Room" vnum="35" zone="0">
-      <roomdescription>\c00</roomdescription>
-      <flags>24</flags>
+    <roombasic title="&amp;MLyeshal's Lair&amp;n" vnum="35" zone="0">
+      <roomdescription>Flight
+
+four walls, a ceiling, a floor
+no windows, no skylight, no door
+trapped inside, no way out
+voices from within, without
+nowhere to turn, nowhere to run
+sitting alone, no moon or sun
+
+inside is as dark as the day
+outside is as bright as the night
+if only there could be a way
+to fly without taking flight
+</roomdescription>
+      <flags>26</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
   </room>
   <room>
-    <roombasic title="Asern&apos;s Room" vnum="36" zone="0">
+    <roombasic title="Asern's Room" vnum="36" zone="0">
       <roomdescription>You are in an unfinished room.
 </roomdescription>
       <flags>9738</flags>
@@ -778,15 +826,37 @@ both what seems tradition and homeishness at the same time.
     </exit>
   </room>
   <room>
-    <roombasic title="A Empty Immortal Room" vnum="37" zone="0">
-      <roomdescription>\c00</roomdescription>
-      <flags>9294</flags>
+    <roombasic title="Sergey's Room" vnum="37" zone="0">
+      <roomdescription>Playing for the bleachers now 
+Letting them beat you and showing them how 
+Dangling yourself from the cross 
+All out of nails, but here's your hammer, boss 
+And the Academy Award for ridiculous over-acting goes to you 
+So get on up there and give us a speech 
+
+Taking all the attention away 
+After your performance, there's no one left to nominate 
+Dangling yourself from the cross 
+All out of nails, but, uh, here's your hammer, boss 
+And the Academy Award for embarrassing melodrama goes to you 
+So get on up there and give us a speech
+
+Don't forget the little people 
+Who never were around 
+And the bigger ones who kept you down 
+Always knew you could do it...
+We always knew you could do it 
+</roomdescription>
+      <flags>1102</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
+    <exit direction="down" keyword="" exitinfo="0" keynum="0" toroom="10186">
+      <description/>
+    </exit>
   </room>
   <room>
-    <roombasic title="Nalkear&apos;s Forbidden Paradise" vnum="38" zone="0">
+    <roombasic title="Nalkear's Forbidden Paradise" vnum="38" zone="0">
       <roomdescription>Sorry but paradise does not exist, it was only a clever ploy to lure you into my domain
 </roomdescription>
       <flags>1090</flags>
@@ -806,78 +876,73 @@ both what seems tradition and homeishness at the same time.
     </roombasic>
   </room>
   <room>
-    <roombasic title="Brendon&apos;s study." vnum="40" zone="0">
-      <roomdescription>                         &amp;Y-&amp;y----&amp;Y{&amp;w------------&amp;n
-                      _______________________
-                     |\_____________________/|
-                     | |                   | |
-              O      | |  Brendon&apos;s Study  | |      O
-              I      | |                   | |      I 
-              I      | |___________________| |      I
-         *************************************************
-         *************************************************
-         |_____|_____|_____|_____|_____|_____|_____|_____|
-         |__|_____|_____|_____|_____|_____|_____|_____|__|
-         |_____|_____|_____|_____|_____|_____|_____|_____|
-         |__|_____|__| |                   | |__|_____|__|
-         |_____|_____| |        ()         | |_____|_____|
-         |__|_____|__| |       )()(        | |__|_____|__|
-         |_____|_____| |@   __)()()(__    @| |_____|_____|
-         |__|_____|__| |=| (__________)  |=| |__|_____|__|
-         |_____|_____| |=|===============|=| |_____|_____|
-
-
-Brendon&apos;s study is dimly lit by the soft flames which dance gently
-in the fireplace. Before the hearth, there is a soft deerskin throw
-rug spread out on the floor. There is just enough space to fit 
-two on it.
+    <roombasic title="&amp;KK&amp;ma&amp;kl&amp;Ke&amp;mn&amp;kt&amp;Kh&amp;ms &amp;kD&amp;Ko&amp;mo&amp;km&amp;n" vnum="40" zone="0">
+      <roomdescription>
+A form of subtle, perversely familiar &amp;kh&amp;mo&amp;Kr&amp;kr&amp;mo&amp;Kr&amp;n claws at my &amp;Kmind&amp;n.  
+Persistently, yet any attempts to flush it out into the cold &amp;Wl&amp;wi&amp;Wg&amp;wh&amp;Wt&amp;n of
+rational thought prove futile like all &amp;kfear&amp;n, it prefers to remain &amp;Kd&amp;ki&amp;Km&amp;n,
+shapeless at the edge of &amp;cc&amp;Wo&amp;Cn&amp;cs&amp;Wc&amp;Ci&amp;co&amp;Wu&amp;Cs&amp;cn&amp;We&amp;Cs&amp;cs&amp;n.  I feel I will never know &amp;ws&amp;Wl&amp;we&amp;We&amp;wp&amp;n
+again, nor do I wish to; For in &amp;ws&amp;Wl&amp;we&amp;We&amp;wp&amp;n there is &amp;Kd&amp;mr&amp;Ke&amp;ma&amp;Km&amp;mi&amp;Kn&amp;mg&amp;n.  The
+&amp;Kobsidian-black&amp;n shard lies before me, resembling a dead, unopened eye.  
+Its unearthly saw-edged contours a topological blasphemy my gaze dares not
+follow.  As the final elements draw themselves together, at last I will
+myself to embrace &amp;km&amp;wa&amp;Kd&amp;kn&amp;we&amp;Ks&amp;ks&amp;n, throwing myself into it's inexorable &amp;cc&amp;Cu&amp;cr&amp;Cr&amp;ce&amp;Cn&amp;ct&amp;n --
+No!  No, this cannot be!  Even as the last doubt leaves me, I feel no
+release, no abandon!  I know only &amp;kh&amp;mo&amp;Kr&amp;kr&amp;mo&amp;Kr&amp;k!  &amp;n The unnamable!  In this &amp;Kb&amp;kl&amp;Ka&amp;kc&amp;Kk&amp;n
+and utter &amp;kh&amp;Ko&amp;kp&amp;Ke&amp;kl&amp;Ke&amp;ks&amp;Ks&amp;kn&amp;Ke&amp;ks&amp;Ks&amp;n that only the damned can perceive, I am guided by
+sheer instinct!  I cry out before my &amp;kfear&amp;n finds words!    
 </roomdescription>
       <flags>1102</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
+    <exit direction="west" keyword="Mat" exitinfo="19" keynum="0" toroom="29">
+      <description/>
+    </exit>
+    <exit direction="down" keyword="" exitinfo="0" keynum="0" toroom="10186">
+      <description/>
+    </exit>
   </room>
   <room>
-    <roombasic title="Chris&apos;s Joint" vnum="41" zone="0">
-      <roomdescription>I&apos;m sure as you can imagine...
-It&apos;s as easy as can be
-The place was on the couch,
-The time was half-past three.
- 
-She whispered &quot;Will it hurt?&quot;
-&quot;Doctor, will it spoil my dress?&quot;
-He cried, &quot;My love don&apos;t worry!&quot;
-&quot;I&apos;ll try and avoid the mess!&quot;
- 
-&quot;Now calm yourself my dear,&quot;
-His voice destroyed his sin,
-&quot;Just open a little wider,&quot;
-&quot;And let me in.&quot;
- 
-It was getting rather painful,
-The tears were in her eyes,
-It was hurting quite a bit now,
-It must have been quite a size.
- 
-Suddenly he gave a jerk,
-The blood came rushing out.
-She screamed a little loud,
-She was glad he pulled it out.
- 
-Now if you listen carefully,
-Its a dentist couch you find.
-Its not what you imagine,
-Its just your dirty mind.
+    <roombasic title="Chris's Joint" vnum="41" zone="0">
+      <roomdescription>&lt;NOT A DESC&gt;
 </roomdescription>
-      <flags>1320926</flags>
+      <flags>264012</flags>
       <sector>In Flight</sector>
       <special>NONE</special>
     </roombasic>
-    <dgscript vnum="41"/>
+    <dgscript vnum="13197"/>
   </room>
   <room>
-    <roombasic title="A Empty Immortal Room" vnum="42" zone="0">
-      <roomdescription>\c00</roomdescription>
+    <roombasic title="Caembarin's Sanctuary" vnum="42" zone="0">
+      <roomdescription>\c00Spartan only begins to describe Caembarin's sanctuary. A small cot
+and an old table are the only pieces of furniture to rest upon the
+time-worn wooden floors. The simple, wooden walls and the white,
+plaster ceiling are bare, and one small window lets sunlight stream
+into the room. Upon the desk lie Caembarin's few belongings: an
+antique oil lamp, a quill pen, a sealed bottle of ink, and a
+parchment scroll upon which are written the following words:
+
+PROS RWMIOUS 5:8
+SUNISTHSIN DE THN hEAUTOU AGAPHN EIS hHMAS hO QEOS, hOTI
+ETI hAMARTWLWN ONTWN hHMWN XRISTOS hUPER hHMWN APEQANEN.
+
+IWANNOU A' 1:9
+EAN hOMOLOGWMEN TAS hAMARTIAS hHMWN, PISTOS ESTIN KAI
+DIKAIOS, hINA AFH hHMIN TAS hAMARTIAS KAI KAQARISH
+hHMAS APO PASHS ADIKIAS.
+
+IWANNOU A' 4:4
+hUMEIS EK TOU QEOU ESTE, TEKNIA, KAI NENIKHKATE AUTOUS,
+hOTI MEIZWN ESTIN hO EN hUMIN H hO EN TW KOSMW.
+
+PROS RWMIOUS 8:38-39
+PEPEISMAI GAR hOTI OUTE QANATOS OUTE ZWH OUTE ANGELOI
+OUTE ARXAI OUT ENESTWTA OUTE MELLONTA OUTE DUNAMEIS
+OUTE hUYWMA OUTE BATHOS OUTE TIS KTISIS hETERA
+DUNHSETAI hHMAS XWRISAI APO THS AGAPHS TOU QEOU THS
+EN XRISTW IHSOU TW KURIW hHMWN.
+</roomdescription>
       <flags>1050</flags>
       <sector>Inside</sector>
       <special>NONE</special>
@@ -914,9 +979,10 @@ a hint of sweat to touch your brow.
     </roombasic>
   </room>
   <room>
-    <roombasic title="A Empty Immortal Room" vnum="51" zone="0">
-      <roomdescription>\c00</roomdescription>
-      <flags>262658</flags>
+    <roombasic title="An empty room" vnum="51" zone="0">
+      <roomdescription>Just another empty room.  Move along.
+</roomdescription>
+      <flags>262146</flags>
       <sector>Underwater</sector>
       <special>NONE</special>
     </roombasic>
@@ -930,10 +996,11 @@ a hint of sweat to touch your brow.
     </roombasic>
   </room>
   <room>
-    <roombasic title="A Empty Immortal Room" vnum="53" zone="0">
-      <roomdescription>\c00</roomdescription>
-      <flags>0</flags>
-      <sector>Inside</sector>
+    <roombasic title="Paige's Farm" vnum="53" zone="0">
+      <roomdescription>A room in the middle of renovations.
+</roomdescription>
+      <flags>2</flags>
+      <sector>Forest</sector>
       <special>NONE</special>
     </roombasic>
   </room>
@@ -946,8 +1013,52 @@ a hint of sweat to touch your brow.
     </roombasic>
   </room>
   <room>
-    <roombasic title="Vacant Immortal Room" vnum="55" zone="0">
-      <roomdescription>\c00</roomdescription>
+    <roombasic title="Rustam's Study" vnum="55" zone="0">
+      <roomdescription>
+Whenever sang my songs,
+On this stage, on my own,
+Whenever said my  words wishing they would be heard,
+I saw you smiling at me,
+Was it real? or just my fantasy?
+You'd always be there in the corner, 
+Of this tiny little bar.
+
+My last night here for you,
+Same old songs just once more,
+My last night here with you?
+Maybe yes, maybe no.
+I kinda liked it your way, how you shyly placed your eyes on me,
+Did you ever know?
+That I had mine on you.
+
+Darling so there you are,
+With that look on your face,
+As if you were never hurt,
+As if you're never down,
+Shall I be the one for you?
+Who pinches tou softly but sure,
+If frown is shown then
+I will that you are no dreamer.
+
+So let me come to you,
+Close as I wanna be,
+Close enough for me, To feel your heart beating fast,
+And stay there and we whisper,
+How I loved your peaceful eyes on me,
+Did you ever know?
+That I had mine on you.
+
+Darling so share with me,
+Your love if you have enough,
+Or tears if you're are holding back,
+Or pain if that's what it is,
+How can I let you know?
+I'm more than the dress and the voice,
+Just reach me out then,
+You will know then,
+You will know that you are not dreaming.
+
+</roomdescription>
       <flags>10</flags>
       <sector>Inside</sector>
       <special>NONE</special>
@@ -984,10 +1095,30 @@ restingplaces.
     </roombasic>
   </room>
   <room>
+    <roombasic title="&amp;YV&amp;yelaseth's &amp;YL&amp;yocker&amp;n" vnum="61" zone="0">
+      <roomdescription>This is a small locker, approximately four feet in height, two in width,
+and three deep.  Crammed inside are all the things a person like Velaseth
+could need.  I am not going to describe what he needs.  Let's just say
+he's a sicko.    
+</roomdescription>
+      <flags>74</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="10186">
+      <description>The OVAL!!! It's there! Holy COW!
+</description>
+    </exit>
+    <exit direction="down" keyword="" exitinfo="0" keynum="0" toroom="7747">
+      <description>The Aiel Encampment is below you. Isn't that amazing?
+</description>
+    </exit>
+  </room>
+  <room>
     <roombasic title="Pollux place in the constellation." vnum="64" zone="0">
       <roomdescription>  This room is Pollux place in the constellation Orion. From here you can see Betelgeuse, Rigel, Bellatrix, Castor, and Altair.
 The room is tidy and well kept. No dirty corners here.
-  Are you waiting for Pollux, is he gonne? Just sit down, he&apos;ll be right back!
+  Are you waiting for Pollux, is he gonne? Just sit down, he'll be right back!
 </roomdescription>
       <flags>1090</flags>
       <sector>Inside</sector>
@@ -1022,15 +1153,36 @@ light of all lights.
     </roombasic>
   </room>
   <room>
-    <roombasic title="Khardan&apos;s Room" vnum="69" zone="0">
-      <roomdescription>\c00I&apos;ll enter a real description later, but for now.....
-Well I&apos;m sure everyone can guess why I picked this room.
+    <roombasic title="&amp;yA&amp;wn&amp;yg&amp;wu&amp;ya&amp;w'&amp;ys&amp;w Chamber of &amp;rHorrors&amp;n" vnum="67" zone="0">
+      <roomdescription>&amp;WIn what is probably spray paint manned by a relative uneducated hand,
+the words&amp;n &amp;R&quot;Darkfriends Rule, you Light Loon!&quot;&amp;n&amp;Wis scrawled in 4 foot
+high letters on one of the walls.&amp;n
 </roomdescription>
-      <flags>1032</flags>
+      <flags>1034</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
-    <exit direction="down" keyword="" exitinfo="0" keynum="0" toroom="10186">
+  </room>
+  <room>
+    <roombasic title="&amp;KRylna's Personal Study\c00" vnum="69" zone="0">
+      <roomdescription>\c00 Clutter makes this room look smaller than it actually is.  There are
+bookshelves that line the walls but they hold any number of objects,
+from books to loose sheets of paper to anything that was rumored to have
+any connection to the Power.  Books and loose sheets of paper, sometimes
+in leather folders sometimes not cover the bookshelves and spill onto
+one of the two chairs in the room. The chair that is not covered in
+papers sits in front of a large oak desk.  The desk seems to belong to 
+someone completly different than the rest of the room.  On the desk are
+two &amp;Wsnow white\c00 guantlets, a &amp;bdark blue candle\c00 which &amp;RF&amp;rl&amp;Ra&amp;rm&amp;Re\c00 never
+goes out, a book entitled &quot;&amp;KMen of &amp;RF&amp;ri&amp;Rr&amp;re\c00&quot;, and two &amp;yfolders containing yellowing\c00
+&amp;ypapers\c00 Above the desk is a small circular window that shows &amp;Wsnow\c00 being
+whipped around by the wind.
+</roomdescription>
+      <flags>1050</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="13100">
       <description/>
     </exit>
   </room>
@@ -1044,17 +1196,17 @@ Well I&apos;m sure everyone can guess why I picked this room.
     </roombasic>
   </room>
   <room>
-    <roombasic title="&amp;GB&amp;gr&amp;Ga&amp;gn&amp;Gn&amp;go&amp;Gc&amp;gk&amp;n&apos;&amp;Gs &amp;gT&amp;Gh&amp;gi&amp;Gn&amp;gk&amp;Gi&amp;gn&amp;Gg &amp;gS&amp;Gp&amp;go&amp;Gt&amp;n" vnum="71" zone="0">
+    <roombasic title="&amp;GB&amp;gr&amp;Ga&amp;gn&amp;Gn&amp;go&amp;Gc&amp;gk&amp;n'&amp;Gs &amp;gT&amp;Gh&amp;gi&amp;Gn&amp;gk&amp;Gi&amp;gn&amp;Gg &amp;gS&amp;Gp&amp;go&amp;Gt&amp;n" vnum="71" zone="0">
       <roomdescription>Standing here The old man said to me
 &quot;Long before these crowded streets Here stood my dreaming tree&quot;
 Below it he would sit For hours at a time
 Now progress takes away What forever took to find
-Now he&apos;s falling hard He feels the falling dark
+Now he's falling hard He feels the falling dark
 How he longs to be Beneath his dreaming tree
 Conquered fear to climb A moment froze in time
-When the girl who first he kissed Promised him she&apos;d be his
-Remebered mother&apos;s words There beneath the tree
-&quot;No matter what the world  You&apos;ll always be my baby&quot;
+When the girl who first he kissed Promised him she'd be his
+Remebered mother's words There beneath the tree
+&quot;No matter what the world  You'll always be my baby&quot;
 Mommy come quick  The dreaming tree has died
 Oh have you no pity This thing I do
 I do not deny it All through this smile
@@ -1062,20 +1214,20 @@ As crooked as danger I do not deny
 I know in my mind I would leave you now
 If I had the strength to I would leave you up
 To your own devices Will you not talk
-Can you take pity I don&apos;t ask much
-But won&apos;t you speak Please
+Can you take pity I don't ask much
+But won't you speak Please
 From the start She knew she had it made
-Easy up &apos;til then For sure she&apos;d make the grade 
+Easy up 'til then For sure she'd make the grade 
 Adorers came in hordes To lay down in her wake
 She gave it all she had But treasures slowly fade
-Now she&apos;s falling hard She feels the fall of dark
+Now she's falling hard She feels the fall of dark
 How did this fall apart She drinks to fill it up
 A smile of sweetest flowers Wilted so and soured
 Black tears stain the cheeks That once were so admired
-She thinks when she was small There on her father&apos;s knee
-How he had promised her &quot;You&apos;ll always be my baby&quot;
+She thinks when she was small There on her father's knee
+How he had promised her &quot;You'll always be my baby&quot;
 &quot;Daddy come quick The dreaming tree has died
-I can&apos;t find my way home There is no place to hide
+I can't find my way home There is no place to hide
 The dreaming tree has died&quot; Oh if I had the strength...
 Take me back Save me please
 </roomdescription>
@@ -1084,7 +1236,7 @@ Take me back Save me please
       <special>NONE</special>
     </roombasic>
     <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="91">
-      <description>&amp;RV&amp;ralkeria and &amp;RM&amp;rrachek&apos;s &amp;RR&amp;room&amp;n
+      <description>&amp;RV&amp;ralkeria and &amp;RM&amp;rrachek's &amp;RR&amp;room&amp;n
 </description>
     </exit>
     <exit direction="down" keyword="" exitinfo="0" keynum="0" toroom="22">
@@ -1098,13 +1250,13 @@ Take me back Save me please
       <description>
 *            _____   _____
 *           /     \ /     \
-*      ,   |       &apos;       |
+*      ,   |       '       |
 *      I __L________       L__
 * O====IE__________/     ./___&gt;
 *      I      \.       ./
 *      `        \.   ./
 *                 \ /
-*                  &apos;
+*                  '
 
 </description>
     </exdesc>
@@ -1116,83 +1268,294 @@ with the universe.
     </exdesc>
   </room>
   <room>
-    <roombasic title="A Empty Immortal Room" vnum="72" zone="0">
-      <roomdescription>\c00</roomdescription>
-      <flags>1682</flags>
-      <sector>Inside</sector>
-      <special>NONE</special>
-    </roombasic>
-  </room>
-  <room>
-    <roombasic title="Chirion&apos;s Place?" vnum="74" zone="0">
-      <roomdescription>&amp;W&quot;&amp;KYou can only live once, but if you do it right, once is enough.&amp;W&quot;&amp;n
-&amp;W&quot;&amp;KDon&apos;t take life so serious, son, it ain&apos;t nohow permanent.&amp;W&quot;&amp;n
-&amp;W&quot;&amp;KWe can predict everything, except the future.&amp;W&quot;&amp;n
-&amp;W&quot;&amp;KWhen the going gets tough, the tough get empirical&amp;W&quot;&amp;n
-&amp;W&quot;&amp;KLife is like a buffet; it&apos;s not good but there&apos;s plenty of it.&amp;W&quot;&amp;n
-&amp;W&quot;&amp;KI don&apos;t have any solution but I certainly admire the problem.&amp;W&quot;&amp;n
-&amp;W&quot;&amp;KI guess it&apos;s wrong always to be worrying about tomorrow.  Maybe we should think only about today.&amp;W&quot;&amp;n
-&amp;W&quot;&amp;KHard work may not kill you, but why take chances?&amp;W&quot;&amp;n
-&amp;W&quot;&amp;KWhenever you find that you are on the side of the majority, it is time to reform.&amp;W&quot;&amp;n
+    <roombasic title="Tiekith's Caternarian Phrontistery" vnum="72" zone="0">
+      <roomdescription>This is the &amp;Knight&amp;n,
+This is the &amp;bso&amp;Bu&amp;bnd&amp;n,
+Here comes the &amp;yw&amp;ra&amp;yr&amp;rm &amp;Kmachine&amp;n,
+Such a &amp;yw&amp;ra&amp;yr&amp;rm &amp;Kmachine&amp;n,
+This is the &amp;YLife&amp;n,
+This is the &amp;ggr&amp;you&amp;gnd&amp;n,
+Here comes the &amp;yw&amp;ra&amp;yr&amp;rm &amp;Kmachine&amp;n,
+Such a &amp;yw&amp;ra&amp;yr&amp;rm &amp;Kmachine&amp;n.
 </roomdescription>
-      <flags>222</flags>
+      <flags>9240</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
-    <exit direction="down" keyword="trapdoor" exitinfo="3" keynum="0" toroom="3622">
+    <exit direction="up" keyword="door" exitinfo="19" keynum="0" toroom="25000">
       <description/>
     </exit>
   </room>
   <room>
-    <roombasic title="A Empty Immortal Room" vnum="75" zone="0">
-      <roomdescription>\c00</roomdescription>
-      <flags>271582</flags>
-      <sector>Forest</sector>
-      <special>Hospital</special>
+    <roombasic title="Inside an Opera" vnum="73" zone="0">
+      <roomdescription>The walls of this room are a dingy white, the sheets of paper that cover
+them yellow with age.  There are splotches of color, a mixture of music
+notes and words.  Each page seems a different song, a different setting, a
+different sentiment.  Acting as a shrine to all things emotional and all
+things beautiful, each seems to tell a story that has found life from
+hope.  Over the table are sketches and notes, not lyrics but bundles of
+envelopes from letters long ago forgotten.  Music plays in the background,
+changing often in style and beat.    
+</roomdescription>
+      <flags>1101</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
     </roombasic>
+    <exdesc keyword="sign">
+      <description>To read the sheets of music, the following are keywords:
+
+Peace
+Toad
+Dolls
+Flatts, 1flatts, 2flatts, 3flatts
+</description>
+    </exdesc>
+    <exdesc keyword="3flatts">
+      <description>&amp;wI sold what I could and packed what I couldn't, &amp;Kstopped to fill up on my
+way out of town, &amp;wI've loved like I should, &amp;Kbut lived like I shouldn't, &amp;wI
+had to lose everything to find out, &amp;Kmaybe forgiveness will find me
+somewhere down the road, &amp;wI'm moving on..  &amp;n
+
+&amp;KI'm moving on..&amp;n
+
+&amp;wI'm moving on..&amp;n
+</description>
+    </exdesc>
+    <exdesc keyword="2flatts">
+      <description>&amp;KI'm moving on, at last I can see, &amp;wlife has been patiently waiting for me,
+&amp;Kand I know there's no guarantees, &amp;wbut I'm not alone, &amp;Kthere comes a time in
+everyone's life, &amp;wwhen all you can see are the years passing by, &amp;Kand I have
+made up my mind that those days are gone&amp;n
+
+&amp;wI'm moving on..&amp;n
+</description>
+    </exdesc>
+    <exdesc keyword="1flatts">
+      <description>&amp;wI've lived in this place and I know all the faces, &amp;Keach one is different
+but they're always the same, &amp;wthey mean me no harm, &amp;Kbut it's time that I
+face it, &amp;wthey will never allow me to change, &amp;Kbut I never dreamed that home
+would end up where I don't belong, &amp;wI'm moving on..  &amp;n
+
+&amp;KI'm moving on..&amp;n
+</description>
+    </exdesc>
+    <exdesc keyword="flatts">
+      <description>&amp;KI've dealt with my ghosts and I've faced all my demons, &amp;wfinally content
+with a past I regret, &amp;KI've found you find strength in your moments of
+weakness, &amp;wfor once I'm at peace with myself, &amp;Ki've been burdened with
+blame, &amp;wtrapped in the past for too long, &amp;KI'm moving on..  &amp;n
+
+&amp;wI'm moving on..&amp;n
+</description>
+    </exdesc>
+    <exdesc keyword="dolls">
+      <description>&amp;C... &amp;cYou and I got something
+ &amp;C... &amp;cBut it's all and then it's nothing to me
+  &amp;C... &amp;cAnd I got my defenses
+   &amp;C... &amp;cWhen it comes to your intentions for me
+    &amp;C... &amp;cI'm not the one who broke you
+     &amp;C... &amp;cI'm not the one you should fear
+      &amp;C... &amp;cAnd I wanted to be all you need
+       &amp;C... &amp;cSomehow here is gone&amp;n
+</description>
+    </exdesc>
+    <exdesc keyword="rain">
+      <description>  &amp;k.....&amp;c'&amp;k.....&amp;c'&amp;k.....&amp;c'&amp;k.....&amp;c'&amp;k.....&amp;c'&amp;k.....&amp;c'&amp;k.....&amp;c'&amp;k.....&amp;n
+  &amp;k..&amp;c'&amp;k.....&amp;c'&amp;k.....&amp;c'&amp;k.....&amp;c'&amp;k.....&amp;c'&amp;k.....&amp;c'&amp;k.....&amp;c'&amp;k.....&amp;c'&amp;k..&amp;n
+  &amp;k....&amp;c'&amp;k.....&amp;c'&amp;k.....&amp;c'&amp;k.....&amp;c'&amp;k.....&amp;c'&amp;k.....&amp;c'&amp;k.....&amp;c'&amp;k.....&amp;c'&amp;n
+  &amp;k.&amp;c'&amp;k.....&amp;c'&amp;k.....&amp;c'&amp;k.....&amp;c'&amp;k.....&amp;c'&amp;k.....&amp;c'&amp;k.....&amp;c'&amp;k.....&amp;c'&amp;k...&amp;n
+  &amp;k....&amp;c'&amp;k.....&amp;c'&amp;k.....&amp;c'&amp;k.....&amp;c'&amp;k.....&amp;c'&amp;k.....&amp;c'&amp;k.....&amp;c'&amp;k.....&amp;c'&amp;n
+  &amp;k.....&amp;c'&amp;k.....&amp;c'&amp;k.....&amp;c'&amp;k.....&amp;c'&amp;k.....&amp;c'&amp;k.....&amp;c'&amp;k.....&amp;c'&amp;k.....&amp;n
+</description>
+    </exdesc>
+    <exdesc keyword="music">
+      <description>        &amp;G... &amp;gI'm more than some pretty face beside the train &amp;G...
+               ... &amp;gAnd it's not easy to be me &amp;G...
+        ... &amp;gI wish that I could cry, Fall upon my knees &amp;G...
+       ... &amp;gFind a way to lie, 'Bout a home I'll never see &amp;G...
+         ... &amp;gIt may sound absurb, But don't be naive &amp;G...
+           ... &amp;gEven heroes have the right to bleed &amp;G...
+        ... &amp;gI may be disturbed, But won't you concede &amp;G...
+           ... &amp;gEven heroes have the right to dream &amp;G...&amp;n
+</description>
+    </exdesc>
+    <exdesc keyword="toad">
+      <description>
+           &amp;R... &amp;rI will give the secrets you request &amp;R...
+           ... &amp;rAnd you will be the one to sacrifice &amp;R...
+           ... &amp;rSo lay your olive arms upon my breast &amp;R...
+           ... &amp;rSing the poems, free the butterflies &amp;R...
+           ... &amp;rPray your gods who ask you for your blood &amp;R...
+           ... &amp;rFor they are strong and angry jealous ones &amp;R...
+           ... &amp;rOr lay upon my altar now your love &amp;R...
+           ... &amp;rI fear my time is short &amp;R...&amp;n
+</description>
+    </exdesc>
+    <exdesc keyword="peace">
+      <description>        ... Imagine there's no heaven, it's easy if you try ...
+      ... No hell below us, above us only sky ...
+     ... Imagine all the people, living for today ...
+    ... Imagine there's no country, it isn't hard to do ...
+   ... Nothing to kill or die for, and no religion too ...
+  ... Imagine all the people, living life in peace ...
+ ... You may say I'm a dreamer, but I'm not the only one ...
+... I hope some day you'll join us, and the world will be as one ...
+</description>
+    </exdesc>
+    <exdesc keyword="branch">
+      <description>I've been searching deep down in my soul, the words that I'm hearing are
+starting to get old, feels like I'm starting all over again, the last
+three years were just pretend, and I said goodbye to you, goodbye to
+everything, that I knew, you were the one I loved, the one thing that I
+tried to hold onto..    
+</description>
+    </exdesc>
+    <exdesc keyword="blue">
+      <description>&amp;bNight falls, I fall, and where were you?  And where were you?  Warm skin,
+wolf grin, and where were you?  I feel into the moon, and it covered you
+in blue, I feel into the moon, can I make it right?  Can I spend the
+night?  High tide, inside, the air is dew, and where were you?  Wild eyed,
+I died, and where were you?  I crawled out of the world, and you said I
+shouldn't start, I crawled out of the world, can I make it right, can I
+spend the night?  ..  Alone.  &amp;n
+</description>
+    </exdesc>
   </room>
   <room>
-    <roombasic title="A Empty Immortal Room" vnum="76" zone="0">
-      <roomdescription>\c00</roomdescription>
-      <flags>0</flags>
+    <roombasic title="Echion's Room" vnum="74" zone="0">
+      <roomdescription>I am awaiting the sunrise
+Gazing modestly through the coldest morning
+Once it came you lied
+Embracing us over autumn's proud treetops
+
+
+I stand motionless
+In a parade of falling rain
+You voice I cannot hear
+As I am falling again
+
+
+
+Devotion eludes
+And in sadness I lumber
+In my own ashes I am standing without a soul
+She wept and whispered: &quot;I know...&quot;
+
+
+
+We walked into the night
+Am I to bid you farewell?
+
+
+
+Why can't you see that I try
+When every tear I shed
+Is for you?
+
+</roomdescription>
+      <flags>33486</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
   </room>
   <room>
-    <roombasic title="&amp;cD&amp;Ca&amp;ck&amp;Cn&amp;ca&amp;Cr&amp;c&apos;&amp;Cs &amp;KV&amp;woi&amp;Kd&amp;n" vnum="77" zone="0">
-      <roomdescription>&amp;KWell I know the &amp;yw&amp;Yor&amp;yd&amp;Ys&amp;K, but I can&apos;t really speak them 
+    <roombasic title="&amp;YTagachun Beach&amp;n" vnum="75" zone="0">
+      <roomdescription>The sky is an inky black, one that wraps the whole world in a blanket
+of darkness. If not for the full moon, it would be pitch black. But
+as it is, the moonlight shines off the ocean - which shimmers like
+rolling obsidian. The stars in the sky are easily visible, and
+they shimmer and gleam like the most beautiful diamonds - winking 
+from millions and millions of miles away. The sand is somewhere
+between white and yellow - and the sand closer to the water is cool
+and wet. The waves lap softly against the beach - rhythmic wooshing
+that signals the coming in of the tide. Looking to either side of
+would give a view of the bay as a whole - two giant arms on either
+side making a bowl with the water on the inside. It is quiet. And
+desolate. There is a small wide wall about twenty feet from the
+water - perfect for sitting on. The palm trees that grow in the
+grass just on the other side of the wall rustle in the sweet, 
+cool breeze. 
+</roomdescription>
+      <flags>1118</flags>
+      <sector>Inside</sector>
+      <special>Hospital</special>
+    </roombasic>
+  </room>
+  <room>
+    <roombasic title="Alani's Retreat" vnum="76" zone="0">
+      <roomdescription>Dark hearts icy
+Eyes shut tight
+Whispers echo
+Tears flow free
+
+Forgotten love
+Deep heavy pain
+Long separated partners
+Souls alone
+
+One chance meeting
+Looks exchanged
+Haze starts lifting
+Light bursting through
+
+Rekindled love
+Wonderful bliss
+Together by fate
+Forever soul mates
+
+Dark hearts flaming
+Eyes aglow
+Gentle kisses
+Sweet embrace
+
+Complete together
+Now and forever
+Through time and space
+Two become one
+</roomdescription>
+      <flags>8</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="up" keyword="door" exitinfo="19" keynum="-1" toroom="25000">
+      <description>You see nothing special.
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="&amp;cD&amp;Ca&amp;ck&amp;Cn&amp;ca&amp;Cr&amp;c'&amp;Cs &amp;KV&amp;woi&amp;Kd&amp;n" vnum="77" zone="0">
+      <roomdescription>&amp;KWell I know the &amp;yw&amp;Yor&amp;yd&amp;Ys&amp;K, but I can't really speak them 
 To &amp;cy&amp;Co&amp;cu&amp;K
 
-And I hide all the &amp;Rp&amp;ra&amp;Ri&amp;rn&amp;K that I&apos;ve gained with my &amp;cw&amp;Ci&amp;cs&amp;Cd&amp;co&amp;Cm&amp;K
+And I hide all the &amp;Rp&amp;ra&amp;Ri&amp;rn&amp;K that I've gained with my &amp;cw&amp;Ci&amp;cs&amp;Cd&amp;co&amp;Cm&amp;K
 From &amp;cy&amp;Co&amp;cu&amp;K
 
-And I&apos;m &amp;me&amp;Ma&amp;mt&amp;Me&amp;mn &amp;Wa&amp;wl&amp;Wi&amp;wv&amp;We&amp;K, by what I hold inside
-All the things that I live with I can&apos;t easily &amp;wh&amp;Wid&amp;we&amp;K 
-And I&apos;m left here with &amp;knothing&amp;K, nothing to live for 
+And I'm &amp;me&amp;Ma&amp;mt&amp;Me&amp;mn &amp;Wa&amp;wl&amp;Wi&amp;wv&amp;We&amp;K, by what I hold inside
+All the things that I live with I can't easily &amp;wh&amp;Wid&amp;we&amp;K 
+And I'm left here with &amp;knothing&amp;K, nothing to live for 
 But &amp;cy&amp;Co&amp;cu&amp;K 
 
 Its not easy to &amp;wh&amp;Wid&amp;we&amp;K
 All this &amp;rd&amp;Ra&amp;rm&amp;Ra&amp;rg&amp;Re&amp;K inside 
-I&apos;ll carry &amp;cy&amp;Co&amp;cu&amp;K with me 
-Until I&apos;m not &amp;Wa&amp;wl&amp;Wi&amp;wv&amp;We&amp;K
+I'll carry &amp;cy&amp;Co&amp;cu&amp;K with me 
+Until I'm not &amp;Wa&amp;wl&amp;Wi&amp;wv&amp;We&amp;K
 
 When you look at my face, does it seem just as ugly?
 To &amp;cy&amp;Co&amp;cu&amp;K? 
 
-I can&apos;t seem to erase all the &amp;rs&amp;Rc&amp;ra&amp;Rr&amp;rs&amp;K I have lived with 
+I can't seem to erase all the &amp;rs&amp;Rc&amp;ra&amp;Rr&amp;rs&amp;K I have lived with 
 From &amp;cy&amp;Co&amp;cu&amp;K 
 
-I&apos;m so &amp;gs&amp;Gi&amp;gck&amp;K of this place
+I'm so &amp;gs&amp;Gi&amp;gck&amp;K of this place
 This taste in my mouth 
-Cause of &amp;cy&amp;Co&amp;cu&amp;K I can&apos;t figure what I&apos;m all about
-And I&apos;m left here with &amp;knothing&amp;K, &amp;knothing&amp;K to live for 
+Cause of &amp;cy&amp;Co&amp;cu&amp;K I can't figure what I'm all about
+And I'm left here with &amp;knothing&amp;K, &amp;knothing&amp;K to live for 
 But &amp;cy&amp;Co&amp;cu&amp;K 
 
 Its not easy to hide 
 All this &amp;rd&amp;Ra&amp;rm&amp;Ra&amp;rg&amp;Re&amp;K inside
-I&apos;ll carry &amp;cy&amp;Co&amp;cu&amp;K with me 
-Til I&apos;m not &amp;wa&amp;Wl&amp;wi&amp;Wv&amp;we&amp;n
+I'll carry &amp;cy&amp;Co&amp;cu&amp;K with me 
+Til I'm not &amp;wa&amp;Wl&amp;wi&amp;Wv&amp;we&amp;n
 </roomdescription>
       <flags>9306</flags>
       <sector>Inside</sector>
@@ -1202,7 +1565,7 @@ Til I&apos;m not &amp;wa&amp;Wl&amp;wi&amp;Wv&amp;we&amp;n
   <room>
     <roombasic title="The Newbie Helpers Room!" vnum="78" zone="0">
       <roomdescription>The room is well lit, several posters of Pikachu are hung about the room.
-A small cough sits off to the side large stuffed Pikachu&apos;s are used for
+A small cough sits off to the side large stuffed Pikachu's are used for
 pillows.  A television is off in the corner and a game station is turned
 on and is waiting for the next player.
 </roomdescription>
@@ -1218,31 +1581,18 @@ on and is waiting for the next player.
     </exit>
   </room>
   <room>
-    <roombasic title="&amp;CV&amp;caltara&apos;s &amp;CO&amp;cffice&amp;n" vnum="79" zone="0">
-      <roomdescription>&amp;cEntering this large room, one notices it is created from &amp;Km&amp;wa&amp;Wr&amp;cb&amp;wl&amp;Ke&amp;c with a
-few exceptions, a large &amp;Km&amp;wa&amp;Wr&amp;cb&amp;wl&amp;Ke&amp;c desk and several &amp;Yo&amp;wa&amp;yk&amp;we&amp;yn&amp;n chairs sit in the&amp;c
-&amp;cmiddle of the room.  A few plush &amp;Wp&amp;wi&amp;Kl&amp;wl&amp;Wo&amp;Kw&amp;ws&amp;c are tossed on a couple of the 
-chairs, making them more comfortable to sit on.  A single &amp;Cc&amp;cr&amp;wy&amp;cs&amp;wt&amp;ca&amp;Cl&amp;c vase 
-stands in the middle of the huge &amp;Km&amp;wa&amp;Wr&amp;cb&amp;wl&amp;Ke&amp;c desk, a beautiful &amp;Bb&amp;bl&amp;Bu&amp;be r&amp;Bo&amp;bs&amp;Be &amp;n
-gives off a soft &amp;ws&amp;cc&amp;Ce&amp;cn&amp;wt&amp;c that fills the room.  &amp;YG&amp;yi&amp;Yl&amp;yd&amp;Ye&amp;yd&amp;n lamps &amp;Yl&amp;wi&amp;Yg&amp;wh&amp;Yt&amp;n the 
-room giving it a soft &amp;Yg&amp;ylo&amp;Yw&amp;n form where they are mounted on the smooth 
-&amp;Km&amp;wa&amp;Wr&amp;cb&amp;wl&amp;Ke&amp;c walls.  Off to the side you see a elegant staircase that winds 
-it&apos;s way down and around to the room below.&amp;n
+    <roombasic title="Gaidin Lair" vnum="79" zone="0">
+      <roomdescription>Within this room, many things would catch many an eye. On the wall, there is a plaque stating, &quot;&amp;mFor Fang, For Tradition, And for what being a Gaidin means.&amp;n&quot; Below, there is a panoramic view of men training with both lathes and swords in the yards, endeavoring ICly and OOCly to become something great with hard training that is just as great. On the plaque below these words, are a list of the influential people who have graced the Guild and made being a Gaidin on Fang as special as it is. The room itself is lush and well adorned, with swords seemingly everywhere, and a ode to emote fighting playing music in the background. Altogether an impressive sight, this room embodies what it means to be a Gaidin of either Tower on Fang.
 </roomdescription>
       <flags>1102</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
-    <exit direction="down" keyword="Not set yet...
-" exitinfo="0" keynum="0" toroom="91">
-      <description>None
-</description>
-    </exit>
   </room>
   <room>
     <roombasic title="A Empty Immortal Room" vnum="80" zone="0">
       <roomdescription>\c00</roomdescription>
-      <flags>8</flags>
+      <flags>10</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
@@ -1253,15 +1603,15 @@ it&apos;s way down and around to the room below.&amp;n
 stands at the front behind a podium, gesturing to various people while
 they discuss the pressing issues of the day.
 
-Rule 1: Don&apos;t talk until given permission.
+Rule 1: Don't talk until given permission.
 Rule 2: Raise your hand to receive permission to talk.
-Rule 3: Don&apos;t spam.
+Rule 3: Don't spam.
 Rule 4: People misbehaving will be asked to leave.
-Rule 5: Share whatever&apos;s on your mind.
+Rule 5: Share whatever's on your mind.
 Rule 6: Respect everyone in the room and their opinions.
 Rule 7: Disrespect will NOT be tolerated.
 </roomdescription>
-      <flags>0</flags>
+      <flags>2</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
@@ -1288,14 +1638,14 @@ building.
   <room>
     <roombasic title="\c04The Inner Sanctum\c00" vnum="83" zone="0">
       <roomdescription>In the middle of the ruins of the Crystal Hand chapterhouse in the middle of the dormant 
-volcano in Therengia which hides it, lies Damaris&apos; inner sanctum. Constructed of delicate
+volcano in Therengia which hides it, lies Damaris' inner sanctum. Constructed of delicate
 crystals of varying colors, its ceiling acts as a skylight to the heavens above. A large 
 table sits at one end of the large hall, a high-backed chair behind it. On the ground in 
 front of the desk is a crystal mosaic of the three moons of Elanthia surrounding the lost 
 moon. The first, The Moon of Ice, Xibar is constructed of clear crystals that show the 
 faintest hints of aquamarine and blue. To the left of it, the Moon of Fire, Yavash, is an 
 elaborate design of rubies. The Moon of Sadness is to the right and below Xibar, 
-Katamba&apos;s face depicted with the darkest of obsidian. Finally, in the center of the three 
+Katamba's face depicted with the darkest of obsidian. Finally, in the center of the three 
 moons is Grazhir, the Moon of the Dragon. An ancient script below the mosaic reads, &quot;A
 small blade may be small, but it can still kill you from your backside.&quot;
 </roomdescription>
@@ -1329,26 +1679,34 @@ cinquedas.
     </exit>
   </room>
   <room>
-    <roombasic title="Kirid&apos;s Room" vnum="85" zone="0">
-      <roomdescription>A soft breeze drifts across this small patio, the dark red
-bricks still warm from the sun which now sets in spectacular
-colors over the tuquoise ocean, beyond where the waves
-break against the reef.  A number of lounge chairs surround
-the small hot tub inset in the bricks of the patio, a small
-stand with towels on it an arm&apos;s-reach from the hot tub.
-Tropical plants line the edges of the patio, and are
-scattered about the brick surface in earthen pots, their
-brillian blooms adding color and fragrance to the air.  From
-somewhere soft, easy music is playing, just barely audible
-in the background.  At the edge of the patio is a short 
-expanse of perfect lawn, which ends at the beginning of the
-white sand beach, a faint path trod into the grass between
-the patio and the sand.  A sliding glass door opens into a
-small, cozy room, a dresser and chair along one wall, and a
-bed with immaculate white sheets stands along the opposite
-wall, two small doors opposite the sliding glass door, one
-leading to a small bathroom and the other off to parts
-unknown.
+    <roombasic title="&amp;WThe &amp;bS&amp;Bt&amp;ba&amp;Bt&amp;be &amp;Wof &amp;rM&amp;Ri&amp;rn&amp;Rd &amp;Wof &amp;yF&amp;Ya&amp;yr&amp;Yi&amp;ye&amp;Yn&amp;n" vnum="85" zone="0">
+      <roomdescription>Weather changes moods..
+Spring is here again..
+reproductive glands..
+
+Heeeyyyy!
+He's the One..
+Who likes all our pretty songs..
+And he likes to sing along..
+And he likes to shoot his gun..
+But he knows not what it means..
+Don't know what it means, when I say..
+
+We can have some more..
+Nature is a whore..
+Bruises on the fruit..
+Tender age in bloom..
+
+Heeeyyyy!
+He's the One..
+Who likes all our pretty songs..
+And he likes to sing along..
+And he likes to shoot his gun..
+But he know not what it means..
+Don't know what it means, men I say..
+
+Knows knot what it means mean I say..
+Aahh..
 </roomdescription>
       <flags>263242</flags>
       <sector>Inside</sector>
@@ -1358,16 +1716,16 @@ unknown.
   <room>
     <roombasic title="A Well Lit Room" vnum="86" zone="0">
       <roomdescription>\c00</roomdescription>
-      <flags>28</flags>
+      <flags>30</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
   </room>
   <room>
-    <roombasic title="&amp;rMasema&apos;s Room&amp;n" vnum="87" zone="0">
+    <roombasic title="&amp;rMasema's Room&amp;n" vnum="87" zone="0">
       <roomdescription>A soft &amp;kblack&amp;n rug covers the entire floor of this spacious room.
 Sitting in the middle of the room, is an intricately carved &amp;yoa&amp;wk&amp;yen&amp;n 
-table, it&apos;s surface polished until it &amp;ys&amp;wh&amp;Win&amp;we&amp;ys&amp;n.  A &amp;Wwhite &amp;nporcelain 
+table, it's surface polished until it &amp;ys&amp;wh&amp;Win&amp;we&amp;ys&amp;n.  A &amp;Wwhite &amp;nporcelain 
 vase sits in the middle of the table, with a single delicate long 
 stemmed &amp;rrose&amp;n. The table is surrounded by beautifully carved 
 chairs, each one a work of art.  Within the north wall is a huge 
@@ -1375,20 +1733,16 @@ chairs, each one a work of art.  Within the north wall is a huge
 beautiful young woman.  Two comfortable chairs sit before the 
 roaring &amp;rfire&amp;n, each covered in &amp;kblack&amp;n velvet.  A small &amp;yoa&amp;wk&amp;yen&amp;n table 
 sits between the two chairs, a &amp;kdragon&amp;n sculpture nests upon the 
-table, a live &amp;kf&amp;rl&amp;wa&amp;rm&amp;ke &amp;ndances upon it&apos;s outstretched &amp;kc&amp;rl&amp;kaw&amp;n.  Against 
+table, a live &amp;kf&amp;rl&amp;wa&amp;rm&amp;ke &amp;ndances upon it's outstretched &amp;kc&amp;rl&amp;kaw&amp;n.  Against 
 the south side of the room is a large four poster bed draped 
 with &amp;ksilken &amp;ncurtains, the &amp;yposts&amp;n are carved with various kinds of 
 &amp;kdragons&amp;n, no two alike. The bed is covered in &amp;kblack&amp;n silken sheets 
-with several large &amp;kp&amp;wi&amp;Wllo&amp;ww&amp;ks&amp;n scattered about it&apos;s surface.  
+with several large &amp;kp&amp;wi&amp;Wllo&amp;ww&amp;ks&amp;n scattered about it's surface.  
 </roomdescription>
-      <flags>206</flags>
+      <flags>750</flags>
       <sector>Inside</sector>
       <special>Pigeon</special>
     </roombasic>
-    <exit direction="east" keyword="door" exitinfo="27" keynum="18109" toroom="92">
-      <description>None
-</description>
-    </exit>
     <exdesc keyword="Angel">
       <description>The painting is a portrait of a beautiful young woman with long
 &amp;Yb&amp;yl&amp;Yo&amp;yn&amp;Yd&amp;yi&amp;Ys&amp;yh-brown&amp;n hair, trailing to her waist.  A slight smile graces
@@ -1396,12 +1750,12 @@ her lips.  Her &amp;bblue&amp;n eyes seem to shine forth from the canvas
 radiantly.  She lies on a bed, her coppery skin just barely
 covered by a thin, white satin sheet, among &amp;wwhite&amp;n &amp;Wr&amp;wo&amp;Ws&amp;we&amp;n &amp;wp&amp;We&amp;wt&amp;Wa&amp;wl&amp;Ws&amp;n
 scattered about her and the bed alike.  Her innocent beauty
-glows magnificently, basking the room with it&apos;s warmth.
+glows magnificently, basking the room with it's warmth.
 </description>
     </exdesc>
   </room>
   <room>
-    <roombasic title="Elkins&apos; Workshop" vnum="88" zone="0">
+    <roombasic title="Kennie's Place" vnum="88" zone="0">
       <roomdescription>   This room is a mess. Unused functions, and code snippets lie strewn
 about the room. A scary looking device lurks in the corner, bearing a
 tag that reads &quot;Global Optimizer&quot;. It looks rather dangerous, perhaps
@@ -1421,7 +1775,7 @@ the pile, which shifts and groans ominously.
 reflected in the dark, empty void of &amp;KO&amp;wbl&amp;Wiv&amp;wio&amp;Kn&amp;n.  &amp;kIn the midst of the void
 an odd floating platform simply remains stationary.  The platform itself
 is formed of some &amp;Ws&amp;wi&amp;Wl&amp;wv&amp;We&amp;wr&amp;Wy&amp;n &amp;mm&amp;Ke&amp;wt&amp;Ka&amp;ml&amp;k and formed into a gigantic oval shape with
-odd pulsing &amp;cb&amp;Cl&amp;cu&amp;Ce&amp;n &amp;klights which race about it&apos;s circular length.  Resting in
+odd pulsing &amp;cb&amp;Cl&amp;cu&amp;Ce&amp;n &amp;klights which race about it's circular length.  Resting in
 the exact center of the platform is a large comfortable chair, which seems
 large enough for some gigantic creature.  Floating about the area are
 large blocks of what appear to be stone, no real direction or logic to
@@ -1456,27 +1810,8 @@ stream flows away at a slow and steady pace.
     </roombasic>
   </room>
   <room>
-    <roombasic title="&amp;RV&amp;raltara and &amp;RC&amp;rhorik&apos;s &amp;RR&amp;room&amp;n" vnum="91" zone="0">
-      <roomdescription>&amp;WTHE LAST UNICORN&amp;n
-
-&amp;wWhen the last &amp;Kea&amp;rg&amp;Kle &amp;wflies                              When the last &amp;Km&amp;wo&amp;Wo&amp;wn is cast&amp;n
-&amp;wOver the last crumbling &amp;gm&amp;Ko&amp;gu&amp;Kn&amp;gt&amp;Ka&amp;gi&amp;Kn&amp;w                       Over the last &amp;Ws&amp;Yt&amp;War&amp;w of morning&amp;n
-&amp;wAnd the last &amp;Yl&amp;yio&amp;Yn &amp;wroars                                And the &amp;cfuture &amp;wis &amp;Kpast&amp;n
-&amp;wAt the last &amp;ydusty &amp;bf&amp;Bo&amp;cu&amp;Cn&amp;wt&amp;Ca&amp;ci&amp;Bn&amp;w                             Without even a last desparate warning&amp;n
-&amp;wIn the &amp;Kshadow &amp;wof the &amp;gf&amp;yo&amp;gr&amp;ye&amp;gs&amp;yt&amp;w                            Look into the &amp;cs&amp;wk&amp;cy&amp;w where through
-&amp;wThough she may be &amp;yold&amp;w and &amp;Kworn&amp;w                         The &amp;Wc&amp;wl&amp;Wo&amp;wu&amp;Wd&amp;we&amp;Ws&amp;w a path is formed&amp;n
-&amp;wThey will &amp;Cstare&amp;w unbelieving                            Look and see her how she &amp;Ws&amp;Cp&amp;Wa&amp;Cr&amp;Wk&amp;Cl&amp;We&amp;Cs&amp;n
-&amp;wAt the &amp;KLast &amp;WUnicorn&amp;n                                    &amp;wIt&apos;s the &amp;KLast &amp;WUnicorn&amp;n
-                                                       &amp;wI&apos;m alive... I&apos;m alive... I&apos;m alive&amp;n
-&amp;wWhen the first &amp;Kb&amp;cr&amp;Ce&amp;ca&amp;Kt&amp;Wh &amp;wof &amp;Ww&amp;wi&amp;Kn&amp;wt&amp;Wer&amp;n
-&amp;wThrought the &amp;Yf&amp;Bl&amp;Co&amp;rw&amp;Ge&amp;Mr&amp;Ws&amp;w is &amp;Cicing&amp;n
-&amp;wAnd you look to the &amp;Knorth&amp;n
-&amp;wAnd a &amp;Kpale &amp;Wmoon&amp;w is rising&amp;n
-&amp;wAnd it seems like all is &amp;Kdying&amp;n
-&amp;wAnd would &amp;Kleave&amp;w the &amp;gworld &amp;wto &amp;Kmo&amp;wu&amp;Krn&amp;n
-&amp;wIn the &amp;gdistance &amp;whear her &amp;Claughter&amp;n
-&amp;wIt&apos;s the &amp;KLast &amp;WUnicorn&amp;n
-&amp;wI&apos;m alive... I&apos;m alive&amp;n
+    <roombasic title="Empty Immortal Room" vnum="91" zone="0">
+      <roomdescription> Empty Room
 </roomdescription>
       <flags>1098</flags>
       <sector>Inside</sector>
@@ -1486,51 +1821,11 @@ stream flows away at a slow and steady pace.
       <description>&amp;RB&amp;Gr&amp;Ba&amp;Cn&amp;Rn&amp;Go&amp;Bc&amp;Ck&amp;Rs&amp;n cozy den
 </description>
     </exit>
-    <exit direction="up" keyword="Not set yet...
-" exitinfo="0" keynum="0" toroom="79">
-      <description>None
-</description>
-    </exit>
   </room>
   <room>
-    <roombasic title="Icyis&apos; Self Expression" vnum="92" zone="0">
-      <roomdescription>It starts with....One thing, I don&apos;t know why it doesn&apos;t even matter how hard you &amp;rtry&amp;n
-Keep that in mind I designed this rhyme to explain in due &amp;rtime&amp;n all I know
-
-&amp;rTime&amp;n is a valuable thing, watch it fly by as the p&amp;rend&amp;nulum swings
-Watch it count down to the &amp;rend&amp;n of the day, the clock ticks &amp;rlife&amp;n away
-It&apos;s so unreal
-
-I didn&apos;t look out below, watch the &amp;r&amp;rtime&amp;n&amp;n go right out the window
-Trying to hold on but didn&apos;t even know I wasted it all just to watch you go
-I kept everything inside and even though I &amp;rtried&amp;n, it all fell apart
-What it meant to me will eventually be a memory of a &amp;r&amp;rtime&amp;n&amp;n when
-
-I &amp;rtried&amp;n so hard and got so far but in the &amp;rend&amp;n it doesn&apos;t even matter
-I had to &amp;rfall&amp;n to lose it all but in the &amp;rend&amp;n it doesn&apos;t even matter
-
-One thing, I don&apos;t know why it doesn&apos;t even matter how hard you &amp;rtry&amp;n
-Keep that in mind I designed this rhyme to explain in due &amp;rtime&amp;n I &amp;rtried&amp;n so hard
-
-In spite of the way you were mocking me, acting like I was part of your property
-Remembering all the &amp;rtime&amp;ns you fought with me, I&apos;m suprised it got so far
-Things aren&apos;t the way they were before, you wouldn&apos;t even recognize me anymore
-Not that you knew me back then but all comes back to me in the &amp;rend&amp;n
-You kept everything inside and even though I &amp;rtried&amp;n, it all fell apart
-What it meant to me will eventually be a memory of a &amp;r&amp;rtime&amp;n&amp;n when I
-
-I &amp;rtried&amp;n so hard and got so far but in the &amp;rend&amp;n it doesn&apos;t even matter
-I had to &amp;rfall&amp;n to lose it all but in the &amp;rend&amp;n it doesn&apos;t even matter
-
-I&apos;ve put my &amp;rtrust&amp;n in you, pushed as far as I can go 
-And for all this there&apos;s only one thing you should know
-I&apos;ve put my &amp;rtrust&amp;n in you, pushed as far as I can go 
-And for all this there&apos;s only one thing you should know
-
-I &amp;rtried&amp;n so hard and got so far but in the &amp;rend&amp;n it doesn&apos;t even matter
-I had to &amp;rfall&amp;n to lose it all but in the &amp;rend&amp;n it doesn&apos;t even matter
-</roomdescription>
-      <flags>1610</flags>
+    <roombasic title="Icyis' Self Expression" vnum="92" zone="0">
+      <roomdescription>\c00</roomdescription>
+      <flags>1614</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
@@ -1540,7 +1835,7 @@ I had to &amp;rfall&amp;n to lose it all but in the &amp;rend&amp;n it doesn&apo
     </exit>
   </room>
   <room>
-    <roombasic title="Vardane&apos;s den of Sin" vnum="93" zone="0">
+    <roombasic title="Vardane's den of Sin" vnum="93" zone="0">
       <roomdescription>\c00</roomdescription>
       <flags>1546</flags>
       <sector>Inside</sector>
@@ -1548,32 +1843,9 @@ I had to &amp;rfall&amp;n to lose it all but in the &amp;rend&amp;n it doesn&apo
     </roombasic>
   </room>
   <room>
-    <roombasic title="Alessio&apos;s Room" vnum="94" zone="0">
+    <roombasic title="Alessio's Room" vnum="94" zone="0">
       <roomdescription>\c00</roomdescription>
       <flags>1546</flags>
-      <sector>Inside</sector>
-      <special>NONE</special>
-    </roombasic>
-  </room>
-  <room>
-    <roombasic title="&amp;nBeneath the &amp;cI&amp;wr&amp;Wr&amp;Ci&amp;Bd&amp;ce&amp;ws&amp;Wc&amp;Ce&amp;Bn&amp;ct &amp;bW&amp;mi&amp;Bl&amp;bl&amp;mo&amp;Bw&amp;n" vnum="95" zone="0">
-      <roomdescription>\c00&amp;nThe moment you enter this place, you are bathed in countless kinds of &amp;md&amp;be&amp;me&amp;bp&amp;n,
-&amp;cpa&amp;Cl&amp;ce&amp;n, &amp;bf&amp;Bl&amp;ca&amp;bs&amp;Bh&amp;ci&amp;bn&amp;Bg &amp;bb&amp;Bl&amp;Cu&amp;ce&amp;n light.  You rest upon a finely crafted and amazingly
-comfortable &amp;cpa&amp;Cl&amp;ce&amp;n wooden bench, and beneath your feet rests a blanketting
-of small &amp;rw&amp;yi&amp;gl&amp;cd&amp;Bf&amp;bl&amp;mo&amp;rw&amp;ye&amp;gr&amp;cs&amp;n of every kind and color.  Above you, the branches of a
-gracefully tall and winding willow stretch into the &amp;csky&amp;n and cascade down
-again, and it becomes clear where the light is coming from - the reflection
-of the sunbeams through thousands of little willow leaves, all &amp;bblue&amp;n and &amp;Wclear&amp;n
-and &amp;ci&amp;wr&amp;Wr&amp;Ci&amp;Bd&amp;ce&amp;ws&amp;Wc&amp;Ce&amp;Bn&amp;ct&amp;n.  The tree seems to reach out and embrace you with it&apos;s
-presence, no matter what you felt before entering here, it is now tempered
-with a calm serenity and peacefulness.
-
-Beyond the tendrils of willow branches, a &amp;wb&amp;Wr&amp;Yi&amp;wg&amp;Wh&amp;Yt&amp;n, &amp;Yg&amp;yi&amp;wl&amp;Wd&amp;ye&amp;Yd &amp;ygold&amp;n wall surrounds
-the tree, and before you rests a vast and endless &amp;co&amp;gc&amp;we&amp;Wa&amp;cn&amp;n.  The walls, if you
-look closer, are actually the walls of towers... The towers of the greatest
-city ever brought forth from a poet&apos;s mind...
-</roomdescription>
-      <flags>1868</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
@@ -1615,9 +1887,9 @@ city ever brought forth from a poet&apos;s mind...
     </roombasic>
   </room>
   <room>
-    <roombasic title="Purdan&apos;s Phase Space" vnum="97" zone="0">
+    <roombasic title="D's really weird shop.  Go away." vnum="97" zone="0">
       <roomdescription>\c00</roomdescription>
-      <flags>9934</flags>
+      <flags>9950</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>

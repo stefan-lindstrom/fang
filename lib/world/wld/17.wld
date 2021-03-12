@@ -2,20 +2,23 @@
 <rooms>
   <room>
     <roombasic title="Entering Deven Ride" vnum="1700" zone="17">
-      <roomdescription>Neat rows of wooden houses lie before you.  The sounds of people
+      <roomdescription>Neat rows of wooden houses come into view.  The sounds of people
 bustling about and chickens squawking indicate that this small
 village is still a bustling center of life for its occupants.  It is
 almost as if this village is untouched by the turning of the Wheel.
-But nothing is.  Far off in the distance, a trickling of water can be
-heard.  Perhaps there is a pond nearby?    
+But nothing is, in fact, it appears as though there is now a newly
+built wall surrounding the village.  The wall evident as one approaches
+the northern gate, also a new addition.  Foreboding as the wall may be,
+the gate is left open and unmanned for now, a welcome sight.  Far off
+in the distance, a trickling of water can be heard.  Perhaps there is a
+pond nearby?
 </roomdescription>
-      <flags>0</flags>
+      <flags>1048576</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
-    <exit direction="north" keyword="" exitinfo="0" keynum="-1" toroom="1738">
-      <description>You see nothing special.
-</description>
+    <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="25791">
+      <description/>
     </exit>
     <exit direction="east" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="1712">
       <description>&lt;NONE&gt;</description>
@@ -29,10 +32,10 @@ heard.  Perhaps there is a pond nearby?
   </room>
   <room>
     <roombasic title="The Street Narrows to a Path" vnum="1701" zone="17">
-      <roomdescription>\c00The street almost suddenly narrows here, the stones dotted along it&apos;s
+      <roomdescription>\c00The street almost suddenly narrows here, the stones dotted along it's
 edges moving closer together, getting a cart along this way could be
 a little difficult, and there are no real visible wheel tracks so most likely
-there&apos;s never a call for a cart to come this way.
+there's never a call for a cart to come this way.
 </roomdescription>
       <flags>0</flags>
       <sector>City</sector>
@@ -49,11 +52,11 @@ there&apos;s never a call for a cart to come this way.
     <roombasic title="The Short Grassy Jaunt Meanders" vnum="1702" zone="17">
       <roomdescription>\c00The path begins to become more lively, grass sprouting and reaching
 over the small rock lines on the edges, the air seems fresh here as well
-as if the spring rain has just fallen, although likely it hasn&apos;t rained for
+as if the spring rain has just fallen, although likely it hasn't rained for
 months in Deven Ride, just as in most of the other lands.  As the path
 reaches along more, the village green comes into sight.
 </roomdescription>
-      <flags>0</flags>
+      <flags>150</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -82,8 +85,8 @@ Why not stop by for a snooze or a bit to eat?
 </description>
     </exit>
     <exit direction="west" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="1799">
-      <description>A spring fed pond gurgles merrily. Doesn&apos;t it look
-oh so inviting? One little dip couldn&apos;t hurt.
+      <description>A spring fed pond gurgles merrily. Doesn't it look
+oh so inviting? One little dip couldn't hurt.
 </description>
     </exit>
     <exit direction="northwest" keyword="" exitinfo="0" keynum="0" toroom="1702">
@@ -96,12 +99,12 @@ oh so inviting? One little dip couldn&apos;t hurt.
 village green is off to the southeast where town festivals and dancing
 take place.  The green is quiet presently, but come Winternight, the eve
 of Bel Tine, that area will be thriving with activity.  The green hosts all
-manner of town rituals and ceremonies, from marriages to the Woman&apos;s
-circle gatherings, it&apos;s indeed a sacred and special spot.  Past the green
-to the north a bit is the town&apos;s largest inn.  Streets travel along here
+manner of town rituals and ceremonies, from marriages to the Woman's
+circle gatherings, it's indeed a sacred and special spot.  Past the green
+to the north a bit is the town's largest inn.  Streets travel along here
 this being a central area of Deven Ride.
 </roomdescription>
-      <flags>144</flags>
+      <flags>148</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -118,7 +121,7 @@ this being a central area of Deven Ride.
 hard to imagine that months ago Whitecloaks had flooded the city with their
 tents and camps, placing this little village under martial rule.  All for one
 supposed Darkfriend.  It is amazing how one person can turn a village upside
-down.  But they claim this Perrin Goldeneyes is ta&apos;veren.  Deven Riders cares
+down.  But they claim this Perrin Goldeneyes is ta'veren.  Deven Riders cares
 not either way.  The Whitecloaks are gone, and their village has been restored
 to them.    
 </roomdescription>
@@ -141,18 +144,18 @@ to them.
       <roomdescription>\c00The Old Road tumbles on, the wilderness surrounding the hard packed
 dirt road thinning a little as it is followed further to the north.  Despite
 the relenting tree cover, the sounds of wilderness, birds calling, rustling
-leaves and the like are still predominate.  To the north in the distance
-can be heard the ring of a blacksmith&apos;s hammer on an anvil, and the
-low moans of farm animals as well.  Yes indeed, Emond&apos;s Field nears.
+leaves and the like are still predominate.  To the south in the distance
+can be heard the ring of a blacksmith's hammer on an anvil, and the
+low moans of farm animals as well.  Yes indeed, Emond's Field nears.
 </roomdescription>
       <flags>0</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
-    <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="1744">
+    <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="1744">
       <description/>
     </exit>
-    <exit direction="northeast" keyword="" exitinfo="0" keynum="0" toroom="1745">
+    <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="1745">
       <description/>
     </exit>
   </room>
@@ -182,13 +185,13 @@ well traveled.
 the laundry lines are hung.  Clean shirts, pants, skirts and dresses fly
 about in the breeze.  The sweet smell of soap and sun mingle pleasantly in
 the air.  A goodwife stands in the backyard of her house, pinning the
-clothes carefully so that they won&apos;t fall unto the ground and get muddy
+clothes carefully so that they won't fall unto the ground and get muddy
 and dirty.  Doing laundry twice is a rather irksome task.  The backyard of
 the house is visible down this pathway, penned in by low stone walls, the
 house itself is a small cottage of sorts, one story high with a thatched
 roof.  On the opposite side of the stone wall is a curing pen and just
 before that, another small stone pen where sheep bleat off and on, when
-they&apos;re not grazing.    
+they're not grazing.    
 </roomdescription>
       <flags>0</flags>
       <sector>City</sector>
@@ -225,7 +228,7 @@ rug that flaps in the wind to your left.
       <roomdescription>The squirrels chitter off in the distance, most likely because they have found
 some sort of succulent acorn to add yet another layer of fat onto their bodies
 for the cold, cold winter.  The winters are cold here.  They have been
-especially cold of late, but it hasn&apos;t been a natural cold.  The Wheel weaves
+especially cold of late, but it hasn't been a natural cold.  The Wheel weaves
 as the Wheel wills, but can you not spot a Dark finger in the loom when it
 comes upon you?    
 </roomdescription>
@@ -247,7 +250,7 @@ anything else does, really.  They seem so happy and carefree.  Which
 children should be.  But as they grow up, life, the Pattern, whatever
 you call them, weaves them in.  True, not everyone can be a hero in a
 legend.  But even if they remain here in Deven Ride, raising
-children, they will be part of the Village&apos;s Circle or the Woman&apos;s
+children, they will be part of the Village's Circle or the Woman's
 Circle.  They will play their part.  And none is too small.    
 </roomdescription>
       <flags>0</flags>
@@ -282,11 +285,11 @@ lips twitch at the thought, and you walk on.
   </room>
   <room>
     <roombasic title="Down the Hard Dirt Path" vnum="1713" zone="17">
-      <roomdescription>The town&apos;s thatcher is taking advantage of a warm, dry day to fix a 
+      <roomdescription>The town's thatcher is taking advantage of a warm, dry day to fix a 
 leaky roof.  He stands on a ladder and whistles a cheery tune as he 
 replace the moldy straw with fresh straw.  The apprentice Lin, hands 
-the thatcher Master Melyr the straw from the ground. Lin&apos;s look of
-boredom is barely suppressed.  He hasn&apos;t quite gotten to the point 
+the thatcher Master Melyr the straw from the ground. Lin's look of
+boredom is barely suppressed.  He hasn't quite gotten to the point 
 where Master Melyr will let him thatch the roof alone. Surprisingly
 enough, there is more to thatching then meets the eye.
 </roomdescription>
@@ -422,7 +425,7 @@ too.
     <roombasic title="Eddies of Dust" vnum="1720" zone="17">
       <roomdescription>The dust swirls listlessly around the villagers walking along the path.  The
 sounds of hammers tapping and beams moving and occasionally falling can be
-heard in the background.  It&apos;s amazing how resilient these Two River folk are.
+heard in the background.  It's amazing how resilient these Two River folk are.
 Perhaps all the legends about Manetheren are true.  The old blood runs deep.  
 They teach mules lessons in stubbornness, you know.    
 </roomdescription>
@@ -461,8 +464,8 @@ her head at her little sister.
     <roombasic title="Along an Inner Street" vnum="1722" zone="17">
       <roomdescription>Lining this street are low wooden, thatched roofed houses to each side,
 along the right it seems a group of neighbors have all decided to occupy
-themselves performing the same chores, it&apos;s so picturesque.  The rugs flap
-gently in the breeze, making the woman&apos;s work slightly easier when it
+themselves performing the same chores, it's so picturesque.  The rugs flap
+gently in the breeze, making the woman's work slightly easier when it
 comes time to beat the dust out of them.  Little puffs of dust rise out
 whenever the beater hits the rugs, making it necessary to keep the lines
 far away from both the houses and the path so no poor soul will be in a
@@ -477,6 +480,9 @@ coughing fit over rug dust.
     </exit>
     <exit direction="east" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="1723">
       <description>&lt;NONE&gt;</description>
+    </exit>
+    <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="1780">
+      <description/>
     </exit>
     <exit direction="west" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="1701">
       <description>&lt;NONE&gt;</description>
@@ -509,7 +515,7 @@ outsiders and locals.  Amazing, startling changes.
     <roombasic title="The Inner Street" vnum="1724" zone="17">
       <roomdescription>This change in Two Rivers was inevitable.  Although the river and mountains
 seemed insurmountable, it is amazing what a little political turmoil can do to
-people&apos;s understanding of the word impossible.  They have come over the
+people's understanding of the word impossible.  They have come over the
 mountains, so desperate for their lives.  How could the Two River folk not
 appreciate this fact?  Even if their ways are different, their clothing
 shocking and revealing, there is respect for the perseverance of these
@@ -536,7 +542,7 @@ distance the sounds of nature mingle with the playful cries of children.
       <roomdescription>The path continues to gain the look of a more well traveled causeway
 as it reaches onward.  Off to the left can be seen a stoney faced man
 with a large leather apron draped over the front of him, working away
-in a blacksmith&apos;s forge, the fires hot as he bangs on a red-hot item
+in a blacksmith's forge, the fires hot as he bangs on a red-hot item
 in the coals and works the flume.  Beside this hard working individual is
 large black anvil, a few dirtied rags dropped upon it.  A couple paces from
 that, a large wooden rack displaying items previously forged, brackets,
@@ -571,6 +577,9 @@ begins to widen noticeably, resembling a street.
     </roombasic>
     <exit direction="north" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="1750">
       <description>&lt;NONE&gt;</description>
+    </exit>
+    <exit direction="east" keyword="door" exitinfo="9" keynum="1714" toroom="1781">
+      <description/>
     </exit>
     <exit direction="west" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="1725">
       <description>&lt;NONE&gt;</description>
@@ -631,6 +640,9 @@ baked goods can in fact be purchased in the house to the south.
     <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="1778">
       <description/>
     </exit>
+    <exit direction="east" keyword="" exitinfo="0" keynum="0" toroom="1730">
+      <description/>
+    </exit>
     <exit direction="south" keyword="&lt;NONE&gt;" exitinfo="0" keynum="-1" toroom="1777">
       <description>You see nothing special.
 </description>
@@ -644,7 +656,7 @@ baked goods can in fact be purchased in the house to the south.
       <roomdescription>The street continues onward, more houses edge it, all of the same
 low, wooden, thatched roof construction fit and commonplace for
 the town of Deven Ride.  To the left along the street can be seen
-a wooden building that&apos;s in fact two stories high and a sign hanging
+a wooden building that's in fact two stories high and a sign hanging
 off the front above the front door with a threaded needle depicted on
 it.  A dressmaker perhaps, a local seemstress advertising services
 rendered.
@@ -669,7 +681,7 @@ It seems as though the townsfolk are always in the midst of work or
 play and neither activity is embraced less than the other.  To the right
 behind one of the many houses lining the street can be seen a young
 boy grooming a horse before a small stable.  An older man, perhaps
-the boy&apos;s father off in the distance carries a large staff and tosses feed
+the boy's father off in the distance carries a large staff and tosses feed
 onto the ground from a bucket in his opposite hand for a group of
 eager chickens.
 </roomdescription>
@@ -695,7 +707,6 @@ The gleeful cries of children playing can be heard in the distance and the
 ring of a blacksmith hard at work in the forges as well.  The street
 angels off to the west sharply, also continuing to the south to the
 northeast further on is a more grassy path, almost inviting in nature.  
-
 </roomdescription>
       <flags>0</flags>
       <sector>City</sector>
@@ -713,11 +724,11 @@ northeast further on is a more grassy path, almost inviting in nature.
   </room>
   <room>
     <roombasic title="An Inner Street into the Heart of Deven Ride" vnum="1733" zone="17">
-      <roomdescription>\c00One of the many thriving spots in Deven Ride, to the west is Fel&apos;s Pipes
+      <roomdescription>\c00One of the many thriving spots in Deven Ride, to the west is Fel's Pipes
 and Tabac, where many people visit for the acclaimed Two Rivers tabac.
 The street continues southward through into the heart of Deven Ride,
 beyond it theres access to the Village Green not too far off and just
-a skip from there can be found the village&apos;s inn, The Goose and Pipe, off
+a skip from there can be found the village's inn, The Goose and Pipe, off
 to the southeast a bit.  As it is, the street being travelled on currently
 is a bustle with peddlers and hawkers, something the people of Deven
 Ride have only recently become accustomed to.  Foriegners stride
@@ -744,7 +755,7 @@ not to mention their jewelery or hairstyles.
   <room>
     <roombasic title="Along the Path" vnum="1734" zone="17">
       <roomdescription>The faint trickling of water can be heard in the
-distance, if one strains one&apos;s ears, or if one has been
+distance, if one strains one's ears, or if one has been
 raised in Two Rivers and knows the ways of tracking and hunting,
 as any sensible parent would teach their children, regardless of
 sex. The Waterwood lies off to the east, where all the mighty rivers
@@ -812,7 +823,7 @@ to cough. There has been a bit of a dry spell, so the dust is
 especially thick. However, a dirt path is good enough for Deven 
 Riders.  It is not as if they have enough money to be pouring 
 into needless paving of paths that only get dusty when it 
-doesn&apos;t rain for months on end.  Yes, indeed! 
+doesn't rain for months on end.  Yes, indeed! 
 </roomdescription>
       <flags>0</flags>
       <sector>Field</sector>
@@ -824,90 +835,81 @@ doesn&apos;t rain for months on end.  Yes, indeed!
   </room>
   <room>
     <roombasic title="The Old Road" vnum="1738" zone="17">
-      <roomdescription>The Old Road goes north towards Emond&apos;s Field. Its hard,
-dirt packed length is shaded by a few, sturdy oaks and
-leatherleafs that have braved the harsh wintry years. 
-The weather has not been kind to the land, but Two
-Rivers has soaked the stubborn blood of its owners
-and seems to persist regardless.
+      <roomdescription>The Old Road goes south towards Emond's Field.  Its hard, dirt packed
+length is shaded by a few, sturdy oaks and leatherleafs that have braved
+the harsh wintry years.  The weather has not been kind to the land, but
+Two Rivers has soaked the stubborn blood of its owners and seems to
+persist regardless.    
 </roomdescription>
-      <flags>0</flags>
+      <flags>4</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
-    <exit direction="south" keyword="" exitinfo="0" keynum="-1" toroom="1700">
-      <description>You see nothing special.
-</description>
+    <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="1780">
+      <description/>
     </exit>
-    <exit direction="northeast" keyword="" exitinfo="0" keynum="0" toroom="1739">
+    <exit direction="southwest" keyword="" exitinfo="0" keynum="0" toroom="1739">
       <description/>
     </exit>
   </room>
   <room>
     <roombasic title="The Old Road" vnum="1739" zone="17">
-      <roomdescription>The sounds of Deven Ride fade away as you move
-further away from the town towards Emond&apos;s Field. 
-A squirrel chitters in the trees above and drops
-a cherished nut on your nose. Silly person, you
-should know better. The squirrel chitters away,
-quite upset at losing its hard earned acorn.
+      <roomdescription>The sounds of Deven Ride fade away as you move further away from the town
+towards Emond's Field.  A squirrel chitters in the trees above and drops a
+cherished nut on your nose.  Silly person, you should know better.  The
+squirrel chitters away, quite upset at losing its hard earned acorn.    
 </roomdescription>
       <flags>0</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
-    <exit direction="northeast" keyword="" exitinfo="0" keynum="-1" toroom="1740">
-      <description>You see nothing special.
-</description>
+    <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="1740">
+      <description/>
     </exit>
-    <exit direction="southwest" keyword="" exitinfo="0" keynum="0" toroom="1738">
+    <exit direction="northeast" keyword="" exitinfo="0" keynum="0" toroom="1738">
       <description/>
     </exit>
   </room>
   <room>
     <roombasic title="The Old Road" vnum="1740" zone="17">
-      <roomdescription>The dust clouds along the dirt road that is barely more
-than a glorified path are larger than usual. This indicates
-a dry year. There have been mutterings, that the finger of
-the Dark One taints the Pattern, that he is close to 
-waking. But it is only a dry spell, it will soon past.
-The Wisdoms listen to the wind, frustrated. The rain will
-come soon and all will be well. Won&apos;t it?
+      <roomdescription>The dust clouds along the dirt road that is barely more than a glorified
+path are larger than usual.  This indicates a dry year.  There have been
+mutterings, that the finger of the Dark One taints the Pattern, that he is
+close to waking.  But it is only a dry spell, it will soon past.  The
+Wisdoms listen to the wind, frustrated.  The rain will come soon and all
+will be well.  Won't it?    
 </roomdescription>
       <flags>0</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
-    <exit direction="northeast" keyword="" exitinfo="0" keynum="-1" toroom="1741">
-      <description>You see nothing special.
-</description>
+    <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="1739">
+      <description/>
     </exit>
-    <exit direction="southwest" keyword="" exitinfo="0" keynum="-1" toroom="1739">
-      <description>You see nothing special.
-</description>
+    <exit direction="west" keyword="" exitinfo="0" keynum="0" toroom="1416">
+      <description/>
+    </exit>
+    <exit direction="southeast" keyword="" exitinfo="0" keynum="0" toroom="1741">
+      <description/>
     </exit>
   </room>
   <room>
     <roombasic title="The Old Road" vnum="1741" zone="17">
-      <roomdescription>Roads in backwater villages are confusing things.
-One name should suffice for this dirt road barely
-big enough for a cart. And yet, its name changes from 
-the Old Road to the North Road when it passes through 
-Emond&apos;s Field. It is not a matter of consequence, but
-many an outsider has puzzled over the change. 
-That is what makes them outsiders, you know.
+      <roomdescription>Roads in backwater villages are confusing things.  One name should suffice
+for this dirt road barely big enough for a cart.  And yet, its name
+changes from the Old Road to the North Road when it passes through Emond's
+Field.  It is not a matter of consequence, but many an outsider has
+puzzled over the change.  That is what makes them outsiders, you know.  
 </roomdescription>
       <flags>0</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
-    <exit direction="northeast" keyword="" exitinfo="0" keynum="-1" toroom="1742">
-      <description>You see nothing special.
-</description>
+    <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="1742">
+      <description/>
     </exit>
-    <exit direction="southwest" keyword="" exitinfo="0" keynum="-1" toroom="1740">
-      <description>You see nothing special.
-</description>
+    <exit direction="northwest" keyword="" exitinfo="0" keynum="0" toroom="1740">
+      <description/>
     </exit>
   </room>
   <room>
@@ -923,13 +925,11 @@ its maker cannot be far. You smile and continue down the road.
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
-    <exit direction="north" keyword="" exitinfo="0" keynum="-1" toroom="1743">
-      <description>You see nothing special.
-</description>
+    <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="1741">
+      <description/>
     </exit>
-    <exit direction="southwest" keyword="" exitinfo="0" keynum="-1" toroom="1741">
-      <description>You see nothing special.
-</description>
+    <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="1743">
+      <description/>
     </exit>
   </room>
   <room>
@@ -939,24 +939,22 @@ that hint at some greater evil. A chill passes through you
 and you shiver. The sun passes from behind a cloud,
 and your fears dissipate. A forest has only trees and
 wild animals. Nothing else. And the faint curls of smoke
-indicate that Emond&apos;s Field is not far off.
+indicate that Emond's Field is not far off.
 </roomdescription>
       <flags>0</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
-    <exit direction="south" keyword="" exitinfo="0" keynum="-1" toroom="1742">
-      <description>You see nothing special.
-</description>
+    <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="1742">
+      <description/>
     </exit>
-    <exit direction="northwest" keyword="" exitinfo="0" keynum="-1" toroom="1744">
-      <description>You see nothing special.
-</description>
+    <exit direction="southwest" keyword="" exitinfo="0" keynum="0" toroom="1744">
+      <description/>
     </exit>
   </room>
   <room>
     <roombasic title="The Old Road" vnum="1744" zone="17">
-      <roomdescription>Sounds of people moving about indicate that Emond&apos;s Field
+      <roomdescription>Sounds of people moving about indicate that Emond's Field
 is near. The trees are less frequent and the road seems
 more worn. If packed dirt can truly be worn. The
 occasional farmer keeps to himself but nods politely
@@ -967,30 +965,28 @@ these folk of Two Rivers.
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
-    <exit direction="north" keyword="" exitinfo="0" keynum="-1" toroom="1706">
-      <description>You see nothing special.
-</description>
+    <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="1706">
+      <description/>
     </exit>
-    <exit direction="southeast" keyword="" exitinfo="0" keynum="-1" toroom="1743">
-      <description>You see nothing special.
-</description>
+    <exit direction="northeast" keyword="" exitinfo="0" keynum="0" toroom="1743">
+      <description/>
     </exit>
   </room>
   <room>
-    <roombasic title="Nearing Emond&apos;s Field" vnum="1745" zone="17">
+    <roombasic title="Nearing Emond's Field" vnum="1745" zone="17">
       <roomdescription>The sounds of construction ring throughout the air.
 The village has grown considerably since the arrival of 
 refugees from other countries that have come here to Two
 Rivers via the Mountains of the Mist. A hard journey into
 a hard land of hard people. However, those of Two Rivers
 are fair, and they will welcome the newcomers and grow.
-For Emond&apos;s Field must. The Wheel weaves and waits for no one.
+For Emond's Field must. The Wheel weaves and waits for no one.
 </roomdescription>
       <flags>0</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
-    <exit direction="southwest" keyword="" exitinfo="0" keynum="0" toroom="1706">
+    <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="1706">
       <description/>
     </exit>
   </room>
@@ -1016,7 +1012,7 @@ or perhaps a picnic.
       <roomdescription>The sounds of people going about their business adds a comforting
 touch to this village of neat rows.  Everything is perhaps a little
 too neat to seem normal, but Deven Riders are just terribly
-organized.  There&apos;s nothing wrong with that, now is there?    
+organized.  There's nothing wrong with that, now is there?    
 </roomdescription>
       <flags>0</flags>
       <sector>City</sector>
@@ -1154,8 +1150,8 @@ the inn.
     <roombasic title="The Common Room of the Goose and Pipe Inn" vnum="1754" zone="17">
       <roomdescription>The large room is filled with long tables.  All of them are bare
 except for one in the back, which is covered with a white tablecloth,
-allowing Master al&apos;Nerin and Mistress al&apos;Nerin to polish their
-tableware.  Or for Mistress al&apos;Nerin to shell peas.  There is a
+allowing Master al'Nerin and Mistress al'Nerin to polish their
+tableware.  Or for Mistress al'Nerin to shell peas.  There is a
 fireplace off on the furthest wall.  Stones boards line its mantel,
 and off to its side is a bookshelf filled with perhaps a few dozen
 books, well worn and dog eared.  The inn is quiet more often than
@@ -1185,10 +1181,10 @@ left Deven Ride alone as it was meant to be.
   </room>
   <room>
     <roombasic title="A side room in the Goose and Pipe Inn" vnum="1755" zone="17">
-      <roomdescription>A small room off to the side, it really isn&apos;t worth anyone&apos;s notice.  It is in
+      <roomdescription>A small room off to the side, it really isn't worth anyone's notice.  It is in
 fact big enough for only one of the long tables that occupy the main common
 room.  This room is often used for meetings of the Village Circle, the meetings
-they think the Women&apos;s Circle doesn&apos;t know about.  But really, what do men and
+they think the Women's Circle doesn't know about.  But really, what do men and
 women end up hiding from each other?  If it makes the Village Circle 
 happy to have this pretense of secrecy, then so be it. 
 </roomdescription>
@@ -1202,9 +1198,9 @@ happy to have this pretense of secrecy, then so be it.
   </room>
   <room>
     <roombasic title="The Kitchen of the Goose and Pipe Inn" vnum="1756" zone="17">
-      <roomdescription>Here is the domain of Mistress al&apos;Nerin.  She is famous through all of Two
+      <roomdescription>Here is the domain of Mistress al'Nerin.  She is famous through all of Two
 Rivers for her meat pasties.  Many a weary farmer, or tabac merchant from more
-glorious locales than here eagerly order a pasty if they know Mistress al&apos;Nerin
+glorious locales than here eagerly order a pasty if they know Mistress al'Nerin
 was its baker.  The kitchen is a large and cheery room.  There are two
 fireplaces.  The smaller one serves as a roasting spit during busier times.  A
 large wooden table stands in the middle for cutting and cleaning.  A large blue
@@ -1225,11 +1221,11 @@ striped towels.  Down below is the wine cellar and the pantry.
   <room>
     <roombasic title="The Pantry of the Goose and Pipe Inn" vnum="1757" zone="17">
       <roomdescription>The pantry is a cool and dark room a bit away from the kitchen.  
-Here Mistress al&apos;Nerin stores any of the goods she will use later on
+Here Mistress al'Nerin stores any of the goods she will use later on
 and would otherwise spoil in the heat and bustle of the kitchen.  
 Potatoes, turnips, and mysterious jars of preserved vegetables line
 the walls of the pantry neatly.  To the east lies the wine cellar
-were the al&apos;Nerins keep the lovely liquor Two Rivers is famous for
+were the al'Nerins keep the lovely liquor Two Rivers is famous for
 producing.    
 </roomdescription>
       <flags>25</flags>
@@ -1248,8 +1244,8 @@ producing.
       <roomdescription>The wine cellar is in fact even deeper beneath the ground than the pantry is.
 However, parts of the cellar are cleverly warmer than others, allowing for many
 types of alcohol to be stored here.  The most popular is of course Two Rivers
-brandy.  Home brew only.  Master al&apos;Nerin makes his own, strong enough to bring
-a tear into even the burliest farmer&apos;s eyes.  There is also some wine and
+brandy.  Home brew only.  Master al'Nerin makes his own, strong enough to bring
+a tear into even the burliest farmer's eyes.  There is also some wine and
 whiskey, since the Goose and Pipe Inn must maintain its pride as the largest
 inn in all of Two Rivers, but drink the brandy.  All the other drink is swill
 compared to the brandy.    
@@ -1328,7 +1324,7 @@ the front of the stall.
       <roomdescription>A sturdy Dhurran occupies this stable.  A large horse, popular in the area
 because of their steadfastness and placid natures.  Lerin has placed a feed bag
 filled with oats and barley and will soon be refilling it, at the rate the
-horse is eating.  Good thing there&apos;s extra grain in the storage room above the
+horse is eating.  Good thing there's extra grain in the storage room above the
 stable yard.    
 </roomdescription>
       <flags>24</flags>
@@ -1406,7 +1402,7 @@ stairway can be seen off in the distance.
 establishments.  Not that you would ever expect an inn of Deven Ride to be
 seedy.  People that walk around with sober, polite expressions and their
 sensible woolen clothes.  Safe as a baby in a cradle, really.  But you never
-can tell.  So respect people&apos;s privacy, and keep those eyes politely downcast.
+can tell.  So respect people's privacy, and keep those eyes politely downcast.
   
 </roomdescription>
       <flags>24</flags>
@@ -1448,7 +1444,7 @@ and a pitcher filled with water stand on a small table off to the side.
     <roombasic title="A Room" vnum="1768" zone="17">
       <roomdescription>The faint scent of herbal soap is the only trace of the last person who stayed
 in this room.  The room is just as neat and tidy as the other rooms in the inn.
-The al&apos;Nerins are good at their trade and would not have it otherwise.  Even
+The al'Nerins are good at their trade and would not have it otherwise.  Even
 the candle on the small side table is fresh, the wick still covered with a bit
 of wax.  Such service is quite nice.    
 </roomdescription>
@@ -1464,7 +1460,7 @@ of wax.  Such service is quite nice.
   <room>
     <roombasic title="A Room" vnum="1769" zone="17">
       <roomdescription>This room has a small window, an added little bonus that has cost you an extra
-10 silver coins, so the window best be nice.  But it&apos;s really only worth the
+10 silver coins, so the window best be nice.  But it's really only worth the
 extra cost if you wish to sit about all day in the room and peer out at the
 village.  The window offers quite a view of the Village Green, and if you were
 to stay here long enough, you would get to know the habits of the villagers
@@ -1486,7 +1482,7 @@ laggard!
 faintly of lavender, but that is only because they have been stored in the
 closet with sprigs of dried lavender.  Quite an innovation.  The room seems to
 be in order.  A bed with quilt and pillows, a table, a wash bin.  Ah yes, what
-you&apos;ve paid for.  Isn&apos;t that nice?    
+you've paid for.  Isn't that nice?    
 </roomdescription>
       <flags>0</flags>
       <sector>Inside</sector>
@@ -1501,9 +1497,9 @@ you&apos;ve paid for.  Isn&apos;t that nice?
     <roombasic title="The Second Hallway" vnum="1771" zone="17">
       <roomdescription>This hallway is a bit narrower and smaller than the first. The 
 second floor is only used in the busiest of tabac seasons, so 
-the floor isn&apos;t as worn, but neither is it as clean as the 
-other hallway&apos;s.  But it is still much safer and cleaner by 
-anyone&apos;s standards than the hallways of inns elsewhere.  
+the floor isn't as worn, but neither is it as clean as the 
+other hallway's.  But it is still much safer and cleaner by 
+anyone's standards than the hallways of inns elsewhere.  
 Just leave Two Rivers, and it will all be quite clear. 
 </roomdescription>
       <flags>24</flags>
@@ -1525,9 +1521,9 @@ Just leave Two Rivers, and it will all be quite clear.
   <room>
     <roombasic title="A Room" vnum="1772" zone="17">
       <roomdescription>The room is even smaller than the ones on the floor below, but it is still
-adequate for most travelers&apos; needs.  The al&apos;Nerins never cut corners on any of
+adequate for most travelers' needs.  The al'Nerins never cut corners on any of
 their rooms.  It benefits neither the travelers nor them.  What are a few
-coppers if it keeps customers coming and happy?  Plus, the al&apos;Nerins are a good
+coppers if it keeps customers coming and happy?  Plus, the al'Nerins are a good
 and honest folk who provide the service happily and competently.    
 </roomdescription>
       <flags>24</flags>
@@ -1540,11 +1536,11 @@ and honest folk who provide the service happily and competently.
     </exit>
   </room>
   <room>
-    <roombasic title="A room" vnum="1773" zone="17">
+    <roombasic title="A Room" vnum="1773" zone="17">
       <roomdescription>The room is a small corner room.  Its advantage is the dormer window that lets
 in the wan rays of light early in the morning and the twinklings of the stars
 late at night.  The bed has been positioned perfectly for peering out of the
-window.  This is a good place to tend to a sick person.  If you don&apos;t mind
+window.  This is a good place to tend to a sick person.  If you don't mind
 having to run up and down the stairs to fetch them anything, that is.    
 </roomdescription>
       <flags>24</flags>
@@ -1576,11 +1572,11 @@ wafting from their spouts.
     </exit>
   </room>
   <room>
-    <roombasic title="The Goodwife&apos;s Flower Shop" vnum="1775" zone="17">
+    <roombasic title="The Goodwife's Flower Shop" vnum="1775" zone="17">
       <roomdescription>The room in the house delegated for flower buyers is small, but the goodwife
 has a good eye to match her title.  The flowers are fresh and lovely, and they
 practically spill from the various buckets throughout the room.  A little girl
-shyly hangs at the goodwife&apos;s skirt and peeps at the customers, flashing her
+shyly hangs at the goodwife's skirt and peeps at the customers, flashing her
 little dimple at them, and silently pointing out the blooms she knows to be the
 best in the store.    
 </roomdescription>
@@ -1593,7 +1589,7 @@ best in the store.
     </exit>
   </room>
   <room>
-    <roombasic title="Ulie&apos;s Sweets and Honey" vnum="1776" zone="17">
+    <roombasic title="Ulie's Sweets and Honey" vnum="1776" zone="17">
       <roomdescription>The room is filled with sweet scents and faint buzzing noises.
 A wrinkled and brown man stands behind the counter, humming softly
 to himself. He moves with gentle and deliberate grace, as if not to
@@ -1611,12 +1607,12 @@ various jars and pots of sweets and honey for sale.
     </exit>
   </room>
   <room>
-    <roombasic title="Cila&apos;s Bakery" vnum="1777" zone="17">
+    <roombasic title="Cila's Bakery" vnum="1777" zone="17">
       <roomdescription>The room is warm and flooded with numerous sweet smells.
 Butter, flour, chocolate, jam, and all sorts of other lovely
 things one would expect in a bakery. Cila rushes to and fro from
 her kitchen to the main area where people purchase the various
-sweet and savory baked goods. A young girl, perhaps Cila&apos;s
+sweet and savory baked goods. A young girl, perhaps Cila's
 daughter, takes the orders and coins from the customers.
 </roomdescription>
       <flags>158</flags>
@@ -1646,7 +1642,7 @@ likely the case.
     </exit>
   </room>
   <room>
-    <roombasic title="Fel&apos;s Pipes" vnum="1779" zone="17">
+    <roombasic title="Fel's Pipes" vnum="1779" zone="17">
       <roomdescription>A cool and dark room, Fel stands behind a counter
 carefully polishing one of the many fine pipes
 he has collected from all over the world. Never
@@ -1663,23 +1659,71 @@ If you ask politely, he may even let you smoke a bowl.
     </exit>
   </room>
   <room>
-    <roombasic title="The Postmaster&apos;s Office" vnum="1795" zone="17">
+    <roombasic title="The Entrance To Deven Ride" vnum="1780" zone="17">
+      <roomdescription>After travelling the Old Road for what seemed like aeons, the small
+village of Deven Ride manifests before you, it's newly built wooden
+walls parted by a large wooden gate where the Old Road diminishes
+into an inner street.  Through the gate can be seen many a busy
+townsperson, going about their modest business.  The muted sounds
+of animals can be heard as well, mingled with the soft buzz of
+conversing townsfolk.  The walls seem to stretch around the entire
+village.  This a definite change, a moderately fortified village in this back
+water land?  Travelling further will reveal the fortifications as but a scratch
+on the surface compared to all the other changes Deven Ride has
+undergone.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="1722">
+      <description/>
+    </exit>
+    <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="1738">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="&amp;RM&amp;Waster &amp;RC&amp;Whandalan's &amp;RC&amp;Wottage&amp;n" vnum="1781" zone="17">
+      <roomdescription>You notice a warm, musky scent of &amp;yh&amp;Ke&amp;yr&amp;Kb&amp;ys&amp;n when you enter this cottage,
+coming from a collection of pots and bundles of herbs stored on shelves
+on the north wall.  A small &amp;Rf&amp;ri&amp;Rr&amp;re&amp;Rp&amp;rl&amp;Ra&amp;rc&amp;Re&amp;n illuminates the room with a soft
+flickering &amp;Ylight&amp;n.  Several small windows give a view of a nice garden full
+with &amp;yh&amp;Ke&amp;yr&amp;Kb&amp;ys&amp;n on the east side of the cottage.
+
+In a corner stands a large chest filled with old clothes bearing an emblem
+of some sort.  Hanging above the chest is a scabbard with a slightly
+curved steel sword with the same emblem showing on the hilt.
+
+A quaterstaff with steel endings is leaning against a sturdy table with
+some rather ornate padded chairs filling the room.
+</roomdescription>
+      <flags>670</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="west" keyword="door" exitinfo="9" keynum="1714" toroom="1726">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Postmaster's Office" vnum="1795" zone="17">
       <roomdescription>\c00This small building seems to somehow dominate this stretch of the
 street, a small white bird painted on the sign hanging over the front
 door, it boasts the efficiency of town postmaster.  The front door in
 fact is wide open, welcoming anyone who may need to send or mail
 something inside.  Behind this almost shack of a structure is a modest
 pigeon coop.  Inside the postmaster strides back and forth performing
-whatever it is he&apos;s been demanded of this day.  Bundles of packaging
+whatever it is he's been demanded of this day.  Bundles of packaging
 sit before a counter, above which, atop the counter, sits a rack with many
 individual shelves for letter sorting, most of them empty.  Though the
-postmaster is well prepared, it seems his services aren&apos;t quite called on
+postmaster is well prepared, it seems his services aren't quite called on
 very often, this being Deven Ride after all, a small town, far away from
 everything.
 </roomdescription>
       <flags>158</flags>
       <sector>Inside</sector>
-      <special>PostMaster</special>
+      <special>NONE</special>
     </roombasic>
     <exit direction="northeast" keyword="" exitinfo="0" keynum="0" toroom="1733">
       <description/>
@@ -1692,7 +1736,7 @@ outlanders and down home country folk is refreshing as they walk this
 way and that, going about their business.  A Domani woman here, a veiled
 Taraboner there, a Saldaean with his bushy mustache and long, almost
 beak-like nose also striding through.  The new people in Deven Ride bring
-new trade and thus there&apos;s many shops sprouting up in this area, such
+new trade and thus there's many shops sprouting up in this area, such
 as Domani dress shops or perhaps a Ghealdan alum merchant.  To the
 left up a piece is a man trying to convince a native that tiled roofs are the
 wave of the future, scorning the stand-by thatching that the native people
@@ -1717,7 +1761,7 @@ spring softens to a soothing lapping against the banks of the pond.  The
 current however is still strong here, so only the cheekiest of children dare to
 swim here.  The more popular spot for furtive dipping lies to the north.    
 </roomdescription>
-      <flags>0</flags>
+      <flags>150</flags>
       <sector>Water (Swim)</sector>
       <special>NONE</special>
     </roombasic>
@@ -1736,10 +1780,10 @@ of the wood allows for infinitely more interesting games.  However,
 the pond is preferred by parents with younger children for safety
 reasons and parents of older children for other reasons.  But there
 are a few trees along this bit of the pond that allow for more
-privacy than the other bits of the pond.  So don&apos;t look too closely,
-you may seem something you weren&apos;t meant to see.    
+privacy than the other bits of the pond.  So don't look too closely,
+you may seem something you weren't meant to see.    
 </roomdescription>
-      <flags>0</flags>
+      <flags>22</flags>
       <sector>Water (Swim)</sector>
       <special>NONE</special>
     </roombasic>
@@ -1751,11 +1795,11 @@ you may seem something you weren&apos;t meant to see.
     <roombasic title="The Pond" vnum="1799" zone="17">
       <roomdescription>In the center of the village lies a spring fed pond.  Various oxen and ponies
 line the edge of the pond, quietly drinking after a long haul from their
-owners&apos; farms.  A young boy dips his bucket into the pond.  Clearly this is a
+owners' farms.  A young boy dips his bucket into the pond.  Clearly this is a
 public source of water.  The pond continues a bit, and its source lies to the
 west.    
 </roomdescription>
-      <flags>0</flags>
+      <flags>148</flags>
       <sector>Water (Swim)</sector>
       <special>NONE</special>
     </roombasic>

@@ -1,1154 +1,1756 @@
-#25000
-wallguard guard soldier~
-a wallguard~
-A wallguard is patrolling the walls here.
-~
-The wallguard has the look of a seasoned fighter.
+<?xml version="1.0"?>
+<mobiles>
+  <mobile vnum="25000" name="wallguard guard soldier" special="NONE">
+    <description>The wallguard has the look of a seasoned fighter.
 I would be careful.
-~
-1050696 0 0 E
-50 -30 -1 656 10d150+500 10d12+30
-50 100
-8 8 1
-BareHandAttack: 6
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-Bash: 100
-Kick: 100
-E
-#25001
-captain cityguard guard~
-the cityguard captain~
-The Captain of the Cityguard sits here doing paperwork.
-~
-The Captain is seemingly disinterested, but also has the look
+</description>
+    <shortdesc>a wallguard</shortdesc>
+    <longdesc>A wallguard is patrolling the walls here.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="50" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="10" dsize="150" bonus="500"/>
+      <move ndize="1" dsize="500" bonus="500"/>
+      <ac>-10</ac>
+      <gold>50</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>50</hitroll>
+      <damroll>30</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1050696"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="6"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="10" sides="12" add="50"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="25001" name="captain cityguard guard" special="NONE">
+    <description>The Captain is seemingly disinterested, but also has the look
 of a coiled snake.
-~
-1312856 0 0 E
-75 -50 -1 656 25d250+700 15d20+45
-150 130
-6 6 1
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-Trip: 100
-E
-#25002
-Cesnedra~
-Cesnedra, the Illuminator, complete with fireworks~
-Cesnedra is lighting some fireworks here.
-~
-It looks, err, unfinished.
-~
-10 0 0 E
-200 20 10 656 1d100+0 1d1+0
-0 0
-8 8 2
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-P
-OnAttack
-Say "attack me? i'll slit your throat faster then you can blink..."
-Stop
-End
-OnSayTo "nightflower"
-Emote "suddenly, you hear a loud crackling, and a \c14bright\c00 light shoots up and you see:"
-Emote ".                            \c04a\c00"
-Emote ".                           \c04a\c02n\c04a\c00"
-Emote ".                          \c04a\c02w\c03w\c02w\c04a\c00"
-Emote ".                         \c04a\c02w\c03w\c01w\c03w\c02w\c04a\c00"
-Emote ".                        \c04a\c02n\c03nn\c02\c03nn\c02n\c04a\c00"
-Emote ".               \c04.ada.    n\c02nn\c03\c01!\c03\c02nn\c04n    .ada.\c00"
-Emote ".            \c04.aa\c02nnnn\c04aa  ann\c02\c01!\c03\c01!\c02\c04nna  aa\c02nnnn\c04aa.\c00"
-Emote ".          \c04<aa\c02nnn\c03www\c02wwwv\c03i.\c01am\c03@\c01s\c03@\c01ma\c03.i\c02vwww\c03www\c02nnn\c04aa>\c00"
-Emote ".            \c04'~\c02nnw\c03w\c01w\c03ww\c02wwa \c03v \c01~\c08"
-Emote ".              \c04'~g\c02gg\c03ggg\c02lv \c03a     \c03a \c02vjg\c03ggg\c02g\c04g~'\c00"
-Emote ".                 \c04'\c02~~~\c04"
-Emote ".                 \c04.add\c02ama\c03a \c01:\c03~\c01^\c03~\c01: \c03a\c02ama\c04dda.\c00"
-Emote ".                \c04aa\c02mmmmm\c04v\c02v\c03i \c01::: \c03i\c02v\c04v\c02mmmmm\c04aa\c00"
-Emote ".               \c04a\c02mm\c03mmm\c02m\c04v \c02v\c03v \c01a\c03"
-Emote ".              \c046\c02m\c03mmm\c02mm\c04v   \c01~\c02v\c01v\c03a\c01v\c02v\c01~   \c04v\c02mm\c03mmm\c02m\c046\c00"
-Emote ".              \c04a\c02mm\c03m\c02m\c04mb      \c01~ ~      \c04gm\c02m\c03m\c02mm\c04a\c00"
-Emote ".              \c04m\c02mmm\c04mj                 um\c02mm\c04mm\c00"
-Emote ".              \c04m\c02mm\c04m~                   ~m\c02mm\c04m\c00"
-Emote ".              \c04v\c02m\c04v                      v\c02m\c04v\c00"
-Emote ".               \c04v                        v\c00"
-Emote "a nightflower blooms in the night \c04sky\c00, light up the entire"
-Emote "\c02landscape\c00 with its brilliant colors. the flower shimmers"
-Emote "faintly, then dissipates into fine \c01sparkling\c00 dust."
-End
-OnSayTo "red flare"
-Emote "in the night sky, a bright \c01red\c00 light shoots up:"
-Emote ".                  \c07.\c01mmm\c07.\c00"
-Emote ".          \c02.... \c01mmmm  mmmm\c02.....\c00"
-Emote ".       \c02......\c01mm\c08m\c00\c01mm  mm\c08mm\c00\c01mm\c02.......\c00"
-Emote ".     \c02.......\c01mm\c08mm\c00\c01m  mm\c08mmmm\c00\c01mm\c02........\c00"
-Emote ".     \c02.......\c01mm\c08mm\c00\c01m  mm\c08mmm\c00\c01mm\c07'.\c01wwww\c02...\c00"
-Emote ".      \c02..\c01mm\c07..`\c01mm\c08m\c00\c01mm  m\c08mm\c00\c01m\c07..\c01ww\c08www\c00\c01www\c00"
-Emote ".     \c07.\c01mm\c08m\c00\c01mmm\c07...`\c01mmm  mm\c07'..\c01www\c08www\c00\c01wwww\c00"
-Emote ".     \c01mm\c08mmm\c00\c01mm\c07............\c01wwww    wwww\c07.\c00"
-Emote ".   \c07.\c01mmmm\c08mmm\c00\c01mmm\c07.....\c03oo\c07...\c01ww  wwww  www\c07.\c00"
-Emote ".  \c07.\c01mmm\c08mmmmmm\c00\c01mmmm\c07..\c03o\c10oo\c00\c03o\c07..  \c01www\c08ww\c00\c01www  ww\c00"
-Emote ".  \c01mm  mmm\c08mm\c00\c01mmm  \c07..\c03o\c10oo\c00\c03o\c07..\c01wwww\c08wwwwww\c00\c01wwww\c00"
-Emote ".  \c01mmmm  mmmm  mm\c07...\c03oo\c07....`\c01wwww\c08wwww\c00\c01www\c07'\c00"
-Emote ".  \c07`\c01mmmmm    mmmm\c07............\c01www\c08ww\c00\c01www\c00"
-Emote ".   \c07`\c01mmmm\c08mm\c00\c01mmmm\c07...\c01ww  www\c07....\c01ww\c08w\c00\c01www\c07'\c00"
-Emote ".      \c01mmm\c08mm\c00\c01mmm\c07..\c01w\c08w\c00\c01ww  ww\c08w\c00\c01ww\c07..`\c01ww\c02''\c00"
-Emote ".     \c02```\c01mmmm\c07'.\c01www\c08ww\c00\c01ww  wwwww\c02'''''''\c00"
-Emote ".     \c02````````\c01www\c08www\c00\c01ww  ww\c08w\c00\c01ww\c02'''''''\c00"
-Emote ".       \c02```````\c01ww\c08ww\c00\c01ww  wwwww\c02''''''\c00"
-Emote ".          \c02`````\c01wwww  wwww\c02'''''\c00"
-Emote ".                 \c01`\c01www\c07'\c00    "
-Emote "a bright red firework bursts into many sparkles, forming a red"
-Emote "poppy like shape in the night sky that fades slowly into a shower"
-Emote "of sparks."
-End
-OnSayTo "green "
-Emote "in the night sky, a bright flare shoots up:"
-Emote ".         \c02._oooooos_        _goooos_.\c00"
-Emote ".        \c02i888\c09888\c00\c0288888     g8888\c09888\c00\c02888i\c00"
-Emote ".    \c02.go8\c09oo\c00\c02ooooo\c09oo\c00\c02oo8b   d8oo\c09oo\c00\c02ooo\c09o\c00\c02oo8os.\c00"
-Emote ".   \c0288o\c09oo\c00\c02o8\c09moa\c00\c028oo\c09oo\c00\c02oo8. .8oo\c09oo\c00\c02oo8\c09aom\c00\c028o\c09oo\c00\c02o8\c00"
-Emote ".   \c02!8oo\c09oo\c00\c02o88oo8~o8oo8\c03[ ]\c028oo8o~8oo8oo\c09oo\c00\c02oo8!\c00"
-Emote ".    \c02!8ooo\c09ooo\c00\c02ooo8o_!8o8 8o8!_o8ooo\c09ooo\c00\c02ooo8!\c00"
-Emote ".     \c02'~~ooo888\c0988\c00\c02888288.882888\c0988\c00\c028888oo~~`\c00"
-Emote ".              \c09!!!\c00\c02>>>>>\c14x\c00\c02<<<<\c09!!!\c00"
-Emote ".      \c02__ooo888\c0988\c00\c0288at88"
-Emote ".   \c02,o8ooo\c09ooo\c00\c02ooo8o~o8o8 8o8s~o8ooo\c09ooo\c00\c02ooo8o.\c00"
-Emote ".   \c028oo\c09ooo\c00\c02oo8oot_o8oo8[ ]8oo8o_7oo8oo\c09ooo\c00\c02oo8\c00"
-Emote ".   \c02!8oo\c09o\c00\c02oo8o8oo\c09oo\c00\c02ooo8   8oo\c09oo\c00\c02ooo8o8oo\c09o\c00\c02oo8\c00"
-Emote ".    \c02'i8o\c09oo\c00\c02oooo\c09oo\c00\c02ooo8b   d8oo\c09oo\c00\c02oooo\c09oo\c00\c02o8i`\c00"
-Emote ".       \c02!8ooo\c09ooo\c00\c02ooo8o     o8ooo\c09ooo\c00\c02oo8!\c00"
-Emote ".         \c02'~8oooo8!~       ~!8ooooo8`\c00"
-Emote "a green sparkler goes off with a loud boom, covering the entire"
-Emote "night sky with a shower of green sparkles that slowly forms what"
-Emote "looks like a good luck sign."
-End
-OnSayTo "multicolor multi"
-Emote "a large crackling noise is heard, and a bright white light shoots up:"
-Emote ".             \c03\c10*\c00\c03\c00"
-Emote ".          \c01\c08*\c00\c01\c03\c10*\c00\c03\c02\c09*\c00\c02\c00"
-Emote ".        \c01\c08*\c00\c01\c03\c10*\c00\c03\c02\c09*\c00\c02\c00"
-Emote ".         \c01\c08*\c00\c01\c07=\c03\c10*\c00\c03\c07=\c02\c09*\c00\c02\c00"
-Emote ".  \c05\c12*\c00\c05\c12*\c00\c05\c12*\c00\c05\c07\c14*\c00\c07\c06\c13*\c00\c06\c13*\c00\c06\c13*\c00\c06\c00"
-Emote ". \c04\c11*\c00\c04\c11*\c00\c04\c11*\c00\c04\c14o\c00\c04\c11*\c00\c04\c11*\c00\c04\c11*\c00\c04\c00"
-Emote ".   \c06\c13*\c00\c06\c13*\c00\c06\c13*\c00\c06\c07\c14*\c00\c07\c05\c12*\c00\c05\c12*\c00\c05\c12*\c00\c05\c00"
-Emote ".         \c02\c09*\c00\c02\c07=\c03\c10*\c00\c03\c07=\c01\c08*\c00\c01\c00"
-Emote ".        \c02\c09*\c00\c02\c03\c10*\c00\c03\c01\c08*\c00\c01\c00"
-Emote ".          \c02\c09*\c00\c02\c03\c10*\c00\c03\c01\c08*\c00\c01\c00"
-Emote ".             \c03\c10*\c00\c03\c00\c00"
-Emote "in the sky, a shower of multicolored sparkles forms into a snowflake"
-Emote "that shimmers brightly, changing colors until it fades from view"
-Emote "into a shower of sparks that leaves a fine layer of dust on everything."
-End
-OnSayTo "shooting star"
-Emote "a loud boom goes off as you light this large colorful cylindar."
-Emote "in the night sky, you see:"
-Emote ".                 \c01@\c00"
-Emote ".                \c04j\c07\c04l\c00"
-Emote ".                \c07\c01@\c07\c00"
-Emote ".               \c07:\c01@\c07:\c00"
-Emote ".\c07\c01\c04e..         \c07:\c01@\c04&\c01@\c07:         \c04..e\c01\c07\c00"
-Emote ".\c07':\c01@@\c07\c04eo..   \c07:\c01@\c04&\c01*\c04&\c01@\c07:    \c04..oe\c07\c01@@\c07:'\c00"
-Emote ".  \c07':\c01@\c04&\c01*\c04&\c01@\c07\c04e\c07\c01@\c04&*\c07**\c04&\c01@\c07\c04e\c07\c01@\c04&*&\c01@\c07:'\c00"
-Emote ".    \c07':\c01@\c04&\c01******************\c04&\c01@\c07:'\c00"
-Emote ".      \c07':\c01@\c04&\c07******\c07********\c04&\c01@\c07:'\c00"
-Emote ".       \c07':\c01@\c04&\c01*****\c04&\c01*****\c04&\c01@\c07:'\c00"
-Emote ".         \c07'\c01@\c07&\c07***\c04&\c01@\c04&\c07***\c04&\c01@\c07'\c00"
-Emote ".         \c07:\c01@\c04&\c01**\c04&\c01@\c07\c01@\c04&\c01**\c04&\c01@\c07:\c00"
-Emote ".        \c07'\c01@\c04&\c07*\c04&\c01@\c07\c01@\c07\c01@\c04&\c07*\c04&\c01@\c07'\c00"
-Emote ".       \c07'\c01@\c04&\c01*\c04&\c01@\c07:' ':\c01@\c04&\c01*\c04&\c01@\c07'\c00"
-Emote ".      \c07'\c01@\c04&&\c01@\c07:       :\c01@\c04&&\c01@\c07'\c00"
-Emote ".     \c07'\c01@\c04&\c01@\c07:'         ':\c01@\c04&\c01@\c07'\c00"
-Emote ".    \c07'\c01@@\c07:'             ':\c01@@\c07'\c00"
-Emote ".   \c07.:'                   ':\c00"
-Emote "a tricolored fireworks forms a bright shooting star in the sky,"
-Emote "leaving a thin layer of sparkle dust on everyone and a faint smell"
-Emote "of burnt paper and various powders in the air."
-End
-Q
-E
-#25003
-busy merchant b1~
-a busy merchant~
-A merchant dressed in a long embroidered vest and a long cloak hurries by.
-~
-This merchant is obviously too busy to pay attention to anyone or anything.
-~
-1048584 128 0 E
-30 -10 5 656 10d110+300 4d10+18
-100 100
-8 8 1
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-E
-#25004
-banker money lender ~
-Ebou Dar's money lender~
-A greedy looking man sits behind a desk, peering at you oddly.
-~
-This man wears fine robes of the finest wool, trimmed with 
+</description>
+    <shortdesc>the cityguard captain</shortdesc>
+    <longdesc>The Captain of the Cityguard sits here doing paperwork.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="75" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="25" dsize="250" bonus="700"/>
+      <move ndize="1" dsize="700" bonus="700"/>
+      <ac>-10</ac>
+      <gold>150</gold>
+      <bankgold>0</bankgold>
+      <exp>130</exp>
+      <hitroll>70</hitroll>
+      <damroll>45</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1312856"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Sitting" other="Sitting"/>
+    <damage num="15" sides="20" add="70"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="25002" name="Cesnedra" special="NONE">
+    <description>It looks, err, unfinished.
+</description>
+    <shortdesc>Cesnedra, the Illuminator, complete with fireworks</shortdesc>
+    <longdesc>Cesnedra is lighting some fireworks here.
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="200" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="0"/>
+      <move ndize="1" dsize="0" bonus="0"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="10"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnAttack" argtype="VOID" argument="NONE">
+      <action number="Say" argtype="STRING" argument="attack me? i&apos;ll slit your throat faster then you can blink..."/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+    </mobprog>
+    <mobprog main="OnSayTo" argtype="STRING" argument="nightflower">
+      <action number="Emote" argtype="STRING" argument="suddenly, you hear a loud crackling, and a \c14bright\c00 light shoots up and you see:"/>
+      <action number="Emote" argtype="STRING" argument=".                            \c04a\c00"/>
+      <action number="Emote" argtype="STRING" argument=".                           \c04a\c02n\c04a\c00"/>
+      <action number="Emote" argtype="STRING" argument=".                          \c04a\c02w\c03w\c02w\c04a\c00"/>
+      <action number="Emote" argtype="STRING" argument=".                         \c04a\c02w\c03w\c01w\c03w\c02w\c04a\c00"/>
+      <action number="Emote" argtype="STRING" argument=".                        \c04a\c02n\c03nn\c02\c03nn\c02n\c04a\c00"/>
+      <action number="Emote" argtype="STRING" argument=".               \c04.ada.    n\c02nn\c03\c01!\c03\c02nn\c04n    .ada.\c00"/>
+      <action number="Emote" argtype="STRING" argument=".            \c04.aa\c02nnnn\c04aa  ann\c02\c01!\c03\c01!\c02\c04nna  aa\c02nnnn\c04aa.\c00"/>
+      <action number="Emote" argtype="STRING" argument=".          \c04&lt;aa\c02nnn\c03www\c02wwwv\c03i.\c01am\c03@\c01s\c03@\c01ma\c03.i\c02vwww\c03www\c02nnn\c04aa&gt;\c00"/>
+      <action number="Emote" argtype="STRING" argument=".            \c04&apos;~\c02nnw\c03w\c01w\c03ww\c02wwa \c03v \c01~\c08"/>
+      <action number="Emote" argtype="STRING" argument=".              \c04&apos;~g\c02gg\c03ggg\c02lv \c03a     \c03a \c02vjg\c03ggg\c02g\c04g~&apos;\c00"/>
+      <action number="Emote" argtype="STRING" argument=".                 \c04&apos;\c02~~~\c04"/>
+      <action number="Emote" argtype="STRING" argument=".                 \c04.add\c02ama\c03a \c01:\c03~\c01^\c03~\c01: \c03a\c02ama\c04dda.\c00"/>
+      <action number="Emote" argtype="STRING" argument=".                \c04aa\c02mmmmm\c04v\c02v\c03i \c01::: \c03i\c02v\c04v\c02mmmmm\c04aa\c00"/>
+      <action number="Emote" argtype="STRING" argument=".               \c04a\c02mm\c03mmm\c02m\c04v \c02v\c03v \c01a\c03"/>
+      <action number="Emote" argtype="STRING" argument=".              \c046\c02m\c03mmm\c02mm\c04v   \c01~\c02v\c01v\c03a\c01v\c02v\c01~   \c04v\c02mm\c03mmm\c02m\c046\c00"/>
+      <action number="Emote" argtype="STRING" argument=".              \c04a\c02mm\c03m\c02m\c04mb      \c01~ ~      \c04gm\c02m\c03m\c02mm\c04a\c00"/>
+      <action number="Emote" argtype="STRING" argument=".              \c04m\c02mmm\c04mj                 um\c02mm\c04mm\c00"/>
+      <action number="Emote" argtype="STRING" argument=".              \c04m\c02mm\c04m~                   ~m\c02mm\c04m\c00"/>
+      <action number="Emote" argtype="STRING" argument=".              \c04v\c02m\c04v                      v\c02m\c04v\c00"/>
+      <action number="Emote" argtype="STRING" argument=".               \c04v                        v\c00"/>
+      <action number="Emote" argtype="STRING" argument="a nightflower blooms in the night \c04sky\c00, light up the entire"/>
+      <action number="Emote" argtype="STRING" argument="\c02landscape\c00 with its brilliant colors. the flower shimmers"/>
+      <action number="Emote" argtype="STRING" argument="faintly, then dissipates into fine \c01sparkling\c00 dust."/>
+    </mobprog>
+    <mobprog main="OnSayTo" argtype="STRING" argument="red flare">
+      <action number="Emote" argtype="STRING" argument="in the night sky, a bright \c01red\c00 light shoots up:"/>
+      <action number="Emote" argtype="STRING" argument=".                  \c07.\c01mmm\c07.\c00"/>
+      <action number="Emote" argtype="STRING" argument=".          \c02.... \c01mmmm  mmmm\c02.....\c00"/>
+      <action number="Emote" argtype="STRING" argument=".       \c02......\c01mm\c08m\c00\c01mm  mm\c08mm\c00\c01mm\c02.......\c00"/>
+      <action number="Emote" argtype="STRING" argument=".     \c02.......\c01mm\c08mm\c00\c01m  mm\c08mmmm\c00\c01mm\c02........\c00"/>
+      <action number="Emote" argtype="STRING" argument=".     \c02.......\c01mm\c08mm\c00\c01m  mm\c08mmm\c00\c01mm\c07&apos;.\c01wwww\c02...\c00"/>
+      <action number="Emote" argtype="STRING" argument=".      \c02..\c01mm\c07..`\c01mm\c08m\c00\c01mm  m\c08mm\c00\c01m\c07..\c01ww\c08www\c00\c01www\c00"/>
+      <action number="Emote" argtype="STRING" argument=".     \c07.\c01mm\c08m\c00\c01mmm\c07...`\c01mmm  mm\c07&apos;..\c01www\c08www\c00\c01wwww\c00"/>
+      <action number="Emote" argtype="STRING" argument=".     \c01mm\c08mmm\c00\c01mm\c07............\c01wwww    wwww\c07.\c00"/>
+      <action number="Emote" argtype="STRING" argument=".   \c07.\c01mmmm\c08mmm\c00\c01mmm\c07.....\c03oo\c07...\c01ww  wwww  www\c07.\c00"/>
+      <action number="Emote" argtype="STRING" argument=".  \c07.\c01mmm\c08mmmmmm\c00\c01mmmm\c07..\c03o\c10oo\c00\c03o\c07..  \c01www\c08ww\c00\c01www  ww\c00"/>
+      <action number="Emote" argtype="STRING" argument=".  \c01mm  mmm\c08mm\c00\c01mmm  \c07..\c03o\c10oo\c00\c03o\c07..\c01wwww\c08wwwwww\c00\c01wwww\c00"/>
+      <action number="Emote" argtype="STRING" argument=".  \c01mmmm  mmmm  mm\c07...\c03oo\c07....`\c01wwww\c08wwww\c00\c01www\c07&apos;\c00"/>
+      <action number="Emote" argtype="STRING" argument=".  \c07`\c01mmmmm    mmmm\c07............\c01www\c08ww\c00\c01www\c00"/>
+      <action number="Emote" argtype="STRING" argument=".   \c07`\c01mmmm\c08mm\c00\c01mmmm\c07...\c01ww  www\c07....\c01ww\c08w\c00\c01www\c07&apos;\c00"/>
+      <action number="Emote" argtype="STRING" argument=".      \c01mmm\c08mm\c00\c01mmm\c07..\c01w\c08w\c00\c01ww  ww\c08w\c00\c01ww\c07..`\c01ww\c02&apos;&apos;\c00"/>
+      <action number="Emote" argtype="STRING" argument=".     \c02```\c01mmmm\c07&apos;.\c01www\c08ww\c00\c01ww  wwwww\c02&apos;&apos;&apos;&apos;&apos;&apos;&apos;\c00"/>
+      <action number="Emote" argtype="STRING" argument=".     \c02````````\c01www\c08www\c00\c01ww  ww\c08w\c00\c01ww\c02&apos;&apos;&apos;&apos;&apos;&apos;&apos;\c00"/>
+      <action number="Emote" argtype="STRING" argument=".       \c02```````\c01ww\c08ww\c00\c01ww  wwwww\c02&apos;&apos;&apos;&apos;&apos;&apos;\c00"/>
+      <action number="Emote" argtype="STRING" argument=".          \c02`````\c01wwww  wwww\c02&apos;&apos;&apos;&apos;&apos;\c00"/>
+      <action number="Emote" argtype="STRING" argument=".                 \c01`\c01www\c07&apos;\c00    "/>
+      <action number="Emote" argtype="STRING" argument="a bright red firework bursts into many sparkles, forming a red"/>
+      <action number="Emote" argtype="STRING" argument="poppy like shape in the night sky that fades slowly into a shower"/>
+      <action number="Emote" argtype="STRING" argument="of sparks."/>
+    </mobprog>
+    <mobprog main="OnSayTo" argtype="STRING" argument="green ">
+      <action number="Emote" argtype="STRING" argument="in the night sky, a bright flare shoots up:"/>
+      <action number="Emote" argtype="STRING" argument=".         \c02._oooooos_        _goooos_.\c00"/>
+      <action number="Emote" argtype="STRING" argument=".        \c02i888\c09888\c00\c0288888     g8888\c09888\c00\c02888i\c00"/>
+      <action number="Emote" argtype="STRING" argument=".    \c02.go8\c09oo\c00\c02ooooo\c09oo\c00\c02oo8b   d8oo\c09oo\c00\c02ooo\c09o\c00\c02oo8os.\c00"/>
+      <action number="Emote" argtype="STRING" argument=".   \c0288o\c09oo\c00\c02o8\c09moa\c00\c028oo\c09oo\c00\c02oo8. .8oo\c09oo\c00\c02oo8\c09aom\c00\c028o\c09oo\c00\c02o8\c00"/>
+      <action number="Emote" argtype="STRING" argument=".   \c02!8oo\c09oo\c00\c02o88oo8~o8oo8\c03[ ]\c028oo8o~8oo8oo\c09oo\c00\c02oo8!\c00"/>
+      <action number="Emote" argtype="STRING" argument=".    \c02!8ooo\c09ooo\c00\c02ooo8o_!8o8 8o8!_o8ooo\c09ooo\c00\c02ooo8!\c00"/>
+      <action number="Emote" argtype="STRING" argument=".     \c02&apos;~~ooo888\c0988\c00\c02888288.882888\c0988\c00\c028888oo~~`\c00"/>
+      <action number="Emote" argtype="STRING" argument=".              \c09!!!\c00\c02&gt;&gt;&gt;&gt;&gt;\c14x\c00\c02&lt;&lt;&lt;&lt;\c09!!!\c00"/>
+      <action number="Emote" argtype="STRING" argument=".      \c02__ooo888\c0988\c00\c0288at88"/>
+      <action number="Emote" argtype="STRING" argument=".   \c02,o8ooo\c09ooo\c00\c02ooo8o~o8o8 8o8s~o8ooo\c09ooo\c00\c02ooo8o.\c00"/>
+      <action number="Emote" argtype="STRING" argument=".   \c028oo\c09ooo\c00\c02oo8oot_o8oo8[ ]8oo8o_7oo8oo\c09ooo\c00\c02oo8\c00"/>
+      <action number="Emote" argtype="STRING" argument=".   \c02!8oo\c09o\c00\c02oo8o8oo\c09oo\c00\c02ooo8   8oo\c09oo\c00\c02ooo8o8oo\c09o\c00\c02oo8\c00"/>
+      <action number="Emote" argtype="STRING" argument=".    \c02&apos;i8o\c09oo\c00\c02oooo\c09oo\c00\c02ooo8b   d8oo\c09oo\c00\c02oooo\c09oo\c00\c02o8i`\c00"/>
+      <action number="Emote" argtype="STRING" argument=".       \c02!8ooo\c09ooo\c00\c02ooo8o     o8ooo\c09ooo\c00\c02oo8!\c00"/>
+      <action number="Emote" argtype="STRING" argument=".         \c02&apos;~8oooo8!~       ~!8ooooo8`\c00"/>
+      <action number="Emote" argtype="STRING" argument="a green sparkler goes off with a loud boom, covering the entire"/>
+      <action number="Emote" argtype="STRING" argument="night sky with a shower of green sparkles that slowly forms what"/>
+      <action number="Emote" argtype="STRING" argument="looks like a good luck sign."/>
+    </mobprog>
+    <mobprog main="OnSayTo" argtype="STRING" argument="multicolor multi">
+      <action number="Emote" argtype="STRING" argument="a large crackling noise is heard, and a bright white light shoots up:"/>
+      <action number="Emote" argtype="STRING" argument=".             \c03\c10*\c00\c03\c00"/>
+      <action number="Emote" argtype="STRING" argument=".          \c01\c08*\c00\c01\c03\c10*\c00\c03\c02\c09*\c00\c02\c00"/>
+      <action number="Emote" argtype="STRING" argument=".        \c01\c08*\c00\c01\c03\c10*\c00\c03\c02\c09*\c00\c02\c00"/>
+      <action number="Emote" argtype="STRING" argument=".         \c01\c08*\c00\c01\c07=\c03\c10*\c00\c03\c07=\c02\c09*\c00\c02\c00"/>
+      <action number="Emote" argtype="STRING" argument=".  \c05\c12*\c00\c05\c12*\c00\c05\c12*\c00\c05\c07\c14*\c00\c07\c06\c13*\c00\c06\c13*\c00\c06\c13*\c00\c06\c00"/>
+      <action number="Emote" argtype="STRING" argument=". \c04\c11*\c00\c04\c11*\c00\c04\c11*\c00\c04\c14o\c00\c04\c11*\c00\c04\c11*\c00\c04\c11*\c00\c04\c00"/>
+      <action number="Emote" argtype="STRING" argument=".   \c06\c13*\c00\c06\c13*\c00\c06\c13*\c00\c06\c07\c14*\c00\c07\c05\c12*\c00\c05\c12*\c00\c05\c12*\c00\c05\c00"/>
+      <action number="Emote" argtype="STRING" argument=".         \c02\c09*\c00\c02\c07=\c03\c10*\c00\c03\c07=\c01\c08*\c00\c01\c00"/>
+      <action number="Emote" argtype="STRING" argument=".        \c02\c09*\c00\c02\c03\c10*\c00\c03\c01\c08*\c00\c01\c00"/>
+      <action number="Emote" argtype="STRING" argument=".          \c02\c09*\c00\c02\c03\c10*\c00\c03\c01\c08*\c00\c01\c00"/>
+      <action number="Emote" argtype="STRING" argument=".             \c03\c10*\c00\c03\c00\c00"/>
+      <action number="Emote" argtype="STRING" argument="in the sky, a shower of multicolored sparkles forms into a snowflake"/>
+      <action number="Emote" argtype="STRING" argument="that shimmers brightly, changing colors until it fades from view"/>
+      <action number="Emote" argtype="STRING" argument="into a shower of sparks that leaves a fine layer of dust on everything."/>
+    </mobprog>
+    <mobprog main="OnSayTo" argtype="STRING" argument="shooting star">
+      <action number="Emote" argtype="STRING" argument="a loud boom goes off as you light this large colorful cylindar."/>
+      <action number="Emote" argtype="STRING" argument="in the night sky, you see:"/>
+      <action number="Emote" argtype="STRING" argument=".                 \c01@\c00"/>
+      <action number="Emote" argtype="STRING" argument=".                \c04j\c07\c04l\c00"/>
+      <action number="Emote" argtype="STRING" argument=".                \c07\c01@\c07\c00"/>
+      <action number="Emote" argtype="STRING" argument=".               \c07:\c01@\c07:\c00"/>
+      <action number="Emote" argtype="STRING" argument=".\c07\c01\c04e..         \c07:\c01@\c04&amp;\c01@\c07:         \c04..e\c01\c07\c00"/>
+      <action number="Emote" argtype="STRING" argument=".\c07&apos;:\c01@@\c07\c04eo..   \c07:\c01@\c04&amp;\c01*\c04&amp;\c01@\c07:    \c04..oe\c07\c01@@\c07:&apos;\c00"/>
+      <action number="Emote" argtype="STRING" argument=".  \c07&apos;:\c01@\c04&amp;\c01*\c04&amp;\c01@\c07\c04e\c07\c01@\c04&amp;*\c07**\c04&amp;\c01@\c07\c04e\c07\c01@\c04&amp;*&amp;\c01@\c07:&apos;\c00"/>
+      <action number="Emote" argtype="STRING" argument=".    \c07&apos;:\c01@\c04&amp;\c01******************\c04&amp;\c01@\c07:&apos;\c00"/>
+      <action number="Emote" argtype="STRING" argument=".      \c07&apos;:\c01@\c04&amp;\c07******\c07********\c04&amp;\c01@\c07:&apos;\c00"/>
+      <action number="Emote" argtype="STRING" argument=".       \c07&apos;:\c01@\c04&amp;\c01*****\c04&amp;\c01*****\c04&amp;\c01@\c07:&apos;\c00"/>
+      <action number="Emote" argtype="STRING" argument=".         \c07&apos;\c01@\c07&amp;\c07***\c04&amp;\c01@\c04&amp;\c07***\c04&amp;\c01@\c07&apos;\c00"/>
+      <action number="Emote" argtype="STRING" argument=".         \c07:\c01@\c04&amp;\c01**\c04&amp;\c01@\c07\c01@\c04&amp;\c01**\c04&amp;\c01@\c07:\c00"/>
+      <action number="Emote" argtype="STRING" argument=".        \c07&apos;\c01@\c04&amp;\c07*\c04&amp;\c01@\c07\c01@\c07\c01@\c04&amp;\c07*\c04&amp;\c01@\c07&apos;\c00"/>
+      <action number="Emote" argtype="STRING" argument=".       \c07&apos;\c01@\c04&amp;\c01*\c04&amp;\c01@\c07:&apos; &apos;:\c01@\c04&amp;\c01*\c04&amp;\c01@\c07&apos;\c00"/>
+      <action number="Emote" argtype="STRING" argument=".      \c07&apos;\c01@\c04&amp;&amp;\c01@\c07:       :\c01@\c04&amp;&amp;\c01@\c07&apos;\c00"/>
+      <action number="Emote" argtype="STRING" argument=".     \c07&apos;\c01@\c04&amp;\c01@\c07:&apos;         &apos;:\c01@\c04&amp;\c01@\c07&apos;\c00"/>
+      <action number="Emote" argtype="STRING" argument=".    \c07&apos;\c01@@\c07:&apos;             &apos;:\c01@@\c07&apos;\c00"/>
+      <action number="Emote" argtype="STRING" argument=".   \c07.:&apos;                   &apos;:\c00"/>
+      <action number="Emote" argtype="STRING" argument="a tricolored fireworks forms a bright shooting star in the sky,"/>
+      <action number="Emote" argtype="STRING" argument="leaving a thin layer of sparkle dust on everyone and a faint smell"/>
+      <action number="Emote" argtype="STRING" argument="of burnt paper and various powders in the air."/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="25003" name="busy merchant b1" special="NONE">
+    <description>This merchant is obviously too busy to pay attention to anyone or anything.
+</description>
+    <shortdesc>a busy merchant</shortdesc>
+    <longdesc>A merchant dressed in a long embroidered vest and a long cloak hurries by.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="30" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="10" dsize="110" bonus="300"/>
+      <move ndize="1" dsize="300" bonus="300"/>
+      <ac>50</ac>
+      <gold>100</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>30</hitroll>
+      <damroll>18</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1048584"/>
+    <affected one="128" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="4" sides="10" add="30"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="25004" name="banker money lender " special="Bank">
+    <description>This man wears fine robes of the finest wool, trimmed with 
 embroidered lace. He has on a pair of spectacles, a rather
 rare sight. He sits behind a well polished desk, writing in
 a ledger book.
-~
-10 0 0 E
-1 20 10 656 1d100+0 1d1+0
-0 0
-8 8 1
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-P
-OnMobAttack
-Say "get out of here before i call the guards! have you no sense of decency?"
-Stop
-End
-OnEntry
-Emote "the money lender looks up at you, dismissing you as soon as you enter his shop."
-End
-Q
-E
-#25005
-postmistress woman ebou dar~
-Ebou Dar's postmistress~
-The postmistress of Ebou Dar busies herself with sorting letters here.
-~
-The postmistress is a homely looking woman, but has a sharp
+</description>
+    <shortdesc>Ebou Dar&apos;s money lender</shortdesc>
+    <longdesc>A greedy looking man sits behind a desk, peering at you oddly.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="1" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="0"/>
+      <move ndize="1" dsize="0" bonus="0"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="10"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnMobAttack" argtype="STRING" argument="shooting star">
+      <action number="Say" argtype="STRING" argument="get out of here before i call the guards! have you no sense of decency?"/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+    </mobprog>
+    <mobprog main="OnEntry" argtype="STRING" argument="shooting star">
+      <action number="Emote" argtype="STRING" argument="the money lender looks up at you, dismissing you as soon as you enter his shop."/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="25005" name="postmistress woman" special="PostMaster">
+    <description>The postmistress is a homely looking woman, but has a sharp
 and intelligent looking face. She wears rather dark skirts, a
 rarity for women in Ebou Dar, and bright green petticoats. 
 The neckline of her dress is deep and narrow and she has
 a pearl and ruby encrusted dagger in a black hilt tucked into
 her bodice - she is a widow of Ebou Dar, and someone not 
-tp be challenged except by the very old and powerful.
-~
-10 0 0 E
-1 20 10 656 1d100+0 1d1+0
-0 0
-8 8 2
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-P
-OnAttack
-Emote "come on.. do you really expect to kill the postmistress of the ebou dar?"
-Stop
-End
-OnEntry
-Emote "the postmistress glances at you as you enter."
-Say "may i help you?"
-End
-Q
-E
-#25006
-jarle horses carnine~
-Jarle, owner of Carnine Horses~
-Jarle stands here, rubbing a fine Ebou Dari gelding down.
-~
-Jarle is a thickly built man, looking to be Tairen - how odd.
+to be challenged except by the very old and powerful.
+</description>
+    <shortdesc>Ebou Dar&apos;s postmistress</shortdesc>
+    <longdesc>The postmistress of Ebou Dar busies herself with sorting letters here.
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="1" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="0"/>
+      <move ndize="1" dsize="0" bonus="0"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="10"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnAttack" argtype="STRING" argument="shooting star">
+      <action number="Emote" argtype="STRING" argument="come on.. do you really expect to kill the postmistress of the ebou dar?"/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+    </mobprog>
+    <mobprog main="OnEntry" argtype="STRING" argument="shooting star">
+      <action number="Emote" argtype="STRING" argument="the postmistress glances at you as you enter."/>
+      <action number="Say" argtype="STRING" argument="may i help you?"/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="25006" name="jarle horses carnine" special="NONE">
+    <description>Jarle is a thickly built man, looking to be Tairen - how odd.
 He has sparkling blue eyes and dark hair topped with an odd
 conical hat. His entire demeanor is strange as well, and he 
 sticks out like a sore thumb in Ebou Dar.
-~
-10 0 0 E
-1 20 10 656 1d100+0 1d1+0
-0 0
-8 8 1
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-P
-OnAttack
-Emote "a horse kicks you hard in the shins as you attempt to attack jarle."
-Emote "jarle frowns at you and calms his horse. "
-Stop
-End
-OnEntry
-Emote "the horses nicker softly as you enter."
-End
-Q
-E
-#25007
-marewhine wise woman healer~
-Marewhin, Wise Woman of Ebou Dar~
-Mistress Marewhin sits in a carved wooden chair, brewing some herb tea in a kettle.
-~
-Mistress Marewhin is an elderly woman, and looks well versed 
+</description>
+    <shortdesc>Jarle, owner of Carnine Horses</shortdesc>
+    <longdesc>Jarle stands here, rubbing a fine Ebou Dari gelding down.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="1" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="0"/>
+      <move ndize="1" dsize="0" bonus="0"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="10"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnAttack" argtype="STRING" argument="shooting star">
+      <action number="Emote" argtype="STRING" argument="a horse kicks you hard in the shins as you attempt to attack jarle."/>
+      <action number="Emote" argtype="STRING" argument="jarle frowns at you and calms his horse. "/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+    </mobprog>
+    <mobprog main="OnEntry" argtype="STRING" argument="shooting star">
+      <action number="Emote" argtype="STRING" argument="the horses nicker softly as you enter."/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="25007" name="marewhine wise woman healer" special="NONE">
+    <description>Mistress Marewhin is an elderly woman, and looks well versed 
 in the ways of a healer. She wears pale skirts and deep red 
 petticoats. The dagger at her neck is bare of any jewels. She
 wears the distinctive red leather belt of Ebou Dari Wise Women -
 whom no one would dare harm.
-~
-10 0 0 E
-1 20 10 656 1d100+0 1d1+0
-0 0
-8 8 2
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-P
-OnAttack
-Emote "mistress marewhin hits you with an iron kettle, then shoos you onto the street."
-Stop
-End
-Q
-E
-#25008
-billy rae stableboy man~
-Billy Rae, stableboy~
-Billy Rae stands by, rubbing a horse down with hay with a grin on his face.
-~
-Billy Rae looks just like a stableboy should - covered with
+</description>
+    <shortdesc>Marewhin, Wise Woman of Ebou Dar</shortdesc>
+    <longdesc>Mistress Marewhin sits in a carved wooden chair, brewing some herb tea in a kettle.
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="1" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="0"/>
+      <move ndize="1" dsize="0" bonus="0"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="10"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnAttack" argtype="STRING" argument="shooting star">
+      <action number="Emote" argtype="STRING" argument="mistress marewhin hits you with an iron kettle, then shoos you onto the street."/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="25008" name="billy rae stableboy man" special="NONE">
+    <description>Billy Rae looks just like a stableboy should - covered with
 dirt and reaking of sweat and other erm pleasant stable smells.
 He wears overalls, and a longvest that lacks any sort of
 embroidery. He has a trimmed beard, and has rough cotton
 sleeves rolled up as he rubs a grey mare down with a handful
 of hay.
-~
-10 0 0 E
-1 20 10 656 1d100+0 1d1+0
-0 0
-8 8 1
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-P
-OnAttack
-Say "there ain't gonna be no ruffians 'round here! no sir-e-bob! git off with you!"
-Stop
-End
-Q
-E
-#25009
-netaal money handler ~
-Netaal, the money handler for the Circuit of Heaven~
-Netaal stands here, taking bets and awarding money to winners.
-~
-Netaal is a sly looking fellow, dressed in brown breeches, white 
+</description>
+    <shortdesc>Billy Rae, stableboy</shortdesc>
+    <longdesc>Billy Rae stands by, rubbing a horse down with hay with a grin on his face.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="1" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="0"/>
+      <move ndize="1" dsize="0" bonus="0"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="10"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnAttack" argtype="STRING" argument="shooting star">
+      <action number="Say" argtype="STRING" argument="there ain&apos;t gonna be no ruffians &apos;round here! no sir-e-bob! git off with you!"/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="25009" name="netaal money handler " special="NONE">
+    <description>Netaal is a sly looking fellow, dressed in brown breeches, white 
 cotton shirt, and a colorful embroidered vest. He has a long curled
 mustache and a square trimmed beard - the fashion of the city. He
 stands in front of the Circuit of Heaven grandstands, behind the race
 tracks, handling bets and awarding money.
-~
-10 0 0 E
-1 20 10 656 1d100+0 1d1+0
-0 0
-8 8 1
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-P
-OnAttack
-Say "guards! this riff-raff is attacking me! thief! help!"
-Stop
-End
-OnActionTo "push"
-Stop
-Pause 3
-Emote "netaal slaps you, telling you to get your hands off of him."
-End
-OnRandom 30
-Emote "the crowd around the betting area surges ahead, with many people pushing against others."
-End
-OnRandom 20
-Emote "netaal counts his earnings and smiles slyly at the betters."
-End
-OnEntry
-Emote "Netaal says, 'Welcome to the betting area of the Circuit of Heaven!'"
-Emote "He jingles a bag of gold and says, 'Please read the signs on how to bet.'"
-End
-Q
-E
-#25010
-captain guards~
-a Commandant of the Guards~
-The Cityguard Commandant is here, examining everything carefully.
-~
-The Captain is dressed in a longcoat and green and white embroidered
+</description>
+    <shortdesc>Netaal, the money handler for the Circuit of Heaven</shortdesc>
+    <longdesc>Netaal stands here, taking bets and awarding money to winners.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="1" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="0"/>
+      <move ndize="1" dsize="0" bonus="0"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="10"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnAttack" argtype="STRING" argument="shooting star">
+      <action number="Say" argtype="STRING" argument="guards! this riff-raff is attacking me! thief! help!"/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+    </mobprog>
+    <mobprog main="OnActionTo" argtype="STRING" argument="push">
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="Pause" argtype="INT" argument="3"/>
+      <action number="Emote" argtype="STRING" argument="netaal slaps you, telling you to get your hands off of him."/>
+    </mobprog>
+    <mobprog main="OnRandom" argtype="INT" argument="30">
+      <action number="Emote" argtype="STRING" argument="the crowd around the betting area surges ahead, with many people pushing against others."/>
+    </mobprog>
+    <mobprog main="OnRandom" argtype="INT" argument="20">
+      <action number="Emote" argtype="STRING" argument="netaal counts his earnings and smiles slyly at the betters."/>
+    </mobprog>
+    <mobprog main="OnEntry" argtype="INT" argument="20">
+      <action number="Emote" argtype="STRING" argument="Netaal says, &apos;Welcome to the betting area of the Circuit of Heaven!&apos;"/>
+      <action number="Emote" argtype="STRING" argument="He jingles a bag of gold and says, &apos;Please read the signs on how to bet.&apos;"/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="25010" name="captain guards" special="NONE">
+    <description>The Captain is dressed in a longcoat and green and white embroidered
 vest. He has several pins lined up on his coat, and wears long black
 pants. He has a thick curling mustache and a square trimmed beard,
 as do the rest of the Ebou Dari men you have seen so far.
-~
-74 526384 0 E
-100 -80 -2 656 20d350+1250 12d15+50
-150 120
-6 6 1
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-E
-#25011
-mare white sleek~
-a sleek white mare~
-A rather calm looking white mare stands here, switching her tale occasionally.
-~
-The mare is of the fine Ebou Dari Carnine breed, known for their speed
+</description>
+    <shortdesc>a Commandant of the Guards</shortdesc>
+    <longdesc>The Cityguard Commandant is here, examining everything carefully.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="100" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="20" dsize="350" bonus="1250"/>
+      <move ndize="1" dsize="1250" bonus="1250"/>
+      <ac>-20</ac>
+      <gold>150</gold>
+      <bankgold>0</bankgold>
+      <exp>120</exp>
+      <hitroll>100</hitroll>
+      <damroll>50</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="74"/>
+    <affected one="526384" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Sitting" other="Sitting"/>
+    <damage num="12" sides="15" add="100"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="25011" name="mare white sleek" special="NONE">
+    <description>The mare is of the fine Ebou Dari Carnine breed, known for their speed
 and durability (as they are raced frequently). The mare has a long neck,
 and a small head, delicate hoofs that look well maintained and shod
 in newsilver horseshoes. She has a yellow blaze on her forehead, which
 blends into her fine white coat easily. 
-~
-266 0 0 E
-100 -180 10 656 30d300+0 1d1+50
-0 0
-8 8 2
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-P
-OnMobAttack
-Emote "the mare bites you hard and snorts, pawing the ground."
-End
-Q
-E
-#25012
-seafolk woman~
-a SeaFolk woman~
-A woman wearing baggy oiled breeched and a bright red shirt walks about here.
-~
-The woman walks around confidently. Her face is rather dark and exotic
+</description>
+    <shortdesc>a sleek white mare</shortdesc>
+    <longdesc>A rather calm looking white mare stands here, switching her tale occasionally.
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="100" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="30" dsize="300" bonus="0"/>
+      <move ndize="1" dsize="0" bonus="0"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>200</hitroll>
+      <damroll>50</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="266"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="200"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnMobAttack" argtype="VOID" argument="NONE">
+      <action number="Emote" argtype="STRING" argument="the mare bites you hard and snorts, pawing the ground."/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="25012" name="seafolk woman" special="NONE">
+    <description>The woman walks around confidently. Her face is rather dark and exotic
 looking, with dark hair down to her shoulders. She has a golden nose ring
 and several earrings in her ears. She is well tanned, and her shirt is tied
 loosely, as if she usually doesnt wear shirts.
-~
-2064456 0 0 E
-60 -40 2 656 15d220+600 7d15+35
-0 110
-8 8 2
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-E
-#25013
-seafolk wavemistress~
-a SeaFolk wavemistress~
-A proud looking Sea Folk woman decorated with many earrings is here.
-~
-The wavemistress is dressed in finely cut cloth - silk and linen mostly.
+</description>
+    <shortdesc>a SeaFolk woman</shortdesc>
+    <longdesc>A woman wearing baggy oiled breeches and a bright red shirt walks about here.
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="60" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="15" dsize="220" bonus="600"/>
+      <move ndize="1" dsize="600" bonus="600"/>
+      <ac>20</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>110</exp>
+      <hitroll>60</hitroll>
+      <damroll>35</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="2064456"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="7" sides="15" add="60"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="25013" name="seafolk wavemistress" special="NONE">
+    <description>The wavemistress is dressed in finely cut cloth - silk and linen mostly.
 She is exceptionally beautiful, dark skinned and has long straight
 black hair flowing down her neck. She has tattoos on her hands, signifying
 the clan that she is from. Two chains with medallions on them are
 connected from her nose to her earring.
-~
-6219848 0 0 E
-120 -130 -6 656 30d0+1200 15d20+50
-0 120
-8 8 2
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-Dirtkick: 100
-Kick: 100
-E
-#25014
-wise woman eboudar~
-a wise woman~
-A woman wearing a red belt and a marriage dagger wanders by.
-~
-The Wise Woman is dressed in dark skirts, and an embroidered bodice.
+</description>
+    <shortdesc>a SeaFolk wavemistress</shortdesc>
+    <longdesc>A proud looking Sea Folk woman decorated with many earrings is here.
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="120" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="30" dsize="0" bonus="1200"/>
+      <move ndize="1" dsize="1200" bonus="1200"/>
+      <ac>-60</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>120</exp>
+      <hitroll>150</hitroll>
+      <damroll>50</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="6219848"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="15" sides="20" add="150"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="25014" name="wise woman" special="NONE">
+    <description>The Wise Woman is dressed in dark skirts, and an embroidered bodice.
 From her neck, on a thin golden chain, hangs a marriage dagger with
 a red sheath, decorated with a pearl surrounded by red enamel. Around
 her waist is a red leather belt, marking her as a healer and not to be
 challenged.
-~
-5242952 0 0 E
-110 -110 -5 656 30d0+1100 15d25+50
-160 130
-8 8 2
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-Trip: 100
-E
-#25015
-grandstands seats~
-the grandstands~
-Wide stone grandstands line all sides of the track.
-~
-The grandstands are made of old marble, and are chipped in
+</description>
+    <shortdesc>a wise woman</shortdesc>
+    <longdesc>A woman wearing a red belt and a marriage dagger wanders by.
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="110" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="30" dsize="0" bonus="1100"/>
+      <move ndize="1" dsize="1100" bonus="1100"/>
+      <ac>-50</ac>
+      <gold>160</gold>
+      <bankgold>0</bankgold>
+      <exp>130</exp>
+      <hitroll>130</hitroll>
+      <damroll>50</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="5242952"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="15" sides="25" add="130"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="25015" name="grandstands seats" special="NONE">
+    <description>The grandstands are made of old marble, and are chipped in
 some places, but are still full of their glory as they sparkle
 in the midday sun. You see now why this place is called the
 Circuit of Heaven - the area glitters a bright white and is
 accented with gold that approaches the glory only Heaven could
 surpass.
-~
-10 0 0 E
-2 20 10 656 1d100+0 1d1+0
-0 0
-8 8 0
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-P
-OnActionTo "push"
-Stop
-End
-OnAttack
-Stop
-End
-OnRandom 15
-Emote "the crowd cheers raucously, egging the horses on."
-End
-OnRandom 25
-Emote "you hear the sounds of horses snorting and whinnying in the distance."
-End
-OnRandom 20
-Emote "the sounds from crowds of betters to the south reach your ears."
-End
-Q
-E
-#25016
-ebou dari woman~
-an Ebou Dari woman~
-A proud looking woman walks by.
-~
-The woman has an oval face that is pretty in a dangerous kind of
+</description>
+    <shortdesc>the grandstands</shortdesc>
+    <longdesc>Wide stone grandstands line all sides of the track.
+</longdesc>
+    <title/>
+    <chardata gender="NEUTRAL" class="Adventurer" level="2" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="0"/>
+      <move ndize="1" dsize="0" bonus="0"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="10"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnActionTo" argtype="STRING" argument="push">
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+    </mobprog>
+    <mobprog main="OnAttack" argtype="STRING" argument="push">
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+    </mobprog>
+    <mobprog main="OnRandom" argtype="INT" argument="15">
+      <action number="Emote" argtype="STRING" argument="the crowd cheers raucously, egging the horses on."/>
+    </mobprog>
+    <mobprog main="OnRandom" argtype="INT" argument="25">
+      <action number="Emote" argtype="STRING" argument="you hear the sounds of horses snorting and whinnying in the distance."/>
+    </mobprog>
+    <mobprog main="OnRandom" argtype="INT" argument="20">
+      <action number="Emote" argtype="STRING" argument="the sounds from crowds of betters to the south reach your ears."/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="25016" name="proud looking ebou dari woman" special="NONE">
+    <description>The woman has an oval face that is pretty in a dangerous kind of
 way, and is wearing the native dress, which reveals her bosom and
 her ankles - quite scandalous. 
-~
-1048648 0 0 E
-90 -30 -2 656 20d250+900 12d15+50
-30 100
-8 8 2
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-Trip: 100
-P
-OnActionTo "push"
-Stop
-Emote "hey! you can't push around an ebou dari woman! what are you thinking?"
-End
-OnActionTo "look"
-Pause 2
-Emote "the woman notices you looking at her, and frowns at your inquisitive gaze, which is quite unlike that of an ebou dari."
-Pause 1
-Emote "the woman fingers her dagger, ready to challenge you if need arises. "
-Pause 2
-Emote "perhaps you had better think twice before staring at the locals."
-End
-Q
-E
-#25017
-man ebou dari edman~
-an Ebou Dari man~
-A proud looking man dressed in a colorful vest walks by.
-~
-The man has an oddly square cut beard, and wears a colorful vest
+</description>
+    <shortdesc>an Ebou Dari woman</shortdesc>
+    <longdesc>A proud looking woman walks by.
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="90" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="20" dsize="250" bonus="900"/>
+      <move ndize="1" dsize="900" bonus="900"/>
+      <ac>-20</ac>
+      <gold>30</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>50</hitroll>
+      <damroll>50</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1048648"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="12" sides="15" add="50"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnActionTo" argtype="STRING" argument="push">
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="Emote" argtype="STRING" argument="hey! you can&apos;t push around an ebou dari woman! what are you thinking?"/>
+    </mobprog>
+    <mobprog main="OnActionTo" argtype="STRING" argument="look">
+      <action number="Pause" argtype="INT" argument="2"/>
+      <action number="Emote" argtype="STRING" argument="the woman notices you looking at her, and frowns at your inquisitive gaze, which is quite unlike that of an ebou dari."/>
+      <action number="Pause" argtype="INT" argument="1"/>
+      <action number="Emote" argtype="STRING" argument="the woman fingers her dagger, ready to challenge you if need arises. "/>
+      <action number="Pause" argtype="INT" argument="2"/>
+      <action number="Emote" argtype="STRING" argument="perhaps you had better think twice before staring at the locals."/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="25017" name="proud looking ebou dari man" special="NONE">
+    <description>The man has an oddly square cut beard, and wears a colorful vest
 and dark breeches. He is medium of stature, as are most of the
 other Ebou Dari that you have seen.
-~
-1048648 0 0 E
-90 -50 -3 656 25d270+1000 12d18+50
-25 110
-8 8 1
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-Trip: 100
-Kick: 100
-E
-#25018
-ogier ww~
-an Ogier~
-An Ogier sits next to a table, seated on a chair double the size of the table.
-~
-The Ogier looks to be rather young, and twitches his ears frequently as
+</description>
+    <shortdesc>an Ebou Dari man</shortdesc>
+    <longdesc>A proud looking man dressed in a colorful vest walks by.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="90" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="25" dsize="270" bonus="1000"/>
+      <move ndize="1" dsize="1000" bonus="1000"/>
+      <ac>-30</ac>
+      <gold>25</gold>
+      <bankgold>0</bankgold>
+      <exp>110</exp>
+      <hitroll>70</hitroll>
+      <damroll>50</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1048648"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="12" sides="18" add="70"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="25018" name="ogier ww" special="NONE">
+    <description>The Ogier looks to be rather young, and twitches his ears frequently as
 he sees you enter the room. He is dressed in the traditional floral and 
 leaved patterned clothing common to all Ogier. He is holding a large
 book which looks tiny in his huge hands, and is slowly leafing through it
 - more carefully than you might have.
-~
-10 0 0 E
-60 -22 -1 656 15d220+600 14d18+45
-0 100
-8 8 1
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-E
-#25019
-guest woman ww inn's~
-an Inn's guest~
-There is a slight woman sleeping on the room's bed. Her clothes are neatly piled on a chair, and a small chest rests near the bed.
-~
-The woman is soundly asleep, and would surely be disgruntled if you 
-woke her, even if she didn't notice that you had broken into her room. She
+</description>
+    <shortdesc>an Ogier</shortdesc>
+    <longdesc>An Ogier sits next to a table, seated on a chair double the size of the table.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="60" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="15" dsize="220" bonus="600"/>
+      <move ndize="1" dsize="600" bonus="600"/>
+      <ac>-10</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>42</hitroll>
+      <damroll>45</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="10"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="14" sides="18" add="42"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="25019" name="guest woman ww inn&apos;s" special="NONE">
+    <description>The woman is soundly asleep, and would surely be disgruntled if you 
+woke her, even if she didn&apos;t notice that you had broken into her room. She
 wears a nightshift that is made of rough cotton, and is fairly pretty, as far
 as you can distinguish from looking at her sleeping form.
-~
-10 32768 0 E
-50 -20 10 656 18d170+500 7d12+30
-25 120
-8 8 2
-BareHandAttack: 8
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-P
-OnAttack
-Pause 2
-Emote "the woman stirs slightly then moans as she awakens to this horror that is being commited upon her."
-End
-OnRandom 50
-Emote "zzzz . . . . zzzz . . . zz . . zzz . . . zz . . . zzz . . . z"
-End
-OnEntry
-Emote "the door squeaks loudly as your barge into this guest's room. "
-Pause 2
-Emote "the sleeping guest stirs a bit, and you are afraid you may have woken her."
-End
-Q
-E
-#25020
-man dicing ww~
-a man seated at a dicing table~
-There is a man sitting at one of the dicing tables, absorbed in a game.
-~
-The man is roughly dressed, but has enough winnings by his side to 
+</description>
+    <shortdesc>an Inn&apos;s guest</shortdesc>
+    <longdesc>There is a slight woman sleeping on the room&apos;s bed. Her clothes are neatly piled on a chair, and a small chest rests near the bed.
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="50" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="18" dsize="170" bonus="500"/>
+      <move ndize="1" dsize="500" bonus="500"/>
+      <ac>100</ac>
+      <gold>25</gold>
+      <bankgold>0</bankgold>
+      <exp>120</exp>
+      <hitroll>40</hitroll>
+      <damroll>30</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="10"/>
+    <affected one="32768" two="0" three="0" four="0"/>
+    <attack type="8"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="7" sides="12" add="40"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnAttack" argtype="STRING" argument="look">
+      <action number="Pause" argtype="INT" argument="2"/>
+      <action number="Emote" argtype="STRING" argument="the woman stirs slightly then moans as she awakens to this horror that is being commited upon her."/>
+    </mobprog>
+    <mobprog main="OnRandom" argtype="INT" argument="50">
+      <action number="Emote" argtype="STRING" argument="zzzz . . . . zzzz . . . zz . . zzz . . . zz . . . zzz . . . z"/>
+    </mobprog>
+    <mobprog main="OnEntry" argtype="INT" argument="50">
+      <action number="Emote" argtype="STRING" argument="the door squeaks loudly as your barge into this guest&apos;s room. "/>
+      <action number="Pause" argtype="INT" argument="2"/>
+      <action number="Emote" argtype="STRING" argument="the sleeping guest stirs a bit, and you are afraid you may have woken her."/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="25020" name="man dicing ww" special="NONE">
+    <description>The man is roughly dressed, but has enough winnings by his side to 
 recompense him for any previous poverty. He has a fervent look in  his
 eyes - the look which Children of the Light usually sport. Perhaps the 
 touch of the Dark One is in this part of the world more than the rest...
-~
-1048586 0 0 E
-75 -50 10 656 30d250+700 13d15+45
-300 110
-8 8 1
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-P
-OnEntry
-Pause 2
-Emote "the rattling of cups and the buzz of people talking reaches your ears."
-Pause 2
-Emote "a loud curse is heard as someone looses his gold."
-End
-OnRandom 30
-Pause 2
-Emote "a maid rushes in, carrying a tray ladden with bread, cheese and fruit."
-End
-OnRandom 15
-Emote "the maid rushes out, carrying an empty tray back to the kitchens."
-End
-OnRandom 25
-Emote "one of the men seated at a table gets up to leave, holding onto the arm of a woman."
-Pause 3
-Emote "the man staggers markedly, and you aren't sure if he can properly find the exit from the room."
-End
-OnRandom 5
-Emote "a domani woman sways seductively into the room, and all eyes rest on her form."
-End
-OnRandom 10
-Emote "one of the quite drunken men pushes another one in a fit of anger."
-Pause 1
-Emote "the other man pushes back, and both get up from their tables, reaching for their daggers."
-Pause 2
-Emote "barle and jaris, the inn's guards, rush in quickly to the sounds of scuffling."
-Emote "the two guards grab each man by the scruff of the neck, and proceed to shove them outside the inn."
-Pause 1
-Emote "you hear the two guards telling the two scuffling men, "
-End
-Q
-E
-#25021
-cook ww~
-the cook for the Wandering Woman~
-The cook stands here, holding a spoon in her hand and frowning at several lazy scullery maids.
-~
-The cook is rather skinny, and is dressed in a white apron which lies
+</description>
+    <shortdesc>a man seated at a dicing table</shortdesc>
+    <longdesc>There is a man sitting at one of the dicing tables, absorbed in a game.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="75" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="30" dsize="250" bonus="700"/>
+      <move ndize="1" dsize="700" bonus="700"/>
+      <ac>100</ac>
+      <gold>300</gold>
+      <bankgold>0</bankgold>
+      <exp>110</exp>
+      <hitroll>70</hitroll>
+      <damroll>45</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1048586"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="13" sides="15" add="70"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="25021" name="cook ww" special="NONE">
+    <description>The cook is rather skinny, and is dressed in a white apron which lies
 on top of her rough woolen Ebou Dari skirts. She has a dagger filled with
 glittering rubies and a single pearl encased in black enamel lying around
 her neck. She has deep brown hair pulled up on top of her head, and is
 holding a soup ladle in her hand.
-~
-1048586 0 0 E
-65 -45 -1 656 20d230+650 10d15+35
-10 120
-8 8 2
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-P
-OnRandom 10
-Emote "one of the scullery maids drops a ceramic bowl, which shatters into a million shards."
-Pause 3
-Emote "the cook glares severely at the inept maid, and shakes her ladle at her. "
-Pause 3
-Emote "she says to the maid, "
-Pause 2
-Emote "the maid burts into tears and hurries to clean the mess up."
-End
-OnEntry
-Emote "the smells of a spicy stew and freshly baking bread reach your nose."
-End
-OnAttack
-Pause 2
-Say "attack me, will you? how dare you!"
-Pause 1
-Emote "the cook hits you over the head with her ladle."
-Pause 2
-Action "flee"
-End
-OnRandom 15
-Emote "the cook hums a merry tune while she goes to stir thr stew pot."
-End
-OnRandom 5
-Emote "a serving maid enters the room, holding a tray full of empty dishes."
-Pause 3
-Emote "the maid places the tray onto a counter and removes the empty dishes into a large sink."
-Pause 3
-Emote "a scullery maid hurries to the sink, washing and rinsing the dishes in a hurry."
-End
-OnRandom 15
-Emote "the cook ladles a bowl full of a hot, spicy stew and places it on a tray."
-Pause 1
-Emote "she then places several slices of fresh bread and places it in a wicker bread basket next to the stew."
-Pause 3
-Emote "a serving maid enters from the west and quickly takes up the tray."
-Pause 1
-Emote "the maid hurries out the western door to the main rooms of the inn."
-End
-OnRandom 20
-Emote "loud noises of laughter and talking reach your ears through the western door, which is slightly ajar."
-Pause 3
-Emote "you hear the soft singing ot the inn's entertainers through the western door."
-End
-OnRandom 15
-Emote "one of the scullery maids brings up a large flask of plum brandy."
-Pause 3
-Emote "loud squeaking and a small pop is heard as she opens the flask."
-Pause 2
-Emote "the maid pours small crystal brandy glasses fuhalf full of a smoky brown liquid."
-End
-Q
-E
-#25022
-fishermen rahad ebou dari~
-a fisherman~
-A grubby looking fisherman walks by.
-~
-The fisherman is dressed in rather dirty clothes, with his
+</description>
+    <shortdesc>the cook for the Wandering Woman</shortdesc>
+    <longdesc>The cook stands here, holding a spoon in her hand and frowning at several lazy scullery maids.
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="65" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="20" dsize="230" bonus="650"/>
+      <move ndize="1" dsize="650" bonus="650"/>
+      <ac>-10</ac>
+      <gold>10</gold>
+      <bankgold>0</bankgold>
+      <exp>120</exp>
+      <hitroll>65</hitroll>
+      <damroll>35</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1048586"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="10" sides="15" add="65"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnRandom" argtype="INT" argument="10">
+      <action number="Emote" argtype="STRING" argument="one of the scullery maids drops a ceramic bowl, which shatters into a million shards."/>
+      <action number="Pause" argtype="INT" argument="3"/>
+      <action number="Emote" argtype="STRING" argument="the cook glares severely at the inept maid, and shakes her ladle at her. "/>
+      <action number="Pause" argtype="INT" argument="3"/>
+      <action number="Emote" argtype="STRING" argument="she says to the maid, "/>
+      <action number="Pause" argtype="INT" argument="2"/>
+      <action number="Emote" argtype="STRING" argument="the maid burts into tears and hurries to clean the mess up."/>
+    </mobprog>
+    <mobprog main="OnEntry" argtype="INT" argument="10">
+      <action number="Emote" argtype="STRING" argument="the smells of a spicy stew and freshly baking bread reach your nose."/>
+    </mobprog>
+    <mobprog main="OnAttack" argtype="INT" argument="10">
+      <action number="Pause" argtype="INT" argument="2"/>
+      <action number="Say" argtype="STRING" argument="attack me, will you? how dare you!"/>
+      <action number="Pause" argtype="INT" argument="1"/>
+      <action number="Emote" argtype="STRING" argument="the cook hits you over the head with her ladle."/>
+      <action number="Pause" argtype="INT" argument="2"/>
+      <action number="Action" argtype="STRING" argument="flee"/>
+    </mobprog>
+    <mobprog main="OnRandom" argtype="INT" argument="15">
+      <action number="Emote" argtype="STRING" argument="the cook hums a merry tune while she goes to stir thr stew pot."/>
+    </mobprog>
+    <mobprog main="OnRandom" argtype="INT" argument="5">
+      <action number="Emote" argtype="STRING" argument="a serving maid enters the room, holding a tray full of empty dishes."/>
+      <action number="Pause" argtype="INT" argument="3"/>
+      <action number="Emote" argtype="STRING" argument="the maid places the tray onto a counter and removes the empty dishes into a large sink."/>
+      <action number="Pause" argtype="INT" argument="3"/>
+      <action number="Emote" argtype="STRING" argument="a scullery maid hurries to the sink, washing and rinsing the dishes in a hurry."/>
+    </mobprog>
+    <mobprog main="OnRandom" argtype="INT" argument="15">
+      <action number="Emote" argtype="STRING" argument="the cook ladles a bowl full of a hot, spicy stew and places it on a tray."/>
+      <action number="Pause" argtype="INT" argument="1"/>
+      <action number="Emote" argtype="STRING" argument="she then places several slices of fresh bread and places it in a wicker bread basket next to the stew."/>
+      <action number="Pause" argtype="INT" argument="3"/>
+      <action number="Emote" argtype="STRING" argument="a serving maid enters from the west and quickly takes up the tray."/>
+      <action number="Pause" argtype="INT" argument="1"/>
+      <action number="Emote" argtype="STRING" argument="the maid hurries out the western door to the main rooms of the inn."/>
+    </mobprog>
+    <mobprog main="OnRandom" argtype="INT" argument="20">
+      <action number="Emote" argtype="STRING" argument="loud noises of laughter and talking reach your ears through the western door, which is slightly ajar."/>
+      <action number="Pause" argtype="INT" argument="3"/>
+      <action number="Emote" argtype="STRING" argument="you hear the soft singing ot the inn&apos;s entertainers through the western door."/>
+    </mobprog>
+    <mobprog main="OnRandom" argtype="INT" argument="15">
+      <action number="Emote" argtype="STRING" argument="one of the scullery maids brings up a large flask of plum brandy."/>
+      <action number="Pause" argtype="INT" argument="3"/>
+      <action number="Emote" argtype="STRING" argument="loud squeaking and a small pop is heard as she opens the flask."/>
+      <action number="Pause" argtype="INT" argument="2"/>
+      <action number="Emote" argtype="STRING" argument="the maid pours small crystal brandy glasses fuhalf full of a smoky brown liquid."/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="25022" name="fisherman " special="NONE">
+    <description>The fisherman is dressed in rather dirty clothes, with his
 boots covered in muck and his shirt rolled up, and covered with scales from
 several different fishes.
-~
-1048776 0 0 E
-55 -30 2 656 17d270+550 8d12+35
-5 120
-8 8 1
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-P
-OnMobEntry
-Emote "the smell of fish create a stench as the fisherman enters the area."
-End
-Q
-E
-#25023
-dog mean~
-a mean dog~
-A mean looking dog runs around, frothing at the mouth.
-~
-The dog has a wild look in his eyes, and is barring his teeth in an odd manner,
+</description>
+    <shortdesc>a fisherman</shortdesc>
+    <longdesc>A grubby looking fisherman walks by.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="55" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="17" dsize="270" bonus="550"/>
+      <move ndize="1" dsize="550" bonus="550"/>
+      <ac>20</ac>
+      <gold>5</gold>
+      <bankgold>0</bankgold>
+      <exp>120</exp>
+      <hitroll>50</hitroll>
+      <damroll>35</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1048776"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="8" sides="12" add="50"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnMobEntry" argtype="VOID" argument="NONE">
+      <action number="Emote" argtype="STRING" argument="the smell of fish create a stench as the fisherman enters the area."/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="25023" name="dog mean" special="NONE">
+    <description>The dog has a wild look in his eyes, and is barring his teeth in an odd manner,
 He looks to be quite.. mad..
-~
-4104 0 0 E
-25 -10 5 656 20d150+250 6d8+18
-0 130
-8 8 0
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-P
-OnEntry & ! Guild "kin" & ! Race "altara"
-ActionTo "kill"
-End
-Q
-E
-#25024
-sailor woman ebou dar~
-a sailor~
-A sailor wanders about here, looking to be half drunk.
-~
-The sailor wears clothes that seem to be made from sailcloth - how apt no?
-~
-1376328 0 0 E
-70 -50 0 656 30d170+700 8d20+50
-25 120
-8 8 2
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-E
-#25025
-widow woman ~
-a widow~
-A woman dressed in white skirts walks by slowly.
-~
-The woman is dressed in a white dress and red petticoats. At her 
+</description>
+    <shortdesc>a mean dog</shortdesc>
+    <longdesc>A mean looking dog runs around, frothing at the mouth.
+</longdesc>
+    <title/>
+    <chardata gender="NEUTRAL" class="Adventurer" level="25" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="20" dsize="150" bonus="250"/>
+      <move ndize="1" dsize="250" bonus="250"/>
+      <ac>50</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>130</exp>
+      <hitroll>30</hitroll>
+      <damroll>18</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="4104"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="6" sides="8" add="30"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnEntry" argtype="VOID" argument="NONE">
+      <sideterm number="Guild" not="TRUE" argtype="STRING" argument="kin"/>
+      <sideterm number="Race" not="TRUE" argtype="STRING" argument="altara"/>
+      <action number="ActionTo" argtype="STRING" argument="kill"/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="25024" name="sailor woman" special="NONE">
+    <description>The sailor wears clothes that seem to be made from sailcloth - how apt no?
+</description>
+    <shortdesc>a sailor</shortdesc>
+    <longdesc>A sailor wanders about here, looking to be half drunk.
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="70" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="30" dsize="170" bonus="700"/>
+      <move ndize="1" dsize="700" bonus="700"/>
+      <ac>0</ac>
+      <gold>25</gold>
+      <bankgold>0</bankgold>
+      <exp>120</exp>
+      <hitroll>70</hitroll>
+      <damroll>50</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1376328"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="8" sides="20" add="70"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="25025" name="widow woman " special="NONE">
+    <description>The woman is dressed in a white dress and red petticoats. At her 
 chest is a white sheathed dagger which bears a single pearl encased
 in a black enamel and two rubies encased in white enamel. She
 bears herself proudly, assuming that no one would ever dare insult
 her or challenge her.
-~
-1048648 0 0 E
-95 -30 -3 656 30d210+950 15d15+50
-35 110
-8 8 2
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-E
-#25026
-illianer man nasty~
-a nasty looking Illianer~
-A suspicious looking, and rather short and unwashed, man walks around here.
-~
-The man is short, dark of hair and sports an oddly shaped beard,
+</description>
+    <shortdesc>a widow</shortdesc>
+    <longdesc>A woman dressed in white skirts walks by slowly.
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="95" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="30" dsize="210" bonus="950"/>
+      <move ndize="1" dsize="950" bonus="950"/>
+      <ac>-30</ac>
+      <gold>35</gold>
+      <bankgold>0</bankgold>
+      <exp>110</exp>
+      <hitroll>50</hitroll>
+      <damroll>50</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1048648"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="15" sides="15" add="50"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="25026" name="illianer man nasty" special="NONE">
+    <description>The man is short, dark of hair and sports an oddly shaped beard,
 marking him clearly as an Illianer. He looks about sneakily, and
 the people steal clear of him as he approaches - Illianers have
 been known to start many a fight as they do not adhere to the
 extremely polite customs of Ebou Dar,
-~
-1048652 0 0 E
-60 -25 2 656 15d170+800 9d12+27
-5 110
-8 8 1
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-Dirtkick: 100
-P
-OnActionTo "look"
-Pause 2
-Emote "the illianer notices you staring at him and he frowns, clenching his fists in the process."
-End
-OnMobEntry
-Pause 4
-Emote "the city is remarkable empty at this time of day, and the whiteness of everything almost blinds one."
-End
-Q
-E
-#25027
-murandian lanky man~
-a lanky Murandian~
-A lanky and skinny looking fellow walks by.
-~
-The man is rather tall and thin, making him look lanky and starved.
+</description>
+    <shortdesc>a nasty looking Illianer</shortdesc>
+    <longdesc>A suspicious looking, and rather short and unwashed, man walks around here.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="60" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="15" dsize="170" bonus="800"/>
+      <move ndize="1" dsize="800" bonus="800"/>
+      <ac>20</ac>
+      <gold>5</gold>
+      <bankgold>0</bankgold>
+      <exp>110</exp>
+      <hitroll>45</hitroll>
+      <damroll>27</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1048652"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="9" sides="12" add="45"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnActionTo" argtype="STRING" argument="look">
+      <action number="Pause" argtype="INT" argument="2"/>
+      <action number="Emote" argtype="STRING" argument="the illianer notices you staring at him and he frowns, clenching his fists in the process."/>
+    </mobprog>
+    <mobprog main="OnMobEntry" argtype="STRING" argument="look">
+      <action number="Pause" argtype="INT" argument="4"/>
+      <action number="Emote" argtype="STRING" argument="the city is remarkable empty at this time of day, and the whiteness of everything almost blinds one."/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="25027" name="murandian lanky man" special="NONE">
+    <description>The man is rather tall and thin, making him look lanky and starved.
 He wears mudstained clothes, as if he has recently journeyed quite
 a distance. He smells of wine - Murandian wine to be exact. Perhaps
 this fellow was at one time in the wine business.
-~
-1048792 0 0 E
-55 -30 2 656 10d280+550 6d12+25
-10 110
-8 8 1
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-Trip: 100
-P
-OnMobEntry
-Pause 2
-Emote "the smell of old wine and sweat reaches your nose."
-End
-OnActionTo "look"
-Pause 2
-Emote "the murandian snivels a bit and then decides to avoid your gaze."
-Pause 2
-Action "flee"
-End
-Q
-E
-#25028
-guard palace tarasin~
-a Palace Guard~
-A uniformed palace guard stands here, looking stiff and proper.
-~
-The guard is dressed in well starched and ironed clothes - a vest
+</description>
+    <shortdesc>a lanky Murandian</shortdesc>
+    <longdesc>A lanky and skinny looking fellow walks by.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="55" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="10" dsize="280" bonus="550"/>
+      <move ndize="1" dsize="550" bonus="550"/>
+      <ac>20</ac>
+      <gold>10</gold>
+      <bankgold>0</bankgold>
+      <exp>110</exp>
+      <hitroll>50</hitroll>
+      <damroll>25</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1048792"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="6" sides="12" add="50"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnMobEntry" argtype="STRING" argument="look">
+      <action number="Pause" argtype="INT" argument="2"/>
+      <action number="Emote" argtype="STRING" argument="the smell of old wine and sweat reaches your nose."/>
+    </mobprog>
+    <mobprog main="OnActionTo" argtype="STRING" argument="look">
+      <action number="Pause" argtype="INT" argument="2"/>
+      <action number="Emote" argtype="STRING" argument="the murandian snivels a bit and then decides to avoid your gaze."/>
+      <action number="Pause" argtype="INT" argument="2"/>
+      <action number="Action" argtype="STRING" argument="flee"/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="25028" name="guard palace tarasin" special="NONE">
+    <description>The guard is dressed in well starched and ironed clothes - a vest
 bearing green and white emblems under a white jacket, and white
 pants to match. He has a well trimmed square beard and has several
 daggers of assorted lengths at his side.
-~
-1392650 0 0 E
-100 -100 -5 656 25d200+3000 12d25+50
-90 110
-8 8 1
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-Trip: 100
-Kick: 100
-P
-OnActionTo "push"
-Emote "unhand the palace guard!"
-Stop
-End
-OnAttack
-Emote "the guard arches an eyebrow at the feeble attempt to kill him."
-End
-Q
-E
-#25029
-grandmother rahad woman~
-an elderly grandmother~
-An old lady, dressed finely and looking about confidently, wanders about here.
-~
-The lady is very old, and grey streaks her hair so much that the color
+</description>
+    <shortdesc>a Palace Guard</shortdesc>
+    <longdesc>A uniformed palace guard stands here, looking stiff and proper.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="100" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="25" dsize="200" bonus="3000"/>
+      <move ndize="1" dsize="3000" bonus="3000"/>
+      <ac>-50</ac>
+      <gold>90</gold>
+      <bankgold>0</bankgold>
+      <exp>110</exp>
+      <hitroll>120</hitroll>
+      <damroll>50</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1392650"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="12" sides="25" add="120"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnActionTo" argtype="STRING" argument="push">
+      <action number="Emote" argtype="STRING" argument="unhand the palace guard!"/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+    </mobprog>
+    <mobprog main="OnAttack" argtype="STRING" argument="push">
+      <action number="Emote" argtype="STRING" argument="the guard arches an eyebrow at the feeble attempt to kill him."/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="25029" name="grandmother rahad woman" special="NONE">
+    <description>The lady is very old, and grey streaks her hair so much that the color
 of her hair has become indistinguishable. She wears a pale brown
 skirt and light yellow petticoats. A glittering ivory sheathed dagger
 lays at her breast, decorated with countless rubies and pearls,
 many of which are surrounded by black enamel.
-~
-1048648 0 0 E
-110 -130 -3 656 30d270+1100 15d20+50
-0 140
-8 8 2
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-Trip: 100
-Kick: 100
-E
-#25030
-stray dog~
-a stray dog~
-A stray dog wanders around here.
-~
-The dog looks mangy and ragged. Not much to be
+</description>
+    <shortdesc>an elderly grandmother</shortdesc>
+    <longdesc>An old lady, dressed finely and looking about confidently, wanders about here.
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="110" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="30" dsize="270" bonus="1100"/>
+      <move ndize="1" dsize="1100" bonus="1100"/>
+      <ac>-30</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>140</exp>
+      <hitroll>150</hitroll>
+      <damroll>50</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1048648"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="15" sides="20" add="150"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="25030" name="stray dog" special="NONE">
+    <description>The dog looks mangy and ragged. Not much to be
 seen here.
-~
-8 0 0 E
-35 -5 10 656 15d140+350 5d6+16
-0 120
-8 8 0
-BareHandAttack: 4
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-P
-OnActionTo "look"
-Emote "the dog growls at you."
-ActionTo "kill"
-End
-Q
-E
-#25031
-woman widow ebou dari~
-an ebou dari widow~
-A young woman dressed in flowered skirts and a bright petticoats walks by.
-~
-The woman wears pale yellow skirts embroidered with green, rose 
+</description>
+    <shortdesc>a stray dog</shortdesc>
+    <longdesc>A stray dog wanders around here.
+</longdesc>
+    <title/>
+    <chardata gender="NEUTRAL" class="Adventurer" level="35" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="15" dsize="140" bonus="350"/>
+      <move ndize="1" dsize="350" bonus="350"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>120</exp>
+      <hitroll>25</hitroll>
+      <damroll>16</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="8"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="4"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="5" sides="6" add="25"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnActionTo" argtype="STRING" argument="look">
+      <action number="Emote" argtype="STRING" argument="the dog growls at you."/>
+      <action number="ActionTo" argtype="STRING" argument="kill"/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="25031" name="woman widow" special="NONE">
+    <description>The woman wears pale yellow skirts embroidered with green, rose 
 and blue flowers, and a bright blue petticoat under. She wears a
-white sheathed dagger at her breast. Her clothes aren't finely made
+white sheathed dagger at her breast. Her clothes aren&apos;t finely made
 but they are rather respectable - she may be the eldest daughter of
-a respected fisherman's or merchant's family.
-~
-5242952 0 0 E
-65 -45 0 656 15d0+650 9d10+30
-200 120
-8 8 2
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-P
-OnActionTo "look" & Darkfriend & ! Level "0 10" & ! Mode 5
-ActionTo "kill"
-End
-OnActionTo "look" & ! Guild "kin" & ! Race "altara" & Level "0 10"
-Emote "you dare look at me in that manner?"
-ActionTo "kill"
-End
-Q
-E
-#25032
-woman lighthouse keeper~
-a lighthouse keeper~
-An old woman walks about here, one of the keepers of the lighthouse.
-~
-She is dressed conservatively, and is busy polished the lighthouse
+a respected fisherman&apos;s or merchant&apos;s family.
+</description>
+    <shortdesc>an ebou dari widow</shortdesc>
+    <longdesc>A young woman dressed in flowered skirts and a bright petticoats walks by.
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="65" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="15" dsize="0" bonus="650"/>
+      <move ndize="1" dsize="650" bonus="650"/>
+      <ac>0</ac>
+      <gold>200</gold>
+      <bankgold>0</bankgold>
+      <exp>120</exp>
+      <hitroll>65</hitroll>
+      <damroll>30</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="5242952"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="9" sides="10" add="65"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnActionTo" argtype="STRING" argument="look">
+      <sideterm number="Darkfriend" not="FALSE" argtype="VOID" argument="NONE"/>
+      <sideterm number="Level" not="TRUE" argtype="STRING" argument="0 10"/>
+      <sideterm number="Mode" not="TRUE" argtype="INT" argument="5"/>
+      <action number="ActionTo" argtype="STRING" argument="kill"/>
+    </mobprog>
+    <mobprog main="OnActionTo" argtype="STRING" argument="look">
+      <sideterm number="Guild" not="TRUE" argtype="STRING" argument="kin"/>
+      <sideterm number="Race" not="TRUE" argtype="STRING" argument="altara"/>
+      <sideterm number="Level" not="FALSE" argtype="STRING" argument="0 10"/>
+      <action number="Emote" argtype="STRING" argument="you dare look at me in that manner?"/>
+      <action number="ActionTo" argtype="STRING" argument="kill"/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="25032" name="woman lighthouse keeper" special="NONE">
+    <description>She is dressed conservatively, and is busy polished the lighthouse
 signal light and surrounding mirrors.
-~
-1048648 0 0 E
-140 -180 -3 656 30d240+2000 15d25+50
-300 120
-8 8 2
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-E
-#25033
-dog guard lighthouse~
-a lighthouse guard dog~
-A shaggy looking sheep dog guards the lighthouse from intruders.
-~
-The dog has long white hair which covers his eyes and droops
+</description>
+    <shortdesc>a lighthouse keeper</shortdesc>
+    <longdesc>An old woman walks about here, one of the keepers of the lighthouse.
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="140" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="30" dsize="240" bonus="2000"/>
+      <move ndize="1" dsize="2000" bonus="2000"/>
+      <ac>-30</ac>
+      <gold>300</gold>
+      <bankgold>0</bankgold>
+      <exp>120</exp>
+      <hitroll>200</hitroll>
+      <damroll>50</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1048648"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="15" sides="25" add="200"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="25033" name="dog guard lighthouse" special="NONE">
+    <description>The dog has long white hair which covers his eyes and droops
 onto the floor. His tongue lolls out and he looks friendly enough
 except for that low growl which he emits if you come too close.
-~
-6344 0 0 E
-80 -60 -1 656 20d250+800 10d12+50
-0 100
-8 8 1
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-P
-OnLeave & ! Guild "kin" & ! Race "altara"
-Emote "the dog growls oddly at you."
-End
-Q
-E
-#25034
-horse stallion race~
-a fine race horse~
-A fine stallion races about here.
-~
-The stallion has a deep grey coat, and a height of about seven hands.
-~
-216 0 0 E
-40 0 6 656 8d200+400 4d9+15
-0 120
-8 8 1
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-Kick: 100
-P
-OnEntry
-Pause 2
-Emote "the air is rather humid here, and the weather very hot. "
-End
-Q
-E
-#25035
-drunk sailor~
-a drunk sailor~
-A drunk sailor staggers about.
-~
-The sailor is shirtless and suntanned - as if he has just recently
+</description>
+    <shortdesc>a lighthouse guard dog</shortdesc>
+    <longdesc>A shaggy looking sheep dog guards the lighthouse from intruders.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="80" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="20" dsize="250" bonus="800"/>
+      <move ndize="1" dsize="800" bonus="800"/>
+      <ac>-10</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>80</hitroll>
+      <damroll>50</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="6344"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="10" sides="12" add="80"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnLeave" argtype="STRING" argument="look">
+      <sideterm number="Guild" not="TRUE" argtype="STRING" argument="kin"/>
+      <sideterm number="Race" not="TRUE" argtype="STRING" argument="altara"/>
+      <action number="Emote" argtype="STRING" argument="the dog growls oddly at you."/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="25034" name="horse stallion race" special="NONE">
+    <description>The stallion has a deep grey coat, and a height of about seven hands.
+</description>
+    <shortdesc>a fine race horse</shortdesc>
+    <longdesc>A fine stallion races about here.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="40" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="8" dsize="200" bonus="400"/>
+      <move ndize="1" dsize="400" bonus="400"/>
+      <ac>60</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>120</exp>
+      <hitroll>20</hitroll>
+      <damroll>15</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="216"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="4" sides="9" add="20"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnEntry" argtype="STRING" argument="look">
+      <action number="Pause" argtype="INT" argument="2"/>
+      <action number="Emote" argtype="STRING" argument="the air is rather humid here, and the weather very hot. "/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="25035" name="drunk sailor" special="NONE">
+    <description>The sailor is shirtless and suntanned - as if he has just recently
 gotten off a nearby rig docked at near the Bay. He staggers around
 quite a bit and a smell of plum brandy - the local specialty - 
 reaches your nose.
-~
-1052744 4096 0 E
-55 -15 5 656 15d210+550 5d8+15
-25 90
-8 8 1
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-E
-$
+</description>
+    <shortdesc>a drunk sailor</shortdesc>
+    <longdesc>A drunk sailor staggers about.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="55" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="15" dsize="210" bonus="550"/>
+      <move ndize="1" dsize="550" bonus="550"/>
+      <ac>50</ac>
+      <gold>25</gold>
+      <bankgold>0</bankgold>
+      <exp>90</exp>
+      <hitroll>35</hitroll>
+      <damroll>15</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1052744"/>
+    <affected one="4096" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="5" sides="8" add="35"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+</mobiles>

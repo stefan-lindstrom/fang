@@ -29,13 +29,13 @@ are on extends up another flight to a third floor.
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
-    <exit direction="north" keyword="door" exitinfo="3" keynum="-1" toroom="29703">
+    <exit direction="north" keyword="door" exitinfo="1" keynum="-1" toroom="29703">
       <description/>
     </exit>
     <exit direction="east" keyword="door" exitinfo="3" keynum="-1" toroom="29704">
       <description/>
     </exit>
-    <exit direction="west" keyword="door" exitinfo="3" keynum="-1" toroom="29702">
+    <exit direction="west" keyword="door" exitinfo="1" keynum="-1" toroom="29702">
       <description/>
     </exit>
     <exit direction="up" keyword="" exitinfo="0" keynum="0" toroom="29762">
@@ -48,7 +48,7 @@ are on extends up another flight to a third floor.
   <room>
     <roombasic title="\c00A Room at The &amp;RBall&amp;n and &amp;WHoop&amp;n" vnum="29702" zone="297">
       <roomdescription>As you push open the door marked 1, you enter a small but comfortable room,
-it&apos;s furnishings meeting your eyes with rich tones of dark &amp;rc&amp;Rh&amp;Ke&amp;rr&amp;Rr&amp;Ky&amp;n wood.
+it's furnishings meeting your eyes with rich tones of dark &amp;rc&amp;Rh&amp;Ke&amp;rr&amp;Rr&amp;Ky&amp;n wood.
 There is a bed against the far wall, beneath a window, and a dresser beside
 it. A desk sits across from that, and two chairs rest in a pair of corners.
 There is also a fireplace here, stacked with wood ready for burning, and
@@ -58,7 +58,7 @@ a box of flint nearby.
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
-    <exit direction="east" keyword="door" exitinfo="3" keynum="0" toroom="29701">
+    <exit direction="east" keyword="door" exitinfo="1" keynum="0" toroom="29701">
       <description/>
     </exit>
   </room>
@@ -66,7 +66,7 @@ a box of flint nearby.
     <roombasic title="\c00A Room at The &amp;RBall&amp;n and &amp;WHoop&amp;n" vnum="29703" zone="297">
       <roomdescription>Behind the door with the &amp;Ws&amp;wi&amp;Wl&amp;wv&amp;We&amp;wr&amp;n 2 on it rests this room, a large and rather
 spacious chamber that is furnished in tones of smooth, mild &amp;yoak&amp;n. The bed
-which rests on the east wall has 4 posters on it&apos;s wide frame, and beside it 
+which rests on the east wall has 4 posters on it's wide frame, and beside it 
 rests a small nightstand of the same wood. A desk takes up the north wall,
 beneath a large window, and a fireplace sits nestled into the western wall.
 </roomdescription>
@@ -74,7 +74,7 @@ beneath a large window, and a fireplace sits nestled into the western wall.
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
-    <exit direction="south" keyword="door" exitinfo="3" keynum="-1" toroom="29701">
+    <exit direction="south" keyword="door" exitinfo="1" keynum="-1" toroom="29701">
       <description/>
     </exit>
   </room>
@@ -87,7 +87,7 @@ table beside it, as well as a desk and chair, and a fireplace rests on
 a vacant wall.
 </roomdescription>
       <flags>28</flags>
-      <sector>City</sector>
+      <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
     <exit direction="west" keyword="door" exitinfo="3" keynum="0" toroom="29701">
@@ -149,13 +149,13 @@ comfortable chairs for his clients while they wait.
   <room>
     <roombasic title="&amp;CLark Lane&amp;n" vnum="29710" zone="297">
       <roomdescription>Lark Lane extends westward, reaching out along the shops to provide a
-method of travel for the scores of people who walk along it&apos;s length.
+method of travel for the scores of people who walk along it's length.
 To the north, there is a rather large and classy-looking building, &amp;rred&amp;n
 bricked and simply yet very tastefully done. It has several large &amp;ww&amp;ci&amp;wn&amp;cd&amp;wo&amp;cw&amp;ws&amp;n
 that look out onto the street, windows filled with hanging &amp;gplants&amp;n and
 greenery mixed with flowers of every shade. It appears to be a restaurant of
 some kind, though there is no sign directly stating as much. The word
-&quot;&amp;WAhndralea&apos;s&amp;n&quot; is painted just above the door in straight &amp;Wwhite&amp;n letters.
+&quot;&amp;WAhndralea's&amp;n&quot; is painted just above the door in straight &amp;Wwhite&amp;n letters.
 As you eye the building, a scent of baked bread reaches your nose from
 the south, and if you turn, you notice a small but well-kept bakery.
 </roomdescription>
@@ -181,7 +181,7 @@ the south, and if you turn, you notice a small but well-kept bakery.
       <roomdescription>As you push your way among the people, the smells of freshly baked bread
 and something that seems a little like fish assault your nose, along with
 a curiously musky scent, perhaps burning incense from the candle shop
-down the street. To the north, the restaurant &amp;WAhndralea&apos;s&amp;n extends,
+down the street. To the north, the restaurant &amp;WAhndralea's&amp;n extends,
 though there is no visible door on this side, only windows decorated with
 rich, exotic-looking &amp;g&amp;gplant life&amp;n&amp;n. To the south there is a squat building
 of &amp;rm&amp;yu&amp;Kl&amp;rt&amp;yi&amp;K-&amp;rc&amp;yo&amp;Kl&amp;ro&amp;yr&amp;Ke&amp;rd&amp;n brick, and a sign with a large lock on it swings above
@@ -204,10 +204,12 @@ the door.
   <room>
     <roombasic title="&amp;CLark Lane&amp;n" vnum="29712" zone="297">
       <roomdescription>The worn cobblestones appear in better shape here before a small, &amp;Wwhite-
-washed&amp;n building to the south. There is a sign outside, depicting a
-&amp;rc&amp;wo&amp;yl&amp;wo&amp;gr&amp;wf&amp;cu&amp;wl&amp;n child&apos;s doll, and to the north there is a similar-looking shop,
+washed&amp;n building to the south.  There is a sign outside, depicting a
+&amp;rc&amp;wo&amp;yl&amp;wo&amp;gr&amp;wf&amp;cu&amp;wl&amp;n child's doll, and to the north there is a similar-looking shop,
 however it bears no sign apart from a small series of letters finely
-painted over the door - &quot;&amp;bChenna&apos;s&amp;n&quot;
+painted over the door - &quot;&amp;bChenna's&amp;n&quot; Strangely enough, there seems to be a
+recently excavated pathway leading towards the northwest, where in the
+distance a rather large building is visible.    
 </roomdescription>
       <flags>0</flags>
       <sector>City</sector>
@@ -224,6 +226,10 @@ painted over the door - &quot;&amp;bChenna&apos;s&amp;n&quot;
     </exit>
     <exit direction="west" keyword="" exitinfo="0" keynum="0" toroom="29713">
       <description/>
+    </exit>
+    <exit direction="northwest" keyword="" exitinfo="0" keynum="-1" toroom="2670">
+      <description>You see nothing special.
+</description>
     </exit>
   </room>
   <room>
@@ -261,7 +267,7 @@ of the city. To the east you can see a stable that is attatched to an Inn
 beside it to the south, and though it might seem the smells would conflict,
 they strangely do not seem to.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -306,7 +312,7 @@ of a quaint but spacious park.
   </room>
   <room>
     <roombasic title="&amp;CLark Lane&amp;n" vnum="29716" zone="297">
-      <roomdescription>Lark Lane&apos;s cobblestones turn around The &amp;RBall&amp;n and &amp;WHoop&amp;n, making a U shape,
+      <roomdescription>Lark Lane's cobblestones turn around The &amp;RBall&amp;n and &amp;WHoop&amp;n, making a U shape,
 and extending down towards another line of shops. This block looks much
 the same as the last, with old-style buildings and a light but steady
 bustling on the street, though the signs are all of different things. It
@@ -353,7 +359,7 @@ southwest.
 and well-cared for. The proprietor moves among the customers, watching
 with a careful eye but an easy smile. A small stand rests toward the back,
 likely where he keeps the paperwork from his exchanges, and he rests
-against it when he&apos;s not milling about. To the west, you can see the &amp;gtrees&amp;n
+against it when he's not milling about. To the west, you can see the &amp;gtrees&amp;n
 and &amp;gg&amp;Gr&amp;ge&amp;Ge&amp;gn&amp;n of the park, and off in the distance to the southwest there is a
 small &amp;Kstone&amp;n structure of some kind.
 </roomdescription>
@@ -372,11 +378,11 @@ small &amp;Kstone&amp;n structure of some kind.
     <roombasic title="\c00The &amp;yStables&amp;n of The &amp;RBall&amp;n and &amp;WHoop&amp;n" vnum="29719" zone="297">
       <roomdescription>This is a small stable, with only a few stalls for horses, but it fits
 the size of the connecting Inn quite well. It is clean and obviously well-
-kept, it&apos;s workers almost always close by. On the west side, above the
+kept, it's workers almost always close by. On the west side, above the
 stalls, is a small loft filled with &amp;yhay&amp;n and bags of feed. To the south,
 there is a large set of double &amp;kd&amp;Koo&amp;kr&amp;Ks&amp;n that lead out onto the street.
 </roomdescription>
-      <flags>28</flags>
+      <flags>32796</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
@@ -393,7 +399,7 @@ there is a large set of double &amp;kd&amp;Koo&amp;kr&amp;Ks&amp;n that lead out
   <room>
     <roombasic title="\c00The Common Room of The &amp;RBall&amp;n and &amp;WHoop&amp;n" vnum="29720" zone="297">
       <roomdescription>This common room is a large, spacious area that looks well-lived-in and 
-well-loved. It&apos;s a comfortable place, with a moderate amount of tables but
+well-loved. It's a comfortable place, with a moderate amount of tables but
 they are spread out so that there is plenty of room. There is a small
 &amp;ystage&amp;n built, apparently for gleefolk or entertainers of some kind, off to
 the western side of the room. Behind it, there is a &amp;ww&amp;ci&amp;wn&amp;cd&amp;wo&amp;cw&amp;n much like the others
@@ -403,8 +409,8 @@ servers can usually be seen walking to and fro among them. The proprietor
 sits behind a &amp;ydesk&amp;n against the northern wall, and to one side is a 
 stairwell leading to the upper levels.
 </roomdescription>
-      <flags>28</flags>
-      <sector>City</sector>
+      <flags>1081372</flags>
+      <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
     <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="29719">
@@ -426,7 +432,7 @@ stairwell leading to the upper levels.
 worn path, clearly travelled by many pairs of feet, but little else. It 
 stretches out across a &amp;gf&amp;yi&amp;ge&amp;yl&amp;gd&amp;n, winding somewhat through the small &amp;gshrubbery&amp;n
 and plantlife that begins to creep up as you near the park. The shade of
-the large trees takes the sun off your back and welcomes you into it&apos;s
+the large trees takes the sun off your back and welcomes you into it's
 seclusion.
 </roomdescription>
       <flags>0</flags>
@@ -441,7 +447,7 @@ seclusion.
     </exit>
   </room>
   <room>
-    <roombasic title="&amp;bChenna&apos;s&amp;n" vnum="29722" zone="297">
+    <roombasic title="&amp;bChenna's&amp;n" vnum="29722" zone="297">
       <roomdescription>As you step into this shop, quiet &amp;yb&amp;we&amp;yl&amp;wl&amp;ys&amp;n ring from the door when you open it,
 and a well-dressed, quaint looking woman steps out from a small back room
 to take a seat behind a small table at the back of the room. As you look
@@ -449,7 +455,7 @@ around, you notice the lack of windows in the room, as every wall is nearly
 covered frame-to-frame with a large number and variety of wall hangings.
 The pictures are seemingly random, everything from &amp;gf&amp;yo&amp;Kr&amp;ge&amp;ys&amp;Kt&amp;n scenes to 
 portraits, and all are well-done and tasteful. There are a few small tables
-throughout the room, covered in small pieces of some sculpter&apos;s self-expression,
+throughout the room, covered in small pieces of some sculpter's self-expression,
 in every medium ranging &amp;rc&amp;Ro&amp;rp&amp;Rp&amp;re&amp;Rr&amp;n and &amp;ywood&amp;n to &amp;Kstone&amp;n and &amp;rclay&amp;n.
 </roomdescription>
       <flags>158</flags>
@@ -463,7 +469,7 @@ in every medium ranging &amp;rc&amp;Ro&amp;rp&amp;Rp&amp;re&amp;Rr&amp;n and &am
   <room>
     <roombasic title="\c00The &amp;cD&amp;wo&amp;Bl&amp;wl&amp;n Shop" vnum="29723" zone="297">
       <roomdescription>Much as the sign outside told of, this shop is devoted entirely to dolls
-and children&apos;s toys, though mainly to the former, and the shelves and racks
+and children's toys, though mainly to the former, and the shelves and racks
 of the room are filled with varying sizes and shapes of life-like dolls.
 Some are clearly more rich than others, extending even to real &amp;Kf&amp;yu&amp;kr&amp;Ks&amp;n to
 line some of the clothing, and long billowing, curly hair. Others are
@@ -471,7 +477,7 @@ draped in silks of every &amp;ms&amp;bh&amp;ga&amp;yd&amp;re&amp;n, some in line
 beautifully hand crafted and priced appropriately. There are smaller tables
 in various corners bearing such things as blocks and balls, more common and
 plain toys, but they do not lack in craftsmanship for certain. In all, this
-is a showing of someone&apos;s true caring about the happiness of children, but also
+is a showing of someone's true caring about the happiness of children, but also
 an appriciation for meticulous handiwork.
 </roomdescription>
       <flags>28</flags>
@@ -501,22 +507,22 @@ not much to this small, homey-looking store.
     </exit>
   </room>
   <room>
-    <roombasic title="&amp;WAhndralea&apos;s&amp;n" vnum="29725" zone="297">
-      <roomdescription>The first thing you notice upon entering this place is the relatively
-plain setting of it. The walls and floor are &amp;Wwhite&amp;n, and it is trimmed in
+    <roombasic title="&amp;WAhndralea's&amp;n" vnum="29725" zone="297">
+      <roomdescription>The first thing to notice upon entering this place is the relatively
+plain setting of it.  The walls and floor are white, and it is trimmed in
 simple &amp;ywooden&amp;n tones, the tables and chairs alike in a similar &amp;Wwhite&amp;n-and-
-&amp;ywood&amp;n pattern. The apparent lack of color, however, is more than made up for
-by the scores of brightly &amp;rc&amp;yo&amp;gl&amp;co&amp;Br&amp;be&amp;md&amp;n and yet tasteful, ornamental plant life.
-When you look closer, however, it is clear that it is not purely decorative,
-as much of the various potted plants and arrangements are in fact for sale.
-Strange, but this restaurant appears to double also as a flower shop of sorts,
-and judging by the constant bustle of the common room, it appears to do good
-business that way. In any case, it is a pleasent and efficient, aesthetic
-atmosphere. There is an open doorway to the west, leading into another
-large dining room, and a closed door to the north which likely leads to
-the kitchens. It opens every once in a while to accomodate a coming or
-going server, and one of Ahndralea&apos;s more muscled staff guards it against
-the unwelcome.
+&amp;ywood&amp;n pattern.  The apparent lack of color, however, is more than made up
+for by the scores of brightly &amp;rc&amp;yo&amp;gl&amp;co&amp;br&amp;Be&amp;md&amp;n and yet tasteful, ornamental plant
+life. Upon closer inspection, however, it is clear that it is not purely
+decorative, as much of the various potted plants and arrangements are in
+fact for sale.  Strange, but this restaurant appears to double also as a
+flower shop of sorts, and judging by the constant bustle of the common
+room, it appears to do good business that way.  In any case, it is a
+pleasant and efficient, aesthetic atmosphere.  There is an open doorway to
+the west, leading into another large dining room, and a closed door to the
+north which likely leads to the kitchens.  It opens every once in a while
+to accomodate a coming or going server, and one of Ahndralea's more
+muscled staff guards it against the unwelcome.    
 </roomdescription>
       <flags>158</flags>
       <sector>Inside</sector>
@@ -531,12 +537,12 @@ the unwelcome.
   </room>
   <room>
     <roombasic title="\c00The &amp;yBa&amp;Yk&amp;we&amp;yry&amp;n" vnum="29726" zone="297">
-      <roomdescription>A long counter fills much of one side of this room, and the bakery&apos;s staff
+      <roomdescription>A long counter fills much of one side of this room, and the bakery's staff
 bustles back and forth behind it. The shelves behind them are filled with
 innumerable varieties of &amp;ybreads&amp;n, confections, cookies, pastries, all
 appearing to have been freshly-baked from the brick &amp;rk&amp;Ri&amp;rl&amp;Rn&amp;n in the rear of
 shop. Across from the counter, on the opposite wall, shelves hold much of
-yesterday&apos;s baked goods, wrapped and ready to be sold.
+yesterday's baked goods, wrapped and ready to be sold.
 </roomdescription>
       <flags>158</flags>
       <sector>Inside</sector>
@@ -566,18 +572,18 @@ shed some natural light into the room.
   </room>
   <room>
     <roombasic title="\c00The &amp;WC&amp;wa&amp;Wn&amp;wd&amp;Wl&amp;we&amp;n Shop" vnum="29728" zone="297">
-      <roomdescription>As you enter this place, the first thing you notice is the warm, musky
-scent of freshly burnt &amp;yi&amp;Kn&amp;yc&amp;Ke&amp;yn&amp;Ks&amp;ye&amp;n. Flickering light comes to you next, the
-&amp;rf&amp;Rl&amp;ya&amp;wm&amp;Re&amp;rs&amp;n of several burning candles throughout the room shifting a bit in the
-with candles, small jars of herbs and powders, mixing containers and a few
-varieties of incense. There is an old-looking and worn but sturdy &amp;ytable&amp;n
+      <roomdescription>Upon entering this place, the first thing to notice is the warm, musky
+scene of freshly burnt &amp;yi&amp;kn&amp;yc&amp;ke&amp;yn&amp;ks&amp;ye&amp;n.  Flicking light comes next, the &amp;rf&amp;Rl&amp;ya&amp;wm&amp;Re&amp;rs&amp;n of
+several burning candles throughout the room shifting a bit in the with
+candles, small jars of herbs and powders, mixing containers and a few
+varieties of incense.  There is an old-looking and worn but sturdy &amp;ytable&amp;n
 toward the back of the room, and the proprietor usually sits behind it if
-she is not attending the wicks of the &amp;wc&amp;Wa&amp;wn&amp;Wd&amp;wl&amp;We&amp;ws&amp;n or one of her customer&apos;s needs.
-Several small windows break the planes of the walls as well, windows which
-open on their hinges in the summer and close tightly during foul weather,
-but always glisten with the reflecting candle &amp;rf&amp;Rl&amp;ya&amp;wm&amp;Re&amp;rs&amp;n.
+she is not attending the wicks of the &amp;wc&amp;Wa&amp;wn&amp;Wd&amp;wl&amp;We&amp;ws&amp;n or one of her customer's
+needs.  Several small windows break the planes of the walls as well,
+windows which open on their hinges in the summer and close tightly during
+foul weather, but always glisten with the reflecting candle &amp;rf&amp;Rl&amp;ya&amp;wm&amp;Re&amp;rs&amp;n.    
 </roomdescription>
-      <flags>158</flags>
+      <flags>1048734</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
@@ -587,7 +593,7 @@ but always glisten with the reflecting candle &amp;rf&amp;Rl&amp;ya&amp;wm&amp;R
   </room>
   <room>
     <roombasic title="\c00A Small Loft" vnum="29729" zone="297">
-      <roomdescription>As you make your way up the loft&apos;s ladder, the scent of &amp;yhay&amp;n becomes
+      <roomdescription>As you make your way up the loft's ladder, the scent of &amp;yhay&amp;n becomes
 stronger and more prominant, but it is not overpowering. Here is where
 the &amp;Ks&amp;gu&amp;Kp&amp;gp&amp;Kl&amp;gi&amp;Ke&amp;gs&amp;n for the stablehands is kept, and a few small boxes lie to
 one side of the loft amid scattered &amp;y&amp;yhay&amp;n&amp;n. On the east and west walls,
@@ -595,7 +601,7 @@ there are indentations that denote glassless windows, but they are usually
 closed. The view from here provides an overlook to the door connecting to
 the Inn, as well as the outside.
 </roomdescription>
-      <flags>28</flags>
+      <flags>32796</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
@@ -604,7 +610,7 @@ the Inn, as well as the outside.
     </exit>
   </room>
   <room>
-    <roombasic title="&amp;CLark Lane&amp;n Becomes a Winding Path..." vnum="29730" zone="297">
+    <roombasic title="\c13Lark Lane \c00Becomes a Winding Path" vnum="29730" zone="297">
       <roomdescription>The cobblestones of Lark Lane fade into a &amp;ggrassy&amp;n foot path, meandering
 across a field towards a gathering of trees. It is a moderate sized woods,
 from as near as you can tell, and it is dark with soothing &amp;Kshade&amp;n, but it is
@@ -644,7 +650,7 @@ line of shops, and at the end of it you can barely make out some sort of
     </exit>
   </room>
   <room>
-    <roombasic title="\c00Several &amp;KPaths&amp;n Meet Here..." vnum="29732" zone="297">
+    <roombasic title="Several \c22Paths\c00 Meet Here" vnum="29732" zone="297">
       <roomdescription>The path meanders through the &amp;gtrees&amp;n and comes out into a clearing, the
 sunlight sparkling off a &amp;Bp&amp;co&amp;wn&amp;Bd&amp;n that was hidden by the surrounding foliage.
 A few small &amp;Wwhite&amp;n ducks swim about, accompanied by malards, and birds sing
@@ -739,7 +745,7 @@ way.
   <room>
     <roombasic title="\c00The &amp;gP&amp;ya&amp;Kr&amp;gk&amp;n" vnum="29736" zone="297">
       <roomdescription>The path continues north and westward, taking you around the pond, and the
-&amp;gt&amp;Kr&amp;ge&amp;Ke&amp;gs&amp;n seem to line the path here, relatively thickly. It&apos;s clear they were
+&amp;gt&amp;Kr&amp;ge&amp;Ke&amp;gs&amp;n seem to line the path here, relatively thickly. It's clear they were
 placed purposefully, lining the path with a certain symetrical quality,
 but it does not look forced or false. Large &amp;rred&amp;n bricks begin a path to
 the north, further into the hallway of &amp;gt&amp;Kr&amp;ge&amp;Ke&amp;gs&amp;n, and the west path leads
@@ -760,7 +766,7 @@ off alongside the pond.
     </exit>
   </room>
   <room>
-    <roombasic title="\c00A small clearing in the &amp;gt&amp;Kr&amp;ge&amp;Ke&amp;gs&amp;n..." vnum="29737" zone="297">
+    <roombasic title="A Small Clearing Among the \c02T\c22r\c02e\c22e\c02s\c00" vnum="29737" zone="297">
       <roomdescription>As you continue northward, the &amp;rb&amp;Kr&amp;ri&amp;Kc&amp;rk&amp;Ks&amp;n lead uphill slightly into large steps,
 steps which likely take two strides each. They are gently sloping up, yet
 there are a good score of them, so that it seems as though you rise more than
@@ -828,7 +834,7 @@ clusters of trees that have grown together.
   <room>
     <roombasic title="A Small, Secluded &amp;gB&amp;ya&amp;Kn&amp;gk&amp;n" vnum="29740" zone="297">
       <roomdescription>This is a tiny, shrouded area that is well hidden from any place but
-directly in front of it&apos;s path, though someone must have been here before
+directly in front of it's path, though someone must have been here before
 you, for there is a &amp;ywooden&amp;n and &amp;Kiron&amp;n bench quite near the &amp;bw&amp;Ba&amp;ct&amp;Be&amp;br&amp;n\c00. The grass is
 short-clipped as well, and though there is a wild air to the place, it is
 also clear that it is cared for.
@@ -951,10 +957,10 @@ revealed to you an open-air theater that looked never to have completely
 been there, seeming carved right out of the side of the hill. Five or six
 rows of &amp;Kstone&amp;n benches and walkways lie tiered, for the audience, and half-
 circle around a large, spacious stage. The stage itself, indeed the entire
-theater and the 4 columns at it&apos;s cardinal points, are all etched from
+theater and the 4 columns at it's cardinal points, are all etched from
 the same rock, and there is a strange feeling of energy here. Half of the
 area lies bathed in rich, golden &amp;ysu&amp;Yn&amp;wli&amp;Yg&amp;yht&amp;n or pale &amp;Wm&amp;wo&amp;Wo&amp;wn&amp;Wl&amp;wi&amp;Wg&amp;wh&amp;Wt&amp;n, and the other
-in the dark of the tree&apos;s shadow. At the back of the stage is a small
+in the dark of the tree's shadow. At the back of the stage is a small
 building of some sort, likely to house props or the like, and it oddly
 appears as though there is &amp;Kstone&amp;n paving behind the stage...
 </roomdescription>
@@ -991,7 +997,7 @@ there are two more closets, identical to the first pair.
     </exit>
   </room>
   <room>
-    <roombasic title="\c00A &amp;gs&amp;Kh&amp;ga&amp;Kd&amp;gy&amp;n path" vnum="29748" zone="297">
+    <roombasic title="A \c02S\c22h\c02a\c22d\c02y \c00Path" vnum="29748" zone="297">
       <roomdescription>You begin to near the woods now, stepping into the cool &amp;Kshadows&amp;n that the
 trees cast. Ahead, through some &amp;gundergrowth&amp;n, you can see a small area that
 appears to be the meeting of several paths, and off to the west you may
@@ -1041,7 +1047,7 @@ is painted on a slab of oak which hangs from a pole beside a &amp;Wwhite-&amp;n
 eminating from the &amp;kbu&amp;Krn&amp;wi&amp;Ksh&amp;ked&amp;n &amp;Ks&amp;wi&amp;kl&amp;Kv&amp;we&amp;kr&amp;n lanterns which grace the walls,
 as well as the pools of sunlight which filter in through 2 small windows.
 The floor is covered by an old &amp;Wwhite&amp;n fur of some sort, likely an
-animal at one time, yet though it&apos;s coat has been pressed down from the
+animal at one time, yet though it's coat has been pressed down from the
 feet of patrons, it still retrains a shine. As you gaze around the rest of
 the store, shelves after shelves of various shoes and boots fill your eyes,
 some newly made and some old, but all in good condition and of good
@@ -1097,7 +1103,7 @@ speak of, merely tables of a rich, &amp;rred&amp;n wood alongside the weavers as
 work the threads together, and a slightly larger one beside the elderly
 woman who looks to be in charge. There are several &amp;gc&amp;co&amp;Bl&amp;mo&amp;rr&amp;yf&amp;gu&amp;cl&amp;n hangings on the
 walls, mostly of outdoor scenes and elaborate borders, and similar works of
-art lie draped across the ladies&apos; looms.
+art lie draped across the ladies' looms.
 </roomdescription>
       <flags>28</flags>
       <sector>Inside</sector>
@@ -1111,10 +1117,10 @@ art lie draped across the ladies&apos; looms.
     <roombasic title="&amp;CLark Lane&amp;n" vnum="29753" zone="297">
       <roomdescription>As you walk along, a &amp;Ww&amp;wh&amp;Wi&amp;wt&amp;We &amp;wb&amp;Wr&amp;yi&amp;wc&amp;Wk&amp;ye&amp;wd&amp;n building comes into view beside you
 to the north, bearing a small sign on the outside of three hats - one a
-&amp;Kblack&amp;n formal hat complete with veil, another gentleman&apos;s &amp;gc&amp;ca&amp;gp&amp;n, and a third
-multi-&amp;yco&amp;glo&amp;Bred&amp;n jester&apos;s hat. To the south, a building built of a rich, dark
+&amp;Kblack&amp;n formal hat complete with veil, another gentleman's &amp;gc&amp;ca&amp;gp&amp;n, and a third
+multi-&amp;yco&amp;glo&amp;Bred&amp;n jester's hat. To the south, a building built of a rich, dark
 red wood and smooth, large stones sits here. Above the door, there rests a
-grey etching, as if it were a burn - &quot;&amp;KKatherynne&apos;s&amp;n&quot;
+grey etching, as if it were a burn - &quot;&amp;KKatherynne's&amp;n&quot;
 </roomdescription>
       <flags>0</flags>
       <sector>City</sector>
@@ -1135,7 +1141,7 @@ grey etching, as if it were a burn - &quot;&amp;KKatherynne&apos;s&amp;n&quot;
   </room>
   <room>
     <roombasic title="\c00The &amp;yC&amp;wo&amp;Wr&amp;yd&amp;wi&amp;We&amp;yr\c00" vnum="29754" zone="297">
-      <roomdescription>The sign outside said it all - this is a cordier&apos;s shop, complete with
+      <roomdescription>The sign outside said it all - this is a cordier's shop, complete with
 foot upon foot upon foot of rope coils around hooks on the walls. The
 materials consist of everything from &amp;gh&amp;ye&amp;gm&amp;yp&amp;n to &amp;Wsilk&amp;n, and there are numerous
 thicknesses, each with a different price marked on the wall above them.
@@ -1187,7 +1193,7 @@ table in the back behind which the proprietor sits.
     </exit>
   </room>
   <room>
-    <roombasic title="&amp;KKatherynne&apos;s\c00" vnum="29757" zone="297">
+    <roombasic title="&amp;KKatherynne's\c00" vnum="29757" zone="297">
       <roomdescription>A very soft, fragrant scent reaches your nose, smelling faintly of a
 musky sort of flower, as you enter this shop. When you look around, you
 see a number of small &amp;ywooden&amp;n statues that have been carved into human
@@ -1208,7 +1214,7 @@ room, though it is accompanied by small &amp;yg&amp;Yo&amp;wl&amp;Wd&amp;Ye&amp;
     </exit>
   </room>
   <room>
-    <roombasic title="&amp;CLark Lane&amp;n Ends at a Curious &amp;WF&amp;Ko&amp;Wu&amp;Kn&amp;Wt&amp;Ka&amp;Wi&amp;Kn&amp;n..." vnum="29758" zone="297">
+    <roombasic title="\c13Lark Lane \c00Ends at a Curious \c14F\c22o\c14u\c22n\c14t\c22a\c14i\c22n\c00" vnum="29758" zone="297">
       <roomdescription>Here, Lark Lane has come to an abrupt end, and it is closed in with the
 walls of buildings. To the east, there lies a shop marked with a sign above
 the door, bearing a &amp;K&amp;Kblackened&amp;n quill and a piece of &amp;wp&amp;ya&amp;Wr&amp;wc&amp;yh&amp;Wm&amp;we&amp;yn&amp;Wt&amp;n. In the center
@@ -1218,7 +1224,7 @@ facial features are carved delicate and beautiful, and her hair cascades with
 the &amp;cw&amp;Ca&amp;wt&amp;Ce&amp;cr&amp;n down her back. One hand is stretched out over her head, the source
 of the falling water, and her eyes look upwards. At her feet and around her
 legs there is a stark contrast to the white of her form - the coils of a
-sinuous &amp;Kb&amp;kl&amp;Ka&amp;kc&amp;Kk&amp;n dragon. &amp;cW&amp;Ca&amp;wt&amp;Ce&amp;cr&amp;n rushes from the creature&apos;s mouth, surrounded
+sinuous &amp;Kb&amp;kl&amp;Ka&amp;kc&amp;Kk&amp;n dragon. &amp;cW&amp;Ca&amp;wt&amp;Ce&amp;cr&amp;n rushes from the creature's mouth, surrounded
 by sharp, jagged teeth, but the generous basin of the fountain prohibits
 anyone being close enough to touch it unless they stand directly in it.
 </roomdescription>
@@ -1254,7 +1260,7 @@ relaxed and watchful behind his desk.
     </exit>
   </room>
   <room>
-    <roombasic title="\c00The Central Dining Area of &amp;WAhndralea&apos;s&amp;n" vnum="29760" zone="297">
+    <roombasic title="\c00The Central Dining Area of &amp;WAhndralea's&amp;n" vnum="29760" zone="297">
       <roomdescription>You proceed into the large dining area, and a scene similar to the first
 room greets your eyes - efficient, well-trained servers work the tables,
 and rows of shelves bearing potted &amp;gplants&amp;n line the walls. Hanging &amp;ybaskets&amp;n
@@ -1369,7 +1375,7 @@ chairs rest in the far corners.
     </exit>
   </room>
   <room>
-    <roombasic title="\c00Into the &amp;Kdepths&amp;n..." vnum="29766" zone="297">
+    <roombasic title="Into the \c22Depths\c00" vnum="29766" zone="297">
       <roomdescription>&amp;kDarkness&amp;n spreads out in thick, embracing &amp;Kte&amp;kn&amp;Kdr&amp;ki&amp;Kls\c00, broken only by the light
 from the open &amp;ydoor&amp;n behind you. The scent of dust, of old &amp;bw&amp;Ba&amp;ct&amp;Be&amp;br&amp;n, of something
 freshly burnt fill your nostrils as shadows fill your vision and the sensation
@@ -1394,7 +1400,7 @@ is closest to you is bare, save for a long wooden table.
     </exit>
   </room>
   <room>
-    <roombasic title="\c00A small, quiet room" vnum="29767" zone="297">
+    <roombasic title="A Small and Quite Room" vnum="29767" zone="297">
       <roomdescription>The door opens on quiet hinges to admit you to this quiet, comfortable room.
 Beneath your feet, there is a hardwood floor, and stretched out over a few
 feet of it is a &amp;Wwhite&amp;n fur rug of some kind. It lies before a large fireplace

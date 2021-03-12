@@ -1,118 +1,239 @@
-#28900
-citizen man cairhien~
-a citizen of Cairhien~
-A \c09Ca\c02ir\c09hi\c02en \c03Citizen \c00races by trying to get out of the carnage.
-~
-This man, wearing rather drab clothing partially torn at the sleeve, looks
+<?xml version="1.0"?>
+<mobiles>
+  <mobile vnum="28900" name="citizen man cairhien" special="NONE">
+    <description>This man, wearing rather drab clothing partially torn at the sleeve, looks
 about wild-eyed. He waves around a simple weapon and often cries out about
 getting away from the city of Cairhien.
-~
-589832 0 0 E
-100 -10 -15 733 7d700+500 9d15+30
-0 0
-8 8 1 0
-BareHandAttack: 6
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-Trip: 100
-Kick: 100
-E
-#28901
-guard soldier cairhien~
-a Cairhien Guard~
-A \c09Ca\c02ir\c09hi\c02en \c11Guard \c00is nearby, sword unsheathed for battle.
-~
-This guard looks like one of the more elite in the Cairhien army. He
+</description>
+    <shortdesc>a citizen of Cairhien</shortdesc>
+    <longdesc>A \c09Ca\c02ir\c09hi\c02en \c03Citizen \c00races by trying to get out of the carnage.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="100" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="7" dsize="700" bonus="500"/>
+      <move ndize="10" dsize="100" bonus="500"/>
+      <ac>-150</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>30</hitroll>
+      <damroll>30</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="589832"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="6"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="9" sides="15" add="30"/>
+    <timer amount="0"/>
+    <skills vector="10"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="28901" name="guard soldier cairhien" special="NONE">
+    <description>This guard looks like one of the more elite in the Cairhien army. He
 wields a steel sword with a hilt worn from use and a metal breastplate, the
-sigil of Cairhien's many rayed sun flashing brightly from it.
-~
-589850 0 0 E
-150 -25 -20 733 9d900+750 12d35+45
-0 0
-8 8 1 0
-BareHandAttack: 3
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-Bash: 100
-Stun: 100
-E
-#28902
-trolloc cairhien~
-a large Trolloc~
-An ugly brute of a \c05Trolloc\c00 is here, its animal face twisted angrily.
-~
-The Trolloc growls and looks about for more people to destroy. It wears a
+sigil of Cairhien&apos;s many rayed sun flashing brightly from it.
+</description>
+    <shortdesc>a Cairhien Guard</shortdesc>
+    <longdesc>A \c09Ca\c02ir\c09hi\c02en \c11Guard \c00is nearby, sword unsheathed for battle.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="150" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="9" dsize="900" bonus="750"/>
+      <move ndize="10" dsize="100" bonus="750"/>
+      <ac>-200</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>45</hitroll>
+      <damroll>45</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="589850"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="3"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="12" sides="35" add="45"/>
+    <timer amount="0"/>
+    <skills vector="33"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="28902" name="trolloc cairhien" special="NONE">
+    <description>The Trolloc growls and looks about for more people to destroy. It wears a
 dented helm around what look like large animal ears and a thick banded
 leather shirt. Its weapon is twisted and dark, blood staining the metal.
-~
-589912 0 0 E
-125 -20 -17 733 8d800+600 10d24+40
-0 0
-8 8 0 0
-BareHandAttack: 14
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-Dirtkick: 100
-Disarm: 100
-E
-#28903
-man diseased~
-a diseased man~
-A \c01diseased\c00 man, welts all over his naked body and skin half off, wanders past.
-~
-This man shuffles about on legs that look like they don't work well. His
+</description>
+    <shortdesc>a large Trolloc</shortdesc>
+    <longdesc>An ugly brute of a \c05Trolloc\c00 is here, its animal face twisted angrily.
+</longdesc>
+    <title/>
+    <chardata gender="NEUTRAL" class="Adventurer" level="125" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="8" dsize="800" bonus="600"/>
+      <move ndize="10" dsize="100" bonus="600"/>
+      <ac>-170</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>40</hitroll>
+      <damroll>40</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="589912"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="14"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="10" sides="24" add="40"/>
+    <timer amount="0"/>
+    <skills vector="20"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="28903" name="man diseased" special="NONE">
+    <description>This man shuffles about on legs that look like they don&apos;t work well. His
 body is completely bare, if his rolled skin and the many ugly welts and tears
 can be called being naked. An odd glint is in his wild eyes, and he grasps a
 twisted sword in his right hand.
-~
-4915208 262144 0 E
-180 -30 -20 733 11d0+1500 20d35+50
-0 0
-8 8 0 0
-BareHandAttack: 3
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-Dirtkick: 100
-Stun: 100
-E
-#28904
-darkhound beast dog~
-a scaled darkhound~
-A beast, faintly resembling an enormous dog but with two heads and scales growls nearby.
-~
-This.. thing.. looks quite a bit like a dog, though it is as large as a horse.
+</description>
+    <shortdesc>a diseased man</shortdesc>
+    <longdesc>A \c01diseased\c00 man, welts all over his naked body and skin half off, wanders past.
+</longdesc>
+    <title/>
+    <chardata gender="NEUTRAL" class="Adventurer" level="180" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="11" dsize="0" bonus="1500"/>
+      <move ndize="10" dsize="100" bonus="1500"/>
+      <ac>-200</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>50</hitroll>
+      <damroll>50</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="4915208"/>
+    <affected one="262144" two="0" three="0" four="0"/>
+    <attack type="3"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="20" sides="35" add="50"/>
+    <timer amount="0"/>
+    <skills vector="36"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="28904" name="darkhound beast dog" special="NONE">
+    <description>This.. thing.. looks quite a bit like a dog, though it is as large as a horse.
 Two heads protrude from one body, both flashing fangs dripping with saliva.
 The beast bays, its black furred back meshed with obsidian scales. As it moves
 along stone it leaves odd footprints. Whatever it is, it is filled with evil.
-~
-3063898 327728 0 E
-200 -40 -20 733 15d1000+2000 30d40+50
-0 0
-8 8 0 0
-BareHandAttack: 4
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-Bash: 100
-Stun: 100
-E
-$
+</description>
+    <shortdesc>a scaled darkhound</shortdesc>
+    <longdesc>A beast, faintly resembling an enormous dog but with two heads and scales growls nearby.
+</longdesc>
+    <title/>
+    <chardata gender="NEUTRAL" class="Adventurer" level="200" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="15" dsize="1000" bonus="2000"/>
+      <move ndize="10" dsize="100" bonus="2000"/>
+      <ac>-200</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>60</hitroll>
+      <damroll>50</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="3063898"/>
+    <affected one="327728" two="0" three="0" four="0"/>
+    <attack type="4"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="30" sides="40" add="60"/>
+    <timer amount="0"/>
+    <skills vector="33"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="28905" name="horse gelding" special="NONE">
+    <description>This horse stands there proudly, his sleek \c23gr\c07e\c23y\c00 coat shining softly from
+the faint \c03li\c07g\c03ht\c00 that filters into his stall.  His mane and tail are
+cropped short, a glossy \c23black\c00 in hue and kept rather neat.    
+</description>
+    <shortdesc>a tall \c23grey\c00 gelding </shortdesc>
+    <longdesc>\c00a tall \c23gr\c07e\c23y\c00 gelding stands here proudly.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="15" weight="200" height="198"/>
+    <abilities>
+      <str>11</str>
+      <int>11</int>
+      <wis>11</wis>
+      <dex>11</dex>
+      <con>11</con>
+      <cha>11</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="1" bonus="1"/>
+      <move ndize="10" dsize="100" bonus="1"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="330"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+</mobiles>

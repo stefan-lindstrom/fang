@@ -1,12 +1,24 @@
 <?xml version="1.0"?>
 <zone vnum="320" lifespan="30" top="32499" mode="2" lock="no">
-  <name>Quest Zone</name>
-  <resetcmds numberof="1">
+  <name>&amp;KQuest Equipment Zone&amp;n</name>
+  <resetcmds numberof="4">
+    <cmd command="ReadObject" ifflag="no">
+      <args arg1="32625" arg2="1" arg3="32199"/>
+      <line lineno="7"/>
+    </cmd>
+    <cmd command="ReadObject" ifflag="no">
+      <args arg1="30195" arg2="2" arg3="32199"/>
+      <line lineno="11"/>
+    </cmd>
+    <cmd command="Obj2Obj" ifflag="yes">
+      <args arg1="36" arg2="100" arg3="32625"/>
+      <line lineno="15"/>
+    </cmd>
     <cmd command="STOP"/>
   </resetcmds>
   <editors>
-    <editor name="Tempus"/>
-    <editor name="Masema"/>
-    <editor name="Cappen"/>
+    <editor name="Tzeentch"/>
+    <editor name="Hartigan"/>
+    <editor name="Amarinda"/>
   </editors>
 </zone>

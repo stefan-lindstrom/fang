@@ -1,50 +1,126 @@
-#30600
-merchant wine Ciaran~
-Ciaran the wine merchant~
-\c03Ciaran \c05the wine merchant\c03 is standing here.\c00
-~
-Ciaran, a short man with a busy red beard and a long apron is busily
+<?xml version="1.0"?>
+<mobiles>
+  <mobile vnum="30600" name="merchant wine Ciaran" special="NONE">
+    <description>Ciaran, a short man with a busy red beard and a long apron is busily
 sampling the various wines and spirits he is selling.
-~
-180234 0 0 E
-1 19 10 714 1d100+20000 1d1+1
-0 0
-8 8 1
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-E
-#30601
-salesman man clothe fine~
-a horse salesman~
-A man dressed in fine clothing stands here smiling.
-~
-He's dressed in Caemlyn's latest fashion and carries
+</description>
+    <shortdesc>Ciaran the wine merchant</shortdesc>
+    <longdesc>\c03Ciaran \c05the wine merchant\c03 is standing here.\c00
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="1" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="20000"/>
+      <move ndize="10" dsize="100" bonus="20000"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>1</hitroll>
+      <damroll>1</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="180234"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="1"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="30601" name="salesman man clothe fine" special="NONE">
+    <description>He&apos;s dressed in Caemlyn&apos;s latest fashion and carries
 on a lot of golden items. Apparently horse selling is
 a lucrative market.
-~
-8 0 0 E
-1 20 10 714 1d100+0 1d1+0
-0 0
-8 8 1
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-P
-OnSayTo "help"
-SayTo "Ahah, so you want some help, my friend? Of course I can help you out."
-Emote "$n smiles $s most winning smile at $N."
-Pause 4
-Say "To tell you all of it would be rather tedious, my friend, so I suggest you should type "
-Pause 3
-Say "Good day to you, sir. I hope you find something of your fancy here."
-End
-Q
-E
-$
+</description>
+    <shortdesc>a horse salesman</shortdesc>
+    <longdesc>A man dressed in fine clothing stands here smiling.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="1" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="0"/>
+      <move ndize="10" dsize="100" bonus="0"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="8"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnSayTo" argtype="STRING" argument="help">
+      <action number="SayTo" argtype="STRING" argument="Ahah, so you want some help, my friend? Of course I can help you out."/>
+      <action number="Emote" argtype="STRING" argument="$n smiles $s most winning smile at $N."/>
+      <action number="Pause" argtype="INT" argument="4"/>
+      <action number="Say" argtype="STRING" argument="To tell you all of it would be rather tedious, my friend, so I suggest you should type "/>
+      <action number="Pause" argtype="INT" argument="3"/>
+      <action number="Say" argtype="STRING" argument="Good day to you, sir. I hope you find something of your fancy here."/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="30694" name="merchant wine Ciaran" special="NONE">
+    <description>   Ciaran, a short man with a busy red beard and a long apron is busily
+sampling the various wines and spirits he is selling.    
+</description>
+    <shortdesc>Ciaran the wine merchant</shortdesc>
+    <longdesc>Ciaran the &amp;mwine merchant&amp;g is standing here.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="200" weight="200" height="198"/>
+    <abilities>
+      <str>11</str>
+      <int>11</int>
+      <wis>11</wis>
+      <dex>11</dex>
+      <con>11</con>
+      <cha>11</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="1" bonus="1"/>
+      <move ndize="10" dsize="100" bonus="1"/>
+      <ac>100</ac>
+      <gold>200000</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="180234"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+</mobiles>

@@ -1,59 +1,159 @@
-#30700
-baker shopkeeper Beaumont~
-Beaumont the Baker~
-Beaumont the baker is setting out a tray of warm cookies
-~
-It looks, err, unfinished.
-~
-8 0 0 E
-0 20 10 597 1d100+0 1d0+0
-0 0
-8 8 1
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-E
-#30702
-maybry tailor shopkeeper glee tower~
-Mabry the Tailor~
-Mabry the tailor is ready to take your measurements
-~
-It looks, err, unfinished.
-~
-8 0 0 E
-0 20 10 597 1d100+0 1d1+0
-0 0
-8 8 1
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-E
-#30711
-gleegirl shopkeeper craftsman~
-a pretty gleewoman~
-A young and pretty gleewoman greets you with a smile
-~
-A young and pretty gleewoman, with dark eyes and a mischievious
+<?xml version="1.0"?>
+<mobiles>
+  <mobile vnum="30700" name="baker shopkeeper Beaumont" special="NONE">
+    <description>It looks, err, unfinished.
+</description>
+    <shortdesc>Beaumont the Baker</shortdesc>
+    <longdesc>Beaumont the baker is setting out a tray of warm cookies
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="0" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="0"/>
+      <move ndize="10" dsize="20" bonus="100"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="9232392"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="0" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="30702" name="maybry tailor shopkeeper glee tower" special="NONE">
+    <description>It looks, err, unfinished.
+</description>
+    <shortdesc>Mabry the Tailor</shortdesc>
+    <longdesc>Mabry the tailor is ready to take your measurements
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="0" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="0"/>
+      <move ndize="10" dsize="20" bonus="100"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="9232392"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="30711" name="gleegirl shopkeeper craftsman" special="NONE">
+    <description>A young and pretty gleewoman, with dark eyes and a mischievious
 smile greets you as you enter the shop.  She pushes unruly black
 curls from her face and slips off a wooden workstool.  Although the
 dark \c02green cloak\c00 she wears has only a few patches, the 
 workmanship on the musical intruments is that of a talented craftsman.
-~
-10 0 0 E
-2 20 10 597 1d100+0 1d1+0
-0 0
-8 8 2
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-E
-$
+</description>
+    <shortdesc>a pretty gleewoman</shortdesc>
+    <longdesc>A young and pretty gleewoman greets you with a smile
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="2" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="0"/>
+      <move ndize="10" dsize="20" bonus="100"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="9232394"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="30796" name="celeste clerk owner" special="NONE">
+    <description>Celeste has gray hair and hazel eyes and with that sweet smile she seems
+like everyone&apos;s grandmother.  She&apos;s got a round little belly from eating
+the chocolates that jiggles when she laughs.  One has to stand close cause
+she doesn&apos;t see very well any more and it is best to speak loudly because
+she doesn&apos;t hear so well.    
+</description>
+    <shortdesc>Celeste, the Candy Shop clerk</shortdesc>
+    <longdesc>Celeste, the Candy Shop clerk stands here wearing a spotless white apron.
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="200" weight="200" height="198"/>
+    <abilities>
+      <str>11</str>
+      <int>11</int>
+      <wis>11</wis>
+      <dex>11</dex>
+      <con>11</con>
+      <cha>11</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="1" bonus="24999"/>
+      <move ndize="10" dsize="20" bonus="100"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="10477594"/>
+    <affected one="48" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+</mobiles>

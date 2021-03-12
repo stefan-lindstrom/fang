@@ -1,17 +1,16 @@
 <?xml version="1.0"?>
 <rooms>
   <room>
-    <roombasic title="The Amyrlin&apos;s Bedroom" vnum="4000" zone="40">
-      <roomdescription>The furnishings in this room do not match, but they are the best Salidar
-has to offer, from the padded armchair upolstered in green silk to the 
-stand-mirror in the corner with all its guilding intact, to the ornately 
-carved wardrobe where Egwene&apos;s belongings now hang. The canopy of the 
-bed and the drawn back bed curtains are trimmed in lace and frills. The
-canopy of the bed and the drawn back bed curtains are trimmed in lace
-and frills. The curtains at the window are also trimmed in the finest
-lace.
+    <roombasic title="A Large Bedroom" vnum="4000" zone="40">
+      <roomdescription>The most impressive thing about this room is the large bed with posts that
+drip curtains made of lace.  It looks to be recently placed here, the lace
+not looking as worn as the scuffed and old wooden floor.  An armchair sits
+in front of a window, recently upholstered in fabric that was old to begin
+with from all appearances.  The window is closed and has lace for curtains
+that match the canopy on the bed.  There are no personal belongings here,
+just worn out furniture.    
 </roomdescription>
-      <flags>538</flags>
+      <flags>8</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
@@ -20,25 +19,25 @@ lace.
     </exit>
   </room>
   <room>
-    <roombasic title="Celline&apos;s Room" vnum="4001" zone="40">
-      <roomdescription>   The most noticeable upon entering is that the small room is decorated
-with dark &amp;ypaneling&amp;n and sharp contrasting lines with as much gilt as could
-be found.  The bed that sits straight across from the door has a tall
-canopy and the severity is only softened by the thinnest sheer &amp;ggreen&amp;n
-fabric hanging erratically from the beams.  &amp;gFilmy curtains&amp;n decorating the
-edge of the window behind, match perfectly and it all stirs in the whisper
-thin breeze.  To the left of the bed, one can see a &amp;ydark &amp;rc&amp;yh&amp;re&amp;yr&amp;rr&amp;yy &amp;rw&amp;yo&amp;ro&amp;yd table&amp;n
-which holds one half burned &amp;Wcandle&amp;n.  The chair standing beside it is rigid
-with a lone cushion in fabric that matches the &amp;ys&amp;Kp&amp;yr&amp;Ke&amp;ya&amp;Kd&amp;n of the bed, dark
-&amp;ggreen&amp;n and &amp;cblue squares with lace on the edges and small &amp;Ygold&amp;n tassels.  In
-one corner, sits a &amp;ydark o&amp;Ka&amp;yk&amp;n writing &amp;ydesk&amp;n and opposite is a small wash
-basin adorned with thin chipped Seafolk &amp;Wp&amp;wo&amp;Wr&amp;wc&amp;We&amp;wl&amp;Wa&amp;wi&amp;Wn&amp;n and a small &amp;cmirror&amp;n.    
+    <roombasic title="Suzine's Retreat" vnum="4001" zone="40">
+      <roomdescription>This room gives the feeling of someplace far from Salidar.  It is
+decorated in the blues favored by the noble families of Mayene, from the
+silk curtains to the satin drapped bed directly across from the door.  
+Just to the right of the bed is a large red-hued wooden wardrobe with
+small tapestries depicting the harbor of Mayene to either side of it.  
+Against the other wall below the only window in the room is a large desk,
+neatly kept, and free of clutter.  In front of the desk is a chair made of
+the same wood with a cushioned seat of the same blue as the rest of the
+room.  Carved into the back of the chair is the idolized hawk of Mayene.
+The floor is covered with a large rug, spanning nearly the whole of the
+room.  Overall it is a small space that does not fit in with the rest of
+this small village.    
 </roomdescription>
       <flags>12</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
-    <exit direction="east" keyword="door east" exitinfo="7" keynum="4001" toroom="4036">
+    <exit direction="east" keyword="door east" exitinfo="3" keynum="0" toroom="4036">
       <description>&lt;NONE&gt;</description>
     </exit>
     <exdesc keyword="tapestry">
@@ -55,24 +54,20 @@ Ocean.
   </room>
   <room>
     <roombasic title="Hallway of the Main Floor" vnum="4002" zone="40">
-      <roomdescription>The beetle-ridden wall panels have recently been waxed to a dull shine.
-The walls are plain and the only decorative items are the candles that
-line the hallway giving off a warm glow.  To the west and east are 
-rooms for the accepted of the Little Tower, and to the north is the office
-of the Mistress of Accepted.  If you have been summoned to her office
-you may be sure it is for a very good reason.
-It is very wise to knock before you would so boldly enter this room.
-&lt;ooc type: knock north&gt;
+      <roomdescription>This hallway appears to end in a doorway.  It is dark without the candles
+lit and the walls even make it more dreary and dark than perhaps it might
+be in another time and place.  In the light of day, one might be able to
+tell that the panels in the wall have been waxed to a dull shine recently.
 </roomdescription>
-      <flags>14</flags>
+      <flags>8</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
     <exit direction="north" keyword="door north" exitinfo="3" keynum="0" toroom="4009">
       <description>&lt;NONE&gt;</description>
     </exit>
-    <exit direction="east" keyword="door east" exitinfo="3" keynum="0" toroom="4038">
-      <description>&lt;NONE&gt;</description>
+    <exit direction="east" keyword="door east" exitinfo="15" keynum="4038" toroom="4038">
+      <description> </description>
     </exit>
     <exit direction="south" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="4008">
       <description>&lt;NONE&gt;</description>
@@ -85,16 +80,16 @@ It is very wise to knock before you would so boldly enter this room.
     </exit>
   </room>
   <room>
-    <roombasic title="\c02Evelyn&apos;s Bedroom\c00" vnum="4003" zone="40">
-      <roomdescription>You are in a large room filled with comfortable furniture. The wallpaper
-is new and is \c06blue\c00 with small yellow \c10flowers\c00. A large oak canopy
-bed with gauzy white curtains occupies the center of the room. Next
-to the bed is a washstand with a porcelain \c04basin\c00 and \c04pitcher\c00. A large
-comfortable \c06sofa\c00 is against the south wall and two overstuffed 
-matching \c06armchairs\c00 are on the west wall on either side of a window
-that overlooks a street. A writing desk made of \c01cherry\c00 sits in the 
-southwest corner. Several \c02vases\c00 are scattered around the room containing
-different varieties of \c01f\c00\c03l\c00\c06o\c00\c14w\c00\c04e\c00\c05r\c00\c01s\c00, giving the room a light, cheerful air.
+    <roombasic title="\c02Evelyn's Bedroom\c00" vnum="4003" zone="40">
+      <roomdescription>This is a spacious room filled with comfortable furniture.  The wallpaper
+is new and is \c06blue\c00 with small yellow \c10flowers\c00.  A large oak canopy bed with
+gauzy white curtains occupies the center of the room.  Next to the bed is
+a washstand with a porcelain \c04basin\c00 and \c04pitcher\c00.  A plush, comfortable \c06sofa\c00
+is against the south wall with two overstuffed matching \c06armchairs\c00 on the
+west wall on either side of a window that overlooks a street.  A writing
+desk made of \c01cherry\c00 sits in the southwest corner.  Several \c02vases\c00 are
+scattered around the room containing different varieties of \c01f\c00\c03l\c00\c06o\c00\c14w\c00\c04e\c00\c05r\c00\c01s\c00,
+giving the room a light, cheerful air.    
 </roomdescription>
       <flags>28</flags>
       <sector>Inside</sector>
@@ -104,14 +99,15 @@ different varieties of \c01f\c00\c03l\c00\c06o\c00\c14w\c00\c04e\c00\c05r\c00\c0
       <description>&lt;NONE&gt;</description>
     </exit>
     <exdesc keyword="window">
-      <description>You gaze out the window at a busy Salidar street.  The shutters seem to be 
-slanted so that you can see out but that it would be almost impossible to 
-see in.
+      <description>
+The window overlooks a busy Salidar street.  The shutters seem to be
+slanted so that one can see out but that it would be almost impossible to
+see in from outside.    
 </description>
     </exdesc>
   </room>
   <room>
-    <roombasic title="Lhiannon&apos;s Room" vnum="4004" zone="40">
+    <roombasic title="Lhiannon's Room" vnum="4004" zone="40">
       <roomdescription>A fairly large room with mismatched furnishings.  A large bed is in the
 center with a wooden table next to it.  A small ornately carved 
 washstand is standing in the corner with a large green pitcher inside
@@ -130,15 +126,15 @@ Salidar.
     </exit>
   </room>
   <room>
-    <roombasic title="Hallway of the Novice Floor" vnum="4005" zone="40">
-      <roomdescription>The beetle-ridden wall panels have recently been waxed to  a dull shine.
-The walls are plain and the only decorative items are candles that
-line the hallway giving off a warm glow.  On either side are the bedrooms
-of the novices of the Little Tower and to the north is the door to the
-study of the Mistress of Novices.  It is wise you knock before you enter.
-&lt;ooc note: type knock north&gt;
+    <roombasic title="A Long Hallway" vnum="4005" zone="40">
+      <roomdescription>The hallway is overly plain, giving the impression that candles have been
+taken from their holders on the wall, as well as old tapestries that hung
+here.  The dust that has settled is not thick, hinting at recent
+inhabitants but there is clearly no sign of them now.  The walls were
+waxed to a dull shine, cracks not standing out as they once would have.  
+Even the latches appear to have a coating of wax.    
 </roomdescription>
-      <flags>10</flags>
+      <flags>8</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
@@ -157,38 +153,42 @@ study of the Mistress of Novices.  It is wise you knock before you enter.
     </exit>
   </room>
   <room>
-    <roombasic title="The Bedroom of the Mistress of Accepted" vnum="4006" zone="40">
-      <roomdescription>This room is sparcely furnished, yet finely so and well kept, and it has
-the scent of incense about it. A </roomdescription>
-      <flags>526</flags>
+    <roombasic title="An Abandoned House" vnum="4006" zone="40">
+      <roomdescription>Upon entering this small room, one could tell it had been used as a
+headquarters for messages.  There is a board hung on the east wall that
+has had notes tacked to it and a table opposite that has old writing
+supplies.  It appears nothing more than an abandoned cottage but has not
+had the benefit of waxing and cleaning that a few other buildings in the
+village have had.  A door leads to the south and judging by the window, it
+looks to be a porch of some kind.    
+</roomdescription>
+      <flags>8</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
-    <exit direction="south" keyword="door south" exitinfo="3" keynum="4002" toroom="4009">
+    <exit direction="north" keyword="door north" exitinfo="0" keynum="0" toroom="4076">
+      <description/>
+    </exit>
+    <exit direction="south" keyword="door south" exitinfo="0" keynum="0" toroom="4045">
       <description>&lt;NONE&gt;</description>
     </exit>
   </room>
   <room>
-    <roombasic title="Tessa&apos;s Bedroom" vnum="4007" zone="40">
-      <roomdescription>Tessa&apos;s suite is an octagonally shaped room, cluttered yet tidy. Against one wall 
-rests an enormous bed, with an ornate headboard molded out of pure silver.  The
-bed is strewn with down pillows and a large comforter, all of which are 
-woven with silver thread. The effect, contrasting with black lacquered bedframe,
-is quite stunning. Flanking the bed on both sides are black nightstands,
-piled high with romance novels, and with luminescent globes resting upon them.
-These globes are in fact strewn all over the room, some of them  abiding 
-the laws of gravity, some openly defying them, and some hovering in  between.
-A silver love seat is tucked in an opposing corner, glimmering discreetly
-yet invitingly, while a silver beanbag chair rests across from it in  an
-unceremonious heap. Plants are strewn around the edges of the room,
-covering much of the walls with foliage. Thru the leaves you notice that the 
-walls and ceiling are in fact a rich forest green, matching the plush carpeting.
+    <roombasic title="A Spare Room" vnum="4007" zone="40">
+      <roomdescription>This medium sized room looks to be a storage room for furniture.  There
+are two small beds crammed in as if they were here originally.  They are
+both shoved against the walls to make room for a set of sofas, a group of
+chairs, and numerous trunks and small tables.  There are more smaller
+chairs resting on the beds but all look to be broken or in bad repair.  
+The window across from the door stands open, letting in snow and frigid
+air.  The wood paneling below the window looks to be rotting with the
+frozen water of the incoming weather conditions.    
 </roomdescription>
-      <flags>12</flags>
+      <flags>8</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
-    <exit direction="west" keyword="door west" exitinfo="3" keynum="4014" toroom="4036">
+    <exit direction="west" keyword="door west" exitinfo="3" keynum="0" toroom="4036">
       <description>&lt;NONE&gt;</description>
     </exit>
     <exdesc keyword="window garden east">
@@ -204,20 +204,15 @@ go and relax from worries and care.
   </room>
   <room>
     <roombasic title="Hallway of the Main Floor" vnum="4008" zone="40">
-      <roomdescription>What is now called the Little Tower was obviously quite 
-recently a good-sized inn. Although the Aes Sedai have 
-done more work on this building than most of the rest 
-of the town, there still remains the comfortable undertone
-in the furnishings and decorations, and also the architecture
-of the building itself that only an inn can give off. 
-To the east are the kitchens, and to the west lay some 
-rooms that the Aes Sedai use for gathering, and holding 
-audiences, and that sort of thing. The accepted rooms 
-are also on this main floor, and white-garbed novices and
-accepted in their \c01se\c03ve\c02n st\c23ri\c11pe\c10d\c00 dresses crisscross the 
-hallways, obviously trying to look busy, and most actually are.
+      <roomdescription>This hallway is much like all the others in this old vacant inn.  The
+walls appear to be decorated in dark panelling which makes the darkness
+worse since there are no windows here.  A few tapestries and paintings
+hang from the walls, each looking as if they are much too old to grace a
+decent wall.  The floor has recently had its wooden planks shined and the
+latches recently waxed.  No matter the work that was done, the cracks in
+the wood are still visible even in dark lighting.    
 </roomdescription>
-      <flags>10</flags>
+      <flags>8</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
@@ -227,7 +222,7 @@ hallways, obviously trying to look busy, and most actually are.
     <exit direction="east" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="4015">
       <description>&lt;NONE&gt;</description>
     </exit>
-    <exit direction="south" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="4014">
+    <exit direction="south" keyword="door south" exitinfo="3" keynum="0" toroom="4014">
       <description>&lt;NONE&gt;</description>
     </exit>
     <exit direction="west" keyword="door west" exitinfo="1" keynum="0" toroom="4019">
@@ -238,83 +233,67 @@ hallways, obviously trying to look busy, and most actually are.
     </exit>
   </room>
   <room>
-    <roombasic title="Office of the Mistress of Accepted" vnum="4009" zone="40">
-      <roomdescription>The large oaken door creaks open when you enter, a soft and low tone, and a 
-gentle light from the sconces on the walls fills your vision. Beyond,
-directly in your line of sight, there rests a dark toned desk piled high
-with papers in neat stacks, and two chairs rest before it. To your left
-there is a third chair in the southwest corner, and a fourth, larger and more
-comfortable chair, rests behind the desk for the Mistress. In the center
-of the western all there is a long blade in a scabbard set on a pair of
-hooks. A set of bookshelves line the wall to your right, and an ornate
-armoire rests in the shadows beside a fireplace along the north wall.
-A door breaks the wall on the other side of the chest, made from the same
-rich oak wood as the one you entered through. While the room holds the
-formality of darker tones, it also rests in a comfortability of having been
-well-used.
+    <roombasic title="An Abandoned Office" vnum="4009" zone="40">
+      <roomdescription>The doors to the room are heavy oak, suggesting that it was an important
+office at one time.  There is a matching pair across the room but are
+mostly hidden from sight with numerous old trunks and stacks of old
+objects.  There is a fireplace to the right but looks to have not been
+used in years as there are cobwebs covering it.  The sconces are also
+dusty and covered over in webs and look to be missing candles.    
 </roomdescription>
       <flags>8</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
-    <exit direction="north" keyword="door north" exitinfo="3" keynum="4002" toroom="4006">
-      <description>&lt;NONE&gt;</description>
-    </exit>
     <exit direction="south" keyword="door south" exitinfo="3" keynum="0" toroom="4002">
       <description>&lt;NONE&gt;</description>
     </exit>
   </room>
   <room>
-    <roombasic title="\c11Elayne\c00 and \c09Nynaeve&apos;s\c00 Room\c00" vnum="4010" zone="40">
-      <roomdescription>This is a small room, softly lit by a \c10golden\c00 sconce on the cream colored 
-walls. A chipped \c02washbasin\c00 is in a corner, and a small \c14gilt\c00 mirror is off 
-to the side. Two narrow beds line the north and south sides of the room. 
-The northern bed has \c03cream\c00 colored sheets and ruffled \c06pale blue\c00 pillows,
-and a \c04blue \c00patchwork quilt. Several odd objects lie on the bed - some sort
-of flecked \c04stone\c00 rings, and a cloth covered bundle at the foot of the bed.
-The southern bed has \c07white\c00 sheets, \c05rose \c00colored pillows and a \c02green\c00 
-patchwork quilt.On the bed lies a small leather pouch, and a heavy\c10 golden\c00 
-ring that peaks out of a satin pouch. A grand wooden chair that once used 
-to be fine decorated with \c02green\c00 fabric is in the eastern side of the room,
-next to a \c08deep mahogany \c00table on which a \c09green \c00table lamp lies. 
+    <roombasic title="An Empty Space" vnum="4010" zone="40">
+      <roomdescription>This small room is completely empty except for two small beds that have
+been pushed together along the wall.  The mattresses are bare, no hint of
+sheets or fabric that should or would have been covering the poorly
+conditioned straw beds.  There are scratch marks on the wooden floor to
+suggest that furniture was removed but not a trace of it remains.  The
+small window is closed but there is still a great deal of moisture that
+leaks in from the snow and ice.    
+</roomdescription>
+      <flags>8</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="west" keyword="door west" exitinfo="3" keynum="0" toroom="4033">
+      <description>&lt;NONE&gt;</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Common Room for the Aes Sedai" vnum="4011" zone="40">
+      <roomdescription>This is where the Aes Sedai gather to talk about guild issues and to
+read the message board for information about their guild.  North leads
+to the Rebel Tower gathering area, and south leads to the White Tower
+gathering area.
 </roomdescription>
       <flags>28</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
-    <exit direction="west" keyword="door west" exitinfo="7" keynum="4023" toroom="4033">
-      <description>&lt;NONE&gt;</description>
+    <exit direction="east" keyword="" exitinfo="0" keynum="0" toroom="1050">
+      <description/>
     </exit>
+    <dgscript vnum="3503"/>
   </room>
   <room>
-    <roombasic title="Common Room for The Little Tower" vnum="4011" zone="40">
-      <roomdescription>A large high-ceilinged room.  A tall branched stand-lamp, mirrored to increase
-the light, stand in each corner of the room.  There is a notice board on the
-northern wall on which are many messages and notices.  To the east and
-west are the bedrooms for the Sitters of the Little Tower.
+    <roombasic title="A Sitting Room" vnum="4012" zone="40">
+      <roomdescription>The room may be lacking any type of personal belongings but there is no
+doubt that the room was well cared for.  The furniture looks to have been
+left alone or recently upholstered in colorful fabrics, stuffing added
+into pillows for comfort.  The window still has curtains and they are a
+vibrant blue color and appear washed within the last few months.  The
+floor has been waxed and the walls are either covered or waxed to the
+point of shining.    
 </roomdescription>
-      <flags>4108</flags>
-      <sector>Inside</sector>
-      <special>NONE</special>
-    </roombasic>
-    <exit direction="south" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="4092">
-      <description>&lt;NONE&gt;</description>
-    </exit>
-    <exit direction="southeast" keyword="door" exitinfo="1" keynum="0" toroom="4076">
-      <description>door
-</description>
-    </exit>
-  </room>
-  <room>
-    <roombasic title="Waiting Room for the Amyrlin&apos;s Study" vnum="4012" zone="40">
-      <roomdescription>This room is slightly smaller than the others.  Lamps line the mantel of
-the one fireplace.  There are also comfortable armchairs upholstered in
-a variety of colored silks.  There are two picture windows, both facing 
-east overlooking the village of Salidar. If you are lucky the Amyrlin is
-in her office.  Please knock gently, for she is very busy.
-&lt;ooc note: type knock &lt;north&gt;
-</roomdescription>
-      <flags>24</flags>
+      <flags>8</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
@@ -326,18 +305,20 @@ in her office.  Please knock gently, for she is very busy.
     </exit>
   </room>
   <room>
-    <roombasic title="The Amyrlins Study" vnum="4013" zone="40">
-      <roomdescription>A slightly smaller room than the waiting room with the two windows, there
-is a writing table, a straight backed chair behind it and two more in
-front. The beetle-ridden wall panels have been recently waxed to a dull
-shine, but the table top is quite bare.  There is also a piece of flowered
-carpet on the floor.  The exit south leads to the Amyrlin&apos;s waiting room.
+    <roombasic title="A Study" vnum="4013" zone="40">
+      <roomdescription>This is a smaller room than the sitting room and looks to be a study.  
+There are bookshelves lining the walls and have different objects placed
+upon them taking up space.  There is a stack of old dishes on one of the
+lower shelves and some old books on the one above it that are almost dust
+they are so old.  There is a desk in the middle of the room, the top of it
+bare and the drawers left half open to reveal that it is also empty of all
+papers.  The chair to the desk is broken and sits at an odd angle.    
 </roomdescription>
       <flags>8</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
-    <exit direction="north" keyword="door north" exitinfo="15" keynum="4004" toroom="4000">
+    <exit direction="north" keyword="door north" exitinfo="3" keynum="0" toroom="4000">
       <description>&lt;NONE&gt;</description>
     </exit>
     <exit direction="south" keyword="door south" exitinfo="3" keynum="0" toroom="4012">
@@ -345,24 +326,18 @@ carpet on the floor.  The exit south leads to the Amyrlin&apos;s waiting room.
     </exit>
   </room>
   <room>
-    <roombasic title="Entrance to the Little Tower" vnum="4014" zone="40">
-      <roomdescription>You are standing at the entrance of what appears to be a converted inn.
-This is a large structure and is in the best condition of all Salidar.
-Many repairs have recently been completed, most noticeably the roof
-has been redone in slate instead of thatching, the covered entrance has
-been rebuilt in dark oak, and the entire building has been freshly 
-painted in a p\c06al\c00e b\c06lu\c00e. Aes Sedai and Warders bustle in and out, along
-with novices, looking uniformly hurried and busy and meek all at the
-same time. A few Accepted in their white dresses with the seven-banded
-hems of color stride along at a slower pace than the novices, but also
-busily, obviously on errands for Aes Sedai. Little Tower Road
-intersects here, going east-west.
+    <roombasic title="Little Tower Road" vnum="4014" zone="40">
+      <roomdescription>The road remains under inches of snow.  The building to the north looks to
+have been painted recently and the window shutters replaced that now stand
+closed.  It has a sign that hangs out front, the words worn away over
+time.  Snow covers the roof with icicles hanging from the edges in
+sparkling patterns of nature.    
 </roomdescription>
-      <flags>6</flags>
+      <flags>0</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
-    <exit direction="north" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="4008">
+    <exit direction="north" keyword="door north" exitinfo="3" keynum="0" toroom="4008">
       <description>&lt;NONE&gt;</description>
     </exit>
     <exit direction="east" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="4077">
@@ -376,14 +351,17 @@ intersects here, going east-west.
     </exit>
   </room>
   <room>
-    <roombasic title="The Dining Room of the Little Tower" vnum="4015" zone="40">
-      <roomdescription>The walls of the room have been scrubbed and waxed.  Large tables 
-fill the room.  Here and there are scattered whispering and giggling
-novices as they go about their dusting, scrubbing, and serving at
-the tables.  A few warders are sitting with their Sedais as others
-are seemingly in hushed conversations.
+    <roombasic title="The Inn's Common Room" vnum="4015" zone="40">
+      <roomdescription>The walls of this room have had cracks filled in and the panels scrubbed
+until they shine.  There are numerous tables arranged in an ordering
+fashion but they all have mismatched chairs that look as if they'd been
+collected from different houses in the area.  There is a large stone
+fireplace on one wall but doesn't looked to have been used in years since
+there are stones missing from the structure.  Beams show ahead showing to
+all that enter that the ceiling has been caving in but there is no rubble
+on the floor to indicate when.    
 </roomdescription>
-      <flags>12</flags>
+      <flags>8</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
@@ -393,29 +371,28 @@ are seemingly in hushed conversations.
     <exit direction="west" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="4008">
       <description>&lt;NONE&gt;</description>
     </exit>
+    <exit direction="southeast" keyword="door southeast square" exitinfo="1" keynum="0" toroom="4076">
+      <description/>
+    </exit>
   </room>
   <room>
-    <roombasic title="The Bathhouse of Salidar" vnum="4016" zone="40">
-      <roomdescription>The second largest stone building in Salidar, the bathhouse was 
-recently renovated, and is now a very large domain for all 
-affairs that have to do with bathing and relaxation. It 
-boasts an outdoor bathing pool, as well as several indoor
-pools, all at different temperatures. There are also a 
-couple of smaller, private, bathing chambers, for those 
-who would enjoy a more solitary bathing experience. Towels
-and hot water are plentiful here, the oftentimes steaming
-water being fueled by a hot rocks system beneath the pool
-itself. 
+    <roombasic title="Main Room of the Bathhouse" vnum="4016" zone="40">
+      <roomdescription>The first room in this large stone building is a small bare room.  There
+are benches pushed up against the walls and they are remarkably clean.  
+There is a door on each wall with shining latches and locks.  A desk rests
+away from the wall in the back of the room, a jumble of keys on the desk
+as if they had een dumped out of a box.  There is also a pile of fabric
+that looks to be towels left behind in a hurry.    
 </roomdescription>
-      <flags>158</flags>
+      <flags>154</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
     <exit direction="north" keyword="door north" exitinfo="7" keynum="3788" toroom="3794">
       <description>&lt;NONE&gt;</description>
     </exit>
-    <exit direction="east" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="4060">
-      <description>Forest Road
+    <exit direction="east" keyword="door east" exitinfo="3" keynum="0" toroom="4060">
+      <description>Looks to be a door.
 </description>
     </exit>
     <exit direction="south" keyword="door south" exitinfo="7" keynum="3787" toroom="3793">
@@ -431,13 +408,13 @@ itself.
     </exdesc>
   </room>
   <room>
-    <roombasic title="The Kitchen of the Little Tower" vnum="4017" zone="40">
-      <roomdescription>The kitchen is very hot.  There are cauldrons bubbling over with a
-variety of stews and roasts.  You can also smell the baking of fresh
-bread and freshly baked pies.  Novices scurry in and out taking their
-directions from mara, the stern head mistress of the kitchen of the
-Little Tower.  All novices have spent their time at the direction
-of Mara.
+    <roombasic title="The Kitchen" vnum="4017" zone="40">
+      <roomdescription>The kitchen is almost bare.  There are a few pots on small fires but it
+doesn't look as if anything elaborate is prepared here.  A table to the
+right is covered in flour from a recent spill and it looks as if there is
+bread baking in the oven.  The smells aren't overwhelming but there is no
+doubt that Marra has prepared something for those that need something to
+eat.    
 </roomdescription>
       <flags>158</flags>
       <sector>Inside</sector>
@@ -448,34 +425,44 @@ of Mara.
     </exit>
   </room>
   <room>
-    <roombasic title="The Green Ajah Meeting House" vnum="4018" zone="40">
-      <roomdescription>Curtains made of a soft green shaaran silk cover the windows, allowing
-only a few rays of light in. A selection of maps of various parts of the
-land hang on each wall, some bearing scrawled notations in particular places.
-Pointer sticks stand beneath each map for easy access. Chairs upholstered in
-green linen sit in semi-circles before each map, as if arranged for planning. A
-large oak drawing table stands against the north wall, with more maps spread out
-upon it. The staircase to the upper story is visible in the eastern wall.
+    <roombasic title="A Large Spacious Room" vnum="4018" zone="40">
+      <roomdescription>There are several windows in this room that let in a great deal of light
+when they are opened.  There are soft green curtains hanging around them
+that look freshly washed and well cared for with attached strings to hold
+them back so light can filter through.  There is a map of the city on one
+wall with scrawled notes about what each building was and dates for
+repairs to the building.  The chairs are in good shape with upholstery in
+good conditon and showing very little use.  There are a few doors here but
+both are locked and there don't seem to be keys anywhere, even in the desk
+toward the back of the room.    
 </roomdescription>
       <flags>12</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
-    <exit direction="west" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="4023">
+    <exit direction="north" keyword="" exitinfo="7" keynum="4302" toroom="4302">
+      <description>You see nothing special.
+</description>
+    </exit>
+    <exit direction="south" keyword="door" exitinfo="7" keynum="5209" toroom="5209">
+      <description>You see nothing special.
+</description>
+    </exit>
+    <exit direction="west" keyword="door west" exitinfo="3" keynum="0" toroom="4023">
       <description>&lt;NONE&gt;</description>
     </exit>
   </room>
   <room>
-    <roombasic title="Reception Room of the Little Tower" vnum="4019" zone="40">
-      <roomdescription>The room is filled with simple chairs and tables.  A circular floor
-covering woven in bright colors with a flame brightly glowing in
-the center is the focal point of the room.  It is here visitors to
-the Little Tower are brought to wait to visit with the Aes Sedai
-or perhaps the Amyrlin herself.  Novices in pure white are
-seen occasionally, as are those in the banded dresses and
-the beautiful Aes Sedai.
+    <roombasic title="A Reception Room" vnum="4019" zone="40">
+      <roomdescription>This room is small and cozy with a fireplace that has ashes in it from
+recent use.  The tables are in good condition and are made from a heavy
+dark brown wood.  Their chairs are a different story, some broken and some
+in good condition but almost too heavy to move.  There is a rug covering
+the floor but has seen years of use as the colors are faded and the edges
+are frayed.  There is a painting on one wall that has a rip in but still
+shows a simple scene of a man bowed before a circle of women.    
 </roomdescription>
-      <flags>12</flags>
+      <flags>8</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
@@ -485,212 +472,185 @@ the beautiful Aes Sedai.
   </room>
   <room>
     <roombasic title="Aryman Boulevard" vnum="4020" zone="40">
-      <roomdescription>Just to the north of here is the Little Tower, infamous in Salidar as
-the place where all the decisions are made. The Aes Sedai discuss and 
-arrange and plan and organize, and then their orders are handed down 
-from above to be carried out by all the people who actually do the work.
-Nobody complains, though, or if they do, they complain in barely audible
-whispers and resigned sighs and shakes of their heads. Everyone here has
-the utmost respect for the Aes Sedai, and besides, who would want to face
-their wrath in questioning their decisions. Who wants to risk arguing 
-with someone whose stares can freeze you in your tracks, size you up 
-like a small lizard, and dismiss or belittle your existence with a sniff 
-and a twist of her mouth...and that&apos;s on a good day. The Ajah Meeting
-Houses are, naturally, close by the Little Tower, the \c11Blue Ajah&apos;s\c00
-to the west, and the \c10Yellow Ajah&apos;s\c00 to the east.
+      <roomdescription>The road runs north and south here and seems small compared to Little
+Tower Road to the north.  It is covered in snow that is thickest against
+the buildings surrounding it.  The yards have fruit trees of different
+varieties but they are have bare branches due to the sudden winter.  Some
+of the buildings have signs but the paint is worn off on each and they are
+all covered in snow and ice.    
 </roomdescription>
-      <flags>2</flags>
+      <flags>0</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
     <exit direction="north" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="4014">
       <description>&lt;NONE&gt;</description>
     </exit>
-    <exit direction="east" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="4022">
-      <description>Yellow Ajah Meeting House
+    <exit direction="east" keyword="door east" exitinfo="3" keynum="0" toroom="4022">
+      <description>It's a door.
 </description>
     </exit>
     <exit direction="south" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="4023">
       <description>&lt;NONE&gt;</description>
     </exit>
-    <exit direction="west" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="4021">
-      <description>Blue Ajah Meeting House
+    <exit direction="west" keyword="door west" exitinfo="3" keynum="0" toroom="4021">
+      <description>It's a door.
 </description>
     </exit>
   </room>
   <room>
-    <roombasic title="\c11Blue Ajah\c06 Meeting House\c00" vnum="4021" zone="40">
-      <roomdescription>You walk into a small house, in spite of its size, you feel very
-comfortable being here. Four sofas with \c04d\c11ar\c04k b\c11lu\c04e s\c07i\c11l\c04k\c00 covers are set in
-a square, decorated with \c06light blue pillows\c00, contrasting with the material
-of the sofas. A rectangular oak coffee table, on top of a large
-circular rug made in an array of blues to match the room, sits in the
-center of the sofas. Set in the center of the table is a fine porcelain
-tea set with \c04tiny blue roses\c00 etched on the rims of the cups and on the tea
-pot itself. Silver teaspoons rest next to each cup. A large oak desk is
-against the back wall, and a high backed desk chair with a blue velvet
-cushioned seat sits in front of it. A tall bookcase stands on the west
-side wall, containing a collection of books that must have been brought
-from Tar Valon&apos;s library. There is a glass door on the bookcase with
-a padlock at its handle--you can guess that it is well protected and not
-to be touched by anyone without the key. A rocking chair with a deep blue
-cushion embroidered with \c14white roses\c00 sits next to the bookcase. While two
-tiny blue dishes sit next to the chair, the cat that they obviously 
-belong to is nowhere to be seen. A large blue tapestry depicting the
-Dragonmount hangs on the wall above the desk. The room is illuminated by 
-well-placed sconces on the walls, and silver candle-holders set in
-various places.
+    <roombasic title="A Spacious Living Room" vnum="4021" zone="40">
+      <roomdescription>This is a large and spacious room.  The curtains covering the windows are
+heavy and blue, hung to keep out the light.  A bookshelf rests against one
+wall but is bare of books and any of other objects.  The dust is thickd
+but there are fingerprints through it showing that someone has been here
+recently and taken a look around.  Several doors lead off from this room
+to other rooms of the large house, each one likely as large as this.    
 </roomdescription>
-      <flags>20</flags>
-      <sector>City</sector>
+      <flags>8</flags>
+      <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
-    <exit direction="east" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="4020">
+    <exit direction="north" keyword="" exitinfo="7" keynum="4301" toroom="4301">
+      <description>You see nothing special.
+</description>
+    </exit>
+    <exit direction="east" keyword="door east" exitinfo="3" keynum="0" toroom="4020">
       <description>&lt;NONE&gt;</description>
+    </exit>
+    <exit direction="south" keyword="door" exitinfo="7" keynum="4304" toroom="4304">
+      <description>You see nothing special.
+</description>
     </exit>
   </room>
   <room>
-    <roombasic title="The Yellow Ajah Meeting House" vnum="4022" zone="40">
-      <roomdescription>The rich smell of herbs and elixirs permeates the air. Assorted bottles and
-jars line the neatly erected shelves beneath each window. Pots containing
-various fresh herbs soak up the sunlight that pours through the uncurtained
-windows. Small covered with soft yellow quilts line one of the walls, most
-likely in place for recuperating patients. A cushy cream colored sofa sits
-on the northern wall. A long oak table stands in front of it, laden with 
-various herbal guides and notes. A high table with bandages and poultices
-stands next to the staircase which likely leads to the Aes Sedai quarters
-above.
+    <roombasic title="An Abandoned Living Area" vnum="4022" zone="40">
+      <roomdescription>The furniture is set up for comfort but a few pieces have been covered in
+a quilting of some sort.  A desk is to the side of the front door and
+there is a box on it that looks full of personal belongings packed as if
+they were left behind.  The shelves on the opposite wall hold small jars
+and look to hold different herbs and roots, suggesting that someone set it
+up to study or display them.  On the table next to a large chair sits a
+few twigs from a fruit tree.    
 </roomdescription>
       <flags>12</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
-    <exit direction="west" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="4020">
+    <exit direction="east" keyword="door" exitinfo="1" keynum="4303" toroom="4303">
+      <description>You see nothing special.
+</description>
+    </exit>
+    <exit direction="west" keyword="door west" exitinfo="3" keynum="0" toroom="4020">
       <description>&lt;NONE&gt;</description>
     </exit>
+    <exdesc keyword="box">
+      <description>The box is full of personal objects such as a comb and brush, a box of
+soda, and a small yellow scarf.  The other things include a book and
+writing utensils and a small delicate sewing box that has been recently
+carved with a lily on the lid.    
+</description>
+    </exdesc>
   </room>
   <room>
     <roombasic title="Aryman Boulevard" vnum="4023" zone="40">
-      <roomdescription>A hot wind blows through the streets, whipping the flowing skirts 
-and hair of the women wildly, and forcing a few people to hold on to
-their hats. There are flurries of dust, and the dried leaves, fallen 
-from the trees, are swept through the legs of the people moving through
-the town, all with obvious tasks to do. Everyone seems pleasant and 
-respectful, yet everyone is busy. A few nod to one another in passing, 
-smiling amiably, carrying bundles of this, and packages of that, wrapped
-in canvas or brown paper. The sound of construction can be heard in the
-distance...and no wonder, since the Aes Sedai have been fixing up the 
-highly symbolic birthplace of a legendary Amyrlin ever since they arrived
-here almost a year gone. The Ajah Meeting Houses, low, stone buildings, 
-line the northern part of Aryman Boulevard, the \c02Green Ajah\c00 Meeting
-House to the east of here, and the \c14White Ajah\c00 Meeting House to the
-west. 
+      <roomdescription>The road here appears nothing more than a blanket of pure white snow.  
+There is a tree in the middle watching silently for intruders while the
+shrubbery to one side of the roads stands into their dying days.  The
+buildings to either side are tall and made of gray stone that adds to the
+desperate cold creeping along the abandoned streets.    
 </roomdescription>
-      <flags>2</flags>
+      <flags>0</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
     <exit direction="north" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="4020">
       <description>&lt;NONE&gt;</description>
     </exit>
-    <exit direction="east" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="4018">
-      <description>Green Ajah Meeting House
+    <exit direction="east" keyword="door east" exitinfo="3" keynum="0" toroom="4018">
+      <description>It's a door.
 </description>
     </exit>
     <exit direction="south" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="4024">
       <description>&lt;NONE&gt;</description>
     </exit>
-    <exit direction="west" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="4029">
-      <description>White Ajah Meeting House
+    <exit direction="west" keyword="door west" exitinfo="3" keynum="0" toroom="4029">
+      <description>It's a door.
 </description>
     </exit>
   </room>
   <room>
     <roombasic title="Aryman Boulevard" vnum="4024" zone="40">
-      <roomdescription>The crowded streets seem literally alive. The crowd moves as one entity, 
-weaving within itself and changing form with the waves of people exiting
-one street and turning onto others. There are bubbles in the crowd, spaces
-that open up quickly in a radius around any Aes Sedai who walk the streets
-calmly, talking quietly to each other, and there is motion all around as
-the Servants of All receive their gestures of respect, quick bows and curtsies
-with brief nods or small smiles of acknowledgment. Ajah Row, as it is 
-informally called by many in Salidar, continues here, with the \c03Brown Ajah\c00
-Meeting House to the west, and the \c23Grey Ajah\c00 Meeting House to the east.
+      <roomdescription>The road narrows between the buildings but it is one unending blanket of
+snow.  There is a group of trees inside a fence to the right, every inch
+of both covered in snow.  The building to the right has a stack of
+firewood outside the front door and it looks as if it has been there so
+long it's rotting.  To the left is a row of bushes that hide the trunk of
+a cut down tree.    
 </roomdescription>
-      <flags>2</flags>
+      <flags>0</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
     <exit direction="north" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="4023">
       <description>&lt;NONE&gt;</description>
     </exit>
-    <exit direction="east" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="4026">
-      <description>Gray Ajah&apos;s Meeting House
+    <exit direction="east" keyword="door east" exitinfo="3" keynum="0" toroom="4026">
+      <description>It's a door.
 </description>
     </exit>
     <exit direction="south" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="4027">
       <description>&lt;NONE&gt;</description>
     </exit>
-    <exit direction="west" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="4025">
-      <description>Brown Ajah&apos;s Meeting House
+    <exit direction="west" keyword="door west" exitinfo="3" keynum="0" toroom="4025">
+      <description>It's a door.
 </description>
     </exit>
   </room>
   <room>
-    <roombasic title="The Brown Ajah Meeting House" vnum="4025" zone="40">
-      <roomdescription>The smell of old books fills the air, the windows covered in a dark brown
-linen to block out any chance of sunlight. Sconces placed between 
-mismatched wooden bookshelves provide a dim light. A single writing
-desk sits in a corner, while the rest of the room is occupied by large
-comfortable chairs upholstered in a soft cream velvet. Open volumes lie
-across small tables that sit before each chair. A small teapot with matching
-cups and saucers sits on the writing desk amidst a pile of notes. The staircase
-on the west wall is virtually hidden in the disorder.
+    <roombasic title="An Empty House" vnum="4025" zone="40">
+      <roomdescription>The living room of this large house is vacant of both life and furniture.
+Dust hasn't had time to settle on the floor in places where the contents
+were removed, an area showing where a large circular rug was as well as a
+desk by the window.  There are curtain rods hung above the windows but no
+curtains to speak of.  One window in the back of the room is open, letting
+in a great deal of cold air.    
 </roomdescription>
-      <flags>12</flags>
+      <flags>8</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
-    <exit direction="east" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="4024">
+    <exit direction="east" keyword="door east" exitinfo="3" keynum="0" toroom="4024">
       <description>&lt;NONE&gt;</description>
     </exit>
   </room>
   <room>
-    <roombasic title="The Gray Ajah Meeting House" vnum="4026" zone="40">
-      <roomdescription>\c00Freshly pressed gray linen curtains with tiny gray roses embroidered on
-them hang over the windows, each pulled back with white rope to allow the
-sunlight to pour in. A painting of the Royal Palace in Andor hangs above 
-a simple oak writing desk on the north wall. A chair cushioned with a soft
-gray velvet sits before it. The smell of cinnamon permeates the air, most
-likely from the mixture of potpourri simmering on the small table in front
-of a newly upholstered gray sofa. A creme coloured woven rug sits in the
-center of the floor, beneath a round oak meeting table. Matching oak chairs
-sit around the table, each with a small gray backpillow sitting upon it. A
-small staircase is visible on the east wall, likely leading to the Aes Sedai
-rooms above.
+    <roombasic title="A Small House" vnum="4026" zone="40">
+      <roomdescription>This house isn't very big but holds enough furniture for two houses.  The
+tables and chairs are simple, the two sofas are upholstered in a dull drab
+color and are pushed together in the center of the room.  There is a desk
+on top of another to the right in front of a window with gray curtains.  
+The corner of a painting shows on the far wall that looks to be the towers
+of the royal palace in Caemlyn.    
 </roomdescription>
-      <flags>12</flags>
+      <flags>8</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
-    <exit direction="west" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="4024">
+    <exit direction="west" keyword="door west" exitinfo="3" keynum="0" toroom="4024">
       <description>&lt;NONE&gt;</description>
     </exit>
   </room>
   <room>
-    <roombasic title="Aryman Boulevard meets Eldern Road" vnum="4027" zone="40">
-      <roomdescription>Nearing the center of Salidar, Eldern Road begins, branching off to 
-the east, one of the oldest roads in Salidar. Narrow, just wide enough 
-for a wagon to fit down and not much else, it is still filled with 
-people, all apparently busy. Up ahead, to the north, there sit, lined
-up all on opposite sides of the street, facing each other, the \c03six\c00
-\c11Meeting\c00 \c14Houses\c00 \c23of\c00 \c10the\c00 \c02Ajahs\c00, and at the end of the street you can see
-the Little Tower, rearing above all the other buildings around it, and
-looking newer, also. The Aes Sedai had not moved in there but an hour, 
-so the story goes, before they started issuing orders for renovations 
-and additions added to it. 
+    <roombasic title="Aryman Boulevard Meets Eldern Road" vnum="4027" zone="40">
+      <roomdescription>The road widens and then forks into two different directions.  It looks
+like a field of white with the turn of Eldern Road leading east.  There
+are tracks in the snow from animals that can't clearly be defined due to
+the recent snowfall.  There is a small building ahead and to the west that
+has boarded up windows.  There are few trees but the ones that are here
+are covered in ice and snow.    
 </roomdescription>
-      <flags>2</flags>
+      <flags>0</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -707,20 +667,13 @@ and additions added to it.
   </room>
   <room>
     <roombasic title="Aryman Boulevard" vnum="4028" zone="40">
-      <roomdescription>The street broadens to the north, but the people occupying it seem to 
-increase proportionally to the size of the street as you move along it, 
-so there really isn&apos;t much room, but there is less and less room as
-you approach the Little Tower, standing solidly at the very end of the
-Boulevard. A few trees planted near the sides of the road offer scant
-shade in the oppressive heat of the daytime, and at night the wind 
-seems to whistle through their leaves. A contingent of soldiers pass 
-through unceremoniously, on their way to the Army camp, most likely to
-report back to their infamous general, Gareth Bryne, once Captain-General
-of the Royal Guards in Andor, under the command of Queen Morgase, 
-now exiled and commandeered by the Aes Sedai here, commissioned to 
-raise an Army to help take back the White Tower and remove its Amyrlin.
+      <roomdescription>The trees grow in number here offering shade on sunny days.  They are all
+coverd in snow and at night the scene would be eerie.  A broken cart is to
+the west, one wheel sticking out and showing that it won't be moved again.
+There are inches of snow on it and against it, making it look as if it
+grew up and into the snow some years ago.    
 </roomdescription>
-      <flags>2</flags>
+      <flags>0</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -732,31 +685,28 @@ raise an Army to help take back the White Tower and remove its Amyrlin.
     </exit>
   </room>
   <room>
-    <roombasic title="The White Ajah Meeting House" vnum="4029" zone="40">
-      <roomdescription>Stark white linen curtains with perfectly stitched blue roses hang over each 
-window. The air is filled with the smell of fresh flowers, which stand on the
-center of the white oval table in an etched vase. Uncomfortable looking
-chairs, painted to match the table sit around it. The books that sit on a small
-oak bookshelf are all of the same size and in a perfect order. The white armchairs
-in each corner of the room are accompanied by small tables each bearing a teacup
-and saucer. The walls are painted bright white, and unadorned. A staircase is
-visible on the western wall, likely leading to the Aes Sedai quarters above.
+    <roombasic title="A House Used for Storage" vnum="4029" zone="40">
+      <roomdescription>Although this room is packed full of old and discarded furniture, there is
+a definite order to it.  Paths wind through the large heavy objects like a
+maze.  It is impossible to see the walls or any windows that might be here
+due to tables and desks stacked one on top of the other.  In between the
+stacks there are glimpses of a colorful rug beneath but the pattern is
+forever lost under the stacks of furniture.    
 </roomdescription>
-      <flags>12</flags>
+      <flags>8</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
-    <exit direction="east" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="4023">
+    <exit direction="east" keyword="door east" exitinfo="3" keynum="0" toroom="4023">
       <description>&lt;NONE&gt;</description>
     </exit>
   </room>
   <room>
-    <roombasic title="Logain&apos;s Thatched-Roofed Stone House" vnum="4030" zone="40">
-      <roomdescription>A small room with thick stone makes this a relatively cool room.
-The chairs and tables are as fine as anything in Salidar, nothing
-elaborate, but well made.  There are no furnishings, however, that
-match each other.  A scroll woven red and gold carpet covers much
-of the floor that is swept clean.
+    <roombasic title="A Thatch-Roofed Cottage" vnum="4030" zone="40">
+      <roomdescription>This is a small and musty cottage that was well cared for throughout the
+years.  The floor is still relatively clean as are the curtains and the
+few tables and chairs.  A rug is on the floor and while its faded, one can
+still make out the circular scrolls woven in red and gold.    
 </roomdescription>
       <flags>8</flags>
       <sector>Inside</sector>
@@ -768,16 +718,13 @@ of the floor that is swept clean.
     </exit>
   </room>
   <room>
-    <roombasic title="A Cell in Salidar" vnum="4031" zone="40">
-      <roomdescription>You are in a small, cramped cell.  There is little to do but sit in the dark and talk to the rats. Enjoy your stay.
+    <roombasic title="Unused Room" vnum="4031" zone="40">
+      <roomdescription>Use it if you want. It's dirty, though.
 </roomdescription>
-      <flags>10455</flags>
+      <flags>0</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
-    <exit direction="east" keyword="door east" exitinfo="15" keynum="4063" toroom="4027">
-      <description>&lt;NONE&gt;</description>
-    </exit>
   </room>
   <room>
     <roombasic title="Intersection of Aryman Boulevard and South Salidar Road" vnum="4032" zone="40">
@@ -821,26 +768,25 @@ candles are in short supply.
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
-    <exit direction="north" keyword="Not set yet...
-" exitinfo="0" keynum="0" toroom="4070">
+    <exit direction="north" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="4070">
       <description>None
 </description>
     </exit>
     <exit direction="east" keyword="door east" exitinfo="7" keynum="4023" toroom="4010">
       <description>&lt;NONE&gt;</description>
     </exit>
-    <exit direction="west" keyword="door west" exitinfo="3" keynum="4087" toroom="4049">
-      <description>&lt;NONE&gt;</description>
-    </exit>
   </room>
   <room>
-    <roombasic title="Novice&apos;s Quarters" vnum="4034" zone="40">
-      <roomdescription>This is a tiny room with one paneless window.  Four small beds are 
-lining each wall.  One table that seems to have come out of a ramshackled
-farm house sits in the middle of the room.  A rickety washstand is in
-one corner.  It is necessary for four novices to share a room.
+    <roombasic title="A Child's Room" vnum="4034" zone="40">
+      <roomdescription>This room is so small that it could only be used for a child.  There are
+four small beds here leaving very little floor space for toys.  The one
+small window is simple and shows a scene of a winter wonderland outside.
+The mattresses of the beds have no sheets and there are places on each
+where the straw is sticking out.  There is a table next to the door that
+looks as if it might fall over anytime, gingerly holding up a cracked
+pitcher.    
 </roomdescription>
-      <flags>4108</flags>
+      <flags>8</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
@@ -849,13 +795,16 @@ one corner.  It is necessary for four novices to share a room.
     </exit>
   </room>
   <room>
-    <roombasic title="Novice&apos;s Quarters" vnum="4035" zone="40">
-      <roomdescription>A tiny room with one paneless window.  Four beds fill the room with one
-ramshackled table filling up the remaining space in the middle of the
-room. There is a rickety washstand in the corner.  It is necessary for
-four novices to share a room.
+    <roombasic title="A Child's Room" vnum="4035" zone="40">
+      <roomdescription>This room is so small that it could only be used for a child.  There are
+four small beds here leaving very little floor space for toys.  The one
+small window is simple and shows a scene of a winter wonderland outside.
+The mattresses of the beds have no sheets and there are places on each
+where the straw is sticking out.  There is a table next to the door that
+looks as if it might fall over anytime, gingerly holding up a cracked
+pitcher.    
 </roomdescription>
-      <flags>4110</flags>
+      <flags>8</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
@@ -865,9 +814,12 @@ four novices to share a room.
   </room>
   <room>
     <roombasic title="A Dimly Lit Hallway" vnum="4036" zone="40">
-      <roomdescription>A dimly lit corridor filled with rooms of the Aes Sedai on either side.  The
-panelling is beetle-ridden and few candles light the hallway as candles are in short
-supply.
+      <roomdescription>The hallways is dark since there are no candles and no windows to light
+the way.  The panelling is in bad condition, cracks and holes showing here
+and there.  The latches to the doors seem to shine even with very little
+or no light as do the doors themselves.  There is a pot on the floor that
+once held a large green plant but the plant has fallen over the side of it
+showing how truly dead this place is.    
 </roomdescription>
       <flags>8</flags>
       <sector>Inside</sector>
@@ -876,16 +828,15 @@ supply.
     <exit direction="north" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="4042">
       <description>&lt;NONE&gt;</description>
     </exit>
-    <exit direction="east" keyword="door east" exitinfo="3" keynum="4021" toroom="4007">
+    <exit direction="east" keyword="door east" exitinfo="3" keynum="0" toroom="4007">
       <description>door
 </description>
     </exit>
-    <exit direction="south" keyword="Not set yet...
-" exitinfo="0" keynum="0" toroom="4070">
+    <exit direction="south" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="4070">
       <description>None
 </description>
     </exit>
-    <exit direction="west" keyword="door west" exitinfo="7" keynum="4001" toroom="4001">
+    <exit direction="west" keyword="door west" exitinfo="3" keynum="0" toroom="4001">
       <description>&lt;NONE&gt;</description>
     </exit>
     <exit direction="down" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="4002">
@@ -893,7 +844,7 @@ supply.
     </exit>
   </room>
   <room>
-    <roombasic title="\c11Eladriel&apos;s\c06 Room\c00" vnum="4037" zone="40">
+    <roombasic title="\c11Eladriel's\c06 Room\c00" vnum="4037" zone="40">
       <roomdescription>The room is truly cramped, with little space to move around the two
 short beds with the battered brass bound chests sitting at the foot of
 each one.  Accepted dresses and cloaks hang from pegs in the walls.
@@ -910,26 +861,36 @@ in the corner holding a white pitcher and basin upon it.
     </exit>
   </room>
   <room>
-    <roombasic title="Accepted Eilora&apos;s Chamber" vnum="4038" zone="40">
-      <roomdescription>   Entering thruogh the simple wooden door, a small and sparse chamber can
-be seen.  On each side a bed, common in it&apos;s design, with white linnen.  
-A small window in the far wall, framed by purple drapes, letting in a
-little light.  A small table with two chairs standing next to it is below
-the window.  On top of the table a lantern is standing, unlit at the
-moment.  On a closer look, it appears that only one person lives here.  
-Over one of the walls a painting hangs, picturing a creature of some kind,
-a red ball with horns and a large mouth.  It seems quite ferocious.    
+    <roombasic title="Amerante Sedai's Room" vnum="4038" zone="40">
+      <roomdescription>The gentle aroma of jasmine fills the room, wafting up from a dozen
+scented candles that are lit and placed in various spots around the room.
+The flickering flames create a dim light, leaving the opportunity for
+shadows to dance upon the walls and in each of the four corners of this
+room.  Hailey's bed has been pushed up into the far corner of this room,
+the frame made of grey, wrought iron.  Each of the four corners of the bed
+has a thin pole that reaches up, almost touching the ceiling.  There is
+also one hanging horizontally from one side to the other.  A soft, gauzy
+curtain hangs from rings that are mounted upon the metal pole, covering
+all sides of the bed.  Sitting next to the bed, is a square, wooden table
+with the same gauzy material hanging down from the top all the way to the
+floor.  Two books sit upon the table, there are several white ribbons
+acting as markers.  On the floor, at the foot of the bed, is a small chest
+whose top sits open to show different articles of linen within it's
+confines.  A wardrobe rests against the wall not far from the chest, it's
+darkly stained doors resting firmly shut.  To the right of the door is a
+square, small, dining table with a chair on three sides, one side resting
+against the wall.    
 </roomdescription>
       <flags>12</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
-    <exit direction="west" keyword="door west" exitinfo="3" keynum="0" toroom="4002">
-      <description>&lt;NONE&gt;</description>
+    <exit direction="west" keyword="door west" exitinfo="15" keynum="4038" toroom="4002">
+      <description> </description>
     </exit>
   </room>
   <room>
-    <roombasic title="Sharine&apos;s Retreat" vnum="4039" zone="40">
+    <roombasic title="Sharine's Retreat" vnum="4039" zone="40">
       <roomdescription>Sunlight streams in a window set across from the door, tiny dust motes seeming
 to glow, dancing as they float in the air.  Low table rests in front of the
 window surounded by plush chairs that whisper of comfort.  Solid
@@ -947,21 +908,14 @@ forms itself into a bed.
   </room>
   <room>
     <roombasic title="Entrance to Salidar" vnum="4040" zone="40">
-      <roomdescription>For years the village of Salidar had stood, virtually abandoned, 
-before the Aes Sedai who left the White Tower upon Elaida&apos;s 
-usurpation of the Amyrlin Seat from Siuan Sanche, began to 
-gather here in Salidar to reform, reorganize, and begin plans
-to correct the wrongs of the \c01Red Sister\c00 who caused the Breaking
-of the \c14White Tower\c00. Now a fairly good-sized town, Salidar, the
-birthplace of Deane Aryman, of the \c13B\c00\c11lu\c00\c13e\c00 \c13A\c00\c11ja\c00\c13h\c00, who replaced \c08Bonwhin\c00
-as Amyrlin, after the conflict with Artur Hawkwing almost destroyed
-the \c14White Tower\c00, is bursting to the seams with Aes Sedai, their
-Gaidin, their servants, and the soldiers who have come to fight
-for the Aes Sedai and the Dragon Reborn.
-To the east you see a small shop, set just outside the limits of
-Salidar.
+      <roomdescription>There are two towers made of stone to either side of the road.  They stand
+on approximately six feet tall but look as if they may have been taller at
+one time.  There are fallen stones peeking up from beneath the snow
+showing that they have recently started to come down.  There are small
+houses to either side of the towers, one a goodly walking distance, the
+other relatively close.    
 </roomdescription>
-      <flags>20</flags>
+      <flags>0</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -980,28 +934,27 @@ Salidar.
     </exit>
   </room>
   <room>
-    <roombasic title="Menarra&apos;s Bedchamber" vnum="4041" zone="40">
-      <roomdescription>   The most noticeable upon entering is that the small room is decorated
-with dark paneling and sharp contrasting lines with as much gilt as could
-be found.  The bed that sits straight across from the door has a tall
-canopy and the severity is only softened by the thinnest sheer green
-fabric hanging erratically from the beams.  Filmy curtains decorating the
-edge of the &apos;&amp;Yw&amp;Wi&amp;Ynd&amp;Wo&amp;Yw&amp;n&apos; behind, match perfectly and it all stirs in the
-whisper thin breeze.  To the left of the bed, one can see a dark &amp;yc&amp;rh&amp;ye&amp;rr&amp;yr&amp;ry&amp;n
-&amp;yw&amp;ro&amp;yo&amp;rd&amp;n table which holds one half burned candle.  The chair standing beside
-it is rigid with a lone cushion in fabric that matches the spread of the
-bed, dark green and blue &amp;ys&amp;Kq&amp;yu&amp;Ka&amp;yr&amp;Ke&amp;ys&amp;n with lace on the edges and small gold
-tassels.  In one corner a dark oak writing desk sits, brightened by the
-&apos;&amp;Yt&amp;Wa&amp;Gpest&amp;Wr&amp;Yy&amp;n&apos; that hangs above it.  Directly across from that is a small wash
-basin adorned with thin Seafolk porcelain and a small mirror.    
+    <roombasic title="Menarra's Bedchamber" vnum="4041" zone="40">
+      <roomdescription>The most noticeable upon entering is that the small room is decorated with
+dark paneling and sharp contrasting lines with as much gilt as could be
+found.  The bed that sits straight across from the door has a tall canopy
+and the severity is only softened by the thinnest sheer green fabric
+hanging erratically from the beams.  Filmy curtains decorating the edge of
+the &amp;Wwindow&amp;n behind, match perfectly and it all stirs in the whisper thin
+breeze.  To the left of the bed, one can see a dark &amp;yc&amp;rh&amp;ye&amp;rr&amp;yr&amp;ry&amp;n &amp;yw&amp;ro&amp;yo&amp;rd&amp;n table
+which holds one half burned candle.  The chair standing beside it is rigid
+with a lone cushion in fabric that matches the spread of the bed, dark
+green and blue &amp;ys&amp;Kq&amp;yu&amp;Ka&amp;yr&amp;Ke&amp;ys&amp;n with lace on the edges and small gold tassels.  In
+one corner a dark oak writing desk sits, brightened by the &amp;Wtapestry&amp;n that
+hangs above it.  Directly across from that is a small wash basin adorned
+with thin Seafolk porcelain and a small mirror.    
 </roomdescription>
-      <flags>12</flags>
-      <sector>City</sector>
+      <flags>76</flags>
+      <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
-    <exit direction="south" keyword="door south" exitinfo="7" keynum="4041" toroom="4064">
-      <description>A door to the Office of the Mistress of Novices
-</description>
+    <exit direction="east" keyword="door east" exitinfo="7" keynum="4041" toroom="3704">
+      <description/>
     </exit>
     <exdesc keyword="tapestry">
       <description>   Providing the only burst of bright color, the tapestry depicts the
@@ -1045,8 +998,8 @@ offices of the Amyrlin Seat and the Keeper of the Chronicles.
     </exit>
   </room>
   <room>
-    <roombasic title="\c13 Tarvaleth&apos;s Bedroom\c00" vnum="4043" zone="40">
-      <roomdescription>Tarvaleth&apos;s room is quite large and airy.  The large window in the north
+    <roombasic title="\c13 Tarvaleth's Bedroom\c00" vnum="4043" zone="40">
+      <roomdescription>Tarvaleth's room is quite large and airy.  The large window in the north
 wall lets in the bright sunshine at all hours of the day.  The soft ivory
 curtains that frame the window flutter lightly when a breeze passes through
 the room.  There is a large, comfortable looking bed in the southwest 
@@ -1072,7 +1025,7 @@ with brass candelabra sitting on console tables, and torches also,
 placed intermittantly along the thin strip of rug running down 
 the middle of the floor, colored with seven \c01s\c03t\c02r\c10i\c14p\c23e\c11s\c00, corresponding 
 to the seven Ajahs. To the west are the waiting room for the Amyrlin,
-and the Amyrlin&apos;s study and bedroom, and to the east are the Keeper&apos;s
+and the Amyrlin's study and bedroom, and to the east are the Keeper's
 rooms. Continuing north, the hallway branches into a walkway that
 leads to the building behind the Little Tower.
 </roomdescription>
@@ -1097,18 +1050,19 @@ leads to the building behind the Little Tower.
     </exit>
   </room>
   <room>
-    <roombasic title="The Mail and Proclamation Room of Salidar" vnum="4045" zone="40">
-      <roomdescription>It is here where all of Salidar has been at one time or another. You
-can find out the latest gossip or just sit and chat with old friends. The
-room is rather large and has a beautiful view of the central fountain
-of Salidar.  You may send and receive your mail here and also read
-the messages posted on the large board that fills the room.
+    <roombasic title="The Back Porch of the Abandoned Cottage" vnum="4045" zone="40">
+      <roomdescription>The porch is large and open.  There are steps that lead down to pigeon
+cotes and it looks as if this one place out of the entire village is still
+used.  The pigeons coo constantly and there have been a few land on the
+railing to the porch to wait and groom themselves.  There are two tables
+on the porch with a couple of chairs so one might rest while reading
+messages brought by the birds.    
 </roomdescription>
-      <flags>28</flags>
+      <flags>0</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
-    <exit direction="north" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="4076">
+    <exit direction="north" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="4006">
       <description>The Central Fountain of Salidar
 </description>
     </exit>
@@ -1118,7 +1072,7 @@ the messages posted on the large board that fills the room.
       <roomdescription>South Salidar Road ends just to the east of here, the street flowing into
 grass, then into dense brush, then into the tall, thick trunks of a 
 deciduous forest, here and there interspersed with evergreens. Just north
-of here is Salidar&apos;s only working inn, the \c13B\c00\c11lu\c00\c13e L\c00\c11ad\c00\c13y R\c00\c11isin\c00\c13g\c00. Messengers 
+of here is Salidar's only working inn, the \c13B\c00\c11lu\c00\c13e L\c00\c11ad\c00\c13y R\c00\c11isin\c00\c13g\c00. Messengers 
 and refugees from the chaos in Ghealdan stay here briefly until they
 can be found more permanent quarters. The painted wooden sign above the
 entrance sways in the breeze, and a faded flag hangs, too, on a 
@@ -1183,7 +1137,7 @@ fairly comfortable, as these rooms go, done, as is
 to be expected, in varying shades of soothing \c11b\c06lue\c11s\c00.
 </roomdescription>
       <flags>14</flags>
-      <sector>City</sector>
+      <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
     <exit direction="west" keyword="door west" exitinfo="3" keynum="0" toroom="4050">
@@ -1191,30 +1145,13 @@ to be expected, in varying shades of soothing \c11b\c06lue\c11s\c00.
     </exit>
   </room>
   <room>
-    <roombasic title="Lauriana&apos;s room" vnum="4049" zone="40">
-      <roomdescription>As you enter this room you can see that it is decorated in varying
-shades of \c03yellow\c00 with a small circular rug in the middle of its
-hardwood floors.  The pale \c03yellow\c00 gauzy curtains hang gently from the
-only window in the room on the south wall.  A rather small sleigh
-bed, made of a dark \c01cherry\c00 wood, is covered with a yellow and white
-\c07c\c03h\c07e\c03c\c07k\c03e\c07r\c03e\c07d\c00 comforter and laden pleasantly with fluffy pillows rests
-against the east wall.  The two chairs and couch sit on the west side
-of the room, with deep cushioning, and upholstery to match the
-bedcovers.  Two small tables sit on either side of the bed, on one
-rests a vase with sweet smelling \c06f\c04l\c05o\c07w\c06e\c04r\c05s\c00 and a water basin with a
-pitcher right next to it.  On the other is a leatherbond book with a
-piece \c07white\c00 ribbon marking the place.  Right above the bed is a small
-picture depicting an picnic scene with two people sitting on a small
-blanket in the middle of a \c01f\c02l\c03o\c07w\c05e\c06r\c04y\c00 meadow.    
+    <roombasic title="Unused Room" vnum="4049" zone="40">
+      <roomdescription>Use it.
 </roomdescription>
-      <flags>12</flags>
+      <flags>0</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
-    <exit direction="east" keyword="door east" exitinfo="3" keynum="4087" toroom="4033">
-      <description>door
-</description>
-    </exit>
     <exdesc keyword="picture">
       <description>A woman with flowing \c03g\c07o\c03l\c07d\c03e\c07n\c00 hair sits next to a man with dark brown, 
 almost black hair, looking at each other on a \c01red\c00 and \c07white\c00 \c01c\c07h\c01e\c07c\c01k\c07e\c01r\c07e\c01d\c00 
@@ -1242,7 +1179,7 @@ younger barmaids by the ear and dragging her along for staring
 wide-eyed at a fresh-faced young soldier.
 </roomdescription>
       <flags>10</flags>
-      <sector>City</sector>
+      <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
     <exit direction="east" keyword="door east" exitinfo="3" keynum="0" toroom="4048">
@@ -1259,19 +1196,18 @@ wide-eyed at a fresh-faced young soldier.
   </room>
   <room>
     <roombasic title="The Main Room of the Blue Lady Rising" vnum="4051" zone="40">
-      <roomdescription>The building is made of a light pine wood, and varnished over to
-help hide the fact that parts of it have been renovated recently. 
-The furniture doesn&apos;t match exactly, but the color of the new 
-upholstery on the chairs has all been redone in \c13b\c00\c11l\c00\c06u\c00\c13e\c00\c11s\c00. To the 
-east is the main eating area of the inn, the sound of multiple 
-conversations all going on at the same time drifting through the door, 
-and the smell from the kitches enticing you to take advantage of the 
-eating area as well. The innkeeper runs things smoothly, a small 
-woman with a surprisingly loud voice, but she smiles as you enter, 
-and seems very friendly and accomodating.
+      <roomdescription>The building is made of a light pine wood, and varnished over to help hide
+the fact that parts of it have been renovated recently.  The furniture
+doesn't match exactly, but the color of the new upholstery on the chairs
+has all been redone in \c13b\c00\c11l\c00\c06u\c00\c13e\c00\c11s\c00.  To the east is the main eating area of the
+inn, the sound of multiple conversations all going on at the same time
+drifting through the door, and the smell from the kitchens enticing you to
+take advantage of the eating area as well.  The innkeeper runs things
+smoothly, a small woman with a surprisingly loud voice, but she smiles as
+you enter, and seems very friendly and accomodating.    
 </roomdescription>
       <flags>158</flags>
-      <sector>City</sector>
+      <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
     <exit direction="east" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="4050">
@@ -1295,7 +1231,7 @@ upon comfortably, the sheets and blankets upon it in soft
 \c04b\c06l\c14u\c06e\c04s\c00 and whites.
 </roomdescription>
       <flags>14</flags>
-      <sector>City</sector>
+      <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
     <exit direction="west" keyword="door west" exitinfo="3" keynum="0" toroom="4053">
@@ -1312,8 +1248,8 @@ but the atmosphere here is comfortable, and
 respectable. Two small tapestries hang on either 
 side of the corridor.
 </roomdescription>
-      <flags>2</flags>
-      <sector>City</sector>
+      <flags>10</flags>
+      <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
     <exit direction="east" keyword="door east" exitinfo="3" keynum="0" toroom="4052">
@@ -1330,7 +1266,7 @@ side of the corridor.
   <room>
     <roombasic title="Eldern Road" vnum="4054" zone="40">
       <roomdescription>Eldern Road was named because it was the first road ever 
-built in the small town of Salidar. It isn&apos;t very long, but 
+built in the small town of Salidar. It isn't very long, but 
 it has ancient-looking trees lining its way. Birch and alder, 
 willow and oak, all shade this road with broad branches
 reaching out over the smooth, packed red earth of the street.
@@ -1364,7 +1300,7 @@ until the surface gleams dully in the candlelight. There are a
 few small tapestries hanging on the walls, to soften the decor. 
 </roomdescription>
       <flags>14</flags>
-      <sector>City</sector>
+      <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
     <exit direction="east" keyword="door east" exitinfo="3" keynum="0" toroom="4053">
@@ -1485,14 +1421,11 @@ bread. To the west is the entrance to the Bathhouse of Salidar.
       <description>Forest Road
 </description>
     </exit>
-    <exit direction="east" keyword="" exitinfo="0" keynum="0" toroom="3628">
-      <description/>
-    </exit>
     <exit direction="south" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="4059">
       <description>Forest Road
 </description>
     </exit>
-    <exit direction="west" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="4016">
+    <exit direction="west" keyword="door west" exitinfo="3" keynum="0" toroom="4016">
       <description>The Bathhouse of Salidar
 </description>
     </exit>
@@ -1573,18 +1506,31 @@ animals scampering...squirrels, deer and even an occasional wolf.
   </room>
   <room>
     <roombasic title="Study for the Mistress of Novices" vnum="4064" zone="40">
-      <roomdescription>The room is stark except for one oak table, a chair and a bookcase
-on the eastern wall.  At the highbacked oak chair the Mistress of
-Novices has spent many hours sitting at the desk reprimanding
-those who have been sent here.  Many a trembling novice has
-left in tears after a session with the Mistress of Novices.
-You will soon find out why you have been sent to see her.
+      <roomdescription>Heavy &amp;ro&amp;ya&amp;rk&amp;ye&amp;rn&amp;n double doors open to a spacious interior, an office toned with
+the natural colors of the surrounding forest, set with a desk and
+comfortable looking chair all in dark stained and well-loved &amp;Kwoods&amp;n.  The
+desk is large and boasts several small shelves, making efficient use of
+the space without seeming cluttery as everything on it's surface appears
+to be in place.  There are two smaller chairs set before the desk,
+probably for whomever has been called here, leaving the rest of the room
+fairly limitted in furniture.  There are a few small tables about, and a
+large armoire in one corner, but that is the extent of it.  Instead of
+lavish decorations or expensive carpets, the personal effects are simple
+in nature.  A rug of soft rabbit pelts lies on &amp;ge&amp;ya&amp;Kr&amp;gt&amp;yh&amp;Ke&amp;gn&amp;n tiles beneath the
+Mistress' side of the desk and the walls that are not interrupted by a
+window are nearly covered in beautiful &amp;Kblack&amp;n and &amp;Wwhite&amp;n sketchings.  Most
+of them are framed and, of a whole, seem to be of Salidar or the goings on
+of it's residents.  They are arranged in tasteful patterns on the walls,
+but there are many of them, and one wonders how long one could stand here
+gazing at all of their details.  There is a door to the north that is
+flanked with large and laden bookshelves, giving this room a truely
+well-educated, classy aura of practical beauty.
 </roomdescription>
       <flags>12</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
-    <exit direction="north" keyword="door north" exitinfo="7" keynum="4041" toroom="4041">
+    <exit direction="north" keyword="door north" exitinfo="1" keynum="4041" toroom="4072">
       <description>A locked door
 </description>
     </exit>
@@ -1600,7 +1546,7 @@ Salidar. To the north are the horses of the Tower idly grazing in the
 pastures. In the forest, animals of the woods sometimes scamper
 around...squirrels, deer, and even a wolf or two.  Aes Sedai glide 
 serenely by, often with Warders heeling them.  Children run up and
-down the road, watching as the soldiers from Gareth Byrne&apos;s army
+down the road, watching as the soldiers from Gareth Byrne's army
 frequently travel.
 </roomdescription>
       <flags>2</flags>
@@ -1622,7 +1568,7 @@ frequently travel.
 North are the pastures of Salidar, where the horses of the Tower idly
 graze. In the forest to the east can be seen squirrels scampering up
 and down the trees, rabbits, deer, and sometimes wolves.  The
-soldiers of Gareth Byrne&apos;s army frequent this road, watching the
+soldiers of Gareth Byrne's army frequent this road, watching the
 forest carefully.
 </roomdescription>
       <flags>2</flags>
@@ -1640,7 +1586,7 @@ forest carefully.
   </room>
   <room>
     <roombasic title="Altara Avenue" vnum="4067" zone="40">
-      <roomdescription>The dirt packed roads are bustling. Soldiers from Gareth Bryne&apos;s army travel
+      <roomdescription>The dirt packed roads are bustling. Soldiers from Gareth Bryne's army travel
 silently by, either on horses, or marching in blocks. Children dart in
 and out of the forest trees as they mimic the soldiers who travel by.
 North are the pastures which keep the horses of the Little Tower. East
@@ -1653,8 +1599,7 @@ proclaiming the \c13First Bank of Salidar\c00.
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
-    <exit direction="east" keyword="Not set yet...
-" exitinfo="0" keynum="0" toroom="3593">
+    <exit direction="east" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="3593">
       <description>None
 </description>
     </exit>
@@ -1668,27 +1613,32 @@ proclaiming the \c13First Bank of Salidar\c00.
     </exit>
   </room>
   <room>
-    <roombasic title="\c23Kahlan&apos;s\c06 Room\c00" vnum="4068" zone="40">
-      <roomdescription>Entering the room, it takes your eyes a few seconds to adjust to the 
-darkness. The first thing you see is the large bed in the corner, cleanly made,
-and covered with a woolen \c02p\c03a\c07t\c01c\c04h\c10w\c09o\c14r\c23k\c00 quilt. There is a small wooden table
-by the bed with a half-used candle and a small journal on it. A \c01stained\c00-
-wood dresser stands on the far side of the room with a mirror, a chipped,
-\c14white washbasin\c00 and a pitcher. A small rug of simple weave and \c04p\c06a\c13t\c14t\c13e\c06r\c04n\c00
-lies in the middle of the floor. There is a rack, of what appear to be 
-swords, by the door, and they look well-kept and used often. A quarter-
-staff stands upright behind the door, full of notches, that appear
-to have been caused by deflected objects. A small bookshelf stands 
-past the rack of swords, full of books on the history of war and tactics. 
-The books look to be old and well studied. You start to wonder what kind 
-of woman lives in here.
+    <roombasic title="The rooms of Lio Ezara Aes Sedai" vnum="4068" zone="40">
+      <roomdescription>Walking into these chambers, a rustic and warm interior greets the eyes.
+There is a large &amp;Kb&amp;ye&amp;Ka&amp;yr&amp;K f&amp;yu&amp;Kr&amp;n stretched out on the floor, a kill that appears
+to be fresh and well-cared for.  A desk of dark toned wood rests off to
+one side, near some large windows, and the windows themselves have a nice
+&amp;Ww&amp;wh&amp;Wi&amp;wt&amp;We&amp;n linen draping that usually blows in the wind when the windows can be
+kept open.  Across the room, a large draped bed sits, and behind that are
+rows of bookshelves that nearly cover the far wall.  A small table sits
+under a row of windows to the right, and above it a &amp;Ws&amp;wwor&amp;Wd&amp;n hangs on the
+wall, point down.  It points to the table, upon which rests a small book
+and a set of daggers, and the table is covered in a thick kind of &amp;Kblack&amp;n
+fabric.  This is one of the only ornamental aspects of the room, however
+detailed and ritualistic, except for the fireplace along the left wall and
+the dresser beside it.  &amp;wCa&amp;Wn&amp;Kd&amp;Wl&amp;wes line the top of the armoire and stand held
+in iron ornamentation alongside, and flanking the free-standing
+candelabras are the panes of two slender, floor length mirrors.  If one
+should happen to turn and take notice, the wall that is broken by the door
+is also hung with a large and finely spun tapestry depicting a swooping
+&amp;Kblack&amp;n hawk, it's talons outstretched.    
 </roomdescription>
       <flags>8</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
-    <exit direction="east" keyword="door east" exitinfo="3" keynum="0" toroom="3704">
-      <description>None
+    <exit direction="east" keyword="door" exitinfo="3" keynum="-1" toroom="4302">
+      <description>You see nothing special.
 </description>
     </exit>
   </room>
@@ -1696,7 +1646,7 @@ of woman lives in here.
     <roombasic title="The Forge of Salidar and workplace of Josef the Blacksmith" vnum="4069" zone="40">
       <roomdescription>The sound of blades of steel being sharpened on the many whetstones,
 iron scraping upon iron, the swoosh of the bellows fanning the flames 
-of the smelt fill your ears.  Soldiers of Gareth Byrne&apos;s army, adept at
+of the smelt fill your ears.  Soldiers of Gareth Byrne's army, adept at
 fashioning the arms of the Little Tower fill this vast building. It is
 here you will find Joef, the blacksmith of Salidar, putting the
 finishing touches on the crafted items.  If you do not find Josef here,
@@ -1728,17 +1678,11 @@ It is the way of the world.
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
-    <exit direction="north" keyword="Not set yet...
-" exitinfo="0" keynum="0" toroom="4036">
+    <exit direction="north" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="4036">
       <description>None
 </description>
     </exit>
-    <exit direction="east" keyword="door east" exitinfo="3" keynum="0" toroom="4072">
-      <description>None
-</description>
-    </exit>
-    <exit direction="south" keyword="Not set yet...
-" exitinfo="0" keynum="0" toroom="4033">
+    <exit direction="south" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="4033">
       <description>None
 </description>
     </exit>
@@ -1748,21 +1692,21 @@ It is the way of the world.
     </exit>
   </room>
   <room>
-    <roombasic title="Sybil&apos;s Bedroom" vnum="4071" zone="40">
+    <roombasic title="Sybil's Bedroom" vnum="4071" zone="40">
       <roomdescription>&amp;nA small desk with papers and books scattered all over it lies underneath a
 window.  A mirror hangs on the southern wall, a polished oak drawer chest below
 it.  In one corner, sits a large, sturdily constructed bed, neatly made with
 blankets and sheets of e&amp;ya&amp;nr&amp;yt&amp;nh t&amp;yo&amp;nn&amp;ye&amp;ns, and at the other corner is a large
 bookshelf.  The bookshelf is filled with all kinds of books from different
 nations and in many different languages.  A &amp;Kblack&amp;n cat lulls on a small
-scrollwork throw rug lying before the bookshelf.  Next to Sybil&apos;s bed is a
+scrollwork throw rug lying before the bookshelf.  Next to Sybil's bed is a
 small bedside table which has a &amp;ylamp&amp;n sitting on it, and at the end of her bed
 is a small &amp;ywooden&amp;n chest.  The room seems to be kept clean, as not a speck of
 dust can be seen.  However the room has a well lived-in look from the various
 personal items scattered about the room.    
 </roomdescription>
       <flags>73</flags>
-      <sector>City</sector>
+      <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
     <exit direction="east" keyword="door east" exitinfo="3" keynum="4018" toroom="4070">
@@ -1771,23 +1715,28 @@ personal items scattered about the room.
     </exit>
   </room>
   <room>
-    <roombasic title="Siana&apos;s Room" vnum="4072" zone="40">
-      <roomdescription>This simple room is neat and orderly. A midsized bed faces the north
-wall. A delicate lace coverlet with rose colored embroidery 
-covers all but the feet of the bed. An old desk faces a large window
-to the eastern wall. Upon the desk are stacks of books and a tidy
-pile of papers. An uncomfortable looking chair sits behind the desk
-facing out into the room. The only other furniture in the room is 
-a large chest of drawers. Upon it lie a wash basin and a small
-tea set. 
+    <roombasic title="The Room of Rosabelle Maren" vnum="4072" zone="40">
+      <roomdescription>Upon entering this most guarded of places, the visitor is enveloped in a
+world of &amp;Kinks&amp;n and endless &amp;Wp&amp;wa&amp;Wg&amp;we&amp;Ws&amp;n, as the entirety of the walls is covered
+in drawings of all shapes and sizes.  Many are landscapes, some familiar
+to Salidar and others foreign, and many more are visages of people long
+past or current neighbors.  The rest of the decor is relatively
+simplistic, though beautiful, and bearing of a certain dignity.  
+Dark-colored woods make up a dresser and bedframe to match, and the pair
+are both carved in tiny, intricate patterns of &amp;gv&amp;Gi&amp;Kn&amp;ge&amp;Gw&amp;go&amp;Kr&amp;gk&amp;n and inlaid with
+shells shaped into delicate &amp;mf&amp;Bl&amp;co&amp;gw&amp;ce&amp;Br&amp;ms&amp;n.  There are two chairs and a small
+couch as well, before the fire, and adequate lighting from soft lamps in 3
+places around the room.  A soft carpet covers the floor, in a pale &amp;Kgrey&amp;n
+tone, and the windows of the room are draped in linens of a similar color.
+In all, this is a fascinating dwelling, scattered with books and candles
+and wrapped in the feeling of a retreat from the outside world.    
 </roomdescription>
       <flags>76</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
-    <exit direction="west" keyword="door west" exitinfo="3" keynum="0" toroom="4070">
-      <description>None
-</description>
+    <exit direction="south" keyword="" exitinfo="7" keynum="4041" toroom="4064">
+      <description/>
     </exit>
     <exdesc keyword="bed">
       <description>The bed is simple, but the coverlet adds a certain charm to it.
@@ -1795,30 +1744,23 @@ tea set.
     </exdesc>
   </room>
   <room>
-    <roombasic title="\c23Ba\c00u\c23di\c00c\c23ca&apos;s\c06 Bedroom\c00" vnum="4073" zone="40">
-      <roomdescription>As you enter the room of Baudicca Sedai, you are overcome 
-with a feeling of peace and harmony. It is obvious that much effort
-was made to bring the beautiful items on display here back to 
-Salidar from the place in which they were once housed.  The floor 
-is t\c23i\c00l\c14e\c23d\c00, but scattered throughout the room are delicately 
-woven rugs of various, rich shades of \c23g\c00r\c23e\c14y\c00. The walls are hung with 
-tapestries depicting great moments in the history of Aes Sedai, most 
-with Kings and Queens kneeling to them.  The furniture is obviously 
-expensive, but it has a simple kind of elegance to it. At one end of the 
-large room is a work table littered with papers, documents, 
-books, pens and ink, and maps. Nearer to the bedroom you see a vanity 
-table, its combs and brushes neatly aligned. The wardrobe is open, and 
-you can see dresses and gowns in every shade of g\c23r\c14e\c23y\c00 and s\c14i\c23lv\c14e\c00r 
-imaginable.  As you gaze into the bedroom, you see a large, yet simple, 
-bed, adorned with soft b\c23la\c14n\c00k\c23et\c14s\c00, silk sheets, and beautiful 
-\c14p\c00i\c23llo\c00w\c14s\c00. The whole room is very tasteful and elegant, much like 
-its occupant must be.
+    <roombasic title="Eilora's Bedroom" vnum="4073" zone="40">
+      <roomdescription>Entering thruogh the simple wooden door, a quite sparse chamber can be
+seen.  Next to one wall there is a bed, common in it's design, with white
+linnen.  A window in the far wall, framed by purple drapes with grey
+emobroidery, letting in a little light.  A sturdy table with two chairs
+standing next to it is below the window.  On top of the table a lantern is
+standing, unlit at the moment.  Next to the lantern, a teapot and twp
+cups.  In one corner a small piedstal a pitcher in a basin.  An old book
+lies on the bed, the marking somewhere in the middle.  Over one of the
+walls a painting hangs in a large gold frame, picturing a creature of some
+kind, a red ball with horns and a large mouth.  It seems quite ferocious.
 </roomdescription>
-      <flags>0</flags>
+      <flags>8</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
-    <exit direction="west" keyword="door west" exitinfo="3" keynum="0" toroom="3704">
+    <exit direction="west" keyword="door west" exitinfo="7" keynum="3704" toroom="3704">
       <description>None
 </description>
     </exit>
@@ -1872,7 +1814,7 @@ the spray from the fountain giggling and laughing as if there was not a
 care in the world.  To the south is the mail and proclamation room of
 Salidar where one may also catch up on news of the realm.
 </roomdescription>
-      <flags>22</flags>
+      <flags>0</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -1883,34 +1825,36 @@ Salidar where one may also catch up on news of the realm.
       <description>A bend in Little Tower Road
 </description>
     </exit>
-    <exit direction="south" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="4045">
-      <description>The Mail and Proclamation Room of Salidar
+    <exit direction="south" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="4006">
+      <description>South Salidar Square
 </description>
     </exit>
     <exit direction="west" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="4077">
       <description>The entrance to the Little Tower a short way off
 </description>
     </exit>
-    <exit direction="southeast" keyword="door" exitinfo="3" keynum="0" toroom="3501">
+    <exit direction="southeast" keyword="" exitinfo="0" keynum="0" toroom="3520">
       <description>A door to the warder halls.
 </description>
     </exit>
-    <exit direction="northwest" keyword="door" exitinfo="1" keynum="0" toroom="4011">
-      <description>door
+    <exit direction="northwest" keyword="door northwest kitchens" exitinfo="1" keynum="0" toroom="4015">
+      <description>From the smells coming from the other side, this must be the door to the
+kitchens.
 </description>
     </exit>
+    <dgscript vnum="4077"/>
   </room>
   <room>
     <roombasic title="Little Tower Road" vnum="4077" zone="40">
       <roomdescription>So named for the converted inn, now known as the Little Tower, the dirt-
 packed road crosses in front of the looming slate-roofed oaken building.
-The road is full of soldiers from Gareth Bryne&apos;s army, Aes Sedai talking 
+The road is full of soldiers from Gareth Bryne's army, Aes Sedai talking 
 amongst themselves and going about conducting matters of an always serious 
 nature, their Warders patiently following them, novices in pure white, and 
 Accepted in dresses of white and bands of seven colors around their hems. 
 The citizens of Salidar move through the street, no less busy than the 
 ageless women all around them, but always giving them plenty of space to
-pass by, with a pleasant nod of the head or a &apos;Light illumine you, Aes Sedai&apos;.
+pass by, with a pleasant nod of the head or a 'Light illumine you, Aes Sedai'.
 To the west is the entrance to the Little Tower, and to the east is the
 central fountain of Salidar, where people often gather to talk. 
 </roomdescription>
@@ -2213,12 +2157,12 @@ are arranged around the room so all have a view of the small stage erected
 for the possible entertainer that happens in. Serving girls liveried in pale
 blue dresses carry around trays of drinks. A sturdy wooden bar spans the 
 length of the rear wall, blue cushioned barstools stand in front of it. The
-stone walls are decorated with paintings of far away places, and children&apos;s
+stone walls are decorated with paintings of far away places, and children's
 artwork, drawings from Corine and Aine in particular hold places of honor above
 the mantle.
 </roomdescription>
       <flags>158</flags>
-      <sector>City</sector>
+      <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
     <exit direction="west" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="4061">
@@ -2228,7 +2172,7 @@ the mantle.
   <room>
     <roombasic title="The Second Floor of the Little Tower" vnum="4092" zone="40">
       <roomdescription>The light is somewhat dim in here, the candles burning low in their sconces.
-A novice appears suddenly, clutching a pocket she&apos;s made from the front
+A novice appears suddenly, clutching a pocket she's made from the front
 of her pristine white dress, in which she holds more than an armful of 
 large white candles. She hurries to the end of the hall, lighting the new 
 candles from the old ones, and replacing them systematically. A meeting
@@ -2239,9 +2183,6 @@ themselves.
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
-    <exit direction="north" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="4011">
-      <description>&lt;NONE&gt;</description>
-    </exit>
     <exit direction="east" keyword="door east" exitinfo="7" keynum="4017" toroom="4004">
       <description>&lt;NONE&gt;</description>
     </exit>
@@ -2255,7 +2196,7 @@ themselves.
   <room>
     <roombasic title="The Intersection of River Eldar Road and a dirt path" vnum="4093" zone="40">
       <roomdescription>Short road and River Eldar road converge here in a mix of lumber, workmen,
-and sedai&apos;s hurriedly going about their tasks. A large ox is partially 
+and sedai's hurriedly going about their tasks. A large ox is partially 
 blocking the road as he huals huge beams down to the docks.
 </roomdescription>
       <flags>2</flags>
@@ -2333,7 +2274,7 @@ has the ability to teach you many things.
       <roomdescription>South Salidar Road connects to a wide road moving north-south 
 here, the road of the River Eldar, which runs alongside the river 
 itself, but there are so many trees and bushes and other kinds of
-brush that you can&apos;t see it except for in some few places where 
+brush that you can't see it except for in some few places where 
 there are large gaps in the vegetation. The docks are immediately south
 of here, and for a relatively small town, they are quite busy
 all the time.
@@ -2379,7 +2320,7 @@ Sedai, of course, but Accepted in banded dresses and scurrying Novices in
 pure white.  Warders moving with the deadly grace of leopards, whether lean
 or bulky, servants who have followed Aes Sedai from the Tower, even a few
 children fill the streets.  You may also catch a glimpse of soldiers from
-Gareth Byrne&apos;s army.  To the west is the River Eldar.
+Gareth Byrne's army.  To the west is the River Eldar.
 </roomdescription>
       <flags>2</flags>
       <sector>City</sector>

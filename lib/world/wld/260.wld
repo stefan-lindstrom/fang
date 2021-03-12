@@ -11,12 +11,11 @@ a shout is raised and echos throughout, &quot;Glory to \c03Illian\c00!&quot;, an
 as frequently, &quot;Glory to Lord Brend!&quot; can be heard. The other room
 is west, and the rooms of the inn are up the staircase.
 </roomdescription>
-      <flags>158</flags>
+      <flags>32926</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
-    <exit direction="west" keyword="Not set yet...
-" exitinfo="0" keynum="0" toroom="26025">
+    <exit direction="west" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="26025">
       <description>None
 </description>
     </exit>
@@ -25,13 +24,13 @@ is west, and the rooms of the inn are up the staircase.
     <roombasic title="The Kitchens" vnum="26001" zone="260">
       <roomdescription>A couple stoves and a large oven give out enough \c01h\c10e\c08a\c03t\c00 to
 make this area rather hot, any breeze sweltering. The cooks
-don&apos;t seem to notice as they bake their breads and stew their
+don't seem to notice as they bake their breads and stew their
 foods, even thought salty sweat streams down their brows. Maids
 hurry in and out the swinging door in the southern wall with platters
 of food and drink. Mostly it seems to be liquids to cool off the
 sweaty patrons.. \c01w\c08in\c01e\c00, \c14c\c07hi\c14ll\c07e\c14d\c00 punch, and \c03ale\c00.
 </roomdescription>
-      <flags>158</flags>
+      <flags>32926</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
@@ -50,7 +49,7 @@ the rest of the city and south into a neighborhood. All sorts of
 people brush past on their daily activities, mostly on foot, though
 occasionally a horse or carriage rolls past.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -72,7 +71,7 @@ designs. Illian is much quieter here, less people populating the
 streets, though it is similar in smell, as the salty scent of the
 sea wafts up even this far from the ocean.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -94,7 +93,7 @@ now and again, probably interested in some rat or piece of rubbish
 that seems to exist even in this part of the city. The street is
 very wide, and leads on both north and south.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -116,7 +115,7 @@ the street both north and south, the torches at the tops lit at
 night to give the neighborhood ample light even into the alleys
 between.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -141,7 +140,7 @@ spills of \c14l\c07a\c14c\c07e\c00, most in carriages anyway, to the poorest
 hungry beggars seeking a bit of coin. The outskirts of \c03Illian\c00 lie
 to the north, and the city itself with its canals is to the south.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -164,7 +163,7 @@ best to keep the crowd moving, giving the coarse side of their tongues
 to those who would hold up the traffic. Most seem arrogant and
 confident of their control over the people of Illian.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -186,7 +185,7 @@ one designed with trusses and swoops and a flowery top where the
 torches are lit. The street continues both north and south, leading
 its inhabitants home.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -208,7 +207,7 @@ crowds, most of the noise of the city muffled to a distant hum.
 The smells of salt and musk are very pungent, however, reminding
 all that this still is part of Illian.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -218,19 +217,26 @@ all that this still is part of Illian.
     </exit>
   </room>
   <room>
-    <roombasic title="REUSE ME" vnum="26010" zone="260">
-      <roomdescription>The fair city of \c03Illian\c00 seems in quite of a bustle all around this small
-east-west pathway, all sorts of people bustling back and forth. Most
-seem to be soldiers or guards jogging by on some order or another,
-but now and then a homeless beggar asks for a coin or an outlander
-asks for directions to somewhere in the city. This path seems to follow
-the northern wall, running along it for the entire course, which is to say
-a long ways.
+    <roombasic title="The Milliner's Shop" vnum="26010" zone="260">
+      <roomdescription>This is the finest hat shop in all Illian.  There are stacks of round hat
+boxes in various sizes on the floor.  The boxes are covered in beautiful
+fabrics and have silk cords by which they can be carried.  All about the
+shop are wooden stands holding hats for women.  They are quiet fashionable
+hats and if one can not find a hat to suit their taste the Milliner will
+be happy to custom make his patron's desire.  Behind the marble counter
+are bolts of felt, silks, furs, ribbons, and feathers.  There are pins and
+measuring tape scattered about the shop as well as nice overstuffed chairs
+and polished mirrors and a tea service so patrons can sip tea and catch up
+on the latest gossip.  In addition to the hats, there are a number of nice
+hatpins as well.    
 </roomdescription>
-      <flags>9</flags>
+      <flags>32780</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
+    <exit direction="east" keyword="" exitinfo="1" keynum="0" toroom="26130">
+      <description/>
+    </exit>
   </room>
   <room>
     <roombasic title="REUSE ME" vnum="26011" zone="260">
@@ -261,7 +267,7 @@ certainly surprise the troops of Tear as they approach.
       <roomdescription>This is the North Eastern guards tower of Illian.  It is packed with
 the implements of war, such as swords, pike, bows, and axes.  From the
 number of arms in this room, your guess is that Mattin Steppaneos and
-the Council of Seven are expecting Tarmon Gai&apos;don at the gates next 
+the Council of Seven are expecting Tarmon Gai'don at the gates next 
 week.  Illian may need these weapons to use on her own citizens it seems.
 There have been several violent riots from starving citizens.  Illian
 may become a city of the dead if something doesnt happen soon.
@@ -284,7 +290,7 @@ here.  That could be handy when trying to get in quietly.
     </roombasic>
   </room>
   <room>
-    <roombasic title="\c00A \c14S\c07i\c14l\c07v\c14e\c07r\c00smith&apos;s Shop" vnum="26015" zone="260">
+    <roombasic title="\c00A \c14S\c07i\c14l\c07v\c14e\c07r\c00smith's Shop" vnum="26015" zone="260">
       <roomdescription>This small shop is a bit crowded, displays of different items glittering
 in a bit of light, their pretty \c14s\c07i\c14l\c07v\c14e\c07r\c14s\c00 captivating the few customers
 who roam the store. Spoons, medallions, pitchers.. and a few small lumps
@@ -292,7 +298,7 @@ of silver lie about, the chunks perhaps just unfinished test models. The
 street and heat of \c03Illian\c00 is to the south through a small door usually kept
 closed to keep out the oppressive temperatures.
 </roomdescription>
-      <flags>154</flags>
+      <flags>32922</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -301,7 +307,7 @@ closed to keep out the oppressive temperatures.
     </exit>
   </room>
   <room>
-    <roombasic title="Tanio&apos;s Trinkets" vnum="26016" zone="260">
+    <roombasic title="Tanio's Trinkets" vnum="26016" zone="260">
       <roomdescription>This is a rather \c03dusty\c00 shop, and quite cramped, its owner a rather old
 man. The wares spread about the room seem to be aged, but \c07l\c14i\c03g\c14h\c07t\c00
 bounces back and forth from metallic surfaces around the small shop,
@@ -309,7 +315,7 @@ items gleaming with a new polish. The streets of \c03Illian\c00 lie southward, t
 crowds bustling and \c08h\c03e\c01a\c10t\c00 roasting the city in an awful humidity, not
 helped at all by the \c04w\c06a\c11t\c07e\c04r\c00 in the canals that crisscross the streets.
 </roomdescription>
-      <flags>154</flags>
+      <flags>32922</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -318,7 +324,7 @@ helped at all by the \c04w\c06a\c11t\c07e\c04r\c00 in the canals that crisscross
     </exit>
   </room>
   <room>
-    <roombasic title="A Farmer&apos;s Market" vnum="26017" zone="260">
+    <roombasic title="A Farmer's Market" vnum="26017" zone="260">
       <roomdescription>This is a rather large building, filled with farmers hawking all sorts
 of wares. From chickens, although scraggly and not looking well-fed, to
 baskets of grain, to freshly picked \c01b\c04e\c01r\c04r\c01i\c04e\c01s\c00 (not at all ripe), it all seems
@@ -326,7 +332,7 @@ to be selling rather well, for extremely high prices. The raucous in here
 is even louder than that on the streets southward, with all the animals
 making their respective noises, and their owners shouting besides.
 </roomdescription>
-      <flags>154</flags>
+      <flags>32922</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -339,12 +345,12 @@ making their respective noises, and their owners shouting besides.
       <roomdescription>This is a wayhouse for those who have lost all they own, or for some
 reason could no longer take care of themselves. Almost all those
 gathered are women and children - nearly all the men have been
-taken to serve in \c03Illian\c00&apos;s building army. Those here all range from
+taken to serve in \c03Illian\c00's building army. Those here all range from
 hopelessness to being an undying dreamer, but almost all eyes contain
 at least a bit of sadness, for what they have lost, or never had to
 begin with. The \c03Illian\c00 streets lie to the south a bit.
 </roomdescription>
-      <flags>8</flags>
+      <flags>32776</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -353,7 +359,7 @@ begin with. The \c03Illian\c00 streets lie to the south a bit.
     </exit>
   </room>
   <room>
-    <roombasic title="A Guard&apos;s Station" vnum="26019" zone="260">
+    <roombasic title="A Guard's Station" vnum="26019" zone="260">
       <roomdescription>This is a station for the guards, most of those employed in watching
 the city boundaries, the roads that enter and exit from \c03Illian\c00, keeping
 the flow of the crowds from slowing. There are small piles of personal
@@ -362,7 +368,7 @@ sorts of other things. The rest of \c03Illian\c00 lies through a door in the sou
 wall, a few guards swinging through it and back again frequently to
 report or receive assignments.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -380,7 +386,7 @@ their armor and heavy equipment. This street in its bustling crowds
 bends east and south, with the major entrance to \c03Illian\c00 being just a bit
 northward from here.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -400,13 +406,13 @@ northward from here.
 their own ways in and out of the city. The faces of the fair city speak
 of anger, almost a fury, at the \c01h\c03e\c08a\c10t\c00, at the King, this new Lord Brend,
 and the shortage of food occurring. The unnatural waves of heat
-have nearly killed all the farmers&apos; crops, making the prices soar
+have nearly killed all the farmers' crops, making the prices soar
 faster than a duckswallow. The canals criss-crossing the streets
 give a thick humidity to the air, and the Avenue bends southernly
 and west, the northern entrance, Gates if they can be called so, to
 the north.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -443,17 +449,15 @@ and then. A canal runs alongside the west side of the road, preventing
 building there of any sort. A shop of some kind is to the north a bit,
 however.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
-    <exit direction="north" keyword="Not set yet...
-" exitinfo="0" keynum="0" toroom="26071">
+    <exit direction="north" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="26071">
       <description>None
 </description>
     </exit>
-    <exit direction="south" keyword="Not set yet...
-" exitinfo="0" keynum="0" toroom="26024">
+    <exit direction="south" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="26024">
       <description>None
 </description>
     </exit>
@@ -466,26 +470,23 @@ allowing comfortable passage for the usual crowds of Illian. Most of
 the people seem in tune with a certain fashion.. the women wear wide
 hats with attatched scarves around their neck, the men with hats just
 as lengthy, keeping the \c10s\c03u\c10n\c00 from their eyes. This avenue continues
-north and south, although it doesn&apos;t seem to extend very far in either
-direction. A small courier&apos;s shop is to the west, the sign hanging out front
+north and south, although it doesn't seem to extend very far in either
+direction. A small courier's shop is to the west, the sign hanging out front
 showing a quill and \c14p\c07a\c14pe\c07r\c00.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
-    <exit direction="north" keyword="Not set yet...
-" exitinfo="0" keynum="0" toroom="26023">
+    <exit direction="north" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="26023">
       <description>None
 </description>
     </exit>
-    <exit direction="south" keyword="Not set yet...
-" exitinfo="0" keynum="0" toroom="26058">
+    <exit direction="south" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="26058">
       <description>None
 </description>
     </exit>
-    <exit direction="west" keyword="Not set yet...
-" exitinfo="0" keynum="0" toroom="26073">
+    <exit direction="west" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="26073">
       <description>None
 </description>
     </exit>
@@ -494,7 +495,7 @@ showing a quill and \c14p\c07a\c14pe\c07r\c00.
     <roombasic title="The First Commonroom of The Golden Bees Inn" vnum="26025" zone="260">
       <roomdescription>The murmer of lazy, idle chatter floats throughout this room, the
 air nearly hot enough for an oven, although it seems it is likely
-more heated outside under the \c10s\c03u\c10n\c00&apos;s withering rays. The serving
+more heated outside under the \c10s\c03u\c10n\c00's withering rays. The serving
 maids scurry to and fro with trays and plates, but most of them
 seem to be carrying pitchers of cooling drinks, whether it be
 wine, chilled and \c14ic\c07e\c14d\c00 punch, or \c03ale\c00. East Gannion Street
@@ -503,7 +504,7 @@ wafting through it when opened. The Kitchens of the Inn are to
 the north at the back of the inn, while the other common room
 is to the east, where a staircase leads to the rooms.
 </roomdescription>
-      <flags>158</flags>
+      <flags>32926</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
@@ -511,8 +512,7 @@ is to the east, where a staircase leads to the rooms.
       <description>None
 </description>
     </exit>
-    <exit direction="east" keyword="Not set yet...
-" exitinfo="0" keynum="0" toroom="26000">
+    <exit direction="east" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="26000">
       <description>None
 </description>
     </exit>
@@ -528,7 +528,7 @@ crates are the only occupants of this place.  You sniff the air, and
 a rank smell greets your nose.  A few homeless beggars are looking at
 you from outside, with narrowed eyes, and hands on beltknives.
 </roomdescription>
-      <flags>8</flags>
+      <flags>32776</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -542,7 +542,7 @@ you from outside, with narrowed eyes, and hands on beltknives.
   <room>
     <roombasic title="REUSE ME" vnum="26027" zone="260">
       <roomdescription>There is a large arrow slot to the east, and through it you spy the
-edge&apos;s of the Plains of Maredo, and in the far distance, you can
+edge's of the Plains of Maredo, and in the far distance, you can
 imagine Tear in all her power and solidness.  While Tear is a true
 fortress, it lacks any beauty to inspire her people..a disgusting city.
 </roomdescription>
@@ -571,11 +571,11 @@ off a dim, yellow light.  In the distance you can hear a troop if
 Illianer guards moving around.  A clash of steel erupts then, but
 dies quickly.  Obviously the guardsmen have had busy days of late.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
-    <exit direction="north" keyword="oak thick door" exitinfo="1" keynum="-1" toroom="26015">
+    <exit direction="north" keyword="oak thick door" exitinfo="3" keynum="-1" toroom="26015">
       <description/>
     </exit>
     <exit direction="east" keyword="" exitinfo="0" keynum="-1" toroom="26030">
@@ -590,15 +590,15 @@ dies quickly.  Obviously the guardsmen have had busy days of late.
     <roombasic title="West Gannion Street" vnum="26030" zone="260">
       <roomdescription>The road here is very old looking, and the view to the south is dominated
 by a large canal, filled with fish, and men trying to catch them.  Oh
-well, you can&apos;t complain, at least they are after fish, and not you.
+well, you can't complain, at least they are after fish, and not you.
 They dont appear to be very formidable anyway.  They are very thin,
 and look as if they have not eaten properly in weeks.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
-    <exit direction="north" keyword="door oak thick" exitinfo="1" keynum="-1" toroom="26016">
+    <exit direction="north" keyword="door oak thick" exitinfo="3" keynum="-1" toroom="26016">
       <description/>
     </exit>
     <exit direction="east" keyword="" exitinfo="0" keynum="-1" toroom="26031">
@@ -617,11 +617,11 @@ eyes are suddenly gone.  After a sigh of relief, you look at the canal
 to the south.  Illian is full of the small things, where fish and birds
 tend to flock.  Perhaps it was an animal.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
-    <exit direction="north" keyword="oak thick door" exitinfo="1" keynum="-1" toroom="26017">
+    <exit direction="north" keyword="oak thick door" exitinfo="3" keynum="-1" toroom="26017">
       <description/>
     </exit>
     <exit direction="east" keyword="" exitinfo="0" keynum="-1" toroom="26032">
@@ -640,7 +640,7 @@ the nobles stand here as well. A street that seems shorter, but wider,
 extends southward from here, a small sign naming it to be Valere
 Avenue. West Gannion continues east and west from here, too.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -650,8 +650,7 @@ Avenue. West Gannion continues east and west from here, too.
     <exit direction="east" keyword="" exitinfo="0" keynum="-1" toroom="26033">
       <description/>
     </exit>
-    <exit direction="south" keyword="Not set yet...
-" exitinfo="0" keynum="0" toroom="26045">
+    <exit direction="south" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="26045">
       <description>None
 </description>
     </exit>
@@ -668,7 +667,7 @@ road named after his acts of heroism.  You chuckle, and doubt it when
 you see the small mudfooted children running here.  A cold faced man
 in a grey cloak smiles at you, and disappears into the crowd.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -690,7 +689,7 @@ you and your clothing carefully.  Then they catch site of your purse.
 Filled with coin, it makes a very tempting target.  You look at them
 confidently, and smile grimly.  They seem to think better of it and walk away.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -716,7 +715,7 @@ be wrong with this city, something causing a strange bitterness to
 seep into the minds of the innocent.  A man walks by you and openly
 sneers at you while fingering his sword.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -741,7 +740,7 @@ his men against insurmountable odds, and giving the people time to
 escape.  The street here is populated by many people, probably because
 many noble houses are in this area.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -761,7 +760,7 @@ or perhaps just love, but most of the Illianers pass by without a
 second glance. A bridge over a canal is to the east a bit, hordes
 of people travelling over it and back.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -779,7 +778,7 @@ The waters seem lifeless, and move sluggishly with the current.
 A few people stand on the bridge with you, staring into the waters
 below, as if they are thinking deeply, or are considering something.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -798,7 +797,7 @@ the more you notice strange things, like while some laugh, the far
 greater majority seem....disgruntled....somehow angry.  A very odd
 thing, when children show that much anger.  Something seems wrong here.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -819,7 +818,7 @@ That is where the nobles from this area wander, for their wenching,
 their gambling, or simply to murder a commoner, where of course not
 even the commoners pay attention to an extra body here and there.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -848,7 +847,7 @@ or two every now and then, but not with any frequence.
     <roombasic title="REUSE ME" vnum="26042" zone="260">
       <roomdescription>The area here is in fair shape.  The walls are held up firmly by a 
 series of X frames, making for proper support.  There are some small
-noises here, and you can&apos;t find the source.  A loose stone drops from
+noises here, and you can't find the source.  A loose stone drops from
 the roof, and narrowly misses your head.
 </roomdescription>
       <flags>9</flags>
@@ -857,15 +856,15 @@ the roof, and narrowly misses your head.
     </roombasic>
   </room>
   <room>
-    <roombasic title="The Home of Gdarr T&apos;app" vnum="26043" zone="260">
-      <roomdescription>This is the home and shop of Gdarr T&apos;app, a famed steel smith, and
+    <roombasic title="The Home of Gdarr T'app" vnum="26043" zone="260">
+      <roomdescription>This is the home and shop of Gdarr T'app, a famed steel smith, and
 once a reknowned fighter is his own day.  Now he lives for a pipe,
 and his beautiful wife.  A small array of swords and axes line the
 wall, and even a pike or two.  Above the fireplace rests a finely
 crafted axe.  It is bolted to the wall with steel so thick you
 doubt anything  but the One Power could break it free.
 </roomdescription>
-      <flags>154</flags>
+      <flags>32922</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -884,22 +883,19 @@ named after. This avenue continues north and south a ways, an intersection
 with another street visible to the north a bit away. A sign hangs over
 a small establishment to the west, with a pile of \c03g\c10o\c03l\c10d\c00 as a picture.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
-    <exit direction="north" keyword="Not set yet...
-" exitinfo="0" keynum="0" toroom="26045">
+    <exit direction="north" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="26045">
       <description>None
 </description>
     </exit>
-    <exit direction="south" keyword="Not set yet...
-" exitinfo="0" keynum="0" toroom="26071">
+    <exit direction="south" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="26071">
       <description>None
 </description>
     </exit>
-    <exit direction="west" keyword="Not set yet...
-" exitinfo="0" keynum="0" toroom="26112">
+    <exit direction="west" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="26112">
       <description>None
 </description>
     </exit>
@@ -910,46 +906,43 @@ a small establishment to the west, with a pile of \c03g\c10o\c03l\c10d\c00 as a 
 avenue seems newly added to Illian in comparison, perhaps inspired by
 the recent Call for the Hunt of the \c03Horn of Valere\c00. One of those participating 
 in this very Hunt swagger by now and then, acting as though they were
-nobility.. and perhaps they are. The cobblestones on this street don&apos;t seem
+nobility.. and perhaps they are. The cobblestones on this street don't seem
 all that worn, and they run north-south on this street, between two others
 that are just as wide, perhaps wider, if not as crowded. A small fishermans
 stand is to the west, the smell of aging \c04sea\c02f\c04oo\c02d\c00 lingering about.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
-    <exit direction="north" keyword="Not set yet...
-" exitinfo="0" keynum="0" toroom="26032">
+    <exit direction="north" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="26032">
       <description>None
 </description>
     </exit>
-    <exit direction="south" keyword="Not set yet...
-" exitinfo="0" keynum="0" toroom="26044">
+    <exit direction="south" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="26044">
       <description>None
 </description>
     </exit>
-    <exit direction="west" keyword="Not set yet...
-" exitinfo="0" keynum="0" toroom="26072">
+    <exit direction="west" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="26072">
       <description>None
 </description>
     </exit>
   </room>
   <room>
     <roombasic title="Backroom of the Broken Lords Inn" vnum="26046" zone="260">
-      <roomdescription>This room is full of smiling women, and grinning men.  This is where
-the...ladies come to entertain the Inn&apos;s patrons.  A tall man, with
-arms as thick as your legs frowns at you.  \c08&quot;Whats yer business here
-mate?&quot;\c00  He frowns again, and fingers a large cudgel at his side.
+      <roomdescription>Rather sparse in its furnishings, the backroom of this inn is no different
+then any other room.  Dried foods and jars adorn the walls while
+implements for the kitchen and stables line the floors.  Two doors lead
+out of this room.    
 </roomdescription>
-      <flags>8</flags>
+      <flags>32776</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
     <exit direction="east" keyword="door" exitinfo="1" keynum="-1" toroom="26047">
       <description/>
     </exit>
-    <exit direction="south" keyword="door" exitinfo="1" keynum="-1" toroom="26060">
+    <exit direction="south" keyword="door" exitinfo="3" keynum="-1" toroom="26060">
       <description/>
     </exit>
   </room>
@@ -961,14 +954,14 @@ Great Hunt for the Horn of Valere.  The food here is expensive, as
 is obvious from the fact the none of the patrons are eating, but
 your stomach growls, and you know that it is time for you to eat.
 </roomdescription>
-      <flags>8</flags>
+      <flags>32776</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
     <exit direction="east" keyword="door oak" exitinfo="3" keynum="-1" toroom="26048">
       <description/>
     </exit>
-    <exit direction="west" keyword="door" exitinfo="3" keynum="-1" toroom="26046">
+    <exit direction="west" keyword="door" exitinfo="1" keynum="-1" toroom="26046">
       <description/>
     </exit>
   </room>
@@ -982,7 +975,7 @@ then past you, never stopping.  He stands, and moves inside with strange
 grace.  Could it be that he is a Warder?  You look to the Inn he
 just entered.  &quot;The Inn of the Broken Lords&quot;  Another stab at Tears honor?
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -995,7 +988,7 @@ just entered.  &quot;The Inn of the Broken Lords&quot;  Another stab at Tears ho
     <exit direction="south" keyword="" exitinfo="0" keynum="-1" toroom="26062">
       <description/>
     </exit>
-    <exit direction="west" keyword="door oak" exitinfo="1" keynum="-1" toroom="26047">
+    <exit direction="west" keyword="door oak" exitinfo="3" keynum="-1" toroom="26047">
       <description/>
     </exit>
   </room>
@@ -1008,7 +1001,7 @@ here, but not quite so bad a before.  They seem to be thinning out as
 you get deeper into the city.  You feel your wallet, and notice it
 is slightly lighter.  You growl as the thought of thieves comes to mind.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -1023,13 +1016,13 @@ is slightly lighter.  You growl as the thought of thieves comes to mind.
     </exit>
   </room>
   <room>
-    <roombasic title="Olio&apos;s Cloak Shop" vnum="26050" zone="260">
+    <roombasic title="Olio's Cloak Shop" vnum="26050" zone="260">
       <roomdescription>This small shop is filled with many different cloaks hanging on pegs.
 A smiling man wanders from a corner, and says &quot;\c08I am Olio, is there
 and way I can help you find a good weather cloak?\c00&quot;  He smiles
 broadly, and begins fetching cloth for you to examine.
 </roomdescription>
-      <flags>154</flags>
+      <flags>32922</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -1077,7 +1070,7 @@ about, comparing weapon sizes.  You enter, and they look you up and
 down with contempt.  After a minute, they swagger over to their corner,
 and sit down, muttering over the arrogance of new-comers.
 </roomdescription>
-      <flags>24</flags>
+      <flags>32792</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -1096,7 +1089,7 @@ finger the swords on their hips, and then look into your eyes.
 Suddenly, they look as though they have somewhere else to be.  The
 men scurry off to hide in the holes they crawled from very quickly.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -1129,7 +1122,7 @@ palace is just to the west, over a huge stone wall.  Crafted from
 white stone, it is truly a sight to behold.  A single spire, rising
 from the center, reaches several hundred feet into the air.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -1147,7 +1140,7 @@ There is a small shop to the north, and Tribunal avenue starts to the
 west.  Several canals are to the south, teeming with life.  A young
 man wanders by and looks at your weapon for a moment before running off.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -1170,12 +1163,11 @@ street extends northward from here, a painted sign marking it as Valere
 Avenue. The front of an inn is to the east a few spans, sounds of loud
 boasts and laughter coming from it.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
-    <exit direction="north" keyword="Not set yet...
-" exitinfo="0" keynum="0" toroom="26024">
+    <exit direction="north" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="26024">
       <description>None
 </description>
     </exit>
@@ -1195,7 +1187,7 @@ visible from here. What seems to be a residential area lies to the east,
 while a rather nice and busy-looking inn has its door open to the north,
 inviting people to come in. The sign hanging reads &quot;&amp;gThe Companions Rest&amp;n&quot;.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -1217,11 +1209,11 @@ staring at you from the shadows.  The building to the north is a huge
 inn.  The entrance is on Laurel Avenue, but there is a small door that
 way.  Perhaps it leads to the personal rooms.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
-    <exit direction="north" keyword="door" exitinfo="1" keynum="-1" toroom="26046">
+    <exit direction="north" keyword="door" exitinfo="3" keynum="-1" toroom="26046">
       <description/>
     </exit>
     <exit direction="east" keyword="" exitinfo="0" keynum="-1" toroom="26061">
@@ -1238,7 +1230,7 @@ be a quiet residential area.  There are several canals farther to the
 west, and Laurel avenue to the east.  A small troop of guardsman march
 by, and eye you suspisciously.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -1262,7 +1254,7 @@ beautiful woman, with flowing blonde hair, and bright blue eyes,
 frowns at you, and fingers a small dagger at her waist.  Yes, this
 is certainly not a good place to stay.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -1288,7 +1280,7 @@ into the crowd swiftly, although you still see him looking at you
 from a distance and frowning in rage.  He smiles, and his broken
 yellow teeth almost appear to be fangs.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -1314,7 +1306,7 @@ food is sparse, people are eating at least.  A few strongarms walk by,
 sneering at you, until they notice your purse.  Then their eyes turn
 greedy, and somehow daring, like they are working up to something.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -1336,7 +1328,7 @@ of stone spanning it to the east, and Laurel avenue to the west.  A
 small cracking sound grabs your attention.  It came from down the
 street, but there is only silence now.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -1353,14 +1345,14 @@ street, but there is only silence now.
   </room>
   <room>
     <roombasic title="A bridge on Ring Street" vnum="26066" zone="260">
-      <roomdescription>The bridge is made from thick white stone, it&apos;s broad enough
+      <roomdescription>The bridge is made from thick white stone, it's broad enough
 to let three carts pass at the same time, but the crowd here
-prevents that. Under the bridge runs one of Illian&apos;s numerous 
+prevents that. Under the bridge runs one of Illian's numerous 
 canals and a few commoners stand on the bridge to watch the
-boats dissapear under it, while the sun&apos;s beam glitters in the
+boats dissapear under it, while the sun's beam glitters in the
 water.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -1380,7 +1372,7 @@ suprisingly dark and swears and curses are clearly heard. The
 cartmen seems worst swearing at all that slows their wagons and
 they swing their whips over the heads of the citizens.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -1401,7 +1393,7 @@ While more of a street than an actually alley, it is obvious it got
 the name from its rundown appearence.  Small animals dwell here, and
 the smell of decay is strong in the air.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -1430,12 +1422,12 @@ not uncommon in any land.
   <room>
     <roombasic title="Tribunal Avenue" vnum="26070" zone="260">
       <roomdescription>Tribunal avenue continues south here, nearing the Royal palace.  A
-troop of guards can be seen near the gates, looking like they won&apos;t
+troop of guards can be seen near the gates, looking like they won't
 let anyone pass who isnt supposed to.  A few citizens stand near them,
 and gawk at their weapons, and armor.  They are so brightly polished,
 they gleam like the sun itself.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -1457,38 +1449,35 @@ a purse, a hat, a hairpin, all accessories, and strangely enough, a
 picture of some sort of herb beside them. Its door is open to the
 public, a display of the popular hats behind a wide glass window.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
-    <exit direction="north" keyword="Not set yet...
-" exitinfo="0" keynum="0" toroom="26044">
+    <exit direction="north" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="26044">
       <description>None
 </description>
     </exit>
-    <exit direction="south" keyword="Not set yet...
-" exitinfo="0" keynum="0" toroom="26023">
+    <exit direction="south" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="26023">
       <description>None
 </description>
     </exit>
   </room>
   <room>
-    <roombasic title="\c00Before a \c04F\c06i\c04sh\c00erman&apos;s Stand" vnum="26072" zone="260">
+    <roombasic title="\c00Before a \c04F\c06i\c04sh\c00erman's Stand" vnum="26072" zone="260">
       <roomdescription>The odor of aging \c04fish\c00 lingers in this area, although the few Illianers who
-wander up to buy some don&apos;t seem to notice. The outlanders walking
+wander up to buy some don't seem to notice. The outlanders walking
 by surely do, and most make loud complaints about the stench. The
-fisherman looks pained there aren&apos;t more customers, but sells all that he
+fisherman looks pained there aren't more customers, but sells all that he
 can and hawks now and then out eastward to those passing by on Valere
 Avenue, hoping to catch a coin or two more than he has now. The
 selection is barely more than mudfish, but it is about the same in the rest
 of the city.
 </roomdescription>
-      <flags>20</flags>
+      <flags>32788</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
-    <exit direction="east" keyword="Not set yet...
-" exitinfo="0" keynum="0" toroom="26045">
+    <exit direction="east" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="26045">
       <description>None
 </description>
     </exit>
@@ -1496,32 +1485,31 @@ of the city.
   <room>
     <roombasic title="The Illian Courier" vnum="26073" zone="260">
       <roomdescription>Stacks of mails, scrolls, papers, maps, and whatnot all are being
-stacked, sorted, sent out, and taken in here at the heart of Illian&apos;s
+stacked, sorted, sent out, and taken in here at the heart of Illian's
 communications with the outside world. Messengers dart to and fro,
 carrying sealed scrolls from one House to another, the Palace of
 this to the Palace of that. People wander in looking for their own
 mail now and then, and ocassionally walk away with a package of
 some sort, perhaps a gift from loved ones far away.
 </roomdescription>
-      <flags>28</flags>
+      <flags>32796</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
-    <exit direction="east" keyword="Not set yet...
-" exitinfo="0" keynum="0" toroom="26024">
+    <exit direction="east" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="26024">
       <description>None
 </description>
     </exit>
   </room>
   <room>
     <roombasic title="Entering Noble Square" vnum="26074" zone="260">
-      <roomdescription>This path leads down into Noble Square, which access&apos; several of Illians
+      <roomdescription>This path leads down into Noble Square, which access' several of Illians
 major attractions including the Square of Tammuz, the Royal Palace,
 and some of the famous canals Illian is known for.  Passing through
 this back alley is somehow erie though...it is very quiet here, and 
 you are all alone.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -1540,7 +1528,7 @@ southwest, and that is the way the alley seems to go.  Ring street
 is back to the north.  You wipe your brow, to remove a droplet of 
 sweat that runs down your cheek.  Light this heat is unbearable.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -1556,11 +1544,11 @@ sweat that runs down your cheek.  Light this heat is unbearable.
       <roomdescription>This archway, is the entrance to the Square of Tammuz, which is one
 of Illians greatest sights.  This is where nearly two thousand men
 and women swore the Hunters Oath just over a year ago.  To find the
-Horn of Valere, and use it for the Light.  You can almost here the
+Horn of Valere, and use it for the Light.  You can almost hear the
 screams, and the voices singing out the oath as one.  Now, the Square
 is filled with merchants, and starving citizens.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -1583,7 +1571,7 @@ merchants themselves do not appear all that fit either, as if their
 trade is no longer enough to feed them properly.  A few sell swords
 wander the area as well, loyalty for sale to the highest bidder.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -1604,7 +1592,7 @@ grate covers it, and that is sealed with a thick padlock.  A rotten
 stench rolls out of the sewer, and it is worse than you could have
 imagined before coming here.  Something smells dead down there.
 </roomdescription>
-      <flags>137</flags>
+      <flags>32905</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -1618,7 +1606,7 @@ imagined before coming here.  Something smells dead down there.
 woman approaches you and bows.  She introduces herself, and announces 
 that she sells all manner of clothing.
 </roomdescription>
-      <flags>28</flags>
+      <flags>32796</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -1630,7 +1618,7 @@ that she sells all manner of clothing.
     </exit>
   </room>
   <room>
-    <roombasic title="Bool&apos;s House of Armor" vnum="26080" zone="260">
+    <roombasic title="Bool's House of Armor" vnum="26080" zone="260">
       <roomdescription>This shop belongs to a stuby man named Bool.  He squints at you through
 a face withered with age and hard work, and grins.  After hearing what
 you want, he produces a list of his wares, and says to take a look.
@@ -1639,18 +1627,18 @@ you want, he produces a list of his wares, and says to take a look.
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
-    <exit direction="south" keyword="door" exitinfo="1" keynum="-1" toroom="26094">
+    <exit direction="south" keyword="door" exitinfo="3" keynum="-1" toroom="26094">
       <description/>
     </exit>
   </room>
   <room>
-    <roombasic title="Gedwyn&apos;s Stables" vnum="26081" zone="260">
+    <roombasic title="Gedwyn's Stables" vnum="26081" zone="260">
       <roomdescription>This stable sells horses of the highest quality, from fearless war
 horses, to riding horses that move with the wind.  A blocky man,
 smiles and walks up to you.  &quot;See something you like?&quot; he says in a
 hopefull way.  
 </roomdescription>
-      <flags>158</flags>
+      <flags>32926</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -1666,7 +1654,7 @@ tavens that once stood here, it is now a deserted are, full of the
 vile, and worthless outcasts of society.  Most guards dont even come
 to this area unless they are in large groups.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -1696,7 +1684,7 @@ and the palace directly south.  Ring street is not to far to the north,
 where some minor nobles make their homes.  A nice aroma drifts in 
 from the south, and your stomach rumbles.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -1718,7 +1706,7 @@ become somewhat of a trend over the years.  You are drinking from a
 small mug of water, and something catches your eye.  It is a small
 indentation in the stone...it almost looks like a paw print.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -1740,7 +1728,7 @@ cloak, made of the finest silks, and some black leather gloves stuck
 in his belt.  He catches your eye and starts a quicker tune that seems
 foriegn to you.  He grins and continues.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -1762,7 +1750,7 @@ fish are easy to see, swimming in circles.  A young boy swinging a
 small wooden sword stands gawking at your weapon, and trying to 
 imitate your pose and walk.  You grin ruefully, and pat him on the head.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -1783,7 +1771,7 @@ street, or to the south east is the Square of Tammuz.  An attempt to
 enter the royal palace might be trouble, as there are several guards
 down there, all looking stern and unforgiving.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -1805,7 +1793,7 @@ casually.  Still, even with the ruffians, you understand why they call
 these the Pillars of Heaven.  Made of gleaming white marble, and encrusted
 with a crystaline substance, they gleam brightly in the sunlight.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -1825,7 +1813,7 @@ the square now, but none of them seem to be of any interest to you.
 Still, this place appears dangerous.  You slowly check on your 
 weapon, to make sure its within easy reach.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -1850,7 +1838,7 @@ this time.  In fact, the Square here seems fairly deserted, and
 has an erie silence in it right now.  Your ears perk up reflexively,
 but you can hear nothing.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -1875,7 +1863,7 @@ think they must be Hunters of the Horn.  A cold smile graces one of
 the Hunters faces as he looks at you.  You can almost here his thoughts
 as he dismisses you as rabble, simply passed over by the guards.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -1894,7 +1882,7 @@ loom depicted on it.  There is a rotten odor on the air, and with
 just a second of time, you determine that the canal to the south east
 is the source.  You grimace, and continue on,
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -1916,7 +1904,7 @@ is said that these canals are linked to small supplies of water that
 are underground.  It is a bad sign, to see people deficating in the
 water supply of their city.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -1932,13 +1920,13 @@ water supply of their city.
   </room>
   <room>
     <roombasic title="Guardian Street" vnum="26095" zone="260">
-      <roomdescription>The street is quiet and dark here.  The Council of Nine&apos;s palace looms
+      <roomdescription>The street is quiet and dark here.  The Council of Nine's palace looms
 in the eastern skiy, and the great Square of Tammuz can be seen to
 the west.  A rotten odor seems to be coming from a nearby canal,
 making you wrinkle your nose in disgust.  The smell is completely
 revolting, and smells like waste materials.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -1954,13 +1942,13 @@ revolting, and smells like waste materials.
   </room>
   <room>
     <roombasic title="Guardian Street" vnum="26096" zone="260">
-      <roomdescription>This is Guardian street.  It runs from the Council of Nine&apos;s palace
+      <roomdescription>This is Guardian street.  It runs from the Council of Nine's palace
 to the Square of Tammuz, and has several small shops and guard posts
 along it.  To the north is the famed Keg Alley, where several hundred
 of the \c14Children of the Light\c00 came over the wall nearly twenty
 years ago.  If not for some brave citizens, they might have taken Illian.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -1975,14 +1963,14 @@ years ago.  If not for some brave citizens, they might have taken Illian.
     </exit>
   </room>
   <room>
-    <roombasic title="Entrance to the Council of Nine&apos;s Palace" vnum="26097" zone="260">
+    <roombasic title="Entrance to the Council of Nine's Palace" vnum="26097" zone="260">
       <roomdescription>This gate, leads to the palace of the Council of Nine.  It is a large
 white palace, dominating the eastern side of Illian.  As you stare
 back and forth between the Kings Palace, and this one, you realize
-that they are identical save the Council&apos;s palace is just short of
+that they are identical save the Council's palace is just short of
 being the same size.  Interesting.
 </roomdescription>
-      <flags>4</flags>
+      <flags>32772</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -1995,11 +1983,11 @@ being the same size.  Interesting.
       <roomdescription>This is the western side of Council street, where the royal palace of
 Mattin Stepaneos and the Council of Seven are.  In fact, the sit in
 the western sky just beyond this huge gate.  A small battalion of
-guards lounges here, eyeing you through half lidded eyes.  They don&apos;t
+guards lounges here, eyeing you through half lidded eyes.  They don't
 seem to percieve you as a threat as of yet, as they have not drawn
 their weapons.
 </roomdescription>
-      <flags>4</flags>
+      <flags>32772</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -2017,7 +2005,7 @@ they are just unsure about.  The everyday citizens of Illian wander
 about, selling small wares, or running errands.  The fount is to the
 east, and the Palace of Mattin Steppaneos Den Balgar to the west.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -2067,7 +2055,7 @@ to the north and south, and the marble palace of Mattin Steppaneos to
 the west.  All this beauty in one place could bring tears to your eyes,
 save for the unhappy murmur that seems to be everywhere in Illian.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -2093,7 +2081,7 @@ bumps into you, or begs for a coin.  A troop of Illianer guards come
 by, and sneer at you.  Men and women dressed in Lords and Ladies clothing
 wander the area.  Perhaps they are more Hunters for the Horn?
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -2118,7 +2106,7 @@ filled with a few nobles, and the occassional beggar, hoping for a
 coin.  The nobles give you one sparring look and a sniff, and go
 upon their way.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32788</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -2143,7 +2131,7 @@ when he called the Great Hunt for the Horn last year.  A few men
 raise their eyebrows at you, as you mount the podium.  One snickers
 something about &quot;a bloody lord&quot;, and walks away.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -2169,7 +2157,7 @@ coat is staring at you from behind a booth.  You move over to speak
 to him, but he is gone.
 You notice a small white plaque on the ground gleaming faintly.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -2199,7 +2187,7 @@ Pillars of Heaven.  A few men and women wander by you, dressed as merchants
 or minor nobles even.  Illian is not nearly so bad as it was last year, as the grain sent 
 from Tear is keeping people alive.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -2223,10 +2211,10 @@ hundreds or thousands of men and women have come before to take the
 oath of a Hunter for the Horn of Valere.  They gathered in the square
 ahead, and sword under the Light to retrieve it, and use it for the
 Light, and the world.  The way times have been lately, you are hoping
-it is found.  It must be at Tarmon Gai&apos;don, adn with all the recent
+it is found.  It must be at Tarmon Gai'don, adn with all the recent
 activity, that must be at hand.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -2263,7 +2251,7 @@ rare foods.  One man is selling what he claims to be cooked meat from
 an animal born on the far side of the Waste, but it smells quite a
 bit like horse flesh to you.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -2281,7 +2269,7 @@ palace to the east.  The merchants here seem to be more controled,
 and quiet with their dealing.  Perhaps its not control, but fear.  The
 more you study them, they seem to look at the building quite a bit.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -2305,7 +2293,7 @@ and glower at you.
     </roombasic>
   </room>
   <room>
-    <roombasic title="A Small Banker&apos;s Establishment" vnum="26112" zone="260">
+    <roombasic title="A Small Banker's Establishment" vnum="26112" zone="260">
       <roomdescription>This small area inside is pretty bare, with only a couple images
 hanging on the cleanly \c14w\c07h\c14i\c07t\c14e\c07w\c14a\c07s\c14h\c07e\c14d\c00 walls. A thin man with
 spectacles sits over a large assortment of papers, apparantly
@@ -2315,12 +2303,11 @@ except for the occasional sketched picture of a \c10g\c03ol\c10d\c00 piece
 here and there. Vaere Avenue is to the east, bustling by with
 its crowds.
 </roomdescription>
-      <flags>28</flags>
+      <flags>32796</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
-    <exit direction="east" keyword="Not set yet...
-" exitinfo="0" keynum="0" toroom="26044">
+    <exit direction="east" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="26044">
       <description>None
 </description>
     </exit>
@@ -2350,7 +2337,7 @@ A bulletin board for Mortals is here, placed carefully on the wall,
 and awaiting your words.  A sigh on the wall says &quot;\c08No Loitering,
 Complete your business and move on.\c00&quot;
 </roomdescription>
-      <flags>4</flags>
+      <flags>32772</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -2371,7 +2358,7 @@ from an Inn to the south.  A dangling sign, portaying a badger sways
 in the wind.  A few thick necked men lounge near the door, looking
 tough even though they are doing nothing.  They must be bouncers for the inn.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -2396,7 +2383,7 @@ weight passes by you headed south.  You sigh as you realize that
 poverty is going to be common place to the south.  You put your purse
 into your shirt, and loosen your sword.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -2417,7 +2404,7 @@ he wears.  His teeth are bared in a rictus smile, as if he is guarding
 some great treasure.  He keeps mumbling something over and over to
 himself, and snarls when he catches you looking.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -2436,7 +2423,7 @@ would-be Hunters have returned to Illian, as the worldwide search has
 proven fruitless.  Many are making arrangements to travel in groups
 now, as the world has turned unsafe to say the least.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -2459,9 +2446,9 @@ now, as the world has turned unsafe to say the least.
 a cart moving along, and a few arguments in the background.  A small
 troop of guards moves by you, and the leader snaps out &quot;Do be keeping
 the peace citizen!&quot;  You loosen your weapon in its scabbard, and smile
-as a small band of passerby&apos;s eyeball your purse.
+as a small band of passerby's eyeball your purse.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -2481,12 +2468,12 @@ as a small band of passerby&apos;s eyeball your purse.
   <room>
     <roombasic title="The \c05Pillars\c00 of Heaven" vnum="26120" zone="260">
       <roomdescription>The pillar here is surrounded by small groups of beggars, hudling in
-circles, and praying to the Creator to save them.  Now that Rand al&apos;Thor
+circles, and praying to the Creator to save them.  Now that Rand al'Thor
 has sent the grain to this city, starvation isnt as bad as before, but
 looting and robbery is still common.  Perhaps they do need to pray to
 feel safe, but you feel more safe with your sword on your hip.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -2504,7 +2491,7 @@ The area over there is known as the Merchants Quarter.  That is where
 the major merchants go to sell huge caravans of goods.  Many strong
 looking guards walk the area, staring back across the canal at you.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -2531,7 +2518,7 @@ guards.  Their eyes are shooting back and forth nervously.  They seem
 to be selling a great deal of grain at a very cheap price, and wish
 they could be anywhere except Illian at the time of an impending war.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -2549,7 +2536,7 @@ their wares.  They are packed in here like fish, and screaming offers
 into the air, and making changed.  The intense noise washes over you,
 and you wince.  You skull is throbing, and you need to leave soon.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -2583,7 +2570,7 @@ house, and rotted piles of cloth.  A foul odor is drifting to your
 nostrils, and it is the stink of death.  There is something very
 wrong in this place.  A small dog barking outside grabs your attention.
 </roomdescription>
-      <flags>9</flags>
+      <flags>32777</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -2619,7 +2606,7 @@ and food and ale available as well.  A Lugarder girl sings songs of
 pleasure and wickedness atop a wooden stage.  Still, something smells
 wrong about this place.
 </roomdescription>
-      <flags>154</flags>
+      <flags>32922</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -2631,24 +2618,25 @@ wrong about this place.
     </exit>
   </room>
   <room>
-    <roombasic title="The scrap of cloth..." vnum="26130" zone="260">
-      <roomdescription>This street is fairly empty here, and a hot wind rips across your 
-back.  There is a small scap of cloth on the ground, and it catches
-your eyes.  On the blackest of cloths it is, a \c08blood red symbol
-of a skulls with a scythe shaped sword\c00.  You swallow hard as 
-the Trolloc symbol burns itself into your mind.
+    <roombasic title="Tammuz Street Leads to Noble Square" vnum="26130" zone="260">
+      <roomdescription>&amp;nA small branch off street leads from Tammuz Street to the south to the
+south eastern corner of Noble Square to the north.  A small shop lies to
+the west, the weathered wooden sign hanging above the door bears an
+elaborate woman's hat and a large &amp;Ks&amp;w&amp;Wlv&amp;we&amp;Kr&amp;n needle.  The street is paved with
+worn paving stones, some of which have come loose, leaving gaps of hard
+packed dirt.    
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
     <exit direction="north" keyword="" exitinfo="0" keynum="-1" toroom="26116">
       <description/>
     </exit>
-    <exit direction="east" keyword="" exitinfo="0" keynum="-1" toroom="26131">
+    <exit direction="south" keyword="" exitinfo="0" keynum="-1" toroom="26144">
       <description/>
     </exit>
-    <exit direction="south" keyword="" exitinfo="0" keynum="-1" toroom="26144">
+    <exit direction="west" keyword="" exitinfo="1" keynum="0" toroom="26010">
       <description/>
     </exit>
   </room>
@@ -2659,14 +2647,11 @@ visitors to try.  While the prices are a little high, the smell of the
 food quickly changes your mind.  The smells in this room are heavenly
 , and make you wonder when you might recieve another meal this good.
 </roomdescription>
-      <flags>150</flags>
+      <flags>32918</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
     <exit direction="south" keyword="" exitinfo="0" keynum="-1" toroom="26145">
-      <description/>
-    </exit>
-    <exit direction="west" keyword="" exitinfo="0" keynum="-1" toroom="26130">
       <description/>
     </exit>
   </room>
@@ -2678,7 +2663,7 @@ the Light.  Now, the Square is populated by beggars and would be
 Lords.  Your glad that you came armed, for this would be a formidable
 place indeed to be without a weapon of some kind.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -2698,11 +2683,11 @@ place indeed to be without a weapon of some kind.
 beautiful...once.  Now, it is covered with grime, and starving refugees.
 One hand tightens on your purse, and the other on your sword hilt,
 when a group of thugs takes some interest in you.  This is worse than
-the common room of some inns you&apos;ve been too.  Its hard to believe,
+the common room of some inns you've been too.  Its hard to believe,
 that two thousand warriors took an oath to find the Horn of Valere
 in this wretched place.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -2723,7 +2708,7 @@ where reinforcements or new equipment may be gathered.  A few of the
 men sitting in here stare at you as you enter, and demand your business
 in this place.  You quickly assure them there is no trouble, and move on.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -2741,7 +2726,7 @@ from the Square and Tammuz street to the south.  You spy men and
 women dressed in rich silks, and a group of men who must be horn
 Hunters, and moving arrogantly around, as if the carry a mountain.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -2788,7 +2773,7 @@ on of them thunders at you.  They all grin knowingly, step in front
 of the gate.  You smile, and grasp your weapon hilt.  They frown,
 and nod that you may pass if it is that important.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -2819,7 +2804,7 @@ the shadows.  There is a foreboding feeling rolling off it, and you
 stare at is suspiciously.  This street is too quiet for a city the
 size of Illian.
 </roomdescription>
-      <flags>1</flags>
+      <flags>32769</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -2839,7 +2824,7 @@ heads to the east and the west.  This place is filthy, and it appears
 like a troop of guardsman needs to come throguh here and sweep out
 the trash, both human and real garbage.
 </roomdescription>
-      <flags>1</flags>
+      <flags>32769</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -2859,7 +2844,7 @@ heavy armors like the platemail needed to do this.  You grunt as your
 foot finds bad stone, causing you to trip.  A loud splash rings in 
 your ears, as the rocks tumbles into the water below,
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -2877,7 +2862,7 @@ canal far below.  There is a building above the street here, so this
 is actually an underpass.  The building is a massive inn, and is
 able to be entered from Noble square, or the Perfumed Quarter.
 </roomdescription>
-      <flags>5</flags>
+      <flags>32773</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -2897,7 +2882,7 @@ one man picks up a dagger and atacks.  The whole street suddenly
 erupts into a riot, with men and guards hacking at each other.  Within
 just two short minutes, the riot is over, and several men are dead.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -2919,7 +2904,7 @@ Illian.  To the north east, is the famed Square of Tammuz, where
 the Hunters of the Horn took their oath to retrieve the lost Horn
 of Valere, and deliver it to the world.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -2941,7 +2926,7 @@ some other lands.  The street turns into the Square of Tammuz, and is
 also intersected by Tammuz street here.  The weather is getting so hot
 that heat waves are rippling off the sidewalk in front of you.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -2967,7 +2952,7 @@ Lord Brend and the Council of Nine have given all the food to the
 army, while they starve.  A group of guardsmen arrive, and the mob flees
 quickly down the street, screaming curses.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -2991,7 +2976,7 @@ to the north.  The crowd is small here.  Apparently, the center of
 the commotion is to the west, where some guardsman and citizens are
 fighting.  Only a few people are here, and they appear peaceful.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -3013,7 +2998,7 @@ while to the north west, is the Square of Tammuz.  To the south west,
 is the docks of Illian, where you can catch a boat to places all over
 the known world.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -3035,7 +3020,7 @@ down upon the stone, a small pile of chips crumbles free, and drops
 into the waters below.  You gather yourself, and scamper across the
 span before it can give way.  
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -3055,7 +3040,7 @@ with men and women serving Illian.  A sudden gust of hot wind stirs
 your hair.  It is like a desert in the city today.  Even the canals
 seem to be steaming away.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -3078,7 +3063,7 @@ burlies walk the area, looking tough and grinning like fools.  You
 wonder briefly if they will grin when the Tairiens pour over the city
 like a wave of rats.
 </roomdescription>
-      <flags>4</flags>
+      <flags>32772</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -3092,7 +3077,7 @@ like a wave of rats.
   <room>
     <roombasic title="REUSE ME" vnum="26153" zone="260">
       <roomdescription>The air is musty here from all the construction.  A few thick bodies
-men are walking around, carrying huge rocks you don&apos;t want to imagine
+men are walking around, carrying huge rocks you don't want to imagine
 lifting.  The eyeball you and your weapons, and continue on quietly.
 </roomdescription>
       <flags>9</flags>
@@ -3142,7 +3127,7 @@ other side, selling food or rooms.  A man with no teeth staggers up
 to you, and begs for a copper coin.  You press one into his hand for
 no other reason than to escape the stench rolling off his body.
 </roomdescription>
-      <flags>154</flags>
+      <flags>32922</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -3161,7 +3146,7 @@ crone staggers in from a corner, and cackles gleefully.  &quot;\c08Need some
 herbs do you sonny?\c00&quot;  She pokes you in your gut with her walking
 stick a few times, and grunts.
 </roomdescription>
-      <flags>24</flags>
+      <flags>32792</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -3175,7 +3160,7 @@ stick a few times, and grunts.
 some time, and a thick coating of dust covers everything.  The is a 
 large sign on the wall which says &quot;\c08FOR RENT, contact Feran for details.\c00&quot;
 </roomdescription>
-      <flags>8</flags>
+      <flags>32776</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -3190,7 +3175,7 @@ streets crowded with people.  A rank smell fills your nostrils, as a
 small group of beggars passes by you.  Several tall masts of sailing
 ships are anchored at the docks, fluttering wildly with multicolored flags.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -3212,7 +3197,7 @@ but not quite so bad as other areas.  A sudden rank smell fills your
 nostrils, but you are clueless to the source.  A small group of men
 walk through the area then, and the source becomes readily apparent.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -3233,7 +3218,7 @@ from the large piles of decayed fish bodies on the floor.  A rotten
 stench rolls into your nose, and it makes you want to throw up.  Who-
 ever did live here, didnt clean for a few years.
 </roomdescription>
-      <flags>8</flags>
+      <flags>32776</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -3248,7 +3233,7 @@ than just commoners here.  A few nobles mix in with the crowd, and
 even a Council member!  Several large men are lounging around the place,
 looking deadly.  They must be the bouncers for this place.
 </roomdescription>
-      <flags>24</flags>
+      <flags>32792</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -3327,7 +3312,7 @@ wonder if it is from all the fisherman wandering this district.  This
 is where all the common laborers of the city venture, where they are
 accepted freely, and their tastes fulfilled.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -3342,7 +3327,7 @@ for commoners.  You wonder why for awhile, and your eyes turn to a
 small building to the south.  It has some foriegn looking words, but
 the crude drawing of a nude woman is all the answer you need.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -3364,7 +3349,7 @@ of it.  One man, lunges from the door, and bowls you off your feet.
 He smiles at you, and staggers off.  You climb to your feet and curse
 as you feel your side, and your pouch is gone.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -3388,7 +3373,7 @@ the west, where some sort of party is going on.  You look around, but
 no one is near you.  The party seems very loud and inviting compared
 to this dismal quiet.  Perhaps you should enter the inn and join in.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -3412,7 +3397,7 @@ docks you walk.  Fishermen freely swagger about, singing loudly, and
 carrousing the streets in drunken stupors.  The one good thing about
 these commoners, they are not so stiff and uncaring as the nobles.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -3437,7 +3422,7 @@ swearing loudly, and fingering weapons.  One of them looks you up and
 down, then smirks.  A small patrol of guardsman march into the area,
 nod briskly, and move on, always vigilant and aware.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -3459,9 +3444,9 @@ nod briskly, and move on, always vigilant and aware.
       <roomdescription>The docks are just to the south now, and you dont need your eyes to
 tell you that.  A rotten stench rolls off the water.  Something smells
 wrong here, and its not the water.  A few guardsmen are here, but not
-many.  Odd thing really, even the guards don&apos;t come into this area often.
+many.  Odd thing really, even the guards don't come into this area often.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -3485,7 +3470,7 @@ you wonder why it is a desserted alley now.  Not exactly empty actually,
 there are several homeless men, and a many large rats, screeching
 loudly.  They glare at you with beady red eyes.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -3509,7 +3494,7 @@ that cover so much of Illian appear to have weakened here.  There is
 a large canal to the east, and there is no railing.  \c08Beware, the
 bridge do be out!\c00&quot; is scrawled on a paper hanging here.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -3534,7 +3519,7 @@ bridge do be out!\c00&quot; is scrawled on a paper hanging here.
   </room>
   <room>
     <roombasic title="REUSE ME" vnum="26179" zone="260">
-      <roomdescription>This is the courtyard of the Assembly&apos;s palace, and it is heavily populated
+      <roomdescription>This is the courtyard of the Assembly's palace, and it is heavily populated
 with soldiers and citizens of Illian, all marching around and talking
 of daily affairs within the city.  A golden and green liveried servant
 walks by, humming softly.  He turns, and says &quot;May I help you good sir?&quot;
@@ -3546,7 +3531,7 @@ walks by, humming softly.  He turns, and says &quot;May I help you good sir?&quo
   </room>
   <room>
     <roombasic title="REUSE ME" vnum="26180" zone="260">
-      <roomdescription>This is the courtyard of the Assembly&apos;s Palace.  It is large, and three
+      <roomdescription>This is the courtyard of the Assembly's Palace.  It is large, and three
 buildings are here.  To the west, and to the south.  A few guardsman
 and petitoning citizens wander this place, and most do not pay you
 and mind.  A few glance curiously at your weapons, but nothing else
@@ -3590,7 +3575,7 @@ attractive woman lays on the bed, wearing nothing but her skin, and you
 wipe another bead of sweat from your face.  She smiles at you broadly,
 and invites you to sit and stay awhile.
 </roomdescription>
-      <flags>8</flags>
+      <flags>32776</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -3604,7 +3589,7 @@ and invites you to sit and stay awhile.
 The are all drapped in revealing silks, and smile at you coyly.  A
 sudden bead of sweat trails down your face.  Funny, it isnt very hot in here.  
 </roomdescription>
-      <flags>8</flags>
+      <flags>32776</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -3623,7 +3608,7 @@ not uncommon in this area, and some of them are quite large.  To be
 bit by a ten foot Green Striker is almost certain death, and you have
 no desire to meet Old Grimm just yet.
 </roomdescription>
-      <flags>9</flags>
+      <flags>32777</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -3638,7 +3623,7 @@ light sources, including several lanterns, torches, lamp oil, and
 many, many other products.  A tall striking man swaggers from behind
 a counter, and grins at you insolently.
 </roomdescription>
-      <flags>136</flags>
+      <flags>32904</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -3650,7 +3635,7 @@ a counter, and grins at you insolently.
     <roombasic title="an empty shop" vnum="26187" zone="260">
       <roomdescription>This is an empty building, awaiting a new owner.
 </roomdescription>
-      <flags>8</flags>
+      <flags>32776</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -3666,7 +3651,7 @@ moments, he holds out a hat, and smiles again.  Eyeballing the single
 silver coin you drop in, he frowns at it, then you.  A loud &quot;hrumpphh&quot;,
 and he stalks off to the north.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -3687,7 +3672,7 @@ is shining so brightly your eyes hurt, and the city is swealtering.
 A bead of sweat drips into your eye, and you wipe it away with a sigh.
 The stench from the docks, combined with the heat, is turning your stomach.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -3708,7 +3693,7 @@ For a special price, she will divine your future for you.  To set up
 an appointment (good RP), mail Feran with a time.  Her guesses are 
 rarely wrong rumor says, but you think she is simply a crafty old woman.
 </roomdescription>
-      <flags>8</flags>
+      <flags>32776</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -3723,7 +3708,7 @@ will find here, will be the rats.  From the stench of this shack, the
 rats might not even deign to live here.  Still, it might be a safe
 place for you to rest..
 </roomdescription>
-      <flags>8</flags>
+      <flags>32776</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -3776,54 +3761,102 @@ A oily concoction which must have coated the blade.  Poison?
     </roombasic>
   </room>
   <room>
-    <roombasic title="REUSE ME" vnum="26196" zone="260">
-      <roomdescription>This is the South Western Sea Tower of Illian.  It provides a very
-good view to the Sea of Storms to the south.  There are a large number
-of Guards lounging around, and a large catapult as well.  Aparently,
-The Council may be expecting a sea strike from Tear when the War hits.
-Several large boulders, and barrels of pitch lie around here, waiting
-to be shot at Tairien galleys.
+    <roombasic title="The Galley" vnum="26196" zone="260">
+      <roomdescription>   This room is a compact and orderly kitchen.  The smell of simmering
+food and exotic spices fills the air.  Pots, pans and cooking utensils
+hang from clever latched hooks from the ceiling and several casks, barrels
+and crates hold various foodstuffs and spices.  A butcher block table is
+neat and orderly, with small and large bowls of polished wood ready to
+receive the ingredients of the next meal.  A couple of chairs are
+arraigned to either side of the table, low, backless and wooden, they none
+the less look comfortable.  The oven and stove is a clever affair, cast
+iron and set into a low box of copper plate surrounded by sand.    
 </roomdescription>
       <flags>9</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
+    <exit direction="north" keyword="door north" exitinfo="3" keynum="0" toroom="26197">
+      <description/>
+    </exit>
   </room>
   <room>
-    <roombasic title="REUSE ME" vnum="26197" zone="260">
-      <roomdescription>There is a small pile of weapons here, obviosly placed so any passing
-guards may scoop them up in haste.  The way this city is fortified
-now, you think they might actually be able to hold off the Dragon
-Reborns army for quite soem time..unless he and his Asha&apos;man spearhead
-the attack.
+    <roombasic title="The Dining Cabin" vnum="26197" zone="260">
+      <roomdescription>   Dark paneled walls have lanterns on gimbals that stay upright in the
+worst of weathers and are hung with many small oil paintings of various
+lands.  A narrow railed staircase leads up along the port side of the
+room, and two large armchairs have been bolted to the floorboards in the
+alcove beneath it.  The room is dominated by a massive oak dining table,
+which is secured in place, lengthwise across the room.  It is laid out
+with fine domani lace, and elegant hardwood chairs are bolted at intervals
+around it.  Secure on the floor there stretches a broad expanse of deeply
+piled carpet, of a pattern imported from Shaara.  Towards the rear wall of
+the Cabin, several sturdily shuttered bookshelves are attached to the
+wall, and a low benches are set into the walls, in a manner which allows
+them to be folded up and latched in place.  Several more cabinets reside
+near the front of the room, likewise latched, these containing a
+suprisingly delicate and refined set of tableware.    
 </roomdescription>
-      <flags>9</flags>
-      <sector>City</sector>
+      <flags>74</flags>
+      <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
+    <exit direction="south" keyword="door south" exitinfo="3" keynum="0" toroom="26196">
+      <description/>
+    </exit>
+    <exit direction="up" keyword="" exitinfo="0" keynum="0" toroom="26198">
+      <description/>
+    </exit>
   </room>
   <room>
-    <roombasic title="REUSE ME" vnum="26198" zone="260">
-      <roomdescription>The walls here are strong looking, and firm.  They look as if new
-construction took place to fortify them.  A warm wind blows on you
-from somewhere outside, and you wipe your neck in anoyence.  They heat
-in the city is unbearable now.
+    <roombasic title="the Captain's Cabin" vnum="26198" zone="260">
+      <roomdescription>   A heavy oak door opens inward on this room, off of the deck of The
+Maiden's Blade.  The rear wall of this space sports two banks of thickly
+shuttered windows, which typically stand open, to either side of the wall.
+Between the two sets of windows, the wall is ornamented with a massive map
+of the known world, delicately scribed in exquisite detail, and picked out
+in expensive colored inks.  Below the map, placed prominently at the back
+of the room, stands a heavy wooden desk, with a broad empty surface.  In
+the space before the desk there is a broad open path straight to the main
+door.  To the port side of the cabin, a narrow set of stairs leads down
+belowdecks, and to the starboard side of the path there is bolted a small
+wooden table, surrounded by several chairs, likewise secured to the floor.
+To the sides are one or two windows, much smaller than the ones against
+the rear wall, but the wall space is dominated by a series of chart
+shalves, map cabinets, and various navigational paraphenalia.    
 </roomdescription>
-      <flags>9</flags>
+      <flags>74</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
+    <exit direction="south" keyword="door south" exitinfo="3" keynum="0" toroom="26199">
+      <description/>
+    </exit>
+    <exit direction="down" keyword="" exitinfo="0" keynum="0" toroom="26197">
+      <description/>
+    </exit>
   </room>
   <room>
-    <roombasic title="REUSE ME" vnum="26199" zone="260">
-      <roomdescription>The wall here is oddly made.  You can see a slight crack running along
-the edge of it, and faint light shining through.  A guard looks at you
-oddly, and begins speaking to another group of guardsman.
+    <roombasic title="The deck of the Maiden's Blade" vnum="26199" zone="260">
+      <roomdescription>   You stand upon the broad deck planks of The Maiden's Blade.  The deck
+runs near 150 feet from the peak of the slightly raised forecastle to the
+canted front wall of the rear cabin.  Steep stairs running up to either
+side of the central door, which is sunken two steps below the deck.  
+Graceful walls sweep down to the outside of either stair, melding with the
+light graceful rails that run the length of the deck.  Two sturdy raked
+masts rise high from the relatively narrow deck, and a third shorter spar
+rises from the center of the elongated rear castle.  The Blade's
+triangular sails are furled at the moment, but make an impressive sight
+nonetheless.  Between the two primary masts, a pair of broad trap doors
+hang open to the cargo space below.    
 </roomdescription>
-      <flags>9</flags>
+      <flags>65606</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
+    <exit direction="north" keyword="door north" exitinfo="3" keynum="0" toroom="26198">
+      <description/>
+    </exit>
   </room>
   <room>
     <roombasic title="REUSE ME" vnum="26200" zone="260">
@@ -3857,7 +3890,7 @@ their trade with other cities, or their luck catching the bounty of
 the sea.  Many of the boats return empty, as this unatural heat has
 nearly destroyed the fishing industry.
 </roomdescription>
-      <flags>4</flags>
+      <flags>32772</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -3879,7 +3912,7 @@ Unfortunately, Illianiers have been banned from travelling to Tear,
 or trading with Tairien merchants, and that has debilitated Illians
 economy, forcing many citizens into destitution.
 </roomdescription>
-      <flags>4</flags>
+      <flags>32772</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -3973,7 +4006,7 @@ quiet, and smells very clean.  To the far south, is the entrance from
 the Perfumed Quarter of Illian.  A small table is here, holding a few
 scarce pieces of fruit.
 </roomdescription>
-      <flags>8</flags>
+      <flags>32776</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
@@ -3991,7 +4024,7 @@ scarce pieces of fruit.
 A tall man with a large cudgel sits here, making sure the inn remains
 orderly and respectable.  He nods at you, and smiles knowingly.
 </roomdescription>
-      <flags>8</flags>
+      <flags>32776</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
@@ -4011,7 +4044,7 @@ orderly and respectable.  He nods at you, and smiles knowingly.
 labeled &quot;\c10Guest Room A: Do not Disturb\c00&quot;.  The hallway continues to
 the east, and the other rooms.  Niela walks by and smiles at you happily.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
@@ -4029,7 +4062,7 @@ the east, and the other rooms.  Niela walks by and smiles at you happily.
 behind a door somewhere nearby.  Your eyebrows shoot up as you realize
 the exact source of the sounds...well, at least the inn is popular.
 </roomdescription>
-      <flags>8</flags>
+      <flags>32776</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
@@ -4044,7 +4077,7 @@ This area contains the private rooms for people to rent.  There is
 another entrance and exit to the inn to the far north.  It leads to
 Noble Square, where food and water is also available.
 </roomdescription>
-      <flags>8</flags>
+      <flags>32776</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
@@ -4079,7 +4112,7 @@ Noble Square, where food and water is also available.
 of the deep \c06blue\c00 water.  Large mooring stones are here, so
 ships may freely dock, and take people to places far away.
 </roomdescription>
-      <flags>2</flags>
+      <flags>32770</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -4096,7 +4129,7 @@ ships may freely dock, and take people to places far away.
 of the deep \c06blue\c00 water.  Large mooring stones are here, so
 ships may freely dock, and take people to places far away.
 </roomdescription>
-      <flags>2</flags>
+      <flags>32770</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -4113,7 +4146,7 @@ ships may freely dock, and take people to places far away.
 of the deep \c06blue\c00 water.  Large mooring stones are here, so
 ships may freely dock, and take people to places far away.
 </roomdescription>
-      <flags>2</flags>
+      <flags>32770</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -4133,7 +4166,7 @@ ships may freely dock, and take people to places far away.
 of the deep blue water.  Large mooring stones are here, so
 ships may freely dock, and take people to places far away.
 </roomdescription>
-      <flags>2</flags>
+      <flags>32770</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
@@ -4153,7 +4186,7 @@ ships may freely dock, and take people to places far away.
 of the deep blue water.  Large mooring stones are here, so
 ships may freely dock, and take people to places far away.
 </roomdescription>
-      <flags>2</flags>
+      <flags>32770</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
@@ -4170,7 +4203,7 @@ ships may freely dock, and take people to places far away.
 of the deep \c06blue\c00 water.  Large mooring stones are here, so
 ships may freely dock, and take people to places far away.
 </roomdescription>
-      <flags>2</flags>
+      <flags>32770</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
@@ -4187,7 +4220,7 @@ ships may freely dock, and take people to places far away.
 of the deep blue water.  Large mooring stones are here, so
 ships may freely dock, and take people to places far away.
 </roomdescription>
-      <flags>2</flags>
+      <flags>32770</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
@@ -4201,7 +4234,7 @@ ships may freely dock, and take people to places far away.
 of the deep \c06blue\c00 water.  Large mooring stones are here, so
 ships may freely dock, and take people to places far away.
 </roomdescription>
-      <flags>2</flags>
+      <flags>32770</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
@@ -4317,7 +4350,7 @@ thought crosses your mind &quot;\c08The storm is coming.\c00&quot;
     <roombasic title="REUSE ME" vnum="26235" zone="260">
       <roomdescription>As you step onto the roof, you see two men circling each other with
 swords drawn.  The older and deadlier looking man eyes you, and steps
-behind a small pile of rocks for a moment.  You look behind and he&apos;s
+behind a small pile of rocks for a moment.  You look behind and he's
 gone!  The younger one holds his sword out, and prepares to fight you.
 </roomdescription>
       <flags>194</flags>
@@ -4327,7 +4360,7 @@ gone!  The younger one holds his sword out, and prepares to fight you.
   </room>
   <room>
     <roombasic title="REUSE ME" vnum="26236" zone="260">
-      <roomdescription>This is the antichamber to Feran&apos;s private room.  It is for private
+      <roomdescription>This is the antichamber to Feran's private room.  It is for private
 use only, and should not be manhandled by those without permission.
 Getting caught in here if you are not an Imm is a health hazzard.
 </roomdescription>

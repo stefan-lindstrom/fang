@@ -1,69 +1,98 @@
-#29400
-a shiny silver key~
-a shiny silver key~
-An unfinished object is lying here.~
-~
-18 0 1
-0 0 0 0
-0 0 0
-#29401
-a burnished bronze key~
-a burnished bronze key~
-Something lying in the dirt catches your eye~
-~
-18 0 1
-0 0 0 0
-0 0 0
-#29402
-black steel armband~
-a \c23patterned black steel \c00armband~
-A tattered pile of rags lies here.~
-~
-11 0 257
-0 0 0 0
-3 0 0
-E
-patterned black steel armband~
-Black entertwining snakes make up the pattern on this armband.
-~
-A
-2 2
-A
-6 -2
-A
-13 50
-A
-19 10
-A
-12 50
-A
-17 -25
-#29403
-pitch black dagger~
-a \c23pitch black \c00dagger~
-a short black dagger lies here.~
-~
-9 136 8193
-20 4 10 14
-2 0 0
-E
-dagger pitch~
-\c23T\c00his black dagger seems makes you feel uneasy to hold it.
-It's pitch black blade is short and fat, and the dark sculpted hilt
+<?xml version="1.0"?>
+<objects>
+  <object vnum="29400" name="a shiny silver key" special="NONE">
+    <description>An unfinished object is lying here.</description>
+    <shortdesc>a shiny silver key</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="18" wear="1" extra="0"/>
+      <data weight="0" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="29401" name="a burnished bronze key" special="NONE">
+    <description>Something lying in the dirt catches your eye</description>
+    <shortdesc>a burnished bronze key</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="18" wear="1" extra="0"/>
+      <data weight="0" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="29402" name="black steel armband" special="NONE">
+    <description>A tattered pile of rags lies here.</description>
+    <shortdesc>a \c23patterned black steel \c00armband</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="DEX" modifier="2"/>
+    <objaffect location="CHA" modifier="-2"/>
+    <objaffect location="MAXHIT" modifier="50"/>
+    <objaffect location="DAMROLL" modifier="10"/>
+    <objaffect location="MAXMANA" modifier="50"/>
+    <objaffect location="ARMOR" modifier="-25"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="11" wear="257" extra="0"/>
+      <data weight="3" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <exdesc keyword="patterned black steel armband">
+      <description>Black entertwining snakes make up the pattern on this armband.
+</description>
+    </exdesc>
+  </object>
+  <object vnum="29403" name="pitch black dagger" special="NONE">
+    <description>A short black dagger lies here.</description>
+    <shortdesc>a \c23pitch black \c00dagger</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="CHA" modifier="-2"/>
+    <objaffect location="DEX" modifier="3"/>
+    <objaffect location="MAXHIT" modifier="50"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="20" value2="4" value3="10" value4="14"/>
+      <flags type="9" wear="8193" extra="136"/>
+      <data weight="2" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <exdesc keyword="dagger pitch">
+      <description>\c23T\c00his black dagger seems makes you feel uneasy to hold it.
+It&apos;s pitch black blade is short and fat, and the dark sculpted hilt
 feels almost slippery.
-~
-A
-6 -2
-A
-2 3
-A
-13 50
-#29404
-test object~
-a test object~
-A worthless test object lies here.~
-~
-11 0 1
-0 0 0 0
-0 0 0
-$~
+</description>
+    </exdesc>
+  </object>
+  <object vnum="29404" name="test object" special="NONE">
+    <description>A worthless test object lies here.</description>
+    <shortdesc>a test object</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="11" wear="1" extra="0"/>
+      <data weight="0" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+</objects>

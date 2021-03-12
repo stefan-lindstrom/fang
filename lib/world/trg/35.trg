@@ -31,9 +31,58 @@ return 0
  else
 %force% %actor.name% north
 ~
+#3502
+Rebel Sedai Board Guardian~
+0 gi 100
+~
+if (%actor.level% < 200)
+     if ((%actor.guild(50)% == Member) || (%actor.guild(50)% == GL))
+     wait 1
+     emote curtseys to %actor.name% and says,"&WLight Illumine.&n"
+     else
+     wait 1
+     frown %actor.name%
+     wait 1
+     %force% %actor.name% east
+     end
+   else
+     wait 1
+     emote whimpers loudly when the all powerful %actor.name% approaches.
+   end
+~
+#3503
+Enter Trig~
+2 g 100
+~
+ if (%actor.level% < 200)
+   if (%actor.guild(50)% == Member || %actor.guild(50)% == GL)
+         return 1
+      else
+         %send% %actor.name% &R&uYou are not a allowed here.&n
+         return 0
+      end
+   else
+      return 1
+   end
+~
+#3504
+Guard~
+2 g 100
+~
+    if (%actor.level% < 200)
+if (%actor.guild(51)% == Member || %actor.guild(51)% == GL)
+return 1
+else
+%send% %actor.name% &R&uYou are not a allowed here.&n
+return 0
+end
+else
+return 1
+end 
+~
 #3550
 Writhing snake trigger~
-1 b 50
+1 b 5
 ~
 %echo% The snakes writhe and flail about, the miscellaneous tentacles whipping about at random!
 wait 20
@@ -41,7 +90,7 @@ detach 3552 %self.id%
 ~
 #3551
 Writhing Snake Trig Part 2~
-1 ghijl 100
+1 ghijl 10
 ~
 %echoaround% %actor.name% The snakes writhe and flail about, the miscellaneous tentacles whipping about at random!
 %send% %actor.name% You suddenly notice as one of the snakes nibbles on your bum!
@@ -61,36 +110,71 @@ detach 18100 %self.id%
 ~
 #3600
 RW Guild EQ~
-1 gj 100
+1 j 100
 ~
-   if (%actor.guild(51)% == Member)
-return 1
-else
-return 0
-   wait 2
-   %echo% %actor.name% is \\c08NOT\\c00 Guilded in \\c14Rebel Warders!\\c00
-   otransform 3580
-attach 3550 %self.id%
-attach 3551 %self.id%
-attach 3552 %self.id%
+\c00
 ~
 #3622
 room~
 2 g 100
 ~
-if (%actor.name% != Koltur)
+if %actor.name% == Koltur || %actor.name% == Llewellyn
 wait 2 s
-%echo% You are not allowed to be here %actor.name%!
-wait 5
-%damage% %actor.name% 2000
-%teleport% %actor.name% 6252
+   wsend %actor.name% Greetings %actor.name%. You were welcome.
+return 1
+else
+   %send% %actor.name% \\c08You are not allowed to be here.\\c00
+   %send% %actor.name% \\c08Pain fills your being, your heart suddenly stops.\\c00
+   %damage% %actor.name% 25000
+wait 50
+   %teleport% %actor.name% 6299
+return 0
 end
-if (%actor.name% == Koltur)
-wait 2 s
-%echo% Greetings %actor.rank(51)% %actor.name% it is good you have come.
-wait 10
-%echo% Welcome to your Inner Sanctum.
+~
+#3623
+RoomTrig~
+2 c 100
+say~
+if (%arg% == tempus)
+ wdoor 3622 west room 11889
+ %force% %actor.name% west
+ wdoor 3622 west purge
 end
+if (%arg% == daene)
+ wdoor 3622 west room 12
+ %force% %actor.name% west
+wdoor 3622 west purge
+end
+if (%arg% == oval)
+ wdoor 3622 north room 10186
+ %force% %actor.name% north
+ wdoor 3622 north purge
+end
+if (%arg% == baerlon)
+ wdoor 3622 west room 25600
+ %force% %actor.name% west
+ wdoor 3622 west purge
+end
+if (%arg% == whitebridge)
+ wdoor 3622 west room 11800
+ %force% %actor.name% west
+ wdoor 3622 west purge
+end
+~
+#3630
+Rebel Board Blocker~
+2 g 100
+~
+    if (%actor.level% < 200)
+      if (%actor.guild(5)% == Member || %actor.guild(5)% == GL)
+            return 1
+         else
+            %send% %actor.name% &u&BYou are not a allowed here.&n
+            return 0
+         end
+      else
+         return 1
+      end
 ~
 #3650
 WarderBoard Guard Trigger~
@@ -99,12 +183,12 @@ WarderBoard Guard Trigger~
 if (%actor.level% < 200)
   if (%actor.guild(51)% == Member)
   wait 1
-  sayto %actor.name% &WLight Illumine %actor.rank(51)% %actor.name%&n
+sayto %actor.name% &WLight Illumine %actor.rank(51)%.&n
   else
   wait 1
   frown %actor.name%
   wait 1
-  %force% %actor.name% east
+  %force% %actor.name% west
   end
 else
   wait 1

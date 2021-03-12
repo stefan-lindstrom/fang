@@ -1,9 +1,7 @@
-#500
-Tianna Lady girl woman~
-Tianna~
-Lady Tianna Arinvale is here, a small smile on her lips as she studies those about her.
-~
-\c06-
+<?xml version="1.0"?>
+<mobiles>
+  <mobile vnum="500" name="Tianna Lady girl woman" special="NONE">
+    <description>\c06-
 Lady Tianna Arinvale is a striking young woman, with a smile that would send
 most women into fits of rage and drive most men to thoughts of infidelity.
 Her hair is styled in the Cairhienin fashion, piled high upon her head in an
@@ -11,369 +9,618 @@ elegant waterfall of midnight. Her deep brown eyes and long lashes merely
 accentuated by her fair skin and full lips. She nods at those about her,
 enjoying the night of her eighteenth birthday.
 -\c00
-~
-138 65536 0 E
-100 20 10 895 30d100+0 1d1+0
-0 0
-8 8 2 688
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-P
-OnAction "steal"
-Stop
-Emote "Tianna laughs at the attempt at thievery."
-End
-Q
-E
-#501
-wolf large~
-a large wolf~
-A very large wolf is resting comfortably here, eyes shining.
-~
-It looks, err, unfinished.
-~
-10 534576 0 E
-199 -180 -20 895 10d100+0 10d10+50
-0 0
-8 8 1 0
-BareHandAttack: 4
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-Bash: 100
-Trip: 100
-Dirtkick: 100
-Kick: 100
-Disarm: 100
-Stun: 100
-P
-OnAction "northwest" & ! Wolfkin
-Stop
-Action "emote uncurls from his resting position, moving fluidly to his four legs, fur rippling menacingly as his burnished golden eyes force you to back off and not proceed in that direction."
-End
-Q
-E
-#502
-wolf guard board~
-a fierce wolf~
-A fierce looking wolf is hidden here, guarding the board.
-~
-Your typical, fierce, guardian wolf.
-~
-10 84016 0 E
-199 -180 -20 895 30d100+10000 20d20+50
-0 0
-8 8 1 0
-BareHandAttack: 4
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-P
-OnAction "look board" & ! Wolfkin
-Stop
-End
-OnAction "read board" & ! Wolfkin
-Stop
-End
-Q
-E
-#550
-trolloc horned~
-a horned trolloc~
-A horned trolloc sniffs the air here.
-~
-It's a trolloc... ugly... scary... stinks. You know... A trolloc.
-~
-8 0 0 E
-10 10 5 895 1d100+2500 2d10+10
-0 0
-8 8 1 688
-BareHandAttack: 3
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-E
-#589
-mob unfinished~
-a darkhound~
-An unfinished mob stands here.
-~
-It looks, err, unfinished.
-~
-8 0 0 E
-0 20 10 895 1d100+0 1d1+0
-0 0
-8 8 0 688
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-E
-#590
-mob unfinished~
-a dreadlord~
-An unfinished mob stands here.
-~
-It looks, err, unfinished.
-~
-8 0 0 E
-0 20 10 895 1d100+0 1d1+0
-0 0
-8 8 0 688
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-E
-#591
-mob unfinished~
-a darkhound~
-An unfinished mob stands here.
-~
-It looks, err, unfinished.
-~
-8 0 0 E
-0 20 10 895 1d100+0 1d1+0
-0 0
-8 8 0 688
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-E
-#592
-mob unfinished~
-a trolloc~
-An unfinished mob stands here.
-~
-It looks, err, unfinished.
-~
-8 0 0 E
-0 20 10 895 1d100+0 1d1+0
-0 0
-8 8 0 688
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-E
-#593
-mob unfinished~
-a trolloc~
-An unfinished mob stands here.
-~
-It looks, err, unfinished.
-~
-8 0 0 E
-0 20 10 895 1d100+0 1d1+0
-0 0
-8 8 0 688
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-E
-#594
-mob unfinished~
-a greyman~
-An unfinished mob stands here.
-~
-It looks, err, unfinished.
-~
-8 0 0 E
-0 20 10 895 1d100+0 1d1+0
-0 0
-8 8 0 688
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-E
-#595
-draghkar~
-the draghkar~
-A draghkar stands here, its inhuman face and body contorted as it looks about.
-~
-A horrid creature is here, leathery wings curled close to its
+</description>
+    <shortdesc>Tianna</shortdesc>
+    <longdesc>Lady Tianna Arinvale is here, a small smile on her lips as she studies those about her.
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="100" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="30" dsize="100" bonus="0"/>
+      <move ndize="10" dsize="100" bonus="0"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="138"/>
+    <affected one="65536" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnAction" argtype="STRING" argument="steal">
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="Emote" argtype="STRING" argument="Tianna laughs at the attempt at thievery."/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="501" name="wolf large" special="NONE">
+    <description>It looks, err, unfinished.
+</description>
+    <shortdesc>a large wolf</shortdesc>
+    <longdesc>A very large wolf is resting comfortably here, eyes shining.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="199" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="10" dsize="100" bonus="0"/>
+      <move ndize="10" dsize="100" bonus="0"/>
+      <ac>-200</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>200</hitroll>
+      <damroll>50</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="10"/>
+    <affected one="534576" two="0" three="0" four="0"/>
+    <attack type="4"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="10" sides="10" add="200"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnAction" argtype="STRING" argument="northwest">
+      <sideterm number="Wolfkin" not="TRUE" argtype="VOID" argument="NONE"/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="Action" argtype="STRING" argument="emote uncurls from his resting position, moving fluidly to his four legs, fur rippling menacingly as his burnished golden eyes force you to back off and not proceed in that direction."/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="502" name="wolf guard board" special="NONE">
+    <description>Your typical, fierce, guardian wolf.
+</description>
+    <shortdesc>a fierce wolf</shortdesc>
+    <longdesc>A fierce looking wolf stands here, guarding an entrance.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="199" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="30" dsize="100" bonus="10000"/>
+      <move ndize="10" dsize="100" bonus="10000"/>
+      <ac>-200</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>200</hitroll>
+      <damroll>50</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="10"/>
+    <affected one="84016" two="0" three="0" four="0"/>
+    <attack type="4"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="20" sides="20" add="200"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="550" name="trolloc horned" special="NONE">
+    <description>It's a trolloc... ugly... scary... stinks. You know... A trolloc.
+</description>
+    <shortdesc>a horned trolloc</shortdesc>
+    <longdesc>A horned trolloc sniffs the air here.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="10" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="2500"/>
+      <move ndize="10" dsize="100" bonus="2500"/>
+      <ac>50</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>10</hitroll>
+      <damroll>10</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="8"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="3"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="2" sides="10" add="10"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="589" name="mob unfinished" special="NONE">
+    <description>It looks, err, unfinished.
+</description>
+    <shortdesc>a darkhound</shortdesc>
+    <longdesc>An unfinished mob stands here.
+</longdesc>
+    <title/>
+    <chardata gender="NEUTRAL" class="Adventurer" level="0" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="0"/>
+      <move ndize="10" dsize="100" bonus="0"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="8"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="590" name="mob unfinished" special="NONE">
+    <description>It looks, err, unfinished.
+</description>
+    <shortdesc>a dreadlord</shortdesc>
+    <longdesc>An unfinished mob stands here.
+</longdesc>
+    <title/>
+    <chardata gender="NEUTRAL" class="Adventurer" level="0" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="0"/>
+      <move ndize="10" dsize="100" bonus="0"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="8"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="591" name="mob unfinished" special="NONE">
+    <description>It looks, err, unfinished.
+</description>
+    <shortdesc>a darkhound</shortdesc>
+    <longdesc>An unfinished mob stands here.
+</longdesc>
+    <title/>
+    <chardata gender="NEUTRAL" class="Adventurer" level="0" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="0"/>
+      <move ndize="10" dsize="100" bonus="0"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="8"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="592" name="mob unfinished" special="NONE">
+    <description>It looks, err, unfinished.
+</description>
+    <shortdesc>a trolloc</shortdesc>
+    <longdesc>An unfinished mob stands here.
+</longdesc>
+    <title/>
+    <chardata gender="NEUTRAL" class="Adventurer" level="0" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="0"/>
+      <move ndize="10" dsize="100" bonus="0"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="8"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="593" name="mob unfinished" special="NONE">
+    <description>It looks, err, unfinished.
+</description>
+    <shortdesc>a trolloc</shortdesc>
+    <longdesc>An unfinished mob stands here.
+</longdesc>
+    <title/>
+    <chardata gender="NEUTRAL" class="Adventurer" level="0" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="0"/>
+      <move ndize="10" dsize="100" bonus="0"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="8"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="594" name="mob unfinished" special="NONE">
+    <description>It looks, err, unfinished.
+</description>
+    <shortdesc>a greyman</shortdesc>
+    <longdesc>An unfinished mob stands here.
+</longdesc>
+    <title/>
+    <chardata gender="NEUTRAL" class="Adventurer" level="0" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="0"/>
+      <move ndize="10" dsize="100" bonus="0"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="8"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="595" name="draghkar" special="NONE">
+    <description>A horrid creature is here, leathery wings curled close to its
 body as its wide eyes gaze about.
-~
-2129944 48 0 E
-80 -20 -8 895 12d100+800 10d6+35
-0 0
-8 8 0 688
-BareHandAttack: 8
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-Stun: 100
-P
-OnActionTo "push"
-Stop
-End
-Q
-E
-#596
-fade myrddraal~
-the myrddraal~
-A fade stands here, a smile on his lips as he looks at the blasted terrain.
-~
-A myrddraal stands here, surveying the lands about him.
-~
-2269208 524336 0 E
-100 -10 -10 895 15d100+1000 8d6+50
-0 0
-8 8 0 688
-BareHandAttack: 3
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-Bash: 100
-Trip: 100
-Kick: 100
-Disarm: 100
-P
-OnActionTo "push"
-Stop
-End
-OnActionTo "drag"
-Stop
-End
-Q
-E
-#597
-fade myrddraal~
-the myrddraal~
-A myrddraal stands here, his bloodless lips pressed into a thin, cruel line.
-~
-A myrddraal stands here, his sword clutched in one hand as he
+</description>
+    <shortdesc>the draghkar</shortdesc>
+    <longdesc>A draghkar stands here, its inhuman face and body contorted as it looks about.
+</longdesc>
+    <title/>
+    <chardata gender="NEUTRAL" class="Adventurer" level="80" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="12" dsize="100" bonus="800"/>
+      <move ndize="10" dsize="100" bonus="800"/>
+      <ac>-80</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>40</hitroll>
+      <damroll>35</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="2129944"/>
+    <affected one="48" two="0" three="0" four="0"/>
+    <attack type="8"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="10" sides="6" add="40"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnActionTo" argtype="STRING" argument="push">
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="596" name="fade myrddraal" special="NONE">
+    <description>A myrddraal stands here, surveying the lands about him.
+</description>
+    <shortdesc>the myrddraal</shortdesc>
+    <longdesc>A fade stands here, a smile on his lips as he looks at the blasted terrain.
+</longdesc>
+    <title/>
+    <chardata gender="NEUTRAL" class="Adventurer" level="180" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="15" dsize="100" bonus="1000"/>
+      <move ndize="10" dsize="100" bonus="1000"/>
+      <ac>-200</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>30</hitroll>
+      <damroll>50</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="2269208"/>
+    <affected one="524336" two="0" three="0" four="0"/>
+    <attack type="3"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="8" sides="12" add="30"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnActionTo" argtype="STRING" argument="push">
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+    </mobprog>
+    <mobprog main="OnActionTo" argtype="STRING" argument="drag">
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="597" name="fade myrddraal" special="NONE">
+    <description>A myrddraal stands here, his sword clutched in one hand as he
 surveys the lands about him.
-~
-2269208 524336 0 E
-125 -20 -12 895 15d100+1250 9d6+50
-0 0
-8 8 0 688
-BareHandAttack: 3
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-Bash: 100
-Trip: 100
-Kick: 100
-Disarm: 100
-P
-OnActionTo "push"
-Stop
-End
-OnActionTo "drag"
-Stop
-End
-Q
-E
-#598
-fade myrddraal~
-the myrddraal~
-A myrddraal stands here, his eyeless face cruel and cold.
-~
-A Myrddraal stands before you, his black sword clutched in one
+</description>
+    <shortdesc>the myrddraal</shortdesc>
+    <longdesc>A myrddraal stands here, his bloodless lips pressed into a thin, cruel line.
+</longdesc>
+    <title/>
+    <chardata gender="NEUTRAL" class="Adventurer" level="185" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="15" dsize="100" bonus="1250"/>
+      <move ndize="10" dsize="100" bonus="1250"/>
+      <ac>-200</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>40</hitroll>
+      <damroll>50</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="2269208"/>
+    <affected one="524336" two="0" three="0" four="0"/>
+    <attack type="3"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="9" sides="12" add="40"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnActionTo" argtype="STRING" argument="push">
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+    </mobprog>
+    <mobprog main="OnActionTo" argtype="STRING" argument="drag">
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="598" name="fade myrddraal" special="NONE">
+    <description>A Myrddraal stands before you, his black sword clutched in one
 hand, his ebon cloak not moving in the bitter wind.
-~
-2261016 524336 0 E
-165 -55 -20 895 30d100+10000 10d6+50
-0 0
-8 8 0 688
-BareHandAttack: 3
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-Bash: 100
-Trip: 100
-Kick: 100
-P
-OnActionTo "push"
-Stop
-End
-OnActionTo "drag"
-Stop
-End
-OnAction "weave" & Sex "male"
-Stop
-Emote "\c05the blight corrupts the use of \c14saidin\c00\c05, and the weaves dissipate with no affect...\c00"
-End
-OnAction "weave" & Sex "female"
-Stop
-Emote "\c06the blight corrupts the use of \c14saidar\c00\c06, and the weaves dissipate with no affect...\c00"
-End
-OnAction "cast" & Sex "male"
-Stop
-Emote "\c05the blight corrupts the use of \c14saidin\c00\c05, and the weaves dissipate with no affect...\c00"
-End
-OnAction "cast" & Sex "female"
-Stop
-Emote "\c06the blight corrupts the use of \c14saidar\c00\c06, and the weaves dissipate with no affect...\c00"
-End
-Q
-E
-#599
-man old~
-a kindly old man~
-An ancient old man is here, a kind smile on his face.
-~
-An old man stands before you, his kind gaze taking you in. There seems to be much knowledge in those eyes, the brightest blue you have ever seen.
-~
-5210122 327728 0 E
-200 -180 0 895 30d0+10000 1d1+50
-0 0
-8 8 1 688
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-P
-OnEntry & CarryingName "card"
-ActionTo "steal card"
-End
-OnEntry & Carrying 599
-ActionTo "steal card"
-End
-Q
-E
-$
+</description>
+    <shortdesc>the myrddraal</shortdesc>
+    <longdesc>A myrddraal stands here, his eyeless face cruel and cold.
+</longdesc>
+    <title/>
+    <chardata gender="NEUTRAL" class="Adventurer" level="199" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="30" dsize="100" bonus="10000"/>
+      <move ndize="10" dsize="100" bonus="10000"/>
+      <ac>-200</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>75</hitroll>
+      <damroll>50</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="2261016"/>
+    <affected one="524336" two="0" three="0" four="0"/>
+    <attack type="3"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="10" sides="20" add="75"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnActionTo" argtype="STRING" argument="push">
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+    </mobprog>
+    <mobprog main="OnActionTo" argtype="STRING" argument="drag">
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+    </mobprog>
+    <mobprog main="OnAction" argtype="STRING" argument="weave">
+      <sideterm number="Sex" not="FALSE" argtype="STRING" argument="male"/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="Emote" argtype="STRING" argument="\c05the blight corrupts the use of \c14saidin\c00\c05, and the weaves dissipate with no affect...\c00"/>
+    </mobprog>
+    <mobprog main="OnAction" argtype="STRING" argument="weave">
+      <sideterm number="Sex" not="FALSE" argtype="STRING" argument="female"/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="Emote" argtype="STRING" argument="\c06the blight corrupts the use of \c14saidar\c00\c06, and the weaves dissipate with no affect...\c00"/>
+    </mobprog>
+    <mobprog main="OnAction" argtype="STRING" argument="cast">
+      <sideterm number="Sex" not="FALSE" argtype="STRING" argument="male"/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="Emote" argtype="STRING" argument="\c05the blight corrupts the use of \c14saidin\c00\c05, and the weaves dissipate with no affect...\c00"/>
+    </mobprog>
+    <mobprog main="OnAction" argtype="STRING" argument="cast">
+      <sideterm number="Sex" not="FALSE" argtype="STRING" argument="female"/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="Emote" argtype="STRING" argument="\c06the blight corrupts the use of \c14saidar\c00\c06, and the weaves dissipate with no affect...\c00"/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="599" name="man old" special="NONE">
+    <description>An old man stands before you, his kind gaze taking you in. There seems to be much knowledge in those eyes, the brightest blue you have ever seen.
+</description>
+    <shortdesc>a kindly old man</shortdesc>
+    <longdesc>An ancient old man is here, a kind smile on his face.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="200" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="30" dsize="0" bonus="10000"/>
+      <move ndize="10" dsize="100" bonus="10000"/>
+      <ac>0</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>200</hitroll>
+      <damroll>50</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="5210122"/>
+    <affected one="327728" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="200"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnEntry" argtype="STRING" argument="cast">
+      <sideterm number="CarryingName" not="FALSE" argtype="STRING" argument="card"/>
+      <action number="ActionTo" argtype="STRING" argument="steal card"/>
+    </mobprog>
+    <mobprog main="OnEntry" argtype="STRING" argument="cast">
+      <sideterm number="Carrying" not="FALSE" argtype="INT" argument="599"/>
+      <action number="ActionTo" argtype="STRING" argument="steal card"/>
+    </mobprog>
+  </mobile>
+</mobiles>

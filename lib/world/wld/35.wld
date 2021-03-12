@@ -2,11 +2,11 @@
 <rooms>
   <room>
     <roombasic title="The Dirt Road" vnum="3500" zone="35">
-      <roomdescription>A dusty dirt road leads away from the rest of Salidar.
-The prints of numerous boots mark the roadway, most leading
-to the west.
+      <roomdescription>A wide stretch of what was once road stretches out amongst the trees.  
+There are tracks leading in all directions, but bootprints lead primarily
+to the west.    
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -23,34 +23,27 @@ to the west.
     </exit>
   </room>
   <room>
-    <roombasic title="Warder&apos;s Board Room" vnum="3501" zone="35">
-      <roomdescription>Several Warders stand here, reading a large bulletin board
-hung upon one wall.  A hot breeze stirs their cloaks as they
-stand restlessly.
+    <roombasic title="Warder's Board Room" vnum="3501" zone="35">
+      <roomdescription>Nothing fancy here but the board for warders.
 </roomdescription>
       <flags>24</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
-    <exit direction="east" keyword="heavy wooden door east" exitinfo="1" keynum="0" toroom="3520">
-      <description>This exit goes to the foyer.
-</description>
+    <exit direction="west" keyword="" exitinfo="0" keynum="0" toroom="1050">
+      <description/>
     </exit>
-    <exit direction="northwest" keyword="door" exitinfo="3" keynum="0" toroom="4076">
-      <description>A small door to the street.
-</description>
-    </exit>
+    <dgscript vnum="3504"/>
   </room>
   <room>
     <roombasic title="The Dirt Road" vnum="3502" zone="35">
-      <roomdescription>A small garden lines the side of the dirt road.  It remains
-quite lovely despite the amount of dust that swirls around
-in the oppressive heat.  Up ahead, in the distance, a row of
-wooden houses are just visible.  Several figures can be
-seen walking near them, some seeming to disappear into
-the background as they walk along.
+      <roomdescription>It looks as if a small garden once stood at the side of this snowy road.
+The remains of frozen and dead plants adorn the area, subtle hints that
+people close by care about the area.  There are houses in the distance,
+the roof of each covered in snow.  There doesn't seem to be a soul around,
+the area recently abandoned, perhaps.    
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -69,18 +62,16 @@ the background as they walk along.
   </room>
   <room>
     <roombasic title="An Intersection" vnum="3503" zone="35">
-      <roomdescription>A large well traveled dirt road branches off to the south
-from here. Looking that way, you see a number of young men
-in the distance rubbing sore muscles and gripping wooden
-swords. Not too far down the main road you see four small 
-buildings
+      <roomdescription>It looks as if the snowy road branches off into many different directions.
+There are wide spaces where there are no trees or houses, purely a blanket
+of snow instead.  Not too far down the main road is a row of four houses,
+each gleaming white during the day.    
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
-    <exit direction="north" keyword="Not set yet...
-" exitinfo="0" keynum="0" toroom="3570">
+    <exit direction="north" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="3570">
       <description>None
 </description>
     </exit>
@@ -107,7 +98,7 @@ offering advice and comments as the sparring continues.
 Many pairs of Trainees and Students spar here, but even
 more commotion can be heard from the east and the south.
 </roomdescription>
-      <flags>12</flags>
+      <flags>32780</flags>
       <sector>Field</sector>
       <special>NONE</special>
     </roombasic>
@@ -140,7 +131,7 @@ suggestions to the combatants.  To the south, a worn dusty trail leads to
 the pond in which Trainees, use for balance, and occasionally for a
 refreshing swim.    
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>Field</sector>
       <special>NONE</special>
     </roombasic>
@@ -157,17 +148,17 @@ refreshing swim.
     </exit>
   </room>
   <room>
-    <roombasic title="Sparring Circle &apos;A&apos;" vnum="3506" zone="35">
+    <roombasic title="Sparring Circle 'A'" vnum="3506" zone="35">
       <roomdescription>You are standing in the center of a dirt circle that is about 30 feet in 
 diameter. There is a single row of benches encircling the area. This circle
 is used for sparring matches.  There is a sign sticking in the ground here.
 </roomdescription>
-      <flags>16</flags>
+      <flags>32784</flags>
       <sector>Field</sector>
       <special>NONE</special>
     </roombasic>
     <exit direction="north" keyword="&lt;NONE&gt;" exitinfo="0" keynum="-1" toroom="3507">
-      <description>Northward is the Instructor&apos;s Training area.
+      <description>Northward is the Instructor's Training area.
 </description>
     </exit>
     <exit direction="south" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="3519">
@@ -175,7 +166,7 @@ is used for sparring matches.  There is a sign sticking in the ground here.
 </description>
     </exit>
     <exit direction="west" keyword="&lt;NONE&gt;" exitinfo="0" keynum="-1" toroom="3505">
-      <description>Westward is the Warder&apos;s Training area.
+      <description>Westward is the Warder's Training area.
 </description>
     </exit>
     <exdesc keyword="(null)">
@@ -184,7 +175,7 @@ is used for sparring matches.  There is a sign sticking in the ground here.
     </exdesc>
   </room>
   <room>
-    <roombasic title="Instructor&apos;s Sparring Field" vnum="3507" zone="35">
+    <roombasic title="Instructor's Sparring Field" vnum="3507" zone="35">
       <roomdescription>This sparring ground is used by the Warder Instructors.
 Often they will gather here to spar against one another, learning
 and improving the skills which they in turn pass on to thier
@@ -194,7 +185,7 @@ The men practicing here move with deadly grace and efficiency,
 watched over by the Warder Master Instructor, who looms
 nearby at times.
 </roomdescription>
-      <flags>4</flags>
+      <flags>32772</flags>
       <sector>Field</sector>
       <special>NONE</special>
     </roombasic>
@@ -221,7 +212,7 @@ A few grim faced Warders walk here, and younger trainees
 watch their elders with high respect.  Small houses lie to
 the north and to the west, while a pathway leads off to the east.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -234,12 +225,12 @@ the north and to the west, while a pathway leads off to the east.
     <roombasic title="Instructors Meeting Hall" vnum="3509" zone="35">
       <roomdescription>A polished wooden table dominates this room. A spread of
 chairs surround the table, each one representing an
-Instructor&apos;s spot. The table is used in Decision making,
+Instructor's spot. The table is used in Decision making,
 or when urgent actions must be taken. On the walls are
 banners from all over the Continent, such as the Lion
 of Andor, and the Hawk of Fal Dara.
 </roomdescription>
-      <flags>4122</flags>
+      <flags>36890</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
@@ -252,22 +243,19 @@ of Andor, and the Hawk of Fal Dara.
       <roomdescription>This room serves as office and dwelling place for the
 Master at Arms of the Salidar Warders.  A beautiful desk sits
 in the center of the room, artfully carved with scrollwork.
-Across it&apos;s polished surface lie many scattered papers, some
+Across it's polished surface lie many scattered papers, some
 weighted against the breeze by ink bottles, or small smooth
 rocks.  On the right hand wall hangs a large map, depicting
 the surrounding area.  Parts of it are marked with red chalk,
 showing military encampments,  points of defense, and
 areas of special interest.  In the back corner of the room sits
-a sturdy cot, a woolen blanket neatly folded at it&apos;s foot.
+a sturdy cot, a woolen blanket neatly folded at it's foot.
 Below the foot of the bed sits a well-polished, oak chest.
 </roomdescription>
-      <flags>30</flags>
+      <flags>32798</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
-    <exit direction="north" keyword="door blade heron" exitinfo="31" keynum="3695" toroom="3599">
-      <description>&lt;NONE&gt;</description>
-    </exit>
     <exit direction="south" keyword="wood door exit" exitinfo="9" keynum="3511" toroom="3525">
       <description>A heavy wooden door is to the south marking the exit.
 </description>
@@ -285,8 +273,8 @@ a silver chain and bracelet lie next to a locust shaped
 helm. A burnished White Breastplate adorned with a
 sunburst is hung next to fine Heron-Marked White sword.
 On the bottom of the Cabinet, there are a multitude of
-Trolloc insignia&apos;s, and surprisingly a load of the
-mryddraal&apos;s motionless cloaks.
+Trolloc insignia's, and surprisingly a load of the
+mryddraal's motionless cloaks.
 </description>
     </exdesc>
     <exdesc keyword="closet">
@@ -313,7 +301,7 @@ and a few with Heron-Markings.
     <roombasic title="Path to the Meeting Hall" vnum="3511" zone="35">
       <roomdescription>This Room is Unfinished.
 </roomdescription>
-      <flags>28</flags>
+      <flags>32796</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
@@ -337,7 +325,7 @@ Manetheren hangs on the wall here.
     </exdesc>
     <exdesc keyword="cot">
       <description>This extra large cot awaits use, a neatly folded pile of
-blankets resting at it&apos;s head.
+blankets resting at it's head.
 </description>
     </exdesc>
     <exdesc keyword="chest">
@@ -345,7 +333,7 @@ blankets resting at it&apos;s head.
 </description>
     </exdesc>
     <exdesc keyword="desk">
-      <description>This old wooden desk has seen much use.  It&apos;s nicked
+      <description>This old wooden desk has seen much use.  It's nicked
 and gouged surface shines slightly from the oil that has
 been carefully rubbed into it, partially hiding the damage.
 
@@ -364,7 +352,7 @@ and to the west can be seen a large two story building.  Young
 men wander in and out of the wooden structure, on their way to
 practice, or to do chores.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -381,16 +369,13 @@ practice, or to do chores.
     <roombasic title="Trainee Housing" vnum="3513" zone="35">
       <roomdescription>A number of beds line all four walls, each bed with a thin
 sheet and a woolen blanket.  At the foot of each bed is a chest
-which probably contains the trainee&apos;s personal belongings.
+which probably contains the trainee's personal belongings.
 Over a few of the beds hang banners, reminders of home.
 </roomdescription>
-      <flags>8</flags>
+      <flags>32776</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
-    <exit direction="north" keyword="&lt;NONE&gt;" exitinfo="2" keynum="0" toroom="3588">
-      <description>&lt;NONE&gt;</description>
-    </exit>
     <exit direction="south" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="3533">
       <description> to the south is the entry hallway to this complex
 </description>
@@ -406,7 +391,7 @@ Over a few of the beds hang banners, reminders of home.
 the many beds which line the walls, and spill over into the center
 of the floor.  Very little adorns the walls here.
 </roomdescription>
-      <flags>8</flags>
+      <flags>32776</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
@@ -423,12 +408,12 @@ of the floor.  Very little adorns the walls here.
     <roombasic title="Gardened Square" vnum="3515" zone="35">
       <roomdescription>The garden pathway ends here, opening into a paved square.
 Warders and Trainees stand around a well to catch a quick 
-drink of water against the heat, discussing the day&apos;s 
+drink of water against the heat, discussing the day's 
 training, or news that has filtered down from the Tower.
 To the west lies a large two story building, where a few 
 experienced Warders can be seen entering and leaving.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -437,12 +422,12 @@ experienced Warders can be seen entering and leaving.
 </description>
     </exit>
     <exit direction="west" keyword="door wooden" exitinfo="1" keynum="0" toroom="3529">
-      <description>a door blocks the entrance to the Warder&apos;s Complex.
+      <description>a door blocks the entrance to the Warder's Complex.
 </description>
     </exit>
   </room>
   <room>
-    <roombasic title="Warder&apos;s Complex" vnum="3516" zone="35">
+    <roombasic title="Warder's Complex" vnum="3516" zone="35">
       <roomdescription>Many beds line the walls of this rectangular room, each
 with a metal chest at the foot for personal effects.
 The beds show military precision in the tightness of their
@@ -452,7 +437,7 @@ Unlike most of Salidar, dust holds no sway here.
 In the south corner of this room, a spiral stairway leads up
 to the second floor above.
 </roomdescription>
-      <flags>8</flags>
+      <flags>32776</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
@@ -469,10 +454,10 @@ to the second floor above.
     <roombasic title="Instructors living area" vnum="3517" zone="35">
       <roomdescription>This room only houses a few beds, each with a chest at the
 foot.  Over each bed, a large banner is hung, honoring the
-Instructor&apos;s homeland.  These beds are slightly larger than
-those found in the Trainee and Warder&apos;s barracks.
+Instructor's homeland.  These beds are slightly larger than
+those found in the Trainee and Warder's barracks.
 </roomdescription>
-      <flags>8</flags>
+      <flags>32776</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
@@ -484,7 +469,7 @@ those found in the Trainee and Warder&apos;s barracks.
     </exit>
   </room>
   <room>
-    <roombasic title="Josef&apos;s house of style" vnum="3518" zone="35">
+    <roombasic title="Josef's house of style" vnum="3518" zone="35">
       <roomdescription>you are standing in a large room filled with sewing, carving, and engraving implements. 
 a very freindly mand jumps up and greets you heartily. shaking your hand and asking you to sit
 As you wait he skillfully repairs all your items and returns them, leaving you happy, if lighter in the purse.
@@ -499,13 +484,13 @@ As you wait he skillfully repairs all your items and returns them, leaving you h
     </exit>
   </room>
   <room>
-    <roombasic title="Sparring circle &apos;B&apos;" vnum="3519" zone="35">
+    <roombasic title="Sparring circle 'B'" vnum="3519" zone="35">
       <roomdescription>You are standing in the center of a dirt circle that is about 30 feet 
 in diameter. There is a single row of benches encircling the area. 
 This circle is used for sparring matches.  There is a sign sticking 
 in the ground here.
 </roomdescription>
-      <flags>16</flags>
+      <flags>32784</flags>
       <sector>Field</sector>
       <special>NONE</special>
     </roombasic>
@@ -517,7 +502,7 @@ in the ground here.
       <description>If you would like your match to be officially recognized for
 tournaments and rank advancement please write me a note
 stating that there was a match and who won.
--Ra&apos;shad Gaidin Master of Arms for the Rebel Warders
+-Ra'shad Gaidin Master of Arms for the Rebel Warders
 </description>
     </exdesc>
   </room>
@@ -527,11 +512,11 @@ stating that there was a match and who won.
 through the door to the south.  To the north lies the Meeting
 Hall of the Rebel Warders, where they meet to plan and
 discuss the day to day business of running the guild.
-To the east lies a small library, while to the west is the Warder&apos;s
+To the east lies a small library, while to the west is the Warder's
 board room, where notices and bulletins are posted for
 public reading.
 </roomdescription>
-      <flags>12</flags>
+      <flags>32780</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
@@ -545,9 +530,8 @@ public reading.
     <exit direction="south" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="3523">
       <description>&lt;NONE&gt;</description>
     </exit>
-    <exit direction="west" keyword="heavy wooden door west" exitinfo="1" keynum="0" toroom="3501">
-      <description>A heavy wooden door is here.
-</description>
+    <exit direction="northwest" keyword="" exitinfo="0" keynum="0" toroom="4076">
+      <description/>
     </exit>
   </room>
   <room>
@@ -556,11 +540,11 @@ public reading.
 from the White Tower, or personal belongings of those
 Warders who carried them with them.
 A meager collection, still it allows some degree of entertainment
-for the Warder&apos;s brief leisure time.  Many of the books deal
+for the Warder's brief leisure time.  Many of the books deal
 with theories of battle, and the art of War, although such
-classics as &apos;The Travels of Jain Farstrider&apos; can also be seen.
+classics as 'The Travels of Jain Farstrider' can also be seen.
 </roomdescription>
-      <flags>8</flags>
+      <flags>32776</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
@@ -608,7 +592,7 @@ Rows of hard wooden benches facing the stage provide
 seating for those Warders who come to attend the meeting,
 and listen to those who speak.
 </roomdescription>
-      <flags>8</flags>
+      <flags>32776</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
@@ -644,7 +628,7 @@ flowers.  To the west, the Garden Entrance can be seen,
 while to the east, an intersection allows greater access
 to the a deeper sections of the complex.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -663,9 +647,9 @@ building in this direction.
     <roombasic title="A small porch." vnum="3525" zone="35">
       <roomdescription>This small covered porch allows those awaiting the Gaidin
 Master of Arms some shelter from the sun and the rain.
-A door to the north leads into the Armsmaster&apos;s office.
+A door to the north leads into the Armsmaster's office.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -682,7 +666,7 @@ A door to the north leads into the Armsmaster&apos;s office.
       <roomdescription>The gravel path crunches underfoot as you follow it toward
 the barracks complex.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -698,7 +682,7 @@ the barracks complex.
       <roomdescription>The gravel path crunches underfoot as you follow it through
 the barracks complex.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -710,8 +694,7 @@ the barracks complex.
       <description> to the south is a building of large size.
 </description>
     </exit>
-    <exit direction="west" keyword="Not set yet...
-" exitinfo="0" keynum="0" toroom="3569">
+    <exit direction="west" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="3569">
       <description>None
 </description>
     </exit>
@@ -721,7 +704,7 @@ the barracks complex.
       <roomdescription>The gravel path crunches underfoot as you follow it through
 the barracks complex.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -747,7 +730,7 @@ the barracks complex.
 anywhere.  The floors look freshly scrubbed.
 Doors lead in all four directions here.
 </roomdescription>
-      <flags>8</flags>
+      <flags>32776</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
@@ -778,7 +761,7 @@ chest, probably used to hold personal belongings.
 Above most of the beds hang banners displaying the home
 land of the occupant.
 </roomdescription>
-      <flags>8</flags>
+      <flags>32776</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
@@ -804,7 +787,7 @@ Heavy chests rest at the foot of each bed, and bright banners
 hang at the heads, showing a pride that is unbroken by
 the heart rending losses suffered by these men.
 </roomdescription>
-      <flags>8</flags>
+      <flags>32776</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
@@ -819,7 +802,7 @@ made beds line the walls, and wooden chests rest at the
 foot of each of these.  Above some of the beds, colorful
 banners show the homeland of the occupant.
 </roomdescription>
-      <flags>8</flags>
+      <flags>32776</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
@@ -831,12 +814,7 @@ banners show the homeland of the occupant.
 </description>
     </exit>
     <exit direction="south" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="3618">
-      <description>Darius&apos; Room
-</description>
-    </exit>
-    <exit direction="west" keyword="Not set yet...
-" exitinfo="0" keynum="0" toroom="3586">
-      <description>None
+      <description>Darius' Room
 </description>
     </exit>
   </room>
@@ -848,7 +826,7 @@ your attention.  This hallway leads to the barracks which
 houses the Students and Trainees.
 Doors lead to the north and south, while the exit lies east.
 </roomdescription>
-      <flags>8</flags>
+      <flags>32776</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
@@ -869,10 +847,10 @@ Doors lead to the north and south, while the exit lies east.
     <roombasic title="A trainee living area" vnum="3534" zone="35">
       <roomdescription>A number of beds line all four walls, each bed with a thin
 sheet and a woolen blanket.  At the foot of each bed is a chest
-which probably contains the trainee&apos;s personal belongings.
+which probably contains the trainee's personal belongings.
 Over a few of the beds hang banners, reminders of home.
 </roomdescription>
-      <flags>8</flags>
+      <flags>32776</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
@@ -887,7 +865,7 @@ Over a few of the beds hang banners, reminders of home.
 the many beds which line the walls, and spill over into the center
 of the floor.  Very little adorns the walls here.
 </roomdescription>
-      <flags>8</flags>
+      <flags>32776</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
@@ -903,7 +881,7 @@ students, as well as practice weapons for use in the sparring
 area.  Many types of armor and weapons lie stacked neatly
 about the room, awaiting your purchase.
 </roomdescription>
-      <flags>158</flags>
+      <flags>32926</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
@@ -917,20 +895,20 @@ about the room, awaiting your purchase.
 are available to do watch detail and also assist if needed at any time
 The office of the Captain is around here somewhere.
 </roomdescription>
-      <flags>154</flags>
+      <flags>32776</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
     <exit direction="north" keyword="captain watch door" exitinfo="15" keynum="3620" toroom="3538">
-      <description>To the north is the quarters of squad &apos;A&apos;
+      <description>To the north is the quarters of squad 'A'
 </description>
     </exit>
     <exit direction="east" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="3539">
-      <description>To the East is the living area for squad &apos;B&apos;.
+      <description>To the East is the living area for squad 'B'.
 </description>
     </exit>
     <exit direction="south" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="3540">
-      <description> To the south is the living area of squad &apos;C&apos;.
+      <description> To the south is the living area of squad 'C'.
 </description>
     </exit>
     <exit direction="west" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="3528">
@@ -947,14 +925,10 @@ been painted there, the wood around the heart and head well worn with holes
 from a thrown dagger. A drawing sits on the corner of his desk, of his
 beloved wife Telisa.
 </roomdescription>
-      <flags>8</flags>
+      <flags>32776</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
-    <exit direction="north" keyword="door captain" exitinfo="31" keynum="3621" toroom="3589">
-      <description>Khorne&apos;s Room
-</description>
-    </exit>
     <exit direction="south" keyword="door office captain" exitinfo="7" keynum="3620" toroom="3537">
       <description>&lt;NONE&gt;</description>
     </exit>
@@ -967,7 +941,7 @@ from intrusion or attack.  Along with this duty comes the deep
 sense of Brotherhood that will bind each man to his companions,
 a sense of belonging, of family.
 </roomdescription>
-      <flags>8</flags>
+      <flags>32776</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
@@ -977,14 +951,14 @@ a sense of belonging, of family.
     </exit>
   </room>
   <room>
-    <roombasic title="Squad &apos;C&apos; Barracks" vnum="3540" zone="35">
+    <roombasic title="Squad 'C' Barracks" vnum="3540" zone="35">
       <roomdescription>This room houses Squad C.  As with the other squads, these
 men are organized into a unit charged with defending Salidar
 from intrusion or attack.  Along with this duty comes the deep
 sense of Brotherhood that will bind each man to his companions,
 a sense of belonging, of family.
 </roomdescription>
-      <flags>8</flags>
+      <flags>32776</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
@@ -998,7 +972,7 @@ a sense of belonging, of family.
       <roomdescription>A level area of dense scrub and short brush lies here, leading
 into the forest beyond.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
@@ -1015,10 +989,13 @@ into the forest beyond.
 the woods surrounding Salidar.  Ahead, the heavier woods begin
 to create dense shade.
 </roomdescription>
-      <flags>1</flags>
+      <flags>32769</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
+    <exit direction="north" keyword="door north" exitinfo="7" keynum="3629" toroom="3629">
+      <description/>
+    </exit>
     <exit direction="east" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="3543">
       <description>&lt;NONE&gt;</description>
     </exit>
@@ -1033,12 +1010,12 @@ great deal of the light from above.  Shadows move between
 the trunks, catching your eye...  shadows from the canopy above?
 Or something more... sinister?
 </roomdescription>
-      <flags>5</flags>
+      <flags>32773</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
     <exit direction="north" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="3595">
-      <description>Master of Recruiting&apos;s Office
+      <description>Master of Recruiting's Office
 </description>
     </exit>
     <exit direction="east" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="3544">
@@ -1052,7 +1029,7 @@ Or something more... sinister?
     <roombasic title="In the forest" vnum="3544" zone="35">
       <roomdescription>\c00You find yourself standing under a canopy of trees, birds singing, and small creatures moving about in the bushes.  The forest around you seems quiet, almost peaceful.  To the north, nestled back in the trees with a path of stepping stones leading through the forest to it, is a moderately large house.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
@@ -1074,7 +1051,7 @@ out more light. You also hear less of the songs
 from the birds, and the canopy above you is nearly
 unbroken.
 </roomdescription>
-      <flags>1</flags>
+      <flags>32769</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
@@ -1094,7 +1071,7 @@ penetrates the canopy of leaves and brances, and
 you can hear the gentle rustle of the wind
 on the leaves.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
@@ -1116,7 +1093,7 @@ waves in the wind around your feet, and the
 leaves rustle about your head. Several small
 birds can be seen perched in the trees.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
@@ -1135,7 +1112,7 @@ stand. Here you have an unobstructed view of the
 sky, and you can see several birds flying around
 as time passes.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
@@ -1158,7 +1135,7 @@ from some underground source. All around you
 can hear the sounds of birds and other creatures
 moving around in the forest.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
@@ -1177,7 +1154,7 @@ branches of several large Oak trees. You can also
 see that there are several small mushrooms growing
 in the shadows on the edge of the forest.
 </roomdescription>
-      <flags>1</flags>
+      <flags>32769</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
@@ -1193,7 +1170,7 @@ There are several small trees growing in the
 shadows of their parents, and even small patches
 of grass where the sun peeks through the canopy.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
@@ -1213,7 +1190,7 @@ of the path. And the lack of any large trees
 directly where a cart could be drawn has the feel
 of man about it.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
@@ -1237,7 +1214,7 @@ paces thick. Around the tree there is a wide
 clear area, as though the other trees have made
 room for this old Oak.
 </roomdescription>
-      <flags>8</flags>
+      <flags>32776</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
@@ -1256,7 +1233,7 @@ bark has a rough edge to it, allowing you to grip
 it with ease. When you look down, you realize you
 are about halfway up the tree.
 </roomdescription>
-      <flags>256</flags>
+      <flags>33024</flags>
       <sector>Mountains</sector>
       <special>NONE</special>
     </roombasic>
@@ -1276,7 +1253,7 @@ wide. Nearby, there is a small nest, with a
 mother Eagle watching you closely, though she does
 not appear to consider you a threat to her Eggs.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
@@ -1293,7 +1270,7 @@ and there are deep shadows under the trees.
 To the west, there is a slight rise in the
 land, and some small hills.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
@@ -1316,7 +1293,7 @@ to their growth. To the east you see a branching
 in the trail, and to the west you see what appears
 to be a cave.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
@@ -1336,7 +1313,7 @@ used to be an old mine for Salidar before the
 Whitecloak war. To the south you can see what
 looks like an entrance to the mine.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>Hills</sector>
       <special>NONE</special>
     </roombasic>
@@ -1356,7 +1333,7 @@ of stone, and what looks like iron ore are laying about.
 You wonder if this mine was abandoned because of the war,
 or if the ore ran out.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>Mountains</sector>
       <special>NONE</special>
     </roombasic>
@@ -1376,7 +1353,7 @@ granite after a point. You think that this might have
 been a cliff by an ocean long before the breaking
 of the world.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
@@ -1395,11 +1372,11 @@ stoop their heads slightly. The air in here
 is stagnant, and there is a great deal of dust
 coating the floor.
 </roomdescription>
-      <flags>2048</flags>
+      <flags>34816</flags>
       <sector>Hills</sector>
       <special>NONE</special>
     </roombasic>
-    <exit direction="north" keyword="door" exitinfo="31" keynum="3587" toroom="3562">
+    <exit direction="north" keyword="door" exitinfo="25" keynum="3587" toroom="3562">
       <description>&lt;NONE&gt;</description>
     </exit>
     <exit direction="south" keyword="door" exitinfo="0" keynum="0" toroom="3560">
@@ -1416,11 +1393,11 @@ moving deeper into the mine. The air in here is
 stale from lack of use, and there are specks of
 dust which are obscuring your vision.
 </roomdescription>
-      <flags>2060</flags>
+      <flags>34828</flags>
       <sector>Hills</sector>
       <special>NONE</special>
     </roombasic>
-    <exit direction="south" keyword="door" exitinfo="31" keynum="3587" toroom="3561">
+    <exit direction="south" keyword="door" exitinfo="29" keynum="3587" toroom="3561">
       <description>&lt;NONE&gt;</description>
     </exit>
   </room>
@@ -1431,7 +1408,7 @@ movement difficult. You are unable to hear the song
 of birds, but you can hear movement in the branches
 above you, and all around you in the forest.
 </roomdescription>
-      <flags>1</flags>
+      <flags>32769</flags>
       <sector>Mountains</sector>
       <special>NONE</special>
     </roombasic>
@@ -1451,7 +1428,7 @@ The canopy of leaves and branches above you is so
 thick that it blocks out most of the light. All around
 you, there is no sound save for your own.
 </roomdescription>
-      <flags>1</flags>
+      <flags>32769</flags>
       <sector>Mountains</sector>
       <special>NONE</special>
     </roombasic>
@@ -1469,7 +1446,7 @@ about fifty or so paces across, and in the
 middle of this is a large rock, covered with
 moss dead leaves, and some snails.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
@@ -1488,7 +1465,7 @@ branches several feet above your head. The forest
 is dense here, but there is more than enough room
 for two, maybe even three men to walk abreast.
 </roomdescription>
-      <flags>1</flags>
+      <flags>32769</flags>
       <sector>Hills</sector>
       <special>NONE</special>
     </roombasic>
@@ -1497,13 +1474,13 @@ for two, maybe even three men to walk abreast.
     </exit>
   </room>
   <room>
-    <roombasic title="Dmitri&apos;s Room" vnum="3567" zone="35">
+    <roombasic title="Dmitri's Room" vnum="3567" zone="35">
       <roomdescription>The room is very simple in appearance, there is a large bed against
 one wall and a few chests of clothing against other walls.
 Scattered about the room are many toys for children, they seem
 to be strewn about in a careless fashion.
 </roomdescription>
-      <flags>10</flags>
+      <flags>32778</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
@@ -1521,7 +1498,7 @@ a plain door and seems very uninteresting. Suddenly you something
 moving in the shadows and a tall warder appears before you seemingly
 out of nowhere.
 </roomdescription>
-      <flags>12299</flags>
+      <flags>45067</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
@@ -1533,76 +1510,61 @@ out of nowhere.
     </exit>
   </room>
   <room>
-    <roombasic title="The Rebel&apos;s Mess hall" vnum="3569" zone="35">
+    <roombasic title="The Rebel's Mess hall" vnum="3569" zone="35">
       <roomdescription>You are in a large open room. There are many tables and chairs set
 up in the middle of the room for patrons to sit and eat. There is a
 canteen in the back corner which serves an array of fine delicacies
 from numerous countries.
 </roomdescription>
-      <flags>8414</flags>
+      <flags>41182</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
-    <exit direction="east" keyword="Not set yet...
-" exitinfo="0" keynum="0" toroom="3527">
+    <exit direction="east" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="3527">
       <description>None
 </description>
     </exit>
   </room>
   <room>
-    <roombasic title="Blacksmith of the Rebel&apos;s Master Craftsmen." vnum="3570" zone="35">
+    <roombasic title="Blacksmith of the Rebel's Master Craftsmen." vnum="3570" zone="35">
       <roomdescription>You see before you a forge as a huge fire rumbles in the background.
 A large anvil with a hammer leaning up against it rests in the
 middle of the room. Along the wall lies racks with all sorts of
 well crafted armor and weapons on them. Against the far wall there
 is an open space obviously set adide to train horses.
 </roomdescription>
-      <flags>28</flags>
+      <flags>32796</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
-    <exit direction="south" keyword="Not set yet...
-" exitinfo="0" keynum="0" toroom="3503">
+    <exit direction="south" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="3503">
       <description>None
 </description>
     </exit>
   </room>
   <room>
-    <roombasic title="The deathroom of Salidar." vnum="3571" zone="35">
-      <roomdescription>You have just...... DIED. The room is provided for your comfort
-and relaxation while you recuperate from your wounds it has a
-calm serene atmosphere and is very peaceful giving you plenty of
-time to recover and ponder on mistakes made.
+    <roombasic title="Unused Room" vnum="3571" zone="35">
+      <roomdescription>Vacant.
 </roomdescription>
-      <flags>254</flags>
-      <sector>Inside</sector>
-      <special>NONE</special>
-    </roombasic>
-    <exit direction="down" keyword="&lt;NONE&gt;" exitinfo="0" keynum="1" toroom="4076">
-      <description>&lt;NONE&gt;</description>
-    </exit>
-  </room>
-  <room>
-    <roombasic title="The Rebel Warder Equipment hold." vnum="3572" zone="35">
-      <roomdescription>The room you see before you is well lit. There are rows and rows of weapons
-and armor on shelves in every part of the room. The light coming from both
-the sun outside and the a few candles lit inside reflects off the polished steel
-of the swords in the room illuminating it. There is a bench in the middle of
-the room and behind it sits a tall man with a smile upon his face ready to help
-you.
-</roomdescription>
-      <flags>8414</flags>
+      <flags>0</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
   </room>
   <room>
-    <roombasic title="The Warder/Sedai Board Room" vnum="3573" zone="35">
-      <roomdescription>QP&apos;s awarded for ideas to decorate this room!
-
-West exit takes you to Salidar Square.
+    <roombasic title="Unused Room" vnum="3572" zone="35">
+      <roomdescription>Vacant.
 </roomdescription>
-      <flags>26</flags>
+      <flags>146</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+  </room>
+  <room>
+    <roombasic title="Unused Room" vnum="3573" zone="35">
+      <roomdescription>Vacant
+</roomdescription>
+      <flags>0</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
@@ -1613,7 +1575,7 @@ West exit takes you to Salidar Square.
 here you can see a small dock surrounded by several very small rafts which
 line the dock.    
 </roomdescription>
-      <flags>2</flags>
+      <flags>32770</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
@@ -1625,10 +1587,10 @@ line the dock.
     </exit>
   </room>
   <room>
-    <roombasic title="A small pond." vnum="3575" zone="35">
+    <roombasic title="A Small Pond" vnum="3575" zone="35">
       <roomdescription>The smell of cool water tickles your nose as you stand before a small pond
 located south of the main training yards.  There is a dock here that
-stretches out around 30 feet into the pond, several small 3&apos; X 3&apos; rafts
+stretches out around 30 feet into the pond, several small 3' X 3' rafts
 drift up against the dock.  Above the pond, 3 long balance beams have been
 constructed.  Each beam stretching across the top of the pond, standing at
 a height of twenty feet.  On the ends of each beam, there is a ladder.  
@@ -1636,7 +1598,7 @@ Each beam spaced out evenly, giving twenty feet in either direction of the
 next beam.  Out in the center of the pond, a long log floats absently
 around in the center.    
 </roomdescription>
-      <flags>6</flags>
+      <flags>32774</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
@@ -1645,27 +1607,19 @@ around in the center.
     </exit>
   </room>
   <room>
-    <roombasic title="Sargeras&apos; Quarters." vnum="3586" zone="35">
-      <roomdescription>You enter a small and very simple room. There is a small bed in the
-left corner of the room, and next to it a chair with clothes hanging
-on it. In another corner of the room is a small desk. On the desk lies
-some books and maps. A small bookshelf is placed right next to the
-desk, carrying even more books. The wall is decorated with a painting
-of a great battle field somwhere in the Borderlands.
+    <roombasic title="Unused Room" vnum="3586" zone="35">
+      <roomdescription>Vacant
 </roomdescription>
-      <flags>30</flags>
+      <flags>0</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
-    <exit direction="east" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="3532">
-      <description>&lt;NONE&gt;</description>
-    </exit>
   </room>
   <room>
     <roombasic title="Path to the Meeting Hall" vnum="3587" zone="35">
       <roomdescription>This Room is not finished yet.
 </roomdescription>
-      <flags>28</flags>
+      <flags>32796</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
@@ -1677,75 +1631,47 @@ of a great battle field somwhere in the Borderlands.
     </exit>
   </room>
   <room>
-    <roombasic title="Office of the Master of Trainees" vnum="3588" zone="35">
-      <roomdescription>A tidy room, although looking like it belongs nowhere on this
-continent.  A banner not seen this far east in centuries hangs on
-the back wall, a hawk clutching lightning bolts in its talons.
-A suit of armor is arranged in a case on one wall, standing up
-on a rack.  The armor is smoothly curving, laquered black and
-dark blue, with silver trimming.  The helmet looks like the head
-of a huge insect, plates curving down to guard the cheeks and 
-face looking like nothing so much as a pair of mandibles.  The
-picture is reinforced by the thin silver plumes which jut out like
-antannae from the top of the helmet.  On a rack opposite the
-armor are a number of spears and swords.  The spears all have
-blue and black tassels just below the spear-heads, and the
-swords are heavy and curved.  There is a small desk with a
-comfortable-looking chair in front of the banner, and a pair of
-chairs between the desk and the door.
+    <roombasic title="Unused Room" vnum="3588" zone="35">
+      <roomdescription>Vacant
 </roomdescription>
-      <flags>222</flags>
+      <flags>0</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
-    <exit direction="south" keyword="door" exitinfo="3" keynum="0" toroom="3513">
-      <description>door
-</description>
-    </exit>
   </room>
   <room>
-    <roombasic title="Khorne&apos;s Room" vnum="3589" zone="35">
-      <roomdescription>As you step into this well sized, softly lit room and look around, you notice 
-a large, slightly rumpled, four-post bed set in the exact center of the room,
-positioned underneath a small window that lets in the northern light.  At the
-foot of the bed sits a large, locked, fine looking chest of wood, its top
-nearly obscured by many articles of male and female clothing.  Off to the
-left of the bed sits a very large desk, its top covered with several
-carefully sealed bottles, several knives of different lengths, not a few
-books, and a harp in the process of being re-strung.  To the right of the bed
-is a large, soft looking chair, perfectly placed for a bit of late evening
-reading.
+    <roombasic title="Unused Room" vnum="3589" zone="35">
+      <roomdescription>Vacant
 </roomdescription>
-      <flags>94</flags>
+      <flags>0</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
-    <exit direction="south" keyword="door" exitinfo="7" keynum="3621" toroom="3538">
-      <description>&lt;NONE&gt;</description>
-    </exit>
   </room>
   <room>
     <roombasic title="Office of the Captain of the Watch" vnum="3590" zone="35">
-      <roomdescription>The first thing you notice is the three sided desk covered in papers and various articles,
-the center holds a comfortable black leather chair.  that looks exceedingly comfortable. The
-rest of the room is a bit different from the rather messy center, book 
-shelves and weapons display cases line the walls. In one such display case 
-is not one, but three outfits of identical nature save for thier color. One 
-black, one green, one red. Each is identical in style, save that the red has
-all red leather instead of black leather like the gloves and boots of the other 
-two. The cloak of the green suit is different then the rest, patchworked like
-that of a gleeman. At the base of the three lies 2 pieces of a broken sword with 
-a silver pommel. The other cases contain a variety of spears, swords, and daggers. 
-The bookshelves have several books, some in common, others in the old tongue.
-Finally, on the wall behind the desk are a series of simple drawings that appear 
-to have been done by the hand of a child.
+      <roomdescription>The first thing you notice is the three sided desk covered in papers and
+various articles, the center holds a comfortable black leather chair.  
+That looks exceedingly comfortable.  The rest of the room is a bit
+different from the rather messy center, book shelves and weapons display
+cases line the walls.  In one such display case is not one, but three
+outfits of identical nature save for thier color.  One black, one green,
+one red.  Each is identical in style, save that the red has all red
+leather instead of black leather like the gloves and boots of the other
+two.  The cloak of the green suit is different then the rest, patchworked
+like that of a gleeman.  At the base of the three lies 2 pieces of a
+broken sword with a silver pommel.  The other cases contain a variety of
+spears, swords, and daggers.  The bookshelves have several books, some in
+common, others in the old tongue.  Finally, on the wall behind the desk
+are a series of simple drawings that appear to have been done by the hand
+of a child.    
 </roomdescription>
-      <flags>8414</flags>
+      <flags>41182</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
     <exit direction="south" keyword="room door" exitinfo="15" keynum="3624" toroom="3567">
-      <description>Dmitri&apos;s Room
+      <description>Dmitri's Room
 </description>
     </exit>
     <exit direction="west" keyword="door" exitinfo="15" keynum="3624" toroom="3523">
@@ -1754,14 +1680,14 @@ to have been done by the hand of a child.
     </exit>
   </room>
   <room>
-    <roombasic title="The Rebel&apos;s Armoury." vnum="3591" zone="35">
+    <roombasic title="The Rebel's Armoury." vnum="3591" zone="35">
       <roomdescription>A small shop presents itself before you. It is well lit and has the
 look of a cottage. You see the shop contains many shelves filled with
 armor and various other items. The sign on the door proclaims to all
 the merchandise is the best in all Salidar. The fireplace in the far
 corner gives off both warmth and light whicj beckons customers to enter.
 </roomdescription>
-      <flags>158</flags>
+      <flags>32926</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
@@ -1770,7 +1696,7 @@ corner gives off both warmth and light whicj beckons customers to enter.
     </exit>
   </room>
   <room>
-    <roombasic title="The Rebel&apos;s weaponsmith." vnum="3592" zone="35">
+    <roombasic title="The Rebel's weaponsmith." vnum="3592" zone="35">
       <roomdescription>You enter a large dusty room. There is a furnace and equipment in
 the right corner of the room obviuosly used for making weapons. You
 see a wide array of arms displayed in cabinets all around the store.
@@ -1781,8 +1707,7 @@ weaponsmith and inviting all to enter and peruse the items on offer.
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
-    <exit direction="east" keyword="Not set yet...
-" exitinfo="0" keynum="0" toroom="3528">
+    <exit direction="east" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="3528">
       <description>None
 </description>
     </exit>
@@ -1796,21 +1721,20 @@ bank transactions. In the far corner of the bank you can see a numerous
 amount of large safes made of steel. They are strong and are able to 
 store a lot of money.
 </roomdescription>
-      <flags>8406</flags>
+      <flags>41174</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
-    <exit direction="west" keyword="Not set yet...
-" exitinfo="0" keynum="0" toroom="4067">
+    <exit direction="west" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="4067">
       <description>None
 </description>
     </exit>
   </room>
   <room>
-    <roombasic title="An unused room, please go ahead and use somewhere." vnum="3594" zone="35">
+    <roombasic title="Unused Room" vnum="3594" zone="35">
       <roomdescription>None yet.
 </roomdescription>
-      <flags>28</flags>
+      <flags>0</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
@@ -1822,7 +1746,7 @@ overgrown with moss and leaves and the forest looms high overhead.
 The birds can be heard twittering and flying through the trees.
 A small, neat looking cottage can be seen just to the north.
 </roomdescription>
-      <flags>20</flags>
+      <flags>32788</flags>
       <sector>Forest</sector>
       <special>NONE</special>
     </roombasic>
@@ -1835,7 +1759,7 @@ A small, neat looking cottage can be seen just to the north.
     </exit>
   </room>
   <room>
-    <roombasic title="\c13Morrigan and Gerbain&apos;s Cottage\c00" vnum="3596" zone="35">
+    <roombasic title="\c13Morrigan and Gerbain's Cottage\c00" vnum="3596" zone="35">
       <roomdescription>The cottage is small and always very neat.  To the left of the door
 is a small kitchen, with a pantry and wash basin, as well as a 
 wooden table surrounded by 4 wooden chairs.  There is always a vase
@@ -1851,7 +1775,7 @@ just to the left of the bed.  The walls are mostly bare, however a large
 tapestry hangs above the fireplace, depicting a beautiful scene of
 a peaceful forest glade with a brook running through it.
 </roomdescription>
-      <flags>131612</flags>
+      <flags>164380</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
@@ -1867,19 +1791,19 @@ sill and singing their distinctive songs.
     </exdesc>
   </room>
   <room>
-    <roombasic title="Xerxes&apos;s Quarters" vnum="3597" zone="35">
+    <roombasic title="Unused Room" vnum="3597" zone="35">
       <roomdescription>You are in an unfinished room.
 </roomdescription>
-      <flags>8204</flags>
+      <flags>0</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
   </room>
   <room>
-    <roombasic title="Jhoean&apos;s Quarters" vnum="3598" zone="35">
+    <roombasic title="Unused Room" vnum="3598" zone="35">
       <roomdescription>You are in an unfinished room.
 </roomdescription>
-      <flags>8204</flags>
+      <flags>0</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
@@ -1888,16 +1812,13 @@ sill and singing their distinctive songs.
     </exit>
   </room>
   <room>
-    <roombasic title="Gimli&apos;s Room" vnum="3599" zone="35">
+    <roombasic title="Unused Room" vnum="3599" zone="35">
       <roomdescription>Still working on it all.
 </roomdescription>
-      <flags>82</flags>
+      <flags>0</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
-    <exit direction="south" keyword="door blade heron" exitinfo="31" keynum="3695" toroom="3510">
-      <description>&lt;NONE&gt;</description>
-    </exit>
   </room>
   <room>
     <roombasic title="The Beginning" vnum="3600" zone="35">
@@ -1909,24 +1830,19 @@ sill and singing their distinctive songs.
     </roombasic>
   </room>
   <room>
-    <roombasic title="The trainee testing area." vnum="3601" zone="35">
+    <roombasic title="Unused Room" vnum="3601" zone="35">
       <roomdescription>You are in an unfinished room.
 </roomdescription>
-      <flags>4190</flags>
+      <flags>0</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
   </room>
   <room>
-    <roombasic title="The Rebel Warder equipment hold." vnum="3602" zone="35">
-      <roomdescription>The room you see before you is well lit. There are rows and rows of weapons
-and armor on shelves in every part of the room. The light coming from both
-the sun outside and the a few candles lit inside reflects off the polished steel
-of the swords in the room illuminating it. There is a bench in the middle of
-the room and behind it sits a tall man with a smile upon his face ready to help
-you.
+    <roombasic title="Unused Room" vnum="3602" zone="35">
+      <roomdescription>Vacant.
 </roomdescription>
-      <flags>12510</flags>
+      <flags>0</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
@@ -1942,7 +1858,7 @@ here. Snakes and insects can be seen at times,
 and a certain smell lingers in the air, not a 
 pleasant one.
 </roomdescription>
-      <flags>270550</flags>
+      <flags>303318</flags>
       <sector>Forest</sector>
       <special>NONE</special>
     </roombasic>
@@ -1968,7 +1884,7 @@ can be seen to bear worms wiggling through
 the soil. There is the strong smell here
 of something dead.
 </roomdescription>
-      <flags>270558</flags>
+      <flags>303326</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
@@ -1976,8 +1892,7 @@ of something dead.
       <description>The door out of the jail.
 </description>
     </exit>
-    <exit direction="south" keyword="Not set yet...
-" exitinfo="0" keynum="0" toroom="3605">
+    <exit direction="south" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="3605">
       <description>None
 </description>
     </exit>
@@ -1995,27 +1910,23 @@ always occupied with men and papers.
 The only light in this room comes
 from a small light on the desk.
 </roomdescription>
-      <flags>270550</flags>
+      <flags>303318</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
-    <exit direction="north" keyword="Not set yet...
-" exitinfo="0" keynum="0" toroom="3604">
+    <exit direction="north" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="3604">
       <description>None
 </description>
     </exit>
-    <exit direction="east" keyword="Not set yet...
-" exitinfo="0" keynum="0" toroom="3606">
+    <exit direction="east" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="3606">
       <description>None
 </description>
     </exit>
-    <exit direction="south" keyword="Not set yet...
-" exitinfo="0" keynum="0" toroom="3608">
+    <exit direction="south" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="3608">
       <description>None
 </description>
     </exit>
-    <exit direction="west" keyword="Not set yet...
-" exitinfo="0" keynum="0" toroom="3607">
+    <exit direction="west" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="3607">
       <description>None
 </description>
     </exit>
@@ -2029,7 +1940,7 @@ light up this room from their places
 on the wall. There is little else in
 this passage, and nothing of substance.
 </roomdescription>
-      <flags>270558</flags>
+      <flags>303326</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
@@ -2038,8 +1949,7 @@ this passage, and nothing of substance.
 A security door is here.
 </description>
     </exit>
-    <exit direction="west" keyword="Not set yet...
-" exitinfo="0" keynum="0" toroom="3605">
+    <exit direction="west" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="3605">
       <description>None
 </description>
     </exit>
@@ -2054,12 +1964,11 @@ wall. There is little else in this
 passage except for a small desk and 
 another member of the Watch behind it.
 </roomdescription>
-      <flags>270558</flags>
+      <flags>303326</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
-    <exit direction="east" keyword="Not set yet...
-" exitinfo="0" keynum="0" toroom="3605">
+    <exit direction="east" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="3605">
       <description>None
 </description>
     </exit>
@@ -2077,18 +1986,17 @@ end of the hall. In the centre
 of the hall is a small cage set 
 on a pillar containing rats of 
 various sizes, yet one the size 
-of a man&apos;s two hands held together.
+of a man's two hands held together.
 The wooden door at the end of the
 hall has no handle on this side, 
 and a small barred window that 
 looks into the room beyond it.
 </roomdescription>
-      <flags>270558</flags>
+      <flags>303326</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
-    <exit direction="north" keyword="Not set yet...
-" exitinfo="0" keynum="0" toroom="3605">
+    <exit direction="north" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="3605">
       <description>None
 </description>
     </exit>
@@ -2111,7 +2019,7 @@ day. He has before himself a group
 of books and papers, and always 
 seems to be writing.
 </roomdescription>
-      <flags>270558</flags>
+      <flags>303326</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
@@ -2120,18 +2028,15 @@ seems to be writing.
 A security door is here.
 </description>
     </exit>
-    <exit direction="east" keyword="Not set yet...
-" exitinfo="0" keynum="0" toroom="3610">
+    <exit direction="east" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="3610">
       <description>None
 </description>
     </exit>
-    <exit direction="south" keyword="Not set yet...
-" exitinfo="0" keynum="0" toroom="3612">
+    <exit direction="south" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="3612">
       <description>None
 </description>
     </exit>
-    <exit direction="west" keyword="Not set yet...
-" exitinfo="0" keynum="0" toroom="3611">
+    <exit direction="west" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="3611">
       <description>None
 </description>
     </exit>
@@ -2149,7 +2054,7 @@ handles that are opposite the hinges.
 The door at the end of the hall is 
 steel and has no window.
 </roomdescription>
-      <flags>270558</flags>
+      <flags>303326</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
@@ -2157,8 +2062,7 @@ steel and has no window.
       <description>A security door is here.
 </description>
     </exit>
-    <exit direction="west" keyword="Not set yet...
-" exitinfo="0" keynum="0" toroom="3609">
+    <exit direction="west" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="3609">
       <description>None
 </description>
     </exit>
@@ -2176,12 +2080,11 @@ handles that are opposite the hinges.
 The door at the end of the hall is
 steel and has no window.
 </roomdescription>
-      <flags>270558</flags>
+      <flags>303326</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
-    <exit direction="east" keyword="Not set yet...
-" exitinfo="0" keynum="0" toroom="3609">
+    <exit direction="east" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="3609">
       <description>None
 </description>
     </exit>
@@ -2202,12 +2105,11 @@ slopes downwards enough to make one
 need to bend down as they near the 
 steel door at the end of the hall.
 </roomdescription>
-      <flags>270558</flags>
+      <flags>303326</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
-    <exit direction="north" keyword="Not set yet...
-" exitinfo="0" keynum="0" toroom="3609">
+    <exit direction="north" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="3609">
       <description>None
 </description>
     </exit>
@@ -2226,7 +2128,7 @@ that is well taken care of, with fresh
 sheets and covers. There is one desk in
 the room with a small lamp upon it.
 </roomdescription>
-      <flags>270558</flags>
+      <flags>303326</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
@@ -2247,7 +2149,7 @@ sheets and covers. There is a table
 near the door of the room on which a
 small lamp resides.
 </roomdescription>
-      <flags>270558</flags>
+      <flags>303326</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
@@ -2263,7 +2165,7 @@ a cot in the centre and a small
 lantern that is attached to the
 wall of the room near the door.
 </roomdescription>
-      <flags>270558</flags>
+      <flags>303326</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
@@ -2280,7 +2182,7 @@ and houses a cot in the centre of the
 room as well as a lantern attached to
 the wall near the door.
 </roomdescription>
-      <flags>270558</flags>
+      <flags>303326</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
@@ -2298,7 +2200,7 @@ At times there will feel like there are
 movements in the cave, and the feelings
 are likely to be all too true.
 </roomdescription>
-      <flags>270558</flags>
+      <flags>303326</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
@@ -2308,7 +2210,7 @@ are likely to be all too true.
     </exit>
   </room>
   <room>
-    <roombasic title="Darius&apos; Room" vnum="3618" zone="35">
+    <roombasic title="Darius' Room" vnum="3618" zone="35">
       <roomdescription>This room is a very plain, and simple dwelling. The bed is
 placed against the right-corner on the farside of the room.
 Placed at the foot of the bed is a polished wooden chest,
@@ -2321,7 +2223,7 @@ completely. Two swords are mounted and crossed above the bed.
 One resembles a long-sword by is curved at the end. 
 The other is a plain long sword with a jeweled hilt.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
@@ -2330,19 +2232,19 @@ The other is a plain long sword with a jeweled hilt.
     </exit>
   </room>
   <room>
-    <roombasic title="Hallway through the Warder&apos;s Bedding Area" vnum="3619" zone="35">
+    <roombasic title="Hallway through the Warder's Bedding Area" vnum="3619" zone="35">
       <roomdescription>This hallway leads through the rooms of the various warders.
 Here they take a rest from their Sedai and all troubles, step
 carefully, many are probably trying to sleep.
 </roomdescription>
-      <flags>262296</flags>
+      <flags>295064</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
     <exit direction="south" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="3532">
       <description>&lt;NONE&gt;</description>
     </exit>
-    <exit direction="west" keyword="door west koltur" exitinfo="9" keynum="3625" toroom="3622">
+    <exit direction="west" keyword="door west koltur" exitinfo="15" keynum="3625" toroom="3622">
       <description>A door bearing a small, non-descript plaque simply engraved with the name,
 &quot;&amp;WKoltur&amp;n&quot;
 </description>
@@ -2356,7 +2258,7 @@ the east wall rests another couch type chair with a table
 infront of them both.  The room is devoid of anything else, no windows
 nothing.
 </roomdescription>
-      <flags>222</flags>
+      <flags>32990</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
@@ -2370,7 +2272,7 @@ nothing.
 tent of some type.  Looking inside the tent you see nothing special and away
 from the tent is the village of Salidar.
 </roomdescription>
-      <flags>214</flags>
+      <flags>32982</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -2382,7 +2284,7 @@ from the tent is the village of Salidar.
     </exit>
   </room>
   <room>
-    <roombasic title="&amp;wK&amp;Wo&amp;wlt&amp;Wu&amp;wr Az&amp;Wzu&amp;wr T&amp;Wo&amp;wl&amp;R-&amp;wAm&amp;Wra&amp;wc&apos;s Room&amp;n" vnum="3622" zone="35">
+    <roombasic title="&amp;wK&amp;Wo&amp;wlt&amp;Wu&amp;wr Az&amp;Wzu&amp;wr T&amp;Wo&amp;wl&amp;R-&amp;wAm&amp;Wra&amp;wc's Room&amp;n" vnum="3622" zone="35">
       <roomdescription>As you enter this room, the first thing that you notice is
 its seeming order and cleanlines. The walls are pure
 white, the ceiling and floor, a rich, earthly wooden tone
@@ -2402,17 +2304,18 @@ two windows, one on each of the western and southern
 walls. Large dark drapes sometimes cover these windows
 casting the room into shadow.
 </roomdescription>
-      <flags>264941</flags>
+      <flags>297709</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
-    <exit direction="east" keyword="door koltur east" exitinfo="9" keynum="3625" toroom="3619">
+    <exit direction="east" keyword="door koltur east" exitinfo="15" keynum="3625" toroom="3619">
       <description/>
     </exit>
-    <exit direction="up" keyword="trapdoor" exitinfo="1" keynum="0" toroom="74">
+    <exit direction="up" keyword="trapdoor" exitinfo="3" keynum="0" toroom="74">
       <description/>
     </exit>
     <dgscript vnum="3622"/>
+    <dgscript vnum="3623"/>
   </room>
   <room>
     <roombasic title="The Kitchen and Dining Area" vnum="3623" zone="35">
@@ -2428,11 +2331,11 @@ the realm.  \c23Si\c07lv\c23er\c00 goblets sit on top of the cabinet, ready for 
 the windows behind the head of the table open to a half circle, showing
 the \c06w\c07a\c06t\c07e\c06r\c07f\c06a\c07l\c06l\c00 in the open behind.    
 </roomdescription>
-      <flags>12</flags>
+      <flags>32780</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
-    <exit direction="south" keyword="door" exitinfo="3" keynum="0" toroom="3624">
+    <exit direction="south" keyword="door" exitinfo="1" keynum="0" toroom="3624">
       <description>A door.
 </description>
     </exit>
@@ -2449,15 +2352,15 @@ and western walls of this room, providing a breathtaking view of the
 \c06w\c07a\c06t\c07e\c06r\c07f\c06a\c07l\c06l\c00 outside.  The west wall is lined with book shelves between the
 windows, and on either side of the door that leads into the master
 bedroom.  Another door leads to the east, open just enough that you can
-see the clutter of a child or perhaps children&apos;s bedroom.  Delicious
+see the clutter of a child or perhaps children's bedroom.  Delicious
 aromas waft out from the north, signifying the doorway leading that way
 could be the kitchen.    
 </roomdescription>
-      <flags>12</flags>
+      <flags>32780</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
-    <exit direction="north" keyword="door" exitinfo="3" keynum="0" toroom="3623">
+    <exit direction="north" keyword="door" exitinfo="1" keynum="0" toroom="3623">
       <description/>
     </exit>
     <exit direction="east" keyword="nursery" exitinfo="1" keynum="0" toroom="3626">
@@ -2490,7 +2393,7 @@ pretty comfortable to sit in.  The light from a single window provides
 enough during the day and for the nights, a couple of lanterns are mounted
 upon the walls to cast a soft \c03g\c07l\c03o\c07w\c00 all around.    
 </roomdescription>
-      <flags>12</flags>
+      <flags>32780</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
@@ -2499,7 +2402,7 @@ upon the walls to cast a soft \c03g\c07l\c03o\c07w\c00 all around.
     </exit>
   </room>
   <room>
-    <roombasic title="Children&apos;s room" vnum="3626" zone="35">
+    <roombasic title="Children's room" vnum="3626" zone="35">
       <roomdescription>Towards the east, the door will barely open into a cluttered room, the
 floor covered with toys that have been tossed aside and rumpled clothing.
 Two single beds rest on the north and south walls of the room, sitting
@@ -2513,7 +2416,7 @@ pillow, amazingly still intact though a bit worn.  \c03Wooden\c00 shelves line t
 walls at the head of each bed, holding different toys and jars filled with
 Light knows what.    
 </roomdescription>
-      <flags>14</flags>
+      <flags>32782</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
@@ -2522,7 +2425,7 @@ Light knows what.
     </exit>
   </room>
   <room>
-    <roombasic title="Yoric&apos;s Room" vnum="3627" zone="35">
+    <roombasic title="Yoric's Room" vnum="3627" zone="35">
       <roomdescription>   As the door opens you see what looks like a plain, stone room with
 &amp;Wwhite walls&amp;n&quot; and a rough looking bed, yet on the bed is a figure of a
 &amp;CEagle&amp;n, imprinting itself into the bed.  The matress of the bed is soft and
@@ -2532,7 +2435,7 @@ corner, hangs a three-pronged hook, that looks to be made to hold cloaks
 and the like.  On the wall, is a rough sketch of two people.  There are
 &amp;CTear&amp;n stains on the glass.....    
 </roomdescription>
-      <flags>8</flags>
+      <flags>32776</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
@@ -2541,30 +2444,76 @@ and the like.  On the wall, is a rough sketch of two people.  There are
     </exit>
   </room>
   <room>
-    <roombasic title="The Teyvara Cottage" vnum="3628" zone="35">
-      <roomdescription>A small rose garden decorates the pathway to a small cottage set
-off deep from the road. The trees grow close around it, giving
-it shade most of the day. This small cottage seems rustic and simple,
-yet seems well cared for.
+    <roombasic title="Unused Room" vnum="3628" zone="35">
+      <roomdescription>Vacant
 </roomdescription>
       <flags>0</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
-    <exit direction="west" keyword="" exitinfo="0" keynum="0" toroom="4060">
+  </room>
+  <room>
+    <roombasic title="Kalia's Cabin" vnum="3629" zone="35">
+      <roomdescription>   The interior of the cabin is not overly large, about twenty-five feet
+square.  Large windows are cut into the north, east and west walls.  A
+stout door is set into the south wall.  Most of the space is taken up by a
+large bed in the northeast corner.  A large wooden chest rests at the foot
+of the bed.  The floor is scattered with an assortment of dolls and toys
+suitable for a little girl.  Aside from the toys, the room is rather tidy.
+A comfortable, fluffy chair is positioned in the northwest corner.  Upon
+the walls are hung weapons of various kinds instead of the pictures or
+plaques one might expect.    
+</roomdescription>
+      <flags>32780</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="south" keyword="door south" exitinfo="7" keynum="3629" toroom="3542">
       <description/>
     </exit>
   </room>
   <room>
-    <roombasic title="&amp;nThe &amp;WBlademasters&amp;n&apos; Lounge" vnum="3699" zone="35">
+    <roombasic title="OOC Recall Room For the Rebel Tower." vnum="3630" zone="35">
+      <roomdescription>
+This is the Rebel Tower OOC Room. Down is the camp.  South is the
+OOC room for the combined Towers. Kin can reach their board by going
+northeast.  Yes, the description is horrid.
+</roomdescription>
+      <flags>26</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="1050">
+      <description/>
+    </exit>
+    <exit direction="down" keyword="" exitinfo="0" keynum="0" toroom="2770">
+      <description/>
+    </exit>
+    <exit direction="northeast" keyword="" exitinfo="0" keynum="0" toroom="2602">
+      <description/>
+    </exit>
+    <dgscript vnum="3630"/>
+  </room>
+  <room>
+    <roombasic title="&amp;nThe &amp;WBlademasters&amp;n' Lounge" vnum="3699" zone="35">
       <roomdescription>   Many comfortable chairs and couches are scattered about this large
 lounge.  The scent of fine tabac pervades the area.  The walls are adorned
 with portraits of famous generals and swordsmen, as well as several
 heron-marked blades.    
 </roomdescription>
-      <flags>2</flags>
+      <flags>10</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
+    <exit direction="east" keyword="" exitinfo="0" keynum="0" toroom="32650">
+      <description/>
+    </exit>
+    <exit direction="west" keyword="" exitinfo="0" keynum="0" toroom="32651">
+      <description/>
+    </exit>
+    <exit direction="down" keyword="" exitinfo="0" keynum="-1" toroom="30490">
+      <description>You see nothing special.
+</description>
+    </exit>
   </room>
 </rooms>

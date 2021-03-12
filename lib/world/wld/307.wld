@@ -504,6 +504,32 @@ and billow softly in the breeze from the window on the north wall.
     </exit>
   </room>
   <room>
+    <roombasic title="The Kitchen of the Candy Shop" vnum="30723" zone="307">
+      <roomdescription>This kitchen has lovely windows of polished horn lending a charming glow
+of light to the whole room.  In the center is a great wooden table where
+the chocolates are mixed in shiny copper bowls.  And there are slabs of
+marble for making the chocolate curls among other things.  The stove is a
+special one that burns oil shipped all the way from Mayene just so the
+temperature can be controlled to make the most perfect chocolates.  A
+great fireplace offers warmth as well as provides the heating of water and
+anything else that doesn&apos;t require the perfection of chocolate cooking.  
+There is a stone sink with a water pump mounted to the side of it.  Under
+the wooden table as well as above it are all sorts and shapes of pots,
+pans, bowls, molds and trays, along with a wide number of spoons and oddly
+shaped knives and such.  There is a door that leads deep down into a
+cellar where the milk is kept nicely chilled.  There is also stored
+various liquors that are used in the candies.    
+</roomdescription>
+      <flags>12</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="west" keyword="" exitinfo="0" keynum="-1" toroom="30796">
+      <description>You see nothing special.
+</description>
+    </exit>
+  </room>
+  <room>
     <roombasic title="\c03The Little Princess\c00" vnum="30745" zone="307">
       <roomdescription>A small, but very classy jewelry shop with many glittering items that
 catch your eye...behind solid steel bars of course. Behind the counter
@@ -1213,6 +1239,35 @@ into a small bedroom.
     <exit direction="east" keyword="door east" exitinfo="1" keynum="0" toroom="30794">
       <description>a painted wooden door
 </description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Caemlyn Candy Shop" vnum="30796" zone="307">
+      <roomdescription>This shop is a delight to the eye, a small confection.  The marble-top
+counter sets atop a rosewood bar with its three panels painted in soft
+blues, mellow browns and fluffy whites of a fantasical scene depicting
+towers of chocolate festooned with icing, rivers of flowing milk chocolate
+with little boats of peanut clusters and clouds of spun sugar.  There are
+several tables and velvet chairs scattered about the room for the
+enjoyment of gossip or some delightful chocolate.  Behind the counter and
+in the shop window are gold boxes of chocolate, cornets of silver and gold
+paper, rosettes, bells, flowers, hearts and curls of ribbons.  There is
+also palaces with chocolate walls, festoons of silver and gold icing, roof
+tiles of florentins studded with tiny sugar lilies, and wild vines baring
+candied roses and marzipan birds perched in mint chocolate trees.  An the
+sent of sugar, caramel and chocolates prevade the aire like some perfume
+shop perfecting orchestrating its notes.    
+</roomdescription>
+      <flags>158</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="" exitinfo="0" keynum="-1" toroom="30723">
+      <description>You see nothing special.
+</description>
+    </exit>
+    <exit direction="west" keyword="door" exitinfo="1" keynum="0" toroom="30655">
+      <description/>
     </exit>
   </room>
   <room>

@@ -1,351 +1,590 @@
-#32500
-baby myrdraal~
-a baby Myrdraal~
-The baby myrdraal is standing here, waiting to be squashed by a player. 
-~
-The myrdraal, the throwback of Trollocs, where the human stock used has taken
+<?xml version="1.0"?>
+<mobiles>
+  <mobile vnum="32500" name="baby myrdraal" special="NONE">
+    <description>The myrdraal, the throwback of Trollocs, where the human stock used has taken
 the upper hand. Myrdrall looks almost like ordinary humans, except that they
 have no eyes. Despite this fact, they can still see wery well, both in light as 
 in the dark. A saying among the Borderlands is, that the look of the eyeless is fear. 
 A myrdraal can make the toughest man (or woman) shiver just by looking at them. 
 
 This myrdraal though, has not yet reached his full potential, so you better
-~
-2555978 128 0 E
-5 19 5 960 1d50+0 2d5+0
-200 200
-8 8 1 968
-BareHandAttack: 8
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-E
-#32502
-bonus mob~
-a bonus mob~
-A strange looking creature hulks in a corner.
-~
-It looks like something only a very strange man could conjure
+</description>
+    <shortdesc>a baby Myrdraal</shortdesc>
+    <longdesc>The baby myrdraal is standing here, waiting to be squashed by a player. 
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="5" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="50" bonus="0"/>
+      <move ndize="1" dsize="0" bonus="0"/>
+      <ac>50</ac>
+      <gold>200</gold>
+      <bankgold>0</bankgold>
+      <exp>200</exp>
+      <hitroll>1</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="2555978"/>
+    <affected one="128" two="0" three="0" four="0"/>
+    <attack type="8"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="2" sides="5" add="1"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="32502" name="bonus mob" special="NONE">
+    <description>It looks like something only a very strange man could conjure
 up in his dreams. Big, flappy ears, huge, pinkish tusks and
 large furry feet (six of them).
-~
-2056 0 0 E
-195 0 10 960 1d100+250 5d5+5
-120 150
-8 8 1 968
-BareHandAttack: 8
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-P
-OnEntry & ! Guild "rebel aes sedai" & ! Guild "rebel warder"
-ActionTo "hit"
-End
-Q
-E
-#32503
-sad little girl quest~
-a sad little girl~
-A sad little girl stands alone here, wiping her tears.
-~
-A cute little kiddo. 
-~
-10 0 0 E
-1 20 10 960 1d100+0 1d1+0
-0 1
-8 8 2 968
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-E
-#32504
-teddy bear thief quest~
-a mean teddy bear thief~
-A weasely man stands in a corner, holding a teddy bear.
-~
-He looks nasty, and that teddy bear is probably not his.
-~
-88 0 0 E
-1 20 10 960 1d100+0 1d1+0
-0 1
-8 8 1 968
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-P
-OnAttack
-Say "argh! damn you, i'll getcha for this."
-Pause 1
-Action "growl"
-End
-Q
-E
-#32505
-greedy merchant~
-the greedy merchant~
-A greedy merchant stands here, smiling widely.
-~
-He's the archetype for a greedy person; lots of gold and valuable
+</description>
+    <shortdesc>a bonus mob</shortdesc>
+    <longdesc>A strange looking creature hulks in a corner.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="199" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="250"/>
+      <move ndize="1" dsize="250" bonus="250"/>
+      <ac>100</ac>
+      <gold>120</gold>
+      <bankgold>0</bankgold>
+      <exp>1000</exp>
+      <hitroll>20</hitroll>
+      <damroll>5</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="2058"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="8"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="5" sides="5" add="20"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnEntry" argtype="STRING" argument="peck">
+      <sideterm number="Guild" not="TRUE" argtype="STRING" argument="rebel aes sedai"/>
+      <sideterm number="Guild" not="TRUE" argtype="STRING" argument="rebel warder"/>
+      <action number="ActionTo" argtype="STRING" argument="hit"/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="32503" name="sad little girl" special="NONE">
+    <description>A cute little kiddo. 
+</description>
+    <shortdesc>a sad little girl</shortdesc>
+    <longdesc>A sad little girl stands alone here, wiping her tears.
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="1" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="0"/>
+      <move ndize="1" dsize="0" bonus="0"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>1</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="10"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="32504" name="teddy bear thief" special="NONE">
+    <description>He looks nasty, and that teddy bear is probably not his.
+</description>
+    <shortdesc>a mean teddy bear thief</shortdesc>
+    <longdesc>A weasely man stands in a corner, holding a teddy bear.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="1" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="0"/>
+      <move ndize="1" dsize="0" bonus="0"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>2</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="88"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnAttack" argtype="STRING" argument="peck">
+      <action number="Say" argtype="STRING" argument="argh! damn you, i'll getcha for this."/>
+      <action number="Pause" argtype="INT" argument="1"/>
+      <action number="Action" argtype="STRING" argument="growl"/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="32505" name="greedy merchant" special="NONE">
+    <description>He's the archetype for a greedy person; lots of gold and valuable
 baubles on him.
-~
-10 0 0 E
-1 20 10 960 1d100+0 1d1+0
-0 1
-8 8 1 968
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-P
-OnAttack & ! Mode 1
-Emote "$n eeks as $N attacks $m, and runs away!"
-Mode 1
-Stop
-MoveTo 10186
-End
-OnAttack & Mode 1
-Emote "As $N attacks $n, $e manages to flee and runs on."
-Stop
-End
-Q
-E
-#32506
-one eyed man~
-the one eyed man~
-A man with a patch over his left eye stands here idly.
-~
-It looks, err, unfinished.
-~
-10 0 0 E
-1 20 10 960 1d100+0 1d1+0
-0 1
-8 8 1 968
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-P
-OnSayTo "al'thor" & Questing
-Emote "$n gives a start at $n's word."
-Pause 2
-Emote "$n hisses, 'shhh...you fool, don't say that name aloud!'"
-Pause 4
-Emote "$n looks around worriedly."
-Pause 3
-Emote "$n says quietly, 'ok, listen...this is what you must do.'"
-Pause 4
-Emote "$n says quietly, 'there is a man in ebou dar...he's dressed in all red...'"
-Pause 2
-Emote "$n says quietly, 'he's very fond of horse races, and that's probably where you'll find him'"
-Pause 3
-Emote "$n says quietly, 'and to him, you must say the name never spoken...the name of the dark one'"
-Pause 3
-Emote "$n looks distinctly uncomfortable for a second, then continues, 'he will then tell you what to do.'"
-Pause 2
-Say "now, begone."
-End
-Q
-E
-#32507
-beastly fido~
-the beastly Fido~
-The beastly Fido stands here, looking lost...Where is his world?
-~
-Stock, stock, stock, stock!
+</description>
+    <shortdesc>the greedy merchant</shortdesc>
+    <longdesc>A greedy merchant stands here, smiling widely.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="1" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="0"/>
+      <move ndize="1" dsize="0" bonus="0"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>1</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="10"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnAttack" argtype="STRING" argument="peck">
+      <sideterm number="Mode" not="TRUE" argtype="INT" argument="1"/>
+      <action number="Emote" argtype="STRING" argument="$n eeks as $N attacks $m, and runs away!"/>
+      <action number="Mode" argtype="INT" argument="1"/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="MoveTo" argtype="INT" argument="10186"/>
+    </mobprog>
+    <mobprog main="OnAttack" argtype="STRING" argument="peck">
+      <sideterm number="Mode" not="FALSE" argtype="INT" argument="1"/>
+      <action number="Emote" argtype="STRING" argument="As $N attacks $n, $e manages to flee and runs on."/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="32506" name="one eyed man" special="NONE">
+    <description>It looks, err, unfinished.
+</description>
+    <shortdesc>the one eyed man</shortdesc>
+    <longdesc>A man with a patch over his left eye stands here idly.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="1" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="0"/>
+      <move ndize="1" dsize="0" bonus="0"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>1</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="10"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnSayTo" argtype="STRING" argument="al'thor">
+      <sideterm number="Questing" not="FALSE" argtype="VOID" argument="NONE"/>
+      <action number="Emote" argtype="STRING" argument="$n gives a start at $n's word."/>
+      <action number="Pause" argtype="INT" argument="2"/>
+      <action number="Emote" argtype="STRING" argument="$n hisses, 'shhh...you fool, don't say that name aloud!'"/>
+      <action number="Pause" argtype="INT" argument="4"/>
+      <action number="Emote" argtype="STRING" argument="$n looks around worriedly."/>
+      <action number="Pause" argtype="INT" argument="3"/>
+      <action number="Emote" argtype="STRING" argument="$n says quietly, 'ok, listen...this is what you must do.'"/>
+      <action number="Pause" argtype="INT" argument="4"/>
+      <action number="Emote" argtype="STRING" argument="$n says quietly, 'there is a man in ebou dar...he's dressed in all red...'"/>
+      <action number="Pause" argtype="INT" argument="2"/>
+      <action number="Emote" argtype="STRING" argument="$n says quietly, 'he's very fond of horse races, and that's probably where you'll find him'"/>
+      <action number="Pause" argtype="INT" argument="3"/>
+      <action number="Emote" argtype="STRING" argument="$n says quietly, 'and to him, you must say the name never spoken...the name of the dark one'"/>
+      <action number="Pause" argtype="INT" argument="3"/>
+      <action number="Emote" argtype="STRING" argument="$n looks distinctly uncomfortable for a second, then continues, 'he will then tell you what to do.'"/>
+      <action number="Pause" argtype="INT" argument="2"/>
+      <action number="Say" argtype="STRING" argument="now, begone."/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="32507" name="beastly fido" special="NONE">
+    <description>Stock, stock, stock, stock!
 ..with a twist, of course.
-~
-2097228 0 0 E
-15 17 10 960 3d100+300 3d4+2
-0 90
-8 8 1 968
-BareHandAttack: 4
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-P
-OnMobAttack
-ActionTo "growl"
-End
-OnRandom 1
-Emote "$n looks around for corpses to devour."
-End
-OnRandom 1
-Emote "$n whines pitifully, looking lost."
-End
-OnSayTo "sit"
-Action "sit"
-Pause 2
-Emote "$n pants happily."
-End
-OnSayTo "fetch"
-Emote "$n barks happily and goes to fetch whatever $N wanted $m to fetch."
-End
-OnSayTo "kill"
-Emote "$n obediently tries to kill $N."
-ActionTo "kill"
-End
-OnSayTo "beer"
-Emote "$n looks sad as $e has no beer to give."
-End
-OnSayTo "gnu"
-Emote "$n makes $s famous impersonation of a proud steppe gnu."
-End
-OnSayTo "dead"
-Emote "$n playes dead very convincingly."
-End
-OnSayTo "stand"
-Action "stand"
-Pause 2
-Emote "$n pants happily."
-End
-OnSayTo "heel"
-ActionTo "follow"
-End
-OnSayTo "play"
-Action "follow self"
-End
-Q
-E
-#32508
-myrddraal captain~
-a myrddraal captain~
-A tall, imposing figure stands here.
-~
-Oh man! It's a Myrddraal! Not just that! It's a Captain! Flee
-~
-3103770 0 0 E
-195 -180 -20 960 30d100+18000 25d30+30
-100 150
-8 8 1 968
-BareHandAttack: 8
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-Dirtkick: 100
-Disarm: 100
-E
-#32509
-test mob~
-a test mob~
-A test mob stands here.
-~
-It looks, err, unfinished.
-~
-8 0 0 E
-0 20 10 960 1d100+0 1d1+0
-0 0
-8 8 1 968
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-P
-OnActionTo "poke" & Invisible
-Say "Hey! Who poked me?"
-Pause 3
-Action "peer"
-End
-Q
-E
-#32590
-cujo chihuahua~
-Cujo the fat chihuahua~
-Cujo the fat chihuahua is perched on top of a large box behind the counter.
-~
-He's one fat chihuahua..with black fur and four tiny legs protruding from his
+</description>
+    <shortdesc>the beastly Fido</shortdesc>
+    <longdesc>The beastly Fido stands here, looking lost...Where is his world?
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="15" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="3" dsize="100" bonus="300"/>
+      <move ndize="1" dsize="300" bonus="300"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>90</exp>
+      <hitroll>3</hitroll>
+      <damroll>2</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="2097228"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="4"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="3" sides="4" add="3"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnMobAttack" argtype="STRING" argument="al'thor">
+      <action number="ActionTo" argtype="STRING" argument="growl"/>
+    </mobprog>
+    <mobprog main="OnRandom" argtype="INT" argument="1">
+      <action number="Emote" argtype="STRING" argument="$n looks around for corpses to devour."/>
+    </mobprog>
+    <mobprog main="OnRandom" argtype="INT" argument="1">
+      <action number="Emote" argtype="STRING" argument="$n whines pitifully, looking lost."/>
+    </mobprog>
+    <mobprog main="OnSayTo" argtype="STRING" argument="sit">
+      <action number="Action" argtype="STRING" argument="sit"/>
+      <action number="Pause" argtype="INT" argument="2"/>
+      <action number="Emote" argtype="STRING" argument="$n pants happily."/>
+    </mobprog>
+    <mobprog main="OnSayTo" argtype="STRING" argument="fetch">
+      <action number="Emote" argtype="STRING" argument="$n barks happily and goes to fetch whatever $N wanted $m to fetch."/>
+    </mobprog>
+    <mobprog main="OnSayTo" argtype="STRING" argument="kill">
+      <action number="Emote" argtype="STRING" argument="$n obediently tries to kill $N."/>
+      <action number="ActionTo" argtype="STRING" argument="kill"/>
+    </mobprog>
+    <mobprog main="OnSayTo" argtype="STRING" argument="beer">
+      <action number="Emote" argtype="STRING" argument="$n looks sad as $e has no beer to give."/>
+    </mobprog>
+    <mobprog main="OnSayTo" argtype="STRING" argument="gnu">
+      <action number="Emote" argtype="STRING" argument="$n makes $s famous impersonation of a proud steppe gnu."/>
+    </mobprog>
+    <mobprog main="OnSayTo" argtype="STRING" argument="dead">
+      <action number="Emote" argtype="STRING" argument="$n playes dead very convincingly."/>
+    </mobprog>
+    <mobprog main="OnSayTo" argtype="STRING" argument="stand">
+      <action number="Action" argtype="STRING" argument="stand"/>
+      <action number="Pause" argtype="INT" argument="2"/>
+      <action number="Emote" argtype="STRING" argument="$n pants happily."/>
+    </mobprog>
+    <mobprog main="OnSayTo" argtype="STRING" argument="heel">
+      <action number="ActionTo" argtype="STRING" argument="follow"/>
+    </mobprog>
+    <mobprog main="OnSayTo" argtype="STRING" argument="play">
+      <action number="Action" argtype="STRING" argument="follow self"/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="32508" name="myrddraal captain" special="NONE">
+    <description>Oh man! It's a Myrddraal! Not just that! It's a Captain! Flee
+</description>
+    <shortdesc>a myrddraal captain</shortdesc>
+    <longdesc>A tall, imposing figure stands here.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="195" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="30" dsize="100" bonus="18000"/>
+      <move ndize="1" dsize="18000" bonus="18000"/>
+      <ac>-200</ac>
+      <gold>100</gold>
+      <bankgold>0</bankgold>
+      <exp>150</exp>
+      <hitroll>200</hitroll>
+      <damroll>30</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="3103770"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="11"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="30" sides="50" add="200"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="32509" name="bug" special="NONE">
+    <description>Definitely a nasty one.
+Better kill it off.
+</description>
+    <shortdesc>a nasty bug</shortdesc>
+    <longdesc>A nasty bug has slipped away from the coders and is making a mess here.
+</longdesc>
+    <title/>
+    <chardata gender="NEUTRAL" class="Adventurer" level="1" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="20" bonus="0"/>
+      <move ndize="1" dsize="0" bonus="0"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="8"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="4"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnActionTo" argtype="STRING" argument="poke">
+      <sideterm number="Invisible" not="FALSE" argtype="VOID" argument="NONE"/>
+      <action number="Say" argtype="STRING" argument="Hey! Who poked me?"/>
+      <action number="Pause" argtype="INT" argument="3"/>
+      <action number="Action" argtype="STRING" argument="peer"/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="32590" name="cujo chihuahua" special="NONE">
+    <description>He's one fat chihuahua..with black fur and four tiny legs protruding from his
 round body- and two white tipped paws..he's a comical sight. Better watch out for
 your ankles if you anger him.
-~
-4172 0 0 E
-1 20 10 960 1d100+0 1d1+0
-0 0
-6 6 1 968
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-E
-#32591
-man black shadow myrddraal~
-the black-clad man~
-A figure garbed in a cloak blacker than night itself is here, completely hidden within the folds of his cloak.
-~
-When one takes the time to gain a better look at the figure- it could almost be mistaken for a moving cloak,
-with no flesh showing what so ever...the garment hangs heavily, and remains deathly still despite the
-stirring of a light breeze. 
-~
-2097224 0 0 E
-180 20 10 960 1d100+0 1d1+0
-0 0
-8 8 0 968
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-E
-#32592
-hadeus~
-Hadeus~
-Hadeus stands here.
-~
-He is hidden within the depths of a voluminous cloak of coarse wool..and appears to be conversing with the black-clad man neighboring him.
+</description>
+    <shortdesc>Cujo the fat chihuahua</shortdesc>
+    <longdesc>Cujo the fat chihuahua is perched on top of a large box behind the counter.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="1" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="0"/>
+      <move ndize="1" dsize="0" bonus="0"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="9236556"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Sitting" other="Sitting"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="32591" name="man black shadow myrddraal" special="NONE">
+    <description>When one takes the time to gain a better look at the figure- it could
+almost be mistaken for a moving cloak, with no flesh showing what so
+ever...  The garment hangs heavily, and remains deathly still despite the
+stirring of a light breeze.    
+</description>
+    <shortdesc>the black-clad man</shortdesc>
+    <longdesc>A figure garbed in a cloak blacker than night itself is here, completely hidden within the folds of his cloak.
+</longdesc>
+    <title/>
+    <chardata gender="NEUTRAL" class="Adventurer" level="190" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="20" dsize="100" bonus="9000"/>
+      <move ndize="1" dsize="9000" bonus="9000"/>
+      <ac>-200</ac>
+      <gold>500</gold>
+      <bankgold>0</bankgold>
+      <exp>500</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="2107500"/>
+    <affected one="526386" two="0" three="0" four="0"/>
+    <attack type="11"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="30" sides="50" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="32592" name="hadeus" special="NONE">
+    <description>He is hidden within the depths of a voluminous cloak of coarse wool..and appears to be conversing with the black-clad man neighboring him.
 He clutches something in his left hand..it has an odd shine.
-~
-8 0 0 E
-1 19 -20 960 1d100+0 8d1+1
-0 0
-8 8 1 968
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-E
-#32595
-mob~
-an unfinished mob~
-an unfinished mob
-~
-it looks er...unfinished.
-~
-8 0 0 E
-1 20 10 960 1d100+0 1d1+0
-0 0
-8 8 0 968
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-E
-$
+</description>
+    <shortdesc>Hadeus</shortdesc>
+    <longdesc>Hadeus stands here.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="1" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="0"/>
+      <move ndize="1" dsize="0" bonus="0"/>
+      <ac>-200</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>1</hitroll>
+      <damroll>1</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="8"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="8" sides="1" add="1"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="32595" name="mob" special="NONE">
+    <description>it looks er...unfinished.
+</description>
+    <shortdesc>an unfinished mob</shortdesc>
+    <longdesc>an unfinished mob
+</longdesc>
+    <title/>
+    <chardata gender="NEUTRAL" class="Adventurer" level="1" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="0"/>
+      <move ndize="1" dsize="0" bonus="0"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="8"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+</mobiles>

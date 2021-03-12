@@ -1,191 +1,278 @@
-#23500
-ring iron~
-\c00A \c23m\c07a\c14n\c23y\c07-\c14f\c23a\c07c\c14e\c23t\c07e\c14d\c00 \c23iron\c00 ring worn on his little finger.~
-\c00A \c23m\c07a\c14n\c23y\c07-\c14f\c23a\c07c\c14e\c23t\c07e\c14d\c00 \c23iron\c00 ring worn on his little finger.~
-glitters softly
-~
-1 69632 3
-0 0 -1 0
-0 100000000 0
-A
-14 10000
-A
-13 10000
-A
-20 20
-A
-18 1000
-A
-19 1000
-A
-17 -1000
-P
-OnSteal
-Stop
-EmoteTo "It will not come off!"
-End
-Q
-#23502
-bread herb~
-a thick loaf of \c03h\c02e\c01r\c03b&n bread~
-A thick loaf of \c03h\c02e\c01r\c03b&n bread sits here steaming a little.~
-Steams gently!
-~
-4 69704 1
-2 0 2000 0
-0 0 0
-#23503
-glass vial~
-a small vial of \c09a\c06q\c02u\c11a&n liquid~
-A small vial of \c09a\c06q\c02u\c11a&n liquid rests hear on a shelf~
-Swirls around softly!
-~
-4 4168 1
-1 0 2000 0
-1 0 0
-#23504
-packet herbs~
-a small packet of herbs~
-A small pouch has been placed rather carefully in the drawer.~
-Gives of a tangy scent!
-~
-4 69696 1
-0 0 2000 0
-10 0 0
-P
-OnTake
-EmoteTo "A small piece of paper fall from the packet, "
-End
-Q
-#23505
-desk oak~
-a small desk of \c03O\c23a\c07k&n~
-A small desk of \c03O\c23a\c07k\c00 has been pushed off toward a wall.~
-~
-15 69696 1
-5000 15 23512 0
-0 0 0
-P
-OnTake
-Stop
-EmoteTo "It's too heavy!"
-End
-Q
-#23506
-ring~
-a wolf head ring~
-A wolf head ring~
-~
-0 0 1
-0 0 0 0
-0 0 0
-P
-OnRandom 18
-Emote "1"
-End
-OnTake & Wolfkin
-EmoteTo "You feel the urge to hunt!"
-End
-Q
-#23507
-bunch berry berries~
-a small bunch of \c09be\c00r\c09r\c00ie\c09s&n~
-A small bunch of \c09be\c00r\c09r\c00ie\c09s&n lies here on the ground.~
-Ugh they taste awful!
-~
-4 69704 1
-0 0 500 0
-0 0 0
-#23508
-stream~
-\c00a small \c06t\c13r\c11i\c13ck\c06l\c11n\c06g\c00 stream&n~
-\c00A small \c06t\c13r\c11i\c13ck\c06l\c11n\c06g\c00 stream flowing freely.~
-Gurgles Softly!
-~
-23 69696 1
-5000 5000 0 0
-5005 0 0
-P
-OnTake
-Stop
-EmoteTo "The water drips through your fingers!"
-End
-Q
-#23509
-stream spring well water~
-a \c11b\c06u\c04b\c06b\c13l\c11i\c13n\c11g\c00 spring~
-A \c11b\c06u\c04b\c06b\c13l\c11i\c13n\c11g s\c13p\c06r\c11i\c06n\c13g\c00 breaks through the ground and flows away.~
-~
-23 69704 1
-10000 10000 0 0
-8000 0 0
-P
-OnTake
-Stop
-EmoteTo "The \c11water\c00 drips through your fingers!"
-End
-Q
-#23510
-map mountain side~
-a map of the pathways up the mountains of mist~
-A rolled up piece of parchment lies here.~
-~
-16 69704 1
-0 0 0 0
-0 0 0
-#23512
-key rusty~
-a small \c01rusty&n key~
-A small \c01rusty&n key lies half buried in the brush.~
-~
-18 69696 1
-0 0 0 0
-1 0 0
-#23533
-ice shard~
-a long shard of \c14ice&n~
-A shard of thick ice has been broken off here.  It's long point would make an excellent stabbing weapon.~
-Drips a little!
-~
-5 65736 8193
-10 5 10 14
-3 0 0
-A
-20 1
-A
-18 5
-A
-19 5
-#23562
-dagger black fade~
-a \c01bloody \c23black \c00dagger&n~
-A jagged black dagger wrought with some taint lies here dripping blood.~
-Slashes Down!
-~
-5 65728 8193
-15 4 5 14
-5 5000 0
-A
-6 -5
-A
-20 1
-A
-18 10
-A
-19 10
-#23573
-stalactite~
-a huge rock stalactite~
-An unfinished object is lying here.~
-~
-5 2112 32769
-400 100 5 7
-2000 0 0
-A
-20 1
-P
-OnDie
-Destroy
-End
-Q
-$~
+<?xml version="1.0"?>
+<objects>
+  <object vnum="23500" name="ring iron" special="NONE">
+    <description>\c00A \c23m\c07a\c14n\c23y\c07-\c14f\c23a\c07c\c14e\c23t\c07e\c14d\c00 \c23iron\c00 ring worn on his little finger.</description>
+    <shortdesc>\c00A \c23m\c07a\c14n\c23y\c07-\c14f\c23a\c07c\c14e\c23t\c07e\c14d\c00 \c23iron\c00 ring worn on his little finger.</shortdesc>
+    <actiondesc>glitters softly
+</actiondesc>
+    <affectflag>0</affectflag>
+    <objaffect location="MAXMOVE" modifier="10000"/>
+    <objaffect location="MAXHIT" modifier="10000"/>
+    <objaffect location="XATTACKS" modifier="20"/>
+    <objaffect location="HITROLL" modifier="1000"/>
+    <objaffect location="DAMROLL" modifier="1000"/>
+    <objaffect location="ARMOR" modifier="-1000"/>
+    <objflags>
+      <values value1="0" value2="0" value3="-1" value4="0"/>
+      <flags type="1" wear="3" extra="69632"/>
+      <data weight="0" cost="100000000" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <objprog main="OnSteal" argtype="STRING" argument="look board">
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="EmoteTo" argtype="STRING" argument="It will not come off!"/>
+    </objprog>
+  </object>
+  <object vnum="23502" name="bread herb" special="NONE">
+    <description>A thick loaf of \c03h\c02e\c01r\c03b&amp;n bread sits here steaming a little.</description>
+    <shortdesc>a thick loaf of \c03h\c02e\c01r\c03b&amp;n bread</shortdesc>
+    <actiondesc>Steams gently!
+</actiondesc>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="2" value2="0" value3="2000" value4="0"/>
+      <flags type="4" wear="1" extra="69704"/>
+      <data weight="0" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="23503" name="glass vial" special="NONE">
+    <description>A small vial of \c09a\c06q\c02u\c11a&amp;n liquid rests hear on a shelf</description>
+    <shortdesc>a small vial of \c09a\c06q\c02u\c11a&amp;n liquid</shortdesc>
+    <actiondesc>Swirls around softly!
+</actiondesc>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="1" value2="0" value3="2000" value4="0"/>
+      <flags type="4" wear="1" extra="4168"/>
+      <data weight="1" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="23504" name="packet herbs" special="NONE">
+    <description>A small pouch has been placed rather carefully in the drawer.</description>
+    <shortdesc>a small packet of herbs</shortdesc>
+    <actiondesc>Gives of a tangy scent!
+</actiondesc>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="2000" value4="0"/>
+      <flags type="4" wear="1" extra="69696"/>
+      <data weight="10" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <objprog main="OnTake" argtype="STRING" argument="look board">
+      <action number="EmoteTo" argtype="STRING" argument="A small piece of paper fall from the packet, "/>
+    </objprog>
+  </object>
+  <object vnum="23505" name="desk oak" special="NONE">
+    <description>A small desk of oak has been pushed off toward a wall.</description>
+    <shortdesc>a small desk of oak</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="5000" value2="15" value3="23512" value4="0"/>
+      <flags type="15" wear="1" extra="69696"/>
+      <data weight="0" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <objprog main="OnTake" argtype="STRING" argument="look board">
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="EmoteTo" argtype="STRING" argument="It&apos;s too heavy!"/>
+    </objprog>
+  </object>
+  <object vnum="23506" name="ring" special="NONE">
+    <description>A wolf head ring</description>
+    <shortdesc>a wolf head ring</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="0" wear="1" extra="0"/>
+      <data weight="0" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <objprog main="OnRandom" argtype="INT" argument="18">
+      <action number="Emote" argtype="STRING" argument="1"/>
+    </objprog>
+    <objprog main="OnTake" argtype="INT" argument="18">
+      <sideterm number="Wolfkin" not="TRUE" argtype="VOID" argument="NONE"/>
+      <action number="EmoteTo" argtype="STRING" argument="You feel the urge to hunt!"/>
+    </objprog>
+  </object>
+  <object vnum="23507" name="bunch berry berries" special="NONE">
+    <description>A small bunch of \c09be\c00r\c09r\c00ie\c09s&amp;n lies here on the ground.</description>
+    <shortdesc>a small bunch of \c09be\c00r\c09r\c00ie\c09s&amp;n</shortdesc>
+    <actiondesc>Ugh they taste awful!
+</actiondesc>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="500" value4="0"/>
+      <flags type="4" wear="1" extra="69704"/>
+      <data weight="0" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="23508" name="stream" special="NONE">
+    <description>\c00A small \c06t\c13r\c11i\c13ck\c06l\c11n\c06g\c00 stream flowing freely.</description>
+    <shortdesc>\c00a small \c06t\c13r\c11i\c13ck\c06l\c11n\c06g\c00 stream&amp;n</shortdesc>
+    <actiondesc>Gurgles Softly!
+</actiondesc>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="5000" value2="5000" value3="0" value4="0"/>
+      <flags type="23" wear="1" extra="69696"/>
+      <data weight="5005" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <objprog main="OnTake" argtype="VOID" argument="NONE">
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="EmoteTo" argtype="STRING" argument="The water drips through your fingers!"/>
+    </objprog>
+  </object>
+  <object vnum="23509" name="stream spring well water" special="NONE">
+    <description>A \c11b\c06u\c04b\c06b\c13l\c11i\c13n\c11g s\c13p\c06r\c11i\c06n\c13g\c00 breaks through the ground and flows away.</description>
+    <shortdesc>a \c11b\c06u\c04b\c06b\c13l\c11i\c13n\c11g\c00 spring</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="10000" value2="10000" value3="0" value4="0"/>
+      <flags type="23" wear="1" extra="69704"/>
+      <data weight="10005" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <objprog main="OnTake" argtype="VOID" argument="NONE">
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="EmoteTo" argtype="STRING" argument="The \c11water\c00 drips through your fingers!"/>
+    </objprog>
+  </object>
+  <object vnum="23510" name="map mountain side" special="NONE">
+    <description>A rolled up piece of parchment lies here.</description>
+    <shortdesc>a map of the pathways up the mountains of mist</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="16" wear="1" extra="69704"/>
+      <data weight="0" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="23512" name="key rusty" special="NONE">
+    <description>A small \c01rusty&amp;n key lies half buried in the brush.</description>
+    <shortdesc>a small \c01rusty&amp;n key</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="18" wear="1" extra="69696"/>
+      <data weight="1" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="23533" name="ice shard" special="NONE">
+    <description>A shard of thick ice has been broken off here.  It&apos;s long point would make an excellent stabbing weapon.</description>
+    <shortdesc>a long shard of \c14ice&amp;n</shortdesc>
+    <actiondesc>Drips a little!
+</actiondesc>
+    <affectflag>0</affectflag>
+    <objaffect location="XATTACKS" modifier="1"/>
+    <objaffect location="HITROLL" modifier="5"/>
+    <objaffect location="DAMROLL" modifier="5"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="10" value2="5" value3="10" value4="14"/>
+      <flags type="5" wear="8193" extra="65736"/>
+      <data weight="3" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="23562" name="dagger black fade" special="NONE">
+    <description>A jagged black dagger wrought with some taint lies here dripping blood.</description>
+    <shortdesc>a \c01bloody \c23black \c00dagger&amp;n</shortdesc>
+    <actiondesc>Slashes Down!
+</actiondesc>
+    <affectflag>0</affectflag>
+    <objaffect location="CHA" modifier="-5"/>
+    <objaffect location="XATTACKS" modifier="1"/>
+    <objaffect location="HITROLL" modifier="10"/>
+    <objaffect location="DAMROLL" modifier="10"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="15" value2="4" value3="5" value4="14"/>
+      <flags type="5" wear="8193" extra="65728"/>
+      <data weight="5" cost="5000" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="23573" name="stalactite" special="NONE">
+    <description>An unfinished object is lying here.</description>
+    <shortdesc>a huge rock stalactite</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="XATTACKS" modifier="1"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="400" value2="100" value3="5" value4="7"/>
+      <flags type="5" wear="32769" extra="2112"/>
+      <data weight="2000" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <objprog main="OnDie" argtype="VOID" argument="NONE">
+      <action number="Destroy" argtype="VOID" argument="NONE"/>
+    </objprog>
+  </object>
+</objects>

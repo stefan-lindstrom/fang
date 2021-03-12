@@ -1,6 +1,11 @@
-#149
-\c07(\c06None\c07) The Place to Be!\c00~
-14999 10 2 0
-D 0 14900 5 1
-S
-$
+<?xml version="1.0"?>
+<zone vnum="149" lifespan="10" top="14999" mode="2" lock="no">
+  <name>\c07(\c06None\c07) The Place to Be!\c00</name>
+  <resetcmds numberof="2">
+    <cmd command="UNKNOWN" ifflag="no">
+      <args arg1="14900" arg2="5" arg3="1"/>
+      <line lineno="7"/>
+    </cmd>
+    <cmd command="STOP"/>
+  </resetcmds>
+</zone>

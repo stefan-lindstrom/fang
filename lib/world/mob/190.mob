@@ -1,76 +1,120 @@
-#19000
-Ilgaria the Ogier Peacekeeper~
-Ilgaria The Ogier peacekeeper~
-The Ogier Peacekeeper stands here watching you carefully.
-~
-undefined~
-346126 269287472 100 E
-100 -180 -10 675 1d100+50 2d1+150
-500 10000
-8 8 1
-BareHandAttack: 6
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-Bash: 100
-Trip: 100
-Dirtkick: 100
-Kick: 100
-Disarm: 100
-Stun: 100
-E
-#19010
-An evil twin Olgar~
-the unfinished mob~
-An evil twin Olgar
-~
-It looks, err, unfinished.
-~
-1040392 805896224 0 E
-150 -80 10 675 8d8+0 3d3+150
-10000 150
-8 8 1
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-Bash: 100
-Trip: 100
-Dirtkick: 100
-Kick: 100
-Disarm: 100
-Stun: 100
-E
-#19023
-storekeeper ogier store clerk~
-an Ogier Store Clerk~
-The Ogier Store Clerk stands here, waiting to help you
-~
-   Almost 10 feet tall, the Ogier Store Clerk looks down at you with large
+<?xml version="1.0"?>
+<mobiles>
+  <mobile vnum="19000" name="Ilgaria the Ogier Peacekeeper" special="NONE">
+    <description>\c00</description>
+    <shortdesc>Ilgaria The Ogier peacekeeper</shortdesc>
+    <longdesc>The Ogier Peacekeeper stands here watching you carefully.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="100" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="50"/>
+      <move ndize="10" dsize="100" bonus="50"/>
+      <ac>-100</ac>
+      <gold>500</gold>
+      <bankgold>0</bankgold>
+      <exp>10000</exp>
+      <hitroll>200</hitroll>
+      <damroll>150</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="346126"/>
+    <affected one="269287472" two="0" three="0" four="0"/>
+    <attack type="6"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="2" sides="1" add="200"/>
+    <timer amount="0"/>
+    <skills vector="63"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="19010" name="An evil twin Olgar" special="NONE">
+    <description>It looks, err, unfinished.
+</description>
+    <shortdesc>the unfinished mob</shortdesc>
+    <longdesc>An evil twin Olgar
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="150" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="8" dsize="8" bonus="0"/>
+      <move ndize="10" dsize="100" bonus="0"/>
+      <ac>100</ac>
+      <gold>10000</gold>
+      <bankgold>0</bankgold>
+      <exp>150</exp>
+      <hitroll>100</hitroll>
+      <damroll>150</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1040392"/>
+    <affected one="805896224" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="3" sides="3" add="100"/>
+    <timer amount="0"/>
+    <skills vector="63"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="19023" name="storekeeper ogier store clerk" special="NONE">
+    <description>   Almost 10 feet tall, the Ogier Store Clerk looks down at you with large
 brown eyes, which seem to twinkle with glee at the thought of helping you with
 your purchase.  He is wearing a large leather apron, in which he keeps his 
 change, and a few small items of inventory.
-~
-122890 0 1000 E
-100 -80 10 675 1d100+0 1d1+150
-0 0
-8 8 1
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-P
-OnEntry
-SayTo "Greetings, welcome to my General Store!"
-Emote "The Clerk smiles happily, his long tufted ears twitching with glee."
-End
-Q
-E
-$
+</description>
+    <shortdesc>an Ogier Store Clerk</shortdesc>
+    <longdesc>The Ogier Store Clerk stands here, waiting to help you
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="100" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="0"/>
+      <move ndize="10" dsize="100" bonus="0"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>100</hitroll>
+      <damroll>150</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="122890"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="100"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnEntry" argtype="STRING" argument="lick kiss tickle goose fondle grope stroke french">
+      <action number="SayTo" argtype="STRING" argument="Greetings, welcome to my General Store!"/>
+      <action number="Emote" argtype="STRING" argument="The Clerk smiles happily, his long tufted ears twitching with glee."/>
+    </mobprog>
+  </mobile>
+</mobiles>

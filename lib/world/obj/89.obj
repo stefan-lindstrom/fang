@@ -1,99 +1,134 @@
-#8900
-sleeves arm AM~
-a pair of black cloth sleeves~
-A pile of black cloth sits here, apparently a discraded pair of sleeves.~
-~
-9 0 257
-15 0 0 0
-10 12000 0
-A
-18 7
-A
-19 7
-#8901
-gauntlets steel AM~
-a pair of steel gauntlets~
-A pair of steel gauntlets lie here.~
-~
-9 0 129
-50 0 0 0
-3 5000 0
-#8902
-trousers rough wool AM~
-a pair of rough, woolen trousers~
-A pair of rough, woolen trousers lie here, neatly folded.~
-~
-9 0 33
-20 0 0 0
-1 5000 0
-A
-18 2
-A
-19 2
-#8903
-dagger long battle AM~
-a long battle dagger~
-A long battle dagger lies here, looking dangerous~
-~
-5 131072 8193
-0 1 6 14
-5 15000 0
-A
-18 10
-A
-19 10
-#8904
-shirt mail scale AM~
-a shirt of overlapping steel scales~
-A shirt of overlapping steel scales lies here.~
-~
-9 0 9
-15 0 0 0
-10 3500 0
-A
-17 -15
-A
-1 2
-#8905
-bracer polished steel AM~
-a polished steel bracer~
-A polished steel bracer lies here.~
-~
-9 0 4097
-20 0 0 0
-5 9500 0
-A
-17 -20
-A
-18 5
-A
-19 5
-#8906
-dagger polished obsidian AM quest~
-\c00a polished \c23obsidian\c00 dagger~
-\c00A dagger made from polished \c23obsidian\c00 lies here.~
-~
-5 135304 8193
-0 5 10 14
-1 1 90
-A
-18 50
-A
-19 50
-P
-OnActionToCarry "enhance"
-Stop
-Emote "I'm sorry Dave, I'm afraid I can't do that."
-End
-Q
-#8907
-sign ooc~
-\c00a very OoC sign~
-\c00A sign stands here, looking very OoC.~
-The items that are sold in this shop are as follows:
+<?xml version="1.0"?>
+<objects>
+  <object vnum="8900" name="sleeves arm AM" special="NONE">
+    <description>A pile of black cloth sits here, apparently a discraded pair of sleeves.</description>
+    <shortdesc>a pair of black cloth sleeves</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="HITROLL" modifier="7"/>
+    <objaffect location="DAMROLL" modifier="7"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="15" value2="0" value3="0" value4="0"/>
+      <flags type="9" wear="257" extra="0"/>
+      <data weight="10" cost="12000" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="8901" name="gauntlets steel AM" special="NONE">
+    <description>A pair of steel gauntlets lie here.</description>
+    <shortdesc>a pair of steel gauntlets</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="50" value2="0" value3="0" value4="0"/>
+      <flags type="9" wear="129" extra="0"/>
+      <data weight="3" cost="5000" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="8902" name="trousers rough wool AM" special="NONE">
+    <description>A pair of rough, woolen trousers lie here, neatly folded.</description>
+    <shortdesc>a pair of rough, woolen trousers</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="HITROLL" modifier="2"/>
+    <objaffect location="DAMROLL" modifier="2"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="20" value2="0" value3="0" value4="0"/>
+      <flags type="9" wear="33" extra="0"/>
+      <data weight="1" cost="5000" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="8903" name="dagger long battle AM" special="NONE">
+    <description>A long battle dagger lies here, looking dangerous</description>
+    <shortdesc>a long battle dagger</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="HITROLL" modifier="10"/>
+    <objaffect location="DAMROLL" modifier="10"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="1" value3="6" value4="14"/>
+      <flags type="5" wear="8193" extra="131072"/>
+      <data weight="5" cost="15000" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="8904" name="shirt mail scale AM" special="NONE">
+    <description>A shirt of overlapping steel scales lies here.</description>
+    <shortdesc>a shirt of overlapping steel scales</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="ARMOR" modifier="-15"/>
+    <objaffect location="STR" modifier="2"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="15" value2="0" value3="0" value4="0"/>
+      <flags type="9" wear="9" extra="0"/>
+      <data weight="10" cost="3500" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="8905" name="bracer polished steel AM" special="NONE">
+    <description>A polished steel bracer lies here.</description>
+    <shortdesc>a polished steel bracer</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="ARMOR" modifier="-20"/>
+    <objaffect location="HITROLL" modifier="5"/>
+    <objaffect location="DAMROLL" modifier="5"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="20" value2="0" value3="0" value4="0"/>
+      <flags type="9" wear="4097" extra="0"/>
+      <data weight="5" cost="9500" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="8906" name="dagger polished obsidian AM quest" special="NONE">
+    <description>\c00A dagger made from polished \c23obsidian\c00 lies here.</description>
+    <shortdesc>\c00a polished \c23obsidian\c00 dagger</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="HITROLL" modifier="50"/>
+    <objaffect location="DAMROLL" modifier="50"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="5" value3="10" value4="14"/>
+      <flags type="5" wear="8193" extra="135304"/>
+      <data weight="1" cost="1" questcost="90" timer="0" bitvector="0"/>
+    </objflags>
+    <objprog main="OnActionToCarry" argtype="STRING" argument="enhance">
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="Emote" argtype="STRING" argument="I&apos;m sorry Dave, I&apos;m afraid I can&apos;t do that."/>
+    </objprog>
+  </object>
+  <object vnum="8907" name="sign ooc" special="NONE">
+    <description>\c00A sign stands here, looking very OoC.</description>
+    <shortdesc>\c00a very OoC sign</shortdesc>
+    <actiondesc>The items that are sold in this shop are as follows:
 
 Black sleeves:          -15 to ARMOR, +7 to HITROLL, +7 to DAMROLL
-Gauntlets:              -50 to ARMOR
 Trousers:               -20 to ARMOR, +2 to HITROLL, +2 to DAMROLL
 Battle dagger:          1d6, +10 to HITROLL, +10 to DAMROLL, Stabbing weapon
 Mail shirt:             -15 to ARMOR, +2 to STR
@@ -102,24 +137,52 @@ Obsidian dagger(Q):     5d10, +50 to HITROLL, +50 to DAMROLL, Stabbing weapon
 Note: All weapons can be used for backstab and throw skills.
 Thank you,
 -The Proprieter
-~
-16 0 1
-0 0 0 0
-10000 0 0
-#8910
-stream~
-a swiftly flowing \c04s\c00\c11t\c00\c06re\c00\c13a\c00\c14m\c00~
-\c00A \c04s\c00\c11t\c00\c06re\c00\c13a\c00\c14m\c00  runs swiftly across the path.~
-~
-23 0 1
-10000 10000 0 0
-10000 0 0
-#8911
-a Portal Stone~
-a Portal Stone~
-&gA &Ws&kla&wb &Wof &ks&Wto&wn&ke &gcarved with ancient &Rsy&rm&Rb&ro&Rls &glies half-buried in the ground.&n~
-~
-0 0 1
-0 0 0 0
-10000 0 0
-$~
+</actiondesc>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="16" wear="1" extra="0"/>
+      <data weight="10000" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="8910" name="stream" special="NONE">
+    <description>\c00A \c04s\c00\c11t\c00\c06re\c00\c13a\c00\c14m\c00  runs swiftly across the path.</description>
+    <shortdesc>a swiftly flowing \c04s\c00\c11t\c00\c06re\c00\c13a\c00\c14m\c00</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="10000" value2="10000" value3="0" value4="0"/>
+      <flags type="23" wear="1" extra="0"/>
+      <data weight="10000" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="8911" name="a Portal Stone" special="NONE">
+    <description>&amp;gA &amp;Ws&amp;kla&amp;wb &amp;Wof &amp;ks&amp;Wto&amp;wn&amp;ke &amp;gcarved with ancient &amp;Rsy&amp;rm&amp;Rb&amp;ro&amp;Rls &amp;glies half-buried in the ground.&amp;n</description>
+    <shortdesc>a Portal Stone</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="0" wear="1" extra="0"/>
+      <data weight="10000" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+</objects>

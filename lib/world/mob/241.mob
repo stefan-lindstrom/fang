@@ -1,457 +1,868 @@
-#24101
-girl female ogier~
-a pretty ogier girl~
-A pretty young ogier female is here , welcoming you in Stedding Tsofu.
-~
-undefined~
-202 0 0 E
-10 18 8 694 10d100+0 1d3+2
-20 100
-8 8 2
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-E
-#24105
-messenger boy ogier~
-the elder's messenger~
-A young ogier boy is here ready to run to bring messages.
-~
-It looks, err, unfinished.
-~
-8 0 5 E
-5 19 9 694 5d100+0 1d2+1
-5 90
-8 8 1
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-E
-#24106
-male ogier elder watcher~
-an elder ogier ~
-An Elder ogier from Stedding Tsofu is here considering you, carefully.
-~
-It looks, err, unfinished.
-~
-10 0 0 E
-25 12 5 694 25d100+400 2d5+8
-40 105
-8 8 1
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-E
-#24110
-ogier male old shopkeeper Talar~
-Talar, the shopkeeper~
-The old ogier shopkeeper, is here ready to sell you lights of any kind.
-~
-It looks, err, unfinished.
-~
-24586 1 100 E
-35 12 3 694 30d100+200 1d3+8
-100 105
-8 8 1
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-Stun: 100
-E
-#24112
-aiel woman maiden~
-an aiel woman~
-An aiel woman is here peering at you, considering you.
-~
-It looks, err, unfinished.
-~
-10 524800 250 E
-50 -5 4 694 30d100+2000 2d10+25
-25 100
-8 8 2
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-Dirtkick: 100
-E
-#24114
-Maryanne ogier girl seller young~
-Maryanne, the fruits vendor~
-A young ogier girl is here tryiing to sell her miraculous fruits.
-~
-It looks, err, unfinished.
-~
-10 0 150 E
-1 20 10 694 1d100+10 1d1+0
-50 90
-8 8 2
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-E
-#24125
-Salar shopkeeper innkeeper~
-Salar , the ogier Innkeeper.~
-Salar, the Innkeeper, is washing a gauntlet here smiling at you.
-~
-It looks, err, unfinished.
-~
-16522 0 100 E
-20 16 6 694 20d100+0 1d3+4
-100 100
-8 8 1
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-E
-#24130
-eagle great bird~
-a beautifull great eagle~
-A majestics eagle is here spreading its wing wide open, hunting for food.
-~
-It looks, err, unfinished.
-~
-327752 0 0 E
-25 13 5 694 25d100+0 2d5+7
-0 105
-8 8 0
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-E
-#24131
-squirrel big ~
-a big squirrel~
-A pretty big squirrel eats some nuts here.
-~
-It looks, err, unfinished.
-~
-8 0 0 E
-8 18 10 694 8d40+0 1d4+2
-0 85
-8 8 0
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-E
-#24135
-Adam ogier shopkeeper~
-Adam, the shopkeeper~
-Adam, the shopkeeper of the Traveller's Shop is here trying to sell you his stuffs.
-~
-It looks, err, unfinished.
-~
-138 0 0 E
-10 18 10 694 10d100+0 1d3+2
-75 0
-8 8 1
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-E
-#24143
-master olvar ogier male treesinger~
-Olvar , the master treesinger~
-Master Olvar, the head treesinger of Stedding Tsofu is here.
-~
-It looks, err, unfinished.
-~
-8218 0 100 E
-50 -5 0 694 30d100+1200 5d10+25
-50 105
-8 8 1
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-Disarm: 100
-E
-#24147
-ogiers kids children~
-a group of ogier children~
-A bunch of ogiers kids are here, different age, different sex and different size.
-~
-It looks, err, unfinished.
-~
-8 0 0 E
-30 11 4 694 30d100+400 4d6+9
-50 95
-8 8 0
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-Bash: 100
-E
-#24156
-young ogier child male~
-a young male ogier~
-A young male ogier is here playing in the dirt
-~
-This young male ogier looks at  you with a face covered in dirt
+<?xml version="1.0"?>
+<mobiles>
+  <mobile vnum="24101" name="girl female ogier" special="NONE">
+    <description>She's much like the other ogier hereabouts, but prettier.
+</description>
+    <shortdesc>a pretty ogier girl</shortdesc>
+    <longdesc>A pretty young ogier female is here, welcoming visitors.
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="10" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="10" dsize="100" bonus="0"/>
+      <move ndize="10" dsize="100" bonus="0"/>
+      <ac>80</ac>
+      <gold>20</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>2</hitroll>
+      <damroll>2</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="202"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="3" add="2"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="24105" name="messenger boy ogier" special="NONE">
+    <description>It looks, err, unfinished.
+</description>
+    <shortdesc>the elder's messenger</shortdesc>
+    <longdesc>A young ogier boy is here ready to run to bring messages.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="5" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="5" dsize="100" bonus="0"/>
+      <move ndize="10" dsize="100" bonus="0"/>
+      <ac>90</ac>
+      <gold>5</gold>
+      <bankgold>0</bankgold>
+      <exp>90</exp>
+      <hitroll>1</hitroll>
+      <damroll>1</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="8"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="2" add="1"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="24106" name="male ogier elder watcher" special="NONE">
+    <description>It looks, err, unfinished.
+</description>
+    <shortdesc>an elder ogier </shortdesc>
+    <longdesc>An Elder ogier from Stedding Tsofu is here considering you, carefully.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="25" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="25" dsize="100" bonus="400"/>
+      <move ndize="10" dsize="100" bonus="400"/>
+      <ac>50</ac>
+      <gold>40</gold>
+      <bankgold>0</bankgold>
+      <exp>105</exp>
+      <hitroll>8</hitroll>
+      <damroll>8</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="10"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="2" sides="5" add="8"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="24110" name="ogier male old shopkeeper Talar" special="NONE">
+    <description>It looks, err, unfinished.
+</description>
+    <shortdesc>Talar, the shopkeeper</shortdesc>
+    <longdesc>The old ogier shopkeeper, is here ready to sell you lights of any kind.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="35" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="30" dsize="100" bonus="200"/>
+      <move ndize="10" dsize="100" bonus="200"/>
+      <ac>30</ac>
+      <gold>100</gold>
+      <bankgold>0</bankgold>
+      <exp>105</exp>
+      <hitroll>8</hitroll>
+      <damroll>8</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="24586"/>
+    <affected one="1" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="3" add="8"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="24112" name="aiel woman maiden" special="NONE">
+    <description>It looks, err, unfinished.
+</description>
+    <shortdesc>an aiel woman</shortdesc>
+    <longdesc>An aiel woman is here peering at you, considering you.
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="50" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="30" dsize="100" bonus="2000"/>
+      <move ndize="10" dsize="100" bonus="2000"/>
+      <ac>40</ac>
+      <gold>25</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>25</hitroll>
+      <damroll>25</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="10"/>
+    <affected one="524800" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="2" sides="10" add="25"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="24114" name="Maryanne ogier girl seller young" special="NONE">
+    <description>It looks, err, unfinished.
+</description>
+    <shortdesc>Maryanne, the fruits vendor</shortdesc>
+    <longdesc>A young ogier girl is here tryiing to sell her miraculous fruits.
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="1" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="10"/>
+      <move ndize="10" dsize="100" bonus="10"/>
+      <ac>100</ac>
+      <gold>50</gold>
+      <bankgold>0</bankgold>
+      <exp>90</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="9232394"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="24125" name="Salar shopkeeper innkeeper" special="NONE">
+    <description>It looks, err, unfinished.
+</description>
+    <shortdesc>Salar , the ogier Innkeeper.</shortdesc>
+    <longdesc>Salar, the Innkeeper, is washing a gauntlet here smiling at you.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="20" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="20" dsize="100" bonus="0"/>
+      <move ndize="10" dsize="100" bonus="0"/>
+      <ac>60</ac>
+      <gold>100</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>4</hitroll>
+      <damroll>4</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="9232522"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="3" add="4"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="24130" name="eagle great bird" special="NONE">
+    <description>It looks, err, unfinished.
+</description>
+    <shortdesc>a beautiful great eagle</shortdesc>
+    <longdesc>A majestic eagle is here spreading its wings wide open, hunting for food.
+</longdesc>
+    <title/>
+    <chardata gender="NEUTRAL" class="Adventurer" level="25" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="25" dsize="100" bonus="0"/>
+      <move ndize="10" dsize="100" bonus="0"/>
+      <ac>50</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>105</exp>
+      <hitroll>7</hitroll>
+      <damroll>7</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="327752"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="2" sides="5" add="7"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="24131" name="squirrel big " special="NONE">
+    <description>It looks, err, unfinished.
+</description>
+    <shortdesc>a big squirrel</shortdesc>
+    <longdesc>A pretty big squirrel eats some nuts here.
+</longdesc>
+    <title/>
+    <chardata gender="NEUTRAL" class="Adventurer" level="8" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="8" dsize="40" bonus="0"/>
+      <move ndize="10" dsize="100" bonus="0"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>85</exp>
+      <hitroll>2</hitroll>
+      <damroll>2</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="8"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="4" add="2"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="24135" name="Adam ogier shopkeeper" special="NONE">
+    <description>It looks, err, unfinished.
+</description>
+    <shortdesc>Adam, the shopkeeper</shortdesc>
+    <longdesc>Adam, the shopkeeper of the Traveller's Shop is here trying to sell you his stuffs.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="10" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="10" dsize="100" bonus="0"/>
+      <move ndize="10" dsize="100" bonus="0"/>
+      <ac>100</ac>
+      <gold>75</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>2</hitroll>
+      <damroll>2</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="9232522"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="3" add="2"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="24143" name="master olvar ogier male treesinger" special="NONE">
+    <description>It looks, err, unfinished.
+</description>
+    <shortdesc>Olvar , the master treesinger</shortdesc>
+    <longdesc>Master Olvar, the head treesinger of Stedding Tsofu is here.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="50" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="30" dsize="100" bonus="1200"/>
+      <move ndize="10" dsize="100" bonus="1200"/>
+      <ac>0</ac>
+      <gold>50</gold>
+      <bankgold>0</bankgold>
+      <exp>105</exp>
+      <hitroll>25</hitroll>
+      <damroll>25</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="8218"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="5" sides="10" add="25"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="24147" name="ogiers kids children" special="NONE">
+    <description>It looks, err, unfinished.
+</description>
+    <shortdesc>a group of ogier children</shortdesc>
+    <longdesc>A bunch of ogiers kids are here, different age, different sex and different size.
+</longdesc>
+    <title/>
+    <chardata gender="NEUTRAL" class="Adventurer" level="30" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="30" dsize="100" bonus="400"/>
+      <move ndize="10" dsize="100" bonus="400"/>
+      <ac>40</ac>
+      <gold>50</gold>
+      <bankgold>0</bankgold>
+      <exp>95</exp>
+      <hitroll>9</hitroll>
+      <damroll>9</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="8"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="4" sides="6" add="9"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="24156" name="young ogier child male" special="NONE">
+    <description>This young male ogier looks at  you with a face covered in dirt
 and the rest of him isn't too clean either.
-~
-10 0 0 E
-30 10 4 694 30d100+400 4d5+10
-100 100
-8 8 1
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-Dirtkick: 100
-Disarm: 100
-E
-#24157
-ogier young male tag~
-a young male ogier playing tag~
-A young male ogier chases after another ogier while playing tag.
-~
-As you catch a glace of this ogier as he runs by, he seems
+</description>
+    <shortdesc>a young male ogier</shortdesc>
+    <longdesc>A young male ogier is here playing in the dirt
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="30" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="30" dsize="100" bonus="400"/>
+      <move ndize="10" dsize="100" bonus="400"/>
+      <ac>40</ac>
+      <gold>100</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>10</hitroll>
+      <damroll>10</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="10"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="4" sides="5" add="10"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="24157" name="ogier young male tag" special="NONE">
+    <description>As you catch a glace of this ogier as he runs by, he seems
 in a hurry to catch the ogier he's chaseing.
-~
-10 0 0 E
-40 8 1 694 30d100+300 3d5+12
-30 120
-8 8 1
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-Trip: 100
-Kick: 100
-E
-#24159
-female ogier child~
-a young female ogier~
-A young female ogier stands here stareing at you
-~
-A young female ogier with wide eyes stares back at you.
-~
-8 0 100 E
-30 10 4 694 30d100+300 3d8+10
-35 100
-8 8 2
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-Trip: 100
-E
-#24160
-young ogier female tag~
-a young female ogier playing tag~
-A young female ogier runs away from the ogier chaseing her while playing tag.
-~
-A young female ogier runs as fast as she can while trying
+</description>
+    <shortdesc>a young male ogier playing tag</shortdesc>
+    <longdesc>A young male ogier chases after another ogier while playing tag.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="40" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="30" dsize="100" bonus="300"/>
+      <move ndize="10" dsize="100" bonus="300"/>
+      <ac>10</ac>
+      <gold>30</gold>
+      <bankgold>0</bankgold>
+      <exp>120</exp>
+      <hitroll>12</hitroll>
+      <damroll>12</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="10"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="3" sides="5" add="12"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="24159" name="female ogier child" special="NONE">
+    <description>A young female ogier with wide eyes stares back at you.
+</description>
+    <shortdesc>a young female ogier</shortdesc>
+    <longdesc>A young female ogier stands here stareing at you
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="30" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="30" dsize="100" bonus="300"/>
+      <move ndize="10" dsize="100" bonus="300"/>
+      <ac>40</ac>
+      <gold>35</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>10</hitroll>
+      <damroll>10</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="8"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="3" sides="8" add="10"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="24160" name="young ogier female tag" special="NONE">
+    <description>A young female ogier runs as fast as she can while trying
 to escape the ogier chaseing her.
-~
-8 0 8 E
-40 8 1 694 10d50+300 5d10+12
-100 130
-8 8 1
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-Bash: 100
-Stun: 100
-E
-#24163
-chef ogier Celia female~
-Celia, the chef of the Ogier children's Play-Area~
-A pretty ogier lady is here making snacks for all the ogier children
-~
-You see flour on her face as she makes cookies for
+</description>
+    <shortdesc>a young female ogier playing tag</shortdesc>
+    <longdesc>A young female ogier runs away from the ogier chaseing her while playing tag.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="40" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="10" dsize="50" bonus="300"/>
+      <move ndize="10" dsize="100" bonus="300"/>
+      <ac>10</ac>
+      <gold>100</gold>
+      <bankgold>0</bankgold>
+      <exp>130</exp>
+      <hitroll>12</hitroll>
+      <damroll>12</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="8"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="5" sides="10" add="12"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="24163" name="chef ogier Celia female" special="NONE">
+    <description>You see flour on her face as she makes cookies for
 the ogier children
-~
-10 0 10 E
-80 10 1 694 6d10+0 6d10+10
-50 100
-8 8 2
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-Stun: 100
-E
-#24164
-Loreal ogier Mistress young~
-Loreal, Mistress of the young~
-An adult ogier stands here watching over the children playing.
-~
-You see a stern looking ogier woman standing here watching to make
+</description>
+    <shortdesc>Celia, the chef of the Ogier children's Play-Area</shortdesc>
+    <longdesc>A pretty ogier lady is here making snacks for all the ogier children
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="80" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="6" dsize="10" bonus="0"/>
+      <move ndize="10" dsize="100" bonus="0"/>
+      <ac>10</ac>
+      <gold>50</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>10</hitroll>
+      <damroll>10</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="10"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="6" sides="10" add="10"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="24164" name="Anreal ogier Mistress young" special="NONE">
+    <description>You see a stern looking ogier woman standing here watching to make
 sure none of the ogier children get into fights.
-~
-32778 0 0 E
-100 -25 -8 694 30d100+4000 5d10+45
-150 100
-8 8 2
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-Bash: 100
-Dirtkick: 100
-Stun: 100
-E
-#24170
-builder ogier worker~
-an ogier builder~
-An ogier is here working on some piece of stone.
-~
-It looks, err, unfinished.
-~
-72 0 0 E
-30 10 4 694 30d100+400 3d4+10
-35 90
-8 8 1
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-Bash: 100
-E
-#24173
-miner worker ogier~
-an ogier miner~
-A male ogier is here bringing rock to the surface.
-~
-It looks, err, unfinished.
-~
-10 0 0 E
-25 11 5 694 25d100+100 3d4+9
-50 105
-8 8 1
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-E
-#24179
-bear wild brown big~
-a big brown bear~
-A wild brown bear is here searching for some food.
-~
-It looks, err, unfinished.
-~
-8 0 0 E
-40 2 2 694 30d100+1000 3d12+18
-0 100
-8 8 0
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-E
-#24190
--~
--~
--
-~
-An empty buffer...Hmm...A SBS-error perhaps?
-~
-5210200 536870912 0 E
-1 -80 -20 694 4d0+200 4d4+50
-1500 3000
-6 6 1
-BareHandAttack: 14
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-Bash: 100
-Trip: 100
-Dirtkick: 100
-Kick: 100
-Stun: 100
-P
-OnEntry
-SayTo "I'm the world's greatest nerd! And I love Metallica!"
-Say "Metallica ROCKS!!"
-End
-Q
-E
-#24191
-Jimmy Fransson~
-Jimmy "Baver" Fransson~
-\c13Jimmy Fransson\c00, a boy who almost looks like a beaver is sitting here.
-~
-A boy with exetremly long teeth is staring right at you. He's wearing fine clothes but your first impression of him still is: A beaver look a like. His face has more spots than skin and his hairdo seems to be taken right from a hedgehog's head.
+</description>
+    <shortdesc>Anreal, Mistress of the young</shortdesc>
+    <longdesc>An adult ogier stands here watching over the children playing.
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="100" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="30" dsize="100" bonus="4000"/>
+      <move ndize="10" dsize="100" bonus="4000"/>
+      <ac>-80</ac>
+      <gold>150</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>45</hitroll>
+      <damroll>45</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="32778"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="5" sides="10" add="45"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="24170" name="builder ogier worker" special="NONE">
+    <description>It looks, err, unfinished.
+</description>
+    <shortdesc>an ogier builder</shortdesc>
+    <longdesc>An ogier is here working on some piece of stone.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="30" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="30" dsize="100" bonus="400"/>
+      <move ndize="10" dsize="100" bonus="400"/>
+      <ac>40</ac>
+      <gold>35</gold>
+      <bankgold>0</bankgold>
+      <exp>90</exp>
+      <hitroll>10</hitroll>
+      <damroll>10</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="72"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="3" sides="4" add="10"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="24173" name="miner worker ogier" special="NONE">
+    <description>It looks, err, unfinished.
+</description>
+    <shortdesc>an ogier miner</shortdesc>
+    <longdesc>A male ogier is here bringing rock to the surface.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="25" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="25" dsize="100" bonus="100"/>
+      <move ndize="10" dsize="100" bonus="100"/>
+      <ac>50</ac>
+      <gold>50</gold>
+      <bankgold>0</bankgold>
+      <exp>105</exp>
+      <hitroll>9</hitroll>
+      <damroll>9</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="10"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="3" sides="4" add="9"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="24179" name="bear wild brown big" special="NONE">
+    <description>It looks, err, unfinished.
+</description>
+    <shortdesc>a big brown bear</shortdesc>
+    <longdesc>A wild brown bear is here searching for some food.
+</longdesc>
+    <title/>
+    <chardata gender="NEUTRAL" class="Adventurer" level="40" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="30" dsize="100" bonus="1000"/>
+      <move ndize="10" dsize="100" bonus="1000"/>
+      <ac>20</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>18</hitroll>
+      <damroll>18</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="8"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="3" sides="12" add="18"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="24190" name="-" special="NONE">
+    <description>An empty buffer...Hmm...A SBS-error perhaps?
+</description>
+    <shortdesc>-</shortdesc>
+    <longdesc>-
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="1" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="4" dsize="0" bonus="200"/>
+      <move ndize="10" dsize="100" bonus="200"/>
+      <ac>-200</ac>
+      <gold>1500</gold>
+      <bankgold>0</bankgold>
+      <exp>3000</exp>
+      <hitroll>100</hitroll>
+      <damroll>50</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="5210200"/>
+    <affected one="536870912" two="0" three="0" four="0"/>
+    <attack type="14"/>
+    <pos default="Sitting" other="Sitting"/>
+    <damage num="4" sides="4" add="100"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnEntry" argtype="VOID" argument="NONE">
+      <action number="SayTo" argtype="STRING" argument="I'm the world's greatest nerd! And I love Metallica!"/>
+      <action number="Say" argtype="STRING" argument="Metallica ROCKS!!"/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="24191" name="Jimmy Fransson" special="NONE">
+    <description>A boy with exetremly long teeth is staring right at you. He's wearing fine clothes but your first impression of him still is: A beaver look a like. His face has more spots than skin and his hairdo seems to be taken right from a hedgehog's head.
 He doesn't take part in the conversation going on, he just sits there looking dumb. Sometimes he make a comment about how great Liverpool F.C is or that Steve McManaman is the best soccer player ever.
-~
-136 0 0 E
-10 10 10 694 1d100+0 1d1+10
-0 0
-6 6 0
-BareHandAttack: 4
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-Dirtkick: 100
-Kick: 100
-P
-OnEntry
-SayTo "Fofoofofoffoofofoffooffofo I'm a Beaver"
-Say "Foofofofofofofofofofoffo"
-End
-Q
-E
-$
+</description>
+    <shortdesc>Jimmy &quot;Baver&quot; Fransson</shortdesc>
+    <longdesc>\c13Jimmy Fransson\c00, a boy who almost looks like a beaver is sitting here.
+</longdesc>
+    <title/>
+    <chardata gender="NEUTRAL" class="Adventurer" level="10" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="0"/>
+      <move ndize="10" dsize="100" bonus="0"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>10</hitroll>
+      <damroll>10</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="136"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="4"/>
+    <pos default="Sitting" other="Sitting"/>
+    <damage num="1" sides="1" add="10"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnEntry" argtype="VOID" argument="NONE">
+      <action number="SayTo" argtype="STRING" argument="Fofoofofoffoofofoffooffofo I'm a Beaver"/>
+      <action number="Say" argtype="STRING" argument="Foofofofofofofofofofoffo"/>
+    </mobprog>
+  </mobile>
+</mobiles>

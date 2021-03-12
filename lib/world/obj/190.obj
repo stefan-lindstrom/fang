@@ -1,200 +1,306 @@
-#19000
-board anneas ogier~
-Anneas' General Board for Coding or Anything.~
-Anneas' General Board is sitting here, waiting to be used.~
-~
-13 5120 0
-0 0 0 0
-1000 0 0
-E
-Stump~
-The platfrom oozes knowledge and peace as does the whole room
-~
-#19001
-seat ogier~
-Stump seats~
-The waiting seats of the STUMP~
-~
-23 1024 0
-10 10 0 0
-1000 0 0
-#19002
-Ogier Axe~
-a big floppy flower axe~
-A big floppy flower axe~
-You suddenly feel an intense pain and are now weaker
-~
-3 5120 8193
-0 0 0 0
-10 0 10
-E
-drop~
-you suddenly feel intense pain and are weaker
-~
-A
-3 3
-#19003
-Ogier Tremalking~
-a beautifull braclet made in Stedding \c01T\c02r\c03e\c04m\c05a\c06l\c07k\c01i\c02n\c03g\c07~
-A beautifull braclet made in Stedding Tremalking ~
-~
-11 1160 4097
-0 0 0 0
-1 0 0
-A
-3 10
-#19004
-sapling~
-sapling~
-Sapling~
-ouch
-~
-1 0 16385
-0 0 0 0
-0 0 0
-#19009
-a speciaL aVENDESORA lEAF~
-a SPECIAL aVENDESORA leaf~
-A Special Avendesora Leaf~
-~
-3 4096 1
-0 0 0 0
-0 0 0
-#19010
-coat long woolen brown og~
-\c00A Very Long, \c03Brown\c00-Woolen Coat~
-A long woolen coat lies here~
-~
-9 0 9
-50 50 0 0
-2 17000 0
-A
-5 2
-P
-OnWear & ! Guild "ogier"
-EmoteTo "As you try on the coat, you realize it is much too large for you, but you put it on anyways."
-End
-Q
-#19011
-boots tall ogier leather og~
-\c00Tall, Ogier Made, \c03Leather\c00 Boots.~
-A pair of tall, ogier-made leather boots lies here.~
-~
-9 0 65
-50 50 0 0
-2 17000 0
-A
-2 2
-A
-14 50
-P
-OnWear & ! Guild "ogier"
-EmoteTo "You step into the boots, and you realize they are huge!"
-End
-Q
-#19012
-book contem contemplations channeling channel~
-a hardcover book, 'Contemplations on Channeling'.~
-A large book lies here.~
-~
-9 64 16385
-25 25 0 0
-2 14000 0
-A
-12 50
-A
-3 2
-A
-4 2
-P
-OnWear
-EmoteTo "You contemplate the art of channeling, and feel as though you understand more about the world."
-End
-Q
-#19013
-book history world hardcover~
-a hardcover book, 'History of the World'~
-A book lies here, collecting dust.~
-~
-9 64 16385
-50 50 0 0
-0 20000 0
-A
-3 2
-A
-4 2
-A
-14 50
-#19025
-staff long carved walking weapon og~
-\c00A \c01d\c08e\c01a\c08d\c01l\c08y\c00-looking \c03w\c01o\c03o\c01d\c03e\c01n\c00, \c23steel-tipped\c00 staff~
-\c00A \c01d\c08e\c01a\c08d\c01l\c08y\c00-looking \c03w\c01o\c03o\c01d\c03e\c01n\c00, \c23steel-tipped\c00 staff lies here.~
-~
-5 69832 8193
-0 10 10 7
-2 0 0
-A
-20 2
-A
-18 25
-A
-19 25
-#19026
-ring master of war og~
-\c00A large band of \c23silver \c02oak \c01leaves\c00, the mark of a Master of War.~
-\c00A large band of \c23silver \c02oak \c01leaves\c00, the mark of a Master of War, lies here.~
-~
-9 69832 3
-0 0 0 0
-0 0 0
-A
-20 2
-A
-18 20
-A
-19 20
-A
-5 2
-P
-OnWear & ! Guild "ogier"
-EmoteTo "Fiend!  This is not a ring for you!"
-Goto 19050
-End
-OnWear & Guild "ogier"
-EmoteTo "You feel the weight of your office bear down upon you."
-Force "groan"
-End
-Q
-#19050
-fountain large marble water fount~
-a Large White-Marble Fountain.~
-A Large, White-Marble Fountain is here, making no noise.~
-~
-23 0 0
-100000 100000 0 0
-100005 0 0
-#19075
-ring sung simple wood~
-a simple wooden ring, sung from an ancient tree.~
-A simple wooden ring, sung from an ancient tree, is lying here.~
-~
-9 70792 3
-50 50 0 0
-1 0 0
-#19098
-bag quest~
-\c00A \c02Q\c09u\c02e\c09s\c02t\c00 Bag~
-\c00A \c02Q\c09u\c02e\c09s\c02t\c00 Bag lies here.~
-~
-15 8 1
-100000000 0 -1 0
-0 0 0
-#19099
-cookie ogier sized food~
-\c00An \c02O\c09g\c02i\c09e\c02r\c00-sized \c10Leveling\c03 Cookie\c00.~
-\c00An \c02O\c09g\c02i\c09e\c02r\c00-sized \c10Leveling\c03 Cookie\c00 lies here.~
-~
-19 0 1
-4 0 0 0
-0 0 0
-$~
+<?xml version="1.0"?>
+<objects>
+  <object vnum="19000" name="board anneas ogier" special="NONE">
+    <description>Anneas&apos; General Board is sitting here, waiting to be used.</description>
+    <shortdesc>Anneas&apos; General Board for Coding or Anything.</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="13" wear="0" extra="5120"/>
+      <data weight="1000" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <exdesc keyword="Stump">
+      <description>The platfrom oozes knowledge and peace as does the whole room
+</description>
+    </exdesc>
+  </object>
+  <object vnum="19001" name="seat ogier" special="NONE">
+    <description>The waiting seats of the STUMP</description>
+    <shortdesc>Stump seats</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="10" value2="10" value3="0" value4="0"/>
+      <flags type="23" wear="0" extra="1024"/>
+      <data weight="1000" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="19002" name="Ogier Axe" special="NONE">
+    <description>A big floppy flower axe</description>
+    <shortdesc>a big floppy flower axe</shortdesc>
+    <actiondesc>You suddenly feel an intense pain and are now weaker
+</actiondesc>
+    <affectflag>0</affectflag>
+    <objaffect location="INT" modifier="3"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="3" wear="8193" extra="5120"/>
+      <data weight="10" cost="0" questcost="10" timer="0" bitvector="0"/>
+    </objflags>
+    <exdesc keyword="drop">
+      <description>you suddenly feel intense pain and are weaker
+</description>
+    </exdesc>
+  </object>
+  <object vnum="19003" name="Ogier Tremalking" special="NONE">
+    <description>A beautifull braclet made in Stedding Tremalking </description>
+    <shortdesc>a beautifull braclet made in Stedding \c01T\c02r\c03e\c04m\c05a\c06l\c07k\c01i\c02n\c03g\c07</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="INT" modifier="10"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="11" wear="4097" extra="1160"/>
+      <data weight="1" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="19004" name="sapling" special="NONE">
+    <description>Sapling</description>
+    <shortdesc>sapling</shortdesc>
+    <actiondesc>ouch
+</actiondesc>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="1" wear="16385" extra="0"/>
+      <data weight="0" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="19009" name="a speciaL aVENDESORA lEAF" special="NONE">
+    <description>A Special Avendesora Leaf</description>
+    <shortdesc>a special avendesora leaf</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="1" value2="500" value3="1" value4="0"/>
+      <flags type="3" wear="1" extra="4096"/>
+      <data weight="0" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="19010" name="coat long woolen brown og" special="NONE">
+    <description>A long woolen coat lies here</description>
+    <shortdesc>\c00A Very Long, \c03Brown\c00-Woolen Coat</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="CON" modifier="2"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="50" value2="50" value3="0" value4="0"/>
+      <flags type="9" wear="9" extra="0"/>
+      <data weight="2" cost="17000" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <objprog main="OnWear" argtype="VOID" argument="NONE">
+      <sideterm number="Guild" not="TRUE" argtype="STRING" argument="ogier"/>
+      <action number="EmoteTo" argtype="STRING" argument="As you try on the coat, you realize it is much too large for you, but you put it on anyways."/>
+    </objprog>
+  </object>
+  <object vnum="19011" name="boots tall ogier leather og" special="NONE">
+    <description>A pair of tall, ogier-made leather boots lies here.</description>
+    <shortdesc>\c00Tall, Ogier Made, \c03Leather\c00 Boots.</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="DEX" modifier="2"/>
+    <objaffect location="MAXMOVE" modifier="50"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="50" value2="50" value3="0" value4="0"/>
+      <flags type="9" wear="65" extra="0"/>
+      <data weight="2" cost="17000" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <objprog main="OnWear" argtype="VOID" argument="NONE">
+      <sideterm number="Guild" not="TRUE" argtype="STRING" argument="ogier"/>
+      <action number="EmoteTo" argtype="STRING" argument="You step into the boots, and you realize they are huge!"/>
+    </objprog>
+  </object>
+  <object vnum="19012" name="book contem contemplations channeling channel" special="NONE">
+    <description>A large book lies here.</description>
+    <shortdesc>a hardcover book, &apos;Contemplations on Channeling&apos;.</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="MAXMANA" modifier="50"/>
+    <objaffect location="INT" modifier="2"/>
+    <objaffect location="WIS" modifier="2"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="25" value2="25" value3="0" value4="0"/>
+      <flags type="9" wear="16385" extra="64"/>
+      <data weight="2" cost="14000" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <objprog main="OnWear" argtype="VOID" argument="NONE">
+      <action number="EmoteTo" argtype="STRING" argument="You contemplate the art of channeling, and feel as though you understand more about the world."/>
+    </objprog>
+  </object>
+  <object vnum="19013" name="book history world hardcover" special="NONE">
+    <description>A book lies here, collecting dust.</description>
+    <shortdesc>a hardcover book, &apos;History of the World&apos;</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="INT" modifier="2"/>
+    <objaffect location="WIS" modifier="2"/>
+    <objaffect location="MAXMOVE" modifier="50"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="50" value2="50" value3="0" value4="0"/>
+      <flags type="9" wear="16385" extra="64"/>
+      <data weight="0" cost="20000" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="19025" name="staff long carved walking weapon og" special="NONE">
+    <description>\c00A \c01d\c08e\c01a\c08d\c01l\c08y\c00-looking \c03w\c01o\c03o\c01d\c03e\c01n\c00, \c23steel-tipped\c00 staff lies here.</description>
+    <shortdesc>\c00A \c01d\c08e\c01a\c08d\c01l\c08y\c00-looking \c03w\c01o\c03o\c01d\c03e\c01n\c00, \c23steel-tipped\c00 staff</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="XATTACKS" modifier="2"/>
+    <objaffect location="HITROLL" modifier="25"/>
+    <objaffect location="DAMROLL" modifier="25"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="10" value3="10" value4="7"/>
+      <flags type="5" wear="8193" extra="69832"/>
+      <data weight="2" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="19026" name="ring master of war og" special="NONE">
+    <description>\c00A large band of \c23silver \c02oak \c01leaves\c00, the mark of a Master of War, lies here.</description>
+    <shortdesc>\c00A large band of \c23silver \c02oak \c01leaves\c00, the mark of a Master of War.</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="XATTACKS" modifier="2"/>
+    <objaffect location="HITROLL" modifier="20"/>
+    <objaffect location="DAMROLL" modifier="20"/>
+    <objaffect location="CON" modifier="2"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="9" wear="3" extra="69832"/>
+      <data weight="0" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <objprog main="OnWear" argtype="VOID" argument="NONE">
+      <sideterm number="Guild" not="TRUE" argtype="STRING" argument="ogier"/>
+      <action number="EmoteTo" argtype="STRING" argument="Fiend!  This is not a ring for you!"/>
+      <action number="Goto" argtype="INT" argument="19050"/>
+    </objprog>
+    <objprog main="OnWear" argtype="VOID" argument="NONE">
+      <sideterm number="Guild" not="FALSE" argtype="STRING" argument="ogier"/>
+      <action number="EmoteTo" argtype="STRING" argument="You feel the weight of your office bear down upon you."/>
+      <action number="Force" argtype="STRING" argument="groan"/>
+    </objprog>
+  </object>
+  <object vnum="19050" name="fountain large marble water fount" special="NONE">
+    <description>A Large, White-Marble Fountain is here, making no noise.</description>
+    <shortdesc>a Large White-Marble Fountain.</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="100000" value2="100000" value3="0" value4="0"/>
+      <flags type="23" wear="0" extra="0"/>
+      <data weight="100005" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="19075" name="ring sung simple wood" special="NONE">
+    <description>A simple wooden ring, sung from an ancient tree, is lying here.</description>
+    <shortdesc>a simple wooden ring, sung from an ancient tree.</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="50" value2="50" value3="0" value4="0"/>
+      <flags type="9" wear="3" extra="70792"/>
+      <data weight="1" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="19098" name="bag quest" special="NONE">
+    <description>\c00A \c02Q\c09u\c02e\c09s\c02t\c00 Bag lies here.</description>
+    <shortdesc>\c00A \c02Q\c09u\c02e\c09s\c02t\c00 Bag</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="100000000" value2="0" value3="-1" value4="0"/>
+      <flags type="15" wear="1" extra="8"/>
+      <data weight="0" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="19099" name="cookie ogier sized food" special="NONE">
+    <description>\c00An \c02O\c09g\c02i\c09e\c02r\c00-sized \c10Leveling\c03 Cookie\c00 lies here.</description>
+    <shortdesc>\c00An \c02O\c09g\c02i\c09e\c02r\c00-sized \c10Leveling\c03 Cookie\c00.</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="4" value2="0" value3="0" value4="0"/>
+      <flags type="19" wear="1" extra="0"/>
+      <data weight="0" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+</objects>

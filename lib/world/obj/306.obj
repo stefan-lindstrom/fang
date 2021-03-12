@@ -1,63 +1,117 @@
-#30600
-brandy bottle drink fine~
-a bottle of fine brandy~
-A bottle of fine brandy is sitting here.~
-~
-19 0 1
-20 0 0 0
-2 200 0
-#30601
-plum wine jug caemlyn~
-a jug of \c05plum punch\c00~
-A jug of \c05plum punch\c00 is sitting here~
-~
-19 0 1
-12 0 0 0
-3 20 0
-#30602
-ring garnet gold karen~
-\c00a teardrop \c01garnet\c00 set in a circlet of \c10gold\c00~
-A garnet ring is here.~
-~
-11 0 3
-0 0 0 0
-3 1 42
-A
-18 20
-A
-19 20
-A
-5 2
-A
-2 2
-A
-17 -35
-#30603
-sign ooc karen~
-an OOC sign for Karen's~
-\c02An oOc sign is posted on the wall here.~
-~
-12 0 0
-0 0 0 0
-1 1 0
-E
-sign ooc stats~
-garnet ring (Q)    : +20 hr/dr, +2 CON, +2 DEX, -35 AC
-gold necklace      : +50 mana, +2 INT, +2 WIS
+<?xml version="1.0"?>
+<objects>
+  <object vnum="30600" name="brandy bottle drink fine" special="NONE">
+    <description>A bottle of fine brandy is sitting here.</description>
+    <shortdesc>a bottle of fine brandy</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="20" value2="20" value3="17" value4="0"/>
+      <flags type="17" wear="1" extra="0"/>
+      <data weight="2" cost="200" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="30601" name="plum wine jug caemlyn" special="NONE">
+    <description>A jug of \c05plum punch\c00 is sitting here</description>
+    <shortdesc>a jug of \c05plum punch\c00</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="12" value2="0" value3="0" value4="0"/>
+      <flags type="19" wear="1" extra="0"/>
+      <data weight="3" cost="20" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="30602" name="ring garnet gold karen" special="NONE">
+    <description>A garnet ring is here.</description>
+    <shortdesc>\c00a teardrop \c01garnet\c00 set in a circlet of \c10gold\c00</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="HITROLL" modifier="20"/>
+    <objaffect location="DAMROLL" modifier="20"/>
+    <objaffect location="CON" modifier="2"/>
+    <objaffect location="DEX" modifier="2"/>
+    <objaffect location="ARMOR" modifier="-35"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="11" wear="3" extra="0"/>
+      <data weight="3" cost="1" questcost="42" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="30603" name="sign ooc karen" special="NONE">
+    <description>\c02An oOc sign is posted on the wall here.</description>
+    <shortdesc>an OOC sign for Karen&apos;s</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="12" wear="0" extra="0"/>
+      <data weight="1" cost="1" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <exdesc keyword="sign ooc stats">
+      <description>garnet ring (Q)    : +20 hr/dr, +2 CON, +2 DEX, -35 AC
+gold necklace      : +20 mana, +2 INT, +2 WIS
 silver necklace    : -10 AC, +10 abs
 wedding ring       : +1 hr/dr
 pearl ring         : +10 move, +10 hp
-gold & diamond ring: +1 CON, +5 abs
+gold &amp; diamond ring: +1 CON, +5 abs
 silver ring        : +1 WIS, +1 INT
 ruby ring          : +1 INT
-gold & emerald ring: +1 CHA
-~
-#30604
-key~
-a brass key~
-A brass key has been tossed here.~
-~
-18 0 1
-0 0 0 0
-0 0 0
-$~
+gold &amp; emerald ring: +1 CHA
+</description>
+    </exdesc>
+  </object>
+  <object vnum="30604" name="key brass keserai" special="NONE">
+    <description>A brass key has been tossed here.</description>
+    <shortdesc>a brass key</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="18" wear="1" extra="0"/>
+      <data weight="0" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="30699" name="key bookbinder Ahira" special="NONE">
+    <description>A short, rather plain steel key lies here.</description>
+    <shortdesc>the key to the \c03bo\c10ok\c09bi\c02nd\c13er\c06y\c00</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="18" wear="1" extra="136"/>
+      <data weight="2" cost="1" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+</objects>

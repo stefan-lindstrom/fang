@@ -1,148 +1,1271 @@
-#10700
-lamb roast~
-a plate of roast lamb~
-A plate of roast lamb is here.~
-~
-19 0 1
-12 0 0 0
-4 125 0
-#10701
-stew beef~
-a bowl of beef stew~
-A bowl of beef stew is here.~
-~
-19 0 1
-9 0 0 0
-6 110 0
-#10702
-bread~
-a loaf of bread~
-A loaf of bread is here.~
-~
-19 0 1
-7 0 0 0
-3 95 0
-#10703
-flask~
-a leather flask~
-A leather flask is here.~
-~
-17 0 1
-11 11 0 0
-16 225 0
-#10704
-mug~
-a mug~
-A large mug is here.~
-~
-17 0 1
-8 8 1 0
-13 150 0
-#10705
-bottle~
-a large bottle~
-A large bottle is here.~
-~
-17 0 1
-10 10 3 0
-15 200 0
-#10706
-sword silver hawk~
-a silver sword with a \c01red hawk\c00 on the blade~
-A silver sword is here.~
-~
-5 0 8193
-10 4 8 3
-6 1 65
-A
-19 40
-A
-18 40
-#10707
-rod crystal~
-a clear crystal rod~
-A clear crystal rod is here.~
-~
-1 4096 16385
-0 0 -1 0
-4 1 50
-A
-19 40
-A
-18 40
-#10708
-ring silver gold water~
-a ring with a \c13watery blue stone\c00~
-A ring is here.~
-~
-9 0 3
-0 0 0 0
-2 1 45
-A
-12 300
-A
-1 5
-A
-3 5
-A
-4 5
-#10709
-boot leather silver~
-a pair of leather boots with a silver clasp~
-A pair of boots are here.~
-~
-9 0 65
-20 5 0 0
-4 20000 0
-A
-14 50
-A
-13 50
-#10710
-soup broth~
-a bowl of soup~
-A bowl of soup is here.~
-~
-19 0 1
-5 0 0 0
-2 75 0
-#10711
-bacon~
-strips of bacon~
-Several strips of bacon are here.~
-~
-19 0 1
-3 0 0 0
-4 35 0
-#10712
-fish~
-cooked fish~
-A plate of cooked fish is here.~
-~
-19 0 1
-13 0 0 0
-6 200 0
-#10713
-fountain marble gold~
-a fountain~
-A marble fountain with a golden sunburst is here.~
-~
-23 0 0
-10000 10000 0 0
-10005 0 0
-E
-fountain sunburst golden marble~
-The fountain is worked in a white marble, that
-has been polised to near mirror beauty. Upon
-the sides of the fountain, is the golden
-sunburst of the Children of the Light
-~
-#10750
-doorway pkill quest~
-the \c13Pkill Quest Doorway\c00~
-A \c08D\c13o\c08o\c13r\c08w\c13a\c08y\c00 into the \c13P\c08k\c13i\c08l\c13l\c08 Q\c13u\c08e\c13s\c08t\c00 stands here.~
-~
-14 0 1
-0 0 0 0
-1000000 0 0
-$~
+<?xml version="1.0"?>
+<objects>
+  <object vnum="10700" name="well far madding water" special="NONE">
+    <description>\c00A half-\c03dry\c04 w\c11el\c04l\c00 stands in the centre of the square.</description>
+    <shortdesc>\c00a half-\c03dry\c04 well\c00</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="1000" value2="1000" value3="0" value4="0"/>
+      <flags type="23" wear="0" extra="0"/>
+      <data weight="1000" cost="1" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <exdesc keyword="well fountain water square">
+      <description>The well is half-dry with the heat, and the stones that make up the
+outside of it are coated, like the rest of the town, with a thin
+layer of dust.  A bucket hangs from a long rope wrapped around a
+winch at the top of the small roof over the well, ready for any who
+need water to reel it up.    
+</description>
+    </exdesc>
+    <objprog main="OnActionTo" argtype="STRING" argument="drink">
+      <action number="EmoteTo" argtype="STRING" argument="The bucket clanks softly against the walls on the end of the rope, before coming to the top, filled with what \c06w\c04a\c11t\c04e\c06r\c00 the fast-drying thing still contains."/>
+    </objprog>
+  </object>
+  <object vnum="10701" name="pike guard steel rusty" special="NONE">
+    <description>\c00A battered, rather \c03r\c01ust\c03y\c14 s\c07t\c23e\c07e\c14l\c00 pike lies on the ground.</description>
+    <shortdesc>\c00a guardsman's \c14s\c07t\c23e\c07e\c14l\c00 pike</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="HITROLL" modifier="1"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="10" value2="2" value3="9" value4="14"/>
+      <flags type="5" wear="32769" extra="0"/>
+      <data weight="9" cost="1" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="10702" name="sign hunter's lodge inn guest house" special="NONE">
+    <description>&amp;wA sign bearing an image of a &amp;Ygolden&amp;w horn swings gently above the door of the inn to the west.&amp;n</description>
+    <shortdesc>\c00the sign for the \c10Hu\c03nt\c02er\c09's \c04Lodge\c00</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="16" wear="0" extra="0"/>
+      <data weight="100000" cost="1" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <exdesc keyword="sign hunter's lodge inn guest house">
+      <description>\c00The sign for the \c10Hu\c03nt\c02er\c09's \c04Lodge\c00 guest house hangs directly above the
+door to the building, the brightly-painted \c10golden\c00 horn below it
+shining even through the dust that inevitably settles on everything
+in this city.  The building itself looks clean and presentable, and
+the place where people would go to stay for a few nights rather than
+to drink.    
+</description>
+    </exdesc>
+  </object>
+  <object vnum="10703" name="breastplate guard armour armor" special="NONE">
+    <description>\c00A front-peaked guardsman's \c10br\c03ea\c01s\c10t\c01p\c03la\c10te\c00 is lying here.</description>
+    <shortdesc>a guardsman's \c10br\c03ea\c01s\c10t\c01p\c03la\c10te\c00</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="CON" modifier="1"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="25" value2="0" value3="0" value4="0"/>
+      <flags type="9" wear="9" extra="0"/>
+      <data weight="10" cost="1" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="10704" name="helmet guardsman" special="NONE">
+    <description>\c00A peaked \c14s\c07t\c23e\c07e\c14l\c00 guardsman's helmet lies here.</description>
+    <shortdesc>\c00a \c14s\c07t\c23e\c07e\c14l\c00 helmet</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="INT" modifier="1"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="25" value3="0" value4="0"/>
+      <flags type="9" wear="17" extra="0"/>
+      <data weight="6" cost="1" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="10705" name="tabac tairen perfume tear" special="NONE">
+    <description>\c00A bale of \c03t\c02aba\c03c\c00 lies on the ground, emitting a sweet scent that drifts through the air.</description>
+    <shortdesc>a bale of &amp;cp&amp;Ce&amp;Mr&amp;mfu&amp;Mm&amp;Ce&amp;cd&amp;n Tairen &amp;yt&amp;gaba&amp;yc&amp;n</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="HITROLL" modifier="10"/>
+    <objaffect location="STR" modifier="2"/>
+    <objaffect location="MAXHIT" modifier="10"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="11" wear="16385" extra="0"/>
+      <data weight="3" cost="10500" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="10706" name="pipe spirals carved" special="NONE">
+    <description>\c00A pipe lies abandoned on the ground, carved with fanciful curves and \c14s\c13p\c06i\c04r\c06a\c13l\c14s\c00.</description>
+    <shortdesc>\c00a \c14s\c13p\c06ir\c13a\c14l\c00-carved pipe with a \c14s\c07i\c23lv\c07e\c14r\c00 bit</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="INT" modifier="2"/>
+    <objaffect location="ABS" modifier="40"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="11" wear="16385" extra="0"/>
+      <data weight="0" cost="10000" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="10707" name="knife hunting blade dagger cord" special="NONE">
+    <description>\c00A long knife with a \c03c\c00o\c03r\c00d-wound handle and a sharp skinning edge lies on the ground.</description>
+    <shortdesc>\c00a hunting knife with a \c03c\c00o\c03r\c00d\c00-wound grip</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="10" value2="3" value3="7" value4="3"/>
+      <flags type="5" wear="8193" extra="0"/>
+      <data weight="5" cost="12500" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <exdesc keyword="knife hunting blade dagger cord">
+      <description>A wicked-looking knife, with a sharp skinning edge as well as a point
+for stabbing.  Perfect for hunting and other outdoor pursuits
+involving the dismembering of small, fluffy things that go squeak.  
+
+</description>
+    </exdesc>
+  </object>
+  <object vnum="10708" name="pouch tabac leather" special="NONE">
+    <description>\c00A \c03leather\c00 pouch has been abandoned on the ground, with the sweet, pungent smell of \c03t\c02aba\c03c\c00 drifting up from it.</description>
+    <shortdesc>\c00a leather \c03t\c02aba\c03c\c00 pouch</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="HITROLL" modifier="40"/>
+    <objaffect location="DAMROLL" modifier="45"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="200" value2="0" value3="-1" value4="0"/>
+      <flags type="15" wear="2049" extra="0"/>
+      <data weight="4" cost="1" questcost="105" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="10709" name="bale cairhienin leaf tabac" special="NONE">
+    <description>\c00A small bale of \c10C\c03airhieni\c10n\c00 leaf lies on the ground here.</description>
+    <shortdesc>\c00a bale of sharp \c10C\c03airhieni\c10n\c00 \c03t\c02aba\c03c\c00</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="MAXHIT" modifier="100"/>
+    <objaffect location="ABS" modifier="60"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="11" wear="16385" extra="0"/>
+      <data weight="3" cost="1" questcost="70" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="10710" name="pipe wooden fish" special="NONE">
+    <description>A pipe lies abandoned on the ground, carved with intricate patterns that would merit a closer look.</description>
+    <shortdesc>\c00a \c03wooden\c00 pipe carved with patterns resembling \c11f\c06i\c13s\c04h\c00</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="DEX" modifier="2"/>
+    <objaffect location="INT" modifier="2"/>
+    <objaffect location="DAMROLL" modifier="10"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="11" wear="16385" extra="0"/>
+      <data weight="1" cost="15250" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="10711" name="dagger maine gauche parrying pronged trident" special="NONE">
+    <description>\c00A long steel dagger, with two prongs to catch and parry a blade, lies here.</description>
+    <shortdesc>a steel main gauche</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="CON" modifier="2"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="20" value2="3" value3="8" value4="14"/>
+      <flags type="5" wear="8193" extra="0"/>
+      <data weight="6" cost="21000" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="10712" name="dagger short knife throwing" special="NONE">
+    <description>\c00A short throwing dagger has been dropped point-first into the dust.</description>
+    <shortdesc>a short throwing dagger</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="10" value2="3" value3="9" value4="14"/>
+      <flags type="5" wear="8193" extra="0"/>
+      <data weight="4" cost="13500" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="10713" name="hat fur cap" special="NONE">
+    <description>\c00A \c01fur\c00 hat lies on the ground here.</description>
+    <shortdesc>\c00a \c01fur\c00 cap</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="ARMOR" modifier="-30"/>
+    <objaffect location="WIS" modifier="2"/>
+    <objaffect location="ABS" modifier="39"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="11" wear="17" extra="0"/>
+      <data weight="3" cost="12800" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="10714" name="foxfur fur wrap neck" special="NONE">
+    <description>\c00A fine \c01f\c08o\c01x\c00-fur wrap lies coiled on the ground here.</description>
+    <shortdesc>\c00a \c01f\c08o\c01x\c00-fur wrap</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="DAMROLL" modifier="-20"/>
+    <objaffect location="CHA" modifier="2"/>
+    <objaffect location="DAMROLL" modifier="5"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="11" wear="5" extra="0"/>
+      <data weight="2" cost="7750" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="10715" name="cape fur skins rabbit" special="NONE">
+    <description>\c00A cape sewn together from \c03ra\c01bb\c03it\c00 skins lies on the ground.</description>
+    <shortdesc>\c00a cape sewn from \c03ra\c01bb\c03it\c00 skins</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="-25" value2="15" value3="0" value4="0"/>
+      <flags type="9" wear="1033" extra="0"/>
+      <data weight="4" cost="5500" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="10716" name="bearskin hat skin fur" special="NONE">
+    <description>\c00A hat made from the skin of a bear flops in a puddle of fur on the ground.</description>
+    <shortdesc>\c00a \c01bearskin\c00 hat</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="STR" modifier="2"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="-15" value2="10" value3="0" value4="0"/>
+      <flags type="9" wear="17" extra="0"/>
+      <data weight="4" cost="5760" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="10717" name="boots fur lined furlined skin" special="NONE">
+    <description>\c00A pair of \c01f\c03u\c01r\c00-lined leather shoes stand neatly set together.</description>
+    <shortdesc>\c01f\c03u\c01r\c00-lined boots</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="CON" modifier="3"/>
+    <objaffect location="CHA" modifier="2"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="-70" value2="50" value3="0" value4="0"/>
+      <flags type="9" wear="65" extra="0"/>
+      <data weight="3" cost="1" questcost="118" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="10718" name="calf skin dyed black gloves" special="NONE">
+    <description>\c00A pair of \c23b\c22l\c23a\c22c\c23k\c00 gloves, made of some soft and supple material, lie on the ground.</description>
+    <shortdesc>\c23b\c22l\c23a\c22c\c23k\c00-dyed calfskin gloves</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="ABS" modifier="50"/>
+    <objaffect location="HITROLL" modifier="5"/>
+    <objaffect location="DEX" modifier="4"/>
+    <objaffect location="DAMROLL" modifier="5"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="11" wear="129" extra="0"/>
+      <data weight="3" cost="1" questcost="59" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="10719" name="apple fruit" special="NONE">
+    <description>\c00An apple has been abandoned in the dust here.</description>
+    <shortdesc>\c00a red \c08a\c01p\c02p\c01l\c08e\c00</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="3" value2="0" value3="0" value4="0"/>
+      <flags type="19" wear="1" extra="0"/>
+      <data weight="2" cost="24" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="10720" name="blackcurrants currants punnet fruit" special="NONE">
+    <description>\c00A small punnet of some dark berries lies on the ground.</description>
+    <shortdesc>\c00a punnet of \c05blackcurrants\c00</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="6" value2="0" value3="0" value4="0"/>
+      <flags type="19" wear="1" extra="0"/>
+      <data weight="3" cost="30" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="10721" name="melon honeydew fruit" special="NONE">
+    <description>\c00A \c03m\c02e\c09l\c02o\c03n\c00 lies on the ground, ripening slowly.</description>
+    <shortdesc>\c00a \c03h\c10on\c03e\c10yd\c03e\c10w\c00 \c03m\c02e\c09l\c02o\c03n\c00</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="7" value2="0" value3="0" value4="0"/>
+      <flags type="19" wear="1" extra="0"/>
+      <data weight="4" cost="50" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="10722" name="raspberry basket fruit" special="NONE">
+    <description>\c00A small basket of \c08r\c01asp\c05be\c01rie\c08s\c00 lies in the dust.</description>
+    <shortdesc>\c00a small basket of \c08r\c01asp\c05be\c01rie\c08s\c00</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="4" value2="0" value3="0" value4="0"/>
+      <flags type="19" wear="1" extra="0"/>
+      <data weight="3" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="10723" name="pear fruit" special="NONE">
+    <description>\c00A rather withered \c02pear\c00 lies in the dust here.</description>
+    <shortdesc>\c00a \c09green \c02pear\c00</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="4" value2="0" value3="0" value4="0"/>
+      <flags type="19" wear="1" extra="0"/>
+      <data weight="4" cost="25" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="10724" name="chestnuts bag nuts" special="NONE">
+    <description>\c00A paper bag, filled with some sort of brown nut, lies on the ground.</description>
+    <shortdesc>\c00a bag of \c10sweet \c03che\c01s\c03t\c01n\c03uts\c00</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="6" value2="0" value3="0" value4="0"/>
+      <flags type="19" wear="1" extra="0"/>
+      <data weight="2" cost="35" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="10725" name="strawberries berries berry punnet fruit" special="NONE">
+    <description>\c00A punnet of \c02s\c01tr\c08aw\c01be\c08rr\c01ie\c02s\c00\c00 has been abandoned to the heat here.</description>
+    <shortdesc>\c00a punnet of \c02s\c01tr\c08aw\c01be\c08rr\c01ie\c02s\c00\c00</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="4" value2="0" value3="0" value4="0"/>
+      <flags type="19" wear="1" extra="0"/>
+      <data weight="3" cost="25" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="10726" name="grapes red fruit bunch" special="NONE">
+    <description>\c00A bunch of rather withered grapes lies here.</description>
+    <shortdesc>\c00a bunch of \c01r\c05e\c01d\c00 grapes</shortdesc>
+    <actiondesc>\c00</actiondesc>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="6" value2="0" value3="0" value4="0"/>
+      <flags type="19" wear="1" extra="0"/>
+      <data weight="2" cost="38" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="10727" name="bracelet marble stone gold" special="NONE">
+    <description>\c00A thin \c03g\c10ol\c03d\c00-veined \c14s\c07t\c23o\c07n\c14e\c00 bracelet lies on the ground.</description>
+    <shortdesc>\c00a thin \c14m\c07a\c23rb\c07l\c14e\c00 bracelet with veins of \c03g\c10ol\c03d\c00</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="CHA" modifier="1"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="-10" value2="5" value3="0" value4="0"/>
+      <flags type="9" wear="4097" extra="0"/>
+      <data weight="6" cost="3500" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="10728" name="pendant jade necklace stone" special="NONE">
+    <description>\c00A necklace set with a green stone lies on the ground.</description>
+    <shortdesc>\c00a \c02j\c09ad\c02e\c00 pendant</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="ARMOR" modifier="-28"/>
+    <objaffect location="DAMROLL" modifier="10"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="11" wear="5" extra="0"/>
+      <data weight="5" cost="16300" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="10729" name="flower stone model" special="NONE">
+    <description>\c00A tiny, delicate \c23s\c07t\c14o\c07n\c23e\c00 model of a flower lies here.</description>
+    <shortdesc>\c00a tiny \c23s\c07t\c14o\c07n\c23e\c00 flower</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="DEX" modifier="2"/>
+    <objaffect location="ARMOR" modifier="-40"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="11" wear="16385" extra="0"/>
+      <data weight="0" cost="41000" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="10730" name="hammer mason stoneworking working tool" special="NONE">
+    <description>\c00A small \c23s\c07t\c14o\c07n\c23e\c00-mason's hammer for delicate work is here. </description>
+    <shortdesc>\c00a small \c23s\c07t\c14o\c07n\c23e\c00-shaping hammer</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="20" value2="3" value3="6" value4="7"/>
+      <flags type="5" wear="8193" extra="0"/>
+      <data weight="0" cost="17000" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="10731" name="chisel stoneworking mason tool" special="NONE">
+    <description>\c00A small chisel for splitting stone lies on the ground.</description>
+    <shortdesc>\c00a stone-splitting chisel</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="15" value2="2" value3="10" value4="14"/>
+      <flags type="5" wear="8193" extra="0"/>
+      <data weight="0" cost="14250" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="10732" name="belt working knife" special="NONE">
+    <description>\c00A short belt-knife, for working rather than fighting, lies here.</description>
+    <shortdesc>a short belt-knife</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="15" value2="2" value3="8" value4="14"/>
+      <flags type="5" wear="8193" extra="0"/>
+      <data weight="4" cost="13250" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="10733" name="scarf silk cloth neck" special="NONE">
+    <description>\c00A fine \c06s\c13il\c06k\c00 scarf trails like a scrap of paper on the ground.</description>
+    <shortdesc>\c00a \c06s\c13il\c06k\c00 scarf</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="10" value2="5" value3="0" value4="0"/>
+      <flags type="9" wear="5" extra="0"/>
+      <data weight="2" cost="2000" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="10734" name="apron linen cloth" special="NONE">
+    <description>\c00An apron made of some \c14white\c00-dyed cloth lies on the ground.</description>
+    <shortdesc>a linen apron</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="DAMROLL" modifier="5"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="-50" value2="0" value3="0" value4="0"/>
+      <flags type="9" wear="1025" extra="0"/>
+      <data weight="4" cost="1" questcost="30" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="10735" name="tunic woollen cloth" special="NONE">
+    <description>\c00A tunic made of finely-woven wool lies on the ground.</description>
+    <shortdesc>a woollen tunic</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="ARMOR" modifier="-45"/>
+    <objaffect location="WIS" modifier="2"/>
+    <objaffect location="INT" modifier="2"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="11" wear="9" extra="0"/>
+      <data weight="3" cost="49000" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="10736" name="shawl blue wool cloth" special="NONE">
+    <description>\c00A shawl of \c04b\c11lu\c04e\c00-dyed wool is lying on the ground.</description>
+    <shortdesc>\c00a \c04b\c11lu\c04e\c00-dyed woollen shawl</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="INT" modifier="4"/>
+    <objaffect location="WIS" modifier="3"/>
+    <objaffect location="CON" modifier="2"/>
+    <objaffect location="MAXMOVE" modifier="50"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="11" wear="17" extra="0"/>
+      <data weight="2" cost="1" questcost="14" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="10737" name="hose linen cloth undyed" special="NONE">
+    <description>\c00A pile of undyed \c03linen\c00 lies on the ground.</description>
+    <shortdesc>\c00a pair of \c03linen\c00 hose</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="ARMOR" modifier="-16"/>
+    <objaffect location="ABS" modifier="10"/>
+    <objaffect location="DAMROLL" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="11" wear="33" extra="0"/>
+      <data weight="4" cost="3600" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="10738" name="gloves kidskin soft skin" special="NONE">
+    <description>\c00A pair of soft kidskin gloves has been left on the ground here.</description>
+    <shortdesc>a pair of soft kidskin gloves</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="HITROLL" modifier="10"/>
+    <objaffect location="DAMROLL" modifier="15"/>
+    <objaffect location="STR" modifier="1"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="11" wear="129" extra="0"/>
+      <data weight="3" cost="25000" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="10739" name="gloves furlined leather lined" special="NONE">
+    <description>\c00A pair of leather gloves lined with fur has been abandoned on the ground.</description>
+    <shortdesc>a pair of warm fur-lined gloves</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="ARMOR" modifier="-10"/>
+    <objaffect location="ABS" modifier="10"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="11" wear="129" extra="0"/>
+      <data weight="3" cost="3000" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="10740" name="gloves lace elbow" special="NONE">
+    <description>\c00A pair of long, \c06l\c07ac\c14ewor\c07ke\c06d\c00 gloves lie in the dust.</description>
+    <shortdesc>\c00elbow-length \c06l\c07ac\c14ewor\c07ke\c06d\c00 gloves</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="CHA" modifier="5"/>
+    <objaffect location="HITROLL" modifier="30"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="11" wear="129" extra="0"/>
+      <data weight="3" cost="1" questcost="35" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="10741" name="gloves delicate silk lady" special="NONE">
+    <description>\c00A delicate pair of silk gloves lies neatly folded together on the ground</description>
+    <shortdesc>a pair of lady's silk gloves</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="ARMOR" modifier="-40"/>
+    <objaffect location="ABS" modifier="20"/>
+    <objaffect location="CHA" modifier="-2"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="11" wear="129" extra="0"/>
+      <data weight="3" cost="7500" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="10742" name="gloves swordsmans leather" special="NONE">
+    <description>\c00A pair of \c23black\c00 swordsman's gloves lies on the ground, with roughened leather on the palms for grip.</description>
+    <shortdesc>\c00a pair of \c23black\c00 gloves with roughened leather palms</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="HITROLL" modifier="30"/>
+    <objaffect location="DAMROLL" modifier="35"/>
+    <objaffect location="INT" modifier="4"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="11" wear="129" extra="0"/>
+      <data weight="4" cost="1" questcost="75" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="10743" name="spice clove pomander" special="NONE">
+    <description>\c00An orange, decorated with cloves, gives off a strong scent as it lies on the ground.</description>
+    <shortdesc>a scented pomander</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="DEX" modifier="2"/>
+    <objaffect location="CON" modifier="2"/>
+    <objaffect location="WIS" modifier="2"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="11" wear="16385" extra="0"/>
+      <data weight="0" cost="6000" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="10744" name="handful chives herbs spice" special="NONE">
+    <description>\c00A handful of herbs has been scattered on the ground.</description>
+    <shortdesc>\c00a handful of \c02ch\c09iv\c02es\c00</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="500" value4="0"/>
+      <flags type="4" wear="16385" extra="0"/>
+      <data weight="2" cost="2350" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="10745" name="nutmeg twist paper" special="NONE">
+    <description>\c00A twist of paper, seeming to contain some sort of spice, lies on the ground.</description>
+    <shortdesc>\c00a paper twist of ground \c03n\c10u\c08tm\c10e\c03g\c00</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="10" value2="0" value3="0" value4="0"/>
+      <flags type="19" wear="1" extra="0"/>
+      <data weight="1" cost="50" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="10746" name="allspice ground spice" special="NONE">
+    <description>A small pinch of spice, looking almost like fine reddish-brown dust, lies on the ground.</description>
+    <shortdesc>a pinch of ground allspice</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="7" value2="0" value3="0" value4="0"/>
+      <flags type="19" wear="1" extra="0"/>
+      <data weight="1" cost="35" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="10747" name="rosemary bag herb spice" special="NONE">
+    <description>\c00A small bag of some some sweet-scented herb with purple flowers mixed in lies here.</description>
+    <shortdesc>\c00a small bag of \c02ro\c05s\c09em\c05a\c02ry\c00</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="5" value2="0" value3="0" value4="0"/>
+      <flags type="19" wear="1" extra="0"/>
+      <data weight="2" cost="37" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="10748" name="harp lap instrument music" special="NONE">
+    <description>\c00A small lap-harp lies on the ground here.</description>
+    <shortdesc>a lap-harp</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="12" wear="16385" extra="0"/>
+      <data weight="9" cost="1000" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="10749" name="bed single furniture" special="NONE">
+    <description>\c00A single bed, covered with a deep \c04b\c11lu\c04e\c00 duvet, stands in the room.</description>
+    <shortdesc>\c00a single bed with a \c04b\c11lu\c04e\c00 duvet</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="1" value2="0" value3="1" value4="0"/>
+      <flags type="24" wear="0" extra="0"/>
+      <data weight="10000" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="10750" name="armchair upholstered green chair furniture" special="NONE">
+    <description>\c00A \c09gr\c02e\c09en\c00-upholstered armchair stands comfortably near the fireplace.</description>
+    <shortdesc>\c00a \c09gr\c02e\c09en\c00-upholstered armchair</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="1" value4="0"/>
+      <flags type="24" wear="0" extra="0"/>
+      <data weight="1000" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="10751" name="bed poster four furniture" special="NONE">
+    <description>\c00A large four-poster bed with \c14silk\c00 sheets stands at the centre of the room.</description>
+    <shortdesc>a large four-poster bed</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="2" value2="0" value3="2" value4="0"/>
+      <flags type="24" wear="0" extra="0"/>
+      <data weight="1000" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="10752" name="table oak furniture" special="NONE">
+    <description>\c00A long oak table dominates the centre of the room, stretching down with several chairs to either side.</description>
+    <shortdesc>a long oak table</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="2" value3="5" value4="0"/>
+      <flags type="24" wear="0" extra="0"/>
+      <data weight="10000" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="10753" name="bed single furniture" special="NONE">
+    <description>\c00A small single bed stands at one side of the room.</description>
+    <shortdesc>a small bed</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="1" value2="1" value3="1" value4="0"/>
+      <flags type="24" wear="0" extra="0"/>
+      <data weight="10000" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="10754" name="beam oaken furniture" special="NONE">
+    <description>\c00An oak beam crosses the low ceiling of the room, low enough to reach with an effort.</description>
+    <shortdesc>\c00an \c03oak\c00 beam</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="3" value4="0"/>
+      <flags type="24" wear="0" extra="0"/>
+      <data weight="10000" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="10755" name="armchair chair burgundy purple red furniture" special="NONE">
+    <description>\c00An overstuffed armchair covered in threadbare \c01bu\c05r\c12gu\c05n\c01dy\c00 satin sits at one corner of the room.</description>
+    <shortdesc>\c00an overstuffed armchair</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="1" value4="0"/>
+      <flags type="24" wear="0" extra="0"/>
+      <data weight="10000" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="10756" name="roll bandages dressing herb" special="NONE">
+    <description>\c00A roll of bandages, of the sort used for dressing wounds, spills out its coils on the ground.</description>
+    <shortdesc>a roll of bandages</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="2" value2="3000" value3="1" value4="0"/>
+      <flags type="3" wear="1" extra="0"/>
+      <data weight="5" cost="13758" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="10757" name="poultice herb" special="NONE">
+    <description>\c00A \c02poultice\c00, wrapped in a cloth packet, has been left on the ground here.</description>
+    <shortdesc>\c00a \c02poultice\c00</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="2" value2="100" value3="3" value4="0"/>
+      <flags type="3" wear="1" extra="0"/>
+      <data weight="4" cost="350" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="10758" name="herb pouch powdered andilay" special="NONE">
+    <description>\c00A small pouch of some powdered root lies on the ground.</description>
+    <shortdesc>a pouch of powdered andilay root</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="2" value2="800" value3="2" value4="0"/>
+      <flags type="3" wear="1" extra="0"/>
+      <data weight="5" cost="2574" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="10759" name="towels blue goatflowers" special="NONE">
+    <description>\c00A hot towel sits at one corner of the room, steaming rising gently from it.</description>
+    <shortdesc>\c00a hot towel smelling of \c04b\c11lu\c04e\c00 goatflowers</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="2" value2="1000" value3="2" value4="0"/>
+      <flags type="3" wear="1" extra="0"/>
+      <data weight="4" cost="4765" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="10760" name="sign herb wisdom ooc" special="NONE">
+    <description>\c00An \c02O\c03O\c02C\c00 sign for Far Madding's wisdom stands here.</description>
+    <shortdesc>\c02an \c09O\c10O\c09C \c02sign for Far Madding's wisdom\c00</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="16" wear="0" extra="0"/>
+      <data weight="10000" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <exdesc keyword="sign wisdom herb ooc">
+      <description>\c09----------------------------------------------------
+|\c02@ \c06A roll of bandages       \c13-- \c113000 \c04HP            \c02@\c09|
+|\c02@ \c06A poultice               \c13-- \c11300 \c04moves          \c02@\c09|
+|\c02@ \c06A pouch of andilay root  \c13-- \c11800 \c04mana           \c02@\c09|
+\c09|\c02@ \c06A hot towel          \c13-- \c111000 \c04mana        \c02@\c09|
+----------------------------------------------------
+\c00
+</description>
+    </exdesc>
+  </object>
+  <object vnum="10761" name="sign ooc glove" special="NONE">
+    <description>\c00An \c01O\c08O\c01C\c00 sign for the glove shop stands here.</description>
+    <shortdesc>\c01an \c08O\c12O\c08C\c01 sign for the glove shop\c00</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="16" wear="0" extra="0"/>
+      <data weight="1000" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <exdesc keyword="sign ooc glove">
+      <description>\c09A pair of soft kidskin gloves: \c02+10 to Hitroll, +15 to Damroll, +1 to Strength\c00
+\c10A pair of warm fur-lined gloves: \c03-10 to Armor, +10 to ABS\c00
+Elbow-length \c06l\c00ac\c14ewor\c00ke\c06d\c00 gloves: \c13+5 to Cha, +30 to Hitroll
+\c11A pair of lady's silk gloves: \c04-40 to Armor, +20 to ABS, -2 to Cha\c00
+A pair of \c23black\c00 gloves with roughened leather palms: \c14+30 to Hitroll, +35 to Damroll, +4 to Int\c00
+</description>
+    </exdesc>
+  </object>
+  <object vnum="10762" name="sign stone mason ooc values" special="NONE">
+    <description>\c00An \c23O\c14O\c23C\c00 sign for the stonemason stands here.</description>
+    <shortdesc>\c23an \c14O\c07O\c14C\c23 sign for the stonemason\c00</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="16" wear="0" extra="0"/>
+      <data weight="0" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <exdesc keyword="sign ooc stone mason values">
+      <description>\c00A thin \c14m\c07a\c23rb\c07l\c14e\c00 bracelet with veins of \c03g\c10ol\c03d\c00: -10 to AC, +1 to Cha
+A \c02j\c09ad\c02e\c00 pendant: -28 to AC, +10 to Damroll
+A tiny \c23s\c07t\c14o\c07n\c23e\c00 flower: +2 to Dex, -40 to AC
+A small \c23s\c07t\c14o\c07n\c23e\c00-shaping hammer: 3d6
+A stone-splitting chisel: 2d10
+</description>
+    </exdesc>
+  </object>
+  <object vnum="10763" name="sign ooc knife" special="NONE">
+    <description>\c00An \c04O\c11O\c04C\c00 sign for the knife shop stands here.</description>
+    <shortdesc>\c04an \c11O\c13O\c11C\c04 sign for the knife shop\c00</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="16" wear="0" extra="0"/>
+      <data weight="1000" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <exdesc keyword="sign ooc knife">
+      <description>\c00A hunting knife with a \c03c\c00o\c03r\c00d\c00-wound grip: 3d7
+A steel main gauche: 3d8, +2 to con
+A short throwing dagger: 3d9
+A short belt-knife: 2d8
+</description>
+    </exdesc>
+  </object>
+  <object vnum="10764" name="sign tabac ooc shop" special="NONE">
+    <description>\c00An \c03O\c10O\c03C\c00 sign for the tabac shop stands here.</description>
+    <shortdesc>\c03an \c10O\c09O\c10C\c03 sign for the tabac shop\c00</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="16" wear="0" extra="0"/>
+      <data weight="10000" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <exdesc keyword="sign tabac shop">
+      <description>\c00A bale of \c06p\c13e\c12r\c05fu\c12m\c13e\c06d\c00 Tairen \c03t\c02aba\c03c\c00:\c14\c14 +10 to Hitroll, +2 to Str, +10 to Maxhit
+\c00\c00A \c14s\c13p\c06ir\c13a\c14l\c00-carved pipe with a \c14s\c07i\c23lv\c07e\c14r\c00 bit:\c14 +2 to Int, +40 to ABS
+\c00A leather \c03t\c02aba\c03c\c00 pouch:\c14 +40 to Hitroll, +45 to Damroll
+\c00\c00A bale of sharp \c10C\c03airhieni\c10n\c03 t\c02aba\c03c\c00:\c14 &amp;W+100 to Maxhit, +60 to ABS
+\c00\c00A \c03wooden\c00 pipe carved with patterns resembling \c11f\c06i\c13s\c04h\c00:\c14 +2 to Dex, +2 to Int, +15 to Damroll\c00
+</description>
+    </exdesc>
+  </object>
+  <object vnum="10765" name="sign ooc shop herb" special="NONE">
+    <description>\c00An \c05O\c12O\c05C\c00 sign for the herb shop stands here.</description>
+    <shortdesc>\c05an \c12O\c08O\c12C\c05 sign for the herb shop\c00</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="16" wear="0" extra="0"/>
+      <data weight="1000" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <exdesc keyword="sign ooc herb shop">
+      <description>\c00A scented pomander: \c14+2 to Dex, +2 to Con, +2 to Wis\c00
+A handful of \c02ch\c09iv\c02es\c00: \c14Restores 500 HP\c00
+\c00A paper twist of ground \c03n\c10u\c08tm\c10e\c03g\c00: \c14Food\c00
+\c00A pinch of ground allspice: \c14Food\c00
+\c00A small bag of \c02ro\c05s\c09em\c05a\c02ry\c00: \c14Food\c00
+</description>
+    </exdesc>
+  </object>
+  <object vnum="10766" name="sign merchant cloth ooc values" special="NONE">
+    <description>\c00An \c06O\c13O\c06C\c00 sign for the cloth merchant stands here.</description>
+    <shortdesc>\c06an \c13O\c11O\c13C\c06 sign for the cloth merchant\c00</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="16" wear="0" extra="0"/>
+      <data weight="1000" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <exdesc keyword="sign ooc merchant cloth values">
+      <description>\c00A \c06s\c13il\c06k\c00 scarf:\c14 -10 to AC\c00
+A linen apron: \c14-50 to AC, +5 to Damroll\c00
+\c00A woollen tunic: \c14-45 to AC, +2 to Wis, +2 to Int\c00
+\c00A \c04b\c11lu\c04e\c00-dyed woollen shawl: \c14+4 to Int, +3 to Wis, +2 to Con, +50 to Move
+\c00A pair of \c03linen\c00 hose: \c14-16 to AC, +10 to ABS
+\c00
+</description>
+    </exdesc>
+  </object>
+  <object vnum="10767" name="sign merchant ooc fur" special="NONE">
+    <description>&amp;nA sign stands here, waiting to be read.</description>
+    <shortdesc>&amp;nFur merchants sign</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="16" wear="0" extra="0"/>
+      <data weight="0" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <exdesc keyword="sign">
+      <description>&amp;nA fur market:
+&amp;nA &amp;rfur&amp;n cap   [+2 Wis, -30 AC, +39 ABS]
+A &amp;rf&amp;Ro&amp;rx&amp;n-fur wrap   [+2 Cha, -15 Dam]
+A cape sewn from &amp;yra&amp;rbb&amp;yit&amp;n skins   [-25 AC]
+A &amp;rbearskin&amp;n hat   [+2 Str, -15 AC]
+&amp;rF&amp;yu&amp;rr&amp;n-lined boots   [+3 Con, +2 Cha, -70 AC]
+&amp;KB&amp;kl&amp;Ka&amp;kc&amp;Kk&amp;n-dyed calfskin gloves   [+4 Dex, +50 Abs, +5 Hit, -15 Dam]
+</description>
+    </exdesc>
+  </object>
+  <object vnum="10798" name="bed furniture" special="NONE">
+    <description>\c00A large, comfortable bed with a goosefeather mattress stands in the room.</description>
+    <shortdesc>a large bed with a goosefeather mattress</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="1" value2="1" value3="2" value4="0"/>
+      <flags type="24" wear="0" extra="0"/>
+      <data weight="10000" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+</objects>

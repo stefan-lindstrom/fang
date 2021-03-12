@@ -8,11 +8,11 @@ This small dirt road shows the ruts of many wagon wheels,
 but is very narrow and shows little sign of recent use.
 There is however, an even smaller path branching off to
 the east here, and glipses of some sort of small building
-can be caught, hinting that it might lead to a woodsman&apos;s
+can be caught, hinting that it might lead to a woodsman's
 cottage or something of the sort.  Directly to the south
 there is a stone wall, surmounted with iron spikes, and
 set across the road is a heavy iron gate, suggesting that
-someone doesn&apos;t want strangers to pass.
+someone doesn't want strangers to pass.
 </roomdescription>
       <flags>194</flags>
       <sector>Field</sector>
@@ -34,12 +34,12 @@ someone doesn&apos;t want strangers to pass.
   <room>
     <roombasic title="The Indelible Mark" vnum="14401" zone="144">
       <roomdescription>This shop is a mess. Tacked up along the walls are hundreds of drawings
-of diffrent sorts of creatures, peoples and desgins. Ink has splattered
+of different sorts of creatures, peoples and designs. Ink has splattered
 most of the floor, leaving a rather sticky mess. Needles and vials
 of ink line the walls in the back of the shop, adding more to the
 unkept look of the place.
 </roomdescription>
-      <flags>18</flags>
+      <flags>146</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
@@ -58,7 +58,7 @@ doorway to a large white structure is visible through the
 arched corridor formed by the branches of the trees growing
 at regular intervals along the road.
 </roomdescription>
-      <flags>2</flags>
+      <flags>16</flags>
       <sector>Field</sector>
       <special>NONE</special>
     </roombasic>
@@ -82,7 +82,7 @@ rests on a dummy, while shields and other various sorts of armor line
 the walls. All of it looks well made and looks as if it is kept in
 very good condition.
 </roomdescription>
-      <flags>18</flags>
+      <flags>146</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
@@ -104,6 +104,10 @@ fountain, but not today.
       <sector>Field</sector>
       <special>NONE</special>
     </roombasic>
+    <exit direction="north" keyword="raken" exitinfo="7" keynum="31580" toroom="31549">
+      <description>A screen bearing a raken
+</description>
+    </exit>
     <exit direction="east" keyword="" exitinfo="0" keynum="0" toroom="14405">
       <description/>
     </exit>
@@ -160,7 +164,7 @@ and is now surmounted by a triumphant statue of Artur Hawkwing,
 The High King.  Small gravelled paths leads off to both sides
 of the Manor, passing by meticulously cultivated flower beds.
 </roomdescription>
-      <flags>2</flags>
+      <flags>4098</flags>
       <sector>Field</sector>
       <special>NONE</special>
     </roombasic>
@@ -205,7 +209,7 @@ be well packed in place, and rarely disturbed, but there is a small
 dirt track hidden a ways off in the light woods to the north, which
 probably carries any heavy traffic to the back of the Manor.
 </roomdescription>
-      <flags>18</flags>
+      <flags>146</flags>
       <sector>Field</sector>
       <special>NONE</special>
     </roombasic>
@@ -225,7 +229,7 @@ Further along the eastern side of the Manor House, the reason for its
 abandonment is obvious- a beautiful and extensive garden stretches off
 to the east, towards the woods.
 </roomdescription>
-      <flags>2</flags>
+      <flags>146</flags>
       <sector>Field</sector>
       <special>NONE</special>
     </roombasic>
@@ -249,7 +253,7 @@ Guard, to a few ragged Taraboner auxilliaries are seated alone and
 in small groups, sipping kaf, snacking on food from the kitchens,
 and discussing the glories of the Empire.
 </roomdescription>
-      <flags>4122</flags>
+      <flags>26</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
@@ -278,9 +282,22 @@ all it costs is a single golden coin.
     </exit>
   </room>
   <room>
-    <roombasic title="An Officer&apos;s Room" vnum="14413" zone="144">
-      <roomdescription>   With bare white walls and a total lack of furnishings, this
-room awaits an occupant.
+    <roombasic title="Aaron's Office" vnum="14413" zone="144">
+      <roomdescription>Walls made of cedar loom high above most heads, the room nearly three
+times the height of an average human.  On the walls hang an assortment of
+items arranged in meticulous order: weaponry ranging from an Ogier sized
+double-headed battle axe to three small throwing daggers decorate the
+right side, a huge tapestry of a calm and lush forest with massive oak
+trees covers almost the entire left, and two arching windows spaced
+equally distant from each other and both walls cover the rear.  
+Dominating the room is an oaken desk, beautifully sung so that it looks
+almost alive with feet that become tree stumps, the corners rounded into
+trunks with a canopy blooming at the top, leveling into a writing surface
+at the center of the object.  Hung from the ceiling by thin ropes are
+various potted plants and small ferns, and four large pine sprouts, now
+almost reaching the ceiling are placed in each corner.  In front of the
+desk are two small human sized chairs, plain wooden objects with small
+backs, and one larger for Ogier visitors in the same style.    
 </roomdescription>
       <flags>10</flags>
       <sector>Inside</sector>
@@ -405,8 +422,8 @@ the forest to the west, their thorns looking wickedly sharp.
     </exit>
   </room>
   <room>
-    <roombasic title="A Hallway in the Officer&apos;s Quarters" vnum="14419" zone="144">
-      <roomdescription>   The hallway of the officers&apos; quarters is very plain, decorated by
+    <roombasic title="A Hallway in the Officer's Quarters" vnum="14419" zone="144">
+      <roomdescription>   The hallway of the officers' quarters is very plain, decorated by
 a single tapestry hanging on the north wall.  There are four doorways
 off of this hall, presumably leading to the private rooms of various
 individuals of high rank.
@@ -415,7 +432,7 @@ individuals of high rank.
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
-    <exit direction="north" keyword="door" exitinfo="1" keynum="0" toroom="14499">
+    <exit direction="north" keyword="door" exitinfo="3" keynum="0" toroom="14499">
       <description/>
     </exit>
     <exit direction="east" keyword="" exitinfo="0" keynum="0" toroom="14420">
@@ -426,8 +443,8 @@ individuals of high rank.
     </exit>
   </room>
   <room>
-    <roombasic title="A Hallway in the Officer&apos;s Quarters" vnum="14420" zone="144">
-      <roomdescription>   A door leads west out of the spartan officers&apos; quarters at the west
+    <roombasic title="A Hallway in the Officer's Quarters" vnum="14420" zone="144">
+      <roomdescription>   A door leads west out of the spartan officers' quarters at the west
 end of this hallway, and several doors on the north and south sides of
 the passage probably lead to rooms. A single vase of Sea Folk porcelain
 sits on a stand by the door, lightening the almost oppressive emptiness
@@ -581,7 +598,7 @@ wagon.
     </exit>
   </room>
   <room>
-    <roombasic title="An Officer&apos;s Room" vnum="14427" zone="144">
+    <roombasic title="An Officer's Room" vnum="14427" zone="144">
       <roomdescription>   With bare white walls and a total lack of furnishings, this
 room awaits an occupant.
 </roomdescription>
@@ -594,7 +611,7 @@ room awaits an occupant.
     </exit>
   </room>
   <room>
-    <roombasic title="An Officer&apos;s Room" vnum="14428" zone="144">
+    <roombasic title="An Officer's Room" vnum="14428" zone="144">
       <roomdescription>   With bare white walls and a total lack of furnishings, this
 room awaits an occupant.
 </roomdescription>
@@ -648,7 +665,7 @@ large collection.
   </room>
   <room>
     <roombasic title="The Library" vnum="14431" zone="144">
-      <roomdescription>   The eastern room of the manor&apos;s library is filled from floor to
+      <roomdescription>   The eastern room of the manor's library is filled from floor to
 ceiling with shelves of books.  There are several comfortable seats
 scattered about the room in good reading light by the windows set
 into the east and south walls, and there are small tables in several
@@ -711,7 +728,10 @@ and greenery.
   </room>
   <room>
     <roombasic title="Along The Western Path" vnum="14434" zone="144">
-      <roomdescription>An empty buffer...Hmm...A SBS-error perhaps?
+      <roomdescription>The path continues from where it came from, the forest thinning with
+each inch measured.   A large ironwood tree marks the edge of the forest,
+only scraggly bushes, wilted from the drought, can be seen for some
+distance.
 </roomdescription>
       <flags>2</flags>
       <sector>Field</sector>
@@ -785,7 +805,7 @@ a paved courtyard behind the south end of the manor.
   </room>
   <room>
     <roombasic title="West Of The Courtyard" vnum="14437" zone="144">
-      <roomdescription>   The manor&apos;s back courtyard can be seen from to the east, paved
+      <roomdescription>   The manor's back courtyard can be seen from to the east, paved
 with flat heavy stones, showing very little sign of wear.  The south
 wall of the manor looms above you, its white stone seeming very solid,
 the corner of the building just west of here.  A small garden turns
@@ -1041,7 +1061,7 @@ disappears into the woods in both directions.
       <sector>Field</sector>
       <special>NONE</special>
     </roombasic>
-    <exit direction="east" keyword="" exitinfo="1" keynum="0" toroom="14449">
+    <exit direction="east" keyword="" exitinfo="3" keynum="0" toroom="14449">
       <description/>
     </exit>
     <exit direction="south" keyword="gate wooden hinged" exitinfo="11" keynum="14552" toroom="14456">
@@ -1070,7 +1090,7 @@ to the exit of the Training Hall.
     <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="14457">
       <description/>
     </exit>
-    <exit direction="west" keyword="" exitinfo="0" keynum="0" toroom="14448">
+    <exit direction="west" keyword="" exitinfo="2" keynum="0" toroom="14448">
       <description/>
     </exit>
   </room>
@@ -1122,6 +1142,10 @@ eastward from here, towards the Morat quarters.
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
+    <exit direction="north" keyword="" exitinfo="0" keynum="-1" toroom="14492">
+      <description>You see nothing special.
+</description>
+    </exit>
     <exit direction="east" keyword="" exitinfo="0" keynum="0" toroom="14453">
       <description/>
     </exit>
@@ -1155,7 +1179,7 @@ the sounds of large animals shifting in their enclusures can be heard.
   </room>
   <room>
     <roombasic title="The Stables" vnum="14454" zone="144">
-      <roomdescription>   To the north lies the courtyard&apos;s open expanse, beyond the doors
+      <roomdescription>   To the north lies the courtyard's open expanse, beyond the doors
 of the stable.  An open passage stretches off to the west, towards
 several different sections of the stable, and to the south a large
 double door stands open, leading to the Corlm pen. Set into the east
@@ -1196,8 +1220,7 @@ tapestries and such, acquired around the world.
     <exit direction="west" keyword="door morat quarters" exitinfo="15" keynum="14552" toroom="14454">
       <description/>
     </exit>
-    <exit direction="up" keyword="Not set yet...
-" exitinfo="0" keynum="0" toroom="14488">
+    <exit direction="up" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="14488">
       <description>None
 </description>
     </exit>
@@ -1213,7 +1236,7 @@ there is a hint of a clearing a few hundread feet off.
       <sector>Field</sector>
       <special>NONE</special>
     </roombasic>
-    <exit direction="north" keyword="door gate wooden hinged" exitinfo="3" keynum="0" toroom="14448">
+    <exit direction="north" keyword="door gate wooden hinged" exitinfo="1" keynum="0" toroom="14448">
       <description/>
     </exit>
     <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="14463">
@@ -1281,7 +1304,7 @@ precise standards.
     <roombasic title="The Torm Stalls" vnum="14460" zone="144">
       <roomdescription>   This room is lined on all three sides with stalls, just about
 large enough to hold a horse, but with lower walls, a feature to
-suit the Torm they are meant to hold.  To the north there isn&apos;t a
+suit the Torm they are meant to hold.  To the north there isn't a
 wall, but rather an opening into the main corridor of the stable.
 </roomdescription>
       <flags>2</flags>
@@ -1371,10 +1394,6 @@ flight supplies.
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
-    <exit direction="north" keyword="door cara" exitinfo="1" keynum="14516" toroom="14501">
-      <description>A wooden door, leading to an inner office.
-</description>
-    </exit>
     <exit direction="east" keyword="" exitinfo="0" keynum="0" toroom="14466">
       <description/>
     </exit>
@@ -1384,7 +1403,7 @@ flight supplies.
       <roomdescription>   From the western edge of the flight field, there is a clear view
 of the entire area, including the message pole directly to the west,
 and both of the buildings desgined for the flying exotics.  South of
-the message pole stands the to&apos;raken barn,  and to the west a short
+the message pole stands the to'raken barn,  and to the west a short
 open path leads to the raken stables.
 </roomdescription>
       <flags>2</flags>
@@ -1424,9 +1443,9 @@ barn, while to the west can be seen another slightly smaller building.
     </exit>
   </room>
   <room>
-    <roombasic title="A Barn for To&apos;Raken" vnum="14468" zone="144">
+    <roombasic title="A Barn for To'Raken" vnum="14468" zone="144">
       <roomdescription>   Inside this building are several massive stalls, designed to hold
-the giant flying beasts known as to&apos;raken.  A large door hangs open to
+the giant flying beasts known as to'raken.  A large door hangs open to
 the north, allowing easy access to the flight area, and the circulation
 of fresh air into the musty confines of this building.
 </roomdescription>
@@ -1439,7 +1458,7 @@ of fresh air into the musty confines of this building.
     </exit>
   </room>
   <room>
-    <roombasic title="A Seeker&apos;s Room" vnum="14469" zone="144">
+    <roombasic title="A Seeker's Room" vnum="14469" zone="144">
       <roomdescription>A plain room with four walls of equal length, a simple bed
 against othe wall, a chair, a table, and a single window
 in the west wall.
@@ -1521,7 +1540,7 @@ is standing by the northern wall, well done, not a wrinkle
 on the sheets, although it seems to be very hard and uncomfortable.
 
 In the southwestern corner of the room is a &amp;ywooden&amp;n, man shaped stand. 
-The stand holds the occupant&apos;s battle armor, a set of &amp;kb&amp;gl&amp;ka&amp;gc&amp;kk&amp;gi&amp;ks&amp;gh green&amp;n,
+The stand holds the occupant's battle armor, a set of &amp;kb&amp;gl&amp;ka&amp;gc&amp;kk&amp;gi&amp;ks&amp;gh green&amp;n,
 insectoid like metal plates that is detailed in &amp;Rb&amp;rl&amp;Ro&amp;ro&amp;Rd &amp;rred&amp;n.
 The armor consists of a breast plate without shoulder plates, a high
 helmet and a pair of &amp;ksteel&amp;n bracers that would cover a mans arm from 
@@ -1541,7 +1560,7 @@ on the wall.
     </exit>
   </room>
   <room>
-    <roombasic title="A Seeker&apos;s Room" vnum="14474" zone="144">
+    <roombasic title="A Seeker's Room" vnum="14474" zone="144">
       <roomdescription>The plain white walls of this room are simple extensions of the hallway
 outside the door, but several refinements turn this room into a sanctuary
 of calm and peace.  The north and south walls have both been divided by
@@ -1552,7 +1571,7 @@ room sits a plain wooden stand supporting a beautifully glittering statue
 of smooth glass.  It has been carefully placed before the single large
 window in the west wall, where it catches as much light as possible,
 sending sparkling prismatic rays throughout the room.  Along the north
-wall, a large and ornate wooden chest stands, holding the occupant&apos;s
+wall, a large and ornate wooden chest stands, holding the occupant's
 personal effects.
 </roomdescription>
       <flags>10</flags>
@@ -1710,7 +1729,7 @@ an aura of tidiness and secrecy - nothing is out of place.
     </exit>
   </room>
   <room>
-    <roombasic title="&amp;WA Lady&apos;s Room&amp;n" vnum="14482" zone="144">
+    <roombasic title="&amp;WA Lady's Room&amp;n" vnum="14482" zone="144">
       <roomdescription>Entering through the door, you emerge into a medium-sized room of lush beauty.
 The floor is a deep, dark oak which is stained perfectly with a few burgundy
 rugs tossed around it.  To the left lies another door leading to the bathing
@@ -1841,14 +1860,13 @@ prestigious morat and the stablehands.
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
-    <exit direction="down" keyword="Not set yet...
-" exitinfo="0" keynum="0" toroom="14455">
+    <exit direction="down" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="14455">
       <description>None
 </description>
     </exit>
   </room>
   <room>
-    <roombasic title="Melessia&apos;s Imported Clothing" vnum="14489" zone="144">
+    <roombasic title="Melessia's Imported Clothing" vnum="14489" zone="144">
       <roomdescription>You enter into a shop that is kept incredibly neat and tidy. On the
 walls and counters are countless articals of clothing, all neatly folded
 stacked or hung. Most of the clothing is cut very diffrently than the 
@@ -1856,7 +1874,7 @@ styles of those in the lands of Hawking, being more of a comforting cut
 of the styles of Seandar. The shop owner must import them regularly, or
 cut them herself.
 </roomdescription>
-      <flags>26</flags>
+      <flags>154</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
@@ -1865,7 +1883,7 @@ cut them herself.
     </exit>
   </room>
   <room>
-    <roombasic title="The Path to the Manor&apos;s Gardens" vnum="14490" zone="144">
+    <roombasic title="The Path to the Manor's Gardens" vnum="14490" zone="144">
       <roomdescription>This is a simple, beaten up path to the manor
 gardens, which eventually lead to the manor 
 itself.  Half dead trees line the path, and no
@@ -1874,7 +1892,7 @@ such as ants and beetles.  North of here is the
 road to Aringill or Caemlyn, south the path
 continues until it reaches the gardens.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
@@ -1893,7 +1911,7 @@ itself.  Half dead trees line the path, and no
 animals of any kind can be seen, only insects
 such as ants and beetles.  North of here is the
 road to Aringill or Caemlyn, south, the path
-ends it&apos;s journey and reaches the gardens.
+ends it's journey and reaches the gardens.
 </roomdescription>
       <flags>0</flags>
       <sector>Inside</sector>
@@ -1907,9 +1925,90 @@ ends it&apos;s journey and reaches the gardens.
     </exit>
   </room>
   <room>
-    <roombasic title="Acessories and Stuff" vnum="14497" zone="144">
-      <roomdescription>\c00</roomdescription>
-      <flags>26</flags>
+    <roombasic title="The Damane Kennels" vnum="14492" zone="144">
+      <roomdescription>This large room is empty of furniture, obviously here to serve one purpose
+only.  A hallway runs down the center of the area, wide enough for two
+people to walk comfortably together down it.  What appears to be nothing
+more than small boxes, holding cells perhaps, line the path to either
+side.  An a'dam hangs by a nail on the southern wall next to a wooden door
+leading into the barn, a tell tale sign of just what this room is used
+for.  A stern faced Sul'dam stands near the entrance, watching the comings
+and goings of all who step into the damane kennels.    
+</roomdescription>
+      <flags>10</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="door" exitinfo="3" keynum="-1" toroom="14494">
+      <description>You see nothing special.
+</description>
+    </exit>
+    <exit direction="south" keyword="" exitinfo="0" keynum="-1" toroom="14452">
+      <description>You see nothing special.
+</description>
+    </exit>
+    <exit direction="west" keyword="door" exitinfo="3" keynum="-1" toroom="14493">
+      <description>You see nothing special.
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="A Kennel" vnum="14493" zone="144">
+      <roomdescription>Small and sparsely furnished, this room appears to act only as a resting
+place for damane.  The bare necessities are provided, a constant reminder
+to the women who are leashed that they are nothing more than property, a
+pet owned and kept because it suits their master or mistress to do so.  A
+bed, barely large enough for one woman to sleep comfortably on, rests in
+the northwestern corner of the room.  A rickety looking table sits against
+the south wall, a chipped pitcher, wash basin, and a single candle
+adorning the tabletop.  Several pegs have been driven in to the west wall
+near the bed, a poorly made gray dress hanging on one of them.  A wooden
+door leading to the larger area housing the damane kennels lies to the
+east, the sound of approaching footsteps audible on occasion.    
+</roomdescription>
+      <flags>10</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="door" exitinfo="3" keynum="-1" toroom="14492">
+      <description>You see nothing special.
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="A Kennel" vnum="14494" zone="144">
+      <roomdescription>Small and sparsely furnished, this room appears to act only as a resting
+place for damane.  The bare necessities are provided, a constant reminder
+to the women who are leashed that they are nothing more than property, a
+pet owned and kept because it suits their master or mistress to do so.  A
+bed, barely large enough for one woman to sleep comfortably on, rests in
+the northwestern corner of the room.  A rickety looking table sits against
+the south wall, a chipped pitcher, wash basin, and a single candle
+adorning the tabletop.  Several pegs have been driven in to the west wall
+near the bed, a poorly made gray dress hanging on one of them.  A wooden
+door leading to the larger area housing the damane kennels lies to the
+east, the sound of approaching footsteps audible on occasion.    
+</roomdescription>
+      <flags>10</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="west" keyword="door" exitinfo="3" keynum="-1" toroom="14492">
+      <description>You see nothing special.
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Setra's Accessories" vnum="14497" zone="144">
+      <roomdescription>\c00The shop is simple, tidy, and well-kept.  The floors are made of
+polished hardwood, upon which great racks of shoes, ribbons, gloves
+, and other women's clothing lie, awaiting an owner to come and buy
+them.  The counter, where the owner herself can be usually found,
+is also polished, and immaculately cared for by appearance - there are
+few scratches, despite the coins that must pass over it at least
+occassionally.
+</roomdescription>
+      <flags>154</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
@@ -1937,7 +2036,7 @@ used side of the Manor.
     </exit>
   </room>
   <room>
-    <roombasic title="An Officer&apos;s Room" vnum="14499" zone="144">
+    <roombasic title="An Officer's Room" vnum="14499" zone="144">
       <roomdescription>   With bare white walls and a total lack of furnishings, this
 room awaits an occupant.
 </roomdescription>
@@ -1945,33 +2044,29 @@ room awaits an occupant.
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
-    <exit direction="south" keyword="door" exitinfo="1" keynum="0" toroom="14419">
+    <exit direction="south" keyword="door" exitinfo="3" keynum="0" toroom="14419">
       <description/>
     </exit>
   </room>
   <room>
-    <roombasic title="Cara&apos;s office and private stable" vnum="14501" zone="144">
+    <roombasic title="REUSE THIS ROOM (Tanchico)" vnum="14501" zone="144">
       <roomdescription>A room alight with lamps on all sides as well as being
 reflected off of mirrors behind the lamps.  A small desk sits
 in the left hand corner with a leather writing cover on it 
 that is lightly coated with various papers. Behind the desk
 is one, comfortable looking, but small as it is sized for 
-it&apos;s owner only and one larger chair to the side for anyone 
+it's owner only and one larger chair to the side for anyone 
 who comes to call. On the right half of the room is a 
 shoulder high wall of wood that is used to house her favorite 
 raken solely.  All the currying tools and brushes are on 
 small shelves around the stall as it can be seen that there 
 is fresh straw on the ground in the stall and a good sized 
 bag of oats and a few apples beside it.  The fact this is a 
-lady&apos;s office is obvious due to the little touches.
+lady's office is obvious due to the little touches.
 </roomdescription>
       <flags>10</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
-    <exit direction="south" keyword="door" exitinfo="1" keynum="14516" toroom="14465">
-      <description>A lockable wooden door between the main stables and this room.
-</description>
-    </exit>
   </room>
 </rooms>

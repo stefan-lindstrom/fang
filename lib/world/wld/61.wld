@@ -100,15 +100,34 @@ upper level.
     <exit direction="up" keyword="" exitinfo="0" keynum="0" toroom="6107">
       <description/>
     </exit>
+    <exit direction="down" keyword="" exitinfo="0" keynum="0" toroom="6153">
+      <description/>
+    </exit>
   </room>
   <room>
-    <roombasic title="The Dining Room" vnum="6104" zone="61">
-      <roomdescription>You are in an unfinished room.
+    <roombasic title="The Banquet Hall" vnum="6104" zone="61">
+      <roomdescription>This is a large banquet hall with a dressed stone floor covered in thick
+Tairien rugs.  The great table stretches the length of the room and is
+made of a fine mahogany wood with pedestals carved like rearing lions.  
+There are some one hundred chairs about this table, all with high,
+upholstered backs and seats in red velvet.  The tablecloth is white and
+bordered with magnificent lions embroidered in finely spun gold thread and
+fringed in gold.  Down the length of the table is a red runner of rich
+silk embroidered with gold roses with a thick gold tassel hanging from
+each end.  There are two serving tables on each side of the room, which
+contains various serving dishes and linens below in the drawers.  There
+are also two cabinets that contain the fine china.  The House Trakand
+plates are white and edged in gold around both the outer and inner rims of
+the plate.  In the center is a red rose fully opened.  The candle holders
+along the table are also shaped like lions.    
 </roomdescription>
-      <flags>0</flags>
+      <flags>8</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
+    <exit direction="east" keyword="" exitinfo="0" keynum="0" toroom="6156">
+      <description/>
+    </exit>
     <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="6105">
       <description/>
     </exit>
@@ -118,13 +137,29 @@ upper level.
   </room>
   <room>
     <roombasic title="The Kitchen" vnum="6105" zone="61">
-      <roomdescription>You are in an unfinished room.
+      <roomdescription>This is a grand kitchen and well equiped with pots, pans, kettles and
+every imaginable item one can cook in.  There is a great fireplace and
+several pot belly stoves for cooking and a great stone oven for baking.  
+In the center of the room is a very long chopping block above which are
+hung various herbs used in the cooking.  The staff here includes a head
+cook, several mincers, peelers, parers, choppers, pluckers, butchers,
+bread makers, sauce makers, grinders, blenders, pastry cooks and numerous
+tray servants.  The floor is made of stone and freshly sweeped.  Wood boys
+are constantly coming into the kitchen hauling wood and chopping it when
+needed.  The master of the smokehouse is inspecting the butcher&apos;s latest
+work and considers where to hang the side of beef.  Near the butcher, the
+sauage-maker is busy making ropes of sauages with his helpers.  And at the
+far end of the kitchen, the artistry of the pastry chef is making itself
+manifest with layered cakes and festoons of icing.    
 </roomdescription>
-      <flags>0</flags>
+      <flags>8</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
     <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="6104">
+      <description/>
+    </exit>
+    <exit direction="down" keyword="" exitinfo="0" keynum="0" toroom="6155">
       <description/>
     </exit>
   </room>
@@ -147,9 +182,12 @@ At night, candles in small glass globes light the garden wall and path, even in
 the trees.    
 </roomdescription>
       <flags>214</flags>
-      <sector>Inside</sector>
+      <sector>Field</sector>
       <special>NONE</special>
     </roombasic>
+    <exit direction="east" keyword="" exitinfo="0" keynum="0" toroom="6159">
+      <description/>
+    </exit>
     <exit direction="south" keyword="gate" exitinfo="3" keynum="0" toroom="6103">
       <description>An ivy covered garden gate, made of ornate spindles of black iron.
 </description>
@@ -184,10 +222,9 @@ the trees.
     </exit>
   </room>
   <room>
-    <roombasic title="The Eastern Office " vnum="6108" zone="61">
-      <roomdescription>You are in an unfinished room.
-</roomdescription>
-      <flags>8</flags>
+    <roombasic title="The Chamber of the Trakand Manor" vnum="6108" zone="61">
+      <roomdescription>\c00</roomdescription>
+      <flags>584</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
@@ -197,11 +234,14 @@ the trees.
     </exit>
   </room>
   <room>
-    <roombasic title="A bend on the Hall" vnum="6109" zone="61">
-      <roomdescription>You are in an unfinished room.
+    <roombasic title="A Bend in the Hallway" vnum="6109" zone="61">
+      <roomdescription>The hallway continues to the northeast and to the west where lie other
+rooms.  The walls are in an oak beaded paneling with brass candleholders
+shaped like roses.  The wood planked floor has a long rug.  Upon the wall
+hangs paintings of Queen Morgase.    
 </roomdescription>
       <flags>8</flags>
-      <sector>Inside</sector>
+      <sector>City</sector>
       <special>NONE</special>
     </roombasic>
     <exit direction="east" keyword="door" exitinfo="11" keynum="6101" toroom="6111">
@@ -284,7 +324,9 @@ study.
   </room>
   <room>
     <roombasic title="A widening in the Hall" vnum="6113" zone="61">
-      <roomdescription>You are in an unfinished room.
+      <roomdescription>The hall continues to the west and east.  Between the doors lies chairs
+and small tables set with freshly cut flowers from the summer gardens.  
+There is a rack for holding parasols and cloaks.    
 </roomdescription>
       <flags>8</flags>
       <sector>Inside</sector>
@@ -305,10 +347,9 @@ study.
   </room>
   <room>
     <roombasic title="A Guest Room" vnum="6114" zone="61">
-      <roomdescription>You are in an unfinished room.
-</roomdescription>
-      <flags>0</flags>
-      <sector>Inside</sector>
+      <roomdescription>\c00</roomdescription>
+      <flags>8</flags>
+      <sector>City</sector>
       <special>NONE</special>
     </roombasic>
     <exit direction="south" keyword="door" exitinfo="3" keynum="0" toroom="6113">
@@ -317,10 +358,9 @@ study.
   </room>
   <room>
     <roombasic title="A Guest Room" vnum="6115" zone="61">
-      <roomdescription>You are in an unfinished room.
-</roomdescription>
-      <flags>0</flags>
-      <sector>Inside</sector>
+      <roomdescription>\c00</roomdescription>
+      <flags>8</flags>
+      <sector>City</sector>
       <special>NONE</special>
     </roombasic>
     <exit direction="north" keyword="door" exitinfo="3" keynum="0" toroom="6113">
@@ -329,49 +369,46 @@ study.
   </room>
   <room>
     <roombasic title="The End of the Hall" vnum="6116" zone="61">
-      <roomdescription>You are in an unfinished room.
+      <roomdescription>The hall continues to the east and to the northwest.  The walls are of
+beaded paneling.  Near the doors are niches in the wall where the House
+Guard may stand as protector over the occupant.  The rug on the floor here
+is a bit wore but still in good service.  There is plenty of lightening
+from the candles that line both walls.    
 </roomdescription>
       <flags>8</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
+    <exit direction="north" keyword="door" exitinfo="15" keynum="6101" toroom="6141">
+      <description/>
+    </exit>
     <exit direction="east" keyword="" exitinfo="0" keynum="0" toroom="6113">
       <description/>
     </exit>
     <exit direction="south" keyword="door" exitinfo="15" keynum="6101" toroom="6118">
       <description/>
     </exit>
-    <exit direction="west" keyword="door" exitinfo="15" keynum="6101" toroom="6117">
+    <exit direction="west" keyword="door" exitinfo="3" keynum="-1" toroom="6117">
+      <description/>
+    </exit>
+    <exit direction="northwest" keyword="" exitinfo="0" keynum="0" toroom="6150">
       <description/>
     </exit>
   </room>
   <room>
     <roombasic title="Lady Ameria&apos;s Chambers" vnum="6117" zone="61">
-      <roomdescription>You are in an unfinished room.
-</roomdescription>
+      <roomdescription>\c00</roomdescription>
       <flags>8</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
-    <exit direction="east" keyword="door" exitinfo="15" keynum="6101" toroom="6116">
+    <exit direction="east" keyword="door" exitinfo="3" keynum="-1" toroom="6116">
       <description/>
     </exit>
   </room>
   <room>
-    <roombasic title="The Trophy Room" vnum="6118" zone="61">
-      <roomdescription>Inside this room lays the treasures and heirlooms of past leaders of House
-Trakand.  Shelves display crowns and signet rings.  Glass cases show of
-treaties, alliances, and deeds forged by Trakand leaders.  Several gleaming
-suits of armor shine from the corners, while great swords and axes are
-displayed proudly from tables.  There is a certain hallowed feel from all these
-antique items, and with the many portraits that line the wall someone in this
-room could feel as if they are being judged and weighed by those who have come
-before.  And on a pedestal in the center of the room is a huge book that could
-easily stand waist high on many men.  Within this book are all the names of
-those who have served Trakand.  The names of some of the greatest heroes of the
-house intermingled with the servants and the guards of those who have joined
-Trakand.    
-</roomdescription>
+    <roombasic title="A Trakand Guest Chamber" vnum="6118" zone="61">
+      <roomdescription>\c00</roomdescription>
       <flags>8</flags>
       <sector>Inside</sector>
       <special>NONE</special>
@@ -382,13 +419,27 @@ Trakand.
   </room>
   <room>
     <roombasic title="A Sitting Room" vnum="6119" zone="61">
-      <roomdescription>You are in an unfinished room.
+      <roomdescription>This sitting room features a cozy corner with a display cabinet for a
+collection of Seafolk porcelain.  The corner also has a small built-in
+bench upholstered in red silk with golden lions upon it.  In fact, the two
+sofas and numberous high-back chairs are all covered in the same silk
+material and the drapes are made of the same pattern and colours.  There
+is a large fireplace with marble and ornate spindles with its lion-shaped
+andirons.  The many candlestands about the room assure there is no lack of
+lighting.  A formal tea service waits upon the tea table and a cabinet
+near the window contains an assortment of fine wines.    
 </roomdescription>
-      <flags>0</flags>
+      <flags>8</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
+    <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="6142">
+      <description/>
+    </exit>
     <exit direction="east" keyword="" exitinfo="0" keynum="0" toroom="6103">
+      <description/>
+    </exit>
+    <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="6143">
       <description/>
     </exit>
   </room>
@@ -883,6 +934,261 @@ scroll designs cut and polished from strong oak trees.
     <exit direction="east" keyword="door" exitinfo="3" keynum="0" toroom="6106">
       <description/>
     </exit>
+  </room>
+  <room>
+    <roombasic title="Lady Sydonia&apos;s Chambers" vnum="6141" zone="61">
+      <roomdescription>\c00</roomdescription>
+      <flags>584</flags>
+      <sector>City</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="south" keyword="door" exitinfo="15" keynum="6101" toroom="6116">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Trakand Manor Library" vnum="6142" zone="61">
+      <roomdescription>This room is lined with book shelves along one wall.  Most of the books
+here are copies which the House has paid to have completed.  There are not
+many books here, but to increase the offerings, there are also the diaries
+of deceased House members.  In this way the library is a unique historical
+reference library.  House Trakand tends to be rather guarded about these
+diaries and keep them locked up.  There is a large table around which
+several people could sit or spread out books.  Before the fireplace is a
+sofa and there are numerous high back chairs clustered about the room.  
+
+</roomdescription>
+      <flags>8</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="6119">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Manor&apos;s Tea Room" vnum="6143" zone="61">
+      <roomdescription>A light and airy room, this room boasts a number of fine tea services.  
+The most prized tea set is made of Seafolk porcelain and is rimmed in gold
+and has the great Andorian Lion upon it.  Another set is also Seafolk
+porcelain with its cups shaped like open roses.  There is a special
+cabinet that houses most of the tea services.  The servants rotate the
+services and reserve the costly sets for special occasions.  The sofa and
+chairs are uphostlered in a silk printed with the pattern of tiny roses on
+a creme coloured background.  Red and gold silk pillows with fancy tassels
+are tastefully arranged upon the furniture.    
+</roomdescription>
+      <flags>8</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="6119">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Hall Continues" vnum="6144" zone="61">
+      <roomdescription>The hall continues on in a northern direction.  All along the walls on
+both sides are candle holders.  There is a wooden bench on one side
+between doors.  There is a nice red rug on the floor with yellow Andoran
+lions woven into it.  There is also a small wooden cart that the servants
+use to move from room to room in order to clean the chambers and change
+the linens.    
+</roomdescription>
+      <flags>8</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="door" exitinfo="3" keynum="0" toroom="6145">
+      <description/>
+    </exit>
+    <exit direction="southwest" keyword="" exitinfo="0" keynum="0" toroom="6109">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Chambers of Lord Alantir" vnum="6145" zone="61">
+      <roomdescription>This is a well furnished room with a nice view of the Trakand gardens
+which can be viewed from a balcony.  The drapes are of a dark burgundy
+colour with a dark blue and gold.  The bed is of a size that dominates the
+room.  The wardrobe is a large one with rampant Andoran Lions carved upon
+it.  There is a small desk for doing correspondance and a nice fireplace
+nearby.  At the foot of the bed is a large leather tooled chest that holds
+extra blankets.  There is also a sofa and several chairs and a small
+table.    
+</roomdescription>
+      <flags>8</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="west" keyword="door" exitinfo="3" keynum="0" toroom="6144">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Greater North Hall" vnum="6149" zone="61">
+      <roomdescription>You are in an unfinished room.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="6150">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The North Hall" vnum="6150" zone="61">
+      <roomdescription>The north hall continues north and southeast.  There is a chair rail above
+which the wall is stencilled with a rose pattern.  The ceiling is an
+unusual barrel vault that is smooth but reflects nicely the light from the
+candles.  A fancy upholstered settee lies against one of the walls.    
+</roomdescription>
+      <flags>0</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="6149">
+      <description/>
+    </exit>
+    <exit direction="southeast" keyword="" exitinfo="0" keynum="0" toroom="6116">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Trakand Guard&apos;s Hall" vnum="6152" zone="61">
+      <roomdescription>You are in an unfinished room.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="6153">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Lower Hall" vnum="6153" zone="61">
+      <roomdescription>You are in an unfinished room.
+</roomdescription>
+      <flags>8</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="6152">
+      <description/>
+    </exit>
+    <exit direction="east" keyword="" exitinfo="0" keynum="0" toroom="6154">
+      <description/>
+    </exit>
+    <exit direction="up" keyword="" exitinfo="0" keynum="0" toroom="6103">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Trophy and Weapons Hall" vnum="6154" zone="61">
+      <roomdescription>Inside this room lays the treasures and heirlooms of past leaders of House
+Trakand.  Shelves display crowns and signet rings.  Wooden cases show of
+treaties, alliances, and deeds forged by Trakand leaders.  Several
+gleaming suits of armor shine from the corners, while great swords and
+axes are displayed proudly from tables.  There is a certain hallowed feel
+from all these antique items, and with the many portraits that line the
+wall someone in this room could feel as if they are being judged and
+weighed by those who have come before.  And on a pedestal in the center of
+the room is a huge book that could easily stand waist high on many men.  
+Within this book are all the names of those who have served Trakand.  The
+names of some of the greatest heroes of the house intermingled with the
+servants and the guards of those who have joined Trakand.  In addition,
+this room contains a supply of swords and armour for the House Guard.    
+</roomdescription>
+      <flags>8</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="west" keyword="" exitinfo="0" keynum="0" toroom="6153">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Old Wine Cellar" vnum="6155" zone="61">
+      <roomdescription>This room is lined with shelves just for holding bottles of fine wine.  
+The Trakands obtain their wine from all over, but they are particularly
+fond and proud of the Andoran vineyards and the wines that they yield.  
+There are several oil lamps that can be used to locate the wine of your
+choice.  Of course, the Trakand Wine Master can obtain any wine that is
+desired given enough time.  There are also barrels of ale as well as casks
+of brandy.    
+</roomdescription>
+      <flags>9</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="up" keyword="" exitinfo="0" keynum="0" toroom="6105">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Tabac and Brandy Room" vnum="6156" zone="61">
+      <roomdescription>This is a rather dark and masculine room with its overstuffed chairs and
+sofas upholstered in a nutty brown leather.  The fireplace is a large one
+and above it hangs a large rack of deer antlers.  There is a round table
+for gambling.  On the wall is a couple of large racks holding an
+assortment of smoking pipes that belong to House members and their regular
+guests.  Of course, they always keep a few new pipes for their other
+guests.  On the shelves are special wooden containers that house various
+tabac, each container is labeled with its blend and where the tabac comes
+from and is tightly sealed.  A very well stocked brandy cabinet stands
+along one wall.  Its the perfect place for the male members of the House
+to retire to after dinner to continue their conversations.    
+</roomdescription>
+      <flags>8</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="west" keyword="" exitinfo="0" keynum="0" toroom="6104">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Courtyard" vnum="6159" zone="61">
+      <roomdescription>You are in an unfinished room.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="west" keyword="" exitinfo="0" keynum="0" toroom="6106">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Servant&apos;s Hall" vnum="6161" zone="61">
+      <roomdescription>The servant&apos;s hall is a great room lined on both sides with rows of beds
+and down the center of the room is a four and a half foot high wall.  The
+right side is where the female servants live and the left side is for the
+male servants.  At the end of the hall are two small rooms, for the Master
+and Mistress of the servants.  Between each servant&apos;s bed is a privacy
+curtain.  A chamber pot is kept under each bed and at the foot of the bed
+is a trunk for storing clothing.  A little wooden cabinet by the bed
+usually holds whatever possessions the servant owns.  The furishing may be
+plain but the Master and Mistress of the servants make sure this hall is
+kept very clean and tidy.    
+</roomdescription>
+      <flags>8</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="northwest" keyword="" exitinfo="0" keynum="0" toroom="6105">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="A Narrow Hall" vnum="6162" zone="61">
+      <roomdescription>\c00</roomdescription>
+      <flags>8</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
   </room>
   <room>
     <roombasic title="The bedchamber" vnum="6193" zone="61">

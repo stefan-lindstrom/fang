@@ -1,79 +1,139 @@
-#10600
-well old stone~
-an old stone well~
-An old stone well is here.~
-~
-23 0 0
-50000 50000 0 0
-50005 0 0
-#10601
-chest wooden~
-the wooden chest~
-A large wooden chest is here.~
-~
-15 0 0
-1000 15 10602 0
-0 0 0
-#10602
-key iron~
-an iron key~
-An iron key is here.~
-~
-18 0 1
-0 0 0 0
-4 0 0
-#10603
-sword rusty~
-a rusty sword~
-An old rusty sword is here.~
-~
-5 0 8193
-0 3 9 3
-6 150 0
-A
-1 1
-A
-18 5
-A
-19 5
-#10604
-dagger rusty~
-a rusty dagger~
-An old rusty dagger is here.~
-~
-5 0 8193
-0 5 6 11
-4 250 0
-A
-17 -5
-A
-18 5
-A
-19 5
-#10605
-gem small~
-a small gem~
-A small gem is here.~
-~
-9 0 16385
-10 20 0 0
-3 520 0
-A
-3 2
-#10606
-gold pile~
-a pile of gold coins~
-A pile of gold is here.~
-~
-20 0 1
-2500 0 0 0
-0 0 0
-#10607
-stream~
-a cool stream~
-A stream of cool water flows by here.~
-~
-23 0 0
-5000 5000 0 0
-5005 0 0
-$~
+<?xml version="1.0"?>
+<objects>
+  <object vnum="10600" name="well old stone" special="NONE">
+    <description>An old stone well is here.</description>
+    <shortdesc>an old stone well</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="50000" value2="50000" value3="0" value4="0"/>
+      <flags type="23" wear="0" extra="0"/>
+      <data weight="50005" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="10601" name="chest wooden" special="NONE">
+    <description>A large wooden chest is here.</description>
+    <shortdesc>the wooden chest</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="1000" value2="13" value3="10602" value4="0"/>
+      <flags type="15" wear="0" extra="0"/>
+      <data weight="0" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="10602" name="iron key" special="NONE">
+    <description>An iron key is here.</description>
+    <shortdesc>an iron key</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="18" wear="1" extra="0"/>
+      <data weight="4" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="10603" name="sword rusty" special="NONE">
+    <description>An old rusty sword is here.</description>
+    <shortdesc>a rusty sword</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="STR" modifier="1"/>
+    <objaffect location="HITROLL" modifier="5"/>
+    <objaffect location="DAMROLL" modifier="5"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="3" value3="9" value4="3"/>
+      <flags type="5" wear="8193" extra="0"/>
+      <data weight="6" cost="150" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="10604" name="dagger rusty" special="NONE">
+    <description>An old rusty dagger is here.</description>
+    <shortdesc>a rusty dagger</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="ARMOR" modifier="-5"/>
+    <objaffect location="HITROLL" modifier="5"/>
+    <objaffect location="DAMROLL" modifier="5"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="5" value3="6" value4="11"/>
+      <flags type="5" wear="8193" extra="0"/>
+      <data weight="4" cost="250" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="10605" name="gem small" special="NONE">
+    <description>A small gem is here.</description>
+    <shortdesc>a small gem</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="INT" modifier="2"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="10" value2="20" value3="0" value4="0"/>
+      <flags type="9" wear="16385" extra="0"/>
+      <data weight="3" cost="520" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="10606" name="gold pile" special="NONE">
+    <description>A pile of gold is here.</description>
+    <shortdesc>a pile of gold coins</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="2500" value2="0" value3="0" value4="0"/>
+      <flags type="20" wear="1" extra="0"/>
+      <data weight="0" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="10607" name="stream" special="NONE">
+    <description>A stream of cool water flows by here.</description>
+    <shortdesc>a cool stream</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="5000" value2="5000" value3="0" value4="0"/>
+      <flags type="23" wear="0" extra="0"/>
+      <data weight="5005" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+</objects>

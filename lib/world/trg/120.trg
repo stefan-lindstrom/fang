@@ -1,17 +1,17 @@
 #12000
 &RBand of the Red Hand GEQ&n~
-1 gij 100
+1 j 100
 ~
-   if (%actor.guild(2)% == Member)
-return 1
-else
-return 0
-wait 2
-%echo% %actor.name% is \\c08NOT\\c00 Guilded in the \\c14Band of the Red Hand!\\c00
-otransform 3580
-attach 3550 %self.id%
-attach 3551 %self.id%
-attach 3552 %self.id%
+   if (%actor.level% < 200)
+   if (%actor.guild(2)% == Member || %actor.guild(2)% == GL)
+         return 1
+      else
+         %send% %actor.name% You are not a member of the Band of the Red Hand!
+         return 0
+      end
+   else
+      return 1
+   end
 ~
 #12001
 Geq#2~
@@ -19,14 +19,29 @@ Geq#2~
 ~
    if (%actor.name% == Mat)
 return 1
+  else
+  %send% %actor.name% &RYou are unable to use this item!&n
+  return 0
+end
+~
+#12002
+Fox-Head Medallion Trigger~
+1 c 9
+*~
+if (%actor.level% > 205 || (%cmd% != weave && %cmd% != cast && %cmd% != tieweave) || !%arg.contains(Mat)%)
+  return 0
 else
-return 0
-wait 2
-%send% %actor.name% You can \\c08NOT\\c00 use this equipment.
-otransform 3580
-attach 3550 %self.id%
-attach 3551 %self.id%
-attach 3552 %self.id%
+  %send% %actor.name% &WYour flows just seem to disappear as they touch Mat.&n
+%send% mat &WYour foxhead medallion grows cold against your chest as %actor.name% attempts to weave on you!&n
+  return 1
+end
+~
+#12003
+Cast~
+1 c 7
+cast~
+%send% %actor.name% \\c08Your weave just seems to disappear.\\c00
+%send% Mat \\c08Your fox-head medallion grows cold against your chest.\\c00
 ~
 #12199
 Mat's Medallion - Wear Trigger~

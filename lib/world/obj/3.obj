@@ -1,77 +1,396 @@
-#300
-horn quest valere pin~
-&wa small gold pin in the shape of the &yH&Yo&yr&Yn&y of &YV&ya&Yl&ye&Yr&ye&n~
-A small gold pin is lying here in the dust.~
-~
-11 69768 513
-0 0 0 0
-2 1 110
-A
-9 50
-A
-17 -50
-A
-18 25
-A
-19 25
-A
-13 100
-#301
-bastard sword hoh horn hunter~
-&wa bastard sword with a &Wp&Kl&Wa&Kt&Wi&Kn&Wu&Km&n hilt adorned by a small &Yg&yo&Yl&yd&Ye&yn&n horn~
-A broadsword lies here collecting dust~
-~
-5 69768 32769
-10 10 10 11
-3 1 0
-A
-17 -2
-#302
-georg key silver ~
-&yGeorg's&K s&Wi&Kl&Wv&Ke&Wr&n key&n~
-Georg lost his room key here...Again...Geez.~
-~
-18 4296 16385
-0 0 0 0
-1 1 0
-#303
-key trith silver~
-&yTritherion's &Ks&Wi&Kl&Wv&Ke&Wr&n key&n~
-Trith lost his key here. Geez.~
-~
-18 4296 16385
-0 0 0 0
-1 1 0
-#304
-wisdom cottage key illian ~
-&ythe key to &gThe &yCompanions &gRest &yWisdom Cottage&n~
-A tiny brass key lies here. ~
-~
-18 69832 1
-0 0 0 0
-1 1 0
-#305
-silver key tairen~
-a &Ksilver&n key engraved with three crescent moons~
-A silver key is lying here~
-~
-18 4168 16385
-0 0 0 0
-1 500 0
-#309
-board guild hunters~
-\c09T\c02h\c09e \c10H\c03u\c10n\c03t\c10e\c03r\c10s \c03o\c10f \c03t\c10h\c03e \c10H\c03o\c10r\c03n \c10a\c03n\c10d \c03I\c10l\c03l\c10i\c03a\c10n \c02G\c09u\c02i\c09l\c02d\c09b\c02o\c09a\c02r\c09d\c00~
-Notices and hastily scribbled messages are tacked to this board.~
-something
-~
-8 0 0
-0 0 0 0
-15 0 0
-#322
-map aringill rolled-up up sealed~
-a map of \c06Aringill\c00~
-A rolled-up map lies here, labelled "\c06Aringill\c00"~
-                   O\c06-\c00O
+<?xml version="1.0"?>
+<objects>
+  <object vnum="300" name="horn quest valere pin" special="NONE">
+    <description>A small gold pin is lying here in the dust.</description>
+    <shortdesc>&amp;wa small gold pin in the shape of the &amp;yH&amp;Yo&amp;yr&amp;Yn&amp;y of &amp;YV&amp;ya&amp;Yl&amp;ye&amp;Yr&amp;ye&amp;n</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="ABS" modifier="50"/>
+    <objaffect location="ARMOR" modifier="-50"/>
+    <objaffect location="HITROLL" modifier="25"/>
+    <objaffect location="DAMROLL" modifier="25"/>
+    <objaffect location="MAXHIT" modifier="100"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="11" wear="513" extra="4232"/>
+      <data weight="2" cost="1" questcost="110" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="301" name="bastard sword hoh horn hunter" special="NONE">
+    <description>A broadsword lies here collecting dust</description>
+    <shortdesc>&amp;wa bastard sword with a &amp;Wp&amp;Kl&amp;Wa&amp;Kt&amp;Wi&amp;Kn&amp;Wu&amp;Km&amp;n hilt adorned by a small &amp;Yg&amp;yo&amp;Yl&amp;yd&amp;Ye&amp;yn&amp;n horn</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="ARMOR" modifier="-2"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="10" value2="10" value3="10" value4="11"/>
+      <flags type="5" wear="32769" extra="69768"/>
+      <data weight="3" cost="1" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="302" name="georg key silver " special="NONE">
+    <description>Georg lost his room key here...Again...Geez.</description>
+    <shortdesc>&amp;yGeorg's&amp;K s&amp;Wi&amp;Kl&amp;Wv&amp;Ke&amp;Wr&amp;n key&amp;n</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="18" wear="16385" extra="4296"/>
+      <data weight="1" cost="1" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="303" name="key trith silver" special="NONE">
+    <description>Trith lost his key here. Geez.</description>
+    <shortdesc>&amp;yTritherion's &amp;Ks&amp;Wi&amp;Kl&amp;Wv&amp;Ke&amp;Wr&amp;n key&amp;n</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="18" wear="16385" extra="4296"/>
+      <data weight="1" cost="1" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="304" name="wisdom cottage key illian " special="NONE">
+    <description>A tiny brass key lies here. </description>
+    <shortdesc>&amp;ythe key to &amp;gThe &amp;yCompanions &amp;gRest &amp;yWisdom Cottage&amp;n</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="18" wear="1" extra="69832"/>
+      <data weight="1" cost="1" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="305" name="silver key tairen" special="NONE">
+    <description>A silver key is lying here</description>
+    <shortdesc>a &amp;Ksilver&amp;n key engraved with three crescent moons</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="18" wear="16385" extra="4168"/>
+      <data weight="1" cost="500" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="306" name="dead mouse furry little corpse rat" special="NONE">
+    <description>Eww. A furry little rat isn't breathing at the bottom of the barrel.</description>
+    <shortdesc>a dead &amp;rr&amp;Ra&amp;rt&amp;n</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="13" wear="16385" extra="8"/>
+      <data weight="1" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <exdesc keyword="mouse dead corpse rat">
+      <description>Well, the thing isn't so icky once it's looked at closely. It actually was
+probably kinda cute when it was alive and running around, all albino
+and quivery. Now it just seems like a rat corpse.
+</description>
+    </exdesc>
+  </object>
+  <object vnum="307" name="wine barrel large open" special="NONE">
+    <description>A large barrel is open in the corner, smelling sourly of perhaps too-old &amp;mwine&amp;n.</description>
+    <shortdesc>an open &amp;mwi&amp;Mn&amp;me &amp;yb&amp;Ya&amp;yrr&amp;Ye&amp;yl&amp;n</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="100" value2="0" value3="-1" value4="0"/>
+      <flags type="15" wear="0" extra="0"/>
+      <data weight="200" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="308" name="wine barrel large open" special="NONE">
+    <description>A large barrel is open in the corner, smelling sweetly of good &amp;mw&amp;Mi&amp;mne&amp;n.</description>
+    <shortdesc>an open &amp;mw&amp;Mi&amp;mne &amp;yba&amp;Yrr&amp;yel&amp;n</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="1000" value2="1000" value3="2" value4="0"/>
+      <flags type="23" wear="0" extra="8"/>
+      <data weight="1005" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="309" name="board guild hunters" special="NONE">
+    <description>Notices and hastily scribbled messages are tacked to this board.</description>
+    <shortdesc>\c09T\c02h\c09e \c10H\c03u\c10n\c03t\c10e\c03r\c10s \c03o\c10f \c03t\c10h\c03e \c10H\c03o\c10r\c03n \c10a\c03n\c10d \c03I\c10l\c03l\c10i\c03a\c10n \c02G\c09u\c02i\c09l\c02d\c09b\c02o\c09a\c02r\c09d\c00</shortdesc>
+    <actiondesc>something
+</actiondesc>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="13" wear="0" extra="0"/>
+      <data weight="15" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="310" name="chicken leftover overcooked forgotten whole" special="NONE">
+    <description>&amp;gOh! The oven must not be empty after all. A whole &amp;ychicken &amp;ghas been forgotten in the corner.&amp;n</description>
+    <shortdesc>an overcooked &amp;ychicken&amp;n</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="3" value2="0" value3="0" value4="0"/>
+      <flags type="19" wear="16385" extra="0"/>
+      <data weight="1" cost="2" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <exdesc keyword="oven huge">
+      <description>Hmmm.. the monstrous doors to the giant kitchen utensil aren't too warm,
+but the insides of the oven smell wonderfully of the different foods cooked
+in their depths. It seems big enough to hold one or even two people.
+</description>
+    </exdesc>
+    <objprog main="OnActionTo" argtype="STRING" argument="get">
+      <sideterm number="Guild" not="TRUE" argtype="STRING" argument="Hunters of the Horn"/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="EmoteTo" argtype="STRING" argument="&amp;yAt first the chicken sticks to the metal stubbornly, but your &amp;YH&amp;yunter skills let you pull it off with a bit of effort.&amp;n"/>
+      <action number="Force" argtype="STRING" argument="get chicken"/>
+    </objprog>
+    <objprog main="OnActionTo" argtype="STRING" argument="get">
+      <sideterm number="Guild" not="FALSE" argtype="STRING" argument="Hunters of the Horn"/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="EmoteTo" argtype="STRING" argument="&amp;yThe chicken is stuck to the oven much too strongly for you to pull it off.&amp;n"/>
+    </objprog>
+  </object>
+  <object vnum="311" name="dish small complimentary mints honored guests" special="NONE">
+    <description>A small dish of complimentary candies for honored guests is upon the desk's corner.</description>
+    <shortdesc>a small dish of &amp;yl&amp;Ye&amp;ymo&amp;Yn&amp;ydr&amp;Yo&amp;yps&amp;n</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="100" value2="0" value3="-1" value4="0"/>
+      <flags type="15" wear="0" extra="8"/>
+      <data weight="10" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="312" name="lemondrop tasty little round" special="NONE">
+    <description>A little candy sits here, looking cute and tasty.</description>
+    <shortdesc>a round, tasty &amp;yle&amp;Ym&amp;yon&amp;Yd&amp;yro&amp;Yp&amp;n</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="1" value2="0" value3="0" value4="0"/>
+      <flags type="19" wear="1" extra="0"/>
+      <data weight="0" cost="1" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="313" name="mouse cute little brown perky" special="NONE">
+    <description>A cute mouse is running around in the grass, munching on this or that seed.</description>
+    <shortdesc>&amp;Y[&amp;yCute&amp;Y] &amp;na perky little &amp;ymo&amp;Yu&amp;yse&amp;n</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="13" wear="16401" extra="4168"/>
+      <data weight="2" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <exdesc keyword="perky little mouse cute">
+      <description>This little guy is so adorable! Nose twitching with long whiskers, he
+peers out at the world with twinkling beady eyes.
+</description>
+    </exdesc>
+  </object>
+  <object vnum="314" name="patchwork pillow floppy" special="NONE">
+    <description>&amp;nA big floppy &amp;rp&amp;yat&amp;Bc&amp;yh&amp;rw&amp;Gor&amp;Bk&amp;n pillow</description>
+    <shortdesc>&amp;nA big floppy &amp;rp&amp;yat&amp;Bc&amp;yh&amp;rw&amp;Gor&amp;Bk&amp;n pillow</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="2" value2="0" value3="2" value4="0"/>
+      <flags type="24" wear="0" extra="0"/>
+      <data weight="25" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <exdesc keyword="floppy patchwork">
+      <description>This gigantic pillow is covered in a quilted cover of a hundred
+different irregularly ordered pillows.   Right in the middle of
+it is a big lumpy indentation,  as though more than once,  some
+lucky person had flopped down in it to rest.
+</description>
+    </exdesc>
+  </object>
+  <object vnum="315" name="red little pillow fight!" special="NONE">
+    <description>&amp;na little &amp;rr&amp;Re&amp;rd &amp;Rp&amp;ri&amp;Rl&amp;rl&amp;Ro&amp;rw&amp;n</description>
+    <shortdesc>&amp;na little &amp;rr&amp;Re&amp;rd &amp;Rp&amp;ri&amp;Rl&amp;rl&amp;Ro&amp;rw&amp;n</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="HITROLL" modifier="200"/>
+    <objaffect location="DAMROLL" modifier="-50"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="-10" value2="0" value3="1" value4="10"/>
+      <flags type="5" wear="8193" extra="204872"/>
+      <data weight="0" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <exdesc keyword="little red">
+      <description>A little &amp;rr&amp;Re&amp;rd &amp;Rp&amp;ri&amp;Rl&amp;rl&amp;Ro&amp;rw&amp;n, perfect for tossing!
+</description>
+    </exdesc>
+  </object>
+  <object vnum="316" name="blue little pillow fight!" special="NONE">
+    <description>a little &amp;Bb&amp;Cl&amp;Bu&amp;Ce&amp;B p&amp;Ci&amp;Bl&amp;Cl&amp;Bo&amp;Cw&amp;n</description>
+    <shortdesc>a little &amp;Bb&amp;Cl&amp;Bu&amp;Ce&amp;B p&amp;Ci&amp;Bl&amp;Cl&amp;Bo&amp;Cw&amp;n</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="HITROLL" modifier="200"/>
+    <objaffect location="DAMROLL" modifier="-50"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="-10" value2="0" value3="1" value4="10"/>
+      <flags type="5" wear="8193" extra="204872"/>
+      <data weight="0" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <exdesc keyword="blue little">
+      <description>A little &amp;Bb&amp;Cl&amp;Bu&amp;Ce&amp;B p&amp;Ci&amp;Bl&amp;Cl&amp;Bo&amp;Cw&amp;n, perfect for tossing!
+</description>
+    </exdesc>
+  </object>
+  <object vnum="317" name="narky" special="NONE">
+    <description>A &amp;Mf&amp;Wl&amp;Mu&amp;Wf&amp;Mf&amp;Wy&amp;n thing sits here.</description>
+    <shortdesc>a &amp;Mf&amp;Wl&amp;Mu&amp;Wf&amp;Mf&amp;Wy&amp;n thing</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="11" wear="5139" extra="69640"/>
+      <data weight="3" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <objprog main="OnWear" argtype="VOID" argument="NONE">
+      <action number="Emote" argtype="STRING" argument="Doesn't that look comfy?"/>
+    </objprog>
+  </object>
+  <object vnum="320" name="key silver leaf amadician thistle" special="NONE">
+    <description>A silver key lies here.</description>
+    <shortdesc>a &amp;Ksilver &amp;nkey engraved with a thistle leaf over a six pointed star</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="18" wear="1" extra="0"/>
+      <data weight="1" cost="500" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="321" name="candy" special="NONE">
+    <description>&amp;gA lump of hard &amp;Yc&amp;Wo&amp;Rl&amp;Wo&amp;Cr&amp;Wf&amp;Gu&amp;Wl&amp;g candy sits here, Ra'kor dropped it and would probably like to get it back!&amp;n</description>
+    <shortdesc>a lump of hard &amp;Rc&amp;Ya&amp;Wn&amp;Cd&amp;Gy&amp;n</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="10" value2="0" value3="0" value4="0"/>
+      <flags type="19" wear="1" extra="0"/>
+      <data weight="2" cost="10" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="322" name="map aringill rolled-up up sealed" special="NONE">
+    <description>A rolled-up map lies here, labelled &quot;\c06Aringill\c00&quot;</description>
+    <shortdesc>a map of \c06Aringill\c00</shortdesc>
+    <actiondesc>                   O\c06-\c00O
                      \c06|\c00
                      \c03G\c00
                      \c06|\c00
@@ -104,33 +423,144 @@ A rolled-up map lies here, labelled "\c06Aringill\c00"~
  \c01T\c00\c06-\c00Town Square
  \c04W\c00\c06-\c00Waygate
  \c03G\c00\c06-\c00Town Gates
-~
-16 69696 0
-0 0 0 0
-2 100 0
-#335
-hairpin silvery bee golden~
-&YIF YOU HAVE THIS MAIL HANNAH TO GET REIMBURSED&n~
-Undefined~
-~
-9 0 17
-0 0 0 0
-2 1 15
-#336
-sign ooc accessory shop~
-an OoC sign~
-&gAn &KO&Wo&KC&g sign is posted here for the jewelry shop.&n~
-pin stats : +50 to ABS, -50 to ARMOR, +25 to HITROLL, 
+</actiondesc>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="16" wear="0" extra="69696"/>
+      <data weight="2" cost="100" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="335" name="flier list note bulletin Verana" special="NONE">
+    <description>A &amp;yl&amp;Ya&amp;nr&amp;Yg&amp;ye &amp;cflier&amp;y Hangs next to the ticket booth&amp;n</description>
+    <shortdesc>a &amp;yl&amp;Ya&amp;nr&amp;Yg&amp;ye &amp;cflier&amp;n</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="16" wear="0" extra="8192"/>
+      <data weight="2" cost="1" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <exdesc keyword="flier note bulletin">
+      <description>&amp;YW&amp;ye&amp;Yl&amp;yc&amp;Yo&amp;ym&amp;Ye &amp;yS&amp;Yp&amp;ye&amp;Yc&amp;yt&amp;Ya&amp;yt&amp;Yo&amp;yr&amp;Ys&amp;y!&amp;n
+This evening, we hope you will enjoy a groundbraking evening here at &amp;CCastleNook&amp;y Theater&amp;n.
+A true work of literature, &quot;The Hunters&quot; premiers tonight and shall undoubtedly sweep the continent with it's intriguing plot!
+Loosely based upon the legend of the Horn of Valere, the composer and writer Aragunthe Holmes has truely captured the essence of a classic.
+Starring Patti Regigma as Birgitte, and Artur Al'Merid as Artur Hawkwing- 
+We invite you to sit back, and enjoy a tale of Parody! Sorrow! and Delight!
+(There will be an intermission after Act I, and vendors in the lobby will be providing fine food and beverage)
+- sincerely,
+The Working staff of CastleNook
+</description>
+    </exdesc>
+  </object>
+  <object vnum="336" name="sign ooc accessory shop" special="NONE">
+    <description>&amp;gAn &amp;KO&amp;Wo&amp;KC&amp;g sign is posted here for the jewelry shop.&amp;n</description>
+    <shortdesc>an OoC sign</shortdesc>
+    <actiondesc>pin stats : +50 to ABS, -50 to ARMOR, +25 to HITROLL, 
 +25 to DAMROLL, +100 to MAXHIT
-~
-16 0 0
-0 0 0 0
-0 0 0
-#350
-map ebou dar labelled rolled-up up~
-a map of \c05Ebou Dar\c00~
-A rolled-up map is here, labelled \c05Ebou Dar\c00.~
-                        The City of \c05Ebou Dar\c00\c00
+</actiondesc>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="16" wear="0" extra="0"/>
+      <data weight="0" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="340" name="hoh hoth geq lantern" special="NONE">
+    <description>&amp;na hooded lantern&amp;n</description>
+    <shortdesc>&amp;na hooded lantern&amp;n</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="HITROLL" modifier="15"/>
+    <objaffect location="DAMROLL" modifier="15"/>
+    <objaffect location="XATTACKS" modifier="1"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="-1" value4="0"/>
+      <flags type="1" wear="16385" extra="69768"/>
+      <data weight="5" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <dgscript vnum="300"/>
+  </object>
+  <object vnum="341" name="hoh hoth geq coat" special="NONE">
+    <description>&amp;na plain travellers coat&amp;n</description>
+    <shortdesc>&amp;na plain travellers coat&amp;n</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="HITROLL" modifier="15"/>
+    <objaffect location="DAMROLL" modifier="15"/>
+    <objaffect location="XATTACKS" modifier="1"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="100" value2="0" value3="0" value4="0"/>
+      <flags type="9" wear="9" extra="69768"/>
+      <data weight="10" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <dgscript vnum="300"/>
+  </object>
+  <object vnum="342" name="hoh hoth geq belt" special="NONE">
+    <description>&amp;na plain leather belt with a few pouches&amp;n</description>
+    <shortdesc>&amp;na plain leather belt with a few pouches&amp;n</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="HITROLL" modifier="20"/>
+    <objaffect location="DAMROLL" modifier="20"/>
+    <objaffect location="XATTACKS" modifier="1"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="20000" value2="3" value3="-1" value4="0"/>
+      <flags type="15" wear="2049" extra="69768"/>
+      <data weight="5" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <dgscript vnum="300"/>
+  </object>
+  <object vnum="343" name="hoh hoth geq sword weapon" special="NONE">
+    <description>&amp;na plain steel sword</description>
+    <shortdesc>&amp;na plain steel sword</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="10" value3="10" value4="14"/>
+      <flags type="5" wear="32769" extra="69768"/>
+      <data weight="10" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <dgscript vnum="300"/>
+  </object>
+  <object vnum="350" name="map ebou dar labelled rolled-up up" special="NONE">
+    <description>A rolled-up map is here, labelled \c05Ebou Dar\c00.</description>
+    <shortdesc>a map of \c05Ebou Dar\c00</shortdesc>
+    <actiondesc>                        The City of \c05Ebou Dar\c00\c00
 
                                 O   O
                                 \c06|\c00   \c06|\c00
@@ -140,7 +570,7 @@ A rolled-up map is here, labelled \c05Ebou Dar\c00.~
                       \c06#\c00         \c06|\c00           \c06#\c00 
                       O\c06-\c00O\c06-\c00O\c06-\c00O\c06-\c00O\c06-\c00\c04F\c00\c06-\c00O\c06-\c00O\c06-\c00O\c06-\c00O\c06-\c00O\c06-\c00O\c06-\c00O
                       \c06|\c00       \c06|\c00 \c06|\c00         \c06#\c00 \c06|\c00       {Ferry to 
-                      O   \c14M\c00 \c02B\c00 O\c06-\c00\c06*\c00   O O O O\c06-\c00\c11D\c00 \c06-\c00\c06-\c00\c06-\c00\c06-\c00  the Rahad}\c06-\c00\c06-\c00\c06-\c00>
+                      O   \c14M\c00 \c02B\c00 O\c06-\c00\c06*\c00   O O O O\c06-\c00\c11D\c00 \c06-\c00\c06-\c00\c06-\c00\c06-\c00  the Rahad}\c06-\c00\c06-\c00\c06-\c00&gt;
                       \c06|\c00     \c06|\c00   \c06|\c00     \c06|\c00
                       O\c06-\c00O\c06-\c00\c04F\c00\c06-\c00O\c06-\c00O\c06-\c00O\c06-\c00O\c06-\c00O\c06-\c00O\c06-\c00O\c06-\c00O\c06-\c00O
                       \c06|\c00   \c06|\c00   \c06|\c00   \c06|\c00   \c06|\c00
@@ -177,15 +607,24 @@ A rolled-up map is here, labelled \c05Ebou Dar\c00.~
   \c03G\c00\c06-\c00Gates                   O       O
   !\c06-\c00Oversize Area            \     / \
                               O\c06-\c00O\c06-\c00O   \c06*\c00
-~
-16 0 16385
-0 0 0 0
-1 100 0
-#351
-map caemlyn northern rolled-up up~
-a map of northern \c02Caemlyn\c00~
-A rolled-up map is here, labelled "Nothern \c02Caemlyn\c00".~
-                                Northern \c02Caemlyn\c00
+</actiondesc>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="16" wear="16385" extra="0"/>
+      <data weight="1" cost="100" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="351" name="map caemlyn northern rolled-up up" special="NONE">
+    <description>A rolled-up map is here, labelled &quot;Nothern \c02Caemlyn\c00&quot;.</description>
+    <shortdesc>a map of northern \c02Caemlyn\c00</shortdesc>
+    <actiondesc>                                Northern \c02Caemlyn\c00
 
                                        \c03G\c00
                                        \c06|\c00
@@ -228,15 +667,24 @@ A rolled-up map is here, labelled "Nothern \c02Caemlyn\c00".~
   \c03G\c00 \c06-\c00 Gates
   \c06#\c00 \c06-\c00 Closed doors
   \c06*\c00 \c06-\c00 Vertical extension
-~
-16 0 16385
-0 0 0 0
-1 100 0
-#352
-map southern caemlyn rolled-up up labelled~
-a map of southern \c02Caemlyn\c00~
-A rolled-up map lies here, labelled "Southern \c02Caemlyn\c00"~
-               O\c06-\c00G\c06-\c00O\c06-\c00O\c06-\c00O\c06-\c00O\c06-\c00O\c06-\c00O\c06-\c00O\c06-\c00O\c06-\c00O\c06-\c00O\c06-\c00O\c06-\c00X\c06-\c00O\c06-\c00O\c06-\c00O\c06-\c00O\c06-\c00O\c06-\c00O\c06-\c00O\c06-\c00O\c06-\c00O\c06-\c00O\c06-\c00G\c06-\c00O
+</actiondesc>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="16" wear="16385" extra="0"/>
+      <data weight="1" cost="100" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="352" name="map southern caemlyn rolled-up up labelled" special="NONE">
+    <description>A rolled-up map lies here, labelled &quot;Southern \c02Caemlyn\c00&quot;</description>
+    <shortdesc>a map of southern \c02Caemlyn\c00</shortdesc>
+    <actiondesc>               O\c06-\c00G\c06-\c00O\c06-\c00O\c06-\c00O\c06-\c00O\c06-\c00O\c06-\c00O\c06-\c00O\c06-\c00O\c06-\c00O\c06-\c00O\c06-\c00O\c06-\c00X\c06-\c00O\c06-\c00O\c06-\c00O\c06-\c00O\c06-\c00O\c06-\c00O\c06-\c00O\c06-\c00O\c06-\c00O\c06-\c00O\c06-\c00G\c06-\c00O
                |   |\        |           |     |     |     |   |
                O   O O       O         S\c06-\c00O\c06-\c00*   O     O     O   O
                |   |  \      |           |     |      \    |  /
@@ -291,274 +739,702 @@ A rolled-up map lies here, labelled "Southern \c02Caemlyn\c00"~
    6-Golden Bowl                       O
                                        |
                                        G
-~
-16 0 16385
-0 0 0 0
-1 100 0
-#362
-hoh chainmail shirt hothguildeq~
-a tightly woven &Wch&Kai&wn&Kma&Wil&n shirt embossed with a &yhorn&n~
-\c01[If Found Please Report to an Imm]\c00~
-~
-9 69768 9
-0 0 0 0
-0 0 0
-A
-17 -96
-A
-19 10
-A
-18 10
-#363
-hoh sleeves hothguildeq chainmail~
-sleeves of tightly woven &Wch&Kai&wn&Kma&Wil&n with &yhorns&n around each cuff~
-\c01[If Found Please Report to an Imm]\c00~
-~
-9 69768 257
-0 0 0 0
-0 0 0
-A
-18 20
-A
-19 20
-A
-20 2
-A
-17 -2
-#364
-key lion andoran~
-a &Ksilver&n key with a rampant lion engraved in it~
-A silver key lies here.~
-~
-18 69704 1
-0 0 0 0
-1 500 0
-#365
-key domani sword~
-a &Ksilver&n key engraved with a hand grasping a sword~
-A silver key lies here. ~
-~
-18 69704 1
-0 0 0 0
-1 500 0
-#366
-key silver sun~
-a &Ksilver&n key engraved with a rising sun~
-A silver key lies here. ~
-~
-18 69704 1
-0 0 0 0
-1 500 0
-#367
-key silver leopards~
-a &Ksilver&n key engraved with two leopards~
-A silver key lies here. ~
-~
-18 69704 1
-0 0 0 0
-1 500 0
-#368
-silver key hawk~
-a &Ksilver&n key engraved with a swooping hawk~
-An unfinished object is lying here.~
-~
-18 69704 1
-0 0 0 0
-1 500 0
-#369
-key silver leaf~
-a &Ksilver&n key engraved with a thistle leaf over a six pointed star~
-A silver key lies here. ~
-~
-18 69704 1
-0 0 0 0
-1 500 0
-#370
-key silver ship~
-a &Ksilver&n key engraved with a ship~
-A silver key is lying here. ~
-~
-18 69704 1
-0 0 0 0
-1 500 0
-#371
-key silver forest~
-a &Ksilver&n key engraved with a forest~
-A silver key lies here.~
-~
-18 69704 1
-0 0 0 0
-1 500 0
-#372
-key silver roses~
-a &Ksilver&n key engraved with roses~
-A silver key lies here.~
-~
-18 69704 1
-0 0 0 0
-1 500 0
-#373
-silver key bull~
-a &Ksilver&n key engraved with a bull~
-A silver key lies here.~
-~
-18 69704 1
-0 0 0 0
-1 500 0
-#374
-key silver crown~
-a &Ksilver&n key engraved with a tower~
-A silver key lies here.~
-~
-18 69704 1
-0 0 0 0
-1 500 0
-#375
-maiyah key silver~
-&yMaiyah's &Ks&Wi&Kl&Wv&Ke&Wr&n key~
-A silver key lies here.~
-~
-18 69704 1
-0 0 0 0
-1 500 0
-#376
-horn key silver~
-a &Ksilver&n key engraved with a horn~
-A silver key lies here.~
-~
-18 69704 1
-0 0 0 0
-1 500 0
-#377
-lindsay alec key silver~
-&yAlec and Lindsay's&K s&Wi&Kl&Wv&Ke&Wr&n key~
-A silver key lies here.~
-~
-18 69704 1
-0 0 0 0
-1 500 0
-#378
-lily key silver~
-&yLily's&K s&Wi&Kl&Wv&Ke&Wr&n key~
-A silver key lies here.~
-~
-18 69704 1
-0 0 0 0
-1 500 0
-#379
-aine key silver~
-&yAine's&K s&Wi&Kl&Wv&Ke&Wr&n key~
-A silver key lies here.~
-~
-18 69704 1
-0 0 0 0
-1 500 0
-#380
-isaac key silver~
-&yIsaac's&K s&Wi&Kl&Wv&Ke&Wr&n key~
-A silver key lies here.~
-~
-18 69704 1
-0 0 0 0
-1 500 0
-#381
-tree key silver~
-a &Ksilver&n key engraved with a tree~
-A silver key lies here.~
-~
-18 69704 1
-0 0 0 0
-1 500 0
-#382
-key hawk silver~
-a &Ksilver&n key engraved with a hawk~
-A silver key lies here.~
-~
-18 69704 1
-0 0 0 0
-1 500 0
-#383
-key silver stars~
-a &Ksilver&n key engraved with three stars~
-A silver key lies here.~
-~
-18 69704 1
-0 0 0 0
-1 500 0
-#384
-horse silver key~
-a &Ksilver&n key engraved with a rearing horse~
-A silver key lies here.~
-~
-18 69704 1
-0 0 0 0
-1 500 0
-#385
-silver key bees~
-a &Ksilver&n key engraved with nine bees~
-A silver key lies here.~
-~
-18 69704 1
-0 0 0 0
-1 500 0
-#386
-fish key silver~
-a &Ksilver&n key engraved with three fish~
-A silver key lies here.~
-~
-18 69704 1
-0 0 0 0
-1 500 0
-#387
-arinae key silver~
-&yArinae's &Ks&Wi&Kl&Wv&Ke&Wr&n key~
-A silver key lies here.~
-~
-18 69704 1
-0 0 0 0
-1 500 0
-#398
-rapier hoh finely crafted~
-a finely crafted rapier~
-\c01[Please report to an imm]\c00~
-~
-5 69768 8193
-0 10 10 11
-2 0 0
-A
-17 -2
-P
-OnActionToCarry "enhance"
-EmoteTo "\c01No. You shouldn't have done that.\c00"
-Force "tell lyia i tried to enhance your guild eq"
-Stop
-Destroy
-End
-OnWear & ! Guild "hunter"
-EmoteTo "\c01Thats a biiiiig no-no.\c00"
-Force "tell lyia I TRIED TO WEAR YOUR GUILDEQ!"
-Destroy
-End
-Q
-#399
-lantern brass shuttered hoh~
-a shuttered \c03b\c10r\c03a\c10s\c03s\c00 lantern~
-\c01[Please report to an imm]\c00~
-~
-1 69768 16385
-0 0 -1 0
-2 5000 0
-A
-20 1
-A
-18 20
-A
-19 20
-P
-OnWear & ! Guild "hunter"
-EmoteTo "\c01Thats a biiiiig no-no.\c00"
-Pause 0
-Destroy
-End
-Q
-$~
+</actiondesc>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="16" wear="16385" extra="0"/>
+      <data weight="1" cost="100" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="362" name="hoh chainmail shirt hothguildeq" special="NONE">
+    <description>\c01[If Found Please Report to an Imm]\c00</description>
+    <shortdesc>a tightly woven &amp;Wch&amp;Kai&amp;wn&amp;Kma&amp;Wil&amp;n shirt embossed with a &amp;yhorn&amp;n</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="ARMOR" modifier="-96"/>
+    <objaffect location="DAMROLL" modifier="10"/>
+    <objaffect location="HITROLL" modifier="10"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="9" wear="9" extra="69768"/>
+      <data weight="0" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="363" name="hoh sleeves hothguildeq chainmail" special="NONE">
+    <description>\c01[If Found Please Report to an Imm]\c00</description>
+    <shortdesc>sleeves of tightly woven &amp;Wch&amp;Kai&amp;wn&amp;Kma&amp;Wil&amp;n with &amp;yhorns&amp;n around each cuff</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="HITROLL" modifier="20"/>
+    <objaffect location="DAMROLL" modifier="20"/>
+    <objaffect location="XATTACKS" modifier="2"/>
+    <objaffect location="ARMOR" modifier="-2"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="9" wear="257" extra="69768"/>
+      <data weight="0" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="364" name="key lion andoran" special="NONE">
+    <description>A silver key lies here.</description>
+    <shortdesc>a &amp;Ksilver&amp;n key with a rampant lion engraved in it</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="18" wear="1" extra="69704"/>
+      <data weight="1" cost="500" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="365" name="key domani sword" special="NONE">
+    <description>A silver key lies here. </description>
+    <shortdesc>a &amp;Ksilver&amp;n key engraved with a hand grasping a sword</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="18" wear="1" extra="69704"/>
+      <data weight="1" cost="500" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="366" name="key silver sun" special="NONE">
+    <description>A silver key lies here. </description>
+    <shortdesc>a &amp;Ksilver&amp;n key engraved with a rising sun</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="18" wear="1" extra="69704"/>
+      <data weight="1" cost="500" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="367" name="key silver leopards" special="NONE">
+    <description>A silver key lies here. </description>
+    <shortdesc>a &amp;Ksilver&amp;n key engraved with two leopards</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="18" wear="1" extra="69704"/>
+      <data weight="1" cost="500" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="368" name="silver key hawk" special="NONE">
+    <description>An unfinished object is lying here.</description>
+    <shortdesc>a &amp;Ksilver&amp;n key engraved with a swooping hawk</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="18" wear="1" extra="69704"/>
+      <data weight="1" cost="500" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="369" name="trees crescent thick far pond's end" special="NONE">
+    <description>A thick crescent of &amp;Gt&amp;gre&amp;Ges &amp;gembraces the &amp;cp&amp;Co&amp;cnd&amp;g's farther end, a path leading into its heart.&amp;n</description>
+    <shortdesc>a thick clump of &amp;gtr&amp;Gee&amp;gs&amp;n</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="14" wear="0" extra="71688"/>
+      <data weight="500" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="370" name="key silver ship" special="NONE">
+    <description>A silver key is lying here. </description>
+    <shortdesc>a &amp;Ksilver&amp;n key engraved with a ship</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="18" wear="1" extra="69704"/>
+      <data weight="1" cost="500" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="371" name="key silver forest" special="NONE">
+    <description>A silver key lies here.</description>
+    <shortdesc>a &amp;Ksilver&amp;n key engraved with a forest</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="18" wear="1" extra="69704"/>
+      <data weight="1" cost="500" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="372" name="key silver roses" special="NONE">
+    <description>A silver key lies here.</description>
+    <shortdesc>a &amp;Ksilver&amp;n key engraved with roses</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="18" wear="1" extra="69704"/>
+      <data weight="1" cost="500" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="373" name="silver key bull" special="NONE">
+    <description>A silver key lies here.</description>
+    <shortdesc>a &amp;Ksilver&amp;n key engraved with a bull</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="18" wear="1" extra="69704"/>
+      <data weight="1" cost="500" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="374" name="key silver crown" special="NONE">
+    <description>A silver key lies here.</description>
+    <shortdesc>a &amp;Ksilver&amp;n key engraved with a tower</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="18" wear="1" extra="69704"/>
+      <data weight="1" cost="500" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="375" name="maiyah key silver" special="NONE">
+    <description>A silver key lies here.</description>
+    <shortdesc>&amp;yMaiyah's &amp;Ks&amp;Wi&amp;Kl&amp;Wv&amp;Ke&amp;Wr&amp;n key</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="18" wear="1" extra="69704"/>
+      <data weight="1" cost="500" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="376" name="horn key silver" special="NONE">
+    <description>A silver key lies here.</description>
+    <shortdesc>a &amp;Ksilver&amp;n key engraved with a horn</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="18" wear="1" extra="69704"/>
+      <data weight="1" cost="500" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="377" name="lindsay alec key silver" special="NONE">
+    <description>A silver key lies here.</description>
+    <shortdesc>&amp;yAlec and Lindsay's&amp;K s&amp;Wi&amp;Kl&amp;Wv&amp;Ke&amp;Wr&amp;n key</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="18" wear="1" extra="69704"/>
+      <data weight="1" cost="500" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="378" name="lily key silver" special="NONE">
+    <description>A silver key lies here.</description>
+    <shortdesc>&amp;yLily's&amp;K s&amp;Wi&amp;Kl&amp;Wv&amp;Ke&amp;Wr&amp;n key</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="18" wear="1" extra="69704"/>
+      <data weight="1" cost="500" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="379" name="aine key silver" special="NONE">
+    <description>A silver key lies here.</description>
+    <shortdesc>&amp;yAine's&amp;K s&amp;Wi&amp;Kl&amp;Wv&amp;Ke&amp;Wr&amp;n key</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="18" wear="1" extra="69704"/>
+      <data weight="1" cost="500" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="380" name="isaac key silver" special="NONE">
+    <description>A silver key lies here.</description>
+    <shortdesc>&amp;yIsaac's&amp;K s&amp;Wi&amp;Kl&amp;Wv&amp;Ke&amp;Wr&amp;n key</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="18" wear="1" extra="69704"/>
+      <data weight="1" cost="500" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="381" name="tree key silver" special="NONE">
+    <description>A silver key lies here.</description>
+    <shortdesc>a &amp;Ksilver&amp;n key engraved with a tree</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="18" wear="1" extra="69704"/>
+      <data weight="1" cost="500" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="382" name="key hawk silver" special="NONE">
+    <description>A silver key lies here.</description>
+    <shortdesc>a &amp;Ksilver&amp;n key engraved with a hawk</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="18" wear="1" extra="69704"/>
+      <data weight="1" cost="500" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="383" name="key silver stars" special="NONE">
+    <description>A silver key lies here.</description>
+    <shortdesc>a &amp;Ksilver&amp;n key engraved with three stars</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="18" wear="1" extra="69704"/>
+      <data weight="1" cost="500" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="384" name="horse silver key" special="NONE">
+    <description>A silver key lies here.</description>
+    <shortdesc>a &amp;Ksilver&amp;n key engraved with a rearing horse</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="18" wear="1" extra="69704"/>
+      <data weight="1" cost="500" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="385" name="silver key bees" special="NONE">
+    <description>A silver key lies here.</description>
+    <shortdesc>a &amp;Ksilver&amp;n key engraved with nine bees</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="18" wear="1" extra="69704"/>
+      <data weight="1" cost="500" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="386" name="fish key silver" special="NONE">
+    <description>A silver key lies here.</description>
+    <shortdesc>a &amp;Ksilver&amp;n key engraved with three fish</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="18" wear="1" extra="69704"/>
+      <data weight="1" cost="500" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="387" name="arinae key silver" special="NONE">
+    <description>A silver key lies here.</description>
+    <shortdesc>&amp;yArinae's &amp;Ks&amp;Wi&amp;Kl&amp;Wv&amp;Ke&amp;Wr&amp;n key</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="18" wear="1" extra="69704"/>
+      <data weight="1" cost="500" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="390" name="board large Hunter's guildboard" special="NONE">
+    <description>A large board hangs on a wall, tacked with assorted notes and messages.</description>
+    <shortdesc>the &amp;YH&amp;yunters' &amp;nguildboard</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="13" wear="0" extra="0"/>
+      <data weight="200" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="391" name="sillybus hoth hoh guide emote-combat" special="NONE">
+    <description>&amp;nA &amp;YH&amp;yu&amp;Yn&amp;yt&amp;Ye&amp;yr&amp;n'&amp;Ys &amp;yG&amp;Yu&amp;yi&amp;Yd&amp;ye&amp;n to Emote &amp;rC&amp;Ro&amp;rm&amp;Rb&amp;ra&amp;Rt&amp;n</description>
+    <shortdesc>&amp;nA &amp;YH&amp;yu&amp;Yn&amp;yt&amp;Ye&amp;yr&amp;n'&amp;Ys &amp;yG&amp;Yu&amp;yi&amp;Yd&amp;ye&amp;n to Emote &amp;rC&amp;Ro&amp;rm&amp;Rb&amp;ra&amp;Rt&amp;n</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="8" wear="1" extra="65736"/>
+      <data weight="10" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <exdesc keyword="guide hoth emote_combat combat">
+      <description>#&amp;YT&amp;yh&amp;Ye &amp;yG&amp;Yu&amp;yi&amp;Yd&amp;ye&amp;Y'&amp;ys &amp;YI&amp;yn&amp;Yd&amp;ye&amp;Yx&amp;n#
+
+   &amp;ro&amp;n Closed Emoting Threshold      &amp;r(&amp;nclosed&amp;r)&amp;n
+   &amp;ro&amp;n Physicality and Realism       &amp;r(&amp;nrealism&amp;r)&amp;n
+   &amp;ro&amp;n Drama and Flair               &amp;r(&amp;ndrama&amp;r)&amp;n
+   &amp;ro&amp;n Poetry and Verbosity          &amp;r(&amp;npoetry&amp;r)&amp;n
+   &amp;ro&amp;n Emote Combat as Roleplaying   &amp;r(&amp;nroleplaying&amp;r)&amp;n
+   &amp;ro&amp;n Group Combat                  &amp;r(&amp;ngroup&amp;r)&amp;n
+   &amp;ro&amp;n Cooperative and Competitive   &amp;r(&amp;ncooperative&amp;r)&amp;n
+   &amp;ro&amp;n Pointers                      &amp;r(&amp;npointers&amp;r)&amp;n
+</description>
+    </exdesc>
+    <exdesc keyword="closed">
+      <description>Closed Emoting Threshold&amp;r:&amp;n
+
+In emote combat, as in general roleplay, one of the ultimate faux pas is to closed emote another player's character.  There are, however, a great number of actions which fall into the gray area between a truly &quot;closed&quot; emote, and an acceptable emote.  First, to define a &quot;closed&quot; emote.  A &quot;closed&quot; emote occurs when something you emote directly affects the character of another player without allowing them a chance to respond.  For example, running through your opponent in one emote is technically closed, and therefore unacceptable. The difficulties in emote combat arise because in order to ever actually conclude an action, a character must be able to perform some sort of action which affects their opponent or something related to that character, for example, a sword, in some degree.  Thus, in emote combat, it is acceptable to closed emote your opponent's weapon...  but generally, only on the defense.
+
+&quot;Aemon rotates his wrists, turning his right hand upwards of his left, and deflects Daelak's sword up and off to the side of one brightly clothed shoulder...&quot;
+
+In the above example, Daelak's sword is affected, but only insofar as it is prevented from striking Aemon.  A slightly more questionable emote would be as follows:
+
+&quot;Aemon steps forward, raising his sword as he does, catching Daelak's blade upon his sword's hilt and pushing it aside...&quot;
+
+The primary difference in this example is that Aemon has effectively taken control of Daelak's weapon(and arm), without allowing a chance for Daelak to react.  It is not yet a serious violation, but if it were continued, for example, like this:
+
+&quot;...and takes the opportunity to punch towards Daelak's unprotected ribs with his offhand dagger.&quot;
+
+It would be much more questionable, although still technically allowable.  Thus, in every emote, one must consider the degree to which you are affecting your opponent without allowing them time to react.  There is a great deal of gray area in which an emoter's judgement is the only true guide, and before hitting &lt;return&gt;, it is always worth examining what you have written with an eye to its degree of openness.
+</description>
+    </exdesc>
+    <exdesc keyword="realism">
+      <description>Physicality and Realism&amp;r:&amp;n
+
+One of the most difficult issues in emote combat is that of maintaining an acceptable level of realism within a fantasy setting.  While it can be quite beneficial to include a degree of heroism in your emote combat, one must always consider whether or not any given emote is still within the realm of possibility. One cannot reasonably parry a two-handed blade with a nobleman's rapier, nor can one match the speed of a rapier with that same heavier blade.  In order to be truly proficient in emote combat, there must be a degree of physical awareness to one's emotes.
+
+&quot;Aemon draws his mighty broadsword with one hand, sweeping six feet of terribly gleaming steel blade at Daelak's head, but at the last moment diverts his stroke to parry the dagger stroke for his belly&quot;
+
+The above emote is absolutely ridiculous.  You cannot reverse the direction of a seven or eight pound blade instantaneously, no matter how the muscles bulge beneath your swirling cloak, etc.  Another classic error of realism is as follows:
+
+&quot;Aemon leaps forward, swinging his blade in a gleaming arc towards Daelak's head, throwing a dagger with his left hand before joining it to his right hand upon his swordhilt.  As he draws near, his left foot snaps up in a kick at his enemy's right kneecap.&quot;
+
+Aemon just reversed his left arm's inertia twice, then matched its speed to his right arm, which was involved in a single direct motion the entire time, and then crunched his left leg up within a foot or two of his right hand...all the while remaining in forward motion.  People cannot do this, not even Legendary Hunters of the Horn.  The general principle here, is to consider whether or not it is graceful...  or even possible, to perform the action you want to emote.  A good rule of thumb is to stand up and see if you can do it in slow motion without falling on your face.  You may feel silly, but then again, you will feel more silly when you hear people laughing behind your back for poor emote combat.
+</description>
+    </exdesc>
+    <exdesc keyword="drama">
+      <description>Drama and Flair&amp;r:&amp;n
+
+The best part of being a Hunter is the fact that you not only get to whip Warders up and down the block...  you get to look good doing it.  Swinging on chandeliers and sliding down bannisters are definitely pluses in this category.  On the other hand, so are certain other things, which begin to conflict with the need for realism and open emotes.  While it may look awesome to say,
+
+&quot;Aemon swings across the room on the chandelier, dispatching one of the Inquisitor's lackeys with a stroke of his gleaming blade as he lands smoothly near the far wall.  He flourishes his weapon before him in a mocking salute, and then bats aside one feeble swordthrust before decapitating another foe.&quot;
+
+It's really not particularly fair, or realistic.  This is, however, a moderate example of the genre.  Where it really gets bad is when an emoter succumbs to the desire to throw in a whole lot of dramatic fluff(swirling capes, mocking laughter, detailed descriptions of their outfit, etc) and totally fails to emote anything comprehensible.  In the previous emote, an opponent is left thinking, &quot;Well, there go my NPCs.  I wonder where exactly Aemon is in relation to me...and how is he *holding* that sword?  Is it a sword, or some other 'blade'?!?!?&quot;  This generally tends to make emote combat incredibly unpleasant for one participant, and makes you look bad to boot.  As a general rule, in combats where your opponent is not cooperative with you, you should always try to emote something which they will easily understand and respond to...  even if it means being less exciting.
+</description>
+    </exdesc>
+    <exdesc keyword="poetry">
+      <description>Poetry and Verbosity&amp;r:&amp;n
+
+Another important issue to balance in good emote combat is the degree of poetry in your wording.  While it is always good to emote something which your opponent(s) will understand and be able to react to, there is also something to be said for emoting in a manner which makes your character's actions exciting and fun to follow.  The first emote below is a basic action, and the second is the same action, but with a little bit more flair.
+
+&quot;Aemon steps forward onto the ball of his right foot, and flexes his knee as he shifts his weight above his forward leg, directing a thrust of his sword at a point just below Daelak's left armpit.&quot;
+
+&quot;Aemon slides his black leather boot forward, shifting his weight onto his advancing right leg, and twists his glittering rapier with a dramatic flourish as he strikes for a point high on Daelak's ribs.&quot;
+
+As a general rule, in combats where your opponent is not cooperative with you, you should first emote something understandable and technically workable, and only then consider ways to 'spice it up'.  This will generally lead to a more flattering impression of both characters, and also help avoid those messy hour-long debates about who was doing what.
+</description>
+    </exdesc>
+    <exdesc keyword="roleplaying">
+      <description>First and foremost, emote combat should always be looked upon as another sort of roleplay, albeit a much more complicated and involved one.  Every emote should, of course, be interesting and reflect your character's persona, but there are other important considerations as well.  In emote combat, one must consider whether the other involved players are being given a fair chance to emote their characters, and whether or not the precise nature of your emotes are easily understandable.  What's more, since fighting tends to be the climax of an encounter, every emote in an emote combat should be carefully considered and crafted to fit the situation.  Indeed, as much as in any other situation, emoting combat is the true fulfillment of the character you have developed...  this is how we show each other our characters, and how others show us what they have imagined.  As Hunters, I expect that we will all perform not only to a level which will impress everyone else, but which we will be able to be proud of ourselves.
+
+</description>
+    </exdesc>
+    <exdesc keyword="group">
+      <description>Group Combat
+
+In group emoting situations, there are several levels of increasing complexity, which apply to even greater degree when applied to emote combat.  One of the largest difficulties with large group roleplay in general, is the establishment of an emoting order.  In order to give everyone a chance to react to everything (a factor which becomes even more important in combat roleplay) roleplayers generally assume a regular order of emoting.  Sometimes, it becomes necessary to break this order, or at least convenient.  In emote combat, however, double-emoting an opponent is absolutely unacceptable.  With the reactive nature of emote combat, it is absolutely vital that every character be emoted before another 'round' of emoting begins.
+Further, with the highly concentration-intensive nature of emoted combat, OoC chatter becomes and even larger difficulty.  What this means is that in any situation where more than 2 people are emoting, and there is combat occuring, a responsible emoter should go out of their way to avoid OoC spam, and to emote in a quick and timely fashion once their turn comes around.  One trick which helps in both of those categories is to fashion your emote slightly in advance...both occupying your mind, and lowering the time required for you to take your turn in the order.
+</description>
+    </exdesc>
+    <exdesc keyword="cooperative">
+      <description>Cooperative and Competitive
+
+While emote combat can be divided into a hundred different categories, if one so desired, one of the most dramatic distinctions is between cooperative and competitive fighting.  Cooperative fighting occurs either when the participants don't particularly care about the outcome of an event and just want to have fun(i.e., a non-lethal private match, or an OoC spar), or when the outcome has been predetermined.  Competitive fighting, however, is far more difficult, occuring when two people are using emoting to determine a victor between their characters, for whatever reason.
+In the first style, there is far less need for clarity and physical precision in emoting, allowing for a great deal more imaginition, aesthetic demonstration, and fun.  The second kind, however, makes it all that much more important to both emote your character in a reasonable and IC manner, and also to do so in a manner which both conveys your strategy understandably, and gives you a chance of victory. (Strategy is discussed in greater detail in another section.)  In competitive emote combat, a roleplayer's primary concern should always be that their emotes are clear and logical...  both to promote understanding of their actions, and to avoid questions of legitimacy.
+</description>
+    </exdesc>
+    <exdesc keyword="pointers">
+      <description>Pointers
+
+By way of a few basic pointers of the generally accepted standards of emote combat:
+
+&amp;ro&amp;n Use of the word &quot;you&quot; should only be used in 2 person matches, and arguably, avoided even then.
+&amp;ro&amp;n Use of the words &quot;his&quot; &quot;her&quot; and &quot;their&quot; should be avoided if possible, although sometimes they are necessary for simplicity.
+&amp;ro&amp;n As in all emoting, try to avoid repeated use of the same word.  For example, if you last said 'sword', replace it with 'blade'.  This will generally improve the appearance and eloquence of your emotes.
+&amp;ro&amp;n Don't closed emote your opponent's blade more than necessary.
+&amp;ro&amp;n Do not perform multiple actions in a single emote.  This can lead to contradictions, or act to essentially close the first few actions without allowing your opponent to respond.  This does not apply to simultaneous actions...for example, stepping forward and lunging with a blade.
+&amp;ro&amp;n Check for spelling and grammar before entering a finished emote.
+&amp;ro&amp;n Seek clarification if you are unsure of an emote's meaning.
+&amp;ro&amp;n Emote within the reasonable limits of your character's ability.
+&amp;ro&amp;n If you have spare time between emotes, update your doing with a rough description of your character's physical state, armament, weapon grip, etc.
+</description>
+    </exdesc>
+    <dgscript vnum="300"/>
+  </object>
+  <object vnum="396" name="oven huge empty" special="NONE">
+    <description>A huge &amp;ko&amp;Wv&amp;Ke&amp;kn &amp;glooks empty, big enough to hold one or two people.</description>
+    <shortdesc>a huge, empty &amp;Ko&amp;Wv&amp;ke&amp;Kn&amp;n</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="14" wear="0" extra="2056"/>
+      <data weight="300" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <exdesc keyword="huge oven">
+      <description>Hmmm.. the monstrous doors to the giant kitchen utensil aren't too warm,
+but the insides of the oven smell wonderfully of the different foods cooked
+in their depths. It seems big enough to hold one or even two people and
+the doors are wide enough to climb inside.
+</description>
+    </exdesc>
+    <objprog main="OnActionTo" argtype="STRING" argument="enter">
+      <action number="EmoteTo" argtype="STRING" argument="The oven door's &amp;Kh&amp;ki&amp;Wn&amp;Kg&amp;we&amp;Ks &amp;nsqueak as you push them aside and climb inside."/>
+    </objprog>
+  </object>
+  <object vnum="397" name="key curious jasurin" special="NONE">
+    <description>&amp;nA curious looking &amp;Yg&amp;yo&amp;Yl&amp;yd&amp;Ye&amp;yn&amp;n key</description>
+    <shortdesc>&amp;nA curious looking &amp;Yg&amp;yo&amp;Yl&amp;yd&amp;Ye&amp;yn&amp;n key</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="18" wear="1" extra="69832"/>
+      <data weight="1" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="398" name="pillow pile fort white puffy jasurin" special="NONE">
+    <description>&amp;nA heaping pile of &amp;Wp&amp;wi&amp;Wl&amp;wl&amp;Wo&amp;ww&amp;Ws&amp;n</description>
+    <shortdesc>&amp;nJasurin's &amp;WP&amp;wi&amp;Wl&amp;wl&amp;Wo&amp;ww&amp;Wf&amp;wo&amp;Wr&amp;wt&amp;n!</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="ARMOR" modifier="-2"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="15" value3="397" value4="0"/>
+      <flags type="14" wear="0" extra="69640"/>
+      <data weight="9999" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <exdesc keyword="pillow">
+      <description>A tremendous pile of white puffy pillows lies here, with no seeming
+order to it,  on first inspection.   Looking more closely, however,
+an odd configuration becomes apparent low down on one side.    Atop
+two long vertical pillows,  a third rests horizontally, and beneath
+this makeshift arch a narrow little hole has been burrowed into the
+pile...
+</description>
+    </exdesc>
+    <objprog main="OnActionToCarry" argtype="STRING" argument="enhance">
+      <action number="EmoteTo" argtype="STRING" argument="\c01No. You shouldn't have done that.\c00"/>
+      <action number="Force" argtype="STRING" argument="tell lyia i tried to enhance your guild eq"/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="Destroy" argtype="VOID" argument="NONE"/>
+    </objprog>
+    <objprog main="OnWear" argtype="STRING" argument="enhance">
+      <sideterm number="Guild" not="FALSE" argtype="STRING" argument="hunter"/>
+      <action number="EmoteTo" argtype="STRING" argument="\c01Thats a biiiiig no-no.\c00"/>
+      <action number="Force" argtype="STRING" argument="tell lyia I TRIED TO WEAR YOUR GUILDEQ!"/>
+      <action number="Destroy" argtype="VOID" argument="NONE"/>
+    </objprog>
+  </object>
+  <object vnum="399" name="lantern brass shuttered hoh" special="NONE">
+    <description>\c01[Please report to an imm]\c00</description>
+    <shortdesc>a shuttered \c03b\c10r\c03a\c10s\c03s\c00 lantern</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="XATTACKS" modifier="1"/>
+    <objaffect location="HITROLL" modifier="20"/>
+    <objaffect location="DAMROLL" modifier="20"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="-1" value4="0"/>
+      <flags type="1" wear="16385" extra="69768"/>
+      <data weight="2" cost="5000" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <objprog main="OnWear" argtype="STRING" argument="enhance">
+      <sideterm number="Guild" not="FALSE" argtype="STRING" argument="hunter"/>
+      <action number="EmoteTo" argtype="STRING" argument="\c01Thats a biiiiig no-no.\c00"/>
+      <action number="Pause" argtype="STRING" argument="0"/>
+      <action number="Destroy" argtype="VOID" argument="NONE"/>
+    </objprog>
+  </object>
+</objects>

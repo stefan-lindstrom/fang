@@ -1,10 +1,12 @@
 <?xml version="1.0"?>
 <rooms>
   <room>
-    <roombasic title="An mountain trail, leading up to a Forest." vnum="19000" zone="190">
-      <roomdescription>   Standing on a rocky mountain trail, the mountain peaks around you rise into
-mists which you cannot seem to penetrate.  Ahead, a large, green forest seems
-to reach for the sky, as the huge trees climb higher and higher.
+    <roombasic title="A Mountain Trail" vnum="19000" zone="190">
+      <roomdescription>Standing on a rocky mountain trail, the mountain peaks all around rise
+into mists which seem impenetrable.  Ahead, a large, green forest seems to
+reach for the sky, as the huge trees climb higher and higher.  There are a
+few large boulders that could be used to sit upon or the smaller ones
+could be used to make a campfire.    
 </roomdescription>
       <flags>0</flags>
       <sector>Mountains</sector>
@@ -123,12 +125,12 @@ small hills.
   </room>
   <room>
     <roombasic title="Far within the Stedding" vnum="19005" zone="190">
-      <roomdescription>   Having long past the entrance to the stedding, the forest here seems thick
-with life, and looms over all the small trails which weave between the trees.
-Looking far to the north, the ground seems to have many small hills rising
-out of it oddly.
-   You notice a small clump of wildflowers here, growing within the tree-
-trunks, adding red and blue to the green and brown of the forest.
+      <roomdescription>Having long passed the entrance to the stedding, the forest here seems
+thick with life, and looms over all the small trails which weave between
+the trees.  Looking far to the north, the ground seems to have many small
+hills rising out of it oddly.  There is a small clump of wildflowers here,
+growing within the tree-trunks, adding red and blue to the green and brown
+of the forest.    
 </roomdescription>
       <flags>262290</flags>
       <sector>Forest</sector>
@@ -300,10 +302,10 @@ seems to prevent your movement in any direction except north and southwest.
   </room>
   <room>
     <roombasic title="The Center of the Stedding" vnum="19012" zone="190">
-      <roomdescription>   Realizing that you stand at the very center of the Stedding, you look around
-and see nothing but the great forest rise above you in all directions.  Knowing
-you are in a mountain valley does not even help, because the trees rise so high
-that you cannot make out any of the large peaks.
+      <roomdescription>This is the very centre of the Stedding, and from here can be seen nothing
+but the great forest.  Only occasional glimpses of the mountain peaks can
+be caught between the thick boughs and branches of the trees, and their
+leafy foliage makes even that small vision a rarity.    
 </roomdescription>
       <flags>262290</flags>
       <sector>Forest</sector>
@@ -459,12 +461,12 @@ choose to live.
   </room>
   <room>
     <roombasic title="In the Center of a Large Path" vnum="19019" zone="190">
-      <roomdescription>   Standing in the middle of a large east-west path, you see the environment
-which the common Ogier lives in.  To the north various homes, shops, and other
-buildings rise out of the ground, housed in great earthen mounds.  The large 
-path continues east and west, and a small trail leads to the center of the
-Stedding to the south.
-   There is a sign on the large mound that rises to the north.
+      <roomdescription>From this position in the middle of a large east-west path, the area of
+the Stedding in which the common Ogier lives can be seen.  To the north
+various homes, shops, and other buildings rise out of the ground, housed
+in great earthen mounds.  The large path continues east and west, and a
+small trail leads to the center of the Stedding to the south.  There is a
+sign on the large mound that rises to the north.    
 </roomdescription>
       <flags>262290</flags>
       <sector>Forest</sector>
@@ -529,13 +531,13 @@ oak, stained darkly.
     <exit direction="up" keyword="" exitinfo="0" keynum="0" toroom="19022">
       <description/>
     </exit>
+    <exdesc keyword="counter counters merchandise">
+      <description>  You see several wood and glass counters displaying all sorts of merchandise.
+</description>
+    </exdesc>
     <exdesc keyword="window windows light">
       <description>   There are several small wooden windows in the side of the mound, admitting
 light into the General Store.
-</description>
-    </exdesc>
-    <exdesc keyword="counter counters merchandise">
-      <description>  You see several wood and glass counters displaying all sorts of merchandise.
 </description>
     </exdesc>
   </room>
@@ -595,22 +597,22 @@ scattered, and papers and books on top of all of them.
       <description>None
 </description>
     </exit>
-    <exdesc keyword="paper papers book books">
-      <description>  There are papers and books scattered all over the tables and floors.
-</description>
-    </exdesc>
-    <exdesc keyword="table tables chair chairs">
-      <description>  There are chairs and tables scattered all over the room.
+    <exdesc keyword="window windows walls">
+      <description>  In the walls, there are three small, round windows, which look up and to the
+outside world.  You see the great trees rising above the mound, and blue skies
+above that.
 </description>
     </exdesc>
     <exdesc keyword="lantern lanterns">
       <description>  These are small lanterns which almost seem a part of the walls.
 </description>
     </exdesc>
-    <exdesc keyword="window windows walls">
-      <description>  In the walls, there are three small, round windows, which look up and to the
-outside world.  You see the great trees rising above the mound, and blue skies
-above that.
+    <exdesc keyword="table tables chair chairs">
+      <description>  There are chairs and tables scattered all over the room.
+</description>
+    </exdesc>
+    <exdesc keyword="paper papers book books">
+      <description>  There are papers and books scattered all over the tables and floors.
 </description>
     </exdesc>
   </room>
@@ -634,13 +636,10 @@ like any farm or field.
       <description>South towards the exit.
 </description>
     </exit>
-    <exdesc keyword="window windows light wall walls">
-      <description>  There are four small, round windows that are set into the tunnel, allowing
-light to enter from above.
-</description>
-    </exdesc>
-    <exdesc keyword="dirt">
-      <description>  You see a small worm crawling around in the wall.
+    <exdesc keyword="sign signs">
+      <description>+-----------------+
+ Ogier Guild Room
++-----------------+
 </description>
     </exdesc>
     <exdesc keyword="door oak wooden doors">
@@ -648,10 +647,13 @@ light to enter from above.
 On this door, there is a sign which you should look at.
 </description>
     </exdesc>
-    <exdesc keyword="sign signs">
-      <description>+-----------------+
- Ogier Guild Room
-+-----------------+
+    <exdesc keyword="dirt">
+      <description>  You see a small worm crawling around in the wall.
+</description>
+    </exdesc>
+    <exdesc keyword="window windows light wall walls">
+      <description>  There are four small, round windows that are set into the tunnel, allowing
+light to enter from above.
 </description>
     </exdesc>
   </room>
@@ -675,14 +677,14 @@ which leads up onto the ground level of the stedding.
       <description>Up into the stedding proper.
 </description>
     </exit>
-    <exdesc keyword="door doors">
-      <description>  There is a large wooden door which leads up the stairs onto ground level.
-</description>
-    </exdesc>
     <exdesc keyword="walls wall dirt small round window windows">
       <description>  The walls, made of tightly packed dirt, are a dark brown, and very solid.
 Solid enough, that the small windows fit tightly high on them, and let in
 just enough light to see comfortably.
+</description>
+    </exdesc>
+    <exdesc keyword="door doors">
+      <description>  There is a large wooden door which leads up the stairs onto ground level.
 </description>
     </exdesc>
   </room>
@@ -810,9 +812,11 @@ seems to be forming, and to the south, the forest seems to thin out a bit.
   </room>
   <room>
     <roombasic title="A Small Clearing" vnum="19075" zone="190">
-      <roomdescription>   Standing in a small clearing to the side of the main mountain trail, you
-see a stark contrast between the large, misty mountain peaks which rise above
-you, and the large forest which seemingly grows out of nowhere.
+      <roomdescription>Standing in a small clearing to the side of the main mountain trail, is a
+stark contrast between the large, misty mountain peaks which rise above
+and the large forest which seemingly grows out of nowhere.  Nearby is an
+uprooted tree with its narled roots.  It&apos;s a cherry tree that has been
+long hollowed out and would be good to sit upon.    
 </roomdescription>
       <flags>0</flags>
       <sector>Mountains</sector>

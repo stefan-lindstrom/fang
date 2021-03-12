@@ -1,6 +1,6 @@
 #11905
 SNAKE!~
-0 b 50
+0 b 5
 ~
 emote writhes around, nibbling at everything randomly in sight!
 ~
@@ -8,7 +8,6 @@ emote writhes around, nibbling at everything randomly in sight!
 Snake2~
 0 g 100
 ~
-pemote %actor.name% writhes around, moving closer to you, before suddenly snapping its forked tongue out and nibbling your bum with its sharp fangs!|writhes around, moving closer to %actor.name%, before suddenly snapping its forked tongue out and nibbling %actor.name%'s bum with its sharp fangs! 
 %damage% %actor.name% 10
 ~
 $~

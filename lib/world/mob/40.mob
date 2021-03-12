@@ -1,1060 +1,1727 @@
-#4000
-cook~
-a cook~
-A cook, all flour to the elbows, wipes her face in the heat
-~
-A woman is running towards you, waving her rolling pin.
-~
-1091592 0 1 E
-5 15 0 960 1d1+25 1d1+9
-2 1400
-8 8 2 668
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-E
-#4001
-gelding horse black~
-a small, tightly muscled gelding~
-A small, tightly muscled gelding is here.
-~
-A small, jet back gelding stands before you. Tightly muscled, it is obviously well-trained.
-~
-2074 128 0 E
-1 -30 10 960 1d100+0 1d1+0
-0 1
-8 8 1 668
-BareHandAttack: 4
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-E
-#4002
-short man~
-a Short Man~
-A short man is standing here
-~
-A short man with an evil smile draws you attention.
-~
-8 0 0 E
-40 -10 4 960 10d30+0 6d20+30
-0 110
-8 8 1 668
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-E
-#4003
-boy~
-a small boy~
-A small boy scrambles about the streets, throwing pebbles at strangers
-~
-A boy is standing here, just looking for trouble.
-~
-1048780 0 0 E
-4 -3 -4 960 6d100+10 6d6+23
-2 12000
-8 8 1 668
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-E
-#4004
-Myrelle~
-Myrelle Sedai~
-Myrelle Sedai, of the \c02Green\c03 Ajah
-~
-Myrelle's regards you coolly, her ageless features giving the briefest
+<?xml version="1.0"?>
+<mobiles>
+  <mobile vnum="4000" name="cook" special="NONE">
+    <description>A woman is running towards you, waving her rolling pin.
+</description>
+    <shortdesc>a cook</shortdesc>
+    <longdesc>A cook, all flour to the elbows, wipes her face in the heat
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="5" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="1" bonus="25"/>
+      <move ndize="1" dsize="25" bonus="25"/>
+      <ac>0</ac>
+      <gold>2</gold>
+      <bankgold>0</bankgold>
+      <exp>1400</exp>
+      <hitroll>5</hitroll>
+      <damroll>9</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1091592"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="5"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="4001" name="gelding horse black" special="NONE">
+    <description>A small, jet back gelding stands before you. Tightly muscled, it is obviously well-trained.
+</description>
+    <shortdesc>a small, tightly muscled gelding</shortdesc>
+    <longdesc>A small, tightly muscled gelding is here.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="1" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="0"/>
+      <move ndize="1" dsize="0" bonus="0"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>1</exp>
+      <hitroll>50</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="2074"/>
+    <affected one="128" two="0" three="0" four="0"/>
+    <attack type="4"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="50"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="4002" name="short man" special="NONE">
+    <description>A short man with an evil smile draws you attention.
+</description>
+    <shortdesc>a Short Man</shortdesc>
+    <longdesc>A short man is standing here
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="40" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="10" dsize="30" bonus="0"/>
+      <move ndize="1" dsize="0" bonus="0"/>
+      <ac>40</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>110</exp>
+      <hitroll>30</hitroll>
+      <damroll>30</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="8"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="6" sides="20" add="30"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="4003" name="boy" special="NONE">
+    <description>A boy is standing here, just looking for trouble.
+</description>
+    <shortdesc>a small boy</shortdesc>
+    <longdesc>A small boy scrambles about the streets, throwing pebbles at strangers
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="4" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="6" dsize="100" bonus="10"/>
+      <move ndize="1" dsize="10" bonus="10"/>
+      <ac>-40</ac>
+      <gold>2</gold>
+      <bankgold>0</bankgold>
+      <exp>12000</exp>
+      <hitroll>23</hitroll>
+      <damroll>23</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1048780"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="6" sides="6" add="23"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="4004" name="Myrelle" special="NONE">
+    <description>Myrelle's regards you coolly, her ageless features giving the briefest
 of warm smiles as she regards you casually.  Her dark hair frames a delicate
 face, beautiful to behold.  Dark eyes shine as they dart intelligently about.
 She is clad in a dress of Green silks, and her Warders Croi, Nuhel, and Avar
 are never far from her side.
-~
-5288024 0 0 E
-50 0 -2 960 30d0+700 9d11+20
-150 150
-8 8 2 668
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-Bash: 100
-Trip: 100
-Dirtkick: 100
-Kick: 100
-Disarm: 100
-Stun: 100
-P
-OnAttack
-Cast "storm"
-End
-Q
-E
-#4005
-Mara~
-Mara~
-Mara, Mistress of Salidar's Kitchens
-~
-Mara, Mistress of Salidar's kitchens is levelling you with a direct gaze.
-Her dark brown hair is pulled into a tight bun, with a few wisps
-escaping.  Her nose is angular and downsweeping, and her dark eyes stern.
-You feel almost willing to crawl into a cookpot to escape her stare.
-~
-1957898 0 0 E
-90 20 10 960 1d100+0 1d1+0
-0 0
-8 8 2 668
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-E
-#4006
-Anaiya~
-Anaiya Sedai~
-Anaiya Sedai, of the \c04Blue\c03 Ajah
-~
-Anaiya Sedai is a woman of a warm demeanor and a motherly appearance.  Dark
+</description>
+    <shortdesc>Myrelle Sedai</shortdesc>
+    <longdesc>Myrelle Sedai, of the \c02Green\c03 Ajah
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="50" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="30" dsize="0" bonus="700"/>
+      <move ndize="1" dsize="700" bonus="700"/>
+      <ac>-20</ac>
+      <gold>150</gold>
+      <bankgold>0</bankgold>
+      <exp>150</exp>
+      <hitroll>20</hitroll>
+      <damroll>20</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="5288024"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="9" sides="11" add="20"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnAttack" argtype="VOID" argument="NONE">
+      <action number="Cast" argtype="STRING" argument="storm"/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="4005" name="Meira" special="NONE">
+    <description>Meira has a level stare and dark brown hair that is pulled into a bun with
+streaks of gray through it.  Her nose is angular and downsweeping and her
+expression stern.    
+</description>
+    <shortdesc>Meira</shortdesc>
+    <longdesc>Meira, the cook, stands here ready to serve.
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="90" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="0"/>
+      <move ndize="1" dsize="0" bonus="0"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="10346506"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="4006" name="Anaiya" special="NONE">
+    <description>Anaiya Sedai is a woman of a warm demeanor and a motherly appearance.  Dark
 hair is neatly groomed and cut shoulder length.  Her deep brown eyes regard
 you calmly and with caring.  Her ready smile is the only trait which can
 be regarded as beautiful, but when it appears in more than makes up for 
 any lack of physical beauty.
-~
-5279832 0 0 E
-60 0 -2 960 30d0+300 9d11+20
-200 150
-8 8 2 668
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-Bash: 100
-Trip: 100
-Dirtkick: 100
-Kick: 100
-Disarm: 100
-Stun: 100
-P
-OnAttack
-Cast "ice arrows"
-End
-Q
-E
-#4007
-Carlinya~
-Carlinya Sedai~
-Carlinya Sedai, of the \c07White\c03 Ajah
-~
-Carlinya gazes at you emotionlessly as you pass boy, her expression
+</description>
+    <shortdesc>Anaiya Sedai</shortdesc>
+    <longdesc>Anaiya Sedai, of the \c04Blue\c03 Ajah
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="60" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="30" dsize="0" bonus="300"/>
+      <move ndize="1" dsize="300" bonus="300"/>
+      <ac>-20</ac>
+      <gold>200</gold>
+      <bankgold>0</bankgold>
+      <exp>150</exp>
+      <hitroll>20</hitroll>
+      <damroll>20</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="5279832"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="9" sides="11" add="20"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnAttack" argtype="VOID" argument="NONE">
+      <action number="Cast" argtype="STRING" argument="ice arrows"/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="4007" name="Carlinya" special="NONE">
+    <description>Carlinya gazes at you emotionlessly as you pass boy, her expression
 betraying not the least hint of emotion.  Her raven black hair is cut 
 short about the shoulders, and her hard blue eyes shine in the light.
 Her porcelain features aren't marred by the slightest hint of feeling.
 She glides from place to place with an air of confidence and poise.
-~
-5283928 268500992 0 E
-60 0 -2 960 30d0+300 9d11+20
-200 150
-8 8 2 668
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-Bash: 100
-Trip: 100
-Dirtkick: 100
-Kick: 100
-Disarm: 100
-Stun: 100
-P
-OnAttack
-Cast "confusion"
-End
-Q
-E
-#4008
-morvrin sedai brown ~
-Morvrin sedai~
-Morvrin Sedai, of the Brown Ajah
-~
-Morvrin seems to be totally unaware of your presence as she astutely studies
+</description>
+    <shortdesc>Carlinya Sedai</shortdesc>
+    <longdesc>Carlinya Sedai, of the \c07White\c03 Ajah
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="60" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="30" dsize="0" bonus="300"/>
+      <move ndize="1" dsize="300" bonus="300"/>
+      <ac>-20</ac>
+      <gold>200</gold>
+      <bankgold>0</bankgold>
+      <exp>150</exp>
+      <hitroll>20</hitroll>
+      <damroll>20</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="5283928"/>
+    <affected one="268500992" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="9" sides="11" add="20"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnAttack" argtype="VOID" argument="NONE">
+      <action number="Cast" argtype="STRING" argument="confusion"/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="4008" name="morvrin sedai brown " special="NONE">
+    <description>Morvrin seems to be totally unaware of your presence as she astutely studies
 her surroundings.  Her light blonde hair is pulled into a loose ponytail 
 behind her at the moment, so that it does not fall in her eyes as
 she jots notes upon her notepad randomly.  Her clear blue eyes glide over 
 you without a hint of recognition, her ageless features attent elsewhere.  
 Her brown gown is slightly disheveled and looking closer, you believe 
 you can make out a smude of ink or two.
-~
-5283928 0 0 E
-60 0 -2 960 13d0+200 9d20+20
-200 150
-8 8 2 668
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-Bash: 100
-Trip: 100
-Dirtkick: 100
-Kick: 100
-Disarm: 100
-Stun: 100
-E
-#4009
-Beonin~
-Beonin Sedai~
-Beonin Sedai, of the Gray Ajah
-~
-Beonin is a plump woman of middle years, though it is hard to tell for 
+</description>
+    <shortdesc>Morvrin sedai</shortdesc>
+    <longdesc>Morvrin Sedai, of the Brown Ajah
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="60" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="13" dsize="0" bonus="200"/>
+      <move ndize="1" dsize="200" bonus="200"/>
+      <ac>-20</ac>
+      <gold>200</gold>
+      <bankgold>0</bankgold>
+      <exp>150</exp>
+      <hitroll>20</hitroll>
+      <damroll>20</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="5283928"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="9" sides="20" add="20"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="4009" name="Beonin" special="NONE">
+    <description>Beonin is a plump woman of middle years, though it is hard to tell for 
 sure due to her ageless features.  Her clever eyes and placid features seem
 to take in everything around her.  She glides with an air of confidence from
 place to place, exuding a feeling of surety and confidence as she does so.
 Peace and calm follow her wherever she goes, inspiring inspiring an urge
 of tranquility in all around her with a warm smile and a knowing glance.
-~
-5283928 0 0 E
-60 0 -2 960 30d0+500 9d11+20
-200 150
-8 8 2 668
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-Bash: 100
-Trip: 100
-Dirtkick: 100
-Kick: 100
-Disarm: 100
-Stun: 100
-P
-OnAttack
-Cast "call fire"
-End
-Q
-E
-#4010
-Accepted~
-a young Accepted~
-A busy girl in a dress with 7 bands of \c01c\c03o\c02l\c06o\c05r\c03
-~
-This young Accepted darts busily about, her long hair falling around her
+</description>
+    <shortdesc>Beonin Sedai</shortdesc>
+    <longdesc>Beonin Sedai, of the Gray Ajah
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="60" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="30" dsize="0" bonus="500"/>
+      <move ndize="1" dsize="500" bonus="500"/>
+      <ac>-20</ac>
+      <gold>200</gold>
+      <bankgold>0</bankgold>
+      <exp>150</exp>
+      <hitroll>20</hitroll>
+      <damroll>20</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="5283928"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="9" sides="11" add="20"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnAttack" argtype="VOID" argument="NONE">
+      <action number="Cast" argtype="STRING" argument="call fire"/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="4010" name="Accepted" special="NONE">
+    <description>This young Accepted darts busily about, her long hair falling around her
 in disarray as she carries out the duties of her position.  Occasionally she
 takes a break with a gaggle of other Accepted to grin imperiously at Novices
 running about even more ragged then she.
-~
-1048664 0 0 E
-45 5 0 960 13d200+100 9d8+15
-100 150
-8 8 2 668
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-Bash: 100
-Kick: 100
-E
-#4011
-Accepted~
-a resting Accepted~
-An Accepted lounges here, resting with some friends
-~
-A girl in her early 20's lounges her with a small group of friends.  Talking
+</description>
+    <shortdesc>a young Accepted</shortdesc>
+    <longdesc>A busy girl in a dress with 7 bands of \c01c\c03o\c02l\c06o\c05r\c03
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="45" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="13" dsize="200" bonus="100"/>
+      <move ndize="1" dsize="100" bonus="100"/>
+      <ac>0</ac>
+      <gold>100</gold>
+      <bankgold>0</bankgold>
+      <exp>150</exp>
+      <hitroll>15</hitroll>
+      <damroll>15</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1048664"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="9" sides="8" add="15"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="4011" name="Accepted" special="NONE">
+    <description>A girl in her early 20's lounges her with a small group of friends.  Talking
 with some companions about various aspects of channelling...but more often
 about this or that Sedai's mean streak, and about which Warder Trainee is
 the cutest.
-~
-1048666 0 0 E
-45 5 0 960 13d200+100 8d9+15
-100 150
-8 8 2 668
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-Bash: 100
-Trip: 100
-Kick: 100
-Disarm: 100
-E
-#4012
-Novice~
-a bedmaking novice~
-A young novice stands here, making her bed
-~
-Wearing the typical novice garb of a simple white dress, belted at the
+</description>
+    <shortdesc>a resting Accepted</shortdesc>
+    <longdesc>An Accepted lounges here, resting with some friends
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="45" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="13" dsize="200" bonus="100"/>
+      <move ndize="1" dsize="100" bonus="100"/>
+      <ac>0</ac>
+      <gold>100</gold>
+      <bankgold>0</bankgold>
+      <exp>150</exp>
+      <hitroll>15</hitroll>
+      <damroll>15</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1048666"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="8" sides="9" add="15"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="4012" name="Novice" special="NONE">
+    <description>Wearing the typical novice garb of a simple white dress, belted at the
 waist, this girl seems busily involved in making her bed.  Someone 
 obviously has forgotten to teach her hospital corners...the Mistress of
 Novices will be none too pleased.
-~
-1048648 0 0 E
-30 8 2 960 13d150+75 9d5+12
-25 150
-8 8 2 668
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-Bash: 100
-Kick: 100
-E
-#4013
-novice~
-a sweeping novice~
-A novice stands her, busily sweeping dust under the rug
-~
-This novice, in the typical simple white dress, looks warily over her
+</description>
+    <shortdesc>a bedmaking novice</shortdesc>
+    <longdesc>A young novice stands here, making her bed
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="30" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="13" dsize="150" bonus="75"/>
+      <move ndize="1" dsize="75" bonus="75"/>
+      <ac>20</ac>
+      <gold>25</gold>
+      <bankgold>0</bankgold>
+      <exp>150</exp>
+      <hitroll>12</hitroll>
+      <damroll>12</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1048648"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="9" sides="5" add="12"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="4013" name="novice" special="NONE">
+    <description>This novice, in the typical simple white dress, looks warily over her
 shoulder every so often as she sweeps the dust in her room into a large
 pile.  When she thinks no one is look, she lifts the rug with her foot 
 and hurriedly sweeps the dust underneath.
-~
-1048648 0 0 E
-30 8 2 960 13d150+75 9d5+12
-25 150
-8 8 2 668
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-Bash: 100
-Kick: 100
-E
-#4014
-novice~
-a scurrying novice~
-A novice darts by on some task for an Aes Sedai
-~
-This girl is little more than a pure white blur as she scurries by with 
+</description>
+    <shortdesc>a sweeping novice</shortdesc>
+    <longdesc>A novice stands her, busily sweeping dust under the rug
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="30" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="13" dsize="150" bonus="75"/>
+      <move ndize="1" dsize="75" bonus="75"/>
+      <ac>20</ac>
+      <gold>25</gold>
+      <bankgold>0</bankgold>
+      <exp>150</exp>
+      <hitroll>12</hitroll>
+      <damroll>12</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1048648"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="9" sides="5" add="12"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="4014" name="novice" special="NONE">
+    <description>This girl is little more than a pure white blur as she scurries by with 
 the briefest of curtsies as she completes and errand for some Sedai or 
 another.  Moments later she zooms by again on yet another task....ah,
 for the life of a novice.
-~
-1048648 0 0 E
-30 8 2 960 13d150+75 9d5+12
-25 150
-8 8 2 668
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-Bash: 100
-Kick: 100
-E
-#4015
-Warder~
-a stoic warder~
-A stoic warder sits a table here, listening to another Gaidin
-~
-This warder sits here, but looks for frome relaxed.  As he listens to
+</description>
+    <shortdesc>a scurrying novice</shortdesc>
+    <longdesc>A novice darts by on some task for an Aes Sedai
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="30" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="13" dsize="150" bonus="75"/>
+      <move ndize="1" dsize="75" bonus="75"/>
+      <ac>20</ac>
+      <gold>25</gold>
+      <bankgold>0</bankgold>
+      <exp>150</exp>
+      <hitroll>12</hitroll>
+      <damroll>12</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1048648"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="9" sides="5" add="12"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="4015" name="Warder" special="NONE">
+    <description>This warder sits here, but looks for frome relaxed.  As he listens to
 one of his brothers, his eyes constantly dart about the room, scanning 
 for danger.  His hard blue eyes seem to see everything, even to the core
 of your intents.  He nods at you briefly, which makes you relax somewhat...
 until you see that his hand rests on the hilt of his sword.
-~
-1048666 0 0 E
-70 -5 -2 960 13d350+150 9d13+25
-200 150
-8 8 1 668
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-Bash: 100
-Trip: 100
-Dirtkick: 100
-Kick: 100
-Disarm: 100
-Stun: 100
-E
-#4016
-warder~
-a conversing warder~
-A Gaidin stands here, explaining something to another warder
-~
-This Gaidin seems to be explaining the situation of the forces of
+</description>
+    <shortdesc>a stoic warder</shortdesc>
+    <longdesc>A stoic warder sits a table here, listening to another Gaidin
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="70" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="13" dsize="350" bonus="150"/>
+      <move ndize="1" dsize="150" bonus="150"/>
+      <ac>-20</ac>
+      <gold>200</gold>
+      <bankgold>0</bankgold>
+      <exp>150</exp>
+      <hitroll>25</hitroll>
+      <damroll>25</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1048666"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="9" sides="13" add="25"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="4016" name="warder" special="NONE">
+    <description>This Gaidin seems to be explaining the situation of the forces of
 Salidar to his companion.  Though he doesn't look directly at you, you
 know that he doesn't have to look at you with those penatrating dark
 brown eyes to know exactly where you are....faltering as you look at his
 sword, you continue about your business.
-~
-1048666 0 0 E
-70 -5 -2 960 13d350+150 9d13+25
-200 150
-8 8 1 668
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-Bash: 100
-Trip: 100
-Dirtkick: 100
-Kick: 100
-Disarm: 100
-Stun: 100
-E
-#4017
-Chesa~
-Chesa~
-Chesa, Egwene's maid, stands here
-~
-Chesa is the Amyrlin's personable and friendly attendant, with a ready smile
+</description>
+    <shortdesc>a conversing warder</shortdesc>
+    <longdesc>A Gaidin stands here, explaining something to another warder
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="70" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="13" dsize="350" bonus="150"/>
+      <move ndize="1" dsize="150" bonus="150"/>
+      <ac>-20</ac>
+      <gold>200</gold>
+      <bankgold>0</bankgold>
+      <exp>150</exp>
+      <hitroll>25</hitroll>
+      <damroll>25</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1048666"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="9" sides="13" add="25"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="4017" name="Chesa" special="NONE">
+    <description>Chesa is the Amyrlin's personable and friendly attendant, with a ready smile
 and hospitable demeanor.  She's always willing to help out in any 
 way sh e can.  Being the Amyrlin's favorite she has lots of gossip to share.
-~
-1048666 0 0 E
-50 5 -1 960 13d250+150 9d9+15
-200 150
-8 8 2 668
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-Bash: 100
-Trip: 100
-Dirtkick: 100
-Kick: 100
-Disarm: 100
-P
-OnAction "knock" & Wearing 3747
-SayTo "why are you here, novice? shouldn't you be off doing your chores?"
-Emote "chesa looks at you pointedly."
-End
-OnAction "knock" & Wearing 3748
-SayTo "why are you here, accepted? do you not have work you should be doing? "
-Emote "chesa looks at you pointedly."
-End
-OnAction "knock" & ! Guild "rebel"
-SayTo "hold on, you can't just go a'bargin' in there like that! the mother is busy. "
-Emote "chesa looks you over carefully. "
-SayTo "tell me who you are and i will announce you. "
-End
-OnSay "amyrlin"
-SayTo "i will see if mother can receive you today. "
-Action "open door north"
-Action "north"
-Action "close door south"
-Action "tell egwene there is someone to see you, mother."
-End
-OnSayTo "tell egwene i want to talk to her"
-Emote "chesa looks shocked and scandalized, and looks you over disdainfully."
-SayTo "i don't care -who- you are, you will show proper respect towards the amyrlin seat!"
-Emote "meri sniffs and looks at you disapprovingly. "
-Emote "salame catches chesa by the sleeve and murmurs something to her, looking at you and frowning."
-End
-OnEntry & Wearing 3740
-SayTo "what can i do for you, aes sedai?"
-End
-OnEntry & Wearing 3741
-SayTo "what can i do for you, aes sedai? "
-End
-OnEntry & Wearing 3742
-SayTo "what can i do for you, aes sedai?"
-End
-OnEntry & Wearing 3743
-SayTo "what can i do for you, aes sedai?"
-End
-OnEntry & Wearing 3744
-SayTo "what can i do for you, aes sedai?"
-End
-OnEntry & Wearing 3745
-SayTo "what can i do for you, aes sedai?"
-End
-OnEntry & Wearing 3758
-Say "why, hello, mother, how are you today?"
-Emote "chesa smiles happily at egwene. "
-Action "open door north"
-End
-OnTell "fine" & Wearing 3758
-Pause 5
-Action "open door south"
-Action "south"
-Action "curtsey"
-Say "the amyrlin will see you now."
-End
-Q
-E
-#4018
-Meri~
-Meri~
-Meri, Egwene's maid, stands here
-~
-Meri is an older woman, and knows her way around the Amyrlin's quarters
+</description>
+    <shortdesc>Chesa</shortdesc>
+    <longdesc>Chesa, Egwene's maid, stands here
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="50" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="13" dsize="250" bonus="150"/>
+      <move ndize="1" dsize="150" bonus="150"/>
+      <ac>-10</ac>
+      <gold>200</gold>
+      <bankgold>0</bankgold>
+      <exp>150</exp>
+      <hitroll>15</hitroll>
+      <damroll>15</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1048666"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="9" sides="9" add="15"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnAction" argtype="STRING" argument="knock">
+      <sideterm number="Wearing" not="FALSE" argtype="INT" argument="3747"/>
+      <action number="SayTo" argtype="STRING" argument="why are you here, novice? shouldn't you be off doing your chores?"/>
+      <action number="Emote" argtype="STRING" argument="chesa looks at you pointedly."/>
+    </mobprog>
+    <mobprog main="OnAction" argtype="STRING" argument="knock">
+      <sideterm number="Wearing" not="FALSE" argtype="INT" argument="3748"/>
+      <action number="SayTo" argtype="STRING" argument="why are you here, accepted? do you not have work you should be doing? "/>
+      <action number="Emote" argtype="STRING" argument="chesa looks at you pointedly."/>
+    </mobprog>
+    <mobprog main="OnAction" argtype="STRING" argument="knock">
+      <sideterm number="Guild" not="TRUE" argtype="STRING" argument="rebel"/>
+      <action number="SayTo" argtype="STRING" argument="hold on, you can't just go a'bargin' in there like that! the mother is busy. "/>
+      <action number="Emote" argtype="STRING" argument="chesa looks you over carefully. "/>
+      <action number="SayTo" argtype="STRING" argument="tell me who you are and i will announce you. "/>
+    </mobprog>
+    <mobprog main="OnSay" argtype="STRING" argument="amyrlin">
+      <action number="SayTo" argtype="STRING" argument="i will see if mother can receive you today. "/>
+      <action number="Action" argtype="STRING" argument="open door north"/>
+      <action number="Action" argtype="STRING" argument="north"/>
+      <action number="Action" argtype="STRING" argument="close door south"/>
+      <action number="Action" argtype="STRING" argument="tell egwene there is someone to see you, mother."/>
+    </mobprog>
+    <mobprog main="OnSayTo" argtype="STRING" argument="tell egwene i want to talk to her">
+      <action number="Emote" argtype="STRING" argument="chesa looks shocked and scandalized, and looks you over disdainfully."/>
+      <action number="SayTo" argtype="STRING" argument="i don't care -who- you are, you will show proper respect towards the amyrlin seat!"/>
+      <action number="Emote" argtype="STRING" argument="meri sniffs and looks at you disapprovingly. "/>
+      <action number="Emote" argtype="STRING" argument="salame catches chesa by the sleeve and murmurs something to her, looking at you and frowning."/>
+    </mobprog>
+    <mobprog main="OnEntry" argtype="STRING" argument="tell egwene i want to talk to her">
+      <sideterm number="Wearing" not="FALSE" argtype="INT" argument="3740"/>
+      <action number="SayTo" argtype="STRING" argument="what can i do for you, aes sedai?"/>
+    </mobprog>
+    <mobprog main="OnEntry" argtype="STRING" argument="tell egwene i want to talk to her">
+      <sideterm number="Wearing" not="FALSE" argtype="INT" argument="3741"/>
+      <action number="SayTo" argtype="STRING" argument="what can i do for you, aes sedai? "/>
+    </mobprog>
+    <mobprog main="OnEntry" argtype="STRING" argument="tell egwene i want to talk to her">
+      <sideterm number="Wearing" not="FALSE" argtype="INT" argument="3742"/>
+      <action number="SayTo" argtype="STRING" argument="what can i do for you, aes sedai?"/>
+    </mobprog>
+    <mobprog main="OnEntry" argtype="STRING" argument="tell egwene i want to talk to her">
+      <sideterm number="Wearing" not="FALSE" argtype="INT" argument="3743"/>
+      <action number="SayTo" argtype="STRING" argument="what can i do for you, aes sedai?"/>
+    </mobprog>
+    <mobprog main="OnEntry" argtype="STRING" argument="tell egwene i want to talk to her">
+      <sideterm number="Wearing" not="FALSE" argtype="INT" argument="3744"/>
+      <action number="SayTo" argtype="STRING" argument="what can i do for you, aes sedai?"/>
+    </mobprog>
+    <mobprog main="OnEntry" argtype="STRING" argument="tell egwene i want to talk to her">
+      <sideterm number="Wearing" not="FALSE" argtype="INT" argument="3745"/>
+      <action number="SayTo" argtype="STRING" argument="what can i do for you, aes sedai?"/>
+    </mobprog>
+    <mobprog main="OnEntry" argtype="STRING" argument="tell egwene i want to talk to her">
+      <sideterm number="Wearing" not="FALSE" argtype="INT" argument="3758"/>
+      <action number="Say" argtype="STRING" argument="why, hello, mother, how are you today?"/>
+      <action number="Emote" argtype="STRING" argument="chesa smiles happily at egwene. "/>
+      <action number="Action" argtype="STRING" argument="open door north"/>
+    </mobprog>
+    <mobprog main="OnTell" argtype="STRING" argument="fine">
+      <sideterm number="Wearing" not="FALSE" argtype="INT" argument="3758"/>
+      <action number="Pause" argtype="INT" argument="5"/>
+      <action number="Action" argtype="STRING" argument="open door south"/>
+      <action number="Action" argtype="STRING" argument="south"/>
+      <action number="Action" argtype="STRING" argument="curtsey"/>
+      <action number="Say" argtype="STRING" argument="the amyrlin will see you now."/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="4018" name="Meri" special="NONE">
+    <description>Meri is an older woman, and knows her way around the Amyrlin's quarters
 almost as well as the Amyrlin herself.  She has an air of confidence that
 seems to make her well-suited for her position despiste the perpetually
 sour expression she wears on her face.  Occasionally you see her eyes
 darting around curiously for no obvious reason.
-~
-1048666 0 0 E
-50 5 -1 960 13d250+150 9d9+15
-200 150
-8 8 2 668
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-Bash: 100
-Trip: 100
-Kick: 100
-Disarm: 100
-P
-OnSay "amyrlin"
-Emote "meri sniffs and looks at chesa."
-End
-OnEntry & Wearing 3747
-Say "now, shoo, child, and get back to work."
-End
-OnEntry & Wearing 3748
-Say "now, shoo, child, and get back to work."
-End
-OnAction "knock"
-Emote "meri looks at you disapprovingly, but says nothing."
-End
-OnAction "open door north" & ! Wearing 3758 & ! Level "200-210" & ! Guild "rebel aes sedai" & ! Guild "rebel warders"
-Stop
-SayTo "just who do you think you are to try entering the amyrlin's study unannounced? even aes sedai must be announced."
-Emote "meri sniffs as she looks you over in a stern and uncomplimentary fashion."
-End
-Q
-E
-#4019
-Salame~
-Salame~
-Salame, Egwene's maid, stands here.
-~
-Salame wanders aimlessly about the room, chatting incessently.  The way she
+</description>
+    <shortdesc>Meri</shortdesc>
+    <longdesc>Meri, Egwene's maid, stands here
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="50" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="13" dsize="250" bonus="150"/>
+      <move ndize="1" dsize="150" bonus="150"/>
+      <ac>-10</ac>
+      <gold>200</gold>
+      <bankgold>0</bankgold>
+      <exp>150</exp>
+      <hitroll>15</hitroll>
+      <damroll>15</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1048666"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="9" sides="9" add="15"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnSay" argtype="STRING" argument="amyrlin">
+      <action number="Emote" argtype="STRING" argument="meri sniffs and looks at chesa."/>
+    </mobprog>
+    <mobprog main="OnEntry" argtype="STRING" argument="amyrlin">
+      <sideterm number="Wearing" not="FALSE" argtype="INT" argument="3747"/>
+      <action number="Say" argtype="STRING" argument="now, shoo, child, and get back to work."/>
+    </mobprog>
+    <mobprog main="OnEntry" argtype="STRING" argument="amyrlin">
+      <sideterm number="Wearing" not="FALSE" argtype="INT" argument="3748"/>
+      <action number="Say" argtype="STRING" argument="now, shoo, child, and get back to work."/>
+    </mobprog>
+    <mobprog main="OnAction" argtype="STRING" argument="knock">
+      <action number="Emote" argtype="STRING" argument="meri looks at you disapprovingly, but says nothing."/>
+    </mobprog>
+    <mobprog main="OnAction" argtype="STRING" argument="open door north">
+      <sideterm number="Wearing" not="TRUE" argtype="INT" argument="3758"/>
+      <sideterm number="Level" not="TRUE" argtype="STRING" argument="200-210"/>
+      <sideterm number="Guild" not="TRUE" argtype="STRING" argument="rebel aes sedai"/>
+      <sideterm number="Guild" not="TRUE" argtype="STRING" argument="rebel warders"/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="SayTo" argtype="STRING" argument="just who do you think you are to try entering the amyrlin's study unannounced? even aes sedai must be announced."/>
+      <action number="Emote" argtype="STRING" argument="meri sniffs as she looks you over in a stern and uncomplimentary fashion."/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="4019" name="Salame" special="NONE">
+    <description>Salame wanders aimlessly about the room, chatting incessently.  The way she
 works with so many flourishes in her movements makes you wonder whether
 she belongs in the ranks of the gleemen rather than the Amyrlin's
 staff.  Her aimless prattle often takes the form of the 'rough' men
 of Salidar who don't know how to treat a woman proper.
-~
-1048666 0 0 E
-50 5 -1 960 13d250+150 9d9+15
-200 150
-8 8 2 668
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-Bash: 100
-Trip: 100
-Kick: 100
-Disarm: 100
-P
-OnAction "knock" & Sex "male"
-Emote "salame sniffs at you, even while looking at you admiringly."
-End
-OnEntry & Wearing 3758
-Say "mother! i was just talking about you . . . that's a lovely dress you're wearing . . . "
-Say "oh, that reminds me, what do you think about the color blue for the new dress i am having made for you?"
-End
-OnSay "hello, salame" & Wearing 3758
-Pause 10
-Action "open door north"
-Action "north"
-Say "well, what do you think about the dress, mother?"
-End
-OnSayTo "blue is just fine, salame" & Wearing 3758
-Say "oh, i knew you liked blue . . . it looks so good on you, too. i wish i had your hair . . ."
-Emote "salame sighs wistfully. "
-Pause 7
-End
-OnSayTo "that will be all for now, salame, thank you" & Wearing 3758
-Emote "salame blinks and flushes slightly."
-Emote "salame gives a pert little curtsey."
-Say "yes, mother. sorry, mother. of course, mother . . ."
-Emote "salame backs out of the room and leaves, still chattering to herself."
-Action "open door south"
-Action "south"
-Action "close door north"
-End
-OnAction "knock" & Sex "female"
-Emote "salame seems oblivious, talking to herself quietly while straightening the lamps on the mantle."
-End
-Q
-E
-#4020
-sedai~
-an Aes Sedai in a \c04blue\c00 shawl, guarding Logain~
-An ageless woman in a \c04blue\c03 shawl, with a look of concentration on her face
-~
-An ageless woman sits here, wrapped formally in her blue shawl.  Although
+</description>
+    <shortdesc>Salame</shortdesc>
+    <longdesc>Salame, Egwene's maid, stands here.
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="50" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="13" dsize="250" bonus="150"/>
+      <move ndize="1" dsize="150" bonus="150"/>
+      <ac>-10</ac>
+      <gold>200</gold>
+      <bankgold>0</bankgold>
+      <exp>150</exp>
+      <hitroll>15</hitroll>
+      <damroll>15</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1048666"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="9" sides="9" add="15"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnAction" argtype="STRING" argument="knock">
+      <sideterm number="Sex" not="FALSE" argtype="STRING" argument="male"/>
+      <action number="Emote" argtype="STRING" argument="salame sniffs at you, even while looking at you admiringly."/>
+    </mobprog>
+    <mobprog main="OnEntry" argtype="STRING" argument="knock">
+      <sideterm number="Wearing" not="FALSE" argtype="INT" argument="3758"/>
+      <action number="Say" argtype="STRING" argument="mother! i was just talking about you . . . that's a lovely dress you're wearing . . . "/>
+      <action number="Say" argtype="STRING" argument="oh, that reminds me, what do you think about the color blue for the new dress i am having made for you?"/>
+    </mobprog>
+    <mobprog main="OnSay" argtype="STRING" argument="hello, salame">
+      <sideterm number="Wearing" not="FALSE" argtype="INT" argument="3758"/>
+      <action number="Pause" argtype="INT" argument="10"/>
+      <action number="Action" argtype="STRING" argument="open door north"/>
+      <action number="Action" argtype="STRING" argument="north"/>
+      <action number="Say" argtype="STRING" argument="well, what do you think about the dress, mother?"/>
+    </mobprog>
+    <mobprog main="OnSayTo" argtype="STRING" argument="blue is just fine, salame">
+      <sideterm number="Wearing" not="FALSE" argtype="INT" argument="3758"/>
+      <action number="Say" argtype="STRING" argument="oh, i knew you liked blue . . . it looks so good on you, too. i wish i had your hair . . ."/>
+      <action number="Emote" argtype="STRING" argument="salame sighs wistfully. "/>
+      <action number="Pause" argtype="INT" argument="7"/>
+    </mobprog>
+    <mobprog main="OnSayTo" argtype="STRING" argument="that will be all for now, salame, thank you">
+      <sideterm number="Wearing" not="FALSE" argtype="INT" argument="3758"/>
+      <action number="Emote" argtype="STRING" argument="salame blinks and flushes slightly."/>
+      <action number="Emote" argtype="STRING" argument="salame gives a pert little curtsey."/>
+      <action number="Say" argtype="STRING" argument="yes, mother. sorry, mother. of course, mother . . ."/>
+      <action number="Emote" argtype="STRING" argument="salame backs out of the room and leaves, still chattering to herself."/>
+      <action number="Action" argtype="STRING" argument="open door south"/>
+      <action number="Action" argtype="STRING" argument="south"/>
+      <action number="Action" argtype="STRING" argument="close door north"/>
+    </mobprog>
+    <mobprog main="OnAction" argtype="STRING" argument="knock">
+      <sideterm number="Sex" not="FALSE" argtype="STRING" argument="female"/>
+      <action number="Emote" argtype="STRING" argument="salame seems oblivious, talking to herself quietly while straightening the lamps on the mantle."/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="4020" name="sedai" special="NONE">
+    <description>An ageless woman sits here, wrapped formally in her blue shawl.  Although
 seeming to look relaxed, an her expression leads you to believe that she is
 concentrating deeply, and in fact is very alert.  (OOC Note: Those of you
 how can channel saidar can see an aura about her).
-~
-5283930 0 0 E
-70 -5 -5 960 13d0+250 9d14+25
-200 150
-8 8 2 668
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-Bash: 100
-Trip: 100
-Dirtkick: 100
-Kick: 100
-Disarm: 100
-Stun: 100
-E
-#4021
-sedai~
-an Aes Sedai in a \c02green\c00 shawl, guarding Logain~
-An ageless woman in a \c02green\c03 shawl, with a look of concentration on her face
-~
-An ageless woman sits here, wrapped formally in her green shawl.  Although
+</description>
+    <shortdesc>an Aes Sedai in a \c04blue\c00 shawl, guarding Logain</shortdesc>
+    <longdesc>An ageless woman in a \c04blue\c03 shawl, with a look of concentration on her face
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="70" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="13" dsize="0" bonus="250"/>
+      <move ndize="1" dsize="250" bonus="250"/>
+      <ac>-50</ac>
+      <gold>200</gold>
+      <bankgold>0</bankgold>
+      <exp>150</exp>
+      <hitroll>25</hitroll>
+      <damroll>25</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="5283930"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="9" sides="14" add="25"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="4021" name="sedai" special="NONE">
+    <description>An ageless woman sits here, wrapped formally in her green shawl.  Although
 seeming to look relaxed, her expression leads you to believe that she is
 concentrating deeply, and is in fact very alert.  (OOC Note: Those of you 
 who can channel saidar see an aura about her).
-~
-5283930 0 0 E
-70 -5 -5 960 13d0+250 9d14+25
-200 150
-8 8 2 668
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-Bash: 100
-Trip: 100
-Dirtkick: 100
-Kick: 100
-Disarm: 100
-Stun: 100
-E
-#4022
-sedai~
-an Aes Sedai in a \c07white\c00 shawl, guarding Logain~
-An ageless woman in a \c07white\c03 shawl, with a look of concentration on her face
-~
-An ageless woman sits here, wrapped formally in her white shawl.  Although
+</description>
+    <shortdesc>an Aes Sedai in a \c02green\c00 shawl, guarding Logain</shortdesc>
+    <longdesc>An ageless woman in a \c02green\c03 shawl, with a look of concentration on her face
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="70" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="13" dsize="0" bonus="250"/>
+      <move ndize="1" dsize="250" bonus="250"/>
+      <ac>-50</ac>
+      <gold>200</gold>
+      <bankgold>0</bankgold>
+      <exp>150</exp>
+      <hitroll>25</hitroll>
+      <damroll>25</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="5283930"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="9" sides="14" add="25"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="4022" name="sedai" special="NONE">
+    <description>An ageless woman sits here, wrapped formally in her white shawl.  Although
 seeming to look relaxed, her expression leads you to believe that she is
 concentrating deeply, and is in fact very alert.  (OOC Note: Those of you
 who can channel saidar see an aura about her).
-~
-5283930 0 0 E
-70 -5 -5 960 13d0+250 9d14+25
-200 150
-8 8 2 668
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-Bash: 100
-Trip: 100
-Dirtkick: 100
-Kick: 100
-Disarm: 100
-Stun: 100
-E
-#4023
-sedai~
-an Aes Sedai in a yellow shawl, guarding Logain~
-An ageless woman in a yellow shawl, with a look of concentration on her face
-~
-An ageless woman sits here, wrapped formally in her yellow shawl.  Although
+</description>
+    <shortdesc>an Aes Sedai in a \c07white\c00 shawl, guarding Logain</shortdesc>
+    <longdesc>An ageless woman in a \c07white\c03 shawl, with a look of concentration on her face
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="70" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="13" dsize="0" bonus="250"/>
+      <move ndize="1" dsize="250" bonus="250"/>
+      <ac>-50</ac>
+      <gold>200</gold>
+      <bankgold>0</bankgold>
+      <exp>150</exp>
+      <hitroll>25</hitroll>
+      <damroll>25</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="5283930"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="9" sides="14" add="25"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="4023" name="sedai" special="NONE">
+    <description>An ageless woman sits here, wrapped formally in her yellow shawl.  Although
 seeming to look relaxed, her expression leads you to believe that she is
 concentrating deeply, and is in fact very alert.  (OOC Note: Those of you
 who can channel saidar see an aura about her).
-~
-5283930 0 0 E
-70 -5 -5 960 13d0+250 9d14+25
-200 150
-8 8 2 668
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-Bash: 100
-Trip: 100
-Dirtkick: 100
-Kick: 100
-Disarm: 100
-Stun: 100
-E
-#4024
-sedai~
-an Aes Sedai in a brown shawl, guarding Logain~
-An ageless woman in a brown shawl, with a look of concentration on her face
-~
-An ageless woman sits here, wrapped formally in her brown shawl.  Although
+</description>
+    <shortdesc>an Aes Sedai in a yellow shawl, guarding Logain</shortdesc>
+    <longdesc>An ageless woman in a yellow shawl, with a look of concentration on her face
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="70" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="13" dsize="0" bonus="250"/>
+      <move ndize="1" dsize="250" bonus="250"/>
+      <ac>-50</ac>
+      <gold>200</gold>
+      <bankgold>0</bankgold>
+      <exp>150</exp>
+      <hitroll>25</hitroll>
+      <damroll>25</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="5283930"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="9" sides="14" add="25"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="4024" name="sedai" special="NONE">
+    <description>An ageless woman sits here, wrapped formally in her brown shawl.  Although
 seeming to look relaxed, her expression leads you to believe that she is
 concentrating deeply, and is in fact very alert.  (OOC Note: Those of you
 who can channel saidar see an aura about her).
-~
-5283930 0 0 E
-70 -5 -5 960 13d0+250 9d14+25
-200 150
-8 8 2 668
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-Bash: 100
-Trip: 100
-Dirtkick: 100
-Kick: 100
-Disarm: 100
-Stun: 100
-E
-#4025
-sedai~
-an Aes Sedai in a \c00gray\c00 shawl, guarding Logain~
-An ageless woman in a \c00gray\c03 shawl, with a look of concentration on her face
-~
-An ageless woman sits here, wrapped formally in her gray shawl.  Although
+</description>
+    <shortdesc>an Aes Sedai in a brown shawl, guarding Logain</shortdesc>
+    <longdesc>An ageless woman in a brown shawl, with a look of concentration on her face
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="70" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="13" dsize="0" bonus="250"/>
+      <move ndize="1" dsize="250" bonus="250"/>
+      <ac>-50</ac>
+      <gold>200</gold>
+      <bankgold>0</bankgold>
+      <exp>150</exp>
+      <hitroll>25</hitroll>
+      <damroll>25</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="5283930"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="9" sides="14" add="25"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="4025" name="sedai" special="NONE">
+    <description>An ageless woman sits here, wrapped formally in her gray shawl.  Although
 seeming to look relaxed, her expression leads you to believe that she is
 concentrating deeply, and is in fact very alert. (OOC Note: Those of you
 who can channel saidar see an aura about her).
-~
-5283930 0 0 E
-70 -5 -5 960 13d0+250 9d14+25
-200 150
-8 8 2 668
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-Bash: 100
-Trip: 100
-Dirtkick: 100
-Kick: 100
-Disarm: 100
-Stun: 100
-E
-#4026
-dockmaster~
-a burly and gruff dockmaster~
-A large and imposing dockmaster oversees his docks with a narrow gaze
-~
-The dockmaster as a large and imposing man of about 50 years.  His well-groomed
+</description>
+    <shortdesc>an Aes Sedai in a \c00gray\c00 shawl, guarding Logain</shortdesc>
+    <longdesc>An ageless woman in a \c00gray\c03 shawl, with a look of concentration on her face
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="70" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="13" dsize="0" bonus="250"/>
+      <move ndize="1" dsize="250" bonus="250"/>
+      <ac>-50</ac>
+      <gold>200</gold>
+      <bankgold>0</bankgold>
+      <exp>150</exp>
+      <hitroll>25</hitroll>
+      <damroll>25</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="5283930"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="9" sides="14" add="25"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="4026" name="dockmaster" special="NONE">
+    <description>The dockmaster as a large and imposing man of about 50 years.  His well-groomed
 hair and beard are salt-and-peppered with his age.  All things concerning his
 docks meet the harshest of scrutiny, yet otherwise he is often seen as an
 affable and likable fellow about town.
-~
-1048666 0 0 E
-50 5 0 960 13d200+0 9d9+15
-300 150
-8 8 1 668
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-Bash: 100
-Trip: 100
-Kick: 100
-Stun: 100
-E
-#4027
-sedai yellow helpful woman~
-a helpful Yellow Sedai~
-A woman in a yellow silk dress is kneeling here, beside a little boy
-~
-This ageless woman smiles at you briefly as you enter, but turns quickly back
+</description>
+    <shortdesc>a burly and gruff dockmaster</shortdesc>
+    <longdesc>A large and imposing dockmaster oversees his docks with a narrow gaze
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="50" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="13" dsize="200" bonus="0"/>
+      <move ndize="1" dsize="0" bonus="0"/>
+      <ac>0</ac>
+      <gold>300</gold>
+      <bankgold>0</bankgold>
+      <exp>150</exp>
+      <hitroll>15</hitroll>
+      <damroll>15</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1048666"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="9" sides="9" add="15"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="4027" name="sedai yellow helpful woman" special="NONE">
+    <description>This ageless woman smiles at you briefly as you enter, but turns quickly back
 to the little boy who is showing her his scrapes, which she tends to carefully.
-~
-5279818 0 0 E
-70 -5 -5 960 13d0+250 9d14+25
-250 150
-8 8 2 668
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-Trip: 100
-Kick: 100
-E
-#4028
-little boy~
-a little boy with a scraped knee~
-A little boy shows an ageless woman his scraped knee 
-~
-The little boy looks up at the ageless woman teary-eyed as he points to his
+</description>
+    <shortdesc>a helpful Yellow Sedai</shortdesc>
+    <longdesc>A woman in a yellow silk dress is kneeling here, beside a little boy
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="70" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="13" dsize="0" bonus="250"/>
+      <move ndize="1" dsize="250" bonus="250"/>
+      <ac>-50</ac>
+      <gold>250</gold>
+      <bankgold>0</bankgold>
+      <exp>150</exp>
+      <hitroll>25</hitroll>
+      <damroll>25</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="5279818"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="9" sides="14" add="25"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="4028" name="little boy" special="NONE">
+    <description>The little boy looks up at the ageless woman teary-eyed as he points to his
 bruised and scraped knee.  He winces extravagantly in imagined pain as she
 delicately tends to him.
-~
-1048666 0 0 E
-10 18 8 960 9d50+25 5d5+2
-5 100
-8 8 1 668
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-E
-#4029
-confident aes sedai~
-a confident Aes Sedai~
-An ageless woman, wrapped in a shawl, strides confidently through the streets
-~
-An ageless woman glides from place to place with an air of confidence and
+</description>
+    <shortdesc>a little boy with a scraped knee</shortdesc>
+    <longdesc>A little boy shows an ageless woman his scraped knee 
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="10" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="9" dsize="50" bonus="25"/>
+      <move ndize="1" dsize="25" bonus="25"/>
+      <ac>80</ac>
+      <gold>5</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>2</hitroll>
+      <damroll>2</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1048666"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="5" sides="5" add="2"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="4029" name="confident aes sedai" special="NONE">
+    <description>An ageless woman glides from place to place with an air of confidence and
 grace.  She seems to be in complete control, and the novices and Accepted
 scurrying by curtsey to her constantly.
-~
-5288024 512 0 E
-60 -20 -5 960 30d0+700 10d15+40
-100 125
-8 8 2 668
-BareHandAttack: 5
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-Bash: 100
-Trip: 100
-Dirtkick: 100
-Kick: 100
-Disarm: 100
-P
-OnAttack
-Cast "fireball"
-End
-Q
-E
-#4030
-warder fierce protective man~
-a warder following his Sedai~
-A fierce and protective man follows the ageless woman 
-~
-This man looks like one whom you would think twice about crossing, he is
+</description>
+    <shortdesc>a confident Aes Sedai</shortdesc>
+    <longdesc>An ageless woman, wrapped in a shawl, strides confidently through the streets
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="60" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="30" dsize="0" bonus="700"/>
+      <move ndize="1" dsize="700" bonus="700"/>
+      <ac>-50</ac>
+      <gold>100</gold>
+      <bankgold>0</bankgold>
+      <exp>125</exp>
+      <hitroll>40</hitroll>
+      <damroll>40</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="5288024"/>
+    <affected one="512" two="0" three="0" four="0"/>
+    <attack type="5"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="10" sides="15" add="40"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnAttack" argtype="STRING" argument="knock">
+      <action number="Cast" argtype="STRING" argument="fireball"/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="4030" name="warder fierce protective man" special="NONE">
+    <description>This man looks like one whom you would think twice about crossing, he is
 large and strong, and his movements seem to remind you of a man moving in
 battle more than anything else....he seems to be looking for someone...
-~
-1052760 512 0 E
-60 -15 -5 960 30d35+400 14d16+35
-100 100
-8 8 1 668
-BareHandAttack: 3
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-Bash: 100
-Trip: 100
-Dirtkick: 100
-Kick: 100
-Disarm: 100
-Stun: 100
-P
-OnMobAttack & ! Sneaking
-Doing "sneaking in an area they shouldn't be!"
-Action "dirt kicking"
-End
-Q
-E
-#4031
-Moe barkeep~
-Moe~
-Moe the Barkeep stands wiping off the counter
-~
-Moe the barkeeper of Salidar has set up his tavern overlooking
+</description>
+    <shortdesc>a warder following his Sedai</shortdesc>
+    <longdesc>A fierce and protective man follows the ageless woman 
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="60" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="30" dsize="35" bonus="400"/>
+      <move ndize="1" dsize="400" bonus="400"/>
+      <ac>-50</ac>
+      <gold>100</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>35</hitroll>
+      <damroll>35</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1052760"/>
+    <affected one="512" two="0" three="0" four="0"/>
+    <attack type="3"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="14" sides="16" add="35"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnMobAttack" argtype="STRING" argument="knock">
+      <sideterm number="Sneaking" not="TRUE" argtype="VOID" argument="NONE"/>
+      <action number="Doing" argtype="STRING" argument="sneaking in an area they shouldn't be!"/>
+      <action number="Action" argtype="STRING" argument="dirt kicking"/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="4031" name="Moe barkeep" special="NONE">
+    <description>Moe the barkeeper of Salidar has set up his tavern overlooking
 the River Eldar.  His thick mass of brown curly hair frames his
 rugged looking bearded face.  His manner seems gruff but
 behind those sparkling blue eyes is a man who has many
 tales to tell.
-~
-57354 0 1000 E
-100 -180 10 960 1d100+0 1d1+50
-0 0
-8 8 1 668
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-P
-OnEntry
-Say "welcome to the blue heron tavern, take a seat and enjoy yourself"
-Action "smile"
-End
-OnRandom 50
-Say "can i get you something to drink??"
-End
-OnRandom 50
-Emote "moe wipes off the counter and smiles wistfully as he looks out over the river."
-End
-Q
-E
-#4032
-milla innkeeper woman~
-Milla, Innkeeper of the Blue Lady Rising~
-Milla, Innkeeper of the Blue Lady Rising
-~
-Milla is a native of Altara, near to Ebou Dar. She always
+</description>
+    <shortdesc>Moe</shortdesc>
+    <longdesc>Moe the Barkeep stands wiping off the counter
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="100" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="0"/>
+      <move ndize="1" dsize="0" bonus="0"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>200</hitroll>
+      <damroll>50</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="9232394"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="200"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnEntry" argtype="STRING" argument="knock">
+      <action number="Say" argtype="STRING" argument="welcome to the blue heron tavern, take a seat and enjoy yourself"/>
+      <action number="Action" argtype="STRING" argument="smile"/>
+    </mobprog>
+    <mobprog main="OnRandom" argtype="INT" argument="50">
+      <action number="Say" argtype="STRING" argument="can i get you something to drink??"/>
+    </mobprog>
+    <mobprog main="OnRandom" argtype="INT" argument="50">
+      <action number="Emote" argtype="STRING" argument="moe wipes off the counter and smiles wistfully as he looks out over the river."/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="4032" name="milla innkeeper woman" special="NONE">
+    <description>Milla is a native of Altara, near to Ebou Dar. She always
 has a friendly smile and a warm greeting for those who
 enter her inn. There is a saying in Salidar that if you ever
 need a friend, then go see Milla. Her dark eyes seem to 
 smile at you.
-~
-1105930 0 1000 E
-100 20 10 960 1d500+0 1d1+0
-0 0
-8 8 2 668
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-E
-#4033
-guard jail salidar~
-a jail guard~
-A young man stands here guarding the jail.
-~
-It looks, err, unfinished.
-~
-26 32 0 E
-200 20 10 960 1d100+0 1d1+0
-0 0
-8 8 1 668
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-P
-OnSayTo "I am here to get the prisoner" & CarryingName "key salidar jail"
-Emote "The guards nods at you and steps aside."
-Action "north"
-Pause 30
-Move "s"
-End
-OnAction "west" & Guild "rebel aes sedai"
-Stop
-SayTo "Sorry, you are not allowed in here."
-End
-OnAction "west" & Guild "rebel warder"
-Stop
-SayTo "Don't you have an Aes Sedai to protect or something?"
-End
-Q
-E
-#4091
-mob unfinished~
-the unfinished mob~
-An unfinished mob stands here.
-~
-It looks, err, unfinished.
-~
-8 0 0 E
-0 20 10 960 1d100+0 1d1+0
-0 0
-8 8 0 668
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-P
-OnRandom 5
-Emote "wipes off the counter as he looks out at the river."
-End
-Q
-E
-#4098
-fireplace~
-a fireplace lining the northern wall~
-\c07 A fireplace lining the north wall\c00
-~
-The fireplace fills the whole northern wall..the bricks are cracked
+</description>
+    <shortdesc>Milla, Innkeeper of the Blue Lady Rising</shortdesc>
+    <longdesc>Milla, Innkeeper of the Blue Lady Rising
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="100" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="500" bonus="0"/>
+      <move ndize="1" dsize="0" bonus="0"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="10280970"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="4033" name="guard jail salidar" special="NONE">
+    <description>It looks, err, unfinished.
+</description>
+    <shortdesc>a jail guard</shortdesc>
+    <longdesc>A young man stands here guarding the jail.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="200" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="0"/>
+      <move ndize="1" dsize="0" bonus="0"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="26"/>
+    <affected one="32" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnSayTo" argtype="STRING" argument="I am here to get the prisoner">
+      <sideterm number="CarryingName" not="FALSE" argtype="STRING" argument="key salidar jail"/>
+      <action number="Emote" argtype="STRING" argument="The guards nods at you and steps aside."/>
+      <action number="Action" argtype="STRING" argument="north"/>
+      <action number="Pause" argtype="INT" argument="30"/>
+      <action number="Move" argtype="STRING" argument="s"/>
+    </mobprog>
+    <mobprog main="OnAction" argtype="STRING" argument="west">
+      <sideterm number="Guild" not="FALSE" argtype="STRING" argument="rebel aes sedai"/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="SayTo" argtype="STRING" argument="Sorry, you are not allowed in here."/>
+    </mobprog>
+    <mobprog main="OnAction" argtype="STRING" argument="west">
+      <sideterm number="Guild" not="FALSE" argtype="STRING" argument="rebel warder"/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="SayTo" argtype="STRING" argument="Don't you have an Aes Sedai to protect or something?"/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="4058" name="warder guard" special="NONE">
+    <description>It looks, err, unfinished.
+</description>
+    <shortdesc>the hidden warder</shortdesc>
+    <longdesc>The hidden warder is here standing guard.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="199" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="1" bonus="14999"/>
+      <move ndize="1" dsize="14999" bonus="14999"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="2088986"/>
+    <affected one="50" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <dgscript vnum="4058"/>
+  </mobile>
+  <mobile vnum="4076" name="board guardian rebel tower" special="NONE">
+    <description>It looks, err, unfinished.
+</description>
+    <shortdesc>the board guardian</shortdesc>
+    <longdesc>The board guardian stands here.
+</longdesc>
+    <title/>
+    <chardata gender="NEUTRAL" class="Adventurer" level="200" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="1" bonus="1"/>
+      <move ndize="1" dsize="1" bonus="1"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="10"/>
+    <affected one="2" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnAction" argtype="STRING" argument="write look read board">
+      <sideterm number="Wearing" not="TRUE" argtype="STRING" argument="3605"/>
+      <sideterm number="Wearing" not="TRUE" argtype="STRING" argument="4028"/>
+      <sideterm number="Carrying" not="TRUE" argtype="STRING" argument="4030"/>
+      <sideterm number="Wearing" not="TRUE" argtype="STRING" argument="3689"/>
+      <sideterm number="Carrying" not="TRUE" argtype="STRING" argument="3689"/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="4091" name="mob unfinished" special="NONE">
+    <description>It looks, err, unfinished.
+</description>
+    <shortdesc>the unfinished mob</shortdesc>
+    <longdesc>An unfinished mob stands here.
+</longdesc>
+    <title/>
+    <chardata gender="NEUTRAL" class="Adventurer" level="0" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="0"/>
+      <move ndize="1" dsize="0" bonus="0"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="8"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnRandom" argtype="INT" argument="5">
+      <action number="Emote" argtype="STRING" argument="wipes off the counter as he looks out at the river."/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="4098" name="fireplace" special="NONE">
+    <description>The fireplace fills the whole northern wall..the bricks are cracked
 but it has been kept swept and clean.
-~
-8 0 0 E
-0 20 10 960 1d100+0 1d1+0
-0 0
-8 8 0 668
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-E
-#4099
-postmistress~
-the postmistress of Salidar~
-The Postmistress of Salidar stands here
-~
-A woman with a large, warm smile stands here shuffling through envelopes...
+</description>
+    <shortdesc>a fireplace lining the northern wall</shortdesc>
+    <longdesc>\c07 A fireplace lining the north wall\c00
+</longdesc>
+    <title/>
+    <chardata gender="NEUTRAL" class="Adventurer" level="0" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="0"/>
+      <move ndize="1" dsize="0" bonus="0"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="8"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="4099" name="postmistress" special="PostMaster">
+    <description>A woman with a large, warm smile stands here shuffling through envelopes...
 some of them may be yours...why do you ask her if you can RECEIVE them?
-~
-1048586 0 0 E
-0 20 10 960 1d100+0 1d1+0
-0 0
-8 8 2 668
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-E
-$
+</description>
+    <shortdesc>the postmistress of Salidar</shortdesc>
+    <longdesc>The Postmistress of Salidar stands here
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="0" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="0"/>
+      <move ndize="1" dsize="0" bonus="0"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1048586"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+</mobiles>

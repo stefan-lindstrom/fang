@@ -2,110 +2,148 @@
 <rooms>
   <room>
     <roombasic title="Outside Aringill" vnum="28000" zone="280">
-      <roomdescription>You are standing outside of the beautiful city of Aringill. 
-The path leads east to the city of Aringill. Or you can travel west and 
-eventually you will reach Caemlyn.
+      <roomdescription>To the east from this small hillock can be seen the walled city of
+Aringill.  On a clear day or moonlit night, the river Erinin can be seen
+winding north and south of the city.  A well-paved road leads east down to
+the gates and west to Caemlyn according to a large &amp;Wsign&amp;n on the north side
+of the road.    
 </roomdescription>
-      <flags>0</flags>
+      <flags>4</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
-    <exit direction="east" keyword="" exitinfo="0" keynum="0" toroom="28001">
+    <exit direction="north" keyword="bushes secret door" exitinfo="19" keynum="0" toroom="28158">
       <description/>
+    </exit>
+    <exit direction="east" keyword="" exitinfo="0" keynum="0" toroom="28001">
+      <description>A well-paved road leads downhill to the city gates.
+</description>
     </exit>
     <exit direction="west" keyword="" exitinfo="0" keynum="0" toroom="28208">
-      <description/>
+      <description>A well-paved and maintained road leads off to the west.
+</description>
     </exit>
+    <exdesc keyword="sign">
+      <description>
+&amp;W                              &lt;-  Caemlyn               
+&amp;W                              Aringill -&gt;               
+&amp;n
+</description>
+    </exdesc>
   </room>
   <room>
-    <roombasic title="Aringill&apos;s West Gate" vnum="28001" zone="280">
-      <roomdescription>A large, stone gate stands here. If you venture westward and follow the
-road, you will come to Caemlyn. The guards watch you carefully as you stand here.
-From the reports of wars in other countries, they don&apos;t want any trouble
-here.
+    <roombasic title="Aringill's West Gate" vnum="28001" zone="280">
+      <roomdescription>A large, stone gateway is set into the wall here.  The gate itself is made
+of iron and is kept open during the day, but appears well oiled and as if
+it could be closed very quickly.  It is shut shortly before sunset and
+opened again at full light.  Armed and armored guards watch the gate at
+all times with regular patrols passing by as well.    
 </roomdescription>
-      <flags>0</flags>
+      <flags>256</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
     <exit direction="east" keyword="" exitinfo="0" keynum="0" toroom="28002">
-      <description/>
+      <description>Just inside the gate to the east is a four way intersection.  The road
+from the gate continues to the east, becoming the main street.    
+</description>
     </exit>
     <exit direction="west" keyword="" exitinfo="0" keynum="0" toroom="28000">
-      <description/>
+      <description>To the west the road leads out of the city.
+</description>
     </exit>
   </room>
   <room>
     <roombasic title="Wall Road" vnum="28002" zone="280">
-      <roomdescription>You are now standing just inside the West Gate of Aringill.
-The street is paved with flat grey stones and the high stone wings of 
-the walls stretch north and south of here on one side of the road. 
-Another road travels east, into the center of the city.
-The Wall Road continues north and south for quite a ways.
+      <roomdescription>Here, just inside the West Gate, the street is paved with flat grey stones
+and the high stone wings of the walls stretch north and south of here on
+the west side of the road.  Another road travels east, into the center of
+the city.  The Wall Road continues north and south for quite a ways.    
 </roomdescription>
       <flags>0</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
     <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="28003">
-      <description/>
+      <description>The wall road runs north for quite some distance.
+</description>
     </exit>
     <exit direction="east" keyword="" exitinfo="0" keynum="0" toroom="28069">
-      <description/>
+      <description>Aringill Street runs east through the city. It seems to be the main street.
+</description>
     </exit>
     <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="28056">
-      <description/>
+      <description>The Wall Road runs south for quite a ways.
+</description>
     </exit>
     <exit direction="west" keyword="" exitinfo="0" keynum="0" toroom="28001">
-      <description/>
+      <description>The West Gate is nearby to the west.
+</description>
     </exit>
   </room>
   <room>
     <roombasic title="Wall Road" vnum="28003" zone="280">
-      <roomdescription>The walls of Aringill stretch north and south from here. Houses line the road
-here and are made of wood. The small roofs are mostly made of tile, but
-a few of the slightly larger ones are made of thatch.
+      <roomdescription>The walls of Aringill stretch north and south from here.  Houses line the
+road here and are made of wood.  The small roofs are mostly made of tile,
+but a few of the slightly larger ones are made of thatch.    
 </roomdescription>
       <flags>0</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
     <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="28004">
-      <description/>
+      <description>Wall Road continues to the north for quite a ways.
+</description>
     </exit>
     <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="28002">
-      <description/>
+      <description>Wall Road and Aringill Street intersect to the south.
+</description>
     </exit>
   </room>
   <room>
     <roombasic title="Wall Road" vnum="28004" zone="280">
-      <roomdescription>You are travelling on Arnigill&apos;s Wall Road that keeps the citizens safe
-from the bandits and other things that lurk around the city at night.
-Usually it is quite safe outside, but lately things have changed...
+      <roomdescription>The walls of Aringill stretch north and south from here.  Houses line the
+road here and are made of wood.  The small roofs are mostly made of tile,
+but a few of the slightly larger ones are made of thatch.    
 </roomdescription>
       <flags>0</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
     <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="28005">
-      <description/>
+      <description>
+The road continues to the north.  Further to the north, the houses seem
+even smaller and in worse repair.    
+</description>
     </exit>
     <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="28003">
-      <description/>
+      <description>The intersection before the West Gate can be seen in the distance.    
+</description>
     </exit>
   </room>
   <room>
     <roombasic title="Wall Road" vnum="28005" zone="280">
-      <roomdescription>A small house on your right appears to have burnt to the ground.
-People seem to hurry by instead of looking at the ruins. Apparently something
-more has happened than just a house burning down.
+      <roomdescription>The walls of Aringill stretch north and south from here.  Houses lining
+the road here are made of wood.  They are smaller and in worse repair than
+those to the south.  A small house on the east side of the road appears to
+have burned to the ground.  Most of the traffic here gives the ruin a wide
+berth.  The rubble has not been cleared away, yet, although it seems to
+have been here for quite some time.  With the crowding in the city, it is
+unusual that the space has not been reclaimed.    
 </roomdescription>
       <flags>0</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
     <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="28006">
-      <description/>
+      <description>
+The road continues.  In the distance, the northwest watchtower can be seen
+rising over the walls.    
+</description>
+    </exit>
+    <exit direction="east" keyword="" exitinfo="0" keynum="0" toroom="28155">
+      <description>The rubble looks incredibly unsafe.
+</description>
     </exit>
     <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="28004">
       <description/>
@@ -113,9 +151,9 @@ more has happened than just a house burning down.
   </room>
   <room>
     <roombasic title="Wall Road" vnum="28006" zone="280">
-      <roomdescription>Various peddlers stroll down this street hawking their goods to the commoners.
-If you are looking for it, chances are that some merchant will be selling
-it or something like it.
+      <roomdescription>The houses that line the road here are ramshackle at best.  Most seem to
+be unoccupied.  Even the ones with people obviously living in them are not
+in much better repair.    
 </roomdescription>
       <flags>0</flags>
       <sector>City</sector>
@@ -130,9 +168,11 @@ it or something like it.
   </room>
   <room>
     <roombasic title="Wall Road" vnum="28007" zone="280">
-      <roomdescription>Well, this is the northwest corner of Aringill. The Wall Road leads
-both east and south of here. A small dog walks by and several ordinary
-looking shops can be seen on both streets.
+      <roomdescription>A watchtower rises well above the wall here at the northwest corner of the
+city.  The Wall Road leads east and south.  Several members of the City
+Watch are stationed at the base of the tower.  Soldiers occupy the tower
+and patrol along the top of the wall at all hours of the day and night.  
+
 </roomdescription>
       <flags>0</flags>
       <sector>City</sector>
@@ -147,9 +187,9 @@ looking shops can be seen on both streets.
   </room>
   <room>
     <roombasic title="Wall Road" vnum="28008" zone="280">
-      <roomdescription>This part of the Wall Road of Aringill goes east and west. Up on the 
-wall, a few soldiers walk along the top to ensure the safety of the
-citizens who live inside the city.
+      <roomdescription>The Wall Road runs east and west.  Soldiers constantly patrol along the
+heights.  Regular patrols of the City Watch maintain the peace in the
+streets, but are not as constant a presense as the soldiers above.    
 </roomdescription>
       <flags>0</flags>
       <sector>City</sector>
@@ -164,9 +204,9 @@ citizens who live inside the city.
   </room>
   <room>
     <roombasic title="Wall Road" vnum="28009" zone="280">
-      <roomdescription>This part of Wall Road is fairly quiet. Not many peddlers are around here.
-Many old, abandoned shops and houses are located around here. Most of them
-seem to be made of brick, with stone and tile for roofing.
+      <roomdescription>Most of the buildings along the road here seem abandoned, although some do
+show signs of being occupied by squatters.  The buildings are generally of
+stone or brick, showing that this was once a prosperous area.    
 </roomdescription>
       <flags>0</flags>
       <sector>City</sector>
@@ -181,9 +221,9 @@ seem to be made of brick, with stone and tile for roofing.
   </room>
   <room>
     <roombasic title="Wall Road" vnum="28010" zone="280">
-      <roomdescription>Wall Road goes east and west, as well as south of here. The south road
-is part of Kintara Avenue and will lead onto Aringill Street.
-Aringill Street spans the entire city from west to east.
+      <roomdescription>Kintara Avenue connects to the Wall Road from the south here.  The avenue
+is a broad, well-maintained brick street.  It makes a sharp contrast with
+the rundown condition of the Wall Road and the buildings along it.    
 </roomdescription>
       <flags>0</flags>
       <sector>City</sector>
@@ -273,9 +313,9 @@ and exits on the east of the city.
   </room>
   <room>
     <roombasic title="Wall Road" vnum="28015" zone="280">
-      <roomdescription>This portion of Aringill&apos;s Wall Road seems fairly well traveled. A 
+      <roomdescription>This portion of Aringill's Wall Road seems fairly well traveled. A 
 strangely-dressed peddler motions you to come over, but he has an
-unfriendly glint in his eyes. He doesn&apos;t look that friendly.
+unfriendly glint in his eyes. He doesn't look that friendly.
 </roomdescription>
       <flags>0</flags>
       <sector>City</sector>
@@ -381,7 +421,7 @@ unnamed street. That street eventually connects to Aringill Street.
   </room>
   <room>
     <roombasic title="Wall Road" vnum="28021" zone="280">
-      <roomdescription>This is a fairly normal part of Aringill&apos;s Wall Road. People walk
+      <roomdescription>This is a fairly normal part of Aringill's Wall Road. People walk
 both ways along the great stone walls and peddlers sell their wares.
 </roomdescription>
       <flags>0</flags>
@@ -397,7 +437,7 @@ both ways along the great stone walls and peddlers sell their wares.
   </room>
   <room>
     <roombasic title="Wall Road" vnum="28022" zone="280">
-      <roomdescription>This is a fairly normal part of Aringill&apos;s Wall Road. People walk
+      <roomdescription>This is a fairly normal part of Aringill's Wall Road. People walk
 both ways along the great stone walls and peddlers sell their wares.
 </roomdescription>
       <flags>0</flags>
@@ -413,7 +453,7 @@ both ways along the great stone walls and peddlers sell their wares.
   </room>
   <room>
     <roombasic title="Wall Road" vnum="28023" zone="280">
-      <roomdescription>This is a fairly normal part of Aringill&apos;s Wall Road. People walk
+      <roomdescription>This is a fairly normal part of Aringill's Wall Road. People walk
 both ways along the great stone walls and peddlers sell their wares.
 Nothing truly out of the ordinary around here...
 </roomdescription>
@@ -449,7 +489,7 @@ people talking... perhaps from the great Square of Aringill.
     <roombasic title="Wall Road" vnum="28025" zone="280">
       <roomdescription>This part of Wall Road goes north to the northeast corner of Aringill
 and south toward the East Gate. A few people walk here, but not many
-people are talking. Guess they don&apos;t have much to say. Unless there
+people are talking. Guess they don't have much to say. Unless there
 is some reason for them not to be able to trust each other...
 </roomdescription>
       <flags>0</flags>
@@ -500,7 +540,7 @@ as many as would be expected.
   <room>
     <roombasic title="Wall Road" vnum="28028" zone="280">
       <roomdescription>More people seem to be on Wall Road, although many more really could
-be here. South of here lies the intersection leading to Aringill&apos;s East Gate.
+be here. South of here lies the intersection leading to Aringill's East Gate.
 Most people use the West Gate or the North or South ports to leave the
 city, however.
 </roomdescription>
@@ -539,7 +579,7 @@ grand Square of Aringill. North and south of here, the Wall Road continues.
     </exit>
   </room>
   <room>
-    <roombasic title="Aringill&apos;s East Gate" vnum="28030" zone="280">
+    <roombasic title="Aringill's East Gate" vnum="28030" zone="280">
       <roomdescription>This is the Eastern Gate of Aringill. Travelling west will take you onto
 Aringill Street, through the center of town, and eventually exit on the
 west side of the city. The actual East Gate has been boarded up and
@@ -827,8 +867,8 @@ totally perfect and very strong.
   <room>
     <roombasic title="Wall Road" vnum="28046" zone="280">
       <roomdescription>Wall Road can be travelled on by going either east or west. North of here
-lies one of Aringill&apos;s favorite inns, the Riverman. It is not too expensive,
-although it isn&apos;t truly cheap either.
+lies one of Aringill's favorite inns, the Riverman. It is not too expensive,
+although it isn't truly cheap either.
 If you are looking for a good rest and perhaps a drink or two, the Riverman
 would be a good choice.
 </roomdescription>
@@ -971,7 +1011,7 @@ this way from the north. Apparently, the West Gate is fairly close now.
     <roombasic title="Wall Road" vnum="28054" zone="280">
       <roomdescription>This part of Wall Road is fairly quiet. A few children are playing in
 an alley with a few sticks. A few houses are around here too, although
-they aren&apos;t in very good shape.
+they aren't in very good shape.
 </roomdescription>
       <flags>0</flags>
       <sector>City</sector>
@@ -1038,8 +1078,8 @@ you will eventually reach the grand Square of Aringill.
   </room>
   <room>
     <roombasic title="The North Gate" vnum="28058" zone="280">
-      <roomdescription>You are standing inside Aringill&apos;s North Gate. North of here lies one of
-Aringill&apos;s great docks, the Northern Dock. Many boats travel on the rivers
+      <roomdescription>You are standing inside Aringill's North Gate. North of here lies one of
+Aringill's great docks, the Northern Dock. Many boats travel on the rivers
 through this region and dock there. South will take you into the city proper.
 </roomdescription>
       <flags>0</flags>
@@ -1067,11 +1107,6 @@ book passage somewhere. That is, provided you can afford it.
     <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="28057">
       <description/>
     </exit>
-    <exit direction="east" keyword="The port of Southern Dock of Aringill
-" exitinfo="0" keynum="-1" toroom="32698">
-      <description>A gangplank leading aboard the ship MS Flygande Otto.
-</description>
-    </exit>
   </room>
   <room>
     <roombasic title="The Northern Dock of Aringill" vnum="28060" zone="280">
@@ -1084,6 +1119,9 @@ those destinations for you.
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
+    <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="31527">
+      <description/>
+    </exit>
     <exit direction="east" keyword="" exitinfo="0" keynum="0" toroom="28153">
       <description/>
     </exit>
@@ -1092,7 +1130,7 @@ those destinations for you.
     <roombasic title="Erinin Way" vnum="28061" zone="280">
       <roomdescription>You are now on Erinin Way. North of here is the big northern intersection
 of Aringill. South of here, Erinin Way continues. There seems to be a large
-number of small animals around here. Fortunately, you don&apos;t see many
+number of small animals around here. Fortunately, you don't see many
 rats.
 </roomdescription>
       <flags>0</flags>
@@ -1109,7 +1147,7 @@ rats.
   <room>
     <roombasic title="Erinin Way" vnum="28062" zone="280">
       <roomdescription>You are still travelling on Erinin Way. It continues north and south
-of here. Aringill&apos;s best stable is located east of here. Nowhere in 
+of here. Aringill's best stable is located east of here. Nowhere in 
 this region can better or faster horses be bought.
 </roomdescription>
       <flags>0</flags>
@@ -1159,6 +1197,10 @@ may find them at the square because it is such a popular gathering place.
     </exit>
     <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="28084">
       <description/>
+    </exit>
+    <exit direction="west" keyword="door" exitinfo="3" keynum="31579" toroom="31576">
+      <description>You see nothing special.
+</description>
     </exit>
   </room>
   <room>
@@ -1364,7 +1406,7 @@ so large as some of the other ones located around here.
       <description/>
     </exit>
     <exdesc keyword="plaque brass sign">
-      <description>Molly&apos;s Remedies: The finest wisdom in town!
+      <description>Molly's Remedies: The finest wisdom in town!
 </description>
     </exdesc>
   </room>
@@ -1408,7 +1450,7 @@ and look as if nobody has used them for years.
       <roomdescription>You are walking down Aringill Street. The houses here, though a few are
 large and appear to be in good condition, are mostly in bad shape.
 Nobody who appears to have any money can be seen. Apparently they
-know they wouldn&apos;t keep it long around here.
+know they wouldn't keep it long around here.
 </roomdescription>
       <flags>0</flags>
       <sector>City</sector>
@@ -1429,7 +1471,7 @@ know they wouldn&apos;t keep it long around here.
       <roomdescription>You are walking down Aringill Street. The houses here, though a few are
 large and appear to be in good condition, are mostly in bad shape.
 Nobody who appears to have any money can be seen. Apparently they
-know they wouldn&apos;t keep it long around here.
+know they wouldn't keep it long around here.
 </roomdescription>
       <flags>0</flags>
       <sector>City</sector>
@@ -1471,7 +1513,7 @@ lie inside.
       <roomdescription>You are walking down Aringill Street. The houses here, though a few are
 large and appear to be in good condition, are mostly in bad shape.
 Nobody who appears to have any money can be seen. Apparently they
-know they wouldn&apos;t keep it long around here.
+know they wouldn't keep it long around here.
 </roomdescription>
       <flags>0</flags>
       <sector>City</sector>
@@ -1489,7 +1531,7 @@ know they wouldn&apos;t keep it long around here.
       <roomdescription>You are walking down Aringill Street. The houses here, though a few are
 large and appear to be in good condition, are mostly in bad shape.
 Nobody who appears to have any money can be seen. Apparently they
-know they wouldn&apos;t keep it long around here.
+know they wouldn't keep it long around here.
 </roomdescription>
       <flags>0</flags>
       <sector>City</sector>
@@ -1507,7 +1549,7 @@ know they wouldn&apos;t keep it long around here.
       <roomdescription>You are walking down Aringill Street. The houses here, though a few are
 large and appear to be in good condition, are mostly in bad shape.
 Nobody who appears to have any money can be seen. Apparently they
-know they wouldn&apos;t keep it long around here.
+know they wouldn't keep it long around here.
 </roomdescription>
       <flags>0</flags>
       <sector>City</sector>
@@ -1546,10 +1588,6 @@ for people who wish to find a kindred soul to talk to.
     </exit>
     <exit direction="up" keyword="" exitinfo="0" keynum="0" toroom="28152">
       <description/>
-    </exit>
-    <exit direction="northeast" keyword="" exitinfo="0" keynum="0" toroom="23415">
-      <description>The Temporary location for the Queen&apos;s Armies is in this direction.
-</description>
     </exit>
   </room>
   <room>
@@ -1715,15 +1753,15 @@ and act nice and polite.
     </exit>
   </room>
   <room>
-    <roombasic title="Jacor&apos;s Academy" vnum="28093" zone="280">
-      <roomdescription>You are standing inside of a large building. A tall man with large
-muscles grunts at you as you walk in and points at a poster on the
-wall. You try to ask him a question, but he merely shakes his head
-and points at the poster again.
+    <roombasic title="Jacor's Academy" vnum="28093" zone="280">
+      <roomdescription>Inside this large building people train in various fighting techniques.  
+Weapons racks line the walls.  A dozen sparring circles dot the wide
+hardwood floor.  Fencing posts and dummies occupy the open spaces between
+the rings.    
 </roomdescription>
-      <flags>154</flags>
+      <flags>28</flags>
       <sector>Inside</sector>
-      <special>NONE</special>
+      <special>SkillShop</special>
     </roombasic>
     <exit direction="east" keyword="" exitinfo="0" keynum="0" toroom="28086">
       <description/>
@@ -1733,7 +1771,7 @@ and points at the poster again.
     <roombasic title="\c00The Three \c04Streams\c00" vnum="28094" zone="280">
       <roomdescription>\c00You are standing in the lobby of the Three \c04Streams\c00 Inn.
 Although it is small, perhaps you can get something warm to eat before 
-leaving. I wouldn&apos;t ask for a room, because there are already some people
+leaving. I wouldn't ask for a room, because there are already some people
 sleeping on small cots on one side of this room.
 </roomdescription>
       <flags>154</flags>
@@ -1745,7 +1783,7 @@ sleeping on small cots on one side of this room.
     </exit>
   </room>
   <room>
-    <roombasic title="Nelson&apos;s Goods" vnum="28095" zone="280">
+    <roombasic title="Nelson's Goods" vnum="28095" zone="280">
       <roomdescription>The interior of this store is filled with every imaginable weapon.
 Everything from Andoran swords to Taraboner daggers and even some
 Aiel Spears can be seen decorating the walls or hanging behind
@@ -1775,10 +1813,10 @@ golden shield lying on a shelf behind the counter.
     </exit>
   </room>
   <room>
-    <roombasic title="Rhada&apos;s Grocery" vnum="28097" zone="280">
+    <roombasic title="Rhada's Grocery" vnum="28097" zone="280">
       <roomdescription>As you walk into this store, you catch a whiff of freshly baked pastries.
 You also see many fruits and vegetables, as well as traveling rations
-around the room. The words of the store, Rhada&apos;s Grocery, are spelled
+around the room. The words of the store, Rhada's Grocery, are spelled
 out on one wall of the store using celery stalks and dried carrots
 and the like.
 </roomdescription>
@@ -1804,7 +1842,7 @@ and the like.
   </room>
   <room>
     <roombasic title="The Silver Horseshoe" vnum="28099" zone="280">
-      <roomdescription>You are standing inside of one of Aringill&apos;s finest taverns. Although
+      <roomdescription>You are standing inside of one of Aringill's finest taverns. Although
 it is not really well-known, only the best people are served and
 the food is some of the best in the lands.
 </roomdescription>
@@ -1893,7 +1931,7 @@ with red and white ceramic tiles.
   </room>
   <room>
     <roombasic title="&lt;EMPTY&gt;" vnum="28104" zone="280">
-      <roomdescription>Quite odd... this room doesn&apos;t look like it is a regular part of the
+      <roomdescription>Quite odd... this room doesn't look like it is a regular part of the
 tavern. If you are here, either Juziynn invited you, or you killed him
 and took his key. A soft-looking sofa lies in one corner and a large
 beanbag lies in the middle of the room.
@@ -1902,17 +1940,17 @@ beanbag lies in the middle of the room.
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
-    <exdesc keyword="bean bag beanbag">
-      <description>The beanbag is huge and seems to have a permanent impression of a person
-in it. It, although seemingly old, doesn&apos;t appear to lost too much
-of its beans in the years Juziynn has had it. Although where he found
-a beanbag is beyond me.
-</description>
-    </exdesc>
     <exdesc keyword="sofa">
       <description>The sofa looks very soft and comfortable. Under one of the cushions
 you find a piece of paper with the name Taernim on it. Looks to be
 some sort of address...
+</description>
+    </exdesc>
+    <exdesc keyword="bean bag beanbag">
+      <description>The beanbag is huge and seems to have a permanent impression of a person
+in it. It, although seemingly old, doesn't appear to lost too much
+of its beans in the years Juziynn has had it. Although where he found
+a beanbag is beyond me.
 </description>
     </exdesc>
   </room>
@@ -1922,7 +1960,7 @@ some sort of address...
 This is one of the lower-class inns, but it is more popular because of
 its low prices and quality ale.
 </roomdescription>
-      <flags>8</flags>
+      <flags>12</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
@@ -1971,7 +2009,7 @@ guard stands by to make sure you only take what is yours.
   </room>
   <room>
     <roombasic title="A small side-street" vnum="28108" zone="280">
-      <roomdescription>This is just a small side-street. The street urchins don&apos;t seem to
+      <roomdescription>This is just a small side-street. The street urchins don't seem to
 be interested in you and neither does anyone else walking here. Although
 this is a small street, many shops and inns can be found around here.
 </roomdescription>
@@ -1988,7 +2026,7 @@ this is a small street, many shops and inns can be found around here.
   </room>
   <room>
     <roombasic title="A small side-street" vnum="28109" zone="280">
-      <roomdescription>This is just a small side-street. The street urchins don&apos;t seem to 
+      <roomdescription>This is just a small side-street. The street urchins don't seem to 
 be interested in you and neither does anyone else walking here. Although 
 this is a small street, many shops and inns can be found around here.
 </roomdescription>
@@ -2008,7 +2046,7 @@ this is a small street, many shops and inns can be found around here.
   </room>
   <room>
     <roombasic title="A small side-street" vnum="28110" zone="280">
-      <roomdescription>This is just a small side-street. The street urchins don&apos;t seem to 
+      <roomdescription>This is just a small side-street. The street urchins don't seem to 
 be interested in you and neither does anyone else walking here. Although 
 this is a small street, many shops and inns can be found around here.
 </roomdescription>
@@ -2029,8 +2067,8 @@ this is a small street, many shops and inns can be found around here.
   <room>
     <roombasic title="An unkept room" vnum="28111" zone="280">
       <roomdescription>Apparently the occupants of this room are not in right now. Either that
-or the innkeeper hasn&apos;t had time to clean it up since the last guests
-stayed here. Although the room isn&apos;t in that bad of a condition, surely
+or the innkeeper hasn't had time to clean it up since the last guests
+stayed here. Although the room isn't in that bad of a condition, surely
 a few more gold pieces could buy a better room.
 </roomdescription>
       <flags>520</flags>
@@ -2043,7 +2081,7 @@ a few more gold pieces could buy a better room.
   </room>
   <room>
     <roombasic title="A small side-street" vnum="28112" zone="280">
-      <roomdescription>This is just a small side-street. The street urchins don&apos;t seem to 
+      <roomdescription>This is just a small side-street. The street urchins don't seem to 
 be interested in you and neither does anyone else walking here. Although 
 this is a small street, many shops and inns can be found around here.
 </roomdescription>
@@ -2059,7 +2097,7 @@ this is a small street, many shops and inns can be found around here.
     </exit>
   </room>
   <room>
-    <roombasic title="Phoela&apos;s Gems" vnum="28113" zone="280">
+    <roombasic title="Phoela's Gems" vnum="28113" zone="280">
       <roomdescription>The interior of this store is covered in many multitudes of light that
 are cast from the reflections of light from the dazzling, multifaceted
 gems that can be seen around the store. Some very large gems sparkle
@@ -2075,7 +2113,7 @@ from inside a large glass case in the center of the room.
     <exdesc keyword="case glass large">
       <description>Inside the glass case, many enormous gems sparkle. The largest and
 most spectacular is a huge green gem that has a liquid gleam inside
-of it. It is as big as a large Ogier&apos;s fist and probably could buy
+of it. It is as big as a large Ogier's fist and probably could buy
 a small city.
 </description>
     </exdesc>
@@ -2165,6 +2203,9 @@ unaccessible via the main roads that go through the city.
     <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="28119">
       <description/>
     </exit>
+    <exit direction="east" keyword="door" exitinfo="7" keynum="31555" toroom="31555">
+      <description/>
+    </exit>
     <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="28117">
       <description/>
     </exit>
@@ -2214,10 +2255,11 @@ unaccessible via the main roads that go through the city.
   </room>
   <room>
     <roombasic title="A large house" vnum="28121" zone="280">
-      <roomdescription>This is a large house owned by a family who lives here in Aringill.
-You hear sounds that tell you that the family is still at home.
-If you aren&apos;t a guest, you are kind of rude. Haven&apos;t you ever heard
-of knocking?
+      <roomdescription>This is a large house owned by a family who lives here in Aringill.  It is
+a well-built home with a freshly thatched roof and a green painted door.
+In the windows hang plain white curtains with a blue and white border.  
+Near the door is a wooden bench where the family often visits with
+neighbors when the weather is pleasant.    
 </roomdescription>
       <flags>8</flags>
       <sector>Inside</sector>
@@ -2248,11 +2290,11 @@ here as the mother is preparing a meal for her family.
     </exit>
   </room>
   <room>
-    <roombasic title="The Mayor&apos;s Office" vnum="28123" zone="280">
-      <roomdescription>This is the mayor of Aringill&apos;s office. He has a large desk made out of
+    <roombasic title="The Mayor's Office" vnum="28123" zone="280">
+      <roomdescription>This is the mayor of Aringill's office. He has a large desk made out of
 what appears to be wood that Ogier have sung to. It has a few papers on
 it and the sealmaker of the mayor lies on one corner of the desk.
-The mayor sits behind his desk when he is here, but he doesn&apos;t appear
+The mayor sits behind his desk when he is here, but he doesn't appear
 to be here at the moment.
 </roomdescription>
       <flags>8</flags>
@@ -2267,7 +2309,7 @@ to be here at the moment.
     </exit>
   </room>
   <room>
-    <roombasic title="Molly&apos;s Remedies" vnum="28124" zone="280">
+    <roombasic title="Molly's Remedies" vnum="28124" zone="280">
       <roomdescription>This room has a medicinal smell to it. A matronly lady with a large apron
 looks at you and smiles warmly. She points to a small display case and
 plaque which explains what each medicine does.
@@ -2282,7 +2324,7 @@ plaque which explains what each medicine does.
   </room>
   <room>
     <roombasic title="Realoim Blvd." vnum="28125" zone="280">
-      <roomdescription>This street was named after one of the town&apos;s great Councilmen of years 
+      <roomdescription>This street was named after one of the town's great Councilmen of years 
 past. He is one of the few people of Aringill whose memory has remained 
 since the Age of Legends.
 </roomdescription>
@@ -2299,7 +2341,7 @@ since the Age of Legends.
   </room>
   <room>
     <roombasic title="Realoim Blvd." vnum="28126" zone="280">
-      <roomdescription>This street was named after one of the town&apos;s great Councilmen of years 
+      <roomdescription>This street was named after one of the town's great Councilmen of years 
 past. He is one of the few people of Aringill whose memory has remained 
 since the Age of Legends.
 </roomdescription>
@@ -2316,7 +2358,7 @@ since the Age of Legends.
   </room>
   <room>
     <roombasic title="Realoim Blvd." vnum="28127" zone="280">
-      <roomdescription>This street was named after one of the town&apos;s great Councilmen of years 
+      <roomdescription>This street was named after one of the town's great Councilmen of years 
 past. He is one of the few people of Aringill whose memory has remained 
 since the Age of Legends.
 </roomdescription>
@@ -2330,13 +2372,13 @@ since the Age of Legends.
     <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="28126">
       <description/>
     </exit>
-    <exit direction="west" keyword="" exitinfo="0" keynum="0" toroom="28129">
+    <exit direction="west" keyword="door west" exitinfo="3" keynum="0" toroom="28129">
       <description/>
     </exit>
   </room>
   <room>
     <roombasic title="Realoim Blvd." vnum="28128" zone="280">
-      <roomdescription>This street was named after one of the town&apos;s great Councilmen of years 
+      <roomdescription>This street was named after one of the town's great Councilmen of years 
 past. He is one of the few people of Aringill whose memory has remained 
 since the Age of Legends.
 </roomdescription>
@@ -2350,10 +2392,14 @@ since the Age of Legends.
     <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="28127">
       <description/>
     </exit>
+    <exit direction="west" keyword="door" exitinfo="3" keynum="0" toroom="28159">
+      <description>A pair of thick oak doors.    
+</description>
+    </exit>
   </room>
   <room>
-    <roombasic title="The building for the Women&apos;s Circle of Aringill" vnum="28129" zone="280">
-      <roomdescription>Almost all cities have a Women&apos;s Circle which either openly or covertly
+    <roombasic title="The building for the Women's Circle of Aringill" vnum="28129" zone="280">
+      <roomdescription>Almost all cities have a Women's Circle which either openly or covertly
 runs the town. In most cases the mayor is nothing more than a figurehead
 that has a little power, but basically is led by the Circle. Aringill is
 no exeption and this is the building where the decision-making Circle
@@ -2363,7 +2409,7 @@ meets.
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
-    <exit direction="east" keyword="" exitinfo="0" keynum="0" toroom="28127">
+    <exit direction="east" keyword="door east" exitinfo="3" keynum="0" toroom="28127">
       <description/>
     </exit>
     <exit direction="up" keyword="" exitinfo="0" keynum="0" toroom="28145">
@@ -2432,7 +2478,7 @@ so that they come back whenever they pass through the city again.
       <roomdescription>This room is one of the bigger ones, although the Ogier rooms are still
 much larger by comparison. But since this room is bigger than most of
 the other rooms for humans, the price is a good deal more as well.
-A good night&apos;s sleep cannot really have a price put on it though...compared
+A good night's sleep cannot really have a price put on it though...compared
 to sleeping in the street, that is.
 </roomdescription>
       <flags>8</flags>
@@ -2444,7 +2490,7 @@ to sleeping in the street, that is.
     </exit>
   </room>
   <room>
-    <roombasic title="The Queen&apos;s Portait" vnum="28134" zone="280">
+    <roombasic title="The Queen's Portait" vnum="28134" zone="280">
       <roomdescription>This is the upstairs of the Good Queen Inn. This room is marked
 by a huge, lifelike portrait of Good Queen Morgase. She almost seems
 to be staring back at you through the painting.
@@ -2472,7 +2518,7 @@ to be staring back at you through the painting.
 is an apt name for this Inn because this room is decorated as if the
 Queen actually lives here. Beautiful tapestries hang on the walls
 and deep Tairen carpets are scattered on the floor. If you are willing
-to pay for this room, apparently you are meant to get your money&apos;s worth.
+to pay for this room, apparently you are meant to get your money's worth.
 </roomdescription>
       <flags>10</flags>
       <sector>Inside</sector>
@@ -2514,10 +2560,13 @@ or pick. If you are going to get into it, you will need a key.
   </room>
   <room>
     <roombasic title="The living room" vnum="28138" zone="280">
-      <roomdescription>This is the living room of the family of this house. A small boy is
-lying on the couch and reading a book. He doesn&apos;t appear to understand
-much of it. This is apparent because of the puzzled look on his face.
-He also hasn&apos;t appeared to have noticed you yet.
+      <roomdescription>This is the living room of the house.  Often the children can be found
+here playing with toys when their chores are finished.  It is simply
+furnished with a sofa upholstered in a dark material and two rush bottom
+chairs.  The wood floors are bare as this family can not afford expensive
+items such as rugs.  Several tables can be found here which the father and
+sons made from apple crates and painted.  On the tables, the mother has
+crocheted dollies upon which rests simple candle-holders.    
 </roomdescription>
       <flags>8</flags>
       <sector>Inside</sector>
@@ -2546,16 +2595,16 @@ amount of comfort.
     </exit>
   </room>
   <room>
-    <roombasic title="The Mayor&apos;s Gathering Room" vnum="28140" zone="280">
+    <roombasic title="The Mayor's Gathering Room" vnum="28140" zone="280">
       <roomdescription>This is the room where the mayor meets with his people to &quot;decide&quot;
 what happens in Aringill. But is it actually he and his staff who
-make the rules or is he merely a puppet for the Women&apos;s Circle?
+make the rules or is he merely a puppet for the Women's Circle?
 </roomdescription>
       <flags>8</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
-    <exit direction="south" keyword="" exitinfo="1" keynum="28037" toroom="28141">
+    <exit direction="south" keyword="" exitinfo="3" keynum="28037" toroom="28141">
       <description/>
     </exit>
     <exit direction="down" keyword="" exitinfo="0" keynum="0" toroom="28123">
@@ -2563,16 +2612,16 @@ make the rules or is he merely a puppet for the Women&apos;s Circle?
     </exit>
   </room>
   <room>
-    <roombasic title="The Mayor&apos;s Meeting Hall" vnum="28141" zone="280">
+    <roombasic title="The Mayor's Meeting Hall" vnum="28141" zone="280">
       <roomdescription>This is the room where the mayor gives speeches to large parties making
-requests. This is also where the Women&apos;s Circle gathers when they come
+requests. This is also where the Women's Circle gathers when they come
 here to &quot;advise&quot; him on current matters.
 </roomdescription>
       <flags>8</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
-    <exit direction="north" keyword="" exitinfo="1" keynum="28037" toroom="28140">
+    <exit direction="north" keyword="" exitinfo="3" keynum="28037" toroom="28140">
       <description/>
     </exit>
     <exit direction="east" keyword="" exitinfo="0" keynum="0" toroom="28144">
@@ -2586,12 +2635,14 @@ here to &quot;advise&quot; him on current matters.
     </exit>
   </room>
   <room>
-    <roombasic title="Meeting room for the Mayor&apos;s Advisors" vnum="28142" zone="280">
-      <roomdescription>This is the room where the mayor&apos;s advisors meet. Currently a few of
-them are pacing back and forth. Perhaps the mayor is making a speech
-somewhere. I suppose they are hoping he doesn&apos;t make a fool out
-of himself. It does happen to mayors if they don&apos;t listen to the Women&apos;s Circle,
-you know.
+    <roombasic title="Meeting room for the Mayor's Advisors" vnum="28142" zone="280">
+      <roomdescription>This is the room where the mayor's advisors meet.  It would not be
+uncommon to find a few of them are pacing back and forth.  Sometimes the
+Mayor is away making a speech or overseeing his duties which are numerous.
+A large round table sits in the center of the room about which are a
+cluster of straight-back chairs.  On the table are a few ale tankards and
+some leather pouches of tabac.  Along one wall is a built-in bench with a
+nice but simple cushion running the length of it.    
 </roomdescription>
       <flags>8</flags>
       <sector>Inside</sector>
@@ -2602,25 +2653,25 @@ you know.
     </exit>
   </room>
   <room>
-    <roombasic title="The Mayor&apos;s writing chambers" vnum="28143" zone="280">
+    <roombasic title="The Mayor's writing chambers" vnum="28143" zone="280">
       <roomdescription>The large desk in the middle of the room is where the mayor stores his
 important documents, as well as where he writes many of them. Of course
-the desk will be locked though, so it&apos;ll take the right key to unlock it.
+the desk will be locked though, so it'll take the right key to unlock it.
 But the mayor is the only one with such a key...
 </roomdescription>
       <flags>8</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
-    <exit direction="north" keyword="" exitinfo="9" keynum="28005" toroom="28141">
+    <exit direction="north" keyword="" exitinfo="15" keynum="28005" toroom="28141">
       <description/>
     </exit>
   </room>
   <room>
-    <roombasic title="The Mayor&apos;s apartments" vnum="28144" zone="280">
-      <roomdescription>Everybody has to rest sometime. This is the room where Aringill&apos;s mayor
-gets his sleep and sometimes locks himself in when the Women&apos;s Circle
-is &quot;advising&quot; him on doing something he doesn&apos;t wish to hear.
+    <roombasic title="The Mayor's apartments" vnum="28144" zone="280">
+      <roomdescription>Everybody has to rest sometime. This is the room where Aringill's mayor
+gets his sleep and sometimes locks himself in when the Women's Circle
+is &quot;advising&quot; him on doing something he doesn't wish to hear.
 </roomdescription>
       <flags>8</flags>
       <sector>Inside</sector>
@@ -2631,9 +2682,9 @@ is &quot;advising&quot; him on doing something he doesn&apos;t wish to hear.
     </exit>
   </room>
   <room>
-    <roombasic title="Upper Level of the Women&apos;s Circle Building" vnum="28145" zone="280">
+    <roombasic title="Upper Level of the Women's Circle Building" vnum="28145" zone="280">
       <roomdescription>This is the entrance to the hallway leading through the upper level
-of the Women&apos;s Circle Building. Absolutely nobody is allowed to walk
+of the Women's Circle Building. Absolutely nobody is allowed to walk
 through here unless they belong to the Circle or are a guest of it.
 Also remember that guest is a relative term.
 </roomdescription>
@@ -2650,7 +2701,7 @@ Also remember that guest is a relative term.
   </room>
   <room>
     <roombasic title="The smaller circle" vnum="28146" zone="280">
-      <roomdescription>The Women&apos;s Circle is made up of a smaller circle for the newer members and
+      <roomdescription>The Women's Circle is made up of a smaller circle for the newer members and
 a larger circle for the wise members who make most of the decisions.
 This room is the discussion room for the smaller circle.
 </roomdescription>
@@ -2667,7 +2718,7 @@ This room is the discussion room for the smaller circle.
   </room>
   <room>
     <roombasic title="The Circle Discussion Hall" vnum="28147" zone="280">
-      <roomdescription>This is where the entire Women&apos;s Circle will meet to have discussions
+      <roomdescription>This is where the entire Women's Circle will meet to have discussions
 and hear arguements from others invited to their meetings. The room to
 the east is for the Executive Board members only. A large, matronly
 woman stands beside it making sure nobody enters who should not.
@@ -2684,8 +2735,8 @@ woman stands beside it making sure nobody enters who should not.
     </exit>
   </room>
   <room>
-    <roombasic title="The Circle&apos;s Board Room" vnum="28148" zone="280">
-      <roomdescription>This is the Board Room for the Executive Council of Aringill&apos;s Women&apos;s
+    <roombasic title="The Circle's Board Room" vnum="28148" zone="280">
+      <roomdescription>This is the Board Room for the Executive Council of Aringill's Women's
 Circle. Only the oldest and most knowledgable members are invited to
 join the Council. Here is where the major decisions regarding the city
 are made.
@@ -2700,10 +2751,11 @@ are made.
   </room>
   <room>
     <roombasic title="An abandoned home" vnum="28149" zone="280">
-      <roomdescription>This used to be a house for a family a long time ago. Now it is filled
-with rotting boards and cobwebs from many spiders. A small engraving
-can be seen in the south wall, but you aren&apos;t close enough to make
-out what it says.
+      <roomdescription>This used to be a house for a family a long time ago.  Now it is filled
+with rotting boards and cobwebs from many spiders.  A small engraving can
+be seen in the south wall.  There are a number of broken pieces of
+furniture that might make some good firewood.  A lone doll, all dirty and
+missing one eye lies beneath the rubble, with only its head visible.    
 </roomdescription>
       <flags>8</flags>
       <sector>Inside</sector>
@@ -2718,10 +2770,12 @@ out what it says.
   </room>
   <room>
     <roombasic title="An abandoned shop" vnum="28150" zone="280">
-      <roomdescription>This used to be one of Aringill&apos;s shops, but it closed down due to lack
-of customers. A faded sign on the wall reads- Fortuneteller.
-If it had anything to do with Foretelling, that would explain the 
-Dragon&apos;s Fang you saw scratched into the door when you were outside.
+      <roomdescription>This used to be one of Aringill's shops, but it closed down due to lack of
+customers.  The wooden shutters in the front windows are dry rotted.  The
+pine bench outside the door is broken and otherwise falling apart.  A
+faded sign on the wall reads- Fortuneteller.  If it had anything to do
+with 'foretelling', that might explain the Dragon's Fang that is scratched
+into the outside door.    
 </roomdescription>
       <flags>136</flags>
       <sector>Inside</sector>
@@ -2732,7 +2786,7 @@ Dragon&apos;s Fang you saw scratched into the door when you were outside.
     </exit>
   </room>
   <room>
-    <roombasic title="Aringill&apos;s Stables" vnum="28151" zone="280">
+    <roombasic title="Aringill's Stables" vnum="28151" zone="280">
       <roomdescription>The fresh, clean smell of hay surrounds you. The stable is filled with
 every type of horse. They range from colts to old horses and red to
 black to gelding. A groom walks up to you and waits to see if
@@ -2747,15 +2801,15 @@ there is anything he can do for you.
     </exit>
   </room>
   <room>
-    <roombasic title="Aringill&apos;s OOC Tower Area" vnum="28152" zone="280">
-      <roomdescription>You are standing in a large tower area. Signs saying to join the Legion
-of the Dragon ( *-The best guild-* ) can be seen all over the place.
-If you have come looking for a place to be your REAL self, this is the
-place to do it. Please make sure you purge all remnants of OOC things
-from your system before re-entering the city proper. The city
-of Aringill thanks you for your cooperation.
+    <roombasic title="Aringill's OOC Tower Area" vnum="28152" zone="280">
+      <roomdescription>You are standing in a large tower area.  Signs saying to join the Legion
+of the Dragon ( *-The best guild-* ) can be seen all over the place.  If
+you have come looking for a place to be your REAL self, this is the place
+to do it.  Please make sure you purge all remnants of OOC things from your
+system before re-entering the city proper.  The city of Aringill thanks
+you for your cooperation.    
 </roomdescription>
-      <flags>12</flags>
+      <flags>28</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
@@ -2794,5 +2848,99 @@ to thank the \c14Imm\c00 who was so kind to host it for you...
     <exit direction="down" keyword="" exitinfo="0" keynum="0" toroom="10186">
       <description/>
     </exit>
+  </room>
+  <room>
+    <roombasic title="The Charred Rubble" vnum="28155" zone="280">
+      <roomdescription>Charred bits of rubble and debris are scattered through this burned out
+husk of a house.  The blackened floorboards do not look at all sturdy.  
+The walls seem as if it would take little to send them tumbling the rest
+of the way down.    
+</roomdescription>
+      <flags>4</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="west" keyword="" exitinfo="0" keynum="0" toroom="28005">
+      <description>The road appears much safer than the precarious footing here in the rubble.
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="A Pit Full of Rubble" vnum="28156" zone="280">
+      <roomdescription>This room seems have once been a cellar of some type.  Now it is filled
+with burned beams and shattered masonry from the burned house that stood
+above it.    
+</roomdescription>
+      <flags>8</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="west" keyword="door west" exitinfo="3" keynum="0" toroom="28157">
+      <description>It is too dark to see anything in that direction.
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="A Dark Tunnel" vnum="28157" zone="280">
+      <roomdescription>This dank, dark tunnel runs west from here.  The east end is blocked off
+by debris from a collaped house.  The rest of the tunnel is braced with
+thick oaken beams and seems very stable.    
+</roomdescription>
+      <flags>2056</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="west" keyword="" exitinfo="0" keynum="0" toroom="28158">
+      <description>The tunnel disappears into darkness to the west.
+</description>
+    </exit>
+    <dgscript vnum="28157"/>
+  </room>
+  <room>
+    <roombasic title="A Hidden Entrance" vnum="28158" zone="280">
+      <roomdescription>It is unclear if this formation was originally natural or not.  It is
+obvious, however, that even if it was natural, it has long since been
+enlarged manually.  Solid tibers support the ceiling in this chamber and
+the tunnel that leads off to the east.  A thick growth of bushes blocks
+the exit to the south, very likely making it all but impossible for
+someone outside to see unless they know exactly for what they are looking.
+  
+</roomdescription>
+      <flags>9</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="" exitinfo="0" keynum="0" toroom="28157">
+      <description>The tunnel disappears into darkness to the east.
+</description>
+    </exit>
+    <exit direction="south" keyword="bushes door secret" exitinfo="3" keynum="0" toroom="28000">
+      <description>Thick bushes block the view of the entrance from outside.
+</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="The Four Seasons Tavern " vnum="28159" zone="280">
+      <roomdescription>This is the common room of the tavern and smells of woodfire and \c10alcohol\c00.
+It is dimly lit by the \c08fireplace\c00 on the east wall, small \c10brass \c03lamps\c00
+sitting on each table, three larger \c10brass \c03lamps\c00 suspended above the bar.
+Eight \c23black\c00 stained \c10oak\c00 tables are spread out in the room, each with
+unstained \c10oak\c00 chairs.  Sitting in front of the bar are six stools, and
+behind are shelves holding numerous kinds of \c10liquor\c00.  In the corner behind
+the bar is a secure door.    
+</roomdescription>
+      <flags>28</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="east" keyword="doors east oak" exitinfo="3" keynum="0" toroom="28128">
+      <description>A pair of thick oak doors.    
+</description>
+    </exit>
+    <exdesc keyword="owner">
+      <description>OOC NOTE:
+This is a player-owned room, owned by Tessandra.
+</description>
+    </exdesc>
   </room>
 </rooms>

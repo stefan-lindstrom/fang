@@ -1,186 +1,1567 @@
-#11800
-rachel mob~
-Rachel~
-Rachel, the barkeep stands here
-~
-A tall lanky woman is looking oddly back at you as if waiting for your order.
-  
-~
-1564682 0 100 E
-100 20 10 878 1d100+0 1d1+0
-0 0
-8 8 0 0
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-E
-#11801
-girl mob~
-a little girl~
-a little girl stands here
-~
-a little girl with ponytails stands here sucking her thumb.
-~
-1048776 0 100 E
-40 18 8 878 4d100+0 2d4+4
-0 100
-8 8 2 0
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-E
-#11802
-boy mob~
-a little boy~
-a little boy stands here
-~
-a little boy stands here looking curiously back at you.
-~
-1048780 0 100 E
-50 18 7 878 4d6+0 2d6+4
-0 200
-8 8 0 0
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-Dirtkick: 100
-E
-#11804
-man mob~
-a tall skinny man~
-A tall skinny man stands here
-~
-A tall skinny man is holding a rake as he looks calmly back at you.    
-~
-1048648 0 300 E
-40 18 6 878 6d6+0 2d6+8
-0 400
-8 8 1 0
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-Disarm: 100
-E
-#11805
-mob guard~
-a gate guard~
-a gate guard stands here
-~
-a gate guard with dark piercing eyes peers back at you.
-~
-72 0 500 E
-90 16 2 878 6d8+2 2d8+6
-25 500
-8 8 2 0
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-Bash: 100
-E
-#11806
-mob Arna~
-Arna the barkeep~
-Arna the barkeep stands here cleaning the bar.
-~
-Arna the barkeep stands here.  Her hair is pulled up into a tight pun on her
-head, and she wears plain brown clothing.  She nods, then gives a tight smile
-before asking what it is that you want.    
-~
-2088971 0 0 E
-0 20 10 878 1d100+0 1d1+0
-0 0
-8 8 2 0
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-E
-#11807
-cat mob~
-a small white cat~
-a small white cat that hisses at you stands here
-~
-It looks, err, unfinished.
-~
-327752 0 100 E
-40 20 2 878 5d12+0 1d4+4
-0 500
-8 8 0 0
-BareHandAttack: 3
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-E
-#11808
-mob carpenter man~
-a carpenter~
-a carpenter stands here
-~
-It looks, err, unfinished.
-~
-72 0 0 E
-90 15 3 878 1d100+0 6d12+10
-30 500
-8 8 1 0
-BareHandAttack: 5
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-E
-#11809
-mob rat ~
-a small black rat~
-a small black rat slinks nearby
-~
-It looks, err, unfinished.
-~
-2152 526384 -300 E
-90 14 4 878 5d15+0 8d12+10
-0 700
-8 8 0 0
-BareHandAttack: 3
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-E
-#11810
-mob man old~
-a crotchety old man~
-a crotchety old man stands hunched over here
-~
-An old man stands here using a cane to hold himself up.  He has a faint odor
+<?xml version="1.0"?>
+<mobiles>
+  <mobile vnum="11800" name="Voran smith" special="NONE">
+    <description>Voran is a large, well-muscled man with a 
+fiercely dark beard and dark eyes which seem
+to peer not at you, but through you. He nods
+to himself occasionally and mutters softly 
+under his breath as he pounds with his hammer.
+</description>
+    <shortdesc>Voran</shortdesc>
+    <longdesc>Voran the smith stands here behind an anvil.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="100" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="0"/>
+      <move ndize="1" dsize="0" bonus="0"/>
+      <ac>100</ac>
+      <gold>500000</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="10280970"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="11801" name="bird mob hawk" special="NONE">
+    <description>A large female hawk guarding her eggs.
+</description>
+    <shortdesc>A hawk guarding her eggs</shortdesc>
+    <longdesc>A hawk rests here guarding her eggs.
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="25" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="10" dsize="200" bonus="200"/>
+      <move ndize="1" dsize="200" bonus="200"/>
+      <ac>0</ac>
+      <gold>500</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>2</hitroll>
+      <damroll>4</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1026170"/>
+    <affected one="67632" two="0" three="0" four="0"/>
+    <attack type="8"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="5" sides="10" add="2"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnActionTo" argtype="STRING" argument="bash">
+      <action number="ActionTo" argtype="STRING" argument="dirt kick"/>
+      <action number="ActionTo" argtype="STRING" argument="murder"/>
+    </mobprog>
+    <mobprog main="OnActionTo" argtype="STRING" argument="trip">
+      <action number="ActionTo" argtype="STRING" argument="bash"/>
+      <action number="ActionTo" argtype="STRING" argument="murder"/>
+    </mobprog>
+    <mobprog main="OnActionTo" argtype="STRING" argument="stun">
+      <action number="Cast" argtype="STRING" argument="sleep"/>
+      <action number="ActionTo" argtype="STRING" argument="murder"/>
+      <action number="Action" argtype="STRING" argument="smirk"/>
+    </mobprog>
+    <mobprog main="OnActionTo" argtype="STRING" argument="backstab">
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="ActionTo" argtype="STRING" argument="punch"/>
+      <action number="ActionTo" argtype="STRING" argument="murder"/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="11802" name="guard bridge mob" special="NONE">
+    <description>A tall, rough looking man dressed in a suit of plate and mail.
+A tabard rests over his plate-mail shirt bearing the symbol
+of Whitebridge, overshadowed by the colors of Andor.
+</description>
+    <shortdesc>A guard</shortdesc>
+    <longdesc>A man guarding the Whitebridge stands here.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="25" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="20" dsize="75" bonus="100"/>
+      <move ndize="1" dsize="100" bonus="100"/>
+      <ac>-150</ac>
+      <gold>500</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>25</hitroll>
+      <damroll>25</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="2046042"/>
+    <affected one="67632" two="0" three="0" four="0"/>
+    <attack type="14"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="10" sides="10" add="25"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnEntry" argtype="STRING" argument="backstab">
+      <action number="ActionTo" argtype="STRING" argument="pemote salutes you."/>
+    </mobprog>
+    <mobprog main="OnLeave" argtype="STRING" argument="backstab">
+      <action number="SayTo" argtype="STRING" argument="Good day."/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="11804" name="man mob citizen" special="NONE">
+    <description>The citizen of whitebridge is clad in normal clothes
+as he wanders about his daily routine.
+</description>
+    <shortdesc>A Citizen of Whitebridge</shortdesc>
+    <longdesc>A Citizen of Whitebridge stands here.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="25" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="6" dsize="100" bonus="250"/>
+      <move ndize="1" dsize="250" bonus="250"/>
+      <ac>60</ac>
+      <gold>50</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>2</hitroll>
+      <damroll>8</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1052748"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="13"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="2" sides="6" add="2"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="11805" name="mob guard" special="NONE">
+    <description>a gate guard with dark piercing eyes peers back at you.
+</description>
+    <shortdesc>a gate guard</shortdesc>
+    <longdesc>a gate guard stands here
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="45" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="10" dsize="200" bonus="50"/>
+      <move ndize="1" dsize="50" bonus="50"/>
+      <ac>20</ac>
+      <gold>25</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>4</hitroll>
+      <damroll>6</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="72"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="14"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="2" sides="8" add="4"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="11806" name="man old mob" special="NONE">
+    <description>The old man appers to be old and decrepit. He is dressed
+in raggedy clothes of a workman&apos;s sort although they 
+appeared to be once fine.
+</description>
+    <shortdesc>an old man selling his wares</shortdesc>
+    <longdesc>An old man selling his wares, stands here in a peddler booth.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="1" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="0"/>
+      <move ndize="1" dsize="0" bonus="0"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="10477579"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="11807" name="cat mob" special="NONE">
+    <description>This little white pussy cat has pointy little
+teeth and a mean-streak a mile wide. It glares
+at you with its almond-shaped eyes and hisses...
+</description>
+    <shortdesc>a small white cat</shortdesc>
+    <longdesc>A small white cat stands here peering around.
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="5" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="5" dsize="12" bonus="0"/>
+      <move ndize="1" dsize="0" bonus="0"/>
+      <ac>20</ac>
+      <gold>250</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>0</hitroll>
+      <damroll>4</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="327752"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="8"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="4" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnEntry" argtype="STRING" argument="backstab">
+      <action number="ActionTo" argtype="STRING" argument="purr "/>
+    </mobprog>
+    <mobprog main="OnLeave" argtype="STRING" argument="backstab">
+      <action number="Action" argtype="STRING" argument="sniffle"/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="11808" name="mob carpenter man" special="NONE">
+    <description>This man appears to be in his mid-thirties.
+He is dressed in worn clothes and wears
+a workman&apos;s belt across his waist, various
+tools visible within it.
+</description>
+    <shortdesc>A carpenter</shortdesc>
+    <longdesc>A carpenter stands here.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="20" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="10" dsize="100" bonus="0"/>
+      <move ndize="1" dsize="0" bonus="0"/>
+      <ac>30</ac>
+      <gold>350</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>5</hitroll>
+      <damroll>10</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="76"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="5"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="6" sides="12" add="5"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="11809" name="mob rat " special="NONE">
+    <description>It looks, err, unfinished.
+</description>
+    <shortdesc>A small black rat</shortdesc>
+    <longdesc>A small black rat slinks nearby.
+</longdesc>
+    <title/>
+    <chardata gender="NEUTRAL" class="Adventurer" level="5" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="5" dsize="100" bonus="50"/>
+      <move ndize="1" dsize="50" bonus="50"/>
+      <ac>40</ac>
+      <gold>150</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>6</hitroll>
+      <damroll>10</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="2124"/>
+    <affected one="526384" two="0" three="0" four="0"/>
+    <attack type="4"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="8" sides="12" add="6"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="11810" name="mob man old" special="NONE">
+    <description>An old man stands here using a cane to hold himself up.  He has a faint odor
 about him and is puffing happily on an old wooden pipe.    
-~
-1048780 0 200 E
-50 -10 8 878 30d8+0 10d8+20
-0 400
-8 8 1 0
-BareHandAttack: 13
-E
-$
+</description>
+    <shortdesc>a crotchety old man</shortdesc>
+    <longdesc>a crotchety old man stands hunched over here
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="10" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="30" dsize="8" bonus="0"/>
+      <move ndize="1" dsize="0" bonus="0"/>
+      <ac>80</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>30</hitroll>
+      <damroll>20</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1048780"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="13"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="10" sides="8" add="30"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="11811" name="slaadi" special="NONE">
+    <description>This teddy bear looks exactly like the one that the
+maker had when he was a small child. It has light
+brown fur, big eyes and a wide smile. Doesn&apos;t it
+look just, oh, so cuddly?!
+</description>
+    <shortdesc>a cute little teddy bear</shortdesc>
+    <longdesc>A cute little teddy bear rests here.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="200" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="29000"/>
+      <hit numd="1" dsize="1" bonus="29000"/>
+      <move ndize="1" dsize="29000" bonus="29000"/>
+      <ac>-200</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="6207582"/>
+    <affected one="608304" two="0" three="0" four="0"/>
+    <attack type="11"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="30" sides="127" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnAction" argtype="STRING" argument="; aielset ajahset at authcheck authorize award clearbond clearclub clone dc echo freeze gecho goto guildinv handbook hedit heditutil holylight imotd invis isquest last load multiplay mute newbie nohassle nosnoop notitle nowiz olc page passbond pfinger playerlist poofin poofout prove purge qcount qecho qlist questlock refresh restore roomflags roomset send set skillset snoop snowball switch syslog tedit teleport thaw transfer unaffect unauthorize users wizhelp wiznet zecho grasp tgrasp ">
+      <sideterm number="Carrying" not="TRUE" argtype="STRING" argument="11813"/>
+      <sideterm number="Wearing" not="TRUE" argtype="STRING" argument="11813"/>
+      <sideterm number="Level" not="FALSE" argtype="STRING" argument="199 212"/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+    </mobprog>
+    <mobprog main="OnAction" argtype="STRING" argument="&apos;          ,          .          :          &gt;          accept     achieve    adt        affected   aim        air        alias      allguilds  amt        apply      appraise   armscry    arrest     arrogance  ask        assist     auction    autoassist background backstab   balance    bandmarch  bash       bdelete    bdisplay   bdt        blademastery bmlist     bond       bondsense  brand      breakshield breply     bshow      bug        buy        camouflage camp       cart       cast      cemote     char       charge  ">
+      <sideterm number="Carrying" not="TRUE" argtype="STRING" argument="11813"/>
+      <sideterm number="Wearing" not="TRUE" argtype="STRING" argument="11813"/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+    </mobprog>
+    <mobprog main="OnAction" argtype="STRING" argument="codetalk   color      commands   compare    concentrate cons       consider   craft      credits    ct         darkdream  darkwalk   date       deguild    delete     deposit    description dext       diagnose   dice       dirt kick  disarm     disengage  disguise   display    doing      donate     dontpull   down       drag       dream      dreamenter dreamlist  dreampull  drink      drop       earth      eat        emote      employ     enhance    enter      equipment  eta        examine    exits      fervor     fill       findherb   fine       fire       flank      flee       follow     forage     force      forget     fortify    free   ">
+      <sideterm number="Carrying" not="TRUE" argtype="STRING" argument="11813"/>
+      <sideterm number="Wearing" not="TRUE" argtype="STRING" argument="11813"/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+    </mobprog>
+    <mobprog main="OnAction" argtype="STRING" argument="gdeposit   gdesc      gdt        get        ghelp      give       glance     glist      gload      gmail      gold       gossip     grab       grasp      greq       group      gsay       gskillset  gtell      guild      guilddisguise guildieinfo guildieset guildinfo  guildmail  guildset   gwithdraw  handtalk   heal       help       herbident  herblore   herbmastery hide       hidetracks hire       hit        hitp       hold       home       horses     hunt       idea       imagine    immlist    info       inform     infravision inquisition inspire    instruct   inte       inventory  isic       join       journal    jump       junk       kick       kill       knock      know health knowledge  language   lastemote  learn      leave      lines      lipread   ">
+      <sideterm number="Carrying" not="TRUE" argtype="STRING" argument="11813"/>
+      <sideterm number="Wearing" not="TRUE" argtype="STRING" argument="11813"/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+    </mobprog>
+    <mobprog main="OnAction" argtype="STRING" argument="; aielset ajahset at authcheck authorize award clearbond clearclub clone dc echo freeze gecho goto guildinv handbook hedit heditutil holylight imotd invis isquest last load multiplay mute newbie nohassle nosnoop notitle nowiz olc page passbond pfinger playerlist poofin poofout prove purge qcount qecho qlist questlock refresh restore roomflags roomset send set skillset snoop snowball switch syslog tedit teleport thaw transfer unaffect unauthorize users wizhelp wiznet zecho grasp tgrasp ">
+      <sideterm number="Invisible" not="FALSE" argtype="VOID" argument="NONE"/>
+      <sideterm number="Carrying" not="TRUE" argtype="STRING" argument="11813"/>
+      <sideterm number="Wearing" not="TRUE" argtype="STRING" argument="11813"/>
+      <sideterm number="Level" not="FALSE" argtype="STRING" argument="199 212"/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+    </mobprog>
+    <mobprog main="OnAction" argtype="STRING" argument="lweapon    mail       mana       manaconv   mask       mdt        mediate    medicine   mmail      morale     motd       move       murder     myguilds   navigate   ne         newbiegoto news       nobles     north      northeast  northwest  notes      nw         obscene    obscure    offend     ooc        open       order      oreport    osay       padd       password   pclose     pemote     phelp      pick       pigeon     play       poff       policy     popen      pose       pound      pour       powertrap  practice   pray       preach ">
+      <sideterm number="Carrying" not="TRUE" argtype="STRING" argument="11813"/>
+      <sideterm number="Wearing" not="TRUE" argtype="STRING" argument="11813"/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+    </mobprog>
+    <mobprog main="OnAction" argtype="STRING" argument="prodigy    prompt     psay       pull       punch      push       put        pwho       qsay       quaff      question   qui        quit       rage       rally      ranks      rast       read       receive    recite     recruit    reinforce  reject     release    remove     repair     reply      report     rescue     rest       retreat    return     rplog      rumor      run        rwt        sailtime   save       saveguild  say        sayto      scan       score      se         search     seek       seekguild  seeking    sell       sever      sfx        shadow     shieldwall shoot      shout      showbugs   showideas  showmail   showtypos  sing       sip        sit    ">
+      <sideterm number="Carrying" not="TRUE" argtype="STRING" argument="11813"/>
+      <sideterm number="Wearing" not="TRUE" argtype="STRING" argument="11813"/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+    </mobprog>
+    <mobprog main="OnAction" argtype="STRING" argument="socials    south      southeast  southwest  speardance speedwalk  spells     spirit     split      sponsor    stab       stalk      stand      steal      stre       stun       subdue     subguild   summon     supply     survival   sw         tail       take       target     tast       taste      taxi       teach      tell       tells      test       tether     tgrasp     throw      tie        tieweave   time       timetable  tinfo      title      tool       track      traction   train      travel     treesing   trelease   trip       ttest      tutor      twt        typo       unbond     ungroup    unknot     unlock     unravel    unsponsor  untaint    untether   ">
+      <sideterm number="Carrying" not="TRUE" argtype="STRING" argument="11813"/>
+      <sideterm number="Wearing" not="TRUE" argtype="STRING" argument="11813"/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+    </mobprog>
+    <mobprog main="OnAction" argtype="STRING" argument="version    visible    void       wait       wake       wash       water      wear       weather    weave      west       where      whisper    who        whoami     whois      wield      wimpy      wisd       withdraw   wizlist    wolfcall   wolfsense  worth      write      accuse     ack        admire     admonish   agree      answer     apologize  applaud    approval   attention  backhand   ballad     beam       bearhug    beckon     beer       beg        bite       bleed      blink      blush      boggle     bonk       bop        borg       bounce     bow        box    brb        brood      bucket     burp       cackle     caress   ">
+      <sideterm number="Carrying" not="TRUE" argtype="STRING" argument="11813"/>
+      <sideterm number="Wearing" not="TRUE" argtype="STRING" argument="11813"/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+    </mobprog>
+    <mobprog main="OnAction" argtype="STRING" argument="comfort    congrat    cough      crack      cringe     cry        cuddle     curl       curse      curtsey    dance      daydream   despair    doubt      doze       drool      drunk      earlick    eediot     eek        embrace    eyebrow    eyelash    eyes       faint      faith      fart       finger     flame      flex       flip       flirt      flop       flourish   fnittra    fondle     forgive    french     frown      fume       gasp       gibber     giggle     glare      goose      greet      grimace    grin       groan      grope      grovel     ">
+      <sideterm number="Carrying" not="TRUE" argtype="STRING" argument="11813"/>
+      <sideterm number="Wearing" not="TRUE" argtype="STRING" argument="11813"/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+    </mobprog>
+    <mobprog main="OnAction" argtype="STRING" argument="highfive   hint       hmft       hmm        holdhands  hop        hotta      hpull      hug        hum        hunger     inno       insult     keg        kiss       kneel      laces      lag        lap        laugh      lick       liege      love       lurk       martini    massage    meep       men        mgrin      moan       moon       moose      mope       mourn      mumble     mutter     nestle     ni         nibble     nirg       nod        noogie     notepad    nudge      nuzzle     ogle       oops       pace       pant       pat        peck       peer       pet   ">
+      <sideterm number="Carrying" not="TRUE" argtype="STRING" argument="11813"/>
+      <sideterm number="Wearing" not="TRUE" argtype="STRING" argument="11813"/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+    </mobprog>
+    <mobprog main="OnAction" argtype="STRING" argument="point      poke       ponder     pounce     pout       puke       purr       ramble     rock       rofl       roll       rub        ruffle     sa&apos;sara    salute     scorn      scratch    scream     shake      sheathe    sheep      shiver     shrug      shudder    sigh       slap       smack      smile      smirk      smooch     snap       snarl      sneeze     snicker    sniff      sniffle    snore      snort      snuggle    sob        spank      spit       squeal     squeeze    stagger    stare      steam      strangle   stretch    stroke     strut      sulk    ">
+      <sideterm number="Carrying" not="TRUE" argtype="STRING" argument="11813"/>
+      <sideterm number="Wearing" not="TRUE" argtype="STRING" argument="11813"/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+    </mobprog>
+    <mobprog main="OnAction" argtype="STRING" argument="tackle     tango      tap        taunt      tender     thank      think      thump      thwap      tickle     tip        tongue     tsk        twiddle    twitch     type       uga        undress    unsheathe  vent       walls      warcry     wave       wheeze     whine      whistle    wiggle     wince      wink       women      woolhead   worship    worthy     ">
+      <sideterm number="Carrying" not="TRUE" argtype="STRING" argument="11813"/>
+      <sideterm number="Wearing" not="TRUE" argtype="STRING" argument="11813"/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+    </mobprog>
+    <mobprog main="OnMobDie" argtype="VOID" argument="NONE">
+      <action number="Action" argtype="STRING" argument="load mob 11811"/>
+    </mobprog>
+    <mobprog main="OnAction" argtype="STRING" argument="look goto snoop scan redit medit zedit olc tell wiz osay">
+      <sideterm number="Carrying" not="TRUE" argtype="STRING" argument="11813"/>
+      <sideterm number="Wearing" not="TRUE" argtype="STRING" argument="11813"/>
+      <sideterm number="Level" not="FALSE" argtype="STRING" argument="199 212"/>
+      <sideterm number="Invisible" not="FALSE" argtype="VOID" argument="NONE"/>
+      <action number="Force" argtype="STRING" argument="goto 10186"/>
+    </mobprog>
+    <mobprog main="OnTell" argtype="STRING" argument="crystal">
+      <sideterm number="Carrying" not="FALSE" argtype="STRING" argument="11813"/>
+      <action number="Give" argtype="INT" argument="32689"/>
+    </mobprog>
+    <mobprog main="OnTell" argtype="STRING" argument="10186">
+      <sideterm number="Carrying" not="FALSE" argtype="STRING" argument="11813"/>
+      <action number="Give" argtype="INT" argument="32688"/>
+      <action number="Action" argtype="STRING" argument="at 10186 drop sla"/>
+    </mobprog>
+    <mobprog main="OnSay" argtype="STRING" argument="slartibarfast">
+      <action number="Action" argtype="STRING" argument="purge model"/>
+    </mobprog>
+    <mobprog main="OnEntry" argtype="VOID" argument="NONE">
+      <sideterm number="Level" not="FALSE" argtype="STRING" argument="0 200"/>
+      <sideterm number="Carrying" not="TRUE" argtype="STRING" argument="11813"/>
+      <sideterm number="Wearing" not="TRUE" argtype="STRING" argument="11813"/>
+      <action number="Cast" argtype="STRING" argument="pain"/>
+      <action number="Cast" argtype="STRING" argument="disintegrate"/>
+      <action number="ActionTo" argtype="STRING" argument="backstab"/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="11812" name="a cute little bunny wabbit bugsbunny" special="NONE">
+    <description>It looks like a cute, lil&apos; bunny wabbit. A shiny neck-chain
+has the name &quot;Bugs&quot; emblazoned upon it.
+</description>
+    <shortdesc>a cute little bunny rabbit</shortdesc>
+    <longdesc>A cute little bunny rabbit rests here.
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="1" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="1" bonus="1"/>
+      <move ndize="1" dsize="1" bonus="1"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="8"/>
+    <affected one="2096" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnAction" argtype="STRING" argument="look l scan">
+      <sideterm number="Level" not="FALSE" argtype="STRING" argument="202 204"/>
+      <sideterm number="Invisible" not="FALSE" argtype="VOID" argument="NONE"/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="11813" name="slaadi" special="NONE">
+    <description>\c00</description>
+    <shortdesc>a little old man</shortdesc>
+    <longdesc>A little old man with one eye stands here.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="200" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="30000"/>
+      <hit numd="1" dsize="1" bonus="30000"/>
+      <move ndize="10" dsize="20" bonus="30000"/>
+      <ac>-200</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>200</hitroll>
+      <damroll>50</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="6290526"/>
+    <affected one="2705458" two="0" three="0" four="0"/>
+    <attack type="11"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="30" sides="127" add="200"/>
+    <timer amount="0"/>
+    <skills vector="63"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnAction" argtype="STRING" argument="&quot; &apos; , / &gt; achieve adt affected aim air alias allguilds amt apply appraise armscry arrest arrogance ask assist auction autoassist background backstab balance bandmarch bash bdt become bground blademasterybmlist bondsense brand breakshieldbug buy camouflage camp cart cast cemote char charge check chess clear close cls clubs codetalk color commands compare concentratecons consider   contactinfo craft credits ct    ">
+      <sideterm number="Carrying" not="TRUE" argtype="STRING" argument="11813"/>
+      <sideterm number="Wearing" not="TRUE" argtype="STRING" argument="11813"/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="ActionTo" argtype="STRING" argument="smack"/>
+      <action number="ActionTo" argtype="STRING" argument="send &amp;RYou are not allowed to do that here.&amp;n"/>
+    </mobprog>
+    <mobprog main="OnAction" argtype="STRING" argument="darkdream darkwalk date deguild delete deposit description dext diagnose dice dig dirt kick disarm disengage disguise display doing donate dontpull down drag dream dreamenter dreamgoto dreamlist dreampull drink drop dswitch earth east eat emote employ enhance enter equipment eta examine exits fervor fill findherb fine fire flank flee follow forage force forget fortify free fx gadmininfo gain gboard gdeposit gdesc gdt get ghelp give glance glist gload gmail gold gossip grab grasp greceive greq group gsay gskillset gtell guild guilddisguise guildieinfo guildieset guildinfo guildmail guildset">
+      <sideterm number="Carrying" not="TRUE" argtype="STRING" argument="11813"/>
+      <sideterm number="Wearing" not="TRUE" argtype="STRING" argument="11813"/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="ActionTo" argtype="STRING" argument="smack"/>
+      <action number="ActionTo" argtype="STRING" argument="send &amp;RYou are not allowed to do that here!&amp;n"/>
+    </mobprog>
+    <mobprog main="OnAction" argtype="STRING" argument="gwithdraw handtalk heal help herbident herblore herbmastery hide hidetracks hire hit hitp hold home horses hunt idea imagine immlist info inform infravision inquisition inspire instruct inte inventory  isic join journal junk kick kill knock know health knowledge language lastemote learn leave lines lipread list locate lock longsleep look lweapon mail mana manaconv mask mdt mediate medicine mmail morale motd move murder myguilds navigate ne newbiegoto news north northeast northwest notes notifylist nw obscene obscure offend ooc open order oreport osay padd password pclose pemote phelp">
+      <sideterm number="Carrying" not="TRUE" argtype="STRING" argument="11813"/>
+      <sideterm number="Wearing" not="TRUE" argtype="STRING" argument="11813"/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="ActionTo" argtype="STRING" argument="smack"/>
+      <action number="ActionTo" argtype="STRING" argument="send &amp;RYou are not allowed to do that here!&amp;n"/>
+    </mobprog>
+    <mobprog main="OnAction" argtype="STRING" argument="pick pigeon play poff policy popen pose pound pour powertrap practice pray preach prefix premove press privacy private prompt protege psay pull punch push put pwho qsay quaff question qui quit rage rally ranks read recall receive recite recruit redit reinforce release remove repair reply report rescue rest retreat return rplog rumor run sailtime save saveguild say sayto scan score se search sedit seek seekguild seeking sell sever sfx shadow shieldwall shoot shout show showbground showbugs showideas showmail showtypos sing sip sit skills sleep sneak socials south southeast southwest speardance speedwalk  ">
+      <sideterm number="Carrying" not="TRUE" argtype="STRING" argument="11813"/>
+      <sideterm number="Wearing" not="TRUE" argtype="STRING" argument="11813"/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="ActionTo" argtype="STRING" argument="smack"/>
+      <action number="ActionTo" argtype="STRING" argument="send &amp;RYou are not allowed to do that here!&amp;n"/>
+    </mobprog>
+    <mobprog main="OnAction" argtype="STRING" argument="spells spirit split sponsor sponsorlist stab stalk stand stat steal stre stun subdue summon supply survival sw tail take target taste taxi teach tell tells test tether tgrasp throw tie tieweave time timetable tinfo title toggle tool track traction train travel treesing trelease trip ttest tutor typo unbond ungroup unknot unlock unravel unsponsor untaint untether up uptime use value veil version visible vnum void vstat wait wake wash water wear weather weave west where whisper who whoami whois wield wimpy wisd withdraw wizlist wolfcall wolfsense worth write zedit zreset     ">
+      <sideterm number="Carrying" not="TRUE" argtype="STRING" argument="11813"/>
+      <sideterm number="Wearing" not="TRUE" argtype="STRING" argument="11813"/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="ActionTo" argtype="STRING" argument="smack"/>
+      <action number="ActionTo" argtype="STRING" argument="send &amp;RYou are not allowed to do that here!&amp;n"/>
+    </mobprog>
+    <mobprog main="OnAction" argtype="STRING" argument="accuse ack admire admonish agree answer apologize applaud approval attention backhand ballad beam bearhug beckon beer beg bite bleed blink blush boggle bonk bop borg bounce bow box brb brood bucket burp cackle caress cheer chuckle clap comb comfort congrat cough crack cringe cry cuddle curl curse curtsey dance daydream despair doubt doze drool drunk earlick eediot eek embrace eyebrow eyelash eyes faint faith fart finger flame flex flip flirt flop flourish fnittra fondle forgive french frown fume gasp gibber giggle glare goose greet grimace grin groan grope grovel growl grumble grunt halo handraise herring hiccup highfive hint       ">
+      <sideterm number="Carrying" not="TRUE" argtype="STRING" argument="11813"/>
+      <sideterm number="Wearing" not="TRUE" argtype="STRING" argument="11813"/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="ActionTo" argtype="STRING" argument="smack"/>
+      <action number="ActionTo" argtype="STRING" argument="send &amp;RYou are not allowed to do that here.&amp;n"/>
+    </mobprog>
+    <mobprog main="OnAction" argtype="STRING" argument="hmft hmm holdhands hop hotta hpull hug huggle hum hunger inno insult keg kiss kneel laces lag lap laugh  lick liege love lurk martini massage meep men mgrin moan moon moose mope mourn mumble mutter nestle ni nibble nirg nod noogie notepad nudge nuzzle ogle oops pace pant pat peck peer pet pie pike pinch point poke ponder pounce pout puke purr ramble rock rofl roll rub ruffle sa&apos;sara sagenod salute scorn scratch scream shake sheathe sheep shiver shrug shudder sigh slap smack smile">
+      <sideterm number="Carrying" not="TRUE" argtype="STRING" argument="11813"/>
+      <sideterm number="Wearing" not="TRUE" argtype="STRING" argument="11813"/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="ActionTo" argtype="STRING" argument="smack"/>
+      <action number="ActionTo" argtype="STRING" argument="send &amp;RYou are not allowed to do that here!&amp;n"/>
+    </mobprog>
+    <mobprog main="OnAction" argtype="STRING" argument="smirk smooch snap snarl sneeze snicker sniff sniffle snore snort snuggle sob spank spin spit squeal squeeze  stagger stare steam strangle stretch stroke strut sulk sundance superior swoon sympathy tackle tango tap taunt tender thank think thump thwap tickle tip tongue tsk twiddle twitch type uga undress unsheathe vent walls warcry wave wheeze whine whistle wiggle wince wink women woolhead worship worthy yawn yodel  ">
+      <sideterm number="Carrying" not="TRUE" argtype="STRING" argument="11813"/>
+      <sideterm number="Wearing" not="TRUE" argtype="STRING" argument="11813"/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="ActionTo" argtype="STRING" argument="smack"/>
+      <action number="ActionTo" argtype="STRING" argument="send &amp;RYou are not allowed to do that here!&amp;n"/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="11814" name="peddler man mob" special="NONE">
+    <description>A tall youth, perhaps in the nature of seventeen or eighteen
+stands here behind a peddler&apos;s booth calling out and trying
+to sell the various wares scattered about around and inside
+the booth.
+</description>
+    <shortdesc>a young man selling his wares</shortdesc>
+    <longdesc>A young man standing behind a peddler&apos;s booth is here.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="1" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="0"/>
+      <move ndize="1" dsize="0" bonus="0"/>
+      <ac>100</ac>
+      <gold>1000000</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="10280970"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="11815" name="testermob1" special="NONE">
+    <description>It looks, err, unfinished.
+</description>
+    <shortdesc>the unfinished mob</shortdesc>
+    <longdesc>An unfinished mob stands here.
+</longdesc>
+    <title/>
+    <chardata gender="NEUTRAL" class="Adventurer" level="200" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="1" bonus="1"/>
+      <move ndize="1" dsize="1" bonus="1"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="10"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnTell" argtype="STRING" argument="tempus">
+      <action number="Action" argtype="STRING" argument="trans tempus"/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="11816" name="drathusmob" special="NONE">
+    <description>It looks, err, unfinished.
+</description>
+    <shortdesc>The nasty mob</shortdesc>
+    <longdesc>An unfinished mob stands here.
+</longdesc>
+    <title/>
+    <chardata gender="NEUTRAL" class="Adventurer" level="200" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="1" bonus="30000"/>
+      <move ndize="1" dsize="30000" bonus="30000"/>
+      <ac>-200</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>200</hitroll>
+      <damroll>50</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="3138619"/>
+    <affected one="67634" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="30" sides="127" add="200"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnEntry" argtype="VOID" argument="NONE">
+      <action number="Force" argtype="STRING" argument="/a"/>
+      <action number="Force" argtype="STRING" argument="quit"/>
+    </mobprog>
+    <mobprog main="OnMobAttack" argtype="VOID" argument="NONE">
+      <action number="Force" argtype="STRING" argument="/a"/>
+      <action number="Force" argtype="STRING" argument="quit"/>
+    </mobprog>
+    <mobprog main="OnEntry" argtype="VOID" argument="NONE">
+      <action number="Action" argtype="STRING" argument="murder drathus"/>
+    </mobprog>
+    <mobprog main="OnMobDie" argtype="VOID" argument="NONE">
+      <action number="Force" argtype="STRING" argument="/a"/>
+      <action number="Force" argtype="STRING" argument="quit"/>
+    </mobprog>
+    <mobprog main="OnMobAttack" argtype="VOID" argument="NONE">
+      <action number="Force" argtype="STRING" argument="/a"/>
+      <action number="Force" argtype="STRING" argument="quit"/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="11820" name="Lynyssa the banker" special="NONE">
+    <description>Lynyssa is a beautiful woman with big
+brown eyes and long raven hair. Her lips
+seem to remain in an almost constant pout
+as she sits behind the large desk. With
+a dainty hand she scribbles in her ledgers.
+</description>
+    <shortdesc>Lynyssa</shortdesc>
+    <longdesc>Lynyssa the banker is here.
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="200" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="30" dsize="0" bonus="5000"/>
+      <move ndize="1" dsize="5000" bonus="5000"/>
+      <ac>-200</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>200</hitroll>
+      <damroll>50</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="6283274"/>
+    <affected one="2096" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="30" sides="127" add="200"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnTick" argtype="STRING" argument="backstab">
+      <action number="Action" argtype="STRING" argument="stand"/>
+      <action number="Action" argtype="STRING" argument="sit chair"/>
+    </mobprog>
+    <mobprog main="OnEntry" argtype="STRING" argument="backstab">
+      <action number="Action" argtype="STRING" argument="stand"/>
+      <action number="Action" argtype="STRING" argument="sit chair"/>
+    </mobprog>
+    <mobprog main="OnEntry" argtype="STRING" argument="backstab">
+      <action number="ActionTo" argtype="STRING" argument="smile"/>
+    </mobprog>
+    <mobprog main="OnTell" argtype="STRING" argument="slaadi">
+      <sideterm number="Carrying" not="FALSE" argtype="STRING" argument="11813"/>
+      <action number="Action" argtype="STRING" argument="at 11889 load mob 11811"/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="11821" name="guard mob man" special="NONE">
+    <description>This man is tall and appears to be physically powerful.
+He is dressed in plate and mail, a shield held in one
+of his two gauntleted hands. At his hip is belted a scabbarded
+sword as his eyes dart about watchfully.
+</description>
+    <shortdesc>a powerful-looking guard</shortdesc>
+    <longdesc>A wary looking guard dressed in the colors of Andor stands here watchfully.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="75" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="5" dsize="500" bonus="500"/>
+      <move ndize="1" dsize="500" bonus="500"/>
+      <ac>-200</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>200</hitroll>
+      <damroll>50</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="2076698"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="11"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="10" sides="50" add="200"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="11842" name="Voran blacksmith mob" special="NONE">
+    <description>It looks, err, unfinished.
+</description>
+    <shortdesc>Voran the blacksmith</shortdesc>
+    <longdesc>A man pounding on an anvil stands here.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="1" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="30" dsize="1000" bonus="15000"/>
+      <move ndize="1" dsize="15000" bonus="15000"/>
+      <ac>-200</ac>
+      <gold>10000000</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="10280970"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="11844" name="Ciofressa" special="NONE">
+    <description>This woman is tall and long limbed. Long dark
+brown hair hangs down to her bottom, tied back
+in a tail, while large dark blue eyes which twinkle
+gaze about. A pert little nose is above her finely
+curved lips which are drawn upwards in the 
+corners into a dimpled smile. She appears to
+be around the age of eighteen or nineteen.
+She is dressed in a light, almost translucent
+cotten shirt and a dark high-cut skirt, while
+upon her feet she wears leather sandals.
+</description>
+    <shortdesc>Ciofressa</shortdesc>
+    <longdesc>Ciofressa, the serving maid stands here.
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="1" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="0"/>
+      <move ndize="1" dsize="0" bonus="0"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="10280970"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnAction" argtype="STRING" argument="grope">
+      <sideterm number="Authorized" not="TRUE" argtype="VOID" argument="NONE"/>
+      <action number="ActionTo" argtype="STRING" argument="slap"/>
+      <action number="Pause" argtype="INT" argument="5"/>
+      <action number="Say" argtype="STRING" argument="\c14Please don&apos;t do that again...\c00"/>
+      <action number="Emote" argtype="STRING" argument="Ciofressa narrows her eyes as she looks at you."/>
+    </mobprog>
+    <mobprog main="OnActionTo" argtype="STRING" argument="fondle">
+      <action number="ActionTo" argtype="STRING" argument="smack "/>
+      <action number="Pause" argtype="INT" argument="3"/>
+      <action number="Emote" argtype="STRING" argument="Ciofressa glares at you."/>
+    </mobprog>
+    <mobprog main="OnActionTo" argtype="STRING" argument="pinch">
+      <action number="Action" argtype="STRING" argument="eek"/>
+      <action number="Pause" argtype="INT" argument="3"/>
+      <action number="Action" argtype="STRING" argument="growl"/>
+    </mobprog>
+    <mobprog main="OnEntry" argtype="STRING" argument="pinch">
+      <action number="ActionTo" argtype="STRING" argument="pemote smiles lightly at you, her pretty eyes twinkling in the flickering candlelight."/>
+    </mobprog>
+    <mobprog main="OnActionTo" argtype="STRING" argument="lick">
+      <action number="ActionTo" argtype="STRING" argument="growl"/>
+      <action number="Pause" argtype="INT" argument="3"/>
+      <action number="Emote" argtype="STRING" argument="Ciofressa says softly, "/>
+    </mobprog>
+    <mobprog main="OnActionTo" argtype="STRING" argument="stroke">
+      <action number="ActionTo" argtype="STRING" argument="smack"/>
+      <action number="Pause" argtype="INT" argument="3"/>
+      <action number="Emote" argtype="STRING" argument="Ciofressa shivers with barely-contained fury, "/>
+    </mobprog>
+    <mobprog main="OnActionTo" argtype="STRING" argument="french">
+      <action number="ActionTo" argtype="STRING" argument="glare"/>
+      <action number="Pause" argtype="INT" argument="3"/>
+      <action number="Emote" argtype="STRING" argument="Ciofressa gazes around, her eyes filled with anger, "/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="11845" name="inn keeper innkeeper mob" special="NONE">
+    <description>It looks, err, unfinished.
+</description>
+    <shortdesc>an Innkeeper</shortdesc>
+    <longdesc>The Innkeeper for the Wayfarer&apos;s Rest Inn stands here.
+</longdesc>
+    <title/>
+    <chardata gender="NEUTRAL" class="Adventurer" level="0" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="0"/>
+      <move ndize="1" dsize="0" bonus="0"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="9232392"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="11850" name="male wolf mob" special="NONE">
+    <description>This is a large, snarling with wolf bright yellow eyes.
+It has long dark fur which covers it from nose to tail.
+It moves with the stalking, fluid grace common to all
+wolves.
+</description>
+    <shortdesc>A large snarling wolf</shortdesc>
+    <longdesc>A large snarling wolf is here glaring balefully.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="50" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="5" dsize="100" bonus="1000"/>
+      <move ndize="1" dsize="1000" bonus="1000"/>
+      <ac>70</ac>
+      <gold>350</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>10</hitroll>
+      <damroll>10</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="7256"/>
+    <affected one="2096" two="0" three="0" four="0"/>
+    <attack type="4"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="5" sides="10" add="10"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="11851" name="squirrel mob" special="NONE">
+    <description>A tiny little squirrel with a large busy tail 
+stands before you, looking at you with 
+fright in it&apos;s large almond-shaped eyes.
+</description>
+    <shortdesc>a tiny little squirrel</shortdesc>
+    <longdesc>A tiny little squirrel with a large bushy tail is here.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="10" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="50" bonus="25"/>
+      <move ndize="1" dsize="25" bonus="25"/>
+      <ac>30</ac>
+      <gold>300</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>2</hitroll>
+      <damroll>2</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="2248"/>
+    <affected one="2048" two="0" three="0" four="0"/>
+    <attack type="4"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="2" sides="5" add="2"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="11852" name="doe deer mob" special="NONE">
+    <description>A young-looking deer stands here looking at you.
+Upon closer inspection you notice that this deer
+is actually a doe.
+</description>
+    <shortdesc>a young doe</shortdesc>
+    <longdesc>A young-looking deer stands here, blinking at you.
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="15" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="5" dsize="100" bonus="100"/>
+      <move ndize="1" dsize="100" bonus="100"/>
+      <ac>20</ac>
+      <gold>200</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>5</hitroll>
+      <damroll>5</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="2248"/>
+    <affected one="2048" two="0" three="0" four="0"/>
+    <attack type="5"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="5" sides="5" add="5"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="11853" name="spider tiny mob" special="NONE">
+    <description>It is a tiny little black spider.
+</description>
+    <shortdesc>A tiny little spider</shortdesc>
+    <longdesc>A tiny little spider is here.
+</longdesc>
+    <title/>
+    <chardata gender="NEUTRAL" class="Adventurer" level="5" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="0"/>
+      <move ndize="1" dsize="0" bonus="0"/>
+      <ac>70</ac>
+      <gold>150</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>2</hitroll>
+      <damroll>2</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="6220"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="4"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="10" add="2"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="11854" name="wood tick mob" special="NONE">
+    <description>It looks like a tiny little wood tick, trying to
+suck your blood!
+</description>
+    <shortdesc>A tiny wood tick</shortdesc>
+    <longdesc>A tiny little wood-tick is here.
+</longdesc>
+    <title/>
+    <chardata gender="NEUTRAL" class="Adventurer" level="2" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="0"/>
+      <move ndize="1" dsize="0" bonus="0"/>
+      <ac>100</ac>
+      <gold>5</gold>
+      <bankgold>0</bankgold>
+      <exp>50</exp>
+      <hitroll>1</hitroll>
+      <damroll>1</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1128"/>
+    <affected one="3672114" two="0" three="0" four="0"/>
+    <attack type="4"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="1"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnMobAttack" argtype="STRING" argument="french">
+      <action number="Action" argtype="STRING" argument="emote The tiny little wood tick latches onto your skin and begins to eagerly drain your &amp;Rblood&amp;n!"/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="11855" name="bat mob" special="NONE">
+    <description>The bat is small and &amp;Kblack&amp;n with little furry wings and a little furry body.
+It squeaks menacingly.    
+</description>
+    <shortdesc>&amp;na small &amp;Kblack&amp;n bat</shortdesc>
+    <longdesc>&amp;nA small &amp;Kblack&amp;n bat is hanging from the ceiling.
+</longdesc>
+    <title/>
+    <chardata gender="NEUTRAL" class="Adventurer" level="10" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="2" dsize="500" bonus="50"/>
+      <move ndize="1" dsize="50" bonus="50"/>
+      <ac>20</ac>
+      <gold>250</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>10</hitroll>
+      <damroll>5</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="997468"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="4"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="5" sides="1" add="10"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="11875" name="tester mob" special="NONE">
+    <description>It looks, err, unfinished.
+</description>
+    <shortdesc>this is a tester mob</shortdesc>
+    <longdesc>This is a tester mob standin&apos; here.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="199" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="0" dsize="0" bonus="0"/>
+      <hit numd="30" dsize="500" bonus="15000"/>
+      <move ndize="1" dsize="15000" bonus="15000"/>
+      <ac>-200</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>200</hitroll>
+      <damroll>50</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="2092090"/>
+    <affected one="2096" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="30" sides="127" add="200"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnEntry" argtype="VOID" argument="NONE">
+      <sideterm number="Guild" not="FALSE" argtype="STRING" argument="Rebel Tower"/>
+      <action number="ActionTo" argtype="STRING" argument="backstab"/>
+      <action number="ActionTo" argtype="STRING" argument="disarm"/>
+      <action number="ActionTo" argtype="STRING" argument="stun"/>
+      <action number="ActionTo" argtype="STRING" argument="trip"/>
+      <action number="ActionTo" argtype="STRING" argument="bash"/>
+      <action number="ActionTo" argtype="STRING" argument="dirt kick"/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="11890" name="drackule" special="NONE">
+    <description>Drackule stands tall and is wiry thin
+with long limbs. He is dark haired and
+dark eyed, with ears that come to a slight
+point. His face is finely chisled, with his
+lips quirked into an almost constant frown.
+He is enshrouded by a dark blood-red 
+cloak while beneath an odd set of
+pulsing and shifting plate armor is
+visible. The hilt from a two-handed sword
+protrudes from a scabbard from over
+his shoulder.
+</description>
+    <shortdesc>Drackule</shortdesc>
+    <longdesc>Drackule stands here with a menacing gaze.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="200" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="30000"/>
+      <hit numd="0" dsize="0" bonus="30000"/>
+      <move ndize="1" dsize="30000" bonus="30000"/>
+      <ac>-200</ac>
+      <gold>5000</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>200</hitroll>
+      <damroll>50</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="6285406"/>
+    <affected one="870448" two="0" three="0" four="0"/>
+    <attack type="11"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="10" sides="100" add="200"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnAction" argtype="STRING" argument="bash">
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="Cast" argtype="STRING" argument="cripple"/>
+      <action number="ActionTo" argtype="STRING" argument="kill"/>
+    </mobprog>
+    <mobprog main="OnActionTo" argtype="STRING" argument="trip">
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="Cast" argtype="STRING" argument="blindness"/>
+      <action number="ActionTo" argtype="STRING" argument="kill"/>
+    </mobprog>
+    <mobprog main="OnActionTo" argtype="STRING" argument="stun">
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="Cast" argtype="STRING" argument="unbalance"/>
+      <action number="ActionTo" argtype="STRING" argument="kill"/>
+    </mobprog>
+    <mobprog main="OnActionTo" argtype="STRING" argument="dirt kick">
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="Cast" argtype="STRING" argument="confusion"/>
+      <action number="ActionTo" argtype="STRING" argument="kill"/>
+    </mobprog>
+    <mobprog main="OnActionTo" argtype="STRING" argument="kick">
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="Cast" argtype="STRING" argument="slow"/>
+      <action number="ActionTo" argtype="STRING" argument="kill"/>
+    </mobprog>
+    <mobprog main="OnAttack" argtype="STRING" argument="kick">
+      <action number="ActionTo" argtype="STRING" argument="smirk"/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="ActionTo" argtype="STRING" argument="stun"/>
+      <action number="ActionTo" argtype="STRING" argument="disarm"/>
+      <action number="ActionTo" argtype="STRING" argument="kick"/>
+      <action number="ActionTo" argtype="STRING" argument="bash"/>
+      <action number="ActionTo" argtype="STRING" argument="punch"/>
+      <action number="ActionTo" argtype="STRING" argument="trip"/>
+      <action number="ActionTo" argtype="STRING" argument="kill"/>
+    </mobprog>
+    <mobprog main="OnEntry" argtype="STRING" argument="kick">
+      <sideterm number="Level" not="FALSE" argtype="STRING" argument="200 202"/>
+      <action number="ActionTo" argtype="STRING" argument="backstab"/>
+      <action number="ActionTo" argtype="STRING" argument="kill"/>
+      <action number="ActionTo" argtype="STRING" argument="stun"/>
+      <action number="ActionTo" argtype="STRING" argument="punch"/>
+      <action number="ActionTo" argtype="STRING" argument="bash"/>
+      <action number="ActionTo" argtype="STRING" argument="kick"/>
+      <action number="ActionTo" argtype="STRING" argument="trip"/>
+      <action number="ActionTo" argtype="STRING" argument="disarm"/>
+    </mobprog>
+    <mobprog main="OnMobEntry" argtype="STRING" argument="kick">
+      <action number="Action" argtype="STRING" argument="growl"/>
+    </mobprog>
+    <mobprog main="OnSayTo" argtype="STRING" argument="slartibarfast">
+      <action number="Say" argtype="STRING" argument="Egad!"/>
+    </mobprog>
+    <mobprog main="OnEntry" argtype="VOID" argument="NONE">
+      <sideterm number="Carrying" not="TRUE" argtype="STRING" argument="11813"/>
+      <action number="ActionTo" argtype="STRING" argument="smack"/>
+      <action number="Force" argtype="STRING" argument="grovel"/>
+      <action number="Force" argtype="STRING" argument="doing trying to do something they shouldn&apos;t be doing."/>
+      <action number="Force" argtype="STRING" argument="vis"/>
+      <action number="Force" argtype="STRING" argument="east"/>
+    </mobprog>
+    <mobprog main="OnAction" argtype="STRING" argument="; aielset ajahset at authcheck authorize award clearbond clearclub clone dc echo freeze gecho goto guildinv handbook hedit heditutil holylight imotd invis isquest last load multiplay mute newbie nohassle nosnoop notitle nowiz olc page passbond pfinger playerlist poofin poofout prove purge qcount qecho qlist questlock refresh restore roomflags roomset send set skillset snoop snowball switch syslog tedit teleport thaw transfer unaffect unauthorize users wizhelp wiznet zecho grasp tgrasp weave hit attack kill hit punch murder look">
+      <sideterm number="Level" not="FALSE" argtype="STRING" argument="199 212"/>
+      <sideterm number="Carrying" not="TRUE" argtype="STRING" argument="11813"/>
+      <sideterm number="Wearing" not="TRUE" argtype="STRING" argument="11813"/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="Action" argtype="STRING" argument="tell Tempus &amp;rSomeone who isn&apos;t &amp;RAuthorized&amp;r is trying to do something in your room that they shouldn&apos;t be.&amp;n"/>
+      <action number="Action" argtype="STRING" argument="tell Koltur &amp;rSomeone who isn&apos;t &amp;RAuthorized&amp;r is trying to do something in your room that they shouldn&apos;t be.&amp;n"/>
+      <action number="Action" argtype="STRING" argument="tell Lewellyn &amp;rSomeone who isn&apos;t &amp;RAuthorized&amp;r is trying to do something in your room that they shouldn&apos;t be.&amp;n"/>
+      <action number="Action" argtype="STRING" argument="tell Terjon &amp;rSomeone who isn&apos;t &amp;RAuthorized&amp;r is trying to do something in your room that they shouldn&apos;t be.&amp;n"/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="11898" name="man cloaked Halvor" special="NONE">
+    <description>The dark cloaked man holds a whip in his right hand
+while his left hand is clenched into a fist. It appears
+that this is the man who has been whipping or 
+otherwise torturing the poor helpless woman lying
+on the ground.
+</description>
+    <shortdesc>a dark cloaked man with a whip</shortdesc>
+    <longdesc>A dark cloaked man with a whip stands here.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="70" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="20" dsize="100" bonus="500"/>
+      <move ndize="1" dsize="500" bonus="500"/>
+      <ac>-50</ac>
+      <gold>250</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>50</hitroll>
+      <damroll>50</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1058890"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="2"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="10" sides="10" add="50"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnEntry" argtype="STRING" argument="kick">
+      <action number="ActionTo" argtype="STRING" argument="pemote snarls as the girl wimpers upon the floor before him. His back is to the door as he raises up the whip and lashes out at her, the whip snapping with a loud crack as another ragged welt is torn across her skin, baring even of her ragged and bloody flesh to sight."/>
+    </mobprog>
+    <mobprog main="OnMobDie" argtype="STRING" argument="kick">
+      <action number="Emote" argtype="STRING" argument="The man falls to the ground clutching at the fatal wound, blood and ichor seeping from between his now blood-stained fingers. His eyes bulge in surprise and fear as he looks up at you. His lips form into a snarl as he calls out, "/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="11899" name="battered woman" special="NONE">
+    <description>The woman lying here is battered and torn, the
+rags that cover her, hardly fit be called clothes. They
+are torn and ripped, her skin is exposed through the
+various rips and tears which appear to have been
+made by some kind of whip. 
+</description>
+    <shortdesc>a woman in battered rags is here upon the floor, crying for mercy</shortdesc>
+    <longdesc>A woman in battered rags is here upon the floor, crying for mercy.
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="20" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="5" dsize="100" bonus="50"/>
+      <move ndize="1" dsize="50" bonus="50"/>
+      <ac>50</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>10</hitroll>
+      <damroll>10</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1048778"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Resting" other="Resting"/>
+    <damage num="5" sides="5" add="10"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnEntry" argtype="STRING" argument="kick">
+      <action number="ActionTo" argtype="STRING" argument="pemote cries and begs for mercy as the man with the whip strikes down upon her. Her eyes are wide with fear and fright, red welts are visible along her skin through the tears and rips in the ragged clothing that she is hardly covered by."/>
+    </mobprog>
+  </mobile>
+</mobiles>

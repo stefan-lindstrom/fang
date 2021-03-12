@@ -1,41 +1,46 @@
 <?xml version="1.0"?>
 <rooms>
   <room>
-    <roombasic title="\c08Reanne\c14&apos;s \c09Tower\c00" vnum="25000" zone="250">
-      <roomdescription>You stand in an ivory spire, looking like those fabled _\c07Ivory
-Towers\c00_ of legend. White ogier carved stone builds this tower,
-and carvings of Avendesora leaves decorate the parapets. There are
-a dozen or so floors to this tower, and you can see a large marble
-staircase spiraling downwards at the center of each floor landing,
-looking dangerously frail. From this height - you imagine that you
-are on the eighth floor or so - you see the entire length of Ebou
-Dar spread out before you to the south. The Rahad lies to the east,
-its crooked streets a relief in comparison to the straight laneways
-of the rest of Ebou Dar.
+    <roombasic title="A Place Above the &amp;WC&amp;wl&amp;Wo&amp;wu&amp;Wd&amp;ws&amp;n" vnum="25000" zone="250">
+      <roomdescription>A vast layer of puffy &amp;Ww&amp;wh&amp;Wi&amp;wt&amp;We&amp;n clouds stretches out as far as the eye can
+see, &amp;Yg&amp;yo&amp;Yl&amp;yd&amp;Ye&amp;yn&amp;n rays of &amp;Km&amp;yo&amp;wo&amp;Kn&amp;yl&amp;wi&amp;Kg&amp;yh&amp;wt&amp;n peek ever so slightly through the soft layer
+of fluff, illuminating the area in a gentle wash of light.  At various
+points within sight, comfortable looking seats and other furniture and
+creations from someone's &amp;ri&amp;ym&amp;ga&amp;cg&amp;bi&amp;mn&amp;ra&amp;yt&amp;gi&amp;co&amp;bn&amp;n are scattered, some near to others,
+made of gathered mountains of soft clouds, all looking ready to poof out
+of existence at a mere touch.  This, however, is not the case, the chairs
+and other objects all being solid enough to actually use.  High above, the
+sky is a &amp;bd&amp;Ba&amp;br&amp;Bk &amp;bb&amp;Bl&amp;bu&amp;Be&amp;n color, tiny points of pure &amp;Ww&amp;wh&amp;Wi&amp;wt&amp;We&amp;n flickering in odd
+patterns, like a child creating their own connect-the-dots game.  
+Overall, a surreal and relaxing feeling lays over this area like a layer
+of &amp;Kf&amp;wo&amp;Kg&amp;n, seeping into the soul of anyone fortunate enough to spend any
+amount of time in this place.    
 </roomdescription>
-      <flags>1662</flags>
+      <flags>24</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
-    <exdesc keyword="chair">
-      <description>It&apos;s just a CHAIR! Of course, you can&apos;t sit on it, since that&apos;s not coded
-yet.
+    <exit direction="down" keyword="door" exitinfo="19" keynum="-1" toroom="76">
+      <description>You see nothing special.
 </description>
+    </exit>
+    <exdesc keyword="">
+      <description> </description>
     </exdesc>
-    <exdesc keyword="floor down">
-      <description>You see your feet.  Oh, and the floor of course.
-</description>
+    <exdesc keyword="">
+      <description> </description>
     </exdesc>
   </room>
   <room>
     <roombasic title="The Great North Road" vnum="25001" zone="250">
-      <roomdescription>A wide stone paved road leads south to Ebou Dar. There are
-many merchants in double wagons led by teams of eight to
-twelve horses passing on both sides of the road. Dust covers
-the road, and the grass in the area is well trampled. The
-northern gate of Ebou Dar is to the south, and off to the
-southeast you can see one of the horse tracks that Ebou Dar
-is famous for.
+      <roomdescription>A wide paved road leads south to Ebou Dar, the stones cracked or broken in
+places.  During the daylight hours, the road is packed with merchant
+wagons led by teams of horses in numbers of eight or twelve.  At night the
+road is less traveled, though there is a wandering group or two on
+occasion.  Dust covers the road, the grass beside the path trampled by
+animals and people not able to find room on the road.  The northern gates
+of Ebou Dar are to the south, one of Ebou Dar's famous horse tracks just
+visible in the distance to the southeast.    
 </roomdescription>
       <flags>0</flags>
       <sector>Hills</sector>
@@ -49,26 +54,25 @@ is famous for.
 perhaps you are near a city.
 </description>
     </exit>
+    <exdesc keyword="farmlands ">
+      <description>The countryside is covered with neat rows of withered crops.
+</description>
+    </exdesc>
     <exdesc keyword="roadway">
       <description>The road seems to have been made with cobblestones.
 You can make out their shape beneath years or dirt.
 The road is in quite a state of disrepair.
 </description>
     </exdesc>
-    <exdesc keyword="farmlands ">
-      <description>The countryside is covered with neat rows of withered crops.
-</description>
-    </exdesc>
   </room>
   <room>
     <roombasic title="The Great North Road" vnum="25002" zone="250">
-      <roomdescription>The wide cobblestone paved road continues east and west
-here, wide enough for three wagons to pass side by side,
-and then some. Many merchants and travelers pass by on
-both sides of you, most of them looking down, or seeming
-to be preoccupied with their own affairs. Small farms
-are on either side of the road, with scattered tress and
-low hills.
+      <roomdescription>The wide cobblestone path continues north and south, wide enough for three
+wagons to pass side by side, and then some.  Merchants and travelers pass
+by on both sides of the road, most of them passing by with downcast eyes,
+seemingly preoccupied with their own thoughts.  Small farms dot the land
+to either side of the road on the small hilltops, scattered trees adding
+slight color to an otherwise dull view.    
 </roomdescription>
       <flags>0</flags>
       <sector>Field</sector>
@@ -78,30 +82,32 @@ low hills.
       <description>The road continues north and disappears over a hill.
 </description>
     </exit>
+    <exit direction="east" keyword="" exitinfo="0" keynum="0" toroom="6461">
+      <description/>
+    </exit>
     <exit direction="south" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="25003">
       <description>In the distance you can make out guard towers,
 you must be near a city.
 </description>
     </exit>
-    <exdesc keyword="roadway">
-      <description>The North Road seems to be made of cobblestones,
-but it is in a state of disrepair.
-</description>
-    </exdesc>
     <exdesc keyword="farmlands">
       <description>The farmlands are covered with withered crops.
 You see no signs of habitation.
 </description>
     </exdesc>
+    <exdesc keyword="roadway">
+      <description>The North Road seems to be made of cobblestones,
+but it is in a state of disrepair.
+</description>
+    </exdesc>
   </room>
   <room>
     <roombasic title="The Great North Road" vnum="25003" zone="250">
-      <roomdescription>The road passes over a small rise here, and scattered
-grasses grow on the sides of the road. A rickety wagon
-heads south towards the city of Ebou Dar, its wheels
-creaking on the flat cobblestones of the roadway. To
-the south you can see the white shining walls of the
-city, and its spires and domes reaching towards the sky.
+      <roomdescription>Here the road passes over a small rise, scattered clumps of grass growing
+on both sides of the path.  Wagons travel the worn cobblestones of the
+roadway during the day, wagon wheels creaking during the hard passage to
+Ebou Dar.  The shining walls of the city are visible to the south,
+beautiful domes and spires reaching upward toward the sky.    
 </roomdescription>
       <flags>0</flags>
       <sector>Field</sector>
@@ -124,13 +130,14 @@ wide bridges and canals.
   </room>
   <room>
     <roombasic title="The Great North Road" vnum="25004" zone="250">
-      <roomdescription>To the north, rolling hills and scattered trees cover the
-area. To each side of the Great North road, small farms
-are spread out. To the south, white stone walls cover the
-horizon from east to west, spires and domes in many colors
-reaching upwards. The northern gate of Ebou Dar - the size
-of three gates wide - is seen arching over the road to the
-south.
+      <roomdescription>Small farms spread out across the land to each side of the road, scattered
+trees dotting the landscape.  The cobblestone pathway, some cracked and
+broken stones in need of repair, winds away to the north and south,
+rolling hills concealing the road from view as it snakes away from Ebou
+Dar.  Shining white walls march across the landscape from east to west,
+stretching far beyond eyesight.  To the south, the &amp;cDa&amp;Kl E&amp;wi&amp;Wr&amp;wa &amp;KGa&amp;cte&amp;n arches in
+majestic splendor over the road ahead, greeting morning travelers with the
+promise of a warm bed to be had.    
 </roomdescription>
       <flags>0</flags>
       <sector>City</sector>
@@ -155,13 +162,12 @@ seem to have been deserted.
   </room>
   <room>
     <roombasic title="The Great North Road" vnum="25005" zone="250">
-      <roomdescription>The smell of salt in the air hits you like a wall. The
-roadway opens wider and there are merchants and peddlers
-traveling to and from the city here. There is a wide
-courtyard to the south, and a wide diamond shaped fountain
-is in the center of it. The Dal Eira gate of Ebou Dar
-is beyond the courtyard to the south, wider than the
-road and flanked by marble columns on each side.
+      <roomdescription>The subtle scent of salt hangs in the air, almost to an unpleasant degree.
+Merchants and peddlers traveling to and from the city move briskly along
+the stone road in the daylight hours, the traffic slowing drastically as
+night falls.  A large courtyard opens to the south, the &amp;cDa&amp;Kl E&amp;wi&amp;Wr&amp;wa&amp;K Ga&amp;cte&amp;n of
+Ebou Dar casting shadows across the sky, naturally drawing the eye for a
+moment or two.    
 </roomdescription>
       <flags>0</flags>
       <sector>City</sector>
@@ -179,15 +185,14 @@ the northern gate of Ebou Dar.
   </room>
   <room>
     <roombasic title="The Northern Courtyard" vnum="25006" zone="250">
-      <roomdescription>You are in a courtyard just outside of Dal Eira Gate, the
-north gate of \c07Ebou Dar.\c00  The massive city wall runs east and
-west in front of you.  There are merchants and peddlers here,
-selling their wares. Rugs, bolts of cloth, and beads and other
-jewelry are displayed by merchants on the side of the square,
-and a wide diamond marble fountain is in the center of the
-courtyard, sprayed \c06c\c00r\c06y\c00s\c06t\c00a\c06l\c00 clear water for several feet into
-the air.
-    \c06There is a painted sign here.\c00
+      <roomdescription>The call of merchants crying their wares echoes in the air, brightly
+colored rugs, bolds of cloth, and beads among other things are on display
+around the large courtyard.  Dominating the center of the area, a diamond
+shaped fountain made of &amp;Km&amp;wa&amp;Wrb&amp;wl&amp;Ke&amp;n provides a nice place for people to
+converse and pass some time.  Water fountains several feet in the air,
+creating a gentle spray of mist in the air around the tiered basin.  The
+&amp;cDa&amp;Kl E&amp;wi&amp;Wr&amp;wa &amp;KGa&amp;cte&amp;n stands on the southern side of the courtyard, the towering
+walls of Ebou Dar spreading beyond view to the east and west.    
 </roomdescription>
       <flags>0</flags>
       <sector>City</sector>
@@ -199,7 +204,7 @@ the air.
     </exit>
     <exit direction="east" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="25007">
       <description>To the east you see a large sign that reads,
-&apos;Circuit of Heaven&apos;
+'Circuit of Heaven'
 </description>
     </exit>
     <exit direction="south" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="25010">
@@ -221,14 +226,14 @@ West - Outer Street
     </exdesc>
   </room>
   <room>
-    <roombasic title="\c07Grand Entrance \c00to the \c03Circuit \c00of \c06H\c00e\c06a\c00v\c06e\c00n" vnum="25007" zone="250">
-      <roomdescription>A pair of wide marble columns, a third as wide as the Dal
-Eira gate to the southwest, flank the entrance to the Circuit
-of Heaven. The Circuit of Heaven is to the east, a large oval
-dirt track surrounded by white stone grandstands that have
-multiple layers. Wide marble steps lead up to the wager board
-to the east. You can enter the grandstands to the north of the
-wager board.
+    <roombasic title="Grand Entrance to the Circuit of Heaven" vnum="25007" zone="250">
+      <roomdescription>Two wide columns, one-third the width of the &amp;cDa&amp;Kl E&amp;wi&amp;Wr&amp;wa &amp;KGa&amp;cte&amp;n to the
+southwest, stand tall in eternal watch over the entrance to the Circuit of
+Heaven.  Off to the east, a large oval track of &amp;yd&amp;Ki&amp;yr&amp;Kt&amp;n surrounded by
+gleaming stone grandstands that serves as one of Ebou Dar's famous horse
+tracks can be seen in the distance.  Grand &amp;Km&amp;wa&amp;Wrb&amp;wl&amp;Ke&amp;n steps lead to the wager
+board in the east, access to the grandstands can be reached to the north
+of the board.    
 </roomdescription>
       <flags>0</flags>
       <sector>City</sector>
@@ -256,17 +261,15 @@ Circuit of Heaven.
   </room>
   <room>
     <roombasic title="The Wager Board" vnum="25008" zone="250">
-      <roomdescription>This area of the Circuit of Heaven is filled with people who
-are standing in several lines. A line to claim winnings and
-a line to place bets are clearly marked here. There is a large
-wooden wager board displaying the horses that are running as
-well as their odds of winning. Clearly, some of the horses look
-suspicious - the ones with such names as &apos;Limping Susan&apos; and
-&apos;Blind Blaze&apos; show little promise of winning. A pair of heavy,
-thickly built men guard the wager board, where there is a man
-standing behind the counter, handling the winnings and earnings
-of the Circuit of Heaven.
-     \c06There is a sign here, showing where to bet.\c00
+      <roomdescription>This area of the Circuit of Heaven is filled with people standing in
+several lines during the hours before the beginning of a race.  The lines
+in which to place bets and claim winnings are clearly marked by plain
+signs, a large board sitting to one side of the room displays currently
+running horses and their odds of winning.  By the names of some of the
+horses, it seems that they show little promise of winning, but names can
+often be deceiving.  Two heavily muscled men lean against the counter,
+ready to aid the man handling the winnings and earnings of the Circuit of
+Heaven in a moment's notice.    
 </roomdescription>
       <flags>130</flags>
       <sector>City</sector>
@@ -284,29 +287,22 @@ of the Circuit of Heaven.
       <description>To the west wide marble steps lead down to the Northern Courtyard.
 </description>
     </exit>
-    <exdesc keyword="sign bet">
-      <description>Here you may place a wager on the horse that you believe will win.
-You can see a list of horses and thier odds by typing &apos;horses&apos;.  Then
-bet on a horse by typing: bet &lt;horse&gt; &lt;$&gt;. To the  north you can
-view the race from the grandstands. If your horse wins, you can return
-here to claim your winnings.
-Good luck!
-</description>
+    <exdesc keyword="">
+      <description> </description>
     </exdesc>
   </room>
   <room>
-    <roombasic title="\c00The \c03Circuit \c00of \c06H\c00e\c06a\c00v\c06e\c00n \c07Grandstands\c00" vnum="25009" zone="250">
-      <roomdescription>You stand between two sections of the white stone grandstands,
-white benches on both your sides packed with rich looking merchants
-and nobleman. As you look to the top of the grandstands, you see
-the less wealthy folk of Ebou Dar cheering for their favorite
-horse with raucous laughter. The grandstands are open air, and
-look more like a large stone circle than any sort of building.
-Below you, on the ground and rather far away from this distance,
-is the dirt racetrack, which curves in an oval around the Circuit.
-The racetrack is very wide, as this is the largest racetrack of
-Ebou Dar, and has closed stalls housing the horses at one end of
-the Circuit.
+    <roombasic title="The Circuit of Heaven Grandstands" vnum="25009" zone="250">
+      <roomdescription>Stepping from the wide hallway leading from the Wager Board, one is
+greeted with the sight of the oval shaped &amp;yd&amp;Ki&amp;yr&amp;Kt&amp;n track from a high vantage
+point.  To both sides of the entrance, well dressed nobility and
+successful merchants sit on the lower levels of the grandstands, the
+lesser folk of Ebou Dar cheering for their favorite horse loudly from the
+upper levels.  The &amp;wwhite&amp;n stone ends abruptly after the top level of seats,
+giving way to a vast expanse of sky, the Circuit of Heaven looking to be
+nothing but a large stone circle from the outside.  The hard packed &amp;yd&amp;Ki&amp;yr&amp;Kt&amp;n
+oval itself is very wide, the largest track to be found in Ebou Dar,
+closed stalls housing the horses built at one end of the enclosed area.  
 </roomdescription>
       <flags>130</flags>
       <sector>City</sector>
@@ -316,13 +312,6 @@ the Circuit.
       <description>To the south you see lines of people waiting to place a wager.
 </description>
     </exit>
-    <exdesc keyword="track">
-      <description>The track is wide, made of red dirt that has been hard packed and
-smoothed out. There are more than six lanes on the track,
-almost making you dizzy to look at it. Horses stand in stalls made
-of white wood near the edge of the track.
-</description>
-    </exdesc>
     <exdesc keyword="crowd people">
       <description>People of all nationalities, but predominantly Ebou Dari, line
 the grandstands of the Circuit of Heaven. Most look to be wealthy,
@@ -330,20 +319,28 @@ as the poor folk of Ebou Dari probably could not afford to spend
 money and time on watching the horses all day.
 </description>
     </exdesc>
+    <exdesc keyword="track">
+      <description>The track is wide, made of red dirt that has been hard packed and
+smoothed out. There are more than six lanes on the track,
+almost making you dizzy to look at it. Horses stand in stalls made
+of white wood near the edge of the track.
+</description>
+    </exdesc>
   </room>
   <room>
-    <roombasic title="\c05D\c00a\c05l\c00 E\c05i\c00r\c05a\c00 G\c05a\c00t\c05e\c00" vnum="25010" zone="250">
-      <roomdescription>You stand before the northern gate of Ebou Dar, the white stone
-columns flanking both sides of the triple arched gate. The gate
-has a high peaked arch with two smaller arches on each side.
-Sparkling white columns are on each side of the road, each more
-than ten paces in length, so that when you pass under the gate
-you are in the shade for several minutes. A large metal portcullis
-is drawn up at the top of the gate, and a tower reaches up several
-stories over the gate, affording a lookout for the city guard.
-To the south a sprawling white stone city dotted with squares,
-canals and bridges spreads out before you, and to the north you
-see a wide courtyard.
+    <roombasic title="&amp;cDa&amp;Kl E&amp;wi&amp;Wr&amp;wa &amp;KGa&amp;cte&amp;n" vnum="25010" zone="250">
+      <roomdescription>The northern gate into Ebou Dar is here, white stone columns flanking both
+sides of the triple arched gateway.  Crafted of a strong metal, the
+central arch is high peaked, two smaller arches flanking it to each side.
+Sparkling &amp;Km&amp;wa&amp;Wrb&amp;wl&amp;Ke&amp;n towers stand at measured points along the wide
+cobblestone path, the sheer size of them casting shadows along the path
+for several paces.  A large portcullis is drawn up at the top of the gate,
+waiting to be lowered as daylight slips beyond the horizon.  A tower spans
+several stories over the &amp;cDa&amp;Kl E&amp;wi&amp;Wr&amp;wa &amp;KGa&amp;cte&amp;n, providing a sentry point for the
+city guard.  To the south, a sprawling city in all its splendor fades from
+view, canals spanned by bridges and public squares set among the gleaming
+white buildings.  To the north lies a courtyard, inviting those on the
+beginnings of adventure or trade to stop a moment or two and rest.    
 </roomdescription>
       <flags>0</flags>
       <sector>City</sector>
@@ -361,9 +358,9 @@ see a wide courtyard.
       <description>To the south is the Northern Crossroads.
 </description>
     </exit>
-    <exdesc keyword="wall">
-      <description>There are strange indentions in the walls.
-Just big enough for a man to hide in.
+    <exdesc keyword="Portcullis door">
+      <description>The portcullis sways back forth above your head in its slot.
+It is only held up by one rope...
 </description>
     </exdesc>
     <exdesc keyword="indention">
@@ -371,21 +368,22 @@ Just big enough for a man to hide in.
 brick is missing from the indention in the east wall.
 </description>
     </exdesc>
-    <exdesc keyword="Portcullis door">
-      <description>The portcullis sways back forth above your head in its slot.
-It is only held up by one rope...
+    <exdesc keyword="wall">
+      <description>There are strange indentions in the walls.
+Just big enough for a man to hide in.
 </description>
     </exdesc>
   </room>
   <room>
     <roombasic title="The Secret Storeroom" vnum="25011" zone="250">
-      <roomdescription>As the stone door swings open, you enter a narrow space in the
-walls of the city. A stairwell is in one corner, leading up to
-the city wall above. The sounds of cityguards can be heard from
-above, and the sounds of merchants and horses passing through
-the Dal Eira gate come from the west. The smell of stale salt
-air reaches your nose as you enter this area, which is cluttered
-with armor and weapons, most of it in disuse.
+      <roomdescription>Here a small stone door is set into the walls of the city, opening into a
+hollowed out portion just to the west of the Dal Eira Gate.  The heavy
+door blends into the wall on either side of the wall, built in so well
+that it is highly unlikely that someone would just stumble across it.  In
+one corner of this dark door, a narrow stairwell is set, leading up to the
+city wall above.  The scent of stale, salty air makes this a quite
+unpleasant place to be for long.  Pieces of armor and weapons lie
+scattered against the walls, in various states of disuse.    
 </roomdescription>
       <flags>557</flags>
       <sector>Inside</sector>
@@ -400,25 +398,22 @@ with armor and weapons, most of it in disuse.
 </description>
     </exit>
     <exdesc keyword="stairs">
-      <description>The stairs seem to lead to the top of the citywall.
+      <description>The narrow stone stairwell appears to lead upward toward the top of the
+city wall.    
 </description>
     </exdesc>
   </room>
   <room>
-    <roombasic title="\c02No\c00r\c02th Sq\c00ua\c02re\c00" vnum="25012" zone="250">
-      <roomdescription>You stand in a wide northern square near the Dal Eira entrance
-to Ebou Dar. In the center of the square is a circular fountain
-in which a glass statue of a \c06lea\c14p\c00\c06ing \c07si\c00lv\c07er\c00pi\c07ke\c00 on a pedestal
-is surrounded by streams of flowing water and jets of sparkling
-water that create a \c01r\c03a\c02i\c06n\c04b\c05o\c07w\c00 effect as the sun shines down upon
-the square. The ground is paved with white flagstones that look
-rather new and the area looks well kept in general. Ebou Dari
-mill around the square, the men dressed in long colorful vests
-and wide shirts, and the woman in tightfitting dresses of pale
-colors, showing multicolored petticoats underneath. To the north
-you see the busy Dal Eira gate, the largest gate to the city.
-To the you see the flower lined Cordan Promenade of Ebou Dar.
-     \c06There is a sign here.\c00
+    <roombasic title="&amp;rNo&amp;Rrt&amp;wh &amp;WS&amp;wq&amp;Rua&amp;rre&amp;n" vnum="25012" zone="250">
+      <roomdescription>The road opens into the northern square of Ebou Dar, the &amp;cDa&amp;Kl E&amp;wi&amp;Wr&amp;wa &amp;KGa&amp;cte&amp;n
+standing tall just to the north.  In the center of this area, a circular
+fountain of &amp;wwhite&amp;n &amp;Km&amp;wa&amp;Wrb&amp;wl&amp;Ke&amp;n acts as the focal point of the eye, a silverpike
+made of crystal displayed beautifully on a pedestal in the middle.  
+Flowing jets of sparkling water spray around the silverpike, creating a
+&amp;rr&amp;ya&amp;gi&amp;cn&amp;bb&amp;Bo&amp;mw&amp;n effect as sunlight illuminates the square each day.  The ground is
+paved in white stones, all in a good state of repair, the area itself
+looking to be well kept.  To the south, the flower lined Cordan Promenade
+looks to be an inviting area for a mid-afternoon stroll.    
 </roomdescription>
       <flags>130</flags>
       <sector>City</sector>
@@ -453,16 +448,16 @@ West - Upper Inner Street
     </exdesc>
   </room>
   <room>
-    <roombasic title="\c07Above \c02D\c00a\c02l \c00E\c02i\c00r\c02a \c07Gate" vnum="25013" zone="250">
-      <roomdescription>The narrow stone stairwell from a storeroom below leads to
-the top of Dal Eira gate. From here, you can see a wide white
-stone parapet running the length of the wall, with a walkway
-running alonside it. The city wall is well guarded with men
-wearing the green and white insignia of the Royal House. To
-the south you can see the city spread out before you over
-a low hanging parapet. The towers and spires of the palace
-and a few noble houses can be seen to the west, and a wide
-bay to the east.
+    <roombasic title="Above the &amp;cDa&amp;Kl E&amp;wi&amp;Wr&amp;wa &amp;KGa&amp;cte&amp;n" vnum="25013" zone="250">
+      <roomdescription>A narrow stone stairwell from a dusty storeroom below leads to the top of
+the Dal Eira Gate, a &amp;ywooden&amp;n entryway set into the stone, kept closed for
+the most part.  From here, a stone parapet runs the length of the city
+walls, a narrow walkway running alongside it creating a path for the city
+guard to watch the landscape outside for impending attacks.  To the south,
+the city spreads out over a lower stone barrier, roads and squares clear
+from this vantage point.  To the west, gleaming &amp;Km&amp;wa&amp;Wrb&amp;wl&amp;Ke&amp;n towers and spires
+of the palace and noble houses rise into view, a large bay to the east.  
+
 </roomdescription>
       <flags>0</flags>
       <sector>City</sector>
@@ -483,17 +478,13 @@ bay to the east.
   </room>
   <room>
     <roombasic title="Atop the City Wall" vnum="25014" zone="250">
-      <roomdescription>The white stone of the upper level of the city wall sparkles
-in the sunlight, almost blinding you. The walkway continues
-east and west along the wall, and small slits are below the
-northern parapet of the wall, meant for archers. A few wall
-guards walk past, patrolling the wall and the city for signs
-of trouble. As you look to the south, you see the domed and
-pear shaped spires of the Royal Palace, striped with various
-colors. Further west, beyond the Palace, you see three huge
-spires reach toward the city, almost reaching two thirds
-of the way to the topmost spire of the castle. That must be
-the west gate of Ebou Dar.
+      <roomdescription>The walkway continues east and west from here, small slits set into the
+northern parapet of the wall, meant for concealed archery during a battle.
+City guards stand watch at measured distances along the wall, ready to
+give warning of trouble.  To the south, the delicate beauty of the Royal
+Palace's domed spires rise high into the air.  To the west, beyond the
+palace, three towering arches reach toward the sky, marking the location
+of the &amp;kThr&amp;Kee T&amp;wo&amp;Ww&amp;we&amp;Krs G&amp;kate&amp;n.    
 </roomdescription>
       <flags>64</flags>
       <sector>City</sector>
@@ -509,28 +500,23 @@ In the distance you can see the Northeast Tower.
 </description>
     </exit>
     <exdesc keyword="archer windows slits">
-      <description>These small windows seem to be for archers
-during an assault. They are much too small for you to fit
-through.
+      <description>These small windows appear to be for archers during an assult.  They are
+much too small to fit through.    
 </description>
     </exdesc>
   </room>
   <room>
     <roombasic title="Atop the City Wall" vnum="25015" zone="250">
-      <roomdescription>The white walls of the city wall blind you, reflecting light
-that shines down on it. Looking northwards, you see a large race
-track which you assume to be the Circuit of Heaven. Ebou Dar has
-a racetrack outside each gate, and you can make out the edge of
-the western racetrack - the Circuit of the Sun - as you look west.
-To the south you see a blazing white city, dotted with domed
-houses and shops, and canals running through every part of the
-city. There are so many squares that you can see below in the
-city that you quickly lose count of them. In the center of the
-city you see a very large marble statue of a woman pointing to
-the south, surrounding by jets of water and a large fountain.
-That must be the main square of Ebou Dar, and you see that it
-has exits to most of the shops in Ebou Dar, as well as the palace
-to the west.
+      <roomdescription>The &amp;w&amp;wwhite&amp;n&amp;n stone of the city wall reflects the light that shines down on it
+during the day, creating a blinding glare across the narrow walkway.  To
+the north, a large &amp;yd&amp;Ki&amp;yr&amp;Kt&amp;n track is visible, most likely the Circuit of
+Heaven.  Outside each gate of Ebou Dar, a racetrack is built to attract
+visiting merchants, nobles, and peasants alike.  To the south, a vast city
+built in &amp;wwhite&amp;n, mostly &amp;Km&amp;wa&amp;Wrb&amp;wl&amp;Ke&amp;n, spreads out in splendor, domed houses and
+shops mixed with lower buildings.  Canals wind through every part of the
+city, the faint smell of salt hanging in the air.  In the center of the
+city, a large square is situated, quite a few shops in Ebou Dar opening
+into the area.    
 </roomdescription>
       <flags>64</flags>
       <sector>City</sector>
@@ -550,17 +536,12 @@ Close by the wall widens into the North Gate.
   </room>
   <room>
     <roombasic title="Atop the City Wall" vnum="25016" zone="250">
-      <roomdescription>The white stone of the upper level of the city wall sparkles
-in the sunlight, almost blinding you. The walkway continues
-east and west along the wall, and small slits are below the
-northern parapet of the wall, meant for archers. A few wall
-guards walk past, patrolling the wall and the city for signs
-of trouble. As you look to the south, you see the domed and
-pear shaped spires of the Royal Palace, striped with various
-colors. Further west, beyond the Palace, you see three huge
-spires reach toward the city, almost reaching two thirds
-of the way to the topmost spire of the castle. That must be
-the west gate of Ebou Dar.
+      <roomdescription>The walkway continues east and west from here.  City guards patrol the
+walkway at all times of the day, scanning the surrounding areas for any
+sign of trouble.  To the south, the dazzling sight of the Tarasin Palace's
+towering spires rise high into the air.  To the west, beyond the palace,
+three large arches reach toward the sky, marking the location of the &amp;kThr&amp;Kee
+T&amp;wo&amp;Ww&amp;we&amp;Krs G&amp;kate&amp;n.    
 </roomdescription>
       <flags>0</flags>
       <sector>City</sector>
@@ -580,20 +561,16 @@ In the distance the wall widens into the North Gate.
   </room>
   <room>
     <roombasic title="Atop the City Wall" vnum="25017" zone="250">
-      <roomdescription>The white walls of the city wall blind you, reflecting light
-that shines down on it. Looking northwards, you see a large race
-track which you assume to be the Circuit of Heaven. Ebou Dar has
-a racetrack outside each gate, and you can make out the edge of
-the western racetrack - the Circuit of the Sun - as you look west.
-To the south you see a blazing white city, dotted with domed
-houses and shops, and canals running through every part of the
-city. There are so many squares that you can see below in the
-city that you quickly lose count of them. In the center of the
-city you see a very large marble statue of a woman pointing to
-the south, surrounding by jets of water and a large fountain.
-That must be the main square of Ebou Dar, and you see that it
-has exits to most of the shops in Ebou Dar, as well as the palace
-to the west.
+      <roomdescription>The &amp;wwhite&amp;n stone of the city wall reflects the light that shines down on it
+during the day, creating a blinding glare across the narrow walkway.  To
+the west, a large &amp;yd&amp;Ki&amp;yr&amp;Kt&amp;n track is visible, most likely the Circuit of the
+Sun.  Outside each gate of Ebou Dar, a racetrack is built to attract
+visiting merchants, nobles, and peasants alike.  To the south, a vast city
+built in &amp;wwhite&amp;n, mostly &amp;Km&amp;wa&amp;Wrb&amp;wl&amp;Ke&amp;n, spreads out in splendor, domed houses and
+shops mixed with lower buildings.  Canals wind through every part of the
+city, the faint smell of salt hanging in the air.  In the center of the
+city, the &amp;mMol &amp;KHa&amp;wr&amp;Wa &amp;wS&amp;Kqu&amp;mare&amp;n is situated, quite a few shops in Ebou Dar
+opening into the area.    
 </roomdescription>
       <flags>0</flags>
       <sector>City</sector>
@@ -610,20 +587,15 @@ In the distance the wall widens into the North Gate.
     </exit>
   </room>
   <room>
-    <roombasic title="Outside of the \c07N\c00o\c07r\c00t\c07h\c00e\c07a\c00s\c07t \c02T\c00o\c02w\c00e\c02r\c00" vnum="25018" zone="250">
-      <roomdescription>The white stone of the upper level of the city wall sparkles
-in the sunlight, almost blinding you. The walkway continues
-east and west along the wall, and small slits are below the
-northern parapet of the wall, meant for archers. A few wall
-guards walk past, patrolling the wall and the city for signs
-of trouble. As you look to the south, you see the domed and
-pear shaped spires of the \c02Royal Palace\c00, striped with various
-colors. Further west, beyond the Palace, you see three huge
-spires reach toward the city, almost reaching two thirds
-of the way to the topmost spire of the castle. That must be
-the west gate of Ebou Dar. The entrance to a large tower
-with a green striped dome on top is east.
-to the east.
+    <roombasic title="Outside the Northeast Tower" vnum="25018" zone="250">
+      <roomdescription>The walkway continues east and west from here, small slits set into the
+northern parapet of the wall to serve in concealed archery during an
+attack.  City guards patrol the wall at all hours of the day, watching for
+possible trouble.  To the south, the towering spires and pear shaped domes
+of the Royal Palace rise high into the air.  To the west, three large
+arches reach toward the sky, marking the location of the &amp;kThr&amp;Kee T&amp;wo&amp;Ww&amp;we&amp;Krs
+G&amp;kate&amp;n.  The entrance to a gleaming &amp;Ks&amp;wt&amp;Ko&amp;wn&amp;Ke&amp;n tower topped with a &amp;ggreen&amp;n striped
+dome is to the east.    
 </roomdescription>
       <flags>0</flags>
       <sector>Inside</sector>
@@ -641,18 +613,18 @@ distance.
     </exit>
   </room>
   <room>
-    <roombasic title="The \c07N\c00o\c07r\c00t\c07h\c00e\c07a\c00s\c07t \c02T\c00o\c02w\c00e\c02r\c00" vnum="25019" zone="250">
-      <roomdescription>You stand inside a wide circular tower that is at the eastern
-edge of the Ebou Dari city wall. The tower, like everything else
-in the city, is made of \c07white\c00 stone blocks, polished smooth and
-sparkling in the sun. The dome of the tower is a large pointed
-white turnip striped with green. There are small arrow slits on
-all sides of the tower, some of them wide enough to allow a view
-of the city and of the eastern bay. On each side of the tower, in
-the center between many arrow slits, is a small arched stone window
-overlooking the northern forests, bay or city as it may be.There
-is a ladder reaching towards a trap door in the ceiling and small
-stone stairs reach downwards to the first level of the city wall.
+    <roombasic title="The Northeast Tower" vnum="25019" zone="250">
+      <roomdescription>Here, a wide circular tower built on the northeastern corner of the walls
+of Ebou Dar stands tall against the sky, polished &amp;wwhite&amp;n stones sparkling
+brightly.  The dome of the tower is turnip shaped, &amp;wwhite&amp;n in color and
+striped in &amp;ggreen&amp;n.  Small slits are cut into the stone on all sides of the
+tower, some of them large enough to allow a view of the city and the
+eastern bay.  On each side of the tower, centered among quite a few arrow
+slits, a small arched window is cut, providing a view of the northern
+forests, the bay, or the city.  A &amp;ywooden&amp;n ladder reaching up toward a trap
+door in the ceiling is placed toward the west side of the tower, a small
+&amp;Ks&amp;wt&amp;Ko&amp;wn&amp;Ke&amp;n staircase reaching downward to the bottom of the city wall placed to
+the east side.    
 </roomdescription>
       <flags>76</flags>
       <sector>City</sector>
@@ -662,7 +634,7 @@ stone stairs reach downwards to the first level of the city wall.
       <description>To the west is an archway that opens onto the walkway atop the city wall.
 </description>
     </exit>
-    <exit direction="up" keyword="door trapdoor" exitinfo="0" keynum="0" toroom="25020">
+    <exit direction="up" keyword="door trapdoor" exitinfo="3" keynum="0" toroom="25020">
       <description>A ladder leads up to a trap door in the ceiling.
 </description>
     </exit>
@@ -673,43 +645,36 @@ Northeast Tower.
     </exit>
   </room>
   <room>
-    <roombasic title="Atop the \c07N\c00o\c07r\c00t\c07h\c00e\c07a\c00s\c07t \c02T\c00o\c02w\c00e\c02r\c00" vnum="25020" zone="250">
-      <roomdescription>You stand at the top of the northeastern tower of the Ebou Dari
-city wall, and there are peaked, arched windows on four sides
-of the circular room. You see the inside of the peaked dome above
-you, and a white view of the city dotted with \c06c\c00a\c06n\c00a\c06l\c00s and \c02s\c00q\c02u\c00a\c02r\c00e\c02s\c00
-is through the southern window. You see a wall walkway as you
-look out of the western window - and the walkway continues toward
-a similar looking tower to the west. The northern view affords
-you a sight of the \c07Circuit\c00 of \c06H\c00e\c06a\c00v\c06e\c00n, but all you can see of the
-racetrack is a cloud of dust - perhaps a race is in progress. To
-the east the green and blue bay of Ebou Dar sparkles in the sun,
-and a large ferry can be seen lazily crossing the bay towards the
-Rahad section of Ebou Dar off in the distance.
+    <roombasic title="The Top of the Northeast Tower" vnum="25020" zone="250">
+      <roomdescription>At the top of the northeastern tower of the walls of Ebou Dar, four arched
+windows are cut into this circular room.  The inside of the peaked dome
+above is visible, a view of the city dotted with canals and squares
+provided through the southern window.  The stone walkway of the city wall
+is seen through the western opening, the path continuing on toward a
+similar tower to the west.  The northern window affords a sight of the
+Circuit of Heaven, the &amp;yd&amp;Ki&amp;yr&amp;Kt&amp;n track appearing as a thin line of a &amp;ybrown&amp;n hue,
+the green and blue bay of Ebou Dar is seen to the east.    
 </roomdescription>
       <flags>64</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
-    <exit direction="down" keyword="trapdoor door" exitinfo="0" keynum="0" toroom="25019">
+    <exit direction="down" keyword="trapdoor door" exitinfo="3" keynum="0" toroom="25019">
       <description>You see a small trapdoor leading down.
 </description>
     </exit>
-    <exdesc keyword="bay">
-      <description>On the bay you can make out an athan&apos;miere ship
-ancored alone.
-</description>
+    <exdesc keyword="">
+      <description> </description>
     </exdesc>
   </room>
   <room>
-    <roombasic title="The Cityguard Captain&apos;s Office" vnum="25021" zone="250">
-      <roomdescription>You are in the cluttered office of the cityguard&apos;s captain. A desk
-sits in the corner with papers cluttering the area. The room is made
-of white plastered stone, that looks to be freshly painted. There
-is a small door to the east and a large door to the south.  A small
-staircase leads to the next level along the south wall. The cityguard
-is conspicuously absent - you wonder if standing here too long is a
-wise course of action.
+    <roombasic title="The Captain of the City Guard's Office" vnum="25021" zone="250">
+      <roomdescription>This room appears to be an office of some sort, obviously for someone
+important.  A medium sized desk of &amp;rr&amp;Ro&amp;Ks&amp;re&amp;Rw&amp;Ko&amp;ro&amp;Rd&amp;n sits two feet from the north
+wall, stacks of papers cluttering the surface.  The walls are made of
+&amp;wwhite&amp;n plastered stone that looks to be freshly painted.  A small door is
+set in the east wall, a larger one to the south.  A narrow staircase leads
+upward to the next level along the west wall.    
 </roomdescription>
       <flags>72</flags>
       <sector>Inside</sector>
@@ -730,15 +695,14 @@ the upper level.
     </exit>
   </room>
   <room>
-    <roombasic title="The Captains Closet" vnum="25022" zone="250">
-      <roomdescription>This tiny closet is barely large enough to hang your
-coat. The walls are of the same whitewashed stone that
-makes up the rest of the Captain&apos;s room, plastered and
-smoothly polished. There are a few empty hangers here,
-and a pale green longvest with an insignia lies to one
-side. Several wide sleeved pleated shirts are next to
-the vest, and a pair of long white pants is on the right.
-A small wooden door leads west to the Captain&apos;s room.
+    <roombasic title="A Small Closet" vnum="25022" zone="250">
+      <roomdescription>This tiny room is barely large enough to be called a closet.  The walls
+are of the same whitewashed &amp;Ks&amp;wt&amp;Ko&amp;wn&amp;Ke&amp;n as the Captain's office, plastered and
+smoothly finished.  A few empty hangers are here, a pale green vest with
+an insignia on it hangs neatly to one side.  Several wide sleeved, pleated
+shirts are next to the vest, a pair of long white pants hanging beside the
+shirts.  A small &amp;ywooden&amp;n door is set into the west wall of the cramped
+room, leading back to the office.    
 </roomdescription>
       <flags>72</flags>
       <sector>Inside</sector>
@@ -749,14 +713,12 @@ A small wooden door leads west to the Captain&apos;s room.
     </exit>
   </room>
   <room>
-    <roombasic title="Intersection Lower Inner Street and Consort Way" vnum="25023" zone="250">
-      <roomdescription>You are standing at a crossroads inside the northern wall
-of the city.  The Northeast Tower stands partially in the Bay
-ending the city wall. Rows of piers line the Bay to the south.
-The lower inner street continues to the west, and Consort Way
-winds its way down to the south alongside a wide canal that
-is near the many piers and docks of Ebou Dar.
-        \c06There is a sign here.\c00
+    <roombasic title="The Intersection of Lower Inner Street and Consort Way" vnum="25023" zone="250">
+      <roomdescription>Two paths meet, forming a crossroad inside the northern wall of the city
+in this area.  The Northeast Tower stands tall in all its glory to the
+north, built partially in the bay to form an ending point for the city
+wall.  The Lower Inner Street continues to the west, Consort Way winding
+its way to the south alongside the sparkling depths of the bay.    
 </roomdescription>
       <flags>0</flags>
       <sector>City</sector>
@@ -786,17 +748,14 @@ West - Lower Inner Street
   </room>
   <room>
     <roombasic title="Atop the City Wall" vnum="25024" zone="250">
-      <roomdescription>The white stone of the upper level of the city wall sparkles
-in the sunlight, almost blinding you. The walkway continues
-east and west along the wall, and small slits are below the
-northern parapet of the wall, meant for archers. A few wall
-guards walk past, patrolling the wall and the city for signs
-of trouble. As you look to the south, you see the domed and
-pear shaped spires of the Royal Palace, striped with various
-colors. Further west, beyond the Palace, you see three huge
-spires reach toward the city, almost reaching two thirds
-of the way to the topmost spire of the castle. That must be
-the west gate of Ebou Dar.
+      <roomdescription>The walkway continues east and west from here, a &amp;wwhite&amp;n stone parapet
+running along the northern edge of the wall.  On the south edge of the
+wall, a lower parapet is built, acting as a barrier for accidents the
+fault of a misplaced step.  City guards patrol the walkway at all times of
+the day, scanning the surrounding areas for any sign of trouble.  To the
+south, the dazzling sight of the Tarasin Palace's towering spires rise
+high into the air.  To the west, three large arches reach toward the sky,
+marking the location of the &amp;kThr&amp;Kee T&amp;wo&amp;Ww&amp;we&amp;Krs G&amp;kate&amp;n from this vantage point.  
 </roomdescription>
       <flags>64</flags>
       <sector>City</sector>
@@ -813,17 +772,14 @@ the west gate of Ebou Dar.
   </room>
   <room>
     <roombasic title="Lower Inner Street" vnum="25025" zone="250">
-      <roomdescription>You stand in a wide, light grey stone paved road that runs east
-and west through the northern section of Ebou Dar. Many shops
-line both sides of the street, some of the merchants standing
-outside their shops, displaying their wares on racks and small
-tables. Most of the houses have low domes, some of the painted
-with brilliant hues of \c01r\c00e\c01d, \c03y\c00e\c03l\c00l\c03o\c00w and \c04b\c00l\c04u\c00e. The merchants
-themselves are dressed in long multicolored vests that make
-the houses drab in comparison. The tall white stone walls of
-the city are to the north, beyond several small houses. There is
-a larger intersection to the west, where you see a fish shaped
-fountain spraying water among a throng of people.
+      <roomdescription>A road paved of light &amp;Kgray&amp;n stones runs east and west through the northern
+section of Ebou Dar, the thoroughfare wide enough to fit three wagons
+abreast.  Shops and other buildings line both sides of the street, the
+occasional house set in among them.  Most of the buildings have low domes,
+some of them painted in brilliant hues of &amp;rr&amp;Re&amp;rd&amp;n, &amp;yy&amp;Ye&amp;yl&amp;Yl&amp;yo&amp;Yw&amp;n, and &amp;bb&amp;Bl&amp;bu&amp;Be&amp;n.  The
+&amp;wwhite&amp;n stone walls of the city are to the north beyond several small
+houses, standing tall in constant guard of Ebou Dar.  To the west, a large
+square is visible, a fish shaped fountain spraying water into the air.  
 </roomdescription>
       <flags>0</flags>
       <sector>Inside</sector>
@@ -838,16 +794,16 @@ fountain spraying water among a throng of people.
     </exit>
   </room>
   <room>
-    <roombasic title="North Inner Street" vnum="25026" zone="250">
-      <roomdescription>You stand in a wide, grey stone paved road that continues east
-and west through the northern part of Ebou Dar. The high walls
-of the city bordering this street to the north make this area
-seem quite unadorned in comparison to the exotic shops and noble
-estates bordering to the south. Far off in the southwestern
-distance you see a large dome painted with gold and blue stripes,
-and you assume this is the manor of a rather important noble.
-The domes of the Palace shine beyond several houses to the south,
-and a large square can be seen to the east.
+    <roombasic title="Upper Inner Street" vnum="25026" zone="250">
+      <roomdescription>A road paved of light &amp;Kgray&amp;n stones runs east and west through the northern
+part of Ebou Dar, the path wide enough to accommodate three wagons
+abreast.  The high walls of the city bordering the street to the north
+makes this area seem quite unadorned and perhaps dull in comparison to the
+exotic shops and breathtaking estates to the south.  To the southwest, a
+large dome painted with &amp;Yg&amp;yo&amp;Yl&amp;yd&amp;n and &amp;Bb&amp;bl&amp;Bu&amp;be&amp;n stripes is visible far off in the
+distance, certainly the manor of a rather important noble.  The domes and
+spires of Tarasin Palace shine beyond several buildings to the south, a
+large square is nearby to the east.    
 </roomdescription>
       <flags>0</flags>
       <sector>City</sector>
@@ -862,21 +818,17 @@ and a large square can be seen to the east.
     </exit>
     <exit direction="west" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="25047">
       <description>To the west the street continues betwenn the wall of the city
-and the walls of nobles&apos; estates.
+and the walls of nobles' estates.
 </description>
     </exit>
   </room>
   <room>
-    <roombasic title="Outer trail" vnum="25027" zone="250">
-      <roomdescription>You are on a trail leading along the outside of the northern
-city wall.  Dense foliage makes it impossible to go anywhere
-but along the path.  The trail continues east, where the path
-darkens and thins markedly, making you wonder if this road
-is frequented at all. No wagon or horse tracks are seen on
-the dirt road, but the sounds of horses can be heard from the
-west, coming from the track of the Circuit of Heaven, mixed
-with cheers coming from the grandstands. The gates of the
-Circuit of Heaven are directly west.
+    <roombasic title="An Outer Trail" vnum="25027" zone="250">
+      <roomdescription>A hard packed &amp;yd&amp;Ki&amp;yr&amp;Kt&amp;n trail leads along the outside edge of the northern city
+wall, dense foliage growing to either side, making traveling next to
+impossible.  To the east, the path thins markedly, disappearing under a
+heavy growth of &amp;Gg&amp;gr&amp;Ge&amp;ge&amp;Gn&amp;ge&amp;Gr&amp;gy&amp;n.  The soft sound of cheering during the hours of
+a horse race, the gates of the Circuit of Heaven are to the west.    
 </roomdescription>
       <flags>0</flags>
       <sector>Inside</sector>
@@ -890,15 +842,14 @@ You can hear the crowds from here.
   </room>
   <room>
     <roombasic title="Outer Road" vnum="25028" zone="250">
-      <roomdescription>You are on a roadway travelling along the outside the sparkling
-white city walls that can be seen to the south, and the city
-itself can be partly seen through the northern - Dal Eira - gate
-to Ebou Dar. The road continues around the wall to the west,
-bending southwards shortly. A sign posted here, and partly hidden
-by tree foliage marks this path as leading to the other racetracks
-of Ebou Dar - the Circuit of the \c03S\c00u\c03n\c00 and the \c07S\c00i\c07l\c00v\c07e\c00r Circuit. To
-the east the entrance to the Circuit of Heaven can be seen across
-a large northern courtyard.
+      <roomdescription>A hard packed &amp;yd&amp;Ki&amp;yr&amp;Kt&amp;n roadway leads along the outside of the city walls,
+dense foliage growing to either side, part of the city itself visible
+through the &amp;kDa&amp;Kl E&amp;wi&amp;Wr&amp;wa &amp;KGa&amp;kte&amp;n.  The road continues around the wall to the
+west, curving southward in the distance.  A sign sits to one side of the
+road, once marking the path as leading to the other race tracks of Ebou
+Dar, completely overgrown in thick vines and other foliage.  To the east,
+the entrance to the Circuit of Heaven can be seen across a large
+courtyard.    
 </roomdescription>
       <flags>0</flags>
       <sector>Inside</sector>
@@ -911,14 +862,13 @@ a large northern courtyard.
   </room>
   <room>
     <roombasic title="Lower Canal Street" vnum="25029" zone="250">
-      <roomdescription>This street is wide and runs along the side of a narrow canal
-that is to the south, by the white city walls. The canal is
-rather deep, and murky and empties into the bay that is off
-to the east. The road is paved with white flagstones, and the
-walls of the nearby shops and houses are a similar white -
-plastered stone, most of them. The domes and roofs of the houses
-are white and decorated with brilliant greens and yellows that
-reflect in the noonday sun.
+      <roomdescription>Here, a paved road of &amp;wwhite&amp;n flagstones runs east and west along the side
+of a narrow canal to the north.  The murky depths of the canal appear to
+be rather deep, clouded water spilling into the bay off to the east.  The
+towering height of the southern city wall lie to the south of the street,
+the walls of nearby buildings are of a similar color, plastered stone for
+the most part.  Topping the whitewashed buildings, turnip shaped domes are
+striped in brilliant hues of &amp;rr&amp;Re&amp;rd&amp;Rs&amp;n, &amp;Gg&amp;gr&amp;Ge&amp;ge&amp;Gn&amp;gs&amp;n, and &amp;yy&amp;Ye&amp;yl&amp;Yl&amp;yo&amp;Yw&amp;ys&amp;n.    
 </roomdescription>
       <flags>0</flags>
       <sector>City</sector>
@@ -930,24 +880,18 @@ reflect in the noonday sun.
     <exit direction="west" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="25046">
       <description>&lt;NONE&gt;</description>
     </exit>
-    <exdesc keyword="flag banner">
-      <description>A strange serpent-like animal in red atop a sea of white.
-What could it mean?
-</description>
+    <exdesc keyword="">
+      <description> </description>
     </exdesc>
   </room>
   <room>
     <roombasic title="Lower Inner Street" vnum="25030" zone="250">
-      <roomdescription>You stand in a wide, light grey stone paved road that runs east
-and west through the northern section of Ebou Dar. Many shops
-line both sides of the street, some of the merchants standing
-outside their shops, displaying their wares on racks and small
-tables. Most of the houses have low domes, some of the painted
-with brilliant hues of \c01r\c00e\c01d, \c03y\c00e\c03l\c00l\c03o\c00w and \c04b\c00l\c04u\c00e. The merchants
-themselves are dressed in long multicolored vests that make
-the houses drab in comparison. A narrow, murky looking canal
-is to the south, and it continues flowing towards the southeast,
-eventually emptying into a larger canal and then into the Bay.
+      <roomdescription>A road of paved light &amp;Kgray&amp;n stones runs east and west through the northern
+section of Ebou Dar, wide enough to fit three wagons abreast.  Shops and
+other buildings line both sides of the street, low domes painted in
+vibrant colors of &amp;rr&amp;Re&amp;rd&amp;n, &amp;yy&amp;Ye&amp;yl&amp;Yl&amp;yo&amp;Yw&amp;n, and &amp;bb&amp;Bl&amp;bu&amp;Be&amp;n topping the &amp;Ww&amp;wh&amp;Wi&amp;wt&amp;We&amp;ww&amp;Wa&amp;ws&amp;Wh&amp;we&amp;Wd&amp;n buildings.
+To the south, a narrow canal filled with murky water flows to the
+southeast, eventually emptying into a larger canal and later into the bay.
 </roomdescription>
       <flags>0</flags>
       <sector>Inside</sector>
@@ -965,14 +909,12 @@ eventually emptying into a larger canal and then into the Bay.
   </room>
   <room>
     <roombasic title="Lower Inner Street" vnum="25031" zone="250">
-      <roomdescription>The street continues from east to west alongside the northern
-city wall that glitters a bright white in the midday sun. A
-narrow stone lined canal follows the road on the south side,
-merging into a larger canal to the east. Far off in the western
-distance you see a large square and an intersection. To the
-east you see the road bend southwards as the northern city wall
-ends and many piers and docks spread across the eastern edge
-of Ebou Dar, near the bay.
+      <roomdescription>The street continues from east to west along the northern wall of Ebou
+Dar.  A narrow canal follows the road on the south side, merging into a
+larger canal to the east.  To the west, a large square and the crossing of
+two streets are visible in the distance.  The road bends southward as the
+northern city wall ends to the east, many piers and docks spreading across
+the eastern edge of the city near the bay.    
 </roomdescription>
       <flags>0</flags>
       <sector>Inside</sector>
@@ -987,17 +929,11 @@ of Ebou Dar, near the bay.
   </room>
   <room>
     <roombasic title="Lower Inner Street" vnum="25032" zone="250">
-      <roomdescription>You stand in a wide, light grey stone paved road that runs east
-and west through the northern section of Ebou Dar. Many shops
-line both sides of the street, some of the merchants standing
-outside their shops, displaying their wares on racks and small
-tables. Most of the houses have low domes, some of the painted
-with brilliant hues of red, yellow and blue. The merchants
-themselves are dressed in long multicolored vests that make
-the houses drab in comparison. The tall white stone walls of
-the city are to the north, beyond several small houses. The
-dead end to one of Ebou Dar&apos;s many canals is to the south, and
-it continues eastward, its murky waters looking rather slimy.
+      <roomdescription>A road paved in light &amp;Kgray&amp;n stones runs east and west through the northern
+section of Ebou Dar, white stone buildings lining the street to both
+sides.  Most of the houses have low domes, some of them striped in vibrant
+hues &amp;rr&amp;Re&amp;rd&amp;Rs&amp;n, &amp;gg&amp;Gr&amp;ge&amp;Ge&amp;gn&amp;Gs&amp;n, and &amp;yy&amp;Ye&amp;yl&amp;Yl&amp;yo&amp;Yw&amp;ys&amp;n.  One of Ebou Dar's many canals ends to the
+south, continuing eastward, its gloomy waters looking rather slimy.    
 </roomdescription>
       <flags>0</flags>
       <sector>Inside</sector>
@@ -1012,15 +948,14 @@ it continues eastward, its murky waters looking rather slimy.
   </room>
   <room>
     <roombasic title="Lower Inner Street" vnum="25033" zone="250">
-      <roomdescription>This narrow road slopes gently downhill as it runs along the
-inside of the city wall.  Small shops line the south side of
-this road, some of them looking rather rundown, but none of
-them in shambles. Even the worst houses in Ebou Dar are palaces
-compared to the best in the Rahad section across the bay, it
-is said. The road is paved with light grey stones, and a square
-can be seen to the west, gushing water upwards. The Dal Eira
-gate is somewhere to the northwest and a canal begins to flow
-to the east.
+      <roomdescription>The road slopes gently downhill as it runs along the inside of the city
+wall, small shops and buildings lining the south side of the street.  
+Some of them appear to be rather run down, though none of them are in a
+complete state of disrepair and ruin.  Even the worst houses in Ebou Dar
+seem like palaces compared to the best in the Rahad section of the city,
+located across the bay.  The thoroughfare is paved with light &amp;Kgray&amp;n stones,
+leading toward and away from a city square to the east.  The &amp;kDa&amp;Kl E&amp;wi&amp;Wr&amp;wa &amp;KGa&amp;kte&amp;n
+is somewhere to the northwest, a canal beginning to flow to the east.    
 </roomdescription>
       <flags>0</flags>
       <sector>Inside</sector>
@@ -1035,15 +970,15 @@ to the east.
   </room>
   <room>
     <roombasic title="Dashar Street" vnum="25034" zone="250">
-      <roomdescription>This street is tiled with diamond cut white flagstones, well
-polished and clean. The street is bordered by a shop to the
-north and a canal to the south, next to the walls of the
-Tarasin Palace. The canal begins here, and continues eastwards
-where it passes under many bridges and bends south toward
-the bay. To the west a small square spreads out before the
-northern side gates of the Palace. A noble&apos;s estate can be
-seen to the northwest, the domes of the manor striped golden
-and blue.
+      <roomdescription>The street is paved with diamond cut flagstones, cleaned and well
+polished.  To the north, the Mail and Proclamation Room of Ebou Dar is
+built, awaiting messages to deliver.  A narrow canal winds its way on the
+southern side of the road, snaking along the walls of the Tarasin Palace.
+Beginning here, the canal continues eastward, passing under many bridges
+and bending south toward the bay.  To the west, a small square spreads out
+before the northern side gates to the palace.  An estate, most likely
+owned by a noble, can be seen to the northwest, the domes of the manor
+striped in &amp;Yg&amp;yo&amp;Yl&amp;yd&amp;n and &amp;Bb&amp;bl&amp;Bu&amp;be&amp;n.    
 </roomdescription>
       <flags>0</flags>
       <sector>City</sector>
@@ -1063,15 +998,13 @@ and blue.
   </room>
   <room>
     <roombasic title="Dashar Street" vnum="25035" zone="250">
-      <roomdescription>This street is tiled with diamond cut white flagstones, well
-polished and clean. The walls of a house are to the north,
-white plastered and gleaming, without flaking in any way.
-The Dashar canal continues east here, and passes under the
-Cordan Promenade bridge to the southeast. Flowers line the
-streets to the east, and white walled shops fill the large
-square to the south. The top of a tall white marble statue
-can be seen to the southeast, and the walls of the Tarasin
-Palace can be seen to the southwest, domed green and white.
+      <roomdescription>The street is paved with diamond cut flagstones, cleaned and well
+polished.  The walls of a house are to the north, &amp;wwhite&amp;n plastered and
+gleaming, without any chipped paint in view.  The Dashar Canal continues
+east, passing under the Cordan Promenade Bridge to the southeast.  To the
+south, white walled shops border a large square.  The top of a tall &amp;Km&amp;wa&amp;Wrb&amp;wl&amp;Ke&amp;n
+statue can be seen to the southeast, the walls of the Tarasin Palace
+visible to the southwest.    
 </roomdescription>
       <flags>0</flags>
       <sector>City</sector>
@@ -1082,22 +1015,22 @@ Palace can be seen to the southwest, domed green and white.
 </description>
     </exit>
     <exit direction="west" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="25034">
-      <description>To the west, Dashar Street continues between nobles&apos; estates
+      <description>To the west, Dashar Street continues between nobles' estates
 and the wall of the Palace.
 </description>
     </exit>
   </room>
   <room>
-    <roombasic title="\c06No\c00rt\c06he\c00rn \c02Co\c00rd\c02an \c06Pr\c00om\c06en\c00ad\c06e\c00" vnum="25036" zone="250">
-      <roomdescription>This wide promenade is separated into two parts by a narrow
-parkway filled with grass and many flowers.  Beautiful trees
-and lush grass are painstakenly cared for to enhance the beauty
-of this area. \c04D\c06a\c04r\c06a \c00lilies are on the outside of the parkway,
-with \c05j\c06u\c05m\c05p\c06u\c05p\c00 flowers near the center. At intervals, there are
-\c03h\c00o\c07n\c00e\c03y\c00r\c07o\c00s\c03e\c00 bushes that give off a sweet scent that mingles with
-the sea air coming from the east. The promenade continues to the
-north while the South Square lies to the south. Shops and inns
-line both sides of the street.
+    <roombasic title="Northern Cordan Promenade" vnum="25036" zone="250">
+      <roomdescription>The ample promenade is separated into two parts by a narrow garden filled
+with greenery and flowers.  Trees and lush grass are painstakingly cared
+for to enhance the beauty of this area.  Dara lilies border the outer
+edges of the park, daffodils, roses, and a variety of other flowers
+growing near the center.  At intervals among the flowers, honeyrose bushes
+give off a sweet smell, mingling with the salty scent of the sea.  The
+promenade continues to the north, the South Square in view to the south.
+Shops and inns line both sides of the street, many looking quite
+welcoming.    
 </roomdescription>
       <flags>0</flags>
       <sector>City</sector>
@@ -1118,15 +1051,14 @@ toward a huge square lined with shops.
     </exit>
   </room>
   <room>
-    <roombasic title="\c06No\c00rt\c06he\c00rn \c02Co\c00rd\c02an \c06Pr\c00om\c06en\c00ad\c06e\c00 " vnum="25037" zone="250">
-      <roomdescription>The Promenade reaches an intersection here, and the wide street
-is paved in an octagonal pattern with grey and white flagstones.
-The parkway that separates the promenade into two parts to the
-north forms a small circle here - \c04d\c06a\c04r\c06a \c00lilies in the outer region,
-\c05j\c06u\c05m\c06p\c05u\c06p\c00 flowers in the middle region, with several \c03h\c00o\c07n\c00e\c03y\c00r\c07o\c00s\c03e\c00
-bushes in the center around an elder tree. Several streets branch
-off from here, and the promenade continues north, toward the Dal
-Eira Gate and south, toward a bridge and Mol Hara square.
+    <roombasic title="Northern Cordan Promenade" vnum="25037" zone="250">
+      <roomdescription>Here, the promenade reaches an intersection, the wide street paved in an
+octagonal pattern of &amp;Kgray&amp;n and &amp;wwhite&amp;n flagstones.  The garden that separates
+the promenade into two parts to the north forms a small circle, dara
+lilies ringing a vast array of other flowers, several honeyrose bushes in
+middle, circling a large willow.  Numerous roads branch off from here, the
+promenade continuing north toward the &amp;kDa&amp;Kl E&amp;wi&amp;Wr&amp;wa &amp;KGa&amp;kte&amp;n and south toward a
+bridge and &amp;mMol &amp;KHa&amp;wr&amp;Wa &amp;wS&amp;Kqu&amp;mare&amp;n.    
 </roomdescription>
       <flags>0</flags>
       <sector>City</sector>
@@ -1153,16 +1085,15 @@ spanning Dashar Canal into Mol Hara Square.
   </room>
   <room>
     <roombasic title="Northern Cordan Promenade Bridge" vnum="25038" zone="250">
-      <roomdescription>The parkway filled with \c04d\c06a\c04r\c06a\c00 lilies,\c05j\c06u\c05m\c06p\c05u\c06p\c00 flowers and
-\c03h\c00o\c07n\c00e\c03y\c00r\c07o\c00s\c03e\c00 bushes continues across this large arched bridge. The
-bridge is made of sparkling white marble, and the rails on each
-side are carved with leaves and flowers of all sizes and origins.
-The sparkling \c06b\c00l\c06u\c00e waters of a wide, white stone
-flanked canal run under the bridge, forming a deadend to the west,
-and flowing eastwards, spanning the length of the city and eventually
-emptying into the \c06B\c02a\c06y\c00 of Ebou Dar. To the south
-you see the wide Mol Hara Square, paved in many patterns by colored
-stone and filled with merchants, travelers and citizens.
+      <roomdescription>The narrow center garden filled with dara lilies, daffodils, roses,
+honeyrose bushes, and a variety of other flowers continues across this
+large arched bridge.  The bridge is made of sparkling &amp;wwhite&amp;n &amp;Km&amp;wa&amp;Wrb&amp;wl&amp;Ke&amp;n, the
+rails on either side carved with leaves and flowers of varying sizes and
+origins.  The sparkling blue waters of a large, stone flanked canal runs
+under the bridge, forming a dead end to the west.  It flows to the east,
+spanning the length of Ebou Dar and eventually emptying into the bay.  To
+the south, &amp;mMol &amp;KHa&amp;wr&amp;Wa &amp;wS&amp;Kqu&amp;mare&amp;n spreads out in all its glory, the walkway paved
+of colored stone in an intricate spiraling design.    
 </roomdescription>
       <flags>0</flags>
       <sector>City</sector>
@@ -1179,17 +1110,14 @@ end of the city.
     </exit>
   </room>
   <room>
-    <roombasic title="\c07North Mol Hara Square\c00" vnum="25039" zone="250">
-      <roomdescription>The narrow flower filled parkway of Cordan Promenade stops here,
-forming a semi-circle at the north end of Mol Hara square. The
-square stretches before you, opening onto a large statue and
-filled with merchants, and flanked with stores. The Tarasin
-Palace is directly west from the center of the square, and a
-wide path leads east from the center toward more bridges and
-canals. You can see the \c06So\c00ut\c06he\c00rn \c02Co\c00rd\c02an \c06Pr\c00om\c06en\c00ad\c06e\c00 continuing
-on the other side of a canal bridge to the south. Intricate
-patterns are formed using multicolored pale tiles - of light
-\c05rose, \c02green\c00 and \c06blue\c00 hues - on the floor of the square.
+    <roombasic title="&amp;mNor&amp;Kth M&amp;wol &amp;WHa&amp;wra &amp;KSqu&amp;mare&amp;n" vnum="25039" zone="250">
+      <roomdescription>The narrow garden of Cordan Promenade ends here, forming a semicircle at
+the northern end of &amp;mMol &amp;KHa&amp;wr&amp;Wa &amp;wS&amp;Kqu&amp;mare&amp;n.  Here, the square stretches out in a
+large area paved in pale tiles of &amp;mrose&amp;n, &amp;ggreen&amp;n, and &amp;cblue&amp;n hues, all swirling
+in intricate patterns of color.  The Tarasin Palace is directly west from
+the center of the square, standing tall in all its beauty.  To the east, a
+wide road leads off toward more bridges and canals.  The Southern Cordan
+Promenade continues on the other side of a bridge to the south.    
 </roomdescription>
       <flags>0</flags>
       <sector>City</sector>
@@ -1209,22 +1137,20 @@ patterns are formed using multicolored pale tiles - of light
     </exit>
   </room>
   <room>
-    <roombasic title="\c07Center Mol Hara Square\c00" vnum="25040" zone="250">
-      <roomdescription>This area is shadowed by a statue on a huge pedestal of \c07white
-m\c00a\c07r\c00b\c00l\c07e\c00 steps. The statue is of a woman stretching her arms out
-southward, dressed in flowing robes and wind sweeping her hair.
-Many citizens are here socializing or eating. Several people are
-lounging around the pedestal&apos;s steps. Pale stone of light \c05rose\c00,
-\c02green\c00 and \c06blue\c00 shades makes a circular starburst pattern around
-the statue, emanating outwards to the north, south, east and
-west, where the square continues. To the west you see the large
-main entrance to the \c02Tarasin Palace\c00, complete with portcullis
-and garden walkway. To the north and south, Mol Hara square
-continues, and beyond that you see the flowered lane that is
-Cordan Promenade. Canals flow in all directions, but are drowned
-out by the sounds of the square. A large white stone bridge is
-off in the eastern direction, where a wide street heads alongside
-a canal.
+    <roombasic title="The Center of &amp;mMol &amp;KHa&amp;wr&amp;Wa &amp;wS&amp;Kqu&amp;mare&amp;n" vnum="25040" zone="250">
+      <roomdescription>A large statue in the center of the square casts shadows about the area
+during the daylight hours, creating a slightly cooler place for people to
+meet and socialize.  The beautiful &amp;Km&amp;wa&amp;Wrb&amp;wl&amp;Ke&amp;n statue is carved in the likeness
+of a woman, her arms outstretched southward, detailed wonderfully with
+flowing robes and windswept hair.  The &amp;Km&amp;wa&amp;Wrb&amp;wl&amp;Ke&amp;n steps in the center of the
+area acts as a pedestal for the statue, as well as seats for gathering
+people.  Pale stone of light &amp;mrose&amp;n, &amp;ggreen&amp;n, and &amp;cblue&amp;n shades makes a circular
+starburst pattern around the base of the steps, spreading outward and in
+all directions.  The entrance to the Tarasin Palace is to the west, &amp;mMol
+&amp;KHa&amp;wr&amp;Wa &amp;wS&amp;Kqu&amp;mare&amp;n continues to all sides.  Beyond the edge of the square, the
+flower lined road that is Cordan Promenade continues.  Canals flow away in
+all directions, a white stone bridge off in the distance to the east,
+spanning a wide canal.    
 </roomdescription>
       <flags>0</flags>
       <sector>City</sector>
@@ -1266,32 +1192,26 @@ a canal.
       <description>Northwestern Mol Hara Square is this way.
 </description>
     </exit>
-    <exdesc keyword="palace walls">
-      <description>The white plastered stone walls of the Tarasin Palace loom above the
-Mol Haran Square to the west, and you can see double wrought iron
-gates off to the west, through which sights of the inner garden can be
-seen.
-</description>
-    </exdesc>
     <exdesc keyword="canal">
       <description>The sounds of water flowing through the Canals of Ebou Dar reach
 your ears, and the smell of salt air from the southern and eastern
 Bay and Sea of Storms reach your ears. 
 </description>
     </exdesc>
+    <exdesc keyword="">
+      <description> </description>
+    </exdesc>
   </room>
   <room>
-    <roombasic title="\c07South Mol Hara Square\c00" vnum="25041" zone="250">
-      <roomdescription>The narrow flower filled parkway of Cordan Promenade stops here,
-forming a semi-circle at the south end of \c06Mol Hara\c00 square. The
-square stretches before you, opening onto a large statue and
-filled with merchants, and flanked with stores. The Tarasin
-Palace is directly west from the center of the square, and a
-wide path leads east from the center toward more bridges and
-canals. You can see the \c06No\c00rt\c06he\c00rn \c02Co\c00rd\c02an \c06Pr\c00om\c06en\c00ad\c06e\c00 continuing
-on the other side of a canal bridge to the north. Intricate
-patterns are formed using multicolored pale tiles - of light
-\c05rose, \c02green\c00 and \c06blue\c00 hues - on the floor of the square.
+    <roombasic title="&amp;mSou&amp;Kth M&amp;wol &amp;WHa&amp;wra &amp;KSqu&amp;mare&amp;n" vnum="25041" zone="250">
+      <roomdescription>The narrow garden of Cordan Promenade ends here, forming a semicircle at
+the southern end of &amp;mMol &amp;KHa&amp;wr&amp;Wa &amp;wS&amp;Kqu&amp;mare&amp;n.  Here, the square stretches out in a
+large area paved in pale tiles of &amp;mrose&amp;n, &amp;ggreen&amp;n, and &amp;cblue&amp;n hues, all swirling
+in a starburst pattern radiating from the center of the square.  The
+Tarasin Palace is directly west from the center of the square, standing
+tall in all its glory.  To the east, a wide road leads off toward more
+bridges and canals.  The Northern Cordan Promenade continues on the other
+side of a bridge to the north.    
 </roomdescription>
       <flags>0</flags>
       <sector>City</sector>
@@ -1312,16 +1232,15 @@ patterns are formed using multicolored pale tiles - of light
   </room>
   <room>
     <roombasic title="Southern Cordan Promenade Bridge" vnum="25042" zone="250">
-      <roomdescription>The parkway filled with \c04d\c06a\c04r\c06a\c00 lilies,\c05j\c06u\c05m\c06p\c05u\c06p\c00 flowers and \c03h\c00o\c07n\c00e\c03y\c00r\c07o\c00s\c03e\c00
-bushes continues across this large arched bridge. The  bridge is
-made of sparkling white marble, and the rails on each side are carved
-with leaves and flowers of all sizes and origins. The sparkling \c06b\c00l\c06u\c00e
-waters of a wide, white stone flanked canal run under the bridge,
-forming a deadend to the west, and flowing eastwards, spanning the
-length of the city and eventually emptying into the \c06B\c02a\c06y\c00 of
-Ebou Dar. To the north you see the wide Mol Hara Square, paved in many
-patterns by colored stone and filled with merchants, travelers and
-citizens.
+      <roomdescription>The narrow center garden filled with dara lilies, daffodils, roses,
+honeyrose bushes, and a variety of other flowers continues across this
+large arched bridge.  The bridge is made of sparkling &amp;wwhite&amp;n &amp;Km&amp;wa&amp;Wrb&amp;wl&amp;Ke&amp;n, the
+rails on either side carved with leaves and flowers of varying sizes and
+origins.  The sparkling blue waters of a large, stone flanked canal runs
+under the bridge, forming a dead end to the west.  It flows to the east,
+spanning the length of Ebou Dar and eventually emptying into the bay.  To
+the north, &amp;mMol &amp;KHa&amp;wr&amp;Wa &amp;wS&amp;Kqu&amp;mare&amp;n spreads out in all its glory, the walkway paved
+of colored stone in an intricate spiraling design.    
 </roomdescription>
       <flags>0</flags>
       <sector>City</sector>
@@ -1335,15 +1254,14 @@ citizens.
     </exit>
   </room>
   <room>
-    <roombasic title="\c06So\c00ut\c06he\c00rn \c02Co\c00rd\c02an \c06Pr\c00om\c06en\c00ad\c06e\c00 " vnum="25043" zone="250">
-      <roomdescription>The Promenade reaches an intersection here, and the wide street
-is paved in an octagonal pattern with grey and white flagstones.
-The parkway that separates the promenade into two parts to the
-north forms a small circle here - \c04d\c06a\c04r\c06a \c00lilies\c00 in the outer region,
-\c05j\c06u\c05m\c06p\c05u\c06p\c00 flowers\c00 in the middle region, with several \c03h\c00o\c07n\c00e\c03y\c00r\c07o\c00s\c03e\c00
-bushes in the center around an elder tree. Several streets branch
-off from here, and the promenade continues south, toward the Moldine
-Gate and north, toward a bridge and Mol Hara square.
+    <roombasic title="Southern Cordan Promenade" vnum="25043" zone="250">
+      <roomdescription>Here, the promenade reaches an intersection, the wide street paved in an
+octagonal pattern of &amp;Kgray&amp;n and &amp;wwhite&amp;n flagstones.  The garden that separates
+the promenade into two parts to the south forms a small circle, dara
+lilies ringing a vast array of other flowers, several honeyrose bushes in
+middle, circling an elder tree.  Numerous roads branch off from here, the
+promenade continuing south toward the &amp;cMo&amp;Kld&amp;wi&amp;Wn&amp;we &amp;KGa&amp;cte&amp;n and north toward a
+bridge and &amp;mMol &amp;KHa&amp;wr&amp;Wa &amp;wS&amp;Kqu&amp;mare&amp;n.    
 </roomdescription>
       <flags>0</flags>
       <sector>Inside</sector>
@@ -1363,16 +1281,16 @@ Gate and north, toward a bridge and Mol Hara square.
     </exit>
   </room>
   <room>
-    <roombasic title="\c06So\c00ut\c06he\c00rn \c02Co\c00rd\c02an \c06Pr\c00om\c06en\c00ad\c06e\c00" vnum="25044" zone="250">
-      <roomdescription>This wide promenade is separated into two parts by a narrow
-parkway filled with grass and many flowers.  Beautiful trees
-and lush grass are painstakenly cared for to enhance the beauty
-of this area. \c04D\c06a\c04r\c06a\c00 lilies\c00 are on the outside of the parkway,
-with \c05j\c06u\c05m\c05p\c06u\c05p\c00 flowers\c00 near the center. At intervals, there are
-\c03h\c00o\c07n\c00e\c03y\c00r\c07o\c00s\c03e\c00 bushes\c00 that give off a sweet scent that mingles with
-the sea air coming from the east. The promenade continues to the
-north while the South Square lies to the south. Shops and inns
-line both sides of the street.
+    <roombasic title="Southern Cordan Promenade" vnum="25044" zone="250">
+      <roomdescription>The ample promenade is separated into two parts by a narrow garden filled
+with greenery and flowers.  Trees and lush grass are painstakingly cared
+for to enhance the beauty of this area.  Dara lilies border the outer
+edges of the park, daffodils, roses, and a variety of other flowers
+growing near the center.  At intervals among the flowers, honeyrose bushes
+give off a sweet smell, mingling with the salty scent of the sea.  The
+promenade continues to the north while the South Square lies to the south.
+Shops and inns line both sides of the street, many looking quite
+welcoming.    
 </roomdescription>
       <flags>0</flags>
       <sector>City</sector>
@@ -1387,16 +1305,14 @@ line both sides of the street.
   </room>
   <room>
     <roombasic title="Wayfarer Lane" vnum="25045" zone="250">
-      <roomdescription>This narrow lane is nestled between the ornate wall of a
-noble estate to the south and the lush gardens of the
-\c06Tarasin Palace\c00 to the north. There is a small square
-to the west, centered with a crystal tree and surrounding
-fountain. The sweet scents of blooming flowers reach your
-nose, and you notice that the walls of the Palace&apos;s gardens
-are lined with \c01red, \c03yellow\c00 and \c07white\c00 flowers to the north.
-The street continues east along lesser houses and shops. To
-the south the lower, yet more intricately carved walls of
-a noble&apos;s house can be seen,
+      <roomdescription>A small lane is nestled between the ornate wall of a noble's estate to the
+south and the lush gardens of the Tarasin Palace to the north.  To the
+west, a small square is built, a crystal tree and surrounding fountain
+acting as a centerpiece.  The sweet smells of blooming flowers drift
+through the air, the walls of the palace gardens lined with &amp;Rr&amp;re&amp;Rd&amp;n, &amp;Yy&amp;ye&amp;Yl&amp;yl&amp;Yo&amp;yw&amp;n,
+and &amp;Ww&amp;wh&amp;Wi&amp;wt&amp;We&amp;n flowers to the north.  The street continues east along lesser
+houses and shops, the intricately carved low walls of a noble's house can
+be seen to the south.    
 </roomdescription>
       <flags>0</flags>
       <sector>City</sector>
@@ -1410,20 +1326,15 @@ a noble&apos;s house can be seen,
     </exit>
   </room>
   <room>
-    <roombasic title="\c02So\c00ut\c02h Sq\c00ua\c02re\c00" vnum="25046" zone="250">
-      <roomdescription>You stand in a wide square here, at the southern end of the
-city, filled with many merchants, citizens and travelers.
-Several outlanders walk the square - one of them a dark Sea
-Folk man, and several others wearing the distinctive pale
-veils of Tarabon. The \c06Moldine Gate\c00 is directly south, and its
-large and wide arch looms above the surrounding houses. There
-are roads leading in all directions, and the dome of a large
-inn can be seen to the west. A narrow canal begins in the
-eastern corner of the square, continuing east along the Lower
-Inner Street. A large fountain with a \c07c\c00r\c07y\c00s\c07t\c00a\c07l\c00 sculpture of
-several intertwined hoops gushes with water and sparkles in
-the center of the square.
-          \c06There is a sign here.\c00
+    <roombasic title="&amp;rSo&amp;Rut&amp;wh &amp;WS&amp;wq&amp;Rua&amp;rre&amp;n" vnum="25046" zone="250">
+      <roomdescription>Here is a wide square at the southern end of the city, looking to be a
+rather comfortable place for people to meet and socialize.  The &amp;cMo&amp;Kld&amp;wi&amp;Wn&amp;we
+&amp;KGa&amp;cte&amp;n is directly south, its wide arches looming above the surrounding
+houses.  Roads lead from the square in all directions, the turnip shaped
+dome of a large inn can be seen to the west.  A small canal begins in the
+eastern corner of the square, continuing east along the Lower Inner
+Street.  A large fountain with a crystal sculpture of three intertwined
+hoops gushes with water, sparkling in the center of the square.    
 </roomdescription>
       <flags>130</flags>
       <sector>City</sector>
@@ -1450,15 +1361,14 @@ West - Inner Street
     </exdesc>
   </room>
   <room>
-    <roombasic title="North Inner Street" vnum="25047" zone="250">
-      <roomdescription>This narrower section of Inner Street is nestled between the
-high wall of a noble estate to the southwest and the higher
-wall of the city to the north, both covered with stark white
-plaster. The walls of a small house is to the south, with
-arched windows looking onto the street from the second story.
-The domes of the nearby buildings are all pale shades of blue
-and the dome of the noble&apos;s manor is a striped blue and gold
-that sparkles in the sun as it spirals upwards.
+    <roombasic title="Upper Inner Street" vnum="25047" zone="250">
+      <roomdescription>This section of the Upper Inner Street is nestled between the high wall of
+a noble's estate to the southwest and the higher city wall of Ebou Dar to
+the north, both covered in &amp;wwhite&amp;n plaster.  The walls of a small house are
+to the south, arched windows looking onto the street from the second
+story.  The domes of the nearby buildings are all pale shades of &amp;cblue&amp;n, the
+dome of the noble's manor is a striped &amp;Bb&amp;bl&amp;Bu&amp;be&amp;n and &amp;Yg&amp;yo&amp;Yl&amp;yd&amp;n that sparkles in the
+sunlight as it spirals upwards.    
 </roomdescription>
       <flags>0</flags>
       <sector>City</sector>
@@ -1475,16 +1385,15 @@ inside the Northwest Tower of the city wall.
     </exit>
   </room>
   <room>
-    <roombasic title="North Inner Street" vnum="25048" zone="250">
-      <roomdescription>You stand in a wide, grey stone paved road that continues east
-and west through the northern part of Ebou Dar. The high walls
-of the city bordering this street to the north glitter a shining
-white. Sharp cornered walls inset with pale stone bricks mark
-the estate of a noble. To the south see a large dome painted with
-\c03gold\c00 and \c04blue\c00 stripes, and you assume this is the manor of a
-rather important noble. The domes of the Palace shine beyond
-several houses to the south, and the northwestern wall tower,
-with its spire of \c02green\c00 and \c07white\c00 is to the west.
+    <roombasic title="Upper Inner Street" vnum="25048" zone="250">
+      <roomdescription>A road paved in &amp;Kgray&amp;n stone continues east and west through the northern
+part of Ebou Dar, the high walls of the city bordering this street to the
+north.  Sharply cornered walls inset with pale stone bricks mark the house
+of a wealthy merchant.  To the south, a large dome painted in &amp;Yg&amp;yo&amp;Yl&amp;yd&amp;n and
+&amp;Bb&amp;bl&amp;Bu&amp;be&amp;n stripes is visible, obviously the manor of a rather important noble.
+The domes of the Tarasin Palace shine beyond several houses to the south,
+the Northwest Tower is to the west, its tall spire of &amp;ggreen&amp;n and &amp;wwhite&amp;n
+spanning high into the air.    
 </roomdescription>
       <flags>0</flags>
       <sector>City</sector>
@@ -1501,16 +1410,17 @@ turning south inside the city wall.
     </exit>
   </room>
   <room>
-    <roombasic title="North Inner Street" vnum="25049" zone="250">
-      <roomdescription>You stand in a wide, grey stone paved road that continues east
-and west through the northern part of Ebou Dar. The high walls
-of the city bordering this street to the north glitter a shining
-white. Sharp cornered walls inset with pale stone bricks mark
-the estate of a noble. To the south see a large dome painted with
-gold and blue stripes, and you assume this is the manor of a
-rather important noble. The domes of the Palace shine beyond
-several houses to the south, and the northwestern wall tower,
-with its spire of green and white is to the west.
+    <roombasic title="Upper Inner Street" vnum="25049" zone="250">
+      <roomdescription>A road paved of light &amp;Kgray&amp;n stones runs east and west through the northern
+section of Ebou Dar, the thoroughfare wide enough to fit three wagons
+abreast.  This appears to be one of the better sections of the city,
+houses fit for nobles lining the street at large intervals.  The &amp;wwhite&amp;n
+stone walls of the city are bordering the north side of the road, standing
+tall in constant guard of Ebou Dar.  To the east, a large square is
+visible in the distance, a fish shaped fountain spraying water into the
+air.  The domes and spires of the Tarasin Palace reach toward the sky to
+the south, the Northwest Tower marking the end of the city wall to the
+west.    
 </roomdescription>
       <flags>0</flags>
       <sector>City</sector>
@@ -1526,14 +1436,15 @@ city wall.
     </exit>
   </room>
   <room>
-    <roombasic title="Northwest Corner Inner Street" vnum="25050" zone="250">
-      <roomdescription>This narrow area of Inner Street lies just inside the northwest
-corner of the city wall.  This area is much higher than it is
-wide being bordered by both the city wall and the lower yet more
-intricately designed walls of a noble estate.  To the south a
-beautiful lane decorated with trees and gardens runs inside the
-west wall along the palace and lesser estates. To the east a
-narrower street runs inside the north wall along a few finer shops.
+    <roombasic title="The Intersection of Upper Inner Street and West Inner Street" vnum="25050" zone="250">
+      <roomdescription>The paved road of Upper Inner Street narrows here, lying just inside the
+northwest corner of the city walls.  To the north, the shining &amp;wwhite&amp;n stone
+of the north wall of Ebou Dar stands tall in all its glory, an intricately
+designed wall of a noble's estate cutting the street off directly to the
+west.  A beautiful lane lined with trees and gardens runs inside the west
+wall along the Tarasin Palace and lesser manors, Upper Inner Street
+widening to the east and continuing its path inside the north wall along a
+few successful shops.    
 </roomdescription>
       <flags>0</flags>
       <sector>City</sector>
@@ -1556,22 +1467,22 @@ talls trees and grass along the grand entances to many palaces.
 </description>
     </exit>
     <exdesc keyword="sign">
-      <description>The sign reads, &apos;WARNING, CITYGUARDS ONLY BEYOND THIS POINT!&apos;
+      <description>The sign reads, 'WARNING, CITYGUARDS ONLY BEYOND THIS POINT!'
 </description>
     </exdesc>
   </room>
   <room>
     <roombasic title="Dashar Street" vnum="25051" zone="250">
-      <roomdescription>This narrow lane is nestled between the ornate wall of a noble
-estate to the north and the lush gardens of the Tarasin Palace to
-the south. The wide five pointed leaves of ground ivy peak over
-the Palace walls to the south, and some yellow flowering vines
-peak over the northern estate&apos;s lower walls. The walls on either
-side of the Street are white plastered, and gleam in the midday
-sun. The street continues east along lesser houses and shops, and
-a small square can be seen directly east. To the west, Dashar
-Street intersects another path that is trimmed and lined with many
-flowers.
+      <roomdescription>The street is paved with diamond cut flagstones, cleaned and well
+polished.  The road runs between the low walls of a noble's estate to the
+north, the lush gardens of the Tarasin Palace on the south.  The five
+pointed leaves of ground ivy peak over the palace walls, flowering vines
+of yellow creeping over the northern manor's lower walls.  The barriers on
+either side of the street are white stone, gleaming brightly in the
+daylight hours.  The path continues along lesser houses and shops, a small
+square visible directly to the east.  To the west, Dashar Street
+intersects with another path that is trimmed and lined with various
+flowers.    
 </roomdescription>
       <flags>0</flags>
       <sector>City</sector>
@@ -1585,17 +1496,16 @@ flowers.
     </exit>
   </room>
   <room>
-    <roombasic title="\c02Dashar\c07 Square\c00" vnum="25052" zone="250">
-      <roomdescription>This is a rather small square, but very well maintained, seeing
-as the Tarasin Palace is directly south, and several noble&apos;s
-estates lie north. To the east the Dashar Canal starts, and
-continues eastward. The scent of \c06s\c02e\c06a\c00 air brings an appetite
-with it, and it energises you. There should be an inn somewhere
-off to the east. To the south you see the northern side gate
-of the Palace, and gardens grow beyond it, ground ivy growing
-up the wall and peaking over it onto Dashar Street. A large
-circular marble fountain carved intricately is in the center
-of the square.
+    <roombasic title="Dashar Square" vnum="25052" zone="250">
+      <roomdescription>This square is rather small compared to others in the city, but it is very
+well maintained.  To the east, the Dashar Canal starts, continuing on
+eastward.  Off to the east, the small dome of an inn is just barely
+visible, striped in &amp;Rr&amp;re&amp;Rd&amp;n and &amp;Ww&amp;wh&amp;Wi&amp;wt&amp;We&amp;n.  The northern side gate of the Tarasin
+Palace is to the south, the gardens growing beyond in perfuming the air
+with a mixed scent of flowers and sea air.  Ground ivy grows up the palace
+wall, peeking over it onto Dashar Street.  A large circular marble
+fountain carved in the likeness of a serpent of the sea is in the center
+of the square.    
 </roomdescription>
       <flags>130</flags>
       <sector>City</sector>
@@ -1614,16 +1524,14 @@ of the square.
   </room>
   <room>
     <roombasic title="West Inner Street" vnum="25053" zone="250">
-      <roomdescription>Walking along this white flagstone paved street, you reach
-the entrance to a large noble&apos;s manor. A wrought iron fence
-surrounds the manor to the east, through which manicured
-elder, greenwood and laurel trees can be seen. The dome of
-the estate is \c03gold\c00 and \c04blue\c00, presumably the colors of the
-house. The street is lined with pale \c03yellow\c00, \c05purple\c00, and
-\c06blue\c00 flowers and continues north, where a the wall
-bends eastward, and narrows slightly. To the south the flower
-lined street continues, and you can see the high peaked domes
-and arches of the Three Towers Gate.
+      <roomdescription>The street is paved in &amp;wwhite&amp;n flagstone, lined with pale &amp;yyellow&amp;n, &amp;mpurple&amp;n,
+and &amp;cblue&amp;n flowers.  A wrought iron fence surrounds a large manor to the
+east, well cared for elder, greenwood, and laurel trees are visible
+through it.  The dome of the estate is &amp;Yg&amp;yo&amp;Yl&amp;yd&amp;n and &amp;Bb&amp;bl&amp;Bu&amp;be&amp;n, presumably the House
+colors of the owner.  The road continues to the north, ending at the city
+wall.  To the south, the flower lined street goes on, the high peaked
+arches of the &amp;kThr&amp;Kee T&amp;wo&amp;Ww&amp;we&amp;Krs G&amp;kate&amp;n visible in the distance, set into the
+western city wall of Ebou Dar.    
 </roomdescription>
       <flags>0</flags>
       <sector>City</sector>
@@ -1647,16 +1555,13 @@ and the Tarasin Palace.
   </room>
   <room>
     <roombasic title="West Inner Street" vnum="25054" zone="250">
-      <roomdescription>A wide, white flagstone paved street stretches along the
-western side of the city, passing along noble&apos;s estates
-as well as the Tarasin Palace to the south. The white
-plastered stone city wall stretches along the left side
-of the street, and the three colored domes of the Three
-Towers Gate can be seen off in the northern distance.
-A lush estate is seen to the south and the street is lined
-with pale \c03yellow\c00, \c05purple\c00, and \c06blue\c00 flowers and continues
-north. Another flower lined street is to the east, where
-a small square can also be seen.
+      <roomdescription>A wide street of &amp;wwhite&amp;n flagstone lined with pale &amp;yyellow&amp;n, &amp;mpurple&amp;n, and &amp;cblue&amp;n
+flowers stretches along the western side of the city, passing along noble
+estates as well as the Tarasin Palace to the south.  The &amp;wwhite&amp;n plastered
+stone of the city wall stretches along the left side of the street, the
+peaked arches of the &amp;kThr&amp;Kee T&amp;wo&amp;Ww&amp;we&amp;Krs G&amp;kate&amp;n can be seen off to the south, set
+into the western city wall of Ebou Dar.  Another flower lined street is to
+the east, a small square visible in the same direction.    
 </roomdescription>
       <flags>0</flags>
       <sector>City</sector>
@@ -1674,16 +1579,14 @@ a small square can also be seen.
   </room>
   <room>
     <roombasic title="West Inner Street" vnum="25055" zone="250">
-      <roomdescription>A wide, white flagstone paved street stretches along the
-western side of the city, passing along \c02Tarasin Palace\c00
-on the east. The white plastered stone city wall stretches
-along the left side of the street, and the three colored
-domes of the Three Towers Gate can be seen off in the close
-northern distance. The street is lined with pale \c03yellow\c00,
-\c05purple\c00, and \c06blue\c00 flowers and continues north and south,
-where an intersection can be seen. Tall trees and ivy can be
-seen on top of the palace walls, as well as high peaked
-domes in pale shades of green and white.
+      <roomdescription>A wide, flagstone paved street stretches along the western side of the
+city, passing alongside the Tarasin Palace on the east.  The &amp;wwhite&amp;n
+plastered stone city wall flanks the road along the left side, the high
+peaked arches of the &amp;kThr&amp;Kee T&amp;wo&amp;Ww&amp;we&amp;Krs G&amp;kate&amp;n can be seen off to the southwest in
+the near distance.  The thoroughfare is lined with pale &amp;yyellow&amp;n, &amp;mpurple&amp;n,
+and &amp;cblue&amp;n flowers on both sides, continuing north and south.  Tall trees
+and ivy can be seen over the top of the palace walls, turnip shaped domes
+painted in &amp;Gg&amp;gr&amp;Ge&amp;ge&amp;Gn&amp;n and &amp;Ww&amp;wh&amp;Wi&amp;wt&amp;We&amp;n.    
 </roomdescription>
       <flags>0</flags>
       <sector>Inside</sector>
@@ -1698,16 +1601,14 @@ domes in pale shades of green and white.
   </room>
   <room>
     <roombasic title="West Inner Street" vnum="25056" zone="250">
-      <roomdescription>The northernmost tower of Three Towers Looms above the stree
-to the west as beautifully tended gardens accentuate the
-Tarasin Palace to the east. The white plastered stone city wall
-stretches along the west side of the street. Directly west is
-a door leading to a cityguard post. The \c06Three Towers Gate\c00 is
-before you to the southwest, its domes and spires reaching to the
-sky, almost as high as the green and white striped dome of the
-Palace. The street is lined with pale yellow, purple, and blue
-flowers and continues north and south. A large western square
-is ahead to the south.
+      <roomdescription>A wide street of &amp;wwhite&amp;n flagstone lined with pale &amp;yyellow&amp;n, &amp;mpurple&amp;n, and &amp;cblue&amp;n
+flowers stretches along the western side of the city, the beautifully
+tended gardens of the Tarasin Palace to the east.  To the west, a door
+leading to a city guard post is set into the stone wall of a tower
+beside the &amp;kThr&amp;Kee T&amp;wo&amp;Ww&amp;we&amp;Krs G&amp;kate&amp;n.  The west gate of Ebou Dar is to the
+southwest, its peaked arches reaching to the sky, almost as high as the
+&amp;Gg&amp;gr&amp;Ge&amp;ge&amp;Gn&amp;n and &amp;Ww&amp;wh&amp;Wi&amp;wt&amp;We&amp;n striped domes of the palace.  A large square is ahead to
+the south, providing a gathering place for arriving and departing people.
 </roomdescription>
       <flags>0</flags>
       <sector>Inside</sector>
@@ -1724,17 +1625,14 @@ is ahead to the south.
     </exit>
   </room>
   <room>
-    <roombasic title="\c02We\c00st \c02Sq\c00ua\c02re\c00" vnum="25057" zone="250">
-      <roomdescription>You stand near the center of the West Square of Ebou Dar, one of
-many squares spread throughout the city. The magnificent \c06Three
-Towers Gate\c00 looms above you to the west while the Grand Entry to
-the Tarasin Palace surrounded by lush gardens stretches eastward.
-There are many people milling around this square and several
-merchants displaying their wares on carts and stands. A large oval
-fountain of the \c01Qu\c03e\c01en\c00 reaching her arms out to the people is in
-the center of the square, water rushing around the Queen&apos;s feet
-and flowing down her stone robes.
-        \c06There is a sign here.\c00
+    <roombasic title="&amp;rW&amp;Res&amp;wt&amp;W Sq&amp;wu&amp;Rar&amp;re&amp;n" vnum="25057" zone="250">
+      <roomdescription>The road opens into the western square of Ebou Dar, the &amp;kThr&amp;Kee T&amp;wo&amp;Ww&amp;we&amp;Krs G&amp;kate&amp;n
+standing tall just to the west.  The domes and spires of the Tarasin
+Palace stretch high into the sky to the west, well tended gardens
+surrounding the palace itself.  A large &amp;Km&amp;wa&amp;Wrb&amp;wl&amp;Ke&amp;n fountain is in the center
+of the square, carved in the likeness of the Queen of Altara, her arms
+stretched out to people gathered here during the daylight hours.  Water
+rushes around the Queen's feet, flowing down her gown of stone.    
 </roomdescription>
       <flags>130</flags>
       <sector>City</sector>
@@ -1752,23 +1650,21 @@ and flowing down her stone robes.
     <exdesc keyword="sign">
       <description>North - West Inner Street
 South - West Inner Street
-East - Tarasin Palace
 West - Three Towers Gate
 </description>
     </exdesc>
   </room>
   <room>
     <roombasic title="West Inner Street" vnum="25058" zone="250">
-      <roomdescription>The wide, white flagstone paved street stretches along the
-western side of the city, passing along Tarasin Palace
-on the east. The white plastered stone city wall stretches
-along the west side of the street. Directly west is a door
-leading to a cityguard post. The Three Towers Gate is before
-you to the northwest, its domes and spires reaching to the
-sky, almost as high as the green and white striped dome of
-the Palace. The street is lined with pale yellow, purple,
-and blue flowers and continues north and south. A large
-western square is ahead to the north.
+      <roomdescription>The wide flagstone paved street lined with pale &amp;yyellow&amp;n, &amp;mpurple&amp;n, and &amp;cblue&amp;n
+flowers stretches along the western side of Ebou Dar, flanked to either
+side by the city wall to the west and the Tarasin Palace to the east.  To
+the west, a door leading to a city guard post is set into the stone wall
+of a tower beside the &amp;cThr&amp;Kee T&amp;wo&amp;Ww&amp;we&amp;Krs G&amp;cate&amp;n.  The west gate of Ebou Dar is to
+the northwest, its peaked arches reaching to the sky, almost as high as
+the &amp;Gg&amp;gr&amp;Ge&amp;ge&amp;Gn&amp;n and &amp;Ww&amp;wh&amp;Wi&amp;wt&amp;We&amp;n striped domes of the palace.  A large square is ahead
+to the north, providing a gathering place for arriving and departing
+people.    
 </roomdescription>
       <flags>0</flags>
       <sector>Inside</sector>
@@ -1786,14 +1682,12 @@ western square is ahead to the north.
   </room>
   <room>
     <roombasic title="West Inner Street" vnum="25059" zone="250">
-      <roomdescription>A wide, white flagstone paved street stretches along the
-western side of the city, passing along \c02Tarasin Palace\c00
-on the east. The white plastered stone city wall stretches
-along the left side of the street, and the three colored
-domes of the Three Towers Gate can be seen off in the close
-northern distance. The street is lined with pale \c03yellow\c00,
-\c05purple\c00, and \c06blue\c00 flowers and continues north and south,
-where an intersection can be seen.
+      <roomdescription>A wide, flagstone paved street stretches along the western side of the
+city, passing alongside the Tarasin Palace on the east.  The &amp;wwhite&amp;n
+plastered stone city wall flanks the road along the left side, the high
+peaked arches of the &amp;kThr&amp;Kee T&amp;wo&amp;Ww&amp;we&amp;Krs G&amp;kate&amp;n can be seen off to the northwest in
+the near distance.  The thoroughfare is lined with pale &amp;yyellow&amp;n, &amp;mpurple&amp;n,
+and &amp;cblue&amp;n flowers on both sides, continuing north and south.    
 </roomdescription>
       <flags>0</flags>
       <sector>Inside</sector>
@@ -1807,17 +1701,14 @@ where an intersection can be seen.
     </exit>
   </room>
   <room>
-    <roombasic title="West Inner Street" vnum="25060" zone="250">
-      <roomdescription>A wide, white flagstone paved street stretches along the
-western side of the city, passing along noble&apos;s estates
-as well as the Tarasin Palace to the north. The white
-plastered stone city wall stretches along the left side
-of the street, and the three colored domes of the Three
-Towers Gate can be seen off in the northern distance.
-A lush estate is seen to the south and the street is lined
-with pale \c03yellow\c00, \c05purple\c00, and \c06blue\c00 flowers and continues
-north. Another flower lined street is to the east, where
-a small square can also be seen.
+    <roombasic title="The Intersection of West Inner Street and Wayfarer Lane" vnum="25060" zone="250">
+      <roomdescription>A wide, &amp;wwhite&amp;n flagstone paved street stretches along the western side of
+the city, flowers of pale &amp;yyellow&amp;n, &amp;mpurple&amp;n, and &amp;cblue&amp;n lining the street.  A
+large estate, probably belonging to a noble of some importance, is seen in
+the distance to the south, appearing well taken care of.  The flower lined
+road of Wayfarer Lane intersects with West Inner Street here, leading off
+to the east.  To the northwest, the high peaked arches of the &amp;kThr&amp;Kee T&amp;wo&amp;Ww&amp;we&amp;Krs
+G&amp;kate&amp;n rise into the air.    
 </roomdescription>
       <flags>0</flags>
       <sector>Inside</sector>
@@ -1835,18 +1726,14 @@ a small square can also be seen.
   </room>
   <room>
     <roombasic title="West Inner Street" vnum="25061" zone="250">
-      <roomdescription>A wide, white flagstone paved street stretches along the
-western side of the city, passing along noble&apos;s estates
-as well as the \c02Tarasin Palace\c00 to the north. The white
-plastered stone city wall stretches along the left side
-of the street, and the three \c01c\c05o\c03l\c02o\c06r\c04e\c07d\c00 domes of the Three
-Towers Gate can be seen off in the northern distance. A
-lush estate is to the east, the walls decorated with
-carvings of fruit and leaves, and jasmine vines climbing
-over the top. The dome of the estate is yellow and lavendar,
-presumably the colors of the house. The street is lined
-with pale \c03yellow\c00, \c05purple\c00, and \c06blue\c00 flowers and continues
-north.
+      <roomdescription>A wide, &amp;wwhite&amp;n flagstone paved street stretches along the western side of
+the city, passing alongside noble's estates as well as the Tarasin Palace
+to the north.  The &amp;Ks&amp;wt&amp;Ko&amp;wn&amp;Ke&amp;n city wall of Ebou Dar flanks the road on the left
+side, the high peaked arches of the &amp;kThr&amp;Kee T&amp;wo&amp;Ww&amp;we&amp;Krs G&amp;kate&amp;n visible off in the
+northwest direction.  A large manor is to the east, low walls carved in a
+design of fruit and leaves, jasmine vines climbing over the top from the
+garden behind.  The dome of the building is &amp;Yy&amp;ye&amp;Yl&amp;yl&amp;Yo&amp;yw&amp;n and &amp;Ml&amp;ma&amp;Mv&amp;me&amp;Mn&amp;md&amp;Me&amp;mr&amp;n,
+presumably the house colors of the owner.    
 </roomdescription>
       <flags>0</flags>
       <sector>Inside</sector>
@@ -1861,14 +1748,13 @@ north.
   </room>
   <room>
     <roombasic title="Wayfarer Lane" vnum="25062" zone="250">
-      <roomdescription>This narrow lane is nestled between the ornate wall of a
-noble estate to the south and the lush gardens of the
-\c06Tarasin Palace\c00 to the north. There is a small square
-to the east, centered with a crystal tree and surrounding
-fountain. The sweet scents of blooming flowers reach your
-nose, and you notice that the walls of the Palace&apos;s gardens
-are lined with \c01red, \c03yellow\c00 and \c07white\c00 flowers to the north.
-The street continues east along lesser houses and shops.
+      <roomdescription>A small lane is nestled between the ornate wall of a noble's estate to the
+south, the lush gardens of the Tarasin Palace to the north.  To the east,
+a small square is built, a crystal tree and surrounding fountain sparkling
+in the daylight.  The sweet smells of blooming flowers drift through the
+air, the walls of the palace gardens lined with &amp;Rr&amp;re&amp;Rd&amp;n, &amp;Yy&amp;ye&amp;Yl&amp;yl&amp;Yo&amp;yw&amp;n, and &amp;Ww&amp;wh&amp;Wi&amp;wt&amp;We&amp;n
+flowers.  The street continues east along lesser houses and shops, the
+intricately carved low walls of a noble's house can be seen to the south.
 </roomdescription>
       <flags>0</flags>
       <sector>City</sector>
@@ -1882,17 +1768,15 @@ The street continues east along lesser houses and shops.
     </exit>
   </room>
   <room>
-    <roombasic title="\c02Wayfarer\c07 Square\c00" vnum="25063" zone="250">
-      <roomdescription>A short lane runs to the south along the entry to a noble
-estate, the street continues east and west along more houses
-and shops. The palace walls, high and white plastered, cover
-the entire northern section of the road, lined with flowering
-bushes of \c01red\c00 and \c03yellow\c00 and \c07white\c00. The high peaked domes of
-the palace can be seen if you strain your neck upwards. This
-area is a small square, and is frequented mostly by nobles
-that are walking to and fro the arched side gates of the palace
-to the north. A fountain is in the center of the square, a
-\c07c\c00r\c07y\c00s\c07t\c00a\c07l\c00 carved \c02tree\c00 in the center.
+    <roombasic title="Wayfarer Square" vnum="25063" zone="250">
+      <roomdescription>A narrow lane runs to the south along the entry to a noble's manor,
+Wayfarer Lane continuing on east and west along more shops and houses.  
+The palace walls, tall and &amp;wwhite&amp;n plastered, span the entire northern
+section of the road, lined with flowering bushes of &amp;Rr&amp;re&amp;Rd&amp;n, &amp;Yy&amp;ye&amp;Yl&amp;yl&amp;Yo&amp;yw&amp;n, and
+&amp;Ww&amp;wh&amp;Wi&amp;wt&amp;We&amp;n.  The high peaked domes of the Tarasin Palace stretch high into the
+air, casting shadows down on the small square before the southern gate.  
+A fountain is positioned in the center of the square, a tree carved of
+crystal acting as a centerpiece.    
 </roomdescription>
       <flags>130</flags>
       <sector>City</sector>
@@ -1909,14 +1793,16 @@ to the north. A fountain is in the center of the square, a
     </exit>
   </room>
   <room>
-    <roombasic title="Southwest Corner Inner Street" vnum="25064" zone="250">
-      <roomdescription>This narrow area of Inner Street lies just inside the southwest
-corner of the city wall.  This area is much higher than it is
-wide being bordered by both the city wall and the lower yet more
-intricately designed walls of a noble estate.  To the north a
-beautiful lane decorated with trees and gardens runs inside the
-west wall along the palace and lesser estates. To the east a
-narrower street runs inside the north wall along a few finer shops.
+    <roombasic title="The Intersection of West Inner Street and South Inner Street" vnum="25064" zone="250">
+      <roomdescription>Two streets reach an end here, each path coming across the &amp;wwhite&amp;n walls of
+Ebou Dar.  To the north, West Inner Street fades from view, continuing on
+toward the northern wall of the city.  South Inner Street spans the length
+of the southern end of the city, both streets lined with pale &amp;yyellow&amp;n,
+&amp;mpurple&amp;n, and &amp;cblue&amp;n flowers.  To the south, a door is set into the stone wall
+of the southwest tower of Ebou Dar, leading to the quarters of a member of
+the city guard.  Successful looking shops and houses border the
+thoroughfare to the east, larger houses that belong to noblemen and women
+are spaced along the street to the north.    
 </roomdescription>
       <flags>0</flags>
       <sector>City</sector>
@@ -1934,21 +1820,21 @@ A large sign hangs beside the door.
 </description>
     </exit>
     <exdesc keyword="sign">
-      <description>The sign reads, &apos;WARNING, CITYGUARDS ONLY BEYOND THIS POINT!&apos;
+      <description>The sign reads, 'WARNING, CITYGUARDS ONLY BEYOND THIS POINT!'
 </description>
     </exdesc>
   </room>
   <room>
     <roombasic title="South Inner Street" vnum="25065" zone="250">
-      <roomdescription>This narrower section of street is nestled between the high
-wall of a noble estate to the north and the higher city wall
-to the south, both covered with stark white plaster. Green
-five cornered leaved vines run up the side of the noble estate
-to the north, and small vineyards can be seen near the eastern
-side of the manor. To the west is an intersection with a flower
-lined walkway that spans the western side of Ebou Dar. To the
-east the inner street continues alongside the city wall, and
-a large square can be seen off in the distance.
+      <roomdescription>This street is narrow, nestled between the intricately carved wall
+surrounding a noble's manor to the north and the higher wall of the city
+to the south, both covered in &amp;wwhite&amp;n plaster.  Vines with small
+five-pointed leaves growing on it run up the side of the estate to the
+north, small vineyards visible on the east side of the house.  West Inner
+Street intersects with South Inner Street to the west, both roads lined
+with pale &amp;yyellow&amp;n, &amp;mpurple&amp;n, and &amp;cblue&amp;n flowers.  To the east, this street
+continues alongside the city wall, a large square visible off in the
+distance.    
 </roomdescription>
       <flags>0</flags>
       <sector>City</sector>
@@ -1963,15 +1849,15 @@ a large square can be seen off in the distance.
   </room>
   <room>
     <roombasic title="South Inner Street" vnum="25066" zone="250">
-      <roomdescription>This narrower section of Inner Street is nestled between the
-high wall of a noble estate to the north and the higher wall
-of the city to the south, both covered with white plaster.
-The dome of the estate is pale \c03yellow\c00, and has \c05lavendar\c00 stripes
-across it, showing the house colors. The walls of the city
-are directly south, beyond a narrow row of \c02evergreen\c00 hedges.
-The gardens of the estate are north, and \c03j\c00a\c03s\c00m\c03i\c00n\c03e\c00 vines peak
-over the inner walls of the estate, filling the air with their
-scent
+      <roomdescription>The towering height of the city wall to the south casts shadows over this
+narrow road during the daytime hours, the lower wall of a noble's manor
+rising on the north side of the road closing in the area.  The turnip
+shaped domes of the estate are striped &amp;yy&amp;Ye&amp;yl&amp;Yl&amp;yo&amp;Yw&amp;n and &amp;ml&amp;Ma&amp;mv&amp;Me&amp;mn&amp;Md&amp;me&amp;Mr&amp;n, displaying the
+house colors of the owner proudly.  A row of &amp;Ge&amp;gv&amp;Ge&amp;gr&amp;Gg&amp;gr&amp;Ge&amp;ge&amp;Gn&amp;n hedges line the
+road to the south, laying just between the cobblestone thoroughfare and
+the city wall.  The gardens of the estate to the north are filled with a
+vast array of flowers and other things of natural beauty, perfuming the
+air with a pleasant scent.    
 </roomdescription>
       <flags>0</flags>
       <sector>City</sector>
@@ -1986,15 +1872,14 @@ scent
   </room>
   <room>
     <roombasic title="South Inner Street" vnum="25067" zone="250">
-      <roomdescription>This narrower section of Inner Street is nestled between the
-high wall of a noble estate to the north and the higher wall
-of the city to the south, both covered with white plaster.
-The dome of the estate is pale yellow, and has lavendar stripes
-across it, showing the house colors. The walls of the city
-are directly south, beyond a narrow row of evergreen hedges.
-The gardens of the estate are north, and jasmine vines peak
-over the inner walls of the estate, filling the air with their
-scent.
+      <roomdescription>The narrow road of South Inner Street is nestled between the intricately
+carved wall of a noble estate to the north and the towering &amp;wwhite&amp;n wall of
+the city to the south.  The domes of the house are striped in &amp;yy&amp;Ye&amp;yl&amp;Yl&amp;yo&amp;Yw&amp;n and
+&amp;ml&amp;Ma&amp;mv&amp;Me&amp;mn&amp;Md&amp;me&amp;Mr&amp;n, showing the house colors of the owner.  A row of &amp;Ge&amp;gv&amp;Ge&amp;gr&amp;Gg&amp;gr&amp;Ge&amp;ge&amp;Gn&amp;n
+hedges line the road to the south, laying just between the cobblestone
+thoroughfare and the city wall.  The gardens of the estate to the north
+are filled with a vast array of flowers and other things of natural
+beauty, perfuming the air with a pleasant scent.    
 </roomdescription>
       <flags>0</flags>
       <sector>City</sector>
@@ -2009,15 +1894,14 @@ scent.
   </room>
   <room>
     <roombasic title="South Inner Street" vnum="25068" zone="250">
-      <roomdescription>The high walls of the city bordering this street to the south
-make this area seem quite unadorned in comparison to the exotic
-shops and noble estates bordering to the north. The white plastered
-walls of the southern city wall shine brightly in the midday sun,
-and the green painted door of an inn is to the north. The inn
-has a sign with a green painted claw over the door, and is several
-stories high. The street continues east toward the large southern
-square of Ebou Dar, and east, toward another flower lined street
-off in the distance.
+      <roomdescription>The high walls of the city bordering this street to the south make this
+area seem quite unadorned in comparison to the exotic shops and other
+buildings bordering to the north.  The &amp;wwhite&amp;n walls of the south city wall
+shine rise high to the south, a row of &amp;Ge&amp;gv&amp;Ge&amp;gr&amp;Gg&amp;gr&amp;Ge&amp;ge&amp;Gn&amp;n trees standing between
+the wall and the road.  To the north, an inn stands several stories tall,
+a &amp;ggreen&amp;n painted door leading into the kitchens set into the building.  
+The street continues west and east across the south end of Ebou Dar, the
+large southern square of the city visible in the distance.    
 </roomdescription>
       <flags>0</flags>
       <sector>City</sector>
@@ -2035,14 +1919,13 @@ off in the distance.
   </room>
   <room>
     <roombasic title="Lower Canal Street" vnum="25069" zone="250">
-      <roomdescription>This pale grey tiled street looks a bit worn from years of
-travelling feet. The street runs east toward the Bay bordered
-by the high city walls to the south, beyond a narrow brown
-watered canal, and a few shops to the north. A woman passes
-by your left side, holding her pale yellow skirts so they
-do not pass near the mudstained portion of the road. She
-is carrying a woven bag filled with produce from the northern
-main square.
+      <roomdescription>The white flagstones paving this road look a bit worn, smoothed out from
+years of traveling feet.  The road runs east and west alongside a narrow
+canal to the north, the towering walls of Ebou Dar bordering the road to
+the south.  The walls of nearby shops and buildings are of a similar color
+to the city wall, plastered stone for the most part.  Topping the
+whitewashed buildings, turnip shaped domes are striped in bright &amp;rr&amp;Re&amp;rd&amp;Rs&amp;n,
+&amp;gg&amp;Gr&amp;ge&amp;Ge&amp;gn&amp;Gs&amp;n, and &amp;yy&amp;Ye&amp;yl&amp;Yl&amp;yo&amp;Yw&amp;ys&amp;n.    
 </roomdescription>
       <flags>0</flags>
       <sector>City</sector>
@@ -2057,15 +1940,14 @@ main square.
   </room>
   <room>
     <roombasic title="Lower Canal Street" vnum="25070" zone="250">
-      <roomdescription>Lower Canal street is paved with light grey flagstones and is
-slightly dusty and a bit dark. The canal is to the south, flowing
-east to west. The canal looks very low - lower than it has been
-in years, it seems, since the water line in the canal is clearly
-below the normal by several feet. A row of small ducks swim by
-in the canal, flapping their green and red plumed feathers now
-and then. The road continues east, where you see the Bay in the
-distance and west, where shops line the street to the north, and
-a square is way off in the distance.
+      <roomdescription>A road paved of &amp;wwhite&amp;n flagstones worn smooth by years of traveling feet
+winds its way east and west along the south end of Ebou Dar, the high
+walls of the city passing alongside the street to the south.  A narrow
+canal winds away behind a building to the north of the thoroughfare, a
+healer's house if the smell coming from the open doorway is any
+indication.  The canal flows behind the house, continuing on its path
+toward the distant bay to the east.  To the west, a large square is
+visible a ways off.    
 </roomdescription>
       <flags>0</flags>
       <sector>City</sector>
@@ -2084,15 +1966,12 @@ a square is way off in the distance.
   </room>
   <room>
     <roombasic title="Lower Canal Street" vnum="25071" zone="250">
-      <roomdescription>You are on a dusty road running east and west along the inside
-of the southern city wall.  Run down shops line the north side
-of the street, many of them having pale yellow and green striped
-domes and most of them being at least three stories in height.
-The canal&apos;s murky brown waters can be seen to the south, rather
-narrow compared to streams you have seen, but wide enough for
-two of those narrow four passenger boats to pass easily. The
-road continues west, where shops line the street, and east, where
-the bay can be seen off in the distance.
+      <roomdescription>The flagstone paved road continues east and west along the inside of the
+south wall of Ebou Dar, a narrow canal flowing to the north of the road
+behind several shops, a few looking in great need of repair.  Domes
+striped in faded paint of &amp;yy&amp;Ye&amp;yl&amp;Yl&amp;yo&amp;Yw&amp;ys&amp;n and &amp;gg&amp;Gr&amp;ge&amp;Ge&amp;gn&amp;Gs&amp;n top some of the buildings, a
+rather sad sight compared to the shops to the west.  To the east, a large
+bay can be seen in the distance, the canal to the north winding toward it.
 </roomdescription>
       <flags>0</flags>
       <sector>City</sector>
@@ -2107,15 +1986,12 @@ the bay can be seen off in the distance.
   </room>
   <room>
     <roombasic title="Lower Canal Street" vnum="25072" zone="250">
-      <roomdescription>Lower Canal street is paved with light grey flagstones and is
-slightly dusty and a bit dark. The canal is to the south, flowing
-east to west. The canal looks very low - lower than it has been
-in years, it seems, since the water line in the canal is clearly
-below the normal by several feet. A row of small ducks swim by
-in the canal, flapping their green and red plumed feathers now
-and then. The road continues east, where you see the Bay in the
-distance and west, where shops line the street to the north, and
-a square is way off in the distance.
+      <roomdescription>The flagstone paved path of Lower Canal Street continues on to the east
+and west, the towering height of the southern city wall directly to the
+south of the road.  A narrow canal flanks the street to the north, winding
+away from the road to the west as shops begin to dot the northern side of
+the street, the south square of Ebou Dar visible in the distance.  To the
+east, the wide bay is visible on the horizon.    
 </roomdescription>
       <flags>0</flags>
       <sector>City</sector>
@@ -2132,15 +2008,14 @@ a square is way off in the distance.
     </exit>
   </room>
   <room>
-    <roombasic title="Intersection Lower Canal Street and Consort Way" vnum="25073" zone="250">
-      <roomdescription>You are standing at a crossroads inside the southern wall of the
-city. The white walls of the city stretch to the south as this
-street follows it. There is a narrow canal between the street and
-the southern walls, and a low fence separates the way from the
-water. A low gondola like boat is lazily rowing down the canal,
-making small splashes in the murky water. The Southeast Tower
-stands partially in the Bay ending the city wall. Rows of piers
-line the Bay to the north.
+    <roombasic title="The Intersection of Lower Canal Street and Consort Way" vnum="25073" zone="250">
+      <roomdescription>Two roads cross here, the road from the north being cut off by the
+southeast tower of Ebou Dar, the street from the west ending at the wide
+expanse of the bay directly to the east.  The tower is built partially in
+the bay itself, acting as an end to the southern city wall, a wooden door
+set into the wall of the tower, leading into the construct.  A &amp;Ks&amp;wt&amp;Wo&amp;wn&amp;Ke&amp;n
+bridge is just to the north, spanning the narrow canal flanking Lower
+Canal Street that empties into the bay.    
 </roomdescription>
       <flags>0</flags>
       <sector>City</sector>
@@ -2163,15 +2038,12 @@ line the Bay to the north.
   </room>
   <room>
     <roombasic title="Wayfarer Lane" vnum="25074" zone="250">
-      <roomdescription>Wayfarer lane widens here, still nestled between the ornate
-walls of the \c06Tarasin Palace\c00 to the north and a well
-kept inn to the south. This wide tiled street is bordered by
-red, yellow and white flowers that create a sweet scent in
-the air as you pass by. The white plastered walls of shops
-line the northeastern side of the lane, and Mol Hara square
-can be seen off in the northeastern distance. To the east
-is a large promenade and to the west the flower lined lane
-continues.
+      <roomdescription>The street widens here, nestled between the ornate walls of the Tarasin
+Palace to the north and a well kept inn to the south.  The sweet scent of
+blooming flowers drift through the air, the walls of the palace lined with
+&amp;Rr&amp;re&amp;Rd&amp;n, &amp;Yy&amp;ye&amp;Yl&amp;yl&amp;Yo&amp;yw&amp;n, and &amp;Ww&amp;wh&amp;Wi&amp;wt&amp;We&amp;n blossoms.  The &amp;wwhite&amp;n and &amp;Kgray&amp;n paved Cordan
+Promenade lies to the east, Wayfarer Lane continuing to the west.  &amp;mMol
+&amp;KHa&amp;wr&amp;Wa &amp;wS&amp;Kqu&amp;mare&amp;n can be seen in the distance off to the northeast.    
 </roomdescription>
       <flags>0</flags>
       <sector>City</sector>
@@ -2191,16 +2063,12 @@ continues.
   </room>
   <room>
     <roombasic title="Wayfarer Lane" vnum="25075" zone="250">
-      <roomdescription>This street is paved by broad, white flat flagstones that shine
-brightly in the midday sun. Each side of the street is lined
-with a row of \c01red, \c03yellow\c00 and \c06blue\c00 flowers. A canal ends to the
-north, and its waters flow past the wall of a large inn toward
-the eastern bay. Shops line the southern side of the street,
-each of them having a painted wooden sign over the door to
-signify what they sell. Directly south, a sign with a painted
-\c03l\c00a\c07n\c00t\c03e\c00r\c07n\c00 hangs over a small wooden door. To the west, you can
-see the flowered streets of Cordan Promenade, the jewel of
-Ebou Dar.
+      <roomdescription>This street is paved with &amp;wwhite&amp;n flagstones, flowers in hues of &amp;Rr&amp;re&amp;Rd&amp;n,
+&amp;Yy&amp;ye&amp;Yl&amp;yl&amp;Yo&amp;yw&amp;n, and &amp;Ww&amp;wh&amp;Wi&amp;wt&amp;We&amp;n lining the road.  Shops are spaced along the south side
+of the path, wooden signs hanging above doorways to signify what they
+sell.  The painted sign above the small doorway of the shop directly south
+depicts a glowing &amp;yl&amp;Ka&amp;wn&amp;yt&amp;Ke&amp;wr&amp;yn&amp;n.  The flowered street of Cordan Promenade, the
+jewel of Ebou Dar, is to the west.    
 </roomdescription>
       <flags>0</flags>
       <sector>City</sector>
@@ -2219,15 +2087,15 @@ Ebou Dar.
   </room>
   <room>
     <roombasic title="Consort Way" vnum="25076" zone="250">
-      <roomdescription>Warehouses, piers, and boats are all you see along this busy
-street. The Bay extends into the distance to the east while
-the city looms above you to the west. Directly west are several
-piers, and the length of the Bay of Ebou Dar stretches out
-before you, making you gasp as you see the wide stretch of water.
-You look to the southeast and the water never seems to end. To
-the north is a small intersection and a canal rushes by, under
-a small bridge. To the south you see the southeast tower of
-the city walls where it ends and the bay begins.
+      <roomdescription>This street appears to be a main bustling section of activity during the
+hours of sunlight.  The bay stretches out to the east, the banks of the
+Rahad visible if one looks extremely hard, while the city spreads out in
+all its glory to the west.  Piers line the east side of the street, boats
+carrying people back and forth across the bay throughout the day.  
+Consort Way continues to the north, winding its way along the east side of
+the city.  A stone bridge lays directly to the south, crossing over a
+small canal and intersecting with another street below the southeast tower
+of the city.    
 </roomdescription>
       <flags>0</flags>
       <sector>City</sector>
@@ -2241,16 +2109,12 @@ the city walls where it ends and the bay begins.
     </exit>
   </room>
   <room>
-    <roombasic title="Consort Way" vnum="25077" zone="250">
-      <roomdescription>This street is rather wide, and paved with grey flagstones that
-show signs of wear. To the north you see the same road lined with
-small houses and piers on the east side. A far off square is atop
-a bridge near the eastern center of the city. Piers jet out into
-the bay at every open spot along the eastern side of the city,
-most occupied by fishing boats large and small, sometimes interspersed
-with Seafolk cutters. A few fisherman in their dingies paddle out
-a third of the way into the bay, casting their nets in hope of
-a good catch.
+    <roombasic title="The Intersection of Consort Way and Wayfarer Lane" vnum="25077" zone="250">
+      <roomdescription>The flower lined street of Wayfarer Lane meets the worn &amp;Kgray&amp;n stones of
+Consort Way to the west, leading deeper into the city of Ebou Dar should
+one take that path.  Houses and warehouses line the road on the west side,
+several piers jutting out into the bay on the east.  A few fishing boats
+dot the surface of the water, nets cast out in hopes of a good catch.    
 </roomdescription>
       <flags>0</flags>
       <sector>City</sector>
@@ -2268,14 +2132,13 @@ a good catch.
   </room>
   <room>
     <roombasic title="Consort Way" vnum="25078" zone="250">
-      <roomdescription>This wide road by the edge of Ebou Dar continues north and south,
-piers jutting out of the road every now and then. A large SeaFolk
-cutter has stopped on a pier directly to the east, and the pier
-is empty save for two bare chested dark men who stand guard. Sea
-Folk ships do not dock for very long, and these men look to be
-rather impatient with waiting on dry land. To the north you see a
-large square atop a shallow bridge over the Dashar Canal - quite
-a sight if you have nothing better to do.
+      <roomdescription>The road running alongside the bay continues north and south, piers
+jutting out from the east side of the street at random intervals.  
+Several boats and other vessels are docked along the piers, some ready to
+cast off for another attempt at a lucky catch.  Buildings rest on the west
+side of the road, a wooden sign hanging over one door marking it as an
+inn.  To the north, a large square atop a bridge over the Dashar Canal is
+visible, a nice resting spot for one who has nothing better to do.    
 </roomdescription>
       <flags>0</flags>
       <sector>Inside</sector>
@@ -2293,15 +2156,15 @@ a sight if you have nothing better to do.
   </room>
   <room>
     <roombasic title="Consort Way" vnum="25079" zone="250">
-      <roomdescription>Warehouses, piers, and boats are all you see along this busy
-street. The Bay extends into the distance to the east while
-the city looms above you to the west. Directly west are several
-piers, and the length of the Bay of Ebou Dar stretches out
-before you, making you gasp as you see the wide stretch of water.
-You look to the southeast and the water never seems to end. To
-the north is a small intersection and a canal rushes by, under
-a small bridge. To the south you see the southeast tower of
-the city walls where it ends and the bay begins.
+      <roomdescription>Dark stones worn smooth from years of traveling feet pave the street
+running north and south along the east side of Ebou Dar.  The sparkling
+depths of the bay stretch out to the east beside the road, piers jutting
+out into the bay at random intervals, the wooden surface of one of many
+docks visible directly to the east.  A small intersection is to the north,
+an open square resting atop a bridge spanning a canal that runs into the
+larger body of water.  The southeast tower lays to the south, build
+partially into the water, acting as an ending point for the south city
+wall.    
 </roomdescription>
       <flags>0</flags>
       <sector>Inside</sector>
@@ -2319,17 +2182,17 @@ the city walls where it ends and the bay begins.
     </exit>
   </room>
   <room>
-    <roombasic title="\c02Ea\c00st \c02Sq\c00ua\c02re\c00" vnum="25080" zone="250">
-      <roomdescription>You stand in the center of a large square that is atop a low
-canal bridge. The Dashar canal&apos;s \c06w\c00a\c06t\c00e\c06r\c00s flow beneath the bridge,
-which is very wide and flat on top. A carved marble railing
-is along each side of the bridge, and the ground is paved in
-light grey flagstones in an octagonal pattern. To the north and
-south, Consort Way spreads, leading to the piers and docks of
-Ebou Dar. In the center of the square is an intricate fountain
-that sprays water into several tiered basins. Many merchants,
-fisherman and citizens walk past.
-      \c06There is a sign here.\c00
+    <roombasic title="&amp;rE&amp;Ras&amp;wt &amp;WSq&amp;wu&amp;Rar&amp;re&amp;n" vnum="25080" zone="250">
+      <roomdescription>A large square is built atop a low bridge here, a canal running beneath it
+and emptying into the bay to the east.  The bridge is wide and flat on the
+top, light &amp;Kgray&amp;n flagstones paving the area in an octagonal pattern, a
+carved &amp;Ks&amp;wt&amp;Wo&amp;wn&amp;Ke&amp;n railing lining the bridge to all sides, breaking away to open
+into the streets branching off.  In the exact center of the square, a
+beautifully crafted fountain sprays water into the tiered basins below it,
+a slight mist rising in the air and cooling the area around the fountain
+slightly.  Consort Way branches off to the north and south, leading to the
+docks and piers of Ebou Dar.  To the west, Hara Street leads deeper into
+the city, towering buildings stretching to the sky in the distance.    
 </roomdescription>
       <flags>130</flags>
       <sector>Inside</sector>
@@ -2352,20 +2215,19 @@ several places.
       <description>North - Consort Way
 South - Consort Way
 East - Piers / Bay
-West - Dashar Street / Mol Hara Square
+West - Hara Street
 </description>
     </exdesc>
   </room>
   <room>
     <roombasic title="Consort Way" vnum="25081" zone="250">
-      <roomdescription>This wide road by the edge of Ebou Dar continues north and south,
-piers jutting out of the road every now and then. A large SeaFolk
-cutter has stopped on a pier directly to the east, and the pier
-is empty save for two bare chested dark men who stand guard. Sea
-Folk ships do not dock for very long, and these men look to be
-rather impatient with waiting on dry land. To the south you see a
-large square atop a shallow bridge over the Dashar Canal - quite
-a sight if you have nothing better to do.
+      <roomdescription>This wide road continues north and south along the eastern edge of Ebou
+Dar, the dark paving stones worn smooth by years of shuffling feet.  
+Piers and docks jut out over the bay every now and then, the wooden walk
+directly to the east stained with an unknown dark substance, a small
+building constructed on the pier.  Directly to the south, a large square
+built atop a low bridge opens up over a canal emptying into the bay, the
+area seeming like a good resting spot if one has nothing to do.    
 </roomdescription>
       <flags>0</flags>
       <sector>City</sector>
@@ -2384,15 +2246,14 @@ a sight if you have nothing better to do.
   </room>
   <room>
     <roombasic title="Consort Way" vnum="25082" zone="250">
-      <roomdescription>Warehouses, piers, and boats are all you see along this busy
-street. The Bay extends into the distance to the east while
-the city looms above you to the west. Directly west are several
-piers, and the length of the Bay of Ebou Dar stretches out
-before you, making you gasp as you see the wide stretch of water.
-You look to the southeast and the water never seems to end. To
-the north is a small intersection and a canal rushes by, under
-a small bridge. To the south you see the southeast tower of
-the city walls where it ends and the bay begins.
+      <roomdescription>Consort Way continues north and south alongside the bay of Ebou Dar,
+sparkling water stretching out to the east.  Docks and piers branch off
+the road and into the bay, a small building constructed on the pier
+directly to the east.  To the west, an old warehouse appears near
+collapse, white plaster chipping from the building in chunks.  The door is
+slightly ajar, though the glimpse of the room beyond tells of recent
+visitors being nonexistent.  The southeast tower of the city lays in the
+distance to the south, just visible if one looks extremely close.    
 </roomdescription>
       <flags>0</flags>
       <sector>Inside</sector>
@@ -2412,16 +2273,14 @@ the city walls where it ends and the bay begins.
     </exit>
   </room>
   <room>
-    <roombasic title="Consort Way" vnum="25083" zone="250">
-      <roomdescription>This street is rather wide, and paved with grey flagstones that
-show signs of wear. To the north you see the same road lined with
-small houses and piers on the east side. A far off square is atop
-a bridge near the eastern center of the city. Piers jet out into
-the bay at every open spot along the eastern side of the city,
-most occupied by fishing boats large and small, sometimes interspersed
-with Seafolk cutters. A few fisherman in their dingies paddle out
-a third of the way into the bay, casting their nets in hope of
-a good catch.
+    <roombasic title="The Intersection of Consort Way and Dashar Street" vnum="25083" zone="250">
+      <roomdescription>Dark stones worn by years of traveling feet pave the road running north
+and south along the east side of Ebou Dar, piers and docks jutting out
+into the large bay to the east at random intervals.  A large square is
+visible in the distance to the south, built atop a low bridge near the
+center of the east side of the city.  To the west, Dashar Street leads
+deeper into the city, &amp;Km&amp;wa&amp;Wrb&amp;wl&amp;Ke&amp;n structures topped in colorfully striped domes
+rising upward toward the sky.    
 </roomdescription>
       <flags>0</flags>
       <sector>Inside</sector>
@@ -2441,15 +2300,14 @@ a good catch.
   </room>
   <room>
     <roombasic title="Consort Way" vnum="25084" zone="250">
-      <roomdescription>Warehouses, piers, and boats are all you see along this busy
-street. The Bay extends into the distance to the east while
-the city looms above you to the west. Directly west are several
-piers, and the length of the Bay of Ebou Dar stretches out
-before you, making you gasp as you see the wide stretch of water.
-You look to the southeast and the water never seems to end. To
-the north is a small intersection and a canal rushes by, under
-a small bridge. To the north you see the northeast tower of
-the city walls where it ends and the bay begins.
+      <roomdescription>The road paved in dark stones continues north and south along the east
+side of the city, the wide expanse of the bay flanking the street to the
+east.  A wide pier juts out into the bay, serving as the eastern dock for
+the Rahad ferry.  Consort Way intersects with another street at the city
+wall to the north, the northeast tower built partially into the bay and
+acting as an ending point for the north city wall.  On the west side of
+the street, several warehouses in various states of disuse are built,
+white plaster chipping from the sides of the buildings.    
 </roomdescription>
       <flags>0</flags>
       <sector>Inside</sector>
@@ -2468,13 +2326,14 @@ the city walls where it ends and the bay begins.
   </room>
   <room>
     <roombasic title="Dashar Street" vnum="25085" zone="250">
-      <roomdescription>This wide street borders a beautiful canal to the south while
-shops line its northern side. The high peaked dome and the
-wide arched windows of an inn are to the southwest, where
-sounds of laughter can be heard even from here. To the east
-you see the entire length of the Bay reach out before you,
-as you have a view which is not blocked by any ships or piers,
-oddly enough.
+      <roomdescription>The street is paved in diamond cut flagstones, cleaned and well polished.
+Several shops line the northern side of the street, the high peaked domes
+and arched windows of an inn visible to the southwest.  A breathtaking
+view of the bay of Ebou Dar opens up to the east, strangely free of boats
+or piers blocking the view, the few seen only serving to accent the
+picture perfect scene.  The flower lined path of Cordan Promenade lies
+directly to the west, the sweet scent of fresh blooms touching the air
+lightly.    
 </roomdescription>
       <flags>0</flags>
       <sector>Inside</sector>
@@ -2491,16 +2350,15 @@ oddly enough.
   </room>
   <room>
     <roombasic title="Dashar Street" vnum="25086" zone="250">
-      <roomdescription>This wide street borders a beautiful canal to the south
-while shops line its northern side. The wide Dashar Canal
-bends south here, eventually continuingalong Hara street
-and emptying into the Bay. There is a store directly south,
-with a sign painted above the door. To the southeast you
-see the tall peaked dome of an inn striped in garish red
-and green stripes. To the southwest is Mol Hara Square
-off in the distance, the widest square in all of the city.
-Off to the west is an intersection with the \c03f\c00l\c05o\c00w\c03e\c00r\c05e\c00d lined
-Cordan Promenade.
+      <roomdescription>Diamond cut flagstones pave this street, all clean and well polished.  
+The Dashar Canal winds off to the south from the side of the road,
+eventually continuing along Hara Street and emptying into the bay.  A
+wooden sign hangs over the doorway to a shop directly south, a plumed helm
+and silk bonnet depicted on the sign.  The peaked dome of an inn is
+visible to the southeast, &amp;rr&amp;Re&amp;rd&amp;n and &amp;gg&amp;Gr&amp;ge&amp;Ge&amp;gn&amp;n stripes crossing the dome.  &amp;mMol
+&amp;KHa&amp;wr&amp;Wa &amp;wS&amp;Kqu&amp;mare&amp;n can be seen to the southwest, the largest square in all of
+Ebou Dar.  Cordan Promenade lies to the west, Dashar Street intersecting
+with the flower lined path.    
 </roomdescription>
       <flags>0</flags>
       <sector>Inside</sector>
@@ -2520,13 +2378,13 @@ Cordan Promenade.
   </room>
   <room>
     <roombasic title="Dashar Street" vnum="25087" zone="250">
-      <roomdescription>The street paved with wide light grey flagstones continues
-east and west. The dome of a large inn can be seen to the south,
-and its white plastered walls gleam in the sunlight, almost
-blinding you. The sound of horses can be heard nearby, and
-you realise that there are not one, but two stables near.
-The dome of another inn can be seen to the northwest. Houses
-line this road, which ends up in the eastern bay road.
+      <roomdescription>The street is paved in diamond cut flagstones and runs east and west
+through Ebou Dar.  The dome of a large inn can be seen to the south,
+striped &amp;rr&amp;Re&amp;rd&amp;n and &amp;gg&amp;Gr&amp;ge&amp;Ge&amp;gn&amp;n.  To the northwest, another inn is visible, white
+plastered walls in a good state of repair.  The sound of horses echo
+faintly in the air, two stables being nearby, one directly north.  Houses
+line the road on the south side, the street leading closer to the bay in
+the east and deeper into the city to the west.    
 </roomdescription>
       <flags>0</flags>
       <sector>Inside</sector>
@@ -2546,27 +2404,25 @@ line this road, which ends up in the eastern bay road.
   </room>
   <room>
     <roombasic title="Dashar Street" vnum="25088" zone="250">
-      <roomdescription>The street paved with wide light grey flagstones continues
-east and west. The dome of a large inn can be seen to the south,
-and its white plastered walls gleam in the sunlight, almost
-blinding you. The sound of horses can be heard nearby, and
-you realise that there are not one, but two \c03s\c00t\c03a\c00b\c03l\c00e\c03s\c00 near.
-The dome of another inn can be seen to the northwest. Houses
-line this road, which ends up in the eastern bay road.
+      <roomdescription>Light colored flagstones gradually begin to fade into a darker stone, the
+area looking to be well kept.  Houses and shops line the north side of the
+road, white walls freshly painted.  The sound of horses echo faintly
+through the air, two stables being in the nearby area.  One lies directly
+south, the other lies to the northwest.  A &amp;rr&amp;Re&amp;rd&amp;n and &amp;gg&amp;Gr&amp;ge&amp;Ge&amp;gn&amp;n striped dome is
+visible in the southern direction, perhaps topping the inn that the
+stables belong to.  Another inn is located to the northwest, the dome
+topping the building devoid of garish colors.  The road leads deeper into
+the city to the west, the sparkling waters of the bay nearing to the east.
 </roomdescription>
       <flags>0</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
-    <exit direction="north" keyword="door north entrance" exitinfo="3" keynum="0" toroom="25200">
-      <description>To the north you see the entrance to a merchant&apos;s house.
-</description>
-    </exit>
     <exit direction="east" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="25089">
       <description>To the east, the street continues toward the Bay.
 </description>
     </exit>
-    <exit direction="south" keyword="&lt;NONE&gt;" exitinfo="1" keynum="0" toroom="25199">
+    <exit direction="south" keyword="&lt;NONE&gt;" exitinfo="3" keynum="0" toroom="25199">
       <description>&lt;NONE&gt;</description>
     </exit>
     <exit direction="west" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="25087">
@@ -2577,13 +2433,15 @@ a canal.
   </room>
   <room>
     <roombasic title="Dashar Street" vnum="25089" zone="250">
-      <roomdescription>This wide street borders a beautiful canal to the south while
-shops line its northern side. The high peaked dome and the
-wide arched windows of an inn are to the southwest, where
-sounds of laughter can be heard even from here. To the east
-you see the entire length of the Bay reach out before you,
-as you have a view which is not blocked by any ships or piers,
-oddly enough.
+      <roomdescription>Dashar Street continues east and west through Ebou Dar, leading deeper
+into the city to the west.  A large bay lies to the east, providing a
+beautiful view that remains unobstructed by buildings or an overabundance
+of piers breaking the line of water.  The high peaked dome and arched
+windows of an inn can be seen to the southwest, another like building
+visible in the distant northwestern direction.  The buildings lining the
+road begin to fade from houses and shops as the bay grows nearer, being
+replaced by warehouses and other places of business that rely on the bay
+for means of production.    
 </roomdescription>
       <flags>0</flags>
       <sector>Inside</sector>
@@ -2598,16 +2456,13 @@ oddly enough.
   </room>
   <room>
     <roombasic title="Wayfarer Lane" vnum="25090" zone="250">
-      <roomdescription>The wide tiled street of Wayfarer Lane continues east and
-west along a northern canal that is lined with \c01red\c00, \c03yellow\c00
-and white flowers as well as a low wrought iron fence. There
-are shops and houses bordering the street to the south. A
-woman holding a small child&apos;s hand passes by, the child
-peering up at you and scrunching his nose. Off to the north
-you see the high peaked dome of a large many floored inn
-bordering Mol Hara Square. To the west you see the flowered
-lined street intersect with Cordan Promenade in a blur of
-color.
+      <roomdescription>&amp;RR&amp;re&amp;Rd&amp;n, &amp;Yy&amp;ye&amp;Yl&amp;yl&amp;Yo&amp;yw&amp;n, and &amp;Ww&amp;wh&amp;Wi&amp;wt&amp;We&amp;n flowers line this road, the paved &amp;wwhite&amp;n
+thoroughfare continuing east and west from here.  A low fence borders the
+street to the north, shops and houses flanking it to the south.  Off in
+the northern direction, the high peaked dome of a large inn is visible,
+most likely along the edge of &amp;mMol &amp;KHa&amp;wr&amp;Wa &amp;wS&amp;Kqu&amp;mare&amp;n.  Cordan Promenade, the
+jewel of Ebou Dar, lies to the west, bright blooms creating beautiful
+scenery for a stroll.    
 </roomdescription>
       <flags>0</flags>
       <sector>City</sector>
@@ -2616,25 +2471,17 @@ color.
     <exit direction="east" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="25091">
       <description>&lt;NONE&gt;</description>
     </exit>
-    <exit direction="south" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="25213">
-      <description>The entrance to a small house is south.
-</description>
-    </exit>
     <exit direction="west" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="25075">
       <description>&lt;NONE&gt;</description>
     </exit>
   </room>
   <room>
     <roombasic title="Wayfarer Lane" vnum="25091" zone="250">
-      <roomdescription>The pale stone tiled road continues, bordered by red, yellow
-and white flowered on each side. The high walls of shops are
-along the southern side of the street, and a wrought iron fence
-separates the road from the northern canal, which flows alongside
-the white plastered stone walls of another inn, the largest in
-Ebou Dar. To the west you see the flowered streets of Cordan
-Promenade and the wide central square. To the west you see
-the bay stretch out before you beyond several piers and docked
-ships.
+      <roomdescription>The &amp;wwhite&amp;n stone paved road continues east and west through Ebou Dar, &amp;Rr&amp;re&amp;Rd&amp;n,
+&amp;Yy&amp;ye&amp;Yl&amp;yl&amp;Yo&amp;yw&amp;n, and &amp;Ww&amp;wh&amp;Wi&amp;wt&amp;We&amp;n flowers lining the path to both sides.  Shops and houses
+line both sides of the street, the flowered street of Cordan Promenade is
+visible to the west.  Looking east, the bay stretches out beyond several
+piers, the view possibly considered pretty.    
 </roomdescription>
       <flags>0</flags>
       <sector>Inside</sector>
@@ -2649,15 +2496,13 @@ ships.
   </room>
   <room>
     <roombasic title="Wayfarer Lane" vnum="25092" zone="250">
-      <roomdescription>The pale stone tiled road continues, bordered by red, yellow
-and white flowered on each side. The high walls of shops are
-along the southern side of the street, and a wrought iron fence
-separates the road from the northern canal, which flows alongside
-the white plastered stone walls of another inn, the largest in
-Ebou Dar. To the west you see the flowered streets of Cordan
-Promenade and the wide central square. To the west you see
-the bay stretch out before you beyond several piers and docked
-ships.
+      <roomdescription>This &amp;wwhite&amp;n paved street continues east and west through Ebou Dar, &amp;Rr&amp;re&amp;Rd&amp;n,
+&amp;Yy&amp;ye&amp;Yl&amp;yl&amp;Yo&amp;yw&amp;n, and &amp;Ww&amp;wh&amp;Wi&amp;wt&amp;We&amp;n flowers lining the road.  Shops and houses are built
+along both sides of the street, a wooden sign with a painted boot on it
+hanging above the doorway to the building directly south.  Cordan
+Promenade can be seen to the west, a large square just visible in the
+distance beyond it.  To the west, the bay stretches out beyond several
+piers and boats.    
 </roomdescription>
       <flags>0</flags>
       <sector>Inside</sector>
@@ -2675,14 +2520,14 @@ ships.
   </room>
   <room>
     <roombasic title="Wayfarer Lane" vnum="25093" zone="250">
-      <roomdescription>Many people pass by you as they head to and fro the eastern
-piers of Ebou Dar. The wide tiled street of Wayfarer Lane
-continues east and west along a northern canal that is lined
-with \c01red\c00, \c03yellow\c00 and white flowers as well as a low wrought
-iron fence. There are shops and houses bordering the street
-to the south, and the faint smell of fish and the fresh smell
-of salty sea air reaches your nose as you look eastward onto
-the many piers jutting into the \c06B\c02a\c06y\c00 of Ebou Dar.
+      <roomdescription>The &amp;wwhite&amp;n tiles paving this street fade to darker stones as it draws
+closer to the bay, the &amp;Rr&amp;re&amp;Rd&amp;n, &amp;Yy&amp;ye&amp;Yl&amp;yl&amp;Yo&amp;yw&amp;n, and &amp;Ww&amp;wh&amp;Wi&amp;wt&amp;We&amp;n flowers ending at the
+intersection of Consort Way and Wayfarer Lane.  The street leads deeper
+into Ebou Dar to the west, the scent of the salty air begins to overpower
+the fresh smell of the flowers as the road draws near the bay.  The shops
+and houses on both sides of the street give way for warehouses and shops
+that depend on the water for business.  Many piers are visible jutting out
+into the bay, the occasional boat docked at one of them.    
 </roomdescription>
       <flags>0</flags>
       <sector>Inside</sector>
@@ -2696,18 +2541,16 @@ the many piers jutting into the \c06B\c02a\c06y\c00 of Ebou Dar.
     </exit>
   </room>
   <room>
-    <roombasic title="\c07Western Mol Hara Square\c00" vnum="25094" zone="250">
-      <roomdescription>A wrought iron gate surrounded by guards leads through the high
-walls of the Tarasin Palace to the west. To the northwest and the
-southwest the walls of the Palace spread as far as you can see
-upwards. The peaks of the palace spires and domes can be faintly
-seen here, but the walls block everything else. Through the gate
-you see lush palace gardens, and a walkway leading to the main
-arch of the Palace, where a barred and closed polished white oak
-door is. To the north, south and west, Mol Hara square continues,
-paved with bright white and sometimes pale colored tiles in
-intricate patterns and lined with shops and merchants displaying
-their wares.
+    <roombasic title="&amp;mWes&amp;Kt Mo&amp;wl &amp;WHar&amp;wa &amp;KSqu&amp;mare&amp;n" vnum="25094" zone="250">
+      <roomdescription>A large wrought iron gate lies to the west, the only visible entrance
+through the high walls surrounding the beautiful Tarasin Palace.  The
+palace walls continue to the north and south, spanning the entire length
+of &amp;mMol &amp;KHa&amp;wr&amp;Wa &amp;wS&amp;Kqu&amp;mare&amp;n and beyond.  The soaring spires and domes of the palace
+can be seen, though not much else is visible over the stone walls.  This
+vast square continues to the north, east, and south, pale stones of light
+&amp;mrose&amp;n, &amp;ggreen&amp;n, and &amp;cblue&amp;n shades set into a circular starburst pattern span
+the entire area, beginning at the base of the wide &amp;Km&amp;wa&amp;Wrb&amp;wl&amp;Ke&amp;n steps leading
+upward to a statue in the center of the square.    
 </roomdescription>
       <flags>0</flags>
       <sector>City</sector>
@@ -2727,16 +2570,17 @@ their wares.
     </exit>
   </room>
   <room>
-    <roombasic title="\c07Eastern Mol Hara Square\c00" vnum="25095" zone="250">
-      <roomdescription>Shops and Inns line the eastern side of the square to the north
-and south while a wide street leads east among more shops. Two
-narrow canals flow into a much wider one that continues east
-along the southern side of Hara street. The entrance to a large
-in can be plainly seen to the east, as the glaring red and green
-sign depicting a scandily clad woman is almost as large as one
-of the inn&apos;s arched windows. To the south you see another sign
-for an inn, and to the west you see a large statue of a woman
-and the high palace walls off in the distance.
+    <roombasic title="&amp;mEas&amp;Kt Mo&amp;wl &amp;WHar&amp;wa &amp;KSqu&amp;mare&amp;n" vnum="25095" zone="250">
+      <roomdescription>Shops and inns border &amp;mMol &amp;KHa&amp;wr&amp;Wa &amp;wS&amp;Kqu&amp;mare&amp;n on the north, east, and south sides,
+breaks in the line of building allowing streets to lead into the square.
+To narrow canals flow into each other and wind eastward along Hara Street,
+eventually to empty into the bay.  The entrance to a large inn is in plain
+view to the east, a large sign on the building depicting a scantily clad
+woman in a bright outfit of &amp;rr&amp;Re&amp;rd&amp;n and &amp;gg&amp;Gr&amp;ge&amp;Ge&amp;gn&amp;n.  The whole area is paved in
+stone of light &amp;mrose&amp;n, &amp;ggreen&amp;n, and &amp;cblue&amp;n hues set into a starburst pattern
+that radiates from the steps leading up to a beautiful statue placed in
+the center of the square, the walls of the Tarasin Palace visible on the
+west side of the area, rising tall around the palace.    
 </roomdescription>
       <flags>0</flags>
       <sector>City</sector>
@@ -2756,17 +2600,14 @@ and the high palace walls off in the distance.
     </exit>
   </room>
   <room>
-    <roombasic title="\c05H\c00a\c06r\c00a \c05S\c00t\c06r\c00e\c05e\c00t \c06B\c00r\c05i\c00d\c06g\c00e" vnum="25096" zone="250">
-      <roomdescription>You pass over a very wide marble bridge that has scrolls carved
-on its rails and is paved with marble tiles in a wave pattern.
-The bridge passes over \c06Da\c13sh\c00\c06ar\c00 canal, which merges with a smaller
-southern canal from the north and continues along to the east
-on the southern side of Hara street, eventually emptying into
-the \c06B\c02a\c06y\c00 of \c07Ebou Dar\c00 alongside one of the eastern piers. To the
-west is the grand central Mol Haran square of the city - one
-of a dozen or so that is spread around the city. To the north
-is the white plastered wall of a shop, and a glaring \c01red\c00 and
-\c02green\c00 sign to an inn is above the street to the east.
+    <roombasic title="Hara Street Bridge" vnum="25096" zone="250">
+      <roomdescription>A wide bridge spans a canal as it flows winds northward and curves,
+straightening out to follow Hara Street on the northern side.  The bridge
+is crafted of &amp;Km&amp;wa&amp;Wrb&amp;wl&amp;Ke&amp;n, scrolls carved into the smooth surface of the
+railings, dark &amp;Kgray&amp;n flagstones paving the road.  &amp;mMol &amp;KHa&amp;wr&amp;Wa &amp;wS&amp;Kqu&amp;mare&amp;n spreads
+out before the Tarasin Palace to the west, the largest of many squares in
+Ebou Dar.  A brightly painted sign hangs above the door of a large inn to
+the east, the colors making it almost impossible to miss.    
 </roomdescription>
       <flags>0</flags>
       <sector>Inside</sector>
@@ -2781,23 +2622,23 @@ is the white plastered wall of a shop, and a glaring \c01red\c00 and
   </room>
   <room>
     <roombasic title="Hara Street" vnum="25097" zone="250">
-      <roomdescription>This street is paved with white and grey marble, and is the widest
-and most well kept street in all of Ebou Dar. To the east it leads
-to the blazing white Mol Hara Square, where a glittering white
-statue of a woman can be seen in the center. Off in the eastern
-distance is another bridge, this time with a square atop the bridge
-- quite an unusual sight. To the south a wide canal lined with white
-stone and a wrought iron fence continues its lazy journey down to
-the east toward the Bay. To the north is the entrance to an inn -
-and a red and green sign in front of the inn proclaims it to be a
-rather seedy one. Your thoughts are confirmed as you see the name
-on the sign - &apos;\c01The Saucy Wench.\c00&apos;
+      <roomdescription>The street is paved in dark &amp;Kgray&amp;n flagstones, continuing east and west
+through Ebou Dar.  Across the bridge to the west, &amp;mMol &amp;KHa&amp;wr&amp;Wa &amp;wS&amp;Kqu&amp;mare&amp;n spreads
+out before the Tarasin Palace, a beautifully crafted &amp;Km&amp;wa&amp;Wrb&amp;wl&amp;Ke&amp;n statue of a
+woman resting in the center of the open area.  Off in the eastern
+direction, another bridge is visible, a smaller square built atop it,
+quite an unusual sight.  A canal runs beside the road to the north, a
+fence laying between the water and the street to keep travelers from
+falling in.  A brightly painted sign depicting a scantily clad woman hangs
+over the doorway to a large inn directly north, the bright red letters
+naming the inn as 'The Saucy Wench' spreading across the bottom of the
+sign.    
 </roomdescription>
       <flags>0</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
-    <exit direction="north" keyword="door north " exitinfo="1" keynum="0" toroom="25161">
+    <exit direction="north" keyword="door north " exitinfo="3" keynum="0" toroom="25161">
       <description>The door to the north leads to a loud and boisterous inn, the
 most infamous in the city.
 </description>
@@ -2808,33 +2649,26 @@ most infamous in the city.
     <exit direction="west" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="25096">
       <description>&lt;NONE&gt;</description>
     </exit>
-    <exdesc keyword="sign">
-      <description>The sign is of a woman dressed in a pale red dress in green
-petticoats drawn almost up to the knee (gasp). The deep
-wide neckline shows more than is proper, and would make
-anyone from the Two Rivers blush.
-</description>
+    <exdesc keyword="">
+      <description> </description>
     </exdesc>
   </room>
   <room>
     <roombasic title="Hara Street" vnum="25098" zone="250">
-      <roomdescription>Crowds bustle with activity as passerbys shop along this
-street. All manner of people crowd the streets, going about
-their business. A rather short, but stout and dark Seafolk
-man walks by, his ears covered with several golden hoops
-and his chest bare. A rather tall, elegant SeaFolk woman in
-a bright blue shirt and wide oilcloth breeches walks beside
-him, several golden chains connecting her earrings to her
-nosering. To the west is a glaring red and green sign of
-an inn and to the west you see more shops and inns, as well
-as a wide square atop a bridge.
+      <roomdescription>Dark &amp;Kgray&amp;n flagstones pave this road, shops and inns lining the street on
+the south side.  The Dashar Canal merges with the canal flowing on the
+north side of the path, a small bridge spanning the canal and leading into
+a small plaza directly north.  The faint sound of horses drift through the
+air, the sound coming from the stables to one of Ebou Dar's many inns to
+the south.  To the west, a brightly painted sign hanging above a large inn
+is almost impossible to miss, a large square built atop a bridge laying to
+the east.    
 </roomdescription>
       <flags>0</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
-    <exit direction="north" keyword="Not set yet...
-" exitinfo="0" keynum="0" toroom="3023">
+    <exit direction="north" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="3023">
       <description>None
 </description>
     </exit>
@@ -2850,17 +2684,18 @@ as a wide square atop a bridge.
   </room>
   <room>
     <roombasic title="Hara Street" vnum="25099" zone="250">
-      <roomdescription>The shops are fewer here near the bay district.  To the east
-the Bay stretches for miles to the far coastline, and you can
-see many piers jut out into the bay, some long enough for a
-dingy to be tied up against a pole and others long enough for
-a SeaFolk ship to come to port. To the west, Hara Street runs
-along numerous shops toward Mol Hara Square. A glaring red and
-green sign of an inn blocks some of the view of the Tarasin
-Palace to the east. To the south, the Dashar canal continues
-along Hara street, bending northwards as it approaches the
-eastern bridge. To the north is a large sign painted with an
-open book, and a closed door.
+      <roomdescription>The shops and other buildings become fewer the nearer to the bay district
+the road draws to the east, the bay itself stretching out for miles beyond
+a square built atop a bridge directly to the east.  To the west, Hara
+Street runs along numerous shops toward &amp;mMol &amp;KHa&amp;wr&amp;Wa &amp;wS&amp;Kqu&amp;mare&amp;n and the Tarasin
+Palace.  The canal running along the north side of the road continues
+toward the larger body of water to the east, shifting southward slightly
+to merge with yet another canal beneath the &amp;rE&amp;Ras&amp;wt &amp;WSq&amp;wu&amp;Rar&amp;re&amp;n and flowing into
+the bay.  To the north, a small bridge spans the canal, leading to the
+closed doorway of a large building with a sign painted with an open book
+hanging above the doorway.  A smaller building with a sign depicting an
+ink bottle and quill hanging over the doorway lies directly east, the door
+standing open in welcome during the daytime hours.    
 </roomdescription>
       <flags>0</flags>
       <sector>City</sector>

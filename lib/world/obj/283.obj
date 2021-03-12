@@ -1,103 +1,162 @@
-#28300
-couch~
-a couch~
-A couch covered in a \c08f\c12l\c13o\c09r\c08a\c12l\c00 print stands here.~
-~
-12 0 0
-0 0 0 0
-3000 0 0
-E
-couch floral~
-This couch is cover with a \c08f\c12l\c13o\c09r\c08a\c12l\c00 print stands here.  
+<?xml version="1.0"?>
+<objects>
+  <object vnum="28300" name="couch" special="NONE">
+    <description>A couch covered in a \c08f\c12l\c13o\c09r\c08a\c12l\c00 print stands here.</description>
+    <shortdesc>a couch</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="2" value2="0" value3="2" value4="0"/>
+      <flags type="24" wear="0" extra="0"/>
+      <data weight="3000" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <exdesc keyword="couch floral">
+      <description>This couch is cover with a \c08f\c12l\c13o\c09r\c08a\c12l\c00 print stands here.  
 The pattern is the same one found on the chairs and the rug.
 It is woven with small \c09l\c02e\c09a\c02f\c09l\c02e\c09t\c02s\c00 and tiny \c08r\c01o\c08s\c01e\c08s\c00 
 are etched on it with a smidge of \c12l\c05a\c12v\c05e\c12n\c05d\c12e\c05r\c00.
-~
-#28301
-steak leveller~
-a huge steak, cuz levellers need to keep their strength up~
-A huge steak is lying on the ground, yuk!~
-~
-19 0 1
-30 0 0 0
-1 0 0
-#28302
-key brass small~
-a small \c01b\c03r\c01a\c03s\c01s\c00 key~
-A small \c01b\c03r\c01a\c03s\c01s\c00 key glints from the ground.~
-The small key glints in the sunlight.
-~
-18 0 1
-0 0 0 0
-1 125 0
-E
-key small brass~
-It looks like a small key made of brass, wonder what it could be for?
-~
-P
-OnActionCarry "unlock"
-Destroy
-End
-Q
-#28303
-chair~
-a chair~
-A chair covered with a \c08f\c12l\c13o\c09r\c08a\c12l\c00 print stands here in front of a fireplace.  ~
-~
-12 0 0
-0 0 0 0
-2000 0 0
-E
-chair chairs~
-The pattern is the same one found on the couchs and the rug.
+</description>
+    </exdesc>
+  </object>
+  <object vnum="28301" name="steak leveller" special="NONE">
+    <description>A huge steak is lying on the ground, yuk!</description>
+    <shortdesc>a huge steak, cuz levellers need to keep their strength up</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="30" value2="0" value3="0" value4="0"/>
+      <flags type="19" wear="1" extra="0"/>
+      <data weight="1" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="28302" name="key brass small" special="NONE">
+    <description>A small \c01b\c03r\c01a\c03s\c01s\c00 key glints from the ground.</description>
+    <shortdesc>a small \c01b\c03r\c01a\c03s\c01s\c00 key</shortdesc>
+    <actiondesc>The small key glints in the sunlight.
+</actiondesc>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="18" wear="1" extra="0"/>
+      <data weight="1" cost="125" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <exdesc keyword="key small brass">
+      <description>It looks like a small key made of brass, wonder what it could be for?
+</description>
+    </exdesc>
+    <objprog main="OnActionCarry" argtype="STRING" argument="unlock">
+      <action number="Destroy" argtype="VOID" argument="NONE"/>
+    </objprog>
+  </object>
+  <object vnum="28303" name="chair" special="NONE">
+    <description>A chair covered with a \c08f\c12l\c13o\c09r\c08a\c12l\c00 print stands here in front of a fireplace.  </description>
+    <shortdesc>a chair</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="2" value2="1" value3="2" value4="0"/>
+      <flags type="24" wear="0" extra="0"/>
+      <data weight="2000" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <exdesc keyword="chair chairs">
+      <description>The pattern is the same one found on the couchs and the rug.
 It is woven with small \c09l\c02e\c09a\c02f\c09l\c02e\c09t\c02s\c00 and tiny \c08r\c01o\c08s\c01e\c08s\c00 
 are etched on it with a smidge of \c12l\c05a\c12v\c05e\c12n\c05d\c12e\c05r\c00.
-~
-#28304
-key small silver~
-a small \c14s\c07i\c14l\c07v\c14e\c07r\c00 key~
-A small \c14s\c07i\c14l\c07v\c14e\c07r\c00 key lies here glinting.~
-The key unlocks the door and disappears.
-~
-18 0 1
-0 0 0 0
-1 125 0
-E
-key small silver~
-This small silver key glints in the sunlight and draws your attention. 
+</description>
+    </exdesc>
+  </object>
+  <object vnum="28304" name="key small silver" special="NONE">
+    <description>A small \c14s\c07i\c14l\c07v\c14e\c07r\c00 key lies here glinting.</description>
+    <shortdesc>a small \c14s\c07i\c14l\c07v\c14e\c07r\c00 key</shortdesc>
+    <actiondesc>The key unlocks the door and disappears.
+</actiondesc>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="18" wear="1" extra="0"/>
+      <data weight="1" cost="125" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <exdesc keyword="key small silver">
+      <description>This small silver key glints in the sunlight and draws your attention. 
 You wonder if its the right key and which door it may go to.
-~
-P
-OnActionCarry "unlock"
-Destroy
-End
-Q
-#28305
-key small silver~
-a small \c14s\c07i\c14l\c07v\c14e\c07r\c00 key~
-A small \c14s\c07i\c14l\c07v\c14e\c07r\c00 key is lying here.~
-The small key opens the door and disappears.
-~
-18 0 1
-0 0 0 0
-1 150 0
-E
-key small silver~
-This small key is silver and glints if you hold it up in the 
+</description>
+    </exdesc>
+    <objprog main="OnActionCarry" argtype="STRING" argument="unlock">
+      <action number="Destroy" argtype="VOID" argument="NONE"/>
+    </objprog>
+  </object>
+  <object vnum="28305" name="key small silver" special="NONE">
+    <description>A small \c14s\c07i\c14l\c07v\c14e\c07r\c00 key is lying here.</description>
+    <shortdesc>a small \c14s\c07i\c14l\c07v\c14e\c07r\c00 key</shortdesc>
+    <actiondesc>The small key opens the door and disappears.
+</actiondesc>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="18" wear="1" extra="0"/>
+      <data weight="1" cost="150" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <exdesc keyword="key small silver">
+      <description>This small key is silver and glints if you hold it up in the 
 light. You wonder what it might go to and think about the doors 
 it could open.
-~
-#28306
-picture eagle~
-a picture~
-A picture is hung on the wall here.~
-~
-16 0 0
-0 0 0 0
-40 0 0
-E
-picture eagle~
-   \c03                           /T /I
+</description>
+    </exdesc>
+  </object>
+  <object vnum="28306" name="picture eagle" special="NONE">
+    <description>A picture is hung on the wall here.</description>
+    <shortdesc>a picture</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="16" wear="0" extra="0"/>
+      <data weight="40" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <exdesc keyword="picture eagle">
+      <description>   \c03                           /T /I
                                / |/ | .-#/
                            T\ Y  I  |/  /  _
           /T               | \I  |  I  Y.-#/
@@ -105,42 +164,51 @@ picture eagle~
       T\ |  \ Y l  /T   | \I  l   \ `  l Y
   __  | \l   \l  \I l __l  l   \   `  _. |
   \ #-l  `\   `\  \  \\ #\  \   `. .-#   |
-   \   #-. "-.  `  \  ^._ ^. "-.  /  \   |
- .--#-._  #-  `  _  #-_.-"-." ._ /._ ." ./
-  >--.  #-.   ._  #>-"    "\\   7   7   ]
- ^.___#"--._    #-{  .-# .  `\ Y . /    |
-  <__ #"-.  #       /_/   \   \I  Y   : |
-    ^-.__           #(_/   \   >._:   | l______
-      \c03  ^--.,___.-#"  /_/   ! \c10 `-.#"--l_\c14 /     #"-.
-          \c03     (_/ .  #(   /'     \c10"#"--,Y   -=\c13b\c14-. _)
-              \c03  (_/ .  \  :           \c14/ l      \c10c"#o \
-                 \c03\ /    `.    .     \c14.^   \_\c03.-#"#\c10--.  )
+   \   #-. &quot;-.  `  \  ^._ ^. &quot;-.  /  \   |
+ .--#-._  #-  `  _  #-_.-&quot;-.&quot; ._ /._ .&quot; ./
+  &gt;--.  #-.   ._  #&gt;-&quot;    &quot;\\   7   7   ]
+ ^.___#&quot;--._    #-{  .-# .  `\ Y . /    |
+  &lt;__ #&quot;-.  #       /_/   \   \I  Y   : |
+    ^-.__           #(_/   \   &gt;._:   | l______
+      \c03  ^--.,___.-#&quot;  /_/   ! \c10 `-.#&quot;--l_\c14 /     #&quot;-.
+          \c03     (_/ .  #(   /&apos;     \c10&quot;#&quot;--,Y   -=\c13b\c14-. _)
+              \c03  (_/ .  \  :           \c14/ l      \c10c&quot;#o \
+                 \c03\ /    `.    .     \c14.^   \_\c03.-#&quot;#\c10--.  )
                   \c03(_/ .   `  /     \c14/       !       \c10)/
-                   \c03/ / _.   '.   .'\c14:      /        \c10'
-                   \c03#(_/ .   /    _  `  \c14.-<_
-                    \c03 /_/ . ' .-#" `.  / \  \       \c10   ,z=.
-                    \c03 #( /   '  :   | K   "-.#-.\c10______//
-                      \c03 "-,.    l   I/ \_    __{\c10--->._(==.
-                       \c03 //(     \  <    #"#"    \c10 //
-                      \c03 /' /\     \  \    \c10 ,v=.  ((
-                     \c03.^. / /\     "  }\c10__ //===-  `
-                  \c03  / / ' '  "-.,__ {\c10---(==-       
-                 \c03 .^ '       :  T  #" \c10  ll       
+                   \c03/ / _.   &apos;.   .&apos;\c14:      /        \c10&apos;
+                   \c03#(_/ .   /    _  `  \c14.-&lt;_
+                    \c03 /_/ . &apos; .-#&quot; `.  / \  \       \c10   ,z=.
+                    \c03 #( /   &apos;  :   | K   &quot;-.#-.\c10______//
+                      \c03 &quot;-,.    l   I/ \_    __{\c10---&gt;._(==.
+                       \c03 //(     \  &lt;    #&quot;#&quot;    \c10 //
+                      \c03 /&apos; /\     \  \    \c10 ,v=.  ((
+                     \c03.^. / /\     &quot;  }\c10__ //===-  `
+                  \c03  / / &apos; &apos;  &quot;-.,__ {\c10---(==-       
+                 \c03 .^ &apos;       :  T  #&quot; \c10  ll       
                 \c03 / .  .  . : | :!       \c10 \\
-               \c03 (_/  /   | | j-"          \c10#^
-               \c03   #-<_(_.^-#"\c00
-~
-#28307
-picture park~
-a picture~
-A picture is hung on the wall here.~
-~
-16 0 0
-0 0 0 0
-30 0 0
-E
-picture park~
-              \c02   #
+               \c03 (_/  /   | | j-&quot;          \c10#^
+               \c03   #-&lt;_(_.^-#&quot;\c00
+</description>
+    </exdesc>
+  </object>
+  <object vnum="28307" name="picture park" special="NONE">
+    <description>A picture is hung on the wall here.</description>
+    <shortdesc>a picture</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="16" wear="0" extra="0"/>
+      <data weight="30" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <exdesc keyword="picture park">
+      <description>              \c02   #
            \c02   # *  #
          \c02* *#  *#* *##*
          \c02 *#*##*+ *#*#*#
@@ -160,27 +228,36 @@ picture park~
              \c03|    |        \c06 @\c03===================\c06@
       \c02, \c01*  \c02,,\c03|    |   \c01*   \c03//------------------//\c06@        \c02...
  ,, \c01*\c02,,\c09\|/\c02,,\c03/\c02,, ,,,\c03\\c02,\c09\|/\c02,,\c06@\c03###################\c06@ @ \c02, *  .::::::.
-  ,\c09\|/\c02,,,,\c03_/\c02,,\c03/\c02,,,,,\c03\ \c02,,, \c06@\c02 '''''   ,,,,,,,  ,\c06@\c02,,, \c09\|/ \c02,,,,,,,,,,
- \c02,,, ,,, ,  ,  , ,,, ,,,,,,,, ,'', ,,,  ,,  ,,,, ,,,,, ,, ,,,,  ,,
+  ,\c09\|/\c02,,,,\c03_/\c02,,\c03/\c02,,,,,\c03\ \c02,,, \c06@\c02 &apos;&apos;&apos;&apos;&apos;   ,,,,,,,  ,\c06@\c02,,, \c09\|/ \c02,,,,,,,,,,
+ \c02,,, ,,, ,  ,  , ,,, ,,,,,,,, ,&apos;&apos;, ,,,  ,,  ,,,, ,,,,, ,, ,,,,  ,,
  \c09=================================================================\c00
 
-~
-#28308
-picture bridge~
-a picture~
-A picture is hung on the wall here.~
-~
-16 0 0
-0 0 0 0
-30 0 0
-E
-picture bridge~
-\c14                                           ^^
+</description>
+    </exdesc>
+  </object>
+  <object vnum="28308" name="picture bridge" special="NONE">
+    <description>A picture is hung on the wall here.</description>
+    <shortdesc>a picture</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="16" wear="0" extra="0"/>
+      <data weight="30" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <exdesc keyword="picture bridge">
+      <description>\c14                                           ^^
       \c14 ^^      \c13..                                       \c13..
                \c06[]                                       \c06[]
              \c14.:\c06[]\c14:_          ^^                       ,:\c06[]\c14:.
            .: :\c06[]\c14: :-.                             ,-: :\c06[]\c14: :.
-         .: : :\c06[]\c14: : :`._                       ,.': : :\c06[]\c14: : :.
+         .: : :\c06[]\c14: : :`._                       ,.&apos;: : :\c06[]\c14: : :.
        .: : : :\c06[]\c14: : : : :-._               _,-: : : : :\c06[]\c14: : : :.
    _..: : : : :\c06[]\c14: : : : : : :-._________.-: : : : : : :\c06[]\c14: : : : :-._
    _:_:_:_:_:_:\c06[]\c14:_:_:_:_:_:_:_:_:_:_:_:_:_:_:_:_:_:_:_:\c06[]\c14:_:_:_:_:_:_
@@ -196,34 +273,43 @@ picture bridge~
            #^ -_ #^^ -_ # _ - _ \c04#^#-\c11  _# -_   #- _ #^ _ -  # ^-
                #^# - _ ^ - ### _ - _ #-^ # \c04__\c11- #_ - #  #^_-
                    # #- ^# -  #^ -  # ^# - ##  ^# - #\c00
-~
-#28309
-picture stag~
-a picture~
-A picyure is hung on the wall here.~
-~
-16 0 0
-0 0 0 0
-40 0 0
-E
-picture stag~
-         \c07/|       |\
-       `__\\       //__'
+</description>
+    </exdesc>
+  </object>
+  <object vnum="28309" name="picture stag" special="NONE">
+    <description>A picyure is hung on the wall here.</description>
+    <shortdesc>a picture</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="16" wear="0" extra="0"/>
+      <data weight="40" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <exdesc keyword="picture stag">
+      <description>         \c07/|       |\
+       `__\\       //__&apos;
           ||      ||
-        \__`\     |'__/
-          `_\\   //_'
+        \__`\     |&apos;__/
+          `_\\   //_&apos;
           _.,\c03:---;,._
           \_:     :_/
             \c03|\c23@\c03. .\c23@\c03|
             |     |
             \c14,\c03\\c23.-.\c03/ \
-            ;;\c23`-'\c03   `---__________-----\c14.-.
+            ;;\c23`-&apos;\c03   `---__________-----\c14.-.
             ;;;                         \c14\_\
-            ';;;                         \c03|
+            &apos;;;;                         \c03|
              \c14;    \c03|                      ;
               \   \     \        |      /
                \_, \    /        \     |\
-                 |';|  |,,,,,,,,/ \    \ \_
+                 |&apos;;|  |,,,,,,,,/ \    \ \_
                  |  |  |           \   /   |
                  \  \  |           |  / \  |
                   | || |           | |   | |
@@ -231,18 +317,27 @@ picture stag~
                   | || |           | |   | |
                   |\c23_\c03||\c03_\c03|           |\c23_\c03|   |\c23_\c03|
                  \c23/_//_/           /_/   /_/\c00
-~
-#28310
-picture guard horse~
-a picture~
-A picture is hung on the wall here.~
-~
-16 0 0
-0 0 0 0
-30 0 0
-E
-picture horse guard~
-                                    
+</description>
+    </exdesc>
+  </object>
+  <object vnum="28310" name="picture guard horse" special="NONE">
+    <description>A picture is hung on the wall here.</description>
+    <shortdesc>a picture</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="16" wear="0" extra="0"/>
+      <data weight="30" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <exdesc keyword="picture horse guard">
+      <description>                                    
                   \c13() \c11____
                   \c13[]\c11|    (______
                   \c13[]\c11|__ / \c04WoT\c11   \
@@ -250,7 +345,7 @@ picture horse guard~
                   \c13||     \c08 ___
                  \c13 ||     \c08/_  )__
  \c23      __|\/)     \c13||   \c06_/_ \\c08____)
- \c23,----`     \     \c13||  \c06/>=o)
+ \c23,----`     \     \c13||  \c06/&gt;=o)
  \c23\_____      \    \c13|| \c06 \]__\
  \c23      `--,_/U\c23\   \c06B\c13|\c06\__/===\
           \c23|\c03UUUU\c23\  \c13||\c06_ _|_\_ \
@@ -260,59 +355,77 @@ picture horse guard~
           /\c03UU\c23/    \c08|\c01H\c06\__\    \c01HHHH\c08|   \c23\
           |\c03UU\c23/    \c08|\c01H\c06\  |\c01HHHHHHH\c08|    \c23|\c03\\
           UU      \c08|\c01HH\c06\ \\c01HHHHHHH\c08|    \c23| \c03\\\
-          \c03U \c23(     \c08|\c06<_\,_\\c01HHHHHH\c08|   \c23/  \c03\\\
+          \c03U \c23(     \c08|\c06&lt;_\,_\\c01HHHHHH\c08|   \c23/  \c03\\\
           \c23| \    \c08|\c01HHHHHHHHHHHHH\c08|  \c23/  \c03\\\\
            \c23\ \  |\c08|\c01=============\c08| \c23/   \c03\\\\\
              \c23 \ |            \  |\c00                                  
                                    
-~
-#28311
-picture ocean~
-a picture~
-A picture is hung on the wall here.~
-~
-16 0 0
-0 0 0 0
-30 0 0
-E
-picture ship ocean~
-  \c13   .--.-.
+</description>
+    </exdesc>
+  </object>
+  <object vnum="28311" name="picture ocean" special="NONE">
+    <description>A picture is hung on the wall here.</description>
+    <shortdesc>a picture</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="16" wear="0" extra="0"/>
+      <data weight="30" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <exdesc keyword="picture ship ocean">
+      <description>  \c13   .--.-.
     ( (    )__
    (_,  \ ) ,_)                                  \c10 |
-   \c13  '-'--`--'             \c14##\c06|\c14     ,           \c10 \ _ /
+   \c13  &apos;-&apos;--`--&apos;             \c14##\c06|\c14     ,           \c10 \ _ /
                \c14             ,\c06|\c14`-._/\c06|        \c10-==  (_)  ==-
-               \c14 ^^        .' \c06|\c14   /\c06||\c14\         \c10  /   \
-          \c14  ^^          .'   \c06| \c14./ \c06||\c14`\        \c10    |
+               \c14 ^^        .&apos; \c06|\c14   /\c06||\c14\         \c10  /   \
+          \c14  ^^          .&apos;   \c06| \c14./ \c06||\c14`\        \c10    |
                       \c14 / `-. \c06|\c14/._ \c06||\c14  \
                       /     `\c06||  `|\c14;-._\
                       |      \c06||   ||\c14   \
  \c04#^#_\c11#^#_\c04-#^#=#^##^= \c14/       \c06||   ||\c14__  \\c11#^=#^#-#^#_\c04#^#=#^#-#^# 
-  #^# \c11#=#^# _\c04#^# =# \c14`--------\c06|`\c14---\c06||\c14  `"-`\c04___\c11##^# =\c04_#^=##^#=`#^
-       \c11#^#=#^\c04_#^# =# \c06\#######'####'####/##\c04`` #=#^#\c11 #^=_\c04#^# ##^
-  #^# \c11#^=#^#_\c04#-=#^# ^ `--------------'#^#=#^#_\c11#^=#^#=# \c04#^#-#^=
+  #^# \c11#=#^# _\c04#^# =# \c14`--------\c06|`\c14---\c06||\c14  `&quot;-`\c04___\c11##^# =\c04_#^=##^#=`#^
+       \c11#^#=#^\c04_#^# =# \c06\#######&apos;####&apos;####/##\c04`` #=#^#\c11 #^=_\c04#^# ##^
+  #^# \c11#^=#^#_\c04#-=#^# ^ `--------------&apos;#^#=#^#_\c11#^=#^#=# \c04#^#-#^=
    #^#=# \c11#^=#^# \c04#^#^=#^#-#^# #^#=#^#^# \c11=#^#^=#^#^=#^#^ \c04=##`#^
       #^#= \c11#^#= ##^##`=#``^#^^#=\c04 #^=#^#^#^ =`^#^`^#^\c11=#^#-\c04##^\c00
-~
-#28312
-picture lady~
-a picture~
-A picture is hung on the wall here.~
-~
-16 0 0
-0 0 0 0
-30 0 0
-E
-picture lady~
-                  \c23   ___
+</description>
+    </exdesc>
+  </object>
+  <object vnum="28312" name="picture lady" special="NONE">
+    <description>A picture is hung on the wall here.</description>
+    <shortdesc>a picture</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="16" wear="0" extra="0"/>
+      <data weight="30" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <exdesc keyword="picture lady">
+      <description>                  \c23   ___
                   \c23 _d9969b
-                 \c23((d66b'\c11e\c10(
+                 \c23((d66b&apos;\c11e\c10(
                    \c23`d9p \c10_/
                    \c02 _\c10/ (\c02_
                    \c02/ \\c09`-`\
                   \c02(___)\c09   )_
                     \c09\ \__(_/\c10-.
-                    \c09/\__/\c10-.'\_\
-                   \c02/>>>  \c10\_\ \c23|
+                    \c09/\__/\c10-.&apos;\_\
+                   \c02/&gt;&gt;&gt;  \c10\_\ \c23|
                   \c02////    \c09|\c02..\c23|\c02..
                   \c02\___/   \c09|\c02\\c09vvv\c02/
                   \c09  |     |\c02(   )
@@ -320,112 +433,148 @@ picture lady~
                     \c09/     | \c02 V
                   \c09 /      | \c23 |
                  \c09_/    \c02___\c09| \c23 |
-               \c09,'____,'\c23Y-.\  !  \c00 
-~
-#28313
-picture elks~
-a picture~
-A picture is hung on a wall here.~
-~
-16 0 0
-0 0 0 0
-30 0 0
-E
-picture elks~
-                                             \c03,'',,
-                                           ,,','  ,'            ,''
-                               ,','      ,'         ',        ,'  '
-          ,''',',      ,'          ,', ,'             ',    ,'
-    ,'  ,'         ,','  ,'',         '                 ',,'
-  ,'  ,'         ,'          ',        ,'               ,'
- ,'
+               \c09,&apos;____,&apos;\c23Y-.\  !  \c00 
+</description>
+    </exdesc>
+  </object>
+  <object vnum="28313" name="picture elks" special="NONE">
+    <description>A picture is hung on a wall here.</description>
+    <shortdesc>a picture</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="16" wear="0" extra="0"/>
+      <data weight="30" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <exdesc keyword="picture elks">
+      <description>                                             \c03,&apos;&apos;,,
+                                           ,,&apos;,&apos;  ,&apos;            ,&apos;&apos;
+                               ,&apos;,&apos;      ,&apos;         &apos;,        ,&apos;  &apos;
+          ,&apos;&apos;&apos;,&apos;,      ,&apos;          ,&apos;, ,&apos;             &apos;,    ,&apos;
+    ,&apos;  ,&apos;         ,&apos;,&apos;  ,&apos;&apos;,         &apos;                 &apos;,,&apos;
+  ,&apos;  ,&apos;         ,&apos;          &apos;,        ,&apos;               ,&apos;
+ ,&apos;
                                     ,
-                 ,''`'`'`'`'`'`;';;\c07//\c03
-               ,'                   ', ,;,';'';';','',
-             ,'         `'    `,     ;                ',
-      \c07__|  \c03,'     ,`,    `,''',;;,     ;        ,'      ',
-         \c07\\c03/\    ,';' ',   `    ;; ;,   ; ;''';::  ',     /\--',
-       \c03,'-   ,'  ;'    : `   \c04/_\c03`   ;  ;       ::,'  ' ',  -`,
-      \c03/  ,;    \c04/_\c03`     :`            ;;       ::        ',   `,
-    \c03  `#'              :`           ;;        `\c04_\   \c11-=-= =-=\c03`#`
-    \c09\|/   \|/         \c04/_'  \c11 -=-=   \c04/_'\c11-=-=    -=-  =    -
+                 ,&apos;&apos;`&apos;`&apos;`&apos;`&apos;`&apos;`;&apos;;;\c07//\c03
+               ,&apos;                   &apos;, ,;,&apos;;&apos;&apos;;&apos;;&apos;,&apos;&apos;,
+             ,&apos;         `&apos;    `,     ;                &apos;,
+      \c07__|  \c03,&apos;     ,`,    `,&apos;&apos;&apos;,;;,     ;        ,&apos;      &apos;,
+         \c07\\c03/\    ,&apos;;&apos; &apos;,   `    ;; ;,   ; ;&apos;&apos;&apos;;::  &apos;,     /\--&apos;,
+       \c03,&apos;-   ,&apos;  ;&apos;    : `   \c04/_\c03`   ;  ;       ::,&apos;  &apos; &apos;,  -`,
+      \c03/  ,;    \c04/_\c03`     :`            ;;       ::        &apos;,   `,
+    \c03  `#&apos;              :`           ;;        `\c04_\   \c11-=-= =-=\c03`#`
+    \c09\|/   \|/         \c04/_&apos;  \c11 -=-=   \c04/_&apos;\c11-=-=    -=-  =    -
         \c09\/   \c11                   -=        -=-=   =-
  ---==-    -=-   -=-=-=  -=-=       -=\c00
 
-~
-#28314
-picture horses~
-a picture~
-A picture is hung on the wall here.~
-~
-16 0 0
-0 0 0 0
-30 0 0
-E
-picture horses painting~
-                          \c14 .. ...
+</description>
+    </exdesc>
+  </object>
+  <object vnum="28314" name="picture horses" special="NONE">
+    <description>A picture is hung on the wall here.</description>
+    <shortdesc>a picture</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="16" wear="0" extra="0"/>
+      <data weight="30" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <exdesc keyword="picture horses painting">
+      <description>                          \c14 .. ...
                         @%        **e
-                       F             "\                    .z$$$b.
-                    \c23'$""^4$$$$$bd$ee.           .zd$$be..e\c14**$$$$$$r
-                    \c23        "$$$$$$$$$$c.....zd$$$$$$$$$$$c  \c143$$$$$
+                       F             &quot;\                    .z$$$b.
+                    \c23&apos;$&quot;&quot;^4$$$$$bd$ee.           .zd$$be..e\c14**$$$$$$r
+                    \c23        &quot;$$$$$$$$$$c.....zd$$$$$$$$$$$c  \c143$$$$$
                       \c23$$$$be.*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$b  \c14$$$$$
                        \c23*$$$$  $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ \c14 $$$$F
-                       \c23 $$$"  $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ \c144$$$$
+                       \c23 $$$&quot;  $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ \c144$$$$
                        \c23 $$$   $$$$$$$$$$$$$$$$$$$$$$$$$$$$$F \c14$$$$$
-        .-            \c23  *"*   $$$$$$$$$$$$$$$$$$$$$$$$$$$$$  \c14$$$$$
+        .-            \c23  *&quot;*   $$$$$$$$$$$$$$$$$$$$$$$$$$$$$  \c14$$$$$
       \c23$        .e.            *$$$$$$$$$$$$$$$$$$$$% $$$$$   \c14 ^** %
-     \c23$$$b $$$$E"$$.            $$$$$L"$$$$*$$$$$P"   $$$$
-     L3$$.3$$$$b 3F            $$$$"" $$$" "         4$$ 4$$c
-    .$b."$=$$$$$F $            $$$   4$$%             $$ ^*$$r
-    $$$$$ .$$$$$F $$           3$F   $$"              $$   ^$F
-   '$$$$$$$$$"'$F  %           4$   d$"               $$F   'L
-    "$$$$$"*   3F              $P   $F                $P     *
-    4$**$$$     $              $"   ^"               d%
+     \c23$$$b $$$$E&quot;$$.            $$$$$L&quot;$$$$*$$$$$P&quot;   $$$$
+     L3$$.3$$$$b 3F            $$$$&quot;&quot; $$$&quot; &quot;         4$$ 4$$c
+    .$b.&quot;$=$$$$$F $            $$$   4$$%             $$ ^*$$r
+    $$$$$ .$$$$$F $$           3$F   $$&quot;              $$   ^$F
+   &apos;$$$$$$$$$&quot;&apos;$F  %           4$   d$&quot;               $$F   &apos;L
+    &quot;$$$$$&quot;*   3F              $P   $F                $P     *
+    4$**$$$     $              $&quot;   ^&quot;               d%
     P     $4                   P
    4      4    @               %         
     \     4                                
      ^*   $    *              4
-         .F                  "*\c00
+         .F                  &quot;*\c00
 
-~
-#28315
-picture mountains snow water~
-a picture~
-A picture is hung on the wall here.~
-~
-16 0 0
-0 0 0 0
-30 0 0
-E
-picture mountain snow water painting~
-                                \c03  _
+</description>
+    </exdesc>
+  </object>
+  <object vnum="28315" name="picture mountains snow water" special="NONE">
+    <description>A picture is hung on the wall here.</description>
+    <shortdesc>a picture</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="16" wear="0" extra="0"/>
+      <data weight="30" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <exdesc keyword="picture mountain snow water painting">
+      <description>                                \c03  _
                         .-.      / \        _
            \c14 ^^ \c03        /   \    /^./\__   _/ \
-          _        .--'\/\_ \__/.      \ /    \  \c14^^\c03  ___
-         / \_    _/ ^      \/  __  :'   /\/\  /\  __/   \
-        /    \  /    .'   _/  /  \   ^ /    \/  \/ .`'\_/\
-       /\/\  /\/ :' __  ^/  ^/    `--./.'  ^  `-.\ _    _:\ _
-      /    \/  \  _/  \-' __/.' ^ _   \_   .'\   _/ \ .  __/ \
+          _        .--&apos;\/\_ \__/.      \ /    \  \c14^^\c03  ___
+         / \_    _/ ^      \/  __  :&apos;   /\/\  /\  __/   \
+        /    \  /    .&apos;   _/  /  \   ^ /    \/  \/ .`&apos;\_/\
+       /\/\  /\/ :&apos; __  ^/  ^/    `--./.&apos;  ^  `-.\ _    _:\ _
+      /    \/  \  _/  \-&apos; __/.&apos; ^ _   \_   .&apos;\   _/ \ .  __/ \
     /\  .-   `. \/     \ / -.   _/ \ -. `_/   \ /    `._/  ^  \
-   /  `-.__ ^   / .-'.--'    . /    `--./ .-'  `-.  `-. `.  -  `.
- \c09@\c03/        `.  / /      `-.   /  .-'   / .   .'   \    \  \  .-  \\c09%
- @(88%@)@%% @)&@&(88&@\c11.-_=_-=_-=_-=_-=_.\c098@% &@&&8(8%@%8)(8@%8 8%@)%
- @88\c02:::\c09&(&8&&8\c02::\c09JGS\c04:&\c11`.#-_##-##_#-#_#-##=.\c09'@(&%\c02::::\c09%@8&8)\c02::\c09&#@8\c02::::
- \c02`::::::\c09%@@%\c02:::::\c09@%&8\c02:\c11`.=##-.##-.##=..#'\c098\c02::::::::\c09&@8\c02:::::\c09&8\c02::::::'
-  `::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::'\c00
-~
-#28316
-picture swan painting~
-a picture~
-A picture is hung on the wall here.~
-~
-16 0 0
-0 0 0 0
-30 0 0
-E
-picture swan painting~
-                                         \c14 .-##-.
-                                        o"    \c23' b.
+   /  `-.__ ^   / .-&apos;.--&apos;    . /    `--./ .-&apos;  `-.  `-. `.  -  `.
+ \c09@\c03/        `.  / /      `-.   /  .-&apos;   / .   .&apos;   \    \  \  .-  \\c09%
+ @(88%@)@%% @)&amp;@&amp;(88&amp;@\c11.-_=_-=_-=_-=_-=_.\c098@% &amp;@&amp;&amp;8(8%@%8)(8@%8 8%@)%
+ @88\c02:::\c09&amp;(&amp;8&amp;&amp;8\c02::\c09JGS\c04:&amp;\c11`.#-_##-##_#-#_#-##=.\c09&apos;@(&amp;%\c02::::\c09%@8&amp;8)\c02::\c09&amp;#@8\c02::::
+ \c02`::::::\c09%@@%\c02:::::\c09@%&amp;8\c02:\c11`.=##-.##-.##=..#&apos;\c098\c02::::::::\c09&amp;@8\c02:::::\c09&amp;8\c02::::::&apos;
+  `::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::&apos;\c00
+</description>
+    </exdesc>
+  </object>
+  <object vnum="28316" name="picture swan painting" special="NONE">
+    <description>A picture is hung on the wall here.</description>
+    <shortdesc>a picture</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="16" wear="0" extra="0"/>
+      <data weight="30" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <exdesc keyword="picture swan painting">
+      <description>                                         \c14 .-##-.
+                                        o&quot;    \c23&apos; b.
                                        \c14d   _______\c23Boo
                                       \c14(   (
                                        \  Y
@@ -437,218 +586,292 @@ picture swan painting~
         _\___\c07###---..\c14                \.      \  \
         \,____\c07####----...\c14             \.      Y  Y
           \,___\c07#####----...\c14             \     )   |
-            \___\c07'#######----....\c14         '---#    j
-            \____\c07##"---.......\c14                   ;
+            \___\c07&apos;#######----....\c14         &apos;---#    j
+            \____\c07##&quot;---.......\c14                   ;
 \c11____    ___   _\c14\                               .Y\c11__   ___   ___   __  __  __
-    ###"   ##" \c04"################################"\c11  ##"   ##"   ##"  #"  #"
-    '  '   '    \c04::::::::::::::::::::::::::::::::'\c11  ''    '      '        
-       . '   ' \c04:::::::::::::::::::::::::::::::::,\c11    .  '     '
-          . \c04':::''::"':'":::':':':":"::::'"::':":'\c11       .
-          \c04':':: ::":':':': : :":'.:.'.":'     ' ":'\c11
-         \c04':' '' : ': :"'' : ': :: ':": :      ':":\c00
-~
-#28317
-picture fishing painting~
-a picture~
-A picture is hung on the wall here.~
-~
-16 0 0
-0 0 0 0
-20 0 0
-E
-picture fishing painting~
-        \c09 ,%&& %&& %
-       ,%&%& %&%& %&
-      %& %&% &%&% % &%
-     % &%% %&% &% %&%&,
-     &%&% %&%& %& &%& %
-    %%& %&%& %&%&% %&%%&
-    &%&% %&% % %& &% %%&
-    && %&% %&%& %&% %&%'
-     '%&% %&% %&&%&%%'%
-      % %& %& %&% &%%
-        `\c03\\c09%%\c03.'  /\c09`%&'
+    ###&quot;   ##&quot; \c04&quot;################################&quot;\c11  ##&quot;   ##&quot;   ##&quot;  #&quot;  #&quot;
+    &apos;  &apos;   &apos;    \c04::::::::::::::::::::::::::::::::&apos;\c11  &apos;&apos;    &apos;      &apos;        
+       . &apos;   &apos; \c04:::::::::::::::::::::::::::::::::,\c11    .  &apos;     &apos;
+          . \c04&apos;:::&apos;&apos;::&quot;&apos;:&apos;&quot;:::&apos;:&apos;:&apos;:&quot;:&quot;::::&apos;&quot;::&apos;:&quot;:&apos;\c11       .
+          \c04&apos;:&apos;:: ::&quot;:&apos;:&apos;:&apos;: : :&quot;:&apos;.:.&apos;.&quot;:&apos;     &apos; &quot;:&apos;\c11
+         \c04&apos;:&apos; &apos;&apos; : &apos;: :&quot;&apos;&apos; : &apos;: :: &apos;:&quot;: :      &apos;:&quot;:\c00
+</description>
+    </exdesc>
+  </object>
+  <object vnum="28317" name="picture fishing painting" special="NONE">
+    <description>A picture is hung on the wall here.</description>
+    <shortdesc>a picture</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="16" wear="0" extra="0"/>
+      <data weight="20" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <exdesc keyword="picture fishing painting">
+      <description>        \c09 ,%&amp;&amp; %&amp;&amp; %
+       ,%&amp;%&amp; %&amp;%&amp; %&amp;
+      %&amp; %&amp;% &amp;%&amp;% % &amp;%
+     % &amp;%% %&amp;% &amp;% %&amp;%&amp;,
+     &amp;%&amp;% %&amp;%&amp; %&amp; &amp;%&amp; %
+    %%&amp; %&amp;%&amp; %&amp;%&amp;% %&amp;%%&amp;
+    &amp;%&amp;% %&amp;% % %&amp; &amp;% %%&amp;
+    &amp;&amp; %&amp;% %&amp;%&amp; %&amp;% %&amp;%&apos;
+     &apos;%&amp;% %&amp;% %&amp;&amp;%&amp;%%&apos;%
+      % %&amp; %&amp; %&amp;% &amp;%%
+        `\c03\\c09%%\c03.&apos;  /\c09`%&amp;&apos;
          \c03 |    |    \c23        /\c14`-._    \c11       _\c02\\/
           \c03|\c06,  \c03 |\c23_          /  \c14   `-._ \c11..--#`_
           \c03|\c06;  \c03 |\c23_`\_      /  ,\c02\\\c11.#`  \c14`-._ \c11-  ^
           \c03|\c06;:  \c03|\c23/^\c03}\c08__\c03..-,\c13@   \c11.#`    #    \c14`\c04o\c11 #
-          \c03|\c06;:  \c03|\c08(____\c03.-'     \c11'.\c11   #   -    `    #
+          \c03|\c06;:  \c03|\c08(____\c03.-&apos;     \c11&apos;.\c11   #   -    `    #
           \c03|\c06;:  \c03|  \c08\ \c04/ `\       \c09//\c11.  -    ^   #
-          \c03|\c06;:  \c03|\c08\ /\c04' /\_\\c23_        \c11#. _ #   -   \c02//\c11-
-        \c02\\\c03/\c06;:  \c03 \\c04'--' \c23`---`           `\c09\\//-\\///\c00
+          \c03|\c06;:  \c03|\c08\ /\c04&apos; /\_\\c23_        \c11#. _ #   -   \c02//\c11-
+        \c02\\\c03/\c06;:  \c03 \\c04&apos;--&apos; \c23`---`           `\c09\\//-\\///\c00
 
-~
-#28318
-picture camp tua'athan painting~
-a picture~
-A picture is hung here on the wall.~
-~
-16 0 0
-0 0 0 0
-30 0 0
-E
-picture camping tua'athan painting~
-   \c14   .                  *                     *                   
+</description>
+    </exdesc>
+  </object>
+  <object vnum="28318" name="picture camp tua&apos;athan painting" special="NONE">
+    <description>A picture is hung here on the wall.</description>
+    <shortdesc>a picture</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="16" wear="0" extra="0"/>
+      <data weight="30" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <exdesc keyword="picture camping tua&apos;athan painting">
+      <description>   \c14   .                  *                     *                   
             *        .          *        .           *        .       .
     .         .            .          .     *            .         *
  *     \c06,_ \c14         *   \c09.-.\c10-------.   \c14            .           .          .
     \c06 __(_\ \c14  .        \c09//^\\ \c10      \  \c14*      .         . *           . 
    \c06#( _ )    \c23___      \c09\\_//\c10_______/                    \c05.--------.-.
-\c02^^^ \c06// >>\c02^^\c23,/ _ )#\c02 ^^\c03/\c09[_=\c03/\c10]______]\c02^^^^^^^^^^^^^^^^^^^^\c05/        \c11//^\\\c02^^^^^^^
-          \c23/_/< \\   \c03/_\c09(=\c03/ \c09(o)  (o)                    \c05\________\c11\\=//
+\c02^^^ \c06// &gt;&gt;\c02^^\c23,/ _ )#\c02 ^^\c03/\c09[_=\c03/\c10]______]\c02^^^^^^^^^^^^^^^^^^^^\c05/        \c11//^\\\c02^^^^^^^
+          \c23/_/&lt; \\   \c03/_\c09(=\c03/ \c09(o)  (o)                    \c05\________\c11\\=//
   \c02                         #    #             ^^      \c05[________\c11[\c11\__]\c03\
-    \c02^^^               ^^          \c23.="=.               \c05(o)    (o)`\c03\\c05=)\c03_\\c02
+    \c02^^^               ^^          \c23.=&quot;=.               \c05(o)    (o)`\c03\\c05=)\c03_\\c02
                              \c10/\_ /\c23|\c116 6\c03|\c23\\c10 _/\    \c02       #      #
           \c01)   \c02  ^^           \c10\_/\c23/\c08O\c03\_\c08+\c03_/\c08O\c23\\c10\_/
-        \c03o \c01,( \c03o                \c10\\\/\c07`"""`\c10\///    \c02                  ^^
+        \c03o \c01,( \c03o                \c10\\\/\c07`&quot;&quot;&quot;`\c10\///    \c02                  ^^
       \c03o =\c01(_,)\c03= o               \c10\   \c03($)  \c10 /  \c02   ^^^
-      \c03o =\c01"  "\c03= o  \c02    ^^^     \c04./\c05---\c03/_\\c05---\c04\.
-        \c03o oo o               \c04/\c05`"---------"`\c04\  \c02        ^^  
+      \c03o =\c01&quot;  &quot;\c03= o  \c02    ^^^     \c04./\c05---\c03/_\\c05---\c04\.
+        \c03o oo o               \c04/\c05`&quot;---------&quot;`\c04\  \c02        ^^  
                            \c04 /   /   |   \   \  \c02                   ^^^
      ^^                    \c04 /   /   |   \   \ \c02  ^^
-                 ^^^       \c04 `._._.-'-._.-'-.'            \c02^^\c00
-~
-#28319
-picture town painting~
-a picture~
-A picture is hung on the wall here.~
-~
-16 0 0
-0 0 0 0
-30 0 0
-E
-picture town painting~
- \c11 #         \c23## \c11         __
+                 ^^^       \c04 `._._.-&apos;-._.-&apos;-.&apos;            \c02^^\c00
+</description>
+    </exdesc>
+  </object>
+  <object vnum="28319" name="picture town painting" special="NONE">
+    <description>A picture is hung on the wall here.</description>
+    <shortdesc>a picture</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="16" wear="0" extra="0"/>
+      <data weight="30" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <exdesc keyword="picture town painting">
+      <description> \c11 #         \c23## \c11         __
        \c14_T      .,,.    \c11#--# \c14^^
  \c14^^   // \                    \c23#
       \c14][\c13O\c14]    ^^      \c08,-\c23# #
-   \c14/''-I_I         _\c08II\c14____
-\c02__\c14/_  /   \\c02 ______\c14/ ''   /'\\c02_,__
-  \c14| \c13II\c14--'''' \,--:--..,_/,.-\c09{ }\c02,
-; \c14'/__\,.--';|   |\c13[] \c09.-.\c14|\c13 O\c09{ _ }\c02
-:' \c14|  | \c13[]\c14  -|   ''--\c09:.;\c14[\c02,.'\c03\\c09,\c03/\c02
-'  \c14|\c13[]\c14|\c02,.--'' \c06'',   ''-,.    \c03|
- \c02 ..    ..-''    \c06;       ''. \c03'\c00
+   \c14/&apos;&apos;-I_I         _\c08II\c14____
+\c02__\c14/_  /   \\c02 ______\c14/ &apos;&apos;   /&apos;\\c02_,__
+  \c14| \c13II\c14--&apos;&apos;&apos;&apos; \,--:--..,_/,.-\c09{ }\c02,
+; \c14&apos;/__\,.--&apos;;|   |\c13[] \c09.-.\c14|\c13 O\c09{ _ }\c02
+:&apos; \c14|  | \c13[]\c14  -|   &apos;&apos;--\c09:.;\c14[\c02,.&apos;\c03\\c09,\c03/\c02
+&apos;  \c14|\c13[]\c14|\c02,.--&apos;&apos; \c06&apos;&apos;,   &apos;&apos;-,.    \c03|
+ \c02 ..    ..-&apos;&apos;    \c06;       &apos;&apos;. \c03&apos;\c00
 
-~
-#28320
-picture bridge stone~
-a picture~
-A picture is hung on the wall here.~
-~
-12 0 0
-0 0 0 0
-30 0 0
-E
-picture stone bridge~
-  \c13 ______________________________________________________
+</description>
+    </exdesc>
+  </object>
+  <object vnum="28320" name="picture bridge stone" special="NONE">
+    <description>A picture is hung on the wall here.</description>
+    <shortdesc>a picture</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="12" wear="0" extra="0"/>
+      <data weight="30" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <exdesc keyword="picture stone bridge">
+      <description>  \c13 ______________________________________________________
    [[]]-[[]]-[[]]-[[]]-[[]]-[[]]-[[]]-[[]]-[[]]-[[]]-[[]]
-   \c06.-.`| `-/-.__/.-'\_.-._,'/`-._'\_.-._`-'_/-._.'|/.-'\-
-   \_.-`./`-._'\__.-`-.__.-`--._/--.`-._\`-._\__.-)`-'._/
-   `._-'.\_.---._-.\_`-..`\_.---._`-.__.-`'._.--./`-'._,'
-   __/`.-/       `.'_`./`.'       '.\__.-`.'    (_.-\_,-.
-   `._-/'          |._.-|           |.'`.|       `(_.`-._
-   .-',`)          | /`.|           |`-/`|         ;.-'_/
-   `\,-/           |\.-'|           |\-'`|          ;\_,-
-    -./`._        \c13[[[[[[[[         [[[[[[[[      \c06   .',-'
-    `.\c11`--.##-^_#-\c06/\c04.`-._`-.\c06\\c11^#-_#-^\c06/\c04`-.'-,.'\c06\\c11^#-#_^"'`-.'_
-    -,.'"-"#^-#_ \c04#. `  ' \c11  #^-_.#^-.\c04`_' `.-^#- \c11. "'"-"-""
-    ""-'"-""-"#- _\c04#.^-#-^.\c11-^_.- .^#.-_ \c04#-. #^_\c11-""-""-"'-"
-        ""-'"-"    \c04#- ^. \c11- # -#^ - #\c04  ^#- # \c11    ""-"'-'\c00
+   \c06.-.`| `-/-.__/.-&apos;\_.-._,&apos;/`-._&apos;\_.-._`-&apos;_/-._.&apos;|/.-&apos;\-
+   \_.-`./`-._&apos;\__.-`-.__.-`--._/--.`-._\`-._\__.-)`-&apos;._/
+   `._-&apos;.\_.---._-.\_`-..`\_.---._`-.__.-`&apos;._.--./`-&apos;._,&apos;
+   __/`.-/       `.&apos;_`./`.&apos;       &apos;.\__.-`.&apos;    (_.-\_,-.
+   `._-/&apos;          |._.-|           |.&apos;`.|       `(_.`-._
+   .-&apos;,`)          | /`.|           |`-/`|         ;.-&apos;_/
+   `\,-/           |\.-&apos;|           |\-&apos;`|          ;\_,-
+    -./`._        \c13[[[[[[[[         [[[[[[[[      \c06   .&apos;,-&apos;
+    `.\c11`--.##-^_#-\c06/\c04.`-._`-.\c06\\c11^#-_#-^\c06/\c04`-.&apos;-,.&apos;\c06\\c11^#-#_^&quot;&apos;`-.&apos;_
+    -,.&apos;&quot;-&quot;#^-#_ \c04#. `  &apos; \c11  #^-_.#^-.\c04`_&apos; `.-^#- \c11. &quot;&apos;&quot;-&quot;-&quot;&quot;
+    &quot;&quot;-&apos;&quot;-&quot;&quot;-&quot;#- _\c04#.^-#-^.\c11-^_.- .^#.-_ \c04#-. #^_\c11-&quot;&quot;-&quot;&quot;-&quot;&apos;-&quot;
+        &quot;&quot;-&apos;&quot;-&quot;    \c04#- ^. \c11- # -#^ - #\c04  ^#- # \c11    &quot;&quot;-&quot;&apos;-&apos;\c00
 
-~
-#28321
-picture horses river painting~
-a picture~
-A picture is hung on the wall here.~
-~
-16 0 0
-0 0 0 0
-30 0 0
-E
-picture horses river painting~
-                                 \c23((^\c14--__
+</description>
+    </exdesc>
+  </object>
+  <object vnum="28321" name="picture horses river painting" special="NONE">
+    <description>A picture is hung on the wall here.</description>
+    <shortdesc>a picture</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="16" wear="0" extra="0"/>
+      <data weight="30" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <exdesc keyword="picture horses river painting">
+      <description>                                 \c23((^\c14--__
                \c10,#_              \c23| /\ \c14 --\c23___ __ 
         \c03       |/\ \c10=\c03_ _ \c11#          \c23 (  /  \  )\c14 \\\c11
    `.`--.#-^_# \c03_( )_( )\c10\\c11#-.`-._   \c23/ |##/  \  \c14\\\c11`-.^#- ,_#-^`-.
-    -,.'"-"#^-# \c03\,\ \c04 _\c03|\ \c10\\c11###_ . `  \c04'   #^-_.#^-.`_\c11' `.-^,#- . "'
-    ""-'"-""-"#- \c04_^-#-^.\c11-^_.- .^-_\c04 #-. #^_\c11-""-""-"'-" `
-~
-#28322
-picture woman~
-a picture~
-A picture is hung on a wall here.~
-~
-12 0 0
-0 0 0 0
-30 0 0
-E
-picture woman~
-                       \c23 _.---._
-                      .'     / '.
+    -,.&apos;&quot;-&quot;#^-# \c03\,\ \c04 _\c03|\ \c10\\c11###_ . `  \c04&apos;   #^-_.#^-.`_\c11&apos; `.-^,#- . &quot;&apos;
+    &quot;&quot;-&apos;&quot;-&quot;&quot;-&quot;#- \c04_^-#-^.\c11-^_.- .^-_\c04 #-. #^_\c11-&quot;&quot;-&quot;&quot;-&quot;&apos;-&quot; `
+</description>
+    </exdesc>
+  </object>
+  <object vnum="28322" name="picture woman" special="NONE">
+    <description>A picture is hung on a wall here.</description>
+    <shortdesc>a picture</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="12" wear="0" extra="0"/>
+      <data weight="30" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <exdesc keyword="picture woman">
+      <description>                       \c23 _.---._
+                      .&apos;     / &apos;.
                      /      \c03_\c23/   \
-                    /   .-'`  '.  \
-                  .'   \c03| \c09^ \c03_ \c09^ \c03|\c23   '.
-                .'    \c03 \   \c01_ \c03  /   \c23  \
-               /   \c03     '.___.'   \c23    '.
-              |       \c11 _\c03.'   '.\c11_   \c23     \
-              |      \c11.' `"---"` '.  \c23     |
+                    /   .-&apos;`  &apos;.  \
+                  .&apos;   \c03| \c09^ \c03_ \c09^ \c03|\c23   &apos;.
+                .&apos;    \c03 \   \c01_ \c03  /   \c23  \
+               /   \c03     &apos;.___.&apos;   \c23    &apos;.
+              |       \c11 _\c03.&apos;   &apos;.\c11_   \c23     \
+              |      \c11.&apos; `&quot;---&quot;` &apos;.  \c23     |
               \      \c11|           |   \c23    /
                \    \c11 | |       | | \c23     /
-                \   \c11 | :\c04--"""--\c11: |  \c23  /`
+                \   \c11 | :\c04--&quot;&quot;&quot;--\c11: |  \c23  /`
                  )   \c11| |       | | \c23  (
-                /    \c11\.'\c04-.....-\c11'./ \c23   \
-               /    \c04.' / ;|:| \ '. \c23   |
-        \c04 .-._ \c23 \\c04_.-' .' / ' . : '. '. \c23/\c04
-         \c11|  \\c04```      .'  ;     \    `:
-         \c11 \  \\c04                   '     '.
-       .--'\c11\  |  \c04'         '       .     `-._
-      /`;--' \c11/\c04_.'          .                 `-.
+                /    \c11\.&apos;\c04-.....-\c11&apos;./ \c23   \
+               /    \c04.&apos; / ;|:| \ &apos;. \c23   |
+        \c04 .-._ \c23 \\c04_.-&apos; .&apos; / &apos; . : &apos;. &apos;. \c23/\c04
+         \c11|  \\c04```      .&apos;  ;     \    `:
+         \c11 \  \\c04                   &apos;     &apos;.
+       .--&apos;\c11\  |  \c04&apos;         &apos;       .     `-._
+      /`;--&apos; \c11/\c04_.&apos;          .                 `-.
       |  `--`        /               \          \
-       \       .'   '                 '-.        |
-        \   '               '          __\       |
-         '.      .                 _.-'  `)     /
-           '-._                _.-' `\c11| \c04.-`   _.'
-               `'--....____.--'\c23|     \c04(`  _.-'
-                        \c23/  | |  \     \c04`"`
+       \       .&apos;   &apos;                 &apos;-.        |
+        \   &apos;               &apos;          __\       |
+         &apos;.      .                 _.-&apos;  `)     /
+           &apos;-._                _.-&apos; `\c11| \c04.-`   _.&apos;
+               `&apos;--....____.--&apos;\c23|     \c04(`  _.-&apos;
+                        \c23/  | |  \     \c04`&quot;`
                         \c23\__/ \__/\c00
-~
-#28323
-picture ship ocean~
-a picture~
-A picture is hung on the wall here.~
-~
-12 0 0
-0 0 0 0
-30 0 0
-E
-picture ship ocean~
-  \c13   .--.-.
+</description>
+    </exdesc>
+  </object>
+  <object vnum="28323" name="picture ship ocean" special="NONE">
+    <description>A picture is hung on the wall here.</description>
+    <shortdesc>a picture</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="12" wear="0" extra="0"/>
+      <data weight="30" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <exdesc keyword="picture ship ocean">
+      <description>  \c13   .--.-.
     ( (    )__
    (_,  \ ) ,_)                                  \c10 |
-   \c13  '-'--`--'             \c14##\c06|\c14     ,           \c10 \ _ /
+   \c13  &apos;-&apos;--`--&apos;             \c14##\c06|\c14     ,           \c10 \ _ /
                \c14             ,\c06|\c14`-._/\c06|        \c10-==  (_)  ==-
-               \c14 ^^        .' \c06|\c14   /\c06||\c14\         \c10  /   \
-          \c14  ^^          .'   \c06| \c14./ \c06||\c14`\        \c10    |
+               \c14 ^^        .&apos; \c06|\c14   /\c06||\c14\         \c10  /   \
+          \c14  ^^          .&apos;   \c06| \c14./ \c06||\c14`\        \c10    |
                       \c14 / `-. \c06|\c14/._ \c06||\c14  \
                       /     `\c06||  `|\c14;-._\
                       |      \c06||   ||\c14   \
  \c04#^#_\c11#^#_\c04-#^#=#^##^= \c14/       \c06||   ||\c14__  \\c11#^=#^#-#^#_\c04#^#=#^#-#^# 
-  #^# \c11#=#^# _\c04#^# =# \c14`--------\c06|`\c14---\c06||\c14  `"-`\c04___\c11##^# =\c04_#^=##^#=`#^
-       \c11#^#=#^\c04_#^# =# \c06\#######'####'####/##\c04`` #=#^#\c11 #^=_\c04#^# ##^
-  #^# \c11#^=#^#_\c04#-=#^# ^ `--------------'#^#=#^#_\c11#^=#^#=# \c04#^#-#^=
+  #^# \c11#=#^# _\c04#^# =# \c14`--------\c06|`\c14---\c06||\c14  `&quot;-`\c04___\c11##^# =\c04_#^=##^#=`#^
+       \c11#^#=#^\c04_#^# =# \c06\#######&apos;####&apos;####/##\c04`` #=#^#\c11 #^=_\c04#^# ##^
+  #^# \c11#^=#^#_\c04#-=#^# ^ `--------------&apos;#^#=#^#_\c11#^=#^#=# \c04#^#-#^=
    #^#=# \c11#^=#^# \c04#^#^=#^#-#^# #^#=#^#^# \c11=#^#^=#^#^=#^#^ \c04=##`#^
       #^#= \c11#^#= ##^##`=#``^#^^#=\c04 #^=#^#^#^ =`^#^`^#^\c11=#^#-\c04##^\c00
 
-~
-#28399
-ring gold band~
-a non-descript ring of \c10gold\c00~
-A non-descript ring of \c10gold\c00 sits here, shining brightly.~
-You feel a change come over you as you slip the ring on your finger.
+</description>
+    </exdesc>
+  </object>
+  <object vnum="28399" name="ring gold band" special="NONE">
+    <description>A non-descript ring of \c10gold\c00 sits here, shining brightly.</description>
+    <shortdesc>a non-descript ring of \c10gold\c00</shortdesc>
+    <actiondesc>You feel a change come over you as you slip the ring on your finger.
 Suddenly, you feel slightly different!!
-~
-11 0 3
-0 0 0 0
-1 0 0
-$~
+</actiondesc>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="11" wear="3" extra="0"/>
+      <data weight="1" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+</objects>

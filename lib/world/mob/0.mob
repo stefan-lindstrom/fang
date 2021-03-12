@@ -1,259 +1,807 @@
-#1
-puff dragon void fractal~
-Puff~
-Puff the Fractal Dragon is here, contemplating a higher reality.
-~
-Is that some type of differntial curve involving some strange, and
+<?xml version="1.0"?>
+<mobiles>
+  <mobile vnum="1" name="puff dragon void fractal" special="Puff">
+    <description>Is that some type of differntial curve involving some strange, and
 unknown calculus that she seems to be made out of?
-~
-253961 0 1000 E
-26 1 -1 680 5d10+550 4d6+3
-10000 155000
-8 8 2
-BareHandAttack: 12
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-E
-#2
-sleeping dreaming form~
-the sleeping form of Elaida.~
-The sle
-~
- here.~
-8 0 0 E
-100 20 -20 680 1d100+30000 1d1+0
-0 0
-4 4 0
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-E
-#3
-trap~
-a trap~
-a trap
-~
-a trap
-~
-4194314 0 0 E
-100 20 10 680 1d0+0 1d1+0
-0 0
-8 8 1
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-E
-#10
-clone~
-ida.~
-A boring old clone is standing here.
-~
-This clone is nothing to look at.  No, really, it is quite boring.
-~
-10 0 0 E
-1 0 0 680 1d1+1 1d1+1
-0 0
-8 8 0
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-E
-#11
-zombie undead humanoid~
-the zombie~
-A strange humanoid is here.  How odd, its flesh seems to be falling off!
-~
-This strange humanoid is moving rather slowly, and appears to be
+</description>
+    <shortdesc>Puff</shortdesc>
+    <longdesc>Puff the Fractal Dragon is here, contemplating a higher reality.
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="200" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="5" dsize="10" bonus="550"/>
+      <move ndize="1" dsize="550" bonus="550"/>
+      <ac>-10</ac>
+      <gold>10000</gold>
+      <bankgold>0</bankgold>
+      <exp>155000</exp>
+      <hitroll>19</hitroll>
+      <damroll>3</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="9431049"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="12"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="4" sides="6" add="19"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="2" name="sleeping dreaming form" special="NONE">
+    <description> here.</description>
+    <shortdesc>the sleeping form of Elaida.</shortdesc>
+    <longdesc>The sle
+</longdesc>
+    <title/>
+    <chardata gender="NEUTRAL" class="Adventurer" level="100" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="30000"/>
+      <move ndize="1" dsize="30000" bonus="30000"/>
+      <ac>-200</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="8"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Sleeping" other="Sleeping"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="3" name="trap" special="NONE">
+    <description>a trap
+</description>
+    <shortdesc>a trap</shortdesc>
+    <longdesc>a trap
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="100" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="0" bonus="0"/>
+      <move ndize="1" dsize="0" bonus="0"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="4194314"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="4" name="jen jennifer" special="NONE">
+    <description/>
+    <shortdesc>Jennifer Lopez</shortdesc>
+    <longdesc>Jennifer Lopez
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="200" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="30" dsize="1000" bonus="30000"/>
+      <move ndize="1" dsize="30000" bonus="30000"/>
+      <ac>-200</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>900000000</exp>
+      <hitroll>200</hitroll>
+      <damroll>50</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="5259272"/>
+    <affected one="84215856" two="0" three="0" four="0"/>
+    <attack type="8"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="30" sides="127" add="200"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnSay" argtype="STRING" argument="workit">
+      <action number="Say" argtype="STRING" argument="Me so Horny!"/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="5" name="bunnie" special="NONE">
+    <description>A Rabid Bunny is about to attack you!
+</description>
+    <shortdesc>A Rabid Bunny!</shortdesc>
+    <longdesc>A Rabid Bunny!
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="6" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="1" bonus="1"/>
+      <move ndize="1" dsize="1" bonus="1"/>
+      <ac>1</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="8"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="9" name="vixen woman wench" special="NONE">
+    <description>The woman's hair is the color of smoldering embers - a bright red glow. Her
+ringlets spill out around her face,and hang down to the small of her back. The
+curves of her body are many and dizzying. Her eyes sparkle with mirth and 
+mischief. Her lips are full and pouty - giving you the impression that they are
+quite kissable.
+</description>
+    <shortdesc>A fire-haired, curvaceous woman</shortdesc>
+    <longdesc>A fire-haired, curvaceous woman is sleeping on a huge bed.
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="10" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="1" bonus="1"/>
+      <move ndize="10" dsize="20" bonus="100"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1048584"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Sleeping" other="Sleeping"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="10" name="clone" special="NONE">
+    <description>This clone is nothing to look at.  No, really, it is quite boring.
+</description>
+    <shortdesc>ida.</shortdesc>
+    <longdesc>A boring old clone is standing here.
+</longdesc>
+    <title/>
+    <chardata gender="NEUTRAL" class="Adventurer" level="1" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="1" bonus="1"/>
+      <move ndize="1" dsize="1" bonus="1"/>
+      <ac>0</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>20</hitroll>
+      <damroll>1</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="10"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="20"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="11" name="zombie undead humanoid" special="NONE">
+    <description>This strange humanoid is moving rather slowly, and appears to be
 a corpse, a walking corpse!  It must be a zombie or something of
 the sort.
-~
-10 0 0 E
-1 0 0 680 1d1+1 1d1+1
-0 0
-8 8 0
-BareHandAttack: 7
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-E
-#12
-hour crier~
-the hour crier ~
-A man stands here, looking at a watch intently.
-~
-The typically hurried official person with nothing to do.
-~
-10 0 0 E
-1 20 10 680 1d100+0 1d1+0
-0 1
-8 8 1
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-P
-OnRandom 15
-Say "wang a dang - new hour!"
-Action "smile"
-Move "north"
-End
-OnMobDie & Hurt
-ActionTo "sneer"
-SayTo "i die...but i at least nicked you..."
-End
-Q
-E
-#13
-mob unfinished~
-the unfinished mob~
-An unfinished mob stands here.
-~
-It looks, err, unfinished.
-~
-8 0 0 E
-0 20 10 680 1d100+0 1d1+0
-0 0
-8 8 0
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-E
-#19
-aerial servant shape~
-the aerial servant~
-An amorphous shape is floating in the air.
-~
-As you stare at this amorphous shape, it begins to appear to take
+</description>
+    <shortdesc>the zombie</shortdesc>
+    <longdesc>A strange humanoid is here.  How odd, its flesh seems to be falling off!
+</longdesc>
+    <title/>
+    <chardata gender="NEUTRAL" class="Adventurer" level="1" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="1" bonus="1"/>
+      <move ndize="1" dsize="1" bonus="1"/>
+      <ac>0</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>20</hitroll>
+      <damroll>1</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="10"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="7"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="20"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="12" name="hour crier" special="NONE">
+    <description>The typically hurried official person with nothing to do.
+</description>
+    <shortdesc>the hour crier </shortdesc>
+    <longdesc>A man stands here, looking at a watch intently.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="1" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="0"/>
+      <move ndize="1" dsize="0" bonus="0"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>1</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="10"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnRandom" argtype="INT" argument="15">
+      <action number="Say" argtype="STRING" argument="wang a dang - new hour!"/>
+      <action number="Action" argtype="STRING" argument="smile"/>
+      <action number="Move" argtype="STRING" argument="north"/>
+    </mobprog>
+    <mobprog main="OnMobDie" argtype="INT" argument="15">
+      <sideterm number="Hurt" not="FALSE" argtype="VOID" argument="NONE"/>
+      <action number="ActionTo" argtype="STRING" argument="sneer"/>
+      <action number="SayTo" argtype="STRING" argument="i die...but i at least nicked you..."/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="13" name="mob unfinished" special="NONE">
+    <description>It looks, err, unfinished.
+</description>
+    <shortdesc>the unfinished mob</shortdesc>
+    <longdesc>An unfinished mob stands here.
+</longdesc>
+    <title/>
+    <chardata gender="NEUTRAL" class="Adventurer" level="0" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="0"/>
+      <move ndize="1" dsize="0" bonus="0"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="8"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="19" name="aerial servant shape" special="NONE">
+    <description>As you stare at this amorphous shape, it begins to appear to take
 the shape of a cloud-like humanoid.
-~
-10 0 0 E
-1 0 0 680 1d1+1 1d1+1
-0 0
-8 8 0
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-E
-#20
-elemental~
-the elemental~
-An elemental is standing patiently here.
-~
-This creature is the essence of the elements, and appears to be
+</description>
+    <shortdesc>the aerial servant</shortdesc>
+    <longdesc>An amorphous shape is floating in the air.
+</longdesc>
+    <title/>
+    <chardata gender="NEUTRAL" class="Adventurer" level="1" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="1" bonus="1"/>
+      <move ndize="1" dsize="1" bonus="1"/>
+      <ac>0</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>20</hitroll>
+      <damroll>1</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="10"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="20"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="20" name="elemental" special="NONE">
+    <description>This creature is the essence of the elements, and appears to be
 waiting patiently for something to occur.
-~
-10 0 0 E
-1 0 0 680 1d1+1 1d1+1
-0 0
-8 8 0
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-E
-#30
-mercenary soldier rough~
-the rough mercenary~
-A rough looking soldier, possibly a mercenary is here.
-~
-The soldier has fallen on hard times recently, and has
+</description>
+    <shortdesc>the elemental</shortdesc>
+    <longdesc>An elemental is standing patiently here.
+</longdesc>
+    <title/>
+    <chardata gender="NEUTRAL" class="Adventurer" level="1" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="1" bonus="1"/>
+      <move ndize="1" dsize="1" bonus="1"/>
+      <ac>0</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>20</hitroll>
+      <damroll>1</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="10"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="20"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="21" name="the unfinished mob" special="NONE">
+    <description>It looks, err, unfinished.
+</description>
+    <shortdesc>the unfinished mob</shortdesc>
+    <longdesc>An unfinished mob stands here.
+</longdesc>
+    <title/>
+    <chardata gender="NEUTRAL" class="Adventurer" level="200" weight="200" height="198"/>
+    <abilities>
+      <str>11</str>
+      <int>11</int>
+      <wis>11</wis>
+      <dex>11</dex>
+      <con>11</con>
+      <cha>11</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="1" bonus="1"/>
+      <move ndize="10" dsize="20" bonus="100"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1048584"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="30" name="mercenary soldier rough" special="NONE">
+    <description>The soldier has fallen on hard times recently, and has
 taken to seeling his skills as a mercenary for hire.
-~
-10 0 0 E
-50 -20 0 680 22d310+300 9d13+40
-0 50
-8 8 1
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-E
-#33
-pirate buccaneer ~
-a rough-looking pirate~
-A gruesome, snarling pirate stands here waiting for someone to kill.
-~
-The very archetype of a pirate; heavy golden rings in the ears, an odd
+</description>
+    <shortdesc>the rough mercenary</shortdesc>
+    <longdesc>A rough looking soldier, possibly a mercenary is here.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="50" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="22" dsize="310" bonus="300"/>
+      <move ndize="1" dsize="300" bonus="300"/>
+      <ac>0</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>50</exp>
+      <hitroll>40</hitroll>
+      <damroll>40</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="10"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="9" sides="13" add="40"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="33" name="pirate buccaneer " special="Taunt">
+    <description>The very archetype of a pirate; heavy golden rings in the ears, an odd
 assortment of jewelry hung about the neck, a worn cutlass in hand and
 a very unnerving look in his eyes.
 Apparently one who has gotten too little love as a child.
-~
-6255 0 0 E
-20 -5 6 680 30d50+250 4d6+25
-27 100
-8 8 1
-BareHandAttack: 3
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-E
-#60
-mob unfinished~
-Healmob~
-An unfinished mob stands here.
-~
-It looks, err, unfinished.
-~
-8 0 0 E
-0 20 10 680 1d100+0 1d1+0
-0 0
-8 8 0
-P
-OnSay "heal me"
-Cast "advanced heal"
-End
-OnSay "leave"
-PurgeMob
-End
-Q
-E
-#99
-death reaper~
-Death~
-Death the Grim Reaper is observing you silently from empty eye sockets.
-~
-The dark-robed skeletal figure radiates an unendurable coldness.
-~
-256026 33960 0 E
-30 0 -10 680 1d1+665 10d15+20
-0 500000
-8 8 0
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-E
-$
+</description>
+    <shortdesc>a rough-looking pirate</shortdesc>
+    <longdesc>A gruesome, snarling pirate stands here waiting for someone to kill.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="20" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="30" dsize="50" bonus="250"/>
+      <move ndize="1" dsize="250" bonus="250"/>
+      <ac>60</ac>
+      <gold>27</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>25</hitroll>
+      <damroll>25</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="6255"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="3"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="4" sides="6" add="25"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="41" name="black robed myrddraal" special="NONE">
+    <description>This shadow within a shadow stands in one corner of the room, the cowl of
+its cloak drawn up to hide its maggot white face.  It stands vigilant, its
+eyeless face probing the depths of the room at all times for intruders.  
+
+</description>
+    <shortdesc>a Black Robed Myrddraal</shortdesc>
+    <longdesc>A Black Robed Myrddraal stands here.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="199" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="0" dsize="0" bonus="0"/>
+      <hit numd="30" dsize="40" bonus="30000"/>
+      <move ndize="1" dsize="30000" bonus="30000"/>
+      <ac>-200</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>40</hitroll>
+      <damroll>40</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="3139610"/>
+    <affected one="87885874" two="0" three="0" four="0"/>
+    <attack type="3"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="30" sides="40" add="40"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnAction" argtype="STRING" argument="&quot; ' , . / : &gt; adt amt armscry arrest arrogance ask assist backstab bandmarch bash bdt blademastery bond brand breakshield breply bug camouflage camp cart cast cemote charge chess close clubs clubtalk codetalk concentrate consider ">
+      <sideterm number="Carrying" not="TRUE" argtype="STRING" argument="32624"/>
+      <sideterm number="Wearing" not="TRUE" argtype="STRING" argument="32624"/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+    </mobprog>
+    <mobprog main="OnAction" argtype="STRING" argument="contactinfo craft ct darkdream darkwalk deguild delete description dice dirt kick disarm disengage disguise doing donate down drag dream drink drop east eat emote employ enhance enter fervor fill findherb fine flank flee follow ">
+      <sideterm number="Carrying" not="TRUE" argtype="STRING" argument="32624"/>
+      <sideterm number="Wearing" not="TRUE" argtype="STRING" argument="32624"/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+    </mobprog>
+    <mobprog main="OnAction" argtype="STRING" argument="forage force forget fortify free fx gadmininfo gboard gdesc gdt get ghelp give gload gmail gossip grab grasp grecieve greq group gsay gskillset gtell guild guilddisguise guildieset guildmail guildset handtalk heal hide ">
+      <sideterm number="Carrying" not="TRUE" argtype="STRING" argument="32624"/>
+      <sideterm number="Wearing" not="TRUE" argtype="STRING" argument="32624"/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+    </mobprog>
+    <mobprog main="OnAction" argtype="STRING" argument="hidetracks hire hit hold home hunt idea infor infravision inquisition inspire instruct join journal junk kick kill knock lastemote learn leave lock longsleep look lweapon mail mask mdt mediate medicine mmail morale move ">
+      <sideterm number="Carrying" not="TRUE" argtype="STRING" argument="32624"/>
+      <sideterm number="Wearing" not="TRUE" argtype="STRING" argument="32624"/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+    </mobprog>
+    <mobprog main="OnAction" argtype="STRING" argument="murder navigate newbiegoto north northeast northwest nw obscene offend ooc open order oreport osay padd pclose pemote pick play poff popen pose pound pour powertrap pray preach prefix premove press privacy private prompt ">
+      <sideterm number="Carrying" not="TRUE" argtype="STRING" argument="32624"/>
+      <sideterm number="Wearing" not="TRUE" argtype="STRING" argument="32624"/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+    </mobprog>
+    <mobprog main="OnAction" argtype="STRING" argument="protege psay pull punch push put qsay quaff question quit rage rally ranks read recall receive recite recruit reinforce reject release remove repair reply report rescue rest retreat return rumor run saveguild say sayto se ">
+      <sideterm number="Carrying" not="TRUE" argtype="STRING" argument="32624"/>
+      <sideterm number="Wearing" not="TRUE" argtype="STRING" argument="32624"/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+    </mobprog>
+    <mobprog main="OnAction" argtype="STRING" argument="search seek seekguild sell sever sfx shadow shieldwall shoot shout sing sip sit sleep sneak south southeast southwest speardance speedwalk split sponsor stab stalk stand steal stun subdue summon supply survival sw tail take target ">
+      <sideterm number="Carrying" not="TRUE" argtype="STRING" argument="32624"/>
+      <sideterm number="Wearing" not="TRUE" argtype="STRING" argument="32624"/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+    </mobprog>
+    <mobprog main="OnAction" argtype="STRING" argument="taste taxi teach tell test tether tgrasp throw tie tieweave title tool track traction train travel treesing trelease trip tutor typo unbond ungroup unknot unlock unravel unsponsor untaint untether up use veil visible void wait wake ">
+      <sideterm number="Carrying" not="TRUE" argtype="STRING" argument="32624"/>
+      <sideterm number="Wearing" not="TRUE" argtype="STRING" argument="32624"/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+    </mobprog>
+    <mobprog main="OnAction" argtype="STRING" argument="wash wear wield wimpy wolfcall write ">
+      <sideterm number="Carrying" not="TRUE" argtype="STRING" argument="32624"/>
+      <sideterm number="Wearing" not="TRUE" argtype="STRING" argument="32624"/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+    </mobprog>
+    <mobprog main="OnAction" argtype="STRING" argument="; advance at authorize award clearbond clearclub clone dc echo freeze gecho goto hedit heditutil invis load mute newbie notitle page passbond poofin poofout prove purge qecho questlock refresh reload restore roomset send set shutdown snowball switch tedit teleport thaw transfer unaffect unauthorize unsever wiznet zecho zlock">
+      <sideterm number="Carrying" not="TRUE" argtype="STRING" argument="32624"/>
+      <sideterm number="Wearing" not="TRUE" argtype="STRING" argument="32624"/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="60" name="mob unfinished" special="NONE">
+    <description>It looks, err, unfinished.
+</description>
+    <shortdesc>Healmob</shortdesc>
+    <longdesc>An unfinished mob stands here.
+</longdesc>
+    <title/>
+    <chardata gender="NEUTRAL" class="Adventurer" level="0" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="0"/>
+      <move ndize="1" dsize="0" bonus="0"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="8"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnSay" argtype="STRING" argument="heal me">
+      <action number="Cast" argtype="STRING" argument="advanced heal"/>
+    </mobprog>
+    <mobprog main="OnSay" argtype="STRING" argument="leave">
+      <action number="PurgeMob" argtype="VOID" argument="NONE"/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="70" name="darkhound beast dog" special="NONE">
+    <description>This..thing.. looks quite a bit like a dog, though it is as large as a horse.
+Two heads protrude from one body, both flashing fangs dripping with saliva.
+The beast bays, its black furred back meshed with obsidian scales. As it moves
+along stone it leaves odd footprings. Whatever it is, it is filled with evil.
+</description>
+    <shortdesc>a scaled darkhound</shortdesc>
+    <longdesc>A beast, faintly resembling an enormous dog with scales growls nearby.
+</longdesc>
+    <title/>
+    <chardata gender="NEUTRAL" class="Adventurer" level="200" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="15" dsize="1000" bonus="2000"/>
+      <move ndize="1" dsize="2000" bonus="2000"/>
+      <ac>-200</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>60</hitroll>
+      <damroll>50</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="3063834"/>
+    <affected one="327728" two="0" three="0" four="0"/>
+    <attack type="4"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="30" sides="40" add="60"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnActionTo" argtype="STRING" argument="kill backstab kick punch dirtkick trip bash weave cast tieweave">
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="ActionTo" argtype="STRING" argument="send The scaled darkhound laughs and sticks its tongue out at you."/>
+      <action number="Action" argtype="STRING" argument="emote contentedly scratches at an ear."/>
+    </mobprog>
+    <mobprog main="OnAction" argtype="STRING" argument="purge">
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="ActionTo" argtype="STRING" argument="send The scaled darkhound laughs and sticks its tongue out at you."/>
+      <action number="Action" argtype="STRING" argument="emote shakes its head and gruffs lightly."/>
+    </mobprog>
+    <mobprog main="OnAttack" argtype="VOID" argument="NONE">
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="ActionTo" argtype="STRING" argument="send The scaled darkhound laughs and sticks its tongue out at you."/>
+      <action number="Action" argtype="STRING" argument="emote dog-laughs, its eyes flashing and tail wagging."/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="88" name="Someone" special="NONE">
+    <description> Someone
+</description>
+    <shortdesc>Someone</shortdesc>
+    <longdesc>Someone
+</longdesc>
+    <title/>
+    <chardata gender="NEUTRAL" class="Adventurer" level="200" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="1" bonus="1"/>
+      <move ndize="10" dsize="20" bonus="100"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="8"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+</mobiles>

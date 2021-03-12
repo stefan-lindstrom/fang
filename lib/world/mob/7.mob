@@ -1,519 +1,669 @@
-#700
-guard arsmcrymob~
-a guardsman~
-A guardsman is standing here
-~
-A tall well armed guard is standing here watching everyone closely.
-~
-1052682 262656 0 E
-25 -80 -10 947 25d100+0 12d12+50
-0 0
-8 8 1 833
-BareHandAttack: 3
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-Bash: 100
-Trip: 100
-P
-OnAction "kil kill attack att bash dirt dirtkick trip stun backstab" & Mode 1 & Guild "Daes Dae'mar"
-ActionTo "assist"
-Mode 2
-End
-OnMobLeave & Mode 2
-Mode 1
-End
-Q
-E
-#701
-Guard House Trakand~
-a guard of house Trakand~
-An guard of house Trakand stands here
-~
-It looks, err, unfinished.
-~
-1052680 262656 0 E
-25 -80 -10 947 25d100+0 6d12+50
-0 0
-8 8 1 833
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-Bash: 100
-Trip: 100
-Kick: 100
-E
-#702
-door man doorman Maynard~
-the Doorman~
-Maynard is dressed in fine clothing waiting to welcome people to the manor.
-~
-It looks, err, unfinished.
-~
-655386 524288 0 E
-200 -180 -20 947 0d0+30000 30d127+50
-0 0
-8 8 1 0
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-P
-OnAction "ba"
-Stop
-End
-OnActionTo "push"
-Stop
-Action "emote flourishes a pair of knives from up his sleeves. "
-End
-OnActionTo "drag"
-Stop
-Action "emote flourishes a pair of knives from his sleeves. "
-End
-OnEntry
-Pause 5
-Action "close door west"
-Action "lock door west"
-End
-OnTell "grant entrance" & Guild "Daes"
-Action "emote opens the door with a flourish. "
-Action "unlock door west"
-Action "open door west"
-Pause 5
-Action "close door west"
-Action "lock door west"
-End
-OnAction "knock"
-Action "unlock door west"
-Action "open door west"
-Action "west"
-Action "shout Someone seeks entrance into the manor. "
-Action "east"
-Action "close door west"
-Action "lock door west"
-Action "emote bows deeply. "
-End
-OnLeave
-Pause 5
-Action "close door west"
-Action "lock door west"
-End
-OnAction "kill"
-Stop
-End
-OnAction "kick"
-Stop
-End
-OnAction "b"
-Stop
-End
-OnActionTo "nod" & Guild "daes"
-Action "emote bows politely, flourishing his keys to the manor and stepping asside as he opens the door, waving for you to pass into the Andoran Mansion."
-Action "unlock door west"
-Action "open door west"
-Pause 4
-Action "close door west"
-Action "lock door west"
-End
-Q
-E
-#703
-Mylan Maid Servant~
-Mylan~
-Mylan, a maid in the manor
-~
-Mylan is a petite girl about 17 summers aged, she has dark eyes and
+<?xml version="1.0"?>
+<mobiles>
+  <mobile vnum="700" name="guard arsmcrymob" special="NONE">
+    <description>A tall well armed guard is standing here watching everyone closely.
+</description>
+    <shortdesc>a guardsman</shortdesc>
+    <longdesc>A guardsman is standing here
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="25" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="25" dsize="100" bonus="0"/>
+      <move ndize="1" dsize="0" bonus="0"/>
+      <ac>-100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>100</hitroll>
+      <damroll>50</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1048586"/>
+    <affected one="262656" two="0" three="0" four="0"/>
+    <attack type="3"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="12" sides="12" add="100"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnAction" argtype="STRING" argument="kil kill attack att bash dirt dirtkick trip stun backstab">
+      <sideterm number="Mode" not="FALSE" argtype="INT" argument="1"/>
+      <sideterm number="Guild" not="FALSE" argtype="VOID" argument="NONE"/>
+      <action number="ActionTo" argtype="STRING" argument="assist"/>
+      <action number="Mode" argtype="INT" argument="2"/>
+    </mobprog>
+    <mobprog main="OnMobLeave" argtype="STRING" argument="kil kill attack att bash dirt dirtkick trip stun backstab">
+      <sideterm number="Mode" not="FALSE" argtype="INT" argument="2"/>
+      <action number="Mode" argtype="INT" argument="1"/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="701" name="Guard House Trakand" special="NONE">
+    <description>It looks, err, unfinished.
+</description>
+    <shortdesc>a guard of house Trakand</shortdesc>
+    <longdesc>An guard of house Trakand stands here
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="25" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="25" dsize="100" bonus="0"/>
+      <move ndize="1" dsize="0" bonus="0"/>
+      <ac>-100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>100</hitroll>
+      <damroll>50</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1052680"/>
+    <affected one="262656" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="6" sides="12" add="100"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="702" name="door man doorman Maynard" special="NONE">
+    <description>It looks, err, unfinished.
+</description>
+    <shortdesc>the Doorman</shortdesc>
+    <longdesc>Maynard is dressed in fine clothing waiting to welcome people to the manor.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="200" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="0" dsize="0" bonus="30000"/>
+      <move ndize="1" dsize="30000" bonus="30000"/>
+      <ac>-200</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>200</hitroll>
+      <damroll>50</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="655386"/>
+    <affected one="524288" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="30" sides="127" add="200"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnAction" argtype="STRING" argument="ba">
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+    </mobprog>
+    <mobprog main="OnActionTo" argtype="STRING" argument="push">
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="Action" argtype="STRING" argument="emote flourishes a pair of knives from up his sleeves. "/>
+    </mobprog>
+    <mobprog main="OnActionTo" argtype="STRING" argument="drag">
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="Action" argtype="STRING" argument="emote flourishes a pair of knives from his sleeves. "/>
+    </mobprog>
+    <mobprog main="OnEntry" argtype="STRING" argument="drag">
+      <action number="Pause" argtype="INT" argument="5"/>
+      <action number="Action" argtype="STRING" argument="close door west"/>
+      <action number="Action" argtype="STRING" argument="lock door west"/>
+    </mobprog>
+    <mobprog main="OnTell" argtype="STRING" argument="grant entrance">
+      <action number="Action" argtype="STRING" argument="emote opens the door with a flourish. "/>
+      <action number="Action" argtype="STRING" argument="unlock door west"/>
+      <action number="Action" argtype="STRING" argument="open door west"/>
+      <action number="Pause" argtype="INT" argument="5"/>
+      <action number="Action" argtype="STRING" argument="close door west"/>
+      <action number="Action" argtype="STRING" argument="lock door west"/>
+    </mobprog>
+    <mobprog main="OnAction" argtype="STRING" argument="knock">
+      <action number="Action" argtype="STRING" argument="unlock door west"/>
+      <action number="Action" argtype="STRING" argument="open door west"/>
+      <action number="Action" argtype="STRING" argument="west"/>
+      <action number="Action" argtype="STRING" argument="shout Someone seeks entrance into the manor. "/>
+      <action number="Action" argtype="STRING" argument="east"/>
+      <action number="Pause" argtype="INT" argument="5"/>
+      <action number="Action" argtype="STRING" argument="close door west"/>
+      <action number="Action" argtype="STRING" argument="lock door west"/>
+      <action number="Action" argtype="STRING" argument="bow"/>
+    </mobprog>
+    <mobprog main="OnLeave" argtype="STRING" argument="knock">
+      <action number="Pause" argtype="INT" argument="5"/>
+      <action number="Action" argtype="STRING" argument="close door west"/>
+      <action number="Action" argtype="STRING" argument="lock door west"/>
+    </mobprog>
+    <mobprog main="OnAction" argtype="STRING" argument="kill">
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+    </mobprog>
+    <mobprog main="OnAction" argtype="STRING" argument="kick">
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+    </mobprog>
+    <mobprog main="OnAction" argtype="STRING" argument="b">
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+    </mobprog>
+    <mobprog main="OnActionTo" argtype="STRING" argument="nod">
+      <sideterm number="Guild" not="FALSE" argtype="VOID" argument="NONE"/>
+      <action number="Action" argtype="STRING" argument="emote bows politely, flourishing his keys to the manor and stepping asside as he opens the door, waving for you to pass into the Andoran Mansion."/>
+      <action number="Action" argtype="STRING" argument="unlock door west"/>
+      <action number="Action" argtype="STRING" argument="open door west"/>
+      <action number="Pause" argtype="INT" argument="4"/>
+      <action number="Action" argtype="STRING" argument="close door west"/>
+      <action number="Action" argtype="STRING" argument="lock door west"/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="703" name="Mylan Maid Servant" special="NONE">
+    <description>Mylan is a petite girl about 17 summers aged, she has dark eyes and
 short black hair. Her maids uniform has been altered to better display
 her youthful charms. She is rarely seen working and mostly flirts
 with the courtiers and visitors to the palace the higher ranking ones
 seem deserving of her dutiful attentions. She is scorned by the
 rest of the staff and would probably be dismissed if it were not for
-her aunt who has been in the Queen's service for decades.
-~
-90 0 0 E
-1 20 10 947 1d100+0 1d1+0
-0 0
-8 8 2 0
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-P
-OnAttack
-Stop
-Say "You didn't really mean to hurt me did you?"
-Action "emote bats her eyelashes at you sweetly."
-End
-OnActionTo "tango"
-Action "emote coquettishly bites her lower lip... while sliding her hot hands up your strong arms to your neck, pulling you closer and giving you a powerfull, sensuous kiss, you won't soon forget....mmmmmmm !!"
-Pause 5
-Action "emote reluctantly pulls herself from your embrace."
-Pause 2
-Say "You do know how to take my breath away, don't you?"
-End
-OnEntry
-Pause 2
-Action "curtsey"
-Pause 2
-Say "Light Illumine thee.."
-End
-OnActionTo "push"
-Stop
-Action "emote bats her eyelashes innocently."
-Say "Owwwww, You keep pushing me around like that, and I'll think you mean it."
-End
-OnActionTo "drag"
-Stop
-Action "emote temptuously runs her hands up your chest."
-Say "I only let the higher nobles drag me off into dark corners.  But for some decent coinage, I might show you a good time."
-End
-OnActionTo "give 5 coins to mylan"
-Action "emote smiles seductively at you while pressing her back against the wall."
-Pause 2
-Action "emote slowly pulls the hem of her dress up a silky thigh."
-Pause 5
-Say "And just how much do you think that will buy you?"
-End
-OnAction "smile"
-Emote "$n smiles sweetly to $N."
-Pause 2
-Action "curtsey"
-Pause 1
-Say "Light Illumine..."
-Pause 1
-End
-OnAction "look mylan"
-Pause 1
-Action "giggle"
-Pause 1
-Say "How may I serve?"
-Emote "curtseys, displaying herself to her best advantage."
-End
-OnSay "dismissed"
-Pause 2
-Action "pout"
-Pause 2
-Emote "emote says with a pout,' As you wish...'"
-Action "flee"
-End
-OnActionTo "flirt" & Sex "male"
-Pause 2
-Action "eye"
-Pause 2
-Say "With you, surely you jest?"
-Pause 1
-Action "chuckle"
-Move "random"
-End
-OnActionTo "flirt" & Sex "male" & Nobility
-Pause 2
-Say "M'lord, you honor me, but alas I have my duties."
-End
-Q
-E
-#704
-Simonez son boy child kid~
-Simonez den Balgar~
-Simonez is a ten year child, dressed in fine clothing befitting the noble-born.
-~
-It looks, err, unfinished.
-~
-26 0 0 E
-1 20 10 947 1d100+0 1d1+0
-0 0
-8 8 1 0
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-P
-OnTell "follow"
-Action "follow Steffan"
-End
-OnTell "stop"
-Action "follow self"
-End
-OnTell "east"
-Move "east"
-End
-OnTell "west"
-Move "west"
-End
-OnTell "north"
-Move "north"
-End
-OnTell "south"
-Move "south"
-End
-OnActionTo "push"
-Stop
-Say "You no can push den Balgars around like that."
-Action "emote glares indignantly you as is possible for his mere ten years to muster."
-End
-OnActionTo "drag"
-Stop
-Action "emote looks slightly amused at what you just tried to do."
-Say "You do be knowing the worth of a den Balgar."
-End
-OnActionTo "hug"
-Action "emote smiles warmly and hugs you tightly."
-End
-OnAttack
-Stop
-Action "emote quickly dodges your evil actions against one as innocent as he."
-End
-OnSayTo "no, you will not."
-Action "emote looks pouty and sulks."
-End
-OnActionTo "frowns"
-Action "emote looks up at your frowning face, his eyes wide and full of innocence."
-End
-Q
-E
-#705
-Devosha woman female servant~
-Devosha ~
-Devosha is stalking the halls for some excitement
-~
-This is a devastatingly beautiful woman.  Her eyes are a deep green that glance
+her aunt who has been in the Queen&apos;s service for decades.
+</description>
+    <shortdesc>Mylan</shortdesc>
+    <longdesc>Mylan, a maid in the manor
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="1" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="0"/>
+      <move ndize="1" dsize="0" bonus="0"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="90"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnAttack" argtype="STRING" argument="nod">
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="Say" argtype="STRING" argument="You didn&apos;t really mean to hurt me did you?"/>
+      <action number="Action" argtype="STRING" argument="emote bats her eyelashes at you sweetly."/>
+    </mobprog>
+    <mobprog main="OnActionTo" argtype="STRING" argument="tango">
+      <action number="Action" argtype="STRING" argument="emote coquettishly bites her lower lip... while sliding her hot hands up your strong arms to your neck, pulling you closer and giving you a powerfull, sensuous kiss, you won&apos;t soon forget....mmmmmmm !!"/>
+      <action number="Pause" argtype="INT" argument="5"/>
+      <action number="Action" argtype="STRING" argument="emote reluctantly pulls herself from your embrace."/>
+      <action number="Pause" argtype="INT" argument="2"/>
+      <action number="Say" argtype="STRING" argument="You do know how to take my breath away, don&apos;t you?"/>
+    </mobprog>
+    <mobprog main="OnEntry" argtype="STRING" argument="tango">
+      <action number="Pause" argtype="INT" argument="2"/>
+      <action number="Action" argtype="STRING" argument="curtsey"/>
+      <action number="Pause" argtype="INT" argument="2"/>
+      <action number="Say" argtype="STRING" argument="Light Illumine thee.."/>
+    </mobprog>
+    <mobprog main="OnActionTo" argtype="STRING" argument="push">
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="Action" argtype="STRING" argument="emote bats her eyelashes innocently."/>
+      <action number="Say" argtype="STRING" argument="Owwwww, You keep pushing me around like that, and I&apos;ll think you mean it."/>
+    </mobprog>
+    <mobprog main="OnActionTo" argtype="STRING" argument="drag">
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="Action" argtype="STRING" argument="emote temptuously runs her hands up your chest."/>
+      <action number="Say" argtype="STRING" argument="I only let the higher nobles drag me off into dark corners.  But for some decent coinage, I might show you a good time."/>
+    </mobprog>
+    <mobprog main="OnActionTo" argtype="STRING" argument="give 5 coins to mylan">
+      <action number="Action" argtype="STRING" argument="emote smiles seductively at you while pressing her back against the wall."/>
+      <action number="Pause" argtype="INT" argument="2"/>
+      <action number="Action" argtype="STRING" argument="emote slowly pulls the hem of her dress up a silky thigh."/>
+      <action number="Pause" argtype="INT" argument="5"/>
+      <action number="Say" argtype="STRING" argument="And just how much do you think that will buy you?"/>
+    </mobprog>
+    <mobprog main="OnAction" argtype="STRING" argument="smile">
+      <action number="Emote" argtype="STRING" argument="$n smiles sweetly to $N."/>
+      <action number="Pause" argtype="INT" argument="2"/>
+      <action number="Action" argtype="STRING" argument="curtsey"/>
+      <action number="Pause" argtype="INT" argument="1"/>
+      <action number="Say" argtype="STRING" argument="Light Illumine..."/>
+      <action number="Pause" argtype="INT" argument="1"/>
+    </mobprog>
+    <mobprog main="OnAction" argtype="STRING" argument="look mylan">
+      <action number="Pause" argtype="INT" argument="1"/>
+      <action number="Action" argtype="STRING" argument="giggle"/>
+      <action number="Pause" argtype="INT" argument="1"/>
+      <action number="Say" argtype="STRING" argument="How may I serve?"/>
+      <action number="Emote" argtype="STRING" argument="curtseys, displaying herself to her best advantage."/>
+    </mobprog>
+    <mobprog main="OnSay" argtype="STRING" argument="dismissed">
+      <action number="Pause" argtype="INT" argument="2"/>
+      <action number="Action" argtype="STRING" argument="pout"/>
+      <action number="Pause" argtype="INT" argument="2"/>
+      <action number="Emote" argtype="STRING" argument="emote says with a pout,&apos; As you wish...&apos;"/>
+      <action number="Action" argtype="STRING" argument="flee"/>
+    </mobprog>
+    <mobprog main="OnActionTo" argtype="STRING" argument="flirt">
+      <sideterm number="Sex" not="FALSE" argtype="VOID" argument="NONE"/>
+      <action number="Pause" argtype="INT" argument="2"/>
+      <action number="Action" argtype="STRING" argument="eye"/>
+      <action number="Pause" argtype="INT" argument="2"/>
+      <action number="Say" argtype="STRING" argument="With you, surely you jest?"/>
+      <action number="Pause" argtype="INT" argument="1"/>
+      <action number="Action" argtype="STRING" argument="chuckle"/>
+      <action number="Move" argtype="STRING" argument="random"/>
+    </mobprog>
+    <mobprog main="OnActionTo" argtype="STRING" argument="flirt">
+      <sideterm number="Sex" not="FALSE" argtype="VOID" argument="NONE"/>
+      <sideterm number="Nobility" not="FALSE" argtype="VOID" argument="NONE"/>
+      <action number="Pause" argtype="INT" argument="2"/>
+      <action number="Say" argtype="STRING" argument="M&apos;lord, you honor me, but alas I have my duties."/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="704" name="Simonez son boy child kid" special="NONE">
+    <description>It looks, err, unfinished.
+</description>
+    <shortdesc>Simonez den Balgar</shortdesc>
+    <longdesc>Simonez is a ten year child, dressed in fine clothing befitting the noble-born.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="1" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="0"/>
+      <move ndize="1" dsize="0" bonus="0"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="26"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnTell" argtype="STRING" argument="follow">
+      <action number="Action" argtype="STRING" argument="follow Steffan"/>
+    </mobprog>
+    <mobprog main="OnTell" argtype="STRING" argument="stop">
+      <action number="Action" argtype="STRING" argument="follow self"/>
+    </mobprog>
+    <mobprog main="OnTell" argtype="STRING" argument="east">
+      <action number="Move" argtype="STRING" argument="east"/>
+    </mobprog>
+    <mobprog main="OnTell" argtype="STRING" argument="west">
+      <action number="Move" argtype="STRING" argument="west"/>
+    </mobprog>
+    <mobprog main="OnTell" argtype="STRING" argument="north">
+      <action number="Move" argtype="STRING" argument="north"/>
+    </mobprog>
+    <mobprog main="OnTell" argtype="STRING" argument="south">
+      <action number="Move" argtype="STRING" argument="south"/>
+    </mobprog>
+    <mobprog main="OnActionTo" argtype="STRING" argument="push">
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="Say" argtype="STRING" argument="You no can push den Balgars around like that."/>
+      <action number="Action" argtype="STRING" argument="emote glares indignantly you as is possible for his mere ten years to muster."/>
+    </mobprog>
+    <mobprog main="OnActionTo" argtype="STRING" argument="drag">
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="Action" argtype="STRING" argument="emote looks slightly amused at what you just tried to do."/>
+      <action number="Say" argtype="STRING" argument="You do be knowing the worth of a den Balgar."/>
+    </mobprog>
+    <mobprog main="OnActionTo" argtype="STRING" argument="hug">
+      <action number="Action" argtype="STRING" argument="emote smiles warmly and hugs you tightly."/>
+    </mobprog>
+    <mobprog main="OnAttack" argtype="STRING" argument="hug">
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="Action" argtype="STRING" argument="emote quickly dodges your evil actions against one as innocent as he."/>
+    </mobprog>
+    <mobprog main="OnSayTo" argtype="STRING" argument="no, you will not.">
+      <action number="Action" argtype="STRING" argument="emote looks pouty and sulks."/>
+    </mobprog>
+    <mobprog main="OnActionTo" argtype="STRING" argument="frowns">
+      <action number="Action" argtype="STRING" argument="emote looks up at your frowning face, his eyes wide and full of innocence."/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="705" name="Devosha woman female servant" special="NONE">
+    <description>This is a devastatingly beautiful woman.  Her eyes are a deep green that glance
 over you hungrily.  Her lips have been painted a sensuous shade of red that
 beckon to you.  She wears a sheer black gown that barely attempts to cover her
 body.  From what you can see, her skin is a creamy chocolate brown that would
 glimmer in the moonlight.  Her midnight black tresses are braided with gold
 beads, pearls and loops of satin ribbons.  If your eyes found their way to her
 feet, you would find them bare.    
-~
-16410 524288 0 E
-1 20 10 947 1d100+0 1d1+0
-0 0
-8 8 2 0
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-P
-OnRandom 80
-Action "emote gives you a senusous look as she runs her hand suggestively up her thigh."
-Pause 8
-Say "Are you looking for some action, or are you just looking?"
-End
-OnRandom 20
-Action "emote looks you up one side and then the other then winks slowly."
-Pause 3
-Say "Nice specimen."
-End
-OnRandom 50
-Action "emote beckons you seductively."
-End
-OnSay "What's your"
-Pause 2
-Say "My name is Devosha, what's your's name handsome?"
-End
-OnSay "My name is"
-Pause 2
-Say "Oooooooo what a strong name.  You must be a really strong man to have a name like that."
-Pause 3
-Action "emote runs a wet tongue over her red lips making them glisten."
-Pause 2
-Say "I can't wait to find out."
-End
-OnActionTo "hug"
-Pause 2
-Say "Things like that don't come cheaply.  If you want that from me you will have to request service."
-End
-OnActionTo "huggle"
-Pause 2
-Say "Things like that don't come cheaply.  If you want that from me you will have to request service."
-End
-OnActionTo "kiss"
-Pause 2
-Say "Things like that don't come cheaply.  If you want that from me you will have to request service."
-End
-OnActionTo "french"
-Pause 2
-Action "emote runs her hand up your thigh, sending your head reeling and your heart pounding."
-Pause 4
-Say "Things like that don't come cheaply.  If you want that from me you will have to request service."
-End
-OnActionTo "snuggle"
-Pause 2
-Say "Things like that don't come cheaply.  If you want that from me you will have to request service."
-End
-OnActionTo "cuddle"
-Pause 2
-Say "Things like that don't come cheaply.  If you want that from me you will have to request service."
-End
-OnActionTo "smooch"
-Pause 2
-Say "Things like that don't come cheaply.  If you want that from me you will have to request service."
-End
-OnTell "request service"
-SayTo "Follow me, you good looking heart throb."
-End
-OnActionTo "follow"
-Action "west"
-Action "west"
-Action "west"
-Action "south"
-End
-Q
-E
-#777
-mob unfinished~
-Sassy the Cat~
-a grey and white cat named Sassy is here.
-~
-a small and cute, grey and white cat.
-~
-8 0 0 E
-20 20 10 947 1d100+0 1d1+0
-0 0
-8 8 2 0
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-P
-OnSayTo "Here girl" & Sex "female" & Race "altara"
-Action "follow Wynta"
-End
-Q
-E
-#787
-coachman braynard~
-Braynard the DD coachman~
-Braynard, the DD coachman stands here, waiting to offer people rides.
-~
-It looks, err, unfinished.
-~
-2088986 524288 0 E
-200 -180 -20 947 0d0+30000 30d127+50
-0 0
-8 8 1 0
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-Bash: 100
-Trip: 100
-Dirtkick: 100
-Kick: 100
-Disarm: 100
-Stun: 100
-P
-OnSay "Illian" & Guild "daes" & Carrying 715
-Say "Right away your grace"
-ActionTo "at trovaris trans"
-End
-Q
-E
-#802
-Tomas~
-Tomas, Captain of House Taravin~
-Tomas, Captain of House Taravin is here guarding the Captain General Brelon Taravin
-~
-It looks, err, unfinished.
-~
-8 4718592 0 E
-0 20 10 947 1d100+0 1d1+0
-0 0
-8 8 1 0
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-P
-OnSayTo "Please see to the guests at the door" & Taveren & Sex "m" & Race "Andor" & Guild "daes" & Nobility
-MoveTo 700
-Action "open door e"
-Move "east"
-Action "emote bows then speaks to you as he rises, 'If you could please follow me, I will show you to lord Brelon's office.'"
-End
-OnAction "follow t"
-Action "emote bows and smiles kindly."
-MoveTo 802
-Pause 4
-Action "emote bows deeply upon entering the office.  "
-End
-Q
-E
-#905
-Doorman~
-the unfinished mob~
-An unfinished mob stands here.
-~
-It looks, err, unfinished.
-~
-8 0 0 E
-0 20 10 947 1d100+0 1d1+0
-0 0
-8 8 0 0
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-P
-OnAction "weave 'open lock'"
-Stop
-End
-Q
-E
-#910
-mob unfinished~
-the unfinished mob~
-An unfinished mob stands here.
-~
-It looks, err, unfinished.
-~
-8 0 0 E
-0 20 10 947 1d100+0 1d1+0
-0 0
-8 8 0 0
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-P
-OnAction "knock west"
-Shout
-Pause 1
-End
-OnTell "Grant entrance" & Guild "Daes"
-Say "'One moment while I open the door for you, your request for entrance has been accepted."
-Action "get key pouch"
-Action "4"
-Action "unlock door w"
-Action "open door w"
-Say "Please enter"
-Pause 3
-Action "close door w"
-Action "lock door w"
-Action "put key pouch"
-End
-Q
-E
-$
+</description>
+    <shortdesc>Devosha </shortdesc>
+    <longdesc>Devosha is stalking the halls for some excitement
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="1" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="0"/>
+      <move ndize="1" dsize="0" bonus="0"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="16410"/>
+    <affected one="524288" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnRandom" argtype="INT" argument="80">
+      <action number="Action" argtype="STRING" argument="emote gives you a senusous look as she runs her hand suggestively up her thigh."/>
+      <action number="Pause" argtype="INT" argument="8"/>
+      <action number="Say" argtype="STRING" argument="Are you looking for some action, or are you just looking?"/>
+    </mobprog>
+    <mobprog main="OnRandom" argtype="INT" argument="20">
+      <action number="Action" argtype="STRING" argument="emote looks you up one side and then the other then winks slowly."/>
+      <action number="Pause" argtype="INT" argument="3"/>
+      <action number="Say" argtype="STRING" argument="Nice specimen."/>
+    </mobprog>
+    <mobprog main="OnRandom" argtype="INT" argument="50">
+      <action number="Action" argtype="STRING" argument="emote beckons you seductively."/>
+    </mobprog>
+    <mobprog main="OnSay" argtype="STRING" argument="What&apos;s your">
+      <action number="Pause" argtype="INT" argument="2"/>
+      <action number="Say" argtype="STRING" argument="My name is Devosha, what&apos;s your&apos;s name handsome?"/>
+    </mobprog>
+    <mobprog main="OnSay" argtype="STRING" argument="My name is">
+      <action number="Pause" argtype="INT" argument="2"/>
+      <action number="Say" argtype="STRING" argument="Oooooooo what a strong name.  You must be a really strong man to have a name like that."/>
+      <action number="Pause" argtype="INT" argument="3"/>
+      <action number="Action" argtype="STRING" argument="emote runs a wet tongue over her red lips making them glisten."/>
+      <action number="Pause" argtype="INT" argument="2"/>
+      <action number="Say" argtype="STRING" argument="I can&apos;t wait to find out."/>
+    </mobprog>
+    <mobprog main="OnActionTo" argtype="STRING" argument="hug">
+      <action number="Pause" argtype="INT" argument="2"/>
+      <action number="Say" argtype="STRING" argument="Things like that don&apos;t come cheaply.  If you want that from me you will have to request service."/>
+    </mobprog>
+    <mobprog main="OnActionTo" argtype="STRING" argument="huggle">
+      <action number="Pause" argtype="INT" argument="2"/>
+      <action number="Say" argtype="STRING" argument="Things like that don&apos;t come cheaply.  If you want that from me you will have to request service."/>
+    </mobprog>
+    <mobprog main="OnActionTo" argtype="STRING" argument="kiss">
+      <action number="Pause" argtype="INT" argument="2"/>
+      <action number="Say" argtype="STRING" argument="Things like that don&apos;t come cheaply.  If you want that from me you will have to request service."/>
+    </mobprog>
+    <mobprog main="OnActionTo" argtype="STRING" argument="french">
+      <action number="Pause" argtype="INT" argument="2"/>
+      <action number="Action" argtype="STRING" argument="emote runs her hand up your thigh, sending your head reeling and your heart pounding."/>
+      <action number="Pause" argtype="INT" argument="4"/>
+      <action number="Say" argtype="STRING" argument="Things like that don&apos;t come cheaply.  If you want that from me you will have to request service."/>
+    </mobprog>
+    <mobprog main="OnActionTo" argtype="STRING" argument="snuggle">
+      <action number="Pause" argtype="INT" argument="2"/>
+      <action number="Say" argtype="STRING" argument="Things like that don&apos;t come cheaply.  If you want that from me you will have to request service."/>
+    </mobprog>
+    <mobprog main="OnActionTo" argtype="STRING" argument="cuddle">
+      <action number="Pause" argtype="INT" argument="2"/>
+      <action number="Say" argtype="STRING" argument="Things like that don&apos;t come cheaply.  If you want that from me you will have to request service."/>
+    </mobprog>
+    <mobprog main="OnActionTo" argtype="STRING" argument="smooch">
+      <action number="Pause" argtype="INT" argument="2"/>
+      <action number="Say" argtype="STRING" argument="Things like that don&apos;t come cheaply.  If you want that from me you will have to request service."/>
+    </mobprog>
+    <mobprog main="OnTell" argtype="STRING" argument="request service">
+      <action number="SayTo" argtype="STRING" argument="Follow me, you good looking heart throb."/>
+    </mobprog>
+    <mobprog main="OnActionTo" argtype="STRING" argument="follow">
+      <action number="Action" argtype="STRING" argument="west"/>
+      <action number="Action" argtype="STRING" argument="west"/>
+      <action number="Action" argtype="STRING" argument="west"/>
+      <action number="Action" argtype="STRING" argument="south"/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="710" name="funeral carriage cortege" special="NONE">
+    <description>It looks, err, unfinished.
+</description>
+    <shortdesc>an elegantly appointed black carriage</shortdesc>
+    <longdesc>Funeral.
+</longdesc>
+    <title/>
+    <chardata gender="NEUTRAL" class="Adventurer" level="200" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="0"/>
+      <move ndize="1" dsize="0" bonus="0"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="8"/>
+    <affected one="524288" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnSayTo" argtype="STRING" argument="Begin Procession!">
+      <sideterm number="Guild" not="FALSE" argtype="VOID" argument="NONE"/>
+      <action number="ActionTo" argtype="STRING" argument="follow"/>
+    </mobprog>
+    <mobprog main="OnMobEntry" argtype="STRING" argument="Begin Procession!">
+      <action number="Emote" argtype="STRING" argument="bearing a beautifully carved coffin draped in the battle flags of Andor and House Taravin rolls silently in, surrounded by guards in Andoran &amp;RRed&amp;n, and House Taravin &amp;bBlue &amp;nand &amp;WWhite&amp;n all uniforms trimmed with &amp;KBlack&amp;n."/>
+    </mobprog>
+    <mobprog main="OnMobLeave" argtype="STRING" argument="Begin Procession!">
+      <action number="Emote" argtype="STRING" argument="rolls silently along it&apos;s prescribed path to the final resting place."/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="777" name="mob unfinished" special="NONE">
+    <description>a small and cute, grey and white cat.
+</description>
+    <shortdesc>Sassy the Cat</shortdesc>
+    <longdesc>a grey and white cat named Sassy is here.
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="20" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="0"/>
+      <move ndize="1" dsize="0" bonus="0"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="8"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnSayTo" argtype="STRING" argument="Here girl">
+      <sideterm number="Sex" not="FALSE" argtype="VOID" argument="NONE"/>
+      <sideterm number="Race" not="FALSE" argtype="VOID" argument="NONE"/>
+      <action number="Action" argtype="STRING" argument="follow Wynta"/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="787" name="coachman braynard" special="NONE">
+    <description>It looks, err, unfinished.
+</description>
+    <shortdesc>Braynard the DD coachman</shortdesc>
+    <longdesc>Braynard, the DD coachman stands here, waiting to offer people rides.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="200" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="0" dsize="0" bonus="30000"/>
+      <move ndize="1" dsize="30000" bonus="30000"/>
+      <ac>-200</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>200</hitroll>
+      <damroll>50</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="2088986"/>
+    <affected one="524288" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="30" sides="127" add="200"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnSay" argtype="STRING" argument="Illian">
+      <sideterm number="Guild" not="FALSE" argtype="VOID" argument="NONE"/>
+      <sideterm number="Carrying" not="FALSE" argtype="INT" argument="715"/>
+      <action number="Say" argtype="STRING" argument="Right away your grace"/>
+      <action number="ActionTo" argtype="STRING" argument="at trovaris trans"/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="802" name="Tomas" special="NONE">
+    <description>It looks, err, unfinished.
+</description>
+    <shortdesc>Tomas, Captain of House Taravin</shortdesc>
+    <longdesc>Tomas, Captain of House Taravin is here guarding the Captain General Brelon Taravin
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="0" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="0"/>
+      <move ndize="1" dsize="0" bonus="0"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="8"/>
+    <affected one="4718592" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnSayTo" argtype="STRING" argument="Please see to the guests at the door">
+      <sideterm number="Taveren" not="FALSE" argtype="VOID" argument="NONE"/>
+      <sideterm number="Sex" not="FALSE" argtype="VOID" argument="NONE"/>
+      <sideterm number="Race" not="FALSE" argtype="VOID" argument="NONE"/>
+      <sideterm number="Guild" not="FALSE" argtype="VOID" argument="NONE"/>
+      <sideterm number="Nobility" not="FALSE" argtype="VOID" argument="NONE"/>
+      <action number="MoveTo" argtype="INT" argument="700"/>
+      <action number="Action" argtype="STRING" argument="open door e"/>
+      <action number="Move" argtype="STRING" argument="east"/>
+      <action number="Action" argtype="STRING" argument="emote bows then speaks to you as he rises, &apos;If you could please follow me, I will show you to lord Brelon&apos;s office.&apos;"/>
+    </mobprog>
+    <mobprog main="OnAction" argtype="STRING" argument="follow t">
+      <action number="Action" argtype="STRING" argument="emote bows and smiles kindly."/>
+      <action number="MoveTo" argtype="INT" argument="802"/>
+      <action number="Pause" argtype="INT" argument="4"/>
+      <action number="Action" argtype="STRING" argument="emote bows deeply upon entering the office.  "/>
+    </mobprog>
+  </mobile>
+</mobiles>

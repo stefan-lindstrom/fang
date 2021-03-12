@@ -1,95 +1,141 @@
-#6500
-black wind machin shin~
-\c23Machin Shin, the Black Wind\c00~
-\c23The central vortex of the black wind screams before you!\c00
-~
-The Black Wind forms a sheer wall of dead black, sucking anything
+<?xml version="1.0"?>
+<mobiles>
+  <mobile vnum="6500" name="black wind machin shin" special="NONE">
+    <description>The Black Wind forms a sheer wall of dead black, sucking anything
 it touches into itself. It is pure mindless evil.
-~
-3126312 269289520 0 E
-199 -180 -20 637 0d0+30000 30d30+50
-0 150
-6 8 0
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-Stun: 100
-P
-OnTick
-Emote "killkillkillkillkillkilldeathdeathdeathdeathdeathdeathpainpainpainpain"
-End
-OnEntry
-ActionTo "kill"
-Cast "destroy armor"
-Cast "destroy armor"
-Cast "destroy armor"
-End
-OnRandom 99
-Pause 5
-Action "stand"
-Action "pull spawner"
-End
-OnMobDie
-Action "take spawner"
-Action "junk spawner"
-End
-OnAction "cast weave"
-Cast "destroy armor"
-Cast "destroy weapon"
-Cast "pain"
-End
-Q
-E
-#6501
-tendril machin shin black wind~
-\c23A tendril of Machin Shin\c00~
-\c23A tendril of Machin Shin\c00
-~
-\c23You stare at a part of the deadly Black Wind, it blocks your escape
+</description>
+    <shortdesc>\c23Machin Shin, the Black Wind\c00</shortdesc>
+    <longdesc>\c23The central vortex of the black wind screams before you!\c00
+</longdesc>
+    <title/>
+    <chardata gender="NEUTRAL" class="Adventurer" level="199" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="1" dsize="1" bonus="29999"/>
+      <hit numd="1" dsize="1" bonus="29999"/>
+      <move ndize="1" dsize="30000" bonus="30000"/>
+      <ac>-200</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>200</hitroll>
+      <damroll>50</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="3126312"/>
+    <affected one="269289520" two="0" three="0" four="0"/>
+    <attack type="11"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="30" sides="127" add="200"/>
+    <timer amount="0"/>
+    <skills vector="63"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnTick" argtype="VOID" argument="NONE">
+      <action number="Emote" argtype="STRING" argument="killkillkillkillkillkilldeathdeathdeathdeathdeathdeathpainpainpainpain"/>
+    </mobprog>
+    <mobprog main="OnEntry" argtype="VOID" argument="NONE">
+      <action number="ActionTo" argtype="STRING" argument="kill"/>
+    </mobprog>
+    <mobprog main="OnRandom" argtype="INT" argument="99">
+      <action number="Pause" argtype="INT" argument="5"/>
+      <action number="Action" argtype="STRING" argument="stand"/>
+      <action number="Action" argtype="STRING" argument="pull spawner"/>
+    </mobprog>
+    <mobprog main="OnMobDie" argtype="INT" argument="99">
+      <action number="Action" argtype="STRING" argument="take spawner"/>
+      <action number="Action" argtype="STRING" argument="junk spawner"/>
+    </mobprog>
+    <mobprog main="OnAction" argtype="STRING" argument="cast weave">
+      <action number="Cast" argtype="STRING" argument="pain"/>
+    </mobprog>
+    <mobprog main="OnAction" argtype="STRING" argument="bash trip kick punch stab murder kill stun disarm">
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="Cast" argtype="STRING" argument="pain"/>
+      <action number="ActionTo" argtype="STRING" argument="murder"/>
+    </mobprog>
+    <mobprog main="OnAction" argtype="STRING" argument="flee">
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="Cast" argtype="STRING" argument="pain"/>
+      <action number="Emote" argtype="STRING" argument="&amp;KThe Black Wind howls mournfully, and wraps its coils tightly around your body.  You're trapped!&amp;n"/>
+      <action number="Cast" argtype="STRING" argument="pain"/>
+    </mobprog>
+    <mobprog main="OnMobDie" argtype="VOID" argument="NONE">
+      <action number="Action" argtype="STRING" argument="load mob 6500"/>
+      <action number="Action" argtype="STRING" argument="pull spawner"/>
+    </mobprog>
+    <dgscript vnum="6500"/>
+  </mobile>
+  <mobile vnum="6501" name="tendril machin shin black wind" special="NONE">
+    <description>\c23You stare at a part of the deadly Black Wind, it blocks your escape
 you must destroy it be destroyed.\c00
-~
-3118136 268503088 0 E
-195 -180 -10 637 0d0+20000 20d20+50
-0 140
-8 8 0
-BareHandAttack: 12
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-Stun: 100
-P
-OnRandom 40
-Emote "\c23A tendril of Machin Shin retreats into the central vortex.\c00"
-PurgeMob
-End
-OnLeave
-Stop
-Emote "\c23A tendril of Machin Shin blocks $N from leaving.\c00"
-Cast "destroy armor"
-End
-OnLeave
-Stop
-Emote "\c23A tendril of Machin Shin blocks $N as $E tries to flee!\c00"
-Cast "destroy weapon"
-End
-OnAction "cast weave"
-Cast "destroy armor"
-End
-OnAction "grasp"
-Cast "destroy weapon"
-End
-OnRandom 99
-Action "leave"
-End
-OnEntry
-Cast "pain"
-End
-Q
-E
-$
+</description>
+    <shortdesc>\c23A tendril of Machin Shin\c00</shortdesc>
+    <longdesc>\c23A tendril of Machin Shin\c00
+</longdesc>
+    <title/>
+    <chardata gender="NEUTRAL" class="Adventurer" level="195" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="30000"/>
+      <hit numd="0" dsize="0" bonus="20000"/>
+      <move ndize="1" dsize="20000" bonus="20000"/>
+      <ac>-100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>200</hitroll>
+      <damroll>50</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="3118136"/>
+    <affected one="268503088" two="0" three="0" four="0"/>
+    <attack type="12"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="20" sides="20" add="200"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnRandom" argtype="INT" argument="40">
+      <action number="Emote" argtype="STRING" argument="\c23A tendril of Machin Shin retreats into the central vortex.\c00"/>
+      <action number="PurgeMob" argtype="VOID" argument="NONE"/>
+    </mobprog>
+    <mobprog main="OnLeave" argtype="INT" argument="40">
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="Emote" argtype="STRING" argument="\c23A tendril of Machin Shin blocks $N from leaving.\c00"/>
+    </mobprog>
+    <mobprog main="OnLeave" argtype="INT" argument="40">
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="Emote" argtype="STRING" argument="\c23A tendril of Machin Shin blocks $N as $E tries to flee!\c00"/>
+    </mobprog>
+    <mobprog main="OnAction" argtype="STRING" argument="cast weave">
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="Cast" argtype="STRING" argument="pain"/>
+    </mobprog>
+    <mobprog main="OnAction" argtype="STRING" argument="grasp">
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="Cast" argtype="STRING" argument="pain"/>
+      <action number="ActionTo" argtype="STRING" argument="kill"/>
+    </mobprog>
+    <mobprog main="OnRandom" argtype="INT" argument="99">
+      <action number="Action" argtype="STRING" argument="leave"/>
+    </mobprog>
+    <mobprog main="OnEntry" argtype="INT" argument="99">
+      <action number="Cast" argtype="STRING" argument="pain"/>
+    </mobprog>
+    <dgscript vnum="6500"/>
+  </mobile>
+</mobiles>

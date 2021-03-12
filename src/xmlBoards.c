@@ -103,7 +103,7 @@ static MSG*  fetchXmlMessage( xmlNodePtr xmlMsg )
   CREATE( work, MSG, 1 );
   work->next = NULL;
   
-  for (temp = xmlMsg->children; NULL != temp; temp = temp->next) 
+  for (temp = xmlFirstElementChild(xmlMsg); NULL != temp; temp = temp->next)
   {
       if (!strcasecmp(temp->name,"header")) 
 	work->header =xmlToString( temp->children );
@@ -142,7 +142,7 @@ static MSG*  fetchXmlMessages( xmlNodePtr xmlMsgs )
     return NULL;
   }
 
-  for( temp = xmlMsgs->children; temp; temp = temp->next )
+  for (temp = xmlFirstElementChild(xmlMsgs); NULL != temp; temp = xmlNextElementSibling(temp))
   {
     if( !strcasecmp( temp->name, "message" ) )
       work = fetchXmlMessage( temp );

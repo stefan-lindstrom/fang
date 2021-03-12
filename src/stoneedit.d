@@ -1,1 +1,0 @@
-stoneedit.o: stoneedit.c

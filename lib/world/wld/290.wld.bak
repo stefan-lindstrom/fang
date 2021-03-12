@@ -23,7 +23,7 @@ sounds begin to become more obvious.
   </room>
   <room>
     <roombasic title="Entrance to the Courtyard" vnum="29001" zone="290">
-      <roomdescription>A tall \c07white\c00 wall is built up, surrounding the \c03S\c10u\c03n\c10 P\c03a\c10l\c03a\c10c\c03e\c00 and it&apos;s
+      <roomdescription>A tall \c07white\c00 wall is built up, surrounding the \c03S\c10u\c03n\c10 P\c03a\c10l\c03a\c10c\c03e\c00 and it's
 grounds.  A tall, wrought \c23iron\c00 archway leads into the small courtyard,
 several guards in uniform standing around.  A wide, smooth \c23s\c07t\c23o\c07n\c23e\c00 ramp
 leads up to the double brass doors that is the entrance to this grand
@@ -102,6 +102,10 @@ direction.
       <description>You see nothing special.
 </description>
     </exit>
+    <exit direction="west" keyword="" exitinfo="0" keynum="-1" toroom="29031">
+      <description>You see nothing special.
+</description>
+    </exit>
   </room>
   <room>
     <roombasic title="Entering Cairhien" vnum="29005" zone="290">
@@ -112,7 +116,7 @@ both sides.  The buildings on either side of the street are all made of
 city was built on.  The outline of the \c10Palace\c00 looms closer as the road
 continues straight ahead.    
 </roomdescription>
-      <flags>0</flags>
+      <flags>20</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
@@ -147,8 +151,8 @@ faint outline of the \c10Sun Palace\c00 from here.
       <description>You see nothing special.
 </description>
     </exit>
-    <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="7754">
-      <description>An Aiel Camp sprawls across the road leading out of Cairhien.
+    <exit direction="south" keyword="" exitinfo="0" keynum="-1" toroom="7754">
+      <description>You see nothing special.
 </description>
     </exit>
   </room>
@@ -178,6 +182,10 @@ stable.
 </description>
     </exit>
     <exit direction="east" keyword="" exitinfo="0" keynum="-1" toroom="29030">
+      <description>You see nothing special.
+</description>
+    </exit>
+    <exit direction="south" keyword="" exitinfo="0" keynum="-1" toroom="29031">
       <description>You see nothing special.
 </description>
     </exit>
@@ -236,7 +244,7 @@ wine cellar.
     </exit>
   </room>
   <room>
-    <roombasic title="The Innkeeper&apos;s Room" vnum="29009" zone="290">
+    <roombasic title="The Innkeeper's Room" vnum="29009" zone="290">
       <roomdescription>The \c03door\c00 opens up into a rather small, strikingly plain room.  A single
 bed is pushed up against the northwestern corner of the room, a dark \c04blue\c00
 coverlet adorning the top with a lone pillow resting at the head.  At the
@@ -255,10 +263,10 @@ surface of the desk.
     </exit>
   </room>
   <room>
-    <roombasic title="The Cook&apos;s Room" vnum="29010" zone="290">
-      <roomdescription>The room across the hall from the Innkeeper&apos;s room is similar in size, and
+    <roombasic title="The Cook's Room" vnum="29010" zone="290">
+      <roomdescription>The room across the hall from the Innkeeper's room is similar in size, and
 in simpicity.  The only difference is in the color and in the size of the
-bed.  To accomodate the cook&apos;s girth, a slightly larger bed has been
+bed.  To accomodate the cook's girth, a slightly larger bed has been
 placed in this room, a crocheted \c07white\c00 comforter resting upon the top.  
 Two fluffy pillow sit at the top of the bed, the shams made of the same
 crocheted material.  As in the other room, a desk sits next to the bed but
@@ -302,7 +310,7 @@ the table.
   <room>
     <roombasic title="The Buttercup Room" vnum="29012" zone="290">
       <roomdescription>The door opens inward into a bright cheery room, done mostly in \c03yellows\c00
-and soft, powder \c0blues\c00.  A round, \c23dark\c00 stained table sits in the middle
+and soft, powder \c06blues\c00.  A round, \c23dark\c00 stained table sits in the middle
 of the room with four chairs situated where the placemats rest upon the
 \c03wooden\c00 surface.  There are four lanterns that provide abundant \c03li\c07g\c03ht\c00
 around the room, one situated in each corner but they are not needed
@@ -360,9 +368,13 @@ where it came from and the date it was made.
   </room>
   <room>
     <roombasic title="At the Top of the Stairs" vnum="29015" zone="290">
-      <roomdescription>You are in an unfinished room.
+      <roomdescription>A small landing rests at the top of the stairs, a hallway leads south with
+several doors on either side and another door leads directly to the east
+from the stairs.  Several lanterns are mounted upon the walls of this
+corridor, providing abundant \c03li\c07g\c03ht\c00 with little \c23shadows\c00 flickering upon the
+walls.    
 </roomdescription>
-      <flags>0</flags>
+      <flags>24</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
@@ -380,9 +392,12 @@ where it came from and the date it was made.
   </room>
   <room>
     <roombasic title="A Long Hallway" vnum="29016" zone="290">
-      <roomdescription>You are in an unfinished room.
+      <roomdescription>The long hallway continues from the landing, a door to the east and west
+every few feet.  \c03Lanterns\c00 are mounted upon the walls between the closed
+doors, providing excellent lighting for any patrons or Inn workers that
+would perhaps be walking through.    
 </roomdescription>
-      <flags>0</flags>
+      <flags>24</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
@@ -390,7 +405,7 @@ where it came from and the date it was made.
       <description>You see nothing special.
 </description>
     </exit>
-    <exit direction="east" keyword="" exitinfo="0" keynum="-1" toroom="29021">
+    <exit direction="east" keyword="door east" exitinfo="1" keynum="-1" toroom="29021">
       <description>You see nothing special.
 </description>
     </exit>
@@ -398,16 +413,20 @@ where it came from and the date it was made.
       <description>You see nothing special.
 </description>
     </exit>
-    <exit direction="west" keyword="" exitinfo="0" keynum="-1" toroom="29022">
+    <exit direction="west" keyword="door west" exitinfo="1" keynum="-1" toroom="29022">
       <description>You see nothing special.
 </description>
     </exit>
   </room>
   <room>
     <roombasic title="The Hallway Continues" vnum="29017" zone="290">
-      <roomdescription>You are in an unfinished room.
+      <roomdescription>The corridor goes on, though the end of the hallway can be seen as the
+doors line the sides.  \c23Shadows\c00 flicker on the walls as the \c03f\c01l\c03a\c01m\c03e\c01s\c00 from the
+lanterns dance merrily.  A set of stairs can be seen at the other end of
+the hallway, leading up towards another floor of the Inn, perhaps more
+rooms or an attic.    
 </roomdescription>
-      <flags>0</flags>
+      <flags>24</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
@@ -430,9 +449,11 @@ where it came from and the date it was made.
   </room>
   <room>
     <roombasic title="The End of the Hallway" vnum="29018" zone="290">
-      <roomdescription>You are in an unfinished room.
+      <roomdescription>The \c03li\c07g\c03ht\c00 is a bit fainter here as then hallway ends.  A small, \c03wooden\c00
+staircase leads upward onto the next floor of the Inn.  Only one lantern
+lights the way to the next floor, \c23shadows\c00 heavily dancing upon the walls.
 </roomdescription>
-      <flags>0</flags>
+      <flags>24</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
@@ -455,9 +476,13 @@ where it came from and the date it was made.
   </room>
   <room>
     <roombasic title="The Linen Closet" vnum="29019" zone="290">
-      <roomdescription>You are in an unfinished room.
+      <roomdescription>The door opens up into a tiny room, not even enough room to actually stand
+in.  Upon the opposite wall from the entrance are shelves lined with
+different \c05c\c06o\c02l\c07o\c02r\c06e\c05d\c00 linens and comforters.  There is no lantern in here, so
+the only \c03li\c07g\c03ht\c00 that reaches this room if from the lantern mounted upon the
+wall in the hallway.    
 </roomdescription>
-      <flags>0</flags>
+      <flags>24</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
@@ -486,36 +511,67 @@ few white towels and vials of various shapes and sizes.
     </exit>
   </room>
   <room>
-    <roombasic title="Guest Room #1" vnum="29021" zone="290">
-      <roomdescription>You are in an unfinished room.
+    <roombasic title="The Forest Room" vnum="29021" zone="290">
+      <roomdescription>This room is decorated in varying shades of \c02g\c09r\c02e\c09e\c02n\c00, a soft green rug thrown
+out on the floor before the door.  A medium sized bed rests against the
+northern wall of this room, a \c02e\c23a\c02r\c23t\c02h\c23t\c02o\c23n\c02e\c23d\c00 comforter with matching pillows
+adorning the top.  Small circular tables, made of a \c23dark\c00 stained oak, sit
+to either side of the bed.  A wash basin and \c07white\c00, ceramic pitcher rests
+upon the top of the one to the left of the bed while the table to the
+right holds a small stack of \c03l\c23e\c03a\c23t\c03h\c23e\c03r\c23b\c03o\c23u\c03n\c23d\c00 books.  Resting in the
+southeastern corner of this room, is a full length mirror.  The frame made
+of the same, \c23dark\c00 stained oak of the tables as it holds the \c07si\c23lv\c07er\c23y\c00
+surface in place.    
 </roomdescription>
-      <flags>0</flags>
+      <flags>24</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
-    <exit direction="west" keyword="" exitinfo="0" keynum="-1" toroom="29016">
+    <exit direction="west" keyword="door west" exitinfo="1" keynum="-1" toroom="29016">
       <description>You see nothing special.
 </description>
     </exit>
   </room>
   <room>
-    <roombasic title="Guest Room #2" vnum="29022" zone="290">
-      <roomdescription>You are in an unfinished room.
+    <roombasic title="Romance at its Best" vnum="29022" zone="290">
+      <roomdescription>Softly lit lanterns are mounted on the walls all about the room, providing
+a warm \c03glow\c00 all around.  The intimate atmosphere of the room is enhanced
+even more by the bed.  Centered along the south wall of those room, four
+posts rise up from each corner of the bed.  Whispers of pale, gauzy cloth
+twirl around each post, from one to the other and again to another, till
+all are intertwined with the fabric and it acts as a makeshirt curtain all
+around the bed.  A \c07cr\c03e\c07am\c00 colored, crocheted comforter rests upon the top
+of the bed, a multitude of large, fluffy pillows sitting at the headboard.
+Right next to the bed is a single table, round and covered with the same
+gauzy material that is wrapped around the posts.  A small teaset rests
+upon the top, the \c23si\c07lv\c23er\c00 tray holding a teapot, two cups and saucers, and
+a variety of containers for honey, cream and sugar.  On the wall opposite
+from the bed, is a small vanity made from a dark, \c01cherry\c00 stained wood.  
+The \c23si\c07lv\c23e\c07ry\c00 surface of the mirror reflects back to the bed and the soft
+curtains that surround it.  \c23Si\c07lv\c23er\c00 covered combs, brushes and a hand
+mirrors rest beside various sized containers.    
 </roomdescription>
-      <flags>0</flags>
+      <flags>536</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
-    <exit direction="east" keyword="" exitinfo="0" keynum="-1" toroom="29016">
+    <exit direction="east" keyword="door east" exitinfo="1" keynum="-1" toroom="29016">
       <description>You see nothing special.
 </description>
     </exit>
   </room>
   <room>
-    <roombasic title="Guest Room #3" vnum="29023" zone="290">
-      <roomdescription>You are in an unfinished room.
+    <roombasic title="The Ogier Room" vnum="29023" zone="290">
+      <roomdescription>The door opens up into a rather large room, not only the area of the room
+being big but everything within it also.  The room is obviously made for
+an Ogier, if one decided to stay at this Inn, the bed almost taking up the
+whole nothern wall of this room.  The frame of the bed seems to be made
+from the trunks of rather young \c02t\c23r\c02e\c23e\c02s\c00, just cut and fitted with a mattress
+and \c04blue\c00 comforter put upon the slats on the bottom.  One large chair sits
+in the corner near the headboard of the bed, high back with large, fluffy,
+\c04blue\c00 cushions that make it look atleast comfortable to sit in.    
 </roomdescription>
-      <flags>0</flags>
+      <flags>24</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
@@ -525,10 +581,19 @@ few white towels and vials of various shapes and sizes.
     </exit>
   </room>
   <room>
-    <roombasic title="Guest Room #4" vnum="29024" zone="290">
-      <roomdescription>You are in an unfinished room.
+    <roombasic title="A Dark Rose" vnum="29024" zone="290">
+      <roomdescription>The room is well \c03l\c07i\c03t\c00, lanterns mounted upon the walls on each of the rooms
+four sides.  A large bed rests upon the middle of the north wall, four
+\c03wooden\c00 posts raising from each corner.  Upon the mattress of the bed,
+rests a soft looking, \c23g\c07r\c23e\c07y\c00 coverlet with matching shams on the fluffy
+pillows.  \c23Black\c00 roses are embroidered upon the comforter, intricatly
+designed and spaced out so that it seems each is connected by flowing
+\c02vines\c00.  A table rests beside the bed, nothing upon the top of its \c03wooden\c00
+surface save for a small book.  The rest of the room is suprisingly
+simple.  Only a chair rests in the southern portion of the room, with a
+round throw rug on the floor before it.    
 </roomdescription>
-      <flags>0</flags>
+      <flags>24</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
@@ -538,10 +603,19 @@ few white towels and vials of various shapes and sizes.
     </exit>
   </room>
   <room>
-    <roombasic title="Guest Room #5" vnum="29025" zone="290">
-      <roomdescription>You are in an unfinished room.
+    <roombasic title="A Cheery Guest Room" vnum="29025" zone="290">
+      <roomdescription>A soft, fragrance fills this room as the door opens up, the decor done in
+all bright, cheery colors.  The bed, though on the smallish side, seems to
+be comfortable as it is pushed up against the northern wall of this room.
+A brightly colored, plaid comforter of \c02greens\c00, \c03yellows\c00 and \c07whites\c00 sits
+upon the bed with one side pulled back as if ready for someone to occupy
+it.  Two, fluffy pillows rest at the head of the bed and a small,
+crocheted comforter resting at the foot for those cold nights.  A chest,
+made from \c01c\c03e\c01d\c03a\c01r\c00, rests on the floor at the foot of the bed.  On the top of
+the table, that sits next to the bed, is a large bouquet of \c06f\c04l\c11o\c05w\c11e\c04r\c06s\c00.  The
+\c06f\c04l\c11o\c05w\c11e\c04r\c06y\c00 aroma filling the room, seeming to add to the cheery atmosphere.
 </roomdescription>
-      <flags>0</flags>
+      <flags>24</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
@@ -551,10 +625,21 @@ few white towels and vials of various shapes and sizes.
     </exit>
   </room>
   <room>
-    <roombasic title="Guest Room #6" vnum="29026" zone="290">
-      <roomdescription>You are in an unfinished room.
+    <roombasic title="A Small Guest Room" vnum="29026" zone="290">
+      <roomdescription>This room is mostly done in somber, \c23dark\c00 colors making the room appear
+smaller than it actually is.  A large, drab, \c03b\c23r\c03o\c23w\c03n\c00 throw rug rests upon
+the the \c03wooden\c00 surface of the floor, mostly covering it up where there
+isn't any furniture.  The bed is pushed up so it's nestled in the
+northwestern corner of the room, rather small in size with a soft \c07white\c00
+comforter upon the top.  A single pillow rests up at the head of the bed,
+\c06f\c04l\c11o\c05w\c11e\c04r\c06s\c00 that are embroidered upon the fabric seems to be the only
+decoration in this room.  Instead of a table, a small desk sits next to
+the bed.  An \c04i\c23n\c04k\c23w\c04e\c23l\c04l\c00, quill and vial of \c03sand\c00 the only things that can be
+seen upon the wooden surface, all situated neatly at the top.  The only
+other piece of furniture is a rocking chair that sits at the foot of the
+bed, a small cushion resting in the seat of the chair.    
 </roomdescription>
-      <flags>0</flags>
+      <flags>24</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
@@ -565,9 +650,19 @@ few white towels and vials of various shapes and sizes.
   </room>
   <room>
     <roombasic title="The Attic" vnum="29027" zone="290">
-      <roomdescription>You are in an unfinished room.
+      <roomdescription>The entire top floor of the Inn is nothing but a big, wide open space
+filled with, what appears to be, junk.  Boxes are stacked upon boxes,
+various piece of old furniture and paintings are all over the place.  The
+dust fills the air and it seems rather stifling in here with no windows.
+The sides of the \c03roof\c00 slope down towards the walls of the room, making
+standing to any one side a bit difficult for anyone of more than average
+height.  In one corner of the room, resting upon the dusty floor, is a
+pallet with a small pillow.  The blanket made of corse wool and \c23dark\c02 green\c00
+in color.  Perhaps it is here for a traveller that doesn't have enough
+money for a regular room or midnight trysts among the employees of the
+Inn.    
 </roomdescription>
-      <flags>0</flags>
+      <flags>24</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
@@ -652,13 +747,32 @@ smell of horses and \c03hay\c00 mostly filling the air.
     </exit>
   </room>
   <room>
-    <roombasic title="An Expansive Balcony Above the Ballroom" vnum="29031" zone="290">
-      <roomdescription>You are in an unfinished room.
+    <roombasic title="Towards the Docks" vnum="29031" zone="290">
+      <roomdescription>The well-paved street leads east and west, to the east, forming an
+intersection with the one of the main avenues which criss-cross the huge
+city.  The steady stream of traffic is far busier there, yet here it's a
+tad quieter.  Over the nearby buildings, the palace can be seen again and
+again, fairly closer now, a tall stone wall built all the way around it.
+The docks of Cairhien are close, or so hints a faint briny scent wafting
+on the wind, and to the north stands a huge building - the Great Tree Inn,
+infamous throughout Cairhein for its spectacular structure, and the
+service it provides.    
 </roomdescription>
       <flags>0</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
+    <exit direction="north" keyword="" exitinfo="0" keynum="-1" toroom="29007">
+      <description>You see nothing special.
+</description>
+    </exit>
+    <exit direction="east" keyword="" exitinfo="0" keynum="-1" toroom="29004">
+      <description>You see nothing special.
+</description>
+    </exit>
+    <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="6454">
+      <description/>
+    </exit>
   </room>
   <room>
     <roombasic title="A Well Carpeted Hallway, East" vnum="29032" zone="290">
@@ -1150,497 +1264,6 @@ smell of horses and \c03hay\c00 mostly filling the air.
     </roombasic>
     <exit direction="south" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="29057">
       <description>&lt;NONE&gt;</description>
-    </exit>
-  </room>
-  <room>
-    <roombasic title="\c13Daes Mandarb Reception Area\c00" vnum="29100" zone="290">
-      <roomdescription>This is a large, wide room, the floor tiled in blue and white and the walls 
-painted in a soft blue.  Just to the west of the door into the building
-from the street is a large counter of rich, dark wood.  Behind it is a 
-curious construction full of cubbyholes, each one labelled with a name. 
-Some of the cubbyholes have slips of paper, or envelopes, in them.  In the
-northwest corner of  the room is a staircase leading up to the second story,
-and along the eastern wall is a small sitting area with several padded 
-chairs and a small table holding a few books.  There are colourful 
-tapestries depicting battle scenes at regular intervals along the walls.
-
-</roomdescription>
-      <flags>30</flags>
-      <sector>Inside</sector>
-      <special>NONE</special>
-    </roombasic>
-    <exit direction="south" keyword="wood door" exitinfo="1" keynum="0" toroom="29101">
-      <description>wood door
-</description>
-    </exit>
-    <exit direction="up" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="29107">
-      <description>&lt;NONE&gt;</description>
-    </exit>
-  </room>
-  <room>
-    <roombasic title="\c13The North End of the Courtyard\c00" vnum="29101" zone="290">
-      <roomdescription>In the courtyard, just outside of the reception area, the sound of lathes 
-clacking against each other reaches your ears.  The ground is paved in
-slightly bumpy cobblestones.  To each side of the entrance to the
-building is a bench of smooth grey stone that almost blends into the
-stone of the walls.  Windows look out over the courtyard from the second
-floor of the building and also from the reception area to the north.
-</roomdescription>
-      <flags>22</flags>
-      <sector>City</sector>
-      <special>NONE</special>
-    </roombasic>
-    <exit direction="north" keyword="wood door" exitinfo="1" keynum="0" toroom="29100">
-      <description>wood door
-</description>
-    </exit>
-    <exit direction="south" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="29102">
-      <description>&lt;NONE&gt;</description>
-    </exit>
-  </room>
-  <room>
-    <roombasic title="\c13The Centre of the Courtyard\c00" vnum="29102" zone="290">
-      <roomdescription>The courtyard continues.  A small fountain carved of the same grey stone
-as the walls sits in the very centre of the courtyard, water splashing from 
-a carved pitcher in the hands of a woman into the pool below.  To the east 
-there is a solid wooden door in the wall, matched by an identical one in
-the west wall.
-</roomdescription>
-      <flags>22</flags>
-      <sector>City</sector>
-      <special>NONE</special>
-    </roombasic>
-    <exit direction="north" keyword="courtyard" exitinfo="0" keynum="0" toroom="29101">
-      <description>\c00</description>
-    </exit>
-    <exit direction="east" keyword="wood door" exitinfo="3" keynum="0" toroom="29104">
-      <description>Wood door
-</description>
-    </exit>
-    <exit direction="south" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="29103">
-      <description>&lt;NONE&gt;</description>
-    </exit>
-    <exit direction="west" keyword="wood door" exitinfo="3" keynum="0" toroom="29105">
-      <description>wood door
-</description>
-    </exit>
-  </room>
-  <room>
-    <roombasic title="\c13The South End of the Courtyard\c00" vnum="29103" zone="290">
-      <roomdescription>In this part of the courtyard only a small strip down the east side is paved. 
-This path leads to a solid wooden door, which matches the others in the 
-courtyard, in the south wall of the building. The rest of the area is fenced
-in.  Inside the fence the ground is hard-packed dirt.  Several large boulders
-are embedded into the dirt, and young trees provide some shade.  In the
-southwest corner the ground slopes upward into a large mound which is
-perhaps five feet high at the wall.
-</roomdescription>
-      <flags>22</flags>
-      <sector>City</sector>
-      <special>NONE</special>
-    </roombasic>
-    <exit direction="north" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="29102">
-      <description>&lt;NONE&gt;</description>
-    </exit>
-    <exit direction="south" keyword="wood door" exitinfo="1" keynum="0" toroom="29106">
-      <description>wood door
-</description>
-    </exit>
-  </room>
-  <room>
-    <roombasic title="Eastern Training Hall" vnum="29104" zone="290">
-      <roomdescription>As you enter the training hall from the courtyard you are struck by the
-sheer size of the room.  It runs the full width and length of the eastern 
-section of the building.  The floor is bare hardwood, and the walls are
-covered in a white panelling, with small blue flecks throughout it.   The
-majority of the western wall  is taken up with large windows that look out
-onto the courtyard.  Though the door to the courtyard is also on this wall.
-The  eastern wall also has a number of windows and  interspersed
-between them, a myriad of ceremonial weapons are mounted.   The 
-northern and southern walls   have weapons racks mounted upon them.
-The southern wall is the home of wooden practise lathes, while the racks
-on the northern wall hold a large variety of steel swords.
-</roomdescription>
-      <flags>30</flags>
-      <sector>Inside</sector>
-      <special>NONE</special>
-    </roombasic>
-    <exit direction="west" keyword="&lt;NONE&gt;" exitinfo="3" keynum="0" toroom="29102">
-      <description>&lt;NONE&gt;</description>
-    </exit>
-  </room>
-  <room>
-    <roombasic title="Western Training Hall" vnum="29105" zone="290">
-      <roomdescription>As you enter the training hall from the courtyard you are struck by the 
-sheer size of the room.  It runs the full width and length of the western 
-section of the building.  The floor is bare hardwood, and the walls are
-covered in a white panelling, with small blue flecks throughout it.   The
-majority of the eastern wall  is taken up with large windows that look out 
-onto the courtyard.  Though the door to the courtyard is also on this wall.
-The  western wall also has a number of windows, hanging between the
-windows are large brightly coloured flags representing many of the
-different nations of the world.  The  northern and southern walls  have
-weapons racks mounted upon them.  The southern wall is the home of 
-wooden practise lathes, while the racks on the northern wall hold a large
-variety of steel swords.
-</roomdescription>
-      <flags>30</flags>
-      <sector>Inside</sector>
-      <special>NONE</special>
-    </roombasic>
-    <exit direction="east" keyword="&lt;NONE&gt;" exitinfo="3" keynum="0" toroom="29102">
-      <description>&lt;NONE&gt;</description>
-    </exit>
-  </room>
-  <room>
-    <roombasic title="\c13Southern Training Hall\c00" vnum="29106" zone="290">
-      <roomdescription>As you enter the training hall from the courtyard you are struck by the
-sheer size of the room.  It runs the full width and length of the southern 
-section of the building.  The floor is bare hardwood, and the walls are
-covered in a white panelling, with small blue flecks throughout it.   The
-majority of the northern wall  is taken up with large windows that look out
-onto the courtyard.  Though the door to the courtyard is also on this wall.
-The  southern wall also has a number of windows,  between the windows
-you find large pieces of heavy paper tacked to the wall with diagrams of 
-many different sword forms drawn on them in heavy black ink.  The 
-eastern and western walls   have weapons racks mounted upon them.
-The western wall is the home of wooden practise lathes, while the racks
-on the eastern wall hold a large variety of steel swords.
-</roomdescription>
-      <flags>30</flags>
-      <sector>Inside</sector>
-      <special>NONE</special>
-    </roombasic>
-    <exit direction="north" keyword="wood door" exitinfo="1" keynum="0" toroom="29103">
-      <description>wood door
-</description>
-    </exit>
-  </room>
-  <room>
-    <roombasic title="\c13Dining Hall\c00" vnum="29107" zone="290">
-      <roomdescription>This wide room takes up most of the northern portion of the second 
-story.  The floor is tiled in the same blue and white as the reception
-area below.  Several large, round wooden tables are scattered about
-the room, each with 6 or 8 wooden chairs with padded seats around it.
-Windows to the south look out over the courtyard.   The white-panelled
-walls are hung with tapestries depicting scenes of battle.  In the southeast
-and southwest corners of the room are carved wooden doors leading 
-further into the building.  In the northwest corner is the staircase leading
-down to the reception area on the first floor.
-</roomdescription>
-      <flags>30</flags>
-      <sector>Inside</sector>
-      <special>NONE</special>
-    </roombasic>
-    <exit direction="down" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="29100">
-      <description>&lt;NONE&gt;</description>
-    </exit>
-    <exit direction="southeast" keyword="wood door" exitinfo="3" keynum="0" toroom="29108">
-      <description>wood door
-</description>
-    </exit>
-    <exit direction="southwest" keyword="wood door" exitinfo="3" keynum="0" toroom="29110">
-      <description>wood door
-</description>
-    </exit>
-  </room>
-  <room>
-    <roombasic title="\c13Eastern Hallway\c00" vnum="29108" zone="290">
-      <roomdescription>This narrow hallway runs down the length of the eastern section of 
-the building.  The floor is covered in a dark blue carpet and the walls 
-are painted a slightly muted white.  On either side of  the hallway you 
-see a heavy wooden door.  The doorway to the east is plain, however 
-there is a small brass plaque on the western door that reads  
-&quot;Master&apos;s Office&quot;.
-</roomdescription>
-      <flags>30</flags>
-      <sector>Inside</sector>
-      <special>NONE</special>
-    </roombasic>
-    <exit direction="east" keyword="wood door" exitinfo="3" keynum="0" toroom="29112">
-      <description>wood door
-</description>
-    </exit>
-    <exit direction="south" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="29109">
-      <description>&lt;NONE&gt;</description>
-    </exit>
-    <exit direction="west" keyword="wood door" exitinfo="3" keynum="0" toroom="29118">
-      <description>wood door
-</description>
-    </exit>
-    <exit direction="northwest" keyword="wood door" exitinfo="3" keynum="0" toroom="29107">
-      <description>wood door
-</description>
-    </exit>
-  </room>
-  <room>
-    <roombasic title="\c13Eastern Hallway\c00" vnum="29109" zone="290">
-      <roomdescription>This narrow hallway runs down the length of the eastern section of 
-the building.  The floor is covered in a dark blue carpet and the walls 
-are painted a slightly muted white.  On either side of  the hallway you see
-a heavy wooden door.  Both doors here are plain.  There is also a heavy
-wooden door to the southwest, with a small  brass plaque on it which
-reads &quot;Lecture Hall&quot;.
-</roomdescription>
-      <flags>30</flags>
-      <sector>Inside</sector>
-      <special>NONE</special>
-    </roombasic>
-    <exit direction="north" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="29108">
-      <description>&lt;NONE&gt;</description>
-    </exit>
-    <exit direction="east" keyword="wood door" exitinfo="1" keynum="0" toroom="29113">
-      <description>wood door
-</description>
-    </exit>
-    <exit direction="west" keyword="wood door" exitinfo="1" keynum="0" toroom="29119">
-      <description>wood door
-</description>
-    </exit>
-    <exit direction="southwest" keyword="wood door" exitinfo="3" keynum="0" toroom="29120">
-      <description>wood door
-</description>
-    </exit>
-  </room>
-  <room>
-    <roombasic title="\c13Western Hallway\c00" vnum="29110" zone="290">
-      <roomdescription>This narrow hallway runs down the length of the western section of
-the building.  The floor is covered in a dark blue carpet and the walls
-are painted a slightly muted white.   On either side of  the hallway you 
-see a  plain,  heavy,  wooden door.
-</roomdescription>
-      <flags>30</flags>
-      <sector>Inside</sector>
-      <special>NONE</special>
-    </roombasic>
-    <exit direction="east" keyword="wood door" exitinfo="3" keynum="0" toroom="29116">
-      <description>wood door
-</description>
-    </exit>
-    <exit direction="south" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="29111">
-      <description>&lt;NONE&gt;</description>
-    </exit>
-    <exit direction="west" keyword="wood door" exitinfo="3" keynum="0" toroom="29114">
-      <description>wood door
-</description>
-    </exit>
-    <exit direction="northeast" keyword="wood door" exitinfo="3" keynum="0" toroom="29107">
-      <description>wood door
-</description>
-    </exit>
-  </room>
-  <room>
-    <roombasic title="\c13Western Hallway\c00" vnum="29111" zone="290">
-      <roomdescription>This narrow hallway runs down the length of the western section of 
-the building.  The floor is covered in a dark blue carpet and the walls 
-are painted a slightly muted white.  On either side of  the hallway you see 
-a heavy wooden door.  Both doors here are plain.  There is also a heavy 
-wooden door to the southeast, with a small  brass plaque on it which
-reads &quot;Lecture Hall&quot;.
-</roomdescription>
-      <flags>30</flags>
-      <sector>Inside</sector>
-      <special>NONE</special>
-    </roombasic>
-    <exit direction="north" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="29110">
-      <description>&lt;NONE&gt;</description>
-    </exit>
-    <exit direction="east" keyword="wood door" exitinfo="3" keynum="0" toroom="29117">
-      <description>wood door
-</description>
-    </exit>
-    <exit direction="west" keyword="wood door" exitinfo="3" keynum="0" toroom="29115">
-      <description>wood door
-</description>
-    </exit>
-    <exit direction="southeast" keyword="wood door" exitinfo="3" keynum="0" toroom="29120">
-      <description>wood door
-</description>
-    </exit>
-  </room>
-  <room>
-    <roombasic title="\c13Morrigan and Gerbain&apos;s Bedroom\c00" vnum="29112" zone="290">
-      <roomdescription>You are in an unfinished room.
-</roomdescription>
-      <flags>28</flags>
-      <sector>Inside</sector>
-      <special>NONE</special>
-    </roombasic>
-    <exit direction="south" keyword="hidden door" exitinfo="19" keynum="0" toroom="29113">
-      <description>hidden door
-</description>
-    </exit>
-    <exit direction="west" keyword="wood door" exitinfo="3" keynum="0" toroom="29108">
-      <description>wood door
-</description>
-    </exit>
-  </room>
-  <room>
-    <roombasic title="\c13Evelyn&apos;s Bedroom\c00" vnum="29113" zone="290">
-      <roomdescription>You are in an unfinished room.
-</roomdescription>
-      <flags>28</flags>
-      <sector>Inside</sector>
-      <special>NONE</special>
-    </roombasic>
-    <exit direction="north" keyword="hidden door" exitinfo="19" keynum="0" toroom="29112">
-      <description>hidden door
-</description>
-    </exit>
-    <exit direction="west" keyword="wood door" exitinfo="1" keynum="0" toroom="29109">
-      <description>wood door
-</description>
-    </exit>
-  </room>
-  <room>
-    <roombasic title="\c13Student Bedroom\c00" vnum="29114" zone="290">
-      <roomdescription>Opening the heavy wooden door to this bedroom,  you see two plain 
-wooden beds, soft mattresses fluffed upon the frames.  There are also
-two tall  wardrobes in the same dark, rich wood as the bedframes.  A 
-small  writing desk and a chair sit off to the side of the room.  A looking
-glass hangs on the west wall between two windows which look out over 
-the street.
-</roomdescription>
-      <flags>30</flags>
-      <sector>Inside</sector>
-      <special>NONE</special>
-    </roombasic>
-    <exit direction="east" keyword="wood door" exitinfo="3" keynum="0" toroom="29110">
-      <description>wood door
-</description>
-    </exit>
-  </room>
-  <room>
-    <roombasic title="\c13Student Bedroom\c00" vnum="29115" zone="290">
-      <roomdescription>Opening the heavy wooden door to this bedroom,  you see two plain 
-wooden beds, soft mattresses fluffed upon the frames.  There are also 
-two tall  wardrobes in the same dark, rich wood as the bedframes.  A 
-small writing desk and a chair sit off to the side of the room.  A looking 
-glass hangs on the west wall between two windows which look out over 
-the street.
-</roomdescription>
-      <flags>30</flags>
-      <sector>Inside</sector>
-      <special>NONE</special>
-    </roombasic>
-    <exit direction="east" keyword="wood door" exitinfo="3" keynum="0" toroom="29111">
-      <description>wood door
-</description>
-    </exit>
-  </room>
-  <room>
-    <roombasic title="\c13Student Bedroom\c00" vnum="29116" zone="290">
-      <roomdescription>Opening the heavy wooden door to this bedroom,  you see two plain 
-wooden beds, soft mattresses fluffed upon the frames.  There are also 
-two tall  wardrobes in the same dark, rich wood as the bedframes.  A 
-small writing desk and a chair sit off to the side of the room.  A looking 
-glass hangs on the east wall between two windows which look out over 
-the courtyard.
-</roomdescription>
-      <flags>30</flags>
-      <sector>Inside</sector>
-      <special>NONE</special>
-    </roombasic>
-    <exit direction="west" keyword="wood door" exitinfo="3" keynum="0" toroom="29110">
-      <description>wood door
-</description>
-    </exit>
-  </room>
-  <room>
-    <roombasic title="\c13Student Bedroom\c00" vnum="29117" zone="290">
-      <roomdescription>Opening the heavy wooden door to this bedroom,  you see two plain 
-wooden beds, soft mattresses fluffed upon the frames.  There are also 
-two tall  wardrobes in the same dark, rich wood as the bedframes.  A 
-small writing desk and a chair sit off to the side of the room.  A looking
-glass hangs on the east wall between two windows which look out over 
-the courtyard.
-</roomdescription>
-      <flags>30</flags>
-      <sector>Inside</sector>
-      <special>NONE</special>
-    </roombasic>
-    <exit direction="west" keyword="wood door" exitinfo="3" keynum="0" toroom="29111">
-      <description>wood door
-</description>
-    </exit>
-  </room>
-  <room>
-    <roombasic title="\c13Hordin&apos;s Office\c00" vnum="29118" zone="290">
-      <roomdescription>Entering the Masters office the first thing your eyes fall to is a large  
-desk, made from a deep rich wood,  it has been polished until it gleams in 
-the sunlight. Sitting on the carpeted floor beside the desk is a large carved 
-wooden box in the same rich toned wood.  There are a few papers on
-the desk, and a quill and inkpot, otherwise it is bare.  Behind the desk is 
-a large, comfortable looking armchair.  It is upholstered in a dark wine 
-coloured leather, and the wood is the same gleaming dark rich tone 
-as the desk.  The walls are painted the same muted white as the hallways, 
-and the dark blue carpet from the hallway runs into this room as well.   The 
-walls are bare except for a dark wooden rack  on the wall behind the desk, 
-where a perfectly polished katana rests.  A large window, with a window 
-seat looks out over the courtyard,  and there is a tall bookshelf on the 
-east wall right near the door to the hallway.  On the southern wall hangs 
-a tapestry of a tall man, wearing full body armour carrying a large sword 
-in his right hand.  Beside the tapestry is another large wooden door.
-</roomdescription>
-      <flags>30</flags>
-      <sector>Inside</sector>
-      <special>NONE</special>
-    </roombasic>
-    <exit direction="east" keyword="wood door" exitinfo="3" keynum="0" toroom="29108">
-      <description>wood door
-</description>
-    </exit>
-    <exit direction="south" keyword="wood door" exitinfo="3" keynum="0" toroom="29119">
-      <description>wood door
-</description>
-    </exit>
-  </room>
-  <room>
-    <roombasic title="\c13Hordin&apos;s Bedroom\c00" vnum="29119" zone="290">
-      <roomdescription>This room seems out of place compared to the sober, elegant tone of
-the rest of the building. The walls are draped with brightly colored
-draping, giving the room an almost playful air. A large, finely made
-oaken bed sits under a large window opposite the door. Looking to the 
-right, you see a small wardrobe closet sitting next to a washstand. The
-mirror over the washstand reflects the sunlight streaming from the window 
-into the rest of the room.   There are two doors in the room,  one on the 
-north wall and another on the east wall.  
-</roomdescription>
-      <flags>28</flags>
-      <sector>Inside</sector>
-      <special>NONE</special>
-    </roombasic>
-    <exit direction="north" keyword="wood door" exitinfo="3" keynum="0" toroom="29118">
-      <description>wood door
-</description>
-    </exit>
-    <exit direction="east" keyword="wood door" exitinfo="1" keynum="0" toroom="29109">
-      <description>wood door
-</description>
-    </exit>
-  </room>
-  <room>
-    <roombasic title="\c13Lecture hall\c00" vnum="29120" zone="290">
-      <roomdescription>This large room is dominated by a massive rectangular table.  The table 
-is surrounded by a dozen hard wooden chairs.  The floor is bare hardwood,
-and the walls are covered in white panelling which is flecked randomly with
-light blue.   A large map of the continent is tacked to the wall  behind the
-head of the table.  The windows on the north wall look out over the 
-courtyard, while the windows on the south look out into the city.  There
-are two large wooden doors in the room, one in the northwest corner 
-and the other in the northeast corner.
-</roomdescription>
-      <flags>30</flags>
-      <sector>Inside</sector>
-      <special>NONE</special>
-    </roombasic>
-    <exit direction="northeast" keyword="wood door" exitinfo="3" keynum="0" toroom="29109">
-      <description>wood door
-</description>
-    </exit>
-    <exit direction="northwest" keyword="wood door" exitinfo="3" keynum="0" toroom="29111">
-      <description>wood door
-</description>
     </exit>
   </room>
 </rooms>

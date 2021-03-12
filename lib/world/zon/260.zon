@@ -1,610 +1,630 @@
 <?xml version="1.0"?>
 <zone vnum="260" lifespan="10" top="26299" mode="2" lock="no">
   <name>Illian</name>
-  <resetcmds numberof="152">
+  <resetcmds numberof="157">
+    <cmd command="ReadObject" ifflag="no">
+      <args arg1="26103" arg2="1" arg3="26103"/>
+      <line lineno="7"/>
+    </cmd>
+    <cmd command="SetStateOfDoor" ifflag="no">
+      <args arg1="26197" arg2="2" arg3="1"/>
+      <line lineno="11"/>
+    </cmd>
+    <cmd command="SetStateOfDoor" ifflag="no">
+      <args arg1="26196" arg2="0" arg3="1"/>
+      <line lineno="15"/>
+    </cmd>
+    <cmd command="SetStateOfDoor" ifflag="no">
+      <args arg1="26198" arg2="2" arg3="1"/>
+      <line lineno="19"/>
+    </cmd>
+    <cmd command="SetStateOfDoor" ifflag="no">
+      <args arg1="26199" arg2="0" arg3="1"/>
+      <line lineno="23"/>
+    </cmd>
     <cmd command="SetStateOfDoor" ifflag="no">
       <args arg1="26137" arg2="2" arg3="1"/>
-      <line lineno="7"/>
+      <line lineno="27"/>
     </cmd>
     <cmd command="ReadObject" ifflag="no">
       <args arg1="26072" arg2="1" arg3="26137"/>
-      <line lineno="11"/>
+      <line lineno="31"/>
     </cmd>
     <cmd command="ReadMobile" ifflag="no">
       <args arg1="26020" arg2="1" arg3="26137"/>
-      <line lineno="15"/>
+      <line lineno="35"/>
     </cmd>
     <cmd command="Obj2Mob" ifflag="yes">
       <args arg1="26037" arg2="100" arg3="0"/>
-      <line lineno="19"/>
+      <line lineno="39"/>
     </cmd>
     <cmd command="Obj2Mob" ifflag="yes">
       <args arg1="26038" arg2="100" arg3="0"/>
-      <line lineno="23"/>
+      <line lineno="43"/>
     </cmd>
     <cmd command="Obj2Mob" ifflag="yes">
       <args arg1="26039" arg2="100" arg3="0"/>
-      <line lineno="27"/>
+      <line lineno="47"/>
     </cmd>
     <cmd command="Obj2Mob" ifflag="yes">
       <args arg1="26040" arg2="100" arg3="0"/>
-      <line lineno="31"/>
+      <line lineno="51"/>
     </cmd>
     <cmd command="Obj2Mob" ifflag="yes">
       <args arg1="26042" arg2="100" arg3="0"/>
-      <line lineno="35"/>
-    </cmd>
-    <cmd command="SetStateOfDoor" ifflag="no">
-      <args arg1="26080" arg2="2" arg3="1"/>
-      <line lineno="39"/>
-    </cmd>
-    <cmd command="SetStateOfDoor" ifflag="no">
-      <args arg1="26048" arg2="3" arg3="1"/>
-      <line lineno="43"/>
-    </cmd>
-    <cmd command="SetStateOfDoor" ifflag="no">
-      <args arg1="26060" arg2="0" arg3="1"/>
-      <line lineno="47"/>
-    </cmd>
-    <cmd command="SetStateOfDoor" ifflag="no">
-      <args arg1="26046" arg2="2" arg3="1"/>
-      <line lineno="51"/>
-    </cmd>
-    <cmd command="SetStateOfDoor" ifflag="no">
-      <args arg1="26046" arg2="1" arg3="1"/>
       <line lineno="55"/>
     </cmd>
     <cmd command="SetStateOfDoor" ifflag="no">
-      <args arg1="26015" arg2="2" arg3="1"/>
+      <args arg1="26080" arg2="2" arg3="1"/>
       <line lineno="59"/>
+    </cmd>
+    <cmd command="SetStateOfDoor" ifflag="no">
+      <args arg1="26048" arg2="3" arg3="1"/>
+      <line lineno="63"/>
+    </cmd>
+    <cmd command="SetStateOfDoor" ifflag="no">
+      <args arg1="26060" arg2="0" arg3="1"/>
+      <line lineno="67"/>
+    </cmd>
+    <cmd command="SetStateOfDoor" ifflag="no">
+      <args arg1="26046" arg2="2" arg3="1"/>
+      <line lineno="71"/>
+    </cmd>
+    <cmd command="SetStateOfDoor" ifflag="no">
+      <args arg1="26046" arg2="1" arg3="1"/>
+      <line lineno="75"/>
+    </cmd>
+    <cmd command="SetStateOfDoor" ifflag="no">
+      <args arg1="26015" arg2="2" arg3="1"/>
+      <line lineno="79"/>
     </cmd>
     <cmd command="ReadMobile" ifflag="no">
       <args arg1="26006" arg2="1" arg3="26015"/>
-      <line lineno="63"/>
+      <line lineno="83"/>
     </cmd>
     <cmd command="Obj2Mob" ifflag="yes">
       <args arg1="26000" arg2="100" arg3="0"/>
-      <line lineno="67"/>
+      <line lineno="87"/>
     </cmd>
     <cmd command="Obj2Mob" ifflag="yes">
       <args arg1="26001" arg2="100" arg3="0"/>
-      <line lineno="71"/>
+      <line lineno="91"/>
     </cmd>
     <cmd command="Obj2Mob" ifflag="yes">
       <args arg1="26002" arg2="100" arg3="0"/>
-      <line lineno="75"/>
+      <line lineno="95"/>
     </cmd>
     <cmd command="Obj2Mob" ifflag="yes">
       <args arg1="26003" arg2="100" arg3="0"/>
-      <line lineno="79"/>
-    </cmd>
-    <cmd command="SetStateOfDoor" ifflag="no">
-      <args arg1="26029" arg2="0" arg3="1"/>
-      <line lineno="83"/>
-    </cmd>
-    <cmd command="ReadMobile" ifflag="no">
-      <args arg1="26016" arg2="10" arg3="26029"/>
-      <line lineno="87"/>
-    </cmd>
-    <cmd command="SetStateOfDoor" ifflag="no">
-      <args arg1="26030" arg2="0" arg3="1"/>
-      <line lineno="91"/>
-    </cmd>
-    <cmd command="SetStateOfDoor" ifflag="no">
-      <args arg1="26031" arg2="0" arg3="1"/>
-      <line lineno="95"/>
-    </cmd>
-    <cmd command="SetStateOfDoor" ifflag="no">
-      <args arg1="26059" arg2="0" arg3="1"/>
       <line lineno="99"/>
     </cmd>
     <cmd command="SetStateOfDoor" ifflag="no">
-      <args arg1="26001" arg2="2" arg3="1"/>
+      <args arg1="26029" arg2="0" arg3="1"/>
       <line lineno="103"/>
     </cmd>
-    <cmd command="SetStateOfDoor" ifflag="no">
-      <args arg1="26025" arg2="2" arg3="1"/>
+    <cmd command="ReadMobile" ifflag="no">
+      <args arg1="26016" arg2="10" arg3="26029"/>
       <line lineno="107"/>
     </cmd>
     <cmd command="SetStateOfDoor" ifflag="no">
-      <args arg1="26025" arg2="0" arg3="1"/>
+      <args arg1="26030" arg2="0" arg3="1"/>
       <line lineno="111"/>
     </cmd>
     <cmd command="SetStateOfDoor" ifflag="no">
-      <args arg1="26185" arg2="0" arg3="1"/>
+      <args arg1="26031" arg2="0" arg3="1"/>
       <line lineno="115"/>
+    </cmd>
+    <cmd command="SetStateOfDoor" ifflag="no">
+      <args arg1="26059" arg2="0" arg3="1"/>
+      <line lineno="119"/>
+    </cmd>
+    <cmd command="SetStateOfDoor" ifflag="no">
+      <args arg1="26001" arg2="2" arg3="1"/>
+      <line lineno="123"/>
+    </cmd>
+    <cmd command="SetStateOfDoor" ifflag="no">
+      <args arg1="26025" arg2="2" arg3="1"/>
+      <line lineno="127"/>
+    </cmd>
+    <cmd command="SetStateOfDoor" ifflag="no">
+      <args arg1="26025" arg2="0" arg3="1"/>
+      <line lineno="131"/>
+    </cmd>
+    <cmd command="SetStateOfDoor" ifflag="no">
+      <args arg1="26185" arg2="0" arg3="1"/>
+      <line lineno="135"/>
     </cmd>
     <cmd command="ReadMobile" ifflag="no">
       <args arg1="26022" arg2="1" arg3="26073"/>
-      <line lineno="119"/>
-    </cmd>
-    <cmd command="Obj2Mob" ifflag="yes">
-      <args arg1="26063" arg2="15000" arg3="0"/>
-      <line lineno="123"/>
-    </cmd>
-    <cmd command="Obj2Mob" ifflag="yes">
-      <args arg1="26062" arg2="15000" arg3="0"/>
-      <line lineno="127"/>
-    </cmd>
-    <cmd command="Obj2Mob" ifflag="yes">
-      <args arg1="26064" arg2="15000" arg3="0"/>
-      <line lineno="131"/>
-    </cmd>
-    <cmd command="ReadMobile" ifflag="no">
-      <args arg1="26021" arg2="1" arg3="26072"/>
-      <line lineno="135"/>
-    </cmd>
-    <cmd command="Obj2Mob" ifflag="yes">
-      <args arg1="26058" arg2="1500" arg3="0"/>
       <line lineno="139"/>
     </cmd>
     <cmd command="Obj2Mob" ifflag="yes">
-      <args arg1="26059" arg2="1500" arg3="0"/>
+      <args arg1="26063" arg2="15000" arg3="0"/>
       <line lineno="143"/>
     </cmd>
     <cmd command="Obj2Mob" ifflag="yes">
-      <args arg1="26060" arg2="1500" arg3="0"/>
+      <args arg1="26062" arg2="15000" arg3="0"/>
       <line lineno="147"/>
     </cmd>
     <cmd command="Obj2Mob" ifflag="yes">
-      <args arg1="26061" arg2="1500" arg3="0"/>
+      <args arg1="26064" arg2="15000" arg3="0"/>
       <line lineno="151"/>
     </cmd>
     <cmd command="ReadMobile" ifflag="no">
-      <args arg1="26011" arg2="8" arg3="26098"/>
+      <args arg1="26021" arg2="1" arg3="26072"/>
       <line lineno="155"/>
     </cmd>
-    <cmd command="EquipMobWithObj" ifflag="yes">
-      <args arg1="26015" arg2="100" arg3="11"/>
+    <cmd command="Obj2Mob" ifflag="yes">
+      <args arg1="26058" arg2="1500" arg3="0"/>
       <line lineno="159"/>
     </cmd>
-    <cmd command="EquipMobWithObj" ifflag="yes">
-      <args arg1="26016" arg2="100" arg3="10"/>
+    <cmd command="Obj2Mob" ifflag="yes">
+      <args arg1="26059" arg2="1500" arg3="0"/>
       <line lineno="163"/>
     </cmd>
-    <cmd command="EquipMobWithObj" ifflag="yes">
-      <args arg1="26017" arg2="100" arg3="7"/>
+    <cmd command="Obj2Mob" ifflag="yes">
+      <args arg1="26060" arg2="1500" arg3="0"/>
       <line lineno="167"/>
     </cmd>
-    <cmd command="EquipMobWithObj" ifflag="yes">
-      <args arg1="26018" arg2="100" arg3="6"/>
+    <cmd command="Obj2Mob" ifflag="yes">
+      <args arg1="26061" arg2="1500" arg3="0"/>
       <line lineno="171"/>
     </cmd>
-    <cmd command="EquipMobWithObj" ifflag="yes">
-      <args arg1="26019" arg2="100" arg3="5"/>
+    <cmd command="ReadMobile" ifflag="no">
+      <args arg1="26011" arg2="8" arg3="26098"/>
       <line lineno="175"/>
     </cmd>
     <cmd command="EquipMobWithObj" ifflag="yes">
-      <args arg1="26020" arg2="100" arg3="16"/>
-      <line lineno="179"/>
-    </cmd>
-    <cmd command="ReadMobile" ifflag="no">
-      <args arg1="26011" arg2="8" arg3="26097"/>
-      <line lineno="183"/>
-    </cmd>
-    <cmd command="EquipMobWithObj" ifflag="yes">
       <args arg1="26015" arg2="100" arg3="11"/>
-      <line lineno="187"/>
+      <line lineno="179"/>
     </cmd>
     <cmd command="EquipMobWithObj" ifflag="yes">
       <args arg1="26016" arg2="100" arg3="10"/>
-      <line lineno="191"/>
+      <line lineno="183"/>
     </cmd>
     <cmd command="EquipMobWithObj" ifflag="yes">
       <args arg1="26017" arg2="100" arg3="7"/>
-      <line lineno="195"/>
+      <line lineno="187"/>
     </cmd>
     <cmd command="EquipMobWithObj" ifflag="yes">
       <args arg1="26018" arg2="100" arg3="6"/>
-      <line lineno="199"/>
+      <line lineno="191"/>
     </cmd>
     <cmd command="EquipMobWithObj" ifflag="yes">
       <args arg1="26019" arg2="100" arg3="5"/>
-      <line lineno="203"/>
+      <line lineno="195"/>
     </cmd>
     <cmd command="EquipMobWithObj" ifflag="yes">
       <args arg1="26020" arg2="100" arg3="16"/>
+      <line lineno="199"/>
+    </cmd>
+    <cmd command="ReadMobile" ifflag="no">
+      <args arg1="26011" arg2="8" arg3="26097"/>
+      <line lineno="203"/>
+    </cmd>
+    <cmd command="EquipMobWithObj" ifflag="yes">
+      <args arg1="26015" arg2="100" arg3="11"/>
       <line lineno="207"/>
+    </cmd>
+    <cmd command="EquipMobWithObj" ifflag="yes">
+      <args arg1="26016" arg2="100" arg3="10"/>
+      <line lineno="211"/>
+    </cmd>
+    <cmd command="EquipMobWithObj" ifflag="yes">
+      <args arg1="26017" arg2="100" arg3="7"/>
+      <line lineno="215"/>
+    </cmd>
+    <cmd command="EquipMobWithObj" ifflag="yes">
+      <args arg1="26018" arg2="100" arg3="6"/>
+      <line lineno="219"/>
+    </cmd>
+    <cmd command="EquipMobWithObj" ifflag="yes">
+      <args arg1="26019" arg2="100" arg3="5"/>
+      <line lineno="223"/>
+    </cmd>
+    <cmd command="EquipMobWithObj" ifflag="yes">
+      <args arg1="26020" arg2="100" arg3="16"/>
+      <line lineno="227"/>
     </cmd>
     <cmd command="SetStateOfDoor" ifflag="no">
       <args arg1="26039" arg2="0" arg3="1"/>
-      <line lineno="211"/>
+      <line lineno="231"/>
     </cmd>
     <cmd command="ReadMobile" ifflag="no">
       <args arg1="26011" arg2="1" arg3="26129"/>
-      <line lineno="215"/>
-    </cmd>
-    <cmd command="Obj2Mob" ifflag="yes">
-      <args arg1="26031" arg2="1" arg3="0"/>
-      <line lineno="219"/>
-    </cmd>
-    <cmd command="Obj2Mob" ifflag="yes">
-      <args arg1="26032" arg2="1" arg3="0"/>
-      <line lineno="223"/>
-    </cmd>
-    <cmd command="Obj2Mob" ifflag="yes">
-      <args arg1="26033" arg2="100" arg3="0"/>
-      <line lineno="227"/>
-    </cmd>
-    <cmd command="Obj2Mob" ifflag="yes">
-      <args arg1="26034" arg2="100" arg3="0"/>
-      <line lineno="231"/>
-    </cmd>
-    <cmd command="Obj2Mob" ifflag="yes">
-      <args arg1="26035" arg2="100" arg3="0"/>
       <line lineno="235"/>
     </cmd>
     <cmd command="Obj2Mob" ifflag="yes">
-      <args arg1="26036" arg2="100" arg3="0"/>
+      <args arg1="26031" arg2="1" arg3="0"/>
       <line lineno="239"/>
     </cmd>
-    <cmd command="EquipMobWithObj" ifflag="yes">
-      <args arg1="26029" arg2="100" arg3="16"/>
+    <cmd command="Obj2Mob" ifflag="yes">
+      <args arg1="26032" arg2="1" arg3="0"/>
       <line lineno="243"/>
     </cmd>
-    <cmd command="SetStateOfDoor" ifflag="no">
-      <args arg1="26129" arg2="0" arg3="1"/>
+    <cmd command="Obj2Mob" ifflag="yes">
+      <args arg1="26033" arg2="100" arg3="0"/>
       <line lineno="247"/>
     </cmd>
-    <cmd command="SetStateOfDoor" ifflag="no">
-      <args arg1="26050" arg2="2" arg3="1"/>
+    <cmd command="Obj2Mob" ifflag="yes">
+      <args arg1="26034" arg2="100" arg3="0"/>
       <line lineno="251"/>
     </cmd>
-    <cmd command="ReadMobile" ifflag="no">
-      <args arg1="26019" arg2="1" arg3="26050"/>
+    <cmd command="Obj2Mob" ifflag="yes">
+      <args arg1="26035" arg2="100" arg3="0"/>
       <line lineno="255"/>
     </cmd>
     <cmd command="Obj2Mob" ifflag="yes">
-      <args arg1="26030" arg2="100" arg3="0"/>
+      <args arg1="26036" arg2="100" arg3="0"/>
       <line lineno="259"/>
     </cmd>
-    <cmd command="Obj2Mob" ifflag="yes">
-      <args arg1="26054" arg2="100" arg3="0"/>
+    <cmd command="EquipMobWithObj" ifflag="yes">
+      <args arg1="26029" arg2="100" arg3="16"/>
       <line lineno="263"/>
     </cmd>
-    <cmd command="Obj2Mob" ifflag="yes">
-      <args arg1="26055" arg2="100" arg3="0"/>
+    <cmd command="SetStateOfDoor" ifflag="no">
+      <args arg1="26129" arg2="0" arg3="1"/>
       <line lineno="267"/>
     </cmd>
-    <cmd command="Obj2Mob" ifflag="yes">
-      <args arg1="26056" arg2="100" arg3="0"/>
+    <cmd command="SetStateOfDoor" ifflag="no">
+      <args arg1="26050" arg2="2" arg3="1"/>
       <line lineno="271"/>
     </cmd>
     <cmd command="ReadMobile" ifflag="no">
-      <args arg1="26010" arg2="30" arg3="26006"/>
+      <args arg1="26019" arg2="1" arg3="26050"/>
       <line lineno="275"/>
+    </cmd>
+    <cmd command="Obj2Mob" ifflag="yes">
+      <args arg1="26030" arg2="100" arg3="0"/>
+      <line lineno="279"/>
+    </cmd>
+    <cmd command="Obj2Mob" ifflag="yes">
+      <args arg1="26054" arg2="100" arg3="0"/>
+      <line lineno="283"/>
+    </cmd>
+    <cmd command="Obj2Mob" ifflag="yes">
+      <args arg1="26055" arg2="100" arg3="0"/>
+      <line lineno="287"/>
+    </cmd>
+    <cmd command="Obj2Mob" ifflag="yes">
+      <args arg1="26056" arg2="100" arg3="0"/>
+      <line lineno="291"/>
+    </cmd>
+    <cmd command="ReadMobile" ifflag="no">
+      <args arg1="26010" arg2="30" arg3="26006"/>
+      <line lineno="295"/>
     </cmd>
     <cmd command="ReadObject" ifflag="no">
       <args arg1="26052" arg2="1" arg3="26006"/>
-      <line lineno="279"/>
+      <line lineno="299"/>
     </cmd>
     <cmd command="ReadMobile" ifflag="no">
       <args arg1="26004" arg2="15" arg3="26120"/>
-      <line lineno="283"/>
+      <line lineno="303"/>
     </cmd>
     <cmd command="EquipMobWithObj" ifflag="yes">
       <args arg1="26028" arg2="100" arg3="16"/>
-      <line lineno="287"/>
+      <line lineno="307"/>
     </cmd>
     <cmd command="ReadMobile" ifflag="no">
       <args arg1="26004" arg2="15" arg3="26089"/>
-      <line lineno="291"/>
+      <line lineno="311"/>
     </cmd>
     <cmd command="EquipMobWithObj" ifflag="yes">
       <args arg1="26028" arg2="100" arg3="16"/>
-      <line lineno="295"/>
-    </cmd>
-    <cmd command="ReadMobile" ifflag="no">
-      <args arg1="26017" arg2="1" arg3="26131"/>
-      <line lineno="299"/>
-    </cmd>
-    <cmd command="Obj2Mob" ifflag="yes">
-      <args arg1="26023" arg2="100" arg3="0"/>
-      <line lineno="303"/>
-    </cmd>
-    <cmd command="Obj2Mob" ifflag="yes">
-      <args arg1="26024" arg2="100" arg3="0"/>
-      <line lineno="307"/>
-    </cmd>
-    <cmd command="Obj2Mob" ifflag="yes">
-      <args arg1="26025" arg2="100" arg3="0"/>
-      <line lineno="311"/>
-    </cmd>
-    <cmd command="ReadObject" ifflag="no">
-      <args arg1="26021" arg2="1" arg3="26100"/>
       <line lineno="315"/>
     </cmd>
     <cmd command="ReadMobile" ifflag="no">
-      <args arg1="26016" arg2="10" arg3="26110"/>
+      <args arg1="26017" arg2="1" arg3="26131"/>
       <line lineno="319"/>
     </cmd>
-    <cmd command="ReadMobile" ifflag="no">
-      <args arg1="26016" arg2="10" arg3="26220"/>
+    <cmd command="Obj2Mob" ifflag="yes">
+      <args arg1="26023" arg2="100" arg3="0"/>
       <line lineno="323"/>
     </cmd>
-    <cmd command="ReadMobile" ifflag="no">
-      <args arg1="26016" arg2="10" arg3="26214"/>
+    <cmd command="Obj2Mob" ifflag="yes">
+      <args arg1="26024" arg2="100" arg3="0"/>
       <line lineno="327"/>
     </cmd>
-    <cmd command="SetStateOfDoor" ifflag="no">
-      <args arg1="26047" arg2="1" arg3="1"/>
+    <cmd command="Obj2Mob" ifflag="yes">
+      <args arg1="26025" arg2="100" arg3="0"/>
       <line lineno="331"/>
     </cmd>
-    <cmd command="SetStateOfDoor" ifflag="no">
-      <args arg1="26047" arg2="3" arg3="1"/>
+    <cmd command="ReadObject" ifflag="no">
+      <args arg1="26021" arg2="1" arg3="26100"/>
       <line lineno="335"/>
     </cmd>
     <cmd command="ReadMobile" ifflag="no">
-      <args arg1="26016" arg2="10" arg3="26047"/>
+      <args arg1="26016" arg2="10" arg3="26110"/>
       <line lineno="339"/>
     </cmd>
     <cmd command="ReadMobile" ifflag="no">
-      <args arg1="26018" arg2="10" arg3="26144"/>
+      <args arg1="26016" arg2="10" arg3="26220"/>
       <line lineno="343"/>
     </cmd>
     <cmd command="ReadMobile" ifflag="no">
-      <args arg1="26018" arg2="10" arg3="26096"/>
+      <args arg1="26016" arg2="10" arg3="26214"/>
       <line lineno="347"/>
     </cmd>
     <cmd command="SetStateOfDoor" ifflag="no">
-      <args arg1="26173" arg2="0" arg3="1"/>
+      <args arg1="26047" arg2="1" arg3="1"/>
       <line lineno="351"/>
     </cmd>
     <cmd command="SetStateOfDoor" ifflag="no">
-      <args arg1="26173" arg2="2" arg3="1"/>
+      <args arg1="26047" arg2="3" arg3="1"/>
       <line lineno="355"/>
     </cmd>
     <cmd command="ReadMobile" ifflag="no">
-      <args arg1="26018" arg2="10" arg3="26173"/>
+      <args arg1="26016" arg2="10" arg3="26047"/>
       <line lineno="359"/>
     </cmd>
     <cmd command="ReadMobile" ifflag="no">
-      <args arg1="26018" arg2="10" arg3="26062"/>
+      <args arg1="26018" arg2="10" arg3="26144"/>
       <line lineno="363"/>
     </cmd>
-    <cmd command="SetStateOfDoor" ifflag="no">
-      <args arg1="26151" arg2="0" arg3="1"/>
+    <cmd command="ReadMobile" ifflag="no">
+      <args arg1="26018" arg2="10" arg3="26096"/>
       <line lineno="367"/>
     </cmd>
-    <cmd command="ReadMobile" ifflag="no">
-      <args arg1="26010" arg2="30" arg3="26151"/>
+    <cmd command="SetStateOfDoor" ifflag="no">
+      <args arg1="26173" arg2="0" arg3="1"/>
       <line lineno="371"/>
     </cmd>
     <cmd command="SetStateOfDoor" ifflag="no">
-      <args arg1="26093" arg2="0" arg3="1"/>
+      <args arg1="26173" arg2="2" arg3="1"/>
       <line lineno="375"/>
     </cmd>
-    <cmd command="SetStateOfDoor" ifflag="no">
-      <args arg1="26079" arg2="3" arg3="1"/>
+    <cmd command="ReadMobile" ifflag="no">
+      <args arg1="26018" arg2="10" arg3="26173"/>
       <line lineno="379"/>
     </cmd>
-    <cmd command="SetStateOfDoor" ifflag="yes">
-      <args arg1="26079" arg2="3" arg3="2"/>
+    <cmd command="ReadMobile" ifflag="no">
+      <args arg1="26018" arg2="10" arg3="26062"/>
       <line lineno="383"/>
     </cmd>
     <cmd command="SetStateOfDoor" ifflag="no">
-      <args arg1="26079" arg2="2" arg3="1"/>
+      <args arg1="26151" arg2="0" arg3="1"/>
       <line lineno="387"/>
     </cmd>
-    <cmd command="SetStateOfDoor" ifflag="no">
-      <args arg1="26078" arg2="1" arg3="2"/>
+    <cmd command="ReadMobile" ifflag="no">
+      <args arg1="26010" arg2="30" arg3="26151"/>
       <line lineno="391"/>
     </cmd>
     <cmd command="SetStateOfDoor" ifflag="no">
-      <args arg1="26094" arg2="0" arg3="1"/>
+      <args arg1="26093" arg2="0" arg3="1"/>
       <line lineno="395"/>
     </cmd>
     <cmd command="SetStateOfDoor" ifflag="no">
-      <args arg1="26095" arg2="0" arg3="1"/>
+      <args arg1="26079" arg2="3" arg3="1"/>
       <line lineno="399"/>
     </cmd>
-    <cmd command="ReadMobile" ifflag="no">
-      <args arg1="26014" arg2="1" arg3="26081"/>
+    <cmd command="SetStateOfDoor" ifflag="yes">
+      <args arg1="26079" arg2="3" arg3="2"/>
       <line lineno="403"/>
     </cmd>
     <cmd command="SetStateOfDoor" ifflag="no">
-      <args arg1="26081" arg2="2" arg3="1"/>
+      <args arg1="26079" arg2="2" arg3="1"/>
       <line lineno="407"/>
     </cmd>
     <cmd command="SetStateOfDoor" ifflag="no">
-      <args arg1="26140" arg2="0" arg3="1"/>
+      <args arg1="26078" arg2="1" arg3="2"/>
       <line lineno="411"/>
     </cmd>
     <cmd command="SetStateOfDoor" ifflag="no">
-      <args arg1="26126" arg2="2" arg3="1"/>
+      <args arg1="26094" arg2="0" arg3="1"/>
       <line lineno="415"/>
     </cmd>
     <cmd command="SetStateOfDoor" ifflag="no">
-      <args arg1="26176" arg2="0" arg3="1"/>
+      <args arg1="26095" arg2="0" arg3="1"/>
       <line lineno="419"/>
     </cmd>
-    <cmd command="SetStateOfDoor" ifflag="no">
-      <args arg1="26176" arg2="2" arg3="1"/>
+    <cmd command="ReadMobile" ifflag="no">
+      <args arg1="26014" arg2="1" arg3="26081"/>
       <line lineno="423"/>
     </cmd>
     <cmd command="SetStateOfDoor" ifflag="no">
-      <args arg1="26177" arg2="0" arg3="1"/>
+      <args arg1="26081" arg2="2" arg3="1"/>
       <line lineno="427"/>
     </cmd>
     <cmd command="SetStateOfDoor" ifflag="no">
-      <args arg1="26177" arg2="2" arg3="1"/>
+      <args arg1="26140" arg2="0" arg3="1"/>
       <line lineno="431"/>
     </cmd>
     <cmd command="SetStateOfDoor" ifflag="no">
-      <args arg1="26163" arg2="2" arg3="1"/>
+      <args arg1="26126" arg2="2" arg3="1"/>
       <line lineno="435"/>
     </cmd>
     <cmd command="SetStateOfDoor" ifflag="no">
-      <args arg1="26190" arg2="0" arg3="1"/>
+      <args arg1="26176" arg2="0" arg3="1"/>
       <line lineno="439"/>
     </cmd>
     <cmd command="SetStateOfDoor" ifflag="no">
-      <args arg1="26162" arg2="2" arg3="1"/>
+      <args arg1="26176" arg2="2" arg3="1"/>
       <line lineno="443"/>
     </cmd>
     <cmd command="SetStateOfDoor" ifflag="no">
-      <args arg1="26187" arg2="0" arg3="1"/>
+      <args arg1="26177" arg2="0" arg3="1"/>
       <line lineno="447"/>
     </cmd>
     <cmd command="SetStateOfDoor" ifflag="no">
-      <args arg1="26159" arg2="2" arg3="1"/>
+      <args arg1="26177" arg2="2" arg3="1"/>
       <line lineno="451"/>
     </cmd>
     <cmd command="SetStateOfDoor" ifflag="no">
-      <args arg1="26172" arg2="0" arg3="1"/>
+      <args arg1="26163" arg2="2" arg3="1"/>
       <line lineno="455"/>
     </cmd>
     <cmd command="SetStateOfDoor" ifflag="no">
-      <args arg1="26172" arg2="2" arg3="1"/>
+      <args arg1="26190" arg2="0" arg3="1"/>
       <line lineno="459"/>
     </cmd>
     <cmd command="SetStateOfDoor" ifflag="no">
-      <args arg1="26158" arg2="2" arg3="1"/>
+      <args arg1="26162" arg2="2" arg3="1"/>
       <line lineno="463"/>
     </cmd>
     <cmd command="SetStateOfDoor" ifflag="no">
-      <args arg1="26186" arg2="0" arg3="1"/>
+      <args arg1="26187" arg2="0" arg3="1"/>
       <line lineno="467"/>
     </cmd>
     <cmd command="SetStateOfDoor" ifflag="no">
-      <args arg1="26171" arg2="0" arg3="1"/>
+      <args arg1="26159" arg2="2" arg3="1"/>
       <line lineno="471"/>
     </cmd>
     <cmd command="SetStateOfDoor" ifflag="no">
-      <args arg1="26171" arg2="2" arg3="1"/>
+      <args arg1="26172" arg2="0" arg3="1"/>
       <line lineno="475"/>
     </cmd>
     <cmd command="SetStateOfDoor" ifflag="no">
-      <args arg1="26170" arg2="2" arg3="1"/>
+      <args arg1="26172" arg2="2" arg3="1"/>
       <line lineno="479"/>
     </cmd>
     <cmd command="SetStateOfDoor" ifflag="no">
-      <args arg1="26184" arg2="0" arg3="1"/>
+      <args arg1="26158" arg2="2" arg3="1"/>
       <line lineno="483"/>
     </cmd>
     <cmd command="SetStateOfDoor" ifflag="no">
-      <args arg1="26157" arg2="2" arg3="1"/>
+      <args arg1="26186" arg2="0" arg3="1"/>
       <line lineno="487"/>
     </cmd>
     <cmd command="SetStateOfDoor" ifflag="no">
-      <args arg1="26115" arg2="2" arg3="1"/>
+      <args arg1="26171" arg2="0" arg3="1"/>
       <line lineno="491"/>
     </cmd>
     <cmd command="SetStateOfDoor" ifflag="no">
-      <args arg1="26040" arg2="0" arg3="1"/>
+      <args arg1="26171" arg2="2" arg3="1"/>
       <line lineno="495"/>
+    </cmd>
+    <cmd command="SetStateOfDoor" ifflag="no">
+      <args arg1="26170" arg2="2" arg3="1"/>
+      <line lineno="499"/>
+    </cmd>
+    <cmd command="SetStateOfDoor" ifflag="no">
+      <args arg1="26184" arg2="0" arg3="1"/>
+      <line lineno="503"/>
+    </cmd>
+    <cmd command="SetStateOfDoor" ifflag="no">
+      <args arg1="26157" arg2="2" arg3="1"/>
+      <line lineno="507"/>
+    </cmd>
+    <cmd command="SetStateOfDoor" ifflag="no">
+      <args arg1="26115" arg2="2" arg3="1"/>
+      <line lineno="511"/>
+    </cmd>
+    <cmd command="SetStateOfDoor" ifflag="no">
+      <args arg1="26040" arg2="0" arg3="1"/>
+      <line lineno="515"/>
     </cmd>
     <cmd command="ReadMobile" ifflag="no">
       <args arg1="26010" arg2="30" arg3="26040"/>
-      <line lineno="499"/>
+      <line lineno="519"/>
     </cmd>
     <cmd command="ReadMobile" ifflag="no">
       <args arg1="26010" arg2="30" arg3="26056"/>
-      <line lineno="503"/>
+      <line lineno="523"/>
     </cmd>
     <cmd command="ReadMobile" ifflag="no">
       <args arg1="26010" arg2="30" arg3="26188"/>
-      <line lineno="507"/>
+      <line lineno="527"/>
     </cmd>
     <cmd command="ReadMobile" ifflag="no">
       <args arg1="26005" arg2="1" arg3="26043"/>
-      <line lineno="511"/>
-    </cmd>
-    <cmd command="Obj2Mob" ifflag="yes">
-      <args arg1="26009" arg2="100" arg3="0"/>
-      <line lineno="515"/>
-    </cmd>
-    <cmd command="Obj2Mob" ifflag="yes">
-      <args arg1="26010" arg2="100" arg3="0"/>
-      <line lineno="519"/>
-    </cmd>
-    <cmd command="Obj2Mob" ifflag="yes">
-      <args arg1="26011" arg2="100" arg3="0"/>
-      <line lineno="523"/>
-    </cmd>
-    <cmd command="Obj2Mob" ifflag="yes">
-      <args arg1="26012" arg2="100" arg3="0"/>
-      <line lineno="527"/>
-    </cmd>
-    <cmd command="Obj2Mob" ifflag="yes">
-      <args arg1="26013" arg2="100" arg3="0"/>
       <line lineno="531"/>
     </cmd>
     <cmd command="Obj2Mob" ifflag="yes">
-      <args arg1="26014" arg2="100" arg3="0"/>
+      <args arg1="26009" arg2="100" arg3="0"/>
       <line lineno="535"/>
     </cmd>
-    <cmd command="SetStateOfDoor" ifflag="no">
-      <args arg1="26043" arg2="2" arg3="1"/>
+    <cmd command="Obj2Mob" ifflag="yes">
+      <args arg1="26010" arg2="100" arg3="0"/>
       <line lineno="539"/>
     </cmd>
-    <cmd command="ReadMobile" ifflag="no">
-      <args arg1="26009" arg2="10" arg3="26018"/>
+    <cmd command="Obj2Mob" ifflag="yes">
+      <args arg1="26011" arg2="100" arg3="0"/>
       <line lineno="543"/>
     </cmd>
-    <cmd command="ReadMobile" ifflag="no">
-      <args arg1="26008" arg2="1" arg3="26017"/>
+    <cmd command="Obj2Mob" ifflag="yes">
+      <args arg1="26012" arg2="100" arg3="0"/>
       <line lineno="547"/>
     </cmd>
     <cmd command="Obj2Mob" ifflag="yes">
-      <args arg1="26006" arg2="100" arg3="0"/>
+      <args arg1="26013" arg2="100" arg3="0"/>
       <line lineno="551"/>
     </cmd>
     <cmd command="Obj2Mob" ifflag="yes">
-      <args arg1="26007" arg2="100" arg3="0"/>
+      <args arg1="26014" arg2="100" arg3="0"/>
       <line lineno="555"/>
     </cmd>
-    <cmd command="Obj2Mob" ifflag="yes">
-      <args arg1="26008" arg2="100" arg3="0"/>
+    <cmd command="SetStateOfDoor" ifflag="no">
+      <args arg1="26043" arg2="2" arg3="1"/>
       <line lineno="559"/>
     </cmd>
-    <cmd command="SetStateOfDoor" ifflag="no">
-      <args arg1="26017" arg2="2" arg3="1"/>
+    <cmd command="ReadMobile" ifflag="no">
+      <args arg1="26009" arg2="10" arg3="26018"/>
       <line lineno="563"/>
     </cmd>
     <cmd command="ReadMobile" ifflag="no">
-      <args arg1="26007" arg2="1" arg3="26016"/>
+      <args arg1="26008" arg2="1" arg3="26017"/>
       <line lineno="567"/>
     </cmd>
     <cmd command="Obj2Mob" ifflag="yes">
-      <args arg1="26004" arg2="100" arg3="0"/>
+      <args arg1="26006" arg2="100" arg3="0"/>
       <line lineno="571"/>
     </cmd>
     <cmd command="Obj2Mob" ifflag="yes">
-      <args arg1="26005" arg2="100" arg3="0"/>
+      <args arg1="26007" arg2="100" arg3="0"/>
       <line lineno="575"/>
     </cmd>
-    <cmd command="SetStateOfDoor" ifflag="no">
-      <args arg1="26016" arg2="2" arg3="1"/>
+    <cmd command="Obj2Mob" ifflag="yes">
+      <args arg1="26008" arg2="100" arg3="0"/>
       <line lineno="579"/>
     </cmd>
     <cmd command="SetStateOfDoor" ifflag="no">
-      <args arg1="26053" arg2="1" arg3="1"/>
+      <args arg1="26017" arg2="2" arg3="1"/>
       <line lineno="583"/>
     </cmd>
-    <cmd command="SetStateOfDoor" ifflag="no">
-      <args arg1="26053" arg2="2" arg3="1"/>
+    <cmd command="ReadMobile" ifflag="no">
+      <args arg1="26007" arg2="1" arg3="26016"/>
       <line lineno="587"/>
     </cmd>
-    <cmd command="SetStateOfDoor" ifflag="no">
-      <args arg1="26067" arg2="0" arg3="1"/>
+    <cmd command="Obj2Mob" ifflag="yes">
+      <args arg1="26004" arg2="100" arg3="0"/>
       <line lineno="591"/>
     </cmd>
-    <cmd command="SetStateOfDoor" ifflag="no">
-      <args arg1="26054" arg2="3" arg3="1"/>
+    <cmd command="Obj2Mob" ifflag="yes">
+      <args arg1="26005" arg2="100" arg3="0"/>
       <line lineno="595"/>
     </cmd>
     <cmd command="SetStateOfDoor" ifflag="no">
-      <args arg1="26026" arg2="2" arg3="1"/>
+      <args arg1="26016" arg2="2" arg3="1"/>
       <line lineno="599"/>
     </cmd>
     <cmd command="SetStateOfDoor" ifflag="no">
-      <args arg1="26064" arg2="0" arg3="1"/>
+      <args arg1="26053" arg2="1" arg3="1"/>
       <line lineno="603"/>
     </cmd>
     <cmd command="SetStateOfDoor" ifflag="no">
-      <args arg1="26057" arg2="0" arg3="1"/>
+      <args arg1="26053" arg2="2" arg3="1"/>
       <line lineno="607"/>
+    </cmd>
+    <cmd command="SetStateOfDoor" ifflag="no">
+      <args arg1="26067" arg2="0" arg3="1"/>
+      <line lineno="611"/>
+    </cmd>
+    <cmd command="SetStateOfDoor" ifflag="no">
+      <args arg1="26054" arg2="3" arg3="1"/>
+      <line lineno="615"/>
+    </cmd>
+    <cmd command="SetStateOfDoor" ifflag="no">
+      <args arg1="26026" arg2="2" arg3="1"/>
+      <line lineno="619"/>
+    </cmd>
+    <cmd command="SetStateOfDoor" ifflag="no">
+      <args arg1="26064" arg2="0" arg3="1"/>
+      <line lineno="623"/>
+    </cmd>
+    <cmd command="SetStateOfDoor" ifflag="no">
+      <args arg1="26057" arg2="0" arg3="1"/>
+      <line lineno="627"/>
     </cmd>
     <cmd command="STOP"/>
   </resetcmds>

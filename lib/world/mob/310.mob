@@ -1,135 +1,46 @@
-#31000
-woman bard~
-a small woman sits her playing sullenly on a dulcimer~
-A small woman playing sad tunes on a dulcimer.
-~
-This is a rather shabby looking young woman playing a dulcimer. The sad tunes seem to fit the mood of the people in the room listening and drowning their heads in ale. The young woman sits here with a cloak wrapped on here shoulders and a few coins at
-her feet. 
-~
-49226 32 250 E
-50 -15 4 579 10d300+75 8d33+25
-120 110
-8 8 2
-BareHandAttack: 8
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-E
-#31001
-cook woman~
-a rather bulky woman ordering around serving maids~
-A rather bulky woman ordering around serving maids.
-~
-A rather bulky woman ordering around serving women showing them what to take and what not to take. She seems to be in a bad mood like everyone else but is doing a better job at holding it back then others.
-She looks to stand tall and proud. Feels that she is doing the right thing that she is doing the best she can which you don't doubt she is as you glance at the large spoon in her right hand.
-~
-57418 131104 400 E
-50 0 2 579 15d300+75 5d40+20
-0 100
-8 8 2
-BareHandAttack: 7
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-E
-#31002
-man fruit stand~
-a man standing here selling fruit~
-A man standing here selling fruit.
-~
-A quite bulky man selling fruit turns to you with a fake smile on his face. Everyone here is depressed but this man doesn't show it. He looks poor even though his establishment seems to be flourishing. He tells you about his life and his famil
-You can't help but feel sorry for him. Maybe it is all the truth maybe it isn't.
-~
-254026 8224 0 E
-25 10 5 579 8d300+75 6d40+12
-100 120
-8 8 1
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-E
-#31003
-woman beth Beth innkeeper inn~
-Standing here smothering her skirts is Beth the innkeeper~
-Beth the innkeeper is standing her wiping her head with a napkin.
-~
-Beth is like all other innkeepers small and plump with a dimple when she smiles. With a glint in her eye she seems to be one of the few people here that is not depressed. She seems to be selling a variety of things to 
-people seated at tables around the common room. She turns at you and smiles and turns back to a man complaining about his ale.
-~
-254026 32 0 E
-40 0 5 579 10d350+80 5d40+15
-0 0
-8 8 2
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-E
-#31004
-soldier officer man~
-a rather large soldier with broad shoulders~
-A rather large soldier with broad shoulders is standing here.
-~
-This officer looks to be on the brink of breaking down. His eyes are full of strain as if he has seen and fought through many battles. He stands ready waiting for orders and pushing back peasants who try to enter the palace which he is guarding.
-~
-1065032 1184 0 E
-80 -2 1 579 15d500+85 6d80+20
-100 120
-8 8 1
-BareHandAttack: 3
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-E
-#31005
-girl young ~
-a young wounded girl~
-A girl lies here, wounded.
-~
-This young woman seems to be in need of an Aes Sedai to heal her but there no one around who seems to care. She is wounded and sick and is desperate need of medivcal attention. Her eyes look bleak and she sheds on tear and no more. Then lies her 
-head down for eternal sleep. 
-~
-1048650 0 0 E
-20 14 9 579 5d100+0 4d20+10
-25 80
-8 8 2
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-E
-#31099
-undefined~
-undefined~
-
-~
-It looks, err, unfinished.
-~
-8 0 0 E
-1 20 10 579 1d100+0 1d1+0
-0 0
-8 8 0
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-E
-$
+<?xml version="1.0"?>
+<mobiles>
+  <mobile vnum="31074" name="mob" special="NONE">
+    <description>\c00</description>
+    <shortdesc>an invisible mob</shortdesc>
+    <longdesc>An invisible mob stands here.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="200" weight="200" height="198"/>
+    <abilities>
+      <str>11</str>
+      <int>11</int>
+      <wis>11</wis>
+      <dex>11</dex>
+      <con>11</con>
+      <cha>11</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="1" bonus="1"/>
+      <move ndize="10" dsize="100" bonus="1"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="10"/>
+    <affected one="19466290" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnEntry" argtype="VOID" argument="NONE">
+      <action number="ActionTo" argtype="STRING" argument="restore"/>
+    </mobprog>
+    <mobprog main="OnLeave" argtype="VOID" argument="NONE">
+      <action number="ActionTo" argtype="STRING" argument="restore"/>
+    </mobprog>
+    <dgscript vnum="31074"/>
+  </mobile>
+</mobiles>

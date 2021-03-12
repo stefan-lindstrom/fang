@@ -1,721 +1,1114 @@
-#30005
-maid girl servant serving wench~
-a young looking maid~
-A young maid, dressed in a short skirt and blouse.
-~
-A very attractive young maid, dressed in a short skirt and a blouse that 
-provides a rather open view of her bossom.
-~
-1040458 0 0 E
-10 20 10 954 1d100+0 1d1+0
-0 0
-8 8 2 714
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-P
-OnRandom 1
-Emote "a soft breeze blows softly in the room from the windows."
-End
-OnRandom 1
-Emote "a maid carries a large tray with dishes to a couple at a nearby table."
-End
-OnRandom 1
-Emote "a maid walks by the table, hips swaying in a suggesting manner as she leaves."
-End
-OnRandom 1
-Emote "a maid comes in the room and wipes the sweat off her forehead, then sighs."
-End
-OnRandom 1
-Emote "the heat in the room is at least less than the streets outside."
-End
-OnRandom 1
-Emote "a maid leaves the room, getting some empty plates from another table with her."
-End
-OnRandom 1
-Emote "a newcomer climbs down the stairs, peers around the room and leaves again."
-End
-OnRandom 1
-Emote "a small company of young people passes by the entrance but they don't walk in."
-End
-OnRandom 1
-Emote "a customer pays for his meal at a table next to the door and walks out."
-End
-OnRandom 1
-Emote "another customer smiles at a maid as he leaves, looking satisfied."
-End
-OnRandom 1
-Emote "a maid in casual clothes smiles at you as she leaves the inn after her shift."
-End
-OnRandom 1
-Emote "there is a new shipment of goods delivered to the inn on carts outside."
-End
-OnRandom 1
-Emote "a maid is cleaning some tables near the other side of the room with a cloth."
-End
-OnAction "sit" & Sex "male"
-Emote "$n pulls out a chair and takes a seat."
-Stop
-End
-OnAction "sit" & ! Sex "male"
-Emote "$n takes a seat at a table here."
-Stop
-End
-Q
-E
-#30006
-innkeeper Joshua inn keeper barman man~
-Joshua, the innkeeper~
-Joshua is a rather tall, bald chubby man with a short blonde beard.
-~
-It looks, err, unfinished.
-~
-1040394 0 0 E
-100 20 10 954 1d100+0 1d1+0
-0 0
-8 8 1 714
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-E
-#30012
-a pretty young maid~
-the young maid~
-An attractive young maid stands here eager to help.
-~
-A very pretty young maid stands here eager to help, giving customers a few
+<?xml version="1.0"?>
+<mobiles>
+  <mobile vnum="30005" name="Deshayla maid girl servant serving wench" special="NONE">
+    <description>A very attractive young maid, dressed in a short skirt and a blouse that 
+provides a rather open view of her bosom.
+</description>
+    <shortdesc>Deshayla, a young looking maid</shortdesc>
+    <longdesc>Deshayla, a young maid, dressed in a short skirt and blouse
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="10" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="0"/>
+      <move ndize="1" dsize="0" bonus="0"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="9429066"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnRandom" argtype="INT" argument="1">
+      <action number="Emote" argtype="STRING" argument="a soft breeze blows softly in the room from the windows."/>
+    </mobprog>
+    <mobprog main="OnRandom" argtype="INT" argument="1">
+      <action number="Emote" argtype="STRING" argument="a maid carries a large tray with dishes to a couple at a nearby table."/>
+    </mobprog>
+    <mobprog main="OnRandom" argtype="INT" argument="1">
+      <action number="Emote" argtype="STRING" argument="a maid walks by the table, hips swaying in a suggesting manner as she leaves."/>
+    </mobprog>
+    <mobprog main="OnRandom" argtype="INT" argument="1">
+      <action number="Emote" argtype="STRING" argument="a maid comes in the room and wipes the sweat off her forehead, then sighs."/>
+    </mobprog>
+    <mobprog main="OnRandom" argtype="INT" argument="1">
+      <action number="Emote" argtype="STRING" argument="the heat in the room is at least less than the streets outside."/>
+    </mobprog>
+    <mobprog main="OnRandom" argtype="INT" argument="1">
+      <action number="Emote" argtype="STRING" argument="a maid leaves the room, getting some empty plates from another table with her."/>
+    </mobprog>
+    <mobprog main="OnRandom" argtype="INT" argument="1">
+      <action number="Emote" argtype="STRING" argument="a newcomer climbs down the stairs, peers around the room and leaves again."/>
+    </mobprog>
+    <mobprog main="OnRandom" argtype="INT" argument="1">
+      <action number="Emote" argtype="STRING" argument="a small company of young people passes by the entrance but they don't walk in."/>
+    </mobprog>
+    <mobprog main="OnRandom" argtype="INT" argument="1">
+      <action number="Emote" argtype="STRING" argument="a customer pays for his meal at a table next to the door and walks out."/>
+    </mobprog>
+    <mobprog main="OnRandom" argtype="INT" argument="1">
+      <action number="Emote" argtype="STRING" argument="another customer smiles at a maid as he leaves, looking satisfied."/>
+    </mobprog>
+    <mobprog main="OnRandom" argtype="INT" argument="1">
+      <action number="Emote" argtype="STRING" argument="a maid in casual clothes smiles at you as she leaves the inn after her shift."/>
+    </mobprog>
+    <mobprog main="OnRandom" argtype="INT" argument="1">
+      <action number="Emote" argtype="STRING" argument="there is a new shipment of goods delivered to the inn on carts outside."/>
+    </mobprog>
+    <mobprog main="OnRandom" argtype="INT" argument="1">
+      <action number="Emote" argtype="STRING" argument="a maid is cleaning some tables near the other side of the room with a cloth."/>
+    </mobprog>
+    <mobprog main="OnAction" argtype="STRING" argument="sit">
+      <sideterm number="Sex" not="FALSE" argtype="STRING" argument="male"/>
+      <action number="Emote" argtype="STRING" argument="$n pulls out a chair and takes a seat."/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+    </mobprog>
+    <mobprog main="OnAction" argtype="STRING" argument="sit">
+      <sideterm number="Sex" not="TRUE" argtype="STRING" argument="male"/>
+      <action number="Emote" argtype="STRING" argument="$n takes a seat at a table here."/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="30006" name="innkeeper Joshua inn keeper barman man" special="NONE">
+    <description>Joshua is the innkeeper.  He is rather tall for an Andoran and was
+considered quite handsome when he was a young man in his twenties.  
+Course the older women still chase him, even though he is bald and chubby.
+He's a friendly sort with a kind word for most of his patrons though he's
+known to have a sharp tongue when it comes to keeping his serving girls in
+line.  His eyes are hazel and he has a short blonde beard which he often
+scratches when he is contemplating something.    
+</description>
+    <shortdesc>Joshua, the innkeeper</shortdesc>
+    <longdesc>Joshua is a rather tall, bald chubby man with a short blonde beard.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="100" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="0"/>
+      <move ndize="1" dsize="0" bonus="0"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="9429002"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="30012" name="Shanelda, a pretty young maid" special="NONE">
+    <description>A very pretty young maid stands here eager to help, giving customers a few
 suggestive winks after being generously tipped.
-~
-1040394 0 0 E
-20 20 10 954 1d100+0 1d1+0
-0 0
-8 8 2 714
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-P
-OnActionTo "pinch"
-SayTo "what?! keep your hands where they belong, sire! or i am calling my boss!"
-End
-OnActionTo "wink"
-SayTo "hmm.. you aren't too bad looking yourself, hon."
-End
-OnRandom 1
-Emote "a maid hurries off in the other side of the room, carrying some trays."
-End
-OnRandom 1
-Emote "a smell of something delicious reaches your nostrils from the kitchen."
-End
-OnRandom 1
-Emote "a pretty maid exits the kitchen, carrying a tray to another room."
-End
-OnRandom 4
-Emote "as the kitchen's door opens for a moment, you can smell fresh bread baking."
-End
-OnRandom 1
-Emote "a large man carries a barrel to the kitchen, probably wine to be served later."
-End
-OnRandom 1
-Emote "a maid arranges the chairs around an empty table and leaves towards the kitchen."
-End
-OnRandom 1
-Emote "a maid drops a tray as she carries it and groans loudly, then starts to clean it."
-End
-OnRandom 1
-Emote "the smell of ale in the air seems to clear up since the windows are now opened."
-End
-OnRandom 1
-Emote "the smell of fresh cheese reaches you from the north room, smelling really nice."
-End
-OnRandom 1
-Emote "there is a distinct smell of ale in the air, natural result of all the drinking."
-End
-OnRandom 1
-Emote "a rather drank customer staggers a little and finally manages to leave the room."
-End
-OnRandom 1
-Emote "a young man rises from his seat and pays for his ale, then walks to the kitchen."
-End
-OnRandom 1
-Emote "the heat has forced the maids to open every window in this room to let air in."
-End
-Q
-E
-#30013
-Ashia cook maid servant food~
-Ashia the cook~
-Ashia is a woman in the mid-forties, and the head cook of the Bowl.
-~
-Ashia is a young woman in the mid-forties, just a few grey hairs among her
+</description>
+    <shortdesc>Shanelda, the young maid</shortdesc>
+    <longdesc>Shanelda, an attractive young maid stands here eager to help
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="20" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="0"/>
+      <move ndize="1" dsize="0" bonus="0"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="9429002"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnActionTo" argtype="STRING" argument="pinch">
+      <action number="SayTo" argtype="STRING" argument="what?! keep your hands where they belong, sire! or i am calling my boss!"/>
+    </mobprog>
+    <mobprog main="OnActionTo" argtype="STRING" argument="wink">
+      <action number="SayTo" argtype="STRING" argument="hmm.. you aren't too bad looking yourself, hon."/>
+    </mobprog>
+    <mobprog main="OnRandom" argtype="INT" argument="1">
+      <action number="Emote" argtype="STRING" argument="a maid hurries off in the other side of the room, carrying some trays."/>
+    </mobprog>
+    <mobprog main="OnRandom" argtype="INT" argument="1">
+      <action number="Emote" argtype="STRING" argument="a smell of something delicious reaches your nostrils from the kitchen."/>
+    </mobprog>
+    <mobprog main="OnRandom" argtype="INT" argument="1">
+      <action number="Emote" argtype="STRING" argument="a pretty maid exits the kitchen, carrying a tray to another room."/>
+    </mobprog>
+    <mobprog main="OnRandom" argtype="INT" argument="4">
+      <action number="Emote" argtype="STRING" argument="as the kitchen's door opens for a moment, you can smell fresh bread baking."/>
+    </mobprog>
+    <mobprog main="OnRandom" argtype="INT" argument="1">
+      <action number="Emote" argtype="STRING" argument="a large man carries a barrel to the kitchen, probably wine to be served later."/>
+    </mobprog>
+    <mobprog main="OnRandom" argtype="INT" argument="1">
+      <action number="Emote" argtype="STRING" argument="a maid arranges the chairs around an empty table and leaves towards the kitchen."/>
+    </mobprog>
+    <mobprog main="OnRandom" argtype="INT" argument="1">
+      <action number="Emote" argtype="STRING" argument="a maid drops a tray as she carries it and groans loudly, then starts to clean it."/>
+    </mobprog>
+    <mobprog main="OnRandom" argtype="INT" argument="1">
+      <action number="Emote" argtype="STRING" argument="the smell of ale in the air seems to clear up since the windows are now opened."/>
+    </mobprog>
+    <mobprog main="OnRandom" argtype="INT" argument="1">
+      <action number="Emote" argtype="STRING" argument="the smell of fresh cheese reaches you from the north room, smelling really nice."/>
+    </mobprog>
+    <mobprog main="OnRandom" argtype="INT" argument="1">
+      <action number="Emote" argtype="STRING" argument="there is a distinct smell of ale in the air, natural result of all the drinking."/>
+    </mobprog>
+    <mobprog main="OnRandom" argtype="INT" argument="1">
+      <action number="Emote" argtype="STRING" argument="a rather drank customer staggers a little and finally manages to leave the room."/>
+    </mobprog>
+    <mobprog main="OnRandom" argtype="INT" argument="1">
+      <action number="Emote" argtype="STRING" argument="a young man rises from his seat and pays for his ale, then walks to the kitchen."/>
+    </mobprog>
+    <mobprog main="OnRandom" argtype="INT" argument="1">
+      <action number="Emote" argtype="STRING" argument="the heat has forced the maids to open every window in this room to let air in."/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="30013" name="Ashia cook maid servant food" special="NONE">
+    <description>Ashia is a young woman in the mid-forties, just a few grey hairs among her
 raven black ponytail, dressed in a simple brown dress.
-~
-1040394 0 0 E
-0 20 10 954 1d100+0 1d1+0
-0 0
-8 8 2 714
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-P
-OnRandom 1
-Emote "ashia smiles and says over her shoulder, 'ahhhh.. this here's a fine pie!'"
-End
-OnRandom 1
-Emote "the smell of whatever ashia is making spreads, wonderful promise of something really delicious being made."
-End
-OnRandom 1
-Emote "ashia is humming something under her breath while baking her bread patiently."
-End
-OnRandom 1
-Emote "the smell of a pie reaches your nostrils, fresh chocolate and cold cheese."
-End
-Q
-E
-#30014
-whitecloak cloak~
-A suspicious \c14whitecloak\c00~
-a suspicious \c14whitecloak\c00\c03
-~
-A whitecloak is walking around, checking the people around him as he gathers evidance leading to their arrest.
-~
-1057804 0 0 E
-3 19 10 954 3d30+0 3d1+1
-100 200
-8 8 1 714
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-P
-OnRandom 1
-Emote "his armor gleaming in the sun, the child fingers his hilt and mutters something."
-End
-OnRandom 1
-Emote "not all too subtle, the child of the light looks at you in a suspicious way."
-End
-OnRandom 1
-Emote "the child of the light leans on the pavement to clean his leg plates from mud."
-End
-OnRandom 1
-Emote "the child frowns suspiciously at you as he walks by in full armor."
-End
-OnAttack
-Pause 1
-Emote "the whitecloak frowns, '\c08burn you! you shall die!\c00' as he charges forward."
-End
-OnAttack & Level "6 200"
-Stop
-Pause 1
-Emote "this childe is escorted by several of his peers.. this is too dangerous for now."
-End
-OnAction "weave"
-Stop
-Emote "the child narrows his eyes at you suspiciously... maybe that's a bad idea."
-End
-Q
-E
-#30015
-peddler annoying~
-An \c01annoying\c00 peddler~
-An \c01annoying\c00\c03 peddler is here.
-~
-She looks really down on her luck, and it's only going to get worse.
-~
-1048588 0 0 E
-6 18 9 954 4d30+0 2d9+7
-50 130
-8 8 2 714
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-Trip: 100
-P
-OnAttack & Level "11 200"
-Stop
-Pause 1
-Emote "as the attack on the peddler is plotted, a group of guards arrives at the scene.. this isn't a good time."
-End
-OnRandom 1
-Emote "the peddler yells at you, 'here! some very fine spoons! here! i got the best!'"
-End
-OnRandom 1
-Emote "the peddler stands still, trying to decide how much money you got to spend."
-End
-OnAttack & Level "1 10"
-Pause 1
-Emote "the peddler grumbles, '\c03hey! whaa?! eeek!\c00' as she wields her trusty cleaver."
-End
-Q
-E
-#30016
-guardsman guard queen~
-a guardsman~
-A Queen's guardsman is patrolling the street here.
-~
-Well equiped and trained, the guardsman stands for the
+</description>
+    <shortdesc>Ashia the cook</shortdesc>
+    <longdesc>Ashia is a woman in the mid-forties, and the head cook of the Bowl.
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="0" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="0"/>
+      <move ndize="1" dsize="0" bonus="0"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="9429002"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnRandom" argtype="INT" argument="1">
+      <action number="Emote" argtype="STRING" argument="ashia smiles and says over her shoulder, 'ahhhh.. this here's a fine pie!'"/>
+    </mobprog>
+    <mobprog main="OnRandom" argtype="INT" argument="1">
+      <action number="Emote" argtype="STRING" argument="the smell of whatever ashia is making spreads, wonderful promise of something really delicious being made."/>
+    </mobprog>
+    <mobprog main="OnRandom" argtype="INT" argument="1">
+      <action number="Emote" argtype="STRING" argument="ashia is humming something under her breath while baking her bread patiently."/>
+    </mobprog>
+    <mobprog main="OnRandom" argtype="INT" argument="1">
+      <action number="Emote" argtype="STRING" argument="the smell of a pie reaches your nostrils, fresh chocolate and cold cheese."/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="30014" name="whitecloak cloak soldier cotl child" special="NONE">
+    <description>A whitecloak is walking around, checking the people around him as he
+gathers evidence leading to their arrest.    
+</description>
+    <shortdesc>a &amp;WChild of the Light&amp;n</shortdesc>
+    <longdesc>A &amp;WChild of the Light&amp;n is patrolling here, giving all passers-by a suspicious glare.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="3" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="3" dsize="30" bonus="0"/>
+      <move ndize="1" dsize="0" bonus="0"/>
+      <ac>100</ac>
+      <gold>100</gold>
+      <bankgold>0</bankgold>
+      <exp>200</exp>
+      <hitroll>1</hitroll>
+      <damroll>1</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1057804"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="3" sides="1" add="1"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnRandom" argtype="INT" argument="1">
+      <action number="Emote" argtype="STRING" argument="his armor gleaming in the sun, the child fingers his hilt and mutters something."/>
+    </mobprog>
+    <mobprog main="OnRandom" argtype="INT" argument="1">
+      <action number="Emote" argtype="STRING" argument="not all too subtle, the child of the light looks at you in a suspicious way."/>
+    </mobprog>
+    <mobprog main="OnRandom" argtype="INT" argument="1">
+      <action number="Emote" argtype="STRING" argument="the child of the light leans on the pavement to clean his leg plates from mud."/>
+    </mobprog>
+    <mobprog main="OnRandom" argtype="INT" argument="1">
+      <action number="Emote" argtype="STRING" argument="the child frowns suspiciously at you as he walks by in full armor."/>
+    </mobprog>
+    <mobprog main="OnAttack" argtype="INT" argument="1">
+      <action number="Pause" argtype="INT" argument="1"/>
+      <action number="Emote" argtype="STRING" argument="the whitecloak frowns, '\c08burn you! you shall die!\c00' as he charges forward."/>
+    </mobprog>
+    <mobprog main="OnAttack" argtype="INT" argument="1">
+      <sideterm number="Level" not="FALSE" argtype="STRING" argument="20 200"/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="Pause" argtype="INT" argument="1"/>
+      <action number="Emote" argtype="STRING" argument="This Child is escorted by several of his peers ... this is too dangerous for now."/>
+    </mobprog>
+    <mobprog main="OnAction" argtype="STRING" argument="weave">
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="Emote" argtype="STRING" argument="the child narrows his eyes at you suspiciously... maybe that's a bad idea."/>
+      <action number="ActionTo" argtype="STRING" argument="peer"/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="30015" name="peddler annoying" special="NONE">
+    <description>She looks really down on her luck, and it's only going to get worse.
+</description>
+    <shortdesc>an \c01annoying\c00 peddler</shortdesc>
+    <longdesc>An \c01annoying\c00\c03 peddler is here.
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="6" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="4" dsize="30" bonus="0"/>
+      <move ndize="1" dsize="0" bonus="0"/>
+      <ac>90</ac>
+      <gold>50</gold>
+      <bankgold>0</bankgold>
+      <exp>130</exp>
+      <hitroll>2</hitroll>
+      <damroll>7</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1048588"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="2" sides="9" add="2"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnAttack" argtype="STRING" argument="weave">
+      <sideterm number="Level" not="FALSE" argtype="STRING" argument="11 200"/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="Pause" argtype="INT" argument="1"/>
+      <action number="Emote" argtype="STRING" argument="as the attack on the peddler is plotted, a group of guards arrives at the scene.. this isn't a good time."/>
+    </mobprog>
+    <mobprog main="OnRandom" argtype="INT" argument="1">
+      <action number="Emote" argtype="STRING" argument="the peddler yells at you, 'here! some very fine spoons! here! i got the best!'"/>
+    </mobprog>
+    <mobprog main="OnRandom" argtype="INT" argument="1">
+      <action number="Emote" argtype="STRING" argument="the peddler stands still, trying to decide how much money you got to spend."/>
+    </mobprog>
+    <mobprog main="OnAttack" argtype="INT" argument="1">
+      <sideterm number="Level" not="FALSE" argtype="STRING" argument="1 10"/>
+      <action number="Pause" argtype="INT" argument="1"/>
+      <action number="Emote" argtype="STRING" argument="the peddler grumbles, '\c03hey! whaa?! eeek!\c00' as she wields her trusty cleaver."/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="30016" name="guardsman guard queen" special="NONE">
+    <description>Well equiped and trained, the guardsman stands for the
 law and order in the city of Caemlyn.
-~
-1081352 0 0 E
-10 14 5 954 4d50+50 4d15+6
-40 100
-8 8 1 714
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-P
-OnAttack
-Say "alert the guard! i am under \c14attack\c00!"
-End
-OnRandom 1
-Emote "the guard looks at you for a moment, then wipes some sweat off his forehead and moves on."
-End
-OnRandom 1
-Emote "the guard yawns, then leans against a wall to rest his tired bones."
-End
-OnRandom 1
-Emote "the guardsman looks up in the clear sky, then mutters something about the heat."
-End
-OnTime 24
-Emote "the guardsman proclaims loudly, 'it's 12 o'clock and all is well in caemlyn!'"
-End
-Q
-E
-#30017
-sharaton shop keeper shopkeeper~
-Sharaton the Shopkeeper~
-Sharaton the Shopkeeper is standing here.
-~
-Sharaton is a middle aged man, dressed in plain clothes and wears
+</description>
+    <shortdesc>a guardsman</shortdesc>
+    <longdesc>A Queen's guardsman is patrolling the street here.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="10" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="4" dsize="50" bonus="50"/>
+      <move ndize="1" dsize="50" bonus="50"/>
+      <ac>50</ac>
+      <gold>40</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>6</hitroll>
+      <damroll>6</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1081352"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="4" sides="15" add="6"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnAttack" argtype="VOID" argument="NONE">
+      <action number="Say" argtype="STRING" argument="alert the guard! i am under \c14attack\c00!"/>
+    </mobprog>
+    <mobprog main="OnRandom" argtype="INT" argument="1">
+      <action number="Emote" argtype="STRING" argument="the guard looks at you for a moment, then wipes some sweat off his forehead and moves on."/>
+    </mobprog>
+    <mobprog main="OnRandom" argtype="INT" argument="1">
+      <action number="Emote" argtype="STRING" argument="the guard yawns, then leans against a wall to rest his tired bones."/>
+    </mobprog>
+    <mobprog main="OnRandom" argtype="INT" argument="1">
+      <action number="Emote" argtype="STRING" argument="the guardsman looks up in the clear sky, then mutters something about the heat."/>
+    </mobprog>
+    <mobprog main="OnTime" argtype="INT" argument="24">
+      <action number="Emote" argtype="STRING" argument="the guardsman proclaims loudly, 'it's 12 o'clock and all is well in caemlyn!'"/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="30017" name="sharaton shop keeper shopkeeper" special="NONE">
+    <description>Sharaton is a middle aged man, dressed in plain clothes and wears
 a long black coat over his broad shoulders, along with a pouch for
 gold and silver at his belt.
-~
-2093066 0 0 E
-90 20 10 954 1d100+0 1d1+0
-0 0
-8 8 1 714
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-E
-#30018
-aiel savage~
-An \c05Aiel\c00 savage~
-One of those \c05Aiel\c00\c03 savages is standing here.
-~
-Intimidating and tall, spear in hand and with his veil raised, a warrior
+</description>
+    <shortdesc>Sharaton the Shopkeeper</shortdesc>
+    <longdesc>Sharaton the Shopkeeper is standing here.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="90" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="0"/>
+      <move ndize="1" dsize="0" bonus="0"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="10481674"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="30018" name="aiel savage" special="NONE">
+    <description>Intimidating and tall, spear in hand and with his veil raised, a warrior
 bred in the Waste and ready to do battle is here.
-~
-8200 16777216 18 E
-20 11 5 954 6d200+0 2d8+0
-40 125
-8 8 1 714
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-Bash: 100
-Trip: 100
-P
-OnAttack
-SayTo "ah, wetlander.. let's \c01dance\c00 the spears!"
-End
-OnRandom 1
-Emote "the tall aiel looks at you intently, then snorts and moves on."
-End
-OnRandom 1
-Emote "the aiel glances towards your directions and mutters something."
-End
-OnRandom 1
-Emote "the tall aielman walks around, looking at you for a moment."
-End
-OnRandom 1
-Emote "you never hear the aiel's steps as he comes closer but he just walks away."
-End
-OnRandom 1
-Emote "tall and with a few scars on his face and upper chest, the aiel leans on a wall."
-End
-Q
-E
-#30019
-Lirien~
-Lirien~
-Lirien stands here, holding a very small hammer.
-~
-Lirien is a short bald fellow, his eyes narrowed to assist his failing vision
+</description>
+    <shortdesc>an \c05Aiel\c00 savage</shortdesc>
+    <longdesc>One of those \c05Aiel\c00\c03 savages is standing here.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="20" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="6" dsize="200" bonus="0"/>
+      <move ndize="1" dsize="0" bonus="0"/>
+      <ac>50</ac>
+      <gold>40</gold>
+      <bankgold>0</bankgold>
+      <exp>125</exp>
+      <hitroll>9</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="8200"/>
+    <affected one="16777216" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="2" sides="8" add="9"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnAttack" argtype="VOID" argument="NONE">
+      <action number="SayTo" argtype="STRING" argument="ah, wetlander.. let's \c01dance\c00 the spears!"/>
+    </mobprog>
+    <mobprog main="OnRandom" argtype="INT" argument="1">
+      <action number="Emote" argtype="STRING" argument="the tall aiel looks at you intently, then snorts and moves on."/>
+    </mobprog>
+    <mobprog main="OnRandom" argtype="INT" argument="1">
+      <action number="Emote" argtype="STRING" argument="the aiel glances towards your directions and mutters something."/>
+    </mobprog>
+    <mobprog main="OnRandom" argtype="INT" argument="1">
+      <action number="Emote" argtype="STRING" argument="the tall aielman walks around, looking at you for a moment."/>
+    </mobprog>
+    <mobprog main="OnRandom" argtype="INT" argument="1">
+      <action number="Emote" argtype="STRING" argument="you never hear the aiel's steps as he comes closer but he just walks away."/>
+    </mobprog>
+    <mobprog main="OnRandom" argtype="INT" argument="1">
+      <action number="Emote" argtype="STRING" argument="tall and with a few scars on his face and upper chest, the aiel leans on a wall."/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="30019" name="Lirien" special="NONE">
+    <description>Lirien is a short bald fellow, his eyes narrowed to assist his failing vision
 but the rest of his senses are keen, and he's known to work shoes by touch alone.
-~
-1056778 0 0 E
-100 20 -10 954 30d100+0 1d1+0
-0 0
-8 8 1 714
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-E
-#30020
-A Maiden of the spear~
-a Maiden of the spear~
-A Maiden of the spear stands here.
-~
-A Maiden of the spear, one of the Far Dareis Mai stands before you, her veil
+</description>
+    <shortdesc>Lirien</shortdesc>
+    <longdesc>Lirien stands here, holding a very small hammer.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="100" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="30" dsize="100" bonus="0"/>
+      <move ndize="1" dsize="0" bonus="0"/>
+      <ac>-100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="10280970"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="30020" name="A Maiden of the spear" special="NONE">
+    <description>A Maiden of the spear, one of the Far Dareis Mai stands before you, her veil
 already raised and spear resting confidently in her hands.
-~
-1049624 16777216 0 E
-30 5 -2 954 7d100+500 6d10+15
-75 100
-8 8 2 714
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-Bash: 100
-Trip: 100
-Kick: 100
-P
-OnAttack
-Emote "the maiden smirks and pulls the viel over her face, then charges at you."
-End
-OnRandom 1
-Emote "the maiden leans on her spear, fingering her veil."
-End
-OnRandom 1
-Emote "the maiden looks to be on her \c03t\c10o\c00\c03e\c10s\c00, even as she stands \c02still\c00."
-End
-OnRandom 1
-Emote "the maiden beckons you to \c05dance\c00 the \c06spears\c00 with her."
-End
-OnRandom 1
-Emote "the maiden casually sharpens her \c01spears\c00, making a harsh \c14grating\c00 sound."
-End
-Q
-E
-#30021
-guard queen group~
-a small group of armed guardsmen~
-A number of her Majesty's guardsmen stand here, watching around carefully.
-~
-   Armed to the teeth and hands on hilts, long grey cloaks covering shining
+</description>
+    <shortdesc>a Maiden of the spear</shortdesc>
+    <longdesc>A Maiden of the spear stands here.
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="30" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="7" dsize="100" bonus="500"/>
+      <move ndize="1" dsize="500" bonus="500"/>
+      <ac>-20</ac>
+      <gold>75</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>15</hitroll>
+      <damroll>15</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1049624"/>
+    <affected one="16777216" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="6" sides="10" add="15"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="30021" name="guard queen group" special="NONE">
+    <description>   Armed to the teeth and hands on hilts, long grey cloaks covering shining
 steel and polished helmets gleaming in the light, an organized group of Queen's
 soldiers stands guard here.
-~
-1056778 67108864 0 E
-90 -30 -5 954 30d300+4000 20d40+50
-200 110
-8 8 1 714
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-Bash: 100
-Trip: 100
-Dirtkick: 100
-Kick: 100
-Disarm: 100
-Stun: 100
-E
-#30023
-captain guard~
-a captain of the guard~
-A captain of the Guard stands here.
-~
-The guardsman is tall, his face solemn and there is the cold, hard look
+</description>
+    <shortdesc>a small group of armed guardsmen</shortdesc>
+    <longdesc>A number of her Majesty's guardsmen stand here, watching around carefully.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="90" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="30" dsize="300" bonus="4000"/>
+      <move ndize="1" dsize="4000" bonus="4000"/>
+      <ac>-50</ac>
+      <gold>200</gold>
+      <bankgold>0</bankgold>
+      <exp>110</exp>
+      <hitroll>50</hitroll>
+      <damroll>50</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1056778"/>
+    <affected one="67108864" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="20" sides="40" add="50"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="30023" name="captain guard" special="NONE">
+    <description>The guardsman is tall, his face solemn and there is the cold, hard look
 of a seasoned warrior in his eyes when he walks about confidently. His armor
 is in fine shape, his brows in a near constant frown.
-~
-8 0 0 E
-15 12 3 954 1d100+450 1d1+8
-90 150
-8 8 1 714
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-Bash: 100
-Kick: 100
-P
-OnEntry & ! Guild "caemlyn" & Carrying 29806
-ActionTo "kill"
-Pause 2
-Emote "the captain looks at a heavy ring of keys and yells, 'what do you think you are doing?!' as he attacks."
-End
-Q
-E
-#30024
-old sage~
-an old sage~
-An old sage stands here.
-~
-It looks, err, unfinished.
-~
-10 0 0 E
-100 20 10 954 1d100+0 1d1+0
-0 0
-8 8 0 714
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-E
-#30025
-advertiser~
-a shameless advertiser~
-A shameless advertiser stands here, doing what he does best.
-~
-Isn't he convincing? Do what he wants.
-~
-10 0 0 E
-40 20 10 954 1d100+0 1d1+0
-0 0
-8 8 1 714
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-E
-#30026
-trainer guard guardsman~
-A \c01Trainer\c00 for the Guard~
-A trainer for the Royal Guard stands here.
-~
-550
-
-~
-8 0 0 E
-18 10 2 954 6d15+250 4d10+10
-95 200
-8 8 1 714
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-Trip: 100
-Kick: 100
-P
-OnEntry & ! Guild "caemlyn" & Carrying 29806
-ActionTo "kill"
-Pause 1
-Emote "the trainer yells, 'what are you doing with those!' as he sees the keys, and attacks."
-End
-Q
-E
-#30027
-guardsman guard bogo~
-a guardsman~
-A tall guardsman stands here.
-~
-He looks terribly busy and looks about constantly, looking for trouble.
-~
-8 0 0 E
-20 20 0 954 1d125+0 1d1+0
-0 0
-8 8 1 714
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-E
-#30028
-small nasty rat~
-A small nasty rat~
-A small, smelly, nasty rat scurries around here.
-~
-About one one foot long, including tail, with beady red eyes that
+</description>
+    <shortdesc>a captain of the guard</shortdesc>
+    <longdesc>A captain of the Guard stands here.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="15" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="450"/>
+      <move ndize="1" dsize="450" bonus="450"/>
+      <ac>30</ac>
+      <gold>90</gold>
+      <bankgold>0</bankgold>
+      <exp>150</exp>
+      <hitroll>8</hitroll>
+      <damroll>8</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="8"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="8"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnEntry" argtype="VOID" argument="NONE">
+      <sideterm number="Guild" not="TRUE" argtype="STRING" argument="caemlyn"/>
+      <sideterm number="Carrying" not="FALSE" argtype="INT" argument="29806"/>
+      <action number="ActionTo" argtype="STRING" argument="kill"/>
+      <action number="Pause" argtype="INT" argument="2"/>
+      <action number="Emote" argtype="STRING" argument="the captain looks at a heavy ring of keys and yells, 'what do you think you are doing?!' as he attacks."/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="30024" name="old sage" special="NONE">
+    <description>It looks, err, unfinished.
+</description>
+    <shortdesc>an old sage</shortdesc>
+    <longdesc>An old sage stands here.
+</longdesc>
+    <title/>
+    <chardata gender="NEUTRAL" class="Adventurer" level="100" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="0"/>
+      <move ndize="1" dsize="0" bonus="0"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="10"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="30025" name="advertiser" special="NONE">
+    <description>Isn't he convincing? Do what he wants.
+</description>
+    <shortdesc>a shameless advertiser</shortdesc>
+    <longdesc>A shameless advertiser stands here, doing what he does best.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="40" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="0"/>
+      <move ndize="1" dsize="0" bonus="0"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="10"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="30026" name="trainer guard guardsman" special="NONE">
+    <description>A trainer for the Royal Guard stands here, he's fairly tall, broad, and
+looks intimidating.    
+</description>
+    <shortdesc>a &amp;rtrainer&amp;n for the guard</shortdesc>
+    <longdesc>A trainer for the Royal Guard stands here.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="18" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="6" dsize="15" bonus="250"/>
+      <move ndize="1" dsize="250" bonus="250"/>
+      <ac>20</ac>
+      <gold>95</gold>
+      <bankgold>0</bankgold>
+      <exp>200</exp>
+      <hitroll>10</hitroll>
+      <damroll>10</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="8"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="4" sides="10" add="10"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnEntry" argtype="VOID" argument="NONE">
+      <sideterm number="Guild" not="TRUE" argtype="STRING" argument="caemlyn"/>
+      <sideterm number="Carrying" not="FALSE" argtype="INT" argument="29806"/>
+      <action number="ActionTo" argtype="STRING" argument="kill"/>
+      <action number="Pause" argtype="INT" argument="1"/>
+      <action number="Emote" argtype="STRING" argument="the trainer yells, 'what are you doing with those!' as he sees the keys, and attacks."/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="30027" name="guardsman guard bogo" special="NONE">
+    <description>He looks terribly busy and looks about constantly, looking for trouble.
+</description>
+    <shortdesc>a guardsman</shortdesc>
+    <longdesc>A tall guardsman stands here.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="20" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="125" bonus="0"/>
+      <move ndize="1" dsize="0" bonus="0"/>
+      <ac>0</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="8"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="30028" name="small nasty rat" special="NONE">
+    <description>About one one foot long, including tail, with beady red eyes that
 seem somehow to exude cunning and evil.
 The fur is badly kept and it has several marks from fights
 with others of its kind.
 Why not do the world a favor and slay it?
-~
-24 0 0 E
-1 20 10 954 1d50+10 1d5+0
-0 105
-8 8 0 714
-BareHandAttack: 4
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-P
-OnEntry & ! Hurt & Level "0 10"
-Emote "$n hisses at $N and attacks!"
-ActionTo "hit"
-End
-OnRandom 1
-Emote "$n looks at you all and hisses."
-End
-Q
-E
-#30029
-scrawny dirty dog~
-A scrawny dirty dog~
-A dirty, scrawny dog sits here, looking at you indifferently.
-~
-It seems like if it ever has had an owner, that must have been long ago.
+</description>
+    <shortdesc>a small nasty rat</shortdesc>
+    <longdesc>A small, smelly, nasty rat scurries around here.
+</longdesc>
+    <title/>
+    <chardata gender="NEUTRAL" class="Adventurer" level="1" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="50" bonus="10"/>
+      <move ndize="1" dsize="10" bonus="10"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>105</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="24"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="4"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="5" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnEntry" argtype="VOID" argument="NONE">
+      <sideterm number="Hurt" not="TRUE" argtype="VOID" argument="NONE"/>
+      <sideterm number="Level" not="FALSE" argtype="STRING" argument="0 10"/>
+      <action number="Emote" argtype="STRING" argument="$n hisses at $N and attacks!"/>
+      <action number="ActionTo" argtype="STRING" argument="hit"/>
+    </mobprog>
+    <mobprog main="OnRandom" argtype="INT" argument="1">
+      <action number="Emote" argtype="STRING" argument="$n looks at you all and hisses."/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="30029" name="scrawny dirty dog" special="NONE">
+    <description>It seems like if it ever has had an owner, that must have been long ago.
 It has a dirty, unkept fur with lots of scars from fights, probably
 about what few scraps of food there are in the back alleys.
-~
-10 0 0 E
-10 17 9 954 1d50+0 1d5+0
-0 150
-6 6 1 714
-BareHandAttack: 4
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-P
-OnRandom 3
-Action "yawn"
-End
-OnAttack
-ActionTo "growl"
-End
-Q
-E
-#30030
-young thief pickpocket~
-A young thief~
-A teenaged boy stands here, watching the passersby over carefully.
-~
-There's something about him...Doesn't he look just a little bit too agile?
+</description>
+    <shortdesc>a scrawny dirty dog</shortdesc>
+    <longdesc>A dirty, scrawny dog sits here, looking at you indifferently.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="10" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="50" bonus="0"/>
+      <move ndize="1" dsize="0" bonus="0"/>
+      <ac>90</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>150</exp>
+      <hitroll>3</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="10"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="4"/>
+    <pos default="Sitting" other="Sitting"/>
+    <damage num="1" sides="5" add="3"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnRandom" argtype="INT" argument="3">
+      <action number="Action" argtype="STRING" argument="yawn"/>
+    </mobprog>
+    <mobprog main="OnAttack" argtype="INT" argument="3">
+      <action number="ActionTo" argtype="STRING" argument="growl"/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="30030" name="young thief pickpocket boy teenaged" special="NONE">
+    <description>There's something about him...Doesn't he look just a little bit too agile?
 As you watch, the boy approaches an apparently wealthy man from behind, but a
 warning stare from the mans guards warns the boy off.
-~
-1048652 0 0 E
-4 15 5 954 2d5+60 2d6+0
-5 125
-8 8 1 714
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-P
-OnRandom 2
-Emote "$n picks $s nose absently while watching the milling people."
-End
-Q
-E
-#30031
-bum homeless ~
-A city bum~
-A city bum wanders around aimlessly, picking up trash wherever he can find it.
-~
-He looks indescribably filthy, is unhealthily thin and has teeth like 
+</description>
+    <shortdesc>a young thief</shortdesc>
+    <longdesc>A teenaged boy stands here, watching the passersby carefully.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="4" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="2" dsize="5" bonus="60"/>
+      <move ndize="1" dsize="60" bonus="60"/>
+      <ac>50</ac>
+      <gold>5</gold>
+      <bankgold>0</bankgold>
+      <exp>125</exp>
+      <hitroll>5</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1048652"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="2" sides="6" add="5"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnRandom" argtype="INT" argument="2">
+      <action number="Emote" argtype="STRING" argument="$n picks $s nose absently while watching the milling people."/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="30031" name="bum homeless " special="NONE">
+    <description>He looks indescribably filthy, is unhealthily thin and has teeth like 
 a rotting forest. He glares your way as he wanders by, restless eyes 
 continually searching for anything of use he can pick up.
-~
-1048652 0 0 E
-10 10 10 954 1d100+0 2d5+0
-15 120
-8 8 1 714
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-P
-OnRandom 5
-Emote "$n picks up some trash and mutters happily to $mself while examining it."
-End
-Q
-E
-#30032
-farmer woman visitor~
-a visiting farmer's wife~
-A simply dressed woman, some kind of farmer, walks around admiring the scenery.
-~
-She looks very self confident, even though she's in a totally different
+</description>
+    <shortdesc>a city bum</shortdesc>
+    <longdesc>A city bum wanders around aimlessly, picking up trash wherever he can find it.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="10" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="0"/>
+      <move ndize="1" dsize="0" bonus="0"/>
+      <ac>100</ac>
+      <gold>15</gold>
+      <bankgold>0</bankgold>
+      <exp>120</exp>
+      <hitroll>10</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1048652"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="2" sides="5" add="10"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnRandom" argtype="INT" argument="5">
+      <action number="Emote" argtype="STRING" argument="$n picks up some trash and mutters happily to $mself while examining it."/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="30032" name="farmer woman visitor" special="NONE">
+    <description>She looks very self confident, even though she's in a totally different
 environment. She's simply but robustly dressed in clothing that
 seems to be able to resist just about any kind of weather.
-~
-1048648 0 0 E
-7 20 9 954 1d150+0 2d6+0
-25 85
-8 8 2 714
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-P
-OnRandom 3
-Emote "$s pauses to admire a (to her) impressive building."
-End
-Q
-E
-#30033
-villain man criminal~
-a seedy-looking villain~
-A man that just has to be some kind of criminal hangs about.
-~
-He looks like the archetype of a petty criminal with hopes
+</description>
+    <shortdesc>a visiting farmer's wife</shortdesc>
+    <longdesc>A simply dressed woman, some kind of farmer, walks around admiring the scenery.
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="7" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="150" bonus="0"/>
+      <move ndize="1" dsize="0" bonus="0"/>
+      <ac>90</ac>
+      <gold>25</gold>
+      <bankgold>0</bankgold>
+      <exp>85</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1048648"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="2" sides="6" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnRandom" argtype="INT" argument="3">
+      <action number="Emote" argtype="STRING" argument="$s pauses to admire a (to her) impressive building."/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="30033" name="villain man criminal" special="NONE">
+    <description>He looks like the archetype of a petty criminal with hopes
 of climbing the criminal hall of fame list.
 He's dressed in a very torn and patched cloak that barely
 conceals a dagger he has ready at the belt.
-~
-1048664 0 0 E
-10 18 7 954 2d100+0 3d4+4
-20 105
-8 8 1 714
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-P
-OnRandom 2
-Emote "$n fingers $s dagger while trying to look inconspicuous."
-End
-Q
-E
-$
+</description>
+    <shortdesc>a seedy-looking villain</shortdesc>
+    <longdesc>A man that just has to be some kind of criminal hangs about.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="10" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="2" dsize="100" bonus="0"/>
+      <move ndize="1" dsize="0" bonus="0"/>
+      <ac>70</ac>
+      <gold>20</gold>
+      <bankgold>0</bankgold>
+      <exp>105</exp>
+      <hitroll>2</hitroll>
+      <damroll>4</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1048664"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="3" sides="4" add="2"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnRandom" argtype="INT" argument="2">
+      <action number="Emote" argtype="STRING" argument="$n fingers $s dagger while trying to look inconspicuous."/>
+    </mobprog>
+  </mobile>
+</mobiles>

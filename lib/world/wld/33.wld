@@ -5,9 +5,9 @@
       <roomdescription>A narrow, pebble filled road bends southwest from 
 Caemlyn, which can be seen off in the distance to
 the northwest, its white towers and spires reflecting
-the day&apos;s sunlight. 
+the day's sunlight. 
 </roomdescription>
-      <flags>0</flags>
+      <flags>1048576</flags>
       <sector>Field</sector>
       <special>NONE</special>
     </roombasic>
@@ -23,7 +23,7 @@ the day&apos;s sunlight.
       <roomdescription>A narrow, pebble filled road bends southwest from 
 Caemlyn, which can be seen off in the distance to
 the northwest, its white towers and spires reflecting
-the day&apos;s sunlight. 
+the day's sunlight. 
 </roomdescription>
       <flags>0</flags>
       <sector>Field</sector>
@@ -41,7 +41,7 @@ the day&apos;s sunlight.
       <roomdescription>A narrow, pebble filled road bends southwest from 
 Caemlyn, which can be seen off in the distance to
 the northwest, its white towers and spires reflecting
-the day&apos;s sunlight. 
+the day's sunlight. 
 </roomdescription>
       <flags>0</flags>
       <sector>Field</sector>
@@ -91,11 +91,11 @@ grassy plains can be seen in either direction.
     </exit>
   </room>
   <room>
-    <roombasic title="Road bends" vnum="3305" zone="33">
+    <roombasic title="The Road Bends" vnum="3305" zone="33">
       <roomdescription>A narrow, pebble filled road bends southwest from 
 Caemlyn, which can be seen off in the distance to
 the northwest, its white towers and spires reflecting
-the day&apos;s sunlight. 
+the day's sunlight. 
 </roomdescription>
       <flags>0</flags>
       <sector>Field</sector>
@@ -121,15 +121,16 @@ continues for miles in either direction.
       <sector>Field</sector>
       <special>NONE</special>
     </roombasic>
-    <exit direction="west" keyword="" exitinfo="0" keynum="0" toroom="3307">
-      <description/>
-    </exit>
     <exit direction="northeast" keyword="" exitinfo="0" keynum="0" toroom="3305">
       <description/>
     </exit>
+    <exit direction="southwest" keyword="" exitinfo="0" keynum="-1" toroom="3307">
+      <description>You see nothing special.
+</description>
+    </exit>
   </room>
   <room>
-    <roombasic title="Road splits" vnum="3307" zone="33">
+    <roombasic title="The Road Splits" vnum="3307" zone="33">
       <roomdescription>The road splits northwest toward Four Kings, which can
 be seen beyond several small hills. Caemlyn can still
 be seen in the distance, but very faintly, seeing as
@@ -141,17 +142,20 @@ to Caemlyn to the northeast.
       <sector>Field</sector>
       <special>NONE</special>
     </roombasic>
-    <exit direction="east" keyword="" exitinfo="0" keynum="0" toroom="3306">
-      <description/>
+    <exit direction="east" keyword="" exitinfo="0" keynum="-1" toroom="474">
+      <description>You see nothing special.
+</description>
     </exit>
     <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="3309">
       <description/>
     </exit>
-    <exit direction="northeast" keyword="" exitinfo="0" keynum="0" toroom="474">
-      <description/>
+    <exit direction="northeast" keyword="" exitinfo="0" keynum="-1" toroom="3306">
+      <description>You see nothing special.
+</description>
     </exit>
-    <exit direction="northwest" keyword="" exitinfo="0" keynum="0" toroom="3308">
-      <description/>
+    <exit direction="northwest" keyword="" exitinfo="0" keynum="-1" toroom="3308">
+      <description>You see nothing special.
+</description>
     </exit>
   </room>
   <room>
@@ -194,11 +198,11 @@ you to the south.
     </exit>
   </room>
   <room>
-    <roombasic title="Road bends" vnum="3310" zone="33">
+    <roombasic title="The Road Bends" vnum="3310" zone="33">
       <roomdescription>A narrow, pebble filled road bends southwest from 
 Caemlyn, which can be seen off in the distance to
 the northwest, its white towers and spires reflecting
-the day&apos;s sunlight. 
+the day's sunlight. 
 </roomdescription>
       <flags>0</flags>
       <sector>Field</sector>
@@ -212,7 +216,7 @@ the day&apos;s sunlight.
     </exit>
   </room>
   <room>
-    <roombasic title="rolling hills" vnum="3311" zone="33">
+    <roombasic title="Rolling Hills" vnum="3311" zone="33">
       <roomdescription>You walk up and down upon small hills that gently roll,
 covering the entire landscape with dots of green. The
 road wanders between some of them, and continues over
@@ -231,7 +235,7 @@ the valleys.
     </exit>
   </room>
   <room>
-    <roombasic title="around a large hill" vnum="3312" zone="33">
+    <roombasic title="Around a Large Hill" vnum="3312" zone="33">
       <roomdescription>You walk up and down upon small hills that gently roll,
 covering the entire landscape with dots of green. The
 road wanders between some of them, and continues over
@@ -310,7 +314,7 @@ continues for miles in either direction.
     </exit>
   </room>
   <room>
-    <roombasic title="Road to Lugard zig-zags" vnum="3316" zone="33">
+    <roombasic title="The Road to Lugard Zig-Zags" vnum="3316" zone="33">
       <roomdescription>You walk up and down upon small hills that gently roll,
 covering the entire landscape with dots of green. The
 road wanders between some of them, and continues over
@@ -351,7 +355,7 @@ grassy plains can be seen in either direction.
       <roomdescription>A narrow, pebble filled road bends southwest from 
 Caemlyn, which can be seen off in the distance to
 the northwest, its white towers and spires reflecting
-the day&apos;s sunlight. 
+the day's sunlight. 
 </roomdescription>
       <flags>0</flags>
       <sector>Field</sector>
@@ -482,7 +486,7 @@ winds through them.
     </exit>
   </room>
   <room>
-    <roombasic title="Clear path through a field" vnum="3325" zone="33">
+    <roombasic title="Clear Path through a Field" vnum="3325" zone="33">
       <roomdescription>There is a small path cleared through a field full of
 lengthy rye grass that grows up to cover small bushes.
 Stunted trees can be seen off in the distance to the
@@ -500,7 +504,7 @@ east and the road continues south and north.
     </exit>
   </room>
   <room>
-    <roombasic title="Clear path through a field" vnum="3326" zone="33">
+    <roombasic title="Clear Path through a Field" vnum="3326" zone="33">
       <roomdescription>There is a small path cleared through a field full of
 lengthy rye grass that grows up to cover small bushes.
 Stunted trees can be seen off in the distance to the
@@ -763,6 +767,9 @@ on.
     <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="3338">
       <description/>
     </exit>
+    <exit direction="east" keyword="" exitinfo="0" keynum="0" toroom="8034">
+      <description/>
+    </exit>
     <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="3340">
       <description/>
     </exit>
@@ -812,8 +819,8 @@ imaginable.
       <roomdescription>The street continues, paved with cobblestones, and 
 side streets also seem to be paved in a similar way.
 Several interestingly named inns line the street, some
-with names such as &apos;Domani Wench&apos; and the &apos;Good Night&apos;s
-Ride.&apos; Wild laughter and shrill screams reach your ears
+with names such as 'Domani Wench' and the 'Good Night's
+Ride.' Wild laughter and shrill screams reach your ears
 from one of these inns. You wonder suddenly what the 
 local entertainment might be.
 </roomdescription>
@@ -855,7 +862,7 @@ streets can be seen off to the west.
 through Lugard. A small fountain is seen to the 
 north, where several roads branch off in many
 directions. Several inns are here, which such 
-names as &apos;Nine Horse Hitch&apos; and the &apos;Silver Pig&apos; 
+names as 'Nine Horse Hitch' and the 'Silver Pig' 
 - hardly the best lodging in town.
 </roomdescription>
       <flags>0</flags>
@@ -884,6 +891,9 @@ ready to leave if any guards or ruffians come by.
     <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="3344">
       <description/>
     </exit>
+    <exit direction="east" keyword="" exitinfo="0" keynum="0" toroom="8081">
+      <description/>
+    </exit>
     <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="3346">
       <description/>
     </exit>
@@ -894,8 +904,8 @@ ready to leave if any guards or ruffians come by.
 and several shifty eyed men approach you. You decide
 to move quickly on before they accost you. The area
 is rather rundown, and the inns here run through 
-such names as &apos;The Wagon Seat&apos; and the &apos;Dancing
-Boar&apos; - most meant for merchants and mercenaries.
+such names as 'The Wagon Seat' and the 'Dancing
+Boar' - most meant for merchants and mercenaries.
 </roomdescription>
       <flags>0</flags>
       <sector>Field</sector>
@@ -934,8 +944,8 @@ a bolt of Jacaruz lace in her bag.
 and several shifty eyed men approach you. You decide
 to move quickly on before they accost you. The area
 is rather rundown, and the inns here run through 
-such names as &apos;The Wagon Seat&apos; and the &apos;Dancing
-Boar&apos; - most meant for merchants and mercenaries.
+such names as 'The Wagon Seat' and the 'Dancing
+Boar' - most meant for merchants and mercenaries.
 </roomdescription>
       <flags>0</flags>
       <sector>Field</sector>
@@ -1365,20 +1375,18 @@ south, where it widens in the distance.
   </room>
   <room>
     <roombasic title="The Road Forks West" vnum="3370" zone="33">
-      <roomdescription>The road forks here, leaving a small path branching
-off to the west, and the wider dirt road continuing
-to the south. The area is rather flat in comparison
-to the north, but is still hilly. A large forest
-is seen to the north and the west.
+      <roomdescription>The road that you have been following forever, the useless, twisting,
+pathetic road whose description you are probably not even reading, has
+changed paths, and now moves towards the west because someone very
+powerful and very evil has completely destroyed the road that -did- lead
+towards the south, mainly because of his darkness, and evil and vengeance.
+That is all.    
 </roomdescription>
       <flags>0</flags>
       <sector>Field</sector>
       <special>NONE</special>
     </roombasic>
     <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="3369">
-      <description/>
-    </exit>
-    <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="3372">
       <description/>
     </exit>
     <exit direction="west" keyword="" exitinfo="0" keynum="0" toroom="3371">
@@ -1683,7 +1691,7 @@ everything.
     <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="3385">
       <description/>
     </exit>
-    <exit direction="west" keyword="" exitinfo="0" keynum="0" toroom="3387">
+    <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="3388">
       <description/>
     </exit>
   </room>
@@ -1694,17 +1702,14 @@ of rock that mark a recently discovered rock mine.
 The piles of rock glitter in the sunlight, looking
 to be granite. A thick layer of grey rock dust covers
 everything.
+&amp;RTHIS ROOM LEADS TO A BUGGED ROOM
+&amp;n
+&amp;RDO NOT RECONNECT&amp;n
 </roomdescription>
       <flags>0</flags>
       <sector>Field</sector>
       <special>NONE</special>
     </roombasic>
-    <exit direction="east" keyword="" exitinfo="0" keynum="0" toroom="3386">
-      <description/>
-    </exit>
-    <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="3388">
-      <description/>
-    </exit>
   </room>
   <room>
     <roombasic title="Great North Road" vnum="3388" zone="33">
@@ -1718,7 +1723,7 @@ broad leaved trees are scattered about.
       <sector>Field</sector>
       <special>NONE</special>
     </roombasic>
-    <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="3387">
+    <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="3386">
       <description/>
     </exit>
     <exit direction="south" keyword="" exitinfo="0" keynum="0" toroom="3389">
@@ -1796,12 +1801,9 @@ on it, and is trampled down by hoofprints.
     <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="3391">
       <description/>
     </exit>
-    <exit direction="west" keyword="" exitinfo="0" keynum="0" toroom="3393">
-      <description/>
-    </exit>
   </room>
   <room>
-    <roombasic title="A small Intersection" vnum="3393" zone="33">
+    <roombasic title="A Small Intersection" vnum="3393" zone="33">
       <roomdescription>There is a small intersection of the Great North
 Road and a side path to the north here. The North
 Road bends from east to southwest here, and a small 
@@ -1812,9 +1814,6 @@ forest can be seen to the north.
       <special>NONE</special>
     </roombasic>
     <exit direction="north" keyword="" exitinfo="0" keynum="0" toroom="4185">
-      <description/>
-    </exit>
-    <exit direction="east" keyword="" exitinfo="0" keynum="0" toroom="3392">
       <description/>
     </exit>
     <exit direction="southwest" keyword="" exitinfo="0" keynum="0" toroom="3394">
@@ -1920,7 +1919,7 @@ north the Great North Road continues.
 river of the legendary nation that once sprawled
 to the northwest, at a shallow section. The current
 rushes swiftly, and perhaps fjording the river
-here was not a good idea, as the river&apos;s clear
+here was not a good idea, as the river's clear
 waters now reach your waist.
 </roomdescription>
       <flags>0</flags>

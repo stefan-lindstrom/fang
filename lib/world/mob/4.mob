@@ -1,131 +1,259 @@
-#400
-avalanche~
-an avalanche~
-A rock comes hurtling toward you!
-~
-It's a big rock. It's coming at you. Do you need details?
-~
-1024058 2 0 E
-200 -180 -20 842 30d1000+1000 30d127+150
-0 0
-8 8 0 680
-BareHandAttack: 6
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-Bash: 100
-Stun: 100
-E
-#401
-Lia mistress~
-Lia, mistress of The Half Moon Inn~
-\c03Lia sits on a small stool behind the bar, waiting for customers who wish to stay here for the night.
-~
-Lia is lithe, definitely petite, but with a definite spirit about her that tells
+<?xml version="1.0"?>
+<mobiles>
+  <mobile vnum="400" name="avalanche" special="NONE">
+    <description>It's a big rock. It's coming at you. Do you need details?
+</description>
+    <shortdesc>an avalanche</shortdesc>
+    <longdesc>A rock comes hurtling toward you!
+</longdesc>
+    <title/>
+    <chardata gender="NEUTRAL" class="Adventurer" level="200" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="30" dsize="1000" bonus="1000"/>
+      <move ndize="10" dsize="20" bonus="100"/>
+      <ac>-200</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>200</hitroll>
+      <damroll>150</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1024058"/>
+    <affected one="2" two="0" three="0" four="0"/>
+    <attack type="6"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="30" sides="127" add="200"/>
+    <timer amount="0"/>
+    <skills vector="33"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="401" name="Lia mistress" special="NONE">
+    <description>Lia is lithe, definitely petite, but with a definite spirit about her that tells
 you she is a formidable presence no matter what her size.
-~
-696346 0 0 E
-200 -130 -20 842 1d100+8000 30d127+150
-0 0
-8 8 2 680
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-P
-OnAction "west w we wes" & Carrying 407
-Stop
-SayTo "Give me that key engraved with the moon before you leave the inn."
-End
-OnAction "west w we wes" & Carrying 403
-Stop
-SayTo "Give me that brass key, the one engraved with the vines, before you leave."
-End
-OnAction "west w we wes" & Carrying 404
-Stop
-SayTo "Give me the key engraved with the fish before you leave here."
-End
-OnAction "west w we wes" & Carrying 405
-Stop
-SayTo "Give me that key engraved with the leaf before you leave."
-End
-OnAction "west w we wes" & Carrying 406
-Stop
-SayTo "Give me the key with the sun engraved on it before you leave."
-End
-Q
-E
-#402
-barmaid~
-a barmaid~
-\c03A barmaid is here whisking a tray of steaming food to some table.
-~
-Quite voluptuous she is, a brunette with wide, dark chocolate eyes.
-~
-172058 0 0 E
-1 -180 -20 842 1d100+8000 30d127+150
-0 0
-8 8 2 680
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-E
-#403
-rope tassel call~
-At your call, a serving maid rushes in and~
-A rope on the wall can call a serving maid into the room if you wish to dine.
-~
-It's a plain silk rope with a small bead and tassel at its end.
-~
-10 0 0 E
-0 -80 10 842 1d100+0 1d1+150
-0 0
-8 8 0 680
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-E
-#404
-phelim~
-Phelim~
-\c00Phelim is standing here, the nightengale perched upon his shoulder gazing about intelligently.
-~
-Phelim, the god of sweet dreams, rightful vengeance, and deity of honest thieves and
+</description>
+    <shortdesc>Lia, mistress of The Half Moon Inn</shortdesc>
+    <longdesc>\c03Lia sits on a small stool behind the bar, waiting for customers who wish to stay here for the night.
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="200" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="8000"/>
+      <move ndize="10" dsize="20" bonus="100"/>
+      <ac>-200</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>150</hitroll>
+      <damroll>150</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="9363482"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="30" sides="127" add="150"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnAction" argtype="STRING" argument="west w we wes">
+      <sideterm number="Carrying" not="FALSE" argtype="INT" argument="407"/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="SayTo" argtype="STRING" argument="Give me that key engraved with the moon before you leave the inn."/>
+    </mobprog>
+    <mobprog main="OnAction" argtype="STRING" argument="west w we wes">
+      <sideterm number="Carrying" not="FALSE" argtype="INT" argument="403"/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="SayTo" argtype="STRING" argument="Give me that brass key, the one engraved with the vines, before you leave."/>
+    </mobprog>
+    <mobprog main="OnAction" argtype="STRING" argument="west w we wes">
+      <sideterm number="Carrying" not="FALSE" argtype="INT" argument="404"/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="SayTo" argtype="STRING" argument="Give me the key engraved with the fish before you leave here."/>
+    </mobprog>
+    <mobprog main="OnAction" argtype="STRING" argument="west w we wes">
+      <sideterm number="Carrying" not="FALSE" argtype="INT" argument="405"/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="SayTo" argtype="STRING" argument="Give me that key engraved with the leaf before you leave."/>
+    </mobprog>
+    <mobprog main="OnAction" argtype="STRING" argument="west w we wes">
+      <sideterm number="Carrying" not="FALSE" argtype="INT" argument="406"/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="SayTo" argtype="STRING" argument="Give me the key with the sun engraved on it before you leave."/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="402" name="barmaid" special="NONE">
+    <description>Quite voluptuous she is, a brunette with wide, dark chocolate eyes.
+</description>
+    <shortdesc>a barmaid</shortdesc>
+    <longdesc>\c03A barmaid is here whisking a tray of steaming food to some table.
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="1" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="8000"/>
+      <move ndize="10" dsize="20" bonus="100"/>
+      <ac>-200</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>200</hitroll>
+      <damroll>150</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="9363482"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="30" sides="127" add="200"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="403" name="rope tassel call" special="NONE">
+    <description>It's a plain silk rope with a small bead and tassel at its end.
+</description>
+    <shortdesc>a young maid</shortdesc>
+    <longdesc>A rope on the wall can call a serving maid into the room if you wish to dine.
+</longdesc>
+    <title/>
+    <chardata gender="NEUTRAL" class="Adventurer" level="0" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="0"/>
+      <move ndize="10" dsize="20" bonus="100"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>100</hitroll>
+      <damroll>150</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="9232394"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="100"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="404" name="phelim" special="NONE">
+    <description>Phelim, the god of sweet dreams, rightful vengeance, and deity of honest thieves and
 assassins stands before you here. On his shoulder is perched a nightingale, who gazes
 about the room intelligently. Phelim wears a long flowing robe which fades off into air,
 the pattern upon it one of the heavens, of the stars. The air around him is cold as 
 winter.
-~
-8 0 0 E
-0 20 10 842 1d100+0 1d1+0
-0 0
-8 8 1 0
-E
-#405
-dergati~
-Dergati~
-\c00Dergati is standing here, the shrike perched upon her wrist watching every movement.
-~
-Dergati, the goddess of nightmares stands before you here. On her wrist is perched a
+</description>
+    <shortdesc>Phelim</shortdesc>
+    <longdesc>\c00Phelim is standing here, the nightengale perched upon his shoulder gazing about intelligently.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="0" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="0"/>
+      <move ndize="10" dsize="20" bonus="100"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="8"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="405" name="dergati" special="NONE">
+    <description>Dergati, the goddess of nightmares stands before you here. On her wrist is perched a
 shrike, who watches every movement in the room. Dergati herself is an exotic beauty,
 marred only by the third eye upon her forehead. Her vengeance is cruel and painful,
 her methods evil. Dergati fears the sun and wishes only to destroy it. It is said that her
 eyes miss nothing, and that she knows of all the happenings in the world.
-~
-8 0 0 E
-0 20 10 842 1d100+0 1d1+0
-0 0
-8 8 2 0
-E
-$
+</description>
+    <shortdesc>Dergati</shortdesc>
+    <longdesc>\c00Dergati is standing here, the shrike perched upon her wrist watching every movement.
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="0" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="0"/>
+      <move ndize="10" dsize="20" bonus="100"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="8"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+</mobiles>

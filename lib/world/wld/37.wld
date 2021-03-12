@@ -1,32 +1,35 @@
 <?xml version="1.0"?>
 <rooms>
   <room>
-    <roombasic title="The sewing room of the head seamstress of the Aes Sedai" vnum="3700" zone="37">
-      <roomdescription>This is the sewing room of Annika, head seamstress for the Tower.  As you walk in you hear the hustle and bustle of busy hands working on creating the beautiful gowns of the Aes Sedai.  In the room you see bolts of the finest silk, satin and wool.
+    <roombasic title="Unused Room" vnum="3700" zone="37">
+      <roomdescription>Vacant.
 </roomdescription>
-      <flags>154</flags>
+      <flags>0</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
   </room>
   <room>
-    <roombasic title="The office of Lynnora Devon Aes Sedai, Keeper of the Chronicles" vnum="3701" zone="37">
-      <roomdescription>A massive, polished oak desk fills the center of this room.  Carvings of
-intertwining avedesora leaves begin at the base of the clawed feet and wind
-their way up and throughout the desk.  Behind it is a large,
-comfortable-looking wooden chair.  Facing it, is four more smaller chairs,
-arranged in a semi-circle, their seats padded for comfort.  There are several
-stacks of books and papers upon the surface of the desk, most of which are
-neatly piled, though some are scattered haphazardly about.  There is an oil
-lamp perched atop one of the books, shedding a soft glow upon the room.  The
-wooden walls are polished to a dull shine, their surfaces reflecting the light
-from the lamp, making the office seem larger than it is.  The west wall is
-totally covered by a large bookcase, its shelves laden with books, papers, and
-ledgers of all sorts.  On the east wall is a small window overlooking the alley
-and the forest beyond, and on either side of it are paintings.  One is a
-seascape of some sort, and the other is of the White Tower.    
+    <roombasic title="The Office of Celline Revaira Maurel, Keeper of the Chronicles" vnum="3701" zone="37">
+      <roomdescription>The room here is large, and decorated with items of clean colours, pure
+white and light duty blues.  The rug on the floor is thick and intricately
+put together, the center of the carpet is a large white starburst,
+surrounded by blue swirls.  White silk flowers are on the corner of the
+massive polished oak desk in the center of the room, books and papers set
+up in piles around, a select few half open and strewn around in the
+middle, next to a case full of writing impliments.  A modest, comfortable
+looking chair sits behind the desk, and a few dusky blue armchairs sit in
+random positions around the room.  The west wall is completely covered by
+a bookcase, shelves covered in books, papers, ledgers, boxes, and a
+portion of a middle shelf dedicated to personal effects.  The east wall is
+covered with a large window that runs ceiling to floor, but is quite
+narrow, overlooking the alley and the forest and landscape beyond, no
+curtains covering the window, but there is a latch near the bottom
+possibly used for opening the window and closing shutters.  The whole room
+is very open and comfortable looking, and behind the desk on the north
+wall there is a modest wooden door leading off to another room.    
 </roomdescription>
-      <flags>90</flags>
+      <flags>32858</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
@@ -48,7 +51,7 @@ needs. Goldsmiths, candle makers, weavers, tailors, furniture makers of the
 highest skill have been retained for the Aes Sedai. Out past the building
 where the craftsman have their shops are the stables.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
@@ -60,22 +63,13 @@ where the craftsman have their shops are the stables.
     </exit>
   </room>
   <room>
-    <roombasic title="The Weaving Room of the Rebel Sedai" vnum="3703" zone="37">
-      <roomdescription>The sound of feet working the spinning machines fill your ears.
-As you walk in they quickly glance and smile then continue with
-their work.  Hands working the wool, the spun thread, weaving
-the beautiful shawls of the Rebel Sedai.  The blues, yellows,
-greens and various colors depicting the ajahs blend together
-in a striking contrast of the white walls.  Your eyes turn to the
-locked chest that contain the finished shawls of the Aes Sedai.
+    <roombasic title="Unused Room" vnum="3703" zone="37">
+      <roomdescription>Vacant.
 </roomdescription>
-      <flags>94</flags>
+      <flags>32768</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
-    <exit direction="west" keyword="door" exitinfo="3" keynum="0" toroom="3706">
-      <description>&lt;NONE&gt;</description>
-    </exit>
   </room>
   <room>
     <roombasic title="The Hallway of Several Doors" vnum="3704" zone="37">
@@ -84,12 +78,12 @@ the Little Tower that the Aes Sedai have made to, as always,
 serve their own purposes. Some Aes Sedai, rooms are on this 
 floor, while below are a few, essential, craft rooms for the
 use of the artisans the Aes Sedai have employed for their
-everyday necessities. Although the smell of the Candlemaker&apos;s
+everyday necessities. Although the smell of the Candlemaker's
 shop is not always pleasant to live over, a scent of incense
 and warm potpourri is much more preferable than the smell 
 of the stables, which are also nearby. 
 </roomdescription>
-      <flags>8</flags>
+      <flags>32776</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
@@ -97,14 +91,14 @@ of the stables, which are also nearby.
       <description>The hallway of many doors
 </description>
     </exit>
-    <exit direction="east" keyword="door east" exitinfo="3" keynum="0" toroom="4073">
+    <exit direction="east" keyword="door east" exitinfo="7" keynum="3704" toroom="4073">
       <description>None
 </description>
     </exit>
     <exit direction="south" keyword="door south" exitinfo="1" keynum="0" toroom="3702">
       <description>&lt;NONE&gt;</description>
     </exit>
-    <exit direction="west" keyword="door west" exitinfo="3" keynum="0" toroom="4068">
+    <exit direction="west" keyword="door west" exitinfo="3" keynum="4041" toroom="4041">
       <description>None
 </description>
     </exit>
@@ -122,7 +116,7 @@ as you think you see it, he goes back to work. It is hidden again
 from your view, but you know you have truly seen a master
 craftsman at work.
 </roomdescription>
-      <flags>90</flags>
+      <flags>32858</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
@@ -139,16 +133,12 @@ On either side of the hall are locked doors and at the end of the
 hallway is a rickety, but sturdy wooden door leading to the
 pastures of Salidar.
 </roomdescription>
-      <flags>8</flags>
+      <flags>32776</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
     <exit direction="north" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="3707">
       <description>The hallway of many doors
-</description>
-    </exit>
-    <exit direction="east" keyword="door" exitinfo="3" keynum="0" toroom="3703">
-      <description>The Weaving Room of the Rebel Sedai
 </description>
     </exit>
     <exit direction="south" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="3704">
@@ -165,10 +155,14 @@ novices. The hallway ends here, with stairs leading down to the back door of
 the building. A large g\c14las\c00s window over the staircase shows that the wind 
 is blowing outside.
 </roomdescription>
-      <flags>90</flags>
+      <flags>32858</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
+    <exit direction="north" keyword="" exitinfo="7" keynum="3763" toroom="3763">
+      <description>You see nothing special.
+</description>
+    </exit>
     <exit direction="east" keyword="door east" exitinfo="3" keynum="0" toroom="3713">
       <description>The candle makers
 </description>
@@ -191,7 +185,7 @@ is blowing outside.
 outside to the stables. Slightly ajar, it lets in a hot breeze from the 
 north, which bends and flutters the candle flames lighting the hall. 
 </roomdescription>
-      <flags>8</flags>
+      <flags>32776</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
@@ -203,56 +197,37 @@ north, which bends and flutters the candle flames lighting the hall.
     </exit>
   </room>
   <room>
-    <roombasic title="The Hallway of Several Doors" vnum="3709" zone="37">
-      <roomdescription>You are almost to the last two doors on either
-side of the hallway.  The solid oak door at the
-end is looming ever closer.
+    <roombasic title="Unused Room" vnum="3709" zone="37">
+      <roomdescription>Vacant.
 </roomdescription>
-      <flags>90</flags>
+      <flags>0</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
   </room>
   <room>
-    <roombasic title="The Hallway of Several Doors" vnum="3710" zone="37">
-      <roomdescription>You have finally arrived at the last of the two doors
-that are on either side of this vast hallway.  The solid
-oak door is only a few yards ahead of you. As you 
-look at it you notice it does not appear as solid as 
-you thought.
+    <roombasic title="Unused Room" vnum="3710" zone="37">
+      <roomdescription>Vacant.
 </roomdescription>
-      <flags>90</flags>
+      <flags>0</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
   </room>
   <room>
-    <roombasic title="The Door at the End of the Hallway" vnum="3711" zone="37">
-      <roomdescription>You have finally reached the end of the hallway.
-Looking back from where you came it seems the
-hallway is never-ending.  Turning back to this door
-you see the intricate designs carved into the oak.
-Above your head you make out an outline of a flame
-which seems to burn brightly.  Avendesora leaves
-branch out on this door with strange writings tipping
-the end of each leaf.  The handle of the door is solid
-gold.
+    <roombasic title="Unused Room" vnum="3711" zone="37">
+      <roomdescription>Vacant.
 </roomdescription>
-      <flags>90</flags>
+      <flags>0</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
   </room>
   <room>
-    <roombasic title="The Great Armory of the Rebel Sedai" vnum="3712" zone="37">
-      <roomdescription>The sounds of blades of steel being sharpened on the many whetstones,
-iron scraping upon iron, the swoosh of the bellows fanning the flames
-of the smelt fill your ears.  Soldiers of Gareth Byrne&apos;s army, adept
-at fashioning the arms of the tower fill this vast room.  Here in the
-locked chest you will find the finished products of the many hours
-of sweat and labor it has taken to fashion just one armament.
+    <roombasic title="Unused Room" vnum="3712" zone="37">
+      <roomdescription>Vacant.
 </roomdescription>
-      <flags>90</flags>
+      <flags>0</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
@@ -261,12 +236,12 @@ of sweat and labor it has taken to fashion just one armament.
     <roombasic title="The Candle Makers" vnum="3713" zone="37">
       <roomdescription>The smell of oil mixed with wax fills your nostrils.  Lining shelf
 upon shelf in this vast rooms are candles of various sizes.  Some
-are made from beeswax, others are made from substances you can&apos;t
+are made from beeswax, others are made from substances you can't
 quite make out.  On other shelves are many torches, some of which
 you recognize as being held by those who walk the Tower grounds.  It
 is here where the light begins that light the many halls of the Tower.
 </roomdescription>
-      <flags>90</flags>
+      <flags>32858</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
@@ -286,7 +261,7 @@ works of leather to be used in the Tower.  While looking around you
 notice a very bronzed, muscular man wipe the sweat off his brow and
 quickly give you a wink before he turns back to the work at hand.
 </roomdescription>
-      <flags>90</flags>
+      <flags>32858</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
@@ -317,7 +292,7 @@ and a table with a simple oil lamp.
 many steps that lead down to the stables.  lining the pathway is a hedge
 of neatly trimmed ivy.
 </roomdescription>
-      <flags>4</flags>
+      <flags>32772</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -335,9 +310,8 @@ of neatly trimmed ivy.
     </exit>
   </room>
   <room>
-    <roombasic title="A Narrow Pathway" vnum="3717" zone="37">
-      <roomdescription>The steps continue down towards the stables of the tower.  The
-hedge of ivy forms the border for the pathway.
+    <roombasic title="Unused Room" vnum="3717" zone="37">
+      <roomdescription>Vacant.
 </roomdescription>
       <flags>0</flags>
       <sector>City</sector>
@@ -345,8 +319,8 @@ hedge of ivy forms the border for the pathway.
     </roombasic>
   </room>
   <room>
-    <roombasic title="A Turn in the Pathway" vnum="3718" zone="37">
-      <roomdescription>The steps continue downward towards the stables.
+    <roombasic title="Unused Room" vnum="3718" zone="37">
+      <roomdescription>Vacant.
 </roomdescription>
       <flags>0</flags>
       <sector>Inside</sector>
@@ -359,7 +333,7 @@ hedge of ivy forms the border for the pathway.
 quickly look and see it is just a butterfly that seems to be
 heading towards a small patch of wildflowers.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -372,13 +346,13 @@ heading towards a small patch of wildflowers.
     </exit>
   </room>
   <room>
-    <roombasic title="The stable Entrance" vnum="3720" zone="37">
+    <roombasic title="The Stable Entrance" vnum="3720" zone="37">
       <roomdescription>This is the main hallway of the stable which leads east towards more of
 the stable.  To the north is a small door leading to the Tack Room, and
 to the south is another stable.  A small pile in the corner is a sure
 sign that this is a working stable.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
@@ -403,7 +377,7 @@ sign that this is a working stable.
 There are stables to the north and south of you and a small lad stands here
 ready to take your horse.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
@@ -424,9 +398,9 @@ ready to take your horse.
     <roombasic title="Main Stable" vnum="3722" zone="37">
       <roomdescription>This is the main hallway of the stable which leads off to the east and
 west. to the north and south are several stables and to one side a young
-man is patiently brushing a mare&apos;s tail.
+man is patiently brushing a mare's tail.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
@@ -449,7 +423,7 @@ man is patiently brushing a mare&apos;s tail.
 either side of you are stables.  A large man is standing here cursing as
 he tries to lead a stallion to a nearby stall.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
@@ -473,7 +447,7 @@ equipment. A table in the back is covered in tools and a bridle which
 is apparently under repair.  You can tell that this is a part of the
 stable that sees a lot of use.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
@@ -488,7 +462,7 @@ A large mare stands protectively at the front of the stall while a small
 foal lies curled in the corner.  His ears flick toward you as he hears
 your approach and he clumsily tries to stand.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
@@ -501,7 +475,7 @@ your approach and he clumsily tries to stand.
       <roomdescription>This is a small room filled with boxes and crates.  In various corners
 are also barrels of sugar, salt, apples and ground corn for the horses.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
@@ -515,7 +489,7 @@ are also barrels of sugar, salt, apples and ground corn for the horses.
 stabled to either side of you and the stable master is here offering an
 apple to a reluctant foal.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
@@ -531,10 +505,10 @@ apple to a reluctant foal.
   </room>
   <room>
     <roombasic title="The Main Hall" vnum="3728" zone="37">
-      <roomdescription>The stable ends here, with the feed room to the north and the Stablemaster&apos;s
+      <roomdescription>The stable ends here, with the feed room to the north and the Stablemaster's
 quarters to the south.  There is also a ladder here leading up to the hayloft.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
@@ -554,7 +528,7 @@ quarters to the south.  There is also a ladder here leading up to the hayloft.
 around your ear. In a corner there is a pitchfork and a small pile of hay
 from the hayloft overhead.
 </roomdescription>
-      <flags>8</flags>
+      <flags>32776</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
@@ -570,7 +544,7 @@ and feed the horses.  As you move through, you stir up the dust,
 which causes your nose to twitch. Maybe you should leave before you
 .........ACHOOO!!!! Too late.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
@@ -590,7 +564,7 @@ which causes your nose to twitch. Maybe you should leave before you
 corner waiting for a horse to brush. the water seems freshly filled
 and there is even a sugar cube on a shelf at the door.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
@@ -605,7 +579,7 @@ hands tells you that this mare is nin season and has to be
 kept away from the rest of the horses for now. He ushers you quickly
 from the stall as the horse trys to get out.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
@@ -619,7 +593,7 @@ from the stall as the horse trys to get out.
 you try to enter. A nearby stablehand notices your plight and directs you
 to another stall.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
@@ -633,7 +607,7 @@ to another stall.
 bows to you and assures you that the stall will be ready
 for you to use shortly.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
@@ -642,12 +616,12 @@ for you to use shortly.
     </exit>
   </room>
   <room>
-    <roombasic title="The Stablemaster&apos;s Quarters" vnum="3735" zone="37">
+    <roombasic title="The Stablemaster's Quarters" vnum="3735" zone="37">
       <roomdescription>In this there are a number of horse grooming tools, brushes, and riding 
 equipment . There is a hammock strung out across two corners
-of the room. You can tell that the Stablemaster doesn&apos;;t like to be far
+of the room. You can tell that the Stablemaster doesn';t like to be far
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
@@ -661,7 +635,7 @@ of the room. You can tell that the Stablemaster doesn&apos;;t like to be far
 a corner waiting for a horse to brush. the water trough  seems freshly
 filled and there is even a sugar cube on a shelf at the door.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
@@ -675,7 +649,7 @@ filled and there is even a sugar cube on a shelf at the door.
 a corner waiting for a horse to brush. the water trough sems freshly
 filled and there is even a sugar cube on a shelf by the door.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
@@ -689,7 +663,7 @@ filled and there is even a sugar cube on a shelf by the door.
 around your ear. In a corner there is a pitchfork and a small
 pile of hay from the hayloft overhead
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
@@ -702,7 +676,7 @@ pile of hay from the hayloft overhead
       <roomdescription>The hayloft extends over the southern half of the stable here with small 
 holes for the hay and many pitchforks.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
@@ -715,7 +689,7 @@ holes for the hay and many pitchforks.
       <roomdescription>The hayloft extends further over the north side of the stable, with small 
 holes to drop hay and lots of pitchforks.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
@@ -724,9 +698,8 @@ holes to drop hay and lots of pitchforks.
     </exit>
   </room>
   <room>
-    <roombasic title="A Narrow Pathway" vnum="3741" zone="37">
-      <roomdescription>You continue walking on the many steps of the pathway.  The descent
-seems to be a bit steeper now as you carefully watch your step.
+    <roombasic title="Unused Room" vnum="3741" zone="37">
+      <roomdescription>Vacant.
 </roomdescription>
       <flags>0</flags>
       <sector>City</sector>
@@ -734,9 +707,8 @@ seems to be a bit steeper now as you carefully watch your step.
     </roombasic>
   </room>
   <room>
-    <roombasic title="A Narrow Pathway" vnum="3742" zone="37">
-      <roomdescription>The hedge of ivy seems to be somehow taller here. As you continue to
-walk down the steps, your hands skim across the top of the hedge.
+    <roombasic title="Unused Room" vnum="3742" zone="37">
+      <roomdescription>Vacant.
 </roomdescription>
       <flags>0</flags>
       <sector>City</sector>
@@ -744,10 +716,8 @@ walk down the steps, your hands skim across the top of the hedge.
     </roombasic>
   </room>
   <room>
-    <roombasic title="A Narrow Pathway" vnum="3743" zone="37">
-      <roomdescription>At last you see the stables of the tower ahead of you.  A stablehand
-has just emerged, leading a beutiful black horse from the stables.
-He seems to be heading towards the pasture.
+    <roombasic title="Unused Room" vnum="3743" zone="37">
+      <roomdescription>Vacant.
 </roomdescription>
       <flags>0</flags>
       <sector>City</sector>
@@ -759,7 +729,7 @@ He seems to be heading towards the pasture.
       <roomdescription>This is the main hall of the stable running east and west.  On either side
 of the hall are stables which house the horses of the tower.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
@@ -785,7 +755,7 @@ overturned by recent passage, laying on their side in the dirt,
 but it winds its way in a kind of long, S-shaped curve up the 
 middle of the alley. 
 </roomdescription>
-      <flags>4</flags>
+      <flags>32772</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -806,7 +776,7 @@ scent of clean dirt and dried vegetation. The path bends a little
 towards the left, moving around the back of the Little Tower
 toward the stables.
 </roomdescription>
-      <flags>4</flags>
+      <flags>32772</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -815,6 +785,79 @@ toward the stables.
     </exit>
     <exit direction="west" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="3716">
       <description>&lt;NONE&gt;</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Jessa's Room" vnum="3747" zone="37">
+      <roomdescription>Such a large spacious room that has yet to be seen again in such a place
+as this. Thirty paces long and forty wide, the hardwood floor glows like
+silk to the untrained eye. A double vanity with a huge mirror, heavy set
+and square cut, is pushed flush to the northern wall. On the top of the
+vanity, lined up as ducks in a row, are various color pots and other less
+discernable items of a womanly nature. Just to the left of the vanity is
+a large window flanked by velvet curtains in red, matching ties with red
+tassels, hang exactly two handspans down. Along the south wall is the
+largest bed that can be made. Worked out of oak, the four poster bed has
+a thick red, creamy white and black, comforter. Pillows in coordinating
+colors, sheets of red silk that fit the bed perfectly. A bolt of cloth,
+sheer silky stuff, lies in a heap in the corner next to the bed, what it
+would be doing here is anyone's guess since nothing would indicate that
+the occupant of this room is domestic in anyway. Round end table made of
+oak, matching the vanity in style and shape, meaning its ugly but highly
+expensive. Next to that are a couple of plush, sink into and die from
+bliss, chairs. A variety of other, lesser noticed items, lie scattered
+about, only to be drawn to the forefront when they are needed.
+</roomdescription>
+      <flags>32780</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="west" keyword="door west" exitinfo="7" keynum="3747" toroom="3809">
+      <description/>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="Unused room. Y'think?" vnum="3748" zone="37">
+      <roomdescription>A room. Walls. Ceiling. So on.
+</roomdescription>
+      <flags>222</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+  </room>
+  <room>
+    <roombasic title="Unused Room" vnum="3751" zone="37">
+      <roomdescription>You are in an unfinished room.
+</roomdescription>
+      <flags>0</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+  </room>
+  <room>
+    <roombasic title="Loryn's Sanctum" vnum="3763" zone="37">
+      <roomdescription>This large chamber is seperated by a southern archway which leads into a
+simple bedroom area.  From the vantage point of the doorway, one could
+look straight back through the study and into the bedroom at a large
+stonework window which overlooks the village of Salidar.  The study itself
+is well kept, papers neatly arranged, bookshelves clean and tediously
+polished.  A large &amp;ydesk&amp;n with a comfortable chair faces the entryway with
+two large comfortable looking chairs positioned in front of the desk.  
+Upon the desk, an &amp;Kinkwell&amp;n, &amp;Wquill&amp;n and many fine pieces of blank parchment
+lay perfectly in place.  Back behind the desk a small &amp;Rc&amp;rh&amp;Re&amp;rr&amp;Rr&amp;ry&amp;Rw&amp;ro&amp;Ro&amp;rd&amp;n bookshelf
+contains a vast array of tomes and literature corresponding to the Age of
+Legends and the many wonders of that Age.  By the literature and
+appearance of the room, many would place it's occupant to be of the &amp;yBrown
+Ajah&amp;n, but alas the logic of placement gives away the obvious tenants &amp;WWhite
+Ajah&amp;n involvement.    
+</roomdescription>
+      <flags>32776</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="south" keyword="" exitinfo="7" keynum="3763" toroom="3707">
+      <description>You see nothing special.
+</description>
     </exit>
   </room>
   <room>
@@ -831,19 +874,18 @@ ecstasy of rigidity, only a delicate white petal
 interrupting the crystal calm of the wide, equilateral
 triangular-shaped pool in the center.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
-    <exit direction="south" keyword="Not set yet...
-" exitinfo="0" keynum="0" toroom="3785">
+    <exit direction="south" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="3785">
       <description>None
 </description>
     </exit>
   </room>
   <room>
     <roombasic title="The Outside Baths" vnum="3784" zone="37">
-      <roomdescription>Sitting just outside the Women&apos;s changing room, this bath
+      <roomdescription>Sitting just outside the Women's changing room, this bath
 is visible through a set of blue-curtained glass doors. 
 The pool itself is shaped like a five-petaled flower, the
 smooth sandstone walls giving the structure the appearance
@@ -852,7 +894,7 @@ separating this section of the baths from the others,
 clearly indicating, with dark green curtains, that this 
 area is only for women.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32776</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
@@ -860,8 +902,7 @@ area is only for women.
       <description>None
 </description>
     </exit>
-    <exit direction="west" keyword="Not set yet...
-" exitinfo="0" keynum="0" toroom="3789">
+    <exit direction="west" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="3789">
       <description>None
 </description>
     </exit>
@@ -880,19 +921,20 @@ with green and brown tendrils to the edge of the
 water. A thick corridor of jungle-type branches and 
 plants lead to and from this colder pool.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
-    <exit direction="north" keyword="Not set yet...
-" exitinfo="0" keynum="0" toroom="3783">
+    <exit direction="north" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="3783">
       <description>None
 </description>
     </exit>
-    <exit direction="south" keyword="Not set yet...
-" exitinfo="0" keynum="0" toroom="3786">
+    <exit direction="south" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="3786">
       <description>None
 </description>
+    </exit>
+    <exit direction="west" keyword="" exitinfo="0" keynum="0" toroom="6463">
+      <description/>
     </exit>
   </room>
   <room>
@@ -903,30 +945,28 @@ here in meticulous fashion, indicating a serious and
 orderly gardening mind at work. There is a small fountain 
 in the middle of the area, and benches circle it loosely, 
 laden with cushions and pillows, to entice resting on 
-them. Heartsblush and Emond&apos;s glory cluster together, 
+them. Heartsblush and Emond's glory cluster together, 
 mixed into the long, willowy grasses and lush, blooming
 shrubs, and even some tall, graceful foxglove plants, in
 delicate shades of bluish-purple, pink, and white.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>City</sector>
       <special>NONE</special>
     </roombasic>
-    <exit direction="north" keyword="Not set yet...
-" exitinfo="0" keynum="0" toroom="3785">
+    <exit direction="north" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="3785">
       <description>None
 </description>
     </exit>
-    <exit direction="east" keyword="Not set yet...
-" exitinfo="0" keynum="0" toroom="3789">
+    <exit direction="east" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="3789">
       <description>None
 </description>
     </exit>
   </room>
   <room>
-    <roombasic title="The Men&apos;s Changing Room" vnum="3787" zone="37">
+    <roombasic title="The Men's Changing Room" vnum="3787" zone="37">
       <roomdescription>This room is rather plain, but the blues and gree</roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
@@ -936,7 +976,7 @@ delicate shades of bluish-purple, pink, and white.
     </exit>
   </room>
   <room>
-    <roombasic title="The Women&apos;s Changing Room" vnum="3788" zone="37">
+    <roombasic title="The Women's Changing Room" vnum="3788" zone="37">
       <roomdescription>Warm and cozy, the room is decorated in rich shades of
 blues and purples. There are several partitioned-off
 places in one corner where one can change behind softly
@@ -946,7 +986,7 @@ situated neatly in front of a wall of mirrors. The light
 is subdued, and the air smells like herbal and floral
 bouquets.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
@@ -977,13 +1017,11 @@ of the ring, indicating that the water is quite warm.
       <description>None
 </description>
     </exit>
-    <exit direction="east" keyword="Not set yet...
-" exitinfo="0" keynum="0" toroom="3784">
+    <exit direction="east" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="3784">
       <description>None
 </description>
     </exit>
-    <exit direction="west" keyword="Not set yet...
-" exitinfo="0" keynum="0" toroom="3786">
+    <exit direction="west" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="3786">
       <description>None
 </description>
     </exit>
@@ -1047,8 +1085,8 @@ navy blue. The polished wooden floor reflects the soft
 light of the large candles standing in their niches, and
 the air carries the scent of warm water and freshly 
 cut wood. There are two changing rooms on either side of
-the hall here. To the north is the Men&apos;s changing room,
-and to the south is the Women&apos;s changing room.
+the hall here. To the north is the Men's changing room,
+and to the south is the Women's changing room.
 </roomdescription>
       <flags>32776</flags>
       <sector>Inside</sector>
@@ -1081,7 +1119,7 @@ dark wood. Hanging on one edge of the tub is a small
 shelf of bath oils and salts, and a few towels hang on a 
 couple of smooth brass hooks on the back of the door. 
 </roomdescription>
-      <flags>28</flags>
+      <flags>32796</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
@@ -1096,12 +1134,12 @@ enough to hold an extremely large porcelain tub, raised
 from the ground, and shaped like a circle, with a dark
 wooden exterior. Standing about waist-high, the edge of
 the tub is accessible by the use of three wooden steps,
-sanded smooth, but rough enough so that you wouldn&apos;t 
+sanded smooth, but rough enough so that you wouldn't 
 slip trying to get in or out of it. Hanging from one 
 side of the edge of the tub is a good-sized wooden shelf
 containing all sorts of bath oils and salts.
 </roomdescription>
-      <flags>28</flags>
+      <flags>32796</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
@@ -1118,7 +1156,7 @@ here you will find a wizened old sage adept in the
 art of training.  As you enter the glade he looks up and
 smiles.
 </roomdescription>
-      <flags>150</flags>
+      <flags>32918</flags>
       <sector>Forest</sector>
       <special>NONE</special>
     </roombasic>
@@ -1128,7 +1166,7 @@ smiles.
     </exit>
   </room>
   <room>
-    <roombasic title="Seyoman&apos;s Wares" vnum="3796" zone="37">
+    <roombasic title="Seyoman's Wares" vnum="3796" zone="37">
       <roomdescription>A beetle-ridden wooden shack, the shop of Seyoman is filled with
 wares that have been imported to Salidar.  The eastern wall has
 a single window with hastily put up curtains.  They are parted and
@@ -1144,18 +1182,16 @@ reveal the forest of Salidar.
     </exit>
   </room>
   <room>
-    <roombasic title="The Sitting Room of the Keeper of the Chronicles" vnum="3797" zone="37">
-      <roomdescription>This small room radiates an aura of comfort from the moment it is entered.  On
-the east wall is a large window that looks out upon an allyway and the greenery
-of the forest beyond.  Beneath the window is a long wooden bench, cushioned for
-comfort.  It is there that many have sat, waiting for an audience with the
-Keeper.  On the south wall is a large bookcase, its shelves laden with several
-books on a wide variety of topics.  On the north wall, next to the doorway that
-leads to the Keeper&apos;s office, is a painting that depicts a lone Aes Sedai and
-her warder fighting a group of shadowspawn.    
-&lt;OOC note: Knock to gain Lynnora&apos;s attention if she&apos;s inside&gt;
+    <roombasic title="The waiting chamber for the Keeper of Chronicles" vnum="3797" zone="37">
+      <roomdescription>This room is small but adorned with the the finest pieces of
+furniture that could be found, outside of what has been used
+for the Amrylin. In cool shades of gray and white, there are
+two armchairs and a sofa, a small table for writing, and a
+windown with curtains of a light blue fabric, stirring softly
+in the breeze. It is comfortable to sit here and wait, but
+not a place you want to spend hours.
 </roomdescription>
-      <flags>90</flags>
+      <flags>32858</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
@@ -1169,19 +1205,22 @@ her warder fighting a group of shadowspawn.
     </exit>
   </room>
   <room>
-    <roombasic title="Lynnora&apos;s Private Quarters" vnum="3798" zone="37">
-      <roomdescription>This small room, at a glance, looks like it&apos;s well-lived in and used.  The
-entire east wall is covered by a large bookcase, its wooden shelves laden with
-books, papers, notes, and various odd-looking objects.  On the north wall
-resides a desk, upon which more books and papers are stacked, but in a much
-less orderly fashion than in the office.  Behind the desk is a small wooden
-chair who&apos;s seat appears to be worn with use.  On the west wall is a narrow
-bed, covered with a simple patchwork quilt.  There are no decorations to speak
-of, not even a picture on one of the few patches of unoccupied wallspace.  
-This room speaks of utility, not comfort, as if its owner does not care about
-such things.    
+    <roombasic title="Celline's Private Quarters" vnum="3798" zone="37">
+      <roomdescription>The western wall is lined with a modest bookcase, only reaching about
+halfway up the wall, the top half decorated with a portrait of a seascape
+that spans the whole wall.  A small desk sits towards the north wall, a
+small lamp sitting in the corner, a few papers scattering the surface.  
+The floor is a soft, pale wood, barely a luxury.  The only extravagance in
+the room is the bed, which is large, almost square, and covered with a
+large puffy quilt, a few folded up at the foot, all of the same dusky blue
+and white that decorate the rest of these quarters, the pilows the same, a
+half dozen small square ones, and one large pillow for the head.  The east
+wall adorned with a large square window, covered with gauzy blue curtains
+that stir in the breeze in the ever-open window.  The room looks small and
+comfortable and well used, a small door on the north wall leading into a
+tiny closet.    
 </roomdescription>
-      <flags>88</flags>
+      <flags>32856</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
@@ -1217,12 +1256,11 @@ with bright green grass, and some few others with flowers
 in bloom all around. Two very short paths lead east and west
 here. 
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
-    <exit direction="north" keyword="Not set yet...
-" exitinfo="0" keynum="0" toroom="3801">
+    <exit direction="north" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="3801">
       <description>None
 </description>
     </exit>
@@ -1236,22 +1274,20 @@ here.
 side. It is no more than a dirt road, made smooth over time from
 people walking back and forth. There is an almost constant dust
 cloud hanging in the air as you look a ways down the path, so 
-it&apos;s not really clear what is back there. 
+it's not really clear what is back there. 
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
-    <exit direction="north" keyword="Not set yet...
-" exitinfo="0" keynum="0" toroom="3802">
+    <exit direction="north" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="3802">
       <description>None
 </description>
     </exit>
     <exit direction="east" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="4094">
       <description>&lt;NONE&gt;</description>
     </exit>
-    <exit direction="south" keyword="Not set yet...
-" exitinfo="0" keynum="0" toroom="3800">
+    <exit direction="south" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="3800">
       <description>None
 </description>
     </exit>
@@ -1265,17 +1301,15 @@ inevitably, there are a few girls in white picking weeds, planting
 vegetables or flowers, and scrubbing windows and doorsteps for the
 owners of the houses, which are, of course, Aes Sedai. 
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
-    <exit direction="north" keyword="Not set yet...
-" exitinfo="0" keynum="0" toroom="3803">
+    <exit direction="north" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="3803">
       <description>None
 </description>
     </exit>
-    <exit direction="south" keyword="Not set yet...
-" exitinfo="0" keynum="0" toroom="3801">
+    <exit direction="south" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="3801">
       <description>None
 </description>
     </exit>
@@ -1293,17 +1327,15 @@ yet important-looking as rocks surrounding a hole can get. There are
 built-in steps up to the mouth of the well, low and wide, that can be
 used as sitting-places, if one takes a notion to do so. 
 </roomdescription>
-      <flags>0</flags>
+      <flags>32772</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
-    <exit direction="north" keyword="Not set yet...
-" exitinfo="0" keynum="0" toroom="3804">
+    <exit direction="north" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="3804">
       <description>None
 </description>
     </exit>
-    <exit direction="south" keyword="Not set yet...
-" exitinfo="0" keynum="0" toroom="3802">
+    <exit direction="south" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="3802">
       <description>None
 </description>
     </exit>
@@ -1320,17 +1352,15 @@ covered in cool areas out of the sun, and the hardier roses and
 climbing plants seem to flourish in the gaps where the sun shines
 through. 
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
-    <exit direction="north" keyword="Not set yet...
-" exitinfo="0" keynum="0" toroom="3805">
+    <exit direction="north" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="3805">
       <description>None
 </description>
     </exit>
-    <exit direction="south" keyword="Not set yet...
-" exitinfo="0" keynum="0" toroom="3803">
+    <exit direction="south" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="3803">
       <description>None
 </description>
     </exit>
@@ -1347,20 +1377,18 @@ the leaves both on the ground and on the living plants, as well.
 Of course, the Aes Sedai passing by seem to take no notice of it, 
 though everyone else holds onto hats and skirts tightly.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
-    <exit direction="north" keyword="Not set yet...
-" exitinfo="0" keynum="0" toroom="3806">
+    <exit direction="north" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="3806">
       <description>None
 </description>
     </exit>
     <exit direction="east" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="4079">
       <description>&lt;NONE&gt;</description>
     </exit>
-    <exit direction="south" keyword="Not set yet...
-" exitinfo="0" keynum="0" toroom="3804">
+    <exit direction="south" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="3804">
       <description>None
 </description>
     </exit>
@@ -1376,17 +1404,15 @@ The supple leaves and branches intertwine in a pleasant fashion,
 low enough to almost brush up against anyone who walks under them, 
 forming a natural arch over the entrance. 
 </roomdescription>
-      <flags>0</flags>
+      <flags>32768</flags>
       <sector>Field</sector>
       <special>NONE</special>
     </roombasic>
-    <exit direction="north" keyword="Not set yet...
-" exitinfo="0" keynum="0" toroom="3807">
+    <exit direction="north" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="3807">
       <description>None
 </description>
     </exit>
-    <exit direction="south" keyword="Not set yet...
-" exitinfo="0" keynum="0" toroom="3805">
+    <exit direction="south" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="3805">
       <description>None
 </description>
     </exit>
@@ -1401,17 +1427,18 @@ fills the air. There are a few benches scattered here and there,
 beneath large, shady trees. There is a small flower garden to the
 north, its bright blooms visible even from here.
 </roomdescription>
-      <flags>0</flags>
+      <flags>32772</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
-    <exit direction="north" keyword="Not set yet...
-" exitinfo="0" keynum="0" toroom="3808">
+    <exit direction="north" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="3808">
       <description>None
 </description>
     </exit>
-    <exit direction="south" keyword="Not set yet...
-" exitinfo="0" keynum="0" toroom="3806">
+    <exit direction="east" keyword="" exitinfo="0" keynum="0" toroom="3811">
+      <description/>
+    </exit>
+    <exit direction="south" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="3806">
       <description>None
 </description>
     </exit>
@@ -1433,17 +1460,15 @@ one could sit in quiet contemplation, the rush of the river
 and the buzzing of the bees as they flit from flower to 
 flower the only disturbances. 
 </roomdescription>
-      <flags>0</flags>
+      <flags>32772</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
-    <exit direction="north" keyword="Not set yet...
-" exitinfo="0" keynum="0" toroom="3809">
+    <exit direction="north" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="3809">
       <description>None
 </description>
     </exit>
-    <exit direction="south" keyword="Not set yet...
-" exitinfo="0" keynum="0" toroom="3807">
+    <exit direction="south" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="3807">
       <description>None
 </description>
     </exit>
@@ -1461,12 +1486,14 @@ Three stone benches are arranged beneath it, in a semicircular
 fashion, the stone polished and smooth, in the shade of the 
 laden canopy. 
 </roomdescription>
-      <flags>20</flags>
+      <flags>32796</flags>
       <sector>Inside</sector>
       <special>NONE</special>
     </roombasic>
-    <exit direction="south" keyword="Not set yet...
-" exitinfo="0" keynum="0" toroom="3808">
+    <exit direction="east" keyword="door east" exitinfo="7" keynum="3747" toroom="3747">
+      <description/>
+    </exit>
+    <exit direction="south" keyword="Not set yet...  " exitinfo="0" keynum="0" toroom="3808">
       <description>None
 </description>
     </exit>
@@ -1480,12 +1507,31 @@ is a long wooden dock that extends out onto the river, allowing one to to either
 fish or go look at the river, or perhaps even take a swim if one is inclined to
 do so.  Several benches sit along the banks, overlooking the river.
 </roomdescription>
-      <flags>20</flags>
+      <flags>32788</flags>
       <sector>Forest</sector>
       <special>NONE</special>
     </roombasic>
     <exit direction="east" keyword="&lt;NONE&gt;" exitinfo="0" keynum="0" toroom="3807">
       <description>&lt;NONE&gt;</description>
+    </exit>
+  </room>
+  <room>
+    <roombasic title="A Clearing in the Shade" vnum="3811" zone="37">
+      <roomdescription>Under the cover of shade tress, is a large open clearing. Brown
+leaves make the ground soft but loud to step upon, and the river
+can be heard to the west, a low whisper of running water. Several
+benches have been brought here, arranged strategically as if in
+a formation for a meeting. In the middle of the day, the trees
+would help add comfort and there is plenty of room outside the
+arrangement of benches for people to watch or to gather if they
+are interested in what happens here.
+</roomdescription>
+      <flags>32918</flags>
+      <sector>Inside</sector>
+      <special>NONE</special>
+    </roombasic>
+    <exit direction="west" keyword="" exitinfo="0" keynum="0" toroom="3807">
+      <description/>
     </exit>
   </room>
 </rooms>

@@ -1,141 +1,780 @@
 #10700
-girl serving~
-the serving girl~
-A serving girl dressed in a long skirt is here.
+guard caemlyn far madding gate~
+The Far Madding gate guard~
+\c00A stern-looking guard stands here, diligently guarding the \c03Caemlyn\c00 gate of Far Madding.
 ~
-The serving girl looks as though she works hard,
-but the pay and conditions are not that hard, as
-she seems to enjoy her duties.
+The man seems fairly stern and concentrated on his job, although the
+dust and heat has not done much for him; sweat streams freely down
+his face.  The occasional longing glance at the guardhouse nearby
+shows that he longs to finish his shift, and he only flicks the most
+cursory of glances over the people passing him.  His equipment is as
+tarnished and battered as himself, dusty coat and dented pike.    
 ~
-26 18432 0 E
-50 -30 -5 683 30d300+1000 30d30+50
-0 0
-8 8 2
+74 0 0 E
+75 -2 1 789 30d200+10 20d10+20
+100 105
+8 8 1 0
+BareHandAttack: 14
 Str: 18
 Dex: 18
 Int: 18
 Wis: 18
 Con: 18
 Cha: 18
+Trip: 100
+Kick: 100
 P
-OnEntry & Guild "chi"
-ActionTo "smile"
-SayTo "hello, how can i be of service?"
-End
-OnLeave & Guild "chi"
-ActionTo "smile"
-ActionTo "wave"
-SayTo "take care now!"
+OnEntry
+Pause 2
+Emote "\c00One of the gate guards glances over at the new arrival, but his eyes barely flick over you before returning to staring longingly at the guardhouse off to the east."
 End
 Q
 E
 #10701
-wizentan old man~
-old man Wizentan~
-Old man Wizentan is here selling his wares.
+guard illian far madding gate~
+The Far Madding gate guard~
+\c00A stern-looking guard stands here, diligently guarding the \c02Illian\c00 gate of Far Madding.
 ~
-This old man has seen a lot over the years, and now
-he tries to make a living by selling strange items
-he has found over the years.
+The man seems fairly stern and concentrated on his job, although the
+dust and heat has not done much for him; sweat streams freely down
+his face.  The occasional longing glance at the guardhouse nearby
+shows that he longs to finish his shift, and he only flicks the most
+cursory of glances over the people passing him.  His equipment is as
+tarnished and battered as himself, dusty coat and dented pike.    
 ~
-1048602 0 0 E
-100 -30 -5 683 30d300+100 30d30+50
-0 0
-8 8 1
+74 0 0 E
+75 -2 1 789 30d200+10 20d10+20
+100 105
+8 8 1 0
+BareHandAttack: 14
 Str: 18
 Dex: 18
 Int: 18
 Wis: 18
 Con: 18
 Cha: 18
+Trip: 100
+Kick: 100
+P
+OnEntry
+Pause 1
+Emote "One of the gate guards glances over at the new arrival, but his eyes barely flick over you before returning to staring longingly at the guardhouse off to the east."
+End
+Q
 E
 #10702
-flinch master~
-Master Flinch~
-Master Flinch stands here, filling the orders of his guests.
+guard tear far madding gate~
+The Far Madding gate guard~
+\c00A stern-looking guard stands here, diligently guarding the \c04Tear\c00 gate of Far Madding
 ~
-Master FLinch is a short man, who is a bit heavy for his weight.
-His thin grey hair is slowly falling out, and he often wipes
-sweat from his face with a towel.
+The man seems fairly stern and concentrated on his job, although the
+dust and heat has not done much for him; sweat streams freely down
+his face.  The occasional longing glance at the guardhouse nearby
+shows that he longs to finish his shift, and he only flicks the most
+cursory of glances over the people passing him.  His equipment is as
+tarnished and battered as himself, dusty coat and dented pike.    
 ~
-10 16384 0 E
-100 -180 -10 683 30d300+500 30d30+50
-0 0
-8 8 1
+74 0 0 E
+75 -2 1 789 30d200+10 20d10+20
+100 105
+8 8 1 0
+BareHandAttack: 14
 Str: 18
 Dex: 18
 Int: 18
 Wis: 18
 Con: 18
 Cha: 18
+Trip: 100
+Kick: 100
+P
+OnEntry
+Pause 1
+Emote "One of the gate guards glances over at the new arrival, but his eyes barely flick over you before returning to staring longingly at the guardhouse off to the east."
+End
+Q
 E
 #10703
-dog dirty~
-the dirty dog~
-A dirty looking dog is here.
+merchant tairen tear~
+the \c04Tairen\c00 merchant~
+\c00A \c04Tairen\c00 merchant walks through the city, several tabac samples clutched to his chest.
 ~
-The dog barks at you, then runs off.
+\c00This man seems no taller than most, perhaps a little shorter, and has
+a thick, even stocky build.  His eyes and hair are both dark,
+matching very tanned skin.  When he speaks, the accents of \c04Tear\c00 are
+thick on his tongue, coinciding with the coat and tight breeches.  
+The man holds several bundles, each about the size of a halfbrick,
+which appear to be samples of the perfumed \c04Tairen \c02t\c03aba\c02c\c00.    
 ~
-852104 128 0 E
-50 -30 -3 683 20d200+0 6d9+50
-0 0
-8 8 0
+76 0 0 E
+60 2 5 789 24d100+10 30d5+17
+450 100
+8 8 1 0
 Str: 18
 Dex: 18
 Int: 18
 Wis: 18
 Con: 18
 Cha: 18
-Trip: 100
-Kick: 100
+Bash: 100
+Stun: 100
 E
 #10704
-whitecloak soldier~
-the whitecloak soldier~
-A child of the light is here.
+merchant illianer man rich~
+the \c02Illianer\c00 merchant~
+\c00An \c02Illianer\c00 \c10o\c03i\c10l\c00 merchant strolls about here.
 ~
-This child of the light is wearing silver armor,
-and a snowy white cloak with the golden sunburst.
+This man seems to be a well-to-do \c02Illianer\c00 merchant or trader, most
+likely dealing in \c02olive \c10o\c03i\c10l\c00 from the famed groves in Illian.  His
+hair, left hanging uncut to his shoulders, is the same dark brown as
+the distinctive beard that leaves his upper lip bare.  He tends to
+glance about himself warily, perhaps wary of thieves and cutpurses or
+perhaps uncomfortable in the midst of so many foreigners - and
+\c04Tairens\c00.    
 ~
-1054728 0 0 E
-70 -80 -9 683 30d300+1350 18d20+50
-50 100
-8 8 1
+2120 0 0 E
+60 5 8 789 30d90+20 30d5+15
+500 100
+8 8 1 0
 Str: 18
 Dex: 18
 Int: 18
 Wis: 18
 Con: 18
 Cha: 18
-Bash: 100
-Trip: 100
 Dirtkick: 100
-Kick: 100
 Disarm: 100
-Stun: 100
-P
-OnAttack
-Stop
-ActionTo "spit"
-SayTo "darkfriend scum!"
-ActionTo "dirt"
-ActionTo "bash"
-ActionTo "trip"
-ActionTo "kill"
-End
-Q
 E
 #10705
-whitecloak captain~
-the whitecloak captain~
-A child of the light with several knots of rank is here.
+tabac merchant keeper shop~
+the \c02tabac\c00 merchant~
+\c00The \c02tabac\c00 merchant stands behind the counter, frowning as she labels a sample bale.
 ~
-The child of the light seems to be an officer.
+The \c02tabac\c00 merchant is a woman of medium height, with dark brown hair
+and eyes to match.  Her ancestry is uncertain; perhaps a southerner,
+perhaps from Murandy or Ghealdan, or perhaps even born in Far
+Madding.  Her clothes are in good repair and quite fine, suggesting
+that the shop is doing fairly well for itself despite the recent
+troubles.  The scent of \c02tabac\c00 is as strong on her as it is on the
+rest of the room, a smoky, pungent smell.    
 ~
-1055752 0 0 E
-80 -120 -12 683 30d300+1650 20d20+50
+72 0 0 E
+0 20 10 789 1d100+0 1d1+0
+100000 0
+8 8 2 0
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+E
+#10706
+knife merchant shopkeeper~
+Master al'Tar, the shopkeeper for the knife shop~
+Master al'Tar, the keeper of the knife shop, stands behind the counter, using a rag to polish the blade of a paring knife.
+~
+\c00Master al'Tar's plain, honest face and features point to an Andoran
+lineage, even though his clothes are cut in roughly the same style as
+the other natives of Far Madding.  Hard to tell whether he was born
+here or emigrated; hard to tell with most of the residents, truly, as
+this is and always has been a traveller's town, inhabited by whoever
+drifts in and simply decides not to drift out again.    
+~
+74 0 0 E
+1 20 10 789 1d100+0 1d1+0
+0 0
+8 8 1 0
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+E
+#10707
+jenly mistress cloth merchant shopkeeper~
+Mistress Jenly, the cloth merchant~
+Mistress Jenly stands behind a counter at one corner of the room, busily measuring several bolts of silk.
+~
+Sharp, bright \c09gr\c02e\c09en\c00 eyes stare out of a face almost as sharp, with a
+nose that could be used to slice cheese.  The eyes watch anything and
+everything that goes on in the shop, and possibly even more - those
+eyes, and that expression, give the rather uncomfortable impression
+that she can see through walls.  Her bolts and bales of silk, wool,
+linen and other materials are as closely guarded as the crown jewels
+of most countries.    
+~
+74 0 0 E
+0 20 10 789 1d100+0 1d1+0
+0 0
+8 8 2 0
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+E
+#10708
+horse mount gelding bay~
+a bay gelding~
+\c00A bay-coloured gelding stands in a stall here, snorting occasionally in the heat.
+~
+A tall, rather placid gelding, its hair a deep bay.  It stands in its
+stall peacefully, occasionally nibbling some hay from the rack in
+front of it, and from the sweat running down its flanks is suffering
+as bad as any human from the heat.    
+~
+74 0 0 E
+50 9 10 789 15d199+20 5d19+12
+0 100
+8 8 0 0
+BareHandAttack: 4
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Kick: 100
+E
+#10709
+shopkeeper trader merchant spice herb~
+the herb trader~
+\c00The trader in herbs and spices stands behind the counter, shredding a handful of leaf.
+~
+A jovial, smiling woman in her mid-thirties, with a happy, even
+uncaring smile.  The smell of the herbs that she sells is strong
+about her, adding a sweet scent that perfectly matches her grin.  
+She has a distressing habit, however, of laughing loudly at trees,
+jars and other inanimate objects.  Just a symptom of how pleased she
+is with the world in general, right?    
+~
+1065034 0 0 E
+0 20 10 789 1d100+0 1d1+0
+1000 0
+8 8 2 0
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+E
+#10710
+apprentice boy Far Madding~
+the apprentice~
+\c00A young apprentice scampers around the streets of Far Madding.
+~
+The boy seems to be no more than ten or eleven years old, and has
+been bearing the brunt of the recent bad weather - and the miserable
+harvests that it brings with it - as much as any of the adults in the
+town.  Skinny, and short to boot, most of his clothes have certainly
+seen better days some are torn, some have gaping holes, and all are
+dusty from scrambling through the streets of the town.    
+~
+200 0 0 E
+55 8 -1 789 10d34+20 5d23+12
 100 100
-8 8 1
+8 8 1 0
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Trip: 100
+Dirtkick: 100
+E
+#10711
+merchant woman wool~
+The Andoran merchant~
+\c00An Andoran woman walks about the streets, holding her skirts carefully out of the dust.
+~
+A short, rather plump Andoran woman, seeming to be a merchant or
+trader of some sort.  Her clothes, although only wool, are heavily
+embroidered and died in rich colours.  From her appearance, she
+cannot be more than moderately successful, and the very fact that she
+is walking rather than riding or in a coach proves that.    
+~
+72 0 0 E
+75 4 10 789 26d291+5 17d10+18
+500 105
+8 8 2 0
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Kick: 100
+Disarm: 100
+E
+#10712
+wisdom herb woman shopkeeper~
+Far Madding's wisdom~
+\c00The wisdom of the town sits at the table, humming to herself as she slices some \c02h\c09e\c02r\c09b\c02s\c00.
+~
+The resident wisdom of Far Madding is a cheery woman with an open,
+smiling face, and \c23grey\c00 hair pulled into a bun that could crack rocks.
+The way she moves around her little house shows that she knows the
+exact location and specifics of every bottle, bundle and leaf in the
+place, and her sure, certain movements are calculated to calm even
+the most hysterical of patients.    
+~
+74 0 0 E
+0 20 10 789 1d100+0 1d1+0
+1000 0
+6 6 2 0
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+P
+OnRandom 20
+Say "No eye can see the Pattern until it is woven. "
+End
+OnRandom 20
+Say "When you have a wolf by the ears, it's as hard to let go as it is to hang on."
+End
+OnRandom 20
+Say "No use trying to put a broken egg back in the shell."
+End
+OnRandom 20
+Say "If you watch the wolf too hard, a mouse will bite you on the ankle. "
+End
+OnRandom 20
+Say "Care and a long life go together."
+End
+Q
+E
+#10713
+citizen far madding man~
+A Far Madding citizen~
+\c00A Far Madding citizen is standing here.
+~
+The man's skin is of medium tones like most of those about, he most
+resembles a Murandian.  Far Madding is a strange city, a law unto
+itself, not quite controlled by Tear, Illian, Murandy or Andor but a
+trading post for all of those, a place where merchants come to
+interact with each other.  The citizens have obviously learned to
+live off that, as this one has, by building their lives around the
+trade that comes from outside.    
+~
+72 0 0 E
+65 7 2 789 30d170+10 5d25+13
+355 100
+8 8 1 0
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Disarm: 100
+Stun: 100
+E
+#10714
+inkeeper shopkeeper harper grey man~
+the innkeeper of the \c23Grey \c10H\c03a\c10r\c03p\c10e\c03r\c00~
+\c00The innkeeper of the \c23Grey \c10H\c03a\c10r\c03p\c10e\c03r\c00 stands behind the bar, polishing a glass industriously.
+~
+A large, beefy man that looks more suited to a butcher than an
+innkeeper, the proprietor of the \c23Grey \c10H\c03a\c10r\c03p\c10e\c03r\c00 inn seems nevertheless
+to be a kindly soul.  He is dressed in an immaculate white apron, and
+is sweating profusely, despite the open window that allows a slight
+breeze to drift through the inn.    
+~
+72 0 0 E
+0 20 10 789 1d100+0 1d1+0
+0 0
+8 8 1 0
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+E
+#10715
+innkeeper woman boar blue~
+the proprietress of the \c11B\c04lu\c11e \c23Boar\c00~
+\c00The proprietress of the inn stands behind the bar, keeping order in the common room with a sharp eye and sharper tongue.
+~
+A tall, fairly skinny woman, she rules the \c11B\c04lu\c11e \c23Boar\c00 tavern with an
+iron fist.  Whether it is throwing out drunken customers, chastising
+maids for spilling drinks or having a shouting match with the cook,
+she accompanies all her duties with the same permanent scowl fixed on
+her features.    
+~
+74 0 0 E
+0 20 10 789 1d100+0 1d1+0
+1000 0
+8 8 2 0
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+E
+#10716
+guard merchant off-duty mercenary~
+the merchant's guard~
+\c00An off-duty merchant's guard lounges in the sun, glancing idly over the travellers passing him.
+~
+Sun-browned, scarred cheeks, sunked knuckles, an often-broken nose
+this man could be little else but a hired fighter, a mercenary.  At
+the moment, he appears to be off-duty, soaking up the \c10sun\c00 and
+collecting \c23d\c03us\c23t\c00.  The tilt of his eyes suggest a Borderland ancestry,
+although his clothes are closer to Andoran make perhaps not even he
+could tell where he comes from, or, for that matter, where he is
+going to.    
+~
+1050696 0 0 E
+65 4 10 789 30d100+0 30d6+16
+250 100
+8 8 1 0
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Trip: 100
+Dirtkick: 100
+E
+#10717
+receptionist shopkeeper hunter's lodge~
+the receptionist of the \c10Hu\c03nt\c02er\c09's \c04Lodge\c00~
+\c00The receptionist for the \c10Hu\c03nt\c02er\c09's\c04 Lodge\c00 sits behind the counter, jotting entries into a large open ledger.
+~
+The receptionist has a bright, rather fixed smile, that flashes her
+perfect teeth to their best advantage.  Her right thumb is slightly
+inkstained from the work she carries out - acting as the inn's scribe
+and accounts-keeper as well as receptionist.    
+~
+1065034 0 0 E
+0 20 10 789 1d100+0 1d1+0
+0 0
+8 8 2 0
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+E
+#10718
+guard resting gate far madding~
+A resting guard~
+\c00A Far Madding guard is resting at one of the tables, his helmet tilted over his eyes.
+~
+An off-duty gate guard, this man is taking full advantage of his
+break to catch up on some much-needed rest.  Tired, and visibly
+drained by the heat, he - and his colleagues - seem to want nothing
+better than a few hours' lazing in the shade.    
+~
+74 0 0 E
+75 -2 1 789 30d200+10 20d10+20
+100 105
+6 8 1 0
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Trip: 100
+Kick: 100
+E
+#10719
+guard gate worker labourer laborer repair Far Madding~
+The Far Madding guard~
+\c00A guard has been pressed into public service here, and is working at repairing the wall.
+~
+The guard looks much the same as his fellows at either gate, except
+for the fact that he has doffed breastplate and coat, and stands in
+sweaty shirtsleeves under the brutal sun.  At the moment he seems to
+be involved a sticky mixture of \c23tar\c00 onto the newly-placed logs to
+keep them from rot and insects.    
+~
+74 0 0 E
+75 -2 1 789 30d200+10 20d10+20
+100 105
+8 8 1 0
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+E
+#10720
+scullion girl kitchen~
+the scullion~
+\c00A scullion is sweating over a huge mound of rusty pots here.
+~
+A small girl, no more than twelve years old, she has obviously been
+taken into employment by the innkeeper to keep up with the huge mound
+of dirty dishes and crockery that inevitably accumulates in an inn of
+this size.  Her face is sweaty and dirty from the heat of the kitchen
+and the pans, and she wears an apron several sizes too large for her.
+~
+74 0 0 E
+60 8 7 789 22d199+1 25d3+12
+253 102
+8 8 2 0
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Trip: 100
+Stun: 100
+P
+OnSay "Joven"
+Action "scream"
+End
+Q
+E
+#10721
+stableboy boy harper grey lad~
+the stable lad~
+\c00A stableboy walks about idly, smelling of \c10hay\c00 and \c03horses\c00.
+~
+A youngish lad, the hay in his hair giving him a country appearance
+despite his obviously more cosmopolitan origins.  He wears a long
+apron to protect his clothes from the unfortunate products of his
+interaction with the horses, and the smells of the stable are rather
+strong about him.    
+~
+74 0 0 E
+60 5 2 789 18d199+2 12d11+15
+158 100
+8 8 1 0
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Dirtkick: 100
+Kick: 100
+E
+#10722
+maid cleaning woman~
+a maidservant~
+A maid bustles about the corridor, cleaning and dusting everything in sight.
+~
+A rather jolly middle-aged woman, with a face looking as if it has
+been left in the sun too long.  Her wrinkles are closer to smile or
+laughter lines than anything else, and her clothes are plain,
+homespun, although clean.  She is armed with a vicious-looking
+feather duster and a deadly cloth, ready to battle the dark hordes of
+dust and woodworm.    
+~
+1065032 0 0 E
+0 20 10 789 1d100+0 1d1+0
+0 0
+8 8 2 0
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+E
+#10723
+groom head stable~
+the head groom~
+The head groom stands in one of the stalls, currying a bay gelding with slow, certain movements.
+~
+The head groom of the inn is a small, balding man, with a ready smile
+and a piece of hay almost permanently stuck between his teeth.  He
+wears a leather jerkin and undyed woolen trousers, and has that
+quiet, soft attitude that is so good for calming fractious horses.  
+~
+74 0 0 E
+75 2 1 789 30d159+0 30d6+18
+500 100
+8 8 1 0
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Bash: 100
+Dirtkick: 100
+E
+#10724
+wisdom woman Far Madding~
+the wisdom of Far Madding~
+\c00The Wisdom of Far Madding sits at her table, dispensing sayings and advice along with herbs and poultices.
+~
+It looks, err, unfinished.
+~
+8 0 0 E
+0 20 10 789 1d100+0 1d1+0
+0 0
+8 8 2 0
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+E
+#10725
+merchant fur trader~
+the fur trader~
+\c00A \c01f\c03u\c01r\c00 merchant stands behind his stall, crying out his wares.
+~
+A large man, probably of Saldaean ancestry from his dark, tilted
+eyes, he does not appear to be very successful only the lightest of
+his wares are selling, or are needed, in this heat.  Red-faced from
+both the stuffy atmosphere and the loud shouting he must do to be
+heard over the babble of the market, he projects a fearsome image -
+but soon calms down if anyone looking to buy comes near.    
+~
+1048650 0 0 E
+0 20 10 789 1d100+0 1d1+0
+100000 0
+8 8 1 0
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+E
+#10726
+stonemason mason worker man shopkeeper~
+the stonemason~
+\c00The \c14st\c07on\c23em\c07as\c14on\c00 is chiselling away at a large marble block here.
+~
+A large man, heavy in the shoulders and arms like a blacksmith.  His
+clothes are, like a farrier's, heavy leather although to protect from
+flying chips of stone rather than from red-hot metal.  Although he
+seems suited to heavy work, his quick fingers show that if necessary,
+he could manage the most delicate of stonework.    
+~
+1048650 0 0 E
+0 20 10 789 1d100+0 1d1+0
+100000 0
+8 8 1 0
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+E
+#10727
+The glovemaker stands in the shop, sewing a tear in a finger of one of her products.~
+the glovemaker~
+\c00The glovemaker stands in the shop, sewing a tear in a finger of one of her products.
+~
+A young woman, probbaly not the owner of the shop but rather hired
+help of some sort.  She seems competent enough about her task,
+however; sewing damaged gloves and dealing with customers with equal
+ease.    
+~
+74 0 0 E
+0 20 10 789 1d100+0 1d1+0
+100000 0
+8 8 2 0
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+E
+#10728
+harper musician~
+the harper~
+\c00A musician, softly strumming a lap-harp, sits at one of the benches.
+~
+Not quite the mirror of the sign on the inn; he's about twenty years
+younger than the man there, and his instrument does not quite possess
+the gilded beauty of its image.  The music is sweet, though, or as
+sweet as it can be when it's half-drowned out by the noise of the
+patrons.    
+~
+1048650 0 0 E
+65 7 1 789 25d149+10 5d25+13
+500 100
+8 8 1 0
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+Trip: 100
+Kick: 100
+E
+#10729
+harper grey innkeeper proprietress~
+the proprietress of the \c23Grey \c10H\c03a\c10r\c03p\c10e\c03r\c00~
+\c00The proprietress of the \c23Grey \c10H\c03a\c10r\c03p\c10e\c03r\c00 stands behind the counter, welcoming guests to the inn with a smile.
+~
+A jovial, slightly overweight woman, she occupies herself with
+welcoming new guests to the inn when she isn't pulling pints in the
+common room.    
+~
+16458 0 0 E
+0 20 10 789 1d100+0 1d1+0
+100000 0
+8 8 2 0
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+E
+#10740
+vendor fruit shopkeeper man keeper~
+a fruit vendor~
+A fruit vendor stands behind his stall, managing to both closely watch his produce and bawl out its details to all and sundry.
+~
+A farmer, any looking at him would see instantly; a southern farmer,
+moreover, with skin turned a deep brown from many hours of constant
+sun.  He jealously guards the products on the trestle that serves as
+his stall - fresh fruit and vegetables.  The stock is rather
+depleted, considering the terrible harvesting conditions recently,
+but what there is is displayed to the best of the farmer's abilities
+to look enticing and appetising.    
+~
+74 0 0 E
+0 20 10 789 1d100+0 1d1+0
+10000 0
+8 8 1 0
+Str: 18
+Dex: 18
+Int: 18
+Wis: 18
+Con: 18
+Cha: 18
+E
+#10798
+child jagad small helpless katore~
+a small, helpless child of the Jagad family~
+A small, helpless child of the Jagad family huddles in a corner, ready for Katore to take his frustrations out on.
+~
+It looks small, helpless and pathetic.  \c08REVENGE!!  \c00
+~
+1043578 0 0 E
+199 -180 -20 789 30d600+100 30d127+50
+1 1
+8 8 2 0
 Str: 18
 Dex: 18
 Int: 18
@@ -148,72 +787,29 @@ Dirtkick: 100
 Kick: 100
 Disarm: 100
 Stun: 100
-P
-OnAttack
-Stop
-ActionTo "spit"
-SayTo "darkfriend scum!"
-ActionTo "kill"
-End
-Q
 E
-#10706
-whitecloak guard~
-a whitecloak guard~
-a guard for the Children of the Light stands here
+#10799
+tabac merchant keeper shop~
+the \c02tabac\c00 merchant~
+\c00The \c02tabac\c00 merchant stands behind the counter, frowning as she labels a sample bale.
 ~
-This guard's face looks as if it's set in stone. He stands unmoving
-before the doorway and eyes you as you approach.
+The \c02tabac\c00 merchant is a woman of medium height, with dark brown hair
+and eyes to match.  Her ancestry is uncertain; perhaps a southerner,
+perhaps from Murandy or Ghealdan, or perhaps even born in Far
+Madding.  Her clothes are in good repair and quite fine, suggesting
+that the shop is doing fairly well for itself despite the recent
+troubles.  The scent of \c02tabac\c00 is as strong on her as it is on the
+rest of the room, a smoky, pungent smell.    
 ~
-712730 2096 0 E
-200 -180 -20 683 30d1000+100 30d127+50
-0 0
-8 8 1
+74 0 0 E
+199 -180 -20 789 30d600+100 30d127+50
+100000 1
+8 8 2 0
 Str: 18
 Dex: 18
 Int: 18
 Wis: 18
 Con: 18
 Cha: 18
-P
-OnEntry & ! Guild "children of the light"
-Emote "the guard takes one look at you and shows you the door."
-Force "w"
-End
-Q
-E
-#10707
-assistant questmaster pkillzone~
-the Quest Master's assistant~
-The Quest Master's assistant stands here looking very helpful.
-~
-The Quest Master's assistant stands here with pen and parchment in hand
-looking as thought she is ready for anything. Her competent, calculating gaze 
-seems to take in every detail of those in the room. Most importantly
-however, like any good assistant, she is dressed not to outshine 
-the Quest Master.
-~
-6283274 48 0 E
-200 20 10 683 1d100+25000 1d1+0
-0 0
-8 8 2
-P
-OnRandom 10
-Say "If you wish to leave the Quest Zone you may do so at any time from this room by typing '\c13Leave\c00'"
-End
-OnAction "target"
-Stop
-Say "Hey! This is a peaceful room! Go \c06cool\c00 off!"
-Force "leave"
-End
-OnEntry & Hurt
-Say "Take strength from the \c13Quest Master!\c00"
-Cast "advanced heal"
-Cast "heal"
-Cast "heal"
-Cast "heal"
-Cast "invigorate"
-End
-Q
 E
 $

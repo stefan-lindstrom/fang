@@ -167,20 +167,17 @@ end
 ~
 #16
 Tester by Tempus~
-0 g 100
-~
-if (%actor.name% !=  Tempus )
-kill %actor.name%
-elseif (%actor.name% != Daene)
-smile %actor.name%
-liege %actor.name%
+1 d 100
+*~
+if %speech% == ID
+%send% %actor.name% %actor.eq(3)%
 end
 ~
 #17
 Nightflower Trigger~
 1 h 100
 ~
-if (%self.vnum% == 13250)
+if (%self.vnum% == 13250 || %self.vnum% == 25164)
 %echo% Suddenly %actor.name% lights a large firework...
 %echo% \\c00
 %echo% \\c00\\c07\\c00 \\c00 \\c00 \\c00 \\c00 \\c00 \\c00 \\c00 \\c00 \\c00 \\c00 \\c00 \\c00 \\c00 \\c00 \\c00 \\c00 \\c00 \\c00 \\c00 \\c00 \\c00 \\c00 \\c00 \\c00 \\c00 \\c00 \\c00 \\c00 \\c04a\\c07\\c00
@@ -207,17 +204,39 @@ if (%self.vnum% == 13250)
 otransform 13249
 end
 ~
+#27
+New Trigger~
+1 gj 100
+~
+     if (%actor.level% > 200)
+            return 1
+         else
+%send% %actor.name% &R&fYou are not an IMM!&n
+            return 0
+         end
+~
 #41
 Chris's trig~
 2 c 100
 *~
-if %actor.name% == Chris
-wforce %actor.name% %cmd%
+if %actor.name% != Chris
+  %send% %actor.name% &KA Black Robed Myrddraal lunges from the shadows, pale hands reaching out hungrily to wrap about your throat as he slowly throttles you to death!&n
+  return 1
+end
+~
+#44
+Puff's Muzzle~
+2 c 100
+Say~
+if (%actor.name% != Puff)
+  return 0
+end
 ~
 #69
 An innocent trigger, really !~
-0 d 100
-suck~
+0 c 100
+say~
+if (%arg% == suck)
 wait 1 s
 emote gets down on her knees, eyes fixed on %actor.name%.
 wait 1 s
@@ -228,5 +247,29 @@ wait 3 s
 emote continues her demanding work.
 wait 3 s
 emote finishes %actor.name% off, licking her lips when done.
+end
+if (%arg% == kiss)
+wait 1 s
+emote steps forwards and places her body against %actor.name%
+wait 1 s
+emote moves closer, pressing her large breasts against %actor.name%'s chest.
+wait 1 s
+emote wraps her arms around %actor.name%'s shoulders, giggling as she bounces slightly.
+wait 1 s
+emote presses her lips against %actor.name%'s, using her tongue to full advantage.
+wait 1 s
+emote finishes kissing %actor.name% and steps back, smiling at %actor.name%
+end
+if (%arg% == strip)
+wait 1 s
+emote smiles happy at %actor.name%, "Of course, Master!"
+wait 1 s
+emote almost hurriedly begins stripping off her clothes revealing the large mounds of her breasts as well as her other womanly attributes.
+wait 1 s
+emote bounces up and down as she gazes at %actor.name% with lust evident in her eyes.
+wait 1 s
+%force% %actor.name% ogle partygirl
+emote smiles lasciviously at %actor.name% before moving closer, swaying her hips all the while.
+end
 ~
 $~

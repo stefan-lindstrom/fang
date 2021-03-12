@@ -1,241 +1,384 @@
-#17501
-key cotl whitecloak guard tent~
-\c14a large silver key\c00~
-A large key lies here in the dirt.~
-~
-18 0 1
-0 0 0 0
-0 0 0
-#17502
-helmet steel~
-a sturdy looking steel helmet~
-A large helmet is lieing here gathering dust.~
-~
-9 0 17
-0 0 0 0
-4 9500 0
-A
-13 50
-A
-17 -45
-#17503
-Silver ring simple quest~
-a small band of \c14t\c00w\c14i\c00s\c14t\c00e\c14d\c00 s\c14i\c00l\c14v\c00e\c14r\c00~
-A small simple ring is lying here.~
-~
-9 4224 3
-0 65 0 0
-0 1 135
-A
-13 50
-#17504
-steel armguard plate~
-\c00a pair of \c14steel\c00 plate armguards~
-A pair of sterdy looking armguards are lying here.~
-~
-9 0 257
-0 20 0 0
-4 11000 0
-A
-17 -20
-A
-13 50
-#17505
-ring smiple~
-a small silver ring~
-A small ring lies here in the dirt.~
-~
-11 0 3
-0 0 0 0
-3 3500 0
-A
-17 -15
-A
-6 2
-#17506
-whitecloak cloak sunburst brilliant~
-\c14a brilliant white cloak bearing a \c10golden sunburst\c00~
-A brilliant white cloak is lying here.~
-~
-9 69768 1025
-0 0 0 0
-5 32000 0
-A
-19 15
-A
-18 15
-A
-9 45
-#17507
-sign ooc~
-\c13an \c14OOC \c13sign\c00~
-\c11An \c14OOC \c11sign has been placed here for you benefit.\c00~
-~
-10 0 1
-0 0 0 0
-1000000 0 0
-E
-sign~
-Twisted Ring \c14(Q)\c00: +65abs +50hp = 135Qps
+<?xml version="1.0"?>
+<objects>
+  <object vnum="17501" name="key cotl whitecloak guard tent" special="NONE">
+    <description>A large key lies here in the dirt.</description>
+    <shortdesc>\c14a large silver key\c00</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="18" wear="1" extra="0"/>
+      <data weight="0" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="17502" name="helmet steel" special="NONE">
+    <description>A large helmet is lieing here gathering dust.</description>
+    <shortdesc>a sturdy looking steel helmet</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="MAXHIT" modifier="50"/>
+    <objaffect location="ARMOR" modifier="-45"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="9" wear="17" extra="0"/>
+      <data weight="4" cost="9500" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="17503" name="Silver ring simple quest" special="NONE">
+    <description>A small simple ring is lying here.</description>
+    <shortdesc>a small band of \c14t\c00w\c14i\c00s\c14t\c00e\c14d\c00 s\c14i\c00l\c14v\c00e\c14r\c00</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="MAXHIT" modifier="50"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="65" value3="0" value4="0"/>
+      <flags type="9" wear="3" extra="4224"/>
+      <data weight="0" cost="1" questcost="135" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="17504" name="steel armguard plate" special="NONE">
+    <description>A pair of sterdy looking armguards are lying here.</description>
+    <shortdesc>\c00a pair of \c14steel\c00 plate armguards</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="ARMOR" modifier="-20"/>
+    <objaffect location="MAXHIT" modifier="50"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="20" value3="0" value4="0"/>
+      <flags type="9" wear="257" extra="0"/>
+      <data weight="4" cost="11000" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="17505" name="ring smiple" special="NONE">
+    <description>A small ring lies here in the dirt.</description>
+    <shortdesc>a small silver ring</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="ARMOR" modifier="-15"/>
+    <objaffect location="CHA" modifier="2"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="11" wear="3" extra="0"/>
+      <data weight="3" cost="3500" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="17506" name="whitecloak cloak sunburst brilliant" special="NONE">
+    <description>A brilliant white cloak is lying here.</description>
+    <shortdesc>\c14a brilliant white cloak bearing a \c10golden sunburst\c00</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="DAMROLL" modifier="15"/>
+    <objaffect location="HITROLL" modifier="15"/>
+    <objaffect location="ABS" modifier="45"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="9" wear="1025" extra="69768"/>
+      <data weight="5" cost="32000" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="17507" name="sign ooc" special="NONE">
+    <description>\c11An \c14OOC \c11sign has been placed here for you benefit.\c00</description>
+    <shortdesc>\c13an \c14OOC \c13sign\c00</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="10" wear="1" extra="0"/>
+      <data weight="1000000" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <exdesc keyword="sign">
+      <description>Twisted Ring \c14(Q)\c00: +65abs +50hp = 135Qps
 Armguard: -20ac +20abs +50hp = 11000 coins
 Bracer \c14(Q)\c00: -35ac +35abs +2str = 107Qps
 Ring: -15ac +2cha = 3500 coins
 Breastplate: +10abs +2str = 4000 coins
 Shield: -45ac +35abs +18dam = 25000 coins
 Helm: -45ac +50hps = 9500 coins
-~
-#17508
-cotl shield sunburst whotecloak~
-a large silver shield etched with a golden sunburst~
-A large shield lies here in the dirt.~
-~
-9 0 513
-0 35 0 0
-5 25000 0
-A
-19 18
-A
-17 -45
-#17509
-pouch well lether crafted whitecloak~
-a well crafted leather pouch~
-A nice looking pouch is lieing here.~
-~
-15 0 2049
-2000 0 -1 0
-1 34000 0
-A
-19 20
-A
-18 20
-A
-9 35
-#17510
-Bracer amadica thistle quest~
-\c00a solid steel bracer bearing a \c08red thistle\c00 laid over a \c14silver six-pointed star\c00~
-A solid looking bracer is lying here in the dirt.~
-~
-9 4096 4097
-0 0 0 0
-8 1 107
-A
-17 -35
-A
-9 35
-A
-1 2
-#17511
-spit fire~
-a \c08s\c10p\c08i\c10t\c08r\c10o\c08a\c10s\c08t\c00~
-\c00A \c10s\c08p\c10i\c08t\c10r\c08o\c10a\c08s\c10t\c00 is turning slowly over a large \c08f\c10i\c08r\c10e\c00.\c00~
-~
-15 0 1
-20 0 -1 0
-9999999 0 0
-P
-OnAction "get take" & ! Guild "child"
-Stop
-Emote "OW! By the Light that fire is hot!"
-End
-Q
-#17512
-stream~
-\c11a \c13f\c11a\c13s\c11t \c13f\c11l\c13o\c11w\c13i\c11n\c13g \c11s\c13t\c11r\c13e\c11a\c13m\c00~
-\c00A fast \c13f\c11l\c13o\c11w\c13i\c11n\c13g \c11s\c13t\c11r\c13e\c11a\c13m\c00 rushes alongside the clearing.~
-~
-23 0 1
-9999 9999 0 0
-99999 0 0
-#17513
-Breastplate armor~
-a polished steel breastplate~
-A steel breastplate lies here.~
-~
-9 0 9
-0 0 0 0
-0 4000 0
-A
-9 10
-A
-1 2
-#17514
-beef slice ~
-\c00a slice of \c11f\c13r\c11e\c13s\c11h\c13l\c11y \c08ro\c10ast\c08ed\c00 beef~
-\c00A slice of \c11f\c13r\c11e\c13s\c11h\c13l\c11y \c08ro\c10ast\c08ed\c00 beef is lying here.~
-~
-19 0 1
-18 0 0 0
-2 0 0
-#17515
-cloak~
-\c00a pure \c14white\c00 cloak~
-\c00A cloak of the purest \c14white\c00 has been dropped here.~
-~
-9 0 1025
--15 15 0 0
-4 0 0
-#17516
-sword child~
-\c14a heavy broadsword\c00~
-\c14A heavy broadsword with a \c10golden sunburst\c00 \c14on the hilt.\c00~
-~
-5 0 8321
-3 3 10 11
-0 0 0
-#17517
-helm child~
-\c00a \c14white\c00 helm emblazoned with a \c10golden sunburst\c00~
-\c00A \c14white\c00 helm emblazoned with a \c10golden sunburst\c00.~
-~
-9 0 17
-6 6 0 0
-0 0 0
-#17518
-dagger child~
-\c14a sharp steel dagger\c00~
-\c14A sharp steel dagger has been thrust into the ground.\c00~
-~
-5 0 8193
-5 3 8 14
-0 0 0
-#17519
-medallion gold~
-\c00a \c10solid gold\c00 medallion~
-\c00A \c10golden\c00 medallion enscripted with a \c08red shepards\c00 crook.~
-~
-11 0 5
-0 0 0 0
-4 0 0
-A
-6 2
-A
-18 5
-A
-19 5
-#17525
-sign~
-\c11an \c14OOC \c11sign\c00~
-\c11An \c14OOC \c11sign is standing here.\c00~
-~
-0 0 1
-0 0 0 0
-2147483647 0 0
-E
-sign~
-*** ABOUT THE HOUSE : This house is owned by a
-weathly merchant who travels the roads between
-Caemlyn and Amador. A excellent businessman he
-is often seen talking with strange foreigners
-(most likely other merchants).
-*** NOTE : You cannot level here or buy goods,
-this house is used for rp purposes and you cannot
-be dragged into rp. If, however you choose to be
-IC then you will be forced to explain why you have
-broken into this poor merchants house.
-~
-E
-child~
-*** NOTE: This house, while not a Children of the Light
+</description>
+    </exdesc>
+  </object>
+  <object vnum="17508" name="cotl shield sunburst whitecloak" special="NONE">
+    <description>A large shield lies here in the dirt.</description>
+    <shortdesc>a large silver shield etched with a golden sunburst</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="DAMROLL" modifier="18"/>
+    <objaffect location="ARMOR" modifier="-45"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="35" value3="0" value4="0"/>
+      <flags type="9" wear="513" extra="0"/>
+      <data weight="5" cost="25000" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="17509" name="pouch well lether crafted whitecloak" special="NONE">
+    <description>A nice looking pouch is lieing here.</description>
+    <shortdesc>a well crafted leather pouch</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="DAMROLL" modifier="20"/>
+    <objaffect location="HITROLL" modifier="20"/>
+    <objaffect location="ABS" modifier="35"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="2000" value2="0" value3="-1" value4="0"/>
+      <flags type="15" wear="2049" extra="0"/>
+      <data weight="1" cost="34000" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="17510" name="Bracer amadica thistle quest" special="NONE">
+    <description>A solid looking bracer is lying here in the dirt.</description>
+    <shortdesc>\c00a solid steel bracer bearing a \c08red thistle\c00 laid over a \c14silver six-pointed star\c00</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="ARMOR" modifier="-35"/>
+    <objaffect location="ABS" modifier="35"/>
+    <objaffect location="STR" modifier="2"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="9" wear="4097" extra="4096"/>
+      <data weight="8" cost="1" questcost="107" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="17511" name="spit fire" special="NONE">
+    <description>\c00A \c10s\c08p\c10i\c08t\c10r\c08o\c10a\c08s\c10t\c00 is turning slowly over a large \c08f\c10i\c08r\c10e\c00.\c00</description>
+    <shortdesc>a \c08s\c10p\c08i\c10t\c08r\c10o\c08a\c10s\c08t\c00</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="20" value2="0" value3="-1" value4="0"/>
+      <flags type="15" wear="1" extra="0"/>
+      <data weight="9999999" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <objprog main="OnAction" argtype="STRING" argument="get take">
+      <sideterm number="Guild" not="FALSE" argtype="STRING" argument="child"/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="Emote" argtype="STRING" argument="OW! By the Light that fire is hot!"/>
+    </objprog>
+  </object>
+  <object vnum="17512" name="stream" special="NONE">
+    <description>\c00A fast \c13f\c11l\c13o\c11w\c13i\c11n\c13g \c11s\c13t\c11r\c13e\c11a\c13m\c00 rushes alongside the clearing.</description>
+    <shortdesc>\c11a \c13f\c11a\c13s\c11t \c13f\c11l\c13o\c11w\c13i\c11n\c13g \c11s\c13t\c11r\c13e\c11a\c13m\c00</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="9999" value2="9999" value3="0" value4="0"/>
+      <flags type="23" wear="1" extra="0"/>
+      <data weight="99999" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="17513" name="Breastplate armor" special="NONE">
+    <description>A steel breastplate lies here.</description>
+    <shortdesc>a polished steel breastplate</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="ABS" modifier="10"/>
+    <objaffect location="STR" modifier="2"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="9" wear="9" extra="0"/>
+      <data weight="0" cost="4000" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="17514" name="beef slice " special="NONE">
+    <description>\c00A slice of \c11f\c13r\c11e\c13s\c11h\c13l\c11y \c08ro\c10ast\c08ed\c00 beef is lying here.</description>
+    <shortdesc>\c00a slice of \c11f\c13r\c11e\c13s\c11h\c13l\c11y \c08ro\c10ast\c08ed\c00 beef</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="18" value2="0" value3="0" value4="0"/>
+      <flags type="19" wear="1" extra="0"/>
+      <data weight="2" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="17515" name="cloak" special="NONE">
+    <description>\c00A cloak of the purest \c14white\c00 has been dropped here.</description>
+    <shortdesc>\c00a pure \c14white\c00 cloak</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="-15" value2="15" value3="0" value4="0"/>
+      <flags type="9" wear="1025" extra="0"/>
+      <data weight="4" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="17516" name="sword child" special="NONE">
+    <description>\c14A heavy broadsword with a \c10golden sunburst\c00 \c14on the hilt.\c00</description>
+    <shortdesc>\c14a heavy broadsword\c00</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="3" value2="3" value3="10" value4="11"/>
+      <flags type="5" wear="8321" extra="0"/>
+      <data weight="0" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="17517" name="helm child" special="NONE">
+    <description>\c00A \c14white\c00 helm emblazoned with a \c10golden sunburst\c00.</description>
+    <shortdesc>\c00a \c14white\c00 helm emblazoned with a \c10golden sunburst\c00</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="6" value2="6" value3="0" value4="0"/>
+      <flags type="9" wear="17" extra="0"/>
+      <data weight="0" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="17518" name="dagger child" special="NONE">
+    <description>\c14A sharp steel dagger has been thrust into the ground.\c00</description>
+    <shortdesc>\c14a sharp steel dagger\c00</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="5" value2="3" value3="8" value4="14"/>
+      <flags type="5" wear="8193" extra="0"/>
+      <data weight="0" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="17519" name="medallion gold" special="NONE">
+    <description>\c00A \c10golden\c00 medallion enscripted with a \c08red shepards\c00 crook.</description>
+    <shortdesc>\c00a \c10solid gold\c00 medallion</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="CHA" modifier="2"/>
+    <objaffect location="HITROLL" modifier="5"/>
+    <objaffect location="DAMROLL" modifier="5"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="11" wear="5" extra="0"/>
+      <data weight="4" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="17520" name="table" special="NONE">
+    <description>A large table with steel reinforcements is bolted to the floor here.</description>
+    <shortdesc>a large table with steel reinforcements</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="2" value2="0" value3="3" value4="0"/>
+      <flags type="24" wear="0" extra="71752"/>
+      <data weight="100000" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <exdesc keyword="table">
+      <description>The top of the table has a look of wear and tear and there
+are a variety of dents on the reinforced surface as well as dark
+stains blotched here and there.
+</description>
+    </exdesc>
+  </object>
+  <object vnum="17525" name="sign" special="NONE">
+    <description>\c11An \c14OOC \c11sign is standing here.\c00</description>
+    <shortdesc>\c11an \c14OOC \c11sign\c00</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="0" wear="1" extra="0"/>
+      <data weight="2147483647" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <exdesc keyword="child">
+      <description>*** NOTE: This house, while not a Children of the Light
 guild area, is IC in nature and although you cannot be
 forced into rp if you are here OOCly you will be asked
 to leave.
@@ -247,375 +390,669 @@ operations within Caemlyn. Due to it's secret nature all
 Children must be very careful when entering and because of
 this it would be very hard for the merchant to be discovered
 as a agent (not impossible though).
-~
-#17534
-brazier~
-\c14a pure white brazier holding \c10g\c08l\c10o\c08w\c10i\c08n\c10g \c08h\c10o\c08t\c14 coals\c00~
-\c14A pure white brazier holding \c10g\c08l\c10o\c08w\c10i\c08n\c10g \c08h\c10o\c08t\c14 coals stands inside the tent.\c00~
-~
-15 0 1
-100 0 -1 0
-1990 0 0
-#17535
-bale hay~
-\c00some \c10hay\c00 bales\c00~
-\c00Some bales of \c10hay\c00 stacked near the edge of the clearing.\c00~
-~
-0 0 1
-0 0 0 0
-1990 0 0
-#17536
-whip hotl~
-\c00a \c08wicked \c14steel tipped\c00 leather whip\c00~
-\c00A \c23leather\c00 whip with a \c08wicked\c00 steel tip is lying here.\c00~
-~
-5 0 32769
-0 3 6 2
-7 400 0
-#17537
-dagger silver throwing~
-a silver dagger with a leather wraped handle~
-A silver dagger lies here in the dirt.~
-~
-5 131072 8193
-0 3 10 14
-0 36500 0
-A
-19 19
-A
-18 19
-A
-4 2
-#17550
-bookcase~
-a bookcase~
-\c03A large \c14wooden \c03bookcase is standing against the wall.\c00~
-~
-0 0 1
-0 0 0 0
-1999 0 0
-#17551
-chair leather~
-a leather backed armchair~
-\c00a \c08leather\c00 backed armchair is resting against the wall.~
-~
-0 0 1
-0 0 0 0
-1999 0 0
-#17552
-couch chair~
-a padded couch~
-\c00A \c08thickly padded\c00 couch covered with soft pillows sits in the centre of the room.~
-~
-0 0 1
-0 0 0 0
-1990 0 0
-#17553
-table small~
-a small table~
-\c00A small table covered with \c09vegetables\c00 is sitting in the centre of the kitchen.~
-~
-0 0 1
-0 0 0 0
-1990 0 0
-#17554
-desk wood~
-a wooden desk~
-\c00A master crafted \c03wooden\c00 desk is covered with papers and register books.~
-~
-0 0 1
-0 0 0 0
-1990 0 0
-#17555
-seat bench velvet~
-a benchlike seat~
-\c00A long benchlike seat, covered with thick \c08velvet\c00 is sitting against the wall.\c00~
-~
-0 0 1
-0 0 0 0
-1990 0 0
-#17556
-mirror tall polished~
-a tall polished mirror~
-\c00A tall mirror that has been \c13recently polished\c00 sits accross from the staircase.\c00~
-~
-0 0 1
-0 0 0 0
-1990 0 0
-#17557
-bed four~
-a huge four posted bed~
-\c00The masters bed sits in the room, covered with \c14expensive pillows and quilts.\c00~
-~
-0 0 1
-0 0 0 0
-1990 0 0
-#17558
-table round large~
-a large round table~
-\c00A large round table surrounded by chairs and covered with detailed \c13maps\c00 and \c13ledgers\c00 sits in the centre of the room.\c00~
-~
-0 0 1
-0 0 0 0
-1990 0 0
-#17559
-basement~
-a trapdoor under the carpet~
-\c00Thick \c10expensive\c00 carpeting covers the floor here.\c00~
-~
-14 0 1
-0 0 0 0
-1999 0 0
-P
-OnAction "enter" & ! Guild "child"
-Stop
-EmoteTo "You search but you can't find it!"
-End
-Q
-#17560
-cotl wc whitecloak jerkin~
-a plain leather jerkin.~
-This object should not be lying here. Call am imm!~
-~
-9 65736 9
-70 30 0 0
-1 0 0
-A
-18 10
-A
-19 10
-A
-20 1
-#17561
-pouch cotl wc whitecloak purse~
-a common purse of &Kblack&n leather~
-This object should not be lying here. Call an imm!~
-~
-15 69832 2049
-10000 0 -1 0
-4 0 0
-A
-18 40
-A
-19 40
-#17562
-cotl wc whitecloak light torch ~
-a guttering, pitch soaked torch~
-This object should not be lying here. Call an imm!~
-~
-1 69832 16385
-0 0 -1 0
-3 0 0
-A
-20 2
-#17563
-cotl wc whitecloak dagger knife knives~
-a pair of long bladed knives~
-This item should not be lying here. Call an imm!~
-~
-5 69768 32769
-0 10 10 14
-0 0 0
-#17564
-cotl whitelcoak pouch sturdy~
-&Wa sturdy leather pouch&n~
-If you see this, call an imm!~
-~
-15 69832 2049
-10000 1 -1 0
-4 0 0
-A
-18 40
-A
-19 40
-#17565
-cotl whitecloak lantern geq~
-&Wa polished steel lantern&n~
-If you see this, call an imm!~
-~
-1 69768 1
-0 0 -1 0
-1 0 0
-A
-20 2
-#17566
-HotL WC sword guildeq~
-a steel longsword marked with a &rred shepherd's crook&n on its hilt~
-If you find this, tell the CotL guildleader immediately.~
-~
-5 69768 32769
-0 10 10 14
-1 0 0
-#17567
-CotL footman guildeq WC~
-a steel longsword with a &Ys&yu&Yn&yb&Yu&yr&Ys&yt&n mark on the hilt~
-If you find this, tell the CotL guildleader immediately.~
-~
-5 69768 32769
-0 10 10 14
-1 0 0
-#17568
-CotL guildeq cavalry~
-a long cavalry lance, tipped with steel and a &Ys&yu&Yn&yb&Yu&yr&Ys&Yt&n-marked pennant~
-If you find this, tell the CotL guildleader immediately.~
-~
-5 69768 32769
-0 10 10 14
-1 0 0
-#17569
-CotL WC guildeq~
-a white tabard blazoned with a &Ys&yu&Yn&yb&Yu&yr&Ys&yt&n~
-If you find this, tell the CotL guildleader immediately.~
-~
-9 69768 9
-70 30 0 0
-1 0 0
-A
-20 1
-A
-18 10
-A
-19 10
-#17570
-q~
-a white tabard blazoned with a &Ys&yu&Yn&yb&Yu&yr&Ys&yt&n over a knot of rank~
-If you see this lying around, tell the CotL guildleader!~
-~
-9 0 0
-70 30 0 0
-1 0 0
-A
-20 1
-A
-18 10
-A
-19 10
-#17571
-unfinished object~
-a white tabard blazoned with a &Ys&yu&Yn&yb&Yu&yr&Ys&yt&n over two knots of rank~
-If you see this lying around, tell the CotL guildleader!~
-~
-9 69768 9
-70 30 0 0
-1 0 0
-A
-20 1
-A
-18 10
-A
-19 10
-#17572
-unfinished object~
-a white tabard blazoned with a &Ys&yu&Yn&yb&Yu&yr&Ys&yt&n over three knots of rank~
-If you see this lying around, tell the CotL guildleader!~
-~
-9 69768 9
-70 30 0 0
-1 0 0
-A
-20 1
-A
-18 10
-A
-19 10
-#17573
-unfinished object~
-a white tabard blazoned with a &Ys&yu&Yn&yb&Yu&yr&Ys&yt&n over four knots of rank~
-If you see this lying around, tell the CotL guildleader!~
-~
-9 69768 9
-70 30 0 0
-1 0 0
-A
-20 1
-A
-18 10
-A
-19 10
-#17574
-unfinished object~
-a white tabard blazoned with a &Ys&yu&Yn&yb&Yu&yr&Ys&yt&n and a &rred shepherd's crook&n~
-If you see this lying around, tell the CotL guildleader!~
-~
-9 69768 9
-70 30 0 0
-1 0 0
-A
-20 1
-A
-18 10
-A
-19 10
-#17575
-unfinished object~
-a white tabard blazoned with a &Ys&yu&Yn&yb&Yu&yr&Ys&yt&n and a &rred shepherd's crook&n over a knot of rank~
-If you see this lying around, tell the CotL guildleader!~
-~
-9 69768 9
-70 30 0 0
-1 0 0
-A
-20 1
-A
-18 10
-A
-19 10
-#17576
-unfinished object~
-a white tabard blazoned with a &Ys&yu&Yn&yb&Yu&yr&Ys&yt&n and a &rred shepherd's crook&n over two knots of rank~
-If you see this lying around, tell the CotL guildleader!~
-~
-9 69768 9
-70 30 0 0
-1 0 0
-A
-20 1
-A
-18 10
-A
-19 10
-#17577
-unfinished object~
-a white tabard blazoned with a &Ys&yu&Yn&yb&Yu&yr&Ys&yt&n and a &rred shepherd's crook&n over three knots of rank~
-If you see this lying around, tell the CotL guildleader!~
-~
-9 69768 9
-70 30 0 0
-1 0 0
-A
-20 1
-A
-18 10
-A
-19 10
-#17578
-unfinished object~
-a white tabard blazoned with a &Ys&yu&Yn&yb&Yu&yr&Ys&yt&n and a &rred shepherd's crook&n over four knots of rank~
-If you see this lying around, tell the CotL guildleader!~
-~
-9 69768 9
-70 30 0 0
-1 0 0
-A
-20 1
-A
-18 10
-A
-19 10
-#17590
-fort camp~
-a heavily guarded fort~
-\c00A \c10wooden walled \c14fort\c00 guarded by \c10archers\c00 has been hastily erected here.~
-~
-14 0 1
-0 0 0 0
-1000 0 0
-#17599
-olav tent~
-\c00a pure \c14white\c00 tent with a \c10golden sunburst\c00 above the entrance.\c00~
-\c00A pure \c14white\c00 tent with a \c10golden sunburst\c00 above the entrance has been erected beside the path.~
-~
-14 0 1
-0 0 0 0
-1990 0 0
-$~
+</description>
+    </exdesc>
+    <exdesc keyword="sign">
+      <description>*** ABOUT THE HOUSE : This house is owned by a
+weathly merchant who travels the roads between
+Caemlyn and Amador. A excellent businessman he
+is often seen talking with strange foreigners
+(most likely other merchants).
+*** NOTE : You cannot level here or buy goods,
+this house is used for rp purposes and you cannot
+be dragged into rp. If, however you choose to be
+IC then you will be forced to explain why you have
+broken into this poor merchants house.
+</description>
+    </exdesc>
+  </object>
+  <object vnum="17534" name="brazier" special="NONE">
+    <description>&amp;WA pure white brazier holding &amp;Yg&amp;Rl&amp;Yo&amp;Rw&amp;Yi&amp;Rn&amp;Yg&amp;R h&amp;Yo&amp;Rt&amp;W coals, stands here.&amp;n</description>
+    <shortdesc>\c14a pure white brazier holding \c10g\c08l\c10o\c08w\c10i\c08n\c10g \c08h\c10o\c08t\c14 coals\c00</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="2" value2="0" value3="1" value4="0"/>
+      <flags type="24" wear="1" extra="0"/>
+      <data weight="1990" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="17535" name="bale hay" special="NONE">
+    <description>\c00Some bales of \c10hay\c00 stacked near the edge of the clearing.\c00</description>
+    <shortdesc>\c00some \c10hay\c00 bales\c00</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="0" wear="1" extra="0"/>
+      <data weight="1990" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="17536" name="whip hotl" special="NONE">
+    <description>\c00A \c23leather\c00 whip with a \c08wicked\c00 steel tip is lying here.\c00</description>
+    <shortdesc>\c00a \c08wicked \c14steel tipped\c00 leather whip\c00</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="3" value3="6" value4="2"/>
+      <flags type="5" wear="32769" extra="0"/>
+      <data weight="7" cost="400" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="17537" name="dagger silver throwing" special="NONE">
+    <description>A silver dagger lies here in the dirt.</description>
+    <shortdesc>a silver dagger with a leather wraped handle</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="DAMROLL" modifier="19"/>
+    <objaffect location="HITROLL" modifier="19"/>
+    <objaffect location="WIS" modifier="2"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="3" value3="10" value4="14"/>
+      <flags type="5" wear="8193" extra="131072"/>
+      <data weight="0" cost="36500" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="17550" name="bookcase" special="NONE">
+    <description>\c03A large \c14wooden \c03bookcase is standing against the wall.\c00</description>
+    <shortdesc>a bookcase</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="0" wear="1" extra="0"/>
+      <data weight="1999" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="17551" name="chair leather arm" special="NONE">
+    <description>&amp;nA &amp;Rleather&amp;n backed armchair is resting against the wall.</description>
+    <shortdesc>a leather backed armchair</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="2" value2="1" value3="2" value4="0"/>
+      <flags type="24" wear="1" extra="0"/>
+      <data weight="1999" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="17552" name="couch padded" special="NONE">
+    <description>\c00A \c08thickly padded\c00 couch covered with soft pillows sits in the centre of the room.</description>
+    <shortdesc>a padded couch</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="2" value2="1" value3="4" value4="0"/>
+      <flags type="24" wear="0" extra="0"/>
+      <data weight="1990" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="17553" name="table small" special="NONE">
+    <description>\c00A small table covered with \c09vegetables\c00 is sitting in the centre of the kitchen.</description>
+    <shortdesc>a small table</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="0" wear="1" extra="0"/>
+      <data weight="1990" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="17554" name="desk wood" special="NONE">
+    <description>\c00A master crafted \c03wooden\c00 desk is covered with papers and register books.</description>
+    <shortdesc>a wooden desk</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="0" wear="1" extra="0"/>
+      <data weight="1990" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="17555" name="seat bench velvet" special="NONE">
+    <description>\c00A long benchlike seat, covered with thick \c08velvet\c00 is sitting against the wall.\c00</description>
+    <shortdesc>a benchlike seat</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="0" wear="1" extra="0"/>
+      <data weight="1990" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="17556" name="mirror tall polished" special="NONE">
+    <description>\c00A tall mirror that has been \c13recently polished\c00 sits accross from the staircase.\c00</description>
+    <shortdesc>a tall polished mirror</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="0" wear="1" extra="0"/>
+      <data weight="1990" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="17557" name="bed four" special="NONE">
+    <description>\c00The masters bed sits in the room, covered with \c14expensive pillows and quilts.\c00</description>
+    <shortdesc>a huge four posted bed</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="0" wear="1" extra="0"/>
+      <data weight="1990" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="17558" name="table round large" special="NONE">
+    <description>\c00A large round table surrounded by chairs and covered with detailed \c13maps\c00 and \c13ledgers\c00 sits in the centre of the room.\c00</description>
+    <shortdesc>a large round table</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="0" wear="1" extra="0"/>
+      <data weight="1990" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="17559" name="basement" special="NONE">
+    <description>\c00Thick \c10expensive\c00 carpeting covers the floor here.\c00</description>
+    <shortdesc>a trapdoor under the carpet</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="14" wear="0" extra="2048"/>
+      <data weight="1999" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <objprog main="OnAction" argtype="STRING" argument="enter">
+      <sideterm number="Guild" not="FALSE" argtype="STRING" argument="child"/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="EmoteTo" argtype="STRING" argument="You search but you can't find it!"/>
+    </objprog>
+  </object>
+  <object vnum="17560" name="cotl wc whitecloak jerkin" special="NONE">
+    <description>This object should not be lying here. Call am imm!</description>
+    <shortdesc>a plain leather jerkin.</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="HITROLL" modifier="10"/>
+    <objaffect location="DAMROLL" modifier="10"/>
+    <objaffect location="XATTACKS" modifier="1"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="70" value2="30" value3="0" value4="0"/>
+      <flags type="9" wear="9" extra="65736"/>
+      <data weight="1" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="17561" name="pouch cotl wc whitecloak purse" special="NONE">
+    <description>This object should not be lying here. Call an imm!</description>
+    <shortdesc>a common purse of &amp;Kblack&amp;n leather</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="HITROLL" modifier="40"/>
+    <objaffect location="DAMROLL" modifier="40"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="10000" value2="0" value3="-1" value4="0"/>
+      <flags type="15" wear="2049" extra="69832"/>
+      <data weight="4" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="17562" name="cotl wc whitecloak light torch " special="NONE">
+    <description>This object should not be lying here. Call an imm!</description>
+    <shortdesc>a guttering, pitch soaked torch</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="XATTACKS" modifier="2"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="-1" value4="0"/>
+      <flags type="1" wear="16385" extra="69832"/>
+      <data weight="3" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="17563" name="cotl wc whitecloak dagger knife knives" special="NONE">
+    <description>This item should not be lying here. Call an imm!</description>
+    <shortdesc>a pair of long bladed knives</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="10" value3="10" value4="14"/>
+      <flags type="5" wear="32769" extra="69768"/>
+      <data weight="0" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="17564" name="cotl whitelcoak pouch sturdy" special="NONE">
+    <description>If you see this, call an imm!</description>
+    <shortdesc>CONTACT COTL GL FOR NEW GEQ!</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="10000" value2="1" value3="-1" value4="0"/>
+      <flags type="15" wear="2049" extra="69704"/>
+      <data weight="4" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="17565" name="cotl whitecloak lantern geq" special="NONE">
+    <description>If you see this, call an imm!</description>
+    <shortdesc>CONTACT COTL GL FOR NEW GEQ!</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="-1" value4="0"/>
+      <flags type="1" wear="1" extra="77832"/>
+      <data weight="1" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="17566" name="HotL WC sword guildeq" special="NONE">
+    <description>If you find this, tell the CotL guildleader immediately.</description>
+    <shortdesc>a steel longsword marked with a &amp;rred shepherd's crook&amp;n on its hilt</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="10" value3="10" value4="14"/>
+      <flags type="5" wear="32769" extra="69768"/>
+      <data weight="1" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="17567" name="CotL footman guildeq WC" special="NONE">
+    <description>If you find this, tell the CotL guildleader immediately.</description>
+    <shortdesc>CONTACT COTL GL FOR NEW GEQ!</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="1" value4="0"/>
+      <flags type="5" wear="32769" extra="77832"/>
+      <data weight="1" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="17568" name="CotL guildeq cavalry" special="NONE">
+    <description>If you find this, tell the CotL guildleader immediately.</description>
+    <shortdesc>a long cavalry lance, tipped with steel and a &amp;Ys&amp;yu&amp;Yn&amp;yb&amp;Yu&amp;yr&amp;Ys&amp;Yt&amp;n-marked pennant</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="10" value3="10" value4="14"/>
+      <flags type="5" wear="32769" extra="69768"/>
+      <data weight="1" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="17569" name="CotL WC guildeq" special="NONE">
+    <description>If you find this, tell the CotL guildleader immediately.</description>
+    <shortdesc>a white tabard blazoned with a &amp;Ys&amp;yu&amp;Yn&amp;yb&amp;Yu&amp;yr&amp;Ys&amp;yt&amp;n</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="XATTACKS" modifier="1"/>
+    <objaffect location="HITROLL" modifier="10"/>
+    <objaffect location="DAMROLL" modifier="10"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="70" value2="30" value3="0" value4="0"/>
+      <flags type="9" wear="9" extra="69768"/>
+      <data weight="1" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="17570" name="q" special="NONE">
+    <description>If you see this lying around, tell the CotL guildleader!</description>
+    <shortdesc>a white tabard blazoned with a &amp;Ys&amp;yu&amp;Yn&amp;yb&amp;Yu&amp;yr&amp;Ys&amp;yt&amp;n over a knot of rank</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="XATTACKS" modifier="1"/>
+    <objaffect location="HITROLL" modifier="10"/>
+    <objaffect location="DAMROLL" modifier="10"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="70" value2="30" value3="0" value4="0"/>
+      <flags type="9" wear="0" extra="0"/>
+      <data weight="1" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="17571" name="unfinished object" special="NONE">
+    <description>If you see this lying around, tell the CotL guildleader!</description>
+    <shortdesc>a white tabard blazoned with a &amp;Ys&amp;yu&amp;Yn&amp;yb&amp;Yu&amp;yr&amp;Ys&amp;yt&amp;n over two knots of rank</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="XATTACKS" modifier="1"/>
+    <objaffect location="HITROLL" modifier="10"/>
+    <objaffect location="DAMROLL" modifier="10"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="70" value2="30" value3="0" value4="0"/>
+      <flags type="9" wear="9" extra="69768"/>
+      <data weight="1" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="17572" name="unfinished object" special="NONE">
+    <description>If you see this lying around, tell the CotL guildleader!</description>
+    <shortdesc>a white tabard blazoned with a &amp;Ys&amp;yu&amp;Yn&amp;yb&amp;Yu&amp;yr&amp;Ys&amp;yt&amp;n over three knots of rank</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="XATTACKS" modifier="1"/>
+    <objaffect location="HITROLL" modifier="10"/>
+    <objaffect location="DAMROLL" modifier="10"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="70" value2="30" value3="0" value4="0"/>
+      <flags type="9" wear="9" extra="69768"/>
+      <data weight="1" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="17573" name="unfinished object" special="NONE">
+    <description>If you see this lying around, tell the CotL guildleader!</description>
+    <shortdesc>a white tabard blazoned with a &amp;Ys&amp;yu&amp;Yn&amp;yb&amp;Yu&amp;yr&amp;Ys&amp;yt&amp;n over four knots of rank</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="XATTACKS" modifier="1"/>
+    <objaffect location="HITROLL" modifier="10"/>
+    <objaffect location="DAMROLL" modifier="10"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="70" value2="30" value3="0" value4="0"/>
+      <flags type="9" wear="9" extra="69768"/>
+      <data weight="1" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="17574" name="unfinished object" special="NONE">
+    <description>If you see this lying around, tell the CotL guildleader!</description>
+    <shortdesc>a white tabard blazoned with a &amp;Ys&amp;yu&amp;Yn&amp;yb&amp;Yu&amp;yr&amp;Ys&amp;yt&amp;n and a &amp;rred shepherd's crook&amp;n</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="XATTACKS" modifier="1"/>
+    <objaffect location="HITROLL" modifier="10"/>
+    <objaffect location="DAMROLL" modifier="10"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="70" value2="30" value3="0" value4="0"/>
+      <flags type="9" wear="9" extra="69768"/>
+      <data weight="1" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="17575" name="unfinished object" special="NONE">
+    <description>If you see this lying around, tell the CotL guildleader!</description>
+    <shortdesc>a white tabard blazoned with a &amp;Ys&amp;yu&amp;Yn&amp;yb&amp;Yu&amp;yr&amp;Ys&amp;yt&amp;n and a &amp;rred shepherd's crook&amp;n over a knot of rank</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="XATTACKS" modifier="1"/>
+    <objaffect location="HITROLL" modifier="10"/>
+    <objaffect location="DAMROLL" modifier="10"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="70" value2="30" value3="0" value4="0"/>
+      <flags type="9" wear="9" extra="69768"/>
+      <data weight="1" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="17576" name="unfinished object" special="NONE">
+    <description>If you see this lying around, tell the CotL guildleader!</description>
+    <shortdesc>a white tabard blazoned with a &amp;Ys&amp;yu&amp;Yn&amp;yb&amp;Yu&amp;yr&amp;Ys&amp;yt&amp;n and a &amp;rred shepherd's crook&amp;n over two knots of rank</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="XATTACKS" modifier="1"/>
+    <objaffect location="HITROLL" modifier="10"/>
+    <objaffect location="DAMROLL" modifier="10"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="70" value2="30" value3="0" value4="0"/>
+      <flags type="9" wear="9" extra="69768"/>
+      <data weight="1" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="17577" name="unfinished object" special="NONE">
+    <description>If you see this lying around, tell the CotL guildleader!</description>
+    <shortdesc>a white tabard blazoned with a &amp;Ys&amp;yu&amp;Yn&amp;yb&amp;Yu&amp;yr&amp;Ys&amp;yt&amp;n and a &amp;rred shepherd's crook&amp;n over three knots of rank</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="XATTACKS" modifier="1"/>
+    <objaffect location="HITROLL" modifier="10"/>
+    <objaffect location="DAMROLL" modifier="10"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="70" value2="30" value3="0" value4="0"/>
+      <flags type="9" wear="9" extra="69768"/>
+      <data weight="1" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="17578" name="unfinished object" special="NONE">
+    <description>If you see this lying around, tell the CotL guildleader!</description>
+    <shortdesc>a white tabard blazoned with a &amp;Ys&amp;yu&amp;Yn&amp;yb&amp;Yu&amp;yr&amp;Ys&amp;yt&amp;n and a &amp;rred shepherd's crook&amp;n over four knots of rank</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="XATTACKS" modifier="1"/>
+    <objaffect location="HITROLL" modifier="10"/>
+    <objaffect location="DAMROLL" modifier="10"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="70" value2="30" value3="0" value4="0"/>
+      <flags type="9" wear="9" extra="69768"/>
+      <data weight="1" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="17590" name="fort camp" special="NONE">
+    <description>\c00A \c10wooden walled \c14fort\c00 guarded by \c10archers\c00 has been hastily erected here.</description>
+    <shortdesc>a heavily guarded fort</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="14" wear="1" extra="0"/>
+      <data weight="1000" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="17591" name="leather easy chair" special="NONE">
+    <description>A bulbous, overstuffed leather easy chair is sitting here.</description>
+    <shortdesc>an overstuffed leather easy chair</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="2" value2="0" value3="2" value4="0"/>
+      <flags type="24" wear="1" extra="65544"/>
+      <data weight="100000" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="17592" name="stone tablet commandment" special="NONE">
+    <description>A pair of stone tablets with deep set, &amp;Rf&amp;ri&amp;Re&amp;rr&amp;Ry&amp;g letters sits here.&amp;n</description>
+    <shortdesc>a pair of stone tablets</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="13" wear="1" extra="0"/>
+      <data weight="100000" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <exdesc keyword="tablet stone commandment">
+      <description>&amp;R1. I am the Lord your God.  Thou shall have no other gods before me.
+2. Thou shall not take the name of thy Creator in vain.
+3. Honor thy Head Builder.
+4. Thou shall not covet they neighbor's code.
+5. Thou shall not covet thy Creator's well, you get the picture.
+6. Thou shall not procrastinate.
+7. Thou shall honor the Sabbath, defined to be any day the HB does not need you
+to do something constructive.
+8. Thou shall not write buggy code.
+9. Thou shall only bear false witness against people thou dislikest.
+10. Thou shall code everything that is needed in the shortest amount of
+time.&amp;n
+</description>
+    </exdesc>
+  </object>
+  <object vnum="17599" name="tent olav" special="NONE">
+    <description>\c00A pure \c14white\c00 tent with a \c10golden sunburst\c00 above the entrance has been erected beside the path.</description>
+    <shortdesc>a purge &amp;Wwhite&amp;n tent with a &amp;Ygolden sunburst&amp;n above the entrance</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="14" wear="0" extra="0"/>
+      <data weight="1990" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+</objects>

@@ -1,513 +1,933 @@
-#6000
-postmaster old man darkfriend~
-the old Postmaster~
-An old man sorting through pieces of mail is here.
-~
-The old man seems to have lived a goof 70 years,
+<?xml version="1.0"?>
+<mobiles>
+  <mobile vnum="6000" name="postmaster old man darkfriend" special="PostMaster">
+    <description>The old man seems to have lived a goof 70 years,
 his hair is gray and thinning, and he has withered
 over time to the frail man you see before you.
-~
-1048586 2096 0 E
-200 -130 -20 809 30d300+1000 30d30+50
-0 0
-8 8 1 628
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-P
-OnEntry & Darkfriend
-ActionTo "nod"
-SayTo "hello"
-End
-OnLeave & Darkfriend
-ActionTo "wave"
-SayTo "take care!"
-End
-Q
-E
-#6001
-josan trainer young man~
-Master Josan~
-A young man stands here, waiting to train you.
-~
-Josan is in the prime of his life, heavily
+</description>
+    <shortdesc>the old Postmaster</shortdesc>
+    <longdesc>An old man sorting through pieces of mail is here.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="200" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="30" dsize="300" bonus="1000"/>
+      <move ndize="10" dsize="100" bonus="1000"/>
+      <ac>-200</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>150</hitroll>
+      <damroll>50</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1048586"/>
+    <affected one="2096" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="30" sides="30" add="150"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnEntry" argtype="VOID" argument="NONE">
+      <sideterm number="Darkfriend" not="FALSE" argtype="VOID" argument="NONE"/>
+      <action number="ActionTo" argtype="STRING" argument="nod"/>
+      <action number="SayTo" argtype="STRING" argument="hello"/>
+    </mobprog>
+    <mobprog main="OnLeave" argtype="VOID" argument="NONE">
+      <sideterm number="Darkfriend" not="FALSE" argtype="VOID" argument="NONE"/>
+      <action number="ActionTo" argtype="STRING" argument="wave"/>
+      <action number="SayTo" argtype="STRING" argument="take care!"/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="6001" name="josan trainer young man" special="NONE">
+    <description>Josan is in the prime of his life, heavily
 muceled, and covered with a thin sheen of
 sweat from the excersise he has been doing.
-~
-10 2096 0 E
-200 -130 -20 809 30d300+1000 30d30+50
-0 0
-8 8 1 628
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-P
-OnEntry & Darkfriend
-Say "how may i be of assistance?"
-End
-Q
-E
-#6002
-hansen trainer old man~
-Master Hansen~
-An old man is here, ready to teach you new skills.
-~
-Master Hansen may not be young, but he is skilled.
-~
-10 2096 0 E
-200 -130 -20 809 30d300+1000 30d30+50
-0 0
-8 8 1 628
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-P
-OnEntry & Darkfriend
-Say "ho boy, more customers."
-End
-Q
-E
-#6003
-serving girl~
-the pretty serving girl~
-A pretty serving girl is here, catering to the customers.
-~
-She is dressed in a black silk dress and bodice, and
+</description>
+    <shortdesc>Master Josan</shortdesc>
+    <longdesc>A young man stands here, waiting to train you.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="200" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="30" dsize="300" bonus="1000"/>
+      <move ndize="10" dsize="100" bonus="1000"/>
+      <ac>-200</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>150</hitroll>
+      <damroll>50</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="10"/>
+    <affected one="2096" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="30" sides="30" add="150"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnEntry" argtype="VOID" argument="NONE">
+      <sideterm number="Darkfriend" not="FALSE" argtype="VOID" argument="NONE"/>
+      <action number="Say" argtype="STRING" argument="how may i be of assistance?"/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="6002" name="hansen trainer old man" special="NONE">
+    <description>Master Hansen may not be young, but he is skilled.
+</description>
+    <shortdesc>Master Hansen</shortdesc>
+    <longdesc>An old man is here, ready to teach you new skills.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="200" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="30" dsize="300" bonus="1000"/>
+      <move ndize="10" dsize="100" bonus="1000"/>
+      <ac>-200</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>150</hitroll>
+      <damroll>50</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="10"/>
+    <affected one="2096" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="30" sides="30" add="150"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnEntry" argtype="VOID" argument="NONE">
+      <sideterm number="Darkfriend" not="FALSE" argtype="VOID" argument="NONE"/>
+      <action number="Say" argtype="STRING" argument="ho boy, more customers."/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="6003" name="serving girl" special="NONE">
+    <description>She is dressed in a black silk dress and bodice, and
 she has a briliant white cotton apron about her body.
-~
-10 2096 0 E
-200 -80 -20 809 30d300+1500 30d30+50
-0 0
-8 8 2 628
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-P
-OnRandom 10
-Say "gee, it shure is hot!"
-Emote "wipes off her sweat, and goes back to work."
-End
-OnActionTo "smile"
-ActionTo "wink"
-End
-OnActionTo "pinch"
-ActionTo "slap"
-Say "how rude!"
-Action "snif"
-End
-OnLeave
-ActionTo "wave"
-SayTo "take care!"
-End
-Q
-E
-#6004
-vara'tor shopkeeper~
-Master Vara'tor~
-Master Vara'tor is here selling his wares.
-~
-Master Vara'tor is a large strong . . . man?
-~
-2097162 0 0 E
-150 -80 -10 809 30d300+1000 30d30+50
-0 0
-8 8 0 628
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-E
-#6005
-selia shopkeeper~
-Mistress Selia~
-Mistress Selia is here, tuning a harp.
-~
-She is dressed in fine blue silks, and is
+</description>
+    <shortdesc>the pretty serving girl</shortdesc>
+    <longdesc>A pretty serving girl is here, catering to the customers.
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="200" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="30" dsize="300" bonus="1500"/>
+      <move ndize="10" dsize="100" bonus="1500"/>
+      <ac>-200</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>100</hitroll>
+      <damroll>50</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="9232394"/>
+    <affected one="2096" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="30" sides="30" add="100"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnRandom" argtype="INT" argument="10">
+      <action number="Say" argtype="STRING" argument="gee, it shure is hot!"/>
+      <action number="Emote" argtype="STRING" argument="wipes off her sweat, and goes back to work."/>
+    </mobprog>
+    <mobprog main="OnActionTo" argtype="STRING" argument="smile">
+      <action number="ActionTo" argtype="STRING" argument="wink"/>
+    </mobprog>
+    <mobprog main="OnActionTo" argtype="STRING" argument="pinch">
+      <action number="ActionTo" argtype="STRING" argument="slap"/>
+      <action number="Say" argtype="STRING" argument="how rude!"/>
+      <action number="Action" argtype="STRING" argument="snif"/>
+    </mobprog>
+    <mobprog main="OnLeave" argtype="STRING" argument="pinch">
+      <action number="ActionTo" argtype="STRING" argument="wave"/>
+      <action number="SayTo" argtype="STRING" argument="take care!"/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="6004" name="vara&apos;tor shopkeeper" special="NONE">
+    <description>Master Vara&apos;tor is a large strong . . . man?
+</description>
+    <shortdesc>Master Vara&apos;tor</shortdesc>
+    <longdesc>Master Vara&apos;tor is here selling his wares.
+</longdesc>
+    <title/>
+    <chardata gender="NEUTRAL" class="Adventurer" level="150" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="30" dsize="300" bonus="1000"/>
+      <move ndize="10" dsize="100" bonus="1000"/>
+      <ac>-100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>100</hitroll>
+      <damroll>50</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="2097162"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="30" sides="30" add="100"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="6005" name="selia shopkeeper" special="NONE">
+    <description>She is dressed in fine blue silks, and is
 currently tuning what looks like her harp.
-~
-1048586 0 0 E
-100 -30 -10 809 30d300+500 30d30+50
-0 0
-8 8 2 628
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-E
-#6006
-dog mangy~
-the mangy dog~
-A dog is here, looking for food.
-~
-The dog is covered with black and brown spots,
-it's fur is messy and it looks hungry.
-~
-8 0 0 E
-5 10 7 809 10d85+0 2d9+10
-0 100
-8 8 0 628
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-P
-OnRandom 35
-Emote "sniffs around for some food."
-End
-Q
-E
-#6007
-rat swarm~
-the swarm of rats~
-A swarm of rats is here, running about.
-~
-The rats are all moving together, as though
+</description>
+    <shortdesc>Mistress Selia</shortdesc>
+    <longdesc>Mistress Selia is here, tuning a harp.
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="100" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="30" dsize="300" bonus="500"/>
+      <move ndize="10" dsize="100" bonus="500"/>
+      <ac>-100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>50</hitroll>
+      <damroll>50</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="10280970"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="30" sides="30" add="50"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="6006" name="dog mangy" special="NONE">
+    <description>The dog is covered with black and brown spots,
+it&apos;s fur is messy and it looks hungry.
+</description>
+    <shortdesc>the mangy dog</shortdesc>
+    <longdesc>A dog is here, looking for food.
+</longdesc>
+    <title/>
+    <chardata gender="NEUTRAL" class="Adventurer" level="5" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="10" dsize="85" bonus="0"/>
+      <move ndize="10" dsize="100" bonus="0"/>
+      <ac>70</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>10</hitroll>
+      <damroll>10</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="8"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="2" sides="9" add="10"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnRandom" argtype="INT" argument="35">
+      <action number="Emote" argtype="STRING" argument="sniffs around for some food."/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="6007" name="rat swarm" special="NONE">
+    <description>The rats are all moving together, as though
 they had a group mind.
-~
-2097160 128 0 E
-10 -5 5 809 15d100+130 5d8+25
-0 120
-8 8 0 628
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-Kick: 100
-E
-#6008
-sailor drunk~
-the drunken sailor~
-A drunken sailor is here, staggering about.
-~
-The sailor looks like he has been drinking,
+</description>
+    <shortdesc>the swarm of rats</shortdesc>
+    <longdesc>A swarm of rats is here, running about.
+</longdesc>
+    <title/>
+    <chardata gender="NEUTRAL" class="Adventurer" level="10" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="15" dsize="100" bonus="130"/>
+      <move ndize="10" dsize="100" bonus="130"/>
+      <ac>50</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>120</exp>
+      <hitroll>25</hitroll>
+      <damroll>25</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="2097160"/>
+    <affected one="128" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="5" sides="8" add="25"/>
+    <timer amount="0"/>
+    <skills vector="8"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="6008" name="sailor drunk" special="NONE">
+    <description>The sailor looks like he has been drinking,
 and smells like it too.
-~
-136 0 0 E
-15 -15 4 809 15d150+280 5d15+40
-132 125
-8 8 1 628
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-Bash: 100
-P
-OnRandom 75
-Action "burp"
-Emote "sings drunkenly."
-End
-Q
-E
-#6009
-sabban shopkeeper~
-Master Sabban~
-Master Sabban is here, selling his wares.
-~
-Master Sabban is standing here, showing off his fine
+</description>
+    <shortdesc>the drunken sailor</shortdesc>
+    <longdesc>A drunken sailor is here, staggering about.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="15" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="15" dsize="150" bonus="280"/>
+      <move ndize="10" dsize="100" bonus="280"/>
+      <ac>40</ac>
+      <gold>132</gold>
+      <bankgold>0</bankgold>
+      <exp>125</exp>
+      <hitroll>35</hitroll>
+      <damroll>40</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="136"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="5" sides="15" add="35"/>
+    <timer amount="0"/>
+    <skills vector="1"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnRandom" argtype="INT" argument="75">
+      <action number="Action" argtype="STRING" argument="burp"/>
+      <action number="Emote" argtype="STRING" argument="sings drunkenly."/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="6009" name="sabban shopkeeper" special="NONE">
+    <description>Master Sabban is standing here, showing off his fine
 assortment of equipment.
-~
-10 0 0 E
-100 -30 -10 809 30d300+1000 30d30+50
-0 0
-8 8 1 628
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-E
-#6010
-hemmen shopkeeper~
-Master Hemmen~
-Master Hemmen is here, sewing something.
-~
-Master Hemmen is sitting here beind a desk,
+</description>
+    <shortdesc>Master Sabban</shortdesc>
+    <longdesc>Master Sabban is here, selling his wares.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="100" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="30" dsize="300" bonus="1000"/>
+      <move ndize="10" dsize="100" bonus="1000"/>
+      <ac>-100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>50</hitroll>
+      <damroll>50</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="9232394"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="30" sides="30" add="50"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="6010" name="hemmen shopkeeper" special="NONE">
+    <description>Master Hemmen is sitting here beind a desk,
 and is working on a tear in a piece of cloth.
-~
-10 0 0 E
-100 -30 -15 809 30d300+100 30d30+50
-0 0
-8 8 1 628
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-E
-#6011
-garthan shopkeeper~
-Master Garthan~
-Garthan sits here, working on some jewelry.
-~
-Master Garthan is an old man, though still in good
+</description>
+    <shortdesc>Master Hemmen</shortdesc>
+    <longdesc>Master Hemmen is here, sewing something.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="100" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="30" dsize="300" bonus="100"/>
+      <move ndize="10" dsize="100" bonus="100"/>
+      <ac>-150</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>50</hitroll>
+      <damroll>50</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="9232394"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="30" sides="30" add="50"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="6011" name="garthan shopkeeper" special="NONE">
+    <description>Master Garthan is an old man, though still in good
 condition for his age. He spends his days peacefully,
 cutting gems, and making rings, necklaces, and other
 items which he also sells.
-~
-10 0 0 E
-100 -30 -15 809 30d300+300 20d20+50
-0 0
-8 8 1 628
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-E
-#6012
-disfigured man Darkfriend~
-a \c05disfigured\c00 man stands here~
-a suspicious looking \c05disfigured\c00 man stands here.
-~
-A hunch backed man with deformed limbs stands before you. His
+</description>
+    <shortdesc>Master Garthan</shortdesc>
+    <longdesc>Garthan sits here, working on some jewelry.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="100" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="30" dsize="300" bonus="300"/>
+      <move ndize="10" dsize="100" bonus="300"/>
+      <ac>-150</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>50</hitroll>
+      <damroll>50</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="9232394"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="20" sides="20" add="50"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="6012" name="disfigured man Darkfriend" special="NONE">
+    <description>A hunch backed man with deformed limbs stands before you. His
 left side is seriously deformed. Stubed fingers on his left
 hand and an eye hanging loosely in it socket. He clothes smell
 of exrement. You have trouble looking at such a hideous site.
-~
-4194314 2096 0 E
-200 -180 -20 809 30d0+7000 30d1+50
-10000 0
-8 8 1 628
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-Bash: 100
-Trip: 100
-Dirtkick: 100
-Kick: 100
-Disarm: 100
-Stun: 100
-E
-#6013
-Shrolk man darkfriend~
-Shrolk~
-A \c05dark hooded\c00 man stands here.
-~
-A dark hooded man is standing here guarding the gate.
-~
-7866378 262144 0 E
-160 -180 -20 809 15d0+5000 15d15+50
-75 113
-8 8 0 628
-BareHandAttack: 14
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-Bash: 100
-Trip: 100
-Dirtkick: 100
-Kick: 100
-Disarm: 100
-Stun: 100
-P
-OnEntry & ! Guild "forsaken"
-Action "grin"
-SayTo "give me the password, or \c01die\c00"
-Mode 2
-End
-OnAction "grasp cast weave" & Mode 2 & ! Guild "forsaken"
-Stop
-Force "rel"
-Force "emote looks confused as a spirit shield appears out of nowhere!"
-Emote "small black flecks dance in the old man's eyes."
-End
-OnSayTo "iceblade iceblade"
-Give 6008
-Mode 1
-End
-OnEntry & Guild "forsaken"
-ActionTo "grovel"
-SayTo "you bless me with your divine presence great one!"
-End
-OnAction "east west south north" & ! Guild "forsaken" & Mode 2
-Stop
-Force "emote screams in agony as a weave of \c01fire\c00 and \c13spirit\c00 surrounds them."
-SayTo "the password or \c01die!\c00"
-End
-OnAction "flee northeast northwest southeast southwest" & ! Guild "forsaken" & Mode 2
-Stop
-Force "emote screams in agony as a weave of \c01fire\c00 and \c13spirit\c00 surrounds them!"
-End
-OnAction "say '" & ! Guild "forsaken" & Mode 2 & ! Mode 3
-ActionTo "slap"
-Force "draws his dagger and places it at your throat!"
-SayTo "if the next word out of your mouth is not the password, it will be the last word you utter!"
-Mode 3
-End
-OnAction "say '" & Mode 3 & ! Guild "forsaken" & Level "30 210"
-SayTo "you were warned fool!"
-ActionTo "kill"
-End
-OnActionTo "slap spit goose" & ! Guild "forsaken"
-Stop
-Force "emote shudders as a weave of \c04water\c00 and \c13spirit\c00 flows through them!"
-SayTo "i am not here for your amusement."
-End
-OnActionTo "kick punch dirt bash stun trip kill" & ! Guild "forsaken"
-Stop
-Action "emote blocks you with his dagger!"
-ActionTo "kill"
-End
-Q
-E
-#6014
-wagonbearer driver~
-the wagondriver~
-A wagondriver stands here.
-~
-It looks, err, unfinished.
-~
-154 48 0 E
-200 20 10 809 1d100+0 1d1+0
-0 0
-8 8 1 628
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-P
-OnSayTo "hello"
-Action "nod"
-MoveTo 2538
-End
-Q
-E
-#6015
-trolloc bear guard~
-a bear-faced trolloc~
-A large bear-faced trolloc stands here guarding the bridge.
-~
-A trolloc guardian stands somewhat attentively at the bridge across the magma. Its 
+</description>
+    <shortdesc>a \c05disfigured\c00 man stands here</shortdesc>
+    <longdesc>a suspicious looking \c05disfigured\c00 man stands here.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="200" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="30" dsize="0" bonus="7000"/>
+      <move ndize="10" dsize="100" bonus="7000"/>
+      <ac>-200</ac>
+      <gold>10000</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>200</hitroll>
+      <damroll>50</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="13426698"/>
+    <affected one="2096" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="30" sides="1" add="200"/>
+    <timer amount="0"/>
+    <skills vector="63"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="6013" name="Shrolk man darkfriend" special="NONE">
+    <description>A dark hooded man is standing here guarding the gate.
+</description>
+    <shortdesc>Shrolk</shortdesc>
+    <longdesc>A \c05dark hooded\c00 man stands here.
+</longdesc>
+    <title/>
+    <chardata gender="NEUTRAL" class="Adventurer" level="160" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="15" dsize="0" bonus="5000"/>
+      <move ndize="10" dsize="100" bonus="5000"/>
+      <ac>-200</ac>
+      <gold>75</gold>
+      <bankgold>0</bankgold>
+      <exp>113</exp>
+      <hitroll>200</hitroll>
+      <damroll>50</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="7866378"/>
+    <affected one="262144" two="0" three="0" four="0"/>
+    <attack type="14"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="15" sides="15" add="200"/>
+    <timer amount="0"/>
+    <skills vector="63"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnEntry" argtype="VOID" argument="NONE">
+      <sideterm number="Guild" not="TRUE" argtype="STRING" argument="forsaken"/>
+      <action number="Action" argtype="STRING" argument="grin"/>
+      <action number="SayTo" argtype="STRING" argument="give me the password, or \c01die\c00"/>
+      <action number="Mode" argtype="INT" argument="2"/>
+    </mobprog>
+    <mobprog main="OnAction" argtype="STRING" argument="grasp cast weave">
+      <sideterm number="Mode" not="FALSE" argtype="INT" argument="2"/>
+      <sideterm number="Guild" not="TRUE" argtype="STRING" argument="forsaken"/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="Force" argtype="STRING" argument="rel"/>
+      <action number="Force" argtype="STRING" argument="emote looks confused as a spirit shield appears out of nowhere!"/>
+      <action number="Emote" argtype="STRING" argument="small black flecks dance in the old man&apos;s eyes."/>
+    </mobprog>
+    <mobprog main="OnSayTo" argtype="STRING" argument="iceblade iceblade">
+      <action number="Give" argtype="INT" argument="6008"/>
+      <action number="Mode" argtype="INT" argument="1"/>
+    </mobprog>
+    <mobprog main="OnEntry" argtype="STRING" argument="iceblade iceblade">
+      <sideterm number="Guild" not="FALSE" argtype="STRING" argument="forsaken"/>
+      <action number="ActionTo" argtype="STRING" argument="grovel"/>
+      <action number="SayTo" argtype="STRING" argument="you bless me with your divine presence great one!"/>
+    </mobprog>
+    <mobprog main="OnAction" argtype="STRING" argument="east west south north">
+      <sideterm number="Guild" not="TRUE" argtype="STRING" argument="forsaken"/>
+      <sideterm number="Mode" not="FALSE" argtype="INT" argument="2"/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="Force" argtype="STRING" argument="emote screams in agony as a weave of \c01fire\c00 and \c13spirit\c00 surrounds them."/>
+      <action number="SayTo" argtype="STRING" argument="the password or \c01die!\c00"/>
+    </mobprog>
+    <mobprog main="OnAction" argtype="STRING" argument="flee northeast northwest southeast southwest">
+      <sideterm number="Guild" not="TRUE" argtype="STRING" argument="forsaken"/>
+      <sideterm number="Mode" not="FALSE" argtype="INT" argument="2"/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="Force" argtype="STRING" argument="emote screams in agony as a weave of \c01fire\c00 and \c13spirit\c00 surrounds them!"/>
+    </mobprog>
+    <mobprog main="OnAction" argtype="STRING" argument="say &apos;">
+      <sideterm number="Guild" not="TRUE" argtype="STRING" argument="forsaken"/>
+      <sideterm number="Mode" not="FALSE" argtype="INT" argument="2"/>
+      <sideterm number="Mode" not="TRUE" argtype="INT" argument="3"/>
+      <action number="ActionTo" argtype="STRING" argument="slap"/>
+      <action number="Force" argtype="STRING" argument="draws his dagger and places it at your throat!"/>
+      <action number="SayTo" argtype="STRING" argument="if the next word out of your mouth is not the password, it will be the last word you utter!"/>
+      <action number="Mode" argtype="INT" argument="3"/>
+    </mobprog>
+    <mobprog main="OnAction" argtype="STRING" argument="say &apos;">
+      <sideterm number="Mode" not="FALSE" argtype="INT" argument="3"/>
+      <sideterm number="Guild" not="TRUE" argtype="STRING" argument="forsaken"/>
+      <sideterm number="Level" not="FALSE" argtype="STRING" argument="30 210"/>
+      <action number="SayTo" argtype="STRING" argument="you were warned fool!"/>
+      <action number="ActionTo" argtype="STRING" argument="kill"/>
+    </mobprog>
+    <mobprog main="OnActionTo" argtype="STRING" argument="slap spit goose">
+      <sideterm number="Guild" not="TRUE" argtype="STRING" argument="forsaken"/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="Force" argtype="STRING" argument="emote shudders as a weave of \c04water\c00 and \c13spirit\c00 flows through them!"/>
+      <action number="SayTo" argtype="STRING" argument="i am not here for your amusement."/>
+    </mobprog>
+    <mobprog main="OnActionTo" argtype="STRING" argument="kick punch dirt bash stun trip kill">
+      <sideterm number="Guild" not="TRUE" argtype="STRING" argument="forsaken"/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="Action" argtype="STRING" argument="emote blocks you with his dagger!"/>
+      <action number="ActionTo" argtype="STRING" argument="kill"/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="6014" name="wagonbearer driver" special="NONE">
+    <description>It looks, err, unfinished.
+</description>
+    <shortdesc>the wagondriver</shortdesc>
+    <longdesc>A wagondriver stands here.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="200" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="0"/>
+      <move ndize="10" dsize="100" bonus="0"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="154"/>
+    <affected one="48" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnSayTo" argtype="STRING" argument="hello">
+      <action number="Action" argtype="STRING" argument="nod"/>
+      <action number="MoveTo" argtype="INT" argument="2538"/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="6015" name="trolloc bear guard" special="NONE">
+    <description>A trolloc guardian stands somewhat attentively at the bridge across the magma. Its 
 large dark eyes seem to almost present a level of human intelligence above the snout 
 and jaws of a great black bear. Unusually the trolloc also appears amoured in somewhat
 matching mail and steel, the large wicked looking axe hanging from its hide belt
 appearing well oiled and cared for.
-~
-2097162 0 0 E
-10 20 10 809 1d100+0 1d1+0
-0 0
-8 8 1 0
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-E
-#6016
-gha'narm rodent~
-an adult gha'narm~
-A small scaled gha'narm scratches at the ground here, searching for particles of food.
-~
-The Gha'narm hisses and scratches at the ground searching for food, its
+</description>
+    <shortdesc>a bear-faced trolloc</shortdesc>
+    <longdesc>A large bear-faced trolloc stands here guarding the bridge.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="10" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="0"/>
+      <move ndize="10" dsize="100" bonus="0"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="2097162"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="6016" name="gha&apos;narm rodent" special="NONE">
+    <description>The Gha&apos;narm hisses and scratches at the ground searching for food, its
 brown, scaley body moving in short sharp motions. With small, almost blind
 eyes it uses its sensitive short pointed nose to sniff out the particles of
 food in the rocky ground. Most dominating of all, a large single spike 
-protrudes from it's tail, dripping a clear liquid. Unknown to most that
+protrudes from it&apos;s tail, dripping a clear liquid. Unknown to most that
 tail is an effective weapon, used readily in the defensive of the mother hive.
-~
-2097162 0 0 E
-25 20 10 809 1d100+0 30d127+0
-0 0
-8 8 1 0
-BareHandAttack: 1
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-P
-OnEntry
-ActionTo "backstab"
-PurgeMob
-End
-Q
-E
-#6017
-serving woman beautiful scantily~
-a scantily clad serving girl~
-&nA woman of almost \c05unnatural&n beauty stands here attentively.&n
-~
-A woman of almost unnatural beauty stands here attentivly. Clad in
-barely more than film of exquisite &wwh&Wi&wte&n silk she waits, eyes filled
+</description>
+    <shortdesc>an adult gha&apos;narm</shortdesc>
+    <longdesc>A small scaled gha&apos;narm scratches at the ground here, searching for particles of food.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="25" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="0"/>
+      <move ndize="10" dsize="100" bonus="0"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="2097162"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="1"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="30" sides="127" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnEntry" argtype="STRING" argument="hello">
+      <action number="ActionTo" argtype="STRING" argument="backstab"/>
+      <action number="PurgeMob" argtype="VOID" argument="NONE"/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="6017" name="serving woman beautiful scantily" special="NONE">
+    <description>A woman of almost unnatural beauty stands here attentivly. Clad in
+barely more than film of exquisite &amp;wwh&amp;Wi&amp;wte&amp;n silk she waits, eyes filled
 with adulation and awe. By the way that she stands she seems ready to
 leap to obey any command, always ready to please her Mistress, whatever
-the cost.&n
-~
-10 0 0 E
-10 20 10 809 1d100+500 1d1+0
-0 0
-8 8 2 0
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-E
-#6018
-myrddraal fade eyeless lurk~
-&ka Myrddraal&n~
-&nA &kMyrddraal&n stands here seemingly made of the shadows itself.
-~
-The Fade seems shrouded in the very shadows themselves, they seem to
+the cost.&amp;n
+</description>
+    <shortdesc>a scantily clad serving girl</shortdesc>
+    <longdesc>&amp;nA woman of almost \c05unnatural&amp;n beauty stands here attentively.&amp;n
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="10" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="500"/>
+      <move ndize="10" dsize="100" bonus="500"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="10"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="6018" name="myrddraal fade eyeless lurk" special="NONE">
+    <description>The Fade seems shrouded in the very shadows themselves, they seem to
 almost cling to his very limbs. His pale face seems to be aware of
 everything around him, the oppressive darkness no match for his eyeless
 sight. A black sheathed blade hangs from his side, and as if poured
 from the same mold as all his kin, he wears it with serpentine grace.
-~
-2113546 0 0 E
-10 20 10 809 1d100+1000 20d20+0
-0 0
-8 8 1 0
-E
-#6019
-dreadlord man~
-\c06a dreadlord&n~
-&nA man clad in &Kblack&n and livid &Rr&re&Rd&n stands here, cloaked in darkness.
-~
-Wearing the livid red and darkest black of the Great Lords highest and
+</description>
+    <shortdesc>&amp;ka Myrddraal&amp;n</shortdesc>
+    <longdesc>&amp;nA &amp;kMyrddraal&amp;n stands here seemingly made of the shadows itself.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="199" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="1000"/>
+      <move ndize="10" dsize="100" bonus="1000"/>
+      <ac>-200</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="2113546"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="20" sides="100" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="6019" name="dreadlord man" special="NONE">
+    <description>Wearing the livid red and darkest black of the Great Lords highest and
 most trusted Dreadlords this man stands here with all the arrogance his
 position allows. Face twisted into an almost icy sneer he waits and
 watches like a predetor.
-~
-5242890 0 0 E
-10 20 10 809 1d100+1000 20d20+0
-0 0
-8 8 1 0
-E
-$
+</description>
+    <shortdesc>\c06a dreadlord&amp;n</shortdesc>
+    <longdesc>&amp;nA man clad in &amp;Kblack&amp;n and livid &amp;Rr&amp;re&amp;Rd&amp;n stands here, cloaked in darkness.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="10" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="0" bonus="1000"/>
+      <move ndize="10" dsize="100" bonus="1000"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="5242890"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="20" sides="20" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="6020" name="trolloc" special="NONE">
+    <description>An immense hulk with animal-like features stands here, a foul smelling
+saliva dripping slowly from its yellowed fangs, wetting its misshapen lips.
+Eyes brimming with madness constantly roam from side to side, as if looking
+for prey, their expression eerily human.
+</description>
+    <shortdesc>a trolloc</shortdesc>
+    <longdesc>A slavering trolloc stands here awaiting orders, a hungry gleam in its eye.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="20" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="10" dsize="150" bonus="50"/>
+      <move ndize="10" dsize="100" bonus="50"/>
+      <ac>-50</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>20</hitroll>
+      <damroll>20</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="2097160"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="10" sides="15" add="20"/>
+    <timer amount="0"/>
+    <skills vector="33"/>
+    <teaches numberof="0"/>
+  </mobile>
+</mobiles>

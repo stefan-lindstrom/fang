@@ -1,434 +1,751 @@
-#12000
-dummy~
-a practice dummy~
-A practice dummy stands here waiting to be practiced on.
-~
-This is a dummy made of old armor and parts that can be used to train men in
+<?xml version="1.0"?>
+<mobiles>
+  <mobile vnum="12000" name="dummy" special="NONE">
+    <description>This is a dummy made of old armor and parts that can be used to train men in
 the art of using their weapons.  It has swivel parts that allow it to take
 some swings back at the person.
-~
-57354 0 0 E
-20 15 0 795 10d100+500 5d5+0
-0 1
-8 8 0 689
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-E
-#12001
-pracitce dummy~
-a tall practice dummy~
-A tall practice dummy stands here.
-~
-This practice dummy is slightly taller than your average warrior.  It has
+</description>
+    <shortdesc>a practice dummy</shortdesc>
+    <longdesc>A practice dummy stands here waiting to be practiced on.
+</longdesc>
+    <title/>
+    <chardata gender="NEUTRAL" class="Adventurer" level="20" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="10" dsize="100" bonus="500"/>
+      <move ndize="1" dsize="500" bonus="500"/>
+      <ac>0</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>1</exp>
+      <hitroll>5</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="57354"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="5" sides="5" add="5"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="12001" name="pracitce dummy" special="NONE">
+    <description>This practice dummy is slightly taller than your average warrior.  It has
 bulls-eyes painted on it a certain key places where a hit would do the most
 damage.  It looks like it could be used to train someone with a lance on
 horseback, or with a sword.
-~
-57354 0 0 E
-20 15 0 795 10d100+500 5d5+0
-0 1
-8 8 0 689
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-E
-#12002
-horse pips~
-Pips~
-Pips, General Mat's horse, stands here.
-~
-This is a medium sized, white horse with a few black spots on it.  It carries
+</description>
+    <shortdesc>a tall practice dummy</shortdesc>
+    <longdesc>A tall practice dummy stands here.
+</longdesc>
+    <title/>
+    <chardata gender="NEUTRAL" class="Adventurer" level="20" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="10" dsize="100" bonus="500"/>
+      <move ndize="1" dsize="500" bonus="500"/>
+      <ac>0</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>1</exp>
+      <hitroll>5</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="57354"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="5" sides="5" add="5"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="12002" name="horse pips" special="NONE">
+    <description>This is a medium sized, white horse with a few black spots on it.  It carries
 itself majestically, as if his owner is important.
-~
-253962 0 0 E
-50 -30 -20 795 30d1000+9999 30d127+50
-0 0
-8 8 1 689
-BareHandAttack: 9
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-E
-#12003
-dummy~
-a bullseye dummy~
-A dummy covered with bullseyes stands here.
-~
-This practice dummy has many different bullseyes all over it.  Each one
-signifies a vital point on a person's body.  It's set up to propel small
+</description>
+    <shortdesc>Pips</shortdesc>
+    <longdesc>Pips, General Mat&apos;s horse, stands here.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="50" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="30" dsize="1000" bonus="9999"/>
+      <move ndize="1" dsize="9999" bonus="9999"/>
+      <ac>-200</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>50</hitroll>
+      <damroll>50</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="253962"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="9"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="30" sides="127" add="50"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="12003" name="dummy" special="NONE">
+    <description>This practice dummy has many different bullseyes all over it.  Each one
+signifies a vital point on a person&apos;s body.  It&apos;s set up to propel small
 barbs back at a person when hit to simulate return fire.
-~
-57354 0 0 E
-20 15 0 795 10d100+500 5d5+0
-0 1
-8 8 0 689
-BareHandAttack: 1
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-E
-#12004
-dummy~
-a training dummy~
-A training dummy on wheels stands here.
-~
-This training dummy is set on a base with wheels.  This is to help the
+</description>
+    <shortdesc>a bullseye dummy</shortdesc>
+    <longdesc>A dummy covered with bullseyes stands here.
+</longdesc>
+    <title/>
+    <chardata gender="NEUTRAL" class="Adventurer" level="20" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="10" dsize="100" bonus="500"/>
+      <move ndize="1" dsize="500" bonus="500"/>
+      <ac>0</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>1</exp>
+      <hitroll>5</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="57354"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="1"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="5" sides="5" add="5"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="12004" name="dummy" special="NONE">
+    <description>This training dummy is set on a base with wheels.  This is to help the
 pikemen get used to stopping a charge with their pikes.  The dummies are
 pushed at unwitting pikemen to help them learn how to brace themselves quickly
 and know what it feels like to be on the heavy end of a charge.
-~
-57354 0 0 E
-20 15 0 795 10d100+500 5d5+0
-0 1
-8 8 0 689
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-E
-#12005
-wolf~
-a Gray Wolf~
-A full-grown Gray Wolf roams about in this room.
-~
-This wolf looks very dangerous.  However, it is a beautiful creature.  It
+</description>
+    <shortdesc>a training dummy</shortdesc>
+    <longdesc>A training dummy on wheels stands here.
+</longdesc>
+    <title/>
+    <chardata gender="NEUTRAL" class="Adventurer" level="20" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="10" dsize="100" bonus="500"/>
+      <move ndize="1" dsize="500" bonus="500"/>
+      <ac>0</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>1</exp>
+      <hitroll>5</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="57354"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="5" sides="5" add="5"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="12005" name="wolf" special="NONE">
+    <description>This wolf looks very dangerous.  However, it is a beautiful creature.  It
 has silver-gray hair, sharp, white teeth, and beautiful golden eyes.  You
 can tell by looking at it that it is a very powerful creature, and more than
-adequate for the hunt.  I wouldn't mess with it if I were you.
-~
-901130 886832 0 E
-1 -30 -20 795 30d500+10000 30d127+50
-0 0
-8 8 1 689
-BareHandAttack: 4
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-E
-#12006
-fat cook~
-an absolutly huge cook ~
-a large man, spooning out what sort of resembles food
-~
-This man is so absolutly fat, he sickens you. You fight the urge to be sick as he spoons you up your food. He raises and eyebrow, "Oh, sorry, did I do that?" He picks a large clump of hair from your plate. Yum... army food.
-~
-1048650 0 0 E
-200 -30 -10 795 30d100+0 30d100+50
-0 0
-8 8 1 689
-BareHandAttack: 10
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-E
-#12007
-Joe~
-Joe, the shopkeeper~
-Joe the unfinished shopkeeper stands here
-~
-Joe looks like Joe
-~
-10 0 0 E
-200 20 10 795 1d100+0 1d1+0
-0 0
-8 8 0 689
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-E
-#12008
-sexy partygirl~
-a sexy partygirl~
-a shapely, scantily clad partygirl lounges here 
-~
-A shaply woman lounges here, smiling impishly at you. Everything about
-ger seems perfect: her face, her legs, her... you get the picture. The
+adequate for the hunt.  I wouldn&apos;t mess with it if I were you.
+</description>
+    <shortdesc>a Gray Wolf</shortdesc>
+    <longdesc>A full-grown Gray Wolf roams about in this room.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="1" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="30" dsize="500" bonus="10000"/>
+      <move ndize="1" dsize="10000" bonus="10000"/>
+      <ac>-200</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>50</hitroll>
+      <damroll>50</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="901130"/>
+    <affected one="886832" two="0" three="0" four="0"/>
+    <attack type="4"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="30" sides="127" add="50"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="12006" name="fat cook" special="NONE">
+    <description>This man is so absolutly fat, he sickens you. You fight the urge to be sick as he spoons you up your food. He raises and eyebrow, &quot;Oh, sorry, did I do that?&quot; He picks a large clump of hair from your plate. Yum... army food.
+</description>
+    <shortdesc>an absolutly huge cook </shortdesc>
+    <longdesc>a large man, spooning out what sort of resembles food
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="200" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="30" dsize="100" bonus="0"/>
+      <move ndize="1" dsize="0" bonus="0"/>
+      <ac>-100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>50</hitroll>
+      <damroll>50</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="10281034"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="10"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="30" sides="100" add="50"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="12007" name="Joe" special="NONE">
+    <description>Joe looks like Joe
+</description>
+    <shortdesc>Joe, the shopkeeper</shortdesc>
+    <longdesc>Joe the unfinished shopkeeper stands here
+</longdesc>
+    <title/>
+    <chardata gender="NEUTRAL" class="Adventurer" level="200" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="0"/>
+      <move ndize="1" dsize="0" bonus="0"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="9232394"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="12008" name="sexy partygirl" special="NONE">
+    <description>A shaply woman lounges here, smiling impishly at you. Everything about
+her seems perfect: her face, her legs, her... you get the picture. The
 only thought that runs through your mind is somthing along the lines
-of "Wow."
-~
-72 0 0 E
-0 20 10 795 1d100+0 1d1+0
-0 0
-5 5 2 689
-BareHandAttack: 8
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-P
-OnEntry
-ActionTo "bow"
-End
-OnActionTo "hug" & Sex "female"
-ActionTo "eyebrow"
-ActionTo "purr"
-End
-Q
-E
-#12009
-Thing~
-dartboard~
-a cutout dartboard of Gai'lan
-~
-It's covered with knife holes. Nalesean must not like this pest...
-~
-72 0 0 E
-0 20 10 795 1d100+0 1d1+0
-0 0
-8 8 0 689
-BareHandAttack: 6
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-E
-#12010
-mob unfinished~
-another dart board~
-A cutout dartboard of Tyreal/Daylan/ect.
-~
-Damn, lotta friggin holes
-~
-72 0 0 E
-0 20 10 795 1d100+0 1d1+0
-0 0
-8 8 0 689
-BareHandAttack: 6
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-E
-#12011
-supply verna woman~
-Verna, the Band supply woman is just for show~
-Verna, the Band supply woman is just for show, sorry.
-~
-Verna looks like she's been doing this for years.  She doesn't look like
-someone you'd mess with, but she knows her business and will get you
+of &quot;Wow.&quot;
+</description>
+    <shortdesc>a sexy partygirl</shortdesc>
+    <longdesc>a shapely, scantily clad partygirl lounges here 
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="5" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="0"/>
+      <move ndize="1" dsize="0" bonus="0"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="72"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="8"/>
+    <pos default="Resting" other="Resting"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnEntry" argtype="STRING" argument="french">
+      <action number="ActionTo" argtype="STRING" argument="bow"/>
+    </mobprog>
+    <mobprog main="OnActionTo" argtype="STRING" argument="hug">
+      <sideterm number="Sex" not="FALSE" argtype="STRING" argument="female"/>
+      <action number="ActionTo" argtype="STRING" argument="eyebrow"/>
+      <action number="ActionTo" argtype="STRING" argument="purr"/>
+    </mobprog>
+    <dgscript vnum="69"/>
+  </mobile>
+  <mobile vnum="12009" name="Thing" special="NONE">
+    <description>It&apos;s covered with knife holes. Nalesean must not like this pest...
+</description>
+    <shortdesc>dartboard</shortdesc>
+    <longdesc>a cutout dartboard of Gai&apos;lan
+</longdesc>
+    <title/>
+    <chardata gender="NEUTRAL" class="Adventurer" level="0" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="0"/>
+      <move ndize="1" dsize="0" bonus="0"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="72"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="6"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="12010" name="mob unfinished" special="NONE">
+    <description>Damn, lotta friggin holes
+</description>
+    <shortdesc>another dart board</shortdesc>
+    <longdesc>A cutout dartboard of Tyreal/Daylan/ect.
+</longdesc>
+    <title/>
+    <chardata gender="NEUTRAL" class="Adventurer" level="0" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="0"/>
+      <move ndize="1" dsize="0" bonus="0"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="72"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="6"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="12011" name="supply verna woman" special="NONE">
+    <description>Verna looks like she&apos;s been doing this for years.  She doesn&apos;t look like
+someone you&apos;d mess with, but she knows her business and will get you
 exactly what you need.
-~
-1040394 0 0 E
-100 -80 -20 795 30d100+9999 30d99+50
-50000 0
-8 8 2 689
-BareHandAttack: 13
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-E
-#12012
-horse gelding~
-a fine gelding~
-A fine gelding stands here, ready for anything.
-~
-As horses go, this gelding doesn't look special.  However, a trained eye
+</description>
+    <shortdesc>Verna, the Band supply woman is just for show</shortdesc>
+    <longdesc>Verna, the Band supply woman is just for show, sorry.
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="100" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="30" dsize="100" bonus="9999"/>
+      <move ndize="1" dsize="9999" bonus="9999"/>
+      <ac>-200</ac>
+      <gold>50000</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>100</hitroll>
+      <damroll>50</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="9429002"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="13"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="30" sides="99" add="100"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="12012" name="horse gelding" special="NONE">
+    <description>As horses go, this gelding doesn&apos;t look special.  However, a trained eye
 could see that this horse has great endurance and is fairly well behaved.
-~
-266 0 0 E
-25 10 -5 795 5d100+500 10d5+10
-0 0
-8 8 1 689
-BareHandAttack: 9
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-Bash: 100
-Kick: 100
-E
-#12013
-rock horse~
-Rock, the horse trainer~
-Rock, the horse trainer, is ready to sell you a fresh horse.
-~
-Rock looks just as his name implies.  He's short but very strong.  It looks
-like he could take a horse's kick to the face and keep going.  (Actually,
+</description>
+    <shortdesc>a fine gelding</shortdesc>
+    <longdesc>A fine gelding stands here, ready for anything.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="25" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="5" dsize="100" bonus="500"/>
+      <move ndize="1" dsize="500" bonus="500"/>
+      <ac>-50</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>10</hitroll>
+      <damroll>10</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="266"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="9"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="10" sides="5" add="10"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="12013" name="rock horse" special="NONE">
+    <description>Rock looks just as his name implies.  He&apos;s short but very strong.  It looks
+like he could take a horse&apos;s kick to the face and keep going.  (Actually,
 it looks like this has happened on more than one occasion.)
-~
-10 0 0 E
-50 0 -10 795 1d100+1000 30d1+20
-0 0
-8 8 1 689
-BareHandAttack: 7
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-Bash: 100
-Trip: 100
-Dirtkick: 100
-Kick: 100
-Disarm: 100
-Stun: 100
-E
-#12014
-ronald burly guard~
-a burly guard~
-A burly guard stands watch making sure no one gets by without reason.
-~
-This guard looks more like a thug than a guard.  He seems at ease with the use
+</description>
+    <shortdesc>Rock, the horse trainer</shortdesc>
+    <longdesc>Rock, the horse trainer, is ready to sell you a fresh horse.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="50" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="1000"/>
+      <move ndize="1" dsize="1000" bonus="1000"/>
+      <ac>-100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>20</hitroll>
+      <damroll>20</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="10"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="7"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="30" sides="1" add="20"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="12014" name="ronald burly guard" special="NONE">
+    <description>This guard looks more like a thug than a guard.  He seems at ease with the use
 of his weapon and about as immovable as a mountain.  However, he bears the
 equipment of the Band of the Red Hand so you might want to look out for him.
-~
-2122 2096 0 E
-20 0 0 795 20d30+500 10d10+20
-1000 60
-8 8 1 689
-BareHandAttack: 13
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-Bash: 100
-Trip: 100
-Dirtkick: 100
-Kick: 100
-Disarm: 100
-Stun: 100
-P
-OnEntry & Guild "band"
-SayTo "Welcome, soldier.  May the general's luck be with you."
-End
-OnEntry & ! Guild "band"
-ActionTo "frown"
-SayTo "If you are a friend to the Band, welcome.  If not, woe betide you."
-End
-OnTell "dismissed" & Guild "Band of the Red Hand"
-ActionTo "salute"
-MoveTo 12048
-End
-OnTell "shen an calhar" & Guild "Band of the Red Hand"
-Emote "raises an eyebrow quizzically and says, 'What, you need me to hold your hand? Move on, move on...'"
-End
-OnTell "shen an calhar" & ! Guild "band of the red hand"
-ActionTo "smile"
-SayTo "Ah! A friend it is then. If you will follow me?"
-Force "follow burly"
-MoveTo 12060
-SayTo "Good day to you."
-Force "follow me"
-MoveTo 12049
-End
-OnTell "return" & Guild "band"
-ActionTo "salute"
-MoveTo 12049
-End
-Q
-E
-#12080
-scout messenger scribe~
-A scout on mail-duty~
-A scout on mail-duty stands here, ready to deliver your mail.
-~
-A scout for the &rBand of the Red Hand&n stands here, her dark cloak
+</description>
+    <shortdesc>a burly guard</shortdesc>
+    <longdesc>A burly guard stands watch making sure no one gets by without reason.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="200" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="20" dsize="30" bonus="20000"/>
+      <move ndize="1" dsize="20000" bonus="20000"/>
+      <ac>0</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>150</hitroll>
+      <damroll>50</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="854090"/>
+    <affected one="2096" two="0" three="0" four="0"/>
+    <attack type="13"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="30" sides="120" add="150"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnEntry" argtype="STRING" argument="hug">
+      <sideterm number="Guild" not="FALSE" argtype="STRING" argument="band"/>
+      <action number="SayTo" argtype="STRING" argument="Welcome, soldier.  May the general&apos;s luck be with you."/>
+    </mobprog>
+    <mobprog main="OnEntry" argtype="STRING" argument="hug">
+      <sideterm number="Guild" not="TRUE" argtype="STRING" argument="band"/>
+      <action number="ActionTo" argtype="STRING" argument="frown"/>
+      <action number="SayTo" argtype="STRING" argument="If you are a friend to the Band, welcome.  If not, woe betide you."/>
+    </mobprog>
+    <mobprog main="OnTell" argtype="STRING" argument="dismissed">
+      <sideterm number="Guild" not="FALSE" argtype="STRING" argument="Band of the Red Hand"/>
+      <action number="ActionTo" argtype="STRING" argument="salute"/>
+      <action number="MoveTo" argtype="INT" argument="12048"/>
+    </mobprog>
+    <mobprog main="OnTell" argtype="STRING" argument="shen an calhar">
+      <sideterm number="Guild" not="FALSE" argtype="STRING" argument="Band of the Red Hand"/>
+      <action number="Emote" argtype="STRING" argument="raises an eyebrow quizzically and says, &apos;What, you need me to hold your hand? Move on, move on...&apos;"/>
+    </mobprog>
+    <mobprog main="OnTell" argtype="STRING" argument="shen an calhar">
+      <sideterm number="Guild" not="TRUE" argtype="STRING" argument="band of the red hand"/>
+      <action number="ActionTo" argtype="STRING" argument="smile"/>
+      <action number="SayTo" argtype="STRING" argument="Ah! A friend it is then. If you will follow me?"/>
+      <action number="Force" argtype="STRING" argument="follow burly"/>
+      <action number="MoveTo" argtype="INT" argument="12060"/>
+      <action number="SayTo" argtype="STRING" argument="Good day to you."/>
+      <action number="Force" argtype="STRING" argument="follow me"/>
+      <action number="MoveTo" argtype="INT" argument="12049"/>
+    </mobprog>
+    <mobprog main="OnTell" argtype="STRING" argument="return">
+      <sideterm number="Guild" not="FALSE" argtype="STRING" argument="band"/>
+      <action number="ActionTo" argtype="STRING" argument="salute"/>
+      <action number="MoveTo" argtype="INT" argument="12049"/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="12080" name="scout messenger scribe" special="NONE">
+    <description>A scout for the &amp;rBand of the Red Hand&amp;n stands here, her dark cloak
 draped about her as she waits patiently for people with mail to be
 delivered.
-~
-2080794 0 0 E
-100 -180 -20 795 30d100+5000 20d20+50
-0 0
-8 8 2 0
-BareHandAttack: 14
-P
-OnActionTo "mail"
-SayTo "Ah... I'm not really sure how. Please don't tell Tidder."
-End
-Q
-E
-#12098
-baby balefire~
-unused~
-a not yet fully grown balefire
-~
-a cute little balefire not fully grown is here wanting attention
+</description>
+    <shortdesc>a scout on mail-duty</shortdesc>
+    <longdesc>A scout on mail-duty stands here, ready to deliver your mail.
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="100" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="30" dsize="100" bonus="5000"/>
+      <move ndize="1" dsize="5000" bonus="5000"/>
+      <ac>-200</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>200</hitroll>
+      <damroll>50</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="2080794"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="14"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="20" sides="20" add="200"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnActionTo" argtype="STRING" argument="mail">
+      <action number="SayTo" argtype="STRING" argument="Ah... I&apos;m not really sure how. Please don&apos;t tell Tidder."/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="12098" name="baby balefire" special="NONE">
+    <description>a cute little balefire not fully grown is here wanting attention
 will you give it attention?
-~
-2113546 0 0 E
-200 -80 -20 795 30d100+100 30d50+50
-0 1
-6 8 0 689
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-P
-OnActionTo "look"
-SayTo "Feed me"
-Action "drool"
-Force "lick balefire"
-Emote "tries to erase you from the pattern, forever!"
-Say "I wanted food!"
-Action "cry"
-End
-Q
-E
-#12099
-man flowing black cloak tall~
-a large man in a flowing black cloak~
-A large man in a flowing black cloak
-~
-You see a man with a large build watching you with an intense gaze
+</description>
+    <shortdesc>unused</shortdesc>
+    <longdesc>a not yet fully grown balefire
+</longdesc>
+    <title/>
+    <chardata gender="NEUTRAL" class="Adventurer" level="200" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="30" dsize="100" bonus="100"/>
+      <move ndize="1" dsize="100" bonus="100"/>
+      <ac>-200</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>1</exp>
+      <hitroll>100</hitroll>
+      <damroll>50</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="2113546"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="30" sides="50" add="100"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnActionTo" argtype="STRING" argument="look">
+      <action number="SayTo" argtype="STRING" argument="Feed me"/>
+      <action number="Action" argtype="STRING" argument="drool"/>
+      <action number="Force" argtype="STRING" argument="lick balefire"/>
+      <action number="Emote" argtype="STRING" argument="tries to erase you from the pattern, forever!"/>
+      <action number="Say" argtype="STRING" argument="I wanted food!"/>
+      <action number="Action" argtype="STRING" argument="cry"/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="12099" name="man flowing black cloak tall" special="NONE">
+    <description>You see a man with a large build watching you with an intense gaze
 His cloak blows slightly in the wind behind him and he looks
 very confident of himself.
-~
-1042458 67373104 0 E
-200 -180 -20 795 30d100+20000 30d127+50
-0 0
-8 8 0 689
-BareHandAttack: 3
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-Bash: 100
-Trip: 100
-Dirtkick: 100
-Kick: 100
-Disarm: 100
-Stun: 100
-E
-$
+</description>
+    <shortdesc>a large man in a flowing black cloak</shortdesc>
+    <longdesc>A large man in a flowing black cloak
+</longdesc>
+    <title/>
+    <chardata gender="NEUTRAL" class="Adventurer" level="200" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="30" dsize="100" bonus="20000"/>
+      <move ndize="1" dsize="20000" bonus="20000"/>
+      <ac>-200</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>200</hitroll>
+      <damroll>50</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1042458"/>
+    <affected one="67373104" two="0" three="0" four="0"/>
+    <attack type="3"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="30" sides="127" add="200"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+</mobiles>

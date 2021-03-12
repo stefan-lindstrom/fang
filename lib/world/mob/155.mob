@@ -1,230 +1,673 @@
-#15500
-peddler man~
-an old peddler~
-\c03A peddler is wandering around the main part of the park, softly calling out the kinds of food and drink he is selling.
-~
-He is a bit older than middle aged, looking quite relaxed yet
+<?xml version="1.0"?>
+<mobiles>
+  <mobile vnum="15500" name="peddler man" special="NONE">
+    <description>He is a bit older than middle aged, looking quite relaxed yet
 determined in his occupation.
-~
-2088984 0 0 E
-5 -30 10 645 1d100+0 1d1+50
-0 0
-8 8 1
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-P
-OnRandom 5
-Emote "The peddler stops and turns to the largest group of people here."
-Pause 3
-Emote "He says softly, 'I have fresh bread and butter! Something to drink, perhaps? A tart or a meat pie?'"
-End
-Q
-E
-#15501
-Sildren man bartender~
-Sildren the barkeep~
-\c03Sildren stands here drying a freshly washed mug with a towel.
-~
-undefined~
-2088986 0 0 E
-1 -30 10 645 1d100+0 1d1+50
-0 0
-8 8 1
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-E
-#15502
-Alan moneychanger~
-Alan the moneychanger~
-\c03Alan stands here overseeing the exchange of funds.
-~
-It looks, err, unfinished.
-~
-2088970 0 0 E
-5 -30 10 645 1d100+0 1d1+50
-0 0
-8 8 1
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-E
-#15503
-woman herb mistress~
-the Alindaer herbmistress~
-\c03A woman of fair composition sits behind the counter, rolling some mixture in a leaf.
-~
-The woman is fairly tall, skin fair, only slightly wrinkled with middle age.
-~
-2088970 0 0 E
-5 -30 10 645 1d100+0 1d1+50
-0 0
-8 8 2
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-E
-#15504
-cook patisserisse~
-the baker woman~
-\c03A fairly large woman bustles about behind the counter, placing a pie on a cooling rack.
-~
-undefined~
-2088970 0 0 E
-5 -30 10 645 1d100+0 1d1+50
-0 0
-8 8 2
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-E
-#15505
-shopkeeper tabac man~
-the tabac shopkeeper~
-\c03A short, balding man sits behind the counter here, twisting his moustache as he holds his pipe to his mouth.
-~
-undefined~
-2088970 0 0 E
-5 -30 10 645 1d100+0 1d1+50
-0 0
-8 8 1
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-E
-#15506
-seamstress woman~
-the Alindaer seamstress~
-\c03A fairly elderly woman stands here taking measurements on a dress.
-~
-She looks old, but she definitely has nimble fingers.
-~
-2088970 0 0 E
-5 -30 10 645 1d100+0 1d1+50
-0 0
-8 8 2
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-E
-#15507
-barmaid maid~
-a barmaid~
-A barmaid is polishing a table here.
-~
-undefined~
-2088970 0 0 E
-5 -30 10 645 1d100+0 1d1+50
-0 0
-8 8 2
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-E
-#15508
-accepted runaway girl~
-a runaway accepted~
-\c03A fairly young girl is here, looking as though she is running away from something.
-~
-She is of average height and build, and though she walks with confidence,
+</description>
+    <shortdesc>an old peddler</shortdesc>
+    <longdesc>\c03A peddler is wandering around the main part of the park, softly calling out the kinds of food and drink he is selling.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="5" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="0"/>
+      <move ndize="1" dsize="0" bonus="0"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>50</hitroll>
+      <damroll>50</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="2088984"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="50"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnRandom" argtype="INT" argument="5">
+      <action number="Emote" argtype="STRING" argument="The peddler stops and turns to the largest group of people here."/>
+      <action number="Pause" argtype="INT" argument="3"/>
+      <action number="Emote" argtype="STRING" argument="He says softly, &apos;I have fresh bread and butter! Something to drink, perhaps? A tart or a meat pie?&apos;"/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="15501" name="Sildren man bartender" special="NONE">
+    <description>undefined</description>
+    <shortdesc>&amp;Rthe old Sildren, delete or reuse&amp;n</shortdesc>
+    <longdesc>\c03Sildren stands here drying a freshly washed mug with a towel.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="1" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="0"/>
+      <move ndize="1" dsize="0" bonus="0"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>50</hitroll>
+      <damroll>50</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="2088986"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="50"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="15502" name="Alan moneychanger" special="NONE">
+    <description>It looks, err, unfinished.
+</description>
+    <shortdesc>Alan the moneychanger</shortdesc>
+    <longdesc>\c03Alan stands here overseeing the exchange of funds.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="5" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="0"/>
+      <move ndize="1" dsize="0" bonus="0"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>50</hitroll>
+      <damroll>50</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="2088970"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="50"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="15503" name="woman herb mistress" special="NONE">
+    <description>The woman is fairly tall, skin fair, only slightly wrinkled with middle age.
+</description>
+    <shortdesc>the Alindaer herbmistress</shortdesc>
+    <longdesc>\c03A woman of fair composition sits behind the counter, rolling some mixture in a leaf.
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="5" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="0"/>
+      <move ndize="1" dsize="0" bonus="0"/>
+      <ac>100</ac>
+      <gold>10000000</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>50</hitroll>
+      <damroll>50</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="10477578"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="50"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="15504" name="cook patisserisse" special="NONE">
+    <description>undefined</description>
+    <shortdesc>the baker woman</shortdesc>
+    <longdesc>\c03A fairly large woman bustles about behind the counter, placing a pie on a cooling rack.
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="5" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="0"/>
+      <move ndize="1" dsize="0" bonus="0"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>50</hitroll>
+      <damroll>50</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="2088970"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="50"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="15505" name="shopkeeper tabac man" special="NONE">
+    <description>undefined</description>
+    <shortdesc>the tabac shopkeeper</shortdesc>
+    <longdesc>\c03A short, balding man sits behind the counter here, twisting his moustache as he holds his pipe to his mouth.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="5" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="0"/>
+      <move ndize="1" dsize="0" bonus="0"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>50</hitroll>
+      <damroll>50</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="2088970"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="50"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="15506" name="seamstress woman" special="NONE">
+    <description>She looks old, but she definitely has nimble fingers.
+</description>
+    <shortdesc>the Alindaer seamstress</shortdesc>
+    <longdesc>\c03A fairly elderly woman stands here taking measurements on a dress.
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="5" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="0"/>
+      <move ndize="1" dsize="0" bonus="0"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>50</hitroll>
+      <damroll>50</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="2088970"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="50"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="15507" name="barmaid maid" special="NONE">
+    <description>\c00</description>
+    <shortdesc>a barmaid</shortdesc>
+    <longdesc>A barmaid is polishing a table here.
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="5" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="0"/>
+      <move ndize="1" dsize="0" bonus="0"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>50</hitroll>
+      <damroll>50</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="2088970"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="50"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="15508" name="accepted runaway girl" special="NONE">
+    <description>She is of average height and build, and though she walks with confidence,
 she also acts as though she does not want to be seen.
-~
-4194312 0 0 E
-105 -50 0 645 30d0+2200 10d15+50
-80 95
-8 8 2
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-Bash: 100
-Disarm: 100
-Stun: 100
-E
-#15509
-peddler man greasy~
-a greasy peddler~
-\c03A greasy-looking peddler is here, selling various items as he suspiciously eyes the crowd.
-~
-His hair is slicked back, plastered to his head. His eyes
+</description>
+    <shortdesc>a runaway accepted</shortdesc>
+    <longdesc>\c03A fairly young girl is here, looking as though she is running away from something.
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="105" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="30" dsize="0" bonus="2200"/>
+      <move ndize="1" dsize="2200" bonus="2200"/>
+      <ac>0</ac>
+      <gold>80</gold>
+      <bankgold>0</bankgold>
+      <exp>95</exp>
+      <hitroll>70</hitroll>
+      <damroll>50</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="4194312"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="10" sides="15" add="70"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="15509" name="peddler man greasy" special="NONE">
+    <description>His hair is slicked back, plastered to his head. His eyes
 are thin slits, and the merchandise he is selling looks to
 be of fair quality.
-~
-8 0 0 E
-60 -10 4 645 12d180+1600 7d12+30
-105 100
-8 8 1
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-Bash: 100
-Disarm: 100
-E
-#15510
-girl little disheveled~
-A disheveled little girl~
-\c03A little girl is here, clothes dirty and hair disheveled.
-~
-Her shirt is falling just off her shoulder, and she is wearing a baggy
+</description>
+    <shortdesc>a greasy peddler</shortdesc>
+    <longdesc>\c03A greasy-looking peddler is here, selling various items as he suspiciously eyes the crowd.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="60" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="12" dsize="180" bonus="1600"/>
+      <move ndize="1" dsize="1600" bonus="1600"/>
+      <ac>40</ac>
+      <gold>105</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>30</hitroll>
+      <damroll>30</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="8"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="7" sides="12" add="30"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="15510" name="girl little disheveled" special="NONE">
+    <description>Her shirt is falling just off her shoulder, and she is wearing a baggy
 pair of pants that are obviously those of an older male sibling.
-~
-8 0 0 E
-35 0 6 645 8d350+800 7d10+18
-8 94
-8 8 2
-Str: 18
-Dex: 18
-Int: 18
-Wis: 18
-Con: 18
-Cha: 18
-Trip: 100
-Kick: 100
-E
-#15511
-bodyguard man brawny~
-A brawny-looking bodyguard~
-\c03A rather bulky man is here, providing protection for someone.
-~
-He wears a leather vest and a pair of breeches that would only
+</description>
+    <shortdesc>a disheveled little girl</shortdesc>
+    <longdesc>\c03A little girl is here, clothes dirty and hair disheveled.
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="35" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="8" dsize="350" bonus="800"/>
+      <move ndize="1" dsize="800" bonus="800"/>
+      <ac>60</ac>
+      <gold>8</gold>
+      <bankgold>0</bankgold>
+      <exp>94</exp>
+      <hitroll>20</hitroll>
+      <damroll>18</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="8"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="7" sides="10" add="20"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="15511" name="bodyguard man brawny" special="NONE">
+    <description>He wears a leather vest and a pair of breeches that would only
 be tight on someone of his size.
-~
-1048584 0 0 E
-125 -140 -2 645 30d230+1800 12d22+50
-105 100
-8 8 1
-Bash: 100
-Kick: 100
-Stun: 100
-E
-$
+</description>
+    <shortdesc>a brawny-looking bodyguard</shortdesc>
+    <longdesc>\c03A rather bulky man is here, providing protection for someone.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="125" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="30" dsize="230" bonus="1800"/>
+      <move ndize="1" dsize="1800" bonus="1800"/>
+      <ac>-20</ac>
+      <gold>105</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>160</hitroll>
+      <damroll>50</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1048584"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="12" sides="22" add="160"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="15575" name="barmaid maid" special="NONE">
+    <description>\c00</description>
+    <shortdesc>a barmaid</shortdesc>
+    <longdesc>A barmaid is here, polishing tables.
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="0" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="1" bonus="1"/>
+      <move ndize="1" dsize="1" bonus="1"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="9232394"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="15586" name="seamstress woman alindaer" special="NONE">
+    <description>She looks old, but she definitely has nimble fingers.
+</description>
+    <shortdesc>the Alindaer seamstress</shortdesc>
+    <longdesc>A fairly elderly woman stands here taking measurements on a dress.
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="0" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="1" bonus="1"/>
+      <move ndize="1" dsize="1" bonus="1"/>
+      <ac>100</ac>
+      <gold>100000000</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="9232394"/>
+    <affected one="48" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <dgscript vnum="15586"/>
+  </mobile>
+  <mobile vnum="15587" name="cook woman baker patisserisse" special="NONE">
+    <description>\c00</description>
+    <shortdesc>the baker chick</shortdesc>
+    <longdesc>A fairly large woman bustles about behind the counter, placing a pie on a cooling rack.
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="0" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="1" bonus="1"/>
+      <move ndize="1" dsize="1" bonus="1"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="9232394"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="15588" name="sildren" special="NONE">
+    <description>\c00</description>
+    <shortdesc>Sildren the barkeep</shortdesc>
+    <longdesc>Sildren stands here, drying a freshly washed mug with a towel.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="100" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="1" bonus="10000"/>
+      <move ndize="1" dsize="10000" bonus="10000"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>100</hitroll>
+      <damroll>50</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="9234458"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="30" sides="50" add="100"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="15589" name="shopkeeper tabac man" special="NONE">
+    <description>\c00</description>
+    <shortdesc>the tabac shopkeeper</shortdesc>
+    <longdesc>A short, balding man sits behind the counter here, twisting his moustache as he holds his pipe to his mouth.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="0" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="1" bonus="1"/>
+      <move ndize="1" dsize="1" bonus="1"/>
+      <ac>100</ac>
+      <gold>50000000</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="9232394"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="15593" name="woman herb mistress" special="NONE">
+    <description>\c00The woman is fairly tall, skin fair, only slightly wrinkled with middle age.
+</description>
+    <shortdesc>The Alindaer Herb Mistress</shortdesc>
+    <longdesc>A woman of fair composition sits behind the counter, rolling some mixture in a leaf.
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="0" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="1" bonus="1"/>
+      <move ndize="1" dsize="1" bonus="1"/>
+      <ac>100</ac>
+      <gold>150000000</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="9232394"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+</mobiles>

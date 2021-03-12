@@ -1,1077 +1,1016 @@
-#7000
-hide skin waterskin~
-a small hide waterskin~
-A small lionhide waterskin, bloated with liquid lays here.~
-~
-17 8 1
-250 250 0 0
-255 250 0
-#7001
-pouch aiel~
-a small \c03brown \c07\c00pouch\c00~
-A small brown pouch lays here.~
-~
-15 65544 18433
-10000 2 -1 0
-1 0 0
-#7002
-spear heavy saiel~
-a thick heavy spear~
-A thick, heavy spear is propped here.~
-~
-5 8 8193
-2 2 10 14
-7 5000 0
-A
-18 8
-A
-19 8
-A
-1 1
-#7003
-claw ridgecat~
-a ridgecat's claw~
-A claw lays here waiting to be used.~
-~
-5 0 8193
-2 2 7 8
-4 0 0
-A
-18 4
-A
-19 4
-#7004
-sword pitch black~
-a pitch black sword~
-A pitch black sword wrought of some taint lies here.~
-~
-5 65664 8193
-4 3 9 3
-11 1000 0
-A
-18 13
-A
-19 13
-A
-1 1
-#7005
-feather eagle~
-a feather of an eagle~
-A black and gold feather has been discarded here.~
-~
-9 0 16385
-0 0 0 0
-2 0 0
-A
-3 1
-A
-6 2
-#7006
-trolloc mask beastly~
-the mask of a beastly trolloc~
-A mask lies here scaring people away.~
-~
-9 0 17
-10 15 0 0
-6 0 0
-A
-6 -1
-A
-13 40
-#7007
-coat lion golden~
-a golden lion's coat~
-A golden coat rests on the ground.~
-~
-9 0 5
-7 10 0 0
-8 0 0
-A
-2 1
-A
-14 20
-#7008
-cloak~
-a midnight black cloak~
-A black cloak, untouched by wind, rests here.~
-~
-9 65664 1025
-10 25 0 0
-6 3300 0
-A
-13 10
-A
-19 10
-A
-5 1
-#7009
-meat rabbit~
-a piece of rabbit meat~
-A large chunk of meat lies covered in dirt.~
-~
-19 72 1
-45 0 0 0
-1 100 0
-#7010
-thornbush~
-a scraggly thornbush~
-A scraggly thornbush grows here with strange red berries hanging from it.~
-~
-15 0 0
-500 0 -1 0
-0 0 0
-E
-thornbush berries~
-The bush grows comfortably out of a crack in the dry dirt. It seems
+<?xml version="1.0"?>
+<objects>
+  <object vnum="7000" name="hide skin waterskin" special="NONE">
+    <description>A small lionhide waterskin, bloated with liquid lays here.</description>
+    <shortdesc>a small hide waterskin</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="250" value2="250" value3="0" value4="0"/>
+      <flags type="17" wear="1" extra="8"/>
+      <data weight="255" cost="250" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="7001" name="pouch aiel" special="NONE">
+    <description>A small brown pouch lays here.</description>
+    <shortdesc>a small \c03brown \c07\c00pouch\c00</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="10000" value2="2" value3="-1" value4="0"/>
+      <flags type="15" wear="18433" extra="65544"/>
+      <data weight="1" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="7002" name="spear heavy saiel" special="NONE">
+    <description>A thick, heavy spear is propped here.</description>
+    <shortdesc>a thick heavy spear</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="HITROLL" modifier="8"/>
+    <objaffect location="DAMROLL" modifier="8"/>
+    <objaffect location="STR" modifier="1"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="2" value2="2" value3="10" value4="14"/>
+      <flags type="5" wear="8193" extra="8"/>
+      <data weight="7" cost="5000" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="7003" name="claw ridgecat" special="NONE">
+    <description>A claw lays here waiting to be used.</description>
+    <shortdesc>a ridgecat's claw</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="HITROLL" modifier="4"/>
+    <objaffect location="DAMROLL" modifier="4"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="2" value2="2" value3="7" value4="8"/>
+      <flags type="5" wear="8193" extra="0"/>
+      <data weight="4" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="7004" name="sword pitch black" special="NONE">
+    <description>A pitch black sword wrought of some taint lies here.</description>
+    <shortdesc>a pitch black sword</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="HITROLL" modifier="13"/>
+    <objaffect location="DAMROLL" modifier="13"/>
+    <objaffect location="STR" modifier="1"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="4" value2="3" value3="9" value4="3"/>
+      <flags type="5" wear="8193" extra="65664"/>
+      <data weight="11" cost="1000" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="7005" name="feather eagle" special="NONE">
+    <description>A black and gold feather has been discarded here.</description>
+    <shortdesc>a feather of an eagle</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="INT" modifier="1"/>
+    <objaffect location="CHA" modifier="2"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="9" wear="16385" extra="0"/>
+      <data weight="2" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="7006" name="trolloc mask beastly" special="NONE">
+    <description>A mask lies here scaring people away.</description>
+    <shortdesc>the mask of a beastly trolloc</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="CHA" modifier="-1"/>
+    <objaffect location="MAXHIT" modifier="40"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="10" value2="15" value3="0" value4="0"/>
+      <flags type="9" wear="17" extra="0"/>
+      <data weight="6" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="7007" name="coat lion golden" special="NONE">
+    <description>A golden coat rests on the ground.</description>
+    <shortdesc>a golden lion's coat</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="DEX" modifier="1"/>
+    <objaffect location="MAXMOVE" modifier="20"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="7" value2="10" value3="0" value4="0"/>
+      <flags type="9" wear="5" extra="0"/>
+      <data weight="8" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="7008" name="cloak" special="NONE">
+    <description>A black cloak, untouched by wind, rests here.</description>
+    <shortdesc>a midnight black cloak</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="MAXHIT" modifier="10"/>
+    <objaffect location="DAMROLL" modifier="10"/>
+    <objaffect location="CON" modifier="1"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="10" value2="25" value3="0" value4="0"/>
+      <flags type="9" wear="1025" extra="65664"/>
+      <data weight="6" cost="3300" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="7009" name="meat rabbit" special="NONE">
+    <description>A large chunk of meat lies covered in dirt.</description>
+    <shortdesc>a piece of rabbit meat</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="45" value2="0" value3="0" value4="0"/>
+      <flags type="19" wear="1" extra="72"/>
+      <data weight="1" cost="100" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="7010" name="thornbush" special="NONE">
+    <description>A scraggly thornbush grows here with strange red berries hanging from it.</description>
+    <shortdesc>a scraggly thornbush</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="500" value2="0" value3="-1" value4="0"/>
+      <flags type="15" wear="0" extra="0"/>
+      <data weight="0" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <exdesc keyword="thornbush berries">
+      <description>The bush grows comfortably out of a crack in the dry dirt. It seems
 to be malnourished, its leaves and sharp, thorny branches all sickly
 brown and hard. However, plump, red berries grow nicely on many
 of the limbs, a haven for hungry birds despite the thorns.
-~
-P
-OnRandom 18
-Emote "A nearby thornbush shivers in the wind, making a loud crackling noise."
-End
-OnRandom 2
-Destroy
-End
-Q
-#7011
-berries pile red~
-a handful of \c01red \c02b\c01e\c02r\c01r\c02i\c01e\c02s\c00~
-A small pile of plump, red berries lies strewn about.~
-~
-19 65544 1
-0 0 0 1
-1 0 0
-E
-berries pile~
-The berries look relatively harmless. They are very juicy, and make
+</description>
+    </exdesc>
+    <objprog main="OnRandom" argtype="INT" argument="18">
+      <action number="Emote" argtype="STRING" argument="A nearby thornbush shivers in the wind, making a loud crackling noise."/>
+    </objprog>
+    <objprog main="OnRandom" argtype="INT" argument="2">
+      <action number="Destroy" argtype="VOID" argument="NONE"/>
+    </objprog>
+  </object>
+  <object vnum="7011" name="berries pile red" special="NONE">
+    <description>A small pile of plump, red berries lies strewn about.</description>
+    <shortdesc>a handful of \c01red \c02b\c01e\c02r\c01r\c02i\c01e\c02s\c00</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="1"/>
+      <flags type="19" wear="1" extra="65544"/>
+      <data weight="1" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <exdesc keyword="berries pile">
+      <description>The berries look relatively harmless. They are very juicy, and make
 a nice red color when squished. You can't quite place a name on them, though.
-~
-#7012
-segade cactus plant~
-a segade~
-A stout segade plant grows nearby, spines protecting its white flowers.~
-~
-15 0 0
-1000 0 -1 0
-0 0 0
-E
-segade plant flowers cactus~
-The plant grows not even a foot high. Sharp, dangerous looking
+</description>
+    </exdesc>
+  </object>
+  <object vnum="7012" name="segade cactus plant" special="NONE">
+    <description>A stout segade plant grows nearby, spines protecting its white flowers.</description>
+    <shortdesc>a segade</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="1000" value2="0" value3="-1" value4="0"/>
+      <flags type="15" wear="0" extra="0"/>
+      <data weight="0" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <exdesc keyword="segade plant flowers cactus">
+      <description>The plant grows not even a foot high. Sharp, dangerous looking
 spikes stick out in every direction from its green hide.
 To contrast the pain, beautiful white flowers grow from it as
 well, beckoning someone to pick them. The segade flowers are
 known to represent stubborn free will.
-~
-P
-OnRandom 12
-Emote "A small bug buzzes around you before landing on a nearby segade."
-End
-OnRandom 7
-Emote "A flower on a segade plant to your left wilts from the harsh weather."
-End
-OnRandom 2
-Destroy
-End
-Q
-#7013
-flower segade saiel~
-a beautiful \c02s\c09e\c14ga\c09d\c02e \c07\c00flower\c00~
-A sweet smelling, white flower lies underfoot.~
-~
-8 0 16385
-0 0 0 0
-0 0 0
-#7014
-plant silverleaf~
-a silverleaf plant~
-A long plant, resembling a vine, grows here, silvery leaves sprouting in all directions.~
-~
-15 0 0
-1000 0 -1 0
-0 0 0
-E
-plant silverleaf~
-The plant hangs easily on all the rocks and dirt around it. Its
+</description>
+    </exdesc>
+    <objprog main="OnRandom" argtype="INT" argument="12">
+      <action number="Emote" argtype="STRING" argument="A small bug buzzes around you before landing on a nearby segade."/>
+    </objprog>
+    <objprog main="OnRandom" argtype="INT" argument="7">
+      <action number="Emote" argtype="STRING" argument="A flower on a segade plant to your left wilts from the harsh weather."/>
+    </objprog>
+    <objprog main="OnRandom" argtype="INT" argument="2">
+      <action number="Destroy" argtype="VOID" argument="NONE"/>
+    </objprog>
+  </object>
+  <object vnum="7013" name="flower segade saiel" special="NONE">
+    <description>A sweet smelling, white flower lies underfoot.</description>
+    <shortdesc>a beautiful \c02s\c09e\c14ga\c09d\c02e \c07\c00flower\c00</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="8" wear="16385" extra="0"/>
+      <data weight="0" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="7014" name="plant silverleaf" special="NONE">
+    <description>A long plant, resembling a vine, grows here, silvery leaves sprouting in all directions.</description>
+    <shortdesc>a silverleaf plant</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="1000" value2="0" value3="-1" value4="0"/>
+      <flags type="15" wear="0" extra="0"/>
+      <data weight="0" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <exdesc keyword="plant silverleaf">
+      <description>The plant hangs easily on all the rocks and dirt around it. Its
 silvery leaves are known to be used at times in a healing. In the
 least, the leaves certainly have a pleasant sheen to them.
-~
-P
-OnRandom 6
-Emote "A sudden gust of wind causes the leaves of a nearby plant to shimmer with a striking silver tint."
-End
-OnRandom 2
-Destroy
-End
-Q
-#7015
-leaf silverleaf~
-a \c14s\c07i\c14l\c07v\c14e\c07r\c14y \c07leaf\c00~
-A small, silvery leaf lies trampled in the dirt.~
-~
-4 8 1
-0 1 10 0
-0 100 0
-#7016
-root timsin~
-a \c03timsin \c00root\c00~
-A small brown root sticks out of the ground.~
-~
-4 0 1
-1 1 9 0
-0 4500 0
-P
-OnDrop
-Emote "The root crumbles to dust as it hits the ground."
-Destroy
-End
-Q
-#7017
-patch morningdrop~
-a patch of morningdrop~
-A small patch of morningdrop flowers grows between some rocks.~
-~
-15 0 0
-1000 0 -1 0
-0 0 0
-E
-patch morningdrop flowers~
-A clump of small blue and white flowers grows nearby, green
+</description>
+    </exdesc>
+    <objprog main="OnRandom" argtype="INT" argument="6">
+      <action number="Emote" argtype="STRING" argument="A sudden gust of wind causes the leaves of a nearby plant to shimmer with a striking silver tint."/>
+    </objprog>
+    <objprog main="OnRandom" argtype="INT" argument="2">
+      <action number="Destroy" argtype="VOID" argument="NONE"/>
+    </objprog>
+  </object>
+  <object vnum="7015" name="leaf silverleaf" special="NONE">
+    <description>A small, silvery leaf lies trampled in the dirt.</description>
+    <shortdesc>a \c14s\c07i\c14l\c07v\c14e\c07r\c14y \c07leaf\c00</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="1" value3="10" value4="0"/>
+      <flags type="4" wear="1" extra="8"/>
+      <data weight="0" cost="100" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="7016" name="root timsin" special="NONE">
+    <description>A small brown root sticks out of the ground.</description>
+    <shortdesc>a \c03timsin \c00root\c00</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="1" value2="1" value3="9" value4="0"/>
+      <flags type="4" wear="1" extra="0"/>
+      <data weight="0" cost="4500" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <objprog main="OnDrop" argtype="VOID" argument="NONE">
+      <action number="Emote" argtype="STRING" argument="The root crumbles to dust as it hits the ground."/>
+      <action number="Destroy" argtype="VOID" argument="NONE"/>
+    </objprog>
+  </object>
+  <object vnum="7017" name="patch morningdrop" special="NONE">
+    <description>A small patch of morningdrop flowers grows between some rocks.</description>
+    <shortdesc>a patch of morningdrop</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="1000" value2="0" value3="-1" value4="0"/>
+      <flags type="15" wear="0" extra="0"/>
+      <data weight="0" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <exdesc keyword="patch morningdrop flowers">
+      <description>A clump of small blue and white flowers grows nearby, green
 tendrils reaching for any small rocks to strengthen itself
 against the wind. The flowers themselves look harmless enough,
 and remind you of submissiveness.
-~
-P
-OnRandom 16
-Emote "A few light blue petals suddenly fly off of a nearby patch of morningdrop and swirl high into the air."
-End
-OnRandom 10
-Emote "A ruffling of the flowers of a morningdrop plant suddenly produces a small grey mouse which looks around, squeaks, and disappears again into the patch."
-End
-OnRandom 2
-Destroy
-End
-Q
-#7018
-petals morningdrop~
-some \c13mo\c14r\c13ni\c14n\c13gd\c14r\c13op \c00petals\c00~
-A loose bunch of bluish petals tumbles through the air.~
-~
-4 8 1
-2 1 15 0
-0 500 0
-#7020
-shoufa geqaiel~
-a shoufa~
-A piece of brown cloth is lying here~
-~
-9 69768 17
-0 0 0 0
-1 1 0
-#7021
-spear geqaiel~
-a short hafted spear~
-A short spear is lying here.~
-~
-5 69768 32769
-0 10 10 11
-1 1 0
-A
-19 1
-P
-OnActionToCarry "wield" & ! Guild "aiel"
-Stop
-Destroy
-Force "holler I am trying to wield an aiel spear please punish me!"
-End
-Q
-#7022
-torch geqaiel~
-a blazing torch~
-An unfinished object is lying here.~
-~
-1 69768 16385
-0 0 -1 0
-1 1 0
-A
-20 3
-#7023
-waistpack geqaiel~
-a lionhide waistpack~
-An unfinished object is lying here.~
-~
-15 69768 2049
-4000 0 -1 0
-1 1 0
-A
-17 -100
-#7027
-hammer saiel~
-a long-handled hammer~
-A strong hammer with a long handle rests in the dirt here.~
-~
-5 0 32769
-10 3 9 7
-13 3000 0
-A
-1 2
-A
-14 -10
-#7028
-ribbon saiel~
-a \c01red \c00hair ribbon~
-A long strand of red ribbon has been discarded by some child.~
-~
-11 0 17
-0 0 0 0
-2 2000 0
-A
-3 1
-A
-4 2
-#7029
-skirt saiel~
-a short skirt~
-A short algode skirt has been left here.~
-~
-11 0 33
-0 0 0 0
-6 5500 0
-A
-17 15
-A
-9 20
-#7030
-doll saiel~
-a \c12cute \c03little \c00doll~
-Someone has dropped a small dolly of earth colors, her hair done up in braids.~
-~
-8 0 16385
-0 0 0 0
-3 7500 0
-A
-18 5
-A
-19 5
-#7031
-figurine lion saiel~
-a \c02w\c03o\c02o\c03d\c02e\c03n \c00lion figurine~
-A small wooden carving of a lion lays half-covered by dirt.~
-~
-8 0 16385
-0 0 0 0
-2 5000 0
-A
-1 2
-A
-2 2
-A
-17 -10
-#7032
-quiver saiel~
-a stiff leather \c02q\c03u\c02i\c01v\c03e\c02r\c00~
-A stiff quiver, able to hold at least a dozen arrows, lies in the corner.~
-~
-15 0 2049
-500 0 -1 0
-5 5000 0
-A
-13 20
-A
-14 30
-#7033
-spear tassled saiel~
-a tassled spear~
-A short spear, tassled with thin ribbons, has been left on the ground.~
-~
-5 0 8193
-3 3 8 11
-7 13750 0
-A
-18 6
-A
-19 7
-#7034
-spear short saiel~
-a short aiel spear~
-A short spear of three feet lies to one side.~
-~
-5 0 8193
-3 3 6 11
-4 9500 0
-A
-18 5
-A
-19 5
-#7035
-knife saiel~
-a long-\c23bladed \c00knife~
-A sharp knife with a long blade rests in the dirt.~
-~
-5 0 8193
-4 4 5 14
-6 7000 0
-A
-1 1
-A
-19 8
-#7036
-buckler shield saiel~
-a small \c03hide \c00buckler~
-A small, hardy shield of stretched hide has been thrown down.~
-~
-9 0 513
-5 5 0 0
-8 4000 0
-A
-5 1
-A
-17 15
-#7037
-bracer saiel~
-a \c01tough \c03leather \c00bracer~
-A hardened leather bracer, perfect for a wrist guard in archery, is here.~
-~
-9 0 4097
-3 0 0 0
-3 2300 0
-A
-13 10
-A
-2 1
-#7038
-belt saiel~
-a \c03l\c10e\c03a\c10t\c03h\c10e\c03r \c00belt~
-A braided leather belt is here.~
-~
-15 0 2049
-3000 0 -1 0
-4 6000 0
-A
-5 1
-A
-6 1
-A
-14 20
-#7039
-cloak goatskin saiel~
-a goatskin cloak~
-A cloak patched together with goat skins hangs on a nearby peg.~
-~
-11 0 5
-0 0 0 0
-9 7000 0
-A
-9 20
-A
-2 1
-A
-3 2
-#7040
-lamp saiel~
-a \c02g\c09r\c02e\c09e\c02n shuttered \c00lamp\c00~
-An easy to carry, green lamp has been left on a rock.~
-~
-1 0 16385
-0 0 250 0
-3 22500 0
-A
-18 15
-A
-19 15
-#7041
-bracelet ivory saiel~
-an \c14iv\c07o\c14ry \c01r\c08o\c01s\c08e \c00bracelet\c00~
-An intricate bracelet crafted of ivory lies in the mud.~
-~
-11 0 4097
-0 0 0 0
-3 7000 0
-A
-4 2
-A
-12 50
-#7042
-necklace silver saiel~
-a s\c14i\c07l\c14v\c07e\c14r \c00necklace adorned with a \c03l\c10io\c03n \c14tooth\c00~
-A thin chain of silver lies on the ground, its ornament an odd tooth.~
-~
-11 0 5
-0 0 0 0
-3 6000 0
-A
-3 2
-A
-12 30
-A
-6 1
-#7043
-beautifully crafted knife aiel~
-a \c10beautifully \c14crafted \c01\c00knife\c07~
-A beautifully crafted knife lies in the dust here.~
-~
-5 70088 8193
-5 5 15 11
-3 0 0
-A
-18 10
-A
-19 10
-#7044
-bow bone saiel~
-a \c14short bone bow\c00~
-A bone bow lies strung here.~
-~
-6 0 24577
-10 5 8 0
-3 16000 0
-A
-18 10
-A
-19 10
-#7045
-buckler shield hide aiel~
-a small \c03hi\c10de \c07\c00buckler\c00~
-A buckler made of animal hide rests here.~
-~
-9 69832 513
-16 20 0 0
-7 0 0
-A
-4 2
-A
-13 50
-#7046
-skirt bulky aiel~
-a bulky \c08algode \c07\c00skirt\c00~
-A bulky skirt waits to be worn.~
-~
-9 70088 33
-10 20 0 0
-8 0 0
-A
-3 1
-A
-1 1
-A
-12 50
-#7047
-gloves leather aiel~
-a pair of tough \c03leather \c07gloves\c00~
-A skirt that seems to flow with the wind is here.~
-~
-9 69832 129
-12 20 0 0
-2 0 0
-A
-1 2
-A
-17 -15
-A
-18 7
-A
-19 7
-#7048
-skirt short saiel~
-a short, girlish skirt~
-A skirt that younger girls wear lies in a heap here.~
-~
-9 0 33
-10 20 0 0
-4 1500 0
-A
-18 5
-A
-19 5
-#7049
-buckler round saiel~
-a tough round buckler~
-A round shield of hide is propped up against the wall.~
-~
-9 0 513
-7 20 0 0
-8 2000 0
-A
-2 1
-A
-13 20
-A
-18 4
-#7050
-blouse aiel~
-\c07a \c14white \c00\c07flowing blouse\c00~
-A blouse that blends in with the scenery is folded here.~
-~
-9 70088 9
-25 50 0 0
-3 0 0
-A
-4 2
-A
-3 2
-A
-17 -12
-A
-13 75
-#7051
-cloak goatskin saiel~
-a goatskin cloak~
-A hide cloak hangs comfortably nearby.~
-~
-9 0 5
-11 20 0 0
-13 3000 0
-A
-13 20
-A
-19 3
-#7052
-bracer leather saiel~
-a tight leather bracer~
-A leather bracer lies covered in dirt here.~
-~
-9 0 4097
-6 10 0 0
-3 750 0
-A
-18 5
-A
-19 5
-#7053
-shawl hand knit aiel~
-a hand knit \c05shawl\c07\c00~
-A hand knit shawl lies in a mess here.~
-~
-9 70088 1025
-15 20 0 0
-3 0 0
-A
-5 2
-A
-12 50
-A
-18 6
-A
-19 6
-#7054
-boots saiel~
-a pair of soft, knee-high boots~
-A pair of boots rests in one corner.~
-~
-9 0 65
-3 20 0 0
-6 2500 0
-A
-14 40
-A
-17 -5
-#7055
-shoufa aiel~
-a \c03d\c07u\c03s\c07t\c03y \c07shoufa\c00~
-A sand-colored shoufa lies in the dirt here.~
-~
-9 69832 17
-15 25 0 0
-3 0 0
-A
-3 1
-A
-5 1
-A
-13 75
-A
-14 50
-#7056
-bandana aiel~
-a \c06b\c13a\c00\c06n\c13d\c00\c06a\c13n\c00\c06a \c07\c00of \c03e\c02a\c10rt\c00\c02h\c03y \c07\c00colors\c00~
-A bandana lies half-hidden here.~
-~
-9 70088 17
-12 0 0 0
-3 0 0
-A
-14 50
-A
-18 10
-A
-19 10
-#7057
-shoufa aiel comfortable ~
-a comfortable \c10shoufa\c07\c00~
-A shoufa that looks quite comfortable sits here.~
-~
-9 69832 17
-15 10 0 0
-3 0 0
-A
-3 1
-A
-17 -10
-A
-18 5
-A
-19 5
-#7058
-veil aiel~
-a \c23pitch b\c00\c07l\c14a\c00\c07c\c23k veil\c07\c00~
-A mass of thin black material is piled on the ground here.~
-~
-9 69832 5
-10 0 0 0
-1 0 0
-A
-13 50
-A
-14 100
-A
-18 10
-A
-19 10
-#7059
-bracelet jade aiel wise~
-\c07an \c11intricate \c09j\c00a\c09d\c00e \c07bracelet\c00~
-An ornately carved jade bracelet lies in the dirt here.~
-~
-9 70089 4097
-25 5 0 0
-2 0 0
-A
-3 1
-A
-4 1
-A
-12 15
-#7060
-spring water stream~
-a small spring~
-A small spring of water bubbles merrily from the ground here.~
-~
-23 0 0
-10000 10000 0 0
-10005 0 0
-#7061
-large t'mat~
-a large t'mat~
-A round, red fruit rests here.~
-~
-19 0 1
-50 0 0 0
-1 12 0
-#7062
-arrow saiel~
-a \c03tan \c01f\c02le\c10tc\c00\c02he\c01d \c07\c00arrow~
-An arrow with tan feathers rests in the dirt.~
-~
-7 0 16385
-10 5 8 0
-1 1000 0
-#7063
-pants cadin'sor aiel~
-a pair of loose \c03leather \c07\c00pants\c00~
-A pair of pants lay here waiting for someone.~
-~
-9 69832 33
-15 40 0 0
-5 0 0
-A
-3 2
-A
-5 1
-A
-13 30
-A
-19 10
-#7064
-light torch aiel~
-a brightly \c08glowing \c00\c01torch\c07\c00~
-A small torch is resting on the ground.~
-~
-1 69832 16385
-0 0 -1 0
-8 0 0
-A
-6 2
-A
-17 -8
-#7065
-bracelet ivory aiel~
-an \c06ornate\c00 \c14ivory\c00 \c07bracelet\c00~
-A bracelet lies here on the ground.~
-~
-9 70088 4097
-15 15 0 0
-3 0 0
-A
-2 1
-A
-12 100
-A
-17 -20
-#7066
-shirt aiel cadin'sor~
-a shirt of \c03e\c02a\c10rt\c00\c02h\c03y \c07\c00colors\c00~
-An Aiel cadin'sor lies on the ground.~
-~
-9 69832 9
-20 50 0 0
-5 0 0
-A
-17 -10
-A
-13 50
-A
-18 15
-A
-19 15
-#7067
-apron aiel bs~
-a blacksmith's \c07a\c14pro\c00\c07n\c00~
-An apron just sits on the ground waiting to be used.~
-~
-15 65736 1025
-400 0 -1 0
-6 0 0
-A
-17 -20
-A
-9 15
-A
-18 8
-A
-19 8
-#7068
-necklace aiel~
-an \c12i\c00\c06nt\c12r\c00\c06ic\c12a\c00\c06te\c12l\c00\c06y \c10jeweled \c07\c00necklace\c00~
-A necklace just lies here hoping someone comes along.~
-~
-9 70088 5
-15 30 0 0
-3 0 0
-A
-3 1
-A
-4 1
-A
-6 1
-A
-13 25
-#7069
-coat aiel society~
-a society coat~
-A coat sits on the ground, hoping to be picked up.~
-~
-9 69768 1025
-20 40 0 0
-7 0 0
-A
-1 2
-A
-5 2
-A
-18 5
-A
-19 5
-#7070
-bread zemais~
-some zemais bread~
-A loaf of fresh bread lies here.~
-~
-19 0 1
-100 0 0 0
-0 30 0
-#7071
-headband Siswai'aman Aiel~
-the headband of the \c01S\c14i\c00\c01s\c23w\c00\c01a\c14i\c00\c01'\c23a\c00\c01m\c14a\c00\c01n\c07\c00~
-A headband with the ancient symbol of the Aes Sedai rests here.~
-~
-9 69832 17
-13 10 0 0
-2 0 0
-A
-17 -10
-A
-3 1
-A
-18 10
-A
-19 10
-#7072
-spear aiel guild sharp~
-a \c07strong\c00-\c04bladed\c00 spear~
-A wide bladed spear sits here, looking ominous.~
-~
-5 69640 8193
-0 10 10 14
-10 0 0
-E
-spear aiel~
-This is the aiel guild spear. Death for anyone not aiel touching it.
-~
-A
-19 50
-A
-18 50
-#7073
-belt aiel guild leather broad~
-a broad \c10L\c03ea\c07t\c03he\c10r\c00 belt~
-A broad \c10L\c03ea\c07t\c03he\c10r\c00 belt has been carelessly placed here.~
-~
-15 69640 2049
-10000 0 -1 0
-10 0 0
-E
-aiel guild belt~
-This be the aiel guild belt, broad and strong.
-Death will come to those not aiel wearing this.
-~
-A
-17 -200
-#7074
-aiel veil guild black~
-a \c11m\c04id\c07n\c04igh\c11t \c23b\c22lac\c23k\c00 veil~
-A coiled, black coth sits on the ground here.~
-~
-11 69760 5
-0 0 0 0
-10 0 0
-A
-20 1
-#7075
-wide leather bracer aiel guild~
-a wide \c10l\c03eat\c07h\c03e\c10r\c00 bracer~
-A wide \c10l\c03eat\c07h\c03e\c10r\c00 bracer is on the ground here.~
-~
-11 69768 4097
-0 0 0 0
-15 0 0
-A
-14 50
-A
-13 75
-A
-1 4
-A
-5 4
-A
-2 4
-#7076
-necklace jade ivory~
-a fine \c02j\c06a\c07d\c02e\c00 and \c14i\c07vo\c06r\c14y\c00 necklace~
-Links of jade and ivory have been carelessly discarded here.~
-~
-11 70025 5
-0 0 0 0
-10 0 0
-A
-12 50
-#7077
-shawl white wise one aiel guild~
-a \c07white\c00 shawl of a \c11W\c04is\c11e O\c04ne\c00~
-A clump of white cloth lies here on the ground.~
-~
-11 69896 1025
-0 0 0 0
-10 0 0
-A
-18 50
-A
-19 50
-#7078
-belt knife wise one aiel guild~
-a small, \c06wi\c07d\c06e\c02-\c06bla\c07d\c06ed\c00, belt knife~
-In the ground lie a small beautifully crafted dagger~
-~
-5 65928 32769
-0 12 8 11
-10 0 0
-#7079
-belt pouch wise one aiel guid~
-a \c03lar\c07g\c03e \c02he\c06r\c02b\c00 pouch~
-A large pouch of weathered gara skin lies here.~
-~
-15 69896 1
-5000 0 -1 0
-20 0 0
-#7080
-dragon tattoo aiel guild clan chief~
-a \c10go\c03l\c07d\c03e\c10n\c00 tattoo of a \c08D\c01r\c02a\c01go\c08n\c00~
-A tattoo is lying here where it shouldn't be.~
-~
-9 70280 257
-200 0 0 0
-3 0 0
-A
-20 1
-#7081
-honour clan chief aiel guild~
-the \c10J\c03i\c02'\c03e\c02'\c10t\c03o\c10h\c00 of the \c01C\c02la\c01n\c00~
-The intangible quality of an aiel CC lies here.~
-~
-12 70024 16385
-0 0 0 0
-1 0 0
-A
-18 10
-A
-19 10
-#7093
-oosquai glass~
-a glass of \c06oosquai\c07\c00~
-A glass of oosquai sits here waiting for someone to come along.~
-~
-17 0 1
-20 20 5 0
-25 100 0
-#7094
-rod key wo~
-a small metal rod~
-A small metal rod that fits to tie shut tent flaps lies here.~
-~
-18 69640 1
-0 0 0 0
-0 0 0
-#7095
-sword pitch black~
-a pitch black sword~
-A pitch black sword wrought from some taint lies here.~
-A black sword that is sharp to the touch and very deadly.
-~
-5 72 8193
-5 5 9 3
-6 5000 0
-A
-18 5
-A
-19 5
-A
-1 1
-#7096
-Cloak~
-a dark cloak~
-A pitch black cloak lies on the ground, the wind not touching it.~
-A dark cloak that wraps around the body making you almost invisible.
-~
-9 8 1025
-0 20 0 0
-10 0 0
-A
-13 25
-A
-19 10
-A
-17 -10
-#7097
-sign waste~
-a very important sign~
-\c02A sign that looks very \c01IMPORTANT \c02has been somehow nailed to the stone.\c00~
-~
-13 0 0
-0 0 0 0
-1000 0 0
-E
-sign waste~
-                            \c12Know This:
+</description>
+    </exdesc>
+    <objprog main="OnRandom" argtype="INT" argument="16">
+      <action number="Emote" argtype="STRING" argument="A few light blue petals suddenly fly off of a nearby patch of morningdrop and swirl high into the air."/>
+    </objprog>
+    <objprog main="OnRandom" argtype="INT" argument="10">
+      <action number="Emote" argtype="STRING" argument="A ruffling of the flowers of a morningdrop plant suddenly produces a small grey mouse which looks around, squeaks, and disappears again into the patch."/>
+    </objprog>
+    <objprog main="OnRandom" argtype="INT" argument="2">
+      <action number="Destroy" argtype="VOID" argument="NONE"/>
+    </objprog>
+  </object>
+  <object vnum="7018" name="petals morningdrop" special="NONE">
+    <description>A loose bunch of bluish petals tumbles through the air.</description>
+    <shortdesc>some \c13mo\c14r\c13ni\c14n\c13gd\c14r\c13op \c00petals\c00</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="2" value2="1" value3="15" value4="0"/>
+      <flags type="4" wear="1" extra="8"/>
+      <data weight="0" cost="500" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="7020" name="couch" special="NONE">
+    <description>&amp;nThere is a simple, yet beautiful couch sitting here, draped in lengths of &amp;Kdark&amp;n velvet and silk.</description>
+    <shortdesc>&amp;nAn elegant &amp;Kblack&amp;n couch</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="2" value4="0"/>
+      <flags type="24" wear="0" extra="8"/>
+      <data weight="9999" cost="1" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="7021" name="spear geqaiel" special="NONE">
+    <description>A short spear is lying here.</description>
+    <shortdesc>a short hafted spear</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="DAMROLL" modifier="1"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="10" value3="10" value4="11"/>
+      <flags type="5" wear="32769" extra="69768"/>
+      <data weight="1" cost="1" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <objprog main="OnActionToCarry" argtype="STRING" argument="wield">
+      <sideterm number="Guild" not="TRUE" argtype="STRING" argument="aiel"/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="Destroy" argtype="VOID" argument="NONE"/>
+      <action number="Force" argtype="STRING" argument="holler I am trying to wield an aiel spear please punish me!"/>
+    </objprog>
+  </object>
+  <object vnum="7022" name="torch geqaiel" special="NONE">
+    <description>An unfinished object is lying here.</description>
+    <shortdesc>a blazing torch</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="XATTACKS" modifier="3"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="-1" value4="0"/>
+      <flags type="1" wear="16385" extra="69768"/>
+      <data weight="1" cost="1" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="7023" name="waistpack geqaiel" special="NONE">
+    <description>An unfinished object is lying here.</description>
+    <shortdesc>a lionhide waistpack</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="ARMOR" modifier="-100"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="4000" value2="0" value3="-1" value4="0"/>
+      <flags type="15" wear="2049" extra="69768"/>
+      <data weight="1" cost="1" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="7027" name="hammer saiel" special="NONE">
+    <description>A strong hammer with a long handle rests in the dirt here.</description>
+    <shortdesc>a long-handled hammer</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="STR" modifier="2"/>
+    <objaffect location="MAXMOVE" modifier="-10"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="10" value2="3" value3="9" value4="7"/>
+      <flags type="5" wear="32769" extra="0"/>
+      <data weight="13" cost="3000" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="7028" name="ribbon saiel" special="NONE">
+    <description>A long strand of red ribbon has been discarded by some child.</description>
+    <shortdesc>a \c01red \c00hair ribbon</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="INT" modifier="1"/>
+    <objaffect location="WIS" modifier="2"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="11" wear="17" extra="0"/>
+      <data weight="2" cost="2000" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="7029" name="skirt saiel" special="NONE">
+    <description>A short algode skirt has been left here.</description>
+    <shortdesc>a short skirt</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="ARMOR" modifier="15"/>
+    <objaffect location="ABS" modifier="20"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="11" wear="33" extra="0"/>
+      <data weight="6" cost="5500" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="7030" name="doll saiel" special="NONE">
+    <description>Someone has dropped a small dolly of earth colors, her hair done up in braids.</description>
+    <shortdesc>a \c12cute \c03little \c00doll</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="HITROLL" modifier="5"/>
+    <objaffect location="DAMROLL" modifier="5"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="8" wear="16385" extra="0"/>
+      <data weight="3" cost="7500" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="7031" name="figurine lion saiel" special="NONE">
+    <description>A small wooden carving of a lion lays half-covered by dirt.</description>
+    <shortdesc>a \c02w\c03o\c02o\c03d\c02e\c03n \c00lion figurine</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="STR" modifier="2"/>
+    <objaffect location="DEX" modifier="2"/>
+    <objaffect location="ARMOR" modifier="-10"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="8" wear="16385" extra="0"/>
+      <data weight="2" cost="5000" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="7032" name="quiver saiel" special="NONE">
+    <description>A stiff quiver, able to hold at least a dozen arrows, lies in the corner.</description>
+    <shortdesc>a stiff leather \c02q\c03u\c02i\c01v\c03e\c02r\c00</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="MAXHIT" modifier="20"/>
+    <objaffect location="MAXMOVE" modifier="30"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="500" value2="0" value3="-1" value4="0"/>
+      <flags type="15" wear="2049" extra="0"/>
+      <data weight="5" cost="5000" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="7033" name="spear tassled saiel" special="NONE">
+    <description>A short spear, tassled with thin ribbons, has been left on the ground.</description>
+    <shortdesc>a tassled spear</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="HITROLL" modifier="6"/>
+    <objaffect location="DAMROLL" modifier="7"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="3" value2="3" value3="8" value4="11"/>
+      <flags type="5" wear="8193" extra="0"/>
+      <data weight="7" cost="13750" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="7034" name="spear short saiel" special="NONE">
+    <description>A short spear of three feet lies to one side.</description>
+    <shortdesc>a short aiel spear</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="HITROLL" modifier="5"/>
+    <objaffect location="DAMROLL" modifier="5"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="3" value2="3" value3="6" value4="11"/>
+      <flags type="5" wear="8193" extra="0"/>
+      <data weight="4" cost="9500" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="7035" name="knife saiel" special="NONE">
+    <description>A sharp knife with a long blade rests in the dirt.</description>
+    <shortdesc>a long-\c23bladed \c00knife</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="STR" modifier="1"/>
+    <objaffect location="DAMROLL" modifier="8"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="4" value2="4" value3="5" value4="14"/>
+      <flags type="5" wear="8193" extra="0"/>
+      <data weight="6" cost="7000" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="7036" name="buckler shield saiel" special="NONE">
+    <description>A small, hardy shield of stretched hide has been thrown down.</description>
+    <shortdesc>a small \c03hide \c00buckler</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="CON" modifier="1"/>
+    <objaffect location="ARMOR" modifier="-15"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="5" value2="5" value3="0" value4="0"/>
+      <flags type="9" wear="513" extra="0"/>
+      <data weight="8" cost="4000" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="7037" name="bracer saiel" special="NONE">
+    <description>A hardened leather bracer, perfect for a wrist guard in archery, is here.</description>
+    <shortdesc>a \c01tough \c03leather \c00bracer</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="MAXHIT" modifier="10"/>
+    <objaffect location="DEX" modifier="1"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="3" value2="0" value3="0" value4="0"/>
+      <flags type="9" wear="4097" extra="0"/>
+      <data weight="3" cost="2300" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="7038" name="belt saiel" special="NONE">
+    <description>A braided leather belt is here.</description>
+    <shortdesc>a \c03l\c10e\c03a\c10t\c03h\c10e\c03r \c00belt</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="CON" modifier="1"/>
+    <objaffect location="CHA" modifier="1"/>
+    <objaffect location="MAXMOVE" modifier="20"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="3000" value2="0" value3="-1" value4="0"/>
+      <flags type="15" wear="2049" extra="0"/>
+      <data weight="4" cost="6000" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="7039" name="cloak goatskin saiel" special="NONE">
+    <description>A cloak patched together with goat skins hangs on a nearby peg.</description>
+    <shortdesc>a goatskin cloak</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="ABS" modifier="20"/>
+    <objaffect location="DEX" modifier="1"/>
+    <objaffect location="INT" modifier="2"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="11" wear="5" extra="0"/>
+      <data weight="9" cost="7000" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="7040" name="lamp saiel" special="NONE">
+    <description>An easy to carry, green lamp has been left on a rock.</description>
+    <shortdesc>a \c02g\c09r\c02e\c09e\c02n shuttered \c00lamp\c00</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="HITROLL" modifier="15"/>
+    <objaffect location="DAMROLL" modifier="15"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="250" value4="0"/>
+      <flags type="1" wear="16385" extra="0"/>
+      <data weight="3" cost="22500" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="7041" name="bracelet ivory saiel" special="NONE">
+    <description>An intricate bracelet crafted of ivory lies in the mud.</description>
+    <shortdesc>an \c14iv\c07o\c14ry \c01r\c08o\c01s\c08e \c00bracelet\c00</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="WIS" modifier="2"/>
+    <objaffect location="MAXMANA" modifier="50"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="11" wear="4097" extra="0"/>
+      <data weight="3" cost="7000" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="7042" name="necklace silver saiel" special="NONE">
+    <description>A thin chain of silver lies on the ground, its ornament an odd tooth.</description>
+    <shortdesc>a s\c14i\c07l\c14v\c07e\c14r \c00necklace adorned with a \c03l\c10io\c03n \c14tooth\c00</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="INT" modifier="2"/>
+    <objaffect location="MAXMANA" modifier="30"/>
+    <objaffect location="CHA" modifier="1"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="11" wear="5" extra="0"/>
+      <data weight="3" cost="6000" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="7044" name="bow bone saiel" special="NONE">
+    <description>A bone bow lies strung here.</description>
+    <shortdesc>a \c14short bone bow\c00</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="HITROLL" modifier="10"/>
+    <objaffect location="DAMROLL" modifier="10"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="10" value2="5" value3="8" value4="0"/>
+      <flags type="6" wear="24577" extra="0"/>
+      <data weight="3" cost="16000" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="7048" name="skirt short saiel" special="NONE">
+    <description>A skirt that younger girls wear lies in a heap here.</description>
+    <shortdesc>a short, girlish skirt</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="HITROLL" modifier="5"/>
+    <objaffect location="DAMROLL" modifier="5"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="10" value2="20" value3="0" value4="0"/>
+      <flags type="9" wear="33" extra="0"/>
+      <data weight="4" cost="1500" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="7049" name="buckler round saiel" special="NONE">
+    <description>A round shield of hide is propped up against the wall.</description>
+    <shortdesc>a tough round buckler</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="DEX" modifier="1"/>
+    <objaffect location="MAXHIT" modifier="20"/>
+    <objaffect location="HITROLL" modifier="4"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="7" value2="20" value3="0" value4="0"/>
+      <flags type="9" wear="513" extra="0"/>
+      <data weight="8" cost="2000" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="7051" name="cloak goatskin saiel" special="NONE">
+    <description>A hide cloak hangs comfortably nearby.</description>
+    <shortdesc>a goatskin cloak</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="MAXHIT" modifier="20"/>
+    <objaffect location="DAMROLL" modifier="3"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="11" value2="20" value3="0" value4="0"/>
+      <flags type="9" wear="5" extra="0"/>
+      <data weight="13" cost="3000" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="7052" name="bracer leather saiel" special="NONE">
+    <description>A leather bracer lies covered in dirt here.</description>
+    <shortdesc>a tight leather bracer</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="HITROLL" modifier="5"/>
+    <objaffect location="DAMROLL" modifier="5"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="6" value2="10" value3="0" value4="0"/>
+      <flags type="9" wear="4097" extra="0"/>
+      <data weight="3" cost="750" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="7054" name="boots saiel" special="NONE">
+    <description>A pair of boots rests in one corner.</description>
+    <shortdesc>a pair of soft, knee-high boots</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="MAXMOVE" modifier="40"/>
+    <objaffect location="ARMOR" modifier="-5"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="3" value2="20" value3="0" value4="0"/>
+      <flags type="9" wear="65" extra="0"/>
+      <data weight="6" cost="2500" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="7060" name="spring water stream" special="NONE">
+    <description>A small spring of water bubbles merrily from the ground here.</description>
+    <shortdesc>a small spring</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="10000" value2="10000" value3="0" value4="0"/>
+      <flags type="23" wear="0" extra="0"/>
+      <data weight="10005" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="7061" name="large t'mat" special="NONE">
+    <description>A round, red fruit rests here.</description>
+    <shortdesc>a large t'mat</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="50" value2="0" value3="0" value4="0"/>
+      <flags type="19" wear="1" extra="0"/>
+      <data weight="1" cost="12" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="7062" name="arrow saiel" special="NONE">
+    <description>An arrow with tan feathers rests in the dirt.</description>
+    <shortdesc>a \c03tan \c01f\c02le\c10tc\c00\c02he\c01d \c07\c00arrow</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="10" value2="5" value3="8" value4="0"/>
+      <flags type="7" wear="16385" extra="0"/>
+      <data weight="1" cost="1000" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="7070" name="pain butt cookie" special="NONE">
+    <description>A cookie lies here, being a pain in the ass.</description>
+    <shortdesc>&amp;wa &amp;Rp&amp;ra&amp;Ri&amp;rn&amp;w-in-the-&amp;Wass&amp;w cookie&amp;n</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="100" value2="0" value3="0" value4="0"/>
+      <flags type="19" wear="1" extra="0"/>
+      <data weight="0" cost="30" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="7080" name="cookie oblivious" special="NONE">
+    <description>A cookie sits here, oblivious.</description>
+    <shortdesc>&amp;wan &amp;co&amp;Cb&amp;Wl&amp;wi&amp;cv&amp;Ci&amp;Wo&amp;wu&amp;cs&amp;w cookie&amp;n</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="4" value2="0" value3="0" value4="0"/>
+      <flags type="19" wear="1" extra="0"/>
+      <data weight="0" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="7093" name="oosquai glass" special="NONE">
+    <description>A glass of oosquai sits here waiting for someone to come along.</description>
+    <shortdesc>a glass of \c06oosquai\c07\c00</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="20" value2="20" value3="5" value4="0"/>
+      <flags type="17" wear="1" extra="0"/>
+      <data weight="25" cost="100" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="7094" name="rod key wo" special="NONE">
+    <description>A small metal rod that fits to tie shut tent flaps lies here.</description>
+    <shortdesc>a small metal rod</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="18" wear="1" extra="69640"/>
+      <data weight="0" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="7095" name="sword pitch black" special="NONE">
+    <description>A pitch black sword wrought from some taint lies here.</description>
+    <shortdesc>a pitch black sword</shortdesc>
+    <actiondesc>A black sword that is sharp to the touch and very deadly.
+</actiondesc>
+    <affectflag>0</affectflag>
+    <objaffect location="HITROLL" modifier="5"/>
+    <objaffect location="DAMROLL" modifier="5"/>
+    <objaffect location="STR" modifier="1"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="5" value2="5" value3="9" value4="3"/>
+      <flags type="5" wear="8193" extra="72"/>
+      <data weight="6" cost="5000" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="7096" name="Cloak" special="NONE">
+    <description>A pitch black cloak lies on the ground, the wind not touching it.</description>
+    <shortdesc>a dark cloak</shortdesc>
+    <actiondesc>A dark cloak that wraps around the body making you almost invisible.
+</actiondesc>
+    <affectflag>0</affectflag>
+    <objaffect location="MAXHIT" modifier="25"/>
+    <objaffect location="DAMROLL" modifier="10"/>
+    <objaffect location="ARMOR" modifier="-10"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="20" value3="0" value4="0"/>
+      <flags type="9" wear="1025" extra="8"/>
+      <data weight="10" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="7097" name="sign waste" special="NONE">
+    <description>\c02A sign that looks very \c01IMPORTANT \c02has been somehow nailed to the stone.\c00</description>
+    <shortdesc>a very important sign</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="13" wear="0" extra="0"/>
+      <data weight="1000" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <exdesc keyword="sign waste">
+      <description>                            \c12Know This:
   \c06The Aiel are a very dangerous race. If you are not a Gleeman, a Merchant,
 or a Tuatha'an, you are advised to not travel into the Waste. The Aiel rules
 of tresspassing allow them to capture or attack you on site, no questions
@@ -1079,678 +1018,343 @@ asked. You will be under their laws. You cannot be OOC in an encounter with them
 \c01Beware.\c00
 
 \c10**Stamped with the many-rayed golden sun of Cairhien**\c00
-~
-#7098
-board guild aiel gboard zm~
-the Aiel guild board~
-The Aiel guild board hangs here.~
-~
-13 0 0
-0 0 0 0
-20000 0 0
-#7099
-guild board aiel2~
-the bulletin board~
-The technical bulletin board for the Aiel hangs here.~
-~
-13 0 0
-0 0 0 0
-20000 0 0
-#7100
-torch aiel~
-a brightly \c08glowing \c00\c01torch\c07\c00~
-A bright, guttering torch hangs on a nearby wall.~
-~
-1 69832 1
-0 0 -1 0
-1 0 0
-#7101
-honor aiel~
-the \c04H\c11o\c13n\c11o\c00\c04r \c00\c03of the \c10Aiel\c07\c00~
-The insubstantial yet powerful honor of the Aiel is represented here.~
-~
-9 69832 16385
-0 0 0 0
-2 1 5
-A
-20 1
-A
-13 50
-A
-4 1
-A
-3 2
-#7102
-shirt cadin'sor aiel~
-a shirt of \c03e\c02a\c10rt\c00\c02h\c03y \c07\c00colors\c00~
-A shirt that blends into the dirt lies in a mess here.~
-~
-9 69832 9
-0 30 0 0
-0 0 0
-A
-17 -80
-A
-13 55
-#7103
-blouse aiel~
-a \c14white \c00\c05algode \c07\c00blouse\c00~
-A soft white blouse is folded neatly here.~
-~
-9 70088 9
-0 30 0 0
-6 0 0
-A
-17 -70
-A
-13 50
-#7104
-coat society aiel~
-a society coat~
-A dusty grey coat lies here with colored slashes on it.~
-~
-9 69768 1025
-20 20 0 0
-0 0 0
-A
-17 -15
-A
-18 5
-A
-19 5
-#7105
-shawl aiel~
-a hand knit \c01shawl\c07\c00~
-A greyish, hand woven shawl lays here.~
-~
-9 70088 1025
-0 30 0 0
-3 0 0
-A
-17 -40
-A
-6 1
-A
-12 50
-#7106
-apron aiel~
-a craftsman's \c07a\c14pro\c00\c07n\c00~
-A large, stained apron hangs on a nearby hook.~
-~
-15 69768 1025
-10000 0 -1 0
-4 0 0
-A
-6 1
-A
-17 -45
-A
-9 15
-A
-13 65
-#7107
-pants leather cadin'sor aiel~
-a pair of loose, \c03le\c10a\c00\c03th\c10e\c00\c03r \c07\c00pants\c00~
-A pair of brown leather pants lay here waiting for an owner.~
-~
-9 69768 33
-0 10 0 0
-6 0 0
-A
-5 1
-A
-18 16
-A
-19 16
-#7108
-skirt aiel~
-a long, \c02f\c09l\c00\c06o\c02w\c09i\c00\c06n\c02g \c07\c00skirt\c00~
-An algode skirt the color of the ground rests here.~
-~
-9 70088 33
-0 20 0 0
-4 0 0
-A
-2 1
-A
-18 5
-A
-19 5
-A
-17 -40
-#7109
-boots aiel~
-a pair of \c13s\c00\c06o\c13f\c00\c06t\c07-\c14laced \c00boots\c00~
-Some soft but durable leather boots rest in one corner.~
-~
-9 69832 65
-25 15 0 0
-4 0 0
-A
-2 1
-A
-14 100
-#7110
-sandals leather aiel~
-a pair of \c03l\c10e\c00\c03a\c10t\c00\c03h\c10e\c00\c03r \c07\c00sandals\c00~
-A pair of well made sandals sit in one corner.~
-~
-9 70088 65
-30 0 0 0
-3 0 0
-A
-2 1
-A
-14 60
-A
-18 7
-A
-19 7
-#7111
-shoufa aiel~
-a \c03s\c07a\c03n\c07d\c03y \c07\c00colored shoufa\c00~
-Some dirt colored material lies in a heap here.~
-~
-9 69832 17
-0 15 0 0
-3 0 0
-A
-17 -40
-A
-5 1
-#7112
-shoufa aiel smith~
-a \c07greyish\c14-\c00\c03brown \c07\c00shoufa\c00~
-A mass of grey and brown material is heaped here.~
-~
-9 69832 17
-0 15 0 0
-3 0 0
-A
-4 1
-A
-2 1
-A
-17 -50
-#7113
-veil aiel~
-a \c23pitch b\c00\c07l\c14a\c00\c07c\c23k veil\c07\c00~
-Some slick, black material lies here in the shadows.~
-~
-9 69832 5
-20 0 0 0
-1 0 0
-A
-2 2
-A
-18 15
-A
-19 15
-#7114
-necklace ivory aiel~
-an \c13o\c00\c06r\c13n\c00\c06a\c13t\c00\c06e \c14ivory \c07\c00necklace\c00~
-An ivory beaded necklace curls here in the dust.~
-~
-9 70088 5
-0 0 0 0
-2 0 0
-A
-12 50
-A
-4 2
-A
-3 1
-#7115
-bracelet jade aiel wo~
-an \c11intricate \c09j\c00\c02a\c09d\c00\c02e \c07\c00bracelet\c00~
-A smooth jade bracelet lies half-covered in the dirt.~
-~
-9 70090 4097
-20 0 0 0
-2 0 0
-A
-12 12
-A
-2 1
-A
-4 1
-#7116
-spear aiel~
-a strong \c14sharp \c07\c00spear~
-A strong looking spear sticks out of the ground.~
-~
-5 69832 8193
-0 10 10 11
-5 0 0
-#7117
-knife beautifully crafted aiel~
-a \c10beautifully \c14crafted \c07\c00knife\c00~
-A well-used yet beautiful belt knife glitters in the light.~
-~
-5 70088 8193
-10 7 10 11
-1 0 0
-A
-1 2
-A
-18 15
-A
-19 15
-#7118
-hammer aiel~
-a \c13large \c23black \c07\c00hammer\c00~
-A large hammer hangs on its peg.~
-~
-5 69832 8193
-10 7 10 7
-9 0 0
-A
-1 4
-A
-18 22
-A
-19 22
-#7119
-tattoo dragon aiel cc~
-a \c01be\c08au\c00\c01ti\c08fu\c00\c01l \c00\c02d\c09r\c10ag\c08o\c00\c01n \c23tattoo\c07\c00~
-The mark of one who proved their worth is displayed here.~
-~
-9 69832 257
-0 0 0 0
-1 0 0
-A
-1 1
-A
-4 1
-A
-13 25
-A
-18 2
-A
-19 2
-#7120
-headband siswai'aman aiel~
-the headband of the \c01S\c14i\c00\c01s\c23w\c00\c01a\c14i\c00\c01'\c23a\c00\c01m\c14a\c00\c01n\c07\c00~
-A worn headband with the ancient symbol of the Aes Sedai lies here.~
-~
-9 69832 17
-0 15 0 0
-2 0 0
-A
-17 -40
-A
-5 1
-A
-4 1
-A
-18 4
-A
-19 4
-#7121
-robe gai'shain aiel~
-a \c14white \c07robe of the \c14G\c13a\c06i\c13'\c14s\c13h\c06a\c13i\c14n\c07\c00~
-A long, thin robe lies nearby.~
-~
-9 69832 9
-0 30 0 0
-0 0 0
-A
-17 -80
-A
-13 60
-A
-1 1
-#7122
-round hide buckler~
-a round hide buckler~
-A round buckler, made of toughened hide, lies here.~
-~
-9 128 513
-25 0 0 0
-10 0 0
-A
-18 20
-A
-19 20
-A
-20 2
-#7123
-sleeves cadin'sor aielgeq~
-sleeves of the cadin'sor~
-The sleeves belonging to a suit of cadin'sor, lies here.~
-~
-9 0 257
-25 0 0 0
-5 0 0
-A
-18 15
-A
-19 15
-A
-20 1
-#7124
-cadin'sor suit aielgeq~
-a shirt in the grays, greens and browns of the cadin'sor~
-A shirt made of grays, greens and browns, lies here.~
-~
-9 0 9
-75 0 0 0
-5 0 0
-A
-18 15
-A
-19 15
-#7125
-spear aiel guild~
-a strong bladed spear~
-A sharp and deadly spear lies here ominously.~
-~
-5 0 8193
-0 10 10 14
-10 0 0
-A
-18 50
-A
-19 50
-#7126
-leather belt aiel guild~
-a broad leather belt~
-A broad belt of toughened gara hide lies here.~
-~
-15 69768 2049
-5000 0 -1 0
-15 0 0
-A
-17 -200
-#7127
-veil black aiel guild~
-a midnight black veil~
-A pile of black cloth is coiled here much like a deadly serpent~
-~
-11 69768 5
-0 0 0 0
-15 0 0
-A
-20 1
-#7128
-bracer aiel guild leather~
-a wide leather bracer~
-A hardened leather bracer lies in the dust here.~
-~
-11 69768 4097
-0 0 0 0
-15 0 0
-A
-18 10
-A
-19 10
-A
-9 50
-#7129
-necklace jade ivory aiel guild wise one~
-a fine jade and ivory necklace~
-There is a small pile of jade and ivory at your feet.~
-~
-11 70025 1
-0 0 0 0
-5 0 0
-A
-12 50
-#7130
-shawl white wise one aiel guild~
-a white shawl of a Wise One~
-A bundle of white cloth lies here.~
-~
-11 70024 1025
-0 0 0 0
-10 0 0
-A
-18 50
-A
-19 50
-#7131
-belt knife wise one aiel guild~
-a small wide-bladed belt knife.~
-A small sharp dagger sits here.~
-~
-5 70024 32769
-0 12 8 11
-15 0 0
-#7132
-herb pouch aiel guild wise one~
-a herb pouch~
-A large gara hide pouch lies here.~
-~
-15 70024 2049
-5000 0 -1 0
-20 0 0
-A
-17 -200
-#7133
-dragon tattoo clan chief aiel guild~
-a golden tattoo if a Dragon~
-A tattoo lies here.~
-~
-9 70280 257
-200 0 0 0
-3 0 0
-A
-20 1
-#7134
-honour clan chief aiel guild~
-the Ji'e'toh of the Clan~
-The intangible something that makes an Aiel CC is here.~
-~
-12 70280 16385
-0 0 0 0
-15 0 0
-A
-18 10
-A
-19 10
-#7136
-shoufa brown aielgeq~
-a shoufa~
-A brown peice of cloth almost blending with the earth is lying here.~
-~
-9 69768 17
-0 0 0 0
-1 1 0
-P
-OnActionToWear "wear" & ! Guild "aiel"
-Stop
-Destroy
-Force "holler I am attempting to wear a piece of aiel guild equip."
-End
-Q
-#7137
-spear short hafted aielgeq~
-a short hafted spear~
-A well made spear is lying here.~
-~
-5 69768 32769
-0 10 10 14
-0 0 0
-A
-19 1
-#7138
-torch blazing aielgeq~
-a blazing torch~
-A burnt out torch is lying here.~
-~
-1 69768 16385
-0 0 -1 0
-1 1 0
-A
-17 -100
-A
-20 3
-A
-18 50
-A
-19 50
-A
-12 -250
-A
-2 4
-#7139
-waistpack lionhide aielgeq~
-a lionhide waistpack~
-A pack made from the skin of a lion is lying here.~
-~
-15 69768 18433
-5000 0 -1 0
-1 1 0
-A
-17 -45
-A
-3 4
-A
-4 4
-A
-5 4
-#7140
-waistpack lionhide aielgeq~
-a lionhide waistpack~
-A pack made from the skin of a lion is lying here.~
-~
-15 69768 18433
-5000 0 -1 0
-1 1 0
-A
-17 -100
-A
-3 4
-A
-4 4
-A
-5 4
-A
-14 -250
-A
-9 35
-#7141
-switch sapling fresh aielgeq~
-a switch made of a fresh cut sapling~
-A well made switch is lying here.~
-~
-5 69768 32769
-0 10 10 14
-1 1 0
-A
-19 1
-#7142
-torch blazing aielgeq~
-a blazing torch~
-A burnt out torch is lying here.~
-~
-1 69769 16385
-0 0 -1 0
-1 1 0
-A
-17 -100
-A
-20 3
-A
-12 50
-A
-2 4
-A
-14 -250
-#7143
-torch blazing aielgeq~
-a blazing torch~
-A burnt out torch is lying here.~
-~
-1 69769 16385
-0 0 -1 0
-1 1 0
-A
-17 -100
-A
-20 3
-A
-12 50
-#7144
-waistpack lionhide aielgeq~
-a lionhide waistpack~
-A pack made from the skin of a lion is lying here.~
-~
-15 69768 18433
-5000 0 -1 0
-1 1 0
-#7200
-spear aiel~
-Short &rAiel&n &KSpear&n~
-This short spear is one common used by Aiel warriors of all Societies.~
-~
-5 69832 8193
-5 12 8 14
-4 0 0
-A
-19 5
-A
-18 5
-#7201
-torch aiel~
-a &rTorch&n made out of &ydried brush&n~
-A small &rtorch&n made out of the grass and brush.~
-~
-1 69832 1
-0 0 -1 0
-0 0 0
-A
-1 4
-A
-2 4
-A
-3 4
-A
-4 4
-A
-5 4
-A
-6 4
-#7202
-buckler aiel~
-a small &yleather&n &kbuckler&n~
-A small &yleather&n &Kbuckler&n used by many of the &rAiel&n warriors.~
-~
-9 69832 513
-0 100 0 0
-3 0 0
-A
-19 3
-A
-18 3
-#7203
-veil aiel~
-a &Kpitch black veil&n~
-This is the &Kveil&n the &rAiel&n use to cover their face before there is killing to be done.~
-~
-11 0 5
-0 0 0 0
-2 0 0
-A
-20 3
-A
-19 20
-A
-18 20
-#7214
-wagon merchant~
-a \c11m\c13e\c06r\c11c\c13h\c06a\c11n\c13t \c03wagon\c00~
-A colored wagon belonging to some traveling merchant rumbles past.~
-~
-14 2048 0
-0 0 -1 0
-10000 0 0
-#7300
-an unfinished objet~
-an unfinished object~
-An unfinished object is lying here.~
-~
-0 0 1
-0 0 0 0
-0 0 0
-$~
+</description>
+    </exdesc>
+  </object>
+  <object vnum="7098" name="board guild aiel gboard zm" special="NONE">
+    <description>The Aiel guild board hangs here.</description>
+    <shortdesc>the Aiel guild board</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="13" wear="0" extra="0"/>
+      <data weight="20000" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="7099" name="guild board aiel2" special="NONE">
+    <description>The technical bulletin board for the Aiel hangs here.</description>
+    <shortdesc>the bulletin board</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="13" wear="0" extra="0"/>
+      <data weight="20000" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="7100" name="lantern aielgeq" special="NONE">
+    <description>GUILD EQ. REPORT TO IMMORTAL.</description>
+    <shortdesc>a plain lantern</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="HITROLL" modifier="15"/>
+    <objaffect location="DAMROLL" modifier="15"/>
+    <objaffect location="XATTACKS" modifier="1"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="-1" value4="0"/>
+      <flags type="1" wear="16385" extra="69768"/>
+      <data weight="0" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <dgscript vnum="7100"/>
+  </object>
+  <object vnum="7101" name="spear aielgeq" special="NONE">
+    <description>GUILD EQ. REPORT TO IMMORTAL.</description>
+    <shortdesc>three vicious short-hafted spears</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="10" value3="10" value4="11"/>
+      <flags type="5" wear="32769" extra="69768"/>
+      <data weight="0" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <dgscript vnum="7100"/>
+  </object>
+  <object vnum="7102" name="cadin'sor aielgeq" special="NONE">
+    <description>GUILD EQ. REPORT TO IMMORTAL.</description>
+    <shortdesc>a &amp;yc&amp;Ka&amp;gm&amp;wo&amp;yu&amp;Kf&amp;gl&amp;wa&amp;yg&amp;Ki&amp;gn&amp;wg&amp;n cadin'sor</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="HITROLL" modifier="15"/>
+    <objaffect location="DAMROLL" modifier="15"/>
+    <objaffect location="XATTACKS" modifier="1"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="100" value2="0" value3="0" value4="0"/>
+      <flags type="9" wear="1033" extra="69768"/>
+      <data weight="0" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <dgscript vnum="7100"/>
+  </object>
+  <object vnum="7103" name="belt aielgeq" special="NONE">
+    <description>GUILD EQ. REPORT TO IMMORTAL.</description>
+    <shortdesc>a belt of braided lion sinew</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="HITROLL" modifier="20"/>
+    <objaffect location="DAMROLL" modifier="20"/>
+    <objaffect location="XATTACKS" modifier="1"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="10000" value2="0" value3="-1" value4="0"/>
+      <flags type="15" wear="2049" extra="69832"/>
+      <data weight="0" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <dgscript vnum="7100"/>
+  </object>
+  <object vnum="7104" name="dress wiseone aielgeq" special="NONE">
+    <description>GUILD EQ. REPORT TO IMMORTAL</description>
+    <shortdesc>a simple algode dress</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="XATTACKS" modifier="1"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="100" value2="0" value3="0" value4="0"/>
+      <flags type="9" wear="9" extra="69832"/>
+      <data weight="0" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <dgscript vnum="7100"/>
+  </object>
+  <object vnum="7105" name="lantern wiseone aielgeq chan" special="NONE">
+    <description>GUILD EQ. REPORT TO IMMORTAL.</description>
+    <shortdesc>an &amp;Wi&amp;wv&amp;Wo&amp;wr&amp;Wy&amp;n gilded lantern</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="MAXMANA" modifier="50"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="-1" value4="0"/>
+      <flags type="1" wear="1" extra="69833"/>
+      <data weight="0" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <dgscript vnum="7100"/>
+  </object>
+  <object vnum="7106" name="belt aielgeq" special="NONE">
+    <description>GUILD EQ. REPORT TO IMMORTAL.</description>
+    <shortdesc>a belt adorned with several pouches</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="XATTACKS" modifier="2"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="10000" value2="0" value3="-1" value4="0"/>
+      <flags type="15" wear="2049" extra="69832"/>
+      <data weight="0" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <dgscript vnum="7100"/>
+  </object>
+  <object vnum="7107" name="knife aielgeq" special="NONE">
+    <description>GUILD EQ. REPORT TO IMMORTAL.</description>
+    <shortdesc>a small belt knife</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="10" value3="10" value4="11"/>
+      <flags type="5" wear="8193" extra="69768"/>
+      <data weight="0" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <dgscript vnum="7100"/>
+  </object>
+  <object vnum="7108" name="aielgeq syllabus" special="NONE">
+    <description>Aiel GEQ lies here!</description>
+    <shortdesc>THE FUTURE SYLLABUS OBJECT</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="30" value2="10" value3="10" value4="6"/>
+      <flags type="13" wear="32769" extra="69768"/>
+      <data weight="0" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <dgscript vnum="7100"/>
+  </object>
+  <object vnum="7109" name="smith apron aielgeq geq" special="NONE">
+    <description>Aiel GEQ lies here!</description>
+    <shortdesc>&amp;YRETURN THIS GEQ TO THE GL AT ONCE!&amp;n</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="HITROLL" modifier="50"/>
+    <objaffect location="DAMROLL" modifier="50"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="10000" value2="0" value3="-1" value4="0"/>
+      <flags type="15" wear="2049" extra="69832"/>
+      <data weight="0" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <dgscript vnum="7100"/>
+  </object>
+  <object vnum="7110" name="robe gai'shain aielgeq" special="NONE">
+    <description>Aiel GEQ lies here!</description>
+    <shortdesc>&amp;YRETURN THIS GEQ TO THE GL AT ONCE!&amp;n</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="9" wear="9" extra="69832"/>
+      <data weight="0" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <dgscript vnum="7100"/>
+  </object>
+  <object vnum="7111" name="aura chief aielgeq" special="NONE">
+    <description>Aiel GEQ lies here!</description>
+    <shortdesc>&amp;YRETURN THIS GEQ TO THE GL AT ONCE!&amp;n</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="13" wear="16385" extra="69832"/>
+      <data weight="0" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="7112" name="tattoo aielgeq" special="NONE">
+    <description>Aiel GEQ lies here!</description>
+    <shortdesc>&amp;YRETURN THIS GEQ TO THE GL AT ONCE!&amp;n</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="11" wear="257" extra="69832"/>
+      <data weight="0" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="7113" name="aura wiseone aielgeq " special="NONE">
+    <description>Aiel guildeq. Stay back, lest ye be smited!</description>
+    <shortdesc>&amp;YRETURN THIS GEQ TO THE GL AT ONCE!&amp;n</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="13" wear="16385" extra="69832"/>
+      <data weight="5" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <dgscript vnum="7100"/>
+  </object>
+  <object vnum="7114" name="spear aielgeq" special="NONE">
+    <description>Aiel guildeq. Stay back, lest ye be smited!</description>
+    <shortdesc>&amp;YRETURN THIS GEQ TO THE GL AT ONCE!&amp;n</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="0" value4="0"/>
+      <flags type="13" wear="8193" extra="69768"/>
+      <data weight="8" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+    <dgscript vnum="7100"/>
+  </object>
+  <object vnum="7115" name="bag guild" special="NONE">
+    <description>&amp;cA &amp;RB&amp;Ga&amp;Yg&amp;n of &amp;MG&amp;muild&amp;w-&amp;ME&amp;mq&amp;n</description>
+    <shortdesc>&amp;cA &amp;RB&amp;Ga&amp;Yg&amp;n of &amp;MG&amp;muild&amp;w-&amp;ME&amp;mq&amp;n</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="500" value2="0" value3="-1" value4="0"/>
+      <flags type="15" wear="1" extra="69640"/>
+      <data weight="0" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+  <object vnum="7214" name="wagon merchant" special="NONE">
+    <description>A colored wagon belonging to some traveling merchant rumbles past.</description>
+    <shortdesc>a \c11m\c13e\c06r\c11c\c13h\c06a\c11n\c13t \c03wagon\c00</shortdesc>
+    <actiondesc/>
+    <affectflag>0</affectflag>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objaffect location="NONE" modifier="0"/>
+    <objflags>
+      <values value1="0" value2="0" value3="-1" value4="0"/>
+      <flags type="14" wear="0" extra="2048"/>
+      <data weight="10000" cost="0" questcost="0" timer="0" bitvector="0"/>
+    </objflags>
+  </object>
+</objects>
