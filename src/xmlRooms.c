@@ -391,7 +391,10 @@ static struct room_data *fetchXmlRoom(xmlNodePtr room)
     r->dir_option[i] = NULL;
   }
 
-  for (temp = room->children; NULL != temp; temp = temp->next) {
+  for (temp = xmlFirstElementChild(room); NULL != temp; temp = xmlNextElementSibling(temp)) {  
+    if (!temp || !(temp->name)) {
+      continue;
+    }
     if (!strcasecmp(temp->name,"ROOMBASIC")) {
       fetchRoomBasics(temp,r);
     }
@@ -426,7 +429,9 @@ static void readRoomsFromXml(char *file)
     alog("readRoomsFromXml:[roomproto.c]: Couldn't parse XML-file %s",file);
     return;
   }
-  if (!(root = doc->children)) {
+
+  root = xmlDocGetRootElement(doc);
+  if (NULL == root) {
     alog("readRoomsFromXml:[roomproto.c]: No XML-root in document %s",file);
     xmlFreeDoc(doc);
     return;
@@ -436,7 +441,11 @@ static void readRoomsFromXml(char *file)
     xmlFreeDoc(doc);
     return;
   }
-  for (temp = root->children; NULL != temp; temp = temp->next) {
+
+  for (temp = xmlFirstElementChild(root); NULL != temp; temp = xmlNextElementSibling(temp)) {
+    if (xmlIsBlankNode(temp)) {
+      continue;
+    }
     rm = fetchXmlRoom(temp);
     *(world+last_room_rnum) = *rm;
     /*

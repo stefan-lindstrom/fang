@@ -87,6 +87,10 @@
 
 static char string2command(char *s) 
 {
+  if (!s) {
+    return "*";
+  }
+  
   if (!strcasecmp(s,"ReadMobile")) {
     free(s);
     return 'M';

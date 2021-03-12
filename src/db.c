@@ -1148,30 +1148,30 @@ void index_boot(int mode)
     } 
     else {
        if (mode == DB_BOOT_ZON || mode == DB_BOOT_GLD)
-    rec_count++;
+	 rec_count++;
       else {
-    char bf[1024];
-
+	char bf[1024];
+    
         /* We need to check for XML-saved files here....
          */
-    fgets(bf,1024,db_file);
-    rewind(db_file);
+	fgets(bf,1024,db_file);
+	rewind(db_file);
 
         if (!strncasecmp("<?xml version=\"1.0\"?>",bf,strlen("<?xml version=\"1.0\"?>"))) {
-      /** do some kind of 'cached' count_xml_records here? **/
-      /** Actually we need to check ofr mode here too....for future **/
-      /** xml saving of shops/objs/mobs **/
-
-      if (DB_BOOT_WLD == mode)
-        rec_count += count_xml_roomentries(db_file);
-      if (DB_BOOT_OBJ == mode)
-        rec_count += count_xml_objectentries(db_file);
-      if (DB_BOOT_MOB == mode)
-        rec_count += count_xml_mobileentries(db_file);
-
-      // alog("SYSERR: boot error - %d records counted",rec_count);
+	  /** do some kind of 'cached' count_xml_records here? **/
+	  /** Actually we need to check ofr mode here too....for future **/
+	  /** xml saving of shops/objs/mobs **/
+	  
+	  if (DB_BOOT_WLD == mode)
+	    rec_count += count_xml_roomentries(db_file);
+	  if (DB_BOOT_OBJ == mode)
+	    rec_count += count_xml_objectentries(db_file);
+	  if (DB_BOOT_MOB == mode)
+	    rec_count += count_xml_mobileentries(db_file);
+	  
+	  // alog("SYSERR: boot error - %d records counted",rec_count);
         } else {
-      rec_count += count_hash_records(db_file);
+	  rec_count += count_hash_records(db_file);
         }
       }
     }
@@ -1230,22 +1230,21 @@ void index_boot(int mode)
     }
     else 
     {
-
       /** Before calling discrete_load, we need to check if an XML-saved file... **/
       fgets(bf,1024,db_file);
       rewind(db_file);
     
       if (!strncasecmp("<?xml version=\"1.0\"?>",bf,strlen("<?xml version=\"1.0\"?>"))) {
         if (DB_BOOT_WLD == mode)
-      load_xml_rooms(buf2);
+	  load_xml_rooms(buf2);
         if (DB_BOOT_ZON == mode)
-      load_xml_zone(buf2);
+	  load_xml_zone(buf2);
         if (mode == DB_BOOT_GLD)
-      XmlToGuild(buf2);
+	  XmlToGuild(buf2);
         if (DB_BOOT_OBJ == mode)
-      load_xml_objects(buf2);
+	  load_xml_objects(buf2);
         if (DB_BOOT_MOB == mode)
-      load_xml_mobiles(buf2);
+	  load_xml_mobiles(buf2);
 
         /** call func for parsing and stuffing-into-world-array xml rooms here **/
         /** as above, we need to check for different modes here too... **/ 
@@ -1256,20 +1255,20 @@ void index_boot(int mode)
         case DB_BOOT_OBJ:
         case DB_BOOT_MOB:
         case DB_BOOT_QST:
-      discrete_load(db_file, mode);
-      break;
+	  discrete_load(db_file, mode);
+	  break;
         case DB_BOOT_ZON:
-      load_zones(db_file, buf2);
-      break;
+	  load_zones(db_file, buf2);
+	  break;
         case DB_BOOT_HLP:
-      load_help(db_file);
-      break;
+	  load_help(db_file);
+	  break;
         case DB_BOOT_POL:
-      load_poli(db_file);
-      break;
+	  load_poli(db_file);
+	  break;
         case DB_BOOT_SHP:
-      boot_the_shops(db_file, buf2, rec_count); 
-      break;
+	  boot_the_shops(db_file, buf2, rec_count); 
+	  break;
         }
       }
       fclose(db_file);
@@ -1301,7 +1300,7 @@ void index_boot(int mode)
       if (*buf1 != '$' && (db_file = fopen(buf2, "r")))
       {
         fprintf(new_index, "%s\n", buf1);
-    fclose(db_file);
+	fclose(db_file);
       }
     }
      
