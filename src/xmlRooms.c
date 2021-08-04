@@ -363,7 +363,7 @@ static void fetchRoomExit(xmlNodePtr ex, struct room_data *r)
   new->exit_info = xmlAtoi(xmlGetProp(ex,"exitinfo"));
   new->key       = xmlAtoi(xmlGetProp(ex,"keynum"));
   new->to_room   = xmlAtoi(xmlGetProp(ex,"toroom"));
-  new->general_description = (xmlToString(ex->children->children));
+  new->general_description = (xmlToString(ex->children->next->children));
   r->dir_option[dir] = new;
 }
 
@@ -373,7 +373,7 @@ static void fetchRoomExDesc(xmlNodePtr de,struct room_data *r)
   new = calloc(1,sizeof(struct extra_descr_data));
   
   new->keyword     = xmlGetProp(de,"keyword");
-  new->description = xmlToString(de->children->children);
+  new->description = xmlToString(de->children->next->children);
 
   new->next = r->ex_description;
   r->ex_description = new;
