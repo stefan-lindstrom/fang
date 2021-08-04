@@ -1,0 +1,101 @@
+<?xml version="1.0"?>
+<mobiles>
+  <mobile vnum="2601" name="goat guard" special="NONE">
+    <description>It's a small, tawny goat with really sharp horns and a big dark adorable eyes.
+It's probably the cutest little goat in creation..  Although it does look just
+a -bit- on the vicious side.    
+</description>
+    <shortdesc>a small goat</shortdesc>
+    <longdesc>A small, &amp;Kt&amp;ya&amp;ww&amp;yn&amp;Ky&amp;y goat stands here, sharpening it's horns on the gate post.
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="199" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="1" bonus="0"/>
+      <move ndize="1" dsize="1" bonus="1"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>200</hitroll>
+      <damroll>50</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1040410"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="0" sides="1" add="200"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnEntry" argtype="VOID" argument="NONE">
+      <action number="Emote" argtype="STRING" argument="A small goat bleats at you pathetically, isn't it cute?"/>
+    </mobprog>
+    <mobprog main="OnAction" argtype="STRING" argument="open gate door">
+      <sideterm number="Guild" not="TRUE" argtype="STRING" argument="19"/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="Emote" argtype="STRING" argument="A small goat bleats loudly and lowers it's horns, ready to charge!  You should probably try another farm, this one isn't as friendly as it looks."/>
+      <action number="Shout" argtype="STRING" argument="Bleat!!  Bleatbleatbleat!! "/>
+    </mobprog>
+    <mobprog main="OnAction" argtype="STRING" argument="give goat bread">
+      <action number="Action" argtype="STRING" argument="eat bread"/>
+    </mobprog>
+    <mobprog main="OnSay" argtype="STRING" argument="pretty goat">
+      <action number="Emote" argtype="STRING" argument="The goat bleats pathetically and trots closer, nuzzling it's little cold nose against your hand."/>
+      <action number="Force" argtype="STRING" argument="doing a good friend of the goat."/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="2603" name="guard dish dishwaser darrin boy" special="NONE">
+    <description>Darrin's small and wiry, in his early teens, and wears an expression of unruly
+distress - probably because he's up to his elbows in dirty dishes.    
+</description>
+    <shortdesc>a young boy washing dishes</shortdesc>
+    <longdesc>Darrin, a less than pleased youngster, stands at the sink washing dishes.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="1" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="1" bonus="1"/>
+      <move ndize="1" dsize="1" bonus="1"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="2072586"/>
+    <affected one="48" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnAction" argtype="STRING" argument="read board ">
+      <sideterm number="Guild" not="TRUE" argtype="STRING" argument="19"/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="Emote" argtype="STRING" argument="No.  You shouldn't be reading that."/>
+    </mobprog>
+  </mobile>
+</mobiles>

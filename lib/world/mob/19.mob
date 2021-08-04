@@ -1,0 +1,2991 @@
+<?xml version="1.0"?>
+<mobiles>
+  <mobile vnum="1900" name="man old Creator1" special="NONE">
+    <description>This old man looks swathed in a long robe the same changing colors of the
+fog behind him. He has thickly stranded white hair and a long snowy beard
+and stands perhaps six feet tall. Despite the aged lines on his face, his
+brown eyes sparkle with youthful curiosity and an exuberance for life. He
+has a nearly constant smile on his face, appearing friendly and helpful.
+</description>
+    <shortdesc>a wise old man</shortdesc>
+    <longdesc>&amp;yThe old man watches you quietly from where he floats, ready to help.&amp;n (Level 200)
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="200" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="20" dsize="1000" bonus="5000"/>
+      <move ndize="1" dsize="5000" bonus="5000"/>
+      <ac>-200</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>50</hitroll>
+      <damroll>50</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="2089034"/>
+    <affected one="268501040" two="0" three="0" four="0"/>
+    <attack type="5"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="30" sides="50" add="50"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnEntry" argtype="STRING" argument="hug amber">
+      <action number="SayTo" argtype="STRING" argument="Welcome young one! The first thing you should do is type &amp;WHELP NEWBIE&amp;n. Read it in full and consider reading any other sections it suggests."/>
+      <action number="SayTo" argtype="STRING" argument="Then type &amp;WPOLICY&amp;n, for every game has rules and you are expected to know them too."/>
+      <action number="SayTo" argtype="STRING" argument="You may also want to read the sections in &amp;WINFO&amp;n now, but I suggest you wait until after you have completed this tutorial. The passages there will give you some information on the Roleplay and characters that exist in the Wheel of Time series."/>
+      <action number="SayTo" argtype="STRING" argument="When you&apos;ve finished, just type &amp;WSAY DONE&amp;n."/>
+      <action number="Action" argtype="STRING" argument="emote smiles."/>
+    </mobprog>
+    <mobprog main="OnSay" argtype="STRING" argument="done">
+      <action number="SayTo" argtype="STRING" argument="Excellent! When you are ready to move on, simply type &amp;WNORTH&amp;n. Do not be nervous if my appearance changes as we continue; everyone changes as they journey through life."/>
+      <action number="SayTo" argtype="STRING" argument="Before we go though, make certain you have read the plaque. Each room has one, all filled with interesting information, even for you."/>
+      <action number="Action" argtype="STRING" argument="emote winks."/>
+    </mobprog>
+    <mobprog main="OnActionTo" argtype="STRING" argument="look">
+      <action number="ActionTo" argtype="STRING" argument="send A wise old man smiles, &apos;Good, you&apos;ve discovered Look! Now try seeing my description (but not my equipment) without me knowing about it! Type &amp;WGLANCE MAN&amp;n to try!&apos;"/>
+    </mobprog>
+    <mobprog main="OnActionTo" argtype="STRING" argument="glance">
+      <action number="ActionTo" argtype="STRING" argument="send A wise old man exclaims, &apos;You&apos;ve got it! Head &amp;WNORTH&amp;n now to continue!&apos;"/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="1901" name="man old creator2" special="NONE">
+    <description>The old man, as before, is tall but somewhat grizzled, with rough white
+hair and a long flowing beard. His robe seems to have settled to a simple
+hue of grey, and it covers him all the way to the floor so that if he moves
+he almost looks like he is floating. He holds a long, commonplace walking
+stick in his left hand, fingers resting comfortably. His expression is one
+of a man with an eternity of patience.
+</description>
+    <shortdesc>a wise old man</shortdesc>
+    <longdesc>&amp;yThe same old man stands here, smiling and waiting for you to say something.&amp;n (Level 200)
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="200" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="20" dsize="1000" bonus="5000"/>
+      <move ndize="1" dsize="5000" bonus="5000"/>
+      <ac>-200</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>100</hitroll>
+      <damroll>50</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1753162"/>
+    <affected one="268501040" two="0" three="0" four="0"/>
+    <attack type="5"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="30" sides="100" add="100"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnSay" argtype="STRING" argument="start">
+      <action number="SayTo" argtype="STRING" argument="I will now teach you about communication on the mud! You typed &amp;WSAY&amp;n just now to talk to me. SAY is useful for talking to everyone in the same room as you."/>
+      <action number="SayTo" argtype="STRING" argument="It is also possible to direct your Say to a certain person, as I am doing with you. Give it a try and we&apos;ll move on. Type &amp;WSAYTO MAN READY&amp;n."/>
+      <action number="Pause" argtype="INT" argument="2"/>
+      <action number="Action" argtype="STRING" argument="emote smiles. "/>
+    </mobprog>
+    <mobprog main="OnSayTo" argtype="STRING" argument="ready">
+      <action number="ActionTo" argtype="STRING" argument="tell Good! You can also use the &amp;WTELL&amp;r command to send a message just to one person. Your message will be hidden from everyone else this way, and you can talk to anyone anywhere in the game.&amp;n"/>
+      <action number="ActionTo" argtype="STRING" argument="send A wise old man whispers to you, &apos;Or you can send a private message to someone in the same room as you by whispering it. Beware though, some special people have very good ears!&apos;"/>
+      <action number="ActionTo" argtype="STRING" argument="send A wise old man whispers to you, &apos;Try it out! Type &amp;WWHISPER MAN READY&amp;n and we&apos;ll continue.&apos;"/>
+    </mobprog>
+    <mobprog main="OnActionTo" argtype="STRING" argument="whisper">
+      <action number="Action" argtype="STRING" argument="osay Finally, you can Say a message Out-Of-Character with the &amp;WOSAY&amp;n command, like I am doing. This takes your words out of context of the roleplay around you. You will learn more about this roleplay later, but give it a try!"/>
+      <action number="Action" argtype="STRING" argument="osay Type &amp;WOSAY READY&amp;n and we will move on."/>
+    </mobprog>
+    <mobprog main="OnAction" argtype="STRING" argument="osay">
+      <action number="SayTo" argtype="STRING" argument="Excellent! You now know the basics of speech. You may also use Channels to communicate with other players on the game, such as OOC, QUESTION, AUCTION, GDT and SING."/>
+      <action number="SayTo" argtype="STRING" argument="&amp;WOOC&amp;n is the most common channel; you may have seen it used already. It can be seen by everyone on the game, unless they have tuned themselves out from it by typing &amp;WTOGGLE OOC&amp;n (toggle OOC channel off)."/>
+      <action number="SayTo" argtype="STRING" argument="You can toggle most channels on and off with the prefix TOGGLE. I suggest you read &amp;WHELP COMMUNICATION&amp;n to understand how each are used."/>
+      <action number="Pause" argtype="INT" argument="3"/>
+      <action number="Say" argtype="STRING" argument="And that ends my tutorial on communication!  If you&apos;re done, just go north and &amp;WSAY DONE&amp;n. But if not, go either &amp;WEAST&amp;n, &amp;WSOUTH&amp;n, or &amp;WWEST&amp;n, and type &amp;WSAY START&amp;n."/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="1902" name="man creator3" special="NONE">
+    <description>This man looks to have seen perhaps forty winters, his light brown hair
+streaked with grey over his ears and dotting the full but well trimmed
+beard covering his chin. His eyes are a bright, sharp blue and they study
+you appreciatively as he stands there silent, seeming to wait for something
+to happen. He is wrapped in an impressive scarlet robe that flames light
+to dark from his feet to his shoulders. A walking staff is held in his
+left hand, two ornate crane feathers dangling from its tip.
+</description>
+    <shortdesc>a middle aged man</shortdesc>
+    <longdesc>A middle-aged man greets you with a wave of his walking staff.
+</longdesc>
+    <title/>
+    <chardata gender="NEUTRAL" class="Adventurer" level="200" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="30" dsize="1000" bonus="5000"/>
+      <move ndize="1" dsize="5000" bonus="5000"/>
+      <ac>-200</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>100</hitroll>
+      <damroll>50</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1106010"/>
+    <affected one="268501040" two="0" three="0" four="0"/>
+    <attack type="5"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="30" sides="100" add="100"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnSay" argtype="STRING" argument="start">
+      <action number="SayTo" argtype="STRING" argument="Now I will teach you two important lessons: getting hungry and thirsty, and how to use doors."/>
+      <action number="Action" argtype="STRING" argument="echo Fog and haze seem to coalesce up from thin air, solidifying into a wide door that blocks any passage back west."/>
+      <action number="Action" argtype="STRING" argument="close door w"/>
+      <action number="Action" argtype="STRING" argument="lock door w"/>
+      <action number="Pause" argtype="INT" argument="2"/>
+      <action number="Action" argtype="STRING" argument="emote smiles. &apos;Don&apos;t worry about that door. Let&apos;s start with hunger and thirst first. Type &amp;WSAY READY&amp;n when you are ready for me to begin.&apos;"/>
+    </mobprog>
+    <mobprog main="OnSay" argtype="STRING" argument="ready">
+      <action number="SayTo" argtype="STRING" argument="In the course of the game you will see messages like &apos;&amp;cYou are hungry.&amp;n&apos; and &apos;&amp;cYou are thirsty.&amp;n&apos; This means you need to eat or drink something, respectively."/>
+      <action number="Action" argtype="STRING" argument="emote waves a hand at the small fountain grown out of the thread. &apos;Many cities have fountains, and many places in the wilderness have wells or springs you can drink from simply by typing &amp;WDRINK &lt;object&gt;&amp;n, (in this case &lt;object&gt; = Fountain).&apos;"/>
+      <action number="SayTo" argtype="STRING" argument="You can also carry water around with you by filling up a waterskin in your inventory. You should have one now. Let&apos;s learn how to use it. First, it is probably full already. Type &amp;WPOUR WATERSKIN OUT.&amp;n"/>
+    </mobprog>
+    <mobprog main="OnAction" argtype="STRING" argument="pour waterskin out">
+      <action number="Action" argtype="STRING" argument="emote smiles. "/>
+      <action number="Action" argtype="STRING" argument="emote smiles. &apos;Good! Now, type &amp;WFILL WATERSKIN FOUNTAIN&amp;n. Fill, obviously, is the command to fill some liquid container with a liquid. You can also Pour liquid from one container to another if you acquire two. For information on that, type &amp;WHELP POUR&amp;n.&apos;"/>
+    </mobprog>
+    <mobprog main="OnAction" argtype="STRING" argument="fill waterskin fountain">
+      <action number="SayTo" argtype="STRING" argument="You&apos;ve got it! Now your waterskin is completely full of water! Let&apos;s move onto food when you get hungry."/>
+      <action number="SayTo" argtype="STRING" argument="Often you can find food either growing in the wild or for sale at shops or inns. For now though, have a cookie."/>
+      <action number="Give" argtype="INT" argument="1906"/>
+      <action number="Pause" argtype="INT" argument="5"/>
+      <action number="Action" argtype="STRING" argument="emote smiles. &apos;In order to get rid of your hunger, simply type &amp;WEAT &lt;food&gt;&amp;n. Like right now, type &amp;WEAT COOKIE&amp;n.&apos;"/>
+    </mobprog>
+    <mobprog main="OnAction" argtype="STRING" argument="eat cookie">
+      <action number="ActionTo" argtype="STRING" argument="send After taking a few bites you hit something hard! Extracting it from your mouth, you find it is a key."/>
+      <action number="Give" argtype="INT" argument="1907"/>
+      <action number="Pause" argtype="INT" argument="4"/>
+      <action number="Action" argtype="STRING" argument="emote clears his throat. &apos;So that is where my key went! Well, that will let you unlock the door to leave. All you have to do is type &amp;WUNLOCK DOOR&amp;n, then type &amp;WOPEN DOOR&amp;n.&apos;"/>
+      <action number="Say" argtype="STRING" argument="If you are in a room with more than one door it may be easier to specify the direction, such as &amp;WUNLOCK DOOR WEST&amp;n and &amp;WOPEN DOOR WEST&amp;n."/>
+      <action number="Say" argtype="STRING" argument="You&apos;ll note that you do not need to use the phrase &apos;&amp;cWith Key&amp;n&apos; when unlocking a door. Even if you have multiple keys, you will automatically use the right one."/>
+    </mobprog>
+    <mobprog main="OnAction" argtype="STRING" argument="open door">
+      <action number="SayTo" argtype="STRING" argument="That&apos;s it, good job! This ends my tutorial on hunger, thirst, and doors!"/>
+      <action number="Action" argtype="STRING" argument="emote waves."/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="1903" name="man creator4" special="NONE">
+    <description>This man gives you a nod and a smile as you glance at him, an almost
+fatherly expression curving his aging features. He has coarse brown
+hair that he keeps well trimmed to diminish the effects of the grey
+growing in. A full beard covers his chin and lips, and when he stands
+straight he looks as good 183cm, or six feet, tall. He holds a sturdy
+walking staff and wears a natural robe that shimmers from light to
+dark green with each motion he makes.
+</description>
+    <shortdesc>a middle aged man</shortdesc>
+    <longdesc>&amp;yA middle aged man stands among the thin strands of the false center, waiting.&amp;n (Level 200)
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="200" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="20" dsize="1000" bonus="5000"/>
+      <move ndize="1" dsize="5000" bonus="5000"/>
+      <ac>-200</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>100</hitroll>
+      <damroll>50</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1105994"/>
+    <affected one="268501040" two="0" three="0" four="0"/>
+    <attack type="5"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="30" sides="100" add="100"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnSay" argtype="STRING" argument="start">
+      <action number="SayTo" argtype="STRING" argument="Welcome! I will now teach you about your character score and statistics!"/>
+      <action number="Pause" argtype="INT" argument="3"/>
+      <action number="Say" argtype="STRING" argument="Typing &amp;WINVENTORY&amp;n shows you a list of all items you are carrying. If you have bags or other containers in that list, you can check their inventory by typing &amp;WLOOK IN &lt;container&gt;&amp;n. To take an item out, just type &amp;WGET &lt;item&gt; &lt;container&gt;&amp;n. To put something in, type &amp;WPUT &lt;item&gt; &lt;container&gt;&amp;n. How much you can carry is determined by your Strength, as it takes some muscle to drag around items that weigh a lot."/>
+      <action number="Pause" argtype="INT" argument="14"/>
+      <action number="Say" argtype="STRING" argument="Typing &amp;WEQUIPMENT&amp;n, or &amp;WEQ&amp;n for short, will show what you are currently wearing. You can find all sorts of unique equipment in shops or on the corpses of monsters you kill, and you can also ask a craftsman to alter an item or make something completely new for you (type &amp;WHELP TOOL, HELP CRAFT&amp;n for more information). Equipment plays a role in your ability to do damage and protect yourself in a fight. Some EQ also raises or lowers your statistics. You can wear EQ by typing &amp;WEQUIP/HOLD/WIELD &lt;item&gt;&amp;n and remove it by typing &amp;WREMOVE &lt;item&gt;&amp;n."/>
+      <action number="Pause" argtype="INT" argument="14"/>
+      <action number="Say" argtype="STRING" argument="Typing &amp;WSCORE&amp;n, or &amp;WSC&amp;n, will give you all the statistics and information relevant to your character. Go ahead and take a look. Type &amp;WSCORE&amp;n now!"/>
+    </mobprog>
+    <mobprog main="OnAction" argtype="STRING" argument="score">
+      <sideterm number="Carrying" not="TRUE" argtype="INT" argument="1910"/>
+      <action number="Give" argtype="INT" argument="1910"/>
+      <action number="SayTo" argtype="STRING" argument="Great! As you can see, there is a lot of information here. You can learn more about specific parts by either looking at their Help files (like &amp;WHELP AC&amp;n) or asking me by &amp;WSAY&amp;ning to me one word, such as &amp;WTIME, EXP, STRENGTH, HITP, QUESTPOINTS&amp;n, etc."/>
+      <action number="Pause" argtype="INT" argument="6"/>
+      <action number="Action" argtype="STRING" argument="emote smiles. &apos;I can also explain more about Score if you Say the word &amp;WEXTRAS&amp;n.&apos;"/>
+      <action number="Say" argtype="STRING" argument="Otherwise, this tutorial is over! You are free to ask me questions or move on."/>
+      <action number="Action" argtype="STRING" argument="emote adds, &apos;You can see my suggested list of things to ask again by typing &amp;WSAY SCORE&amp;n,&apos; then waits patiently."/>
+    </mobprog>
+    <mobprog main="OnSay" argtype="STRING" argument="name homeland sex class">
+      <action number="SayTo" argtype="STRING" argument="Your name, homeland, gender, and Class are all choices you made during Creation when you first entered the game. They will never change in the course of the game, and just help to remind you who you are."/>
+      <action number="Action" argtype="STRING" argument="emote winks at you."/>
+    </mobprog>
+    <mobprog main="OnSay" argtype="STRING" argument="time age">
+      <action number="SayTo" argtype="STRING" argument="The Time Played line shows how many hours and days you have had your character online since you first created. Age increases by the Time Played and does not actually reflect the age your character is; you get to decide that in roleplay."/>
+    </mobprog>
+    <mobprog main="OnSay" argtype="STRING" argument="stats strength constitution dexterity intelligence wisdom charisma str con dex int wis cha hitp mana move">
+      <action number="SayTo" argtype="STRING" argument="The two numbers next to the six Stats, as your Strength, Constitution, etc are generally termed, show your base # in the stat and the # it really is with the affections of equipment and spells. For instance, if I have a Strength: 20/18, that means I really have 18 Strength, but with the gauntlets I have on my hands that give +2 STR, my Strength is at 20."/>
+      <action number="Pause" argtype="INT" argument="8"/>
+      <action number="Say" argtype="STRING" argument="Stats all max out at 30 unless you are an Ogier, so use your trains and order your equipment wisely! For information on how each specific Stat helps, type &amp;WHELP STATISTICS&amp;n."/>
+      <action number="Pause" argtype="INT" argument="6"/>
+      <action number="Say" argtype="STRING" argument="The other stats you see, your hitpoints, mana, and move, have to do with your general health. Hitpoints are your life. If they reach 0 you die. Mana are magical points used by Channelers. When they reach 0 a channeler may lose his magical ability if unlucky. Movement points are your endurance. When they reach 0 you become too tired to move around and must rest or sleep."/>
+    </mobprog>
+    <mobprog main="OnSay" argtype="STRING" argument="exp level trains practices experience">
+      <action number="SayTo" argtype="STRING" argument="The Exp line tells you how much experience total you have accumulated from killing mobs or roleplaying. The To Level line tells you how much more experience you need to get before you gain a level. Levels are very important codewise as they basically say how big your character is. You can gain up to 199 levels on this mud."/>
+      <action number="Pause" argtype="INT" argument="8"/>
+      <action number="Say" argtype="STRING" argument="You gain trains and practices each time you level, which you can use towards many different things. Go visit the Southern Pattern to learn more about this and leveling. In your score, these lines just tell you how many trains and pracs you have."/>
+    </mobprog>
+    <mobprog main="OnSay" argtype="STRING" argument="gold bank">
+      <action number="SayTo" argtype="STRING" argument="Gold tells you how much money you are carrying, which is useful for buying items and food. Bank tells you how much money you have deposited in a bank. Type &amp;WHELP BANK&amp;n to understand how to use one. Putting your money in a bank is a good idea because you can lose your gold to thieves or when you die."/>
+    </mobprog>
+    <mobprog main="OnSay" argtype="STRING" argument="abs ac hit dam">
+      <action number="SayTo" argtype="STRING" argument="For these it is best to read individual Help files, such as &amp;WHELP AC&amp;n. Your AC defines your general armoring, while ABS defines how well your armor absorbs hits. Hitroll and Damroll are important for your fighting success and damage. It is generally good to have a negative number in AC and high positive numbers in the rest."/>
+    </mobprog>
+    <mobprog main="OnSay" argtype="STRING" argument="air earth fire spirit water channel channeling">
+      <action number="SayTo" argtype="STRING" argument="If you are a channeler, you undoubtedly see a line at the bottom of your Score sheet that says you can channel, and gives a list of the five flows. The best way to understand this is to type &amp;WHELP CHANNELING&amp;n and &amp;WHELP FLOWS&amp;n, and also to visit the Northern Pattern."/>
+    </mobprog>
+    <mobprog main="OnSay" argtype="STRING" argument="extras">
+      <action number="SayTo" argtype="STRING" argument="There are a number of lines that can show up later in your life on this mud. For example, when you join a guild, what guild you are in and your rankings will appear. Any special talents you may have, like being Goldeneyed or a Ta&apos;veren, may also appear after level 20. The final line at the bottom that says &apos;&amp;RYou will kill your opponents in battle&amp;n&apos; refers to player-fights. Type &amp;WHELP SUBDUE&amp;n for information on that. For all the rest, if something odd shows up, simply ask about it on the Question channel. Score just keeps track of everything set on you."/>
+      <action number="Pause" argtype="INT" argument="9"/>
+      <action number="Say" argtype="STRING" argument="Another line that can show up is one that tells you what &amp;WTALENTS&amp;n you have. In your background or through training, you can bring out certain talents that you choose for your character. For information, type &amp;WHELP TALENTS&amp;n."/>
+    </mobprog>
+    <mobprog main="OnSay" argtype="STRING" argument="score">
+      <action number="SayTo" argtype="STRING" argument="To see what I have to say, just &amp;WSAY&amp;n any line on the score sheet, such as &amp;WTIME, EXP, HITP, QUESTPOINTS, STRENGTH, AC&amp;n, etc. You can also &amp;WSAY EXTRAS&amp;n for an explanation of score lines that show up later in the game!"/>
+    </mobprog>
+    <mobprog main="OnSay" argtype="STRING" argument="questpoints qp">
+      <action number="SayTo" argtype="STRING" argument="Questpoints are rewards given by immortals for good Roleplay or winning a quest. You can use these QP to buy special quest equipment and skills, which are generally much better than regular equipment and stronger than regular skills. Type &amp;WHELP QUESTS&amp;n for more information."/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="1904" name="man middle creator5" special="NONE">
+    <description>This man suspiciously resembles the elder having assisted you before,
+as well as those in other sections of the Pattern. He stands tall and
+with confidence, both hands resting idly on the top of a simple but
+sturdy walking staff, long fingers playing with one of two red crane
+feathers dangling from the handle. He wears a shimmering robe of blues
+that, like a waterfall, sparkle different hues with his movements.
+There is a wisdom in his face, and he smiles amiably.
+</description>
+    <shortdesc>a middle aged man</shortdesc>
+    <longdesc>&amp;yA man in his middle years nods, pleased with your presence.&amp;n (Level 200)
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="200" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="20" dsize="1000" bonus="5000"/>
+      <move ndize="1" dsize="5000" bonus="5000"/>
+      <ac>-200</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>100</hitroll>
+      <damroll>50</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1105994"/>
+    <affected one="268501040" two="0" three="0" four="0"/>
+    <attack type="5"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="30" sides="100" add="100"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnSay" argtype="STRING" argument="start">
+      <action number="SayTo" argtype="STRING" argument="Welcome! I am going to teach you about the code aspects of this game, that is, leveling and gaining and practicing skills!"/>
+      <action number="Pause" argtype="INT" argument="5"/>
+      <action number="Say" argtype="STRING" argument="You gain levels as you accumulate &amp;WEXPERIENCE&amp;n. You get EXP either by killing non-player monsters (called Mobs) or by Roleplaying with other people."/>
+      <action number="Pause" argtype="INT" argument="7"/>
+      <action number="Say" argtype="STRING" argument="Levels are gained automatically when you get enough EXP. You can check how much more EXP you need by typing &amp;WSCORE&amp;n and reading the &apos;&amp;cTo Level:&amp;n&apos; line."/>
+      <action number="Pause" argtype="INT" argument="7"/>
+      <action number="Say" argtype="STRING" argument="You can gain up to 199 levels here. With each level your hitpoints, movement, and mana (if you can use magic) go up, and you also gain &amp;WTRAINS&amp;n and &amp;WPRACTICES&amp;n which can be used towards increasing your statistics, practicing skills, or gaining entirely new skills."/>
+      <action number="Pause" argtype="INT" argument="9"/>
+      <action number="Say" argtype="STRING" argument="There are many important commands and stats to know. I suggest you read the Help files on &amp;WTRAINS, PRACTICES, GAINING, SKILLS, &amp;nand &amp;WSPELLS&amp;n. When you feel comfortable with this information, just &amp;WSAY DONE&amp;n."/>
+    </mobprog>
+    <mobprog main="OnSay" argtype="STRING" argument="done">
+      <action number="SayTo" argtype="STRING" argument="Great! I hope you found that information useful! If you do have more questions, you can always ask on the Question channel. There are trainer mobs you can go to to use your trains and practices. The most commonly used one can be found by going: recall, u, n, w, w, sw. Remember you can return to the Newbie Zones by typing recall newbie."/>
+      <action number="Pause" argtype="INT" argument="6"/>
+      <action number="Say" argtype="STRING" argument="And this ends my tutorial on Trains, Practices, and Leveling!"/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="1905" name="man middle creator6" special="NONE">
+    <description>This man resembles all the others seen among the different regions of the
+Pattern, with the same light brown hair streaked grey, sparkling light
+blue eyes, and a strong if fatherly build. His beard looks well kept, not
+quite hiding a nearly constant smile on his lips. The way he holds his
+head high he seems perfectly confident, controlled, and calm, a man
+filled with knowledge and experience. He wears a robe of yellows from
+soft to brilliant, and leans his hands idly on a walking staff.
+</description>
+    <shortdesc>a middle aged man</shortdesc>
+    <longdesc>&amp;yA middle aged man beckons to you with his staff and waits for you to speak.&amp;n (Level 200)
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="200" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="20" dsize="0" bonus="5000"/>
+      <move ndize="1" dsize="5000" bonus="5000"/>
+      <ac>-200</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>100</hitroll>
+      <damroll>50</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="5300298"/>
+    <affected one="268501040" two="0" three="0" four="0"/>
+    <attack type="5"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="30" sides="100" add="100"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnSay" argtype="STRING" argument="start">
+      <action number="SayTo" argtype="STRING" argument="I am going to teach you about Channeling! Channeling is the same as magic using by Mages and Clerics on other muds, only it has a few extra commands available for you to use."/>
+      <action number="Pause" argtype="INT" argument="6"/>
+      <action number="Action" argtype="STRING" argument="emote smiles. &apos;If you cannot Channel and/or do not want to hear this tutorial to move on, simply &amp;WSAY DONE&amp;n. Otherwise, &amp;WSAY READY&amp;n and we&apos;ll continue!&apos;"/>
+      <action number="Pause" argtype="INT" argument="2"/>
+      <action number="Say" argtype="STRING" argument="Careful, &amp;WSAY&amp;ning&amp;W DONE&amp;n means you are set to move on -entirely- from the tutorials here in the Pattern. If you aren&apos;t ready, I suggest you leave and finish up other tutorials before doing this one. You don&apos;t have to type anything, just go &amp;WSOUTH&amp;n."/>
+    </mobprog>
+    <mobprog main="OnSay" argtype="STRING" argument="ready">
+      <action number="SayTo" argtype="STRING" argument="Channeling works by weaving a combination of five different flows together to produce a desired effect. The five flows are &amp;YAir, &amp;cWater, &amp;rFire, &amp;GEarth, &amp;nand &amp;WSpirit&amp;n. You can read up on these as well as channeling itself by typing &amp;WHELP CHANNELING&amp;n or reading the excerpts in the &amp;WINFO&amp;n section."/>
+      <action number="Pause" argtype="INT" argument="14"/>
+      <action number="Say" argtype="STRING" argument="In order to cast a spell the first thing you need to do is be in tune with the One Power. To do this, type &amp;WGRASP&amp;n. If successful, you will hold some Power. While grasping, you will lose mana every few ticks. I should warn you in advance, you do not want your mana to reach 0, or you may lose your ability to Channel. In order to stop this loss, type &amp;WRELEASE&amp;n and you will lose your grasp on the Power. You must then grasp again to cast a spell."/>
+      <action number="Pause" argtype="INT" argument="16"/>
+      <action number="Say" argtype="STRING" argument="Luckily, it is possible for you to cast your spell and the game will have you grasp automatically. However you will still need to Release on your own. To cast a spell, use the &amp;WWEAVE&amp;n command: &amp;WWEAVE &apos;&lt;spell&gt;&apos; &lt;target&gt;&amp;n. Say you want to weave Wrap on me. You would type: &amp;Wweave &apos;wrap&apos; man&amp;n."/>
+      <action number="Pause" argtype="INT" argument="16"/>
+      <action number="Say" argtype="STRING" argument="Spells like Wrap are called Maintainable, in that they will stay on your target as long as you are grasping. You will lose mana every few seconds if you do not do anything. If you want the spell to stay on your target but not have to worry about it, just &amp;WTIE&amp;n it off by typing &amp;WTIE &apos;&lt;spell&gt;&apos; &lt;target&gt;&amp;n."/>
+      <action number="Pause" argtype="INT" argument="17"/>
+      <action number="Say" argtype="STRING" argument="If you know your spell is Maintainable, you can also just cast it to tie off immediately by using the &amp;WTIEWEAVE&amp;n command. This works the same as Weaving, like: &amp;WTIEWEAVE &apos;&lt;spell&gt;&apos; &lt;target&gt;&amp;n."/>
+      <action number="Pause" argtype="INT" argument="10"/>
+      <action number="Say" argtype="STRING" argument="Finally, in order to remove a spell that you tied on yourself, someone else, or the room, type &amp;WUNRAVEL &apos;&lt;spell&gt;&apos; &lt;target&gt;&amp;n."/>
+      <action number="Say" argtype="STRING" argument="If you want to hear more, &amp;WSAY MORE&amp;n, otherwise, feel free to &amp;WSAY DONE&amp;n and move on!"/>
+    </mobprog>
+    <mobprog main="OnSay" argtype="STRING" argument="more">
+      <action number="Action" argtype="STRING" argument="emote smiles brightly and continues."/>
+      <action number="SayTo" argtype="STRING" argument="Channeling on this mud is just the same as choosing to learn the sword. In Roleplay, characters begin their lives not knowing much, if anything, about their channeling abilities."/>
+      <action number="Pause" argtype="INT" argument="8"/>
+      <action number="Say" argtype="STRING" argument="That is why most channelers, at least for their first channeling characters, join one of the guilds that focuses on this ability. You can learn more by reading each Guild helpfile. These guilds are: Aes Sedai, Kin, Aiel, and Seanchan for women, and Asha&apos;man for men."/>
+      <action number="Pause" argtype="INT" argument="11"/>
+      <action number="Say" argtype="STRING" argument="In order to better understand the Roleplay specifics of Channeling, you should read &amp;WHELP CHANNELING&amp;n and the &amp;WINFO&amp;n excerpts about Wheel of Time history and Channeling. However, in brief, the One Power is what you grasp when you channel. It is separated into two forms, Saidar and Saidin. Saidar is the female half and has been used for generations. Saidin is the male half. It was tainted thousands of years ago and now all men who can use it eventually go insane. These men were shunned from society until just recently."/>
+      <action number="Pause" argtype="INT" argument="18"/>
+      <action number="Say" argtype="STRING" argument="This is why there is only one guild dedicated to men who can channel, though channeling men can also join the evil ranks of the Dark One if they so choose. You should also know that when a woman grasps, other women can see a golden aura around her, while when a man grasps, men only feel something menacing from him. Men and women cannot see someone of the opposite gender channel, though men can sense something is happening; women have no warning at all."/>
+      <action number="Pause" argtype="INT" argument="18"/>
+      <action number="Action" argtype="STRING" argument="emote smiles. &apos;That is all I can explain here. Better detail can be found in those files or just by asking other players. Remember that learning to Channel takes time, but once you learn it it can be a lot of fun to use.&apos;"/>
+      <action number="Say" argtype="STRING" argument="This ends my tutorial! Either head &amp;WSOUTH&amp;n for a different tutorial, then come back and &amp;WSAY DONE&amp;n to leave, or just &amp;WSAY DONE&amp;n now!"/>
+    </mobprog>
+    <mobprog main="OnSay" argtype="STRING" argument="done">
+      <action number="SayTo" argtype="STRING" argument="Ready to move on? Okay! It is time for you to leave the Pattern!"/>
+      <action number="Action" argtype="STRING" argument="emote grasps Saidin without moving a muscle, the tainted power rushing into him."/>
+      <action number="Pause" argtype="INT" argument="3"/>
+      <action number="Action" argtype="STRING" argument="echo A bright white line suddenly appears and spins outwards, forming a gaping hole in the air!"/>
+      <action number="Pause" argtype="INT" argument="3"/>
+      <action number="Say" argtype="STRING" argument="This is a spell called Gate. If you are a good enough channeler you can use it to go anywhere in the world. Type &amp;WENTER GATE&amp;n now!"/>
+    </mobprog>
+    <mobprog main="OnAction" argtype="STRING" argument="enter">
+      <action number="ActionTo" argtype="STRING" argument="send Oh wait, yes there is! You step forwards and through the window-like opening, finding yourself.."/>
+      <action number="ActionTo" argtype="STRING" argument="teleport 1907"/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="1906" name="man young creator7" special="NONE">
+    <description>This young man could not have seen more than twenty winters. His face
+is familiar for some reason, with bright blue eyes and a chin and mouth
+bordered by a thin goatee. His light brown hair is cropped short and
+ruffled by wind. He wears an off-white farm shirt and sturdy breeches
+which he has tucked into crisp leather boots. He sits like a boy
+without a care in the world, though something in his face betrays a
+kind of wisdom beyond his years.
+</description>
+    <shortdesc>a young man</shortdesc>
+    <longdesc>&amp;yA young man sprawls lazily in the grass, smiling at you.&amp;n (Level 200)
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="200" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="20" dsize="1000" bonus="5000"/>
+      <move ndize="1" dsize="5000" bonus="5000"/>
+      <ac>-200</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>100</hitroll>
+      <damroll>50</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1105994"/>
+    <affected one="268501040" two="0" three="0" four="0"/>
+    <attack type="5"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="30" sides="100" add="100"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnAction" argtype="STRING" argument="get take">
+      <action number="Action" argtype="STRING" argument="emote shakes his head and puts a hand over the staff. &apos;This is not for you.&apos;"/>
+    </mobprog>
+    <mobprog main="OnSay" argtype="STRING" argument="start">
+      <action number="Action" argtype="STRING" argument="emote smiles warmly at you. &apos;Hello and welcome to your past!&apos;"/>
+      <action number="Pause" argtype="INT" argument="2"/>
+      <action number="Say" argtype="STRING" argument="Have you thought about your past at all yet? It is a very important aspect of your life here on a Dragon&apos;s Fang. Having a past will help you start your Roleplay with other players off better, and give you a way to flesh your character out in the future."/>
+      <action number="Pause" argtype="INT" argument="10"/>
+      <action number="Say" argtype="STRING" argument="There are two things you ought to consider before you start to Roleplay. These are your &amp;WBACKGROUND&amp;n and your &amp;WDESCRIPTION&amp;n."/>
+      <action number="Pause" argtype="INT" argument="7"/>
+      <action number="Say" argtype="STRING" argument="Your &amp;WBackground&amp;n: Where are you from? What was your family like? Do or did you have siblings? What did you do as a child? Do you have an education? What did you enjoy and fear and aspire for in your past? What made you leave the first years of your life to come to where you are today?"/>
+      <action number="Say" argtype="STRING" argument="Your Background will become necessary for you to write if you want to join a Guild. It is a prerequisite with almost all guilds that you show the Leader you have a beginning for your character that led to you wanting to join his or her guild."/>
+      <action number="Pause" argtype="INT" argument="20"/>
+      <action number="Say" argtype="STRING" argument="And your &amp;WDescription&amp;n: What do you look like? Are you stocky, thin, muscular, rotund, wiry? Do you have piercing eyes, soft eyes, brown eyes, blue? How about your hair? Do you have markings people can see? What clothing do you wear? Is there something remarkable about your actions, like a limp if you walk, or an involuntary shake, or a broken arm? What can people see when they look at you?"/>
+      <action number="Pause" argtype="INT" argument="18"/>
+      <action number="Say" argtype="STRING" argument="You can write yourself a description by typing &amp;WDESCRIPTION&amp;n, or &amp;WDESC&amp;n for short. I suggest first you do two things. Read &amp;WHELP DESCRIPTION&amp;n and &amp;WHELP EDITING&amp;n to both see an example and understand how to use the description text-editor."/>
+      <action number="Pause" argtype="INT" argument="10"/>
+      <action number="Say" argtype="STRING" argument="Feel free to write a Description now. I do not require it, but it would be good practice for you. You should have a description before you start Roleplaying. When you are ready to move on, just &amp;WSAY DONE&amp;n."/>
+    </mobprog>
+    <mobprog main="OnSay" argtype="STRING" argument="done">
+      <action number="Action" argtype="STRING" argument="emote smiles. &apos;Ready to continue? Of course you do not need to have your background and description set in stone right now. You may find your decisions about your character changing after you begin to Roleplay, and that is fine! The point of Roleplay is to let you live out a life with your character, a life you make as you go along.&apos;"/>
+      <action number="Pause" argtype="INT" argument="6"/>
+      <action number="Say" argtype="STRING" argument="My tutorial is done! Just go &amp;WNORTH&amp;n to continue!"/>
+    </mobprog>
+    <mobprog main="OnLeave" argtype="STRING" argument="done">
+      <action number="ActionTo" argtype="STRING" argument="send You step out through the fog and move blindly, its compression too thick to see a few inches in front of your nose. After just a few minutes however, as if a great wind has blown it back, the fog starts to rush behind you, clearing."/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="1907" name="boy teenage creator8" special="NONE">
+    <description>No more than fourteen winters old, this boy is in the middle of
+puberty, thin and with long enough legs to make him resemble a crane
+rather than a human. He has the potential to be tall, and with that
+mop of light brown hair, sparkling blue eyes, and an impish but
+disarmingly soft smile he often flashes, he may also be quite handsome.
+For now though, along with his white shirt and workpants, he is just
+an awkward teen. An exquisite staff lays across his knees, putting his
+clothing to shame.
+</description>
+    <shortdesc>a teenage boy</shortdesc>
+    <longdesc>&amp;yA teenage boy sits cross-legged on a large rock a meter down the path.&amp;n (Level 200)
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="200" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="20" dsize="1000" bonus="5000"/>
+      <move ndize="1" dsize="5000" bonus="5000"/>
+      <ac>-200</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>100</hitroll>
+      <damroll>50</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1105994"/>
+    <affected one="268501040" two="0" three="0" four="0"/>
+    <attack type="5"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="30" sides="100" add="100"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnSay" argtype="STRING" argument="start">
+      <action number="SayTo" argtype="STRING" argument="Welcome to your present! Isn&apos;t it a fine day?"/>
+      <action number="Pause" argtype="INT" argument="3"/>
+      <action number="Say" argtype="STRING" argument="I am here to teach you about the commands necessary for Roleplay. RP can be a very involved, but fun and rewarding task, and it is also the central theme to this mud. You will encounter it every day you play here."/>
+      <action number="Pause" argtype="INT" argument="9"/>
+      <action number="Action" argtype="STRING" argument="emote hooks his thumb along the path. &apos;The plaque over there lists all of the commands we are going to try out, and a few others, so you might want to read that before we start. When you want me to teach you, though, just &amp;WSAY READY&amp;n!"/>
+    </mobprog>
+    <mobprog main="OnSay" argtype="STRING" argument="ready">
+      <action number="SayTo" argtype="STRING" argument="Great, let&apos;s begin!"/>
+      <action number="SayTo" argtype="STRING" argument="We&apos;ll start off with the most basic of Roleplaying commands. Now, you already know &amp;WSAY&amp;n, but there is another command available to completely express your actions or speech, called &amp;WEMOTE&amp;n."/>
+      <action number="Pause" argtype="INT" argument="10"/>
+      <action number="Action" argtype="STRING" argument="emote raises his staff in one hand and jingles the bells and feathers attached to it."/>
+      <action number="Pause" argtype="INT" argument="5"/>
+      <action number="Say" argtype="STRING" argument="What I just did was an Emote. Most people use it to express actions they perform, though they also can add in speech just by using &apos;&lt;sentence&gt;&apos; anywhere within the emote."/>
+      <action number="Say" argtype="STRING" argument="You give it a try! Just emote whatever you like, by typing &amp;WEMOTE &lt;action sentence&gt;&amp;n."/>
+    </mobprog>
+    <mobprog main="OnAction" argtype="STRING" argument="emote">
+      <action number="Action" argtype="STRING" argument="emote nods and says, &apos;That&apos;s the idea! Emote is the most common Roleplay command, even surpassing Say. You&apos;ll get used to it soon enough once you start RP with others.&apos;"/>
+      <action number="Pause" argtype="INT" argument="7"/>
+      <action number="Say" argtype="STRING" argument="Two other commands similar to that are &amp;WPEMOTE&amp;n and &amp;WPOSE&amp;n."/>
+      <action number="Say" argtype="STRING" argument="PEmote allows you to perform an Emote directly at someone else, much the same as the command Sayto lets you specify who you Say to. However, with PEmote, you need to write two different but similar sentences, one that will go to your target, and one that will go to everyone else in the room. You have to separate these sentences with the | symbol. I suggest you just read &amp;WHELP PEMOTE&amp;n to better understand this."/>
+      <action number="Pause" argtype="INT" argument="18"/>
+      <action number="Say" argtype="STRING" argument="&amp;WPOSE&amp;n is much simpler. What it does is allow you to Emote without your name showing up at the beginning. Instead, it just appears at the very end in (). Pose allows you to create effects in a room, or just start an action without your name having to be the first word."/>
+      <action number="Pause" argtype="INT" argument="10"/>
+      <action number="Say" argtype="STRING" argument="Give it a try! Just type &amp;WPOSE &lt;action sentence&gt;&amp;n."/>
+    </mobprog>
+    <mobprog main="OnAction" argtype="STRING" argument="pose">
+      <action number="SayTo" argtype="STRING" argument="You&apos;re getting the hang of it! You see how your name shows up at the end? That is just to alert others Roleplaying with you who made the Pose."/>
+      <action number="Say" argtype="STRING" argument="Channelers can also use a command similar to PEmote, called &amp;WCEMOTE&amp;n. I suggest again you just read the &amp;WHELP CEMOTE&amp;n file to get a better understanding."/>
+      <action number="Pause" argtype="INT" argument="10"/>
+      <action number="Say" argtype="STRING" argument="Now, in order to show people you want to Roleplay, or to join Roleplay already in progress, you need to be In-Character (&amp;GIC&amp;n). When you start your life here you are Out-of-Character (&amp;ROOC&amp;n), and you won&apos;t be able to see Emotes from people who are IC. It is a good idea to be OOC when you are leveling or just wandering around though, so you don&apos;t run into any Roleplay danger by being anywhere you aren&apos;t supposed to be."/>
+      <action number="Pause" argtype="INT" argument="17"/>
+      <action number="Say" argtype="STRING" argument="In order to go IC or OOC, just type &amp;WTOGGLE IC&amp;n. You can tell who is IC or OOC by typing &amp;WWHO&amp;n. Also, in a room, OOC people have a &amp;c*&amp;n before their names."/>
+      <action number="Pause" argtype="INT" argument="10"/>
+      <action number="Say" argtype="STRING" argument="That&apos;s about it for commands to help you Roleplay! Actually being able to do so takes practice and experience; you should never feel like you don&apos;t match up to the other players here when you first start. Everyone started at some point, and our players are often happy to give some pointers if you ask."/>
+      <action number="Pause" argtype="INT" argument="14"/>
+      <action number="Say" argtype="STRING" argument="Again, I stress just asking questions, reading &amp;WHELP RPGUIDE&amp;n, and just trying things out yourself. Your character is what you make of it, express your speech and actions like you would if you really were him or her. It can be a lot of fun!"/>
+      <action number="Say" argtype="STRING" argument="And this ends my tutorial on Roleplay! Feel free to head &amp;WNORTH&amp;n at any time!"/>
+    </mobprog>
+    <mobprog main="OnLeave" argtype="STRING" argument="pose">
+      <action number="ActionTo" argtype="STRING" argument="send You walk along the path for a time, the sun slowly setting in the west. As the redness fades into a soft grey a slow mist begins to curl up from the grasses and moss tickling the roots of the trees, swirling around your feet. Then, in no time at all, the haze rises up and engulfs you. As it clears you find yourself elsewhere."/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="1908" name="boy young child creator9" special="NONE">
+    <description>This boy could be no older than seven or eight. He wears just a simple
+wool pullover and some dark brown breeches, both too thin for winter
+weather, but he seems not to mind any of it. His light brown hair is
+scraggly, strands of it hanging into a set of inquisitive blue eyes. He
+has a round, pudgy face, baby fat lending dimples to his cheeks when he
+smiles. Somehow though, his face looks familiar to the other men met
+before him.
+</description>
+    <shortdesc>a young boy</shortdesc>
+    <longdesc>&amp;yA child simply sits on the snow by the pond, playing with the orb of light.&amp;n (Level 200)
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="200" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="20" dsize="1000" bonus="5000"/>
+      <move ndize="1" dsize="5000" bonus="5000"/>
+      <ac>-200</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>100</hitroll>
+      <damroll>50</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1105995"/>
+    <affected one="268501040" two="0" three="0" four="0"/>
+    <attack type="5"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="30" sides="100" add="100"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnAction" argtype="STRING" argument="enter">
+      <sideterm number="Carrying" not="TRUE" argtype="INT" argument="1919"/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="ActionTo" argtype="STRING" argument="send You take a deep breath and put your hands out to try and push through the sheet of ice. All of a sudden, your reflection, which had been copying your motions, steps out of the ice and solidifies. It wards you back and stands there, blocking the way."/>
+      <action number="Action" argtype="STRING" argument="trans creator10"/>
+      <action number="Give" argtype="INT" argument="1919"/>
+      <action number="Pause" argtype="INT" argument="7"/>
+      <action number="Say" argtype="STRING" argument="It looks like this is gonna be your final challenge! You have to fight your own reflection in order to leave. Let me teach you how."/>
+      <action number="Pause" argtype="INT" argument="5"/>
+      <action number="Say" argtype="STRING" argument="Do you want to hear my tutorial on fighting? If yes, &amp;WSAY YES&amp;n, otherwise just type &amp;WKILL REFLECTION&amp;n!"/>
+    </mobprog>
+    <mobprog main="OnSay" argtype="STRING" argument="yes">
+      <action number="Action" argtype="STRING" argument="emote bounds to his feet, excited. &apos;All you gotta do is type &amp;WKILL REFLECTION&amp;n and you&apos;ll start fighting it! It&apos;s just the same as what you&apos;ll encounter out in the rest of the world if you want to level without Roleplay. And it&apos;s real easy so long as you don&apos;t run into any MOBS (what we call non player characters that you can fight) that are too big for you, and kill you.&apos;"/>
+      <action number="Pause" argtype="INT" argument="11"/>
+      <action number="Say" argtype="STRING" argument="There are lots of ways to fight though. You can use offensive magic spells like Fireball or Dart of Air like you were taught before, or with skills like Kick or Trip that you can pick up later."/>
+      <action number="Pause" argtype="INT" argument="7"/>
+      <action number="Say" argtype="STRING" argument="Killing mobs gives you Experience, which you also should have already learned about. If you ever go some place where you&apos;ll encounter mobs that might kill you, it&apos;s a good idea to put on your &amp;WWIMPY&amp;n which will automatically make you &amp;WFLEE&amp;n when you go under a certain number of hitpoints. Just type &amp;WWIMP &lt;at hp#&gt;&amp;n to set it! You can also manually Flee by typing &amp;WFLEE&amp;n at any time during a fight."/>
+      <action number="Pause" argtype="INT" argument="15"/>
+      <action number="Say" argtype="STRING" argument="Fighting is pretty easy. All players automatically have something called &amp;WNOSPAM&amp;n set on them, which compresses all the attacks you and the mob makes into two easy lines showing just &amp;r[Hit]&amp;n and &amp;G[Miss]&amp;n and any skills or spells used each round. You can set this off by typing &amp;WTOGGLE NOSPAM&amp;n, but I don&apos;t recommend it as it&apos;s messy."/>
+      <action number="Pause" argtype="INT" argument="13"/>
+      <action number="Say" argtype="STRING" argument="It&apos;s a good idea never to let your hitpoints (nor mana if you&apos;re a channeler) get too low. Always keep an eye on your &amp;WPROMPT&amp;n so you know when to flee or when your wimpy will kick in."/>
+      <action number="Pause" argtype="INT" argument="8"/>
+      <action number="Say" argtype="STRING" argument="Well, are you ready to give fighting a try? Make sure you have your sword, or if you&apos;re an Aiel your spear, equipped! Type &amp;WEQ&amp;n to make sure, and if not, type &amp;WWIELD SWORD/SPEAR&amp;n. It&apos;s a good idea to always have a weapon equipped!"/>
+      <action number="Pause" argtype="INT" argument="8"/>
+      <action number="Action" argtype="STRING" argument="emote smiles. &apos;Just type &amp;WKILL REFLECTION&amp;n to fight!&apos;"/>
+    </mobprog>
+    <mobprog main="OnSay" argtype="STRING" argument="start">
+      <action number="Say" argtype="STRING" argument="Welcome to your future; the possibilities are endless!"/>
+      <action number="Pause" argtype="INT" argument="2"/>
+      <action number="Action" argtype="STRING" argument="emote grins. &apos;This is the final room of tutorials, and you get to be taught by a kid! I&apos;m gonna teach you about the possibilities available on this game. Just bear in mind one thing you learned before: Most things you can gain on this mud come from Roleplay.&apos;"/>
+      <action number="Pause" argtype="INT" argument="8"/>
+      <action number="Say" argtype="STRING" argument="One thing nearly everyone here thinks about is what &amp;WGUILD&amp;n he or she will join. It is not necessary to do this, but there is a Guild available for nearly every major faction in the Wheel of Time world. And if there is not a Guild, there is undoubtedly a player run &amp;WCLUB&amp;n. If not, maybe you can start one yourself!"/>
+      <action number="Action" argtype="STRING" argument="emote winks."/>
+      <action number="Pause" argtype="INT" argument="15"/>
+      <action number="Say" argtype="STRING" argument="&amp;WGUILDS&amp;n are the most structured groupings of players on the mud, ranging from Aes Sedai to Tinkers. Type &amp;WHELP GUILDS&amp;n to see a list. It is nice to join a guild for the RP you can get as well as equipment, skills, and other privileges. &amp;WSUBGUILDS&amp;n are similar but do not come with any equipment, and are considered your secondary groups. You can join as many guilds and subguilds as you want."/>
+      <action number="Pause" argtype="INT" argument="17"/>
+      <action number="Say" argtype="STRING" argument="Finally, &amp;WCLUBS&amp;n are small groups run strictly by players (meaning, no Guildleader running it and fewer rules to follow above that). Clubs have nothing attached to them but a name, ranks, and RP, but they can be nice for joining even more little factions, such as a Thief ring or traveling Theatre group. Type &amp;WHELP CLUBS&amp;n for more information."/>
+      <action number="Pause" argtype="INT" argument="17"/>
+      <action number="Say" argtype="STRING" argument="Typically to join any of these you will have to flesh out your character in a way that makes him or her want to enter the group, then be &amp;WSponsored&amp;n by already enrolled members via RP. For Guilds, you can put yourself on a Seeker list by typing &amp;WSEEKGUILD &lt;guild&gt;&amp;n (type &amp;WHELP SEEKGUILD&amp;n for more info)."/>
+      <action number="Pause" argtype="INT" argument="3"/>
+      <action number="Say" argtype="STRING" argument="Would you like me to continue with more information, or are you ready to move on? If you want more, &amp;WSAY MORE&amp;n, otherwise &amp;WSAY DONE&amp;n!"/>
+    </mobprog>
+    <mobprog main="OnSay" argtype="STRING" argument="more">
+      <action number="Say" argtype="STRING" argument="Great! I&apos;ll talk about your Roleplay possibilities!"/>
+      <action number="Pause" argtype="INT" argument="4"/>
+      <action number="Say" argtype="STRING" argument="What Guild you choose to join will greatly affect what kind of a character you Roleplay as. For instance, a fanatic Whitecloak is much less likely to like an Aes Sedai than a swordsman who wants to become her bodyguard Warder. Aiel tend to avoid touching swords altogether. Things like this. You will get the hang of it as you learn about the different guilds through the books, help files, webpages, or just by talking with other players."/>
+      <action number="Pause" argtype="INT" argument="20"/>
+      <action number="Say" argtype="STRING" argument="However Roleplay also can depend on what kinds of abilities and &amp;WTALENTS&amp;n you choose for your character. Abilities are simply your traits, good and bad. Do you like to drink or gamble? Do you want to become a master swordsman or a flexible acrobat? And so on. You can pursue almost anything. Though in Roleplay it is a good idea to take a few faults as well, to keep your character human (or Ogier)."/>
+      <action number="Action" argtype="STRING" argument="emote smiles."/>
+      <action number="Pause" argtype="INT" argument="18"/>
+      <action number="Say" argtype="STRING" argument="&amp;WTALENTS&amp;n are another matter. It is possible to acquire certain Talents as you live your life. The best way to learn about these is just to type &amp;WHELP TALENTS&amp;n. Most of these, however, are Channeling abilities. Things like being a master swordsman aren&apos;t considered &apos;talents&apos; per se, as the term Talent is usually something magical or Creator-given from the books."/>
+      <action number="Pause" argtype="INT" argument="15"/>
+      <action number="Action" argtype="STRING" argument="emote grins. &apos;Have I confused you yet? I hope not! I&apos;m all done though. So.. &amp;WSAY DONE&amp;n.&apos;"/>
+    </mobprog>
+    <mobprog main="OnSay" argtype="STRING" argument="done">
+      <action number="Say" argtype="STRING" argument="Great, we&apos;re all done with my tutorial! I do have just one more quick thing to say!"/>
+      <action number="Pause" argtype="INT" argument="3"/>
+      <action number="Action" argtype="STRING" argument="emote smiles and hurries to finish up. &apos;Remember this game is a MUD, which means we are doing our best to mix the use of Code along with the use of Roleplay. These tutorials have attempted to teach you only what you will need to get started. In fact, there are other commands out there that may be both useful and fun, and you will encounter them as you play here.&apos;"/>
+      <action number="Pause" argtype="INT" argument="10"/>
+      <action number="Say" argtype="STRING" argument="And I hope you do play here! As this place -is- a MUD, part of your future will be spent fighting, gaining equipment and experience, and practicing skills. All in all, the MUD tries to give you a taste of both the IC and OOC world of online games. We hope you enjoy it!"/>
+      <action number="Pause" argtype="INT" argument="15"/>
+      <action number="Say" argtype="STRING" argument="Thank you for taking the time to go through the tutorial! If you had any problems with it, for any reason, just tell any Immortal or use the Question channel."/>
+      <action number="Pause" argtype="INT" argument="9"/>
+      <action number="Action" argtype="STRING" argument="emote pauses, looking thoughtful."/>
+      <action number="Say" argtype="STRING" argument="Ah, that&apos;s right, are you wondering how to leave? It is simple! You&apos;re going to have to do a little puzzle solving. We call these &amp;WQUESTS&amp;n (for info: &amp;WHELP QUEST&amp;n). You&apos;ll encounter them now and again. To start, have a look around, check out anything mentioned in the room description."/>
+      <action number="Pause" argtype="INT" argument="12"/>
+      <action number="Say" argtype="STRING" argument="You can leave by typing &amp;WRECALL NEWBIE&amp;n to take you back to where you can enter a newbie fighting area, or &amp;WRECALL&amp;n just to take you to the main portion of the game, but I don&apos;t suggest it now. After all, solving a Quest will always earn you a present! Good luck!"/>
+      <action number="Action" argtype="STRING" argument="emote whispers, &apos;If you do get stuck, just &amp;WSAY HINT&amp;n and I&apos;ll help. I hope you try it out on your own first though, it&apos;s more fun that way.&apos;"/>
+    </mobprog>
+    <mobprog main="OnSay" argtype="STRING" argument="hint">
+      <action number="ActionTo" argtype="STRING" argument="send A young boy pouts at you. &apos;Well, you asked for it so I&apos;ll tell you, but it does ruin the puzzle! Since this is just a tutorial, I&apos;ll give you an easy hint. Just remember, most Quests don&apos;t have any hints at all.&apos;"/>
+      <action number="ActionTo" argtype="STRING" argument="send A young boy says, &apos;Look closely at the waterfall description, in particular, that sheet of ice that makes up most of it.. Good luck!&apos;"/>
+    </mobprog>
+    <mobprog main="OnAction" argtype="STRING" argument="kill">
+      <action number="Pause" argtype="INT" argument="4"/>
+      <action number="Action" argtype="STRING" argument="echo &amp;CYour reflection vanishes, and you sense that you can now freely enter the waterfall!&amp;n"/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="1909" name="reflection you me creator10" special="NONE">
+    <description>This is your reflection, nothing more, nothing less. It looks exactly
+like you to the very millimeter in height and the very width of your
+girth. It has the same gestures and motions, only instead of a normal
+reflection mimicking you, it&apos;s brow is lowered, and it looks dangerous.
+</description>
+    <shortdesc>Your reflection</shortdesc>
+    <longdesc>&amp;yYour reflection has left the icy sheet and stands ready to fight!&amp;n (Level 1)
+</longdesc>
+    <title/>
+    <chardata gender="NEUTRAL" class="Adventurer" level="1" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="5" dsize="6" bonus="5"/>
+      <move ndize="1" dsize="5" bonus="5"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>2</hitroll>
+      <damroll>1</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1048650"/>
+    <affected one="268501040" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="4" add="2"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnAction" argtype="STRING" argument="enter">
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="Action" argtype="STRING" argument="emote blocks the waterfall."/>
+    </mobprog>
+    <mobprog main="OnMobDie" argtype="STRING" argument="enter">
+      <action number="Action" argtype="STRING" argument="emote &amp;Cvanishes, and you sense that you can now freely enter the waterfall!&amp;n"/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="1910" name="creator creator11 man" special="NONE">
+    <description>Every time you turn your head to look at this man his image shifts with
+the change, flickering always at the edge of your vision. Something about
+him feels familiar, in fact, what you can see of him resembles very well
+every man and boy you met along the tutorial. Now, however, his presense
+emits a sense of incredible power and wisdom and the same peace that
+envelopes the rest of this area. Truly he must be someone of great import.
+</description>
+    <shortdesc>the Creator</shortdesc>
+    <longdesc>&amp;yThe semblance of a man shimmers at the edge of your vision.&amp;n (Level 200)
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="200" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="20" dsize="0" bonus="5000"/>
+      <move ndize="1" dsize="5000" bonus="5000"/>
+      <ac>-200</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>100</hitroll>
+      <damroll>50</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="5824602"/>
+    <affected one="268501040" two="0" three="0" four="0"/>
+    <attack type="10"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="30" sides="100" add="100"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnEntry" argtype="STRING" argument="enter">
+      <action number="Pause" argtype="INT" argument="2"/>
+      <action number="Action" argtype="STRING" argument="echo A voice whispers in your ear, &apos;Congratulations! Welcome to the end of the tutorials, and the beginning of your life.&apos;"/>
+      <action number="Pause" argtype="INT" argument="4"/>
+      <action number="Action" argtype="STRING" argument="echo The voice continues, &apos;You are safe here, my friend, and for reaching this place I offer you a reward.&apos;"/>
+      <action number="Pause" argtype="INT" argument="3"/>
+      <action number="Action" argtype="STRING" argument="drop staff"/>
+      <action number="Action" argtype="STRING" argument="at 1910 get staff"/>
+      <action number="Action" argtype="STRING" argument="echo A staff from the man suddenly floats forwards, into full view, and hovers in front of you. &apos;Take it, it is yours,&apos; says the voice."/>
+    </mobprog>
+    <mobprog main="OnAction" argtype="STRING" argument="get take">
+      <sideterm number="Carrying" not="TRUE" argtype="INT" argument="1920"/>
+      <sideterm number="Wearing" not="TRUE" argtype="INT" argument="1920"/>
+      <action number="Action" argtype="STRING" argument="echo The image just out of your direct vision seems to smile. &apos;Now it is time for you to go. The planet down there is your home. Where exactly you plant your feet is up to you. Are you ready?&apos; (&amp;WSAY YES&amp;n to go)"/>
+    </mobprog>
+    <mobprog main="OnSay" argtype="STRING" argument="yes">
+      <action number="ActionTo" argtype="STRING" argument="send You sense the image of the man draw near, and suddenly your vision spins and blurs. You find yourself elsewhere. His voice rings in your ears for the last time. &apos;Enjoy yourself and good luck!&apos;"/>
+      <action number="ActionTo" argtype="STRING" argument="teleport 1900"/>
+      <action number="ActionTo" argtype="STRING" argument="send &amp;rYou sense that if you wish to level a little and get situated you should head DOWN&amp;n."/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="1911" name="rabbit newmob" special="NONE">
+    <description>This rabbit is small and fluffy with thick grey fur and a white
+belly. Unlike those kept as pets back in the village, it has more
+powerful legs to jump with and longer gnashers under its wiggling
+pink nose it can use if threatened. It&apos;s ears rest half perked behind
+its head, always alert of some new danger tromping through the grasses
+it feeds on.
+</description>
+    <shortdesc>a rabbit</shortdesc>
+    <longdesc>&amp;yA little &amp;Rr&amp;wa&amp;Wbb&amp;wi&amp;Rt &amp;nbounds around, nibbling on flower tendrils (Level 2)
+</longdesc>
+    <title/>
+    <chardata gender="NEUTRAL" class="Adventurer" level="2" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="5" dsize="5" bonus="10"/>
+      <move ndize="1" dsize="10" bonus="10"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>300</exp>
+      <hitroll>1</hitroll>
+      <damroll>1</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="72"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="4"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="3" add="1"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="1912" name="hedgehog newmob" special="NONE">
+    <description>Moving much slower than the other animals in the field to enjoy the warm
+sun, the hedgehog ambles along without a care. If scared, he curls
+up into a little ball, exposing his spiny backside to ward off would-be
+predators wanting a meal. Otherwise, his little nose snuffles around
+between the grasses, searching for nuts or bugs.
+</description>
+    <shortdesc>a prickly hedgehog</shortdesc>
+    <longdesc>&amp;yA small h&amp;Ye&amp;Kd&amp;yg&amp;Ye&amp;Kh&amp;Yo&amp;yg&amp;n lumbers slowly through the grass. (Level 3)
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="3" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="2" dsize="16" bonus="10"/>
+      <move ndize="1" dsize="10" bonus="10"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>300</exp>
+      <hitroll>2</hitroll>
+      <damroll>1</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="8"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="4"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="3" add="2"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="1913" name="bluejay bird jay" special="NONE">
+    <description>The jay swoops in and out of reach, taunting anything it pleases
+as it enjoys the day. It is a relatively large bird compared to
+others in the fields and displays a brilliant blue plumage striped
+once with black and white.
+</description>
+    <shortdesc>a bluejay</shortdesc>
+    <longdesc>&amp;yA &amp;cb&amp;Cl&amp;cu&amp;Ce&amp;cj&amp;Wa&amp;Ky &amp;ndives about, screeching its jay call. (Level 4)
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="4" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="2" dsize="20" bonus="15"/>
+      <move ndize="1" dsize="15" bonus="15"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>300</exp>
+      <hitroll>2</hitroll>
+      <damroll>1</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="72"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="11"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="2" sides="2" add="2"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="1914" name="cat tabby" special="NONE">
+    <description>This tabby is big but sleek, probably a member of one of the farm
+families nearby. It pads about silently, yellow-green eyes searching
+for a rabbit or two for dinner. Its tail flicks to and fro idly as it
+moves, reddish fur well camouflaged in the browning grass.
+</description>
+    <shortdesc>a stalking cat</shortdesc>
+    <longdesc>&amp;yA large tabby stalks through the grass in search of prey.&amp;n (Level 5)
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="5" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="2" dsize="32" bonus="10"/>
+      <move ndize="1" dsize="10" bonus="10"/>
+      <ac>80</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>400</exp>
+      <hitroll>2</hitroll>
+      <damroll>2</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="72"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="8"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="2" sides="3" add="2"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="1915" name="rooster bird" special="NONE">
+    <description>The rooster has bright white plumage that he puffs out along with his
+chest, acting proud of his domain. His head flicks left and right, then
+up, then down, and he pecks some at the ground, his red beard and crown
+waggling back and forth. He has long legs with strong hooks that look
+like he would probably do well in a cock fight.
+</description>
+    <shortdesc>a rooster</shortdesc>
+    <longdesc>&amp;yA crowned rooster scratches around the yard in search of spilled feed.&amp;n (Level 5)
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="5" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="3" dsize="20" bonus="15"/>
+      <move ndize="1" dsize="15" bonus="15"/>
+      <ac>60</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>300</exp>
+      <hitroll>2</hitroll>
+      <damroll>2</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="74"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="14"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="6" add="2"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="1916" name="hen chicken" special="NONE">
+    <description>Smaller than her male counterpart, the hen is just as white, with
+soft white feathers she keeps fluffed out as she nests. She clucks
+softly to herself and occasionally pecks her beak at the hay around her.
+</description>
+    <shortdesc>a white hen</shortdesc>
+    <longdesc>&amp;yA hen roosts in one of the nests, warming her eggs.&amp;n (Level 3)
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="3" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="2" dsize="10" bonus="16"/>
+      <move ndize="1" dsize="16" bonus="16"/>
+      <ac>80</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>150</exp>
+      <hitroll>2</hitroll>
+      <damroll>1</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="74"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="14"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="3" add="2"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="1917" name="hound dog" special="NONE">
+    <description>This hound is grey with streaks of black along its legs and at the
+tips of its long ears. It has the gaunt look of a working dog, and
+it takes its duties to the farm yard seriously, one ear always crooked
+even if it appears to be asleep.
+</description>
+    <shortdesc>a hound dog</shortdesc>
+    <longdesc>&amp;yA large hound relaxes in the shade of the coop.&amp;n (Level 8)
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="8" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="3" dsize="35" bonus="35"/>
+      <move ndize="1" dsize="35" bonus="35"/>
+      <ac>20</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>450</exp>
+      <hitroll>4</hitroll>
+      <damroll>4</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="74"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="4"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="2" sides="4" add="4"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="1918" name="milkcow cow" special="NONE">
+    <description>This cow looks quite content with herself, a piece of hay sticking out
+of a constantly cud-chewing mouth. She is, as most milkcows are, a
+mixed white and splotched black color, her pink udders beneath gorged
+with milk at least once a day. Her small tail flicks about catching
+flies off of her hide, the bell around her neck jingling now and again.
+</description>
+    <shortdesc>a fat milkcow</shortdesc>
+    <longdesc>&amp;yA well-fed milkcow stands in her stall chewing cud.&amp;n (Level 5)
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="5" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="3" dsize="30" bonus="8"/>
+      <move ndize="1" dsize="8" bonus="8"/>
+      <ac>60</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>300</exp>
+      <hitroll>2</hitroll>
+      <damroll>2</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="74"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="6"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="7" add="2"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="1919" name="horse workhorse" special="NONE">
+    <description>With powerful shoulders and strong, thick legs, this horse was bred
+for the plow and cart work he does on the farm. He stands a good eighteen
+hands tall, towering over the cows in the barn and contrasting with them
+with his dark brown flanks and white stripe down his face.
+</description>
+    <shortdesc>a workhorse</shortdesc>
+    <longdesc>&amp;yA strong workhorse swishes his tail about, keeping flies away.&amp;n (Level 9)
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="9" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="3" dsize="40" bonus="15"/>
+      <move ndize="1" dsize="15" bonus="15"/>
+      <ac>10</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>500</exp>
+      <hitroll>4</hitroll>
+      <damroll>4</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="74"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="6"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="2" sides="5" add="4"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="1920" name="crow newmob" special="NONE">
+    <description>About average size for its breed, this crow has beady black eyes and a
+big black head that jerk left and right to watch whatever interests
+it. Its feathers have been dusted by ground corn, indicating it has
+probably made a good meal out of the crops in the farm.
+</description>
+    <shortdesc>a dusty crow</shortdesc>
+    <longdesc>&amp;yA crow perches on the scarecrow&apos;s arm, feathers paled by corndust.&amp;n (Level 7)
+</longdesc>
+    <title/>
+    <chardata gender="NEUTRAL" class="Adventurer" level="7" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="2" dsize="50" bonus="18"/>
+      <move ndize="1" dsize="18" bonus="18"/>
+      <ac>50</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>400</exp>
+      <hitroll>4</hitroll>
+      <damroll>4</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="74"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="14"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="3" sides="3" add="4"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="1921" name="cricket newmob" special="NONE">
+    <description>This little insect has six legs, the back two perched up above its
+torso as it plays a chirping melody. It is dark, nearly purplish in
+color, helping it to hide well in the shade of grass and rocks. Far
+from dangerous, the cricket lends a nice sound to the forest atmosphere.
+</description>
+    <shortdesc>a cricket</shortdesc>
+    <longdesc>&amp;yA cricket chirps from a nearby grass blade.&amp;n (Level 6)
+</longdesc>
+    <title/>
+    <chardata gender="NEUTRAL" class="Adventurer" level="6" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="3" dsize="35" bonus="32"/>
+      <move ndize="1" dsize="32" bonus="32"/>
+      <ac>30</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>400</exp>
+      <hitroll>4</hitroll>
+      <damroll>3</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="74"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="1"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="2" sides="3" add="4"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="1922" name="walking-stick walking stick" special="NONE">
+    <description>With a pencil thin body colored a mix of browns and greens, this
+bug would look exactly like another twig in the forest if not for its
+six long legs sticking out of its abdomen. When it moves it does so
+relatively slowly to not draw any real attention.
+</description>
+    <shortdesc>a walking-stick</shortdesc>
+    <longdesc>&amp;yA walking-stick clings to a tree, trying to blend in.&amp;n (Level 6)
+</longdesc>
+    <title/>
+    <chardata gender="NEUTRAL" class="Adventurer" level="6" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="2" dsize="40" bonus="40"/>
+      <move ndize="1" dsize="40" bonus="40"/>
+      <ac>30</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>400</exp>
+      <hitroll>4</hitroll>
+      <damroll>3</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="74"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="4"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="6" add="4"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnEntry" argtype="VOID" argument="NONE">
+      <sideterm number="Level" not="FALSE" argtype="STRING" argument="1 5"/>
+      <action number="Force" argtype="STRING" argument="say &amp;rHmm, am I sure I&apos;m high enough level to enter here?&amp;n"/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="1923" name="squirrel red newmob" special="NONE">
+    <description>Bushy tail waving back and forth or propped up over its ears as the
+occasion strikes it, this squirrel looks about as friendly to
+intrusion as a bee whose hive was just knocked. It wanders the branches
+of the canopy, furry red body passing in and out between openings
+in the leaves.
+</description>
+    <shortdesc>a red squirrel</shortdesc>
+    <longdesc>&amp;yA red squirrel chitters at you from the branches above.&amp;n (Level 9)
+</longdesc>
+    <title/>
+    <chardata gender="NEUTRAL" class="Adventurer" level="9" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="2" dsize="52" bonus="35"/>
+      <move ndize="1" dsize="35" bonus="35"/>
+      <ac>0</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>400</exp>
+      <hitroll>4</hitroll>
+      <damroll>4</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="74"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="4"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="3" sides="5" add="4"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="1924" name="frog treefrog" special="NONE">
+    <description>This frog is perhaps the size of your palm, with a green body
+and red belly and feet. Its toes stick to the bark of its tree, letting
+it perch in safety as it bloats out its mouth to breathe and also
+sound a call to other frogs in the woods now and again.
+</description>
+    <shortdesc>a treefrog</shortdesc>
+    <longdesc>&amp;yA surprisingly large &amp;nt&amp;Rr&amp;Ge&amp;ref&amp;Gr&amp;Ro&amp;ng clings to a tree&apos;s trunk. (Level 8)
+</longdesc>
+    <title/>
+    <chardata gender="NEUTRAL" class="Adventurer" level="8" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="2" dsize="65" bonus="0"/>
+      <move ndize="1" dsize="0" bonus="0"/>
+      <ac>0</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>400</exp>
+      <hitroll>4</hitroll>
+      <damroll>4</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="74"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="1"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="3" sides="4" add="4"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="1925" name="fox newmob" special="NONE">
+    <description>This small canine has about a meter&apos;s length of red fur out to the
+white tip of his tail. The same soft whiteness shows on his belly and
+all four of his paws. He has sharp teeth and uses those to capture
+other small prey in the forest.
+</description>
+    <shortdesc>a red fox</shortdesc>
+    <longdesc>&amp;yA sleek red fox sits here in the shade, watching for rabbits.&amp;n (Level 11)
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="11" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="3" dsize="53" bonus="10"/>
+      <move ndize="1" dsize="10" bonus="10"/>
+      <ac>0</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>400</exp>
+      <hitroll>5</hitroll>
+      <damroll>5</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="74"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="4"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="3" sides="6" add="5"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="1926" name="deer buck" special="NONE">
+    <description>This deer stands with a high head, displaying his antlers to the entire
+forest. Though ornamental, the horns are also quite hard, able to
+ward off other bucks or potential predators. The buck himself is perhaps
+ten hands tall, with a soft brown pelt ending with a white flag tail.
+</description>
+    <shortdesc>a large buck</shortdesc>
+    <longdesc>&amp;yA buck with an impressive set of antlers grazes by the stream.&amp;n (Level 10)
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="10" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="7" dsize="25" bonus="18"/>
+      <move ndize="1" dsize="18" bonus="18"/>
+      <ac>0</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>400</exp>
+      <hitroll>5</hitroll>
+      <damroll>5</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="74"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="9"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="3" sides="5" add="5"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="1927" name="owl great horned" special="NONE">
+    <description>As large as an eagle, the great horned owl clings to its perch with
+powerful claws. Its feathers are a mixture of browns and tans, those
+above its large yellow eyes acting like bushy eyebrows. When it calls
+to the woods, its sound is an eerie &apos;who who&apos;.
+</description>
+    <shortdesc>a great horned owl</shortdesc>
+    <longdesc>&amp;yA great horned owl is here enjoying the shadows of the deeper woods.&amp;n (Level 12)
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="12" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="2" dsize="90" bonus="25"/>
+      <move ndize="1" dsize="25" bonus="25"/>
+      <ac>-20</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>400</exp>
+      <hitroll>6</hitroll>
+      <damroll>6</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="74"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="9"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="4" sides="4" add="6"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="1928" name="trout fish" special="NONE">
+    <description>Like most fish, this trout has fins, unblinking eyes, and scaly
+skin. It waves its tail to and fro as it propels itself upstream,
+investigating the grottos made by rocks and blades of grass.
+</description>
+    <shortdesc>a brown trout</shortdesc>
+    <longdesc>&amp;yA brown trout swims close to the stream&apos;s shore in search of bugs.&amp;n (Level 10)
+</longdesc>
+    <title/>
+    <chardata gender="NEUTRAL" class="Adventurer" level="10" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="3" dsize="50" bonus="30"/>
+      <move ndize="1" dsize="30" bonus="30"/>
+      <ac>0</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>400</exp>
+      <hitroll>5</hitroll>
+      <damroll>5</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="74"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="2"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="2" sides="6" add="5"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="1929" name="bear black" special="NONE">
+    <description>Average human height when on its feet and half that when on all fours, this black bear
+looks strong enough to lift such a man off of his. It has large paws with sharp looking
+claws and strong yellowed teeth glinting from its muzzle. The bear seems quite content
+with its grove, and unhappy with any intrusion.
+</description>
+    <shortdesc>a black bear</shortdesc>
+    <longdesc>&amp;yA black bear growls from the middle of the grove.&amp;n (Level 13)
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="13" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="3" dsize="85" bonus="33"/>
+      <move ndize="1" dsize="33" bonus="33"/>
+      <ac>-30</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>500</exp>
+      <hitroll>7</hitroll>
+      <damroll>8</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="74"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="9"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="3" sides="6" add="7"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="1930" name="rat newmob" special="NONE">
+    <description>Big and rather fat from living off of this and other farms and probably
+other rats, this rodent runs across the floor with its naked tail waving
+in its wake. It has grey fur somewhat dusty from invading grain stores
+and its beady eyes flick about. Once in awhile it breaks out in a series
+of chitters at something that startles it.
+</description>
+    <shortdesc>a grain rat</shortdesc>
+    <longdesc>&amp;yA large grey rat scuttles across the floor.&amp;n (Level 9)
+</longdesc>
+    <title/>
+    <chardata gender="NEUTRAL" class="Adventurer" level="9" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="2" dsize="40" bonus="42"/>
+      <move ndize="1" dsize="42" bonus="42"/>
+      <ac>0</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>300</exp>
+      <hitroll>3</hitroll>
+      <damroll>3</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="72"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="4"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="2" sides="5" add="3"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="1931" name="thug thief man" special="NONE">
+    <description>This man is thick and heavy-set, his dirty brown coat barely able to wrap
+around his both strong and beer laden form. He is also surprisingly
+short, but wears a high hat that gives him a few extra inches. He has
+an almost constant snarl on his greasy face, cheeks streaked with road
+grit and the shadow of a beard.
+</description>
+    <shortdesc>an aggressive thug</shortdesc>
+    <longdesc>&amp;yA mean, angry man draws his dagger when you enter!&amp;n (Level 11)
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="11" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="2" dsize="50" bonus="22"/>
+      <move ndize="1" dsize="22" bonus="22"/>
+      <ac>0</ac>
+      <gold>50</gold>
+      <bankgold>0</bankgold>
+      <exp>300</exp>
+      <hitroll>4</hitroll>
+      <damroll>4</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="106"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="11"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="2" sides="4" add="4"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="1932" name="thief brigand" special="NONE">
+    <description>This man wears some simple leathers and cloth, all of it dark browns and
+greens so he can blend well with the forests he and his band haunt. On
+his hands, wrists, and neck, however, come the occasional glint of some
+jewelry most likely stolen from a rich noble passing through. A leather
+belt adorned with two knife scabbards wraps around his waist, and he
+probably has more small daggers hidden elsewhere.
+</description>
+    <shortdesc>a dirty thief</shortdesc>
+    <longdesc>&amp;yAn unkempt brigand lounges nearby, fingering his knife.&amp;n (Level 13)
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="13" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="3" dsize="90" bonus="45"/>
+      <move ndize="1" dsize="45" bonus="45"/>
+      <ac>-30</ac>
+      <gold>200</gold>
+      <bankgold>0</bankgold>
+      <exp>400</exp>
+      <hitroll>8</hitroll>
+      <damroll>8</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="74"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="11"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="2" sides="9" add="8"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="1933" name="thief dangerous man" special="NONE">
+    <description>This man is lean and tall with rather thick shoulders beneath his off-white
+work shirt. He wears supple leather boots and at least one dagger which
+hangs at his belt. Unlike his fellow brigands, he keeps himself clean,
+a confident and dangerous look in his dark brown eyes. This thief looks
+like he might be pretty skilled with that knife.
+</description>
+    <shortdesc>a dangerous thief</shortdesc>
+    <longdesc>&amp;yA dangerous looking man guards the door to the south.&amp;n (Level 15)
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="15" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="4" dsize="75" bonus="45"/>
+      <move ndize="1" dsize="45" bonus="45"/>
+      <ac>-50</ac>
+      <gold>100</gold>
+      <bankgold>0</bankgold>
+      <exp>400</exp>
+      <hitroll>9</hitroll>
+      <damroll>9</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="74"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="14"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="4" sides="5" add="9"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="1934" name="captain thief" special="NONE">
+    <description>Given that he has control over the gold stashed in the hideout, this man
+wears some fine clothing and accessories, most of it gone to the
+sparkling rings on his fingers. He is the thief captain, and he probably
+wrested it physically from the last captain to get his position. He is
+a large man in height and muscles; when he stands he seems to hover
+like a raven with those dark, conspiring eyes of his.
+</description>
+    <shortdesc>the thief captain</shortdesc>
+    <longdesc>&amp;yThe thief captain relaxes behind a desk counting his money.&amp;n (Level 16)
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="16" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="3" dsize="100" bonus="45"/>
+      <move ndize="1" dsize="45" bonus="45"/>
+      <ac>-50</ac>
+      <gold>50</gold>
+      <bankgold>0</bankgold>
+      <exp>500</exp>
+      <hitroll>10</hitroll>
+      <damroll>9</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="74"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="3"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="3" sides="7" add="10"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="1935" name="refugee illian man" special="NONE">
+    <description>This man is heavy-set with wide shoulders and somewhat taller and
+darker than most of the indigenous citizens to Emond&apos;s Field. He
+sports a thin black beard that circles around his lips and trails off
+his chin like a little tail of hair. His clothes are also a stranger
+cut than those around him, and many eye him with curiosity.
+</description>
+    <shortdesc>an Illian refugee</shortdesc>
+    <longdesc>&amp;yA man taking refuge here from Illian wanders by.&amp;n (Level 16)
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="16" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="3" dsize="100" bonus="45"/>
+      <move ndize="1" dsize="45" bonus="45"/>
+      <ac>-60</ac>
+      <gold>50</gold>
+      <bankgold>0</bankgold>
+      <exp>400</exp>
+      <hitroll>10</hitroll>
+      <damroll>9</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1048648"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="13"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="2" sides="10" add="10"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnAttack" argtype="VOID" argument="NONE">
+      <sideterm number="Level" not="FALSE" argtype="STRING" argument="1 9"/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="ActionTo" argtype="STRING" argument="slap"/>
+      <action number="SayTo" argtype="STRING" argument="Bloody hell, can&apos;t you read signs? I&apos;m too high level for you!!"/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="1936" name="woman domani" special="NONE">
+    <description>This woman is about the same height as those Emond Fielders around her,
+but much thinner and fragile. With the sway to her step and her haughty
+look it is a wonder why she chose to live in a village between forests
+and countryside. She wears a low-cut gown just barely opaque enough
+to hide her body beneath, drawing many a man&apos;s eye and a woman&apos;s angry
+but also curious gossip.
+</description>
+    <shortdesc>a Domani woman</shortdesc>
+    <longdesc>&amp;yA woman from Arad Doman walks by, swaying in a tight outfit.&amp;n (Level 14)
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="14" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="3" dsize="80" bonus="25"/>
+      <move ndize="1" dsize="25" bonus="25"/>
+      <ac>-40</ac>
+      <gold>50</gold>
+      <bankgold>0</bankgold>
+      <exp>400</exp>
+      <hitroll>9</hitroll>
+      <damroll>8</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1048648"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="2" sides="8" add="9"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnAttack" argtype="VOID" argument="NONE">
+      <sideterm number="Level" not="FALSE" argtype="STRING" argument="1 9"/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="ActionTo" argtype="STRING" argument="slap"/>
+      <action number="SayTo" argtype="STRING" argument="Bloody hell, can&apos;t you read signs? I&apos;m too high level for you!!"/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="1937" name="boy child" special="NONE">
+    <description>This boy looks like he has seen about eleven winters. He is one of
+the village kids and if he doesn&apos;t have a hoop in one hand it&apos;ll be
+a sword or a sling or, if nothing else, a mischevious glint in his
+eye. He wears simple coarse clothing, a white shirt and wool breeches,
+most likely sewn by his mother back at home.
+</description>
+    <shortdesc>a young boy</shortdesc>
+    <longdesc>&amp;yA young boy runs around here, looking for some game to play.&amp;n (Level 10)
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="10" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="3" dsize="50" bonus="15"/>
+      <move ndize="1" dsize="15" bonus="15"/>
+      <ac>-10</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>300</exp>
+      <hitroll>5</hitroll>
+      <damroll>4</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1048648"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="13"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="3" sides="4" add="5"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnAttack" argtype="VOID" argument="NONE">
+      <sideterm number="Level" not="FALSE" argtype="STRING" argument="1 9"/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="ActionTo" argtype="STRING" argument="slap"/>
+      <action number="SayTo" argtype="STRING" argument="Bloody hell, can&apos;t you read signs? I&apos;m too high level for you!!"/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="1938" name="woman goodwife" special="NONE">
+    <description>With a stained apron wrapped around her waist and a no-nonsense look
+on her face, this woman is not to be trifled with. She is short,
+though average for a Two Rivers woman, with brown eyes and hair tied
+into one long braid down her back. Her dress is a bit differently cut
+than what is common for these parts, perhaps a bit lower at the neck and
+a bit higher with the skirts and a little more colorful. Perhaps the
+customs from outside refugees has been rubbing off on her.
+</description>
+    <shortdesc>a goodwife</shortdesc>
+    <longdesc>&amp;yA Two Rivers woman walks past briskly on some errand.&amp;n (Level 14)
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="14" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="3" dsize="90" bonus="25"/>
+      <move ndize="1" dsize="25" bonus="25"/>
+      <ac>-40</ac>
+      <gold>50</gold>
+      <bankgold>0</bankgold>
+      <exp>400</exp>
+      <hitroll>9</hitroll>
+      <damroll>8</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1048648"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="13"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="2" sides="8" add="9"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnAttack" argtype="VOID" argument="NONE">
+      <sideterm number="Level" not="FALSE" argtype="STRING" argument="1 9"/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="ActionTo" argtype="STRING" argument="slap"/>
+      <action number="SayTo" argtype="STRING" argument="Bloody hell, can&apos;t you read signs? I&apos;m too high level for you!!"/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="1939" name="man husband" special="NONE">
+    <description>Not particularly tall in a worldly sense, this man is perhaps 170cm,
+or 5&apos;7&quot; tall, still achieving a few inches on the goodwifes also
+passing through the streets. He has a strong chest and shoulders,
+indicating his healthy life here in Emond&apos;s Field. He wears simple but
+sturdy work clothes and, if it is not in his mouth, a pipe for tabac
+rests in a breast pocket. Though this man looks calm and patient, he
+also has a stubborn set to his jaw, a jaw growing an uncustomary new
+beard.
+</description>
+    <shortdesc>a two rivers man</shortdesc>
+    <longdesc>&amp;yA man of this village walks up, puffing on a tabac-filled pipe.&amp;n (Level 16)
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="16" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="3" dsize="100" bonus="30"/>
+      <move ndize="1" dsize="30" bonus="30"/>
+      <ac>-60</ac>
+      <gold>100</gold>
+      <bankgold>0</bankgold>
+      <exp>500</exp>
+      <hitroll>10</hitroll>
+      <damroll>9</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1048648"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="2" sides="9" add="10"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnAttack" argtype="VOID" argument="NONE">
+      <sideterm number="Level" not="FALSE" argtype="STRING" argument="1 9"/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="ActionTo" argtype="STRING" argument="slap"/>
+      <action number="SayTo" argtype="STRING" argument="Bloody hell, can&apos;t you read signs? I&apos;m too high level for you!!"/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="1940" name="goose honking newmob" special="NONE">
+    <description>Large and probably at least 10kg, this round bird has dark grey and
+brown feathers with a lighter tan belly extending up to a long
+black neck attached to a comparatively small black head with white
+cheeks. It has overly large webbed feet that it waddles around on,
+often fluttering out its feathers, waggling its tail, or flapping
+its long wings while honking contentedly through a sleek, flat bill.
+</description>
+    <shortdesc>a honking goose</shortdesc>
+    <longdesc>&amp;yA goose waddles around, extending its neck and honking loudly.&amp;n (Level 6)
+</longdesc>
+    <title/>
+    <chardata gender="NEUTRAL" class="Adventurer" level="6" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="3" dsize="20" bonus="18"/>
+      <move ndize="1" dsize="18" bonus="18"/>
+      <ac>20</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>250</exp>
+      <hitroll>3</hitroll>
+      <damroll>2</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="72"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="4"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="2" sides="3" add="3"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnEntry" argtype="STRING" argument="yes">
+      <action number="Action" argtype="STRING" argument="emote lowers and extends its neck, hissing warningly at a passerby."/>
+    </mobprog>
+    <mobprog main="OnRandom" argtype="INT" argument="8">
+      <action number="Action" argtype="STRING" argument="emote stretches vertically, flaps its long wings, and shakes out its tail before preening."/>
+    </mobprog>
+    <mobprog main="OnRandom" argtype="INT" argument="6">
+      <action number="Action" argtype="STRING" argument="emote honks softly, content, and waddles about."/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="1941" name="Bran brandelwyn innkeeper" special="NONE">
+    <description>Brandelwyn al&apos;Vere, mayor of Emond&apos;s Field and keeper of the Winespring
+Inn, is the widest man in the village, probably from too many of his
+wife&apos;s honeycakes. He has a spotless white apron wrapped around his
+girth and stands in shirtsleeves as he goes about his business of
+keeping an eye on his inn, the town, and his children. An older man,
+he has a strong step and an energetic glint to his eye despite the
+grey hair ringing his head.
+</description>
+    <shortdesc>Bran al&apos;Vere</shortdesc>
+    <longdesc>&amp;yBran al&apos;Vere stands here waiting for business.&amp;n (Level 200)
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="200" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="20" dsize="1000" bonus="5000"/>
+      <move ndize="1" dsize="5000" bonus="5000"/>
+      <ac>-200</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>50</hitroll>
+      <damroll>50</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="10281034"/>
+    <affected one="268501040" two="0" three="0" four="0"/>
+    <attack type="5"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="30" sides="50" add="50"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="1942" name="marin cook" special="NONE">
+    <description>Marin, Bran&apos;s wife and probably the real reason the inn does so well,
+most often has a motherly smile on her face and a kind word to give.
+She is a slender woman, with a thick braid of greying hair pulled
+over one shoulder. She wears a cooking apron over her day dress, the
+white cloth dotted with honey and other food stains.
+</description>
+    <shortdesc>Marin al&apos;Vere</shortdesc>
+    <longdesc>&amp;yMarin al&apos;Vere is here, stirring some soup for this evening&apos;s dinner.&amp;n (Level 200)
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="200" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="20" dsize="1000" bonus="5000"/>
+      <move ndize="1" dsize="5000" bonus="5000"/>
+      <ac>-200</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>50</hitroll>
+      <damroll>50</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="10281034"/>
+    <affected one="268501040" two="0" three="0" four="0"/>
+    <attack type="10"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="30" sides="50" add="50"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="1943" name="scratch cat" special="NONE">
+    <description>A little pudgy due to his easy inn life, Scratch might keep himself
+busy mousing in the Winespring&apos;s barn if he did not find such comfort
+in the inn&apos;s common room. He has short yellow fur and a long tail and
+one ear slightly torn to give credibility to his name.
+</description>
+    <shortdesc>Scratch</shortdesc>
+    <longdesc>&amp;yScratch, the cat, rests lazily atop one of the brandy casks.&amp;n (Level 10)
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="10" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="3" dsize="40" bonus="15"/>
+      <move ndize="1" dsize="15" bonus="15"/>
+      <ac>-10</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>400</exp>
+      <hitroll>5</hitroll>
+      <damroll>4</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="65610"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="8"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="3" sides="4" add="5"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="1944" name="gleeman man" special="NONE">
+    <description>This man looks old and somewhat scraggly, but he has an energetic
+glint to his eyes and swings them around, scrutinizing everyone
+that passes by. His eyes are a light blue, quite different from the
+native villagers in Emond&apos;s Field, and his hair is a shock of bright
+white, including the shadow of a beard spotting his chin. His cloak
+is a mess of colorful patches, and he has it splayed out quite
+magnificently behind him.
+</description>
+    <shortdesc>the Gleeman</shortdesc>
+    <longdesc>&amp;yA Gleeman puffs on his pipe where he lounges in the middle of the Green.&amp;n (level 18)
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="18" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="3" dsize="125" bonus="40"/>
+      <move ndize="1" dsize="40" bonus="40"/>
+      <ac>-80</ac>
+      <gold>100</gold>
+      <bankgold>0</bankgold>
+      <exp>500</exp>
+      <hitroll>10</hitroll>
+      <damroll>10</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1048650"/>
+    <affected one="32" two="0" three="0" four="0"/>
+    <attack type="10"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="2" sides="11" add="10"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnAttack" argtype="VOID" argument="NONE">
+      <sideterm number="Level" not="FALSE" argtype="STRING" argument="1 9"/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="ActionTo" argtype="STRING" argument="slap"/>
+      <action number="SayTo" argtype="STRING" argument="Bloody hell, can&apos;t you read signs? I&apos;m too high level for you!!"/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="1945" name="Jon Thane miller" special="NONE">
+    <description>The miller of Emond&apos;s Field, Jon Thane stands at average Two Rivers
+height with dark brown hair and matching eyes. His shoulders are thick
+from working the machinery of the mill, and he almost always has his
+dusty apron wrapped around his waist. Similarly, he keeps his
+shirt-sleeves rolled up so the flour he works with only powders
+his bare forearms.
+</description>
+    <shortdesc>Jon Thane</shortdesc>
+    <longdesc>&amp;yJon Thane stands by the grinder collecting corn dust.&amp;n (Level 200)
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="200" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="20" dsize="1000" bonus="5000"/>
+      <move ndize="1" dsize="5000" bonus="5000"/>
+      <ac>-200</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>50</hitroll>
+      <damroll>50</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="10281034"/>
+    <affected one="48" two="0" three="0" four="0"/>
+    <attack type="13"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="30" sides="50" add="50"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="1946" name="Lem Thane" special="NONE">
+    <description>Lem certainly resembles a younger version of his father. He looks just
+past twenty winters, with dark hair and eyes but a light, quick smile.
+His brow is often creased with a seriousness, however, one picked
+up from the work his father loads on him around the mill. He has the
+beginnings of a goatee growing around his mouth, an act of picking
+up one of the foreign customs visiting Emond&apos;s Field.
+</description>
+    <shortdesc>Lem Thane</shortdesc>
+    <longdesc>&amp;yLem Thane, the miller&apos;s son, is out here bagging flour.&amp;n (Level 17)
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="17" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="3" dsize="110" bonus="20"/>
+      <move ndize="1" dsize="20" bonus="20"/>
+      <ac>-80</ac>
+      <gold>100</gold>
+      <bankgold>0</bankgold>
+      <exp>400</exp>
+      <hitroll>10</hitroll>
+      <damroll>10</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1048650"/>
+    <affected one="48" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="2" sides="11" add="10"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnAttack" argtype="VOID" argument="NONE">
+      <sideterm number="Level" not="FALSE" argtype="STRING" argument="1 9"/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="ActionTo" argtype="STRING" argument="slap"/>
+      <action number="SayTo" argtype="STRING" argument="Bloody hell, can&apos;t you read signs? I&apos;m too high level for you!!"/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="1947" name="Haral Luhhan blacksmith" special="NONE">
+    <description>Haral, the village&apos;s best and only blacksmith, is perhaps the largest
+man in the district. His shoulders are at least an axe hilt thick, his
+bare arms rippling with muscles from under the rolled up sleeves. The
+width of his chest well rivals the size of his girth; his wife certainly
+keeps him healthily fed. Though he is a strong man, he usually has a
+warm smile on his face, belying any danger from the heavy hammer
+hanging from his belt.
+</description>
+    <shortdesc>Haral Luhhan</shortdesc>
+    <longdesc>Haral Luhan stands here.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="200" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="20" dsize="1000" bonus="5000"/>
+      <move ndize="1" dsize="5000" bonus="5000"/>
+      <ac>-200</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>50</hitroll>
+      <damroll>50</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="10281034"/>
+    <affected one="48" two="0" three="0" four="0"/>
+    <attack type="7"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="30" sides="50" add="50"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="1948" name="Alsbet Luhhan" special="NONE">
+    <description>Alsbet easily matches her husband Haral in size, her dress pulled
+snugly around her roundness. Yet she does not have the least bit of
+a waddle to her step, in fact stalking like a confident mother cat.
+She often has some kind of cooking utensil in one hand that looks like
+it could easily land on some grumbling man&apos;s head if her weren&apos;t careful.
+She wears a used apron around her waist, the stains a mix of cooking
+and also forging, indicative of the help she sometimes offers her husband.
+</description>
+    <shortdesc>Alsbet Luhhan</shortdesc>
+    <longdesc>&amp;yAlsbet Luhhan stands in her doorway, shaking out a few rugs.&amp;n (Level 17)
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="17" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="3" dsize="110" bonus="50"/>
+      <move ndize="1" dsize="50" bonus="50"/>
+      <ac>-80</ac>
+      <gold>200</gold>
+      <bankgold>0</bankgold>
+      <exp>400</exp>
+      <hitroll>9</hitroll>
+      <damroll>9</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1114186"/>
+    <affected one="48" two="0" three="0" four="0"/>
+    <attack type="6"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="2" sides="10" add="9"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnAttack" argtype="VOID" argument="NONE">
+      <sideterm number="Level" not="FALSE" argtype="STRING" argument="1 9"/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="ActionTo" argtype="STRING" argument="slap"/>
+      <action number="SayTo" argtype="STRING" argument="Bloody hell, can&apos;t you read signs? I&apos;m too high level for you!!"/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="1949" name="Daise Congar wisdom" special="NONE">
+    <description>Like any Congar, Daise has a nearly constant crease in her brow, but
+she typically reserves the sourness for her husband. She is
+middle-aged, with some grey streaking her dark, braided hair, and
+she wears the typical bulky skirts of a goodwife. However this
+goodwife also has a few herb pouches hanging from her belt and a
+more justified reason to raise her voice. Daise, the town&apos;s newest
+Wisdom, has the task of keeping everyone healthy.
+</description>
+    <shortdesc>Daise Congar</shortdesc>
+    <longdesc>&amp;yThe town Wisdom, Daise Congar, sits nearby in a rocking chair.&amp;n (level 200)
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="200" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="20" dsize="1000" bonus="5000"/>
+      <move ndize="1" dsize="5000" bonus="5000"/>
+      <ac>-200</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>50</hitroll>
+      <damroll>50</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="10281034"/>
+    <affected one="48" two="0" three="0" four="0"/>
+    <attack type="13"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="30" sides="50" add="50"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="1950" name="Darl Coplin" special="NONE">
+    <description>Typical for any Coplin or cousin Congar, Darl has a sour look on his
+face and a beer gut that strains at his dirty shirt. He has refused
+to take on any foreign style and often stares grudgingly at any
+passerbys new to the village. Darl wears his work shirt loose of
+a pair of brown slacks stained not from house work, but from
+spilled ale or food.
+</description>
+    <shortdesc>Darl Coplin</shortdesc>
+    <longdesc>&amp;yDarl Coplin is seated at the kitchen table enjoying a mug of ale.&amp;n (level 17)
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="17" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="3" dsize="110" bonus="20"/>
+      <move ndize="1" dsize="20" bonus="20"/>
+      <ac>-80</ac>
+      <gold>100</gold>
+      <bankgold>0</bankgold>
+      <exp>400</exp>
+      <hitroll>9</hitroll>
+      <damroll>9</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1048650"/>
+    <affected one="48" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="2" sides="10" add="9"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnAttack" argtype="VOID" argument="NONE">
+      <sideterm number="Level" not="FALSE" argtype="STRING" argument="1 9"/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="ActionTo" argtype="STRING" argument="slap"/>
+      <action number="SayTo" argtype="STRING" argument="Bloody hell, can&apos;t you read signs? I&apos;m too high level for you!!"/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="1951" name="Samel Crawe tanner armorer" special="NONE">
+    <description>About middle aged, Samel&apos;s short hair is still a clean shock of
+reddish-brown, though his new Tairen style beard sports some grey
+along his chin. He has his shirtsleeves up above his elbows and a long
+brown apron tied around his waist to catch the grime he clears off of
+hides and furs for sale or to cure for leather and armor. Since the
+Trolloc attacks on Emond&apos;s Field, Samel has taken up the tanning
+business more seriously to become the village&apos;s armorer.
+</description>
+    <shortdesc>Samel Crawe</shortdesc>
+    <longdesc>&amp;ySamel Crawe is here stiffening a cow&apos;s hide for leather.&amp;n (Level 200)
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="200" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="20" dsize="1000" bonus="5000"/>
+      <move ndize="1" dsize="5000" bonus="5000"/>
+      <ac>-200</ac>
+      <gold>100000</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>50</hitroll>
+      <damroll>50</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="10281034"/>
+    <affected one="48" two="0" three="0" four="0"/>
+    <attack type="6"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="30" sides="50" add="50"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="1952" name="Abell Cauthon" special="PostMaster">
+    <description>Abell Cauthon, father of Mat and the man of the house, appears
+much more docile than his famous son. He is average size for an
+Emond Fielder and wears just a loose work shirt and a vest because
+of the warm weather. He has well combed brown hair and keeps his
+chin cleanly shaved. Since the fortification of the village, he
+typically keeps some kind of weapon at his waist, hoping to keep his
+house and family safe.
+</description>
+    <shortdesc>Abell Cauthon</shortdesc>
+    <longdesc>&amp;yAbell Cauthon sits near the open door, reading.&amp;n (Level 200)
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="200" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="20" dsize="1000" bonus="5000"/>
+      <move ndize="1" dsize="5000" bonus="5000"/>
+      <ac>-200</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>50</hitroll>
+      <damroll>50</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1048650"/>
+    <affected one="48" two="0" three="0" four="0"/>
+    <attack type="3"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="30" sides="50" add="50"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="1953" name="hound flour" special="NONE">
+    <description>Haral&apos;s hound looks rather miserable right now, its usually dark
+grey fur patched with the remnants of flour poured all over it,
+still enough to occasionally leave some powder on furniture and
+rugs it rubs against. The hound is a large one, and a little pudgy
+from living under Alsbet&apos;s care.
+</description>
+    <shortdesc>a floured hound</shortdesc>
+    <longdesc>&amp;yA hound dusted with flour lies on the floor with its head in its paws.&amp;n (level 10)
+</longdesc>
+    <title/>
+    <chardata gender="NEUTRAL" class="Adventurer" level="10" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="3" dsize="40" bonus="20"/>
+      <move ndize="1" dsize="20" bonus="20"/>
+      <ac>-10</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>300</exp>
+      <hitroll>4</hitroll>
+      <damroll>3</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="74"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="4"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="3" sides="4" add="4"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="1954" name="Cenn Buie thatcher" special="NONE">
+    <description>A wiry old man, Cenn often wobbles around with a staff as crooked as
+he tries to look while hunching over. But the man still has strength
+in his back and arms despite his white-grey hair. Most of the wrinkles
+on his face come from a sour expression and quick temper he likes to
+flash at anyone in his way. He works as the village&apos;s only thatcher,
+offering other townspeople anything they need for their roofs.
+</description>
+    <shortdesc>Cenn Buie</shortdesc>
+    <longdesc>&amp;yCenn Buie works on some roofing while keeping on eye on his garden.&amp;n (level 200)
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="200" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="20" dsize="1000" bonus="5000"/>
+      <move ndize="1" dsize="5000" bonus="5000"/>
+      <ac>-200</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>50</hitroll>
+      <damroll>50</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="10281034"/>
+    <affected one="48" two="0" three="0" four="0"/>
+    <attack type="13"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="30" sides="50" add="50"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="1955" name="Ewin Finngar" special="NONE">
+    <description>One of the teenagers in Emond&apos;s Field, Ewin looks like he has seen
+sixteen or seventeen winters now, just growing out of his boyish
+looks into a man&apos;s body. He is thin and lithe, and probably keeps
+himself busy either in town or out in the Westwood, though with the
+recent attacks, he too carries a weapon with him. It seems he has
+gotten into some kind of trouble recently, his clothes mussed and
+covered with black garden dirt.
+</description>
+    <shortdesc>Ewin Finngar</shortdesc>
+    <longdesc>&amp;yEwin Finngar is here up to his arms in garden work.&amp;n (Level 17)
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="17" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="3" dsize="110" bonus="20"/>
+      <move ndize="1" dsize="20" bonus="20"/>
+      <ac>-80</ac>
+      <gold>50</gold>
+      <bankgold>0</bankgold>
+      <exp>400</exp>
+      <hitroll>9</hitroll>
+      <damroll>9</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1048650"/>
+    <affected one="48" two="0" three="0" four="0"/>
+    <attack type="13"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="2" sides="10" add="9"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnAttack" argtype="VOID" argument="NONE">
+      <sideterm number="Level" not="FALSE" argtype="STRING" argument="1 9"/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="ActionTo" argtype="STRING" argument="slap"/>
+      <action number="SayTo" argtype="STRING" argument="Bloody hell, can&apos;t you read signs? I&apos;m too high level for you!!"/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="1956" name="Eward Candwin grocer butcher" special="NONE">
+    <description>Master Candwin looks like most of the men native to Emond&apos;s Field. He
+has black hair and brown eyes and wears simple breeches and a work
+shirt under a functional wool vest. However, new to the village, he
+has the beginnings of a long moustache growing around his lips from
+his nose and a conical cap on his head. He wears a smock over his
+chest and around his waist, protecting his clothes from the meat and
+vegetables and other odds and ends he needs to prepare for stock.
+</description>
+    <shortdesc>Eward Candwin</shortdesc>
+    <longdesc>&amp;yEward Candwin stands at the kitchen table sorting items his wife bought.&amp;n (Level 200)
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="200" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="20" dsize="1000" bonus="5000"/>
+      <move ndize="1" dsize="5000" bonus="5000"/>
+      <ac>-200</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>50</hitroll>
+      <damroll>50</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="10281034"/>
+    <affected one="48" two="0" three="0" four="0"/>
+    <attack type="6"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="30" sides="50" add="50"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="1957" name="Hu stablehand" special="NONE">
+    <description>The taller of the two stablehands, Hu has rather unkempt dark brown
+hair. His simple cotton shirt and breeches are both dusted with hay
+and oats and his knee-high boots stained with manure, all tell-tale
+signs of his work for the Winespring Inn&apos;s stables. He has a serious
+look on his face and typically keeps it that way, not much of a talker.
+</description>
+    <shortdesc>Hu</shortdesc>
+    <longdesc>&amp;yHu, one of the stablehands, is here raking the yard.&amp;n (Level 17)
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="17" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="3" dsize="110" bonus="0"/>
+      <move ndize="1" dsize="0" bonus="0"/>
+      <ac>-70</ac>
+      <gold>50</gold>
+      <bankgold>0</bankgold>
+      <exp>400</exp>
+      <hitroll>9</hitroll>
+      <damroll>9</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1048650"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="2" sides="10" add="9"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnAttack" argtype="VOID" argument="NONE">
+      <sideterm number="Level" not="FALSE" argtype="STRING" argument="1 9"/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="ActionTo" argtype="STRING" argument="slap"/>
+      <action number="SayTo" argtype="STRING" argument="Bloody hell, can&apos;t you read signs? I&apos;m too high level for you!!"/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="1958" name="Tad stablehand" special="NONE">
+    <description>Tad is shorter than Hu and has slightly lighter hair and an even
+more silent disposition. But he works equally as hard and seems to
+have been a good investment by Master al&apos;Vere. He wears simple
+clothes and heavy boots and often has a lead rope or feed bag
+draped over his shoiulder on its way to one of the horses in the
+stables.
+</description>
+    <shortdesc>Tad</shortdesc>
+    <longdesc>&amp;yTad, one of the stablehands, is here sorting halters.&amp;n (Level 17)
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="17" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="3" dsize="110" bonus="0"/>
+      <move ndize="1" dsize="0" bonus="0"/>
+      <ac>-70</ac>
+      <gold>50</gold>
+      <bankgold>0</bankgold>
+      <exp>400</exp>
+      <hitroll>9</hitroll>
+      <damroll>9</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1048650"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="2" sides="10" add="9"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnAttack" argtype="VOID" argument="NONE">
+      <sideterm number="Level" not="FALSE" argtype="STRING" argument="1 9"/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="ActionTo" argtype="STRING" argument="slap"/>
+      <action number="SayTo" argtype="STRING" argument="Bloody hell, can&apos;t you read signs? I&apos;m too high level for you!!"/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="1959" name="horse dhurran" special="NONE">
+    <description>One of Bran&apos;s best work horses, this Dhurran is at least eighteen
+hands high. Dark brown in color with a few white socks and a stripe
+of white down its nose, the horse looks like it can pull a plow
+better than any in the district. It has wide shoulders and thick
+legs, hair coverings its hooves, and a surprisingly placid disposition.
+</description>
+    <shortdesc>a Dhurran</shortdesc>
+    <longdesc>&amp;yAn immense Dhurran stands by the stall door, munching on hay.&amp;n (Level 10)
+</longdesc>
+    <title/>
+    <chardata gender="NEUTRAL" class="Adventurer" level="10" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="3" dsize="40" bonus="35"/>
+      <move ndize="1" dsize="35" bonus="35"/>
+      <ac>-10</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>400</exp>
+      <hitroll>5</hitroll>
+      <damroll>4</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="327754"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="4"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="3" sides="4" add="5"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="1960" name="Tam al&apos;Thor trainer" special="Trainer">
+    <description>Tam is one of the sheep farmers just outside of Emond&apos;s Field, and a
+single man at that, much to the delight of goodwives with sisters. His
+hair is mostly grey now, with only a sprinkling of black, and his
+broad, sun-tanned face is lined, but the man stands stolidly. He has
+a broad chest and a way of standing that makes him appear more like
+stone than weak flesh and bone. The sword he uses to train with can
+swing easily in his hands, proving he knows how to use it.
+</description>
+    <shortdesc>Tam al&apos;Thor</shortdesc>
+    <longdesc>&amp;yTam al&apos;Thor is here, sword in hand to help train the villagers.&amp;n (Level 200)
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="200" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="20" dsize="1000" bonus="5000"/>
+      <move ndize="1" dsize="5000" bonus="5000"/>
+      <ac>-200</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>50</hitroll>
+      <damroll>50</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1073226"/>
+    <affected one="48" two="0" three="0" four="0"/>
+    <attack type="3"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="30" sides="50" add="50"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+</mobiles>

@@ -1,0 +1,947 @@
+<?xml version="1.0"?>
+<mobiles>
+  <mobile vnum="1000" name="old warder" special="NONE">
+    <description>He has short hair, close to his head, so that no one could grab a hold of it
+during a fight.  Jutting over his shoulder is a sword, sheathed firmly in it&apos;s
+scabbard.  He wears simple green trousers, not too tight or baggy, and a dark
+gray, common-looking woolen shirt.
+</description>
+    <shortdesc>an old warder</shortdesc>
+    <longdesc>An old warder stands here, ready to offer instruction to anyone who wants it.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="100" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="30" dsize="900" bonus="5500"/>
+      <move ndize="1" dsize="5500" bonus="5500"/>
+      <ac>-200</ac>
+      <gold>25</gold>
+      <bankgold>0</bankgold>
+      <exp>50</exp>
+      <hitroll>70</hitroll>
+      <damroll>25</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1654872"/>
+    <affected one="67371024" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="5" sides="10" add="70"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnActionTo" argtype="STRING" argument="slap">
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="Emote" argtype="STRING" argument="$n smirks and effortlessly catches your hand."/>
+    </mobprog>
+    <mobprog main="OnActionTo" argtype="STRING" argument="bonk">
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="Emote" argtype="STRING" argument="$n laughs quietly at you and sidesteps the attack."/>
+    </mobprog>
+    <mobprog main="OnActionTo" argtype="STRING" argument="spit">
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="Emote" argtype="STRING" argument="$n chuckles mirthlessly and steps to the side, easily avoiding your childish gesture."/>
+    </mobprog>
+    <mobprog main="OnActionTo" argtype="STRING" argument="woolhead">
+      <action number="ActionTo" argtype="STRING" argument="woolhead"/>
+    </mobprog>
+    <mobprog main="OnActionTo" argtype="STRING" argument="backhand">
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="Emote" argtype="STRING" argument="$n laughs loudly, catching your hand in midair, and then he spits on your chest."/>
+    </mobprog>
+    <mobprog main="OnActionTo" argtype="STRING" argument="thump">
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="Emote" argtype="STRING" argument="$n grabs the stick you were to thump him with and then twirls you around, kicking your rear so hard you fall flat on your face."/>
+    </mobprog>
+    <mobprog main="OnAttack" argtype="STRING" argument="thump">
+      <sideterm number="Guild" not="TRUE" argtype="STRING" argument="tower warders"/>
+      <action number="ActionTo" argtype="STRING" argument="smirk"/>
+      <action number="SayTo" argtype="STRING" argument="Foolish child..."/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="1001" name="veteran soldier" special="NONE">
+    <description>He wears the armor of a soldier of Tar Valon with pride, and a small badge on
+his shoulder signifies that he is a veteran of the Aiel War, and received
+honors after the battle at the Shining Walls.
+</description>
+    <shortdesc>a veteran soldier</shortdesc>
+    <longdesc>A veteran of the aiel war is here, ready to spar with any of the students.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="65" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="28" dsize="500" bonus="900"/>
+      <move ndize="1" dsize="900" bonus="900"/>
+      <ac>-150</ac>
+      <gold>10</gold>
+      <bankgold>0</bankgold>
+      <exp>80</exp>
+      <hitroll>40</hitroll>
+      <damroll>9</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1327130"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="6" sides="10" add="40"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="1002" name="old woman mother" special="NONE">
+    <description>She has thin gray hair, pulled back from her face in a bun.  This old woman
+is wearing the simple woolen clothing of a farmwife, and not a very well to
+do farmwife, either.  Judging by the torn shawl she wears, holes gracing it
+in several places, she must be very poor.  Perhaps she is the mother of one
+of the warders with their name on the wall.  She is most likely here to 
+grieve the death of a son.
+</description>
+    <shortdesc>an old woman</shortdesc>
+    <longdesc>An old woman is here, staring sadly at one of the names inscribed into the wall.
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="5" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="10"/>
+      <move ndize="1" dsize="10" bonus="10"/>
+      <ac>100</ac>
+      <gold>1</gold>
+      <bankgold>0</bankgold>
+      <exp>50</exp>
+      <hitroll>1</hitroll>
+      <damroll>1</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1065098"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="2" sides="5" add="1"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnRandom" argtype="INT" argument="15">
+      <action number="Emote" argtype="STRING" argument="$n lifts her hand and wipes away a tear which suddenly formed in her right eye.  She continues staring at a name inscribed in the wall, a sad expression on her face."/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="1003" name="tpostmaster" special="PostMaster">
+    <description>It&apos;s a postmaster.. it&apos;s just a being made up of pure thought which delivers
+mail for you.  What more needs be said?
+</description>
+    <shortdesc>the postmaster</shortdesc>
+    <longdesc>The postmaster of the Tower Warders stands here, ready to deliver your mail.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="199" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="30" dsize="900" bonus="2000"/>
+      <move ndize="1" dsize="2000" bonus="2000"/>
+      <ac>-100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>1</exp>
+      <hitroll>50</hitroll>
+      <damroll>50</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1032219"/>
+    <affected one="327728" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="20" sides="30" add="50"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnAttack" argtype="VOID" argument="NONE">
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="ActionTo" argtype="STRING" argument="slap"/>
+    </mobprog>
+    <mobprog main="OnAction" argtype="STRING" argument="scan">
+      <sideterm number="Guild" not="TRUE" argtype="STRING" argument="tower warders"/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="SayTo" argtype="STRING" argument="Not on my watch.."/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="1004" name="sarm shopkeeper" special="NONE">
+    <description>He is a balding man with hair only on the sides of his head.  
+He has very thick, muscular arms, and wears a simple wool shirt and
+equally simple leggings.
+</description>
+    <shortdesc>Sarm</shortdesc>
+    <longdesc>Sarm the shopkeeper stands here, polishing a slender sword as he waits for a customer.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="1" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="30" dsize="900" bonus="3000"/>
+      <move ndize="1" dsize="3000" bonus="3000"/>
+      <ac>-200</ac>
+      <gold>5000</gold>
+      <bankgold>0</bankgold>
+      <exp>1</exp>
+      <hitroll>50</hitroll>
+      <damroll>50</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="10477578"/>
+    <affected one="262160" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="30" sides="100" add="50"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="1005" name="group warders" special="NONE">
+    <description>There are three warders in this group, all of them fairly tall, very muscular
+men.  They have strong looking arms, and an aura of danger.
+</description>
+    <shortdesc>a group of warders</shortdesc>
+    <longdesc>A group of warders is here, all of them idly chatting with each other.
+</longdesc>
+    <title/>
+    <chardata gender="NEUTRAL" class="Adventurer" level="50" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="20" dsize="200" bonus="500"/>
+      <move ndize="1" dsize="500" bonus="500"/>
+      <ac>0</ac>
+      <gold>20</gold>
+      <bankgold>0</bankgold>
+      <exp>50</exp>
+      <hitroll>20</hitroll>
+      <damroll>5</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="999450"/>
+    <affected one="67895328" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="3" sides="10" add="20"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnAction" argtype="STRING" argument="north">
+      <sideterm number="Guild" not="TRUE" argtype="STRING" argument="White Tower"/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="Emote" argtype="STRING" argument="$n frowns, all in unison, and they casually block your path, appearing to not even notice that they are doing so."/>
+    </mobprog>
+    <mobprog main="OnAction" argtype="STRING" argument="east">
+      <sideterm number="Guild" not="TRUE" argtype="STRING" argument="tower warders"/>
+      <sideterm number="Guild" not="TRUE" argtype="STRING" argument="tower aes sedai"/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="Emote" argtype="STRING" argument="$n casually blocks your path, appearing to not notice what it is they are doing."/>
+    </mobprog>
+    <mobprog main="OnActionTo" argtype="STRING" argument="steal">
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="Shout" argtype="VOID" argument="NONE"/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="1006" name="cook" special="NONE">
+    <description>It looks, err, unfinished.
+</description>
+    <shortdesc>the cook</shortdesc>
+    <longdesc>The cook stands here, waiting to dish out food to hungry warders.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="1" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="30" dsize="900" bonus="3000"/>
+      <move ndize="1" dsize="3000" bonus="3000"/>
+      <ac>-200</ac>
+      <gold>10000</gold>
+      <bankgold>0</bankgold>
+      <exp>1</exp>
+      <hitroll>50</hitroll>
+      <damroll>50</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="9232394"/>
+    <affected one="48" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="20" sides="100" add="50"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="1007" name="aes sedai green" special="NONE">
+    <description>Her smooth face is framed by long, raven
+hair with a few streaks of gray in it.
+Her blue eyes stare sadly at one of the 
+names in the list of deceased warders on
+the wall.
+</description>
+    <shortdesc>a Green Aes Sedai</shortdesc>
+    <longdesc>An Aes Sedai of the Green Ajah is standing here, looking sadly at the wall.
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="100" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="30" dsize="500" bonus="5000"/>
+      <move ndize="1" dsize="5000" bonus="5000"/>
+      <ac>-100</ac>
+      <gold>50</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>50</hitroll>
+      <damroll>10</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="16394"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="10" sides="10" add="50"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnRandom" argtype="INT" argument="30">
+      <action number="Emote" argtype="STRING" argument="$n lightly touches a name on the wall, and a single tear trickles down her cheek."/>
+    </mobprog>
+    <mobprog main="OnAttack" argtype="INT" argument="30">
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="Emote" argtype="STRING" argument="You wouldn&apos;t want to attack a grieving sedai in the middle of Tar Valon, now would you?"/>
+    </mobprog>
+    <mobprog main="OnRandom" argtype="INT" argument="5">
+      <action number="Emote" argtype="STRING" argument="$n stares sadly at a name on the wall for a few moments, then the tears begin to come trickling down her cheeks.  Finally she begins to openly weep, and so runs away from the memorial."/>
+      <action number="PurgeMob" argtype="VOID" argument="NONE"/>
+    </mobprog>
+    <mobprog main="OnRandom" argtype="INT" argument="25">
+      <action number="Action" argtype="STRING" argument="sayto woman My Garinth was a good warder, the best I could have asked for.. I wish things had happened different than they di-..."/>
+      <action number="Emote" argtype="STRING" argument="$n brushes at her eyes with a hand, wiping away a stray tear."/>
+      <action number="Emote" argtype="STRING" argument="The old woman pats the sedai on her shoulder, and says, "/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="1008" name="banker Yorran" special="NONE">
+    <description>It looks, err, unfinished.
+He&apos;s thin, and bald.  There, he has a desc.
+</description>
+    <shortdesc>Yorran the banker</shortdesc>
+    <longdesc>Yorran the banker is here, waiting to take or give you your money.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="1" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="1"/>
+      <move ndize="1" dsize="1" bonus="1"/>
+      <ac>100</ac>
+      <gold>999999</gold>
+      <bankgold>0</bankgold>
+      <exp>1</exp>
+      <hitroll>9</hitroll>
+      <damroll>1</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="8"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="9"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="1009" name="blacksmith" special="NONE">
+    <description>He has long black hair and light blue eyes.  His shoulders are
+thick enough for any three men, and he holds a long blacksmith&apos;s
+hammer.
+</description>
+    <shortdesc>a blacksmith</shortdesc>
+    <longdesc>A blacksmith is here, appraising his work.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="199" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="25" dsize="999" bonus="1"/>
+      <move ndize="1" dsize="1" bonus="1"/>
+      <ac>-200</ac>
+      <gold>1</gold>
+      <bankgold>0</bankgold>
+      <exp>1</exp>
+      <hitroll>150</hitroll>
+      <damroll>50</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="9236634"/>
+    <affected one="67371056" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="30" sides="100" add="150"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnEntry" argtype="VOID" argument="NONE">
+      <action number="Pause" argtype="INT" argument="1"/>
+      <action number="Emote" argtype="STRING" argument="$n glares suspiciously at you."/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="1010" name="short man" special="NONE">
+    <description>This man is very short, and he has sandy brown, short hair.  His narrow,
+suspicious eyes quickly dart about the room every now and then, carefully
+scanning for any signs of instrusive dust motes.  Oddly enough, a large
+sword is strapped to this cleaners back.
+</description>
+    <shortdesc>a short man</shortdesc>
+    <longdesc>A short man is here, cleaning the shelves.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="160" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="15" dsize="100" bonus="30000"/>
+      <move ndize="1" dsize="30000" bonus="30000"/>
+      <ac>-200</ac>
+      <gold>5</gold>
+      <bankgold>0</bankgold>
+      <exp>50</exp>
+      <hitroll>195</hitroll>
+      <damroll>30</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="313370"/>
+    <affected one="67436560" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="7" sides="10" add="195"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="1011" name="jase tall man" special="NONE">
+    <description>He has a long sword hanging on his right hip, and on his left hip is a simple
+short sword.   Holding his shoulder-length hair from his face is a brown leather
+strip.
+</description>
+    <shortdesc>Jase</shortdesc>
+    <longdesc>A tall man named Jase is here.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="50" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="15" dsize="100" bonus="3500"/>
+      <move ndize="1" dsize="3500" bonus="3500"/>
+      <ac>-50</ac>
+      <gold>5</gold>
+      <bankgold>0</bankgold>
+      <exp>50</exp>
+      <hitroll>50</hitroll>
+      <damroll>10</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1196170"/>
+    <affected one="524288" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="5" sides="12" add="50"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="1012" name="warder half-naked" special="NONE">
+    <description>He has a large towel wrapped around him but is not
+wearing anything else.  He stands next to the wall, waiting
+for a favorable spot to open up in the water.
+</description>
+    <shortdesc>a half-naked warder</shortdesc>
+    <longdesc>A half-naked warder is here, leaning against the wall and waiting for a good spot in the water.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="50" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="10" dsize="100" bonus="500"/>
+      <move ndize="1" dsize="500" bonus="500"/>
+      <ac>-50</ac>
+      <gold>5</gold>
+      <bankgold>0</bankgold>
+      <exp>100</exp>
+      <hitroll>20</hitroll>
+      <damroll>10</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="18570"/>
+    <affected one="67633152" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="5" sides="10" add="20"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnEntry" argtype="VOID" argument="NONE">
+      <sideterm number="Sex" not="FALSE" argtype="STRING" argument="female"/>
+      <sideterm number="Guild" not="TRUE" argtype="STRING" argument="tower aes sedai"/>
+      <sideterm number="Guild" not="TRUE" argtype="STRING" argument="tower warders"/>
+      <action number="Emote" argtype="STRING" argument="$n &apos;s eyebrows draw down in a menacing frown as he sees an unfamiliar face in the bathhouse."/>
+      <action number="ActionTo" argtype="STRING" argument="frown"/>
+      <action number="Force" argtype="STRING" argument="east"/>
+      <action number="Action" argtype="STRING" argument="close door east"/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="1013" name="librarian woman" special="NONE">
+    <description>She carries a stout wooden switch in one hand, and keeps
+the other firmly planted on her hip.  She has had to use
+that switch on more than one warder who thought he could
+take one of her books away from the library.
+</description>
+    <shortdesc>the librarian</shortdesc>
+    <longdesc>The librarian, a woman of fairly old age, stands here.
+</longdesc>
+    <title/>
+    <chardata gender="FEMALE" class="Adventurer" level="5" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="10" dsize="100" bonus="0"/>
+      <move ndize="1" dsize="0" bonus="0"/>
+      <ac>100</ac>
+      <gold>5</gold>
+      <bankgold>0</bankgold>
+      <exp>1</exp>
+      <hitroll>200</hitroll>
+      <damroll>5</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1065098"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="10" add="200"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnLeave" argtype="VOID" argument="NONE">
+      <sideterm number="Carrying" not="FALSE" argtype="INT" argument="1033"/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="ActionTo" argtype="STRING" argument="snap"/>
+      <action number="SayTo" argtype="STRING" argument="You put that book back where you got it, or you will feel my switch on your backside!"/>
+    </mobprog>
+    <mobprog main="OnLeave" argtype="VOID" argument="NONE">
+      <sideterm number="Guild" not="FALSE" argtype="STRING" argument="tower aes sedai"/>
+      <action number="ActionTo" argtype="STRING" argument="curtsey"/>
+      <action number="SayTo" argtype="STRING" argument="It was a pleasure to have you visit, m&apos;Lady."/>
+    </mobprog>
+    <mobprog main="OnAction" argtype="STRING" argument="grasp">
+      <sideterm number="Guild" not="TRUE" argtype="STRING" argument="tower aes sedai"/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="ActionTo" argtype="STRING" argument="frown"/>
+    </mobprog>
+    <mobprog main="OnAction" argtype="STRING" argument="put book coat">
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="ActionTo" argtype="STRING" argument="snap"/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="1014" name="eager trainee etrainee" special="NONE">
+    <description>It looks, err, unfinished.
+</description>
+    <shortdesc>an eager trainee</shortdesc>
+    <longdesc>An eager trainee stands here wondering which way to go.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="1" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="0"/>
+      <move ndize="1" dsize="0" bonus="0"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>1</hitroll>
+      <damroll>1</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="10"/>
+    <affected one="0" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="1"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="1015" name="board mob guardian" special="NONE">
+    <description>It looks, err, unfinished.
+</description>
+    <shortdesc>the Board Guardian</shortdesc>
+    <longdesc>The Board Guardian is here, keeping people who have no business reading this board from doing so.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="199" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="20000"/>
+      <move ndize="1" dsize="20000" bonus="20000"/>
+      <ac>-200</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>200</hitroll>
+      <damroll>50</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="2091098"/>
+    <affected one="67634" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="30" sides="127" add="200"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnAction" argtype="STRING" argument="read board">
+      <sideterm number="Guild" not="TRUE" argtype="STRING" argument="tower warders"/>
+      <sideterm number="Guild" not="TRUE" argtype="STRING" argument="tower aes sedai"/>
+      <sideterm number="Level" not="TRUE" argtype="STRING" argument="202 211"/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+    </mobprog>
+    <mobprog main="OnAction" argtype="STRING" argument="write">
+      <sideterm number="Guild" not="TRUE" argtype="STRING" argument="tower warders"/>
+      <sideterm number="Guild" not="TRUE" argtype="STRING" argument="tower aes sedai"/>
+      <sideterm number="Level" not="TRUE" argtype="STRING" argument="202 211"/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+    </mobprog>
+    <mobprog main="OnAction" argtype="STRING" argument="look board">
+      <sideterm number="Guild" not="TRUE" argtype="STRING" argument="tower warders"/>
+      <sideterm number="Guild" not="TRUE" argtype="STRING" argument="tower aes sedai"/>
+      <sideterm number="Level" not="TRUE" argtype="STRING" argument="202 211"/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="1016" name="alerter" special="NONE">
+    <description>It looks, err, unfinished.
+</description>
+    <shortdesc>an alert Gaidin</shortdesc>
+    <longdesc>A hidden but alert guard watches silently from the shadows.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="0" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="0"/>
+      <move ndize="1" dsize="0" bonus="0"/>
+      <ac>100</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="10"/>
+    <affected one="2" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnAction" argtype="STRING" argument="north">
+      <sideterm number="Guild" not="FALSE" argtype="STRING" argument="rebel warders"/>
+      <sideterm number="Guild" not="FALSE" argtype="STRING" argument="rebel aes "/>
+      <action number="Action" argtype="STRING" argument="echo The crowds filter in and out around the new arrival, women in various colored and designed dresses, men wearing uniforms or Fancloth, all striding around the  shining halls of the White Tower."/>
+      <action number="Pause" argtype="INT" argument="2"/>
+      <action number="Action" argtype="STRING" argument="shout We have a visitor to the tower but there is something that sets them apart. Investigation will be necessary."/>
+    </mobprog>
+  </mobile>
+  <mobile vnum="1027" name="Sarm" special="NONE">
+    <description>\c00</description>
+    <shortdesc>Sarm</shortdesc>
+    <longdesc>Sarm the shopkeeper stands here, polishing a slender sword as he waits for a customer.
+</longdesc>
+    <title/>
+    <chardata gender="MALE" class="Adventurer" level="1" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="1" bonus="1"/>
+      <move ndize="1" dsize="1" bonus="1"/>
+      <ac>100</ac>
+      <gold>500000</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>0</hitroll>
+      <damroll>0</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="9232394"/>
+    <affected one="2096" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="1" sides="1" add="0"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="1090" name="ginger spice" special="NONE">
+    <description>It&apos;s ginger spice.  You MUST know what she looks like by now.
+</description>
+    <shortdesc>ginger spice</shortdesc>
+    <longdesc>Ginger spice is here, gaily prancing about.
+</longdesc>
+    <title/>
+    <chardata gender="NEUTRAL" class="Adventurer" level="170" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="30" dsize="900" bonus="5500"/>
+      <move ndize="1" dsize="5500" bonus="5500"/>
+      <ac>-200</ac>
+      <gold>250</gold>
+      <bankgold>0</bankgold>
+      <exp>90</exp>
+      <hitroll>50</hitroll>
+      <damroll>20</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1760280"/>
+    <affected one="67960848" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="10" sides="10" add="50"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="1091" name="scary spice scaryspice" special="NONE">
+    <description>She&apos;s... well.. very frightening. :P
+</description>
+    <shortdesc>scary spice</shortdesc>
+    <longdesc>Scary spice is here, scaring the urine outta you when you&apos;re not ready.
+</longdesc>
+    <title/>
+    <chardata gender="NEUTRAL" class="Adventurer" level="190" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="30" dsize="999" bonus="2000"/>
+      <move ndize="1" dsize="2000" bonus="2000"/>
+      <ac>-200</ac>
+      <gold>250</gold>
+      <bankgold>0</bankgold>
+      <exp>50</exp>
+      <hitroll>50</hitroll>
+      <damroll>40</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="3267736"/>
+    <affected one="67960848" two="0" three="0" four="0"/>
+    <attack type="0"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="10" sides="10" add="50"/>
+    <timer amount="0"/>
+    <skills vector="0"/>
+    <teaches numberof="0"/>
+  </mobile>
+  <mobile vnum="1092" name="mob houseguard" special="NONE">
+    <description>A Houseguard, barring entry to the uninvited.
+</description>
+    <shortdesc>A Houseguard, barring entry to the uninvited.</shortdesc>
+    <longdesc>A Houseguard, barring entry to the uninvited.
+</longdesc>
+    <title/>
+    <chardata gender="NEUTRAL" class="Adventurer" level="200" weight="200" height="198"/>
+    <abilities>
+      <str>18</str>
+      <int>18</int>
+      <wis>18</wis>
+      <dex>18</dex>
+      <con>18</con>
+      <cha>18</cha>
+    </abilities>
+    <stats>
+      <mana numd="4" dsize="10" bonus="10"/>
+      <hit numd="1" dsize="100" bonus="30000"/>
+      <move ndize="1" dsize="30000" bonus="30000"/>
+      <ac>-200</ac>
+      <gold>0</gold>
+      <bankgold>0</bankgold>
+      <exp>0</exp>
+      <hitroll>200</hitroll>
+      <damroll>50</damroll>
+      <abs>0</abs>
+    </stats>
+    <act flag="1040410"/>
+    <affected one="268501010" two="0" three="0" four="0"/>
+    <attack type="14"/>
+    <pos default="Standing" other="Standing"/>
+    <damage num="30" sides="127" add="200"/>
+    <timer amount="0"/>
+    <skills vector="63"/>
+    <teaches numberof="0"/>
+    <mobprog main="OnAction" argtype="STRING" argument="open door">
+      <sideterm number="Carrying" not="TRUE" argtype="STRING" argument="1092"/>
+      <action number="Stop" argtype="VOID" argument="NONE"/>
+      <action number="SayTo" argtype="STRING" argument="You are not permitted to enter this house."/>
+    </mobprog>
+    <mobprog main="OnLeave" argtype="VOID" argument="NONE">
+      <action number="Action" argtype="STRING" argument="close dalakhil"/>
+    </mobprog>
+  </mobile>
+</mobiles>
